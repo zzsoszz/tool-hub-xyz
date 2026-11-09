@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
+import { headersFor } from '../../src/lib/http.mjs';
 import { fetchAllSources, parseSourceBody, resolveSourceUrl } from '../../src/lib/sources.mjs';
 
 test('injectsTheSinceDateIntoGithubSearchUrls', () => {
@@ -27,4 +28,11 @@ test('reportsPerSourceFailuresWithoutThrowing', async () => {
   const results = await fetchAllSources(sources, { concurrency: 2, timeoutMs: 2_000, retries: 0 });
   assert.equal(results.length, 2);
   assert.ok(results.every((result) => result.ok === false && result.items.length === 0 && result.error));
+});
+
+test('sendsTheActionsTokenOnlyToApiGitHubCom', () => {
+  process.env.GITHUB_TOKEN = ' Actions 注入的临时令牌 ';
+  assert.equal(headersFor('https://api.github.com/search/repositories?q=AI').authorization, 'Bearer  Actions 注入的临时令牌 ');
+  assert.equal(headersFor('https://hn.algolia.com/api/v1/search').authorization, undefined);
+  delete process.env.GITHUB_TOKEN;
 });

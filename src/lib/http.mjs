@@ -11,6 +11,19 @@ function backoffMs(attempt, retryAfter) {
   return 800 * 2 ** attempt;
 }
 
+export function headersFor(url, extra = {}) {
+  const headers = { 'user-agent': USER_AGENT, accept: ACCEPT, ...extra };
+  const token = process.env.GITHUB_TOKEN ?? process.env.GITHUB_API_TOKEN;
+  if (token) {
+    try {
+      if (new URL(url).hostname === 'api.github.com') headers.authorization = `Bearer ${token}`;
+    } catch {
+      return headers;
+    }
+  }
+  return headers;
+}
+
 export async function fetchUrl(url, { timeoutMs = 15_000, retries = 2, headers = {} } = {}) {
   let lastError = 'fetch failed';
   for (let attempt = 0; attempt <= retries; attempt += 1) {
@@ -18,7 +31,7 @@ export async function fetchUrl(url, { timeoutMs = 15_000, retries = 2, headers =
       const response = await fetch(url, {
         signal: AbortSignal.timeout(timeoutMs),
         redirect: 'follow',
-        headers: { 'user-agent': USER_AGENT, accept: ACCEPT, ...headers },
+        headers: headersFor(url, headers),
       });
       const body = await response.text();
       if (response.ok) {

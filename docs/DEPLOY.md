@@ -72,7 +72,7 @@ curl -m 10 -s https://tool-hub.xyz/llms.txt | head -6
 ## 7. 本地完整演练
 
 ```bash
-npm run lint && npm test          # 56 个测试，纯离线
+npm run lint && npm test          # 全部离线可跑
 npm run collect -- --offline --out=.ci/data
 DATA_DIR=.ci/data DIST_DIR=.ci/dist node src/build.mjs
 PORT=8088 node scripts/serve.mjs  # 打印 127.0.0.1 与局域网地址

@@ -43,7 +43,7 @@ npm run collect      # 抓取全部信息源，写入 data/digests/<日期>.json
 npm run build        # 由 data 生成 dist/
 npm run digest       # collect + build
 npm run dev          # digest 后在 0.0.0.0:8088 起本地预览（含局域网地址）
-npm test             # 56 个测试，纯离线
+npm test             # 单元测试 + 离线端到端流水线，纯离线
 npm run lint         # 语法、缩进、行尾空白与密钥扫描
 ```
 
