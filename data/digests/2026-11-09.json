@@ -1,0 +1,1235 @@
+{
+  "day": "2026-11-09",
+  "generatedAt": "2026-11-09T01:20:35.526Z",
+  "timezone": "Asia/Shanghai",
+  "windowHours": 48,
+  "counts": {
+    "sources": 21,
+    "okSources": 19,
+    "fetched": 2647,
+    "duplicates": 7,
+    "carried": 0,
+    "added": 48,
+    "fallback": 11,
+    "published": 48
+  },
+  "sources": [
+    {
+      "id": "openai-news",
+      "name": "OpenAI News",
+      "ok": true,
+      "items": 1368,
+      "error": null
+    },
+    {
+      "id": "google-deepmind",
+      "name": "Google DeepMind",
+      "ok": true,
+      "items": 100,
+      "error": null
+    },
+    {
+      "id": "google-ai",
+      "name": "Google AI Blog",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "hf-blog",
+      "name": "Hugging Face Blog",
+      "ok": true,
+      "items": 899,
+      "error": null
+    },
+    {
+      "id": "hf-daily-papers",
+      "name": "Hugging Face Daily Papers",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "interconnects",
+      "name": "Interconnects",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "latent-space",
+      "name": "Latent Space",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "simon-willison",
+      "name": "Simon Willison",
+      "ok": false,
+      "items": 0,
+      "error": "ECONNRESET"
+    },
+    {
+      "id": "techcrunch-ai",
+      "name": "TechCrunch AI",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "ars-ai",
+      "name": "Ars Technica AI",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "mit-tr-ai",
+      "name": "MIT Tech Review",
+      "ok": true,
+      "items": 10,
+      "error": null
+    },
+    {
+      "id": "qbitai",
+      "name": "量子位",
+      "ok": true,
+      "items": 10,
+      "error": null
+    },
+    {
+      "id": "arxiv-cs",
+      "name": "arXiv cs.AI/CL/LG",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "hn-newest",
+      "name": "Hacker News (AI)",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "hn-algolia",
+      "name": "Hacker News Search",
+      "ok": true,
+      "items": 25,
+      "error": null
+    },
+    {
+      "id": "lobsters-ai",
+      "name": "Lobsters AI",
+      "ok": true,
+      "items": 25,
+      "error": null
+    },
+    {
+      "id": "reddit-local-llama",
+      "name": "r/LocalLLaMA",
+      "ok": false,
+      "items": 0,
+      "error": "HTTP 429"
+    },
+    {
+      "id": "github-trending",
+      "name": "GitHub 新晋 AI 项目",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "microsoft-research",
+      "name": "Microsoft Research",
+      "ok": true,
+      "items": 10,
+      "error": null
+    },
+    {
+      "id": "github-blog",
+      "name": "GitHub Blog",
+      "ok": true,
+      "items": 10,
+      "error": null
+    },
+    {
+      "id": "theverge",
+      "name": "The Verge",
+      "ok": true,
+      "items": 10,
+      "error": null
+    }
+  ],
+  "categories": [
+    {
+      "id": "models",
+      "label": "模型与发布",
+      "items": [
+        {
+          "sourceId": "openai-news",
+          "sourceName": "OpenAI News",
+          "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
+          "url": "https://openai.com/index/partnering-with-hacktron",
+          "id": "https://openai.com/index/partnering-with-hacktron",
+          "published": "2026-11-06T08:00:00.000Z",
+          "summary": "OpenAI is partnering with Hacktron to find vulnerabilities, test connections with third-party services, and strengthen defenses with frontier AI.",
+          "categories": [
+            "Security"
+          ],
+          "author": "",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "models",
+          "metrics": {},
+          "score": 12.15,
+          "category": "models"
+        },
+        {
+          "sourceId": "openai-news",
+          "sourceName": "OpenAI News",
+          "title": "Measuring how AI agents handle everyday wet-lab science",
+          "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+          "id": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+          "published": "2026-11-06T00:00:00.000Z",
+          "summary": "OpenAI introduces BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data and handle everyday wet-lab science.",
+          "categories": [
+            "Publication"
+          ],
+          "author": "",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "models",
+          "metrics": {},
+          "score": 11.49,
+          "category": "models"
+        },
+        {
+          "sourceId": "openai-news",
+          "sourceName": "OpenAI News",
+          "title": "Australian universities are creating AI-native graduates",
+          "url": "https://openai.com/index/australian-universities-ai-native-graduates",
+          "id": "https://openai.com/index/australian-universities-ai-native-graduates",
+          "published": "2026-11-05T17:00:00.000Z",
+          "summary": "Australian universities are expanding access to ChatGPT and bringing AI into teaching and learning to prepare students for an AI-enabled workforce.",
+          "categories": [
+            "Company"
+          ],
+          "author": "",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "models",
+          "metrics": {},
+          "score": 11.3,
+          "category": "models"
+        },
+        {
+          "sourceId": "openai-news",
+          "sourceName": "OpenAI News",
+          "title": "Merge builds product and business tools with OpenAI technology",
+          "url": "https://openai.com/index/merge-builds-with-openai",
+          "id": "https://openai.com/index/merge-builds-with-openai",
+          "published": "2026-11-05T08:00:00.000Z",
+          "summary": "Merge uses GPT-6 Astra, ChatGPT, and Codex to review product code and support marketing. Its teams also use AI to plan executive dinners and prepare sales updates.",
+          "categories": [],
+          "author": "",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "models",
+          "metrics": {},
+          "score": 10.55,
+          "category": "models"
+        },
+        {
+          "sourceId": "openai-news",
+          "sourceName": "OpenAI News",
+          "title": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
+          "url": "https://openai.com/index/introducing-gpt-6-cyber",
+          "id": "https://openai.com/index/introducing-gpt-6-cyber",
+          "published": "2026-11-05T09:00:00.000Z",
+          "summary": "Introducing GPT‑6 Cyber, OpenAI’s cybersecurity model for finding exploitable vulnerabilities and developing fixes, trained to stay within authorized scope.",
+          "categories": [
+            "Product"
+          ],
+          "author": "",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "models",
+          "metrics": {},
+          "score": 10.24,
+          "category": "models"
+        },
+        {
+          "sourceId": "openai-news",
+          "sourceName": "OpenAI News",
+          "title": "Cult.fit builds operational muscle with Codex",
+          "url": "https://openai.com/index/cultfit-builds-with-codex",
+          "id": "https://openai.com/index/cultfit-builds-with-codex",
+          "published": "2026-11-05T20:00:00.000Z",
+          "summary": "Cult.fit is using Codex to help teams across functions build tools, move faster, and change how work gets done.",
+          "categories": [],
+          "author": "",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "models",
+          "metrics": {},
+          "score": 9.95,
+          "category": "models"
+        },
+        {
+          "sourceId": "openai-news",
+          "sourceName": "OpenAI News",
+          "title": "Setting a new standard for responsible AI infrastructure",
+          "url": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
+          "id": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
+          "published": "2026-11-05T02:00:00.000Z",
+          "summary": "OpenAI introduces its National Community Compact and Compute Campus Policy Blueprint to protect local resources, create jobs, and guide responsible AI infrastructure development.",
+          "categories": [
+            "Global Affairs"
+          ],
+          "author": "",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "models",
+          "metrics": {},
+          "score": 9.65,
+          "category": "models"
+        }
+      ]
+    },
+    {
+      "id": "opensource",
+      "label": "开源与生态",
+      "items": [
+        {
+          "sourceId": "github-trending",
+          "sourceName": "GitHub 新晋 AI 项目",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "opensource",
+          "categories": [],
+          "author": "lxe",
+          "id": "1448920409",
+          "title": "lxe/phoneuse",
+          "url": "https://github.com/lxe/phoneuse",
+          "published": "2026-11-07T01:28:30.000Z",
+          "summary": "See and operate an unmodified iPhone from a Linux PC: AirPlay mirror in, Bluetooth HID mouse/keyboard out, plus a CLI and skill for agents. (★ 451 · C)",
+          "metrics": {
+            "stars": 451
+          },
+          "score": 15.41,
+          "category": "opensource"
+        },
+        {
+          "sourceId": "github-trending",
+          "sourceName": "GitHub 新晋 AI 项目",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "opensource",
+          "categories": [],
+          "author": "DIYgod",
+          "id": "1448515937",
+          "title": "DIYgod/pinky",
+          "url": "https://github.com/DIYgod/pinky",
+          "published": "2026-11-06T16:53:14.000Z",
+          "summary": "Let AI agents use your phone, with you in the loop. (★ 828 · Go)",
+          "metrics": {
+            "stars": 828
+          },
+          "score": 14.7,
+          "category": "opensource"
+        },
+        {
+          "sourceId": "github-trending",
+          "sourceName": "GitHub 新晋 AI 项目",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "opensource",
+          "categories": [
+            "3d",
+            "ai-agents",
+            "gpu",
+            "metal",
+            "ray-tracing"
+          ],
+          "author": "voyager-so",
+          "id": "1447586025",
+          "title": "voyager-so/vork",
+          "url": "https://github.com/voyager-so/vork",
+          "published": "2026-11-05T22:37:07.000Z",
+          "summary": "Headless 3D and VFX engine for agents. Research preview. (★ 1126 · Rust · 3d / ai-agents / gpu / metal)",
+          "metrics": {
+            "stars": 1126
+          },
+          "score": 13.17,
+          "category": "opensource"
+        },
+        {
+          "sourceId": "github-trending",
+          "sourceName": "GitHub 新晋 AI 项目",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "opensource",
+          "categories": [
+            "ai-agents",
+            "automation",
+            "claude-code",
+            "cli",
+            "codex"
+          ],
+          "author": "KKKKhazix",
+          "id": "1443985070",
+          "title": "KKKKhazix/agent-autoloop",
+          "url": "https://github.com/KKKKhazix/agent-autoloop",
+          "published": "2026-11-03T08:02:11.000Z",
+          "summary": "让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。 (★ 4108 · TypeScript · ai-agents / automation / claude-code / cli)",
+          "metrics": {
+            "stars": 4108
+          },
+          "score": 13,
+          "category": "opensource"
+        },
+        {
+          "sourceId": "github-trending",
+          "sourceName": "GitHub 新晋 AI 项目",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "opensource",
+          "categories": [],
+          "author": "sarpstar",
+          "id": "1444112593",
+          "title": "sarpstar/cinecode",
+          "url": "https://github.com/sarpstar/cinecode",
+          "published": "2026-11-03T10:08:16.000Z",
+          "summary": "Films made with code. Short films, long YouTube videos, ads, explainers and music videos: an AI coding agent writes the script, builds every frame in code, designs the sound and hands you an MP4. (★ 1601 · Python)",
+          "metrics": {
+            "stars": 1601
+          },
+          "score": 12.6,
+          "category": "opensource"
+        },
+        {
+          "sourceId": "github-trending",
+          "sourceName": "GitHub 新晋 AI 项目",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "opensource",
+          "categories": [
+            "3d",
+            "blender",
+            "cad",
+            "llm",
+            "procedural-modeling"
+          ],
+          "author": "Sandflow-ai",
+          "id": "1444005452",
+          "title": "Sandflow-ai/sand3d",
+          "url": "https://github.com/Sandflow-ai/sand3d",
+          "published": "2026-11-03T08:23:03.000Z",
+          "summary": "3D modeling in Python, built for LLMs. (★ 1402 · HTML · 3d / blender / cad / llm)",
+          "metrics": {
+            "stars": 1402
+          },
+          "score": 12.6,
+          "category": "opensource"
+        },
+        {
+          "sourceId": "hf-blog",
+          "sourceName": "Hugging Face Blog",
+          "title": "ToyBlocks: A controlled world for robot learning and evaluation",
+          "url": "https://huggingface.co/blog/allenai/toyblocks",
+          "id": "https://huggingface.co/blog/allenai/toyblocks",
+          "published": "2026-11-06T14:00:48.000Z",
+          "summary": "",
+          "categories": [],
+          "author": "",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "opensource",
+          "metrics": {},
+          "fallback": true,
+          "score": 11.46,
+          "category": "opensource"
+        },
+        {
+          "sourceId": "github-trending",
+          "sourceName": "GitHub 新晋 AI 项目",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "opensource",
+          "categories": [],
+          "author": "worldonlyu",
+          "id": "1445802355",
+          "title": "worldonlyu/Google_AI_Pro_2Year_ZeroCost_Auto",
+          "url": "https://github.com/worldonlyu/Google_AI_Pro_2Year_ZeroCost_Auto",
+          "published": "2026-11-04T14:54:56.000Z",
+          "summary": "Google_AI_Pro_2Year_ZeroCost_Auto (★ 3262 · Python)",
+          "metrics": {
+            "stars": 3262
+          },
+          "score": 11.4,
+          "category": "opensource"
+        },
+        {
+          "sourceId": "hf-blog",
+          "sourceName": "Hugging Face Blog",
+          "title": "Egyptian and Nigerian English join the Open ASR Leaderboard",
+          "url": "https://huggingface.co/blog/open-asr-leaderboard-liva",
+          "id": "https://huggingface.co/blog/open-asr-leaderboard-liva",
+          "published": "2026-11-06T00:00:00.000Z",
+          "summary": "",
+          "categories": [],
+          "author": "",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "opensource",
+          "metrics": {},
+          "fallback": true,
+          "score": 10.29,
+          "category": "opensource"
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "label": "论文与研究",
+      "items": [
+        {
+          "sourceId": "hf-daily-papers",
+          "sourceName": "Hugging Face Daily Papers",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "research",
+          "categories": [],
+          "author": "",
+          "id": "2611.08237",
+          "title": "Terminal-style Mathematical Modeling Bench: The First Agentic and Verifiable Benchmark for Mathematical Modeling",
+          "url": "https://huggingface.co/papers/2611.08237",
+          "published": "2026-11-05T16:18:35.000Z",
+          "summary": "",
+          "metrics": {
+            "upvotes": 11
+          },
+          "fallback": true,
+          "score": 14.08,
+          "category": "research"
+        },
+        {
+          "sourceId": "hf-daily-papers",
+          "sourceName": "Hugging Face Daily Papers",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "research",
+          "categories": [],
+          "author": "",
+          "id": "2611.08376",
+          "title": "Muir: Linear Attention with Sensitivity-Allocated Gating and Matched-Filter Readout",
+          "url": "https://huggingface.co/papers/2611.08376",
+          "published": "2026-11-05T17:53:49.000Z",
+          "summary": "",
+          "metrics": {
+            "upvotes": 12
+          },
+          "fallback": true,
+          "score": 13.12,
+          "category": "research"
+        },
+        {
+          "sourceId": "arxiv-cs",
+          "sourceName": "arXiv cs.AI/CL/LG",
+          "title": "User Embeddings are Superpositions of Interpretable Behavioral Modes",
+          "url": "https://arxiv.org/abs/2611.08487v1",
+          "id": "http://arxiv.org/abs/2611.08487v1",
+          "published": "2026-11-05T18:59:42.000Z",
+          "summary": "User embeddings are central components of modern recommendation, personalization, and behavioral modeling systems. Though these embeddings can compactly encode rich behavioral information, they are inherently dense and opaque, limiting interpretability. To address this gap, we argue that user embeddings can be underst…",
+          "categories": [
+            "cs.LG"
+          ],
+          "author": "Jonathan Kozaczuk",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "research",
+          "metrics": {},
+          "fallback": true,
+          "score": 6.87,
+          "category": "research"
+        },
+        {
+          "sourceId": "arxiv-cs",
+          "sourceName": "arXiv cs.AI/CL/LG",
+          "title": "Scientist World: Grow a Research World for AI-Scientists",
+          "url": "https://arxiv.org/abs/2611.08478v1",
+          "id": "http://arxiv.org/abs/2611.08478v1",
+          "published": "2026-11-05T18:58:17.000Z",
+          "summary": "AI-Scientists arrived, but a world for them to grow in did not. Human scientists take theirs for granted $-$ centuries of open problems and shared ideas, waiting in the scientific literature. To AI-Scientists, that world is readable but not runnable, so we build Scientist World for them: every research paper becomes a…",
+          "categories": [
+            "cs.AI",
+            "cs.CL",
+            "cs.LG"
+          ],
+          "author": "Taiming Lu",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "research",
+          "metrics": {},
+          "fallback": true,
+          "score": 6.87,
+          "category": "research"
+        },
+        {
+          "sourceId": "microsoft-research",
+          "sourceName": "Microsoft Research",
+          "title": "Formally verifying agent-written full-stack web apps with PDD Kit",
+          "url": "https://www.microsoft.com/en-us/research/blog/formally-verifying-agent-written-full-stack-web-apps-with-pdd-kit/",
+          "id": "https://www.microsoft.com/en-us/research/?p=1191852",
+          "published": "2026-11-05T16:00:00.000Z",
+          "summary": "<img fetchpriority=\"high\" decoding=\"async\" width=\"1400\" height=\"788\" src=\"https://www.microsoft.com/en-us/research/wp-content/uploads/2026/10/PDDKitRecap-BlogHeroFeature-1400x788-1.jpg\" alt=\"PDDKit decision flowchart on green gradient background\" class=\"wp-image-1191862\" srcset=\"https://www.microsoft.com/en-us/researc…",
+          "categories": [
+            "Research Blog"
+          ],
+          "author": "Alex Lavaee, Matthai Philipose",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "research",
+          "metrics": {},
+          "score": 5.42,
+          "category": "research"
+        }
+      ]
+    },
+    {
+      "id": "products",
+      "label": "产品与应用",
+      "items": [
+        {
+          "sourceId": "latent-space",
+          "sourceName": "Latent Space",
+          "title": "[One Million AI Engineer Special] How Stanford Teaches AI-Native Engineering — Mihail Eric, Monaco",
+          "url": "https://latent.space/p/one_million_ai_engineer_special_how_stanford_teaches_ai-native_engineering_mihail_eric_monaco/",
+          "id": "urn:latent-space:post:pod_ep_01a1bcf7-771f-7c67-ba1d-94f856e787b0",
+          "published": "2026-11-08T21:23:29.000Z",
+          "summary": "What do you assign when a coding agent can finish last year’s homework in one prompt? In the second run of Stanford’s CS146S, Mihail Eric brought open-source maintainers into the course. Students have to learn an unfamiliar repo, propose a change, and explain the patch to the person who might merge it. We invited Miha…",
+          "categories": [],
+          "author": "Latent.Space",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "opinion",
+          "metrics": {},
+          "score": 17.67,
+          "category": "products"
+        },
+        {
+          "sourceId": "hn-algolia",
+          "sourceName": "Hacker News Search",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "engineering",
+          "categories": [
+            "story",
+            "author_antonoo",
+            "story_50414445"
+          ],
+          "author": "",
+          "id": "50414445",
+          "title": "We deleted almost all our agent code, and other lessons from 100k PRs",
+          "url": "https://lovable.dev/blog/how-we-built-lovable-and-why-we-keep-rebuilding-it",
+          "published": "2026-11-08T16:09:37.000Z",
+          "summary": "Hacker News 讨论：We deleted almost all our agent code, and other lessons from 100k PRs",
+          "metrics": {
+            "points": 13,
+            "comments": 2
+          },
+          "score": 15.05,
+          "category": "products"
+        },
+        {
+          "sourceId": "lobsters-ai",
+          "sourceName": "Lobsters AI",
+          "title": "What can I realistically do with local AI on a Mac mini M5 Pro (48GB)?",
+          "url": "https://lobste.rs/s/umsitb/what_can_i_realistically_do_with_local_ai",
+          "id": "https://lobste.rs/s/umsitb",
+          "published": "2026-11-08T17:07:51.000Z",
+          "summary": "I just got a Mac mini with an M5 Pro (base CPU config) and 48GB of unified memory. I want to run as much AI locally as makes sense, but it's hard to separate what actually works day to day from benchmark hype. What I'd like to do: Coding: autocomplete and agentic workflows with local models Image generation Anything e…",
+          "categories": [
+            "mac",
+            "ask",
+            "ai"
+          ],
+          "author": "by napolux",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "engineering",
+          "metrics": {},
+          "score": 12.72,
+          "category": "products"
+        },
+        {
+          "sourceId": "hn-algolia",
+          "sourceName": "Hacker News Search",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "engineering",
+          "categories": [
+            "story",
+            "author_lnenad",
+            "story_50413587",
+            "show_hn"
+          ],
+          "author": "",
+          "id": "50413587",
+          "title": "Show HN: Lipwise",
+          "url": "https://getlipwise.com/",
+          "published": "2026-11-08T14:19:07.000Z",
+          "summary": "Hey HN, my name is Nenad, my longer text submission with more information got flagged even though I wrote it, I guess I fail the touring test. Anyway, Lipwise is a narration app with an LLM in the pipeline capable of fixing mistakes and doing transformations, and the best thing is even with a mediocre machine it can b…",
+          "metrics": {
+            "points": 2,
+            "comments": 0
+          },
+          "score": 12.71,
+          "category": "products"
+        },
+        {
+          "sourceId": "ars-ai",
+          "sourceName": "Ars Technica AI",
+          "title": "“Does Meta think we can’t read?” Meta abandons sketchy commercial terms update.",
+          "url": "https://arstechnica.com/tech-policy/2026/11/does-meta-think-we-cant-read-meta-abandons-sketchy-commercial-terms-update/",
+          "id": "https://arstechnica.com/tech-policy/2026/11/does-meta-think-we-cant-read-meta-abandons-sketchy-commercial-terms-update/",
+          "published": "2026-11-06T17:43:02.000Z",
+          "summary": "After weeks of backlash —and a failed attempt to quell it —Meta has indefinitely delayed plans to update its commercial terms and require Meta Business account users to allow extensive AI training on external websites linked on Facebook. \"We're pausing the ‌changes ⁠as we continue to engage with stakeholders and ​take…",
+          "categories": [
+            "AI",
+            "Policy",
+            "ai crawling",
+            "ai scraping",
+            "AI training",
+            "Facebook",
+            "Mark Zuckerberg",
+            "meta"
+          ],
+          "author": "Ashley Belanger",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "products",
+          "metrics": {},
+          "fallback": true,
+          "score": 11.76,
+          "category": "products"
+        },
+        {
+          "sourceId": "ars-ai",
+          "sourceName": "Ars Technica AI",
+          "title": "Could potential AI clones of GTA VI force a quicker official port?",
+          "url": "https://arstechnica.com/gaming/2026/11/could-potential-ai-clones-of-gta-vi-force-a-quicker-official-port/",
+          "id": "https://arstechnica.com/gaming/2026/11/could-potential-ai-clones-of-gta-vi-force-a-quicker-official-port/",
+          "published": "2026-11-06T16:19:12.000Z",
+          "summary": "Yesterday, when reporting on emerging efforts to pipe the console version of GTA VI through a PC's DLSS-powered Nvidia GPU , we mentioned in passing that PC players could instead just wait for the AI-assisted decompilation port that will no doubt be coming in short order. Now, a former Rockstar tech director says he t…",
+          "categories": [
+            "AI",
+            "Gaming",
+            "decompilation",
+            "grand theft auto",
+            "GTA VI",
+            "rockstar"
+          ],
+          "author": "Kyle Orland",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "products",
+          "metrics": {},
+          "fallback": true,
+          "score": 11.65,
+          "category": "products"
+        },
+        {
+          "sourceId": "theverge",
+          "sourceName": "The Verge",
+          "title": "Here’s the full text of Jensen Huang’s memo to Nvidia",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1029595/full-text-jensen-huang-affair-memo-nvidia",
+          "id": "https://www.theverge.com/?p=1029595",
+          "published": "2026-11-08T22:54:50.000Z",
+          "summary": "<img alt=\"\" data-caption=\"Jensen Huang, chief executive officer of Nvidia Corp., attends a media briefing following the company's \"Japan AI Ecosystem\" reception in Tokyo, Japan, on Thursday, July 16, 2026. Japan is planning to buy 27,500 next-generation Rubin chips from Nvidia Corp. to build a homegrown foundational A…",
+          "categories": [
+            "AI",
+            "News",
+            "Nvidia",
+            "Tech"
+          ],
+          "author": "Terrence O’Brien",
+          "lang": "en",
+          "tier": 3,
+          "trustCategory": false,
+          "declaredCategory": "products",
+          "metrics": {},
+          "score": 10,
+          "category": "products"
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "label": "行业与资本",
+      "items": [
+        {
+          "sourceId": "techcrunch-ai",
+          "sourceName": "TechCrunch AI",
+          "title": "Nvidia will investigate CEO Jensen Huang’s relationship with possible Chinese spy",
+          "url": "https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/",
+          "id": "https://techcrunch.com/?p=3186128",
+          "published": "2026-11-08T21:00:11.000Z",
+          "summary": "In a memo to the company, Huang admitted that he had an affair.",
+          "categories": [
+            "AI",
+            "Government & Policy",
+            "nvidia",
+            "Jensen Huang"
+          ],
+          "author": "Anthony Ha",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "industry",
+          "metrics": {},
+          "score": 16.04,
+          "category": "industry"
+        },
+        {
+          "sourceId": "techcrunch-ai",
+          "sourceName": "TechCrunch AI",
+          "title": "After the midterms, things are looking rocky for Elon Musk and data centers",
+          "url": "https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers/",
+          "id": "https://techcrunch.com/?p=3186091",
+          "published": "2026-11-07T22:07:22.000Z",
+          "summary": "On Equity, we unpacked what the midterms mean for the tech industry.",
+          "categories": [
+            "AI",
+            "Government & Policy",
+            "Elon Musk",
+            "OpenAI"
+          ],
+          "author": "Anthony Ha",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "industry",
+          "metrics": {},
+          "score": 15.33,
+          "category": "industry"
+        },
+        {
+          "sourceId": "qbitai",
+          "sourceName": "量子位",
+          "title": "OpenAI新融资到账110亿美元，不及原计划一半",
+          "url": "https://www.qbitai.com/2026/11/508344.html",
+          "id": "https://www.qbitai.com/?p=508344",
+          "published": "2026-11-07T08:11:25.000Z",
+          "summary": "融资缩水，硅谷投资人也谨慎了",
+          "categories": [
+            "资讯",
+            "AI，算力",
+            "ChatGPT",
+            "OpenAI",
+            "融资"
+          ],
+          "author": "田, 晏林",
+          "lang": "zh",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "industry",
+          "metrics": {},
+          "score": 14.57,
+          "category": "industry"
+        },
+        {
+          "sourceId": "techcrunch-ai",
+          "sourceName": "TechCrunch AI",
+          "title": "Megaspeed exec was recruited to spy on Nvidia CEO, according to US intelligence memo",
+          "url": "https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/",
+          "id": "https://techcrunch.com/?p=3186087",
+          "published": "2026-11-07T21:17:08.000Z",
+          "summary": "A memo circulated earlier this year reportedly claimed that China’s Ministry of State Security recruited a female technology executive to spy on Nvidia's CEO.",
+          "categories": [
+            "AI",
+            "Government & Policy"
+          ],
+          "author": "Anthony Ha",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "industry",
+          "metrics": {},
+          "score": 14.06,
+          "category": "industry"
+        },
+        {
+          "sourceId": "qbitai",
+          "sourceName": "量子位",
+          "title": "资本正在撤离“世界模型”",
+          "url": "https://www.qbitai.com/2026/11/508466.html",
+          "id": "https://www.qbitai.com/?p=508466",
+          "published": "2026-11-08T04:09:55.000Z",
+          "summary": "没有永远的夏天",
+          "categories": [
+            "资讯",
+            "世界模型"
+          ],
+          "author": "衡宇",
+          "lang": "zh",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "industry",
+          "metrics": {},
+          "score": 13.44,
+          "category": "industry"
+        },
+        {
+          "sourceId": "techcrunch-ai",
+          "sourceName": "TechCrunch AI",
+          "title": "Crusoe sells troubled Wyoming data center project to Google",
+          "url": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/",
+          "id": "https://techcrunch.com/?p=3186051",
+          "published": "2026-11-07T01:40:28.000Z",
+          "summary": "The deal highlights the challenges of developing massive AI data centers.",
+          "categories": [
+            "AI",
+            "ai infrastructure",
+            "crusoe",
+            "datacenter",
+            "Google"
+          ],
+          "author": "Marina Temkin",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "industry",
+          "metrics": {},
+          "score": 12.43,
+          "category": "industry"
+        },
+        {
+          "sourceId": "mit-tr-ai",
+          "sourceName": "MIT Tech Review",
+          "title": "I watched a humanoid robot clean my apartment. It felt like a taste of the future.",
+          "url": "https://www.technologyreview.com/2026/11/06/1148090/i-watched-a-humanoid-robot-clean-my-apartment-it-felt-like-a-taste-of-the-future/",
+          "id": "https://www.technologyreview.com/?p=1148090",
+          "published": "2026-11-06T10:00:00.000Z",
+          "summary": "<div data-chronoton-summary=\" — San Francisco startup Tau Robotics is sending humanoid robots into people's homes, piloted remotely by humans who collect training data while the robots clean — making the service cheaper than you'd expect for something this futuristic. — The four-and-a-half-foot robot climbed stairs li…",
+          "categories": [
+            "Artificial intelligence",
+            "App",
+            "artificial intelligence",
+            "Summary"
+          ],
+          "author": "Grace Huckins",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "industry",
+          "metrics": {},
+          "fallback": true,
+          "score": 11.12,
+          "category": "industry"
+        },
+        {
+          "sourceId": "mit-tr-ai",
+          "sourceName": "MIT Tech Review",
+          "title": "Texas was the new epicenter of the AI data center buildout. That might be kaput.",
+          "url": "https://www.technologyreview.com/2026/11/04/1148043/texas-was-the-new-epicenter-of-the-ai-data-center-buildout-that-might-be-kaput/",
+          "id": "https://www.technologyreview.com/?p=1148043",
+          "published": "2026-11-04T18:50:55.000Z",
+          "summary": "<div data-chronoton-summary=\" Texas has been the fastest-growing data center market in the US, but a Democratic sweep of the governor's mansion and Senate seat—with candidates who campaigned hard against data centers—has the industry bracing for moratoriums and permit freezes. Two facilities alone—Stargate Frontier an…",
+          "categories": [
+            "Artificial intelligence",
+            "App",
+            "artificial intelligence",
+            "Summary"
+          ],
+          "author": "James O'Donnell",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "industry",
+          "metrics": {},
+          "fallback": true,
+          "score": 9.6,
+          "category": "industry"
+        }
+      ]
+    },
+    {
+      "id": "opinion",
+      "label": "观点与深度",
+      "items": [
+        {
+          "sourceId": "latent-space",
+          "sourceName": "Latent Space",
+          "title": "How Stanford Teaches AI-Native Engineering — Mihail Eric, Monaco",
+          "url": "https://latent.space/p/cs146s/",
+          "id": "urn:latent-space:post:post_c965535e-89a8-4755-b38e-4e9eda7f9bb3",
+          "published": "2026-11-08T21:41:44.000Z",
+          "summary": "The AI Engineer YouTube channel just crossed one million subscribers . Thank you to everyone who’s watched a talk, sent one to a teammate, or put something they learned into production. For this special, we wanted to sit down with someone who has to answer a question a lot of us are asking at work: what should a softw…",
+          "categories": [],
+          "author": "swyx .ai",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "opinion",
+          "metrics": {},
+          "score": 16.1,
+          "category": "opinion"
+        },
+        {
+          "sourceId": "latent-space",
+          "sourceName": "Latent Space",
+          "title": "[AINews] Anthropic IPO: Whither Now?",
+          "url": "https://latent.space/p/ainews-anthropic-ipo-whither-now/",
+          "id": "urn:latent-space:post:post_7716b2e3-ddac-48e0-8890-6bd0b896d287",
+          "published": "2026-11-07T03:04:53.000Z",
+          "summary": "It’s a relatively quiet news day, and the AI market rout we referenced obliquely two days ago has deepened, though it might be leveling off not even halfway into bear market territory (-10% on Nasdaq, not -20%). That said, everything being “priced to perfection” means any surprise that is not to the upside is probably…",
+          "categories": [
+            "ainews: weekday roundups"
+          ],
+          "author": "swyx .ai",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "opinion",
+          "metrics": {},
+          "score": 13.74,
+          "category": "opinion"
+        },
+        {
+          "sourceId": "latent-space",
+          "sourceName": "Latent Space",
+          "title": "[AINews] Inkling 2 Small: 17A-594B trained in 68 hours on 12T tokens, beating Muse Spark",
+          "url": "https://latent.space/p/ainews-inkling-2-small-17a-594b-trained-in-68-hours-on-12t-tokens-beating-muse-spark/",
+          "id": "urn:latent-space:post:post_f6bfef19-e48a-4a0a-a73a-8361a44fe6a9",
+          "published": "2026-11-06T10:35:21.000Z",
+          "summary": "Build AI systems with context graphs and agentic memory. Join Andrew Ng and AI engineers at NODES 2026 for 100+ live technical sessions . Free, online, 24 hours. Save your spot ! There was a time in the early days of Thinking Machines, post 2025 start and cofounder departures , when their going concern as a neolab was…",
+          "categories": [
+            "ainews: weekday roundups"
+          ],
+          "author": "swyx .ai",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "opinion",
+          "metrics": {},
+          "score": 12.37,
+          "category": "opinion"
+        },
+        {
+          "sourceId": "latent-space",
+          "sourceName": "Latent Space",
+          "title": "Controlling Biology - Fabian Theis, Helmholtz Munich",
+          "url": "https://latent.space/p/controlling-biology-fabian-theis-helmholtz-munich/",
+          "id": "urn:latent-space:post:post_e4eae676-23c0-4ee3-bf61-919e4d3b3909",
+          "published": "2026-11-06T15:10:53.000Z",
+          "summary": "Fabian Theis has been one of the key players in the various iterations of the Virtual Cell concept and initiatives. It is not hyperbole at all to say that his lab has been pushing the frontier of algorithms to understand multi-scale, multi-modal (”multiomics”), time-varying biological data. Indeed, he has shaped the l…",
+          "categories": [],
+          "author": "RJ Honicky",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "opinion",
+          "metrics": {},
+          "score": 10.35,
+          "category": "opinion"
+        },
+        {
+          "sourceId": "interconnects",
+          "sourceName": "Interconnects",
+          "title": "How big is the open model economy today?",
+          "url": "https://www.interconnects.ai/p/how-well-can-we-measure-open-model",
+          "id": "https://www.interconnects.ai/p/how-well-can-we-measure-open-model",
+          "published": "2026-11-04T16:35:44.000Z",
+          "summary": "My longest running agent testbed has been building the Interconnects Dashboard — an aggregator of all of the best data on open model adoption and performance from across the web. This dashboard is freely available and becoming quite useful. Still, all the measurements we have on open model adoption are incredibly impr…",
+          "categories": [],
+          "author": "Nathan Lambert",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "opinion",
+          "metrics": {},
+          "fallback": true,
+          "score": 8.4,
+          "category": "opinion"
+        }
+      ]
+    },
+    {
+      "id": "engineering",
+      "label": "工具与工程",
+      "items": [
+        {
+          "sourceId": "hn-newest",
+          "sourceName": "Hacker News (AI)",
+          "title": "Apple CEO Presses Software Chief to Pursue More Ambitious AI Strategy",
+          "url": "https://www.bloomberg.com/news/newsletters/2026-11-08/apple-explores-turning-siri-ai-into-chatgpt-dots-like-agent-ios-28-shake-up",
+          "id": "https://news.ycombinator.com/item?id=50414021",
+          "published": "2026-11-08T15:19:51.000Z",
+          "summary": "Article URL: https://www.bloomberg.com/news/newsletters/2026-11-08/apple-explores-turning-siri-ai-into-chatgpt-dots-like-agent-ios-28-shake-up Comments URL: https://news.ycombinator.com/item?id=50414021 Points: 34 # Comments: 58",
+          "categories": [],
+          "author": "mfiguiere",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "engineering",
+          "metrics": {},
+          "score": 13.77,
+          "category": "engineering"
+        },
+        {
+          "sourceId": "hn-algolia",
+          "sourceName": "Hacker News Search",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "engineering",
+          "categories": [
+            "story",
+            "author_lamarcol",
+            "story_50418158",
+            "show_hn"
+          ],
+          "author": "",
+          "id": "50418158",
+          "title": "Show HN: My first project, an AI-powered financial news analyzer",
+          "url": "https://github.com/lamarcol/NotBot",
+          "published": "2026-11-08T22:34:06.000Z",
+          "summary": "I'm 17, and I started NotBot a few months ago to see whether I could turn an idea into a working project. My main interest is economics, not becoming a programmer, but I enjoy experimenting with code. A few months ago, I had the idea of creating a program that would analyze the most recent news about a specific stock…",
+          "metrics": {
+            "points": 2,
+            "comments": 0
+          },
+          "score": 13.4,
+          "category": "engineering"
+        },
+        {
+          "sourceId": "hn-algolia",
+          "sourceName": "Hacker News Search",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "engineering",
+          "categories": [
+            "story",
+            "author_modinfo",
+            "story_50416722"
+          ],
+          "author": "",
+          "id": "50416722",
+          "title": "LLMs can understand and write neural network weights",
+          "url": "https://github.com/RikiyaT/lm_understand-logs",
+          "published": "2026-11-08T20:18:49.000Z",
+          "summary": "Hacker News 讨论：LLMs can understand and write neural network weights",
+          "metrics": {
+            "points": 2,
+            "comments": 0
+          },
+          "score": 13.21,
+          "category": "engineering"
+        },
+        {
+          "sourceId": "hn-newest",
+          "sourceName": "Hacker News (AI)",
+          "title": "How I Fight AI Brain Fry",
+          "url": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
+          "id": "https://news.ycombinator.com/item?id=50416363",
+          "published": "2026-11-08T19:37:42.000Z",
+          "summary": "Article URL: https://sergeykuhne.com/blog/fighting-ai-brain-fry Comments URL: https://news.ycombinator.com/item?id=50416363 Points: 146 # Comments: 124",
+          "categories": [],
+          "author": "kyunez",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "engineering",
+          "metrics": {},
+          "score": 11.72,
+          "category": "engineering"
+        },
+        {
+          "sourceId": "hn-newest",
+          "sourceName": "Hacker News (AI)",
+          "title": "Silicon Valley Promises AI Will Cure Disease. Drugmaker CEOs Aren't Buying It",
+          "url": "https://www.wsj.com/tech/ai/silicon-valley-promises-ai-will-cure-disease-drugmaker-ceos-arent-buying-it-5218511c",
+          "id": "https://news.ycombinator.com/item?id=50415817",
+          "published": "2026-11-08T18:43:07.000Z",
+          "summary": "Article URL: https://www.wsj.com/tech/ai/silicon-valley-promises-ai-will-cure-disease-drugmaker-ceos-arent-buying-it-5218511c Comments URL: https://news.ycombinator.com/item?id=50415817 Points: 89 # Comments: 108",
+          "categories": [],
+          "author": "zzzeek",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "engineering",
+          "metrics": {},
+          "score": 11.65,
+          "category": "engineering"
+        },
+        {
+          "sourceId": "hn-newest",
+          "sourceName": "Hacker News (AI)",
+          "title": "The End of AI Frontiers",
+          "url": "https://hunch.net/?p=13764006",
+          "id": "https://news.ycombinator.com/item?id=50406589",
+          "published": "2026-11-07T18:04:07.000Z",
+          "summary": "Article URL: https://hunch.net/?p=13764006 Comments URL: https://news.ycombinator.com/item?id=50406589 Points: 81 # Comments: 4",
+          "categories": [],
+          "author": "andsoitis",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "engineering",
+          "metrics": {},
+          "score": 9.59,
+          "category": "engineering"
+        },
+        {
+          "sourceId": "hn-newest",
+          "sourceName": "Hacker News (AI)",
+          "title": "The AI sell-off compared to well-known stock market crashes",
+          "url": "https://www.kadoa.com/companies/insights/ai-selloff-perspective",
+          "id": "https://news.ycombinator.com/item?id=50401029",
+          "published": "2026-11-07T02:20:06.000Z",
+          "summary": "Article URL: https://www.kadoa.com/companies/insights/ai-selloff-perspective Comments URL: https://news.ycombinator.com/item?id=50401029 Points: 98 # Comments: 83",
+          "categories": [],
+          "author": "hubraumhugo",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "engineering",
+          "metrics": {},
+          "score": 8.28,
+          "category": "engineering"
+        }
+      ]
+    }
+  ]
+}
