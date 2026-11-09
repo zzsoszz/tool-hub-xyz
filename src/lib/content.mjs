@@ -102,6 +102,55 @@ function cutText(text, room) {
   return `${text.slice(0, cut).trimEnd()}…`;
 }
 
+const TAG_PATTERN = /<(\/)?([A-Za-z][A-Za-z0-9:._-]*)((?:"[^"]*"|'[^']*'|[^>"'])*?)(\/)?>/g;
+
+// 只作用于已经过 sanitizeArticle 清洗的正文：丢弃没有配对开标签的闭合标签，
+// 并为来源里漏掉的开标签补上闭合，保证条目页正文结构完整。
+export function balanceHtml(html) {
+  const source = String(html ?? '');
+  if (!source) return '';
+  const out = [];
+  const stack = [];
+  let cursor = 0;
+  for (const match of source.matchAll(TAG_PATTERN)) {
+    out.push(source.slice(cursor, match.index));
+    cursor = match.index + match[0].length;
+    const name = match[2].toLowerCase();
+    if (!KEEP_TAGS.has(name) || match[4] || VOID_TAGS.has(name)) {
+      out.push(match[0]);
+      continue;
+    }
+    if (match[1]) {
+      const index = stack.lastIndexOf(name);
+      if (index === -1) continue;
+      for (let at = stack.length - 1; at > index; at -= 1) out.push(`</${stack[at]}>`);
+      stack.length = index;
+      out.push(match[0]);
+      continue;
+    }
+    out.push(match[0]);
+    stack.push(name);
+  }
+  out.push(source.slice(cursor));
+  for (const name of stack.reverse()) out.push(`</${name}>`);
+  return out.join('').trim();
+}
+
+// 历史正文可能带着旧截断逻辑留下的空壳标签，渲染前先抹平。
+export function repairArticle(html) {
+  let text = String(html ?? '');
+  for (let round = 0; round < 6; round += 1) {
+    const next = text
+      .replace(/<p>\s*<\/p>/g, '')
+      .replace(/<li>\s*(?:<p>\s*<\/p>\s*)*<\/li>/g, '')
+      .replace(/<(ul|ol)>\s*<\/\1>/g, '')
+      .replace(/<blockquote>\s*<\/blockquote>/g, '');
+    if (next === text) break;
+    text = next;
+  }
+  return balanceHtml(text);
+}
+
 // 把第三方正文收敛成安全子集：保留段落/列表/表格/代码，丢弃脚本与事件属性，
 // 并按段落为边界截断，避免条目页出现「半张表格」或糊成一坨的长串。
 export function sanitizeArticle(raw, { baseUrl = '', maxChars = 3200, minChars = 80 } = {}) {
@@ -122,13 +171,16 @@ export function sanitizeArticle(raw, { baseUrl = '', maxChars = 3200, minChars =
     if (!segment) segment = { pieces: [], visible: '' };
     return segment;
   };
+  // 文本片段记录当时的标签栈，截断时才能就地闭合所有容器，
+  // 不会留下 <li><p></p></li> 这种空壳或多余的闭合标签。
   const append = (target, html, text) => {
+    const openTags = stack.map((entry) => entry.tag);
     if (!text) {
-      target.pieces.push({ html, text: '' });
+      target.pieces.push({ html, text: '', openTags });
       return;
     }
     const prefix = target.visible && !/[ \n]$/.test(target.visible) ? ' ' : '';
-    target.pieces.push({ html, text: `${prefix}${text}` });
+    target.pieces.push({ html, text: `${prefix}${text}`, openTags });
     target.visible = `${target.visible}${prefix}${text}`;
   };
 
@@ -151,7 +203,8 @@ export function sanitizeArticle(raw, { baseUrl = '', maxChars = 3200, minChars =
     }
 
     if (DROP_TAGS.has(token.name)) {
-      if (token.type !== 'close') {
+      // 只有成对标签才进入跳过模式：自闭合的 <source/>、<embed/> 没有闭合标记。
+      if (token.type === 'open') {
         skipTag = token.name;
         skipDepth = 1;
       }
@@ -211,12 +264,7 @@ export function sanitizeArticle(raw, { baseUrl = '', maxChars = 3200, minChars =
     if (truncated) break;
     const taken = [];
     const takenText = [];
-    for (let at = 0; at < entry.pieces.length; at += 1) {
-      const piece = entry.pieces[at];
-      if (truncated) {
-        if (!piece.text) taken.push(piece.html);
-        continue;
-      }
+    for (const piece of entry.pieces) {
       if (used + piece.text.length <= maxChars) {
         taken.push(piece.html);
         takenText.push(piece.text);
@@ -226,16 +274,15 @@ export function sanitizeArticle(raw, { baseUrl = '', maxChars = 3200, minChars =
       const room = Math.max(0, maxChars - used);
       if (room > 20) {
         const cut = cutText(piece.text, room);
-        taken.push(piece.html.slice(0, 0) + escapeHtml(cut));
+        taken.push(escapeHtml(cut));
         takenText.push(cut);
         used += cut.length;
       }
-      for (let rest = at + 1; rest < entry.pieces.length; rest += 1) {
-        if (!entry.pieces[rest].text) taken.push(entry.pieces[rest].html);
-      }
+      for (const tag of [...piece.openTags].reverse()) taken.push(`</${tag}>`);
       truncated = true;
+      break;
     }
-    kept.push(taken.join(''));
+    kept.push(balanceHtml(taken.join('')));
     keptText.push(takenText.join(''));
   }
 
@@ -246,6 +293,7 @@ export function sanitizeArticle(raw, { baseUrl = '', maxChars = 3200, minChars =
     if (text) leadParts.push(text);
     if (leadParts.join('\n').length >= 420) break;
   }
+  while (leadParts.length > 1 && leadParts[leadParts.length - 1].length < 14) leadParts.pop();
 
   return {
     html: kept.join('\n'),

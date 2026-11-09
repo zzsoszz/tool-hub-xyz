@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { sanitizeArticle, textToArticle } from '../../src/lib/content.mjs';
+import { balanceHtml, repairArticle, sanitizeArticle, textToArticle } from '../../src/lib/content.mjs';
 
 test('keepsParagraphsListsAndTables', () => {
   const article = sanitizeArticle(
@@ -58,4 +58,54 @@ test('buildsReadableParagraphsFromPlainText', () => {
 test('returnsNullForTooShortBodies', () => {
   assert.equal(sanitizeArticle('<p>太短</p>', { baseUrl: 'https://ex.test/a' }), null);
   assert.equal(sanitizeArticle('', { baseUrl: 'https://ex.test/a' }), null);
+});
+
+function tagBalance(html) {
+  const stack = [];
+  const orphans = [];
+  for (const match of html.matchAll(/<(\/)?([a-z][a-z0-9]*)([^>]*)>/gi)) {
+    const name = match[2].toLowerCase();
+    if (['br', 'hr', 'img'].includes(name)) continue;
+    if (!match[1]) {
+      stack.push(name);
+      continue;
+    }
+    const index = stack.lastIndexOf(name);
+    if (index === -1) {
+      orphans.push(name);
+      continue;
+    }
+    stack.length = index;
+  }
+  return { orphans, unclosed: stack };
+}
+
+test('balancesUnclosedParagraphsInSourceBodies', () => {
+  const article = sanitizeArticle('<p>这段正文漏了闭合标签<ul><li>实测 1.26 到 1.42 倍</li><li>同机同模型对比</li></ul>结论：确实更快，但没有 2 倍。', { baseUrl: 'https://lcz.me/topic/2607', minChars: 20 });
+  const { orphans, unclosed } = tagBalance(article.html);
+  assert.deepEqual(orphans, []);
+  assert.deepEqual(unclosed, []);
+});
+
+test('closesContainersAtTheCutPointInsteadOfEmptyShells', () => {
+  const source = Array.from({ length: 10 }, (_, index) => `<p>第 ${index + 1} 节</p><ul><li><p>${'实测数据与结论。'.repeat(20)}</p></li><li><p>后续条目</p></li></ul>`).join('\n');
+  const article = sanitizeArticle(source, { baseUrl: 'https://lcz.me/topic/2857', maxChars: 800 });
+  assert.equal(article.truncated, true);
+  assert.ok(!article.html.includes('<p></p>'), article.html.slice(-200));
+  assert.ok(!/<li>\s*<\/li>/.test(article.html));
+  const { orphans, unclosed } = tagBalance(article.html);
+  assert.deepEqual(orphans, []);
+  assert.deepEqual(unclosed, []);
+});
+
+test('repairsStoredArticlesThatCarryStrayClosingTags', () => {
+  const stored = '<p>双卡提升 18.8%。</p><ul><li><p>已上 TP=2</p></li><li><p></p></li></ul></p></li><li><p></p></li></ul>';
+  const repaired = repairArticle(stored);
+  assert.ok(!repaired.includes('<p></p>'));
+  assert.ok(repaired.includes('双卡提升 18.8%。'));
+  const { orphans, unclosed } = tagBalance(repaired);
+  assert.deepEqual(orphans, []);
+  assert.deepEqual(unclosed, []);
+  assert.equal(repairArticle(repaired), repaired);
+  assert.equal(balanceHtml(''), '');
 });

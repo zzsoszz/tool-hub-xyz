@@ -3,6 +3,7 @@ import path from 'node:path';
 import { createFilter } from './lib/filter.mjs';
 import { filterNewItems, itemKeys, normalizeSeen, pruneSeen, serializeSeen } from './lib/dedupe.mjs';
 import { dayKey } from './lib/normalize.mjs';
+import { repairArticle } from './lib/content.mjs';
 import { selectByCategoryQuota } from './lib/select.mjs';
 import { fetchAllSources, parseSourceBody } from './lib/sources.mjs';
 import { itemSlug, rankCompare } from './lib/items.mjs';
@@ -113,7 +114,9 @@ async function main() {
   const seenRaw = await readFile(seenPath, 'utf8').catch(() => null);
   const seen = normalizeSeen(seenRaw ? JSON.parse(seenRaw) : null);
   const previousDigest = JSON.parse(await readFile(digestPath, 'utf8').catch(() => 'null'));
-  const published = publishedItemsOf(previousDigest);
+  const published = publishedItemsOf(previousDigest).map((item) =>
+    item.content?.html ? { ...item, content: { ...item.content, html: repairArticle(item.content.html) } } : item,
+  );
   const accepted = acceptedKeysOf(published);
 
   const unseen = [];
