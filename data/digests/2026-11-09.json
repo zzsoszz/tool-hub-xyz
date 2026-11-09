@@ -1,17 +1,17 @@
 {
   "day": "2026-11-09",
-  "generatedAt": "2026-11-09T04:29:27.798Z",
+  "generatedAt": "2026-11-09T04:35:15.897Z",
   "timezone": "Asia/Shanghai",
   "windowHours": 48,
   "counts": {
     "sources": 36,
-    "okSources": 32,
-    "fetched": 2917,
-    "duplicates": 13,
-    "carried": 0,
-    "added": 30,
+    "okSources": 35,
+    "fetched": 2952,
+    "duplicates": 2921,
+    "carried": 30,
+    "added": 0,
     "fallback": 4,
-    "lowQuality": 2320,
+    "lowQuality": 0,
     "published": 30
   },
   "sources": [
@@ -102,9 +102,9 @@
     {
       "id": "arxiv-cs",
       "name": "arXiv cs.AI/CL/LG",
-      "ok": false,
-      "items": 0,
-      "error": "HTTP 429"
+      "ok": true,
+      "items": 20,
+      "error": null
     },
     {
       "id": "hn-newest",
@@ -130,9 +130,9 @@
     {
       "id": "reddit-local-llama",
       "name": "r/LocalLLaMA",
-      "ok": false,
-      "items": 0,
-      "error": "HTTP 429"
+      "ok": true,
+      "items": 25,
+      "error": null
     },
     {
       "id": "github-trending",
@@ -144,9 +144,9 @@
     {
       "id": "microsoft-research",
       "name": "Microsoft Research",
-      "ok": false,
-      "items": 0,
-      "error": "UND_ERR_CONNECT_TIMEOUT"
+      "ok": true,
+      "items": 10,
+      "error": null
     },
     {
       "id": "github-blog",
@@ -201,7 +201,7 @@
       "id": "juejin",
       "name": "掘金 AI",
       "ok": true,
-      "items": 20,
+      "items": 0,
       "error": null
     },
     {
