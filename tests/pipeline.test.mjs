@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { execFileSync } from 'node:child_process';
-import { readFile, rm } from 'node:fs/promises';
+import { readdir, readFile, rm } from 'node:fs/promises';
 import path from 'node:path';
 import test from 'node:test';
 
@@ -28,8 +28,11 @@ test('collectsFixturesOfflineIntoADigest', () => {
 });
 
 test('digestItemsCarrySlugsAndPracticality', async () => {
-  const day = new Date().toISOString().slice(0, 10);
-  const digest = JSON.parse(await readFile(path.join(ROOT, DATA_DIR, 'digests', `${day}.json`), 'utf8'));
+  // 采集按本地日期落盘，测试别用 UTC 日期去猜文件名：跨日界线时两者会差一天。
+  const digestDir = path.join(ROOT, DATA_DIR, 'digests');
+  const names = (await readdir(digestDir)).filter((file) => file.endsWith('.json')).sort();
+  assert.ok(names.length, '离线采集没有写出日报文件');
+  const digest = JSON.parse(await readFile(path.join(digestDir, names.at(-1)), 'utf8'));
   const items = digest.categories.flatMap((group) => group.items);
   assert.ok(items.length >= 4);
   assert.ok(items.every((item) => /^[0-9a-f]{12}$/.test(item.slug)));

@@ -40,14 +40,18 @@ test('matchesAiKeywordsForUntrustedGeneralSources', () => {
   assert.equal(filter.isRelevant(item({ title: 'Sayd airline reports quarterly earnings' })), false);
 });
 
-test('categorizesPaperItemsAsResearch', () => {
-  const paper = item({ title: 'New paper benchmarks reasoning models on graduate-level math', summary: 'Results across 12 benchmarks show training gains.' });
-  assert.equal(filter.categorize(paper), 'ideas');
+test('categorizesByArticleContentInsteadOfSourceLabels', () => {
+  const paper = item({ title: 'New paper benchmarks reasoning models on graduate-level math', summary: 'Results across 12 benchmarks show training gains.', declaredCategory: 'news' });
+  assert.equal(filter.categorize(paper), 'bench');
+  const rig = item({ title: '把 4090 换成 5090 的装机记录：显存、功耗与价格', summary: '一次完整的显卡升级实测。', trustCategory: true, declaredCategory: 'ideas' });
+  assert.equal(filter.categorize(rig), 'hardware');
 });
 
-test('fallsBackToDeclaredCategoryWhenNoKeywordsMatch', () => {
+test('mapsLegacyDeclaredCategoriesThroughAliases', () => {
   const vague = item({ title: 'A quiet weekly note', trustCategory: true, declaredCategory: 'ideas' });
-  assert.equal(filter.categorize(vague), 'ideas');
+  assert.equal(filter.categorize(vague), 'bench');
+  const repo = item({ title: 'A quiet weekly note', trustCategory: true, declaredCategory: 'oss' });
+  assert.equal(filter.categorize(repo), 'local');
 });
 
 test('scoresFreshTierOneAboveOlderTierThree', () => {
@@ -64,9 +68,30 @@ test('boostsItemsWithCommunitySignals', () => {
   assert.ok(filter.score(popular, now) > filter.score(base, now));
 });
 
-test('biasesTowardTheDeclaredCategoryOfCuratedSources', () => {
-  const essay = item({ title: 'Why tool use benchmarks keep lying to us', summary: 'A long read on evals and agents.', trustCategory: true, declaredCategory: 'ideas' });
-  assert.equal(filter.categorize(essay), 'ideas');
+test('routesInferenceFrameworksAndVideoGenerationIntoAppSubcategories', () => {
+  const serving = item({ title: '用 SGLang 部署 70B 模型：一条命令起服务，实测 1200 tok/s', summary: '附 llama.cpp 与 Strata 的完整参数与吞吐数据。' });
+  assert.equal(filter.categorize(serving), 'apps');
+  assert.equal(filter.subcategoryFor(serving, 'apps'), 'inference');
+
+  const comfyui = item({ title: 'ComfyUI 视频生成工作流：图生视频出片参数与显存占用', summary: 'ComfyUI video generation workflow，附视频生成节点与步骤。' });
+  assert.equal(filter.categorize(comfyui), 'apps');
+  assert.equal(filter.subcategoryFor(comfyui, 'apps'), 'video');
+});
+
+test('splitsEachSectionIntoSubcategoriesFromContent', () => {
+  const creation = item({ title: '用开源工具做视频字幕：一条命令跑通', summary: '附免费替代方案与安装步骤。' });
+  const office = item({ title: 'AI 会议纪要助手：自动生成待办并写回日历', summary: '适合团队免费使用。' });
+  assert.equal(filter.subcategoryFor(creation, 'apps'), 'creation');
+  assert.equal(filter.subcategoryFor(office, 'apps'), 'office');
+  assert.equal(filter.subcategoryFor(item({ title: 'A quiet weekly note' }), 'apps'), null);
+});
+
+test('dropsItemsWithoutDataOrReproSteps', () => {
+  const announcement = item({ title: 'A company announces a new program for partners', summary: 'No numbers, no instructions, nothing you can actually run today.' });
+  const withSteps = item({ title: 'How to run a small model on a laptop', summary: 'Install ollama, pick a GGUF quant, and run it with these commands.' });
+  assert.equal(filter.quality(announcement).ok, false);
+  assert.match(filter.quality(announcement).reasons.join(' '), /实践|数据|复现|可操作/);
+  assert.equal(filter.quality(withSteps).ok, true);
 });
 
 test('enforcesPerSourceMetricMinimums', () => {

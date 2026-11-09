@@ -55,6 +55,28 @@ export function createFilter(filters) {
     label: tag.label,
     hits: buildMatcher(tag.keywords ?? []),
   }));
+  const gate = qualityConfig.practicalGate ?? {};
+  const stepMatcher = buildMatcher(gate.stepKeywords ?? []);
+  const dataMatcher = buildMatcher(gate.dataKeywords ?? []);
+  const actionCategories = new Set(gate.actionCategories ?? ['apps', 'tools', 'hardware', 'local', 'money']);
+  const aliases = filters.categoryAliases ?? {};
+  const subMatchers = (filters.subcategories ?? []).map((sub) => ({
+    parent: sub.parent,
+    id: sub.id,
+    label: sub.label,
+    hits: buildMatcher(sub.keywords ?? []),
+  }));
+  // 子类关键词比一级分类关键词更具体（sglang、comfyui 这类专有名词只写在子类里），
+  // 定一级分类时也带上该分类下最强子类的命中数，否则框架类文章会被「实测/评测」抢走。
+  function subcategorySignal(categoryId, text) {
+    let best = 0;
+    for (const sub of subMatchers) {
+      if (sub.parent !== categoryId) continue;
+      const score = sub.hits(text);
+      if (score > best) best = score;
+    }
+    return best * 0.5;
+  }
 
   function itemText(item) {
     return [item.title, item.summary, item.author, (item.categories ?? []).join(' '), item.sourceName, excerpt(item)]
@@ -65,6 +87,29 @@ export function createFilter(filters) {
   // 正文比摘要更能说明「有没有干货」，但只取前 1500 字，避免远处的关键词主导判定。
   function excerpt(item) {
     return cleanText(item.content?.text ?? '', 1500);
+  }
+
+  // 分类只看文章内容本身：来源自己的栏目名和站点名不参与判断。
+  function articleText(item) {
+    return [item.title, item.zhTitle, item.summary, item.zhSummary, excerpt(item)]
+      .filter(Boolean)
+      .join(' \u2022 ');
+  }
+
+  // 复现步骤：正文里有代码块/有序步骤，或标题摘要直接写着怎么配、怎么装、怎么跑。
+  function hasReproSteps(item) {
+    const html = String(item.content?.html ?? '');
+    if (/<(pre|code|ol)\b/i.test(html)) return true;
+    const text = `${cleanText(item.title, 220)} \u2022 ${cleanText(item.summary ?? '', 1200)} \u2022 ${cleanText(item.content?.text ?? '', 2000)}`;
+    if (stepMatcher(text) > 0) return true;
+    return /^\s*(?:\$|npm |npx |pip |uv |docker |git |curl |wget |brew |python |uvx )\b/m.test(cleanText(item.content?.text ?? '', 3000));
+  }
+
+  // 可核查的数据：带单位的数字（tok/s、GB、ms、%、倍）或评测/跑分/成本这类词。
+  function hasHardData(item) {
+    const text = `${cleanText(item.title, 220)} \u2022 ${cleanText(item.summary ?? '', 1500)} \u2022 ${excerpt(item)}`;
+    if (evidencePattern.test(text)) return true;
+    return dataMatcher(text) > 0;
   }
 
   function relevance(item) {
@@ -82,22 +127,17 @@ export function createFilter(filters) {
   }
 
   function practicality(item) {
-    const text = itemText(item);
-    const hits = isPracticalTerm(text);
-    const moneyOrLocal = item.category === 'money' || item.category === 'local' ? 1 : 0;
-    return hits + moneyOrLocal;
+    return isPracticalTerm(articleText(item));
   }
 
   function actionability(item) {
-    const text = `${cleanText(item.title, 220)} \u2022 ${cleanText(item.summary ?? '', 1200)} \u2022 ${excerpt(item)}`;
-    let hits = isActionTerm(text);
-    if (['tools', 'local', 'money', 'apps'].includes(item.category)) hits += 1;
+    let hits = isActionTerm(articleText(item));
+    if (actionCategories.has(item.category)) hits += 1;
     return hits;
   }
 
   function hasEvidence(item) {
-    const text = `${cleanText(item.title, 220)} \u2022 ${cleanText(item.summary ?? '', 1500)} \u2022 ${excerpt(item)}`;
-    return evidencePattern.test(text);
+    return hasHardData(item);
   }
 
   // 带配图（实测截图、图表）的条目对人类更友好，评分上给一点偏好。
@@ -115,6 +155,23 @@ export function createFilter(filters) {
     let score = { 1: 3, 2: 2, 3: 1 }[tier] ?? 2;
     const action = actionability({ ...item, category: item.category ?? categorize(item) });
     const evidence = hasEvidence(item);
+    const steps = hasReproSteps(item);
+
+    // 只保留实践性内容：既给不出数据也给不出复现步骤的，直接淘汰。
+    if (gate.requireDataOrSteps !== false && !evidence && !steps) {
+      reasons.push('既没有数据也没有复现步骤');
+      return { ok: false, score: Number(score.toFixed(2)), evidence, action, steps, reasons };
+    }
+    const minAction = Number(gate.minAction ?? 1);
+    if (action < minAction) {
+      reasons.push('缺乏可操作内容');
+      return { ok: false, score: Number(score.toFixed(2)), evidence, action, steps, reasons };
+    }
+    const minPractical = Number(gate.minPractical ?? 1);
+    if (practicality(item) < minPractical) {
+      reasons.push('没有实践性线索');
+      return { ok: false, score: Number(score.toFixed(2)), evidence, action, steps, reasons };
+    }
 
     const levels = qualityConfig.summaryLevels ?? [220, 120, 60];
     if (bodyChars >= levels[0]) score += 3;
@@ -157,15 +214,11 @@ export function createFilter(filters) {
     }
 
     const minimum = qualityConfig.minQuality ?? 6;
-    if (action === 0 && score < minimum + (qualityConfig.pureNewsBonus ?? 2)) {
-      reasons.push('纯资讯且不够深');
-      return { ok: false, score: Number(score.toFixed(2)), evidence, action, reasons };
-    }
-    return { ok: score >= minimum, score: Number(score.toFixed(2)), evidence, action, reasons };
+    return { ok: score >= minimum, score: Number(score.toFixed(2)), evidence, action, steps, reasons };
   }
 
   function tagsFor(item) {
-    const text = itemText(item);
+    const text = articleText(item);
     const scored = [];
     for (const tag of tagMatchers) {
       const hits = tag.hits(text);
@@ -176,18 +229,38 @@ export function createFilter(filters) {
   }
 
   function categorize(item) {
-    const text = itemText(item);
+    const text = articleText(item);
     let best = null;
     let bestScore = 0;
     for (const category of categoryMatchers) {
-      const score = category.hits(text) + (category.id === item.declaredCategory ? 1.5 : 0);
+      const score = category.hits(text) + subcategorySignal(category.id, text);
       if (score > bestScore) {
         bestScore = score;
         best = category;
       }
     }
-    if (best) return best.id;
-    return item.declaredCategory ?? categories[categories.length - 1]?.id ?? 'products';
+    if (best && bestScore > 0) return best.id;
+    // 文章里读不出倾向时，才退回来源声明的栏目（旧栏目名走别名映射）。
+    const declared = aliases[item.declaredCategory] ?? item.declaredCategory;
+    if (declared && categories.some((category) => category.id === declared)) return declared;
+    return categories[categories.length - 1]?.id ?? 'bench';
+  }
+
+  // 子类同样只看文章内容；父类没有匹配到子类时留空，栏目页里归到「其他」。
+  function subcategoryFor(item, categoryId) {
+    const parent = categoryId ?? item.category ?? categorize(item);
+    const text = articleText(item);
+    let best = null;
+    let bestScore = 0;
+    for (const sub of subMatchers) {
+      if (sub.parent !== parent) continue;
+      const score = sub.hits(text);
+      if (score > bestScore) {
+        bestScore = score;
+        best = sub;
+      }
+    }
+    return best && bestScore > 0 ? best.id : null;
   }
 
   function passesGuards(item, source) {
@@ -212,5 +285,22 @@ export function createFilter(filters) {
     return Number((tier + recency + buzz + relevanceBonus + practicalBonus + freshnessWord).toFixed(2));
   }
 
-  return { relevance, isRelevant, categorize, passesGuards, score, practicality, quality, actionability, hasEvidence, tagsFor, tags: tagMatchers.map(({ id, label }) => ({ id, label })), categories };
+  return {
+    relevance,
+    isRelevant,
+    categorize,
+    subcategoryFor,
+    subcategories: subMatchers.map(({ parent, id, label }) => ({ parent, id, label })),
+    passesGuards,
+    score,
+    practicality,
+    quality,
+    actionability,
+    hasEvidence,
+    hasReproSteps,
+    hasHardData,
+    tagsFor,
+    tags: tagMatchers.map(({ id, label }) => ({ id, label })),
+    categories,
+  };
 }

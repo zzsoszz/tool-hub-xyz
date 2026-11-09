@@ -20,11 +20,25 @@
       ]
     },
     {
-      "id": "local",
-      "label": "本地低配",
+      "id": "hardware",
+      "label": "AI 硬件",
       "categories": [
+        "hardware"
+      ],
+      "tags": [
+        "hardware",
+        "lowspec"
+      ]
+    },
+    {
+      "id": "local",
+      "label": "本地开源",
+      "categories": [
+        "local"
+      ],
+      "tags": [
         "local",
-        "oss"
+        "lowspec"
       ]
     },
     {
@@ -32,21 +46,19 @@
       "label": "变现副业",
       "categories": [
         "money"
+      ],
+      "tags": [
+        "money"
       ]
     },
     {
-      "id": "models",
-      "label": "新模型",
+      "id": "bench",
+      "label": "评测选型",
       "categories": [
-        "models"
-      ]
-    },
-    {
-      "id": "more",
-      "label": "行业观点",
-      "categories": [
-        "news",
-        "ideas"
+        "bench"
+      ],
+      "tags": [
+        "benchmark"
       ]
     },
     {
@@ -65,6 +77,6 @@
       "href": "/tags"
     }
   ],
-  "sectionLookbackDays": 7,
+  "sectionLookbackDays": 90,
   "homeLimit": 10
 }
