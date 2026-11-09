@@ -1,8 +1,8 @@
 # Repository Guidelines
 
-`tool-hub.xyz` is currently a greenfield repository: no source files, build config, or commit
-history exist yet (`.git/` is empty). The conventions below are the baseline to establish as the
-first code lands — verify a command exists before assuming it does.
+`tool-hub.xyz` is a zero-dependency Node.js 22 (ESM) static site: `src/` collects and builds,
+`public/` holds the only client assets, `data/` keeps the digests, and Cloudflare Workers serves
+`dist/` plus the `/api/*` forum. Verify a command exists before assuming it does.
 
 ## Project Structure & Module Organization
 
@@ -13,15 +13,14 @@ first code lands — verify a command exists before assuming it does.
 
 ## Build, Test, and Development Commands
 
-No tooling is checked in yet. When adding it, keep the standard four and document the chosen
-stack in `README.md` in the same commit that introduces it:
+There are no third-party dependencies, so `npm install` is not needed.
 
 ```bash
-npm install      # install dependencies
-npm run dev      # local development server
-npm run build    # produce deployable output in dist/
-npm test         # run the test suite
-npm run lint     # format and static checks
+npm run collect    # fetch sources into data/digests/<date>.json
+npm run build      # render dist/ from data/
+npm run dev        # collect + build, then serve 0.0.0.0:8088
+npm test           # node --test: unit tests + offline end-to-end pipeline
+npm run lint       # syntax, indentation, trailing whitespace, secret scan
 ```
 
 ## Coding Style & Naming Conventions
@@ -34,9 +33,8 @@ npm run lint     # format and static checks
 
 ## Testing Guidelines
 
-- Pick the runner native to the chosen stack (Vitest for Vite frontends, `pytest` for Python
-  services) and record it here once selected.
-- Test files use `*.test.ts` or `test_*.py` under `tests/`.
+- Runner is Node's built-in `node:test`; keep it offline — fixtures live in `tests/fixtures/`.
+- Test files are `*.test.mjs` under `tests/`, mirroring `src/`.
 - Name tests after behavior, e.g. `returnsEmptyResultsForBlankQuery()`.
 - Every new code path gets at least one unit test; bug fixes begin with a failing regression test.
 
@@ -58,3 +56,15 @@ npm run lint     # format and static checks
 - Follow this file for every change in this repository.
 - Use `rg` for searches, keep edits surgical, and do not reformat files you did not change.
 - New conventions should be written back into this file in the same commit that adopts them.
+
+## Visual & Styling Rules
+
+- The design tokens (color, type scale, layout) live in `public/styles.css` `:root` and are
+  documented in `docs/DESIGN.md`. Change a page by editing the tokens, not by hand-picking a
+  colour in one rule.
+- Green (`--pine`) means structure, amber (`--signal`) means actionable. Those two colours keep
+  their meaning everywhere.
+- Copy stays plain and active: link text carries no `→`/`↗`, secondary metadata is a sentence,
+  not `A · B · C`.
+- Motion is capped at the homepage funnel count-up (`public/funnel.js`); anything new must
+  respect `prefers-reduced-motion` and answer a user action.
