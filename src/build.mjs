@@ -156,8 +156,9 @@ async function main() {
     const items = sortEntries(itemsForSection(allItems, section, { lookbackDays }), 'quality');
     const subs = subsectionsFor(section, subcategories)
       .map((sub) => ({ ...sub, items: sortEntries(itemsForSubsection(allItems, section, sub, { lookbackDays }), 'quality') }))
-      .filter((sub) => sub.items.length);
-    const view = { ...section, subsections: subs.map((sub) => ({ id: sub.id, label: sub.label, count: sub.items.length })) };
+      .map((sub) => ({ ...sub, count: sub.items.length }))
+      .sort((a, b) => b.count - a.count);
+    const view = { ...section, subsections: subs.map(({ id, label, count }) => ({ id, label, count })) };
     await write(
       path.join(distDir, 's', `${section.id}.html`),
       renderSectionPage({ ...common, section: view, items, lookbackDays, months: monthsFor(items) }),

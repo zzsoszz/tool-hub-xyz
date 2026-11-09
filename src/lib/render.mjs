@@ -274,7 +274,7 @@ export function renderDigestPage(digest, { sections = [], days = [], siteUrl = '
 }
 
 export function renderSectionPage({ section, items, days, siteUrl, repoUrl, sections, lookbackDays, tagLabels = {}, months = [], month = '', year = '', sort = 'quality' }) {
-  const subnav = (section.subsections ?? []).filter((sub) => sub.count > 0);
+  const subnav = section.subsections ?? [];
   const body = `  <section class="lede">
     <h1>${escapeHtml(section.label)}</h1>
     <p class="lede-meta">最近 ${lookbackDays} 天，共 ${items.length} 条</p>
@@ -299,7 +299,7 @@ ${items.length ? storyList(items, { showDay: true, lead: true, tagLabels }) : ' 
 }
 
 export function renderSubsectionPage({ section, sub, items, days, siteUrl, repoUrl, sections, lookbackDays, tagLabels = {}, months = [], month = '', year = '', sort = 'quality' }) {
-  const subnav = (section.subsections ?? []).filter((entry) => entry.count > 0);
+  const subnav = section.subsections ?? [];
   const heading = `${section.label} · ${sub.label}`;
   const body = `  <section class="lede">
     <h1><a href="/s/${escapeHtml(section.id)}">${escapeHtml(section.label)}</a> · ${escapeHtml(sub.label)}</h1>
