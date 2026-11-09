@@ -57,7 +57,9 @@ test('enrichesPopularForumTopicsWithMainPostBody', async () => {
           viewcount: 420,
           lczExcellent: 1,
           tags: [{ value: '5080' }, { value: 'tok/s' }],
-          posts: [{ content: '<p>标准测速中位数 <code>105.6 ～ 132.1 tok/s</code>，prefill 稳定在 3,400 tok/s，12 万 token 长文 28 秒读完。</p>' }],
+          posts: [{
+            content: '<p>标准测速中位数 <code>105.6 ～ 132.1 tok/s</code>，prefill 稳定在 3,400 tok/s，12 万 token 长文 28 秒读完。</p><table><tr><th>显卡</th><th>显存峰值</th></tr><tr><td>5080 16GB</td><td>15.2 GB</td></tr></table>',
+          }],
         }),
       };
     }
@@ -66,6 +68,8 @@ test('enrichesPopularForumTopicsWithMainPostBody', async () => {
   await enrichForumTopics(items, source, { fetchImpl, timeoutMs: 1_000 });
   assert.deepEqual(requested.sort(), ['https://lcz.me/api/topic/2894', 'https://lcz.me/api/topic/2918']);
   assert.match(items[0].summary, /105\.6 ～ 132\.1 tok\/s/);
+  assert.ok(items[0].content.html.includes('<table>'), '正文应保留表格结构');
+  assert.equal(items[0].content.truncated, false);
   assert.equal(items[0].excellent, true);
   assert.equal(items[0].metrics.comments, 7);
   assert.deepEqual(items[0].categories, ['5080', 'tok/s']);
