@@ -8,6 +8,10 @@ dist/
 .agents/
 .aws/
 .codex/
+.env.*.local
+credentials.local.md
+*.local.md
 .wtest
 .tmp-test/
+.tmp-*/
 .ci/
