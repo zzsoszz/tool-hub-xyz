@@ -109,9 +109,9 @@ NODE_USE_ENV_PROXY=1 HTTPS_PROXY=http://192.168.31.4:7890 npm run collect
 
 采集之后、发布之前，`src/review.mjs` 用另一个模型独立复核一遍；CI 里它是独立的 job，**不通过就不发布**。
 
-- **硬规则先跑**（不可被模型推翻）：正文少于 `minBodyChars`（默认 120 字）或摘要少于 `minSummaryChars`（默认 40 字）→「内容过少」；标签为空、重复、超过 4 个或不在标签表 →「标签异常」；分类/子类不在配置里、原文链接无效、链接或标题重复 → 异常；`filter.quality()` 不放行 →「实践性闸门不通过」。日报级：放行条目少于 `minItems`（默认 5）条也不通过。
+- **硬规则先跑**（不可被模型推翻）：正文少于 `minBodyChars`（默认 120 字）或摘要少于 `minSummaryChars`（默认 40 字）→「内容过少」；标签为空、重复、超过 4 个或不在标签表 →「标签异常」；分类/子类不在配置里、原文链接无效、链接或标题重复 → 异常；`filter.quality()` 不放行 →「实践性闸门不通过」。日报级：放行条目少于 `minItems`（默认 3）条也不通过——实践性内容本来就少，3 条也允许发布，避免整站停在旧日报。
 - **模型只能追加拦截**，不能放行硬失败。行协议输出 `序号|pass|理由` / `序号|fail|理由`，解析失败的批次会重试一次，仍失败就按未放行处理。
-- 默认模型 `@cf/meta/llama-3.1-70b-instruct`（Workers AI，与翻译用的 8B 不是同一个）；`REVIEW_MODEL` 可换，没有 Cloudflare 凭据时可用 `REVIEW_API_KEY`/`TRANSLATE_API_KEY` 走 OpenAI 兼容接口。缺凭据且没 `--allow-no-agent` 时审查直接判不通过（CI fail-closed）。
+- 默认模型 `@cf/meta/llama-3.1-70b-instruct`（Workers AI，与翻译用的 8B 不是同一个）；每批超时或解析失败时第二次改用 `REVIEW_FALLBACK_MODEL`（默认 `@cf/meta/llama-3.1-8b-instruct`）重试，报告 `note` 里写明实际用到的模型。`REVIEW_MODEL` 可换，没有 Cloudflare 凭据时可用 `REVIEW_API_KEY`/`TRANSLATE_API_KEY` 走 OpenAI 兼容接口。缺凭据且没 `--allow-no-agent` 时审查直接判不通过（CI fail-closed）。
 - 结论写 `data/reviews/<日期>.json`（逐条 `hard`/`agent`/`blocked`、`blocked` 列表、`survivors`）；`--apply` 把拦下的 slug 写进 `data/hidden.json`（按天记录，重跑同一天会覆盖当天结论，管理员下架另存 `admin` 不受影响），构建期据此剔除。
 
 ```bash

@@ -1237,7 +1237,7 @@
     ],
     "pureNewsBonus": 2,
     "review": {
-      "minItems": 5,
+      "minItems": 3,
       "minBodyChars": 120,
       "minSummaryChars": 40,
       "maxTags": 4,

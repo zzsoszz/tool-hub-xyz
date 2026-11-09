@@ -8,9 +8,11 @@ import { cleanText } from './lib/normalize.mjs';
 const ROOT = path.resolve(import.meta.dirname, '..');
 // 实测可用的文本生成模型：@cf/meta/llama-3.3-70b-instruct 在该账号没有路由（HTTP 400 No route for that URI）。
 const DEFAULT_MODEL = '@cf/meta/llama-3.1-70b-instruct';
+// 70B 冷启动首次调用常常超时，退回小模型兜底，避免审查 job 因为冷启动/网络红掉。
+const FALLBACK_MODEL = '@cf/meta/llama-3.1-8b-instruct';
 
 export const REVIEW_RULES = {
-  minItems: 5,
+  minItems: 3,
   minBodyChars: 120,
   minSummaryChars: 40,
   maxTags: 4,
@@ -19,19 +21,45 @@ export const REVIEW_RULES = {
   agentChars: 900,
 };
 
+export function agentEndpoint(config, model) {
+  if (config.provider === 'cloudflare') {
+    return `https://api.cloudflare.com/client/v4/accounts/${config.accountId}/ai/run/${model}`;
+  }
+  return `${config.base}/chat/completions`;
+}
+
 export function reviewConfig(env = process.env) {
   const model = env.REVIEW_MODEL || DEFAULT_MODEL;
   const cloudflareKey = env.CLOUDFLARE_API_TOKEN ?? '';
   const accountId = env.CLOUDFLARE_ACCOUNT_ID ?? '';
   if (cloudflareKey && accountId) {
-    return { enabled: true, provider: 'cloudflare', model, key: cloudflareKey, endpoint: `https://api.cloudflare.com/client/v4/accounts/${accountId}/ai/run/${model}` };
+    const config = {
+      enabled: true,
+      provider: 'cloudflare',
+      model,
+      fallbackModel: env.REVIEW_FALLBACK_MODEL || FALLBACK_MODEL,
+      key: cloudflareKey,
+      accountId,
+      base: '',
+    };
+    return { ...config, endpoint: agentEndpoint(config, model) };
   }
   const openaiKey = env.REVIEW_API_KEY ?? env.TRANSLATE_API_KEY ?? '';
   if (openaiKey) {
     const base = (env.REVIEW_API_BASE || env.TRANSLATE_API_BASE || 'https://api.openai.com/v1').replace(/\/$/, '');
-    return { enabled: true, provider: 'openai', model: env.REVIEW_MODEL || 'gpt-4o-mini', key: openaiKey, endpoint: `${base}/chat/completions` };
+    const openaiModel = env.REVIEW_MODEL || 'gpt-4o-mini';
+    return {
+      enabled: true,
+      provider: 'openai',
+      model: openaiModel,
+      fallbackModel: env.REVIEW_FALLBACK_MODEL || openaiModel,
+      key: openaiKey,
+      accountId: '',
+      base,
+      endpoint: `${base}/chat/completions`,
+    };
   }
-  return { enabled: false, provider: null, model, key: '', endpoint: '' };
+  return { enabled: false, provider: null, model, fallbackModel: FALLBACK_MODEL, key: '', accountId: '', base: '', endpoint: '' };
 }
 
 const SYSTEM_PROMPT = [
@@ -61,7 +89,7 @@ export function parseVerdicts(text) {
   return verdicts;
 }
 
-export async function askAgent(items, config, timeoutMs) {
+export async function askAgent(items, config, timeoutMs, model = config.model) {
   const prompt = items.map((item, index) => [
     `${index + 1}. 标题：${cleanText(item.zhTitle ?? item.title, 200)}`,
     `   摘要：${cleanText(item.zhSummary ?? item.summary ?? '', config.agentChars ?? REVIEW_RULES.agentChars)}`,
@@ -70,8 +98,8 @@ export async function askAgent(items, config, timeoutMs) {
   ].join('\n')).join('\n\n');
   const body = config.provider === 'cloudflare'
     ? { messages: [{ role: 'system', content: SYSTEM_PROMPT }, { role: 'user', content: prompt }], max_tokens: 90 * items.length + 200 }
-    : { model: config.model, temperature: 0.2, messages: [{ role: 'system', content: SYSTEM_PROMPT }, { role: 'user', content: prompt }] };
-  const response = await fetch(config.endpoint, {
+    : { model, temperature: 0.2, messages: [{ role: 'system', content: SYSTEM_PROMPT }, { role: 'user', content: prompt }] };
+  const response = await fetch(agentEndpoint(config, model), {
     method: 'POST',
     signal: AbortSignal.timeout(timeoutMs),
     headers: { 'content-type': 'application/json', authorization: `Bearer ${config.key}` },
@@ -167,7 +195,8 @@ export function hardReview(digest, filter, rules = REVIEW_RULES) {
 export async function mergeHidden(filePath, blocked, day) {
   const current = JSON.parse(await readFile(filePath, 'utf8').catch(() => '{}'));
   // 按天存审查下架：重跑同一天会覆盖当天旧结论，避免模型偶发误判永久累积；其他天保持不变。
-  const byDay = { ...(current.machineByDay ?? {}) };
+  // 旧格式只有扁平 machine 列表、没有按天记录：先挂到 legacy 键下，否则重跑某一天会把旧下架结论整批冲掉。
+  const byDay = { ...(current.machineByDay ?? (current.machine?.length ? { legacy: current.machine } : {})) };
   byDay[day] = blocked;
   const machine = [...new Set(Object.values(byDay).flat())];
   const admin = [...new Set(current.admin ?? [])];
@@ -182,7 +211,7 @@ async function latestDay(digestDir) {
   return names.at(-1)?.replace(/\.json$/, '') ?? null;
 }
 
-export async function runReview({ day, apply = false, allowNoAgent = false, dataDir = path.join(ROOT, 'data'), timeoutMs = 90_000, log = console.log } = {}) {
+export async function runReview({ day, apply = false, allowNoAgent = false, dataDir = path.join(ROOT, 'data'), timeoutMs = 150_000, log = console.log } = {}) {
   const filters = JSON.parse(await readFile(path.join(ROOT, 'config', 'filters.json'), 'utf8'));
   const rules = { ...REVIEW_RULES, ...(filters.quality?.review ?? {}) };
   const filter = createFilter(filters);
@@ -196,6 +225,7 @@ export async function runReview({ day, apply = false, allowNoAgent = false, data
   let agentNote = '';
   const agentVerdicts = new Map();
   const agentProblems = [];
+  const usedModels = new Set();
   if (config.enabled) {
     const pool = rows.filter((row) => !row.hard.length).slice(0, rules.agentMaxItems);
     const batchSize = rules.agentBatch ?? REVIEW_RULES.agentBatch;
@@ -204,10 +234,12 @@ export async function runReview({ day, apply = false, allowNoAgent = false, data
       const last = start + chunk.length;
       let verdicts = new Map();
       for (let attempt = 1; attempt <= 2 && verdicts.size === 0; attempt += 1) {
+        const model = attempt === 1 ? config.model : (config.fallbackModel || config.model);
         try {
-          verdicts = (await askAgent(chunk, { ...config, agentChars: rules.agentChars }, timeoutMs)).verdicts;
+          verdicts = (await askAgent(chunk, { ...config, agentChars: rules.agentChars }, timeoutMs, model)).verdicts;
+          if (verdicts.size) usedModels.add(model);
         } catch (error) {
-          agentProblems.push(`${start + 1}-${last} 调用失败：${error.message}`);
+          agentProblems.push(`${start + 1}-${last} 第 ${attempt} 次（${model}）调用失败：${error.message}`);
         }
       }
       chunk.forEach((row, index) => {
@@ -216,7 +248,8 @@ export async function runReview({ day, apply = false, allowNoAgent = false, data
       });
       if (!verdicts.size) agentProblems.push(`${start + 1}-${last} 输出无法解析`);
     }
-    agentNote = `${config.provider}/${config.model}：复核 ${pool.length} 条，解析到 ${agentVerdicts.size} 条判定`;
+    const models = usedModels.size ? [...usedModels].join(' → ') : config.model;
+    agentNote = `${config.provider}/${models}：复核 ${pool.length} 条，解析到 ${agentVerdicts.size} 条判定`;
     for (const problem of agentProblems) agentNote += ` · ${problem}`;
   } else {
     agentNote = allowNoAgent ? '未配置审查模型凭据，已按 --allow-no-agent 跳过模型复核' : '未配置审查模型凭据（CLOUDFLARE_API_TOKEN 或 REVIEW_API_KEY）';

@@ -137,7 +137,8 @@ curl -m 10 -s https://tool-hub.xyz/llms.txt | head -6
 | 发帖返回 `Wrong number of parameter bindings` | D1 查询没走 `.bind(...)`，见 2.1 末尾说明 |
 | 发帖返回 429 | 命中同 IP 限流（20 秒间隔 / 每小时 8 条）；蜜罐字段非空也会静默丢弃 |
 | 评论数量不显示 | `env.DB` 绑定缺失或表未初始化，`wrangler d1 execute tool-hub --remote --command ".tables"` 检查 |
-| 审查 job 红掉 `review <日期>: 不通过` | 看 `data/reviews/<日期>.json` 的 `reasons` 与被拦下的条目；放行条数少于 `minItems`（默认 5）也不通过 |
+| 审查 job 红掉 `review <日期>: 不通过` | 看 `data/reviews/<日期>.json` 的 `reasons` 与被拦下的条目；放行条数少于 `minItems`（默认 3）也不通过 |
+| 审查报 `调用失败：The operation was aborted due to timeout` | 70B 冷启动慢：每批第二次会自动改用 `REVIEW_FALLBACK_MODEL`（默认 `@cf/meta/llama-3.1-8b-instruct`）；仍不行就调大 `timeoutMs` 或换 `REVIEW_MODEL` |
 | 审查或 wrangler 报 `fetch failed` | 本机走 IPv6 到 Cloudflare 不稳：加 `NODE_OPTIONS=--dns-result-order=ipv4first` 重试；审查脚本每批已自动重试一次 |
 | Workers AI 报 `No route for that URI` | 该模型在本账号没有路由（如 `@cf/meta/llama-3.3-70b-instruct`）。换 `REVIEW_MODEL`，先用 `POST /accounts/<ACC>/ai/run/<model>` 试跑 |
 | 管理员登录一直 429 | 15 分钟内失败 10 次触发限流（`admin_attempts`）；等窗口过去或清掉该 IP 哈希记录 |
