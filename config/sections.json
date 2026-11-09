@@ -1,0 +1,69 @@
+{
+  "sections": [
+    {
+      "id": "latest",
+      "label": "最新",
+      "href": "/"
+    },
+    {
+      "id": "apps",
+      "label": "AI 应用",
+      "categories": [
+        "apps"
+      ]
+    },
+    {
+      "id": "tools",
+      "label": "工具玩法",
+      "categories": [
+        "tools"
+      ]
+    },
+    {
+      "id": "local",
+      "label": "本地低配",
+      "categories": [
+        "local",
+        "oss"
+      ]
+    },
+    {
+      "id": "money",
+      "label": "变现副业",
+      "categories": [
+        "money"
+      ]
+    },
+    {
+      "id": "models",
+      "label": "新模型",
+      "categories": [
+        "models"
+      ]
+    },
+    {
+      "id": "more",
+      "label": "行业观点",
+      "categories": [
+        "news",
+        "ideas"
+      ]
+    },
+    {
+      "id": "discuss",
+      "label": "讨论区",
+      "href": "/discuss"
+    },
+    {
+      "id": "archive",
+      "label": "归档",
+      "href": "/archive"
+    },
+    {
+      "id": "tags",
+      "label": "标签",
+      "href": "/tags"
+    }
+  ],
+  "sectionLookbackDays": 7
+}
