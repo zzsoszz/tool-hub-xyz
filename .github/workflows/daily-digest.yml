@@ -1,0 +1,65 @@
+name: 每日 AI 日报
+
+on:
+  schedule:
+    - cron: '30 22 * * *' # 06:30 Asia/Shanghai
+    - cron: '30 10 * * *' # 18:30 Asia/Shanghai
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 指定日报日期（YYYY-MM-DD），留空为今天
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-digest
+  cancel-in-progress: false
+
+jobs:
+  digest:
+    name: 采集 → 构建 → 发布
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: 采集信息源
+        run: node src/collect.mjs ${{ inputs.date && format('--date={0}', inputs.date) || '' }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TRANSLATE_API_KEY: ${{ secrets.TRANSLATE_API_KEY }}
+          TRANSLATE_API_BASE: ${{ secrets.TRANSLATE_API_BASE }}
+          TRANSLATE_MODEL: ${{ secrets.TRANSLATE_MODEL }}
+
+      - name: 生成静态站点
+        run: node src/build.mjs
+        env:
+          SITE_URL: https://tool-hub.xyz
+          REPO_URL: https://github.com/${{ github.repository }}
+
+      - name: 回写采集数据
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain data)" ]; then
+            git add data
+            git commit -m "chore(digest): 更新 $(date -u +'%F') 采集数据"
+            git push
+          else
+            echo "data 无变化，跳过提交"
+          fi
+
+      - name: 部署到 Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: ${{ vars.PAGES_PROJECT || 'tool-hub-xyz' }}
+          directory: dist
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}

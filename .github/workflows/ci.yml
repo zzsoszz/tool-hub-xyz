@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: 测试与离线构建
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm run lint
+      - run: npm test
+      - name: 离线样例走完整流水线
+        run: |
+          node src/collect.mjs --offline --out=.ci/data
+          DATA_DIR=.ci/data DIST_DIR=.ci/dist node src/build.mjs
