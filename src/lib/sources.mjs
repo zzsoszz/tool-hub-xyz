@@ -1,7 +1,8 @@
 import { fetchUrl } from './http.mjs';
-import { cleanText, dayKey, summarize } from './normalize.mjs';
+import { cleanText, dayKey } from './normalize.mjs';
 import { parseFeed } from './parse.mjs';
 import { parseJsonFeed } from './adapters.mjs';
+import { sanitizeArticle } from './content.mjs';
 
 export function resolveSourceUrl(source, { now = new Date(), sinceDays = 7, timezone = 'Asia/Shanghai' } = {}) {
   if (!source.url.includes('{SINCE}')) return source.url;
@@ -46,8 +47,11 @@ export async function enrichForumTopics(items, source, options = {}) {
       return;
     }
     const mainPost = (Array.isArray(payload.posts) ? payload.posts : [])[0];
-    const body = summarize(mainPost?.content ?? '', 900);
-    if (body.length >= 40) item.summary = body;
+    const content = sanitizeArticle(mainPost?.content ?? '', { baseUrl: item.url });
+    if (content) {
+      item.content = content;
+      item.summary = cleanText(content.lead, 320);
+    }
     if (payload.title) item.title = cleanText(payload.title, 220);
     item.metrics = {
       ...item.metrics,

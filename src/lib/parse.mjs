@@ -1,5 +1,6 @@
 import { allChildren, attr, childText, firstChild, flattenText, parseXml } from './xml.mjs';
 import { absoluteUrl, cleanText, parseDate, summarize } from './normalize.mjs';
+import { sanitizeArticle } from './content.mjs';
 
 const DATE_NAMES = ['pubDate', 'published', 'updated', 'date', 'dc:date'];
 const BODY_NAMES = ['content:encoded', 'content', 'description', 'summary', 'media:description', 'itunes:summary'];
@@ -81,6 +82,8 @@ function buildItem(node, source) {
   const url = pickUrl(node, source);
   const published = pickPublished(node);
   const id = cleanText(childText(node, ['guid', 'id']), 200);
+  const rawBody = pickBody(node);
+  const content = sanitizeArticle(rawBody, { baseUrl: url });
   return {
     sourceId: source.id,
     sourceName: source.name,
@@ -88,7 +91,8 @@ function buildItem(node, source) {
     url,
     id,
     published: published ? published.toISOString() : null,
-    summary: summarize(pickBody(node)),
+    summary: content ? cleanText(content.lead, 320) : summarize(rawBody),
+    content: content ?? undefined,
     categories: pickCategories(node),
     author: pickAuthor(node),
     lang: source.lang ?? 'en',

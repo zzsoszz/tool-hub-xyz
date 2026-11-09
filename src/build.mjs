@@ -67,6 +67,17 @@ ${urls.map((url) => `  <url><loc>${url}</loc></url>`).join('\n')}
 `;
 }
 
+// 正文已经内嵌进条目页 HTML，/data/latest.json 只留正文长度，避免 JSON 体积膨胀。
+function leanDigest(digest) {
+  return {
+    ...digest,
+    categories: (digest.categories ?? []).map((group) => ({
+      ...group,
+      items: (group.items ?? []).map(({ content, ...rest }) => ({ ...rest, bodyChars: content?.chars ?? 0 })),
+    })),
+  };
+}
+
 async function main() {
   const dataDir = path.join(ROOT, process.env.DATA_DIR ?? 'data');
   const distDir = path.join(ROOT, process.env.DIST_DIR ?? 'dist');
@@ -144,7 +155,7 @@ async function main() {
   await write(path.join(distDir, 'archive.html'), renderArchive({ ...common, digests }));
   await write(path.join(distDir, 'feed.xml'), renderRss(latest, { siteUrl: base }));
   await write(path.join(distDir, 'llms.txt'), renderLlms(latest, { siteUrl: base }));
-  await write(path.join(distDir, 'data', 'latest.json'), `${JSON.stringify(latest, null, 2)}\n`);
+  await write(path.join(distDir, 'data', 'latest.json'), `${JSON.stringify(leanDigest(latest), null, 2)}\n`);
   await write(path.join(distDir, 'data', 'items.json'), `${JSON.stringify(itemsIndex(allItems), null, 2)}\n`);
 
   const sitemapUrls = [

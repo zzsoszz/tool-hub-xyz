@@ -1,4 +1,5 @@
 import { cleanText, parseDate, summarize } from './normalize.mjs';
+import { sanitizeArticle, textToArticle } from './content.mjs';
 
 function base(source) {
   return {
@@ -19,13 +20,16 @@ const adapters = {
     const hits = Array.isArray(payload?.hits) ? payload.hits : [];
     return hits.map((hit) => {
       const url = hit.url || hit.story_url || `https://news.ycombinator.com/item?id=${hit.objectID}`;
+      const body = hit.story_text ?? hit.comment_text ?? '';
+      const content = sanitizeArticle(body, { baseUrl: url });
       return {
         ...base(source),
         title: cleanText(hit.title, 220),
         url,
         id: String(hit.objectID ?? ''),
         published: iso(hit.created_at ?? hit.created_at_i),
-        summary: summarize(hit.story_text ?? hit.comment_text ?? `Hacker News 讨论：${hit.title ?? ''}`),
+        summary: summarize(content ? content.lead : body || `Hacker News 讨论：${hit.title ?? ''}`),
+        content: content ?? undefined,
         categories: Array.isArray(hit._tags) ? hit._tags.map((tag) => cleanText(tag, 40)) : [],
         metrics: { points: hit.points ?? 0, comments: hit.num_comments ?? 0 },
       };
@@ -35,13 +39,15 @@ const adapters = {
     const entries = Array.isArray(payload) ? payload : [];
     return entries.map((entry) => {
       const paper = entry.paper ?? entry;
+      const content = textToArticle(paper.abstract, { baseUrl: `https://huggingface.co/papers/${paper.id}` });
       return {
         ...base(source),
         title: cleanText(paper.title, 220),
         url: `https://huggingface.co/papers/${paper.id}`,
         id: String(paper.id ?? ''),
         published: iso(paper.publishedAt ?? entry.publishedAt ?? entry.date),
-        summary: summarize(paper.abstract),
+        summary: summarize(content ? content.lead : paper.abstract),
+        content: content ?? undefined,
         metrics: { upvotes: paper.upvotes ?? 0 },
       };
     });

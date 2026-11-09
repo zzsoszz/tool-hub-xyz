@@ -188,6 +188,25 @@ export function renderItemPage({ item, siteUrl, repoUrl, sections, related = [] 
   const published = item.published ? new Date(item.published) : null;
   const metrics = metricsLabel(item);
   const relatedRows = related.map((entry) => `      <li><a href="/item/${escapeHtml(entry.slug)}">${escapeHtml(displayTitle(entry))}</a></li>`).join('\n');
+  const note = item.content
+    ? item.content.truncated
+      ? `原文约 ${item.content.chars} 字，这里保留前 ${item.content.shown} 字，完整表格与数据请`
+      : `原文约 ${item.content.chars} 字，`
+    : '';
+  const article = item.content?.html
+    ? `      <section class="item-body">
+        <h2>${item.lang === 'zh' ? '原文正文' : '原文正文（未翻译）'}</h2>
+        <div class="article">${item.content.html}</div>
+        <p class="article-note">${note}<a href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+      </section>`
+    : `${summary ? `      <div class="item-summary"><p>${escapeHtml(summary)}</p></div>` : ''}`;
+  const lead = item.zhSummary && item.content
+    ? `      <section class="item-lead">
+        <h2>中文导读</h2>
+        <p>${escapeHtml(item.zhSummary)}</p>
+        <p class="lead-note">导读由机器生成，结论与数字请以原文为准。</p>
+      </section>`
+    : '';
   const body = `  <article class="item">
     <h1>${escapeHtml(title)}</h1>
     ${original ? `<p class="item-original">${escapeHtml(original)}</p>` : ''}
@@ -201,9 +220,10 @@ export function renderItemPage({ item, siteUrl, repoUrl, sections, related = [] 
       <a class="original-link" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">阅读原文 ↗</a>
     </p>
     ${domainOf(item.url) ? `<p class="item-domain">原文链接：<code>${escapeHtml(item.url)}</code></p>` : ''}
-    ${summary ? `<div class="item-summary"><p>${escapeHtml(summary)}</p></div>` : ''}
+${lead}
+${article}
     ${tagChips(item, { limit: 6 }) ? `<p class="item-tags">标签：${tagChips(item, { limit: 6 })}</p>` : ''}
-    ${original && item.summary ? `<details class="item-raw"><summary>原始摘要（${escapeHtml(item.lang === 'zh' ? '中文' : '英文')}）</summary><p>${escapeHtml(item.summary)}</p></details>` : ''}
+    ${original && !item.content && item.summary ? `<details class="item-raw"><summary>原始摘要（${escapeHtml(item.lang === 'zh' ? '中文' : '英文')}）</summary><p>${escapeHtml(item.summary)}</p></details>` : ''}
   </article>
   <section class="comments" id="comments" data-item="${escapeHtml(item.slug)}">
     <h2>讨论<span class="count" data-count>0</span></h2>

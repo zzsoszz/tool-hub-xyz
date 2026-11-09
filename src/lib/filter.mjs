@@ -57,9 +57,14 @@ export function createFilter(filters) {
   }));
 
   function itemText(item) {
-    return [item.title, item.summary, item.author, (item.categories ?? []).join(' '), item.sourceName]
+    return [item.title, item.summary, item.author, (item.categories ?? []).join(' '), item.sourceName, excerpt(item)]
       .filter(Boolean)
       .join(' \u2022 ');
+  }
+
+  // 正文比摘要更能说明「有没有干货」，但只取前 1500 字，避免远处的关键词主导判定。
+  function excerpt(item) {
+    return cleanText(item.content?.text ?? '', 1500);
   }
 
   function relevance(item) {
@@ -84,20 +89,21 @@ export function createFilter(filters) {
   }
 
   function actionability(item) {
-    const text = `${cleanText(item.title, 220)} \u2022 ${cleanText(item.summary ?? '', 1200)}`;
+    const text = `${cleanText(item.title, 220)} \u2022 ${cleanText(item.summary ?? '', 1200)} \u2022 ${excerpt(item)}`;
     let hits = isActionTerm(text);
     if (['tools', 'local', 'money', 'apps'].includes(item.category)) hits += 1;
     return hits;
   }
 
   function hasEvidence(item) {
-    const text = `${cleanText(item.title, 220)} \u2022 ${cleanText(item.summary ?? '', 1500)}`;
+    const text = `${cleanText(item.title, 220)} \u2022 ${cleanText(item.summary ?? '', 1500)} \u2022 ${excerpt(item)}`;
     return evidencePattern.test(text);
   }
 
   function quality(item, source) {
     const title = cleanText(item.title, 220);
     const summary = cleanText(item.summary ?? '', 4000);
+    const bodyChars = Math.max(summary.length, cleanText(item.content?.text ?? '', 4000).length);
     const metrics = item.metrics ?? {};
     const reasons = [];
     const tier = item.tier ?? source?.tier;
@@ -106,9 +112,9 @@ export function createFilter(filters) {
     const evidence = hasEvidence(item);
 
     const levels = qualityConfig.summaryLevels ?? [220, 120, 60];
-    if (summary.length >= levels[0]) score += 3;
-    else if (summary.length >= levels[1]) score += 2;
-    else if (summary.length >= levels[2]) score += 1;
+    if (bodyChars >= levels[0]) score += 3;
+    else if (bodyChars >= levels[1]) score += 2;
+    else if (bodyChars >= levels[2]) score += 1;
     else reasons.push('正文太短');
 
     const substance = isSubstantive(`${title} \u2022 ${summary}`);
@@ -135,7 +141,7 @@ export function createFilter(filters) {
     const floors = (qualityConfig.sourceFloors ?? {})[item.sourceId] ?? source?.quality ?? null;
     if (floors) {
       for (const [key, minimum] of Object.entries(floors)) {
-        const value = key === 'summaryChars' ? summary.length : Number(metrics[key] ?? 0);
+        const value = key === 'summaryChars' ? bodyChars : Number(metrics[key] ?? 0);
         if (value < minimum) {
           score -= 2;
           reasons.push(`${key} < ${minimum}`);
