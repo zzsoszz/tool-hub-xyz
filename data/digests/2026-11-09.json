@@ -1,17 +1,17 @@
 {
   "day": "2026-11-09",
-  "generatedAt": "2026-11-09T04:37:16.589Z",
+  "generatedAt": "2026-11-09T05:35:55.895Z",
   "timezone": "Asia/Shanghai",
   "windowHours": 48,
   "counts": {
     "sources": 36,
-    "okSources": 35,
-    "fetched": 2972,
-    "duplicates": 13,
-    "carried": 0,
-    "added": 30,
+    "okSources": 34,
+    "fetched": 2937,
+    "duplicates": 2850,
+    "carried": 27,
+    "added": 0,
     "fallback": 3,
-    "lowQuality": 2354,
+    "lowQuality": 28,
     "published": 30
   },
   "sources": [
@@ -109,9 +109,9 @@
     {
       "id": "hn-newest",
       "name": "Hacker News (AI)",
-      "ok": true,
-      "items": 20,
-      "error": null
+      "ok": false,
+      "items": 0,
+      "error": "HTTP 502"
     },
     {
       "id": "hn-algolia",
@@ -186,9 +186,9 @@
     {
       "id": "hn-show-ai",
       "name": "Show HN (AI)",
-      "ok": true,
-      "items": 20,
-      "error": null
+      "ok": false,
+      "items": 0,
+      "error": "HTTP 502"
     },
     {
       "id": "ai-news-applied",
@@ -201,15 +201,15 @@
       "id": "juejin",
       "name": "掘金 AI",
       "ok": true,
-      "items": 20,
+      "items": 0,
       "error": null
     },
     {
       "id": "reddit-sideproject",
       "name": "r/SideProject",
-      "ok": false,
-      "items": 0,
-      "error": "HTTP 429"
+      "ok": true,
+      "items": 25,
+      "error": null
     },
     {
       "id": "lcz-hardware",
