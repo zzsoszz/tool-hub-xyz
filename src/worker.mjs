@@ -1,4 +1,17 @@
 import { buildCommentTree, COMMENT_LIMITS, isValidSlug, validateComment } from './lib/forum.mjs';
+import {
+  clearSessionCookieHeader,
+  createSessionToken,
+  loginAllowed,
+  normalizeReason,
+  normalizeSlug,
+  parseCookies,
+  readSessionToken,
+  sameOriginAndCsrf,
+  SESSION_COOKIE,
+  sessionCookieHeader,
+  timingSafeEqual,
+} from './lib/admin.mjs';
 
 const JSON_HEADERS = {
   'content-type': 'application/json; charset=utf-8',
@@ -6,8 +19,8 @@ const JSON_HEADERS = {
   'x-content-type-options': 'nosniff',
 };
 
-function json(payload, status = 200) {
-  return new Response(JSON.stringify(payload), { status, headers: JSON_HEADERS });
+function json(payload, status = 200, extraHeaders = {}) {
+  return new Response(JSON.stringify(payload), { status, headers: { ...JSON_HEADERS, ...extraHeaders } });
 }
 
 function fail(message, status = 400, extra = {}) {
@@ -24,21 +37,118 @@ function clientIp(request) {
   return request.headers.get('cf-connecting-ip') ?? request.headers.get('x-forwarded-for')?.split(',')[0]?.trim() ?? 'unknown';
 }
 
-function timingSafeEqual(a, b) {
-  const left = String(a ?? '');
-  const right = String(b ?? '');
-  if (left.length !== right.length) return false;
-  let diff = 0;
-  for (let index = 0; index < left.length; index += 1) diff |= left.charCodeAt(index) ^ right.charCodeAt(index);
-  return diff === 0;
-}
-
 function slugList(raw) {
   return String(raw ?? '')
     .split(',')
     .map((value) => value.trim())
     .filter(isValidSlug)
     .slice(0, 80);
+}
+
+function sessionSecret(env) {
+  const secret = env.SESSION_SECRET ?? env.MODERATION_TOKEN ?? '';
+  if (!secret) throw new Error('缺少 SESSION_SECRET 或 MODERATION_TOKEN');
+  return secret;
+}
+
+async function sessionState(env, request) {
+  const token = parseCookies(request.headers.get('cookie'))[SESSION_COOKIE];
+  if (!token) return { valid: false, reason: 'missing' };
+  return await readSessionToken(sessionSecret(env), token);
+}
+
+async function recentLoginFailures(database, ipHash, windowStart) {
+  const row = await database
+    .prepare('SELECT COUNT(*) AS total FROM admin_attempts WHERE ip_hash = ? AND ok = 0 AND created_at >= ?')
+    .bind(ipHash, windowStart)
+    .first();
+  return row?.total ?? 0;
+}
+
+async function recordLoginAttempt(database, ipHash, ok) {
+  await database
+    .prepare('INSERT INTO admin_attempts (ip_hash, ok, created_at) VALUES (?, ?, ?)')
+    .bind(ipHash, ok ? 1 : 0, new Date().toISOString())
+    .run();
+}
+
+function guardRequest(request) {
+  const guard = sameOriginAndCsrf(request);
+  if (guard.ok) return guard;
+  return { ok: false, message: guard.reason === 'csrf' ? '请求缺少站内标识头，请从页面上操作' : '跨站请求被拒绝', status: 403 };
+}
+
+async function adminLogin(request, env) {
+  const guard = guardRequest(request);
+  if (!guard.ok) return fail(guard.message, guard.status);
+  if (!env.ADMIN_USER || !env.ADMIN_PASSWORD) return fail('站点还没配置管理员账号', 503);
+
+  const ipHash = await hashIp(clientIp(request), env.COMMENT_SALT);
+  const windowStart = new Date(Date.now() - 15 * 60_000).toISOString();
+  const failures = await recentLoginFailures(db(env), ipHash, windowStart);
+  if (!loginAllowed({ failures })) return fail('登录失败次数太多，请 15 分钟后再试', 429, { retryAfter: 900 });
+
+  let payload;
+  try {
+    payload = await request.json();
+  } catch {
+    return fail('请求体不是合法 JSON');
+  }
+  const userOk = timingSafeEqual(String(payload?.user ?? ''), env.ADMIN_USER);
+  const passwordOk = timingSafeEqual(String(payload?.password ?? ''), env.ADMIN_PASSWORD);
+  await recordLoginAttempt(db(env), ipHash, userOk && passwordOk);
+  if (!userOk || !passwordOk) return fail('账号或密码不对', 401);
+
+  const token = await createSessionToken(sessionSecret(env), { user: env.ADMIN_USER });
+  return json({ ok: true, user: env.ADMIN_USER }, 200, { 'set-cookie': sessionCookieHeader(token) });
+}
+
+function adminLogout() {
+  return json({ ok: true }, 200, { 'set-cookie': clearSessionCookieHeader() });
+}
+
+async function hiddenSlugs(database) {
+  const rows = await database.prepare('SELECT slug FROM hidden_items ORDER BY hidden_at DESC').all();
+  return (rows.results ?? []).map((row) => row.slug);
+}
+
+async function isHidden(env, slug) {
+  return Boolean(await db(env).prepare('SELECT slug FROM hidden_items WHERE slug = ?').bind(slug).first());
+}
+
+async function setItemHidden(request, env, slug, hidden) {
+  const guard = guardRequest(request);
+  if (!guard.ok) return fail(guard.message, guard.status);
+  const session = await sessionState(env, request);
+  if (!session.valid) return fail(session.reason === 'expired' ? '登录已过期，请重新登录' : '需要管理员登录', 401);
+
+  let reason = '';
+  if (hidden) {
+    const payload = await request.json().catch(() => ({}));
+    reason = normalizeReason(payload?.reason);
+  }
+  const entry = (await itemIndex(env))[slug] ?? {};
+  if (hidden) {
+    await db(env)
+      .prepare('INSERT OR REPLACE INTO hidden_items (slug, url, title, reason, actor, hidden_at) VALUES (?, ?, ?, ?, ?, ?)')
+      .bind(slug, entry.url ?? '', entry.title ?? '', reason, session.user, new Date().toISOString())
+      .run();
+  } else {
+    await db(env).prepare('DELETE FROM hidden_items WHERE slug = ?').bind(slug).run();
+  }
+  return json({ ok: true, slug, hidden, hiddenSlugs: await hiddenSlugs(db(env)) });
+}
+
+function hiddenItemPage(slug) {
+  return new Response(`<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>条目已下架 · tool-hub.xyz</title><link rel="stylesheet" href="/styles.css"></head>
+<body><main><section class="lede"><h1>这条内容已下架</h1>
+<p class="lede-meta">编号 ${slug} 已被管理员撤下，不再展示。</p>
+<p class="lede-more"><a href="/">返回今日日报</a><a href="/archive">看归档</a></p></section></main></body></html>`, {
+    status: 410,
+    headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' },
+  });
 }
 
 async function itemIndex(env) {
@@ -160,6 +270,24 @@ async function handleApi(request, env) {
   const path = url.pathname;
 
   try {
+    if (request.method === 'GET' && path === '/api/admin/session') {
+      const session = await sessionState(env, request);
+      return json({ ok: true, admin: session.valid, user: session.user ?? null });
+    }
+    if (request.method === 'POST' && path === '/api/admin/login') return await adminLogin(request, env);
+    if (request.method === 'POST' && path === '/api/admin/logout') return adminLogout();
+
+    if (request.method === 'GET' && path === '/api/hidden') {
+      return json({ ok: true, slugs: await hiddenSlugs(db(env)) }, 200, { 'cache-control': 'public, max-age=30' });
+    }
+
+    const hideMatch = path.match(/^\/api\/items\/([0-9a-f]{12})\/(hide|unhide)$/);
+    if (hideMatch && request.method === 'POST') {
+      const slug = normalizeSlug(hideMatch[1]);
+      if (!slug) return fail('条目编号无效', 404);
+      return await setItemHidden(request, env, slug, hideMatch[2] === 'hide');
+    }
+
     if (request.method === 'GET' && path === '/api/counts') {
       const slugs = slugList(url.searchParams.get('items'));
       if (!slugs.length) return json({ ok: true, counts: {} });
@@ -220,6 +348,17 @@ export default {
     if (url.pathname.startsWith('/api/')) {
       if (!env.DB) return fail('论坛后端未配置 D1 数据库', 503);
       return handleApi(request, env);
+    }
+    // 已下架的条目即使还留在上一版静态页面里，也要当场挡掉。
+    if (env.DB && request.method === 'GET') {
+      const itemSlug = normalizeSlug(url.pathname.match(/^\/item\/([0-9a-f]{12})$/)?.[1]);
+      if (itemSlug && await isHidden(env, itemSlug)) return hiddenItemPage(itemSlug);
+      if (url.pathname === '/data/items.json') {
+        const index = await itemIndex(env);
+        const hidden = new Set(await hiddenSlugs(db(env)));
+        const visible = Object.fromEntries(Object.entries(index).filter(([slug]) => !hidden.has(slug)));
+        return json(visible, 200, { 'cache-control': 'public, max-age=120' });
+      }
     }
     try {
       return await env.ASSETS.fetch(request);
