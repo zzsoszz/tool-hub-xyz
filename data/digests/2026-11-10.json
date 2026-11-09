@@ -1,0 +1,679 @@
+{
+  "day": "2026-11-10",
+  "generatedAt": "2026-11-09T16:48:59.353Z",
+  "timezone": "Asia/Shanghai",
+  "windowHours": 48,
+  "counts": {
+    "sources": 36,
+    "okSources": 35,
+    "fetched": 2953,
+    "duplicates": 2798,
+    "carried": 0,
+    "added": 10,
+    "fallback": 1,
+    "lowQuality": 105,
+    "published": 10
+  },
+  "sources": [
+    {
+      "id": "openai-news",
+      "name": "OpenAI News",
+      "ok": true,
+      "items": 1368,
+      "error": null
+    },
+    {
+      "id": "google-deepmind",
+      "name": "Google DeepMind",
+      "ok": true,
+      "items": 100,
+      "error": null
+    },
+    {
+      "id": "google-ai",
+      "name": "Google AI Blog",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "hf-blog",
+      "name": "Hugging Face Blog",
+      "ok": true,
+      "items": 900,
+      "error": null
+    },
+    {
+      "id": "hf-daily-papers",
+      "name": "Hugging Face Daily Papers",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "interconnects",
+      "name": "Interconnects",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "latent-space",
+      "name": "Latent Space",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "simon-willison",
+      "name": "Simon Willison",
+      "ok": true,
+      "items": 30,
+      "error": null
+    },
+    {
+      "id": "techcrunch-ai",
+      "name": "TechCrunch AI",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "ars-ai",
+      "name": "Ars Technica AI",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "mit-tr-ai",
+      "name": "MIT Tech Review",
+      "ok": true,
+      "items": 10,
+      "error": null
+    },
+    {
+      "id": "qbitai",
+      "name": "量子位",
+      "ok": true,
+      "items": 10,
+      "error": null
+    },
+    {
+      "id": "arxiv-cs",
+      "name": "arXiv cs.AI/CL/LG",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "hn-newest",
+      "name": "Hacker News (AI)",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "hn-algolia",
+      "name": "Hacker News Search",
+      "ok": true,
+      "items": 25,
+      "error": null
+    },
+    {
+      "id": "lobsters-ai",
+      "name": "Lobsters AI",
+      "ok": true,
+      "items": 25,
+      "error": null
+    },
+    {
+      "id": "reddit-local-llama",
+      "name": "r/LocalLLaMA",
+      "ok": true,
+      "items": 25,
+      "error": null
+    },
+    {
+      "id": "github-trending",
+      "name": "GitHub 新晋 AI 项目",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "microsoft-research",
+      "name": "Microsoft Research",
+      "ok": true,
+      "items": 10,
+      "error": null
+    },
+    {
+      "id": "github-blog",
+      "name": "GitHub Blog",
+      "ok": true,
+      "items": 10,
+      "error": null
+    },
+    {
+      "id": "theverge",
+      "name": "The Verge",
+      "ok": true,
+      "items": 10,
+      "error": null
+    },
+    {
+      "id": "sspai",
+      "name": "少数派",
+      "ok": true,
+      "items": 10,
+      "error": null
+    },
+    {
+      "id": "appinn",
+      "name": "小众软件",
+      "ok": true,
+      "items": 10,
+      "error": null
+    },
+    {
+      "id": "producthunt",
+      "name": "Product Hunt",
+      "ok": true,
+      "items": 50,
+      "error": null
+    },
+    {
+      "id": "hn-show-ai",
+      "name": "Show HN (AI)",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "ai-news-applied",
+      "name": "AI News (应用)",
+      "ok": true,
+      "items": 0,
+      "error": null
+    },
+    {
+      "id": "juejin",
+      "name": "掘金 AI",
+      "ok": true,
+      "items": 0,
+      "error": null
+    },
+    {
+      "id": "reddit-sideproject",
+      "name": "r/SideProject",
+      "ok": false,
+      "items": 0,
+      "error": "HTTP 429"
+    },
+    {
+      "id": "lcz-hardware",
+      "name": "抡锤者 AI硬件",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "lcz-llm",
+      "name": "抡锤者 模型部署讨论",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "lcz-agent",
+      "name": "抡锤者 Agent 工具",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "lcz-media",
+      "name": "抡锤者 AI 音视频画图",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "lcz-selfmedia",
+      "name": "抡锤者 自媒体运营",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "lcz-web",
+      "name": "抡锤者 建站与网络赚钱",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "lcz-crisis",
+      "name": "抡锤者 AI 危机与机遇",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "lcz-news",
+      "name": "抡锤者 资讯",
+      "ok": true,
+      "items": 20,
+      "error": null
+    }
+  ],
+  "categories": [
+    {
+      "id": "apps",
+      "label": "AI 应用",
+      "items": [
+        {
+          "sourceId": "theverge",
+          "sourceName": "The Verge",
+          "title": "Hold up — I had a great time talking to the RIAA guy",
+          "url": "https://www.theverge.com/podcast/1029684/riaa-mitch-glazier-napster-ai-labels-music",
+          "id": "https://www.theverge.com/?p=1029684",
+          "published": "2026-11-09T15:30:00.000Z",
+          "summary": "Today, I’m talking with Mitch Glazier, who is CEO and chairman of the RIAA. This conversation was a real full-circle moment for me: I was in college when Napster hit, and the RIAA became everyone’s villain for suing kids for downloading music. That was when I decided to go be a copyright lawyer, which set the rest of…",
+          "content": {
+            "html": "<figure><img src=\"https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/DCD_20261109_Glazier.jpg?quality=90&amp;strip=all&amp;crop=0,0,100,100\" alt=\"A photo illustration of RIAA CEO Mitch Glazier\" loading=\"lazy\"><figcaption></figcaption></figure>\n<p>Today, I’m talking with Mitch Glazier, who is CEO and chairman of the RIAA.</p>\n<p>This conversation was a real full-circle moment for me: I was in college when Napster hit, and the RIAA became everyone’s villain for suing kids for downloading music. That was when I decided to go be a copyright lawyer, which set the rest of my career in motion — and Mitch was in the background as a young lawyer at the RIAA working on those cases. So part of me was very deeply, very genuinely surprised to discover just how much fun I had talking to Mitch.</p>\n<p>That’s because here in 2026, Mitch, the RIAA, the record labels, the artists, and ordinary people are all pretty unhappy with the big AI companies in the same way, for training on everyone’s work without permission and flooding our feeds with slop.</p>\n<div><img src=\"https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/24792604/The_Verge_Decoder_Tileart.jpg?quality=90&amp;strip=all&amp;crop=0,0,100,100\" alt=\"\" loading=\"lazy\"><p><em>Verge</em>subscribers, don’t forget you get exclusive access to ad-free<em>Decoder</em>wherever you get your podcasts. Head<a href=\"https://www.theverge.com/account/podcasts\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">here</a>. Not a subscriber? You can<a href=\"https://www.theverge.com/subscribe\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">sign up here</a>.</p></div>\n<p>Everyone is mad about it! And since the RIAA is both the group that lobbies for changes to the law and also the group that files lawsuits about things that affect record labels and distributors, Mitch is a pretty busy guy these days. We got deep into the legal complexity of things like AI deepfakes, how banning them might affect other kinds of expression, and how the AI detection and labeling systems that we all seem to want might actually work in practice — especially if big platforms like Spotify and YouTube don’t get on board.</p>\n<p>I just want to get right into it. This conversation is a real ride through how AI, the law, art, and commerce might all intersect. I think you’re going to be able to tell, Mitch and I had a lot of fun talking about it.</p>\n<p>Before we get going, do me a favor and subscribe to<a href=\"https://www.youtube.com/@decoderpod\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><em>Decoder</em>on YouTube</a>, where we put out new episodes every Monday and Thursday.</p>\n<p>Okay: RIAA CEO Mitch Glazier. Here we go.</p>\n<p><em>This interview has been lightly edited for length and clarity.</em></p>\n<p><strong>Mitch Glazier, you’re the chairman and CEO of the Recording Industry Association of America, which people know as the RIAA. Welcome to</strong><strong><em>Decoder</em></strong><strong>.</strong></p>\n<p>Thank you. Thank you, Nilay. I’m excited to be here.</p>\n<p><strong>I am very excited to talk to you. I have to tell you, this is a very full-circle moment for me. My entire career got on track when I was in college. Napster came out, my university banned Napster from the school network, and I decided right then I was going to go be a copyright lawyer. And then I was a copyright lawyer, and I defended</strong><a href=\"https://www.eff.org/wp/riaa-v-people-five-years-later\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><strong>kids who got sued for using Kazaa</strong></a><strong>. I was not good at that job. It was not fulfilling. And I became a journalist because I could write about copyright law on the iPod. So talking to you is about as full circle as it gets for me. Thank you for being on the show.</strong></p>\n<p>Good. Well then, I’m no longer sorry for the policies that we forced your school to implement because it made you a copyright lawyer. So the world benefited at the end of the day. It had some silver linings to it.</p>\n<p>When I first started at the RIAA, Napster was obviously the big issue. Nobody had seen anything like it before. The last technological change had really been CDs.…</p>",
+            "text": "Today, I’m talking with Mitch Glazier, who is CEO and chairman of the RIAA.\nThis conversation was a real full-circle moment for me: I was in college when Napster hit, and the RIAA became everyone’s villain for suing kids for downloading music. That was when I decided to go be a copyright lawyer, which set the rest of my career in motion — and Mitch was in the background as a young lawyer at the RIAA working on those cases. So part of me was very deeply, very genuinely surprised to discover just how much fun I had talking to Mitch.\nThat’s because here in 2026, Mitch, the RIAA, the record labels, the artists, and ordinary people are all pretty unhappy with the big AI companies in the same way, for training on everyone’s work without permission and flooding our feeds with slop.\nVerge subscribers, don’t forget you get exclusive access to ad-free Decoder wherever you get your podcasts. Head here . Not a subscriber? You can sign up here .\nEveryone is mad about it! And since the RIAA is both the group that lobbies for changes to the law and also the group that files lawsuits about things that affect record labels and distributors, Mitch is a pretty busy guy these days. We got deep into the legal complexity of things like AI deepfakes, how banning them might affect other kinds of expression, and how the AI detection and labeling systems that we all seem to want might actually work in practice — especially if big platforms like Spotify and YouTube don’t get on board.\nI just want to get right into it. This conversation is a real ride through how AI, the law, art, and commerce might all intersect. I think you’re going to be able to tell, Mitch and I had a lot of fun talking about it.\nBefore we get going, do me a favor and subscribe to Decoder on YouTube , where we put out new episodes every Monday and Thursday.\nOkay: RIAA CEO Mitch Glazier. Here we go.\nThis interview has been lightly edited for length and clarity.\nMitch Glazier, you’re the chairman and CEO of the Recording Industry Association of America, which people know as the RIAA. Welcome to Decoder .\nThank you. Thank you, Nilay. I’m excited to be here.\nI am very excited to talk to you. I have to tell you, this is a very full-circle moment for me. My entire career got on track when I was in college. Napster came out, my university banned Napster from the school network, and I decided right then I was going to go be a copyright lawyer. And then I was a copyright lawyer, and I defended kids who got sued for using Kazaa . I was not good at that job. It was not fulfilling. And I became a journalist because I could write about copyright law on the iPod. So talking to you is about as full circle as it gets for me. Thank you for being on the show.\nGood. Well then, I’m no longer sorry for the policies that we forced your school to implement because it made you a copyright lawyer. So the world benefited at the end of the day. It had some silver linings to it.\nWhen I first started at the RIAA, Napster was obviously the big issue. Nobody had seen anything like it before. The last technological change had really been CDs.…",
+            "lead": "Today, I’m talking with Mitch Glazier, who is CEO and chairman of the RIAA.\nThis conversation was a real full-circle moment for me: I was in college when Napster hit, and the RIAA became everyone’s villain for suing kids for downloading music. That was when I decided to go be a copyright lawyer, which set the rest of my career in motion — and Mitch was in the background as a young lawyer at the RIAA working on those cases. So part of me was very deeply, ve",
+            "chars": 64807,
+            "shown": 3127,
+            "truncated": true
+          },
+          "categories": [
+            "AI",
+            "Decoder",
+            "Entertainment",
+            "Music",
+            "Podcasts"
+          ],
+          "author": "Nilay Patel",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "apps",
+          "metrics": {},
+          "quality": 8,
+          "score": 13.29,
+          "category": "apps",
+          "subcategory": "creation",
+          "practical": 1,
+          "slug": "fb25577d0da7",
+          "action": 2,
+          "rank": 11.2,
+          "tags": [
+            "free"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "label": "工具玩法",
+      "items": [
+        {
+          "sourceId": "latent-space",
+          "sourceName": "Latent Space",
+          "title": "What Frontier Labs Buy: A Data Deep Dive with Handshake AI — Garrett Lord & Team",
+          "url": "https://latent.space/p/what_frontier_labs_buy_a_data_deep_dive_with_handshake_ai_garrett_lord_team/",
+          "id": "urn:latent-space:post:pod_ep_01a1c0f3-0e12-7b37-bb7f-c0b59fbc3b39",
+          "published": "2026-11-09T16:41:48.000Z",
+          "summary": "Our first deep dive with an AI data company. In roughly a year, Handshake built an AI training business doing nearly $1 billion in gross annualized revenue. What are frontier labs buying? Garrett Lord joins us with the people building reinforcement learning environments across biology, finance and alignment. An AI age…",
+          "content": {
+            "html": "<p>Our first deep dive with an AI data company. In roughly a year, Handshake built an AI training business doing nearly $1 billion in gross annualized revenue. What are frontier labs buying? Garrett Lord joins us with the people building reinforcement learning environments across biology, finance and alignment.</p>\n<p>An AI agent filled an Excel tab with every number from one to a million. An early grader found the net-income figure it wanted and awarded a point. What would an investment banker check instead?</p>\n<p>Who’s in the room</p>\n<p>AI data business — Garrett Lord, Sahil Bhaiwala and Nishant Ranka open and close the episode on the market for expert data.</p>\n<p>Life sciences — Nick Magazine and Jonas Mueller put the gel and brain-tissue tasks on screen.</p>\n<p>Finance — Collin Schweiker and Sahil Bhaiwala take us through Project Falcon and its Excel grader.</p>\n<p>Alignment — Steve Kelling and Nishant Ranka follow the agent’s tool calls through the safety simulations.</p>\n<p>Chapters</p>\n<p>0:00 Inside Handshake AI</p>\n<p>0:39 Garrett, Sahil and Nishant on frontier training data</p>\n<p>5:15 How to build a banking environment for an agent</p>\n<p>13:07 How frontier labs buy data</p>\n<p>15:51 How a lab evaluates a new dataset</p>\n<p>20:01 Testing training data on open models</p>\n<p>27:38 Where rubrics fall short of expert judgment</p>\n<p>31:30 Nick and Jonas introduce the VIALS benchmark</p>\n<p>35:52 Reading molecular structures and plasmid maps</p>\n<p>43:48 Training vision models to interpret scientific images</p>\n<p>47:17 Task one: reading the bands on a gel</p>\n<p>50:59 Task two: finding necrosis in brain tissue</p>\n<p>55:49 Can Python tools help the model see?</p>\n<p>1:02:52 Can biology models improve on their own?</p>\n<p>1:06:19 What a biology lab can buy from Handshake</p>\n<p>1:12:33 Atlas Finance with Collin and Sahil</p>\n<p>1:18:56 Inside a simulated investment bank</p>\n<p>1:25:45 Where the agent’s financial model went wrong</p>\n<p>1:31:18 How a banker grades the spreadsheet</p>\n<p>1:41:12 Penalty traps, dependency gates and partial credit</p>\n<p>1:46:41 How an agent gamed the Excel grader</p>\n<p>1:48:52 What would make an AI banker useful?</p>\n<p>1:54:48 Safety and alignment with Steve and Nishant</p>\n<p>1:58:25 CAREBench and the limits of a refusal</p>\n<p>2:04:42 How safety feedback reaches model training</p>\n<p>2:07:21 When an agent sends the wrong files</p>\n<p>2:11:14 A loan application tests fair lending</p>\n<p>2:16:09 Designing private benchmarks for enterprises</p>\n<p>2:25:37 The leadership team on Handshake’s mission</p>\n<p>2:28:36 When enterprises need their own models</p>\n<p>2:33:03 The market for compute and expert data</p>\n<p>2:39:12 Why labs hold out evaluation tasks</p>\n<p>2:43:01 Hiring at Handshake AI</p>",
+            "text": "Our first deep dive with an AI data company. In roughly a year, Handshake built an AI training business doing nearly $1 billion in gross annualized revenue. What are frontier labs buying? Garrett Lord joins us with the people building reinforcement learning environments across biology, finance and alignment.\nAn AI agent filled an Excel tab with every number from one to a million. An early grader found the net-income figure it wanted and awarded a point. What would an investment banker check instead?\nWho’s in the room\nAI data business — Garrett Lord, Sahil Bhaiwala and Nishant Ranka open and close the episode on the market for expert data.\nLife sciences — Nick Magazine and Jonas Mueller put the gel and brain-tissue tasks on screen.\nFinance — Collin Schweiker and Sahil Bhaiwala take us through Project Falcon and its Excel grader.\nAlignment — Steve Kelling and Nishant Ranka follow the agent’s tool calls through the safety simulations.\nChapters\n0:00 Inside Handshake AI\n0:39 Garrett, Sahil and Nishant on frontier training data\n5:15 How to build a banking environment for an agent\n13:07 How frontier labs buy data\n15:51 How a lab evaluates a new dataset\n20:01 Testing training data on open models\n27:38 Where rubrics fall short of expert judgment\n31:30 Nick and Jonas introduce the VIALS benchmark\n35:52 Reading molecular structures and plasmid maps\n43:48 Training vision models to interpret scientific images\n47:17 Task one: reading the bands on a gel\n50:59 Task two: finding necrosis in brain tissue\n55:49 Can Python tools help the model see?\n1:02:52 Can biology models improve on their own?\n1:06:19 What a biology lab can buy from Handshake\n1:12:33 Atlas Finance with Collin and Sahil\n1:18:56 Inside a simulated investment bank\n1:25:45 Where the agent’s financial model went wrong\n1:31:18 How a banker grades the spreadsheet\n1:41:12 Penalty traps, dependency gates and partial credit\n1:46:41 How an agent gamed the Excel grader\n1:48:52 What would make an AI banker useful?\n1:54:48 Safety and alignment with Steve and Nishant\n1:58:25 CAREBench and the limits of a refusal\n2:04:42 How safety feedback reaches model training\n2:07:21 When an agent sends the wrong files\n2:11:14 A loan application tests fair lending\n2:16:09 Designing private benchmarks for enterprises\n2:25:37 The leadership team on Handshake’s mission\n2:28:36 When enterprises need their own models\n2:33:03 The market for compute and expert data\n2:39:12 Why labs hold out evaluation tasks\n2:43:01 Hiring at Handshake AI",
+            "lead": "Our first deep dive with an AI data company. In roughly a year, Handshake built an AI training business doing nearly $1 billion in gross annualized revenue. What are frontier labs buying? Garrett Lord joins us with the people building reinforcement learning environments across biology, finance and alignment.\nAn AI agent filled an Excel tab with every number from one to a million. An early grader found the net-income figure it wanted and awarded a point. Wh",
+            "chars": 2538,
+            "shown": 2538,
+            "truncated": false
+          },
+          "categories": [],
+          "author": "Latent.Space",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "opinion",
+          "metrics": {},
+          "quality": 9,
+          "score": 19.99,
+          "category": "tools",
+          "subcategory": "hands-on",
+          "practical": 2,
+          "slug": "95f84512fec9",
+          "action": 3,
+          "rank": 13.8,
+          "tags": [
+            "benchmark",
+            "tutorial",
+            "agent"
+          ]
+        },
+        {
+          "sourceId": "qbitai",
+          "sourceName": "量子位",
+          "title": "腾讯混元跻身最强开源模型！一手实测Hy4：搭配WorkBuddy，多模态Agent交付力拉满",
+          "url": "https://www.qbitai.com/2026/11/507843.html",
+          "id": "https://www.qbitai.com/?p=507843",
+          "published": "2026-11-09T08:44:00.000Z",
+          "summary": "",
+          "categories": [
+            "资讯",
+            "混元",
+            "腾讯"
+          ],
+          "author": "闻乐",
+          "lang": "zh",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "news",
+          "metrics": {},
+          "quality": 6,
+          "score": 20.13,
+          "category": "tools",
+          "subcategory": null,
+          "practical": 2,
+          "slug": "78f3f88d9b2d",
+          "action": 3,
+          "rank": 10.8,
+          "tags": [
+            "benchmark",
+            "agent",
+            "free"
+          ]
+        },
+        {
+          "sourceId": "hn-newest",
+          "sourceName": "Hacker News (AI)",
+          "title": "Ask HN: How do you manage your AI agents' context across clients and projects?",
+          "url": "https://news.ycombinator.com/item?id=50403153",
+          "id": "https://news.ycombinator.com/item?id=50403153",
+          "published": "2026-11-07T10:01:48.000Z",
+          "summary": "Hi Guys, like many of you I work with AI agents every day and across several clients. The major time cost for me is to re-explaining context and past decisions, client rules, that we already do. To finish every tools as its own memory. So I’m curious how you actually handle this: 1. When you start a new session, how d…",
+          "content": {
+            "html": "<p>Hi Guys,\nlike many of you I work with AI agents every day and across several clients.\nThe major time cost for me is to re-explaining context and past decisions, client rules, that we already do. To finish every tools as its own memory.<p>So I’m curious how you actually handle this:<p>1. When you start a new session, how do you give context to the agent (context came from chat, mail, ticket ...) ?<p>2. Do you use more than one agent type (claude, codex ...) ? And if yes, how do you carry context between agents ?<p>3. If you work for several clients, how do you keep their context separate ?<p>4. The last time something went wrong ( an agent used a rejected approach, forgot a decision ...), what happened, and how much time did it cost to you ?<p>5. Did you paid or built a tool that helped you with these problems ? Do you still use it ?<p>I’m exploring whether to build something, so I’m trying to learn how other people really work.\nThanks for your return.</p></p></p></p></p></p></p></p>\n<hr><p>Comments URL:<a href=\"https://news.ycombinator.com/item?id=50403153\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://news.ycombinator.com/item?id=50403153</a></p>\n<p>Points: 72</p>\n<p># Comments: 49</p>",
+            "text": "Hi Guys,\nlike many of you I work with AI agents every day and across several clients.\nThe major time cost for me is to re-explaining context and past decisions, client rules, that we already do. To finish every tools as its own memory. So I’m curious how you actually handle this: 1. When you start a new session, how do you give context to the agent (context came from chat, mail, ticket ...) ? 2. Do you use more than one agent type (claude, codex ...) ? And if yes, how do you carry context between agents ? 3. If you work for several clients, how do you keep their context separate ? 4. The last time something went wrong ( an agent used a rejected approach, forgot a decision ...), what happened, and how much time did it cost to you ? 5. Did you paid or built a tool that helped you with these problems ? Do you still use it ? I’m exploring whether to build something, so I’m trying to learn how other people really work.\nThanks for your return.\nComments URL: https://news.ycombinator.com/item?id=50403153\nPoints: 72\n# Comments: 49",
+            "lead": "Hi Guys,\nlike many of you I work with AI agents every day and across several clients.\nThe major time cost for me is to re-explaining context and past decisions, client rules, that we already do. To finish every tools as its own memory. So I’m curious how you actually handle this: 1. When you start a new session, how do you give context to the agent (context came from chat, mail, ticket ...) ? 2. Do you use more than one agent type (claude, codex ...) ? And",
+            "chars": 1043,
+            "shown": 1043,
+            "truncated": false
+          },
+          "categories": [],
+          "author": "Michel_Aventin",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "tools",
+          "metrics": {},
+          "quality": 6,
+          "fallback": true,
+          "score": 11.23,
+          "category": "tools",
+          "subcategory": "prompt",
+          "practical": 1,
+          "slug": "60d039a3307a",
+          "action": 3,
+          "rank": 10.8,
+          "tags": [
+            "agent"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hardware",
+      "label": "AI 硬件",
+      "items": [
+        {
+          "sourceId": "reddit-local-llama",
+          "sourceName": "r/LocalLLaMA",
+          "title": "Looking for suggestions for a local model that would be good at evaluating comedy writing",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xrv20h/looking_for_suggestions_for_a_local_model_that/",
+          "id": "t3_1xrv20h",
+          "published": "2026-11-09T15:45:51.000Z",
+          "summary": "I have a specific use case where I have a small web application that prompts the user with a randomly generated premise for a joke (using an llm), and then the user is expected to write a joke with the generated premise as a sort of challenge. An LLM is then used to evaluate their joke as far as how good of a joke the…",
+          "content": {
+            "html": "<div><p>I have a specific use case where I have a small web application that prompts the user with a randomly generated premise for a joke (using an llm), and then the user is expected to write a joke with the generated premise as a sort of challenge.</p><p>An LLM is then used to evaluate their joke as far as how good of a joke they wrote using the supplied premise, provide a score, provide feedback on why it was or was not a good joke, and tips for what they could do to improve.</p><p>It works well using various large models, and relatively okay using openrouter/free , which has a series of larger free models in a collection and an intelligent router.</p><p>However I've tested on various smaller models and gotten mixed results.</p><p>I'm looking for some suggestions from people for models that I may not be aware of that might be good for more general knowledge things like this, rather than coding.</p><p>I have 64GB of system ram (machine has a discrete GPU / AMD APU so no dedicated VRAM).</p><p>So I'm probably looking at a 45-70b total parameter model on the higher end, but preferably it's an MOE model with a smaller number of active params for speed.</p><p>Each use will probably have ~400 tokens input (including system prompt), and ~200-600 tokens output, so I'm okay with heavier models even though I don't have a GPU because it's a small number of total tokens.</p><p>Some models I've tried, like bonsai-27b and LFM2.5 24b-a2b, have had weird results.</p><p>Gemma 4 26b-a4b seems to really have a good grasp of it and do the best so far out of any local models I've tried, but I'm wondering if anyone has other suggestions.</p></div>\nsubmitted by<a href=\"https://www.reddit.com/user/NotARedditUser3\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">/u/NotARedditUser3</a>\n<br><span><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xrv20h/looking_for_suggestions_for_a_local_model_that/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[link]</a></span>\n<span><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xrv20h/looking_for_suggestions_for_a_local_model_that/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[comments]</a></span>",
+            "text": "I have a specific use case where I have a small web application that prompts the user with a randomly generated premise for a joke (using an llm), and then the user is expected to write a joke with the generated premise as a sort of challenge.\nAn LLM is then used to evaluate their joke as far as how good of a joke they wrote using the supplied premise, provide a score, provide feedback on why it was or was not a good joke, and tips for what they could do to improve.\nIt works well using various large models, and relatively okay using openrouter/free , which has a series of larger free models in a collection and an intelligent router.\nHowever I've tested on various smaller models and gotten mixed results.\nI'm looking for some suggestions from people for models that I may not be aware of that might be good for more general knowledge things like this, rather than coding.\nI have 64GB of system ram (machine has a discrete GPU / AMD APU so no dedicated VRAM).\nSo I'm probably looking at a 45-70b total parameter model on the higher end, but preferably it's an MOE model with a smaller number of active params for speed.\nEach use will probably have ~400 tokens input (including system prompt), and ~200-600 tokens output, so I'm okay with heavier models even though I don't have a GPU because it's a small number of total tokens.\nSome models I've tried, like bonsai-27b and LFM2.5 24b-a2b, have had weird results.\nGemma 4 26b-a4b seems to really have a good grasp of it and do the best so far out of any local models I've tried, but I'm wondering if anyone has other suggestions.\nsubmitted by /u/NotARedditUser3\n[link]\n[comments]",
+            "lead": "I have a specific use case where I have a small web application that prompts the user with a randomly generated premise for a joke (using an llm), and then the user is expected to write a joke with the generated premise as a sort of challenge.\nAn LLM is then used to evaluate their joke as far as how good of a joke they wrote using the supplied premise, provide a score, provide feedback on why it was or was not a good joke, and tips for what they could do t",
+            "chars": 1645,
+            "shown": 1645,
+            "truncated": false
+          },
+          "categories": [
+            "LocalLLaMA"
+          ],
+          "author": "/u/NotARedditUser3",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "oss",
+          "metrics": {},
+          "quality": 6,
+          "score": 16.91,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 3,
+          "slug": "439f8fc5e967",
+          "action": 4,
+          "rank": 12.4,
+          "tags": [
+            "lowspec",
+            "free"
+          ]
+        },
+        {
+          "sourceId": "reddit-local-llama",
+          "sourceName": "r/LocalLLaMA",
+          "title": "Worth buying a DGX-1 (8× V100 32GB) for local LLM inference in 2026? ~15k €",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xrulta/worth_buying_a_dgx1_8_v100_32gb_for_local_llm/",
+          "id": "t3_1xrulta",
+          "published": "2026-11-09T15:28:45.000Z",
+          "summary": "I found used DGX-1 locally for 15k€ 8 x V100 32GB SXM2 (256GB VRAM,NVLink), dual Xeon E5-2698 v4, 512GB RAM, 4× IB EDR, 3.5 kW I am curious to see if anyone has that config to tell me real world experience? Which models do you run and what is throughput? I plan to rent similar (runpod,vast,lambda or wherever i can fin…",
+          "content": {
+            "html": "<div><p>I found used DGX-1 locally for 15k€</p><p>8 x V100 32GB SXM2 (256GB VRAM,NVLink), dual Xeon E5-2698 v4, 512GB RAM, 4× IB EDR, 3.5 kW</p><p>I am curious to see if anyone has that config to tell me real world experience? Which models do you run and what is throughput?</p><p>I plan to rent similar (runpod,vast,lambda or wherever i can find) to experiment myself as well.</p><p>On a side note -&gt; how good it is for deep learning - training CV models?</p></div>\nsubmitted by<a href=\"https://www.reddit.com/user/fijasko_ultimate\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">/u/fijasko_ultimate</a>\n<br><span><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xrulta/worth_buying_a_dgx1_8_v100_32gb_for_local_llm/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[link]</a></span>\n<span><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xrulta/worth_buying_a_dgx1_8_v100_32gb_for_local_llm/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[comments]</a></span>",
+            "text": "I found used DGX-1 locally for 15k€\n8 x V100 32GB SXM2 (256GB VRAM,NVLink), dual Xeon E5-2698 v4, 512GB RAM, 4× IB EDR, 3.5 kW\nI am curious to see if anyone has that config to tell me real world experience? Which models do you run and what is throughput?\nI plan to rent similar (runpod,vast,lambda or wherever i can find) to experiment myself as well.\nOn a side note -> how good it is for deep learning - training CV models?\nsubmitted by /u/fijasko_ultimate\n[link]\n[comments]",
+            "lead": "I found used DGX-1 locally for 15k€\n8 x V100 32GB SXM2 (256GB VRAM,NVLink), dual Xeon E5-2698 v4, 512GB RAM, 4× IB EDR, 3.5 kW\nI am curious to see if anyone has that config to tell me real world experience? Which models do you run and what is throughput?\nI plan to rent similar (runpod,vast,lambda or wherever i can find) to experiment myself as well.\nOn a side note -> how good it is for deep learning - training CV models?",
+            "chars": 480,
+            "shown": 480,
+            "truncated": false
+          },
+          "categories": [
+            "LocalLLaMA"
+          ],
+          "author": "/u/fijasko_ultimate",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "oss",
+          "metrics": {},
+          "quality": 6,
+          "score": 13.29,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 1,
+          "slug": "3ddef663a580",
+          "action": 2,
+          "rank": 9.2,
+          "tags": [
+            "lowspec"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "local",
+      "label": "本地开源",
+      "items": [
+        {
+          "sourceId": "lcz-media",
+          "sourceName": "抡锤者 AI 音视频画图",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "apps",
+          "categories": [],
+          "author": "koala",
+          "id": "2936",
+          "title": "【MinimaxH3】【水墨】笔走虚空无纸处，墨开混沌有缘来",
+          "url": "https://lcz.me/topic/2936",
+          "published": "2026-11-09T08:40:19.810Z",
+          "summary": "Youtube Video 一、视频：MiniMax H3（本地 ComfyUI 8288）",
+          "metrics": {
+            "points": 2,
+            "comments": 18,
+            "views": 197
+          },
+          "excellent": false,
+          "content": {
+            "html": "<p><a href=\"https://www.youtube.com/watch?v=3jtl-mnKH6o\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><i></i>Youtube Video</a></p>\n<div><div></div></div>\n<p></p>\n<h3>一、视频：MiniMax H3（本地 ComfyUI 8288）</h3>\n<table><thead><tr><th>项</th><th>值</th></tr></thead><tbody><tr><td>基座模型</td><td>MiniMax H3（音视频联合生成，FL2VA 变体）</td></tr><tr><td>UNet</td><td>minimax_h3_fl2va_pruned_int8_convrot.safetensors（int8 量化剪枝）</td></tr><tr><td>LoRA</td><td>minimax_h3_fl2v_turbo_8step_v1.0_768p（8 步蒸馏）</td></tr><tr><td>文本编码器</td><td>qwen3vl_32b_minimax_h3_int8_convrot.safetensors</td></tr><tr><td>视频 VAE</td><td>minimax_h3_video_vae_fp16.safetensors</td></tr><tr><td>音频 VAE</td><td>minimax_h3_audio_vae_fp32.safetensors（成片未使用其原声）</td></tr><tr><td>生成节点</td><td>MiniMaxH3ReferenceToVideo（Ref2VA，双参考图锁人锁兽）</td></tr><tr><td>采样器</td><td>Euler</td></tr><tr><td>调度器</td><td>beta</td></tr><tr><td>步数</td><td>8</td></tr><tr><td>denoise</td><td>1.0</td></tr><tr><td>帧率</td><td>24 fps</td></tr><tr><td>帧数公式</td><td>max(5, round(时长×24)) 吸附到 17k+5</td></tr><tr><td>硬件</td><td>ubuntu，AMD 7900 XTX 24GB，ROCm</td></tr></tbody></table>\n<h3>参考图与分辨率</h3>\n<table><thead><tr><th>项</th><th>生肖 12 段</th><th>开场/结尾近身镜</th></tr></thead><tbody><tr><td>时长</td><td>15 秒 / 段</td><td>5.1667 秒 / 段（3 小节）</td></tr><tr><td>分辨率档</td><td>0.7MP，16:9</td><td>0.8MP，16:9</td></tr><tr><td>实际像素</td><td>1152 × 640</td><td>1216 × 672</td></tr><tr><td>实际帧数</td><td>362 帧</td><td>124 帧</td></tr><tr><td>参考图 1（人物）</td><td>ink_lady_ref_pink_lady.png 等粉裙人像</td><td>同左</td></tr><tr><td>参考图 2（兽形）</td><td>zodiac_ink_&lt;生肖&gt;<em>00001</em>.png 水墨静帧</td><td>同上（沿用虎）</td></tr><tr><td>ref_image_size</td><td>match</td><td>max</td></tr></tbody></table>\n<ul><li>ref_image_size 用 match 快但身份保真弱；近身镜露脸，改 max（短边 2048）换保真，慢数倍。</li><li>生肖段种子 147263133599888 起，每段 +7 递增，12 段固定可复现。</li><li>近身镜种子：开场 v2 = 771903546，结尾 = 908341126。</li></ul>\n<h3>渲染耗时（实测）</h3>\n<table><thead><tr><th>内容</th><th>单段耗时</th></tr></thead><tbody><tr><td>生肖段 15 秒 / 0.7MP / 8 步</td><td>32-33 分钟</td></tr><tr><td>12 段全批</td><td>约 6 小时 35 分</td></tr><tr><td>近身镜 5.17 秒 / 0.8MP / 8 步</td><td>15-20 分钟</td></tr></tbody></table>\n<p>原始素材合计 12×15 + 2×5.1667 ≈ 190 秒，剪成横版 113.5 秒、竖版 72.3 秒。</p>\n<h3>三、后期（ffmpeg，非生成）</h3>\n<table><thead><tr><th>项</th><th>横版</th><th>竖版</th></tr></thead><tbody><tr><td>剪法</td><td>12 段各取 8.6 秒（5 小节）</td><td>12 段各取 5.1667 秒（3 小节），段内 4 段拼接 + 变速</td></tr><tr><td>正片长度</td><td>103.2 秒</td><td>62.0 秒</td></tr><tr><td>加首尾</td><td>+5.17 × 2</td><td>+5.17 × 2</td></tr><tr><td>成片</td><td>113.5 秒 / 1920×1080（1152×640 lanczos 放大 + 轻锐化）</td><td>72.3 秒 / 1080×1920 原生</td></tr><tr><td>装裱</td><td>无</td><td>青绿锦绫平铺，画心 1080×600 覆盖于 y=640</td></tr></tbody></table>\n<ul><li>配乐《千钧落弦》139.53 BPM，拍 0.430 秒，小节 1.720 秒，音乐起点 22.7633 秒。</li><li>音效只两种：挥笔划破空气（全片铺底）、实体撞击（全片仅牛段撞木桩一次）。</li><li>响度：全长 −15.2 LUFS，峰值 −1.0 dBFS；开场 −18.8 / 正片 −16.5 / 结尾 −14.6，做缓升。</li><li>H3 自带音轨全部弃用，成片音轨为后期重制。</li></ul>",
+            "text": "Youtube Video\n一、视频：MiniMax H3（本地 ComfyUI 8288）\n项\n值\n基座模型\nMiniMax H3（音视频联合生成，FL2VA 变体）\nUNet\nminimax_h3_fl2va_pruned_int8_convrot.safetensors（int8 量化剪枝）\nLoRA\nminimax_h3_fl2v_turbo_8step_v1.0_768p（8 步蒸馏）\n文本编码器\nqwen3vl_32b_minimax_h3_int8_convrot.safetensors\n视频 VAE\nminimax_h3_video_vae_fp16.safetensors\n音频 VAE\nminimax_h3_audio_vae_fp32.safetensors（成片未使用其原声）\n生成节点\nMiniMaxH3ReferenceToVideo（Ref2VA，双参考图锁人锁兽）\n采样器\nEuler\n调度器\nbeta\n步数\n8\ndenoise\n1.0\n帧率\n24 fps\n帧数公式\nmax(5, round(时长×24)) 吸附到 17k+5\n硬件\nubuntu，AMD 7900 XTX 24GB，ROCm\n参考图与分辨率\n项\n生肖 12 段\n开场/结尾近身镜\n时长\n15 秒 / 段\n5.1667 秒 / 段（3 小节）\n分辨率档\n0.7MP，16:9\n0.8MP，16:9\n实际像素\n1152 × 640\n1216 × 672\n实际帧数\n362 帧\n124 帧\n参考图 1（人物）\nink_lady_ref_pink_lady.png 等粉裙人像\n同左\n参考图 2（兽形）\nzodiac_ink_<生肖> 00001 .png 水墨静帧\n同上（沿用虎）\nref_image_size\nmatch\nmax\nref_image_size 用 match 快但身份保真弱；近身镜露脸，改 max（短边 2048）换保真，慢数倍。\n生肖段种子 147263133599888 起，每段 +7 递增，12 段固定可复现。\n近身镜种子：开场 v2 = 771903546，结尾 = 908341126。\n渲染耗时（实测）\n内容\n单段耗时\n生肖段 15 秒 / 0.7MP / 8 步\n32-33 分钟\n12 段全批\n约 6 小时 35 分\n近身镜 5.17 秒 / 0.8MP / 8 步\n15-20 分钟\n原始素材合计 12×15 + 2×5.1667 ≈ 190 秒，剪成横版 113.5 秒、竖版 72.3 秒。\n三、后期（ffmpeg，非生成）\n项\n横版\n竖版\n剪法\n12 段各取 8.6 秒（5 小节）\n12 段各取 5.1667 秒（3 小节），段内 4 段拼接 + 变速\n正片长度\n103.2 秒\n62.0 秒\n加首尾\n+5.17 × 2\n+5.17 × 2\n成片\n113.5 秒 / 1920×1080（1152×640 lanczos 放大 + 轻锐化）\n72.3 秒 / 1080×1920 原生\n装裱\n无\n青绿锦绫平铺，画心 1080×600 覆盖于 y=640\n配乐《千钧落弦》139.53 BPM，拍 0.430 秒，小节 1.720 秒，音乐起点 22.7633 秒。\n音效只两种：挥笔划破空气（全片铺底）、实体撞击（全片仅牛段撞木桩一次）。\n响度：全长 −15.2 LUFS，峰值 −1.0 dBFS；开场 −18.8 / 正片 −16.5 / 结尾 −14.6，做缓升。\nH3 自带音轨全部弃用，成片音轨为后期重制。",
+            "lead": "Youtube Video\n一、视频：MiniMax H3（本地 ComfyUI 8288）",
+            "chars": 1626,
+            "shown": 1626,
+            "truncated": false
+          },
+          "quality": 8,
+          "score": 20.29,
+          "category": "local",
+          "subcategory": "quantize",
+          "practical": 2,
+          "slug": "7bb1cb9865c1",
+          "action": 5,
+          "rank": 16,
+          "tags": [
+            "generate",
+            "benchmark",
+            "local"
+          ]
+        },
+        {
+          "sourceId": "reddit-local-llama",
+          "sourceName": "r/LocalLLaMA",
+          "title": "Anyone else feeling like Qwen4's release happens in slow-motion?",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xrv2ae/anyone_else_feeling_like_qwen4s_release_happens/",
+          "id": "t3_1xrv2ae",
+          "published": "2026-11-09T15:46:09.000Z",
+          "summary": "So if my memory serves me well: Late summer, Qwen 3.8 Flash Next announces the architecture Late october, conference talk, Qwen announces the 4 models (max/flash/plus/27) Late last week, Qwen posts a jpeg to announce a legendarily big fish. Last weekend, people on X starts getting early access to Qwen4. Qwen also teas…",
+          "content": {
+            "html": "<div><p>So if my memory serves me well:</p><ul><li>Late summer, Qwen 3.8 Flash Next announces the architecture</li><li>Late october, conference talk, Qwen announces the 4 models (max/flash/plus/27)</li><li>Late last week, Qwen posts a jpeg to announce a legendarily big fish.</li><li>Last weekend, people on X starts getting early access to Qwen4. Qwen also teases a soom (TM)</li></ul><p>Compare that with most other labs that just drops their model.</p><p>At that rate, I foresee the following circus:</p><ul><li>Late this week, Qwen will release a similar countdown timer than we had for 3.8</li><li>Early next week the IPO of ANT will happen, and the countdown will end suspiciously close to that</li><li>Upon release:<ul><li>Qwen will have the funny one that actually, the architecture changed a tiny bit since QFN and llama.cpp won't work day 1.</li></ul></li><li>Zillions of custom inference engines will be born that day.</li><li>An equal zillion of posts will land here and the mods will have a stroke</li><li>unsloth will release day 1 quants claiming best in class performance</li></ul><li>2 days after release, unsloth will apologies for the rare looping behaviour of the 27b at Q4, and ask everyone to re-download another 22GB of GGUF</li><p>Did I sum up where we are correctly?</p></div>\nsubmitted by<a href=\"https://www.reddit.com/user/Don_Moahskarton\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">/u/Don_Moahskarton</a>\n<br><span><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xrv2ae/anyone_else_feeling_like_qwen4s_release_happens/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[link]</a></span>\n<span><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xrv2ae/anyone_else_feeling_like_qwen4s_release_happens/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[comments]</a></span>",
+            "text": "So if my memory serves me well:\nLate summer, Qwen 3.8 Flash Next announces the architecture\nLate october, conference talk, Qwen announces the 4 models (max/flash/plus/27)\nLate last week, Qwen posts a jpeg to announce a legendarily big fish.\nLast weekend, people on X starts getting early access to Qwen4. Qwen also teases a soom (TM)\nCompare that with most other labs that just drops their model.\nAt that rate, I foresee the following circus:\nLate this week, Qwen will release a similar countdown timer than we had for 3.8\nEarly next week the IPO of ANT will happen, and the countdown will end suspiciously close to that\nUpon release: Qwen will have the funny one that actually, the architecture changed a tiny bit since QFN and llama.cpp won't work day 1.\nZillions of custom inference engines will be born that day.\nAn equal zillion of posts will land here and the mods will have a stroke\nunsloth will release day 1 quants claiming best in class performance\n2 days after release, unsloth will apologies for the rare looping behaviour of the 27b at Q4, and ask everyone to re-download another 22GB of GGUF\nDid I sum up where we are correctly?\nsubmitted by /u/Don_Moahskarton\n[link]\n[comments]",
+            "lead": "So if my memory serves me well:\nLate summer, Qwen 3.8 Flash Next announces the architecture\nLate october, conference talk, Qwen announces the 4 models (max/flash/plus/27)\nLate last week, Qwen posts a jpeg to announce a legendarily big fish.\nLast weekend, people on X starts getting early access to Qwen4. Qwen also teases a soom (TM)\nCompare that with most other labs that just drops their model.\nAt that rate, I foresee the following circus:\nLate this week, Q",
+            "chars": 1209,
+            "shown": 1209,
+            "truncated": false
+          },
+          "categories": [
+            "LocalLLaMA"
+          ],
+          "author": "/u/Don_Moahskarton",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "oss",
+          "metrics": {},
+          "quality": 6,
+          "score": 16.51,
+          "category": "local",
+          "subcategory": "runtime",
+          "practical": 1,
+          "slug": "fa4037ab5c85",
+          "action": 1,
+          "rank": 7.6,
+          "tags": [
+            "local"
+          ]
+        },
+        {
+          "sourceId": "reddit-local-llama",
+          "sourceName": "r/LocalLLaMA",
+          "title": "netease-youdao/Confucius4-R2T2 · Hugging Face",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xrspiy/neteaseyoudaoconfucius4r2t2_hugging_face/",
+          "id": "t3_1xrspiy",
+          "published": "2026-11-09T14:13:56.000Z",
+          "summary": "Confucius4-R2T2: A Stable-Prefix Streaming ASR Model for Real Real-Time Transcription Confucius4-R2T2 is a low-latency, high-accuracy stable-prefix streaming automatic speech recognition (ASR) model. It supports configurable decoding chunks from 80 ms to 2 s. The model operates in a monotonic output mode, committing t…",
+          "content": {
+            "html": "<table><tr><td><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xrspiy/neteaseyoudaoconfucius4r2t2_hugging_face/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://external-preview.redd.it/73Og9KtnWAskh-ewLUW-OQFcn04HGbD8sR-WSejVFh4.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=302f4aadb466d289039d2bf0a57505fcd9a06485\" alt=\"netease-youdao/Confucius4-R2T2 · Hugging Face\" loading=\"lazy\"></a></td><td><div><h3>Confucius4-R2T2: A Stable-Prefix Streaming ASR Model for Real Real-Time Transcription</h3><p>Confucius4-R2T2 is a low-latency, high-accuracy stable-prefix streaming automatic speech recognition (ASR) model. It supports configurable decoding chunks from 80 ms to 2 s. The model operates in a monotonic output mode, committing transcript text permanently without revising previous words. This is critical for applications where text must be processed or acted upon instantly. The result is a smoother user experience, with fewer disruptive text revisions and less visual flicker in real-time applications such as real-time live captioning and subtitling, simultaneous speech translation, downstream NLP pipelines and LLM agents.</p><p>R2T2, short for Real Real-Time Transcription, adapts<strong>Qwen3-ASR-1.7B</strong>with<strong>Longest Stable Prefix (LSP) learning</strong>on 1,500 hours of Chinese and English audio. Two-stage training with SFT and GRPO updates only the language decoder; the pre-trained audio encoder and projector remain frozen, with no architectural changes. LSP targets and an explicit<code>Wait</code>action teach the model what it can commit and when it needs more audio.</p><ul><li><strong>GGUF</strong>:<a href=\"https://huggingface.co/netease-youdao/Confucius4-R2T2-GGUF\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://huggingface.co/netease-youdao/Confucius4-R2T2-GGUF</a></li><li><strong>Space</strong>:<a href=\"https://huggingface.co/spaces/netease-youdao/confucius4-r2t2-demo\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://huggingface.co/spaces/netease-youdao/confucius4-r2t2-demo</a></li><li><strong>GitHub</strong>:<a href=\"https://github.com/netease-youdao/Confucius4-R2T2\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://github.com/netease-youdao/Confucius4-R2T2</a></li><li><strong>arXiv</strong>:<a href=\"https://arxiv.org/abs/2611.06043\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://arxiv.org/abs/2611.06043</a></li><li><strong>PDF</strong>:<a href=\"https://arxiv.org/pdf/2611.06043\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://arxiv.org/pdf/2611.06043</a></li></ul><h3>License</h3><p>R2T2 uses<strong>dual licensing</strong>to distinguish the source code from the model weights:</p><ul><li><strong>Code</strong>in the accompanying GitHub repository is released under the<a href=\"https://github.com/netease-youdao/Confucius4-R2T2/blob/master/LICENSE\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Apache License 2.0</a>and is free to use, modify, and redistribute (including commercially) under the terms of that license.</li><li><strong>Model weights</strong>are released under the<a href=\"https://github.com/netease-youdao/Confucius4-R2T2/blob/master/MODEL_LICENSE\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">NetEase Model Use License Agreement</a>.</li></ul></div>submitted by<a href=\"https://www.reddit.com/user/pmttyji\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">/u/pmttyji</a><br><span><a href=\"https://huggingface.co/netease-youdao/Confucius4-R2T2\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[link]</a></span><span><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xrspiy/neteaseyoudaoconfucius4r2t2_hugging_face/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[comments]</a></span></td></tr></table>",
+            "text": "Confucius4-R2T2: A Stable-Prefix Streaming ASR Model for Real Real-Time Transcription\nConfucius4-R2T2 is a low-latency, high-accuracy stable-prefix streaming automatic speech recognition (ASR) model. It supports configurable decoding chunks from 80 ms to 2 s. The model operates in a monotonic output mode, committing transcript text permanently without revising previous words. This is critical for applications where text must be processed or acted upon instantly. The result is a smoother user experience, with fewer disruptive text revisions and less visual flicker in real-time applications such as real-time live captioning and subtitling, simultaneous speech translation, downstream NLP pipelines and LLM agents.\nR2T2, short for Real Real-Time Transcription, adapts Qwen3-ASR-1.7B with Longest Stable Prefix (LSP) learning on 1,500 hours of Chinese and English audio. Two-stage training with SFT and GRPO updates only the language decoder; the pre-trained audio encoder and projector remain frozen, with no architectural changes. LSP targets and an explicit Wait action teach the model what it can commit and when it needs more audio.\nGGUF : https://huggingface.co/netease-youdao/Confucius4-R2T2-GGUF\nSpace : https://huggingface.co/spaces/netease-youdao/confucius4-r2t2-demo\nGitHub : https://github.com/netease-youdao/Confucius4-R2T2\narXiv : https://arxiv.org/abs/2611.06043\nPDF : https://arxiv.org/pdf/2611.06043\nLicense\nR2T2 uses dual licensing to distinguish the source code from the model weights:\nCode in the accompanying GitHub repository is released under the Apache License 2.0 and is free to use, modify, and redistribute (including commercially) under the terms of that license.\nModel weights are released under the NetEase Model Use License Agreement .\nsubmitted by /u/pmttyji\n[link] [comments]",
+            "lead": "Confucius4-R2T2: A Stable-Prefix Streaming ASR Model for Real Real-Time Transcription\nConfucius4-R2T2 is a low-latency, high-accuracy stable-prefix streaming automatic speech recognition (ASR) model. It supports configurable decoding chunks from 80 ms to 2 s. The model operates in a monotonic output mode, committing transcript text permanently without revising previous words. This is critical for applications where text must be processed or acted upon inst",
+            "chars": 1833,
+            "shown": 1833,
+            "truncated": false
+          },
+          "categories": [
+            "LocalLLaMA"
+          ],
+          "author": "/u/pmttyji",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "oss",
+          "metrics": {},
+          "quality": 6,
+          "score": 14.38,
+          "category": "local",
+          "subcategory": "weights",
+          "practical": 1,
+          "slug": "1f544c7a78f7",
+          "action": 1,
+          "rank": 7.6,
+          "tags": [
+            "local"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bench",
+      "label": "评测选型",
+      "items": [
+        {
+          "sourceId": "reddit-local-llama",
+          "sourceName": "r/LocalLLaMA",
+          "title": "Top 7 Decision Models Benchmark: Evaluation Across 2,826 Real Tech Decisions",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xruhp3/top_7_decision_models_benchmark_evaluation_across/",
+          "id": "t3_1xruhp3",
+          "published": "2026-11-09T15:24:08.000Z",
+          "summary": "This report evaluates 7 specialized decision models tested across 2,826 real-world decisions sourced from GitHub, Firefox (Bugzilla), and the CVE database. Unlike open-ended generative language models, decision models evaluate structured inputs and produce discrete probability distributions across predefined categorie…",
+          "content": {
+            "html": "<table><tr><td><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xruhp3/top_7_decision_models_benchmark_evaluation_across/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://preview.redd.it/mxhvsi4qtl0i1.png?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=5e745c3fe30c8e2264d65816273d2033c9de7a57\" alt=\"Top 7 Decision Models Benchmark: Evaluation Across 2,826 Real Tech Decisions\" loading=\"lazy\"></a></td><td><div><p>This report evaluates 7 specialized decision models tested across 2,826 real-world decisions sourced from GitHub, Firefox (Bugzilla), and the CVE database. Unlike open-ended generative language models, decision models evaluate structured inputs and produce discrete probability distributions across predefined categories in a single pass. Data was benchmarked through November 6, 2026, using inputs created after September 15, 2026, to avoid data leakage from pre-training sets.</p><h3>1. Executive Summary &amp; Model Overview</h3><p>Perplexity Decider V1.2 ranks as the strongest overall recommendation based on a balance of top-tier accuracy, lowest cost among frontrunners, and open-source licensing. Nace Drex Max v1.1 serves as a close runner-up, leading in domain-specific triage tasks. GPT-6 Luna Decisions registered the lowest accuracy, highest cost, and greatest degree of probability overconfidence.</p><p><a href=\"https://preview.redd.it/mxhvsi4qtl0i1.png?width=582&amp;format=png&amp;auto=webp&amp;s=2778cfbeed370cf1c2dee93133cc8f640559fe05\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://preview.redd.it/mxhvsi4qtl0i1.png?width=582&amp;format=png&amp;auto=webp&amp;s=2778cfbeed370cf1c2dee93133cc8f640559fe05</a></p><h3>2. Benchmark Design &amp; Dataset Breakdown</h3><p>The evaluation evaluated 6 representative engineering tasks against human ground truth determined by maintainers. To ensure neutral evaluation:</p><ul><li><strong>Contamination Controls:</strong>Labels, issue-template tags, CVSS scores, CWE markers, and PR author roles were stripped.</li><li><strong>Standardized Phrasing:</strong>Three distinct phrasings per question were submitted and averaged.</li><li><strong>Standard Taxonomy:</strong>Options utilized official Bugzilla component definitions, Mozilla severity scales, GitHub advisory tiers, and MITRE CWE definitions.</li><li><strong>Statistical Rigor:</strong>95% bootstrap confidence intervals and Holm-corrected pairwise tests were computed across all 21 model combinations.</li></ul><p><a href=\"https://preview.redd.it/45zrsncutl0i1.png?width=563&amp;format=png&amp;auto=webp&amp;s=7fcbd1d76870bcafceaf446b86f100d3b7e700d9\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://preview.redd.it/45zrsncutl0i1.png?width=563&amp;format=png&amp;auto=webp&amp;s=7fcbd1d76870bcafceaf446b86f100d3b7e700d9</a></p><p><strong>3. Task-by-Task Balanced Accuracy</strong></p><p>In overall balanced accuracy, Liquid d1-ultra (66.1%), Nace Drex Max v1.1 (65.6%), and Perplexity Decider V1.2 (65.6%) form a statistically tied top tier. All three significantly outperform Liquid d1.1 (63.7%) and GPT-6 Luna Decisions (62.8%).</p><p><a href=\"https://preview.redd.it/vt2wcq8ytl0i1.png?width=560&amp;format=png&amp;auto=webp&amp;s=9cfa886c3e618ffb5dcffaae8482b0af6ba6729a\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://preview.redd.it/vt2wcq8ytl0i1.png?width=560&amp;format=png&amp;auto=webp&amp;s=9cfa886c3e618ffb5dcffaae8482b0af6ba6729a</a></p><h3>4. Latency, Repeatability, and Confidence Calibration</h3><p>Operational feasibility depends heavily on predictable inference speeds and probability calibration. A model is only operational if its stated confidence accurately reflects true probability.</p><p><a href=\"https://preview.redd.it/9iizqkt0ul0i1.png?width=561&amp;format=png&amp;auto=webp&amp;s=fc876dd47088f5076ba9d537c136cfdd4c8770d8\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://preview.redd.it/9iizqkt0ul0i1.png?width=561&amp;format=png&amp;auto=webp&amp;s=fc876dd47088f5076ba9d537c136cfdd4c8770d8</a></p><h3>5. Pricing, Openness, and Data Governance</h3><p>Model licensing and enterprise data policies differ markedly across providers. Output tokens are free for all tested decision models; costs reflect input processing fees.</p><p><a href=\"https://preview.redd.it/5ggo2u64ul0i1.png?width=559&amp;format=png&amp;auto=webp&amp;s=bd92d0fd1a92b29f4d97acd52f161c5b27b8f387\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://preview.redd.it/5ggo2u64ul0i1.png?width=559&amp;format=png&amp;auto=webp&amp;s=bd92d0fd1a92b29f4d97acd52f161c5b27b8f387</a></p><h3>6. Overall Composite Rankings</h3><p>Models were rated across five pre-weighted pillars: Quality (45%), Efficiency (20%), Trust (20%), Reviews (10%), and Signup Bonus (5%). Scores are normalized out of 100.</p><p><a href=\"https://preview.redd.it/6pv1ef28ul0i1.png?width=566&amp;format=png&amp;auto=webp&amp;s=1a8196dc456d2835943f0f523ab1c6510c508311\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://preview.redd.it/6pv1ef28ul0i1.png?width=566&amp;format=png&amp;auto=webp&amp;s=1a8196dc456d28…</a></p></div></td></tr></table>",
+            "text": "This report evaluates 7 specialized decision models tested across 2,826 real-world decisions sourced from GitHub, Firefox (Bugzilla), and the CVE database. Unlike open-ended generative language models, decision models evaluate structured inputs and produce discrete probability distributions across predefined categories in a single pass. Data was benchmarked through November 6, 2026, using inputs created after September 15, 2026, to avoid data leakage from pre-training sets.\n1. Executive Summary & Model Overview\nPerplexity Decider V1.2 ranks as the strongest overall recommendation based on a balance of top-tier accuracy, lowest cost among frontrunners, and open-source licensing. Nace Drex Max v1.1 serves as a close runner-up, leading in domain-specific triage tasks. GPT-6 Luna Decisions registered the lowest accuracy, highest cost, and greatest degree of probability overconfidence.\nhttps://preview.redd.it/mxhvsi4qtl0i1.png?width=582&format=png&auto=webp&s=2778cfbeed370cf1c2dee93133cc8f640559fe05\n2. Benchmark Design & Dataset Breakdown\nThe evaluation evaluated 6 representative engineering tasks against human ground truth determined by maintainers. To ensure neutral evaluation:\nContamination Controls: Labels, issue-template tags, CVSS scores, CWE markers, and PR author roles were stripped.\nStandardized Phrasing: Three distinct phrasings per question were submitted and averaged.\nStandard Taxonomy: Options utilized official Bugzilla component definitions, Mozilla severity scales, GitHub advisory tiers, and MITRE CWE definitions.\nStatistical Rigor: 95% bootstrap confidence intervals and Holm-corrected pairwise tests were computed across all 21 model combinations.\nhttps://preview.redd.it/45zrsncutl0i1.png?width=563&format=png&auto=webp&s=7fcbd1d76870bcafceaf446b86f100d3b7e700d9\n3. Task-by-Task Balanced Accuracy\nIn overall balanced accuracy, Liquid d1-ultra (66.1%), Nace Drex Max v1.1 (65.6%), and Perplexity Decider V1.2 (65.6%) form a statistically tied top tier. All three significantly outperform Liquid d1.1 (63.7%) and GPT-6 Luna Decisions (62.8%).\nhttps://preview.redd.it/vt2wcq8ytl0i1.png?width=560&format=png&auto=webp&s=9cfa886c3e618ffb5dcffaae8482b0af6ba6729a\n4. Latency, Repeatability, and Confidence Calibration\nOperational feasibility depends heavily on predictable inference speeds and probability calibration. A model is only operational if its stated confidence accurately reflects true probability.\nhttps://preview.redd.it/9iizqkt0ul0i1.png?width=561&format=png&auto=webp&s=fc876dd47088f5076ba9d537c136cfdd4c8770d8\n5. Pricing, Openness, and Data Governance\nModel licensing and enterprise data policies differ markedly across providers. Output tokens are free for all tested decision models; costs reflect input processing fees.\nhttps://preview.redd.it/5ggo2u64ul0i1.png?width=559&format=png&auto=webp&s=bd92d0fd1a92b29f4d97acd52f161c5b27b8f387\n6. Overall Composite Rankings\nModels were rated across five pre-weighted pillars: Quality (45%), Efficiency (20%), Trust (20%), Reviews (10%), and Signup Bonus (5%). Scores are normalized out of 100.\nhttps://preview.redd.it/6pv1ef28ul0i1.png?width=566&format=png&auto=webp&s=1a8196dc456d28…",
+            "lead": "This report evaluates 7 specialized decision models tested across 2,826 real-world decisions sourced from GitHub, Firefox (Bugzilla), and the CVE database. Unlike open-ended generative language models, decision models evaluate structured inputs and produce discrete probability distributions across predefined categories in a single pass. Data was benchmarked through November 6, 2026, using inputs created after September 15, 2026, to avoid data leakage from ",
+            "chars": 3969,
+            "shown": 3201,
+            "truncated": true
+          },
+          "categories": [
+            "LocalLLaMA"
+          ],
+          "author": "/u/m4rkGS",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "oss",
+          "metrics": {},
+          "quality": 7,
+          "score": 15.68,
+          "category": "bench",
+          "subcategory": "benchmark",
+          "practical": 3,
+          "slug": "3d1c2379786e",
+          "action": 2,
+          "rank": 10.2,
+          "tags": [
+            "benchmark",
+            "free"
+          ]
+        }
+      ]
+    }
+  ]
+}
