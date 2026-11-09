@@ -5,6 +5,7 @@ import { filterNewItems, itemKeys, normalizeSeen, pruneSeen, serializeSeen } fro
 import { dayKey } from './lib/normalize.mjs';
 import { selectByCategoryQuota } from './lib/select.mjs';
 import { fetchAllSources, parseSourceBody } from './lib/sources.mjs';
+import { itemSlug, rankCompare } from './lib/items.mjs';
 import { translateConfig, translateItems } from './lib/translate.mjs';
 
 const ROOT = path.resolve(import.meta.dirname, '..');
@@ -83,6 +84,7 @@ async function main() {
   const digestDir = path.join(dataDir, 'digests');
   const digestPath = path.join(digestDir, `${day}.json`);
   const filter = createFilter(filters);
+  const actionWeight = Number(filters.quality?.actionWeight ?? 1.5);
   const sourceById = new Map(config.sources.map((source) => [source.id, source]));
   const cutoffCache = new Map();
   const statePath = path.join(dataDir, 'state.json');
@@ -131,10 +133,17 @@ async function main() {
   for (const item of published) usedPerSource.set(item.sourceId, (usedPerSource.get(item.sourceId) ?? 0) + 1);
 
   const eligibleBySource = new Map();
+  const lowQuality = [];
   for (const item of fresh) {
     const source = sourceById.get(item.sourceId);
     if (!filter.isRelevant(item)) continue;
     if (!filter.passesGuards(item, source)) continue;
+    const quality = filter.quality(item, source);
+    if (!quality.ok) {
+      lowQuality.push(quality.reasons[0] ?? '质量不足');
+      continue;
+    }
+    item.quality = quality.score;
     if (!eligibleBySource.has(item.sourceId)) eligibleBySource.set(item.sourceId, []);
     eligibleBySource.get(item.sourceId).push(item);
   }
@@ -163,12 +172,21 @@ async function main() {
       usedPerSource.set(sourceId, (usedPerSource.get(sourceId) ?? 0) + 1);
       item.score = filter.score(item, now);
       item.category = filter.categorize(item);
+      item.practical = filter.practicality(item);
       additions.push(item);
     }
   }
 
-  const limit = Number(flags.limit ?? config.maxItemsPerDay ?? 48);
-  const pinned = [...published].sort((a, b) => (b.score ?? 0) - (a.score ?? 0));
+  const limit = Number(flags.limit ?? config.maxItemsPerDay ?? 30);
+  const pinned = [...published]
+    .filter((item) => {
+      const quality = item.quality ?? filter.quality(item, sourceById.get(item.sourceId));
+      const ok = typeof quality === 'object' ? quality.ok : true;
+      if (ok) item.quality = typeof quality === 'object' ? quality.score : quality;
+      else lowQuality.push('旧条目质量不足');
+      return ok;
+    })
+    .sort(rankCompare);
   const selected = pinned.slice(0, limit);
   const room = limit - selected.length;
   if (room > 0) {
@@ -176,16 +194,29 @@ async function main() {
   }
 
   const translateRequested = flags.translate || (Boolean(process.env.TRANSLATE_API_KEY) && !flags['no-translate']);
-  if (translateRequested) {
-    const pending = selected.filter((item) => !item.zhTitle);
-    const outcome = await translateItems(pending, { config: translateConfig(), log: (message) => console.warn(`[translate] ${message}`) });
-    console.log(`translate: ok=${outcome.translated} failed=${outcome.failed}`);
+  const cloudflareReady = Boolean(process.env.CLOUDFLARE_API_TOKEN && process.env.CLOUDFLARE_ACCOUNT_ID);
+  const wantsTranslation = translateRequested || (cloudflareReady && !flags['no-translate']);
+  if (wantsTranslation) {
+    const outcome = await translateItems(selected.filter((item) => !item.zhTitle), {
+      config: translateConfig(),
+      log: (message) => console.warn(`[translate] ${message}`),
+    });
+    console.log(`translate: ok=${outcome.translated} failed=${outcome.failed} 中文源跳过=${outcome.skipped}`);
   }
 
   const grouped = new Map();
   for (const category of filter.categories) grouped.set(category.id, { id: category.id, label: category.label, items: [] });
-  for (const item of selected) grouped.get(item.category)?.items.push(item);
-  for (const group of grouped.values()) group.items.sort((a, b) => (b.score ?? 0) - (a.score ?? 0));
+  for (const item of selected) {
+    item.slug ??= itemSlug(item);
+    item.category ??= filter.categorize(item);
+    item.practical ??= filter.practicality(item);
+    item.quality ??= filter.quality(item, sourceById.get(item.sourceId)).score;
+    item.action = filter.actionability(item);
+    item.rank = Number(((item.quality ?? 0) + item.action * actionWeight).toFixed(2));
+    item.tags = filter.tagsFor(item);
+    grouped.get(item.category)?.items.push(item);
+  }
+  for (const group of grouped.values()) group.items.sort(rankCompare);
 
   const digest = {
     day,
@@ -200,6 +231,7 @@ async function main() {
       carried,
       added: selected.filter((item) => !published.includes(item)).length,
       fallback: selected.filter((item) => item.fallback).length,
+      lowQuality: lowQuality.length,
       published: selected.length,
     },
     sources: summarizeSources(results),
@@ -212,9 +244,13 @@ async function main() {
   await writeFile(seenPath, `${JSON.stringify(serializeSeen(seen), null, 2)}\n`);
   await writeFile(statePath, `${JSON.stringify({ version: 1, day, lastRunAt: now.toISOString() }, null, 2)}\n`);
 
+  const qualityTally = lowQuality.length
+    ? ` 质量淘汰=${lowQuality.length}（${Object.entries(lowQuality.reduce((acc, reason) => { acc[reason] = (acc[reason] ?? 0) + 1; return acc; }, {})).map(([reason, count]) => `${reason}×${count}`).join(' ')}）`
+    : '';
   const distribution = digest.categories.map((group) => `${group.label}=${group.items.length}`).join(' ');
   const mode = incrementalFrom ? `增量(自 ${state.lastRunAt})` : '首次全量';
   console.log(`collect ${day} ${mode}: sources=${digest.counts.okSources}/${config.sources.length} fetched=${digest.counts.fetched} dup=${digest.counts.duplicates} carried=${digest.counts.carried} added=${digest.counts.added} 兜底=${digest.counts.fallback} published=${digest.counts.published}`);
+  if (qualityTally) console.log(qualityTally);
   console.log(`  分布: ${distribution}`);
   for (const source of digest.sources) {
     if (!source.ok) console.log(`  ERR ${source.id.padEnd(20)} ${source.error ?? ''}`);

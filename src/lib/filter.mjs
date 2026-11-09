@@ -33,10 +33,27 @@ export function createFilter(filters) {
   const categories = filters.categories ?? [];
   const isNoise = buildMatcher(filters.noiseKeywords ?? []);
   const isRelevantTerm = buildMatcher(filters.relevantKeywords ?? []);
+  const isPracticalTerm = buildMatcher(filters.practicalKeywords ?? []);
+  const qualityConfig = filters.quality ?? {};
+  const isThin = buildMatcher(qualityConfig.thinKeywords ?? []);
+  const isSubstantive = buildMatcher(qualityConfig.substantiveKeywords ?? []);
+  const isActionTerm = buildMatcher(qualityConfig.actionableKeywords ?? filters.practicalKeywords ?? []);
+  const evidencePattern = new RegExp(
+    [
+      ...(qualityConfig.evidenceKeywords ?? []).map(escapeForRegex),
+      '\\d+\\s*(?:toks?/s|tokens?/s|tok/s|gb|mb|ms|秒|分钟|%|倍|w|k)',
+    ].join('|'),
+    'i',
+  );
   const categoryMatchers = categories.map((category) => ({
     id: category.id,
     label: category.label,
     hits: buildMatcher(category.keywords ?? []),
+  }));
+  const tagMatchers = (filters.tags ?? []).map((tag) => ({
+    id: tag.id,
+    label: tag.label,
+    hits: buildMatcher(tag.keywords ?? []),
   }));
 
   function itemText(item) {
@@ -57,6 +74,92 @@ export function createFilter(filters) {
     const text = itemText(item);
     if (isNoise(text) > 0 && isRelevantTerm(text) === 0) return false;
     return item.trustCategory || relevance(item) > 0;
+  }
+
+  function practicality(item) {
+    const text = itemText(item);
+    const hits = isPracticalTerm(text);
+    const moneyOrLocal = item.category === 'money' || item.category === 'local' ? 1 : 0;
+    return hits + moneyOrLocal;
+  }
+
+  function actionability(item) {
+    const text = `${cleanText(item.title, 220)} \u2022 ${cleanText(item.summary ?? '', 1200)}`;
+    let hits = isActionTerm(text);
+    if (['tools', 'local', 'money', 'apps'].includes(item.category)) hits += 1;
+    return hits;
+  }
+
+  function hasEvidence(item) {
+    const text = `${cleanText(item.title, 220)} \u2022 ${cleanText(item.summary ?? '', 1500)}`;
+    return evidencePattern.test(text);
+  }
+
+  function quality(item, source) {
+    const title = cleanText(item.title, 220);
+    const summary = cleanText(item.summary ?? '', 4000);
+    const metrics = item.metrics ?? {};
+    const reasons = [];
+    const tier = item.tier ?? source?.tier;
+    let score = { 1: 3, 2: 2, 3: 1 }[tier] ?? 2;
+    const action = actionability({ ...item, category: item.category ?? categorize(item) });
+    const evidence = hasEvidence(item);
+
+    const levels = qualityConfig.summaryLevels ?? [220, 120, 60];
+    if (summary.length >= levels[0]) score += 3;
+    else if (summary.length >= levels[1]) score += 2;
+    else if (summary.length >= levels[2]) score += 1;
+    else reasons.push('正文太短');
+
+    const substance = isSubstantive(`${title} \u2022 ${summary}`);
+    if (substance) score += Math.min(3, substance);
+    else reasons.push('看不出论证/干货');
+
+    const signal = (metrics.points ?? 0) + (metrics.stars ?? 0) + (metrics.upvotes ?? 0) + (metrics.comments ?? 0);
+    if (signal >= 200) score += 3;
+    else if (signal >= 60) score += 2;
+    else if (signal >= 15) score += 1;
+    if (evidence) score += 2;
+    else reasons.push('没有具体数据');
+    if (item.excellent) score += 3;
+
+    if (isThin(`${title} \u2022 ${summary}`)) {
+      score -= 3;
+      reasons.push('疑似推广或水帖');
+    }
+    if (title.length < (qualityConfig.minTitleChars ?? 10)) {
+      score -= 3;
+      reasons.push('标题过短');
+    }
+
+    const floors = (qualityConfig.sourceFloors ?? {})[item.sourceId] ?? source?.quality ?? null;
+    if (floors) {
+      for (const [key, minimum] of Object.entries(floors)) {
+        const value = key === 'summaryChars' ? summary.length : Number(metrics[key] ?? 0);
+        if (value < minimum) {
+          score -= 2;
+          reasons.push(`${key} < ${minimum}`);
+        }
+      }
+    }
+
+    const minimum = qualityConfig.minQuality ?? 6;
+    if (action === 0 && score < minimum + (qualityConfig.pureNewsBonus ?? 2)) {
+      reasons.push('纯资讯且不够深');
+      return { ok: false, score: Number(score.toFixed(2)), evidence, action, reasons };
+    }
+    return { ok: score >= minimum, score: Number(score.toFixed(2)), evidence, action, reasons };
+  }
+
+  function tagsFor(item) {
+    const text = itemText(item);
+    const scored = [];
+    for (const tag of tagMatchers) {
+      const hits = tag.hits(text);
+      if (hits > 0) scored.push({ id: tag.id, label: tag.label, hits });
+    }
+    scored.sort((a, b) => b.hits - a.hits);
+    return scored.slice(0, 4).map((tag) => tag.id);
   }
 
   function categorize(item) {
@@ -90,10 +193,11 @@ export function createFilter(filters) {
     const signal = (metrics.points ?? 0) + (metrics.stars ?? 0) + (metrics.upvotes ?? 0) + (metrics.comments ?? 0);
     const buzz = Math.min(6, Math.log10(1 + signal) * 3);
     const relevanceBonus = Math.min(4, relevance(item) * 1.2);
+    const practicalBonus = Math.min(5, practicality(item) * 1.2);
     const title = cleanText(item.title, 220).toLowerCase();
     const freshnessWord = /(release|launch|announc|introduc|发布|上线|开源|宣布)/i.test(title) ? 2 : 0;
-    return Number((tier + recency + buzz + relevanceBonus + freshnessWord).toFixed(2));
+    return Number((tier + recency + buzz + relevanceBonus + practicalBonus + freshnessWord).toFixed(2));
   }
 
-  return { relevance, isRelevant, categorize, passesGuards, score, categories };
+  return { relevance, isRelevant, categorize, passesGuards, score, practicality, quality, actionability, hasEvidence, tagsFor, tags: tagMatchers.map(({ id, label }) => ({ id, label })), categories };
 }
