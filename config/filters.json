@@ -1,0 +1,13 @@
+{
+  "categories": [
+    { "id": "models", "label": "模型与发布", "keywords": ["gpt", "gemini", "claude", "model", "release", "launch", "announce", "发布", "模型", "weights", "checkpoint", "frontier"] },
+    { "id": "opensource", "label": "开源与生态", "keywords": ["open source", "open-source", "open weights", "github", "hugging face", "dataset", "license", "apache", "mit license", "开源", "权重"] },
+    { "id": "research", "label": "论文与研究", "keywords": ["paper", "arxiv", "benchmark", "eval", "study", "research", "training", "pretrain", "fine-tun", "论文", "研究", "sota"] },
+    { "id": "products", "label": "产品与应用", "keywords": ["app", "product", "feature", "agent", "assistant", "browser", "search", "coding", "video", "image", "语音", "产品", "应用", "上线"] },
+    { "id": "industry", "label": "行业与资本", "keywords": ["funding", "acquisition", "invest", "valuation", "market", "regulation", "policy", "lawsuit", "chip", "gpu", "数据中心", "融资", "收购", "监管"] },
+    { "id": "opinion", "label": "观点与深度", "keywords": ["analysis", "opinion", "essay", "why", "deep dive", "interview", "观点", "分析", "深度"] },
+    { "id": "engineering", "label": "工具与工程", "keywords": ["tool", "sdk", "api", "inference", "quantiz", "runtime", "framework", "library", "vllm", "llama.cpp", "rag", "mcp", "工程", "部署", "推理"] }
+  ],
+  "relevantKeywords": ["ai", "artificial intelligence", "llm", "large language model", "gpt", "chatgpt", "claude", "gemini", "deepmind", "openai", "anthropic", "mistral", "llama", "deepseek", "qwen", "hugging face", "transformer", "diffusion", "multimodal", "agent", "agentic", "rag", "fine-tun", "prompt", "reasoning", "machine learning", "neural", "生成式", "大模型", "智能体"],
+  "noiseKeywords": ["cryptocurrency", "crypto trading", "nft", "stock price", "casino", "dating", "horoscope", "lottery", "porn", "_onlyfans"]
+}

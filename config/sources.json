@@ -1,0 +1,230 @@
+{
+  "timezone": "Asia/Shanghai",
+  "maxItemsPerDay": 48,
+  "maxItemsPerSource": 12,
+  "seenRetentionDays": 45,
+  "sources": [
+    {
+      "id": "openai-news",
+      "name": "OpenAI News",
+      "url": "https://openai.com/news/rss.xml",
+      "kind": "rss",
+      "tier": 1,
+      "trustCategory": true,
+      "category": "models",
+      "lang": "en",
+      "windowHours": 96
+    },
+    {
+      "id": "google-deepmind",
+      "name": "Google DeepMind",
+      "url": "https://deepmind.google/blog/rss.xml",
+      "kind": "rss",
+      "tier": 1,
+      "trustCategory": true,
+      "category": "models",
+      "lang": "en",
+      "windowHours": 96
+    },
+    {
+      "id": "google-ai",
+      "name": "Google AI Blog",
+      "url": "https://blog.google/technology/ai/rss/",
+      "kind": "rss",
+      "tier": 1,
+      "trustCategory": true,
+      "category": "models",
+      "lang": "en",
+      "windowHours": 96
+    },
+    {
+      "id": "hf-blog",
+      "name": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/feed.xml",
+      "kind": "rss",
+      "tier": 1,
+      "trustCategory": true,
+      "category": "opensource",
+      "lang": "en"
+    },
+    {
+      "id": "hf-daily-papers",
+      "name": "Hugging Face Daily Papers",
+      "url": "https://huggingface.co/api/daily_papers?limit=20",
+      "kind": "json",
+      "adapter": "hf-daily-papers",
+      "tier": 1,
+      "trustCategory": true,
+      "category": "research",
+      "lang": "en",
+      "windowHours": 72
+    },
+    {
+      "id": "interconnects",
+      "name": "Interconnects",
+      "url": "https://www.interconnects.ai/feed",
+      "kind": "rss",
+      "tier": 1,
+      "trustCategory": true,
+      "category": "opinion",
+      "lang": "en",
+      "windowHours": 72
+    },
+    {
+      "id": "latent-space",
+      "name": "Latent Space",
+      "url": "https://www.latent.space/feed",
+      "kind": "rss",
+      "tier": 1,
+      "trustCategory": true,
+      "category": "opinion",
+      "lang": "en",
+      "windowHours": 72
+    },
+    {
+      "id": "simon-willison",
+      "name": "Simon Willison",
+      "url": "https://simonwillison.net/atom/everything/",
+      "kind": "atom",
+      "tier": 1,
+      "trustCategory": true,
+      "category": "engineering",
+      "lang": "en"
+    },
+    {
+      "id": "techcrunch-ai",
+      "name": "TechCrunch AI",
+      "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "kind": "rss",
+      "tier": 1,
+      "trustCategory": true,
+      "category": "industry",
+      "lang": "en"
+    },
+    {
+      "id": "ars-ai",
+      "name": "Ars Technica AI",
+      "url": "https://arstechnica.com/ai/feed/",
+      "kind": "rss",
+      "tier": 1,
+      "trustCategory": true,
+      "category": "products",
+      "lang": "en"
+    },
+    {
+      "id": "mit-tr-ai",
+      "name": "MIT Tech Review",
+      "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed",
+      "kind": "rss",
+      "tier": 1,
+      "trustCategory": true,
+      "category": "industry",
+      "lang": "en"
+    },
+    {
+      "id": "qbitai",
+      "name": "量子位",
+      "url": "https://www.qbitai.com/feed",
+      "kind": "rss",
+      "tier": 1,
+      "trustCategory": true,
+      "category": "industry",
+      "lang": "zh",
+      "windowHours": 72
+    },
+    {
+      "id": "arxiv-cs",
+      "name": "arXiv cs.AI/CL/LG",
+      "url": "https://export.arxiv.org/api/query?search_query=cat:cs.AI+OR+cat:cs.CL+OR+cat:cs.LG&sortBy=submittedDate&sortOrder=descending&max_results=20",
+      "kind": "atom",
+      "tier": 2,
+      "trustCategory": true,
+      "category": "research",
+      "lang": "en",
+      "windowHours": 72
+    },
+    {
+      "id": "hn-newest",
+      "name": "Hacker News (AI)",
+      "url": "https://hnrss.org/newest?q=AI&points=20",
+      "kind": "rss",
+      "tier": 2,
+      "category": "engineering",
+      "lang": "en"
+    },
+    {
+      "id": "hn-algolia",
+      "name": "Hacker News Search",
+      "url": "https://hn.algolia.com/api/v1/search_by_date?query=LLM&tags=story&hitsPerPage=25",
+      "kind": "json",
+      "adapter": "hn-algolia",
+      "tier": 2,
+      "category": "engineering",
+      "lang": "en"
+    },
+    {
+      "id": "lobsters-ai",
+      "name": "Lobsters AI",
+      "url": "https://lobste.rs/t/ai.rss",
+      "kind": "rss",
+      "tier": 2,
+      "category": "engineering",
+      "lang": "en"
+    },
+    {
+      "id": "reddit-local-llama",
+      "name": "r/LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/new.rss",
+      "kind": "rss",
+      "tier": 2,
+      "category": "opensource",
+      "lang": "en"
+    },
+    {
+      "id": "github-trending",
+      "name": "GitHub 新晋 AI 项目",
+      "url": "https://api.github.com/search/repositories?q=AI+OR+LLM+OR+agent+stars:%3E100+created:%3E{SINCE}&sort=stars&order=desc&per_page=20",
+      "kind": "json",
+      "adapter": "github-search",
+      "tier": 2,
+      "trustCategory": true,
+      "category": "opensource",
+      "lang": "en",
+      "minMetrics": {
+        "stars": 100
+      },
+      "windowHours": 168
+    },
+    {
+      "id": "microsoft-research",
+      "name": "Microsoft Research",
+      "url": "https://www.microsoft.com/en-us/research/feed/",
+      "kind": "rss",
+      "tier": 2,
+      "category": "research",
+      "lang": "en",
+      "windowHours": 96
+    },
+    {
+      "id": "github-blog",
+      "name": "GitHub Blog",
+      "url": "https://github.blog/feed/",
+      "kind": "rss",
+      "tier": 2,
+      "category": "engineering",
+      "lang": "en"
+    },
+    {
+      "id": "theverge",
+      "name": "The Verge",
+      "url": "https://www.theverge.com/rss/index.xml",
+      "kind": "atom",
+      "tier": 3,
+      "category": "products",
+      "lang": "en"
+    }
+  ],
+  "windowHours": 48,
+  "maxAgeDays": 7,
+  "fallbackItemsPerSource": 2
+}
