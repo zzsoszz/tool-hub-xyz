@@ -1,15 +1,15 @@
 {
   "day": "2026-11-09",
-  "generatedAt": "2026-11-09T01:20:35.526Z",
+  "generatedAt": "2026-11-09T01:57:46.390Z",
   "timezone": "Asia/Shanghai",
   "windowHours": 48,
   "counts": {
     "sources": 21,
-    "okSources": 19,
-    "fetched": 2647,
-    "duplicates": 7,
-    "carried": 0,
-    "added": 48,
+    "okSources": 21,
+    "fetched": 2702,
+    "duplicates": 2597,
+    "carried": 49,
+    "added": 0,
     "fallback": 11,
     "published": 48
   },
@@ -66,9 +66,9 @@
     {
       "id": "simon-willison",
       "name": "Simon Willison",
-      "ok": false,
-      "items": 0,
-      "error": "ECONNRESET"
+      "ok": true,
+      "items": 30,
+      "error": null
     },
     {
       "id": "techcrunch-ai",
@@ -129,9 +129,9 @@
     {
       "id": "reddit-local-llama",
       "name": "r/LocalLLaMA",
-      "ok": false,
-      "items": 0,
-      "error": "HTTP 429"
+      "ok": true,
+      "items": 25,
+      "error": null
     },
     {
       "id": "github-trending",
