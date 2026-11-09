@@ -1,0 +1,13 @@
+{
+  "name": "tool-hub",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./dist"
+  },
+  "routes": [
+    { "pattern": "tool-hub.xyz", "custom_domain": true }
+  ],
+  "observability": {
+    "enabled": true
+  }
+}
