@@ -19,6 +19,7 @@ There are no third-party dependencies, so `npm install` is not needed.
 npm run collect    # fetch sources into data/digests/<date>.json
 npm run build      # render dist/ from data/
 npm run dev        # collect + build, then serve 0.0.0.0:8088
+npm run review     # pre-publish quality gate: hard rules + a second model review (writes data/reviews/)
 npm test           # node --test: unit tests + offline end-to-end pipeline
 npm run lint       # syntax, indentation, trailing whitespace, secret scan
 ```
