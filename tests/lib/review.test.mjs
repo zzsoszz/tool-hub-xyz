@@ -3,7 +3,7 @@ import { mkdir, readFile, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import test from 'node:test';
 import { createFilter } from '../../src/lib/filter.mjs';
-import { hardReview, mergeHidden, parseVerdicts, REVIEW_RULES, runReview } from '../../src/review.mjs';
+import { agentEndpoint, hardReview, mergeHidden, parseVerdicts, REVIEW_RULES, reviewConfig, runReview } from '../../src/review.mjs';
 
 const filters = await readFile(path.resolve(import.meta.dirname, '../../config/filters.json'), 'utf8').then((text) => JSON.parse(text));
 const filter = createFilter(filters);
@@ -119,6 +119,31 @@ test('reviewBlocksAreStoredPerDaySoReReviewingConverges', async () => {
   assert.deepEqual(hidden.machine, ['b1']);
   assert.deepEqual(hidden.machineByDay, { '2026-11-08': [], '2026-11-09': ['b1'] });
   await rm(dir, { recursive: true, force: true });
+});
+
+test('mergeHiddenKeepsLegacyBlocksWithoutDayRecords', async () => {
+  const dir = path.resolve(import.meta.dirname, '../../.tmp-review4');
+  await rm(dir, { recursive: true, force: true });
+  await mkdir(dir, { recursive: true });
+  const file = path.join(dir, 'hidden.json');
+  await writeFile(file, JSON.stringify({ slugs: ['old1', 'old2'], admin: ['adm1'], machine: ['old1', 'old2'] }));
+  await mergeHidden(file, ['new1'], '2026-11-10');
+  const hidden = JSON.parse(await readFile(file, 'utf8'));
+  assert.deepEqual(hidden.machine, ['old1', 'old2', 'new1']);
+  assert.deepEqual(hidden.machineByDay, { legacy: ['old1', 'old2'], '2026-11-10': ['new1'] });
+  assert.deepEqual(hidden.admin, ['adm1']);
+  await rm(dir, { recursive: true, force: true });
+});
+
+test('reviewAgentRetriesOnASmallerModelEndpoint', () => {
+  const config = reviewConfig({ CLOUDFLARE_API_TOKEN: 'token', CLOUDFLARE_ACCOUNT_ID: 'acct' });
+  assert.equal(config.model, '@cf/meta/llama-3.1-70b-instruct');
+  assert.equal(config.fallbackModel, '@cf/meta/llama-3.1-8b-instruct');
+  assert.equal(
+    agentEndpoint(config, config.model),
+    'https://api.cloudflare.com/client/v4/accounts/acct/ai/run/@cf/meta/llama-3.1-70b-instruct',
+  );
+  assert.ok(agentEndpoint(config, config.fallbackModel).endsWith('/ai/run/@cf/meta/llama-3.1-8b-instruct'));
 });
 
 test('runReviewBlocksPublishingWithoutAgentCredentials', async () => {
