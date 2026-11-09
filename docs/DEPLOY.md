@@ -1,4 +1,4 @@
-# 部署手册（GitHub + Cloudflare Pages + tool-hub.xyz）
+# 部署手册（GitHub + Cloudflare Workers 静态资源 + tool-hub.xyz）
 
 ## 1. 推送代码到 GitHub
 
@@ -9,21 +9,28 @@ gh repo create tool-hub-xyz --private --source=. --remote=origin --push
 # 或手动：git remote add origin https://github.com/<你的账号>/tool-hub-xyz.git && git push -u origin main
 ```
 
-## 2. 创建 Cloudflare Pages 项目
+## 2. 部署目标：Worker `tool-hub`（静态资源）
 
-Dashboard → **Workers & Pages → Pages → Create a project → Git → 选择 `tool-hub-xyz` 仓库**，然后：
+`tool-hub.xyz` 已绑定到账户里的 **assets-only Worker `tool-hub`**，站点就是它的静态资源，没有 Worker 脚本。
+仓库根目录的 `wrangler.jsonc` 描述了这个目标：
 
-- Production branch: `main`
-- Framework preset: **None**
-- Build command: *留空*（CI 直接上传 `dist/`）
-- Build output directory: `dist`
+```jsonc
+{
+  "name": "tool-hub",
+  "assets": { "directory": "./dist" },
+  "routes": [{ "pattern": "tool-hub.xyz", "custom_domain": true }]
+}
+```
 
-不想接 Git 集成也可以，CI 用 `cloudflare/pages-action` 直接上传构建产物（本仓库默认走这条路）。本地临时部署可用：
+本地手动发布（`npx` 会临时拉取 wrangler，仓库本身零依赖）：
 
 ```bash
-npx wrangler pages project create tool-hub-xyz --production-branch main
-npx wrangler pages deploy dist --project-name tool-hub-xyz
+npm run build
+CLOUDFLARE_API_TOKEN=... CLOUDFLARE_ACCOUNT_ID=... npx --yes wrangler@4 deploy
 ```
+
+`dist/_headers`、`dist/_redirects` 在该形态下同样生效（已线上验证）。历史版本可用
+`npx wrangler deployments list` 与 `npx wrangler rollback` 回退。
 
 ## 3. 配置 Secrets 与 Vars
 
@@ -31,15 +38,17 @@ npx wrangler pages deploy dist --project-name tool-hub-xyz
 
 | 名称 | 类型 | 值 |
 | --- | --- | --- |
-| `CLOUDFLARE_API_TOKEN` | Secret | Cloudflare Profile → API Tokens，权限 `Cloudflare Pages: Edit` |
-| `CLOUDFLARE_ACCOUNT_ID` | Secret | Pages 控制台 URL 里的一串 ID |
-| `PAGES_PROJECT` | Variable | `tool-hub-xyz`（可省略，默认同名） |
+| `CLOUDFLARE_API_TOKEN` | Secret | Cloudflare Profile → API Tokens，权限 `Workers Scripts: Edit` + `Workers Custom Domains: Edit` |
+| `CLOUDFLARE_ACCOUNT_ID` | Secret | Cloudflare 账户 ID（Dashboard 右上角） |
 | `TRANSLATE_API_KEY` | Secret | 可选，启用中文摘要 |
 | `TRANSLATE_MODEL` | Variable | 可选，默认 `gpt-4o-mini` |
 
-## 4. 绑定 tool-hub.xyz
+## 4. 域名
 
-Pages 项目 → Settings → **Custom domains → Set up a custom domain** → 输入 `tool-hub.xyz`。域名已在 Cloudflare 时 DNS 会自动写入，无需手工加记录；`www` 用 **Redirect 规则**（Workers & Pages → 域重定向）指向 `tool-hub.xyz`。
+`tool-hub.xyz` 的自定义域名绑定已存在（Dashboard → Workers & Pages → `tool-hub` → Settings → Custom domains），
+DNS 由 Cloudflare 自动维护，不需要手工加记录。`www.tool-hub.xyz` 目前仍指向旧记录，需要在
+Dashboard 删除该 DNS 记录后才能加 `www` 绑定（或在 `wrangler.jsonc` 的 `routes` 里补一行
+`{ "pattern": "www.tool-hub.xyz", "custom_domain": true }`）。
 
 验证：
 
@@ -67,7 +76,8 @@ curl -m 10 -s https://tool-hub.xyz/llms.txt | head -6
 | 某天分类为空 | 检查该源是否 429/超时；必要时调大 `config/sources.json` 里该源的 `windowHours` |
 | 想临时改条目上限 | `maxItemsPerDay`、`maxItemsPerSource`、`maxAgeDays` |
 | 想加/删信息源 | 编辑 `config/sources.json`；JSON API 源需要 `kind: "json"` + `adapter` |
-| Pages 部署 401 | `CLOUDFLARE_API_TOKEN` 权限不足或 `CLOUDFLARE_ACCOUNT_ID` 不匹配 |
+| 部署 401/403 | `CLOUDFLARE_API_TOKEN` 缺少 Workers Scripts/Custom Domains 权限，或 `CLOUDFLARE_ACCOUNT_ID` 不匹配 |
+| `wrangler deploy` 报 hostname 冲突 | 该主机名还有手工 DNS 记录（A/CNAME），先在 Dashboard 删除 |
 
 ## 7. 本地完整演练
 

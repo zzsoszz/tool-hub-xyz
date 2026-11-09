@@ -1,10 +1,10 @@
 # tool-hub.xyz · AI 前沿资讯日报
 
-每天定时从 21 个一手信息源采集 AI 新技术、模型发布、论文与行业动态，去重、排序、分类后生成静态站点，部署到 Cloudflare Pages 并绑定 `tool-hub.xyz`。
+每天定时从 21 个一手信息源采集 AI 新技术、模型发布、论文与行业动态，去重、排序、分类后生成静态站点，部署到 Cloudflare Workers 静态资源并绑定 `tool-hub.xyz`。
 
 - 线上地址：<https://tool-hub.xyz>（部署后）
 - 本地预览：<http://127.0.0.1:8088/>
-- 技术栈：Node.js 22（ESM，**零运行时依赖**）+ GitHub Actions + Cloudflare Pages
+- 技术栈：Node.js 22（ESM，**零运行时依赖**）+ GitHub Actions + Cloudflare Workers（静态资源）
 - 测试：Node 内置 `node:test`，离线样例可完整跑通流水线
 
 ## 工作流程
@@ -22,7 +22,7 @@ data/digests/<日期>.json            data/seen.json · data/state.json
 src/build.mjs ──► dist/（index.html、day/<日期>.html、archive.html、feed.xml、llms.txt、sitemap.xml）
       │
       ▼
-GitHub Actions（每日 06:30 / 18:30 CST）──► Cloudflare Pages ──► tool-hub.xyz
+GitHub Actions（每日 06:30 / 18:30 CST）──► Cloudflare Workers（`tool-hub`）──► tool-hub.xyz
 ```
 
 ## 目录结构
@@ -31,8 +31,9 @@ GitHub Actions（每日 06:30 / 18:30 CST）──► Cloudflare Pages ──►
 - `src/lib/` 解析与业务模块：`xml.mjs`（零依赖 XML/Atom 解析）、`parse.mjs`、`adapters.mjs`（JSON API）、`filter.mjs`（相关性/分类/打分）、`dedupe.mjs`、`select.mjs`（分类配额）、`normalize.mjs`、`sources.mjs`、`http.mjs`、`translate.mjs`、`render.mjs`
 - `config/sources.json` 信息源清单与采集参数；`config/filters.json` 关键词与分类定义
 - `data/` 采集产物（`digests/`、`seen.json`、`state.json`），随提交保留历史
-- `dist/` 构建产物，已 gitignore，由 CI 上传到 Pages
-- `public/` 静态资产与 Pages 配置（`styles.css`、`favicon.svg`、`_headers`、`_redirects`）
+- `dist/` 构建产物，已 gitignore，由 CI 用 `wrangler deploy` 上传
+- `public/` 静态资产与路由/缓存配置（`styles.css`、`favicon.svg`、`_headers`、`_redirects`）
+- `wrangler.jsonc` Cloudflare 部署目标（Worker `tool-hub` + `tool-hub.xyz` 自定义域名）
 - `tests/` 单元与端到端测试，`tests/fixtures/` 为离线样例
 - `docs/DEPLOY.md` 部署手册
 
@@ -70,7 +71,7 @@ NODE_USE_ENV_PROXY=1 HTTPS_PROXY=http://192.168.31.4:7890 npm run collect
 
 ## 部署
 
-见 [docs/DEPLOY.md](docs/DEPLOY.md)：GitHub 仓库、Cloudflare Pages 项目、Actions Secrets、`tool-hub.xyz` 域名绑定与故障排查。
+见 [docs/DEPLOY.md](docs/DEPLOY.md)：GitHub 仓库、Cloudflare 部署目标、Actions Secrets、`tool-hub.xyz` 域名与故障排查。
 
 ## 消费方式
 

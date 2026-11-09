@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "AI 前沿资讯日报：每日定时采集 → 去重排序 → 静态站点 → Cloudflare Pages",
+  "description": "AI 前沿资讯日报：每日定时采集 → 去重排序 → 静态站点 → Cloudflare Workers",
   "engines": {
     "node": ">=22"
   },
