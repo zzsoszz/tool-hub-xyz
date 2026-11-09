@@ -1,17 +1,17 @@
 {
   "day": "2026-11-10",
-  "generatedAt": "2026-11-09T16:48:59.353Z",
+  "generatedAt": "2026-11-09T17:01:56.560Z",
   "timezone": "Asia/Shanghai",
   "windowHours": 48,
   "counts": {
     "sources": 36,
-    "okSources": 35,
-    "fetched": 2953,
-    "duplicates": 2798,
-    "carried": 0,
-    "added": 10,
+    "okSources": 34,
+    "fetched": 2938,
+    "duplicates": 2898,
+    "carried": 9,
+    "added": 0,
     "fallback": 1,
-    "lowQuality": 105,
+    "lowQuality": 13,
     "published": 10
   },
   "sources": [
@@ -109,9 +109,9 @@
     {
       "id": "hn-newest",
       "name": "Hacker News (AI)",
-      "ok": true,
-      "items": 20,
-      "error": null
+      "ok": false,
+      "items": 0,
+      "error": "HTTP 502"
     },
     {
       "id": "hn-algolia",
@@ -186,9 +186,9 @@
     {
       "id": "hn-show-ai",
       "name": "Show HN (AI)",
-      "ok": true,
-      "items": 20,
-      "error": null
+      "ok": false,
+      "items": 0,
+      "error": "HTTP 502"
     },
     {
       "id": "ai-news-applied",
@@ -207,9 +207,9 @@
     {
       "id": "reddit-sideproject",
       "name": "r/SideProject",
-      "ok": false,
-      "items": 0,
-      "error": "HTTP 429"
+      "ok": true,
+      "items": 25,
+      "error": null
     },
     {
       "id": "lcz-hardware",
@@ -534,7 +534,7 @@
           },
           "excellent": false,
           "content": {
-            "html": "<p><a href=\"https://www.youtube.com/watch?v=3jtl-mnKH6o\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><i></i>Youtube Video</a></p>\n<div><div></div></div>\n<p></p>\n<h3>一、视频：MiniMax H3（本地 ComfyUI 8288）</h3>\n<table><thead><tr><th>项</th><th>值</th></tr></thead><tbody><tr><td>基座模型</td><td>MiniMax H3（音视频联合生成，FL2VA 变体）</td></tr><tr><td>UNet</td><td>minimax_h3_fl2va_pruned_int8_convrot.safetensors（int8 量化剪枝）</td></tr><tr><td>LoRA</td><td>minimax_h3_fl2v_turbo_8step_v1.0_768p（8 步蒸馏）</td></tr><tr><td>文本编码器</td><td>qwen3vl_32b_minimax_h3_int8_convrot.safetensors</td></tr><tr><td>视频 VAE</td><td>minimax_h3_video_vae_fp16.safetensors</td></tr><tr><td>音频 VAE</td><td>minimax_h3_audio_vae_fp32.safetensors（成片未使用其原声）</td></tr><tr><td>生成节点</td><td>MiniMaxH3ReferenceToVideo（Ref2VA，双参考图锁人锁兽）</td></tr><tr><td>采样器</td><td>Euler</td></tr><tr><td>调度器</td><td>beta</td></tr><tr><td>步数</td><td>8</td></tr><tr><td>denoise</td><td>1.0</td></tr><tr><td>帧率</td><td>24 fps</td></tr><tr><td>帧数公式</td><td>max(5, round(时长×24)) 吸附到 17k+5</td></tr><tr><td>硬件</td><td>ubuntu，AMD 7900 XTX 24GB，ROCm</td></tr></tbody></table>\n<h3>参考图与分辨率</h3>\n<table><thead><tr><th>项</th><th>生肖 12 段</th><th>开场/结尾近身镜</th></tr></thead><tbody><tr><td>时长</td><td>15 秒 / 段</td><td>5.1667 秒 / 段（3 小节）</td></tr><tr><td>分辨率档</td><td>0.7MP，16:9</td><td>0.8MP，16:9</td></tr><tr><td>实际像素</td><td>1152 × 640</td><td>1216 × 672</td></tr><tr><td>实际帧数</td><td>362 帧</td><td>124 帧</td></tr><tr><td>参考图 1（人物）</td><td>ink_lady_ref_pink_lady.png 等粉裙人像</td><td>同左</td></tr><tr><td>参考图 2（兽形）</td><td>zodiac_ink_&lt;生肖&gt;<em>00001</em>.png 水墨静帧</td><td>同上（沿用虎）</td></tr><tr><td>ref_image_size</td><td>match</td><td>max</td></tr></tbody></table>\n<ul><li>ref_image_size 用 match 快但身份保真弱；近身镜露脸，改 max（短边 2048）换保真，慢数倍。</li><li>生肖段种子 147263133599888 起，每段 +7 递增，12 段固定可复现。</li><li>近身镜种子：开场 v2 = 771903546，结尾 = 908341126。</li></ul>\n<h3>渲染耗时（实测）</h3>\n<table><thead><tr><th>内容</th><th>单段耗时</th></tr></thead><tbody><tr><td>生肖段 15 秒 / 0.7MP / 8 步</td><td>32-33 分钟</td></tr><tr><td>12 段全批</td><td>约 6 小时 35 分</td></tr><tr><td>近身镜 5.17 秒 / 0.8MP / 8 步</td><td>15-20 分钟</td></tr></tbody></table>\n<p>原始素材合计 12×15 + 2×5.1667 ≈ 190 秒，剪成横版 113.5 秒、竖版 72.3 秒。</p>\n<h3>三、后期（ffmpeg，非生成）</h3>\n<table><thead><tr><th>项</th><th>横版</th><th>竖版</th></tr></thead><tbody><tr><td>剪法</td><td>12 段各取 8.6 秒（5 小节）</td><td>12 段各取 5.1667 秒（3 小节），段内 4 段拼接 + 变速</td></tr><tr><td>正片长度</td><td>103.2 秒</td><td>62.0 秒</td></tr><tr><td>加首尾</td><td>+5.17 × 2</td><td>+5.17 × 2</td></tr><tr><td>成片</td><td>113.5 秒 / 1920×1080（1152×640 lanczos 放大 + 轻锐化）</td><td>72.3 秒 / 1080×1920 原生</td></tr><tr><td>装裱</td><td>无</td><td>青绿锦绫平铺，画心 1080×600 覆盖于 y=640</td></tr></tbody></table>\n<ul><li>配乐《千钧落弦》139.53 BPM，拍 0.430 秒，小节 1.720 秒，音乐起点 22.7633 秒。</li><li>音效只两种：挥笔划破空气（全片铺底）、实体撞击（全片仅牛段撞木桩一次）。</li><li>响度：全长 −15.2 LUFS，峰值 −1.0 dBFS；开场 −18.8 / 正片 −16.5 / 结尾 −14.6，做缓升。</li><li>H3 自带音轨全部弃用，成片音轨为后期重制。</li></ul>",
+            "html": "<p><a href=\"https://www.youtube.com/watch?v=3jtl-mnKH6o\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><i></i>Youtube Video</a></p>\n<div><div></div></div>\n\n<h3>一、视频：MiniMax H3（本地 ComfyUI 8288）</h3>\n<table><thead><tr><th>项</th><th>值</th></tr></thead><tbody><tr><td>基座模型</td><td>MiniMax H3（音视频联合生成，FL2VA 变体）</td></tr><tr><td>UNet</td><td>minimax_h3_fl2va_pruned_int8_convrot.safetensors（int8 量化剪枝）</td></tr><tr><td>LoRA</td><td>minimax_h3_fl2v_turbo_8step_v1.0_768p（8 步蒸馏）</td></tr><tr><td>文本编码器</td><td>qwen3vl_32b_minimax_h3_int8_convrot.safetensors</td></tr><tr><td>视频 VAE</td><td>minimax_h3_video_vae_fp16.safetensors</td></tr><tr><td>音频 VAE</td><td>minimax_h3_audio_vae_fp32.safetensors（成片未使用其原声）</td></tr><tr><td>生成节点</td><td>MiniMaxH3ReferenceToVideo（Ref2VA，双参考图锁人锁兽）</td></tr><tr><td>采样器</td><td>Euler</td></tr><tr><td>调度器</td><td>beta</td></tr><tr><td>步数</td><td>8</td></tr><tr><td>denoise</td><td>1.0</td></tr><tr><td>帧率</td><td>24 fps</td></tr><tr><td>帧数公式</td><td>max(5, round(时长×24)) 吸附到 17k+5</td></tr><tr><td>硬件</td><td>ubuntu，AMD 7900 XTX 24GB，ROCm</td></tr></tbody></table>\n<h3>参考图与分辨率</h3>\n<table><thead><tr><th>项</th><th>生肖 12 段</th><th>开场/结尾近身镜</th></tr></thead><tbody><tr><td>时长</td><td>15 秒 / 段</td><td>5.1667 秒 / 段（3 小节）</td></tr><tr><td>分辨率档</td><td>0.7MP，16:9</td><td>0.8MP，16:9</td></tr><tr><td>实际像素</td><td>1152 × 640</td><td>1216 × 672</td></tr><tr><td>实际帧数</td><td>362 帧</td><td>124 帧</td></tr><tr><td>参考图 1（人物）</td><td>ink_lady_ref_pink_lady.png 等粉裙人像</td><td>同左</td></tr><tr><td>参考图 2（兽形）</td><td>zodiac_ink_&lt;生肖&gt;<em>00001</em>.png 水墨静帧</td><td>同上（沿用虎）</td></tr><tr><td>ref_image_size</td><td>match</td><td>max</td></tr></tbody></table>\n<ul><li>ref_image_size 用 match 快但身份保真弱；近身镜露脸，改 max（短边 2048）换保真，慢数倍。</li><li>生肖段种子 147263133599888 起，每段 +7 递增，12 段固定可复现。</li><li>近身镜种子：开场 v2 = 771903546，结尾 = 908341126。</li></ul>\n<h3>渲染耗时（实测）</h3>\n<table><thead><tr><th>内容</th><th>单段耗时</th></tr></thead><tbody><tr><td>生肖段 15 秒 / 0.7MP / 8 步</td><td>32-33 分钟</td></tr><tr><td>12 段全批</td><td>约 6 小时 35 分</td></tr><tr><td>近身镜 5.17 秒 / 0.8MP / 8 步</td><td>15-20 分钟</td></tr></tbody></table>\n<p>原始素材合计 12×15 + 2×5.1667 ≈ 190 秒，剪成横版 113.5 秒、竖版 72.3 秒。</p>\n<h3>三、后期（ffmpeg，非生成）</h3>\n<table><thead><tr><th>项</th><th>横版</th><th>竖版</th></tr></thead><tbody><tr><td>剪法</td><td>12 段各取 8.6 秒（5 小节）</td><td>12 段各取 5.1667 秒（3 小节），段内 4 段拼接 + 变速</td></tr><tr><td>正片长度</td><td>103.2 秒</td><td>62.0 秒</td></tr><tr><td>加首尾</td><td>+5.17 × 2</td><td>+5.17 × 2</td></tr><tr><td>成片</td><td>113.5 秒 / 1920×1080（1152×640 lanczos 放大 + 轻锐化）</td><td>72.3 秒 / 1080×1920 原生</td></tr><tr><td>装裱</td><td>无</td><td>青绿锦绫平铺，画心 1080×600 覆盖于 y=640</td></tr></tbody></table>\n<ul><li>配乐《千钧落弦》139.53 BPM，拍 0.430 秒，小节 1.720 秒，音乐起点 22.7633 秒。</li><li>音效只两种：挥笔划破空气（全片铺底）、实体撞击（全片仅牛段撞木桩一次）。</li><li>响度：全长 −15.2 LUFS，峰值 −1.0 dBFS；开场 −18.8 / 正片 −16.5 / 结尾 −14.6，做缓升。</li><li>H3 自带音轨全部弃用，成片音轨为后期重制。</li></ul>",
             "text": "Youtube Video\n一、视频：MiniMax H3（本地 ComfyUI 8288）\n项\n值\n基座模型\nMiniMax H3（音视频联合生成，FL2VA 变体）\nUNet\nminimax_h3_fl2va_pruned_int8_convrot.safetensors（int8 量化剪枝）\nLoRA\nminimax_h3_fl2v_turbo_8step_v1.0_768p（8 步蒸馏）\n文本编码器\nqwen3vl_32b_minimax_h3_int8_convrot.safetensors\n视频 VAE\nminimax_h3_video_vae_fp16.safetensors\n音频 VAE\nminimax_h3_audio_vae_fp32.safetensors（成片未使用其原声）\n生成节点\nMiniMaxH3ReferenceToVideo（Ref2VA，双参考图锁人锁兽）\n采样器\nEuler\n调度器\nbeta\n步数\n8\ndenoise\n1.0\n帧率\n24 fps\n帧数公式\nmax(5, round(时长×24)) 吸附到 17k+5\n硬件\nubuntu，AMD 7900 XTX 24GB，ROCm\n参考图与分辨率\n项\n生肖 12 段\n开场/结尾近身镜\n时长\n15 秒 / 段\n5.1667 秒 / 段（3 小节）\n分辨率档\n0.7MP，16:9\n0.8MP，16:9\n实际像素\n1152 × 640\n1216 × 672\n实际帧数\n362 帧\n124 帧\n参考图 1（人物）\nink_lady_ref_pink_lady.png 等粉裙人像\n同左\n参考图 2（兽形）\nzodiac_ink_<生肖> 00001 .png 水墨静帧\n同上（沿用虎）\nref_image_size\nmatch\nmax\nref_image_size 用 match 快但身份保真弱；近身镜露脸，改 max（短边 2048）换保真，慢数倍。\n生肖段种子 147263133599888 起，每段 +7 递增，12 段固定可复现。\n近身镜种子：开场 v2 = 771903546，结尾 = 908341126。\n渲染耗时（实测）\n内容\n单段耗时\n生肖段 15 秒 / 0.7MP / 8 步\n32-33 分钟\n12 段全批\n约 6 小时 35 分\n近身镜 5.17 秒 / 0.8MP / 8 步\n15-20 分钟\n原始素材合计 12×15 + 2×5.1667 ≈ 190 秒，剪成横版 113.5 秒、竖版 72.3 秒。\n三、后期（ffmpeg，非生成）\n项\n横版\n竖版\n剪法\n12 段各取 8.6 秒（5 小节）\n12 段各取 5.1667 秒（3 小节），段内 4 段拼接 + 变速\n正片长度\n103.2 秒\n62.0 秒\n加首尾\n+5.17 × 2\n+5.17 × 2\n成片\n113.5 秒 / 1920×1080（1152×640 lanczos 放大 + 轻锐化）\n72.3 秒 / 1080×1920 原生\n装裱\n无\n青绿锦绫平铺，画心 1080×600 覆盖于 y=640\n配乐《千钧落弦》139.53 BPM，拍 0.430 秒，小节 1.720 秒，音乐起点 22.7633 秒。\n音效只两种：挥笔划破空气（全片铺底）、实体撞击（全片仅牛段撞木桩一次）。\n响度：全长 −15.2 LUFS，峰值 −1.0 dBFS；开场 −18.8 / 正片 −16.5 / 结尾 −14.6，做缓升。\nH3 自带音轨全部弃用，成片音轨为后期重制。",
             "lead": "Youtube Video\n一、视频：MiniMax H3（本地 ComfyUI 8288）",
             "chars": 1626,
