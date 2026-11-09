@@ -1,5 +1,6 @@
 import { timeAgo } from './normalize.mjs';
-import { domainOf, itemSlug, rankCompare } from './items.mjs';
+import { domainOf, itemImage, itemSlug, rankCompare } from './items.mjs';
+import { repairArticle } from './content.mjs';
 
 export function escapeHtml(value) {
   return String(value ?? '')
@@ -95,6 +96,13 @@ function tagChips(item, { limit = 3 } = {}) {
   return (item.tags ?? []).slice(0, limit).map((tag) => `<a class="chip tag" href="/t/${escapeHtml(tag)}">${escapeHtml(tag)}</a>`).join('');
 }
 
+// 宽表格在小屏上横向滚动，避免把正文挤成一列。
+function decorateTables(html) {
+  return String(html ?? '')
+    .replace(/<table>/g, '<div class="table-scroll"><table>')
+    .replace(/<\/table>/g, '</table></div>');
+}
+
 export function storyRow(item, { rank, showDay = false }) {
   const title = displayTitle(item);
   const original = item.zhTitle && item.zhTitle !== item.title ? item.title : '';
@@ -104,8 +112,10 @@ export function storyRow(item, { rank, showDay = false }) {
   const metrics = metricsLabel(item);
   const rankCell = rank ? `<span class="rank">${rank}</span>` : '';
   const dayChip = showDay ? `<span class="chip day">${escapeHtml(item.day ?? '')}</span>` : '';
+  const image = itemImage(item);
+  const thumb = image ? `<a class="story-thumb-link" href="/item/${escapeHtml(item.slug)}" tabindex="-1" aria-hidden="true"><img class="story-thumb" src="${escapeHtml(image)}" alt="" loading="lazy"></a>` : '';
   return `    <li class="story" data-slug="${escapeHtml(item.slug)}">
-${rankCell}      <div class="story-body">
+${rankCell}${thumb}      <div class="story-body">
         <h2 class="story-title"><a href="/item/${escapeHtml(item.slug)}">${escapeHtml(title)}</a>${hot}${qualityChip(item)}${practicalChip(item)}</h2>
         ${tagChips(item, { limit: 3 }) ? `<p class="story-tags">${tagChips(item, { limit: 3 })}</p>` : ''}
         ${original ? `<p class="story-original">${escapeHtml(original)}</p>` : ''}
@@ -129,24 +139,29 @@ ${items.map((item, index) => storyRow(item, { rank: index + 1, showDay })).join(
   </ol>`;
 }
 
-function digestBody(digest, { sections, days, siteUrl, sectionId }) {
+function digestBody(digest, { sections, days, siteUrl, sectionId, limit = 0 }) {
   const counts = digest.counts ?? {};
   const items = (digest.categories ?? []).flatMap((group) => group.items.map((item) => ({ ...item, day: digest.day })));
   items.sort(rankCompare);
+  const shown = limit > 0 ? items.slice(0, limit) : items;
   const failed = (digest.sources ?? []).filter((source) => !source.ok);
+  const more = shown.length < items.length
+    ? `  <p class="lede-more">首页只留质量最高的 ${shown.length} 条，<a href="/day/${escapeHtml(digest.day)}">查看全部 ${items.length} 条 →</a></p>\n`
+    : '';
   return `  <section class="lede">
     <h1>${escapeHtml(zhLabel(digest))} · AI 折腾日报</h1>
     <p class="lede-meta">共 ${counts.published ?? 0} 条 · 来自 ${counts.okSources ?? 0} 个信息源 · 生成于 ${escapeHtml(digest.generatedAt)}${failed.length ? ` · ${failed.length} 个源本次抓取失败` : ''}</p>
-    <p class="lede-hint">首页按内容质量排名（论证是否充分、正文是否充实、讨论热度），只保留经得起看的条目；标题已译成中文，<strong>原文</strong>链接直达原始来源，欢迎在每条下面留言讨论。</p>
+    <p class="lede-hint">排名看质量不看热度：有实测数据、有对比或原理解释、能照着做的实操条目排前面，带配图和表格的优先。标题已译成中文，<strong>原文</strong>链接直达原始来源，欢迎在每条下面留言讨论。</p>
   </section>
-${storyList(items, { showDay: false })}
+${storyList(shown, { showDay: false })}
+${more}  <section class="daynav">
   <section class="daynav">
     <h2>按日期</h2>
     <nav class="day-chips">${days.map((day) => `<a href="/day/${escapeHtml(day)}" class="${day === digest.day ? 'active' : ''}">${escapeHtml(day)}</a>`).join('')}</nav>
   </section>`;
 }
 
-export function renderDigestPage(digest, { sections = [], days = [], siteUrl = '', repoUrl, sectionId = 'latest' } = {}) {
+export function renderDigestPage(digest, { sections = [], days = [], siteUrl = '', repoUrl, sectionId = 'latest', limit = 0 } = {}) {
   return page({
     title: `${zhLabel(digest)} AI 日报 · tool-hub.xyz`,
     description: `${zhLabel(digest)} AI 前沿资讯，共 ${digest.counts?.published ?? 0} 条，已翻译成中文并附原文链接。`,
@@ -154,7 +169,7 @@ export function renderDigestPage(digest, { sections = [], days = [], siteUrl = '
     siteUrl,
     repoUrl,
     menu: menuFor(sections, sectionId),
-    body: digestBody(digest, { sections, days, siteUrl, sectionId }),
+    body: digestBody(digest, { sections, days, siteUrl, sectionId, limit }),
     scripts: ['/forum.js'],
   });
 }
@@ -196,7 +211,7 @@ export function renderItemPage({ item, siteUrl, repoUrl, sections, related = [] 
   const article = item.content?.html
     ? `      <section class="item-body">
         <h2>${item.lang === 'zh' ? '原文正文' : '原文正文（未翻译）'}</h2>
-        <div class="article">${item.content.html}</div>
+        <div class="article">${decorateTables(repairArticle(item.content.html))}</div>
         <p class="article-note">${note}<a href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
       </section>`
     : `${summary ? `      <div class="item-summary"><p>${escapeHtml(summary)}</p></div>` : ''}`;

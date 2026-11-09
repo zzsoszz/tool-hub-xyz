@@ -109,3 +109,9 @@ test('tagsItemsByPracticalKeywords', () => {
   assert.ok(tags.length <= 4);
   assert.deepEqual(filter.tagsFor(item({ title: 'A quiet weekly note', summary: 'notes only' })), []);
 });
+
+test('prefersIllustratedWriteupsWithScreenshotsAndCharts', () => {
+  const base = item({ title: '本地跑 125B MoE 的完整部署记录', summary: '从零编译到实测 54-58 t/s 的全过程，含每一步命令与踩坑。' });
+  const illustrated = { ...base, content: { html: '<p>先看结论。</p><p><img src="https://lcz.me/uploads/1.png" alt="显存占用截图"></p>', text: '先看结论。', chars: 400, shown: 400, lead: '先看结论。', truncated: false } };
+  assert.ok(filter.quality(illustrated, { id: 'lcz-llm' }).score > filter.quality(base, { id: 'lcz-llm' }).score);
+});

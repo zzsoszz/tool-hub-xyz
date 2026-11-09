@@ -100,6 +100,11 @@ export function createFilter(filters) {
     return evidencePattern.test(text);
   }
 
+  // 带配图（实测截图、图表）的条目对人类更友好，评分上给一点偏好。
+  function hasIllustration(item) {
+    return /<img\s/i.test(String(item.content?.html ?? ''));
+  }
+
   function quality(item, source) {
     const title = cleanText(item.title, 220);
     const summary = cleanText(item.summary ?? '', 4000);
@@ -128,6 +133,8 @@ export function createFilter(filters) {
     if (evidence) score += 2;
     else reasons.push('没有具体数据');
     if (item.excellent) score += 3;
+    const illustrated = qualityConfig.illustrationBonus ? (hasIllustration(item) ? qualityConfig.illustrationBonus : 0) : 0;
+    score += illustrated;
 
     if (isThin(`${title} \u2022 ${summary}`)) {
       score -= 3;

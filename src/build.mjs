@@ -87,6 +87,7 @@ async function main() {
   const sections = sectionsConfig.sections ?? [];
   const lookbackDays = Number(sectionsConfig.sectionLookbackDays ?? 7);
   const itemPageDays = Number(process.env.ITEM_PAGE_DAYS ?? 30);
+  const homeLimit = Number(process.env.HOME_LIMIT ?? sectionsConfig.homeLimit ?? 10);
   const tagConfig = (await loadJson(path.join(ROOT, 'config/filters.json'), {}))?.tags ?? [];
   const digests = await loadDigests(path.join(dataDir, 'digests'));
   if (!digests.length) {
@@ -104,7 +105,7 @@ async function main() {
   const navSections = sections.filter((section) => section.id !== 'discuss' && section.id !== 'archive');
   const common = { sections, siteUrl: base, repoUrl: repo, days };
 
-  await write(path.join(distDir, 'index.html'), renderDigestPage(latest, { ...common, sectionId: 'latest' }));
+  await write(path.join(distDir, 'index.html'), renderDigestPage(latest, { ...common, sectionId: 'latest', limit: homeLimit }));
   for (const digest of digests) {
     const isLatest = digest.day === latest.day;
     await write(

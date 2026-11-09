@@ -108,6 +108,7 @@ curl -m 10 -s https://tool-hub.xyz/llms.txt | head -6
 | 采集日志末尾 `所有信息源均抓取失败` | `collect` 退出码 2，构建步骤被跳过，线上仍是上一版内容 |
 | 某天分类为空 | 检查该源是否 429/超时；必要时调大 `config/sources.json` 里该源的 `windowHours` |
 | 想临时改条目上限 | `maxItemsPerDay`、`maxItemsPerSource`、`maxAgeDays` |
+| 想改首页条目数 | `config/sections.json` 的 `homeLimit`（默认 10），或构建时 `HOME_LIMIT=15 npm run build` |
 | 想加/删信息源 | 编辑 `config/sources.json`；JSON API 源需要 `kind: "json"` + `adapter` |
 | 部署 401/403 | `CLOUDFLARE_API_TOKEN` 缺少 Workers Scripts/Custom Domains 权限，或 `CLOUDFLARE_ACCOUNT_ID` 不匹配 |
 | `wrangler deploy` 报 hostname 冲突 | 该主机名还有手工 DNS 记录（A/CNAME），先在 Dashboard 删除 |

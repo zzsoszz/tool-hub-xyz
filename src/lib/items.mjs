@@ -13,6 +13,18 @@ export function rankCompare(a, b) {
   return (b.score ?? 0) - (a.score ?? 0);
 }
 
+// 条目正文里的第一张配图，用于首页图文卡片；图标/头像类小图不算配图。
+export function itemImage(item) {
+  const html = String(item?.content?.html ?? '');
+  for (const match of html.matchAll(/<img\s+src="([^"]+)"/g)) {
+    const src = match[1].replace(/&amp;/g, '&');
+    if (!/^https?:\/\//i.test(src)) continue;
+    if (/(logo|icon|avatar|badge|emoji|favicon)/i.test(src)) continue;
+    return src;
+  }
+  return null;
+}
+
 export function flattenItems(digests) {
   const seen = new Set();
   const items = [];

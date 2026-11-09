@@ -318,6 +318,7 @@
   "quality": {
     "minQuality": 6,
     "minTitleChars": 10,
+    "illustrationBonus": 1,
     "summaryLevels": [
       220,
       120,

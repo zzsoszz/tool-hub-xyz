@@ -121,6 +121,12 @@ main {
   font-size: 14px;
 }
 
+.lede-more {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
 .stories {
   list-style: none;
   margin: 18px 0 0;
@@ -148,6 +154,21 @@ main {
   font-size: 13px;
   text-align: right;
   padding-top: 3px;
+}
+
+.story-thumb-link {
+  flex: 0 0 auto;
+  align-self: flex-start;
+}
+
+.story-thumb {
+  display: block;
+  width: 104px;
+  height: 72px;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel);
 }
 
 .story-body {
@@ -450,29 +471,66 @@ main {
   color: inherit;
 }
 
+.table-scroll {
+  margin: 0 0 14px;
+  padding: 0;
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel);
+}
+
 .article table {
   width: 100%;
-  margin: 0 0 14px;
+  margin: 0;
   border-collapse: collapse;
   font-size: 14px;
 }
 
 .article th,
 .article td {
-  padding: 6px 8px;
-  border: 1px solid var(--line);
+  padding: 8px 10px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
   text-align: left;
   vertical-align: top;
 }
 
+.article th:last-child,
+.article td:last-child {
+  border-right: 0;
+}
+
 .article th {
-  background: #f3f3f0;
-  font-weight: 600;
+  background: var(--accent-soft);
+  border-bottom: 2px solid var(--accent);
+  color: #7a2f12;
+  font-weight: 700;
   white-space: nowrap;
 }
 
 .article tbody tr:nth-child(even) {
-  background: #fafaf8;
+  background: #f6f5f1;
+}
+
+.article tbody tr:hover {
+  background: #eef4ff;
+}
+
+.article tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.article td:first-child {
+  font-weight: 600;
+  color: #2b2a27;
+}
+
+.article caption {
+  padding: 8px 10px;
+  color: var(--muted);
+  font-size: 13px;
+  text-align: left;
 }
 
 .article img {
@@ -725,6 +783,11 @@ main {
 
   .story {
     padding: 12px;
+  }
+
+  .story-thumb {
+    width: 74px;
+    height: 56px;
   }
 
   .story-title {

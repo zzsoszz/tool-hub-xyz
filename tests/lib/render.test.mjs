@@ -134,3 +134,37 @@ test('rendersLlmsWithOriginalLinks', () => {
 test('escapesHtmlHelperCoversQuotesAndAmpersands', () => {
   assert.equal(escapeHtml('a & "b" \'c\''), 'a &amp; &quot;b&quot; &#39;c&#39;');
 });
+
+test('homepageKeepsOnlyTheTopStoriesAndLinksToTheFullDay', () => {
+  const html = renderDigestPage(digest(), { ...options, limit: 1 });
+  assert.ok(html.includes('<span class="rank">1</span>'));
+  assert.ok(!html.includes('<span class="rank">2</span>'));
+  assert.ok(html.includes('<p class="lede-more">'));
+  assert.ok(html.includes('<a href="/day/2026-11-09">查看全部 2 条 →</a>'));
+  assert.equal(renderDigestPage(digest(), options).includes('lede-more'), false);
+});
+
+test('rendersStoryThumbnailFromArticleImages', () => {
+  const entry = item({ content: { html: '<p><img src="https://lcz.me/uploads/bench.png" alt="跑分截图"></p><p>正文</p>', text: '正文', chars: 200, shown: 200, lead: '正文', truncated: false } });
+  const html = renderDigestPage(digest({ categories: [{ id: 'apps', label: 'AI 应用', items: [entry] }] }), { ...options, limit: 10 });
+  assert.ok(html.includes('<img class="story-thumb" src="https://lcz.me/uploads/bench.png" alt="" loading="lazy">'));
+  const plain = item({ content: { html: '<p><img src="https://lcz.me/avatar/9.png" alt="头像">正文足够长的一段说明文字</p>', text: '正文足够长的一段说明文字', chars: 200, shown: 200, lead: '正文', truncated: false } });
+  assert.ok(!renderDigestPage(digest({ categories: [{ id: 'apps', label: 'AI 应用', items: [plain] }] }), options).includes('story-thumb'));
+});
+
+test('wrapsItemPageTablesForHorizontalScrolling', () => {
+  const entry = item({
+    content: {
+      html: '<p>结论：双卡比单卡快 18.8%。</p><table><tr><th>配置</th><th>耗时</th></tr><tr><td>TP2+P2P</td><td>134 s</td></tr></table>',
+      text: '结论：双卡比单卡快 18.8%。配置 耗时 TP2+P2P 134 s',
+      chars: 400,
+      shown: 400,
+      lead: '结论：双卡比单卡快 18.8%。',
+      truncated: false,
+    },
+  });
+  const html = renderItemPage({ ...options, item: entry, related: [] });
+  assert.ok(html.includes('<div class="table-scroll"><table>'));
+  assert.ok(html.includes('</table></div>'));
+  assert.ok(html.includes('class="article"'));
+});
