@@ -1,17 +1,18 @@
 {
   "day": "2026-11-09",
-  "generatedAt": "2026-11-09T01:57:46.390Z",
+  "generatedAt": "2026-11-09T03:34:00.892Z",
   "timezone": "Asia/Shanghai",
   "windowHours": 48,
   "counts": {
-    "sources": 21,
-    "okSources": 21,
-    "fetched": 2702,
-    "duplicates": 2597,
-    "carried": 49,
-    "added": 0,
-    "fallback": 11,
-    "published": 48
+    "sources": 36,
+    "okSources": 33,
+    "fetched": 2942,
+    "duplicates": 11,
+    "carried": 0,
+    "added": 30,
+    "fallback": 4,
+    "lowQuality": 2357,
+    "published": 30
   },
   "sources": [
     {
@@ -108,9 +109,9 @@
     {
       "id": "hn-newest",
       "name": "Hacker News (AI)",
-      "ok": true,
-      "items": 20,
-      "error": null
+      "ok": false,
+      "items": 0,
+      "error": "HTTP 502"
     },
     {
       "id": "hn-algolia",
@@ -143,9 +144,9 @@
     {
       "id": "microsoft-research",
       "name": "Microsoft Research",
-      "ok": true,
-      "items": 10,
-      "error": null
+      "ok": false,
+      "items": 0,
+      "error": "timeout after 15000ms"
     },
     {
       "id": "github-blog",
@@ -160,559 +161,154 @@
       "ok": true,
       "items": 10,
       "error": null
+    },
+    {
+      "id": "sspai",
+      "name": "少数派",
+      "ok": true,
+      "items": 10,
+      "error": null
+    },
+    {
+      "id": "appinn",
+      "name": "小众软件",
+      "ok": true,
+      "items": 10,
+      "error": null
+    },
+    {
+      "id": "producthunt",
+      "name": "Product Hunt",
+      "ok": true,
+      "items": 50,
+      "error": null
+    },
+    {
+      "id": "hn-show-ai",
+      "name": "Show HN (AI)",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "ai-news-applied",
+      "name": "AI News (应用)",
+      "ok": true,
+      "items": 0,
+      "error": null
+    },
+    {
+      "id": "juejin",
+      "name": "掘金 AI",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "reddit-sideproject",
+      "name": "r/SideProject",
+      "ok": false,
+      "items": 0,
+      "error": "HTTP 429"
+    },
+    {
+      "id": "lcz-hardware",
+      "name": "抡锤者 AI硬件",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "lcz-llm",
+      "name": "抡锤者 模型部署讨论",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "lcz-agent",
+      "name": "抡锤者 Agent 工具",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "lcz-media",
+      "name": "抡锤者 AI 音视频画图",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "lcz-selfmedia",
+      "name": "抡锤者 自媒体运营",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "lcz-web",
+      "name": "抡锤者 建站与网络赚钱",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "lcz-crisis",
+      "name": "抡锤者 AI 危机与机遇",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "lcz-news",
+      "name": "抡锤者 资讯",
+      "ok": true,
+      "items": 20,
+      "error": null
     }
   ],
   "categories": [
     {
-      "id": "models",
-      "label": "模型与发布",
+      "id": "apps",
+      "label": "AI 应用",
       "items": [
         {
-          "sourceId": "openai-news",
-          "sourceName": "OpenAI News",
-          "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
-          "url": "https://openai.com/index/partnering-with-hacktron",
-          "id": "https://openai.com/index/partnering-with-hacktron",
-          "published": "2026-11-06T08:00:00.000Z",
-          "summary": "OpenAI is partnering with Hacktron to find vulnerabilities, test connections with third-party services, and strengthen defenses with frontier AI.",
-          "categories": [
-            "Security"
-          ],
-          "author": "",
-          "lang": "en",
-          "tier": 1,
-          "trustCategory": true,
-          "declaredCategory": "models",
-          "metrics": {},
-          "score": 12.15,
-          "category": "models"
-        },
-        {
-          "sourceId": "openai-news",
-          "sourceName": "OpenAI News",
-          "title": "Measuring how AI agents handle everyday wet-lab science",
-          "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
-          "id": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
-          "published": "2026-11-06T00:00:00.000Z",
-          "summary": "OpenAI introduces BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data and handle everyday wet-lab science.",
-          "categories": [
-            "Publication"
-          ],
-          "author": "",
-          "lang": "en",
-          "tier": 1,
-          "trustCategory": true,
-          "declaredCategory": "models",
-          "metrics": {},
-          "score": 11.49,
-          "category": "models"
-        },
-        {
-          "sourceId": "openai-news",
-          "sourceName": "OpenAI News",
-          "title": "Australian universities are creating AI-native graduates",
-          "url": "https://openai.com/index/australian-universities-ai-native-graduates",
-          "id": "https://openai.com/index/australian-universities-ai-native-graduates",
-          "published": "2026-11-05T17:00:00.000Z",
-          "summary": "Australian universities are expanding access to ChatGPT and bringing AI into teaching and learning to prepare students for an AI-enabled workforce.",
-          "categories": [
-            "Company"
-          ],
-          "author": "",
-          "lang": "en",
-          "tier": 1,
-          "trustCategory": true,
-          "declaredCategory": "models",
-          "metrics": {},
-          "score": 11.3,
-          "category": "models"
-        },
-        {
-          "sourceId": "openai-news",
-          "sourceName": "OpenAI News",
-          "title": "Merge builds product and business tools with OpenAI technology",
-          "url": "https://openai.com/index/merge-builds-with-openai",
-          "id": "https://openai.com/index/merge-builds-with-openai",
-          "published": "2026-11-05T08:00:00.000Z",
-          "summary": "Merge uses GPT-6 Astra, ChatGPT, and Codex to review product code and support marketing. Its teams also use AI to plan executive dinners and prepare sales updates.",
-          "categories": [],
-          "author": "",
-          "lang": "en",
-          "tier": 1,
-          "trustCategory": true,
-          "declaredCategory": "models",
-          "metrics": {},
-          "score": 10.55,
-          "category": "models"
-        },
-        {
-          "sourceId": "openai-news",
-          "sourceName": "OpenAI News",
-          "title": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
-          "url": "https://openai.com/index/introducing-gpt-6-cyber",
-          "id": "https://openai.com/index/introducing-gpt-6-cyber",
-          "published": "2026-11-05T09:00:00.000Z",
-          "summary": "Introducing GPT‑6 Cyber, OpenAI’s cybersecurity model for finding exploitable vulnerabilities and developing fixes, trained to stay within authorized scope.",
-          "categories": [
-            "Product"
-          ],
-          "author": "",
-          "lang": "en",
-          "tier": 1,
-          "trustCategory": true,
-          "declaredCategory": "models",
-          "metrics": {},
-          "score": 10.24,
-          "category": "models"
-        },
-        {
-          "sourceId": "openai-news",
-          "sourceName": "OpenAI News",
-          "title": "Cult.fit builds operational muscle with Codex",
-          "url": "https://openai.com/index/cultfit-builds-with-codex",
-          "id": "https://openai.com/index/cultfit-builds-with-codex",
-          "published": "2026-11-05T20:00:00.000Z",
-          "summary": "Cult.fit is using Codex to help teams across functions build tools, move faster, and change how work gets done.",
-          "categories": [],
-          "author": "",
-          "lang": "en",
-          "tier": 1,
-          "trustCategory": true,
-          "declaredCategory": "models",
-          "metrics": {},
-          "score": 9.95,
-          "category": "models"
-        },
-        {
-          "sourceId": "openai-news",
-          "sourceName": "OpenAI News",
-          "title": "Setting a new standard for responsible AI infrastructure",
-          "url": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
-          "id": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
-          "published": "2026-11-05T02:00:00.000Z",
-          "summary": "OpenAI introduces its National Community Compact and Compute Campus Policy Blueprint to protect local resources, create jobs, and guide responsible AI infrastructure development.",
-          "categories": [
-            "Global Affairs"
-          ],
-          "author": "",
-          "lang": "en",
-          "tier": 1,
-          "trustCategory": true,
-          "declaredCategory": "models",
-          "metrics": {},
-          "score": 9.65,
-          "category": "models"
-        }
-      ]
-    },
-    {
-      "id": "opensource",
-      "label": "开源与生态",
-      "items": [
-        {
-          "sourceId": "github-trending",
-          "sourceName": "GitHub 新晋 AI 项目",
-          "lang": "en",
+          "sourceId": "lcz-media",
+          "sourceName": "抡锤者 AI 音视频画图",
+          "lang": "zh",
           "tier": 2,
           "trustCategory": true,
-          "declaredCategory": "opensource",
-          "categories": [],
-          "author": "lxe",
-          "id": "1448920409",
-          "title": "lxe/phoneuse",
-          "url": "https://github.com/lxe/phoneuse",
-          "published": "2026-11-07T01:28:30.000Z",
-          "summary": "See and operate an unmodified iPhone from a Linux PC: AirPlay mirror in, Bluetooth HID mouse/keyboard out, plus a CLI and skill for agents. (★ 451 · C)",
+          "declaredCategory": "apps",
+          "categories": [
+            "radiance",
+            "视频生成",
+            "多卡部署"
+          ],
+          "author": "xiongjie gao",
+          "id": "2857",
+          "title": "【双卡视频生成无痛提升18.8%】出片跨卡拆分为主项的视频生成优化项目——Kuzuryūsen本质是Combo",
+          "url": "https://lcz.me/topic/2857",
+          "published": "2026-11-05T03:55:04.657Z",
+          "summary": "其实我对Radiance项目的理解很肤浅。很多的情况是基于我跟AI聊天所获得的信息。尽管参与过对Radiance在7900XTX平台上的移植，但当时只是单纯觉得实现TP=2就是实现了复刻移植。 直到昨天，听了老特对Radiance项目拆解介绍，我攸有种顿悟的感觉。 https://lcz.me/topic/2826 客观讲，Radiance项目最大的收益来自于TP=2的系列优化，这没错。但是不能说实现了TP=2就复刻了 Radiance这个项目。 简单说，TP=2只是实现了把单车道拓成双车道，但Radiance的本质，更接近于双车道的红绿灯系统+交警管制。如果能更好的调整通道，是不是可以在TP=2的基础上进一步提升效率，不断地逼进帕累托最优状态？这是我的猜想，这也是进一步要验证的。 成果还是挺让我惊喜的： 在视频生成范畴，在大分辨率，长视频生成过程中， 累加TP=2的最大优化最多可以节约18.8%的生成时间，重要的是没有代价，无痛提升。 本项目的参数相对温和，调参至激进策略需要牺牲一部分画质，在此基础上仍有20%~25%的加速空间。 在拆解的过程中发现Radiance确实是个很优秀的项目，目前本项目对照Radiance仍优化空间。之后的优化对象难度较大，需要时间，项目分持续更新。（详见文件第6部分） 项目名称不是耍宝，整体的思路就是通过平A的组合换得一个大招。这跟《浪客剑心》中比古清十郎教授的九头龙闪，简直异曲同工。 这个项目中，单个项目MLP 分块、VAE 跨卡、心跳兜底、帧计划对账优化收益微小，甚至无收益。但放在整个项目组合后放大，甚至取得非线性收益（如VAE拆分）。 同时也致敬我非常喜欢的动漫作品《浪客剑心》。 -------------------------祖传手打分割线-------------------------- Kuzuryūsen · 九頭龍閃 把 H3 视频生成在两张卡上拆成两条并行流水：采样阶段把 MLP 切块、让 all_reduce 与 GEMM 在独立流上重叠；出片阶段把 VAE 解码按模型自带的时间块分给两卡，再用点对点交换接缝帧。…",
           "metrics": {
-            "stars": 451
+            "points": 7,
+            "comments": 21,
+            "views": 516
           },
-          "score": 15.41,
-          "category": "opensource"
-        },
-        {
-          "sourceId": "github-trending",
-          "sourceName": "GitHub 新晋 AI 项目",
-          "lang": "en",
-          "tier": 2,
-          "trustCategory": true,
-          "declaredCategory": "opensource",
-          "categories": [],
-          "author": "DIYgod",
-          "id": "1448515937",
-          "title": "DIYgod/pinky",
-          "url": "https://github.com/DIYgod/pinky",
-          "published": "2026-11-06T16:53:14.000Z",
-          "summary": "Let AI agents use your phone, with you in the loop. (★ 828 · Go)",
-          "metrics": {
-            "stars": 828
-          },
-          "score": 14.7,
-          "category": "opensource"
-        },
-        {
-          "sourceId": "github-trending",
-          "sourceName": "GitHub 新晋 AI 项目",
-          "lang": "en",
-          "tier": 2,
-          "trustCategory": true,
-          "declaredCategory": "opensource",
-          "categories": [
-            "3d",
-            "ai-agents",
-            "gpu",
-            "metal",
-            "ray-tracing"
-          ],
-          "author": "voyager-so",
-          "id": "1447586025",
-          "title": "voyager-so/vork",
-          "url": "https://github.com/voyager-so/vork",
-          "published": "2026-11-05T22:37:07.000Z",
-          "summary": "Headless 3D and VFX engine for agents. Research preview. (★ 1126 · Rust · 3d / ai-agents / gpu / metal)",
-          "metrics": {
-            "stars": 1126
-          },
-          "score": 13.17,
-          "category": "opensource"
-        },
-        {
-          "sourceId": "github-trending",
-          "sourceName": "GitHub 新晋 AI 项目",
-          "lang": "en",
-          "tier": 2,
-          "trustCategory": true,
-          "declaredCategory": "opensource",
-          "categories": [
-            "ai-agents",
-            "automation",
-            "claude-code",
-            "cli",
-            "codex"
-          ],
-          "author": "KKKKhazix",
-          "id": "1443985070",
-          "title": "KKKKhazix/agent-autoloop",
-          "url": "https://github.com/KKKKhazix/agent-autoloop",
-          "published": "2026-11-03T08:02:11.000Z",
-          "summary": "让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。 (★ 4108 · TypeScript · ai-agents / automation / claude-code / cli)",
-          "metrics": {
-            "stars": 4108
-          },
-          "score": 13,
-          "category": "opensource"
-        },
-        {
-          "sourceId": "github-trending",
-          "sourceName": "GitHub 新晋 AI 项目",
-          "lang": "en",
-          "tier": 2,
-          "trustCategory": true,
-          "declaredCategory": "opensource",
-          "categories": [],
-          "author": "sarpstar",
-          "id": "1444112593",
-          "title": "sarpstar/cinecode",
-          "url": "https://github.com/sarpstar/cinecode",
-          "published": "2026-11-03T10:08:16.000Z",
-          "summary": "Films made with code. Short films, long YouTube videos, ads, explainers and music videos: an AI coding agent writes the script, builds every frame in code, designs the sound and hands you an MP4. (★ 1601 · Python)",
-          "metrics": {
-            "stars": 1601
-          },
-          "score": 12.6,
-          "category": "opensource"
-        },
-        {
-          "sourceId": "github-trending",
-          "sourceName": "GitHub 新晋 AI 项目",
-          "lang": "en",
-          "tier": 2,
-          "trustCategory": true,
-          "declaredCategory": "opensource",
-          "categories": [
-            "3d",
-            "blender",
-            "cad",
-            "llm",
-            "procedural-modeling"
-          ],
-          "author": "Sandflow-ai",
-          "id": "1444005452",
-          "title": "Sandflow-ai/sand3d",
-          "url": "https://github.com/Sandflow-ai/sand3d",
-          "published": "2026-11-03T08:23:03.000Z",
-          "summary": "3D modeling in Python, built for LLMs. (★ 1402 · HTML · 3d / blender / cad / llm)",
-          "metrics": {
-            "stars": 1402
-          },
-          "score": 12.6,
-          "category": "opensource"
-        },
-        {
-          "sourceId": "hf-blog",
-          "sourceName": "Hugging Face Blog",
-          "title": "ToyBlocks: A controlled world for robot learning and evaluation",
-          "url": "https://huggingface.co/blog/allenai/toyblocks",
-          "id": "https://huggingface.co/blog/allenai/toyblocks",
-          "published": "2026-11-06T14:00:48.000Z",
-          "summary": "",
-          "categories": [],
-          "author": "",
-          "lang": "en",
-          "tier": 1,
-          "trustCategory": true,
-          "declaredCategory": "opensource",
-          "metrics": {},
-          "fallback": true,
-          "score": 11.46,
-          "category": "opensource"
-        },
-        {
-          "sourceId": "github-trending",
-          "sourceName": "GitHub 新晋 AI 项目",
-          "lang": "en",
-          "tier": 2,
-          "trustCategory": true,
-          "declaredCategory": "opensource",
-          "categories": [],
-          "author": "worldonlyu",
-          "id": "1445802355",
-          "title": "worldonlyu/Google_AI_Pro_2Year_ZeroCost_Auto",
-          "url": "https://github.com/worldonlyu/Google_AI_Pro_2Year_ZeroCost_Auto",
-          "published": "2026-11-04T14:54:56.000Z",
-          "summary": "Google_AI_Pro_2Year_ZeroCost_Auto (★ 3262 · Python)",
-          "metrics": {
-            "stars": 3262
-          },
-          "score": 11.4,
-          "category": "opensource"
-        },
-        {
-          "sourceId": "hf-blog",
-          "sourceName": "Hugging Face Blog",
-          "title": "Egyptian and Nigerian English join the Open ASR Leaderboard",
-          "url": "https://huggingface.co/blog/open-asr-leaderboard-liva",
-          "id": "https://huggingface.co/blog/open-asr-leaderboard-liva",
-          "published": "2026-11-06T00:00:00.000Z",
-          "summary": "",
-          "categories": [],
-          "author": "",
-          "lang": "en",
-          "tier": 1,
-          "trustCategory": true,
-          "declaredCategory": "opensource",
-          "metrics": {},
-          "fallback": true,
-          "score": 10.29,
-          "category": "opensource"
-        }
-      ]
-    },
-    {
-      "id": "research",
-      "label": "论文与研究",
-      "items": [
-        {
-          "sourceId": "hf-daily-papers",
-          "sourceName": "Hugging Face Daily Papers",
-          "lang": "en",
-          "tier": 1,
-          "trustCategory": true,
-          "declaredCategory": "research",
-          "categories": [],
-          "author": "",
-          "id": "2611.08237",
-          "title": "Terminal-style Mathematical Modeling Bench: The First Agentic and Verifiable Benchmark for Mathematical Modeling",
-          "url": "https://huggingface.co/papers/2611.08237",
-          "published": "2026-11-05T16:18:35.000Z",
-          "summary": "",
-          "metrics": {
-            "upvotes": 11
-          },
-          "fallback": true,
-          "score": 14.08,
-          "category": "research"
-        },
-        {
-          "sourceId": "hf-daily-papers",
-          "sourceName": "Hugging Face Daily Papers",
-          "lang": "en",
-          "tier": 1,
-          "trustCategory": true,
-          "declaredCategory": "research",
-          "categories": [],
-          "author": "",
-          "id": "2611.08376",
-          "title": "Muir: Linear Attention with Sensitivity-Allocated Gating and Matched-Filter Readout",
-          "url": "https://huggingface.co/papers/2611.08376",
-          "published": "2026-11-05T17:53:49.000Z",
-          "summary": "",
-          "metrics": {
-            "upvotes": 12
-          },
-          "fallback": true,
-          "score": 13.12,
-          "category": "research"
-        },
-        {
-          "sourceId": "arxiv-cs",
-          "sourceName": "arXiv cs.AI/CL/LG",
-          "title": "User Embeddings are Superpositions of Interpretable Behavioral Modes",
-          "url": "https://arxiv.org/abs/2611.08487v1",
-          "id": "http://arxiv.org/abs/2611.08487v1",
-          "published": "2026-11-05T18:59:42.000Z",
-          "summary": "User embeddings are central components of modern recommendation, personalization, and behavioral modeling systems. Though these embeddings can compactly encode rich behavioral information, they are inherently dense and opaque, limiting interpretability. To address this gap, we argue that user embeddings can be underst…",
-          "categories": [
-            "cs.LG"
-          ],
-          "author": "Jonathan Kozaczuk",
-          "lang": "en",
-          "tier": 2,
-          "trustCategory": true,
-          "declaredCategory": "research",
-          "metrics": {},
-          "fallback": true,
-          "score": 6.87,
-          "category": "research"
-        },
-        {
-          "sourceId": "arxiv-cs",
-          "sourceName": "arXiv cs.AI/CL/LG",
-          "title": "Scientist World: Grow a Research World for AI-Scientists",
-          "url": "https://arxiv.org/abs/2611.08478v1",
-          "id": "http://arxiv.org/abs/2611.08478v1",
-          "published": "2026-11-05T18:58:17.000Z",
-          "summary": "AI-Scientists arrived, but a world for them to grow in did not. Human scientists take theirs for granted $-$ centuries of open problems and shared ideas, waiting in the scientific literature. To AI-Scientists, that world is readable but not runnable, so we build Scientist World for them: every research paper becomes a…",
-          "categories": [
-            "cs.AI",
-            "cs.CL",
-            "cs.LG"
-          ],
-          "author": "Taiming Lu",
-          "lang": "en",
-          "tier": 2,
-          "trustCategory": true,
-          "declaredCategory": "research",
-          "metrics": {},
-          "fallback": true,
-          "score": 6.87,
-          "category": "research"
-        },
-        {
-          "sourceId": "microsoft-research",
-          "sourceName": "Microsoft Research",
-          "title": "Formally verifying agent-written full-stack web apps with PDD Kit",
-          "url": "https://www.microsoft.com/en-us/research/blog/formally-verifying-agent-written-full-stack-web-apps-with-pdd-kit/",
-          "id": "https://www.microsoft.com/en-us/research/?p=1191852",
-          "published": "2026-11-05T16:00:00.000Z",
-          "summary": "<img fetchpriority=\"high\" decoding=\"async\" width=\"1400\" height=\"788\" src=\"https://www.microsoft.com/en-us/research/wp-content/uploads/2026/10/PDDKitRecap-BlogHeroFeature-1400x788-1.jpg\" alt=\"PDDKit decision flowchart on green gradient background\" class=\"wp-image-1191862\" srcset=\"https://www.microsoft.com/en-us/researc…",
-          "categories": [
-            "Research Blog"
-          ],
-          "author": "Alex Lavaee, Matthai Philipose",
-          "lang": "en",
-          "tier": 2,
-          "trustCategory": false,
-          "declaredCategory": "research",
-          "metrics": {},
-          "score": 5.42,
-          "category": "research"
-        }
-      ]
-    },
-    {
-      "id": "products",
-      "label": "产品与应用",
-      "items": [
-        {
-          "sourceId": "latent-space",
-          "sourceName": "Latent Space",
-          "title": "[One Million AI Engineer Special] How Stanford Teaches AI-Native Engineering — Mihail Eric, Monaco",
-          "url": "https://latent.space/p/one_million_ai_engineer_special_how_stanford_teaches_ai-native_engineering_mihail_eric_monaco/",
-          "id": "urn:latent-space:post:pod_ep_01a1bcf7-771f-7c67-ba1d-94f856e787b0",
-          "published": "2026-11-08T21:23:29.000Z",
-          "summary": "What do you assign when a coding agent can finish last year’s homework in one prompt? In the second run of Stanford’s CS146S, Mihail Eric brought open-source maintainers into the course. Students have to learn an unfamiliar repo, propose a change, and explain the patch to the person who might merge it. We invited Miha…",
-          "categories": [],
-          "author": "Latent.Space",
-          "lang": "en",
-          "tier": 1,
-          "trustCategory": true,
-          "declaredCategory": "opinion",
-          "metrics": {},
-          "score": 17.67,
-          "category": "products"
-        },
-        {
-          "sourceId": "hn-algolia",
-          "sourceName": "Hacker News Search",
-          "lang": "en",
-          "tier": 2,
-          "trustCategory": false,
-          "declaredCategory": "engineering",
-          "categories": [
-            "story",
-            "author_antonoo",
-            "story_50414445"
-          ],
-          "author": "",
-          "id": "50414445",
-          "title": "We deleted almost all our agent code, and other lessons from 100k PRs",
-          "url": "https://lovable.dev/blog/how-we-built-lovable-and-why-we-keep-rebuilding-it",
-          "published": "2026-11-08T16:09:37.000Z",
-          "summary": "Hacker News 讨论：We deleted almost all our agent code, and other lessons from 100k PRs",
-          "metrics": {
-            "points": 13,
-            "comments": 2
-          },
-          "score": 15.05,
-          "category": "products"
-        },
-        {
-          "sourceId": "lobsters-ai",
-          "sourceName": "Lobsters AI",
-          "title": "What can I realistically do with local AI on a Mac mini M5 Pro (48GB)?",
-          "url": "https://lobste.rs/s/umsitb/what_can_i_realistically_do_with_local_ai",
-          "id": "https://lobste.rs/s/umsitb",
-          "published": "2026-11-08T17:07:51.000Z",
-          "summary": "I just got a Mac mini with an M5 Pro (base CPU config) and 48GB of unified memory. I want to run as much AI locally as makes sense, but it's hard to separate what actually works day to day from benchmark hype. What I'd like to do: Coding: autocomplete and agentic workflows with local models Image generation Anything e…",
-          "categories": [
-            "mac",
-            "ask",
-            "ai"
-          ],
-          "author": "by napolux",
-          "lang": "en",
-          "tier": 2,
-          "trustCategory": false,
-          "declaredCategory": "engineering",
-          "metrics": {},
-          "score": 12.72,
-          "category": "products"
-        },
-        {
-          "sourceId": "hn-algolia",
-          "sourceName": "Hacker News Search",
-          "lang": "en",
-          "tier": 2,
-          "trustCategory": false,
-          "declaredCategory": "engineering",
-          "categories": [
-            "story",
-            "author_lnenad",
-            "story_50413587",
-            "show_hn"
-          ],
-          "author": "",
-          "id": "50413587",
-          "title": "Show HN: Lipwise",
-          "url": "https://getlipwise.com/",
-          "published": "2026-11-08T14:19:07.000Z",
-          "summary": "Hey HN, my name is Nenad, my longer text submission with more information got flagged even though I wrote it, I guess I fail the touring test. Anyway, Lipwise is a narration app with an LLM in the pipeline capable of fixing mistakes and doing transformations, and the best thing is even with a mediocre machine it can b…",
-          "metrics": {
-            "points": 2,
-            "comments": 0
-          },
-          "score": 12.71,
-          "category": "products"
+          "excellent": false,
+          "quality": 9,
+          "score": 12.22,
+          "category": "apps",
+          "practical": 1,
+          "slug": "98f84f30eb40",
+          "action": 3,
+          "rank": 13.8,
+          "tags": [
+            "hardware",
+            "local",
+            "generate"
+          ]
         },
         {
           "sourceId": "ars-ai",
@@ -736,226 +332,861 @@
           "lang": "en",
           "tier": 1,
           "trustCategory": true,
-          "declaredCategory": "products",
+          "declaredCategory": "apps",
           "metrics": {},
+          "quality": 8,
           "fallback": true,
-          "score": 11.76,
-          "category": "products"
-        },
-        {
-          "sourceId": "ars-ai",
-          "sourceName": "Ars Technica AI",
-          "title": "Could potential AI clones of GTA VI force a quicker official port?",
-          "url": "https://arstechnica.com/gaming/2026/11/could-potential-ai-clones-of-gta-vi-force-a-quicker-official-port/",
-          "id": "https://arstechnica.com/gaming/2026/11/could-potential-ai-clones-of-gta-vi-force-a-quicker-official-port/",
-          "published": "2026-11-06T16:19:12.000Z",
-          "summary": "Yesterday, when reporting on emerging efforts to pipe the console version of GTA VI through a PC's DLSS-powered Nvidia GPU , we mentioned in passing that PC players could instead just wait for the AI-assisted decompilation port that will no doubt be coming in short order. Now, a former Rockstar tech director says he t…",
-          "categories": [
-            "AI",
-            "Gaming",
-            "decompilation",
-            "grand theft auto",
-            "GTA VI",
-            "rockstar"
-          ],
-          "author": "Kyle Orland",
-          "lang": "en",
-          "tier": 1,
-          "trustCategory": true,
-          "declaredCategory": "products",
-          "metrics": {},
-          "fallback": true,
-          "score": 11.65,
-          "category": "products"
+          "score": 11.58,
+          "category": "apps",
+          "practical": 0,
+          "zhTitle": "Meta放弃商业条款更新，暂停要求Meta Business用户允许外部网站的AI训练",
+          "zhSummary": "Meta暂时推迟更新商业条款，要求Meta Business用户允许外部网站的AI训练。该计划遭到周长反弹，Meta暂时停止该计划。",
+          "slug": "95ff043a27dc",
+          "action": 1,
+          "rank": 9.6,
+          "tags": []
         },
         {
           "sourceId": "theverge",
           "sourceName": "The Verge",
-          "title": "Here’s the full text of Jensen Huang’s memo to Nvidia",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/1029595/full-text-jensen-huang-affair-memo-nvidia",
-          "id": "https://www.theverge.com/?p=1029595",
-          "published": "2026-11-08T22:54:50.000Z",
-          "summary": "<img alt=\"\" data-caption=\"Jensen Huang, chief executive officer of Nvidia Corp., attends a media briefing following the company's \"Japan AI Ecosystem\" reception in Tokyo, Japan, on Thursday, July 16, 2026. Japan is planning to buy 27,500 next-generation Rubin chips from Nvidia Corp. to build a homegrown foundational A…",
+          "title": "Chatbots might be coming to Apple’s HomeView",
+          "url": "https://www.theverge.com/tech/1029526/chatbots-might-be-coming-to-apples-homeview",
+          "id": "https://www.theverge.com/?p=1029526",
+          "published": "2026-11-08T15:00:30.000Z",
+          "summary": "Code in the iOS 27.3 beta suggests that Apple could add support for chatbots to its smart home hub. There's a flag listed for a \"Conversational Apps\" category. While there are no details about what apps would fall under that heading, it seems reasonable that AI chatbots like ChatGPT and Claude could be added to HomeVi…",
           "categories": [
-            "AI",
+            "Apple",
+            "Apple Rumors",
             "News",
-            "Nvidia",
+            "Smart Home",
             "Tech"
           ],
           "author": "Terrence O’Brien",
           "lang": "en",
-          "tier": 3,
+          "tier": 2,
           "trustCategory": false,
-          "declaredCategory": "products",
+          "declaredCategory": "apps",
           "metrics": {},
-          "score": 10,
-          "category": "products"
+          "quality": 7,
+          "score": 13.55,
+          "category": "apps",
+          "practical": 0,
+          "zhTitle": "苹果HomeView可能支持聊天机器人",
+          "zhSummary": "iOS 27.3测试版中的代码表明苹果可能会在其智能家居中心添加聊天机器人支持。该功能可能包括ChatGPT和Claude等AI聊天机器人。",
+          "slug": "bab8c2c5d359",
+          "action": 1,
+          "rank": 8.6,
+          "tags": []
+        },
+        {
+          "sourceId": "lcz-news",
+          "sourceName": "抡锤者 资讯",
+          "lang": "zh",
+          "tier": 3,
+          "trustCategory": true,
+          "declaredCategory": "news",
+          "categories": [],
+          "author": "Xiaote",
+          "id": "2880",
+          "title": "📡 AI日报 11/6 | OpenAI GPT-6 Cyber 发布、美股 AI 硬件链重挫、Claude 接入个人财务、Google 关停 Firebase Studio",
+          "url": "https://lcz.me/topic/2880",
+          "published": "2026-11-05T21:34:31.179Z",
+          "summary": "1. OpenAI 发布 GPT-6 Cyber 网络安全模型 在 ExploitGym 基准得分 48.5%，高于 GPT-6 Astra 的 42.4% 与 GPT-5.6 Cyber 的 32.1%；测试中越界行为从约 5% 降到 1% 以下，并帮助发现 Firefox 的 81 个未知漏洞。 该模型在 OpenAI Preparedness Framework 中被列为网络安全「Critical」级。 来源： The Verge 2. 美股 AI 硬件产业链全线重挫 费城半导体指数单日跌 10.14%；闪迪跌 19.27%、西部数据跌 16.06%、美光跌 14.72%、SK 海力士跌 12.50%。 AMD 跌 15.51%、英伟达跌 7.86%、台积电跌 9.23%；三倍做多半导体 ETF 单日跌 31.63%。 来源： 新浪科技 3. Claude 上线 Personal Finance，可直连银行账户 通过 Plaid 连接银行与信用卡账户，以只读方式查询余额、交易并解释财务术语，不能转账、管理或投资资金。 被视为追赶 ChatGPT 今年 5 月推出的同类个人财务功能。 来源： TechCrunch 4. Google 将关停 Firebase Studio，转向 AI 编程工具 新工作区创建已于 2026 年 6 月 22 日停止，现有用户须在 2027 年 3 月 22 日前导出项目，之后数据删除。 Google 引导开发者迁移到 Google AI Studio 与 Antigravity。 来源： Engadget",
+          "metrics": {
+            "points": 0,
+            "comments": 2,
+            "views": 198
+          },
+          "excellent": false,
+          "quality": 7,
+          "score": 9.93,
+          "category": "apps",
+          "practical": 0,
+          "slug": "8742c668ee52",
+          "action": 1,
+          "rank": 8.6,
+          "tags": []
         }
       ]
     },
     {
-      "id": "industry",
-      "label": "行业与资本",
+      "id": "tools",
+      "label": "工具与玩法",
       "items": [
         {
-          "sourceId": "techcrunch-ai",
-          "sourceName": "TechCrunch AI",
-          "title": "Nvidia will investigate CEO Jensen Huang’s relationship with possible Chinese spy",
-          "url": "https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/",
-          "id": "https://techcrunch.com/?p=3186128",
-          "published": "2026-11-08T21:00:11.000Z",
-          "summary": "In a memo to the company, Huang admitted that he had an affair.",
+          "sourceId": "lcz-media",
+          "sourceName": "抡锤者 AI 音视频画图",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "apps",
           "categories": [
-            "AI",
-            "Government & Policy",
-            "nvidia",
-            "Jensen Huang"
+            "视频生成",
+            "7900xtx",
+            "rtx5090"
           ],
-          "author": "Anthony Ha",
+          "author": "Big Liao",
+          "id": "2867",
+          "title": "双卡7900xtx vs 170hx vs 5090d32gb vs 4090 48gb vs 5080视频生成",
+          "url": "https://lcz.me/topic/2867",
+          "published": "2026-11-05T07:30:18.486Z",
+          "summary": "六张卡跑同一个 MiniMax-H3 视频工作流，差多少？ 机群里攒了几张不同世代的卡，一直想知道同一套 H3 Ref2VA 工作流跑下来到底差多少。 花两天把 5090 / 4090 / 5080 / 170HX / 双 7900 XTX 全跑了一遍，记录冷热启动、显存、内存、功耗。 数据都是实测，不是跑分软件估算。 测试条件 项目 设置 模型 minimax_h3_ref2va_pruned_int8_convrot 文本编码器 qwen3vl_32b_minimax_h3_nvfp4_awq 加速 LoRA dmad_minimax_h3_8step_full_critic 步数 8 （与 LoRA 训练步数一致） 采样器 euler / simple 分辨率 1344×768 （16:9，1.032 MP） ref_image_size match ComfyUI 显存策略 全部 --lowvram 提示词 同一套三条（5s / 10s / 15s），带台词与音色参考 5 秒档 显卡 热启动 冷启动 显存峰值 功耗均值 RTX 5090 75 s 75 s 30.9 GB 544 W RTX 4090 88 s 98 s 42.4 GB 420 W RTX 5080 124 s 134 s 15.2 GB 353 W CMP 170HX 219 s 239 s 42.3 GB 226 W 7900 XTX ×2 (TP2) 273 s 625 s 32.5 GB 500 W 7900 XTX 单卡 490 s 717 s 17.7 GB 270 W 10 秒档 显卡 热启动 冷启动 显存峰值 功耗均值 RTX 5090 220 s 224 s 30.9 GB 555 W RTX 4090 261 s 264 s 46.5 GB 427 W RTX 5080 362 s 367 s 15.2 GB 355 W CMP 170HX 710 s 722 s 46.5 GB 235 W 7900 XTX ×2 (TP2) 812 s 1170 s 37.9 GB 50…",
+          "metrics": {
+            "points": 4,
+            "comments": 21,
+            "views": 742
+          },
+          "excellent": false,
+          "quality": 10,
+          "score": 16.57,
+          "category": "tools",
+          "practical": 5,
+          "slug": "81208260a5bf",
+          "action": 8,
+          "rank": 22.8,
+          "tags": [
+            "hardware",
+            "benchmark",
+            "generate",
+            "lowspec"
+          ]
+        },
+        {
+          "sourceId": "openai-news",
+          "sourceName": "OpenAI News",
+          "title": "Cult.fit builds operational muscle with Codex",
+          "url": "https://openai.com/index/cultfit-builds-with-codex",
+          "id": "https://openai.com/index/cultfit-builds-with-codex",
+          "published": "2026-11-05T20:00:00.000Z",
+          "summary": "Cult.fit is using Codex to help teams across functions build tools, move faster, and change how work gets done.",
+          "categories": [],
+          "author": "",
           "lang": "en",
           "tier": 1,
           "trustCategory": true,
-          "declaredCategory": "industry",
+          "declaredCategory": "models",
           "metrics": {},
-          "score": 16.04,
-          "category": "industry"
+          "quality": 7,
+          "score": 9.77,
+          "category": "tools",
+          "practical": 0,
+          "zhTitle": "Cult.fit使用Codex建立运营肌肉",
+          "zhSummary": "Cult.fit使用Codex帮助跨职能团队建立工具，提高工作效率，改变工作方式。",
+          "slug": "c88b52d0b210",
+          "action": 3,
+          "rank": 11.8,
+          "tags": [
+            "agent"
+          ]
+        },
+        {
+          "sourceId": "github-blog",
+          "sourceName": "GitHub Blog",
+          "title": "Beyond code generation: A developer’s guide to agentic engineering",
+          "url": "https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/",
+          "id": "https://github.blog/?p=100047",
+          "published": "2026-11-06T22:15:59.000Z",
+          "summary": "This October, GitHub saw more than 1.2 billion commits in one week—over 400% more than a year earlier. This is more commits than GitHub received in all of 2025. Chances are, you’re generating more code than you were a year ago. But ask yourself: do you feel 400% more productive than you were last year? Building softwa…",
+          "categories": [
+            "AI & ML",
+            "GitHub Copilot",
+            "GitHub Universe"
+          ],
+          "author": "Nick Liffen",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "tools",
+          "metrics": {},
+          "quality": 8,
+          "fallback": true,
+          "score": 10.16,
+          "category": "tools",
+          "practical": 1,
+          "zhTitle": "超越代码生成：开发者指南到主动工程",
+          "zhSummary": "GitHub 2023年10月的提交次数超过12亿次，远超去年同期的4倍。开发者生成的代码量大幅增加，但实际工作效率是否提高？主动工程可以帮助开发者更好地管理和优化代码生成。",
+          "slug": "b60d1ad958a3",
+          "action": 2,
+          "rank": 11.2,
+          "tags": [
+            "tutorial"
+          ]
+        },
+        {
+          "sourceId": "simon-willison",
+          "sourceName": "Simon Willison",
+          "title": "parse_number() as a SQLite extension: C vs Rust",
+          "url": "https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust/",
+          "id": "https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust/",
+          "published": "2026-11-08T22:26:00.000Z",
+          "summary": "Research: parse_number() as a SQLite extension: C vs Rust I was out walking the dog when I got curious about how easy/difficult it would be to write a SQLite C extension that adds a parse_number() function for turning strings like -$1,234.56 or '12.5%' into numeric values that could be summed and sorted. I fired up re…",
+          "categories": [
+            "c",
+            "research",
+            "sqlite",
+            "rust",
+            "claude"
+          ],
+          "author": "",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "tools",
+          "metrics": {},
+          "quality": 9,
+          "score": 15.97,
+          "category": "tools",
+          "practical": 0,
+          "zhTitle": "SQLite扩展：C语言 vs Rust语言",
+          "zhSummary": "SQLite扩展开发中，C语言和Rust语言各自的优势和易用性会如何影响开发效率和功能实现。",
+          "slug": "9572242cc9fc",
+          "action": 1,
+          "rank": 10.6,
+          "tags": [
+            "agent"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "local",
+      "label": "本地与低配",
+      "items": [
+        {
+          "sourceId": "lcz-llm",
+          "sourceName": "抡锤者 模型部署讨论",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [
+            "7900xtx",
+            "amd",
+            "qwen-flash"
+          ],
+          "author": "mmiker",
+          "id": "2905",
+          "title": "单卡7900XTX 24GB + 64GB DDR4 Avalon (Qwen3.8-Flash-Next) Windows 部署文档",
+          "url": "https://lcz.me/topic/2905",
+          "published": "2026-11-07T17:08:24.698Z",
+          "summary": "Avalon (Qwen3.8-Flash-Next) Windows 部署文档 日期：2026-11-07 硬件：AMD RX 7900 XTX 24GB / Ryzen 5 5600G / DDR4 双通道（系统实际识别 63.4 GB） 项目： https://github.com/freriadoc/Avalon （llama.cpp 分支，专为 Qwen3.8-Flash-Next 125B MoE 优化） 成果：Windows 下从零编译部署成功，实测生成 54–58 t/s（MTP，512 token） 一、最终部署布局 项 路径 / 值 源码 C:\\AI\\Avalon （git clone，main 分支） 可执行文件 C:\\AI\\Avalon\\build\\bin\\llama-server.exe 启动脚本 C:\\AI\\Avalon\\avalon-server.bat 模型 C:\\AI\\models\\Avalon-GGUF （91 GiB，33 分片 IQ3_KS + MTP + moe-cache-ranking.bin） HIP SDK C:\\Program Files\\AMD\\ROCm\\7.2 编译脚本 C:\\AI\\Avalon\\build_windows.bat （首次）/ build_only.bat （增量） 服务地址 http://0.0.0.0:8080 （OpenAI 兼容 /v1/chat/completions ） ️ 模型 必须放在 NVMe SSD 。放机械硬盘时生成仅 3–6 t/s，挪到 NVMe 后 49–58 t/s。模型里有个 36 GB 的 per-layer token embedding 张量每个 token 都要访问，HDD 随机读直接把速度打死。 二、环境准备 Visual Studio 2026 Community （含 MSVC 14.51、CMake、Ninja）——VS 自带 CMake 路径： C:\\Program Files\\Microsoft Visual Studio\\18\\Communit…",
+          "metrics": {
+            "points": 1,
+            "comments": 2,
+            "views": 321
+          },
+          "excellent": true,
+          "quality": 11,
+          "score": 17.54,
+          "category": "local",
+          "practical": 4,
+          "slug": "faa414d679fc",
+          "action": 6,
+          "rank": 20.6,
+          "tags": [
+            "local",
+            "benchmark"
+          ]
+        },
+        {
+          "sourceId": "lcz-llm",
+          "sourceName": "抡锤者 模型部署讨论",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [
+            "rtx5070",
+            "strata",
+            "qwen-flash"
+          ],
+          "author": "fcme",
+          "id": "2892",
+          "title": "16G 5070Ti把用Strata的flash next换成Basalt，实测快1.4倍！白拿的性能！",
+          "url": "https://lcz.me/topic/2892",
+          "published": "2026-11-07T02:46:35.173Z",
+          "summary": "背景：一直对Strata的在5070Ti 16G 跑的8030 端口之前跑的Strata 0.2.9（IQ3_XXS，204800 上下文）的速度不太满意，今天突然发现一个青出于蓝而胜于蓝的选项。直接开测。 Basalt 是 Strata 的 fork，改动集中在 CPU 调度层：更细的 row-range 任务切分、i-quant 走 AVX-VNNI、单文件 .basalt 格式。社区里常见 2 倍的说法，所以拿同机同模型做了对比。 结论： 确实更快，但没有 2 倍，实测 1.26 到 1.42 倍 。 一、前后对比 同一台机器、同一个模型（Qwen3.8-Flash-Next GSQ-RCO IQ3_XXS）、同一张卡（250 W 锁功耗），basalt-bench 固定 seed： 指标 Strata 0.2.9 Basalt 0.3.0 倍率 prefill 64K 1960 tok/s 2725 tok/s 1.39 decode（MTP 接受率 65-70%） 58 tok/s 73 tok/s 1.26 decode（接受率 97-98%） 104 tok/s 148 tok/s 1.42 decode 的差异主要来自 MTP 接受率：接受率高时窗口里挤进更多 token，固定开销被摊薄。两个引擎都是这个规律。 二、为什么不是 2 倍 社区里 2 倍的数据基本出自 5 GHz、带 AVX-VNNI 的桌面 CPU（9950X、285K 之类）。这台是 Xeon Gold 6252，2019 年的 Cascade Lake，2.1 GHz。 从三个 fixture 反推窗口开销，能拟合出： 每个 decode 窗口约 19 ms 固定 + 4.1 ms/token 。48 层摊下来每层约 0.4 ms，花在 CPU 侧串行的专家点积和主机与卡之间的握手上，不在显卡算力。 几个直接证据： 引擎启动日志自己写了： this CPU has no AVX-512: the expert kernels run on AVX-2 。这颗 U 有 AVX512-V…",
+          "metrics": {
+            "points": 4,
+            "comments": 18,
+            "views": 777
+          },
+          "excellent": true,
+          "quality": 14,
+          "score": 17.02,
+          "category": "local",
+          "practical": 4,
+          "slug": "f76d9909d5e1",
+          "action": 4,
+          "rank": 20.4,
+          "tags": [
+            "benchmark",
+            "hardware",
+            "local",
+            "lowspec"
+          ]
+        },
+        {
+          "sourceId": "lcz-hardware",
+          "sourceName": "抡锤者 AI硬件",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [
+            "comfyui",
+            "minimax",
+            "多卡部署"
+          ],
+          "author": "IAN FONG",
+          "id": "2919",
+          "title": "双11准备入手7900xtx，配置大神指点",
+          "url": "https://lcz.me/topic/2919",
+          "published": "2026-11-08T11:47:54.274Z",
+          "summary": "按用途分开看，别用一套配置硬套： 文生图（ComfyUI）：单卡最省事。ComfyUI 默认一条工作流只吃一张卡，双卡要自己拆节点或并行采样，收益不稳定；先单卡，不够再加。 本地 LLM（Qwen 27B / Flash Next）：单路双卡最有性价比。TP2 把模型切到两张卡，decode 大约能到单卡的 1.6–1.8 倍；双路双卡跨 CPU socket 的 P2P 会退化，除非确定要四卡，不建议。 MiniMax H3：别拿 7900XTX 做基准。2920 帖实测单卡 15 秒 OOM 是音频 VAE 单次申请 3–10GiB，不是 24G 容量不够；5080 16G 反而能跑。H3 是刚需就单独配 N 卡。 结论：单路…",
+          "metrics": {
+            "points": 0,
+            "comments": 2,
+            "views": 170
+          },
+          "excellent": false,
+          "quality": 8,
+          "score": 19.92,
+          "category": "local",
+          "practical": 5,
+          "slug": "5253762a6393",
+          "action": 7,
+          "rank": 19.2,
+          "tags": [
+            "hardware",
+            "local",
+            "generate",
+            "lowspec"
+          ]
+        },
+        {
+          "sourceId": "lcz-agent",
+          "sourceName": "抡锤者 Agent 工具",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "tools",
+          "categories": [
+            "dgxspark",
+            "本地模型"
+          ],
+          "author": "juntucoo",
+          "id": "2848",
+          "title": "给 DGX Spark 写了个零依赖实时监控面板：1 个 Python 文件 + 1 个 HTML 文件",
+          "url": "https://lcz.me/topic/2848",
+          "published": "2026-11-05T01:38:16.965Z",
+          "summary": "给 DGX Spark 写了个零依赖实时监控面板：1 个 Python 文件 + 1 个 HTML 文件 起因：在 DGX Spark 上跑大模型时，想随时看清 CPU / GPU / 统一内存 / 磁盘 / 网络 / 推理吞吐的真实状态， 以及推理引擎（推理服务）到底跑得怎么样。官方 Dashboard 看不了推理细节， nvtop / btop 又看不到 LLM 侧的指标，索性自己写了一个。 约束：零第三方依赖 ——后端只用 Python 标准库，前端单文件 HTML + 原生 JS，不引任何 CDN。 拷过去 python3 monitor.py 就能跑。 [整体效果] 目录 它有什么 架构 值得抄的 6 个实现细节 部署 踩坑清单 文件清单 已知限制 它有什么 17 个面板，全部可拖动、可缩放、可换位置 ，布局存在浏览器本地，导出一段 JSON 就能在别的机器上复现。 顶部 9 张 KPI 卡带迷你走势线；中间 6 张曲线图支持鼠标悬停出十字线和数值气泡，Y 轴单位会在 B/s → KB/s → MB/s 之间自动切换。 [LLM 运维区] 上排是 推理引擎 （running/waiting、解码速度、TTFT、TPOT、KV Cache 分池占用、MTP 接受率）、 容器 llm （CPU / 内存 / net / block IO）、 一键测速 （发一次真实对话，按 usage 计数算吞吐）。 下排是硬件明细： CPU 每核负载 （20 核 GB10）、 温度传感器 / 风扇 （带过热状态染色）、 磁盘 I/O 、 网络接口 （含错误/丢包计数）。 [硬件表格区] 再往下是 进程 Top 、 引擎指标明细表 、 当前生效配置 （直接读容器里的环境变量，一眼看到 TF_SOLO_ROWS / TF_SPILL_GIB 这些实际生效的参数）、 容器日志尾部 。 [进程 / 引擎指标 / 生效配置] 交互细节 鼠标悬停在曲线上，十字线定位到具体时刻，气泡给出该时刻的各序列数值： [悬停交互] 拖卡片标题栏换位置，拖右下角的小三角改大小。布局可以导出成 JSON：…",
+          "metrics": {
+            "points": 1,
+            "comments": 5,
+            "views": 217
+          },
+          "excellent": true,
+          "quality": 10,
+          "score": 13.14,
+          "category": "local",
+          "practical": 4,
+          "slug": "1ba65bc81ee7",
+          "action": 5,
+          "rank": 18,
+          "tags": [
+            "local",
+            "benchmark",
+            "tutorial",
+            "agent"
+          ]
+        },
+        {
+          "sourceId": "lcz-hardware",
+          "sourceName": "抡锤者 AI硬件",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [
+            "rtx5080",
+            "minimax",
+            "视频生成"
+          ],
+          "author": "ゆうみん",
+          "id": "2895",
+          "title": "【实测分享】单张 RTX 5080 16GB 本地跑 MiniMax H3 视频：16GB 显存够用，FastH3 一条 10 秒镜头约 3 分钟（附官方 8 步 / Pika 6 步 / 三种输入对比）",
+          "url": "https://lcz.me/topic/2895",
+          "published": "2026-11-07T05:32:43.045Z",
+          "summary": "很赞，看了你的帖子，我把7900xtx退了，现在要转投N卡，我的主要用途是跑文生图，图生视频。不跑本本地LLM。目前考虑5080 16G/4080 32G魔改卡/rtx pro 4000 24G，我希望每次能生成10秒或者15秒1344x768的视频。请楼主给一些意见，谢谢 标签：rtx5080 / minimax / 视频生成",
+          "metrics": {
+            "points": 1,
+            "comments": 4,
+            "views": 352
+          },
+          "excellent": false,
+          "quality": 8,
+          "score": 17.1,
+          "category": "local",
+          "practical": 4,
+          "slug": "2d22ac1d42e6",
+          "action": 6,
+          "rank": 17.6,
+          "tags": [
+            "lowspec",
+            "benchmark",
+            "generate",
+            "local"
+          ]
+        },
+        {
+          "sourceId": "lcz-hardware",
+          "sourceName": "抡锤者 AI硬件",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [
+            "x99",
+            "服务器"
+          ],
+          "author": "ymxdkb",
+          "id": "2910",
+          "title": "X99-TF不兼容32GB U-DIMM DDR4",
+          "url": "https://lcz.me/topic/2910",
+          "published": "2026-11-08T04:51:13.966Z",
+          "summary": "因为我原来的华硕B760-PLUS主板 + i5-13500不支持7900XTX双卡TP，所以近期打算换个主板。 我和华南金牌客服沟通X99-TF + E5 2696V4可以支持DDR3/DDR4/U-DIMM/DIMM比较灵活，如果我单纯用DDR3或者DDR4内存条之间的散热间隙也较大，再加上我手上有4根16GB DDR4和2根32GB DDR4(都是U-DIMM)就想复用一下。 结果发现16GB U-DIMM DDR4确实能用，而32GB的就不行了，以下是结合我的测试让AI帮忙写的总结： DDR4 内存条兼容性分析：32GB U-DIMM 为何点不亮 记录时间：2026-11-08 平台：华南金牌 X99-TF（BIOS AMI 5.11，2026-09-11）+ Intel Xeon E5-2696 v4 系统：Windows 11 Pro（Build 26300） 一、结论 32GB U-DIMM 无法点亮，原因是 内存颗粒密度不兼容 ： 该 32GB 条使用 16Gb DDR4 颗粒； Broadwell-EP（E5 v4，2016 年）内存控制器只支持 4Gb / 8Gb 颗粒； 内存训练（Memory Training）失败 → 黑屏、无法 POST。 与“混插”无关，也不是内存条本身损坏——单条 32GB 都无法点亮就是最直接的证据。 二、现象记录 内存组合 结果 16GB × 1 正常点亮 16GB × 2 正常点亮 16GB × 4 正常点亮（四通道 64GB） 32GB × 1（单独） 黑屏、无 POST 32GB × 2（单独） 黑屏、无 POST 16GB + 32GB 混插 未测试（单条已失败，无意义） 现有内存：thinkplus DDR4-3200 16GB U-DIMM × 4 待测内存：Lenovo DDR4-3200 32GB U-DIMM（SN：1S1012097J451003B1） 三、原因分析 DDR4 无缓冲 U-DIMM 最多 2 个 rank，每个 rank 8 颗颗粒，共 16 颗： 容量 每颗颗粒 计算 16GB…",
+          "metrics": {
+            "points": 2,
+            "comments": 7,
+            "views": 190
+          },
+          "excellent": false,
+          "quality": 9,
+          "score": 14.51,
+          "category": "local",
+          "practical": 1,
+          "slug": "d4bcf1aece9d",
+          "action": 4,
+          "rank": 15.4,
+          "tags": [
+            "hardware"
+          ]
+        },
+        {
+          "sourceId": "lcz-llm",
+          "sourceName": "抡锤者 模型部署讨论",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [
+            "7900xtx",
+            "strata",
+            "amd"
+          ],
+          "author": "J Z 0",
+          "id": "2922",
+          "title": "7900 XTX + 128GB：Strata RDNA3 三档模型精度测试",
+          "url": "https://lcz.me/topic/2922",
+          "published": "2026-11-08T17:49:22.739Z",
+          "summary": "128G ram， 最高跑到UD-Q5_K_XL， 最低测了IQ4_XS-v31 + N-gramQ8. 发出来方便大家参考 硬件 / 软件环境 项目 环境 CPU AMD Ryzen 9 5900XT，16核32线程，AVX2 GPU AMD Radeon RX 7900 XTX，24GB，gfx1100 内存 128GB；系统可用约125.7GiB 模型存储 XG7000 1TB NVMe，ZFS 系统 TrueNAS 25.10.7，Linux 6.12.105-production+truenas AMDGPU 7.1.9.31600000 ROCm 10.1.0，系统路径 /opt/rocm hipBLASLt 100401，匹配 gfx1100 调优表（43行） 推理后端 Strata RDNA3 fork，具体引擎版本见下表 GPU 队列 引擎 GPU_MAX_HW_QUEUES=6；视觉助手限制为2 ZFS ARC 自动管理，zfs_arc_max=0 文件体积与速度总表 PP = prefill，TG = decode，速度单位均为tokens/s；每格按 PP / TG 排列。GB按10⁹字节，括号GiB按2³⁰字节。 配置 引擎版本 原GGUF分片合计 GB（GiB） 实际N-gram / PLE GGUF＋所用外置表 GB 约8K输入 PP / TG 长输入 PP / TG IQ4_XS-v31 0.1.49.1 93.67（87.24） 外置Q8_0，54.40GB；mmap；1MiB块 148.07 802.3 / 65.5 32K：1126.8 / 62.7；128K：1489.9 / 60.0 UD-Q4_K_XL 0.1.43 111.33（103.69） 内置IQ4_NL，28.80GB；ram 111.33 2082.7 / 57.4 64,358 tokens：3670.2 / 58.3 UD-Q5_K_XL 0.1.49.1 158.29（147.42） 外置Q8_0，54.40GB；direct；16KiB块 212.69…",
+          "metrics": {
+            "points": 1,
+            "comments": 3,
+            "views": 201
+          },
+          "excellent": true,
+          "quality": 10,
+          "score": 15.88,
+          "category": "local",
+          "practical": 3,
+          "slug": "b91b385f4db7",
+          "action": 3,
+          "rank": 14.8,
+          "tags": [
+            "local",
+            "benchmark",
+            "tutorial"
+          ]
+        },
+        {
+          "sourceId": "github-trending",
+          "sourceName": "GitHub 新晋 AI 项目",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "oss",
+          "categories": [],
+          "author": "shanselman",
+          "id": "1443650212",
+          "title": "shanselman/gputaskman",
+          "url": "https://github.com/shanselman/gputaskman",
+          "published": "2026-11-03T00:49:34.000Z",
+          "summary": "A GPU task manager for Windows, Linux, and WSL: per-process VRAM, GPU activity, and LLM model/KV-cache insights (Windows AMD and NVIDIA). (★ 1103 · Python)",
+          "metrics": {
+            "stars": 1103
+          },
+          "quality": 9,
+          "score": 12.6,
+          "category": "local",
+          "practical": 1,
+          "slug": "a3eec815e8eb",
+          "action": 1,
+          "rank": 10.6,
+          "tags": [
+            "lowspec"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oss",
+      "label": "开源项目",
+      "items": [
+        {
+          "sourceId": "latent-space",
+          "sourceName": "Latent Space",
+          "title": "[One Million AI Engineer Special] How Stanford Teaches AI-Native Engineering — Mihail Eric, Monaco",
+          "url": "https://latent.space/p/one_million_ai_engineer_special_how_stanford_teaches_ai-native_engineering_mihail_eric_monaco/",
+          "id": "urn:latent-space:post:pod_ep_01a1bcf7-771f-7c67-ba1d-94f856e787b0",
+          "published": "2026-11-08T21:23:29.000Z",
+          "summary": "What do you assign when a coding agent can finish last year’s homework in one prompt? In the second run of Stanford’s CS146S, Mihail Eric brought open-source maintainers into the course. Students have to learn an unfamiliar repo, propose a change, and explain the patch to the person who might merge it. We invited Miha…",
+          "categories": [],
+          "author": "Latent.Space",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "opinion",
+          "metrics": {},
+          "quality": 8,
+          "score": 19.89,
+          "category": "oss",
+          "practical": 2,
+          "zhTitle": "Stanford如何教授AI原生工程 — Mihail Eric",
+          "zhSummary": "学生如何处理编码代理可以完成上一年作业的提示？在Stanford的CS146S课程中，学生必须学习一个陌生仓库，提出修改，解释修改给可能合并它的人。",
+          "slug": "5eb0dc11051f",
+          "action": 2,
+          "rank": 11.2,
+          "tags": [
+            "agent",
+            "free"
+          ]
+        },
+        {
+          "sourceId": "reddit-local-llama",
+          "sourceName": "r/LocalLLaMA",
+          "title": "How do you locally benchmark and compare local LLMs?",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xrbhdf/how_do_you_locally_benchmark_and_compare_local/",
+          "id": "t3_1xrbhdf",
+          "published": "2026-11-08T22:49:16.000Z",
+          "summary": "If I wanted to locally compare performance for multiple different offline LLM models across various modalities (speed, efficiency, reasoning, tool use, programing/coding, etc), what strategies, prompts, software are commonly used to do this? There are so many models to choose from and run, I'm trying to determine thin…",
+          "categories": [
+            "LocalLLaMA"
+          ],
+          "author": "/u/insomniating",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "oss",
+          "metrics": {},
+          "quality": 8,
+          "score": 15.4,
+          "category": "oss",
+          "practical": 2,
+          "zhTitle": "如何在本地对比本地LLM？",
+          "zhSummary": "如果您想在本地比较多个离线LLM模型的性能（速度、效率、推理、工具使用、编程/编码等），什么策略、促发、软件是常用的？有很多模型可供选择和运行，我想确定最佳方法。",
+          "slug": "0679524838b2",
+          "action": 1,
+          "rank": 9.6,
+          "tags": [
+            "benchmark"
+          ]
+        },
+        {
+          "sourceId": "github-trending",
+          "sourceName": "GitHub 新晋 AI 项目",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "oss",
+          "categories": [],
+          "author": "sarpstar",
+          "id": "1444112593",
+          "title": "sarpstar/cinecode",
+          "url": "https://github.com/sarpstar/cinecode",
+          "published": "2026-11-03T10:08:16.000Z",
+          "summary": "Films made with code. Short films, long YouTube videos, ads, explainers and music videos: an AI coding agent writes the script, builds every frame in code, designs the sound and hands you an MP4. (★ 1631 · Python)",
+          "metrics": {
+            "stars": 1631
+          },
+          "quality": 9,
+          "score": 12.6,
+          "category": "oss",
+          "practical": 0,
+          "slug": "dfb4c6486395",
+          "action": 0,
+          "rank": 9,
+          "tags": [
+            "agent"
+          ]
+        },
+        {
+          "sourceId": "github-trending",
+          "sourceName": "GitHub 新晋 AI 项目",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "oss",
+          "categories": [
+            "3d",
+            "blender",
+            "cad",
+            "llm",
+            "procedural-modeling"
+          ],
+          "author": "Sandflow-ai",
+          "id": "1444005452",
+          "title": "Sandflow-ai/sand3d",
+          "url": "https://github.com/Sandflow-ai/sand3d",
+          "published": "2026-11-03T08:23:03.000Z",
+          "summary": "3D modeling in Python, built for LLMs. (★ 1448 · HTML · 3d / blender / cad / llm)",
+          "metrics": {
+            "stars": 1448
+          },
+          "quality": 8,
+          "score": 12.6,
+          "category": "oss",
+          "practical": 0,
+          "slug": "62743e022b9a",
+          "action": 0,
+          "rank": 8,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "money",
+      "label": "变现与副业",
+      "items": [
+        {
+          "sourceId": "lcz-selfmedia",
+          "sourceName": "抡锤者 自媒体运营",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "money",
+          "categories": [
+            "视频生成",
+            "变现"
+          ],
+          "author": "ゆうみん",
+          "id": "2903",
+          "title": "开频两个月，日语 AI 恐怖频道终于破 1000 订阅了（附几点数据心得）",
+          "url": "https://lcz.me/topic/2903",
+          "published": "2026-11-07T12:24:09.774Z",
+          "summary": "终于突破 1000 订阅了！ 做的是日语的 AI 第一人称恐怖短片，9 月初发的第一集，到今天两个月，正片发了 30 集。过去 28 天涨了 738 人。 能走到这里，真的要感谢这个论坛里的各种知识，也感谢锤哥做了这个论坛！ 顺便分享几个这两个月看数据得出的体会，不一定对，供大家参考： 流量几乎全靠首页推荐：首页占了 84% 的播放，搜索只有 0.3%。一集被推开，前 7 天能有 100～300 小时观看时长；没推开只有 10～30 小时，差 5～10 倍。 容易被推开的片子有共同点：吓人的是“看起来很普通的人”；开头 15 秒就交代一条日常里的规矩（比如“不能点头”）；封面放那个人看得清的脸。封面放怪物、鬼、人偶的，基本都没推起来。 老片改标题、换封面，基本没用，精力还是放在下一集上。 两天一集不算太频繁：隔 1 天和隔 2 天发，被推开的比例差不多。 合集（几集剪成十几分钟）能补观看时长，但几乎不涨订阅。 另外每集都在 Studio 里如实勾了“AI 生成内容”。 下一个目标是 4000 小时观看时长，现在 2300 多小时，争取赶在明年 2 月新规（新申请要 8000 小时）之前达标。继续加油！",
+          "metrics": {
+            "points": 2,
+            "comments": 10,
+            "views": 309
+          },
+          "excellent": true,
+          "quality": 11,
+          "score": 16.28,
+          "category": "money",
+          "practical": 2,
+          "slug": "db72974cafdf",
+          "action": 2,
+          "rank": 14.2,
+          "tags": [
+            "money",
+            "generate"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "models",
+      "label": "新模型",
+      "items": [
+        {
+          "sourceId": "openai-news",
+          "sourceName": "OpenAI News",
+          "title": "Merge builds product and business tools with OpenAI technology",
+          "url": "https://openai.com/index/merge-builds-with-openai",
+          "id": "https://openai.com/index/merge-builds-with-openai",
+          "published": "2026-11-05T08:00:00.000Z",
+          "summary": "Merge uses GPT-6 Astra, ChatGPT, and Codex to review product code and support marketing. Its teams also use AI to plan executive dinners and prepare sales updates.",
+          "categories": [],
+          "author": "",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "models",
+          "metrics": {},
+          "quality": 8,
+          "score": 10.37,
+          "category": "models",
+          "practical": 0,
+          "zhTitle": "Merge结合了产品和商业工具与OpenAI技术",
+          "zhSummary": "Merge将OpenAI技术GPT-6 Astra、ChatGPT和Codex应用于产品代码审查和营销支持。该公司的团队还使用AI规划高管晚宴和准备销售更新。",
+          "slug": "300d91101f21",
+          "action": 1,
+          "rank": 9.6,
+          "tags": [
+            "agent"
+          ]
+        },
+        {
+          "sourceId": "openai-news",
+          "sourceName": "OpenAI News",
+          "title": "Measuring how AI agents handle everyday wet-lab science",
+          "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+          "id": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+          "published": "2026-11-06T00:00:00.000Z",
+          "summary": "OpenAI introduces BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data and handle everyday wet-lab science.",
+          "categories": [
+            "Publication"
+          ],
+          "author": "",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "models",
+          "metrics": {},
+          "quality": 9,
+          "score": 11.3,
+          "category": "models",
+          "practical": 0,
+          "slug": "cfd4354afa14",
+          "action": 0,
+          "rank": 9,
+          "tags": [
+            "benchmark"
+          ]
+        },
+        {
+          "sourceId": "latent-space",
+          "sourceName": "Latent Space",
+          "title": "Controlling Biology - Fabian Theis, Helmholtz Munich",
+          "url": "https://latent.space/p/controlling-biology-fabian-theis-helmholtz-munich/",
+          "id": "urn:latent-space:post:post_e4eae676-23c0-4ee3-bf61-919e4d3b3909",
+          "published": "2026-11-06T15:10:53.000Z",
+          "summary": "Fabian Theis has been one of the key players in the various iterations of the Virtual Cell concept and initiatives. It is not hyperbole at all to say that his lab has been pushing the frontier of algorithms to understand multi-scale, multi-modal (”multiomics”), time-varying biological data. Indeed, he has shaped the l…",
+          "categories": [],
+          "author": "RJ Honicky",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "opinion",
+          "metrics": {},
+          "quality": 8,
+          "score": 10.17,
+          "category": "models",
+          "practical": 0,
+          "zhTitle": "控制生物学",
+          "zhSummary": "Fabian Theis和Helmholtz Munich。Fabian Theis的实验室一直在推动理解多尺度、多模态（“多组学”）和时间变化生物数据的算法前沿。普通用户可能不需要了解这些技术，但可以了解如何将AI应用于生物学领域。",
+          "slug": "9260692a21c3",
+          "action": 0,
+          "rank": 8,
+          "tags": []
+        },
+        {
+          "sourceId": "reddit-local-llama",
+          "sourceName": "r/LocalLLaMA",
+          "title": "RustingStrata running Qwen3.6:35b-a3b with Q5 and MTP vs llama.cpp",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xr2v59/rustingstrata_running_qwen3635ba3b_with_q5_and/",
+          "id": "t3_1xr2v59",
+          "published": "2026-11-08T16:48:11.000Z",
+          "summary": "People asked how RustingStrata does with a bigger quant, so here's Q5_K_M on the same 3060 12 GB + Ryzen 5 7600X + 32GB DDR5 RAM. Model is unsloth's Qwen3.6-35B-A3B UD-Q5_K_M (the MTP version), 25 GiB, so about two thirds of the experts live on the CPU. llama.cpp is build 12119, -ncmoe 29 -ub 2048 -b 2048 -fa 1 (28 ru…",
+          "categories": [
+            "LocalLLaMA"
+          ],
+          "author": "/u/Serious_Scarcity7818",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "oss",
+          "metrics": {},
+          "quality": 6,
+          "score": 11.3,
+          "category": "models",
+          "practical": 0,
+          "zhTitle": "RustingStrata 运行 Qwen3.6:35b-a3b 与 Q5 和 MTP vs llama.cpp",
+          "slug": "cace1d19ff0c",
+          "action": 1,
+          "rank": 7.6,
+          "tags": [
+            "local"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "news",
+      "label": "行业动态",
+      "items": [
+        {
+          "sourceId": "latent-space",
+          "sourceName": "Latent Space",
+          "title": "[AINews] Anthropic IPO: Whither Now?",
+          "url": "https://latent.space/p/ainews-anthropic-ipo-whither-now/",
+          "id": "urn:latent-space:post:post_7716b2e3-ddac-48e0-8890-6bd0b896d287",
+          "published": "2026-11-07T03:04:53.000Z",
+          "summary": "It’s a relatively quiet news day, and the AI market rout we referenced obliquely two days ago has deepened, though it might be leveling off not even halfway into bear market territory (-10% on Nasdaq, not -20%). That said, everything being “priced to perfection” means any surprise that is not to the upside is probably…",
+          "categories": [
+            "ainews: weekday roundups"
+          ],
+          "author": "swyx .ai",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "opinion",
+          "metrics": {},
+          "quality": 8,
+          "score": 13.56,
+          "category": "news",
+          "practical": 0,
+          "zhTitle": "Anthropic IPO：下一步是什么？",
+          "slug": "672b7c812351",
+          "action": 0,
+          "rank": 8,
+          "tags": []
         },
         {
           "sourceId": "techcrunch-ai",
           "sourceName": "TechCrunch AI",
-          "title": "After the midterms, things are looking rocky for Elon Musk and data centers",
-          "url": "https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers/",
-          "id": "https://techcrunch.com/?p=3186091",
-          "published": "2026-11-07T22:07:22.000Z",
-          "summary": "On Equity, we unpacked what the midterms mean for the tech industry.",
+          "title": "After the midterms, is the AI industry in for a rough two years?",
+          "url": "https://techcrunch.com/video/after-the-midterms-is-the-ai-industry-in-for-a-rough-two-years/",
+          "id": "https://techcrunch.com/?post_type=tc_video&p=3185895",
+          "published": "2026-11-06T17:23:52.000Z",
+          "summary": "Democrats’ historic victories in this week’s U.S. midterm elections could also transform the tech industry. The public voted on 41 data center-related ballot measures on Tuesday — in all but one, the majority voted to impose more restrictions on data center development. And even when data centers weren’t on the ballot…",
           "categories": [
             "AI",
             "Government & Policy",
-            "Elon Musk",
+            "CrowdStrike",
+            "data center",
+            "midterms",
             "OpenAI"
           ],
-          "author": "Anthony Ha",
+          "author": "Theresa Loconsolo, Anthony Ha",
           "lang": "en",
           "tier": 1,
           "trustCategory": true,
-          "declaredCategory": "industry",
+          "declaredCategory": "news",
           "metrics": {},
-          "score": 15.33,
-          "category": "industry"
-        },
-        {
-          "sourceId": "qbitai",
-          "sourceName": "量子位",
-          "title": "OpenAI新融资到账110亿美元，不及原计划一半",
-          "url": "https://www.qbitai.com/2026/11/508344.html",
-          "id": "https://www.qbitai.com/?p=508344",
-          "published": "2026-11-07T08:11:25.000Z",
-          "summary": "融资缩水，硅谷投资人也谨慎了",
-          "categories": [
-            "资讯",
-            "AI，算力",
-            "ChatGPT",
-            "OpenAI",
-            "融资"
-          ],
-          "author": "田, 晏林",
-          "lang": "zh",
-          "tier": 1,
-          "trustCategory": true,
-          "declaredCategory": "industry",
-          "metrics": {},
-          "score": 14.57,
-          "category": "industry"
-        },
-        {
-          "sourceId": "techcrunch-ai",
-          "sourceName": "TechCrunch AI",
-          "title": "Megaspeed exec was recruited to spy on Nvidia CEO, according to US intelligence memo",
-          "url": "https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/",
-          "id": "https://techcrunch.com/?p=3186087",
-          "published": "2026-11-07T21:17:08.000Z",
-          "summary": "A memo circulated earlier this year reportedly claimed that China’s Ministry of State Security recruited a female technology executive to spy on Nvidia's CEO.",
-          "categories": [
-            "AI",
-            "Government & Policy"
-          ],
-          "author": "Anthony Ha",
-          "lang": "en",
-          "tier": 1,
-          "trustCategory": true,
-          "declaredCategory": "industry",
-          "metrics": {},
-          "score": 14.06,
-          "category": "industry"
-        },
-        {
-          "sourceId": "qbitai",
-          "sourceName": "量子位",
-          "title": "资本正在撤离“世界模型”",
-          "url": "https://www.qbitai.com/2026/11/508466.html",
-          "id": "https://www.qbitai.com/?p=508466",
-          "published": "2026-11-08T04:09:55.000Z",
-          "summary": "没有永远的夏天",
-          "categories": [
-            "资讯",
-            "世界模型"
-          ],
-          "author": "衡宇",
-          "lang": "zh",
-          "tier": 1,
-          "trustCategory": true,
-          "declaredCategory": "industry",
-          "metrics": {},
-          "score": 13.44,
-          "category": "industry"
-        },
-        {
-          "sourceId": "techcrunch-ai",
-          "sourceName": "TechCrunch AI",
-          "title": "Crusoe sells troubled Wyoming data center project to Google",
-          "url": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/",
-          "id": "https://techcrunch.com/?p=3186051",
-          "published": "2026-11-07T01:40:28.000Z",
-          "summary": "The deal highlights the challenges of developing massive AI data centers.",
-          "categories": [
-            "AI",
-            "ai infrastructure",
-            "crusoe",
-            "datacenter",
-            "Google"
-          ],
-          "author": "Marina Temkin",
-          "lang": "en",
-          "tier": 1,
-          "trustCategory": true,
-          "declaredCategory": "industry",
-          "metrics": {},
-          "score": 12.43,
-          "category": "industry"
-        },
-        {
-          "sourceId": "mit-tr-ai",
-          "sourceName": "MIT Tech Review",
-          "title": "I watched a humanoid robot clean my apartment. It felt like a taste of the future.",
-          "url": "https://www.technologyreview.com/2026/11/06/1148090/i-watched-a-humanoid-robot-clean-my-apartment-it-felt-like-a-taste-of-the-future/",
-          "id": "https://www.technologyreview.com/?p=1148090",
-          "published": "2026-11-06T10:00:00.000Z",
-          "summary": "<div data-chronoton-summary=\" — San Francisco startup Tau Robotics is sending humanoid robots into people's homes, piloted remotely by humans who collect training data while the robots clean — making the service cheaper than you'd expect for something this futuristic. — The four-and-a-half-foot robot climbed stairs li…",
-          "categories": [
-            "Artificial intelligence",
-            "App",
-            "artificial intelligence",
-            "Summary"
-          ],
-          "author": "Grace Huckins",
-          "lang": "en",
-          "tier": 1,
-          "trustCategory": true,
-          "declaredCategory": "industry",
-          "metrics": {},
+          "quality": 8,
           "fallback": true,
-          "score": 11.12,
-          "category": "industry"
+          "score": 12.75,
+          "category": "news",
+          "practical": 0,
+          "zhTitle": "中期选举后，AI行业是否会经历两年波折",
+          "zhSummary": "民主党在中期选举中取得了历史性胜利，这可能会对技术行业产生重大影响。普通用户可能不需要关注这个事件，但可以了解如何应对AI行业的变化。",
+          "slug": "e75b87af3c6b",
+          "action": 0,
+          "rank": 8,
+          "tags": []
         },
         {
           "sourceId": "mit-tr-ai",
@@ -975,259 +1206,55 @@
           "lang": "en",
           "tier": 1,
           "trustCategory": true,
-          "declaredCategory": "industry",
+          "declaredCategory": "news",
           "metrics": {},
+          "quality": 8,
           "fallback": true,
           "score": 9.6,
-          "category": "industry"
+          "category": "news",
+          "practical": 0,
+          "zhTitle": "Texas AI数据中心建设新热点或已终结",
+          "zhSummary": "Texas 曾是美国数据中心市场增长最快的地区，但民主党人在州长和参议员选举中取得胜利，这些候选人都反对数据中心建设，这使该行业开始担心会出现暂停和许可证冻结。",
+          "slug": "b13c09bbfcba",
+          "action": 0,
+          "rank": 8,
+          "tags": []
         }
       ]
     },
     {
-      "id": "opinion",
-      "label": "观点与深度",
+      "id": "ideas",
+      "label": "观点与研究",
       "items": [
         {
-          "sourceId": "latent-space",
-          "sourceName": "Latent Space",
-          "title": "How Stanford Teaches AI-Native Engineering — Mihail Eric, Monaco",
-          "url": "https://latent.space/p/cs146s/",
-          "id": "urn:latent-space:post:post_c965535e-89a8-4755-b38e-4e9eda7f9bb3",
-          "published": "2026-11-08T21:41:44.000Z",
-          "summary": "The AI Engineer YouTube channel just crossed one million subscribers . Thank you to everyone who’s watched a talk, sent one to a teammate, or put something they learned into production. For this special, we wanted to sit down with someone who has to answer a question a lot of us are asking at work: what should a softw…",
-          "categories": [],
-          "author": "swyx .ai",
-          "lang": "en",
-          "tier": 1,
-          "trustCategory": true,
-          "declaredCategory": "opinion",
-          "metrics": {},
-          "score": 16.1,
-          "category": "opinion"
-        },
-        {
-          "sourceId": "latent-space",
-          "sourceName": "Latent Space",
-          "title": "[AINews] Anthropic IPO: Whither Now?",
-          "url": "https://latent.space/p/ainews-anthropic-ipo-whither-now/",
-          "id": "urn:latent-space:post:post_7716b2e3-ddac-48e0-8890-6bd0b896d287",
-          "published": "2026-11-07T03:04:53.000Z",
-          "summary": "It’s a relatively quiet news day, and the AI market rout we referenced obliquely two days ago has deepened, though it might be leveling off not even halfway into bear market territory (-10% on Nasdaq, not -20%). That said, everything being “priced to perfection” means any surprise that is not to the upside is probably…",
+          "sourceId": "arxiv-cs",
+          "sourceName": "arXiv cs.AI/CL/LG",
+          "title": "Beyond Truncation? Entailment-Licensed Elision and the Limits of Semantic Preservation in LLM Decoding",
+          "url": "https://arxiv.org/abs/2611.08975v1",
+          "id": "http://arxiv.org/abs/2611.08975v1",
+          "published": "2026-11-06T04:39:25.000Z",
+          "summary": "Instruction-tuned large language models (LLMs) answer at greater length than a request needs. We ask whether a training-free controller inside the decoding loop can remove that surplus while preserving content, judged against the simplest possible baseline: truncating the model's own answer to the same length. An entr…",
           "categories": [
-            "ainews: weekday roundups"
+            "cs.CL"
           ],
-          "author": "swyx .ai",
+          "author": "Mahmoud Alyosify",
           "lang": "en",
-          "tier": 1,
+          "tier": 3,
           "trustCategory": true,
-          "declaredCategory": "opinion",
+          "declaredCategory": "ideas",
           "metrics": {},
-          "score": 13.74,
-          "category": "opinion"
-        },
-        {
-          "sourceId": "latent-space",
-          "sourceName": "Latent Space",
-          "title": "[AINews] Inkling 2 Small: 17A-594B trained in 68 hours on 12T tokens, beating Muse Spark",
-          "url": "https://latent.space/p/ainews-inkling-2-small-17a-594b-trained-in-68-hours-on-12t-tokens-beating-muse-spark/",
-          "id": "urn:latent-space:post:post_f6bfef19-e48a-4a0a-a73a-8361a44fe6a9",
-          "published": "2026-11-06T10:35:21.000Z",
-          "summary": "Build AI systems with context graphs and agentic memory. Join Andrew Ng and AI engineers at NODES 2026 for 100+ live technical sessions . Free, online, 24 hours. Save your spot ! There was a time in the early days of Thinking Machines, post 2025 start and cofounder departures , when their going concern as a neolab was…",
-          "categories": [
-            "ainews: weekday roundups"
-          ],
-          "author": "swyx .ai",
-          "lang": "en",
-          "tier": 1,
-          "trustCategory": true,
-          "declaredCategory": "opinion",
-          "metrics": {},
-          "score": 12.37,
-          "category": "opinion"
-        },
-        {
-          "sourceId": "latent-space",
-          "sourceName": "Latent Space",
-          "title": "Controlling Biology - Fabian Theis, Helmholtz Munich",
-          "url": "https://latent.space/p/controlling-biology-fabian-theis-helmholtz-munich/",
-          "id": "urn:latent-space:post:post_e4eae676-23c0-4ee3-bf61-919e4d3b3909",
-          "published": "2026-11-06T15:10:53.000Z",
-          "summary": "Fabian Theis has been one of the key players in the various iterations of the Virtual Cell concept and initiatives. It is not hyperbole at all to say that his lab has been pushing the frontier of algorithms to understand multi-scale, multi-modal (”multiomics”), time-varying biological data. Indeed, he has shaped the l…",
-          "categories": [],
-          "author": "RJ Honicky",
-          "lang": "en",
-          "tier": 1,
-          "trustCategory": true,
-          "declaredCategory": "opinion",
-          "metrics": {},
-          "score": 10.35,
-          "category": "opinion"
-        },
-        {
-          "sourceId": "interconnects",
-          "sourceName": "Interconnects",
-          "title": "How big is the open model economy today?",
-          "url": "https://www.interconnects.ai/p/how-well-can-we-measure-open-model",
-          "id": "https://www.interconnects.ai/p/how-well-can-we-measure-open-model",
-          "published": "2026-11-04T16:35:44.000Z",
-          "summary": "My longest running agent testbed has been building the Interconnects Dashboard — an aggregator of all of the best data on open model adoption and performance from across the web. This dashboard is freely available and becoming quite useful. Still, all the measurements we have on open model adoption are incredibly impr…",
-          "categories": [],
-          "author": "Nathan Lambert",
-          "lang": "en",
-          "tier": 1,
-          "trustCategory": true,
-          "declaredCategory": "opinion",
-          "metrics": {},
-          "fallback": true,
-          "score": 8.4,
-          "category": "opinion"
-        }
-      ]
-    },
-    {
-      "id": "engineering",
-      "label": "工具与工程",
-      "items": [
-        {
-          "sourceId": "hn-newest",
-          "sourceName": "Hacker News (AI)",
-          "title": "Apple CEO Presses Software Chief to Pursue More Ambitious AI Strategy",
-          "url": "https://www.bloomberg.com/news/newsletters/2026-11-08/apple-explores-turning-siri-ai-into-chatgpt-dots-like-agent-ios-28-shake-up",
-          "id": "https://news.ycombinator.com/item?id=50414021",
-          "published": "2026-11-08T15:19:51.000Z",
-          "summary": "Article URL: https://www.bloomberg.com/news/newsletters/2026-11-08/apple-explores-turning-siri-ai-into-chatgpt-dots-like-agent-ios-28-shake-up Comments URL: https://news.ycombinator.com/item?id=50414021 Points: 34 # Comments: 58",
-          "categories": [],
-          "author": "mfiguiere",
-          "lang": "en",
-          "tier": 2,
-          "trustCategory": false,
-          "declaredCategory": "engineering",
-          "metrics": {},
-          "score": 13.77,
-          "category": "engineering"
-        },
-        {
-          "sourceId": "hn-algolia",
-          "sourceName": "Hacker News Search",
-          "lang": "en",
-          "tier": 2,
-          "trustCategory": false,
-          "declaredCategory": "engineering",
-          "categories": [
-            "story",
-            "author_lamarcol",
-            "story_50418158",
-            "show_hn"
-          ],
-          "author": "",
-          "id": "50418158",
-          "title": "Show HN: My first project, an AI-powered financial news analyzer",
-          "url": "https://github.com/lamarcol/NotBot",
-          "published": "2026-11-08T22:34:06.000Z",
-          "summary": "I'm 17, and I started NotBot a few months ago to see whether I could turn an idea into a working project. My main interest is economics, not becoming a programmer, but I enjoy experimenting with code. A few months ago, I had the idea of creating a program that would analyze the most recent news about a specific stock…",
-          "metrics": {
-            "points": 2,
-            "comments": 0
-          },
-          "score": 13.4,
-          "category": "engineering"
-        },
-        {
-          "sourceId": "hn-algolia",
-          "sourceName": "Hacker News Search",
-          "lang": "en",
-          "tier": 2,
-          "trustCategory": false,
-          "declaredCategory": "engineering",
-          "categories": [
-            "story",
-            "author_modinfo",
-            "story_50416722"
-          ],
-          "author": "",
-          "id": "50416722",
-          "title": "LLMs can understand and write neural network weights",
-          "url": "https://github.com/RikiyaT/lm_understand-logs",
-          "published": "2026-11-08T20:18:49.000Z",
-          "summary": "Hacker News 讨论：LLMs can understand and write neural network weights",
-          "metrics": {
-            "points": 2,
-            "comments": 0
-          },
-          "score": 13.21,
-          "category": "engineering"
-        },
-        {
-          "sourceId": "hn-newest",
-          "sourceName": "Hacker News (AI)",
-          "title": "How I Fight AI Brain Fry",
-          "url": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
-          "id": "https://news.ycombinator.com/item?id=50416363",
-          "published": "2026-11-08T19:37:42.000Z",
-          "summary": "Article URL: https://sergeykuhne.com/blog/fighting-ai-brain-fry Comments URL: https://news.ycombinator.com/item?id=50416363 Points: 146 # Comments: 124",
-          "categories": [],
-          "author": "kyunez",
-          "lang": "en",
-          "tier": 2,
-          "trustCategory": false,
-          "declaredCategory": "engineering",
-          "metrics": {},
-          "score": 11.72,
-          "category": "engineering"
-        },
-        {
-          "sourceId": "hn-newest",
-          "sourceName": "Hacker News (AI)",
-          "title": "Silicon Valley Promises AI Will Cure Disease. Drugmaker CEOs Aren't Buying It",
-          "url": "https://www.wsj.com/tech/ai/silicon-valley-promises-ai-will-cure-disease-drugmaker-ceos-arent-buying-it-5218511c",
-          "id": "https://news.ycombinator.com/item?id=50415817",
-          "published": "2026-11-08T18:43:07.000Z",
-          "summary": "Article URL: https://www.wsj.com/tech/ai/silicon-valley-promises-ai-will-cure-disease-drugmaker-ceos-arent-buying-it-5218511c Comments URL: https://news.ycombinator.com/item?id=50415817 Points: 89 # Comments: 108",
-          "categories": [],
-          "author": "zzzeek",
-          "lang": "en",
-          "tier": 2,
-          "trustCategory": false,
-          "declaredCategory": "engineering",
-          "metrics": {},
-          "score": 11.65,
-          "category": "engineering"
-        },
-        {
-          "sourceId": "hn-newest",
-          "sourceName": "Hacker News (AI)",
-          "title": "The End of AI Frontiers",
-          "url": "https://hunch.net/?p=13764006",
-          "id": "https://news.ycombinator.com/item?id=50406589",
-          "published": "2026-11-07T18:04:07.000Z",
-          "summary": "Article URL: https://hunch.net/?p=13764006 Comments URL: https://news.ycombinator.com/item?id=50406589 Points: 81 # Comments: 4",
-          "categories": [],
-          "author": "andsoitis",
-          "lang": "en",
-          "tier": 2,
-          "trustCategory": false,
-          "declaredCategory": "engineering",
-          "metrics": {},
-          "score": 9.59,
-          "category": "engineering"
-        },
-        {
-          "sourceId": "hn-newest",
-          "sourceName": "Hacker News (AI)",
-          "title": "The AI sell-off compared to well-known stock market crashes",
-          "url": "https://www.kadoa.com/companies/insights/ai-selloff-perspective",
-          "id": "https://news.ycombinator.com/item?id=50401029",
-          "published": "2026-11-07T02:20:06.000Z",
-          "summary": "Article URL: https://www.kadoa.com/companies/insights/ai-selloff-perspective Comments URL: https://news.ycombinator.com/item?id=50401029 Points: 98 # Comments: 83",
-          "categories": [],
-          "author": "hubraumhugo",
-          "lang": "en",
-          "tier": 2,
-          "trustCategory": false,
-          "declaredCategory": "engineering",
-          "metrics": {},
-          "score": 8.28,
-          "category": "engineering"
+          "quality": 6,
+          "score": 7.89,
+          "category": "ideas",
+          "practical": 1,
+          "zhTitle": "超出截断？基于承诺许可的省略和语义保存在LLM解码中的局限性",
+          "zhSummary": "大型语言模型（LLM）通过指令优化回答问题时会产生过多的内容，我们想知道是否可以通过在解码循环中使用训练免费的控制器来移除这些内容，同时保留内容的重要性，评估的最简单的基准是截断模型自己的回答到相同长度。",
+          "slug": "ca8d53dd4a1d",
+          "action": 1,
+          "rank": 7.6,
+          "tags": [
+            "free"
+          ]
         }
       ]
     }
