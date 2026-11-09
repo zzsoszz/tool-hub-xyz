@@ -1,0 +1,410 @@
+{
+  "day": "2026-11-09",
+  "reviewedAt": "2026-11-09T16:32:05.719Z",
+  "reviewer": "cloudflare/@cf/meta/llama-3.1-70b-instruct",
+  "note": "cloudflare/@cf/meta/llama-3.1-70b-instruct：复核 12 条，解析到 12 条判定 · 1-6 调用失败：fetch failed",
+  "rules": {
+    "minItems": 5,
+    "minBodyChars": 120,
+    "minSummaryChars": 40,
+    "maxTags": 4,
+    "agentMaxItems": 12,
+    "agentBatch": 6,
+    "agentChars": 900
+  },
+  "passed": true,
+  "reasons": [],
+  "total": 17,
+  "blocked": [
+    "ec3ffc18cdbb",
+    "002e0c186427",
+    "4b95ee8ee16c",
+    "300d91101f21",
+    "8742c668ee52",
+    "a3eec815e8eb",
+    "097d38b6ae41"
+  ],
+  "survivors": 10,
+  "items": [
+    {
+      "slug": "b91b385f4db7",
+      "title": "7900 XTX + 128GB：Strata RDNA3 三档模型精度测试",
+      "category": "apps",
+      "subcategory": "inference",
+      "tags": [
+        "benchmark",
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 5407,
+      "quality": 10,
+      "practical": 2,
+      "sourceName": "抡锤者 模型部署讨论",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "正文长度5407字，包含实测数据和复现步骤。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "ec3ffc18cdbb",
+      "title": "不等价熵：基于可验证奖励的熵分配",
+      "category": "apps",
+      "subcategory": "life",
+      "tags": [],
+      "bodyChars": 1785,
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [
+        "标签异常（没有任何标签）"
+      ],
+      "warnings": [],
+      "agent": null,
+      "blocked": [
+        "标签异常（没有任何标签）"
+      ]
+    },
+    {
+      "slug": "002e0c186427",
+      "title": "本周赛博领鸡蛋（11.6~11.12）：《遗忘国度：放置勇士》《浮游世界》《巴别塔圣歌》",
+      "category": "apps",
+      "subcategory": "knowledge",
+      "tags": [
+        "local",
+        "free"
+      ],
+      "bodyChars": 1531,
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "小众软件",
+      "domain": "appinn.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "fail",
+        "reason": "正文长度1531字，分类和标签不符，缺乏实践性内容。"
+      },
+      "blocked": [
+        "模型复核不通过（正文长度1531字，分类和标签不符，缺乏实践性内容。）"
+      ]
+    },
+    {
+      "slug": "4b95ee8ee16c",
+      "title": "图RAG的符号方法：类型中心性定位",
+      "category": "apps",
+      "subcategory": "knowledge",
+      "tags": [
+        "agent"
+      ],
+      "bodyChars": 1285,
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "fail",
+        "reason": "正文长度1285字，分类和标签不符，缺乏实践性内容。"
+      },
+      "blocked": [
+        "模型复核不通过（正文长度1285字，分类和标签不符，缺乏实践性内容。）"
+      ]
+    },
+    {
+      "slug": "6100aa2d7156",
+      "title": "斯坦福大学如何教AI本土工程——米哈伊尔·埃里克",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "agent",
+        "free",
+        "money"
+      ],
+      "bodyChars": 143293,
+      "quality": 9,
+      "practical": 2,
+      "sourceName": "Latent Space",
+      "domain": "latent.space",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "正文长度143293字，包含实测数据和复现步骤。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "9e6dbbe1d5bb",
+      "title": "Inkling 2 小：17A-594B 在 68 小时内训练 12T token，击败 Muse Spark",
+      "category": "tools",
+      "subcategory": "prompt",
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 52128,
+      "quality": 9,
+      "practical": 1,
+      "sourceName": "Latent Space",
+      "domain": "latent.space",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "正文长度52128字，包含实测数据和复现步骤。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "300d91101f21",
+      "title": "合并使用OpenAI技术合并产品和商业工具",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "agent"
+      ],
+      "bodyChars": 163,
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "OpenAI News",
+      "domain": "openai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "fail",
+        "reason": "正文长度163字，分类和标签不符，缺乏实践性内容。"
+      },
+      "blocked": [
+        "模型复核不通过（正文长度163字，分类和标签不符，缺乏实践性内容。）"
+      ]
+    },
+    {
+      "slug": "8742c668ee52",
+      "title": "📡 AI日报 11/6 | OpenAI GPT-6 Cyber 发布、美股 AI 硬件链重挫、Claude 接入个人财务、Google 关停 Firebase Studio",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [],
+      "bodyChars": 702,
+      "quality": 7,
+      "practical": 1,
+      "sourceName": "抡锤者 资讯",
+      "domain": "lcz.me",
+      "hard": [
+        "标签异常（没有任何标签）"
+      ],
+      "warnings": [],
+      "agent": null,
+      "blocked": [
+        "标签异常（没有任何标签）"
+      ]
+    },
+    {
+      "slug": "81208260a5bf",
+      "title": "双卡7900xtx vs 170hx vs 5090d32gb vs 4090 48gb vs 5080视频生成",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "benchmark",
+        "hardware",
+        "generate",
+        "lowspec"
+      ],
+      "bodyChars": 3129,
+      "quality": 11,
+      "practical": 6,
+      "sourceName": "抡锤者 AI 音视频画图",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容长度足够且有实测数据。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "f76d9909d5e1",
+      "title": "16G 5070Ti把用Strata的flash next换成Basalt，实测快1.4倍！白拿的性能！",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "benchmark",
+        "hardware",
+        "lowspec",
+        "tutorial"
+      ],
+      "bodyChars": 4006,
+      "quality": 14,
+      "practical": 3,
+      "sourceName": "抡锤者 模型部署讨论",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容长度足够且有实测数据。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "a3eec815e8eb",
+      "title": "GPU任务管理器",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "lowspec"
+      ],
+      "bodyChars": 0,
+      "quality": 9,
+      "practical": 2,
+      "sourceName": "GitHub 新晋 AI 项目",
+      "domain": "github.com",
+      "hard": [
+        "内容过少（正文 0 字，要求至少 120 字）"
+      ],
+      "warnings": [
+        "没有正文，只有摘要"
+      ],
+      "agent": null,
+      "blocked": [
+        "内容过少（正文 0 字，要求至少 120 字）"
+      ]
+    },
+    {
+      "slug": "faa414d679fc",
+      "title": "单卡7900XTX 24GB + 64GB DDR4 Avalon (Qwen3.8-Flash-Next) Windows 部署文档",
+      "category": "local",
+      "subcategory": "runtime",
+      "tags": [
+        "local",
+        "benchmark",
+        "tutorial"
+      ],
+      "bodyChars": 7554,
+      "quality": 12,
+      "practical": 5,
+      "sourceName": "抡锤者 模型部署讨论",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容长度足够且有部署文档。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "1ba65bc81ee7",
+      "title": "给 DGX Spark 写了个零依赖实时监控面板：1 个 Python 文件 + 1 个 HTML 文件",
+      "category": "local",
+      "subcategory": "selfhost",
+      "tags": [
+        "local",
+        "benchmark",
+        "tutorial"
+      ],
+      "bodyChars": 8420,
+      "quality": 11,
+      "practical": 8,
+      "sourceName": "抡锤者 Agent 工具",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容长度足够且有实时监控面板。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "097d38b6ae41",
+      "title": "Android设备分布式威胁防御",
+      "category": "local",
+      "subcategory": "weights",
+      "tags": [
+        "money"
+      ],
+      "bodyChars": 1917,
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "fail",
+        "reason": "分类/子类明显不对，且标签不符。"
+      },
+      "blocked": [
+        "模型复核不通过（分类/子类明显不对，且标签不符。）"
+      ]
+    },
+    {
+      "slug": "98f84f30eb40",
+      "title": "【双卡视频生成无痛提升18.8%】出片跨卡拆分为主项的视频生成优化项目——Kuzuryūsen本质是Combo",
+      "category": "bench",
+      "subcategory": "compare",
+      "tags": [
+        "hardware",
+        "benchmark",
+        "generate"
+      ],
+      "bodyChars": 15740,
+      "quality": 10,
+      "practical": 1,
+      "sourceName": "抡锤者 AI 音视频画图",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容长度足够且有视频生成优化项目。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "d3160974415a",
+      "title": "AI模型和桩式如何添加代码？我创建了一个开源benchmark来测量代码复杂度",
+      "category": "bench",
+      "subcategory": "benchmark",
+      "tags": [
+        "agent",
+        "free",
+        "benchmark"
+      ],
+      "bodyChars": 1065,
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "c85e9d7dd64e",
+      "title": "开放模型经济的规模有多大？",
+      "category": "bench",
+      "subcategory": "selection",
+      "tags": [
+        "free",
+        "agent"
+      ],
+      "bodyChars": 2854,
+      "quality": 9,
+      "practical": 3,
+      "sourceName": "Interconnects",
+      "domain": "interconnects.ai",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    }
+  ]
+}

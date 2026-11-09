@@ -20,7 +20,7 @@ concurrency:
 
 jobs:
   digest:
-    name: 采集 → 构建 → 发布
+    name: 采集与去重
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -37,12 +37,6 @@ jobs:
           TRANSLATE_API_BASE: ${{ secrets.TRANSLATE_API_BASE }}
           TRANSLATE_MODEL: ${{ secrets.TRANSLATE_MODEL }}
 
-      - name: 生成静态站点
-        run: node src/build.mjs
-        env:
-          SITE_URL: https://tool-hub.xyz
-          REPO_URL: https://github.com/${{ github.repository }}
-
       - name: 回写采集数据
         run: |
           git config user.name "github-actions[bot]"
@@ -55,8 +49,87 @@ jobs:
             echo "data 无变化，跳过提交"
           fi
 
+      - name: 上传采集结果给审查环节
+        uses: actions/upload-artifact@v4
+        with:
+          name: digest-data
+          path: data
+          if-no-files-found: error
+
+  review:
+    name: 独立 agent 质量审查（不过审就不发布）
+    needs: digest
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: 取回采集数据
+        uses: actions/download-artifact@v4
+        with:
+          name: digest-data
+          path: data
+
+      - name: 合并线上管理员下架记录
+        run: node scripts/fetch-hidden.mjs
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
+      - name: 硬规则 + 独立模型复核
+        run: node src/review.mjs --apply
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          REVIEW_MODEL: ${{ vars.REVIEW_MODEL }}
+
+      - name: 回写审查记录
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain data)" ]; then
+            git add data
+            git commit -m "chore(review): 记录 $(date -u +'%F') 质量审查结论"
+            git push
+          else
+            echo "审查记录无变化，跳过提交"
+          fi
+
+      - name: 生成静态站点
+        run: node src/build.mjs
+        env:
+          SITE_URL: https://tool-hub.xyz
+          REPO_URL: https://github.com/${{ github.repository }}
+
+      - name: 上传待发布产物
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-dist
+          path: dist
+          if-no-files-found: error
+
+  publish:
+    name: 发布上线
+    needs: [digest, review]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: 取回审查通过的产物
+        uses: actions/download-artifact@v4
+        with:
+          name: site-dist
+          path: dist
+
       - name: 部署到 Cloudflare（Worker 静态资源）
-        run: npx --yes wrangler@4 deploy
+        run: npx --yes --registry=https://registry.npmjs.org wrangler@4 deploy
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
