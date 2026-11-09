@@ -36,6 +36,9 @@ CLOUDFLARE_API_TOKEN=... CLOUDFLARE_ACCOUNT_ID=... npx --yes wrangler@4 deploy
 `dist/_headers`、`dist/_redirects` 在该形态下同样生效（已线上验证）。历史版本可用
 `npx wrangler deployments list` 与 `npx wrangler rollback` 回退。
 
+`wrangler.jsonc` 里 `assets.run_worker_first: true`：请求先进 Worker，再由 Worker 取静态资产。
+不开这个开关，静态资产会直接命中请求，Worker 的「已下架条目返回 410」和「`/data/items.json` 过滤下架条目」都不会生效。
+
 ## 2.1 初始化 D1（评论、点赞、下架、登录限流）
 
 ```bash
