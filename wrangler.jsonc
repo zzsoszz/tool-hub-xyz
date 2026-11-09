@@ -1,9 +1,18 @@
 {
   "name": "tool-hub",
+  "main": "src/worker.mjs",
   "compatibility_date": "2026-11-01",
   "assets": {
-    "directory": "./dist"
+    "directory": "./dist",
+    "binding": "ASSETS"
   },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "tool-hub",
+      "database_id": "1ff9f142-a269-419d-b361-9289b51bfbd0"
+    }
+  ],
   "routes": [
     { "pattern": "tool-hub.xyz", "custom_domain": true }
   ],
