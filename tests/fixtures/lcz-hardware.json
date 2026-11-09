@@ -1,0 +1,135 @@
+{
+  "cid": 6,
+  "name": "AI硬件",
+  "topics": [
+    {
+      "cid": 6,
+      "tid": 2918,
+      "slug": "2918",
+      "tags": [
+        {
+          "value": "7900xtx",
+          "valueEncoded": "7900xtx",
+          "class": "7900xtx"
+        },
+        {
+          "value": "qwen-27b",
+          "valueEncoded": "qwen-27b",
+          "class": "qwen-27b"
+        },
+        {
+          "value": "qwen-flash",
+          "valueEncoded": "qwen-flash",
+          "class": "qwen-flash"
+        }
+      ],
+      "title": "7900XTX。Qwen 27B 和Flash Next上下文一般用多大的？",
+      "postcount": 7,
+      "timestamp": 1794135776265,
+      "timestampISO": "2026-11-08T11:02:56.265Z",
+      "viewcount": 175,
+      "votes": 0,
+      "lczExcellent": 0,
+      "upvotes": 0,
+      "user": {
+        "displayname": "Miraco"
+      },
+      "teaser": {
+        "content": "@Miraco\n大的总比小的好，上下文快满了就要促发压缩机制，肯定会丢失一些东西。\n"
+      }
+    },
+    {
+      "cid": 6,
+      "tid": 2923,
+      "slug": "2923",
+      "tags": [],
+      "title": "5080 16G跑ComfyUI & Minimax H3吊打双7900XTX 24G？AMD驱动不完善导致特定场景的生态劣势，N卡用户钱花的值！",
+      "postcount": 4,
+      "timestamp": 1794189600000,
+      "timestampISO": "2026-11-09T02:00:00.000Z",
+      "viewcount": 125,
+      "votes": 0,
+      "lczExcellent": 0,
+      "upvotes": 0,
+      "user": {
+        "displayname": "terry"
+      },
+      "teaser": {
+        "content": "@imbiplaza-asus\n自從 Nvidia RTX 50系 16GB 系列 從2026第三季開始減產後\n台灣的RTX 5070 Ti(限組裝), 5080(快沒貨), 5090(沒貨) 都已經限組裝一陣子了\n要買顯卡 只能買一整組電腦, 遊戲玩家和AI玩家只能往 5060 Ti 16G 發展\n這趨勢大概就是這個走向, 高階顯卡未來的價格 預期會 \"很不樂觀\"\n[image: image.jpeg]\n"
+      }
+    },
+    {
+      "cid": 6,
+      "tid": 2924,
+      "slug": "2924",
+      "tags": [
+        {
+          "value": "7900xtx",
+          "valueEncoded": "7900xtx",
+          "class": "7900xtx"
+        },
+        {
+          "value": "多卡部署",
+          "valueEncoded": "%E5%A4%9A%E5%8D%A1%E9%83%A8%E7%BD%B2",
+          "class": "多卡部署"
+        },
+        {
+          "value": "amd",
+          "valueEncoded": "amd",
+          "class": "amd"
+        }
+      ],
+      "title": "有没有兄弟能挑战一下7900 xtx和xt混合TP",
+      "postcount": 8,
+      "timestamp": 1794163580075,
+      "timestampISO": "2026-11-08T18:46:20.075Z",
+      "viewcount": 175,
+      "votes": 0,
+      "lczExcellent": 0,
+      "upvotes": 0,
+      "user": {
+        "displayname": "空语"
+      },
+      "teaser": {
+        "content": "@Leon-Y 哈哈哈哈寄过来让我tp一下试试\n"
+      }
+    },
+    {
+      "cid": 6,
+      "tid": 2894,
+      "slug": "2894",
+      "tags": [
+        {
+          "value": "rtx5080",
+          "valueEncoded": "rtx5080",
+          "class": "rtx5080"
+        },
+        {
+          "value": "strata",
+          "valueEncoded": "strata",
+          "class": "strata"
+        },
+        {
+          "value": "qwen-flash",
+          "valueEncoded": "qwen-flash",
+          "class": "qwen-flash"
+        }
+      ],
+      "title": "【实测分享】单张 RTX 5080 16GB + 128GB 内存，用 Strata 跑 Qwen3.8-Flash-Next IQ3_S：全默认设置，输出 105～132 tok/s，12 万 token 长文 28 秒读完",
+      "postcount": 4,
+      "timestamp": 1794024571567,
+      "timestampISO": "2026-11-07T04:09:31.567Z",
+      "viewcount": 268,
+      "votes": 1,
+      "lczExcellent": 1,
+      "upvotes": 1,
+      "user": {
+        "displayname": "tester"
+      },
+      "teaser": {
+        "content": "单卡 5080 跑 Qwen3.8-Flash IQ3_S，实测 105～132 tok/s"
+      }
+    }
+  ],
+  "excellentTopicMainPost": "<blockquote>\n<p dir=\"auto\"><strong>一句话总结（TL;DR）</strong><br />\n单张 <strong>RTX 5080 16GB</strong> ＋ <strong>DDR5 128GB</strong>，用 <strong>Strata</strong> <code>v0.2.11</code>（引擎 <code>0.1.57</code>）跑 <strong>Qwen3.8-Flash-Next IQ3_S</strong>，上下文 <code>128K</code>，<strong>一个参数都没调</strong>（<code>strata launch</code> 一路回车）。</p>\n<ul>\n<li><strong>输出速度：</strong> 标准测速中位数 <code>105.6 ～ 132.1 tok/s</code>，短对话最高 <code>169 tok/s</code></li>\n<li><strong>读题（prefill）速度：</strong> 4K～12 万 token 都稳定在 <code>3,400 ～ 4,400 tok/s</code>；<code>120,598 token</code> 的长文 <code>28.2 秒</code> 读完，读完后输出仍有 <code>145.7 tok/s</code></li>\n<li><strong>长上下文找信息：</strong> 4.1 万、6.5 万、12.1 万 token 的长文里各藏一条，<code>3 / 3</code> 全部找对；标准测速的正确性检查 <code>12 / 12</code> 通过</li>\n<li><strong>启动：</strong> 第一次 <code>约 55 秒</code>，停掉再启动 <code>88.6 秒</code>；从下载到能回答一共 <code>约 28 分钟</code></li>\n<li><strong>占用：</strong> 显存 <code>14.7 / 16 GB</"
+}

@@ -67,6 +67,31 @@ const adapters = {
       };
     });
   },
+  nodebb: (payload, source) => {
+    const topics = Array.isArray(payload?.topics) ? payload.topics : [];
+    return topics.map((topic) => {
+      const slug = String(topic.slug ?? topic.tid ?? '');
+      const tags = Array.isArray(topic.tags) ? topic.tags.map((tag) => cleanText(tag?.value ?? tag, 40)) : [];
+      const teaser = topic.teaser?.content ?? topic.teaser?.sourceContent ?? '';
+      const summary = summarize([teaser, tags.length ? `标签：${tags.join(' / ')}` : ''].filter(Boolean).join('\n'));
+      return {
+        ...base(source),
+        title: cleanText(topic.title, 220),
+        url: `https://lcz.me/topic/${slug}`,
+        id: String(topic.tid ?? slug),
+        published: iso(topic.timestampISO ?? topic.timestamp),
+        summary,
+        categories: tags,
+        author: topic.user?.displayname ?? topic.user?.username ?? '',
+        metrics: {
+          points: topic.votes ?? topic.upvotes ?? 0,
+          comments: Math.max(0, (topic.postcount ?? 1) - 1),
+          views: topic.viewcount ?? 0,
+        },
+        excellent: Boolean(topic.lczExcellent),
+      };
+    });
+  },
 };
 
 function iso(value) {

@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "maxItemsPerDay": 48,
-  "maxItemsPerSource": 12,
+  "maxItemsPerDay": 30,
+  "maxItemsPerSource": 5,
   "seenRetentionDays": 45,
   "sources": [
     {
@@ -44,7 +44,7 @@
       "kind": "rss",
       "tier": 1,
       "trustCategory": true,
-      "category": "opensource",
+      "category": "oss",
       "lang": "en"
     },
     {
@@ -55,7 +55,7 @@
       "adapter": "hf-daily-papers",
       "tier": 1,
       "trustCategory": true,
-      "category": "research",
+      "category": "ideas",
       "lang": "en",
       "windowHours": 72
     },
@@ -88,7 +88,7 @@
       "kind": "atom",
       "tier": 1,
       "trustCategory": true,
-      "category": "engineering",
+      "category": "tools",
       "lang": "en"
     },
     {
@@ -98,7 +98,7 @@
       "kind": "rss",
       "tier": 1,
       "trustCategory": true,
-      "category": "industry",
+      "category": "news",
       "lang": "en"
     },
     {
@@ -108,7 +108,7 @@
       "kind": "rss",
       "tier": 1,
       "trustCategory": true,
-      "category": "products",
+      "category": "apps",
       "lang": "en"
     },
     {
@@ -118,7 +118,7 @@
       "kind": "rss",
       "tier": 1,
       "trustCategory": true,
-      "category": "industry",
+      "category": "news",
       "lang": "en"
     },
     {
@@ -128,7 +128,7 @@
       "kind": "rss",
       "tier": 1,
       "trustCategory": true,
-      "category": "industry",
+      "category": "news",
       "lang": "zh",
       "windowHours": 72
     },
@@ -137,9 +137,9 @@
       "name": "arXiv cs.AI/CL/LG",
       "url": "https://export.arxiv.org/api/query?search_query=cat:cs.AI+OR+cat:cs.CL+OR+cat:cs.LG&sortBy=submittedDate&sortOrder=descending&max_results=20",
       "kind": "atom",
-      "tier": 2,
+      "tier": 3,
       "trustCategory": true,
-      "category": "research",
+      "category": "ideas",
       "lang": "en",
       "windowHours": 72
     },
@@ -149,7 +149,7 @@
       "url": "https://hnrss.org/newest?q=AI&points=20",
       "kind": "rss",
       "tier": 2,
-      "category": "engineering",
+      "category": "tools",
       "lang": "en"
     },
     {
@@ -158,8 +158,8 @@
       "url": "https://hn.algolia.com/api/v1/search_by_date?query=LLM&tags=story&hitsPerPage=25",
       "kind": "json",
       "adapter": "hn-algolia",
-      "tier": 2,
-      "category": "engineering",
+      "tier": 3,
+      "category": "tools",
       "lang": "en"
     },
     {
@@ -168,7 +168,7 @@
       "url": "https://lobste.rs/t/ai.rss",
       "kind": "rss",
       "tier": 2,
-      "category": "engineering",
+      "category": "tools",
       "lang": "en"
     },
     {
@@ -177,7 +177,7 @@
       "url": "https://www.reddit.com/r/LocalLLaMA/new.rss",
       "kind": "rss",
       "tier": 2,
-      "category": "opensource",
+      "category": "oss",
       "lang": "en"
     },
     {
@@ -188,7 +188,7 @@
       "adapter": "github-search",
       "tier": 2,
       "trustCategory": true,
-      "category": "opensource",
+      "category": "oss",
       "lang": "en",
       "minMetrics": {
         "stars": 100
@@ -201,7 +201,7 @@
       "url": "https://www.microsoft.com/en-us/research/feed/",
       "kind": "rss",
       "tier": 2,
-      "category": "research",
+      "category": "ideas",
       "lang": "en",
       "windowHours": 96
     },
@@ -211,7 +211,7 @@
       "url": "https://github.blog/feed/",
       "kind": "rss",
       "tier": 2,
-      "category": "engineering",
+      "category": "tools",
       "lang": "en"
     },
     {
@@ -219,12 +219,183 @@
       "name": "The Verge",
       "url": "https://www.theverge.com/rss/index.xml",
       "kind": "atom",
-      "tier": 3,
-      "category": "products",
+      "tier": 2,
+      "category": "apps",
       "lang": "en"
+    },
+    {
+      "id": "sspai",
+      "name": "少数派",
+      "url": "https://sspai.com/feed",
+      "kind": "rss",
+      "tier": 2,
+      "category": "tools",
+      "lang": "zh",
+      "windowHours": 96
+    },
+    {
+      "id": "appinn",
+      "name": "小众软件",
+      "url": "https://www.appinn.com/feed/",
+      "kind": "rss",
+      "tier": 2,
+      "category": "tools",
+      "lang": "zh",
+      "windowHours": 96
+    },
+    {
+      "id": "producthunt",
+      "name": "Product Hunt",
+      "url": "https://www.producthunt.com/feed",
+      "kind": "rss",
+      "tier": 3,
+      "category": "apps",
+      "lang": "en"
+    },
+    {
+      "id": "hn-show-ai",
+      "name": "Show HN (AI)",
+      "url": "https://hnrss.org/newest?q=Show+HN&points=10",
+      "kind": "rss",
+      "tier": 2,
+      "category": "tools",
+      "lang": "en"
+    },
+    {
+      "id": "ai-news-applied",
+      "name": "AI News (应用)",
+      "url": "https://www.artificialintelligence-news.com/feed/",
+      "kind": "rss",
+      "tier": 3,
+      "category": "news",
+      "lang": "en",
+      "windowHours": 96
+    },
+    {
+      "id": "juejin",
+      "name": "掘金 AI",
+      "url": "https://juejin.cn/rss",
+      "kind": "rss",
+      "tier": 3,
+      "category": "tools",
+      "lang": "zh",
+      "windowHours": 96
+    },
+    {
+      "id": "reddit-sideproject",
+      "name": "r/SideProject",
+      "url": "https://www.reddit.com/r/SideProject/new.rss",
+      "kind": "rss",
+      "tier": 3,
+      "category": "money",
+      "lang": "en"
+    },
+    {
+      "id": "lcz-hardware",
+      "name": "抡锤者 AI硬件",
+      "kind": "json",
+      "adapter": "nodebb",
+      "url": "https://lcz.me/api/category/6",
+      "lang": "zh",
+      "tier": 2,
+      "category": "local",
+      "windowHours": 120,
+      "timeoutMs": 30000,
+      "trustCategory": true
+    },
+    {
+      "id": "lcz-llm",
+      "name": "抡锤者 模型部署讨论",
+      "kind": "json",
+      "adapter": "nodebb",
+      "url": "https://lcz.me/api/category/7",
+      "lang": "zh",
+      "tier": 2,
+      "category": "local",
+      "windowHours": 120,
+      "timeoutMs": 30000,
+      "trustCategory": true
+    },
+    {
+      "id": "lcz-agent",
+      "name": "抡锤者 Agent 工具",
+      "kind": "json",
+      "adapter": "nodebb",
+      "url": "https://lcz.me/api/category/12",
+      "lang": "zh",
+      "tier": 2,
+      "category": "tools",
+      "windowHours": 120,
+      "timeoutMs": 30000,
+      "trustCategory": true
+    },
+    {
+      "id": "lcz-media",
+      "name": "抡锤者 AI 音视频画图",
+      "kind": "json",
+      "adapter": "nodebb",
+      "url": "https://lcz.me/api/category/8",
+      "lang": "zh",
+      "tier": 2,
+      "category": "apps",
+      "windowHours": 120,
+      "timeoutMs": 30000,
+      "trustCategory": true
+    },
+    {
+      "id": "lcz-selfmedia",
+      "name": "抡锤者 自媒体运营",
+      "kind": "json",
+      "adapter": "nodebb",
+      "url": "https://lcz.me/api/category/9",
+      "lang": "zh",
+      "tier": 2,
+      "category": "money",
+      "windowHours": 168,
+      "timeoutMs": 30000,
+      "trustCategory": true
+    },
+    {
+      "id": "lcz-web",
+      "name": "抡锤者 建站与网络赚钱",
+      "kind": "json",
+      "adapter": "nodebb",
+      "url": "https://lcz.me/api/category/10",
+      "lang": "zh",
+      "tier": 2,
+      "category": "money",
+      "windowHours": 168,
+      "timeoutMs": 30000,
+      "trustCategory": true
+    },
+    {
+      "id": "lcz-crisis",
+      "name": "抡锤者 AI 危机与机遇",
+      "kind": "json",
+      "adapter": "nodebb",
+      "url": "https://lcz.me/api/category/15",
+      "lang": "zh",
+      "tier": 3,
+      "category": "ideas",
+      "windowHours": 168,
+      "timeoutMs": 30000,
+      "trustCategory": true
+    },
+    {
+      "id": "lcz-news",
+      "name": "抡锤者 资讯",
+      "kind": "json",
+      "adapter": "nodebb",
+      "url": "https://lcz.me/api/category/3",
+      "lang": "zh",
+      "tier": 3,
+      "category": "news",
+      "windowHours": 120,
+      "timeoutMs": 30000,
+      "trustCategory": true
     }
   ],
   "windowHours": 48,
   "maxAgeDays": 7,
-  "fallbackItemsPerSource": 2
+  "fallbackItemsPerSource": 1
 }
