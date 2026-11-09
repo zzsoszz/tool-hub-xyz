@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Sample AI Feed</title>
+    <link>https://sample.example.com/</link>
+    <item>
+      <title>OpenAI 发布 GPT-6：推理成本下降 40%</title>
+      <link>https://sample.example.com/gpt6-launch?utm_source=rss&amp;ref=tw</link>
+      <guid isPermaLink="false">sample-1</guid>
+      <dc:creator>张三</dc:creator>
+      <category>AI</category>
+      <pubDate>Tue, 04 Nov 2026 09:30:00 +0800</pubDate>
+      <description>简短说明 &amp; 引用</description>
+      <content:encoded><![CDATA[<p>新的 LLM 在 <b>推理</b> 与 agent 任务上提升明显，同时开源权重。</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Crypto token rallies after ETF news</title>
+      <link>https://sample.example.com/crypto-etf</link>
+      <guid isPermaLink="false">sample-2</guid>
+      <pubDate>Tue, 04 Nov 2026 08:00:00 +0800</pubDate>
+      <description>Cryptocurrency market moves after an ETF filing.</description>
+    </item>
+    <item>
+      <title>条目没有链接</title>
+      <guid isPermaLink="false">sample-3</guid>
+      <pubDate>Tue, 04 Nov 2026 07:00:00 +0800</pubDate>
+    </item>
+  </channel>
+</rss>

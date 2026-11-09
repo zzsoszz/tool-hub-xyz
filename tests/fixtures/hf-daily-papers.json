@@ -1,0 +1,4 @@
+[
+  { "date": "2026-11-03", "paper": { "id": "2611.01234", "title": "Distilling Reasoning into Small Open Models", "abstract": "A recipe for distilling chain-of-thought into 3B open-weight models with minimal benchmark loss.", "publishedAt": "2026-11-03T09:00:00Z", "upvotes": 210 } },
+  { "date": "2026-11-03", "paper": { "id": "2611.05678", "title": "Evaluating Agent Tool Use Under Noise", "abstract": "Benchmark showing large drops in success rate when tool APIs return flaky errors.", "publishedAt": "2026-11-03T11:30:00Z", "upvotes": 96 } }
+]

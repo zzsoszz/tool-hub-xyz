@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>TechCrunch AI</title>
+    <link>https://techcrunch.com/category/artificial-intelligence/</link>
+    <item>
+      <title>Anthropic 宣布新一代 Claude 模型，主打长程 agent 任务</title>
+      <link>https://techcrunch.com/2026/11/08/anthropic-claude-next/</link>
+      <guid isPermaLink="true">https://techcrunch.com/2026/11/08/anthropic-claude-next/</guid>
+      <pubDate>Wed, 08 Nov 2026 02:10:00 +0000</pubDate>
+      <description>新模型在长程任务与代码生成上刷新内部基准，定价同步下调。</description>
+    </item>
+    <item>
+      <title>OpenAI 与云厂商签下两年算力协议</title>
+      <link>https://techcrunch.com/2026/11/07/openai-cloud-deal/?utm_source=feed</link>
+      <guid isPermaLink="true">https://techcrunch.com/2026/11/07/openai-cloud-deal/</guid>
+      <pubDate>Tue, 07 Nov 2026 21:05:00 +0000</pubDate>
+      <description>协议规模据称超过十亿美元，用于训练与推理集群扩容。</description>
+    </item>
+    <item>
+      <title>Backstory: 三个月前的旧模型评测</title>
+      <link>https://techcrunch.com/2026/08/01/old-benchmark/</link>
+      <guid isPermaLink="true">https://techcrunch.com/2026/08/01/old-benchmark/</guid>
+      <pubDate>Sat, 01 Aug 2026 10:00:00 +0000</pubDate>
+      <description>历史评测结论，用于验证时间窗口过滤。</description>
+    </item>
+  </channel>
+</rss>

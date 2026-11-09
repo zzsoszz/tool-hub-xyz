@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>ArXiv Query: search query=cat:cs.AI</title>
+  <link href="https://export.arxiv.org/api/query" rel="self"/>
+  <updated>2026-11-08T23:59:00Z</updated>
+  <entry>
+    <id>http://arxiv.org/abs/2611.04321v1</id>
+    <title>Self-play Improves Reasoning Without Human Labels</title>
+    <link href="https://arxiv.org/abs/2611.04321v1" type="text/html" rel="alternate"/>
+    <link href="https://arxiv.org/pdf/2611.04321v1" type="application/pdf" title="pdf"/>
+    <published>2026-11-08T18:20:00Z</published>
+    <summary>We show that self-play alone yields measurable gains on math and code benchmarks.</summary>
+    <category term="cs.AI"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.04399v1</id>
+    <title>A Survey of Inference Serving Systems for LLMs</title>
+    <link href="https://arxiv.org/abs/2611.04399v1" type="text/html" rel="alternate"/>
+    <published>2026-11-08T15:05:00Z</published>
+    <summary>Survey of schedulers, KV-cache management and quantization used in production serving.</summary>
+    <category term="cs.LG"/>
+  </entry>
+</feed>

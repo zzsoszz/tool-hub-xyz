@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>量子位</title>
+    <link>https://www.qbitai.com/</link>
+    <item>
+      <title>国产开源大模型发布 32B 权重，支持 128K 上下文</title>
+      <link>https://www.qbitai.com/2026/11/08/open-32b.html</link>
+      <guid isPermaLink="false">qbitai-1</guid>
+      <pubDate>Wed, 08 Nov 2026 06:30:00 +0800</pubDate>
+      <description>模型权重采用 Apache 2.0 协议，同步开源评测脚本。</description>
+    </item>
+    <item>
+      <title>研究机构提出新的多模态评测基准</title>
+      <link>https://www.qbitai.com/2026/11/07/mm-bench.html</link>
+      <guid isPermaLink="false">qbitai-2</guid>
+      <pubDate>Tue, 07 Nov 2026 19:10:00 +0800</pubDate>
+      <description>覆盖图文、视频与工具调用三类任务。</description>
+    </item>
+  </channel>
+</rss>

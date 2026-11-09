@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>arXiv cs.AI sample</title>
+  <updated>2026-11-04T00:00:00Z</updated>
+  <entry>
+    <id>http://arxiv.org/abs/2611.00001v1</id>
+    <title>Efficient Attention for Long-Context Reasoning</title>
+    <link href="https://arxiv.org/abs/2611.00001v1" rel="alternate"/>
+    <link href="https://arxiv.org/pdf/2611.00001v1" title="pdf"/>
+    <published>2026-11-04T02:15:00Z</published>
+    <summary>We propose a sparse attention variant that reduces inference cost on 128k-token benchmarks.</summary>
+    <category term="cs.AI"/>
+  </entry>
+  <entry>
+    <id>oai-blog-1</id>
+    <title>WHY THIS SHOULD BE SKIPPED</title>
+    <link rel="alternate" href="/relative/post.html"/>
+    <updated>2026-11-04T03:00:00Z</updated>
+  </entry>
+</feed>

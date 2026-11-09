@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Simon Willison's Weblog</title>
+  <link href="https://simonwillison.net/" rel="alternate"/>
+  <updated>2026-11-08T12:00:00Z</updated>
+  <entry>
+    <id>tag:simonwillison.net,2026-11-08:/llms/</id>
+    <title>Quoting: a new open weights release</title>
+    <link href="https://simonwillison.net/2026/Nov/8/new-open-weights/" rel="alternate"/>
+    <published>2026-11-08T12:00:00Z</published>
+    <content type="html"><![CDATA[<p>Weights are on <a href="https://huggingface.co/example">Hugging Face</a>, MIT licensed. Tool use looks strong.</p>]]></content>
+  </entry>
+  <entry>
+    <id>tag:simonwillison.net,2026-11-07:/sqlite/</id>
+    <title>SQLite 12 and the value of boring software</title>
+    <link href="https://simonwillison.net/2026/Nov/7/sqlite-12/" rel="alternate"/>
+    <published>2026-11-07T09:00:00Z</published>
+    <summary>A note on why boring, dependable tools keep winning.</summary>
+  </entry>
+</feed>

@@ -1,0 +1,8 @@
+{
+  "hits": [
+    { "objectID": "42000001", "title": "Show HN: A Rust runtime for on-device LLM inference", "url": "https://github.com/example/oxide-llm", "created_at": "2026-11-04T01:10:00Z", "points": 214, "num_comments": 63, "_tags": ["story", "show_hn"] },
+    { "objectID": "42000002", "title": "Ask HN: Which LLM is actually good at coding in 2026?", "url": null, "story_text": "Looking for honest benchmarks on agentic coding.", "created_at": "2026-11-04T00:40:00Z", "points": 88, "num_comments": 140, "_tags": ["story", "ask_hn"] },
+    { "objectID": "42000003", "title": "Old thread about GPUs", "url": "https://example.com/gpus", "created_at": "2020-01-01T00:00:00Z", "points": 4, "num_comments": 1, "_tags": ["story"] }
+  ],
+  "nbHits": 3
+}
