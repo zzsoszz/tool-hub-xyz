@@ -1,25 +1,25 @@
 {
   "day": "2026-11-10",
-  "generatedAt": "2026-11-09T17:01:56.560Z",
+  "generatedAt": "2026-11-09T20:55:13.368Z",
   "timezone": "Asia/Shanghai",
   "windowHours": 48,
   "counts": {
     "sources": 36,
-    "okSources": 34,
-    "fetched": 2938,
-    "duplicates": 2898,
-    "carried": 9,
-    "added": 0,
-    "fallback": 1,
-    "lowQuality": 13,
-    "published": 10
+    "okSources": 35,
+    "fetched": 2955,
+    "duplicates": 2888,
+    "carried": 6,
+    "added": 2,
+    "fallback": 2,
+    "lowQuality": 42,
+    "published": 12
   },
   "sources": [
     {
       "id": "openai-news",
       "name": "OpenAI News",
       "ok": true,
-      "items": 1368,
+      "items": 1370,
       "error": null
     },
     {
@@ -109,9 +109,9 @@
     {
       "id": "hn-newest",
       "name": "Hacker News (AI)",
-      "ok": false,
-      "items": 0,
-      "error": "HTTP 502"
+      "ok": true,
+      "items": 20,
+      "error": null
     },
     {
       "id": "hn-algolia",
@@ -186,9 +186,9 @@
     {
       "id": "hn-show-ai",
       "name": "Show HN (AI)",
-      "ok": false,
-      "items": 0,
-      "error": "HTTP 502"
+      "ok": true,
+      "items": 20,
+      "error": null
     },
     {
       "id": "ai-news-applied",
@@ -207,9 +207,9 @@
     {
       "id": "reddit-sideproject",
       "name": "r/SideProject",
-      "ok": true,
-      "items": 25,
-      "error": null
+      "ok": false,
+      "items": 0,
+      "error": "HTTP 429"
     },
     {
       "id": "lcz-hardware",
@@ -313,6 +313,44 @@
           "tags": [
             "free"
           ]
+        },
+        {
+          "sourceId": "techcrunch-ai",
+          "sourceName": "TechCrunch AI",
+          "title": "From the front row to the hot seat — what the midterms mean for Big Tech",
+          "url": "https://techcrunch.com/2026/11/06/from-the-front-row-to-the-hot-seat-what-the-midterms-mean-for-big-tech/",
+          "id": "https://techcrunch.com/?p=3186018",
+          "published": "2026-11-07T04:16:43.000Z",
+          "summary": "After spending two years getting cozy with the White House, Big Tech is suddenly trying to make friends with Democrats, and the open question is whether that image makeover can hold up against what states, local communities, and the markets are about to do.",
+          "content": {
+            "html": "After spending two years getting cozy with the White House, Big Tech is suddenly trying to make friends with Democrats, and the open question is whether that image makeover can hold up against what states, local communities, and the markets are about to do.",
+            "text": "After spending two years getting cozy with the White House, Big Tech is suddenly trying to make friends with Democrats, and the open question is whether that image makeover can hold up against what states, local communities, and the markets are about to do.",
+            "lead": "After spending two years getting cozy with the White House, Big Tech is suddenly trying to make friends with Democrats, and the open question is whether that image makeover can hold up against what states, local communities, and the markets are about to do.",
+            "chars": 257,
+            "shown": 257,
+            "truncated": false
+          },
+          "categories": [
+            "AI",
+            "Government & Policy",
+            "big tech"
+          ],
+          "author": "Dominic-Madori Davis",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "news",
+          "metrics": {},
+          "quality": 8,
+          "fallback": true,
+          "score": 12.21,
+          "category": "apps",
+          "subcategory": "creation",
+          "practical": 1,
+          "slug": "440ff7d1d81c",
+          "action": 2,
+          "rank": 11.2,
+          "tags": []
         }
       ]
     },
@@ -320,6 +358,49 @@
       "id": "tools",
       "label": "工具玩法",
       "items": [
+        {
+          "sourceId": "ars-ai",
+          "sourceName": "Ars Technica AI",
+          "title": "Claude Code is accidentally exposing secrets all over GitHub",
+          "url": "https://arstechnica.com/ai/2026/11/claude-code-settings-files-expose-thousands-of-secrets-on-github/",
+          "id": "https://arstechnica.com/ai/2026/11/claude-code-settings-files-expose-thousands-of-secrets-on-github/",
+          "published": "2026-11-09T17:24:26.000Z",
+          "summary": "Claude Code is leaking sensitive information on public GitHub instances thanks to a partial oversight in the way its settings files are handled. That's the finding of AI security researchers at Apiiro, who discovered thousands of secrets , including database passwords, API tokens, and root logins, amid Claude Code set…",
+          "content": {
+            "html": "<p>Claude Code is leaking sensitive information on public GitHub instances thanks to a partial oversight in the way its settings files are handled. That's the finding of AI security researchers at Apiiro, who<a href=\"https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">discovered thousands of secrets</a>, including database passwords, API tokens, and root logins, amid Claude Code settings files embedded in GitHub repositories.</p>\n<p>The leak stems from the way Claude Code handles user approval for automated shell commands. When a user chooses the \"Yes, and don't ask again\" option to approve running a command, that choice gets stored as part of a rule in the local \".claude/settings.local.json\" file on the user's computer. That rule is sometimes coded as a pattern, but the command itself is often written to that settings file as is, including any sensitive information that may be embedded within it.</p>\n<p>This isn't really a significant security issue if the settings file stays on the user's local machine (assuming that machine doesn't become compromised itself, of course). And Anthropic<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">notes in its Claude Code documentation</a>that this particular settings file gets added to<a href=\"https://docs.github.com/en/get-started/git-basics/ignoring-files\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">the developer's global .gitignore list</a>, which usually prevents it from being shared publicly.</p>\n<p><a href=\"https://arstechnica.com/ai/2026/11/claude-code-settings-files-expose-thousands-of-secrets-on-github/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Read full article</a></p>\n<p><a href=\"https://arstechnica.com/ai/2026/11/claude-code-settings-files-expose-thousands-of-secrets-on-github/#comments\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Comments</a></p>",
+            "text": "Claude Code is leaking sensitive information on public GitHub instances thanks to a partial oversight in the way its settings files are handled. That's the finding of AI security researchers at Apiiro, who discovered thousands of secrets , including database passwords, API tokens, and root logins, amid Claude Code settings files embedded in GitHub repositories.\nThe leak stems from the way Claude Code handles user approval for automated shell commands. When a user chooses the \"Yes, and don't ask again\" option to approve running a command, that choice gets stored as part of a rule in the local \".claude/settings.local.json\" file on the user's computer. That rule is sometimes coded as a pattern, but the command itself is often written to that settings file as is, including any sensitive information that may be embedded within it.\nThis isn't really a significant security issue if the settings file stays on the user's local machine (assuming that machine doesn't become compromised itself, of course). And Anthropic notes in its Claude Code documentation that this particular settings file gets added to the developer's global .gitignore list , which usually prevents it from being shared publicly.\nRead full article\nComments",
+            "lead": "Claude Code is leaking sensitive information on public GitHub instances thanks to a partial oversight in the way its settings files are handled. That's the finding of AI security researchers at Apiiro, who discovered thousands of secrets , including database passwords, API tokens, and root logins, amid Claude Code settings files embedded in GitHub repositories.\nThe leak stems from the way Claude Code handles user approval for automated shell commands. When",
+            "chars": 1239,
+            "shown": 1239,
+            "truncated": false
+          },
+          "categories": [
+            "AI",
+            "Security",
+            "AI agents",
+            "Anthropic",
+            "Claude Code",
+            "GitHub",
+            "setting"
+          ],
+          "author": "Kyle Orland",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "apps",
+          "metrics": {},
+          "quality": 8,
+          "score": 18.91,
+          "category": "tools",
+          "subcategory": "coding",
+          "practical": 1,
+          "slug": "4065836ff3f5",
+          "action": 4,
+          "rank": 14.4,
+          "tags": [
+            "agent"
+          ]
+        },
         {
           "sourceId": "latent-space",
           "sourceName": "Latent Space",
