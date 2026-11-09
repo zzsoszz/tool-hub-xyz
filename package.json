@@ -1,0 +1,18 @@
+{
+  "name": "tool-hub-xyz",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "AI 前沿资讯日报：每日定时采集 → 去重排序 → 静态站点 → Cloudflare Pages",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "collect": "node src/collect.mjs",
+    "build": "node src/build.mjs",
+    "digest": "npm run collect && npm run build",
+    "dev": "npm run digest && node scripts/serve.mjs",
+    "test": "node --test",
+    "lint": "node scripts/lint.mjs"
+  }
+}
