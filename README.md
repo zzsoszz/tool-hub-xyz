@@ -38,10 +38,10 @@ GitHub Actions（每日 06:30 / 18:30 CST）──► Cloudflare Worker `tool-hu
 - `src/schema.sql` D1 表结构（`comments`、`votes`）
 - `data/` 采集产物（`digests/`、`seen.json`、`state.json`），随提交保留历史
 - `dist/` 构建产物，已 gitignore，由 CI 用 `wrangler deploy` 上传
-- `public/` 静态资产与路由/缓存配置（`styles.css`、`forum.js`、`favicon.svg`、`_headers`、`_redirects`）
+- `public/` 静态资产与路由/缓存配置（`styles.css`、`forum.js`、`funnel.js`、`favicon.svg`、`_headers`、`_redirects`）
 - `wrangler.jsonc` Cloudflare 部署目标（Assets + Worker `tool-hub` + D1 + `tool-hub.xyz` 自定义域名）
 - `tests/` 单元与端到端测试，`tests/fixtures/` 为离线样例
-- `docs/DEPLOY.md` 部署手册
+- `docs/DEPLOY.md` 部署手册；`docs/DESIGN.md` 视觉规范（配色/字体/版式 token 与写作约定）
 
 ## 常用命令
 
@@ -70,8 +70,9 @@ NODE_USE_ENV_PROXY=1 HTTPS_PROXY=http://192.168.31.4:7890 npm run collect
 - **质量门槛**：`minMetrics` 过滤低热度仓库（GitHub 新仓库要求 `stars > 100`）；`noiseKeywords` 排除与 AI 无关的蹭词内容。
 - **质量闸门（核心）**：`filter.quality()` 按「正文是否充实、有没有论证/干货、有没有具体数据、讨论热度、来源可信度」打分，低于 `minQuality` 直接淘汰——只采高质量、有理有据的条目，纯资讯必须更深才放行。`config/filters.json.quality` 里还有按源定制的 `sourceFloors`（HN 要求 points ≥ 30/40、reddit ≥ 150、GitHub ≥ 300 stars、arXiv 摘要 ≥ 200 字等）。
 - **排名**：`rank = quality + action × 1.6`，首页、栏目页、标签页与 RSS 全部按 `rank` 排序，**可实操、可复现的条目排最前**；页面显示「深度 N」「实用 N」徽章，版主精选条目额外 +3，带配图/实测截图的条目再加 `quality.illustrationBonus`（默认 +1）。
-- **首页条目数**：首页只留当日排名最高的 `config/sections.json.homeLimit`（默认 10）条，并给出「查看全部 N 条 → /day/<日期>」入口；栏目页、标签页、RSS 与 `/data/latest.json` 不受这个限制。
-- **关键词标签**：`filter.tagsFor()` 给每条打最多 4 个标签（本地部署 / 低配硬件 / 实测跑分 / 教程步骤 / Agent 工具 / 生成内容 / 免费开源 / 接单变现 / 隐私数据 / 硬件折腾），条目页与列表显示标签 chip，`/tags` 是标签索引，`/t/<标签>.html` 是聚合页。
+- **首页条目数**：首页开场是当天的漏斗读数（抓取 → 入选，`data-count-to` 由 `funnel.js` 一次性数到位），只留当日排名最高的 `config/sections.json.homeLimit`（默认 10）条，并给出「查看全部 N 条」（`/day/<日期>`）入口；栏目页、标签页、RSS 与 `/data/latest.json` 不受这个限制。
+- **深度 / 实用量条**：条目列表与条目页用 `.meter` 刻度显示 `quality` 与 `practical`，刻度里的竖线是 `filters.json` 的质量闸门线（深度 6、实用 3），条超过竖线才算过关。
+- **关键词标签**：`filter.tagsFor()` 给每条打最多 4 个标签，条目页与列表的标签 chip 显示中文标签名（本地部署 / 低配硬件 / 实测跑分 / 教程步骤 / Agent 工具 / 生成内容 / 免费开源 / 接单变现 / 隐私数据 / 硬件折腾），链接仍走 `/t/<标签>.html`；`/tags` 是标签索引。
 - **条目页正文**：`src/lib/content.mjs` 把来源正文收敛成安全子集（保留段落、列表、表格、代码块、引用，丢弃脚本/事件属性/`javascript:` 链接，相对链接与图片改写成绝对地址），条目页按「中文导读 → 原文正文」排版；超过 3200 字时按句子边界截断并标注「原文约 N 字，这里保留前 M 字」。截断落在段落中间时会就地补齐当时打开的标签，不会留下 `<li><p></p></li>` 这类空壳；`balanceHtml()` 丢弃来源里配不上开标签的闭合标签、`repairArticle()` 顺手清掉历史数据里的空壳，保证正文是结构完整的 HTML。条目页表格统一包在 `.table-scroll` 内以支持横向滚动。质量闸门用正文长度（而非只有摘要）判断「正文太短」。`/data/latest.json` 只保留 `bodyChars`，正文内嵌在条目页 HTML 里。
 - **论坛类源**：`lcz.me`（抡锤者）8 个栏目走 `nodebb` 适配器（`kind: "json"`）。列表接口只给最后一条回复的 teaser，因此 `enrichForumTopics()` 会为热度靠前的帖子补取主贴正文、投票数与版主精选标记（`lczExcellent`），否则实测长文会被质量闸门误杀。
 - **栏目**：`AI 应用`、`工具玩法`、`本地低配`（含开源项目）、`变现副业`、`新模型`、`行业观点`；先按分数排序，再按分类轮转取样，保证每栏都有条目。

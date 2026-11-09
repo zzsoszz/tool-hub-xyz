@@ -192,6 +192,12 @@
     const form = wrap.querySelector('[data-search-form]');
     const results = wrap.querySelector('[data-search-results]');
     let index = null;
+    let tagLabels = {};
+    try {
+      tagLabels = JSON.parse(wrap.dataset.tagLabels ?? '{}');
+    } catch {
+      tagLabels = {};
+    }
 
     const ensureIndex = async () => {
       if (index) return index;
@@ -234,7 +240,7 @@
         meta.append(el('span', 'source', item.source ?? ''));
         meta.append(el('span', 'chip day', item.day ?? ''));
         for (const tag of (item.tags ?? []).slice(0, 3)) {
-          const chip = el('a', 'chip tag', tag);
+          const chip = el('a', 'chip tag', tagLabels[tag] ?? tag);
           chip.href = `/t/${tag}`;
           meta.append(chip);
         }

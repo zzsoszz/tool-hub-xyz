@@ -62,17 +62,17 @@ function page({ title, description, canonical, siteUrl, repoUrl = 'https://githu
 <link rel="alternate" type="application/rss+xml" title="AI 资讯日报" href="${escapeHtml(siteUrl)}/feed.xml">
 </head>
 <body>
-<header class="topbar">
-  <a class="brand" href="/">tool-hub<span>.xyz</span></a>
-${menu}
-  <a class="brand-note" href="/about">关于</a>
+<header class="masthead">
+  <a class="wordmark" href="/"><span>AI 折腾日报</span><span class="domain">tool-hub.xyz</span></a>
+  <p class="masthead-note">每天 06:30 与 18:30 更新<a href="/about">关于本站</a><a href="/search">搜索历史条目</a></p>
 </header>
+${menu}
 <main>
 ${body}
 </main>
 <footer class="site-footer">
-  <p>面向普通用户与自由职业者的 AI 折腾日报：自动采集、去重、翻译成中文，欢迎在条目下讨论。</p>
-  <p><a href="/discuss">讨论区</a> · <a href="/feed.xml">RSS</a> · <a href="/llms.txt">llms.txt</a> · <a href="${escapeHtml(repoUrl)}">GitHub</a></p>
+  <p>面向普通用户、自由职业者与低配玩家的 AI 折腾日报：每天自动采集、去重、按内容质量排序，标题译成中文，原文链接保留。</p>
+  <p><a href="/discuss">去讨论区</a><a href="/feed.xml">订阅 RSS</a><a href="/llms.txt">给 LLM 的纯文本</a><a href="${escapeHtml(repoUrl)}">看源码</a></p>
 </footer>
 ${tags}
 </body>
@@ -80,20 +80,30 @@ ${tags}
 `;
 }
 
-function practicalChip(item) {
-  const value = Number(item.practical ?? 0);
-  if (value < 3) return '';
-  return `<span class="chip practical" title="实用度">实用 ${Math.min(value, 9)}</span>`;
+const DEPTH_MAX = 14;
+const DEPTH_GATE = 6;
+const PRACTICAL_MAX = 6;
+const PRACTICAL_GATE = 3;
+
+function tagChips(item, { limit = 3, labels = {} } = {}) {
+  return (item.tags ?? [])
+    .slice(0, limit)
+    .map((tag) => `<a class="chip tag" href="/t/${escapeHtml(tag)}">${escapeHtml(labels[tag] ?? tag)}</a>`)
+    .join('');
 }
 
-function qualityChip(item) {
-  const value = Number(item.quality ?? 0);
-  if (value < 7) return '';
-  return `<span class="chip quality" title="内容质量">深度 ${Math.min(value, 12)}</span>`;
-}
-
-function tagChips(item, { limit = 3 } = {}) {
-  return (item.tags ?? []).slice(0, limit).map((tag) => `<a class="chip tag" href="/t/${escapeHtml(tag)}">${escapeHtml(tag)}</a>`).join('');
+// 量条把深度 / 实用画成刻度，竖线就是质量闸门线：越过竖线才算过关。
+function metersFor(item) {
+  const depth = Math.min(Number(item.quality ?? 0), DEPTH_MAX);
+  const practical = Math.min(Number(item.practical ?? 0), PRACTICAL_MAX);
+  const parts = [];
+  if (depth >= DEPTH_GATE) {
+    parts.push(`<span class="meter depth" title="内容质量 ${depth} / ${DEPTH_MAX}，闸门 ${DEPTH_GATE}"><b>${depth}</b><span class="track" style="--fill:${depth};--max:${DEPTH_MAX};--gate-at:${DEPTH_GATE}"><i></i></span></span>`);
+  }
+  if (practical >= PRACTICAL_GATE) {
+    parts.push(`<span class="meter practical" title="实用度 ${practical} / ${PRACTICAL_MAX}"><b>${practical}</b><span class="track" style="--fill:${practical};--max:${PRACTICAL_MAX};--gate-at:${PRACTICAL_GATE}"><i></i></span></span>`);
+  }
+  return parts.length ? `<span class="meters">${parts.join('')}</span>` : '';
 }
 
 // 宽表格在小屏上横向滚动，避免把正文挤成一列。
@@ -108,60 +118,99 @@ export function storyRow(item, { rank, showDay = false }) {
   const original = item.zhTitle && item.zhTitle !== item.title ? item.title : '';
   const summary = displaySummary(item);
   const published = item.published ? new Date(item.published) : null;
-  const hot = Number(item.score) >= 18 ? '<span class="chip hot">HOT</span>' : '';
   const metrics = metricsLabel(item);
   const rankCell = rank ? `<span class="rank">${rank}</span>` : '';
   const dayChip = showDay ? `<span class="chip day">${escapeHtml(item.day ?? '')}</span>` : '';
   const image = itemImage(item);
   const thumb = image ? `<a class="story-thumb-link" href="/item/${escapeHtml(item.slug)}" tabindex="-1" aria-hidden="true"><img class="story-thumb" src="${escapeHtml(image)}" alt="" loading="lazy"></a>` : '';
-  return `    <li class="story" data-slug="${escapeHtml(item.slug)}">
+  return `    <li class="story${item.lead ? ' is-lead' : ''}" data-slug="${escapeHtml(item.slug)}">
 ${rankCell}${thumb}      <div class="story-body">
-        <h2 class="story-title"><a href="/item/${escapeHtml(item.slug)}">${escapeHtml(title)}</a>${hot}${qualityChip(item)}${practicalChip(item)}</h2>
-        ${tagChips(item, { limit: 3 }) ? `<p class="story-tags">${tagChips(item, { limit: 3 })}</p>` : ''}
+        <h2 class="story-title"><a href="/item/${escapeHtml(item.slug)}">${escapeHtml(title)}</a></h2>
+        ${tagChips(item, { limit: 3, labels: item.tagLabels }) ? `<p class="story-tags">${tagChips(item, { limit: 3, labels: item.tagLabels })}</p>` : ''}
         ${original ? `<p class="story-original">${escapeHtml(original)}</p>` : ''}
         ${summary ? `<p class="story-summary">${escapeHtml(summary)}</p>` : ''}
         <p class="subtext">
-          <button class="vote" type="button" data-vote="${escapeHtml(item.slug)}" title="顶一下">▲</button>
+          <button class="vote" type="button" data-vote="${escapeHtml(item.slug)}" title="顶一下">顶</button>
           <span class="score" data-score>0</span>
           <span class="source">${escapeHtml(item.sourceName)}</span>${dayChip}
           ${published ? `<time datetime="${escapeHtml(item.published)}">${escapeHtml(timeAgo(published, new Date()))}</time>` : '<time>时间未知</time>'}
           <a class="discuss-link" href="/item/${escapeHtml(item.slug)}#comments"><span data-count>评论</span></a>
           <a class="original-link" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">原文</a>
           ${metrics ? `<span class="metrics">${escapeHtml(metrics)}</span>` : ''}
+          ${metersFor(item)}
         </p>
       </div>
     </li>`;
 }
 
-export function storyList(items, { showDay = false } = {}) {
+export function storyList(items, { showDay = false, lead = false, tagLabels = {} } = {}) {
+  const rows = items.map((item, index) => storyRow(
+    { ...item, lead: lead && index === 0, tagLabels },
+    { rank: index + 1, showDay },
+  ));
   return `  <ol class="stories">
-${items.map((item, index) => storyRow(item, { rank: index + 1, showDay })).join('\n')}
+${rows.join('\n')}
   </ol>`;
 }
 
-function digestBody(digest, { sections, days, siteUrl, sectionId, limit = 0 }) {
+function groupDigits(value) {
+  return String(Number(value) || 0).replace(/\B(?=(\d{3})+$)/g, ',');
+}
+
+// 日报每天跑两班，早班 / 晚班按生成时的本地钟点判断。
+function localClock(generatedAt, timezone = 'Asia/Shanghai') {
+  const parts = new Intl.DateTimeFormat('zh-CN', {
+    timeZone: timezone,
+    hour: '2-digit',
+    minute: '2-digit',
+    hourCycle: 'h23',
+  }).formatToParts(new Date(generatedAt));
+  const hour = Number(parts.find((part) => part.type === 'hour')?.value);
+  const minute = parts.find((part) => part.type === 'minute')?.value ?? '00';
+  if (!Number.isFinite(hour)) return { shift: '本期', clock: '' };
+  return { shift: hour < 12 ? '早班' : '晚班', clock: `${String(hour).padStart(2, '0')}:${minute}` };
+}
+
+function gateHero(digest) {
   const counts = digest.counts ?? {};
-  const items = (digest.categories ?? []).flatMap((group) => group.items.map((item) => ({ ...item, day: digest.day })));
+  const failed = (digest.sources ?? []).filter((source) => !source.ok);
+  const clock = localClock(digest.generatedAt, digest.timezone);
+  const dropped = [];
+  if (Number(counts.duplicates ?? 0)) dropped.push(`${groupDigits(counts.duplicates)} 条重复`);
+  if (Number(counts.lowQuality ?? 0)) dropped.push(`${groupDigits(counts.lowQuality)} 条没过质量闸门`);
+  const note = [
+    `${counts.okSources ?? 0} 个信息源共抓到 ${groupDigits(counts.fetched)} 条，去掉${dropped.length ? ` ${dropped.join('、')}` : '掉重复的'}，留下 ${groupDigits(counts.published)} 条。`,
+    `本期为${clock.shift}，${clock.clock} 生成。`,
+    failed.length ? `<span class="failed">${failed.length} 个源本次抓取失败</span>，缺的内容沿用上一版。` : '',
+  ].filter(Boolean).join(' ');
+  return `  <section class="gate">
+    <h1 class="gate-date"><time datetime="${escapeHtml(digest.day)}">${escapeHtml(zhLabel(digest))}</time><span class="shift">${escapeHtml(clock.shift)}</span></h1>
+    <p class="gate-flow">
+      <span class="gate-step"><b data-count-to="${escapeHtml(String(counts.fetched ?? 0))}">${groupDigits(counts.fetched)}</b><span>抓下来</span></span>
+      <span class="gate-arrow" aria-hidden="true">&rarr;</span>
+      <span class="gate-step is-out"><b data-count-to="${escapeHtml(String(counts.published ?? 0))}">${groupDigits(counts.published)}</b><span>今天入选</span></span>
+    </p>
+    <p class="gate-note">${note}</p>
+    <p class="gate-why">排序看内容质量，不看热度：<strong>有实测数据、有对比或原理解释、能照着做</strong>的排前面。标题已译成中文，事实请回<strong>原文</strong>核对。</p>
+  </section>`;
+}
+
+function digestBody(digest, { days, limit = 0, tagLabels = {} }) {
+  const items = (digest.categories ?? []).flatMap((group) => group.items.map((entry) => ({ ...entry, day: digest.day })));
   items.sort(rankCompare);
   const shown = limit > 0 ? items.slice(0, limit) : items;
-  const failed = (digest.sources ?? []).filter((source) => !source.ok);
   const more = shown.length < items.length
-    ? `  <p class="lede-more">首页只留质量最高的 ${shown.length} 条，<a href="/day/${escapeHtml(digest.day)}">查看全部 ${items.length} 条 →</a></p>\n`
+    ? `  <p class="lede-more">首页只留质量最高的 ${shown.length} 条，<a href="/day/${escapeHtml(digest.day)}">查看全部 ${items.length} 条</a></p>\n`
     : '';
-  return `  <section class="lede">
-    <h1>${escapeHtml(zhLabel(digest))} · AI 折腾日报</h1>
-    <p class="lede-meta">共 ${counts.published ?? 0} 条 · 来自 ${counts.okSources ?? 0} 个信息源 · 生成于 ${escapeHtml(digest.generatedAt)}${failed.length ? ` · ${failed.length} 个源本次抓取失败` : ''}</p>
-    <p class="lede-hint">排名看质量不看热度：有实测数据、有对比或原理解释、能照着做的实操条目排前面，带配图和表格的优先。标题已译成中文，<strong>原文</strong>链接直达原始来源，欢迎在每条下面留言讨论。</p>
-  </section>
-${storyList(shown, { showDay: false })}
+  return `${gateHero(digest)}
+${storyList(shown, { showDay: false, lead: true, tagLabels })}
 ${more}  <section class="daynav">
-  <section class="daynav">
     <h2>按日期</h2>
     <nav class="day-chips">${days.map((day) => `<a href="/day/${escapeHtml(day)}" class="${day === digest.day ? 'active' : ''}">${escapeHtml(day)}</a>`).join('')}</nav>
   </section>`;
 }
 
-export function renderDigestPage(digest, { sections = [], days = [], siteUrl = '', repoUrl, sectionId = 'latest', limit = 0 } = {}) {
+export function renderDigestPage(digest, { sections = [], days = [], siteUrl = '', repoUrl, sectionId = 'latest', limit = 0, tagLabels = {} } = {}) {
   return page({
     title: `${zhLabel(digest)} AI 日报 · tool-hub.xyz`,
     description: `${zhLabel(digest)} AI 前沿资讯，共 ${digest.counts?.published ?? 0} 条，已翻译成中文并附原文链接。`,
@@ -169,17 +218,17 @@ export function renderDigestPage(digest, { sections = [], days = [], siteUrl = '
     siteUrl,
     repoUrl,
     menu: menuFor(sections, sectionId),
-    body: digestBody(digest, { sections, days, siteUrl, sectionId, limit }),
-    scripts: ['/forum.js'],
+    body: digestBody(digest, { days, limit, tagLabels }),
+    scripts: ['/forum.js', '/funnel.js'],
   });
 }
 
-export function renderSectionPage({ section, items, days, siteUrl, repoUrl, sections, lookbackDays }) {
+export function renderSectionPage({ section, items, days, siteUrl, repoUrl, sections, lookbackDays, tagLabels = {} }) {
   const body = `  <section class="lede">
     <h1>${escapeHtml(section.label)}</h1>
     <p class="lede-meta">最近 ${lookbackDays} 天，共 ${items.length} 条</p>
   </section>
-${items.length ? storyList(items, { showDay: true }) : '  <p class="empty">这一栏最近没有新内容，换个栏目看看。</p>'}
+${items.length ? storyList(items, { showDay: true, lead: true, tagLabels }) : '  <p class="empty">这一栏最近没有新内容，换个栏目看看。</p>'}
   <section class="daynav">
     <h2>按日期</h2>
     <nav class="day-chips">${days.map((day) => `<a href="/day/${escapeHtml(day)}">${escapeHtml(day)}</a>`).join('')}</nav>
@@ -196,7 +245,7 @@ ${items.length ? storyList(items, { showDay: true }) : '  <p class="empty">这�
   });
 }
 
-export function renderItemPage({ item, siteUrl, repoUrl, sections, related = [] }) {
+export function renderItemPage({ item, siteUrl, repoUrl, sections, related = [], tagLabels = {} }) {
   const title = displayTitle(item);
   const original = item.zhTitle && item.zhTitle !== item.title ? item.title : '';
   const summary = displaySummary(item);
@@ -212,7 +261,7 @@ export function renderItemPage({ item, siteUrl, repoUrl, sections, related = [] 
     ? `      <section class="item-body">
         <h2>${item.lang === 'zh' ? '原文正文' : '原文正文（未翻译）'}</h2>
         <div class="article">${decorateTables(repairArticle(item.content.html))}</div>
-        <p class="article-note">${note}<a href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+        <p class="article-note">${note}<a href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">读原文</a></p>
       </section>`
     : `${summary ? `      <div class="item-summary"><p>${escapeHtml(summary)}</p></div>` : ''}`;
   const lead = item.zhSummary && item.content
@@ -226,18 +275,19 @@ export function renderItemPage({ item, siteUrl, repoUrl, sections, related = [] 
     <h1>${escapeHtml(title)}</h1>
     ${original ? `<p class="item-original">${escapeHtml(original)}</p>` : ''}
     <p class="subtext">
-      <button class="vote" type="button" data-vote="${escapeHtml(item.slug)}" title="顶一下">▲</button>
+      <button class="vote" type="button" data-vote="${escapeHtml(item.slug)}" title="顶一下">顶</button>
       <span class="score" data-score>0</span>
       <span class="source">${escapeHtml(item.sourceName)}</span>
       <span class="chip day">${escapeHtml(item.day ?? '')}</span>
       ${published ? `<time datetime="${escapeHtml(item.published)}">${escapeHtml(timeAgo(published, new Date()))}</time>` : ''}
       ${metrics ? `<span class="metrics">${escapeHtml(metrics)}</span>` : ''}
-      <a class="original-link" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">阅读原文 ↗</a>
+      <a class="original-link" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">阅读原文</a>
+      ${metersFor(item)}
     </p>
     ${domainOf(item.url) ? `<p class="item-domain">原文链接：<code>${escapeHtml(item.url)}</code></p>` : ''}
 ${lead}
 ${article}
-    ${tagChips(item, { limit: 6 }) ? `<p class="item-tags">标签：${tagChips(item, { limit: 6 })}</p>` : ''}
+    ${tagChips(item, { limit: 6, labels: tagLabels }) ? `<p class="item-tags">标签：${tagChips(item, { limit: 6, labels: tagLabels })}</p>` : ''}
     ${original && !item.content && item.summary ? `<details class="item-raw"><summary>原始摘要（${escapeHtml(item.lang === 'zh' ? '中文' : '英文')}）</summary><p>${escapeHtml(item.summary)}</p></details>` : ''}
   </article>
   <section class="comments" id="comments" data-item="${escapeHtml(item.slug)}">
@@ -294,12 +344,12 @@ export function renderDiscussPage({ siteUrl, repoUrl, sections, days }) {
   });
 }
 
-export function renderSearchPage({ siteUrl, repoUrl, sections }) {
+export function renderSearchPage({ siteUrl, repoUrl, sections, tagLabels = {} }) {
   const body = `  <section class="lede">
     <h1>搜索历史条目</h1>
     <p class="lede-hint">在浏览器本地检索已收录的条目（标题、摘要、来源）。</p>
   </section>
-  <section class="search" data-search>
+  <section class="search" data-search data-tag-labels="${escapeHtml(JSON.stringify(tagLabels))}">
     <form data-search-form><input type="search" name="q" placeholder="例如：ollama 免费 本地" required><button type="submit">搜索</button></form>
     <ol class="stories" data-search-results></ol>
   </section>`;
@@ -406,12 +456,13 @@ function tagNav(tags, activeId) {
 }
 
 export function renderTagPage({ tag, items, tags = [], lookbackDays = 7, siteUrl, repoUrl, sections }) {
+  const tagLabels = Object.fromEntries(tags.map((entry) => [entry.id, entry.label]));
   const body = `  <section class="lede">
     <h1>标签：${escapeHtml(tag.label)}</h1>
     <p class="lede-meta">最近 ${lookbackDays} 天，共 ${items.length} 条</p>
   </section>
 ${tagNav(tags, tag.id)}
-${items.length ? storyList(items, { showDay: true }) : '  <p class="empty">这个标签最近没有条目。</p>'}`;
+${items.length ? storyList(items, { showDay: true, lead: true, tagLabels }) : '  <p class="empty">这个标签最近没有条目。</p>'}`;
   return page({
     title: `${tag.label} · 标签 · tool-hub.xyz`,
     description: `${tag.label}：可实操、可复现的 AI 条目合集。`,

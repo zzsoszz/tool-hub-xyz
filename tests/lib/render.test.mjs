@@ -76,13 +76,36 @@ test('listsStoriesFlatWithRankChineseTitleAndOriginalLink', () => {
   assert.ok(html.includes('<a href="/item/'));
   assert.ok(html.includes('<p class="story-original">English paper title</p>'));
   assert.ok(html.includes('<a class="original-link" href="https://example.com/b" target="_blank" rel="noopener noreferrer">原文</a>'));
-  assert.ok(html.includes('<span class="chip practical" title="实用度">实用 4</span>'));
-  assert.ok(html.includes('共 2 条'));
+  assert.ok(html.includes('留下 2 条'));
 });
 
-test('marksHighScoringStoriesHot', () => {
+test('opensTheHomepageWithTheFunnelNumbers', () => {
   const html = renderDigestPage(digest(), options);
-  assert.ok(html.includes('<span class="chip hot">HOT</span>'));
+  assert.ok(html.includes('<section class="gate">'));
+  assert.ok(html.includes('data-count-to="12"'));
+  assert.ok(html.includes('data-count-to="2"'));
+  assert.ok(html.includes('本期为早班'));
+  assert.ok(html.includes('<script src="/funnel.js" defer></script>'));
+});
+
+test('drawsQualityMetersAgainstTheGateInsteadOfHotBadges', () => {
+  const deep = item({ quality: 9, practical: 4 });
+  const shallow = item({ id: 'https://example.com/c', url: 'https://example.com/c', quality: 5, practical: 1 });
+  const html = renderDigestPage(digest({ categories: [{ id: 'apps', label: 'AI 应用', items: [deep, shallow] }] }), options);
+  assert.ok(html.includes('<span class="meter depth" title="内容质量 9 / 14，闸门 6">'));
+  assert.ok(html.includes('--gate-at:6'));
+  assert.ok(html.includes('<span class="meter practical" title="实用度 4 / 6">'));
+  assert.ok(!html.includes('内容质量 5 / 14'));
+  assert.ok(!html.includes('chip hot'));
+});
+
+test('labelsStoryTagsWithChineseNames', () => {
+  const entry = item({ tags: ['lowspec', 'benchmark'] });
+  const html = renderDigestPage(digest({ categories: [{ id: 'apps', label: 'AI 应用', items: [entry] }] }), {
+    ...options,
+    tagLabels: { lowspec: '低配硬件', benchmark: '实测跑分' },
+  });
+  assert.ok(html.includes('<a class="chip tag" href="/t/lowspec">低配硬件</a>'));
 });
 
 test('reportsFailedSourcesWithoutBreakingThePage', () => {
@@ -140,7 +163,7 @@ test('homepageKeepsOnlyTheTopStoriesAndLinksToTheFullDay', () => {
   assert.ok(html.includes('<span class="rank">1</span>'));
   assert.ok(!html.includes('<span class="rank">2</span>'));
   assert.ok(html.includes('<p class="lede-more">'));
-  assert.ok(html.includes('<a href="/day/2026-11-09">查看全部 2 条 →</a>'));
+  assert.ok(html.includes('<a href="/day/2026-11-09">查看全部 2 条</a>'));
   assert.equal(renderDigestPage(digest(), options).includes('lede-more'), false);
 });
 

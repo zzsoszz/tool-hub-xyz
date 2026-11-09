@@ -89,6 +89,7 @@ async function main() {
   const itemPageDays = Number(process.env.ITEM_PAGE_DAYS ?? 30);
   const homeLimit = Number(process.env.HOME_LIMIT ?? sectionsConfig.homeLimit ?? 10);
   const tagConfig = (await loadJson(path.join(ROOT, 'config/filters.json'), {}))?.tags ?? [];
+  const tagLabels = Object.fromEntries(tagConfig.map((tag) => [tag.id, tag.label]));
   const digests = await loadDigests(path.join(dataDir, 'digests'));
   if (!digests.length) {
     console.error('build: data/digests 为空，先运行 npm run collect');
@@ -103,7 +104,7 @@ async function main() {
   const recentCutoff = new Date(Date.now() - lookbackDays * 86_400_000);
   const recentItems = allItems.filter((item) => new Date(item.published ?? `${item.day}T00:00:00Z`) >= recentCutoff);
   const navSections = sections.filter((section) => section.id !== 'discuss' && section.id !== 'archive');
-  const common = { sections, siteUrl: base, repoUrl: repo, days };
+  const common = { sections, siteUrl: base, repoUrl: repo, days, tagLabels };
 
   await write(path.join(distDir, 'index.html'), renderDigestPage(latest, { ...common, sectionId: 'latest', limit: homeLimit }));
   for (const digest of digests) {
