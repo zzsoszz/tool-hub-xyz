@@ -1,4 +1,5 @@
 import { createHash } from 'node:crypto';
+import { monthKey, sortEntries } from './listview.mjs';
 
 export function itemSlug(item) {
   const seed = String(item?.id ?? item?.url ?? item?.title ?? '');
@@ -55,6 +56,11 @@ export function itemsIndex(items) {
       tags: item.tags ?? [],
       published: item.published ?? null,
       score: item.score ?? 0,
+      quality: item.quality ?? 0,
+      rank: item.rank ?? 0,
+      practical: item.practical ?? 0,
+      subcategory: item.subcategory ?? null,
+      month: monthKey(item),
     };
   }
   return index;
@@ -66,8 +72,49 @@ export function itemsForSection(items, section, { lookbackDays = 7, now = new Da
     const stamp = item.published ?? `${item.day}T00:00:00Z`;
     return new Date(stamp) >= cutoff;
   });
-  const filtered = section?.categories ? pool.filter((item) => section.categories.includes(item.category)) : pool;
+  const categories = section?.categories ?? [];
+  const facets = section?.tags ?? [];
+  const filtered = categories.length || facets.length
+    ? pool.filter((item) => categories.includes(item.category) || facets.some((tag) => (item.tags ?? []).includes(tag)))
+    : pool;
   return filtered.slice(0, limit);
+}
+
+// 子类只看已归入该栏目的条目，避免同一篇文章在两个栏目里各算一次子类。
+export function itemsForSubsection(items, section, sub, options = {}) {
+  const scoped = itemsForSection(items, section, { ...options, limit: options.limit ?? 200 });
+  return scoped.filter((item) => item.subcategory === sub.id);
+}
+
+export function subsectionsFor(section, subcategories = []) {
+  return (subcategories ?? []).filter((sub) => sub.parent === section.id);
+}
+
+export function archivePeriods(items) {
+  const buckets = new Map();
+  for (const item of items) {
+    // 与列表页的年月筛选同源：优先原文发布时间，缺发布时间才退回日报日期。
+    const key = monthKey(item) || String(item.day ?? '').slice(0, 7);
+    if (!/^\d{4}-\d{2}$/.test(key)) continue;
+    if (!buckets.has(key)) buckets.set(key, []);
+    buckets.get(key).push(item);
+  }
+  return [...buckets.entries()]
+    .sort((a, b) => (a[0] < b[0] ? 1 : -1))
+    .map(([key, list]) => ({ key, year: key.slice(0, 4), month: key.slice(5, 7), items: sortEntries(list, 'quality') }));
+}
+
+export function archiveYears(periods) {
+  const years = new Map();
+  for (const period of periods) {
+    if (!years.has(period.year)) years.set(period.year, []);
+    years.get(period.year).push(period);
+  }
+  return [...years.entries()].map(([year, list]) => ({
+    year,
+    count: list.reduce((sum, period) => sum + period.items.length, 0),
+    periods: list,
+  }));
 }
 
 export function domainOf(url) {

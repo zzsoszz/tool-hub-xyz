@@ -11,6 +11,7 @@ const TYPES = {
   '.html': 'text/html; charset=utf-8',
   '.css': 'text/css; charset=utf-8',
   '.js': 'text/javascript; charset=utf-8',
+  '.mjs': 'text/javascript; charset=utf-8',
   '.json': 'application/json; charset=utf-8',
   '.xml': 'application/xml; charset=utf-8',
   '.svg': 'image/svg+xml',
@@ -20,11 +21,15 @@ const TYPES = {
 async function resolveFile(urlPath) {
   const decoded = decodeURIComponent(urlPath.split('?')[0]);
   const safe = normalize(decoded).replace(/^(\.\.[/\\])+/, '');
-  let target = join(DIST, safe);
-  const info = await stat(target).catch(() => null);
-  if (info?.isDirectory()) target = join(target, 'index.html');
-  if (!extname(target)) target = `${target}.html`;
-  return target.startsWith(DIST) ? target : null;
+  const base = join(DIST, safe);
+  if (!base.startsWith(DIST)) return null;
+  // 栏目页同时有 s/apps.html 和子类目录 s/apps/，优先命中文件，和线上资源的干净 URL 行为一致。
+  const candidates = extname(base) ? [base] : [`${base}.html`, base, join(base, 'index.html')];
+  for (const candidate of candidates) {
+    const info = await stat(candidate).catch(() => null);
+    if (info?.isFile()) return candidate;
+  }
+  return null;
 }
 
 const server = createServer(async (request, response) => {

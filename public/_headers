@@ -8,6 +8,12 @@
   Cache-Control: public, max-age=600
 /data/*
   Cache-Control: public, max-age=300
+/markdown/*
+  Content-Type: text/markdown; charset=utf-8
+  Cache-Control: public, max-age=300
+/listview.mjs
+  Content-Type: text/javascript; charset=utf-8
+  Cache-Control: public, max-age=86400
 /day/*
   Cache-Control: public, max-age=300
 /*

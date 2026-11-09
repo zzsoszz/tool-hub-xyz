@@ -1,5 +1,6 @@
 import { timeAgo } from './normalize.mjs';
 import { domainOf, itemImage, itemSlug, rankCompare } from './items.mjs';
+import { monthKey, sortMode, sortModes } from './listview.mjs';
 import { repairArticle } from './content.mjs';
 
 export function escapeHtml(value) {
@@ -48,7 +49,10 @@ export function menuFor(sections, activeId) {
 }
 
 function page({ title, description, canonical, siteUrl, repoUrl = 'https://github.com/zzsoszz/tool-hub-xyz', menu = '', body, scripts = [] }) {
-  const tags = scripts.map((src) => `<script src="${escapeHtml(src)}" defer></script>`).join('\n');
+  const tags = [...scripts, { src: '/admin.js', type: 'module' }].map((entry) => {
+    const { src, type } = typeof entry === 'string' ? { src: entry } : entry;
+    return `<script${type ? ` type="${escapeHtml(type)}"` : ''} src="${escapeHtml(src)}" defer></script>`;
+  }).join('\n');
   return `<!doctype html>
 <html lang="zh-CN">
 <head>
@@ -68,6 +72,7 @@ function page({ title, description, canonical, siteUrl, repoUrl = 'https://githu
 </header>
 ${menu}
 <main>
+  <div class="admin-bar" data-admin-bar></div>
 ${body}
 </main>
 <footer class="site-footer">
@@ -106,11 +111,55 @@ function metersFor(item) {
   return parts.length ? `<span class="meters">${parts.join('')}</span>` : '';
 }
 
+// 子类是栏目内部的细分入口，点击进到 /s/<栏目>/<子类>。
+function subChip(item) {
+  if (!item.subcategory || !item.subcategoryLabel) return '';
+  return `<a class="chip sub" href="/s/${escapeHtml(item.category)}/${escapeHtml(item.subcategory)}">${escapeHtml(item.subcategoryLabel)}</a>`;
+}
+
+function storyTagsFor(item) {
+  const chips = `${subChip(item)}${tagChips(item, { limit: 3, labels: item.tagLabels })}`;
+  return chips ? `<p class="story-tags">${chips}</p>` : '';
+}
+
 // 宽表格在小屏上横向滚动，避免把正文挤成一列。
 function decorateTables(html) {
   return String(html ?? '')
     .replace(/<table>/g, '<div class="table-scroll"><table>')
     .replace(/<\/table>/g, '</table></div>');
+}
+
+// 年月筛选与排序在浏览器里完成：控件状态写进 URL，链接可直接分享，静态站不必为每种组合各生成一页。
+export function listControls({ months = [], month = '', year = '', sort = 'quality' } = {}) {
+  const years = [...new Set(months.map((entry) => entry.year))];
+  const monthField = months.length
+    ? `      <label class="filter-field"><span>月份</span>
+        <select name="month" data-filter-month>
+          <option value="">全部月份</option>
+${years.map((yearValue) => `          <optgroup label="${escapeHtml(yearValue)} 年">
+${months.filter((entry) => entry.year === yearValue).map((entry) => `            <option value="${escapeHtml(entry.key)}"${entry.key === month ? ' selected' : ''}>${escapeHtml(`${Number(entry.month)} 月`)}（${entry.count}）</option>`).join('\n')}
+          </optgroup>`).join('\n')}
+        </select>
+      </label>`
+    : '';
+  const yearField = years.length > 1
+    ? `      <label class="filter-field"><span>年份</span>
+        <select name="year" data-filter-year>
+          <option value="">全部年份</option>
+${years.map((yearValue) => `          <option value="${escapeHtml(yearValue)}"${yearValue === year ? ' selected' : ''}>${escapeHtml(yearValue)} 年</option>`).join('\n')}
+        </select>
+      </label>`
+    : '';
+  const mode = sortMode(sort);
+  const sortField = `      <label class="filter-field"><span>排序</span>
+        <select name="sort" data-sort-mode>
+${Object.entries(sortModes).map(([key, meta]) => `          <option value="${key}"${key === mode ? ' selected' : ''}>${escapeHtml(meta.label)}</option>`).join('\n')}
+        </select>
+      </label>`;
+  return `  <form class="filters" method="get">
+${[yearField, monthField, sortField].filter(Boolean).join('\n')}
+    <p class="filter-note"><span data-filter-count>0</span> 条 · <span data-sort-hint>${escapeHtml(sortModes[mode].hint)}</span></p>
+  </form>`;
 }
 
 export function storyRow(item, { rank, showDay = false }) {
@@ -123,10 +172,10 @@ export function storyRow(item, { rank, showDay = false }) {
   const dayChip = showDay ? `<span class="chip day">${escapeHtml(item.day ?? '')}</span>` : '';
   const image = itemImage(item);
   const thumb = image ? `<a class="story-thumb-link" href="/item/${escapeHtml(item.slug)}" tabindex="-1" aria-hidden="true"><img class="story-thumb" src="${escapeHtml(image)}" alt="" loading="lazy"></a>` : '';
-  return `    <li class="story${item.lead ? ' is-lead' : ''}" data-slug="${escapeHtml(item.slug)}">
+  return `    <li class="story${item.lead ? ' is-lead' : ''}" data-slug="${escapeHtml(item.slug)}" data-month="${escapeHtml(monthKey(item))}" data-rank="${escapeHtml(String(Number(item.rank ?? 0)))}" data-quality="${escapeHtml(String(Number(item.quality ?? 0)))}" data-score="${escapeHtml(String(Number(item.score ?? 0)))}" data-published="${escapeHtml(item.published ?? item.day ?? '')}">
 ${rankCell}${thumb}      <div class="story-body">
         <h2 class="story-title"><a href="/item/${escapeHtml(item.slug)}">${escapeHtml(title)}</a></h2>
-        ${tagChips(item, { limit: 3, labels: item.tagLabels }) ? `<p class="story-tags">${tagChips(item, { limit: 3, labels: item.tagLabels })}</p>` : ''}
+        ${storyTagsFor(item)}
         ${original ? `<p class="story-original">${escapeHtml(original)}</p>` : ''}
         ${summary ? `<p class="story-summary">${escapeHtml(summary)}</p>` : ''}
         <p class="subtext">
@@ -207,6 +256,7 @@ ${storyList(shown, { showDay: false, lead: true, tagLabels })}
 ${more}  <section class="daynav">
     <h2>按日期</h2>
     <nav class="day-chips">${days.map((day) => `<a href="/day/${escapeHtml(day)}" class="${day === digest.day ? 'active' : ''}">${escapeHtml(day)}</a>`).join('')}</nav>
+    <p class="daynav-note"><a href="/markdown/${escapeHtml(digest.day)}.md">下载当日 Markdown</a>（${escapeHtml(digest.day)}.md，含标题、摘要与正文摘录）</p>
   </section>`;
 }
 
@@ -223,11 +273,14 @@ export function renderDigestPage(digest, { sections = [], days = [], siteUrl = '
   });
 }
 
-export function renderSectionPage({ section, items, days, siteUrl, repoUrl, sections, lookbackDays, tagLabels = {} }) {
+export function renderSectionPage({ section, items, days, siteUrl, repoUrl, sections, lookbackDays, tagLabels = {}, months = [], month = '', year = '', sort = 'quality' }) {
+  const subnav = (section.subsections ?? []).filter((sub) => sub.count > 0);
   const body = `  <section class="lede">
     <h1>${escapeHtml(section.label)}</h1>
     <p class="lede-meta">最近 ${lookbackDays} 天，共 ${items.length} 条</p>
+    ${subnav.length ? `<nav class="subnav">${subnav.map((sub) => `<a href="/s/${escapeHtml(section.id)}/${escapeHtml(sub.id)}">${escapeHtml(sub.label)}<span>${sub.count}</span></a>`).join('')}</nav>` : ''}
   </section>
+${listControls({ months, month, year, sort })}
 ${items.length ? storyList(items, { showDay: true, lead: true, tagLabels }) : '  <p class="empty">这一栏最近没有新内容，换个栏目看看。</p>'}
   <section class="daynav">
     <h2>按日期</h2>
@@ -241,7 +294,29 @@ ${items.length ? storyList(items, { showDay: true, lead: true, tagLabels }) : ' 
     repoUrl,
     menu: menuFor(sections, section.id),
     body,
-    scripts: ['/forum.js'],
+    scripts: ['/forum.js', { src: '/list.js', type: 'module' }],
+  });
+}
+
+export function renderSubsectionPage({ section, sub, items, days, siteUrl, repoUrl, sections, lookbackDays, tagLabels = {}, months = [], month = '', year = '', sort = 'quality' }) {
+  const subnav = (section.subsections ?? []).filter((entry) => entry.count > 0);
+  const heading = `${section.label} · ${sub.label}`;
+  const body = `  <section class="lede">
+    <h1><a href="/s/${escapeHtml(section.id)}">${escapeHtml(section.label)}</a> · ${escapeHtml(sub.label)}</h1>
+    <p class="lede-meta">最近 ${lookbackDays} 天，共 ${items.length} 条</p>
+    ${subnav.length ? `<nav class="subnav">${subnav.map((entry) => `<a${entry.id === sub.id ? ' class="active"' : ''} href="/s/${escapeHtml(section.id)}/${escapeHtml(entry.id)}">${escapeHtml(entry.label)}<span>${entry.count}</span></a>`).join('')}</nav>` : ''}
+  </section>
+${listControls({ months, month, year, sort })}
+${items.length ? storyList(items, { showDay: true, lead: true, tagLabels }) : '  <p class="empty">这个子类最近没有新内容。</p>'}`;
+  return page({
+    title: `${heading} · tool-hub.xyz`,
+    description: `${heading}：${section.label}里的细分内容。`,
+    canonical: `${siteUrl}/s/${section.id}/${sub.id}`,
+    siteUrl,
+    repoUrl,
+    menu: menuFor(sections, section.id),
+    body,
+    scripts: ['/forum.js', { src: '/list.js', type: 'module' }],
   });
 }
 
@@ -284,9 +359,11 @@ export function renderItemPage({ item, siteUrl, repoUrl, sections, related = [],
       <a class="original-link" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">阅读原文</a>
       ${metersFor(item)}
     </p>
+    <div class="admin-bar inline" data-admin-mount data-slug="${escapeHtml(item.slug)}"></div>
     ${domainOf(item.url) ? `<p class="item-domain">原文链接：<code>${escapeHtml(item.url)}</code></p>` : ''}
 ${lead}
 ${article}
+    ${item.subcategoryLabel ? `    <p class="item-sub">子类：${subChip(item)}</p>` : ''}
     ${tagChips(item, { limit: 6, labels: tagLabels }) ? `<p class="item-tags">标签：${tagChips(item, { limit: 6, labels: tagLabels })}</p>` : ''}
     ${original && !item.content && item.summary ? `<details class="item-raw"><summary>原始摘要（${escapeHtml(item.lang === 'zh' ? '中文' : '英文')}）</summary><p>${escapeHtml(item.summary)}</p></details>` : ''}
   </article>
@@ -392,11 +469,28 @@ ${sourceRows}
   });
 }
 
-export function renderArchive({ digests, days, siteUrl, repoUrl, sections }) {
-  const rows = digests.map((digest) => `      <li><a href="/day/${escapeHtml(digest.day)}">${escapeHtml(digest.day)}</a><span>${digest.counts?.published ?? 0} 条</span></li>`);
+export function renderArchive({ digests, days, siteUrl, repoUrl, sections, yearChips = [], monthChips = [], current = null, tagLabels = {}, months = [], month = '', year = '', sort = 'quality' }) {
+  const rows = digests.map((digest) => `      <li><a href="/day/${escapeHtml(digest.day)}">${escapeHtml(digest.day)}</a><span>${digest.counts?.published ?? 0} 条</span><a class="md-link" href="/markdown/${escapeHtml(digest.day)}.md">Markdown</a></li>`);
+  const chipLinks = (list) => list.map((chip) => `<a${chip.active ? ' class="active"' : ''} href="${escapeHtml(chip.href)}">${escapeHtml(chip.label)}<span>${chip.count}</span></a>`).join('');
+  const total = monthChips.reduce((sum, chip) => sum + chip.count, 0);
+  const listing = current?.items?.length
+    ? `  <section class="category">
+    <h2>${escapeHtml(current.label)}：<span class="sort-note">按质量评分从高到低</span></h2>
+${storyList(current.items, { showDay: true, tagLabels })}
+  </section>`
+    : '  <p class="empty">这段时间还没有条目。</p>';
   const body = `  <section class="lede">
     <h1>归档</h1>
-    <p class="lede-meta">共 ${days.length} 天</p>
+    <p class="lede-meta">共 ${days.length} 天、${total} 条条目；选定年月后按质量评分排序</p>
+    ${yearChips.length ? `<nav class="subnav">${chipLinks(yearChips)}</nav>` : ''}
+    ${monthChips.length ? `<nav class="subnav">${chipLinks(monthChips)}</nav>` : ''}
+  </section>
+${listControls({ months, month, year, sort })}
+${listing}
+  <section class="daynav">
+    <h2>按日期</h2>
+    <nav class="day-chips">${days.map((day) => `<a href="/day/${escapeHtml(day)}">${escapeHtml(day)}</a>`).join('')}</nav>
+    <p class="daynav-note"><a href="/llms.txt">全站索引 llms.txt</a> · 每天一份 Markdown 在 <code>/markdown/日期.md</code></p>
   </section>
   <section class="category">
     <ul class="archive">
@@ -411,6 +505,7 @@ ${rows.join('\n')}
     repoUrl,
     menu: menuFor(sections, 'archive'),
     body,
+    scripts: [{ src: '/list.js', type: 'module' }],
   });
 }
 
@@ -455,13 +550,14 @@ function tagNav(tags, activeId) {
   return `  <nav class="tag-nav">${(tags ?? []).map((tag) => `<a class="${tag.id === activeId ? 'active' : ''}" href="/t/${escapeHtml(tag.id)}">${escapeHtml(tag.label)}</a>`).join('')}</nav>`;
 }
 
-export function renderTagPage({ tag, items, tags = [], lookbackDays = 7, siteUrl, repoUrl, sections }) {
+export function renderTagPage({ tag, items, tags = [], lookbackDays = 7, siteUrl, repoUrl, sections, months = [], month = '', year = '', sort = 'quality' }) {
   const tagLabels = Object.fromEntries(tags.map((entry) => [entry.id, entry.label]));
   const body = `  <section class="lede">
     <h1>标签：${escapeHtml(tag.label)}</h1>
     <p class="lede-meta">最近 ${lookbackDays} 天，共 ${items.length} 条</p>
   </section>
 ${tagNav(tags, tag.id)}
+${listControls({ months, month, year, sort })}
 ${items.length ? storyList(items, { showDay: true, lead: true, tagLabels }) : '  <p class="empty">这个标签最近没有条目。</p>'}`;
   return page({
     title: `${tag.label} · 标签 · tool-hub.xyz`,
@@ -471,7 +567,7 @@ ${items.length ? storyList(items, { showDay: true, lead: true, tagLabels }) : ' 
     repoUrl,
     menu: menuFor(sections, 'tags'),
     body,
-    scripts: ['/forum.js'],
+    scripts: ['/forum.js', { src: '/list.js', type: 'module' }],
   });
 }
 

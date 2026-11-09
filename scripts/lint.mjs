@@ -3,7 +3,8 @@ import { readdir, readFile } from 'node:fs/promises';
 import path from 'node:path';
 
 const ROOT = path.resolve(import.meta.dirname, '..');
-const TARGETS = ['src', 'scripts', 'tests'];
+const TARGETS = ['src', 'scripts', 'tests', 'public'];
+const isLintable = (name) => name.endsWith('.mjs') || name.endsWith('.js');
 const SECRET_PATTERNS = [/\bsk-[A-Za-z0-9]{12,}/, /\bghp_[A-Za-z0-9]{20,}/, /\bxox[baprs]-[A-Za-z0-9-]{10,}/];
 
 async function* walk(directory) {
@@ -11,7 +12,7 @@ async function* walk(directory) {
   for (const entry of entries) {
     const target = path.join(directory, entry.name);
     if (entry.isDirectory()) yield* walk(target);
-    else if (entry.name.endsWith('.mjs')) yield target;
+    else if (isLintable(entry.name)) yield target;
   }
 }
 

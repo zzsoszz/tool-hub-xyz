@@ -132,12 +132,56 @@ test('rendersSectionDiscussAndSearchPages', () => {
   assert.ok(search.includes('data-search-form'));
 });
 
+test('listControlsOfferMonthYearSelectorsAndQualityFirstSort', () => {
+  const months = [
+    { key: '2026-11', year: '2026', month: '11', count: 5 },
+    { key: '2025-12', year: '2025', month: '12', count: 2 },
+  ];
+  const section = renderSectionPage({ ...options, section: sections[1], items: [item()], lookbackDays: 90, months });
+  assert.ok(section.includes('<form class="filters" method="get">'));
+  assert.ok(section.includes('<optgroup label="2026 年">'));
+  assert.ok(section.includes('<option value="2025-12">12 月（2）</option>'));
+  assert.ok(section.includes('<option value="2025" >2025 年</option>') || section.includes('<option value="2025">2025 年</option>'));
+  assert.ok(section.includes('<option value="quality" selected>质量评分</option>'));
+  assert.ok(section.includes('data-filter-count'));
+  assert.ok(section.includes('<script type="module" src="/list.js"'));
+});
+
+test('storyRowsCarryMonthAndQualityForClientFiltering', () => {
+  const entry = item({ quality: 11, score: 7 });
+  const html = renderDigestPage(digest({ categories: [{ id: 'apps', label: 'AI 应用', items: [entry] }] }), options);
+  assert.ok(html.includes(`data-month="2026-11"`));
+  assert.ok(html.includes('data-quality="11"'));
+  assert.ok(html.includes('data-score="7"'));
+});
+
 test('rendersAboutAndArchive', () => {
   const about = renderAboutPage({ ...options, sources: digest().sources });
   assert.ok(about.includes('OpenAI News'));
   assert.ok(about.includes('量子位（最近一次抓取失败）'));
   const archive = renderArchive({ ...options, digests: [digest(), digest({ day: '2026-11-08' })] });
   assert.ok(archive.includes('<a href="/day/2026-11-08">2026-11-08</a>'));
+});
+
+test('archivePageOffersPeriodFiltersAndMarkdownDownloads', () => {
+  const months = [
+    { key: '2026-11', year: '2026', month: '11', count: 3 },
+    { key: '2025-12', year: '2025', month: '12', count: 1 },
+  ];
+  const archive = renderArchive({
+    ...options,
+    digests: [digest(), digest({ day: '2025-12-30' })],
+    months,
+    current: { label: '全部归档条目', items: [item()] },
+  });
+  assert.ok(archive.includes('<option value="2025-12">12 月（1）</option>'));
+  assert.ok(archive.includes('<option value="quality" selected>质量评分</option>'));
+  assert.ok(archive.includes('href="/markdown/2025-12-30.md"'));
+});
+
+test('dayPageLinksToThatDaysMarkdown', () => {
+  const html = renderDigestPage(digest(), options);
+  assert.ok(html.includes('href="/markdown/2026-11-09.md"'));
 });
 
 test('rendersRssWithItemLinksAndOriginalUrl', () => {

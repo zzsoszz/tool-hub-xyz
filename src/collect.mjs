@@ -7,6 +7,7 @@ import { repairArticle } from './lib/content.mjs';
 import { selectByCategoryQuota } from './lib/select.mjs';
 import { fetchAllSources, parseSourceBody } from './lib/sources.mjs';
 import { itemSlug, rankCompare } from './lib/items.mjs';
+import { digestToMarkdown } from './lib/markdown.mjs';
 import { translateConfig, translateItems } from './lib/translate.mjs';
 
 const ROOT = path.resolve(import.meta.dirname, '..');
@@ -175,6 +176,7 @@ async function main() {
       usedPerSource.set(sourceId, (usedPerSource.get(sourceId) ?? 0) + 1);
       item.score = filter.score(item, now);
       item.category = filter.categorize(item);
+      item.subcategory = filter.subcategoryFor(item, item.category);
       item.practical = filter.practicality(item);
       additions.push(item);
     }
@@ -212,6 +214,7 @@ async function main() {
   for (const item of selected) {
     item.slug ??= itemSlug(item);
     item.category ??= filter.categorize(item);
+    item.subcategory ??= filter.subcategoryFor(item, item.category);
     item.practical ??= filter.practicality(item);
     item.quality ??= filter.quality(item, sourceById.get(item.sourceId)).score;
     item.action = filter.actionability(item);
@@ -242,8 +245,10 @@ async function main() {
   };
 
   await mkdir(digestDir, { recursive: true });
+  await mkdir(path.join(dataDir, 'markdown'), { recursive: true });
   pruneSeen(seen, { retentionDays: config.seenRetentionDays ?? 45, timezone, now });
   await writeFile(digestPath, `${JSON.stringify(digest, null, 2)}\n`);
+  await writeFile(path.join(dataDir, 'markdown', `${day}.md`), digestToMarkdown(digest, { siteUrl: process.env.SITE_URL ?? 'https://tool-hub.xyz' }));
   await writeFile(seenPath, `${JSON.stringify(serializeSeen(seen), null, 2)}\n`);
   await writeFile(statePath, `${JSON.stringify({ version: 1, day, lastRunAt: now.toISOString() }, null, 2)}\n`);
 
