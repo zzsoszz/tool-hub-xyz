@@ -54,7 +54,7 @@ async function main() {
   await write(path.join(distDir, 'llms.txt'), renderLlms(latest, { siteUrl: base }));
   await write(path.join(distDir, 'data', 'latest.json'), `${JSON.stringify(latest, null, 2)}\n`);
 
-  const sitemapUrls = [`${base}/`, `${base}/archive.html`, ...days.map((day) => `${base}/day/${day}.html`)];
+  const sitemapUrls = [`${base}/`, `${base}/archive`, ...days.map((day) => `${base}/day/${day}`)];
   await write(path.join(distDir, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${sitemapUrls.map((url) => `  <url><loc>${url}</loc></url>`).join('\n')}

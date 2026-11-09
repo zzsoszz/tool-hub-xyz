@@ -55,7 +55,7 @@ function page({ title, description, canonical, siteUrl, repoUrl = 'https://githu
   <p class="tagline">AI 前沿资讯日报 · 每日自动采集</p>
   <nav class="site-nav">
     <a href="/">今日</a>
-    <a href="/archive.html">归档</a>
+    <a href="/archive">归档</a>
     <a href="/feed.xml">RSS</a>
     <a href="/llms.txt">纯文本</a>
     <a class="ghost" href="${escapeHtml(repoUrl)}">源码</a>
@@ -76,7 +76,7 @@ ${body}
 function dayNav(days, currentDay) {
   const chips = days.slice(0, 10).map((day) => {
     const active = day === currentDay ? ' class="active"' : '';
-    return `<a${active} href="/day/${day}.html">${day}</a>`;
+    return `<a${active} href="/day/${day}">${day}</a>`;
   });
   return `<nav class="day-nav">${chips.join('')}</nav>`;
 }
@@ -133,7 +133,7 @@ export function renderDigestPage(digest, { days = [], siteUrl = '', repoUrl } = 
   return page({
     title,
     description: `${zhLabel(digest)} AI 前沿资讯，共 ${digest.counts?.published ?? 0} 条，自动采集去重。`,
-    canonical: digest.day === days[0] ? `${siteUrl}/` : `${siteUrl}/day/${digest.day}.html`,
+    canonical: digest.day === days[0] ? `${siteUrl}/` : `${siteUrl}/day/${digest.day}`,
     siteUrl,
     repoUrl,
     body: digestBody(digest, { days, siteUrl }),
@@ -141,7 +141,7 @@ export function renderDigestPage(digest, { days = [], siteUrl = '', repoUrl } = 
 }
 
 export function renderArchive({ digests, days, siteUrl = '', repoUrl } = {}) {
-  const rows = digests.map((digest) => `      <li><a href="/day/${digest.day}.html">${digest.day}</a><span>${digest.counts?.published ?? 0} 条</span></li>`);
+  const rows = digests.map((digest) => `      <li><a href="/day/${digest.day}">${digest.day}</a><span>${digest.counts?.published ?? 0} 条</span></li>`);
   const body = `  <section class="lede">
     <h1>归档</h1>
     <p class="lede-meta">共 ${days.length} 天</p>
@@ -151,7 +151,7 @@ export function renderArchive({ digests, days, siteUrl = '', repoUrl } = {}) {
 ${rows.join('\n')}
     </ul>
   </section>`;
-  return page({ title: '归档 · tool-hub.xyz', description: 'AI 资讯日报归档', canonical: `${siteUrl}/archive.html`, siteUrl, repoUrl, body });
+  return page({ title: '归档 · tool-hub.xyz', description: 'AI 资讯日报归档', canonical: `${siteUrl}/archive`, siteUrl, repoUrl, body });
 }
 
 export function renderRss(digest, { siteUrl = '' }) {
@@ -194,7 +194,7 @@ ${lines.join('\n')}
 
 ## 其他
 
-- 归档索引：${siteUrl || 'https://tool-hub.xyz'}/archive.html
+- 归档索引：${siteUrl || 'https://tool-hub.xyz'}/archive
 - RSS：${siteUrl || 'https://tool-hub.xyz'}/feed.xml
 - 源码：https://github.com/zzsoszz/tool-hub-xyz
 `;

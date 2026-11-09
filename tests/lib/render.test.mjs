@@ -92,12 +92,12 @@ test('rendersRssWithItemLinksAndGuid', () => {
 test('rendersLlmsAsPlainMarkdownLinks', () => {
   const text = renderLlms(digest(), { siteUrl: 'https://tool-hub.xyz' });
   assert.ok(text.includes('- [论文中文标题](https://example.com/b) — arXiv'));
-  assert.ok(text.includes('https://tool-hub.xyz/archive.html'));
+  assert.ok(text.includes('https://tool-hub.xyz/archive'));
 });
 
 test('rendersArchiveWithOneRowPerDay', () => {
   const html = renderArchive({ digests: [digest(), digest({ day: '2026-11-08' })], days: ['2026-11-09', '2026-11-08'], siteUrl: 'https://tool-hub.xyz' });
-  assert.ok(html.includes('<a href="/day/2026-11-08.html">2026-11-08</a>'));
+  assert.ok(html.includes('<a href="/day/2026-11-08">2026-11-08</a>'));
   assert.equal(html.match(/<li>/g).length, 2);
 });
 
