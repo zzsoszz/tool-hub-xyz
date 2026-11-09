@@ -1,18 +1,18 @@
 {
   "day": "2026-11-09",
-  "generatedAt": "2026-11-09T03:34:00.892Z",
+  "generatedAt": "2026-11-09T03:49:07.870Z",
   "timezone": "Asia/Shanghai",
   "windowHours": 48,
   "counts": {
     "sources": 36,
-    "okSources": 33,
-    "fetched": 2942,
-    "duplicates": 11,
-    "carried": 0,
-    "added": 30,
+    "okSources": 34,
+    "fetched": 2932,
+    "duplicates": 2884,
+    "carried": 28,
+    "added": 0,
     "fallback": 4,
-    "lowQuality": 2357,
-    "published": 30
+    "lowQuality": 20,
+    "published": 29
   },
   "sources": [
     {
@@ -109,9 +109,9 @@
     {
       "id": "hn-newest",
       "name": "Hacker News (AI)",
-      "ok": false,
-      "items": 0,
-      "error": "HTTP 502"
+      "ok": true,
+      "items": 20,
+      "error": null
     },
     {
       "id": "hn-algolia",
@@ -144,9 +144,9 @@
     {
       "id": "microsoft-research",
       "name": "Microsoft Research",
-      "ok": false,
-      "items": 0,
-      "error": "timeout after 15000ms"
+      "ok": true,
+      "items": 10,
+      "error": null
     },
     {
       "id": "github-blog",
@@ -186,9 +186,9 @@
     {
       "id": "hn-show-ai",
       "name": "Show HN (AI)",
-      "ok": true,
-      "items": 20,
-      "error": null
+      "ok": false,
+      "items": 0,
+      "error": "HTTP 502"
     },
     {
       "id": "ai-news-applied",
@@ -201,7 +201,7 @@
       "id": "juejin",
       "name": "掘金 AI",
       "ok": true,
-      "items": 20,
+      "items": 0,
       "error": null
     },
     {
