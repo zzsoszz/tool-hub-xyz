@@ -1503,16 +1503,32 @@ main img[data-zoom] {
 
 .lightbox-frame {
   margin: 0;
-  max-width: min(94vw, 1200px);
-  overflow: hidden;
+  width: min(94vw, 1200px);
+  flex: 1 1 auto;
+  min-height: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 8px;
+}
+
+/* 窗口就是这一块：放大超出的部分被裁掉，能拖的范围按它来算。figure 自己不再裁，否则 bar/提示文字
+   一挤压，100% 的图就会被裁掉一截却又不让拖。
+   flex-basis 必须是 0、宽度必须是 100%：否则这块盒子的大小由图片自己决定，图片的 max-height:100%
+   就成了循环引用，100% 时照样会被裁掉一圈。 */
+.lightbox-viewport {
+  flex: 1 1 0;
+  width: 100%;
+  min-height: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .lightbox-image {
   max-width: 100%;
-  max-height: 78vh;
+  max-height: 100%;
   min-width: min(45vw, 360px);
   height: auto;
   background: var(--paper);
@@ -1520,14 +1536,18 @@ main img[data-zoom] {
   touch-action: none;
   transform-origin: center;
   transition: transform 120ms ease-out;
+  -webkit-user-drag: none;
+  user-select: none;
 }
 
-.lightbox-image[data-zoom-scale]:not([data-zoom-scale='100%']) {
+.lightbox-image[data-zoom-pannable='true'] {
   cursor: grab;
 }
 
 .lightbox-image[data-zoom-dragging='true'] {
   cursor: grabbing;
+  /* 拖动时不能带过渡，否则图片永远追在指针后面。 */
+  transition: none;
 }
 
 .lightbox-bar {
@@ -1554,7 +1574,7 @@ main img[data-zoom] {
 }
 
 .lightbox-caption {
-  margin-top: 8px;
+  flex: 0 0 auto;
   font: 13.5px var(--sans);
   color: var(--paper);
   display: flex;
@@ -1761,10 +1781,6 @@ mark {
 
   .bench-card {
     padding: 12px 12px 14px;
-  }
-
-  .lightbox-image {
-    max-height: 66vh;
   }
 
   .search-fab {

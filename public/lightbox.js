@@ -59,6 +59,7 @@
     let overlay = null;
     let owner = null;
     let big = null;
+    let pane = null;
     let scaleLabel = null;
     let scale = 1;
     let panX = 0;
@@ -69,12 +70,41 @@
       return `${Math.round(scale * 100)}%`;
     }
 
+    // 能拖多少 = 放大后的图片比窗口大出多少（窗口就是 .lightbox-viewport 那块被裁切的区域）。
+    // 拖过这个边界窗口就会露出背景，图片看着像跑掉了；图片本身比窗口还小时这一维就不能拖。
+    // 尺寸量不到（大图还没解码完、夹具没有布局）时不夹紧，也不据此判断能不能拖。
+    function panLimits() {
+      const imageWidth = Number(big?.offsetWidth);
+      const imageHeight = Number(big?.offsetHeight);
+      const windowWidth = Number(pane?.clientWidth);
+      const windowHeight = Number(pane?.clientHeight);
+      if (!(imageWidth > 0) || !(imageHeight > 0) || !(windowWidth > 0) || !(windowHeight > 0)) return null;
+      return {
+        x: Math.max(0, (imageWidth * scale - windowWidth) / 2),
+        y: Math.max(0, (imageHeight * scale - windowHeight) / 2),
+      };
+    }
+
+    function pannable() {
+      const limits = panLimits();
+      if (!limits) return scale > 1;
+      return limits.x > 0 || limits.y > 0;
+    }
+
     function apply() {
       if (!big) return;
+      const { x: limitX, y: limitY } = panLimits() ?? { x: Infinity, y: Infinity };
+      panX = Math.min(limitX, Math.max(-limitX, panX));
+      panY = Math.min(limitY, Math.max(-limitY, panY));
       big.style.transform = `translate(${panX}px, ${panY}px) scale(${scale})`;
       big.dataset.zoomScale = percent();
       big.dataset.zoomPanned = panX || panY ? 'true' : '';
-      if (scaleLabel) scaleLabel.textContent = `当前 ${percent()}，滚轮或 +/− 缩放，拖动看局部，双击回到适应屏幕`;
+      big.dataset.zoomPannable = pannable() ? 'true' : '';
+      if (scaleLabel) {
+        scaleLabel.textContent = pannable()
+          ? `当前 ${percent()}，滚轮或 +/− 缩放，按住图片拖动看局部，双击回到适应屏幕`
+          : `当前 ${percent()}，先放大（滚轮或 +/−），放大后才能按住图片拖动看局部`;
+      }
     }
 
     function zoomBy(factor) {
@@ -99,6 +129,7 @@
       overlay = null;
       big = null;
       scaleLabel = null;
+      pane = null;
       drag = null;
       hidden.remove();
       delete document.body.dataset.lightbox;
@@ -127,6 +158,15 @@
       box.setAttribute('role', 'dialog');
       box.setAttribute('aria-modal', 'true');
       box.setAttribute('aria-label', caption || '放大这张图');
+      // 拖动过图片后不要再把遮罩上的那一次点击当成「点图片外面关闭」。
+      let dragged = false;
+      box.addEventListener('click', (event) => {
+        if (dragged) {
+          dragged = false;
+          return;
+        }
+        if (event?.target === box) close();
+      });
 
       const bar = frame('div', 'lightbox-bar');
       bar.append(
@@ -139,10 +179,15 @@
       bar.append(scaleLabel);
 
       const figure = frame('figure', 'lightbox-frame');
+      pane = frame('div', 'lightbox-viewport');
       big = frame('img', 'lightbox-image');
       big.setAttribute('src', fullSource(image));
       big.setAttribute('alt', image.alt ?? '');
-      figure.append(big);
+      // <img> 默认是原生可拖拽对象：一按住就触发浏览器自己的「拖这张图」手势，pointermove 会被 pointercancel
+      // 打断，平移就永远不会发生。所以先把原生拖拽关掉。
+      big.setAttribute('draggable', 'false');
+      pane.append(big);
+      figure.append(pane);
 
       // 说明行：有说明文字就写文字，图片包着非原图链接时补一个跳转入口（文章页或原站）。
       const linked = hrefOf(wrappingLink(image));
@@ -164,33 +209,36 @@
       }
 
       box.append(bar, figure, frame('p', 'lightbox-hint', '按 Esc 或点图片外面关闭'));
-      box.addEventListener('click', (event) => {
-        if (event?.target === box) close();
-      });
 
       big.addEventListener('wheel', (event) => {
         event?.preventDefault?.();
         zoomBy((event?.deltaY ?? 0) < 0 ? ZOOM_STEP : 1 / ZOOM_STEP);
       });
       big.addEventListener('dblclick', () => (scale === 1 ? zoomBy(ZOOM_STEP * ZOOM_STEP) : resetZoom()));
+      big.addEventListener('load', apply);
       big.addEventListener('pointerdown', (event) => {
-        if (scale <= 1) return;
+        if (!pannable()) return;
+        event?.preventDefault?.();
         drag = { x: event?.clientX ?? 0, y: event?.clientY ?? 0, panX, panY };
         big.dataset.zoomDragging = 'true';
         big.setPointerCapture?.(event?.pointerId);
       });
-      big.addEventListener('pointermove', (event) => {
+      big.addEventListener('dragstart', (event) => event?.preventDefault?.());
+      // 平移监听挂在浮层上而不是图片上：放大后图片的布局盒子还是原尺寸，鼠标一移出这个盒子
+      // 图片就拿不到 pointermove 了，拖动会半途停住。
+      box.addEventListener('pointermove', (event) => {
         if (!drag) return;
         panX = drag.panX + ((event?.clientX ?? 0) - drag.x);
         panY = drag.panY + ((event?.clientY ?? 0) - drag.y);
+        dragged = true;
         apply();
       });
       const stopDrag = () => {
         drag = null;
         if (big) big.dataset.zoomDragging = '';
       };
-      big.addEventListener('pointerup', stopDrag);
-      big.addEventListener('pointercancel', stopDrag);
+      box.addEventListener('pointerup', stopDrag);
+      box.addEventListener('pointercancel', stopDrag);
 
       document.body.append(box);
       document.body.dataset.lightbox = 'open';
