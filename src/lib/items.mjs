@@ -54,6 +54,8 @@ export function itemsIndex(items) {
       day: item.day,
       category: item.category,
       tags: item.tags ?? [],
+      summary: item.summary ?? null,
+      text: item.content?.text ?? null,
       published: item.published ?? null,
       score: item.score ?? 0,
       quality: item.quality ?? 0,

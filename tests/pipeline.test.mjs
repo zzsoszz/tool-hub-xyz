@@ -53,7 +53,9 @@ test('buildsMenuSectionItemAndForumPages', async () => {
   const discuss = await readDist('discuss.html');
   assert.match(discuss, /讨论区/);
   const search = await readDist('search.html');
-  assert.match(search, /搜索历史条目/);
+  assert.match(search, /搜索全部文章/);
+  assert.match(search, /data-search-status/);
+  assert.match(search, /<script src="\/search\.js" defer><\/script>/);
   const about = await readDist('about.html');
   assert.match(about, /关于本站/);
   const section = await readDist('s/apps.html');
@@ -88,7 +90,9 @@ test('buildsMenuSectionItemAndForumPages', async () => {
 });
 
 test('copiesPublicAssetsAndSitemapCoversSections', async () => {
-  for (const file of ['styles.css', 'favicon.svg', '_headers', '_redirects', 'robots.txt', 'sitemap.xml', 'forum.js']) {
+  // 每个页面都挂 /search.js：右下角的悬浮搜索按钮靠它。
+  assert.match(await readDist('index.html'), /<script src="\/search\.js" defer><\/script>/);
+  for (const file of ['styles.css', 'favicon.svg', '_headers', '_redirects', 'robots.txt', 'sitemap.xml', 'forum.js', 'search.js']) {
     const body = await readDist(file);
     assert.ok(body.length > 0, `${file} 应存在于 dist`);
   }
@@ -119,4 +123,22 @@ test('rerunningCollectCarriesOverTheSameDayDigest', () => {
   assert.ok(published(first) >= 4);
   assert.equal(published(second), published(first));
   assert.match(second, /carried=\d+/);
+});
+
+// 按天回填靠 --since/--until：窗口外的条目一律不要，也不给旧文兜底，否则历史某天会被塞进别的日子的内容。
+test('collectingWithAnExplicitWindowKeepsOnlyThatWindowsItems', async () => {
+  const windowDir = '.tmp-test/data-window';
+  const output = run([
+    'src/collect.mjs',
+    '--offline',
+    `--out=${windowDir}`,
+    '--date=2020-01-01',
+    '--since=2020-01-01T00:00:00Z',
+    '--until=2020-01-02T00:00:00Z',
+  ]);
+  assert.match(output, /窗口\(2020-01-01T00:00:00\.000Z → 2020-01-02T00:00:00\.000Z\)/);
+  assert.match(output, /兜底=0 published=0/);
+  const digest = JSON.parse(await readFile(path.join(ROOT, windowDir, 'digests', '2020-01-01.json'), 'utf8'));
+  assert.deepEqual(digest.window, { since: '2020-01-01T00:00:00.000Z', until: '2020-01-02T00:00:00.000Z' });
+  assert.equal(digest.categories.length, 0);
 });

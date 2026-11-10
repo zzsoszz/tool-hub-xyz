@@ -50,7 +50,7 @@ export function menuFor(sections, activeId) {
 }
 
 function page({ title, description, canonical, siteUrl, repoUrl = 'https://github.com/zzsoszz/tool-hub-xyz', menu = '', body, scripts = [] }) {
-  const tags = [...scripts, '/lightbox.js', { src: '/admin.js', type: 'module' }].map((entry) => {
+  const tags = [...scripts, '/lightbox.js', '/search.js', { src: '/admin.js', type: 'module' }].map((entry) => {
     const { src, type } = typeof entry === 'string' ? { src: entry } : entry;
     return `<script${type ? ` type="${escapeHtml(type)}"` : ''} src="${escapeHtml(src)}" defer></script>`;
   }).join('\n');
@@ -69,7 +69,7 @@ function page({ title, description, canonical, siteUrl, repoUrl = 'https://githu
 <body>
 <header class="masthead">
   <a class="wordmark" href="/"><span>AI 折腾日报</span><span class="domain">tool-hub.xyz</span></a>
-  <p class="masthead-note">每天 06:30 与 18:30 更新<a href="/about">关于本站</a><a href="/search">搜索历史条目</a></p>
+  <p class="masthead-note">每天 06:30 与 18:30 更新<a href="/about">关于本站</a><a href="/search">搜索全部文章</a></p>
 </header>
 ${menu}
 <main>
@@ -424,16 +424,18 @@ export function renderDiscussPage({ siteUrl, repoUrl, sections, days }) {
 
 export function renderSearchPage({ siteUrl, repoUrl, sections, tagLabels = {} }) {
   const body = `  <section class="lede">
-    <h1>搜索历史条目</h1>
-    <p class="lede-hint">在浏览器本地检索已收录的条目（标题、摘要、来源）。</p>
+    <h1>搜索全部文章</h1>
+    <p class="lede-hint">在浏览器本地检索已收录的文章：中文标题、原标题、来源、标签、摘要，以及页面上显示的正文。</p>
   </section>
   <section class="search" data-search data-tag-labels="${escapeHtml(JSON.stringify(tagLabels))}">
     <form data-search-form><input type="search" name="q" placeholder="例如：ollama 免费 本地" required><button type="submit">搜索</button></form>
+    <p class="search-status" data-search-status></p>
     <ol class="stories" data-search-results></ol>
-  </section>`;
+  </section>
+  <p class="lede-hint">任意页面右下角都有「搜索文章」按钮，也可以按 <code>Ctrl</code>/<code>⌘</code> + <code>K</code> 或斜杠直接调出搜索框；查询词写进地址栏，筛出来的结果可以直接分享。</p>`;
   return page({
     title: '搜索 · tool-hub.xyz',
-    description: '搜索已收录的 AI 资讯条目。',
+    description: '搜索已收录的 AI 资讯文章，包含标题、摘要与正文。',
     canonical: `${siteUrl}/search`,
     siteUrl,
     repoUrl,

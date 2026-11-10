@@ -1,4 +1,4 @@
-// 论坛前端：点赞数、评论数、评论树、留言提交、本地搜索。零依赖。
+// 论坛前端：点赞数、评论数、评论树、留言提交。零依赖。文章搜索在 /search.js。
 (() => {
   'use strict';
 
@@ -186,91 +186,8 @@
     }
   }
 
-  function wireSearch() {
-    const wrap = document.querySelector('[data-search]');
-    if (!wrap) return;
-    const form = wrap.querySelector('[data-search-form]');
-    const results = wrap.querySelector('[data-search-results]');
-    let index = null;
-    let tagLabels = {};
-    try {
-      tagLabels = JSON.parse(wrap.dataset.tagLabels ?? '{}');
-    } catch {
-      tagLabels = {};
-    }
-
-    const ensureIndex = async () => {
-      if (index) return index;
-      const payload = await fetch('/data/items.json', { credentials: 'same-origin' }).then((response) => response.json());
-      index = Object.entries(payload ?? {}).map(([slug, entry]) => ({ slug, ...entry }));
-      return index;
-    };
-
-    const run = async (query) => {
-      const items = await ensureIndex();
-      const terms = query.trim().toLowerCase().split(/\s+/).filter(Boolean);
-      results.textContent = '';
-      if (terms.length < 2) {
-        results.append(el('li', 'empty', '请至少输入两个字符。'));
-        return;
-      }
-      const hits = items
-        .map((item) => {
-          const haystack = [item.title, item.originalTitle, item.source, item.category, ...(item.tags ?? [])].filter(Boolean).join(' ').toLowerCase();
-          const score = terms.reduce((total, term) => total + (haystack.includes(term) ? 1 : 0), 0);
-          return { item, score };
-        })
-        .filter((entry) => entry.score > 0)
-        .sort((a, b) => b.score - a.score || String(b.item.day).localeCompare(String(a.item.day)))
-        .slice(0, 30);
-      if (!hits.length) {
-        results.append(el('li', 'empty', '没找到相关条目，换个关键词试试。'));
-        return;
-      }
-      for (const { item } of hits) {
-        const row = el('li', 'story');
-        const body = el('div', 'story-body');
-        const heading = el('h2', 'story-title');
-        const link = el('a', '', item.title);
-        link.href = `/item/${item.slug}`;
-        heading.append(link);
-        body.append(heading);
-        if (item.originalTitle) body.append(el('p', 'story-original', item.originalTitle));
-        const meta = el('p', 'subtext');
-        meta.append(el('span', 'source', item.source ?? ''));
-        meta.append(el('span', 'chip day', item.day ?? ''));
-        for (const tag of (item.tags ?? []).slice(0, 3)) {
-          const chip = el('a', 'chip tag', tagLabels[tag] ?? tag);
-          chip.href = `/t/${tag}`;
-          meta.append(chip);
-        }
-        const original = el('a', 'original-link', '原文');
-        original.href = item.url;
-        original.target = '_blank';
-        original.rel = 'noopener noreferrer';
-        meta.append(original);
-        body.append(meta);
-        row.append(body);
-        results.append(row);
-      }
-    };
-
-    form?.addEventListener('submit', (event) => {
-      event.preventDefault();
-      run(String(new FormData(form).get('q') ?? ''));
-    });
-
-    const preset = new URLSearchParams(window.location.search).get('q');
-    if (preset) {
-      const input = form?.querySelector('input[name="q"]');
-      if (input) input.value = preset;
-      run(preset);
-    }
-  }
-
   async function main() {
     wireVotes();
-    wireSearch();
     const itemSection = document.querySelector('.comments[data-item]');
     if (itemSection) {
       wireCommentForm(itemSection);

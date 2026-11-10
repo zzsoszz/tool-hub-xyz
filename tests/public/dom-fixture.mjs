@@ -23,6 +23,19 @@ class Node {
     if (attrs.dataset) Object.assign(this.dataset, attrs.dataset);
   }
 
+  // 浏览器里 `textContent = ''` 会把子节点清空，脚本靠这一步重置结果列表。
+  set textContent(value) {
+    this._text = value;
+    if (value === '') {
+      for (const child of this.children) child.parent = null;
+      this.children = [];
+    }
+  }
+
+  get textContent() {
+    return this._text ?? '';
+  }
+
   setAttribute(name, value) {
     if (name === 'class') this.className = value;
     this.attrs[name] = value;
@@ -191,7 +204,8 @@ async function runListScript(document, search) {
 
 // 浏览器端脚本共用的执行夹具：把 public/<name>.js 读出来，在最小 DOM 上真跑一遍。
 // search/pathname 用来模拟带查询串的 URL；history.replaceState 记录脚本写回的地址。
-async function runBrowserScript(name, documentNode, { search = '', pathname = '/' } = {}) {
+// fetchImpl 用来冒充 /data/items.json 之类的接口：脚本照样真跑一遍，只是数据来自测试。
+async function runBrowserScript(name, documentNode, { search = '', pathname = '/', fetchImpl } = {}) {
   const source = await readFile(path.resolve(import.meta.dirname, '../../public', name), 'utf8');
   const window = {
     location: { pathname, search },
@@ -205,9 +219,11 @@ async function runBrowserScript(name, documentNode, { search = '', pathname = '/
     window,
     URL,
     URLSearchParams,
+    fetch: fetchImpl,
     document: {
       body: documentNode,
       createElement: (tag) => new Node(tag),
+      createTextNode: (text) => new Node('#text', { text }),
       querySelector: (selector) => documentNode.querySelector(selector),
       querySelectorAll: (selector) => documentNode.querySelectorAll(selector),
       addEventListener: (type, handler) => documentNode.addEventListener(type, handler),
