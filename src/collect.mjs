@@ -95,6 +95,11 @@ async function main() {
   const incrementalFrom = state?.lastRunAt
     ? new Date(Math.max(new Date(state.lastRunAt).getTime() - 6 * 3_600_000, now.getTime() - maxLookback * 3_600_000)).toISOString()
     : null;
+  // 显式窗口用于按天回填：--since/--until 都是 ISO 时间，给了就只认落在区间里的条目，不做旧文兜底。
+  const windowStart = flags.since ? new Date(flags.since) : null;
+  const windowEnd = flags.until ? new Date(flags.until) : null;
+  const strictWindow = Boolean(windowStart && windowEnd);
+  const stamp = (value) => new Date(value).toISOString();
 
   const windowCutoff = (sourceId) => {
     const hours = Number(sourceById.get(sourceId)?.windowHours ?? defaultWindow);
@@ -157,17 +162,23 @@ async function main() {
   const additions = [];
   let fallbackUsed = 0;
   for (const [sourceId, eligible] of eligibleBySource) {
-    const cutoff = incrementalFrom ?? windowCutoff(sourceId);
+    const cutoff = windowStart?.toISOString() ?? incrementalFrom ?? windowCutoff(sourceId);
     const inWindow = [];
     const older = [];
     for (const item of eligible) {
-      if (!item.published || item.published >= cutoff) inWindow.push(item);
+      if (!item.published) {
+        if (!strictWindow) older.push(item);
+        continue;
+      }
+      const publishedAt = stamp(item.published);
+      if (windowEnd && publishedAt > windowEnd.toISOString()) continue;
+      if (publishedAt >= cutoff) inWindow.push(item);
       else older.push(item);
     }
     older.sort((a, b) => String(b.published ?? '').localeCompare(String(a.published ?? '')));
     const room = Math.max(0, perSourceCap - (usedPerSource.get(sourceId) ?? 0));
     let chosen = inWindow.slice(0, room);
-    if (!chosen.length) {
+    if (!chosen.length && !strictWindow) {
       chosen = older.filter((item) => item.published && item.published >= oldestAllowed).slice(0, fallbackCount);
       for (const item of chosen) item.fallback = true;
       fallbackUsed += chosen.length;
@@ -229,6 +240,7 @@ async function main() {
     generatedAt: now.toISOString(),
     timezone,
     windowHours: defaultWindow,
+    window: { since: windowStart?.toISOString() ?? null, until: windowEnd?.toISOString() ?? null },
     counts: {
       sources: config.sources.length,
       okSources: results.filter((result) => result.ok).length,
@@ -246,17 +258,23 @@ async function main() {
 
   await mkdir(digestDir, { recursive: true });
   await mkdir(path.join(dataDir, 'markdown'), { recursive: true });
-  pruneSeen(seen, { retentionDays: config.seenRetentionDays ?? 45, timezone, now });
   await writeFile(digestPath, `${JSON.stringify(digest, null, 2)}\n`);
   await writeFile(path.join(dataDir, 'markdown', `${day}.md`), digestToMarkdown(digest, { siteUrl: process.env.SITE_URL ?? 'https://tool-hub.xyz' }));
-  await writeFile(seenPath, `${JSON.stringify(serializeSeen(seen), null, 2)}\n`);
+  // 回填某天（带 --since/--until）时不写 seen.json：那一天的窗口已经保证条目只落在这一天。
+  // 写了会把同一批信息源里属于后面几天的条目全判成「已经见过」，后面那几天就什么都采不到。
+  if (!strictWindow) {
+    pruneSeen(seen, { retentionDays: config.seenRetentionDays ?? 45, timezone, now });
+    await writeFile(seenPath, `${JSON.stringify(serializeSeen(seen), null, 2)}\n`);
+  }
   await writeFile(statePath, `${JSON.stringify({ version: 1, day, lastRunAt: now.toISOString() }, null, 2)}\n`);
 
   const qualityTally = lowQuality.length
     ? ` 质量淘汰=${lowQuality.length}（${Object.entries(lowQuality.reduce((acc, reason) => { acc[reason] = (acc[reason] ?? 0) + 1; return acc; }, {})).map(([reason, count]) => `${reason}×${count}`).join(' ')}）`
     : '';
   const distribution = digest.categories.map((group) => `${group.label}=${group.items.length}`).join(' ');
-  const mode = incrementalFrom ? `增量(自 ${state.lastRunAt})` : '首次全量';
+  const mode = strictWindow
+    ? `窗口(${windowStart.toISOString()} → ${windowEnd.toISOString()})`
+    : incrementalFrom ? `增量(自 ${state.lastRunAt})` : '首次全量';
   console.log(`collect ${day} ${mode}: sources=${digest.counts.okSources}/${config.sources.length} fetched=${digest.counts.fetched} dup=${digest.counts.duplicates} carried=${digest.counts.carried} added=${digest.counts.added} 兜底=${digest.counts.fallback} published=${digest.counts.published}`);
   if (qualityTally) console.log(qualityTally);
   console.log(`  分布: ${distribution}`);

@@ -9,6 +9,7 @@
   },
   "scripts": {
     "collect": "node src/collect.mjs",
+    "backfill": "node scripts/backfill.mjs",
     "build": "node src/build.mjs",
     "digest": "npm run collect && npm run bench && npm run build",
     "review": "node src/review.mjs",
