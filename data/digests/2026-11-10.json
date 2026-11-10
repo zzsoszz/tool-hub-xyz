@@ -1,25 +1,25 @@
 {
   "day": "2026-11-10",
-  "generatedAt": "2026-11-09T20:55:13.368Z",
+  "generatedAt": "2026-11-10T04:16:30.575Z",
   "timezone": "Asia/Shanghai",
   "windowHours": 48,
   "counts": {
     "sources": 36,
-    "okSources": 35,
-    "fetched": 2955,
-    "duplicates": 2888,
-    "carried": 6,
+    "okSources": 33,
+    "fetched": 2917,
+    "duplicates": 2832,
+    "carried": 4,
     "added": 2,
-    "fallback": 2,
-    "lowQuality": 42,
-    "published": 12
+    "fallback": 3,
+    "lowQuality": 49,
+    "published": 14
   },
   "sources": [
     {
       "id": "openai-news",
       "name": "OpenAI News",
       "ok": true,
-      "items": 1370,
+      "items": 1372,
       "error": null
     },
     {
@@ -109,9 +109,9 @@
     {
       "id": "hn-newest",
       "name": "Hacker News (AI)",
-      "ok": true,
-      "items": 20,
-      "error": null
+      "ok": false,
+      "items": 0,
+      "error": "HTTP 502"
     },
     {
       "id": "hn-algolia",
@@ -186,9 +186,9 @@
     {
       "id": "hn-show-ai",
       "name": "Show HN (AI)",
-      "ok": true,
-      "items": 20,
-      "error": null
+      "ok": false,
+      "items": 0,
+      "error": "HTTP 502"
     },
     {
       "id": "ai-news-applied",
@@ -273,6 +273,48 @@
       "id": "apps",
       "label": "AI 应用",
       "items": [
+        {
+          "sourceId": "simon-willison",
+          "sourceName": "Simon Willison",
+          "title": "llm-anthropic 0.31",
+          "url": "https://simonwillison.net/2026/Nov/9/llm-anthropic/",
+          "id": "https://simonwillison.net/2026/Nov/9/llm-anthropic/",
+          "published": "2026-11-09T23:58:46.000Z",
+          "summary": "Release: llm-anthropic 0.31 Anthropic released Fable 5.2 and Mythos 5.2 today. I've added them to llm-anthropic , so you can now run prompts through Fable 5.2 like this:",
+          "content": {
+            "html": "<p><strong>Release:</strong><a href=\"https://github.com/simonw/llm-anthropic/releases/tag/0.31\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">llm-anthropic 0.31</a></p>\n<p>Anthropic<a href=\"https://www.anthropic.com/claude-fable-and-mythos-5-2\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">released Fable 5.2 and Mythos 5.2</a>today. I've added them to<code>llm-anthropic</code>, so you can now run prompts through Fable 5.2 like this:</p>\n<pre><code>uv tool install llm\nllm install llm-anthropic\nllm keys set anthropic\n# paste key here\nllm -m claude-fable-5.2 \"Generate an SVG of a pelican riding a bicycle\"</code></pre>\n<p>I ran pelicans at all five reasoning levels -<code>low</code>,<code>medium</code>,<code>high</code>,<code>xhigh</code>, and<code>max</code>. You can<a href=\"https://tools.simonwillison.net/markdown-svg-renderer?url=https%3A%2F%2Fgist.github.com%2Fsimonw%2Fbcd1a1bf38b929b0bbbae2e38b808e97\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">see them all here</a>- here's the best result I got, from<code>xhigh</code>:</p>\n<p><img src=\"https://static.simonwillison.net/static/2026/fable-5.2-xhigh.avif\" alt=\"It's good - legs the right side of the bicycle, good frame, nice pouch, weird little fingers on the handlebars. The pouch looks slightly misaligned with the top\" loading=\"lazy\"></p>\n<p><code>max</code>failed to return an image at all, running out of tokens after spending 128,000<a href=\"https://tools.simonwillison.net/markdown-svg-renderer?url=https%3A%2F%2Fgist.github.com%2Fsimonw%2Fbcd1a1bf38b929b0bbbae2e38b808e97#reasoning-2\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">thinking about them</a>. That's the same bug that I saw with<a href=\"https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/#claude-opus-5-5-max-over-thinks-to-the-point-of-breaking\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Opus 5.5</a>- but it's new for the Fable series, both<a href=\"https://simonwillison.net/2026/Jun/9/claude-fable-5/#and-some-pelicans\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Fable 5</a>and<a href=\"https://simonwillison.net/2026/Sep/1/claude-fable-5-1/#max\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Fable 5.1</a>returned max effort pelicans just fine.</p>\n<p>Tags:<a href=\"https://simonwillison.net/tags/llm\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">llm</a>,<a href=\"https://simonwillison.net/tags/anthropic\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">anthropic</a>,<a href=\"https://simonwillison.net/tags/claude\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">claude</a>,<a href=\"https://simonwillison.net/tags/generative-ai\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">generative-ai</a>,<a href=\"https://simonwillison.net/tags/pelican-riding-a-bicycle\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">pelican-riding-a-bicycle</a>,<a href=\"https://simonwillison.net/tags/ai\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">ai</a>,<a href=\"https://simonwillison.net/tags/llms\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">llms</a>,<a href=\"https://simonwillison.net/tags/claude-mythos-fable\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">claude-mythos-fable</a></p>",
+            "text": "Release: llm-anthropic 0.31\nAnthropic released Fable 5.2 and Mythos 5.2 today. I've added them to llm-anthropic , so you can now run prompts through Fable 5.2 like this:\nuv tool install llm\nllm install llm-anthropic\nllm keys set anthropic\n# paste key here\nllm -m claude-fable-5.2 \"Generate an SVG of a pelican riding a bicycle\"\nI ran pelicans at all five reasoning levels - low , medium , high , xhigh , and max . You can see them all here - here's the best result I got, from xhigh :\nmax failed to return an image at all, running out of tokens after spending 128,000 thinking about them . That's the same bug that I saw with Opus 5.5 - but it's new for the Fable series, both Fable 5 and Fable 5.1 returned max effort pelicans just fine.\nTags: llm , anthropic , claude , generative-ai , pelican-riding-a-bicycle , ai , llms , claude-mythos-fable",
+            "lead": "Release: llm-anthropic 0.31\nAnthropic released Fable 5.2 and Mythos 5.2 today. I've added them to llm-anthropic , so you can now run prompts through Fable 5.2 like this:",
+            "chars": 854,
+            "shown": 854,
+            "truncated": false
+          },
+          "categories": [
+            "llm",
+            "anthropic",
+            "claude",
+            "generative-ai",
+            "pelican-riding-a-bicycle",
+            "ai",
+            "llms",
+            "claude-mythos-fable"
+          ],
+          "author": "",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "tools",
+          "metrics": {},
+          "quality": 9,
+          "score": 18.84,
+          "category": "apps",
+          "subcategory": "creation",
+          "practical": 1,
+          "slug": "c93c64172e07",
+          "action": 2,
+          "rank": 12.2,
+          "tags": []
+        },
         {
           "sourceId": "theverge",
           "sourceName": "The Verge",
@@ -751,6 +793,45 @@
           "rank": 10.2,
           "tags": [
             "benchmark",
+            "free"
+          ]
+        },
+        {
+          "sourceId": "arxiv-cs",
+          "sourceName": "arXiv cs.AI/CL/LG",
+          "title": "Hybrid Source Code Change Impact Analysis",
+          "url": "https://arxiv.org/abs/2611.10958v1",
+          "id": "http://arxiv.org/abs/2611.10958v1",
+          "published": "2026-11-07T20:42:00.000Z",
+          "summary": "Change impact analysis (CIA) helps developers identify code entities impacted by their initial changes. While several approaches for CIA were proposed, they still struggle with either low precision or low recall, thereby increasing manual effort for developers to verify the results. Furthermore, limitations in the use…",
+          "content": {
+            "html": "Change impact analysis (CIA) helps developers identify code entities impacted by their initial changes. While several approaches for CIA were proposed, they still struggle with either low precision or low recall, thereby increasing manual effort for developers to verify the results. Furthermore, limitations in the used datasets and experimental setups can bias the results reported by many CIA approaches. In this paper, we first address the dataset limitations by manually labeling 1,931 changed code entities stemming from 263 commits of 22 open-source Java projects. Next, we introduce two variants of katIA, our code change impact analysis approach that combines static impact analysis with the reasoning capabilities of large language models (LLMs). The first variant uses a single prompt (katIA-SP) for refining an initial static impact set while the second variant uses three specialized agents (katIA-MA). The evaluation with our curated dataset shows that katIA-SP with Gemini 2.5 Flash achieved an F1-score of 22.4% when matching impacted entities by their fully qualified names (FQN) and 27.0% when matching them by their class and entity names (CE). The latter shows an improvement of 2.0 percentage points over the state-of-the-art. This score is further improved by katIA-MA which, using Gemini 2.5 Flash, yields an FQN-matching F1-score of 29.1% and a CE-matching F1-score of 33.3%. While these improvements come at the cost of increased median generation time from 0.570 s to 11.214 s and median token usage from 1,235 to 6,462 tokens, the improved performance justifies the additional cost. The comparison of three LLMs using katIA-SP finds that Gemini 2.5 Flash is the most consistent model. These results indicate that combining static impact analysis with LLM-based refinement, particularly with the multi-agent variant, can improve code change impact analysis.",
+            "text": "Change impact analysis (CIA) helps developers identify code entities impacted by their initial changes. While several approaches for CIA were proposed, they still struggle with either low precision or low recall, thereby increasing manual effort for developers to verify the results. Furthermore, limitations in the used datasets and experimental setups can bias the results reported by many CIA approaches. In this paper, we first address the dataset limitations by manually labeling 1,931 changed code entities stemming from 263 commits of 22 open-source Java projects. Next, we introduce two variants of katIA, our code change impact analysis approach that combines static impact analysis with the reasoning capabilities of large language models (LLMs). The first variant uses a single prompt (katIA-SP) for refining an initial static impact set while the second variant uses three specialized agents (katIA-MA). The evaluation with our curated dataset shows that katIA-SP with Gemini 2.5 Flash achieved an F1-score of 22.4% when matching impacted entities by their fully qualified names (FQN) and 27.0% when matching them by their class and entity names (CE). The latter shows an improvement of 2.0 percentage points over the state-of-the-art. This score is further improved by katIA-MA which, using Gemini 2.5 Flash, yields an FQN-matching F1-score of 29.1% and a CE-matching F1-score of 33.3%. While these improvements come at the cost of increased median generation time from 0.570 s to 11.214 s and median token usage from 1,235 to 6,462 tokens, the improved performance justifies the additional cost. The comparison of three LLMs using katIA-SP finds that Gemini 2.5 Flash is the most consistent model. These results indicate that combining static impact analysis with LLM-based refinement, particularly with the multi-agent variant, can improve code change impact analysis.",
+            "lead": "Change impact analysis (CIA) helps developers identify code entities impacted by their initial changes. While several approaches for CIA were proposed, they still struggle with either low precision or low recall, thereby increasing manual effort for developers to verify the results. Furthermore, limitations in the used datasets and experimental setups can bias the results reported by many CIA approaches. In this paper, we first address the dataset limitati",
+            "chars": 1883,
+            "shown": 1883,
+            "truncated": false
+          },
+          "categories": [
+            "cs.SE",
+            "cs.AI"
+          ],
+          "author": "Katharina Stengg",
+          "lang": "en",
+          "tier": 3,
+          "trustCategory": true,
+          "declaredCategory": "ideas",
+          "metrics": {},
+          "quality": 7,
+          "fallback": true,
+          "score": 10.77,
+          "category": "bench",
+          "subcategory": "benchmark",
+          "practical": 2,
+          "slug": "34f0aab2e9fc",
+          "action": 2,
+          "rank": 10.2,
+          "tags": [
             "free"
           ]
         }

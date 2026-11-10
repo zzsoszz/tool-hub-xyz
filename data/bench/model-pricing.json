@@ -1,7 +1,7 @@
 {
   "id": "model-pricing",
   "kind": "openrouter-pricing",
-  "collectedAt": "2026-11-10T01:06:50.139Z",
+  "collectedAt": "2026-11-10T04:16:38.443Z",
   "upstream": {
     "label": "OpenRouter 模型目录 API",
     "url": "https://openrouter.ai/models"
@@ -421,8 +421,8 @@
     {
       "path": "https://openrouter.ai/api/v1/models",
       "url": "https://openrouter.ai/api/v1/models",
-      "sha256": "3d758673a8c9972ab6c990720fd6fdef28c5641102a9a3e8787f09c704ee5d35",
-      "bytes": 834802
+      "sha256": "319c506af02c968fd45352fd7ad2a0181a8df0250b8fa235888e77600ad5d06f",
+      "bytes": 836217
     }
   ]
 }
