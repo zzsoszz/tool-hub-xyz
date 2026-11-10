@@ -190,11 +190,21 @@ async function runListScript(document, search) {
 }
 
 // 浏览器端脚本共用的执行夹具：把 public/<name>.js 读出来，在最小 DOM 上真跑一遍。
-async function runBrowserScript(name, documentNode) {
+// search/pathname 用来模拟带查询串的 URL；history.replaceState 记录脚本写回的地址。
+async function runBrowserScript(name, documentNode, { search = '', pathname = '/' } = {}) {
   const source = await readFile(path.resolve(import.meta.dirname, '../../public', name), 'utf8');
-  const window = { location: { pathname: '/', search: '' } };
+  const window = {
+    location: { pathname, search },
+    history: {
+      replaceState: (_state, _title, url) => {
+        window.location.search = new URL(url, 'https://tool-hub.xyz').search;
+      },
+    },
+  };
   const context = {
     window,
+    URL,
+    URLSearchParams,
     document: {
       body: documentNode,
       createElement: (tag) => new Node(tag),

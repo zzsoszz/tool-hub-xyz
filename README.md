@@ -46,7 +46,7 @@ GitHub Actions（每日 06:30 / 18:30 CST）── 采集 → 质量审查 → �
 - `src/schema.sql` D1 表结构（`comments`、`votes`、`hidden_items`、`admin_attempts`）
 - `data/` 采集产物（`digests/`、`bench/`、`seen.json`、`state.json`）、`hidden.json`（下架条目：管理员 + 审查）、`reviews/<日期>.json`（审查结论），随提交保留历史
 - `dist/` 构建产物，已 gitignore，由 CI 用 `wrangler deploy` 上传
-- `public/` 静态资产与路由/缓存配置（`styles.css`、`forum.js`、`funnel.js`、`list.js`（列表筛选与排序）、`admin.js`（登录与下架）、`lightbox.js`（图片点击放大）、`favicon.svg`、`_headers`、`_redirects`）
+- `public/` 静态资产与路由/缓存配置（`styles.css`、`forum.js`、`funnel.js`、`list.js`（列表筛选与排序）、`bench.js`（评测表格搜索）、`admin.js`（登录与下架）、`lightbox.js`（图片点击放大）、`favicon.svg`、`_headers`、`_redirects`）
 - `wrangler.jsonc` Cloudflare 部署目标（Assets + Worker `tool-hub` + D1 + `tool-hub.xyz` 自定义域名）
 - `tests/` 单元与端到端测试，`tests/fixtures/` 为离线样例
 - `scripts/` 运维脚本：`serve.mjs`（本地预览）、`reclassify.mjs`（按现行配置重打历史分类）、`fetch-hidden.mjs`（从 D1 拉回管理员下架记录）、`lint.mjs`
@@ -162,6 +162,7 @@ curl -X DELETE https://tool-hub.xyz/api/comments/12 -H "Authorization: Bearer <M
 - **可复现**：每页的「复现与核对方法」给出可直接执行的命令（标准协议 `strata bench run` / 快速自测 `bench.sh` / 同机 A/B `--compare`），并附协议 ID `strata-qwen38-thinking-v1-draft.1` 与冻结提示词包哈希。
 - **抓取失败**：沿用已提交的上一版数据并在日志里标注；`npm run bench -- --offline` 直接用仓库里的数据，CI 里这一步是 `continue-on-error`。
 - **口径提醒**：上游的标准基准协议仍是草案，页面上列出的社区报告大多属于社区自测格式；跨行比较只能当参考，同机对比只用同一台机器的那组数字。
+- **表格搜索**：每张评测页都有筛选框（`public/bench.js`，零依赖）。关键词同时匹配整行的显卡、量化档位、引擎版本、数字与原报告目录名，命中的行数写在表格上方，没命中的整行与整张表暂时隐藏；查询词写进 URL（例如 `/bench/strata-community?q=5090`），所以筛选结果可以直接分享。清空即回到完整数据集，禁用脚本时表格照旧完整可读。
 
 ## 图片点击放大
 

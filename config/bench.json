@@ -3,6 +3,7 @@
     "label": "评测数据",
     "lede": "这一页把开源项目公开发布的性能实测搬进站内，整理成能直接读的中文表格：每一行都带回原报告、原始数据文件，以及自己复现一遍的命令。数字由脚本从上游原文解析，不加工、不换算、不跨机器外推。",
     "meta": "数据跟日报一起每天采集两次；抓取失败时沿用上一版，并在页面上标注抓取时间与文件哈希。",
+    "searchPlaceholder": "搜来源名称或它测什么，例如 mlcommons 显存 长上下文",
     "method": {
       "title": "本页数据是怎么来的",
       "steps": [
@@ -74,6 +75,7 @@
       "kind": "strata-community",
       "label": "Strata 社区硬件实测",
       "summary": "同一款模型（Qwen3.8-Flash-Next）在不同显卡上的读取与生成速度：从 RTX 5090 到 2016 年的 Tesla P4，103 份社区报告。",
+      "searchPlaceholder": "搜显卡、量化档位、引擎版本或数字，例如 5090 IQ2_XS 0.1.40",
       "upstream": { "label": "Niko1221/Strata · bench/results/COMMUNITY.md", "url": "https://github.com/Niko1221/Strata/tree/main/bench/results" },
       "sourcePaths": [
         { "path": "bench/results/COMMUNITY.md", "label": "社区实测索引表" },
@@ -209,6 +211,7 @@
       "kind": "strata-matrix",
       "label": "同一台机器的版本演进",
       "summary": "RTX 5070 12 GB 上同一批代码提示词，引擎 0.1.14、0.1.22、0.1.26 三版对照：看版本迭代到底改变了什么。",
+      "searchPlaceholder": "搜量化档位、引擎版本或数字，例如 Q2_0 0.1.26 128K",
       "upstream": { "label": "Niko1221/Strata · bench/results", "url": "https://github.com/Niko1221/Strata/tree/main/bench/results" },
       "sourcePaths": [
         { "path": "bench/results/2026-09-28-speed-0114/matrix.md", "label": "引擎 0.1.14 速度矩阵" },
@@ -296,6 +299,7 @@
       "kind": "openrouter-pricing",
       "label": "托管模型价格与上下文",
       "summary": "上下文长度不低于 128K 的文本模型，按输入单价从低到高排列；和上面的本地速度表放一起，用来判断什么时候自建划算。",
+      "searchPlaceholder": "搜模型名、提供商或单价，例如 deepseek 免费 0.30",
       "upstream": { "label": "OpenRouter 模型目录 API", "url": "https://openrouter.ai/models" },
       "sourcePaths": [
         { "path": "https://openrouter.ai/api/v1/models", "label": "全量模型目录 JSON" }

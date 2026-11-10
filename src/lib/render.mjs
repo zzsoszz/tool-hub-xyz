@@ -637,17 +637,31 @@ function sourceRef(source, commit) {
   return externalLink(source.label ?? url, url);
 }
 
-function benchTable({ columns, rows }) {
+function benchTable({ columns, rows, label = '', note = '', rowCount = rows.length }) {
   const head = columns.map((column) => `<th${column.align === 'right' ? ' class="num"' : ''}>${escapeHtml(column.label)}</th>`).join('');
   const body = rows.map((row) => `        <tr>${columns.map((column) => `          <td${column.align === 'right' ? ' class="num"' : ''}>${row[column.key] ?? ''}</td>`).join('')}</tr>`).join('\n');
-  return `      <div class="table-scroll">
+  const title = label ? `        <h3>${escapeHtml(label)}（${rowCount} 行）</h3>\n` : '';
+  const noteLine = note ? `        <p class="bench-note">${escapeHtml(note)}</p>\n` : '';
+  return `      <div data-bench-table>
+${title}${noteLine}        <div class="table-scroll">
         <table class="bench-table">
           <thead><tr>${head}</tr></thead>
           <tbody>
 ${body}
           </tbody>
         </table>
+        </div>
       </div>`;
+}
+
+// 表格搜索框由服务端渲染，筛选逻辑在 /bench.js：没有脚本时表格照旧完整可读，只是少了筛选。
+function benchSearchForm({ placeholder }) {
+  return `      <form class="bench-search" data-bench-search>
+        <input type="search" name="q" autocomplete="off" placeholder="${escapeHtml(placeholder)}" aria-label="在这些表格里搜索">
+        <button type="submit">筛选</button>
+        <button type="reset" data-bench-clear>清空</button>
+      </form>
+      <p class="bench-search-status" data-bench-status role="status" aria-live="polite"></p>`;
 }
 
 function communityTableRows(tableId, rows) {
@@ -857,7 +871,8 @@ ${steps}
   <section class="bench-sources">
     <h2>其他高质量数据来源</h2>
     <p class="bench-note">这一批是我们核对过入口的来源：各自测什么、怎么回查原始数据。要加新的数据集，往 <code>config/bench.json</code> 里加一条、再在 <code>src/bench.mjs</code> 里加对应的解析就行。</p>
-    <div class="table-scroll">
+${benchSearchForm({ placeholder: index.searchPlaceholder ?? '搜来源名称或它测什么，例如 mlcommons 显存' })}
+    <div class="table-scroll" data-bench-table>
       <table class="bench-table">
         <thead><tr><th>来源</th><th>测什么</th><th>怎么核对</th></tr></thead>
         <tbody>
@@ -884,7 +899,7 @@ ${caveats}
     repoUrl,
     menu: menuFor(sections, 'bench'),
     body,
-    scripts: ['/forum.js'],
+    scripts: ['/forum.js', '/bench.js'],
   });
 }
 
@@ -893,9 +908,12 @@ export function renderBenchDatasetPage({ benchConfig, dataset, data, sections, s
   const tables = Object.entries(dataset.tables ?? {}).map(([tableId, table]) => {
     const rows = data.tables?.[tableId]?.rows ?? [];
     if (!rows.length) return '';
-    return `      <h3>${escapeHtml(table.label ?? tableId)}（${rows.length} 行）</h3>
-      <p class="bench-note">${escapeHtml(table.note ?? '')}</p>
-${benchTable(benchTableFor(dataset, tableId, rows))}`;
+    return benchTable({
+      ...benchTableFor(dataset, tableId, rows),
+      label: table.label ?? tableId,
+      note: table.note ?? '',
+      rowCount: rows.length,
+    });
   }).filter(Boolean).join('\n');
   const reading = (dataset.reading ?? []).map((entry) => `          <li>${escapeHtml(entry)}</li>`).join('\n');
   const contextNote = dataset.contextNote ? `      <p class="bench-note">${escapeHtml(dataset.contextNote)}</p>\n` : '';
@@ -918,6 +936,7 @@ ${benchFindingList(dataset, data.commit)}
   </section>` : ''}
   <section class="bench-data">
     <h2>数据表</h2>
+${tables ? benchSearchForm({ placeholder: dataset.searchPlaceholder ?? '搜显卡、量化档位、引擎版本或数字，例如 5090 IQ2_XS 0.1.40' }) : ''}
 ${benchChartFigure(dataset, data)}
 ${tables}
   </section>
@@ -947,6 +966,6 @@ ${caveats}
     repoUrl,
     menu: menuFor(sections, 'bench'),
     body,
-    scripts: ['/forum.js'],
+    scripts: ['/forum.js', '/bench.js'],
   });
 }

@@ -311,11 +311,19 @@ test('rendersBenchIndexPageWithCardsAndOtherSources', () => {
   assert.ok(html.includes('不同机器与不同提示词'));
   assert.ok(html.includes('<nav class="menu"><a class="active" href="/bench">评测数据</a></nav>'));
   assert.ok(html.includes('src="/lightbox.js" defer'));
+  assert.ok(html.includes('<form class="bench-search" data-bench-search>'));
+  assert.ok(html.includes('<div class="table-scroll" data-bench-table>'));
+  assert.ok(html.includes('src="/bench.js" defer'));
 });
 
 test('rendersBenchDatasetPageWithNumbersSourcesAndChart', () => {
   const html = renderBenchDatasetPage({ ...benchOptions, benchConfig, dataset: benchConfig.datasets[0], data: benchData });
   assert.ok(html.includes('<th class="num">32K 输入</th>'));
+  assert.ok(html.includes('<div data-bench-table>'));
+  assert.ok(html.includes('<h3>生成速度（tok/s）（2 行）</h3>'));
+  assert.ok(html.includes('<form class="bench-search" data-bench-search>'));
+  assert.ok(html.includes('<p class="bench-search-status" data-bench-status role="status" aria-live="polite"></p>'));
+  assert.ok(html.includes('placeholder="搜显卡、量化档位、引擎版本或数字，例如 5090 IQ2_XS 0.1.40"'));
   assert.ok(html.includes('<td class="num">2,454</td>'));
   assert.ok(html.includes(`href="https://github.com/Niko1221/Strata/blob/${benchCommit}/bench/results/2026-10-09-community-rtx-3060-0141/README.md"`));
   assert.ok(html.includes('href="https://github.com/Niko1221/Strata/pull/1725"'));
@@ -338,4 +346,10 @@ test('skipsBenchTablesThatHaveNoRows', () => {
   const html = renderBenchDatasetPage({ ...benchOptions, benchConfig, dataset: benchConfig.datasets[0], data: empty });
   assert.ok(!html.includes('32K 输入'));
   assert.ok(!html.includes('bench-figure'));
+});
+
+test('hidesTheBenchSearchBoxWhenThereIsNoTableToFilter', () => {
+  const empty = { ...benchData, tables: { output: { rows: [] }, prompt: { rows: [] }, others: { rows: [] } } };
+  const html = renderBenchDatasetPage({ ...benchOptions, benchConfig, dataset: benchConfig.datasets[0], data: empty });
+  assert.ok(!html.includes('data-bench-search'));
 });

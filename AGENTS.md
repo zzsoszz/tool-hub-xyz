@@ -86,3 +86,6 @@ npm run lint       # syntax, indentation, trailing whitespace, secret scan
   never extrapolate across machines; caveats about upstream draft protocols stay on the page.
 - Images zoom through `public/lightbox.js`: it takes `main img`, skips images with an `<a>`
   ancestor (list thumbnails are links), and adds no animation.
+- Bench tables filter through `public/bench.js`: the box is server-rendered inside `.bench-data`,
+  every table group carries `data-bench-table`, and the query stays in `?q=` so a filtered
+  view is a shareable link.
