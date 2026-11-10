@@ -89,6 +89,18 @@ npm run lint       # syntax, indentation, trailing whitespace, secret scan
 - Bench tables filter through `public/bench.js`: the box is server-rendered inside `.bench-data`,
   every table group carries `data-bench-table`, and the query stays in `?q=` so a filtered
   view is a shareable link.
+- Article search runs through `public/search.js`, and `/data/items.json` is its only index:
+  `itemsIndex` must keep `summary` and `text` next to the titles, otherwise "search the
+  articles" degenerates into searching headlines. The floating button and the `/search` page
+  share that one engine and the query stays in `?q=`.
+
+## Backfilling Past Days
+
+- `node src/collect.mjs --date=<day> --since=<ISO> --until=<ISO>` collects exactly one day:
+  an explicit window never falls back to older items and never writes `data/seen.json`, because
+  the blanket "seen" marks would make every later day's items read as duplicates.
+- `npm run backfill -- --days=7 --reseed-seen` rebuilds `seen.json` from the published digests
+  before the loop and drops a day that ends up empty, so the archive never lists a blank day.
 
 ## Asset Caching
 

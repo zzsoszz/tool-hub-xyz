@@ -46,16 +46,18 @@ GitHub Actions（每日 06:30 / 18:30 CST）── 采集 → 质量审查 → �
 - `src/schema.sql` D1 表结构（`comments`、`votes`、`hidden_items`、`admin_attempts`）
 - `data/` 采集产物（`digests/`、`bench/`、`seen.json`、`state.json`）、`hidden.json`（下架条目：管理员 + 审查）、`reviews/<日期>.json`（审查结论），随提交保留历史
 - `dist/` 构建产物，已 gitignore，由 CI 用 `wrangler deploy` 上传
-- `public/` 静态资产与路由/缓存配置（`styles.css`、`forum.js`、`funnel.js`、`list.js`（列表筛选与排序）、`bench.js`（评测表格搜索）、`admin.js`（登录与下架）、`lightbox.js`（图片点击放大）、`favicon.svg`、`_headers`、`_redirects`）
+- `public/` 静态资产与路由/缓存配置（`styles.css`、`forum.js`、`funnel.js`、`list.js`（列表筛选与排序）、`bench.js`（评测表格搜索）、`search.js`（全站文章搜索与悬浮按钮）、`admin.js`（登录与下架）、`lightbox.js`（图片点击放大）、`favicon.svg`、`_headers`、`_redirects`）
 - `wrangler.jsonc` Cloudflare 部署目标（Assets + Worker `tool-hub` + D1 + `tool-hub.xyz` 自定义域名）
 - `tests/` 单元与端到端测试，`tests/fixtures/` 为离线样例
 - `scripts/` 运维脚本：`serve.mjs`（本地预览）、`reclassify.mjs`（按现行配置重打历史分类）、`fetch-hidden.mjs`（从 D1 拉回管理员下架记录）、`lint.mjs`
+- `scripts/backfill.mjs` 按天回填最近 N 天日报（`--days=7`、`--reseed-seen`）
 - `docs/DEPLOY.md` 部署手册；`docs/DESIGN.md` 视觉规范（配色/字体/版式 token 与写作约定）
 
 ## 常用命令
 
 ```bash
 npm run collect      # 抓取全部信息源，写入 data/digests/<日期>.json
+npm run backfill     # 按天回填最近 N 天：node scripts/backfill.mjs --days=7 --reseed-seen
 npm run build        # 由 data 生成 dist/
 npm run bench        # 抓上游评测原文（Strata bench/results、OpenRouter 模型目录），写 data/bench/<id>.json
 npm run digest       # collect + bench + build
@@ -79,6 +81,7 @@ NODE_USE_ENV_PROXY=1 HTTPS_PROXY=http://192.168.31.4:7890 npm run collect
 - **去重**：URL 规范化（去 `utm_*`/`ref`、去 `www.`、去末尾斜杠）后取 SHA-1；标题去噪后再哈希一次，跨源转载也会被合并。`data/seen.json` 跨天保留 45 天。
 - **增量**：`data/state.json` 记录上次运行时间，日内二次运行只补新增条目，并保留当天已发布内容（同一天的多次运行不会互相覆盖）。
 - **时间窗口**：默认 48 小时，可按源设置 `windowHours`（官方 blog 96h、论文 72h、新仓库 168h）。若某源在窗口内无产出，则回退到其最新 2 条（不超过 `maxAgeDays: 7`），避免论文/官方栏目整块空掉。
+- **按天回填**：`node src/collect.mjs --date=<日期> --since=<ISO> --until=<ISO>` 只收那一天的条目，且**不做旧文兜底**、**不写 `seen.json`**（写了会把后面几天的条目全判成重复）。`npm run backfill` 逐天调用它，`--reseed-seen` 先把 `seen.json` 重建成「只含已发布条目」的指纹并在回填结束后再重建一次，`--seed-only` 表示只重建 `seen.json` 不采集，某天全空则撤下日期文件，归档里不留空页。
 - **质量门槛**：`minMetrics` 过滤低热度仓库（GitHub 新仓库要求 `stars > 100`）；`noiseKeywords` 排除与 AI 无关的蹭词内容。
 - **质量闸门（核心）**：`filter.quality()` 按「正文是否充实、有没有论证/干货、有没有具体数据、讨论热度、来源可信度」打分，低于 `minQuality` 直接淘汰——只采高质量、有理有据的条目，纯资讯必须更深才放行。`config/filters.json.quality` 里还有按源定制的 `sourceFloors`（HN 要求 points ≥ 30/40、reddit ≥ 150、GitHub ≥ 300 stars、arXiv 摘要 ≥ 200 字等）。
 - **排名**：`rank = quality + action × 1.6`，首页、栏目页、标签页与 RSS 全部按 `rank` 排序，**可实操、可复现的条目排最前**；页面显示「深度 N」「实用 N」徽章，版主精选条目额外 +3，带配图/实测截图的条目再加 `quality.illustrationBonus`（默认 +1）。
@@ -170,6 +173,15 @@ curl -X DELETE https://tool-hub.xyz/api/comments/12 -H "Authorization: Bearer <M
 
 浮层的定位全部在 `styles.css` 的 `.lightbox` 规则里：`_headers` 把 `/styles.css` 与其他页面引用的脚本一律设成 `max-age=0, must-revalidate`，浏览器每次都回源核对，改了 CSS 不会再被一天的旧缓存喂给老访客（此前浮层不居中就是这么来的）。
 
+## 文章搜索
+
+`public/search.js`（零依赖）挂在每个页面：右下角「搜索文章」悬浮按钮打开居中浮层，`Ctrl`/`⌘` + `K` 或斜杠也能调出，Esc 或点遮罩外面关闭；本页已有搜索框时按钮只负责聚焦。`/search` 页沿用同一份引擎，服务端渲染的表单照旧可用。
+
+- **检索范围**：`/data/items.json`（`itemsIndex`）里的中文标题、原标题、来源、标签、摘要，以及条目页上显示的正文。标题命中权重最高，命中词多的排前面，同样命中按发布时间新到旧。
+- **结果**：命中数写在列表上方（多词查询还会说明有几个词全命中），每条给出命中位置的正文片段并把关键词标黄，链接进 `/item/<slug>`，标签显示中文说法。
+- **懒加载**：索引只在第一次搜索时拉一次，之后复用；拉不到就直说「索引没取到」，不假装搜过。查询词写进 `?q=`，筛出来的结果可以直接分享。
+- 浮层定位在 `styles.css` 的 `.search-overlay`，打开期间 `body[data-search="open"]` 锁滚动。禁用脚本时页面照旧完整，只是少了搜索入口。
+
 ## 管理员登录与条目下架
 
 - **登录**：任意页面底部的「管理员登录」→ `POST /api/admin/login`，成功后发 HttpOnly + SameSite=Lax + Secure 会话 cookie（8 小时）。凭据来自 Workers secret `ADMIN_USER` / `ADMIN_PASSWORD`，会话签名用 `SESSION_SECRET`（缺省退回 `MODERATION_TOKEN`）。
@@ -187,5 +199,5 @@ curl -X DELETE https://tool-hub.xyz/api/comments/12 -H "Authorization: Bearer <M
 - 纯文本（适合喂给 LLM）：`/llms.txt`
 - 每日 Markdown（标题、摘要、正文摘录、原文链接、质量分）：`/markdown/<日期>.md`，日报页与归档页都有下载链接
 - 结构化数据：`/data/latest.json`
-- 全量条目索引（slug → 标题/原文链接）：`/data/items.json`，`/search` 用它做浏览器本地检索
+- 全量条目索引（slug → 标题/摘要/正文摘录/原文链接）：`/data/items.json`，`/search` 与全站悬浮搜索按钮都用它做浏览器本地检索
 - 按关键词浏览：`/tags` → `/t/<标签>.html`（如 `/t/lowspec`、`/t/benchmark`）
