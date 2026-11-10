@@ -168,6 +168,8 @@ curl -X DELETE https://tool-hub.xyz/api/comments/12 -H "Authorization: Bearer <M
 
 `public/lightbox.js`（零依赖）接管 `main` 里的图片：正文配图与评测图表点开看大图，列表缩略图本身是进条目页的链接所以不接管（带 `<a>` 祖先的图片一律跳过）。大图优先取 `data-full`，标题取所属 `figure` 的 `figcaption` 或 `alt`；键盘可开（`tabindex=0` + Enter/空格），Esc 或点图片外面关闭并把焦点还给原图，打开期间 `body[data-lightbox="open"]` 锁滚动。评测图表页同时在说明里给出 SVG 原文链接。
 
+浮层的定位全部在 `styles.css` 的 `.lightbox` 规则里：`_headers` 把 `/styles.css` 与其他页面引用的脚本一律设成 `max-age=0, must-revalidate`，浏览器每次都回源核对，改了 CSS 不会再被一天的旧缓存喂给老访客（此前浮层不居中就是这么来的）。
+
 ## 管理员登录与条目下架
 
 - **登录**：任意页面底部的「管理员登录」→ `POST /api/admin/login`，成功后发 HttpOnly + SameSite=Lax + Secure 会话 cookie（8 小时）。凭据来自 Workers secret `ADMIN_USER` / `ADMIN_PASSWORD`，会话签名用 `SESSION_SECRET`（缺省退回 `MODERATION_TOKEN`）。

@@ -89,3 +89,11 @@ npm run lint       # syntax, indentation, trailing whitespace, secret scan
 - Bench tables filter through `public/bench.js`: the box is server-rendered inside `.bench-data`,
   every table group carries `data-bench-table`, and the query stays in `?q=` so a filtered
   view is a shareable link.
+
+## Asset Caching
+
+- Every asset an HTML page links must revalidate: `public/_headers` keeps `/styles.css`,
+  `/favicon.svg` and `/listview.mjs` at `max-age=0, must-revalidate`, and Cloudflare serves the
+  unlisted `public/*.js` the same way. Long `max-age` belongs only to URLs that change together
+  with their content — a day-cached stylesheet renders the lightbox as a block at the page
+  bottom instead of a centred overlay.

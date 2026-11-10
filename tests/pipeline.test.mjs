@@ -92,6 +92,16 @@ test('copiesPublicAssetsAndSitemapCoversSections', async () => {
     const body = await readDist(file);
     assert.ok(body.length > 0, `${file} 应存在于 dist`);
   }
+  // 页面引用的样式与脚本必须每次核对：改了 CSS 不能让旧缓存继续喂给浏览器（图片放大浮层就是这么坏掉的）。
+  const headerBlocks = await readDist('_headers').then((raw) => raw.split('\n').reduce((acc, line) => {
+    if (!line.startsWith(' ')) acc.push([line, []]);
+    else acc.at(-1)[1].push(line.trim());
+    return acc;
+  }, []));
+  const cacheFor = (asset) => headerBlocks.find(([path]) => path === asset)?.[1].find((entry) => entry.startsWith('Cache-Control:'));
+  for (const asset of ['/styles.css', '/favicon.svg', '/listview.mjs']) {
+    assert.equal(cacheFor(asset), 'Cache-Control: public, max-age=0, must-revalidate');
+  }
   const sitemap = await readDist('sitemap.xml');
   assert.match(sitemap, /\/s\/apps/);
   assert.match(sitemap, /\/discuss/);
