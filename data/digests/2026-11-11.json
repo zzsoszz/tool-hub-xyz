@@ -1,0 +1,1006 @@
+{
+  "day": "2026-11-11",
+  "generatedAt": "2026-11-10T18:04:02.811Z",
+  "timezone": "Asia/Shanghai",
+  "windowHours": 48,
+  "window": {
+    "since": null,
+    "until": null
+  },
+  "counts": {
+    "sources": 36,
+    "okSources": 34,
+    "fetched": 2942,
+    "duplicates": 46,
+    "carried": 0,
+    "added": 18,
+    "fallback": 2,
+    "lowQuality": 2736,
+    "published": 18
+  },
+  "sources": [
+    {
+      "id": "openai-news",
+      "name": "OpenAI News",
+      "ok": true,
+      "items": 1375,
+      "error": null
+    },
+    {
+      "id": "google-deepmind",
+      "name": "Google DeepMind",
+      "ok": true,
+      "items": 100,
+      "error": null
+    },
+    {
+      "id": "google-ai",
+      "name": "Google AI Blog",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "hf-blog",
+      "name": "Hugging Face Blog",
+      "ok": true,
+      "items": 902,
+      "error": null
+    },
+    {
+      "id": "hf-daily-papers",
+      "name": "Hugging Face Daily Papers",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "interconnects",
+      "name": "Interconnects",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "latent-space",
+      "name": "Latent Space",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "simon-willison",
+      "name": "Simon Willison",
+      "ok": true,
+      "items": 30,
+      "error": null
+    },
+    {
+      "id": "techcrunch-ai",
+      "name": "TechCrunch AI",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "ars-ai",
+      "name": "Ars Technica AI",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "mit-tr-ai",
+      "name": "MIT Tech Review",
+      "ok": true,
+      "items": 10,
+      "error": null
+    },
+    {
+      "id": "qbitai",
+      "name": "量子位",
+      "ok": true,
+      "items": 10,
+      "error": null
+    },
+    {
+      "id": "arxiv-cs",
+      "name": "arXiv cs.AI/CL/LG",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "hn-newest",
+      "name": "Hacker News (AI)",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "hn-algolia",
+      "name": "Hacker News Search",
+      "ok": true,
+      "items": 25,
+      "error": null
+    },
+    {
+      "id": "lobsters-ai",
+      "name": "Lobsters AI",
+      "ok": true,
+      "items": 25,
+      "error": null
+    },
+    {
+      "id": "reddit-local-llama",
+      "name": "r/LocalLLaMA",
+      "ok": true,
+      "items": 25,
+      "error": null
+    },
+    {
+      "id": "github-trending",
+      "name": "GitHub 新晋 AI 项目",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "microsoft-research",
+      "name": "Microsoft Research",
+      "ok": true,
+      "items": 10,
+      "error": null
+    },
+    {
+      "id": "github-blog",
+      "name": "GitHub Blog",
+      "ok": true,
+      "items": 10,
+      "error": null
+    },
+    {
+      "id": "theverge",
+      "name": "The Verge",
+      "ok": true,
+      "items": 10,
+      "error": null
+    },
+    {
+      "id": "sspai",
+      "name": "少数派",
+      "ok": true,
+      "items": 10,
+      "error": null
+    },
+    {
+      "id": "appinn",
+      "name": "小众软件",
+      "ok": true,
+      "items": 10,
+      "error": null
+    },
+    {
+      "id": "producthunt",
+      "name": "Product Hunt",
+      "ok": true,
+      "items": 50,
+      "error": null
+    },
+    {
+      "id": "hn-show-ai",
+      "name": "Show HN (AI)",
+      "ok": false,
+      "items": 0,
+      "error": "HTTP 502"
+    },
+    {
+      "id": "ai-news-applied",
+      "name": "AI News (应用)",
+      "ok": true,
+      "items": 0,
+      "error": null
+    },
+    {
+      "id": "juejin",
+      "name": "掘金 AI",
+      "ok": true,
+      "items": 0,
+      "error": null
+    },
+    {
+      "id": "reddit-sideproject",
+      "name": "r/SideProject",
+      "ok": false,
+      "items": 0,
+      "error": "HTTP 429"
+    },
+    {
+      "id": "lcz-hardware",
+      "name": "抡锤者 AI硬件",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "lcz-llm",
+      "name": "抡锤者 模型部署讨论",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "lcz-agent",
+      "name": "抡锤者 Agent 工具",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "lcz-media",
+      "name": "抡锤者 AI 音视频画图",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "lcz-selfmedia",
+      "name": "抡锤者 自媒体运营",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "lcz-web",
+      "name": "抡锤者 建站与网络赚钱",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "lcz-crisis",
+      "name": "抡锤者 AI 危机与机遇",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "lcz-news",
+      "name": "抡锤者 资讯",
+      "ok": true,
+      "items": 20,
+      "error": null
+    }
+  ],
+  "categories": [
+    {
+      "id": "apps",
+      "label": "AI 应用",
+      "items": [
+        {
+          "sourceId": "lcz-llm",
+          "sourceName": "抡锤者 模型部署讨论",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "懒人烘培",
+          "id": "2951",
+          "title": "SGLang 和 Strata 怎么选？从短对话到大型代码库",
+          "url": "https://lcz.me/topic/2951",
+          "published": "2026-11-10T03:07:41.667Z",
+          "summary": "之前发过不少跑分和测试帖，这次想聊聊 SGLang 和 Strata 的原理和使用场景，欢迎大家补充。 日常聊天、解释一个函数，我会先用 SGLang。遇到需要反复阅读同一批代码和日志的大项目，我会再比较 Strata。这里的区别，得从模型怎么处理输入说起。 SGLang 和 Strata 是什么关系？ Strata 基于 SGLang。 SGLang 是通用推理引擎，负责运行模型和处理请求。Strata 在这个基础上优化长上下文的 KV 缓存搬运和请求调度。SGLang 自己也有 HiCache，可以把缓存分层放在显存、主机内存和外部存储中，因此比较分层缓存时，可以把 SGLang + HiCache 当作基线。 Strata…",
+          "metrics": {
+            "points": 2,
+            "comments": 5,
+            "views": 271
+          },
+          "excellent": true,
+          "content": {
+            "html": "<p>之前发过不少跑分和测试帖，这次想聊聊 SGLang 和 Strata 的原理和使用场景，欢迎大家补充。</p>\n<p>日常聊天、解释一个函数，我会先用 SGLang。遇到需要反复阅读同一批代码和日志的大项目，我会再比较 Strata。这里的区别，得从模型怎么处理输入说起。</p>\n<h3>SGLang 和 Strata 是什么关系？</h3>\n<p><strong>Strata 基于 SGLang。</strong>SGLang 是通用推理引擎，负责运行模型和处理请求。Strata 在这个基础上优化长上下文的 KV 缓存搬运和请求调度。SGLang 自己也有 HiCache，可以把缓存分层放在显存、主机内存和外部存储中，因此比较分层缓存时，可以把 SGLang + HiCache 当作基线。<a href=\"https://arxiv.org/abs/2508.18572\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Strata 论文</a>·<a href=\"https://www.sglang.io/blog/hicache\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">SGLang HiCache</a></p>\n<p><img src=\"https://upload.lcz.me/uploads/f586813e-f715-4c8b-8ec9-50fcfa399a81.png\" alt=\"relationship.png\" loading=\"lazy\"></p>\n<p><strong>模型权重和 KV 缓存是两笔开销。</strong>拿 Qwen 27B 举例，27B 是模型参数规模，量化会影响权重占多少空间。代码、文档和对话历史则会产生 KV 缓存。Strata 优化的是这些上下文缓存怎么保存和复用。如果某个同名工具宣传能把模型权重放进主机内存，那项功能要按该工具的实现单独看。</p>\n<h3>Prefill 几千对不到 1000，能直接比吗？</h3>\n<p>第一次把长文档交给模型，它要先处理输入，这一步叫<strong>prefill</strong>。第二次保留相同的文档前缀来追问，如果缓存还在，模型就能复用先前算过的部分。两次都可能报输入 tokens/s，但实际做的工作量不同。并发总吞吐和单请求吞吐也要分开看。</p>\n<p>我会用同一模型、量化、硬件和输入分别测两次。第一次测冷缓存，看看模型从头读材料要多久。第二次测热缓存，看看围绕同一份材料追问能省多少时间。想比较使用体感，就记下<strong>从发出请求到看到首个 token 的时间</strong>，包括排队时间。回答很长时，再看后续生成速度。</p>\n<h3>放到个人电脑上，怎么选？</h3>\n<p><img src=\"https://upload.lcz.me/uploads/86d44924-6664-4dd5-abd1-42c141dea95a.png\" alt=\"scenarios.png\" loading=\"lazy\"></p>\n<table><thead><tr><th>我在做什么</th><th>我会怎么选</th><th>主要看什么</th></tr></thead><tbody><tr><td>短聊天、写一段说明、查局部 bug</td><td>先试 SGLang</td><td>首字等待和生成速度</td></tr><tr><td>第一次让模型读大量源码、文档或日志</td><td>对比 SGLang 和 Strata 的冷缓存表现</td><td>同一份材料谁更早开始回答</td></tr><tr><td>围绕同一批项目材料连续追问</td><td>对比 SGLang + HiCache 与 Strata</td><td>前缀能否复用，缓存加载要多久</td></tr><tr><td>同时跑多个聊天或代码任务</td><td>先用 SGLang 测实际并发，再按需要对比</td><td>整体吞吐和单请求排队时间</td></tr></tbody></table>\n<p>跑分可以参考，真要看哪个用起来更顺手，还是拿自己平时的任务试一遍：点发送后等多久才出第一个字，开始回答后出字跟不跟得上。把这两段分开看，差别就清楚了。</p>",
+            "text": "之前发过不少跑分和测试帖，这次想聊聊 SGLang 和 Strata 的原理和使用场景，欢迎大家补充。\n日常聊天、解释一个函数，我会先用 SGLang。遇到需要反复阅读同一批代码和日志的大项目，我会再比较 Strata。这里的区别，得从模型怎么处理输入说起。\nSGLang 和 Strata 是什么关系？\nStrata 基于 SGLang。 SGLang 是通用推理引擎，负责运行模型和处理请求。Strata 在这个基础上优化长上下文的 KV 缓存搬运和请求调度。SGLang 自己也有 HiCache，可以把缓存分层放在显存、主机内存和外部存储中，因此比较分层缓存时，可以把 SGLang + HiCache 当作基线。 Strata 论文 · SGLang HiCache\n模型权重和 KV 缓存是两笔开销。 拿 Qwen 27B 举例，27B 是模型参数规模，量化会影响权重占多少空间。代码、文档和对话历史则会产生 KV 缓存。Strata 优化的是这些上下文缓存怎么保存和复用。如果某个同名工具宣传能把模型权重放进主机内存，那项功能要按该工具的实现单独看。\nPrefill 几千对不到 1000，能直接比吗？\n第一次把长文档交给模型，它要先处理输入，这一步叫 prefill 。第二次保留相同的文档前缀来追问，如果缓存还在，模型就能复用先前算过的部分。两次都可能报输入 tokens/s，但实际做的工作量不同。并发总吞吐和单请求吞吐也要分开看。\n我会用同一模型、量化、硬件和输入分别测两次。第一次测冷缓存，看看模型从头读材料要多久。第二次测热缓存，看看围绕同一份材料追问能省多少时间。想比较使用体感，就记下 从发出请求到看到首个 token 的时间 ，包括排队时间。回答很长时，再看后续生成速度。\n放到个人电脑上，怎么选？\n我在做什么\n我会怎么选\n主要看什么\n短聊天、写一段说明、查局部 bug\n先试 SGLang\n首字等待和生成速度\n第一次让模型读大量源码、文档或日志\n对比 SGLang 和 Strata 的冷缓存表现\n同一份材料谁更早开始回答\n围绕同一批项目材料连续追问\n对比 SGLang + HiCache 与 Strata\n前缀能否复用，缓存加载要多久\n同时跑多个聊天或代码任务\n先用 SGLang 测实际并发，再按需要对比\n整体吞吐和单请求排队时间\n跑分可以参考，真要看哪个用起来更顺手，还是拿自己平时的任务试一遍：点发送后等多久才出第一个字，开始回答后出字跟不跟得上。把这两段分开看，差别就清楚了。",
+            "lead": "之前发过不少跑分和测试帖，这次想聊聊 SGLang 和 Strata 的原理和使用场景，欢迎大家补充。\n日常聊天、解释一个函数，我会先用 SGLang。遇到需要反复阅读同一批代码和日志的大项目，我会再比较 Strata。这里的区别，得从模型怎么处理输入说起。\nSGLang 和 Strata 是什么关系？\nStrata 基于 SGLang。 SGLang 是通用推理引擎，负责运行模型和处理请求。Strata 在这个基础上优化长上下文的 KV 缓存搬运和请求调度。SGLang 自己也有 HiCache，可以把缓存分层放在显存、主机内存和外部存储中，因此比较分层缓存时，可以把 SGLang + HiCache 当作基线。 Strata 论文 · SGLang HiCache\n模型权重和 KV 缓存是两笔开销。 拿 Qwen 27B 举例，27B 是模型参数规模，量化会影响权重占多少空间。代码、文档和对话历史则会产生 KV 缓存。Strata 优化的是这些上下文缓存怎么保存和复用。如果某个同名工具宣传能把模型权重放",
+            "chars": 1097,
+            "shown": 1097,
+            "truncated": false
+          },
+          "quality": 12,
+          "score": 18.46,
+          "category": "apps",
+          "subcategory": "inference",
+          "practical": 3,
+          "slug": "11426d5d5985",
+          "action": 5,
+          "rank": 20,
+          "tags": [
+            "benchmark",
+            "lowspec"
+          ]
+        },
+        {
+          "sourceId": "lcz-agent",
+          "sourceName": "抡锤者 Agent 工具",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "tools",
+          "categories": [
+            "rtx3080",
+            "多卡部署",
+            "图片生成"
+          ],
+          "author": "Dante ding",
+          "id": "2932",
+          "title": "如何整合Agent 和生图",
+          "url": "https://lcz.me/topic/2932",
+          "published": "2026-11-09T03:54:01.854Z",
+          "summary": "两条推理链分开跑，由一个编排层用 tool 调，别塞进同一个进程。 分工 GPU0（CUDA_VISIBLE_DEVICES=0）：Strata/llama.cpp 跑 QFN iq3xss，起 OpenAI 兼容端口（如 8080），--ctx-size 先给 32K；64G 内存下 iq3xss 权重约 40G 出头，要留余量。 GPU1（CUDA_VISIBLE_DEVICES=1）：ComfyUI 跑 Qwen Image 2.1 turbo，--listen 127.0.0.1 --port 8188，只走 /prompt + /history/{prompt_id} API。 agent（DeepSeek Harnes…",
+          "metrics": {
+            "points": 0,
+            "comments": 3,
+            "views": 155
+          },
+          "excellent": false,
+          "quality": 7,
+          "fallback": true,
+          "score": 16.03,
+          "category": "apps",
+          "subcategory": "inference",
+          "practical": 2,
+          "slug": "6f3e9570882c",
+          "action": 4,
+          "rank": 13.4,
+          "tags": [
+            "generate",
+            "local",
+            "agent"
+          ]
+        },
+        {
+          "sourceId": "simon-willison",
+          "sourceName": "Simon Willison",
+          "title": "Quoting Prompting Claude Fable 5.2",
+          "url": "https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/",
+          "id": "https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/",
+          "published": "2026-11-10T05:34:14.000Z",
+          "summary": "Claude Fable 5.2 responds closely to what the prompt says about who owns the code it works on. In Anthropic’s testing on small coding tasks, when a prompt said nothing about ownership or presented the code base as someone else’s, the model tended to add to the existing structure, even when that repeated existing code.…",
+          "content": {
+            "html": "<blockquote><p>Claude Fable 5.2 responds closely to what the prompt says about who owns the code it works on. In Anthropic’s testing on small coding tasks, when a prompt said nothing about ownership or presented the code base as someone else’s, the model tended to add to the existing structure, even when that repeated existing code. [...]</p><p>If you want the model to improve the structure as it works, say that the code is its own:</p><blockquote><p><code>This codebase is yours: what it's for and how it's built are your call, and you'll keep building on it.</code></p></blockquote></blockquote>\n<p>In Anthropic’s testing on small coding tasks, the model merged repeated code in about half of the tries with this sentence, and in under a tenth of the tries without it.</p>\n<p>—<a href=\"https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-2#say-who-owns-the-code\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Prompting Claude Fable 5.2</a>, Anthropic documentation</p>\n<p>Tags:<a href=\"https://simonwillison.net/tags/prompt-engineering\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">prompt-engineering</a>,<a href=\"https://simonwillison.net/tags/anthropic\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">anthropic</a>,<a href=\"https://simonwillison.net/tags/generative-ai\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">generative-ai</a>,<a href=\"https://simonwillison.net/tags/ai\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">ai</a>,<a href=\"https://simonwillison.net/tags/llms\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">llms</a>,<a href=\"https://simonwillison.net/tags/claude-mythos-fable\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">claude-mythos-fable</a></p>",
+            "text": "Claude Fable 5.2 responds closely to what the prompt says about who owns the code it works on. In Anthropic’s testing on small coding tasks, when a prompt said nothing about ownership or presented the code base as someone else’s, the model tended to add to the existing structure, even when that repeated existing code. [...]\nIf you want the model to improve the structure as it works, say that the code is its own:\nThis codebase is yours: what it's for and how it's built are your call, and you'll keep building on it.\nIn Anthropic’s testing on small coding tasks, the model merged repeated code in about half of the tries with this sentence, and in under a tenth of the tries without it.\n— Prompting Claude Fable 5.2 , Anthropic documentation\nTags: prompt-engineering , anthropic , generative-ai , ai , llms , claude-mythos-fable",
+            "lead": "Claude Fable 5.2 responds closely to what the prompt says about who owns the code it works on. In Anthropic’s testing on small coding tasks, when a prompt said nothing about ownership or presented the code base as someone else’s, the model tended to add to the existing structure, even when that repeated existing code. [...]\nIf you want the model to improve the structure as it works, say that the code is its own:\nThis codebase is yours: what it's for and ho",
+            "chars": 839,
+            "shown": 839,
+            "truncated": false
+          },
+          "categories": [
+            "prompt-engineering",
+            "anthropic",
+            "generative-ai",
+            "ai",
+            "llms",
+            "claude-mythos-fable"
+          ],
+          "author": "",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "tools",
+          "metrics": {},
+          "quality": 8,
+          "score": 18.16,
+          "category": "apps",
+          "subcategory": null,
+          "practical": 1,
+          "slug": "c8bf0b8e918f",
+          "action": 2,
+          "rank": 11.2,
+          "tags": []
+        },
+        {
+          "sourceId": "ars-ai",
+          "sourceName": "Ars Technica AI",
+          "title": "DeepMind reveals Gemini Robotics 2.5 and open safety benchmark \"ASIMOV-jailbreak\"",
+          "url": "https://arstechnica.com/google/2026/11/deepmind-reveals-gemini-robotics-2-5-and-open-safety-benchmark-asimov-jailbreak/",
+          "id": "https://arstechnica.com/google/2026/11/deepmind-reveals-gemini-robotics-2-5-and-open-safety-benchmark-asimov-jailbreak/",
+          "published": "2026-11-10T15:00:39.000Z",
+          "summary": "Google DeepMind has revealed a new generation of the AI-powered Gemini Robotics platform. In the 2.5 release, Google says its robotic AI is getting tantalizingly close to completing real-world tasks as well as humans do. In fact, some Gemini robots were able to get actual work done in Mercedes-Benz factories, and the…",
+          "content": {
+            "html": "<p>Google DeepMind has<a href=\"https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">revealed a new generation</a>of the AI-powered Gemini Robotics platform. In the 2.5 release, Google says its robotic AI is getting tantalizingly close to completing real-world tasks as well as humans do. In fact, some Gemini robots were able to get actual work done in Mercedes-Benz factories, and the team is preparing for a day when robots operate alongside humans with an open source safety benchmark.</p>\n<p>DeepMind's<a href=\"https://arstechnica.com/google/2025/09/google-deepmind-unveils-its-first-thinking-robotics-ai/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">physical AI</a>platform has several computational layers between user input and robotic action. There's the vision-language model piece, which is Gemini Embodied Reasoning. Essentially, it takes your instructions and uses live video to plan how the robot can accomplish the task. The other main component is the vision-language-action (VLA) that actually generates robot actions, like moving an actuator—that's Gemini Robotics, which has been bumped to version 2.5.</p>\n<p>DeepMind says that Gemini Robotics 2.5 is much better at tasks that require a high degree of dexterity. The model was evaluated across more than 200 activities, including serving food with tongs and using a pipette, as you would see in a laboratory. Google also showed that Apptronik’s Apollo 2 humanoid robot with Gemini Robotics 2.5 can now tie a bow with its five-fingered hands, a notable feat, because deformable objects (like ribbon) are notoriously difficult for robots to manipulate.</p>\n<p><a href=\"https://arstechnica.com/google/2026/11/deepmind-reveals-gemini-robotics-2-5-and-open-safety-benchmark-asimov-jailbreak/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Read full article</a></p>\n<p><a href=\"https://arstechnica.com/google/2026/11/deepmind-reveals-gemini-robotics-2-5-and-open-safety-benchmark-asimov-jailbreak/#comments\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Comments</a></p>",
+            "text": "Google DeepMind has revealed a new generation of the AI-powered Gemini Robotics platform. In the 2.5 release, Google says its robotic AI is getting tantalizingly close to completing real-world tasks as well as humans do. In fact, some Gemini robots were able to get actual work done in Mercedes-Benz factories, and the team is preparing for a day when robots operate alongside humans with an open source safety benchmark.\nDeepMind's physical AI platform has several computational layers between user input and robotic action. There's the vision-language model piece, which is Gemini Embodied Reasoning. Essentially, it takes your instructions and uses live video to plan how the robot can accomplish the task. The other main component is the vision-language-action (VLA) that actually generates robot actions, like moving an actuator—that's Gemini Robotics, which has been bumped to version 2.5.\nDeepMind says that Gemini Robotics 2.5 is much better at tasks that require a high degree of dexterity. The model was evaluated across more than 200 activities, including serving food with tongs and using a pipette, as you would see in a laboratory. Google also showed that Apptronik’s Apollo 2 humanoid robot with Gemini Robotics 2.5 can now tie a bow with its five-fingered hands, a notable feat, because deformable objects (like ribbon) are notoriously difficult for robots to manipulate.\nRead full article\nComments",
+            "lead": "Google DeepMind has revealed a new generation of the AI-powered Gemini Robotics platform. In the 2.5 release, Google says its robotic AI is getting tantalizingly close to completing real-world tasks as well as humans do. In fact, some Gemini robots were able to get actual work done in Mercedes-Benz factories, and the team is preparing for a day when robots operate alongside humans with an open source safety benchmark.",
+            "chars": 1420,
+            "shown": 1420,
+            "truncated": false
+          },
+          "categories": [
+            "AI",
+            "Google",
+            "gemini",
+            "gemini robotics",
+            "google",
+            "physical AI",
+            "robots"
+          ],
+          "author": "Ryan Whitwam",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "apps",
+          "metrics": {},
+          "quality": 9,
+          "score": 18.95,
+          "category": "apps",
+          "subcategory": "creation",
+          "practical": 1,
+          "slug": "004c51f512e0",
+          "action": 1,
+          "rank": 10.6,
+          "tags": [
+            "benchmark",
+            "free"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "label": "工具玩法",
+      "items": [
+        {
+          "sourceId": "appinn",
+          "sourceName": "小众软件",
+          "title": "福利｜复旦「学术版 Codex」双十一积分翻倍！",
+          "url": "https://www.appinn.com/qiewenpaper-1111/",
+          "id": "https://www.appinn.com/qiewenpaper-1111/",
+          "published": "2026-11-10T06:46:27.000Z",
+          "summary": "程序员被 Codex 彻底改变了。不用一行行敲代码，把需求丢给 AI，它自己写代码、跑测试、修 Bug，最后交付。 那么问题来了： 科研人员天天干的活，不也是”配环境、跑实验、复现代码、查文献、写综述、画图”这些体力活吗？ 现在，复旦大学 NLP 团队把这套逻辑搬到了科研上，做出了一个真正意义上的学术版 Codex： 切问学术 。 它不只是一个搜索、查文献的工具，而是一个能自己连服务器、申请 GPU、跑实验、写综述的全自动科研智能体！ 你负责出想法，剩下的重复劳动交给它。 双十一到了，到处都在搞满减、凑单、算优惠券。 切问这次不玩这些，直接给大家准备了一份实打实的福利： 会员积分翻倍 。 福利：双十一限时，会员积分 ×2 活动期间…",
+          "content": {
+            "html": "<figure><a href=\"https://qiewenpaper.com/zh/pricing?utm_source=xzrj\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://www.appinn.com/wp-content/uploads/2026/11/image9_edited.jpg\" alt=\"福利｜复旦「学术版 Codex」双十一积分翻倍！ 1\" loading=\"lazy\"></a></figure>\n<p>程序员被 Codex 彻底改变了。不用一行行敲代码，把需求丢给 AI，它自己写代码、跑测试、修 Bug，最后交付。</p>\n<p>那么问题来了：<strong>科研人员天天干的活，不也是”配环境、跑实验、复现代码、查文献、写综述、画图”这些体力活吗？</strong></p>\n<p>现在，复旦大学 NLP 团队把这套逻辑搬到了科研上，做出了一个真正意义上的学术版 Codex：<strong>切问学术</strong>。</p>\n<p><strong>它不只是一个搜索、查文献的工具，而是一个能自己连服务器、申请 GPU、跑实验、写综述的全自动科研智能体！</strong></p>\n<p>你负责出想法，剩下的重复劳动交给它。</p>\n<p>双十一到了，到处都在搞满减、凑单、算优惠券。</p>\n<p>切问这次不玩这些，直接给大家准备了一份实打实的福利：<strong>会员积分翻倍</strong>。<img src=\"https://s.w.org/images/core/emoji/17.0.2/72x72/1f447.png\" alt=\"👇\" loading=\"lazy\"></p>\n<h3>福利：双十一限时，会员积分 ×2</h3>\n<p>活动期间订阅任意会员套餐，每月到账的积分都是平时的<strong>2 倍</strong>。</p>\n<p>论文检索、AI 问答、Agent 任务，能做的事多了一倍。</p>\n<p><img src=\"https://s.w.org/images/core/emoji/17.0.2/72x72/23f0.png\" alt=\"⏰\" loading=\"lazy\"><strong>双十一限时活动</strong></p>\n<p><img src=\"https://s.w.org/images/core/emoji/17.0.2/72x72/2705.png\" alt=\"✅\" loading=\"lazy\"><strong>全套餐参与</strong>：Plus、Pro、Max X2、Max X5，月付、年付都可以</p>\n<p><img src=\"https://s.w.org/images/core/emoji/17.0.2/72x72/2705.png\" alt=\"✅\" loading=\"lazy\"><strong>最长一年</strong>：单个账号最多可购买 12 个月会员，整整一年都是双倍积分</p>\n<p><img src=\"https://s.w.org/images/core/emoji/17.0.2/72x72/2705.png\" alt=\"✅\" loading=\"lazy\"><strong>老会员也能参加</strong>：活动期间升级，同样享受双倍积分</p>\n<p>活动入口<img src=\"https://s.w.org/images/core/emoji/17.0.2/72x72/1f449.png\" alt=\"👉\" loading=\"lazy\"><a href=\"https://qiewenpaper.com/zh/pricing?utm_source=xzrj\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://qiewenpaper.com/zh/pricing?utm_source=xzrj</a></p>\n<figure><img src=\"https://www.appinn.com/wp-content/uploads/2026/11/qiewenimage1.avif\" alt=\"img\" loading=\"lazy\"></figure>\n<figure><img src=\"https://www.appinn.com/wp-content/uploads/2026/11/qiewenimage2.avif\" alt=\"img\" loading=\"lazy\"></figure>\n<p>以最受欢迎的<strong>Pro 年付</strong>为例：</p>\n<ul><li>平时：全年积分 240 万</li><li>双十一：全年积分<strong>480 万</strong></li></ul>\n<p>相当于白得 240 万积分，多送了一整年的用量。</p>\n<p>年付本来就立省 15%，再叠上双倍积分，可以说是全年最划算的入手时机。</p>\n<p>活动结束后也不用担心，已购时长内的双倍积分照常每月发放。</p>\n<h3><img src=\"https://s.w.org/images/core/emoji/17.0.2/72x72/1f64b.png\" alt=\"🙋\" loading=\"lazy\">套餐怎么选？</h3>\n<ul><li>刚开始用、主要查文献读论文 → 选<strong>Plus</strong></li><li>写综述、做调研、经常跑 Agent 任务 → 选<strong>Pro</strong>（大多数人的选择）</li><li>课题组 / 重度用户 / 需要大量存储 → 选<strong>Max X2</strong>或<strong>Max X5</strong></li></ul>\n<p>拿不准的话，就选 Pro 年付。双十一拿双倍积分，错过了就用代金券，怎么买都不亏。</p>\n<p>现在下载并登录切问学术的客户端还额外赠送1w积分！（限时有效）</p>\n<figure><img src=\"https://www.appinn.com/wp-content/uploads/2026/11/qiewenimage3.avif\" alt=\"img\" loading=\"lazy\"></figure>\n<p>这些积分在客户端里能拿来搜索、翻译、做 Blog 总结、跟论文对话</p>\n<p>够你把它先痛快用起来，感受一下顺不顺手再说</p>\n<p>下载入口<img src=\"https://s.w.org/images/core/emoji/17.0.2/72x72/1f449.png\" alt=\"👉\" loading=\"lazy\"><a href=\"https://qiewenpaper.com/zh/download?utm_source=xzrj\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://qiewenpaper.com/zh/download?utm_source=xzrj</a></p>\n<figure><img src=\"https://www.appinn.com/wp-content/uploads/2026/11/qiewenimage4.avif\" alt=\"img\" loading=\"lazy\"></figure>\n<div><h3>目录</h3><ul><li><a href=\"https://www.appinn.com/qiewenpaper-1111/#%E7%A6%8F%E5%88%A9%EF%BC%9A%E5%8F%8C%E5%8D%81%E4%B8%80%E9%99%90%E6%97%B6%EF%BC%8C%E4%BC%9A%E5%91%98%E7%A7%AF%E5%88%86-2\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">福利：双十一限时，会员积分 ×2</a></li><li><a href=\"https://www.appinn.com/qiewenpaper-1111/#%F0%9F%99%8B-%E5%A5%97%E9%A4%90%E6%80%8E%E4%B9%88%E9%80%89%EF%BC%9F\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://s.w.org/images/core/emoji/17.0.2/72x72/1f64b.png\" alt=\"🙋\" loading=\"lazy\">套餐怎么选？</a></li><li><a href=\"https://www.appinn.com/qiewenpaper-1111/#%E4%B8%BA%E4%BB%80%E4%B9%88%E6%83%B3%E8%AE%A9%E4%BD%A0%E8%AF%95%E8%AF%95%E8%BF%99%E4%B8%AA%E5%AE%A2%E6%88%B7%E7%AB%AF%EF%BC%9F\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">为什么想让你试试这个客户端？</a><ul><li><a href=\"https://www.appinn.com/qiewenpaper-1111/#%E4%B8%80%E3%80%81%E7%9C%9F%E6%AD%A3%E8%83%BD%E6%9B%BF%E4%BD%A0%E5%B9%B2%E6%B4%BB%E7%9A%84-agent\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">一、真正能替你干活的 Agent</a></li></ul></li><li><a href=\"https://www.appinn.com/qiewenpaper-1111/#%E4%BA%8C%E3%80%81%E4%B8%80%E4%B8%AA%E4%B8%8D%E7%94%A8%E6%8A%98%E8%85%BE%E7%9A%84%E5%85%8D%E8%B4%B9-zotero\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">二、一个不用折腾的免费 Zotero</a></li><li><a href=\"https://www.appinn.com/qiewenpaper-1111/#%E4%B8%89%E3%80%81%E8%AF%BB%E8%AE%BA%E6%96%87%EF%BC%8C%E7%BF%BB%E8%AF%91%E3%80%81%E6%80%BB%E7%BB%93%E3%80%81%E7%AD%94%E7%96%91%E4%B8%80%E6%AC%A1%E6%90%9E%E5%AE%9A\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">三、读论文，翻译、总结、答疑一次搞定</a></li><li><a href=\"https://www.appinn.com/qiewenpaper-1111/#%E5%9B%9B%E3%80%81%E6%90%9C%E8%AE%BA%E6%96%87%EF%BC%8C%E5%8F%AF%E4%BB%A5%E5%83%8F%E9%97%AE%E5%AF%BC%E5%B8%88%E4%B8%80%E6%A0%B7%E9%97%AE\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">四、搜论文，可以像问导师一样问</a></li><li><a href=\"https://www.appinn.com/qiewenpaper-1111/#%E4%BA%94%E3%80%81%E5%87%A0%E4%B8%AA%E4%B8%8D%E8%B5%B7%E7%9C%BC%E3%80%81%E4%BD%86%E5%BE%88%E7%9C%81%E4%BA%8B%E7%9A%84%E5%B0%8F%E5%B7%A5%E5%85%B7\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">五、几个不起眼、但很省事的小工具</a></li></ul></div>\n<h3>为什么想让你试试这个客户端？</h3>\n<p>不少用过的人管切问学术叫【学术版 Codex】。</p>\n<p>程序员用 Codex 把写代码、跑测试、修 bug 甩给 AI，</p>\n<p>切问想让科研人也能把配环境、跑实验、啃文献这些体力活甩出去。</p>\n<p>网页版和桌面客户端都能用，下载完打开就能上手，不用看教程，也不用装一堆插件。</p>\n<h3>一、真正能替你干活的 Agent</h3>\n<p>这也是最”吃”积分、最值得用双倍积分的地方。</p>\n<p>选题没方向的时候，用<strong>灵感发现</strong>。它会像个爱刨根问底的导师一样跟你来回讨论，顺手把全网相关工作扒一遍，告诉你这个点有没有人做过、最接近的是哪几篇、差在哪，最后帮你攒出一份能落地的研究计划。</p>\n<figure><img src=\"https://www.appinn.com/wp-content/uploads/2026/11/qiewenimage5.avif\" alt=\"img\" loading=\"lazy\"></figure>\n<p>年底写<strong>国自然</strong>的，还能多一个帮手。</p>\n<p>用国自然申请，它不会急着动笔，而是<strong>先跟你把科学问题聊清楚</strong>，各章都围着同一套问题写，不会前面说 A、后面做 B。文献从<strong>3.6 亿+ 真实文献库</strong>里检索，按国标排好；你没给的预实验、研究基础也不瞎编，用黄色高亮标出【待补充】。</p>\n<p>交到你手里的是一份思路清楚的初稿，你再逐条核实、改成自己的本子。</p>\n<figure><img src=\"https://www.appinn.com/wp-content/uploads/2026/11/qiewenimage6.avif\" alt=\"img\" loading=\"lazy\"></figure>\n<figure><img src=\"https://www.appinn.com/wp-content/uploads/2026/11/qiewenimage7.avif\" alt=\"img\" loading=\"lazy\"></figure>\n<p>想复现一篇论文、手里又没卡，就更省心了。它会自己去后台申请 GPU，装好镜像和依赖。中途碰上版本冲突也不撂挑子，自己降级、自己改脚本，一直折腾到实验跑起来为止。</p>\n<figure><img src=\"https://www.appinn.com/wp-content/uploads/2026/11/qiewenimage8.avif\" alt=\"img\" loading=\"lazy\"></figure>\n<p>要<strong>写综述</strong>，直接把几百篇论文丢给它，睡一觉起来，一份二十万字的东西可能就摆在那了。</p>\n<p>要是觉得它读的文献还不够，或者关键那几篇卡在付费墙后面打不开，也不用自己一篇篇去下。把学校给的数据库账号（比如知网）登上，<strong>Agent 会自己去检索、下载（仅限客户端和插件使用）</strong>，顺手归进你的知识库，接着拿来写。</p>\n<figure><img src=\"https://www.appinn.com/wp-content/uploads/2026/11/qiewenimage9.avif\" alt=\"img\" loading=\"lazy\"></figure>\n<p>配环境、找算力、跑实验、补文献、写综述、搭本子，这些最耗人的活，<strong>一个 Agent 基本能包圆</strong>。</p>\n<p>以前积分要省着点用，这次翻倍了，大任务可以放开跑。</p>\n<figure><img src=\"https://www.appinn.com/wp-content/uploads/2026/11/qiewenimage10.avif\" alt=\"img\" loading=\"lazy\"></figure>\n<h3>二、一个不用折腾的免费 Zotero</h3>\n<p>Zotero 好用，但上手前的准备太劝退：主程序、浏览器插件、Word 插件、同步、引用样式……</p>\n<p>一套折腾下来天都黑了，论文还一篇没看。</p>\n<p>切问反过来做：<strong>装上就能用，打开就干活。</strong></p>\n<p>文件夹想分几层分几层，论文拖进来，标题、作者、年份自动识别，文件名不再是一串看不懂的乱码。Agent 帮你下载的文献，也会自动归到这里。</p>\n<p>免费、国产、中文界面，</p>\n<p>国内的同学用起来很顺手。</p>\n<figure><img src=\"https://www.appinn.com/wp-content/uploads/2026/11/qiewenimage11.avif\" alt=\"img\" loading=\"lazy\"></figure>\n<h3>三、读论文，翻译、总结、答疑一次搞定</h3>\n<p>自带的阅读器，主要想帮你迈过读外文文献这道坎。</p>\n<p>原文和译文左右对照，公式、图表、版式都保持原样，不会翻译完乱成一团；</p>\n<p>专业术语也按学术语境处理，读着不拗口。</p>\n<figure><img src=\"https://www.appinn.com/wp-content/uploads/2026/11/qiewenimage12.avif\" alt=\"img\" loading=\"lazy\"></figure>\n<p>几十页的论文太长不想从头啃？先让它出一篇 Blog 式解读，把来龙去脉讲清楚，再回头抠细节。</p>\n<figure><img src=\"https://www.appinn.com/wp-content/uploads/2026/11/qiewenimage13.avif\" alt=\"img\" loading=\"lazy\"></figure>\n<p>读到哪句没懂，直接划出来问，它会结合全文给你解释，就像身边随时有个师兄帮你答疑。</p>\n<figure><img src=\"https://www.appinn.com/wp-content/uploads/2026/11/qiewenimage14.avif\" alt=\"img\" loading=\"lazy\"></figure>\n<h3>四、搜论文，可以像问导师一样问</h3>\n<p>不用再绞尽脑汁拼关键词，把你想问的直接说出来就行。</p>\n<p>比如“帮我找一下关于非线性多智能体系统最优编队控制近三年的论文”，</p>\n<p>它会理解你真正想找什么，把只是看起来相关的结果筛掉，把最有价值的几篇放到你面前。</p>\n<figure><img src=\"https://www.appinn.com/wp-content/uploads/2026/11/qiewenimage15.avif\" alt=\"img\" loading=\"lazy\"></figure>\n<h3>五、几个不起眼、但很省事的小工具</h3>\n<p>科研里有些活，说难不难，就是磨人。 抠论文插图做 PPT、从图表里扒数据、调半天配色画张图……这些现在点一下就能搞定，转出来的 PPT 和 Excel 都能直接改。</p>\n<p>还有个 TrueCite，投稿前把 Bib 扔进去，假引用一个都跑不掉。</p>\n<figure><img src=\"https://www.appinn.com/wp-content/uploads/2026/11/qiewenimage16.avif\" alt=\"img\" loading=\"lazy\"></figure>\n<p>切问这个名字，取自复旦校训里的”切问而近思”。</p>\n<p>它的初衷也很朴素：把翻译、搬运、配环境这些琐碎活儿接过去，让做研究的人能把精力留给真正值得想的问题。</p>\n<p>小众软件也想借这次双十一，把这份福利转达给还在科研路上的你：</p>\n<p><strong>限时活动期间订阅会员，每月积分翻倍；</strong></p>\n<p><strong>下载客户端，再领 1w 积分。</strong></p>\n<p>双十一限定，错过就要再等一年。</p>\n<p>官网<img src=\"https://s.w.org/images/core/emoji/17.0.2/72x72/1f449.png\" alt=\"👉\" loading=\"lazy\"><a href=\"https://qiewenpaper.com/zh?utm_source=xzrj\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://qiewenpaper.com/zh?utm_source=xzrj</a></p>\n<hr><h3>相关阅读</h3>\n<ul><li><a href=\"https://www.appinn.com/qiewenpaper-openclaw-auto-paper-reproduction/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">免安装 OpenClaw！复旦 NLP 团队把<img src=\"https://s.w.org/images/core/emoji/17.0.2/72x72/1f99e.png\" alt=\"🦞\" loading=\"lazy\">搬进科研神器，复现论文竟然能全自动了！</a></li><li><a href=\"https://www.appinn.com/qiewenpaper-codex-2/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">福利：复旦「学术版 Codex」客户端上线，下载登录就送1 万积分，还可享会员 8 折</a></li><li><a href=\"https://www.appinn.com/fudan-nlp-gpu-ai-agent/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">没卡没资源？复旦NLP直接把免费GPU塞进AI，科研全自动时代来了！</a></li><li><a href=\"https://www.appinn.com/qiewenpaper-codex/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">复旦「学术版 Codex」：从找 Idea 到跑实验，一句话全自动</a></li><li><a href=\"https://www.appinn.com/qiewenpaper/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">复旦团队研发“切问学术AI”上线（文末赠送100个5 折兑换码名额）</a></li></ul>\n<hr><a href=\"http://www.appinn.com/copyright/?utm_source=feeds&amp;utm_medium=copyright&amp;utm_campaign=feeds\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">©</a>\n2021 青小蛙 for<a href=\"http://www.appinn.com/?utm_source=feeds&amp;utm_medium=appinn&amp;utm_campaign=feeds\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">小众软件</a>\n|<a href=\"http://www.appinn.com/join-us/?utm_source=feeds&amp;utm_medium=joinus&amp;utm_campaign=feeds\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">加入我们</a>\n|<a href=\"https://meta.appinn.net/c/faxian/?utm_source=feeds&amp;utm_medium=contribute&amp;utm_campaign=feeds\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">投稿</a>\n|<a href=\"http://www.appinn.com/feeds-subscribe/?utm_source=feeds&amp;utm_medium=feedsubscribe&amp;utm_campaign=feeds\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">订阅指南</a>\n<br>3659b075e72a5b7b1b87ea74aa7932ff<br><a href=\"https://www.appinn.com/qiewenpaper-1111/#comments\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">点击这里留言、和原作者一起评论</a>\n<p><a href=\"https://www.appinn.com/qiewenpaper-1111/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[ 点击前往获取链接 ]</a></p>\n<hr>",
+            "text": "程序员被 Codex 彻底改变了。不用一行行敲代码，把需求丢给 AI，它自己写代码、跑测试、修 Bug，最后交付。\n那么问题来了： 科研人员天天干的活，不也是”配环境、跑实验、复现代码、查文献、写综述、画图”这些体力活吗？\n现在，复旦大学 NLP 团队把这套逻辑搬到了科研上，做出了一个真正意义上的学术版 Codex： 切问学术 。\n它不只是一个搜索、查文献的工具，而是一个能自己连服务器、申请 GPU、跑实验、写综述的全自动科研智能体！\n你负责出想法，剩下的重复劳动交给它。\n双十一到了，到处都在搞满减、凑单、算优惠券。\n切问这次不玩这些，直接给大家准备了一份实打实的福利： 会员积分翻倍 。\n福利：双十一限时，会员积分 ×2\n活动期间订阅任意会员套餐，每月到账的积分都是平时的 2 倍 。\n论文检索、AI 问答、Agent 任务，能做的事多了一倍。\n双十一限时活动\n全套餐参与 ：Plus、Pro、Max X2、Max X5，月付、年付都可以\n最长一年 ：单个账号最多可购买 12 个月会员，整整一年都是双倍积分\n老会员也能参加 ：活动期间升级，同样享受双倍积分\n活动入口 https://qiewenpaper.com/zh/pricing?utm_source=xzrj\n以最受欢迎的 Pro 年付 为例：\n平时：全年积分 240 万\n双十一：全年积分 480 万\n相当于白得 240 万积分，多送了一整年的用量。\n年付本来就立省 15%，再叠上双倍积分，可以说是全年最划算的入手时机。\n活动结束后也不用担心，已购时长内的双倍积分照常每月发放。\n套餐怎么选？\n刚开始用、主要查文献读论文 → 选 Plus\n写综述、做调研、经常跑 Agent 任务 → 选 Pro （大多数人的选择）\n课题组 / 重度用户 / 需要大量存储 → 选 Max X2 或 Max X5\n拿不准的话，就选 Pro 年付。双十一拿双倍积分，错过了就用代金券，怎么买都不亏。\n现在下载并登录切问学术的客户端还额外赠送1w积分！（限时有效）\n这些积分在客户端里能拿来搜索、翻译、做 Blog 总结、跟论文对话\n够你把它先痛快用起来，感受一下顺不顺手再说\n下载入口 https://qiewenpaper.com/zh/download?utm_source=xzrj\n目录\n福利：双十一限时，会员积分 ×2\n套餐怎么选？\n为什么想让你试试这个客户端？ 一、真正能替你干活的 Agent\n二、一个不用折腾的免费 Zotero\n三、读论文，翻译、总结、答疑一次搞定\n四、搜论文，可以像问导师一样问\n五、几个不起眼、但很省事的小工具\n为什么想让你试试这个客户端？\n不少用过的人管切问学术叫【学术版 Codex】。\n程序员用 Codex 把写代码、跑测试、修 bug 甩给 AI，\n切问想让科研人也能把配环境、跑实验、啃文献这些体力活甩出去。\n网页版和桌面客户端都能用，下载完打开就能上手，不用看教程，也不用装一堆插件。\n一、真正能替你干活的 Agent\n这也是最”吃”积分、最值得用双倍积分的地方。\n选题没方向的时候，用 灵感发现 。它会像个爱刨根问底的导师一样跟你来回讨论，顺手把全网相关工作扒一遍，告诉你这个点有没有人做过、最接近的是哪几篇、差在哪，最后帮你攒出一份能落地的研究计划。\n年底写 国自然 的，还能多一个帮手。\n用国自然申请，它不会急着动笔，而是 先跟你把科学问题聊清楚 ，各章都围着同一套问题写，不会前面说 A、后面做 B。文献从 3.6 亿+ 真实文献库 里检索，按国标排好；你没给的预实验、研究基础也不瞎编，用黄色高亮标出【待补充】。\n交到你手里的是一份思路清楚的初稿，你再逐条核实、改成自己的本子。\n想复现一篇论文、手里又没卡，就更省心了。它会自己去后台申请 GPU，装好镜像和依赖。中途碰上版本冲突也不撂挑子，自己降级、自己改脚本，一直折腾到实验跑起来为止。\n要 写综述 ，直接把几百篇论文丢给它，睡一觉起来，一份二十万字的东西可能就摆在那了。\n要是觉得它读的文献还不够，或者关键那几篇卡在付费墙后面打不开，也不用自己一篇篇去下。把学校给的数据库账号（比如知网）登上， Agent 会自己去检索、下载（仅限客户端和插件使用） ，顺手归进你的知识库，接着拿来写。\n配环境、找算力、跑实验、补文献、写综述、搭本子，这些最耗人的活， 一个 Agent 基本能包圆 。\n以前积分要省着点用，这次翻倍了，大任务可以放开跑。\n二、一个不用折腾的免费 Zotero\nZotero 好用，但上手前的准备太劝退：主程序、浏览器插件、Word 插件、同步、引用样式……\n一套折腾下来天都黑了，论文还一篇没看。\n切问反过来做： 装上就能用，打开就干活。\n文件夹想分几层分几层，论文拖进来，标题、作者、年份自动识别，文件名不再是一串看不懂的乱码。Agent 帮你下载的文献，也会自动归到这里。\n免费、国产、中文界面，\n国内的同学用起来很顺手。\n三、读论文，翻译、总结、答疑一次搞定\n自带的阅读器，主要想帮你迈过读外文文献这道坎。\n原文和译文左右对照，公式、图表、版式都保持原样，不会翻译完乱成一团；\n专业术语也按学术语境处理，读着不拗口。\n几十页的论文太长不想从头啃？先让它出一篇 Blog 式解读，把来龙去脉讲清楚，再回头抠细节。\n读到哪句没懂，直接划出来问，它会结合全文给你解释，就像身边随时有个师兄帮你答疑。\n四、搜论文，可以像问导师一样问\n不用再绞尽脑汁拼关键词，把你想问的直接说出来就行。\n比如“帮我找一下关于非线性多智能体系统最优编队控制近三年的论文”，\n它会理解你真正想找什么，把只是看起来相关的结果筛掉，把最有价值的几篇放到你面前。\n五、几个不起眼、但很省事的小工具\n科研里有些活，说难不难，就是磨人。 抠论文插图做 PPT、从图表里扒数据、调半天配色画张图……这些现在点一下就能搞定，转出来的 PPT 和 Excel 都能直接改。\n还有个 TrueCite，投稿前把 Bib 扔进去，假引用一个都跑不掉。\n切问这个名字，取自复旦校训里的”切问而近思”。\n它的初衷也很朴素：把翻译、搬运、配环境这些琐碎活儿接过去，让做研究的人能把精力留给真正值得想的问题。\n小众软件也想借这次双十一，把这份福利转达给还在科研路上的你：\n限时活动期间订阅会员，每月积分翻倍；\n下载客户端，再领 1w 积分。\n双十一限定，错过就要再等一年。\n官网 https://qiewenpaper.com/zh?utm_source=xzrj\n相关阅读\n免安装 OpenClaw！复旦 NLP 团队把 搬进科研神器，复现论文竟然能全自动了！\n福利：复旦「学术版 Codex」客户端上线，下载登录就送1 万积分，还可享会员 8 折\n没卡没资源？复旦NLP直接把免费GPU塞进AI，科研全自动时代来了！\n复旦「学术版 Codex」：从找 Idea 到跑实验，一句话全自动\n复旦团队研发“切问学术AI”上线（文末赠送100个5 折兑换码名额）\n©\n2021 青小蛙 for 小众软件\n| 加入我们\n| 投稿\n| 订阅指南\n3659b075e72a5b7b1b87ea74aa7932ff\n点击这里留言、和原作者一起评论\n[ 点击前往获取链接 ]",
+            "lead": "程序员被 Codex 彻底改变了。不用一行行敲代码，把需求丢给 AI，它自己写代码、跑测试、修 Bug，最后交付。\n那么问题来了： 科研人员天天干的活，不也是”配环境、跑实验、复现代码、查文献、写综述、画图”这些体力活吗？\n现在，复旦大学 NLP 团队把这套逻辑搬到了科研上，做出了一个真正意义上的学术版 Codex： 切问学术 。\n它不只是一个搜索、查文献的工具，而是一个能自己连服务器、申请 GPU、跑实验、写综述的全自动科研智能体！\n你负责出想法，剩下的重复劳动交给它。\n双十一到了，到处都在搞满减、凑单、算优惠券。\n切问这次不玩这些，直接给大家准备了一份实打实的福利： 会员积分翻倍 。\n福利：双十一限时，会员积分 ×2\n活动期间订阅任意会员套餐，每月到账的积分都是平时的 2 倍 。\n论文检索、AI 问答、Agent 任务，能做的事多了一倍。\n双十一限时活动\n全套餐参与 ：Plus、Pro、Max X2、Max X5，月付、年付都可以",
+            "chars": 3109,
+            "shown": 3109,
+            "truncated": false
+          },
+          "categories": [
+            "Windows",
+            "macOS",
+            "学术"
+          ],
+          "author": "青小蛙",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "tools",
+          "metrics": {},
+          "quality": 8,
+          "score": 18.66,
+          "category": "tools",
+          "subcategory": "interface",
+          "practical": 5,
+          "slug": "8241a5e1124f",
+          "action": 6,
+          "rank": 17.6,
+          "tags": [
+            "agent",
+            "tutorial",
+            "money",
+            "free"
+          ]
+        },
+        {
+          "sourceId": "theverge",
+          "sourceName": "The Verge",
+          "title": "The Verge’s 2026 holiday gift guide for moms",
+          "url": "https://www.theverge.com/gadgets/1021621/best-gifts-for-mom-2026",
+          "id": "https://www.theverge.com/?p=1021621",
+          "published": "2026-11-10T16:00:00.000Z",
+          "summary": "Given everything moms do for us, it feels good to give back during the holidays. But where to start? How do you come up with a physical representation of how you feel about such a key and influential figure in your life? The possibilities seem as endless as they are daunting, but fear not, we've done the hard work for…",
+          "content": {
+            "html": "<figure><img src=\"https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/268757_2026_gift_guides_UNDER_25_CVirginia_MOMS.jpg?quality=90&amp;strip=all&amp;crop=0,0,100,100\" alt=\"Gift guide products in front of a graphic background.\" loading=\"lazy\"><figcaption></figcaption></figure>\n<p>Given everything moms do for us, it feels good to give back during the holidays. But where to start? How do you come up with a physical representation of how you feel about such a key and influential figure in your life? The possibilities seem as endless as they are daunting, but fear not, we've done the hard work for you.</p>\n<p>To help you make the mother figure in your life feel truly appreciated, we've created a sprawling list of intriguing, lovingly curated gift ideas. From<a href=\"https://www.casio.com/us/watches/gshock/product.DWN-5600-1/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">a ring watch</a>and<a href=\"https://www.bestbuy.com/product/rog-xbox-ally-x20-7-4-fhd-1080p-120hz-oled-gaming-handheld-amd-ryzen-ai-z2-extreme-processor-24gb-ram-1tb-ssd/JJGHGST42W\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">luxe portable gaming deck</a>to<a href=\"https://maticrobots.com/product?model=matic-serene&amp;package=one-matic-one-dock\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">a better robovac</a>and an<a href=\"https://ourcoolfly.com/products/aura-smart-bird-feeder-built-in-ai\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">AI-powered bird feeder</a>that brings nature to her doorstep, our list has something to fit all of you …</p>\n<p><a href=\"https://www.theverge.com/gadgets/1021621/best-gifts-for-mom-2026\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Read the full story at The Verge.</a></p>",
+            "text": "Given everything moms do for us, it feels good to give back during the holidays. But where to start? How do you come up with a physical representation of how you feel about such a key and influential figure in your life? The possibilities seem as endless as they are daunting, but fear not, we've done the hard work for you.\nTo help you make the mother figure in your life feel truly appreciated, we've created a sprawling list of intriguing, lovingly curated gift ideas. From a ring watch and luxe portable gaming deck to a better robovac and an AI-powered bird feeder that brings nature to her doorstep, our list has something to fit all of you …\nRead the full story at The Verge.",
+            "lead": "Given everything moms do for us, it feels good to give back during the holidays. But where to start? How do you come up with a physical representation of how you feel about such a key and influential figure in your life? The possibilities seem as endless as they are daunting, but fear not, we've done the hard work for you.\nTo help you make the mother figure in your life feel truly appreciated, we've created a sprawling list of intriguing, lovingly curated ",
+            "chars": 688,
+            "shown": 688,
+            "truncated": false
+          },
+          "categories": [
+            "Gadgets",
+            "Gift Guides",
+            "Verge Shopping"
+          ],
+          "author": "Ryan Waniata",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "apps",
+          "metrics": {},
+          "quality": 10,
+          "score": 13.23,
+          "category": "tools",
+          "subcategory": "hands-on",
+          "practical": 1,
+          "slug": "096c0f108d5e",
+          "action": 2,
+          "rank": 13.2,
+          "tags": [
+            "tutorial"
+          ]
+        },
+        {
+          "sourceId": "arxiv-cs",
+          "sourceName": "arXiv cs.AI/CL/LG",
+          "title": "Kolmogorov-Chapman Maps: Trajectory-Free Learning for Simulating Molecular Dynamics",
+          "url": "https://arxiv.org/abs/2611.12880v1",
+          "id": "http://arxiv.org/abs/2611.12880v1",
+          "published": "2026-11-09T18:59:13.000Z",
+          "summary": "Stochastic differential equations (SDEs) describe stochastic processes across a wide range of scientific domains, including physics, biology, and finance. Although individual numerical integration steps are inexpensive, observing meaningful events or transitions can require millions of sequential steps, resulting in s…",
+          "content": {
+            "html": "Stochastic differential equations (SDEs) describe stochastic processes across a wide range of scientific domains, including physics, biology, and finance. Although individual numerical integration steps are inexpensive, observing meaningful events or transitions can require millions of sequential steps, resulting in substantial wall-clock simulation time and poor hardware utilization. Deep learning offers an alternative by amortizing many integration steps into a single neural network forward pass, potentially enabling much faster simulation. However, existing supervised approaches typically require long simulated trajectory data, which restricts their applicability. In this work, we introduce Kolmogorov-Chapman Maps (KC-Maps), a method for learning the transition kernel of an SDE that relies only on the trajectory-free marginal samples together with the known drift and diffusion coefficients. Given an initial time and state of a process, KC-Maps models its distribution integrated to any given time, corresponding to the weak solution of the SDE. To recover the correct dynamics, KC-Maps satisfies two key properties: (i) it satisfies the boundary conditions, which we incorporate directly into the neural network architecture, and (ii) it respects the Kolmogorov--Chapman equation, which provides an efficient training objective. We empirically demonstrate that KC-Maps learns to integrate the dynamics of peptide molecular systems and outperforms classical molecular dynamics in terms of GPU-hours.",
+            "text": "Stochastic differential equations (SDEs) describe stochastic processes across a wide range of scientific domains, including physics, biology, and finance. Although individual numerical integration steps are inexpensive, observing meaningful events or transitions can require millions of sequential steps, resulting in substantial wall-clock simulation time and poor hardware utilization. Deep learning offers an alternative by amortizing many integration steps into a single neural network forward pass, potentially enabling much faster simulation. However, existing supervised approaches typically require long simulated trajectory data, which restricts their applicability. In this work, we introduce Kolmogorov-Chapman Maps (KC-Maps), a method for learning the transition kernel of an SDE that relies only on the trajectory-free marginal samples together with the known drift and diffusion coefficients. Given an initial time and state of a process, KC-Maps models its distribution integrated to any given time, corresponding to the weak solution of the SDE. To recover the correct dynamics, KC-Maps satisfies two key properties: (i) it satisfies the boundary conditions, which we incorporate directly into the neural network architecture, and (ii) it respects the Kolmogorov--Chapman equation, which provides an efficient training objective. We empirically demonstrate that KC-Maps learns to integrate the dynamics of peptide molecular systems and outperforms classical molecular dynamics in terms of GPU-hours.",
+            "lead": "Stochastic differential equations (SDEs) describe stochastic processes across a wide range of scientific domains, including physics, biology, and finance. Although individual numerical integration steps are inexpensive, observing meaningful events or transitions can require millions of sequential steps, resulting in substantial wall-clock simulation time and poor hardware utilization. Deep learning offers an alternative by amortizing many integration steps",
+            "chars": 1515,
+            "shown": 1515,
+            "truncated": false
+          },
+          "categories": [
+            "cs.LG"
+          ],
+          "author": "Majdi Hassan",
+          "lang": "en",
+          "tier": 3,
+          "trustCategory": true,
+          "declaredCategory": "ideas",
+          "metrics": {},
+          "quality": 6,
+          "fallback": true,
+          "score": 13.48,
+          "category": "tools",
+          "subcategory": "workflow",
+          "practical": 2,
+          "slug": "ae018ac2ae59",
+          "action": 3,
+          "rank": 10.8,
+          "tags": [
+            "free"
+          ]
+        },
+        {
+          "sourceId": "simon-willison",
+          "sourceName": "Simon Willison",
+          "title": "Yonkers Rises",
+          "url": "https://simonwillison.net/2026/Nov/10/yonkers-rises/",
+          "id": "https://simonwillison.net/2026/Nov/10/yonkers-rises/",
+          "published": "2026-11-10T03:53:04.000Z",
+          "summary": "Tool: Yonkers Rises I realized I didn't know where Yonkers was, so I looked it up on Google Maps and then, to help embed its location and shape in my head (and to try out Claude Fable 5.2's 3D modeling and animation skills), I prompted Fable 5.2 Medium to: Make a three js animation where yonkers stands up as a big mec…",
+          "content": {
+            "html": "<p><strong>Tool:</strong><a href=\"https://tools.simonwillison.net/yonkers-rises\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Yonkers Rises</a></p>\n<p>I realized I didn't know where Yonkers was, so I looked it up on Google Maps and then, to help embed its location and shape in my head (and to try out Claude Fable 5.2's 3D modeling and animation skills), I<a href=\"https://claude.ai/share/97443910-2e0a-4e17-9b9e-11d14d8ff65c\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">prompted Fable 5.2 Medium</a>to:</p>\n<blockquote><p><code>Make a three js animation where yonkers stands up as a big mech (cool stand up motion) and átomos around manhattan and queens and Brooklyn, use openstreetmap mapping data</code></p></blockquote>\n<p>It correctly deduced that \"átomos\" was a mobile keyboard typo for \"stomps\":</p>\n<p>Tags:<a href=\"https://simonwillison.net/tags/three-js\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">three-js</a>,<a href=\"https://simonwillison.net/tags/llms\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">llms</a>,<a href=\"https://simonwillison.net/tags/ai\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">ai</a>,<a href=\"https://simonwillison.net/tags/generative-ai\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">generative-ai</a>,<a href=\"https://simonwillison.net/tags/claude-mythos-fable\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">claude-mythos-fable</a></p>",
+            "text": "Tool: Yonkers Rises\nI realized I didn't know where Yonkers was, so I looked it up on Google Maps and then, to help embed its location and shape in my head (and to try out Claude Fable 5.2's 3D modeling and animation skills), I prompted Fable 5.2 Medium to:\nMake a three js animation where yonkers stands up as a big mech (cool stand up motion) and átomos around manhattan and queens and Brooklyn, use openstreetmap mapping data\nIt correctly deduced that \"átomos\" was a mobile keyboard typo for \"stomps\":\nTags: three-js , llms , ai , generative-ai , claude-mythos-fable",
+            "lead": "Tool: Yonkers Rises\nI realized I didn't know where Yonkers was, so I looked it up on Google Maps and then, to help embed its location and shape in my head (and to try out Claude Fable 5.2's 3D modeling and animation skills), I prompted Fable 5.2 Medium to:\nMake a three js animation where yonkers stands up as a big mech (cool stand up motion) and átomos around manhattan and queens and Brooklyn, use openstreetmap mapping data",
+            "chars": 575,
+            "shown": 575,
+            "truncated": false
+          },
+          "categories": [
+            "three-js",
+            "llms",
+            "ai",
+            "generative-ai",
+            "claude-mythos-fable"
+          ],
+          "author": "",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "tools",
+          "metrics": {},
+          "quality": 8,
+          "score": 17.62,
+          "category": "tools",
+          "subcategory": null,
+          "practical": 1,
+          "slug": "75546f2ae879",
+          "action": 1,
+          "rank": 9.6,
+          "tags": []
+        },
+        {
+          "sourceId": "qbitai",
+          "sourceName": "量子位",
+          "title": "Fable 5.2首批实测来了！网友：Opus突然不香了",
+          "url": "https://www.qbitai.com/2026/11/508912.html",
+          "id": "https://www.qbitai.com/?p=508912",
+          "published": "2026-11-10T07:03:43.000Z",
+          "summary": "作曲、拍片、3D建模一条龙全包圆",
+          "categories": [
+            "资讯",
+            "Claude"
+          ],
+          "author": "梦瑶",
+          "lang": "zh",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "news",
+          "metrics": {},
+          "quality": 6,
+          "score": 16.68,
+          "category": "tools",
+          "subcategory": null,
+          "practical": 1,
+          "slug": "0748d6c00c15",
+          "action": 2,
+          "rank": 9.2,
+          "tags": [
+            "benchmark"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hardware",
+      "label": "AI 硬件",
+      "items": [
+        {
+          "sourceId": "lcz-llm",
+          "sourceName": "抡锤者 模型部署讨论",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "Edmund Tan",
+          "id": "2952",
+          "title": "3 x RTX Pro 6000D + 1 x RTX Pro 6000 跑官方 Deepseek v4.1 Flash 1017 分享",
+          "url": "https://lcz.me/topic/2952",
+          "published": "2026-11-10T04:23:49.583Z",
+          "summary": "大家好。第一次在这里发表聊天， 有什么不对的请多多包含。 花了2个多月 用SGlang 跑 Deepseek 4.1 Flash 1017. 终于达到理想的结果。 看了很久视频今天打算分享我设置 3 + 1 设置。 本来要买四张 RTX Pro 6000D（节省开销） 84GB 后来第四张 显卡买了 收到故障 ， 当时显卡从 5万一张飙升至7万 商家就 质保变退款。 无奈之下第四张卡买了 满血 96GB 工作站版 凑数 4 张 显卡来跑AI。 （其实4张84GB 也能跑但是区别在 总上下文） Sglang 引擎可以支持 权重不平衡分配，所以意外的满血版多容纳了一些权重。 经过2个多月的修改，设置，引擎提升 终于达到了 Prefil…",
+          "metrics": {
+            "points": 0,
+            "comments": 3,
+            "views": 138
+          },
+          "excellent": true,
+          "content": {
+            "html": "<p>大家好。第一次在这里发表聊天， 有什么不对的请多多包含。</p>\n<p>花了2个多月 用SGlang 跑 Deepseek 4.1 Flash 1017. 终于达到理想的结果。 看了很久视频今天打算分享我设置 3 + 1 设置。 本来要买四张 RTX Pro 6000D（节省开销） 84GB 后来第四张 显卡买了 收到故障 ， 当时显卡从 5万一张飙升至7万 商家就 质保变退款。 无奈之下第四张卡买了 满血 96GB 工作站版 凑数 4 张 显卡来跑AI。 （其实4张84GB 也能跑但是区别在 总上下文）</p>\n<p>Sglang 引擎可以支持 权重不平衡分配，所以意外的满血版多容纳了一些权重。 经过2个多月的修改，设置，引擎提升 终于达到了 Prefill 11000 （0-500K之间） - 7000 （988K）token 每秒。 目前最多三个并发 总上下文 3百多万</p>\n<p><img src=\"https://upload.lcz.me/uploads/902a4d78-1634-463b-b287-bb092029e45f.jpeg\" alt=\"image.jpeg\" loading=\"lazy\"><br><img src=\"https://upload.lcz.me/uploads/90c29340-a5ed-4bdf-8295-14c8503eabfd.jpeg\" alt=\"image.jpeg\" loading=\"lazy\"></p>\n<p>一并发的输出 （写代码更快）<br><img src=\"https://upload.lcz.me/uploads/213e68ef-358c-442d-8075-914d91848879.jpeg\" alt=\"image.jpeg\" loading=\"lazy\"></p>\n<p>三并发输出<br><img src=\"https://upload.lcz.me/uploads/ce36e53e-35a1-446a-b251-1ead1079f1b2.jpeg\" alt=\"image.jpeg\" loading=\"lazy\"></p>\n<p>显卡设备 - AMD EPYC 7F52 + 512GB DDR4<br><img src=\"https://upload.lcz.me/uploads/5d61b02b-772c-401d-bc5c-91866e858995.jpeg\" alt=\"image.jpeg\" loading=\"lazy\"></p>\n<p>大佬们如果想要本地跑快点的Deepseek v4.1 Flash 1017, 这个方案提供参考。 以下是我设置日志</p>\n<h3>DeepSeek V4.1 Flash：在 4 张 RTX PRO 6000 上实现 100 万上下文</h3>\n<p><strong>2026 年 10 月 21 日 · 阅读约 30 分钟</strong></p>\n<p>四张 PCIe Blackwell 显卡，无 NVLink：100 万 token 上下文，冷启动预填充 149 秒，解码 212 tok/s，现已支持三个并发会话。</p>\n<blockquote><p>点击放大</p></blockquote>\n<p>四张没有 NVLink 的 PCIe Blackwell 显卡，现在以完整的 1,048,576 token 窗口服务 DeepSeek-V4.1-Flash：988K token 的冷启动提示预填充耗时 149 秒（6,618 tok/s），解码约 212 tok/s。</p>\n<p>十一个星期前，同样这四张卡在 llama.cpp 上只能跑到 60 tok/s 的解码速度，而且根本无法支撑长上下文。要走到完整的 100 万窗口、再达到这样的速度，花了两个月的硬件工作、一次没人算进去的内存分配、一次只有在替换卡到手即坏、最终凑成一套不匹配的卡组后才成为可能的非均匀专家切分，以及一个我们忘了带到新启动器上的环境变量。这是完整的历程——包括失败的部分。</p>\n<h3>历程：从 630 秒到 149 秒</h3>\n<blockquote><p>988K token 冷启动预填充：三周内从 630 秒降到 149 秒。点击放大</p></blockquote>\n<p>这不是靠一个灵光一现的点子实现的。前后大约十一个星期，其中两周花在与模型无关的硬件上，最后三周用来让 100 万 token 窗口装得下、然后再让它变快。以下是完整路径，包括失败的部分。</p>\n<h3>八月：先证明这件事可行</h3>\n<p>我们最初在 llama.cpp 上（2026-08-11）跑 DeepSeek-V4-Flash 加 DSpark 草稿模型，因为那是当时唯一能在 sm_120 工作站 Blackwell 上跑起来的栈。它确实能跑，但很慢：解码 60.1 tok/s，上下文只有几万 token。</p>\n<p>那个月得到两件事：</p>\n<ul><li><strong>草稿模型比引擎本身更重要。</strong>加上 DSpark 草稿模型后，在相同权重下解码从 60.1 提升到 102.4 tok/s，即 1.7 倍。</li><li><strong>机器本身是坏的。</strong>PCIe 错误风暴达到每分钟 23 次，追查下来是一块坏板子和 SlimSAS 线缆。换了新的 Tyan S8030GM2NE 和线缆后降到零。然后<code>amd_iommu=off iommu=pt</code>加上 NCCL 点对点，把 TP4 预填充从 977 提升到 2,149 tok/s，解码从 75 提升到 91.3。</li></ul>\n<p>最后这一点值得细想：在完全还没做任何模型层面工作之前，仅仅一个内核参数就让预填充翻了一倍多。</p>\n<h3>九月：互联成了天花板</h3>\n<p>到九月底，我们已经用四张卡提供服务，瓶颈是全归约（all-reduce），而不是算力。</p>\n<table><thead><tr><th>日期</th><th>改动</th><th>全归约总线带宽</th></tr></thead><tbody><tr><td>2026-09-21</td><td>NCCL_P2P_LEVEL 从 SYS 改为 PHB</td><td>6.21 → 9.31 GB/s</td></tr><tr><td>2026-09-28</td><td>为三张 GPU 加 Broadcom PEX 88096 交换芯片</td><td>9.31 → 19.53 GB/s</td></tr><tr><td>2026-10-17</td><td>为 DS4.1 设置 NCCL_P2P_LEVEL=PHB</td><td>3.83 → 19.57 GB/s</td></tr></tbody></table>\n<p>第三行是最痛的。我们为 DeepSeek V4 设过 PHB，但忘了把它带到 DS4.1 的启动器上。整整三周，发往交换芯片之外那张 GPU 的流量都在走主机内存。2026-10-17 修好后，冷启动 498K 从 150 秒降到 75 秒，冷启动 988K 从 374 秒降到 223 秒——比这篇文章里其他任何单项改动带来的收益都大。</p>\n<p><strong>教训：你对一个启动器做的设置，不等于你对整台机器做的设置。</strong>我们这个设置就那样静静待着，悄悄吃掉了 40% 的预填充性能。</p>\n<p>2026-09-29 首次 DS4.1 服务：400K 窗口，350K 时预填充 2,564 tok/s，解码 96-108 tok/s。</p>\n<h3>内存墙：为什么是 400K 而不是 100 万</h3>\n<p>这是耗时最长的部分，而且它不是调参问题——而是一笔没有被计入的分配。</p>\n<p>每一次尝试 100 万上下文都死于同样的特征：请求中途 OOM，失败点还会漂移，而且对<code>mem-fraction-static</code>完全免疫。我们从 0.92 调到 0.94，失败点纹丝不动。这本该立刻告诉我们：这块内存是被预算器看不见的东西占走的。</p>\n<p>我们最终在 OOM 那一刻取了分配器快照，答案是 V4.1 的稠密预填充 indexer：fp32 的<code>[chunk × context]</code>分数张量加上 bool 候选掩码，约占全部预填充内存增长的 94%，而且分配在<code>mem_fraction_static</code>的核算范围之外。</p>\n<p>上游有同样的 bug，而且已经命名了它（SGLang issue #35201）：\"indexer 与上下文成正比的 logits 分配未被 mem_fraction_static 计入——长上下文预填充必然 OOM。\"已经有人把我们的问题写下来了。</p>\n<p>增长是线性且巨大的：<strong>每 1,000 token 增长 13.7 MiB</strong>。到 100 万 token 就是 13.7 GB 没人预算过的内存。</p>\n<p>两个运行时补丁解决了它，无需重新编译：</p>\n<ul><li>给 indexer 拷贝预算加<strong>256 MiB 上限</strong>。</li><li>改用<strong>int32 候选块 id 的行分块预填充 indexer</strong>——手工移植上游 SGLang PR #40217。</li></ul>\n<p>这使窗口从 400K → 600K → 800K → 100 万，第一次冷启动 988K 通过耗时 629.7 秒。</p>\n<h3>第二个内存天花板：非均匀专家</h3>\n<p>100 万上下文跑通后，新的限制出现了：三张 84 GiB 的卡没有余量，而那张 96 GB 的卡却半闲置着。</p>\n<p>以下是干净重启后测得的数字：</p>\n<table><thead><tr><th>干净重启后</th><th>PRO 6000（rank 0）</th><th>每张 6000D</th></tr></thead><tbody><tr><td>主模型加载后剩余</td><td>21.34 GiB</td><td>9.52-9.56 GiB</td></tr><tr><td>内存池与 CUDA 图之后剩余</td><td>15.86 GiB</td><td>4.02-4.12 GiB</td></tr></tbody></table>\n<p><strong>PRO 6000 上有 11.8 GiB 完全没被使用。</strong> 2026-10-11，一个冷启动的 784K 提示在三张 6000D 上因差不到 0.…</p>",
+            "text": "大家好。第一次在这里发表聊天， 有什么不对的请多多包含。\n花了2个多月 用SGlang 跑 Deepseek 4.1 Flash 1017. 终于达到理想的结果。 看了很久视频今天打算分享我设置 3 + 1 设置。 本来要买四张 RTX Pro 6000D（节省开销） 84GB 后来第四张 显卡买了 收到故障 ， 当时显卡从 5万一张飙升至7万 商家就 质保变退款。 无奈之下第四张卡买了 满血 96GB 工作站版 凑数 4 张 显卡来跑AI。 （其实4张84GB 也能跑但是区别在 总上下文）\nSglang 引擎可以支持 权重不平衡分配，所以意外的满血版多容纳了一些权重。 经过2个多月的修改，设置，引擎提升 终于达到了 Prefill 11000 （0-500K之间） - 7000 （988K）token 每秒。 目前最多三个并发 总上下文 3百多万\n一并发的输出 （写代码更快）\n三并发输出\n显卡设备 - AMD EPYC 7F52 + 512GB DDR4\n大佬们如果想要本地跑快点的Deepseek v4.1 Flash 1017, 这个方案提供参考。 以下是我设置日志\nDeepSeek V4.1 Flash：在 4 张 RTX PRO 6000 上实现 100 万上下文\n2026 年 10 月 21 日 · 阅读约 30 分钟\n四张 PCIe Blackwell 显卡，无 NVLink：100 万 token 上下文，冷启动预填充 149 秒，解码 212 tok/s，现已支持三个并发会话。\n点击放大\n四张没有 NVLink 的 PCIe Blackwell 显卡，现在以完整的 1,048,576 token 窗口服务 DeepSeek-V4.1-Flash：988K token 的冷启动提示预填充耗时 149 秒（6,618 tok/s），解码约 212 tok/s。\n十一个星期前，同样这四张卡在 llama.cpp 上只能跑到 60 tok/s 的解码速度，而且根本无法支撑长上下文。要走到完整的 100 万窗口、再达到这样的速度，花了两个月的硬件工作、一次没人算进去的内存分配、一次只有在替换卡到手即坏、最终凑成一套不匹配的卡组后才成为可能的非均匀专家切分，以及一个我们忘了带到新启动器上的环境变量。这是完整的历程——包括失败的部分。\n历程：从 630 秒到 149 秒\n988K token 冷启动预填充：三周内从 630 秒降到 149 秒。点击放大\n这不是靠一个灵光一现的点子实现的。前后大约十一个星期，其中两周花在与模型无关的硬件上，最后三周用来让 100 万 token 窗口装得下、然后再让它变快。以下是完整路径，包括失败的部分。\n八月：先证明这件事可行\n我们最初在 llama.cpp 上（2026-08-11）跑 DeepSeek-V4-Flash 加 DSpark 草稿模型，因为那是当时唯一能在 sm_120 工作站 Blackwell 上跑起来的栈。它确实能跑，但很慢：解码 60.1 tok/s，上下文只有几万 token。\n那个月得到两件事：\n草稿模型比引擎本身更重要。 加上 DSpark 草稿模型后，在相同权重下解码从 60.1 提升到 102.4 tok/s，即 1.7 倍。\n机器本身是坏的。 PCIe 错误风暴达到每分钟 23 次，追查下来是一块坏板子和 SlimSAS 线缆。换了新的 Tyan S8030GM2NE 和线缆后降到零。然后 amd_iommu=off iommu=pt 加上 NCCL 点对点，把 TP4 预填充从 977 提升到 2,149 tok/s，解码从 75 提升到 91.3。\n最后这一点值得细想：在完全还没做任何模型层面工作之前，仅仅一个内核参数就让预填充翻了一倍多。\n九月：互联成了天花板\n到九月底，我们已经用四张卡提供服务，瓶颈是全归约（all-reduce），而不是算力。\n日期\n改动\n全归约总线带宽\n2026-09-21\nNCCL_P2P_LEVEL 从 SYS 改为 PHB\n6.21 → 9.31 GB/s\n2026-09-28\n为三张 GPU 加 Broadcom PEX 88096 交换芯片\n9.31 → 19.53 GB/s\n2026-10-17\n为 DS4.1 设置 NCCL_P2P_LEVEL=PHB\n3.83 → 19.57 GB/s\n第三行是最痛的。我们为 DeepSeek V4 设过 PHB，但忘了把它带到 DS4.1 的启动器上。整整三周，发往交换芯片之外那张 GPU 的流量都在走主机内存。2026-10-17 修好后，冷启动 498K 从 150 秒降到 75 秒，冷启动 988K 从 374 秒降到 223 秒——比这篇文章里其他任何单项改动带来的收益都大。\n教训：你对一个启动器做的设置，不等于你对整台机器做的设置。 我们这个设置就那样静静待着，悄悄吃掉了 40% 的预填充性能。\n2026-09-29 首次 DS4.1 服务：400K 窗口，350K 时预填充 2,564 tok/s，解码 96-108 tok/s。\n内存墙：为什么是 400K 而不是 100 万\n这是耗时最长的部分，而且它不是调参问题——而是一笔没有被计入的分配。\n每一次尝试 100 万上下文都死于同样的特征：请求中途 OOM，失败点还会漂移，而且对 mem-fraction-static 完全免疫。我们从 0.92 调到 0.94，失败点纹丝不动。这本该立刻告诉我们：这块内存是被预算器看不见的东西占走的。\n我们最终在 OOM 那一刻取了分配器快照，答案是 V4.1 的稠密预填充 indexer：fp32 的 [chunk × context] 分数张量加上 bool 候选掩码，约占全部预填充内存增长的 94%，而且分配在 mem_fraction_static 的核算范围之外。\n上游有同样的 bug，而且已经命名了它（SGLang issue #35201）：\"indexer 与上下文成正比的 logits 分配未被 mem_fraction_static 计入——长上下文预填充必然 OOM。\"已经有人把我们的问题写下来了。\n增长是线性且巨大的： 每 1,000 token 增长 13.7 MiB 。到 100 万 token 就是 13.7 GB 没人预算过的内存。\n两个运行时补丁解决了它，无需重新编译：\n给 indexer 拷贝预算加 256 MiB 上限 。\n改用 int32 候选块 id 的行分块预填充 indexer ——手工移植上游 SGLang PR #40217。\n这使窗口从 400K → 600K → 800K → 100 万，第一次冷启动 988K 通过耗时 629.7 秒。\n第二个内存天花板：非均匀专家\n100 万上下文跑通后，新的限制出现了：三张 84 GiB 的卡没有余量，而那张 96 GB 的卡却半闲置着。\n以下是干净重启后测得的数字：\n干净重启后\nPRO 6000（rank 0）\n每张 6000D\n主模型加载后剩余\n21.34 GiB\n9.52-9.56 GiB\n内存池与 CUDA 图之后剩余\n15.86 GiB\n4.02-4.12 GiB\nPRO 6000 上有 11.8 GiB 完全没被使用。 2026-10-11，一个冷启动的 784K 提示在三张 6000D 上因差不到 0.…",
+            "lead": "大家好。第一次在这里发表聊天， 有什么不对的请多多包含。\n花了2个多月 用SGlang 跑 Deepseek 4.1 Flash 1017. 终于达到理想的结果。 看了很久视频今天打算分享我设置 3 + 1 设置。 本来要买四张 RTX Pro 6000D（节省开销） 84GB 后来第四张 显卡买了 收到故障 ， 当时显卡从 5万一张飙升至7万 商家就 质保变退款。 无奈之下第四张卡买了 满血 96GB 工作站版 凑数 4 张 显卡来跑AI。 （其实4张84GB 也能跑但是区别在 总上下文）\nSglang 引擎可以支持 权重不平衡分配，所以意外的满血版多容纳了一些权重。 经过2个多月的修改，设置，引擎提升 终于达到了 Prefill 11000 （0-500K之间） - 7000 （988K）token 每秒。 目前最多三个并发 总上下文 3百多万\n一并发的输出 （写代码更快）\n三并发输出\n显卡设备 - AMD EPYC 7F52 + 512GB DDR4",
+            "chars": 20227,
+            "shown": 3171,
+            "truncated": true
+          },
+          "quality": 11,
+          "score": 18.07,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 2,
+          "slug": "0ee1bd6cd549",
+          "action": 5,
+          "rank": 19,
+          "tags": [
+            "benchmark",
+            "local",
+            "tutorial",
+            "generate"
+          ]
+        },
+        {
+          "sourceId": "lcz-hardware",
+          "sourceName": "抡锤者 AI硬件",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "terry",
+          "id": "2948",
+          "title": "4 DGX Spark跑DeepSeek V4.1 Flash实测：长上下文多并发体验拉满，TTFT 1秒以内，性价比超苹果M5 Ultra 512G，RTX Pro 6000！",
+          "url": "https://lcz.me/topic/2948",
+          "published": "2026-11-10T02:00:00.000Z",
+          "summary": "@xiongjie-gao said: 如果都是这种标准化的PC产品，没有了鞋盒主机 第一次看到鞋盒主机 真酷 ！ 現在的電子設備計算能力都夠強了 例如手機 傳統PC消費者市場 可能會越來越小, 大廠的產品線轉型就會往AIPC, AI Servers/Workstation 發展 今年開始差不多是一個過渡期的轉型期 [image: image.jpeg]",
+          "metrics": {
+            "points": 2,
+            "comments": 6,
+            "views": 378
+          },
+          "excellent": false,
+          "quality": 7,
+          "score": 17.32,
+          "category": "hardware",
+          "subcategory": "machine",
+          "practical": 1,
+          "slug": "061d1f16dce2",
+          "action": 2,
+          "rank": 10.2,
+          "tags": [
+            "benchmark"
+          ]
+        },
+        {
+          "sourceId": "reddit-local-llama",
+          "sourceName": "r/LocalLLaMA",
+          "title": "My 0.8B fine-tune proofreads Spanish at 138 ms per sentence on a CPU",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xsocrj/my_08b_finetune_proofreads_spanish_at_138_ms_per/",
+          "id": "t3_1xsocrj",
+          "published": "2026-11-10T14:31:04.000Z",
+          "summary": "I have been building a Spanish proofreader that runs fully local, and it's finally released, so I wanted to share how it went. It only corrects Spanish, but I think the approach works for other languages and narrow tasks too. If the project has audience, I will release the English proofreader version as well :) App ru…",
+          "content": {
+            "html": "<table><tr><td><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xsocrj/my_08b_finetune_proofreads_spanish_at_138_ms_per/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://preview.redd.it/fiec1c0uos0i1.png?width=140&amp;height=87&amp;auto=webp&amp;s=c089f25e986e52e634e473c6604cb37ed501ee0c\" alt=\"My 0.8B fine-tune proofreads Spanish at 138 ms per sentence on a CPU\" loading=\"lazy\"></a></td><td><div><p>I have been building a<strong>Spanish proofreader</strong>that runs fully local, and it's finally released, so I wanted to share how it went. It only corrects Spanish, but I think the approach works for other languages and narrow tasks too. If the project has audience, I will release the English proofreader version as well :)</p><p><a href=\"https://reddit.com/link/1xsocrj/video/f9z8bjdios0i1/player\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">App running</a></p><p>Better thing is the app is 100% compatible with ANY app in Windows and Linux. You select text in any app, press Ctrl+Alt+Space, a small popup shows each change with a short explanation, and Enter replaces your selection.<strong>MIT, a C++ app on top of llama.cpp</strong>.</p><p>The model is a full fine-tune (no LoRA) of Qwen3.5-0.8B on aprox. 40k pairs, 2 epochs, lr 1e-5. In Q4_K_M with imatrix it's 529 MB. Training took 22 minutes on one rented GPU, and the whole rental with all the evals cost about<strong>$2.50</strong>. GPU was RTX 5090 rented (I'm just a mortal so I don't have this GPU at home).</p><p>I tested it on a benchmark I built for this, 2,388 cases in three parts: real Wikipedia edits, Wikipedia talk pages, and synthetic work emails and chat. F0.5:</p><table><thead><tr><th>Model</th><th>Wiki edits</th><th>Talk pages</th><th>Emails/chat</th><th>Mean</th></tr></thead></table></div></td></tr><tbody><tr><td><strong>revisa-0.8b (fine-tuned)</strong></td><td>81.5</td><td>80.0</td><td>92.0</td><td><strong>84.5</strong></td></tr><tr><td>revisa-0.8b without the C++ filters</td><td>77.4</td><td>75.8</td><td>91.7</td><td>81.6</td></tr><tr><td>Qwen3.5-0.8B, untuned</td><td>70.4</td><td>67.9</td><td>71.2</td><td>69.9</td></tr><tr><td>Qwen3.5-2B, untuned</td><td>73.8</td><td>66.9</td><td>81.2</td><td>74.0</td></tr><tr><td>Gemma 4 E2B, untuned</td><td>65.5</td><td>65.5</td><td>94.1</td><td>75.0</td></tr><tr><td>Qwen3.5-4B, untuned</td><td>83.6</td><td>67.4</td><td>88.4</td><td>79.8</td></tr><tr><td>Gemma 4 E4B, untuned</td><td>74.4</td><td>79.0</td><td>95.1</td><td>82.8</td></tr><tr><td>Qwen3.5-9B, untuned</td><td>79.8</td><td>69.6</td><td>91.2</td><td>80.2</td></tr><tr><td>LanguageTool 6.6</td><td>24.1</td><td>52.8</td><td>74.1</td><td>50.4</td></tr><tr><td>Claude Sonnet, high reasoning (cloud, upper bound)</td><td>98.0</td><td>91.8</td><td>98.2</td><td>96.0</td></tr><tr><td>Gemini 3.8 Flash, high reasoning (cloud, upper bound)</td><td>98.7</td><td>92.3</td><td>98.4</td><td>96.5</td></tr></tbody></table>\n<p><a href=\"https://preview.redd.it/fiec1c0uos0i1.png?width=1600&amp;format=png&amp;auto=webp&amp;s=2dea5c522a63c7c5727af2e8fe94b0dbb9264a3b\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://preview.redd.it/fiec1c0uos0i1.png?width=1600&amp;format=png&amp;auto=webp&amp;s=2dea5c522a63c7c5727af2e8fe94b0dbb9264a3b</a></p>\n<p>It changes less than 3% of the sentences that were already correct, on every part. LanguageTool changes 39% of the correct Wikipedia sentences, which is more or less why I started this. For those who may not know, LanguageTool is a benchmark when it comes to checking grammar and spelling errors. (More info:<a href=\"https://en.wikipedia.org/wiki/LanguageTool\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://en.wikipedia.org/wiki/LanguageTool</a>)</p>\n<p>A few things I learned:</p>\n<p>Most of the training data isn't LLM generated. I take correct text from<strong>Wikipedia</strong>, Tatoeba and Common Voice and break it with a rule-based error injector, so the exact answer is known. Around a third of the examples are correct sentences that have to come back unchanged, and that's what keeps false alarms low.</p>\n<p>The model doesn't explain anything. It only returns the corrected sentence. Then plain C++ does a word diff, puts each edit in one of 31 error types with a fixed explanation, and drops anything it doesn't recognize or that rewrites too much. Small models invent grammar rules with a lot of confidence, so I didn't let it.</p>\n<p>For speed, the user's own sentence is the speculative draft, because a corrected sentence is almost the same text. I got 2.2x: 138 ms median against 305 ms greedy, 8 threads, same output as greedy on 99.4% of a 500-sentence sample.…</p>",
+            "text": "I have been building a Spanish proofreader that runs fully local, and it's finally released, so I wanted to share how it went. It only corrects Spanish, but I think the approach works for other languages and narrow tasks too. If the project has audience, I will release the English proofreader version as well :)\nApp running\nBetter thing is the app is 100% compatible with ANY app in Windows and Linux. You select text in any app, press Ctrl+Alt+Space, a small popup shows each change with a short explanation, and Enter replaces your selection. MIT, a C++ app on top of llama.cpp .\nThe model is a full fine-tune (no LoRA) of Qwen3.5-0.8B on aprox. 40k pairs, 2 epochs, lr 1e-5. In Q4_K_M with imatrix it's 529 MB. Training took 22 minutes on one rented GPU, and the whole rental with all the evals cost about $2.50 . GPU was RTX 5090 rented (I'm just a mortal so I don't have this GPU at home).\nI tested it on a benchmark I built for this, 2,388 cases in three parts: real Wikipedia edits, Wikipedia talk pages, and synthetic work emails and chat. F0.5:\nModel\nWiki edits\nTalk pages\nEmails/chat\nMean\nrevisa-0.8b (fine-tuned)\n81.5\n80.0\n92.0\n84.5\nrevisa-0.8b without the C++ filters\n77.4\n75.8\n91.7\n81.6\nQwen3.5-0.8B, untuned\n70.4\n67.9\n71.2\n69.9\nQwen3.5-2B, untuned\n73.8\n66.9\n81.2\n74.0\nGemma 4 E2B, untuned\n65.5\n65.5\n94.1\n75.0\nQwen3.5-4B, untuned\n83.6\n67.4\n88.4\n79.8\nGemma 4 E4B, untuned\n74.4\n79.0\n95.1\n82.8\nQwen3.5-9B, untuned\n79.8\n69.6\n91.2\n80.2\nLanguageTool 6.6\n24.1\n52.8\n74.1\n50.4\nClaude Sonnet, high reasoning (cloud, upper bound)\n98.0\n91.8\n98.2\n96.0\nGemini 3.8 Flash, high reasoning (cloud, upper bound)\n98.7\n92.3\n98.4\n96.5\nhttps://preview.redd.it/fiec1c0uos0i1.png?width=1600&format=png&auto=webp&s=2dea5c522a63c7c5727af2e8fe94b0dbb9264a3b\nIt changes less than 3% of the sentences that were already correct, on every part. LanguageTool changes 39% of the correct Wikipedia sentences, which is more or less why I started this. For those who may not know, LanguageTool is a benchmark when it comes to checking grammar and spelling errors. (More info: https://en.wikipedia.org/wiki/LanguageTool )\nA few things I learned:\nMost of the training data isn't LLM generated. I take correct text from Wikipedia , Tatoeba and Common Voice and break it with a rule-based error injector, so the exact answer is known. Around a third of the examples are correct sentences that have to come back unchanged, and that's what keeps false alarms low.\nThe model doesn't explain anything. It only returns the corrected sentence. Then plain C++ does a word diff, puts each edit in one of 31 error types with a fixed explanation, and drops anything it doesn't recognize or that rewrites too much. Small models invent grammar rules with a lot of confidence, so I didn't let it.\nFor speed, the user's own sentence is the speculative draft, because a corrected sentence is almost the same text. I got 2.2x: 138 ms median against 305 ms greedy, 8 threads, same output as greedy on 99.4% of a 500-sentence sample.…",
+            "lead": "I have been building a Spanish proofreader that runs fully local, and it's finally released, so I wanted to share how it went. It only corrects Spanish, but I think the approach works for other languages and narrow tasks too. If the project has audience, I will release the English proofreader version as well :)\nApp running\nBetter thing is the app is 100% compatible with ANY app in Windows and Linux. You select text in any app, press Ctrl+Alt+Space, a small",
+            "chars": 4491,
+            "shown": 3074,
+            "truncated": true
+          },
+          "categories": [
+            "LocalLLaMA"
+          ],
+          "author": "/u/AlternativeEnough352",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "oss",
+          "metrics": {},
+          "quality": 7,
+          "score": 15.5,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 2,
+          "slug": "02d0ce657753",
+          "action": 2,
+          "rank": 10.2,
+          "tags": [
+            "local",
+            "benchmark"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "local",
+      "label": "本地开源",
+      "items": [
+        {
+          "sourceId": "techcrunch-ai",
+          "sourceName": "TechCrunch AI",
+          "title": "Cyberattacks threaten to make open source AI a little less open, Hugging Face exec warns",
+          "url": "https://techcrunch.com/2026/11/10/cyberattacks-threaten-to-make-open-source-ai-a-little-less-open-hugging-face-exec-warns/",
+          "id": "https://techcrunch.com/?p=3185992",
+          "published": "2026-11-10T13:00:00.000Z",
+          "summary": "Hugging Face executive Irene Solaiman warns that growing cyberattacks on open AI platforms could force tighter security restrictions, threatening the accessibility that makes open source communities valuable to developers worldwide.",
+          "content": {
+            "html": "Hugging Face executive Irene Solaiman warns that growing cyberattacks on open AI platforms could force tighter security restrictions, threatening the accessibility that makes open source communities valuable to developers worldwide.",
+            "text": "Hugging Face executive Irene Solaiman warns that growing cyberattacks on open AI platforms could force tighter security restrictions, threatening the accessibility that makes open source communities valuable to developers worldwide.",
+            "lead": "Hugging Face executive Irene Solaiman warns that growing cyberattacks on open AI platforms could force tighter security restrictions, threatening the accessibility that makes open source communities valuable to developers worldwide.",
+            "chars": 232,
+            "shown": 232,
+            "truncated": false
+          },
+          "categories": [
+            "AI",
+            "Security",
+            "cyberattacks",
+            "Equity podcast",
+            "Hugging Face",
+            "open source"
+          ],
+          "author": "Rebecca Bellan",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "news",
+          "metrics": {},
+          "quality": 8,
+          "score": 18.38,
+          "category": "local",
+          "subcategory": "weights",
+          "practical": 1,
+          "slug": "f35465116a38",
+          "action": 1,
+          "rank": 9.6,
+          "tags": [
+            "free"
+          ]
+        },
+        {
+          "sourceId": "reddit-local-llama",
+          "sourceName": "r/LocalLLaMA",
+          "title": "speakleash/Bielik-11B-v3.1-Instruct · Hugging Face",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xsrg0l/speakleashbielik11bv31instruct_hugging_face/",
+          "id": "t3_1xsrg0l",
+          "published": "2026-11-10T16:30:55.000Z",
+          "summary": "https://huggingface.co/speakleash/Bielik-11B-v3.1-Instruct-GGUF https://www.bielik.ai/blog/premiera-modeli-bielik-11b-v31-dflash-i-rodziny-bielik-one (decision models and dflash are coming next) Bielik-11B-v3.1-Instruct Bielik-11B-v3.1-Instruct is a generative text model featuring 11 billion parameters. It is an updat…",
+          "content": {
+            "html": "<table><tr><td><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xsrg0l/speakleashbielik11bv31instruct_hugging_face/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://external-preview.redd.it/13EAA2r-_IXSS1kU8p_ZW-5SMCyKmlaGlpDbGeHI7lg.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=1d0823de6601b7a7ad35c2db83d73b709483d4d9\" alt=\"speakleash/Bielik-11B-v3.1-Instruct · Hugging Face\" loading=\"lazy\"></a></td><td><div><p><a href=\"https://huggingface.co/speakleash/Bielik-11B-v3.1-Instruct-GGUF\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://huggingface.co/speakleash/Bielik-11B-v3.1-Instruct-GGUF</a></p><p><a href=\"https://www.bielik.ai/blog/premiera-modeli-bielik-11b-v31-dflash-i-rodziny-bielik-one\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://www.bielik.ai/blog/premiera-modeli-bielik-11b-v31-dflash-i-rodziny-bielik-one</a></p><p>(decision models and dflash are coming next)</p><h3>Bielik-11B-v3.1-Instruct</h3><p>Bielik-11B-v3.1-Instruct is a generative text model featuring 11 billion parameters. It is an update to the Bielik 11B v3 line that expands multilingual continual pre-training and strengthens post-training for instruction following, tool use, and reasoning. Forementioned model stands as a testament to the unique collaboration between the open-science/open-source project SpeakLeash and the High Performance Computing (HPC) center: ACC Cyfronet AGH.</p><p>Developed and trained on multilingual text corpora covering 56 languages, with an emphasis on<strong>European languages and Polish</strong>, which have been cherry-picked and processed by the SpeakLeash team, this endeavor leverages Polish large-scale computing infrastructure of the<a href=\"https://www.cyfronet.pl/en\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">ACC Cyfronet AGH HPC center</a>. The creation and training of Bielik-11B-v3.1-Instruct was propelled by resources provided within the<a href=\"https://plgrid.pl/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">PLGrid</a>environment under computational grant number [PLG/2026/019559], conducted on the<a href=\"https://www.cyfronet.pl/en/supercomputers/our-supercomputers#athena\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Athena</a>and<a href=\"https://www.cyfronet.pl/en/supercomputers/our-supercomputers#helios\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Helios</a>supercomputers, and within the<a href=\"https://gaia.plgrid.pl/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Gaia AI Factory</a>, funded by the European Union through the<a href=\"https://www.eurohpc-ju.europa.eu/index_en\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">EuroHPC Joint Undertaking</a>.</p><p>As a result, the model exhibits an exceptional ability to understand and process the<strong>Polish language</strong>and<strong>other European languages</strong>, providing accurate responses and performing a variety of linguistic tasks with high precision.</p><p>🗣️ Chat:<a href=\"https://chat.bielik.ai/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://chat.bielik.ai/</a></p><h3>Model</h3><p>The model was trained on carefully curated, high-quality datasets that underwent extensive cleaning and rigorous quality assessment to ensure data consistency, reliability, and relevance. The training pipeline consisted of three stages: pretraining on 500B tokens, SFT on 26M samples, and RL (modified GRPO) across 14 diverse environments. This multi-stage training approach was designed to enhance the model's language understanding, instruction-following capabilities, and ability to perform effectively across a broad range of tasks.</p><p>Bielik instruct models have been trained with the use of an original open source framework called<a href=\"https://github.com/chrisociepa/allamo\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">ALLaMo</a>implemented by<a href=\"https://www.linkedin.com/in/krzysztof-ociepa-44886550/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Krzysztof Ociepa</a>.</p><h3>Model description:</h3><ul><li><strong>Developed by:</strong><a href=\"https://speakleash.org/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">SpeakLeash</a>&amp;<a href=\"https://www.cyfronet.pl/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">ACC Cyfronet AGH</a></li><li><strong>Language:</strong>Multilingual (56 unique languages, optimized for European languages, with a particular focus on Polish)</li><li><strong>Model type:</strong>causal decoder-only</li><li><strong>License:</strong>Apache 2.0</li></ul></div>submitted by<a href=\"https://www.reddit.com/user/jacek2023\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">/u/jacek2023</a><br><span><a href=\"https://huggingface.co/speakleash/Bielik-11B-v3.1-Instruct\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[link]</a></span><span><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xsrg0l/speakleashbielik11bv31instruct_hugging_face/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[comments]</a></span></td></tr></table>",
+            "text": "https://huggingface.co/speakleash/Bielik-11B-v3.1-Instruct-GGUF\nhttps://www.bielik.ai/blog/premiera-modeli-bielik-11b-v31-dflash-i-rodziny-bielik-one\n(decision models and dflash are coming next)\nBielik-11B-v3.1-Instruct\nBielik-11B-v3.1-Instruct is a generative text model featuring 11 billion parameters. It is an update to the Bielik 11B v3 line that expands multilingual continual pre-training and strengthens post-training for instruction following, tool use, and reasoning. Forementioned model stands as a testament to the unique collaboration between the open-science/open-source project SpeakLeash and the High Performance Computing (HPC) center: ACC Cyfronet AGH.\nDeveloped and trained on multilingual text corpora covering 56 languages, with an emphasis on European languages and Polish , which have been cherry-picked and processed by the SpeakLeash team, this endeavor leverages Polish large-scale computing infrastructure of the ACC Cyfronet AGH HPC center . The creation and training of Bielik-11B-v3.1-Instruct was propelled by resources provided within the PLGrid environment under computational grant number [PLG/2026/019559], conducted on the Athena and Helios supercomputers, and within the Gaia AI Factory , funded by the European Union through the EuroHPC Joint Undertaking .\nAs a result, the model exhibits an exceptional ability to understand and process the Polish language and other European languages , providing accurate responses and performing a variety of linguistic tasks with high precision.\n🗣️ Chat: https://chat.bielik.ai/\nModel\nThe model was trained on carefully curated, high-quality datasets that underwent extensive cleaning and rigorous quality assessment to ensure data consistency, reliability, and relevance. The training pipeline consisted of three stages: pretraining on 500B tokens, SFT on 26M samples, and RL (modified GRPO) across 14 diverse environments. This multi-stage training approach was designed to enhance the model's language understanding, instruction-following capabilities, and ability to perform effectively across a broad range of tasks.\nBielik instruct models have been trained with the use of an original open source framework called ALLaMo implemented by Krzysztof Ociepa .\nModel description:\nDeveloped by: SpeakLeash & ACC Cyfronet AGH\nLanguage: Multilingual (56 unique languages, optimized for European languages, with a particular focus on Polish)\nModel type: causal decoder-only\nLicense: Apache 2.0\nsubmitted by /u/jacek2023\n[link] [comments]",
+            "lead": "https://huggingface.co/speakleash/Bielik-11B-v3.1-Instruct-GGUF\nhttps://www.bielik.ai/blog/premiera-modeli-bielik-11b-v31-dflash-i-rodziny-bielik-one\n(decision models and dflash are coming next)\nBielik-11B-v3.1-Instruct\nBielik-11B-v3.1-Instruct is a generative text model featuring 11 billion parameters. It is an update to the Bielik 11B v3 line that expands multilingual continual pre-training and strengthens post-training for instruction following, tool us",
+            "chars": 2534,
+            "shown": 2534,
+            "truncated": false
+          },
+          "categories": [
+            "LocalLLaMA"
+          ],
+          "author": "/u/jacek2023",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "oss",
+          "metrics": {},
+          "quality": 6,
+          "score": 18.07,
+          "category": "local",
+          "subcategory": "weights",
+          "practical": 3,
+          "slug": "eb0d75dcae58",
+          "action": 2,
+          "rank": 9.2,
+          "tags": [
+            "local",
+            "free"
+          ]
+        },
+        {
+          "sourceId": "hn-algolia",
+          "sourceName": "Hacker News Search",
+          "lang": "en",
+          "tier": 3,
+          "trustCategory": false,
+          "declaredCategory": "tools",
+          "categories": [
+            "story",
+            "author_aliceviola",
+            "story_50441216",
+            "show_hn"
+          ],
+          "author": "",
+          "id": "50441216",
+          "title": "Show HN: QueenMQ – slow LLM calls blocked our Kafka partitions, so we built it",
+          "url": "https://github.com/queen-mq/queen",
+          "published": "2026-11-10T14:52:36.000Z",
+          "summary": "Hi HN, I'm Alice. Over the last year, at Smartness, the company where I work, we built a new message broker, open source under Apache 2.0. During this year it has replaced Kafka almost completely for us. I would like to show it to you and try to explain what is different about it. First, long story short: in 2025 we l…",
+          "content": {
+            "html": "Hi HN, I'm Alice.<p>Over the last year, at Smartness, the company where I work, we built a new message broker, open source under Apache 2.0. During this year it has replaced Kafka almost completely for us. I would like to show it to you and try to explain what is different about it.<p>First, long story short: in 2025 we launched a new product in our suite. Like all the others it used Kafka for messaging, and like many other companies we were using Kafka as a message queue, wrongly and knowingly.<p>In this product head-of-line blocking hurt a lot: an LLM call takes seconds to minutes, and it blocked every other chat in the same partition. We first built a hack: we saved the Kafka messages in Postgres, ordered by the entity we needed (a chat_id, for example), processed them, and sent them back to Kafka. Then we decided to build a real broker on that idea. It took a year, from C++ plus Postgres to, today, a single Rust binary with data replicated on disk by Raft.<p>I designed this system, so I am biased. Still, I believe QueenMQ holds a new paradigm that turns a message broker into something more powerful, while staying simple.<p>What QueenMQ is, compared to what you already know:<p>Like Kafka, it has partitions, but in QueenMQ they are dynamic (not preallocated) and you can use a lot of them (tested up to 10 million). Like Kafka it is a log, but there is one Raft leader per tenant, so all of a tenant's writes go through one node, which allows transactions without 2PC. Head-of-line blocking can only happen inside one partition, which is one business entity, like a customer or a chat. If you need a plain queue, you can use a different partition for every message.<p>Like RabbitMQ, it has ACK, NACK, retries and a DLQ: this makes it a message queue. It has no routing on push and no exchanges, though.<p>Like a database: thanks to its etcd-like design, it runs transactions that include ACKs, pushes to other queues, KV writes and timers, and it has atomic locks. The KV store is replicated by Raft and keeps the application's state. It is linearizable.<p>It also has strong streaming features: the SDKs can receive one single log with all the messages of all the queues, with one clock and one order. On top of it there are the classic streaming features, like windows, and some less common ones.<p>Clients talk to it over HTTP (the clients are thin, the intelligence is in the broker), and it is Kafka-compatible (although that way you cannot use all of its strengths).<p>The idea underneath is the change from seeing a message broker as a pure \"handler\" of messages to one where you can offload a lot of application logic that you would otherwise write yourself. In our company it let us remove outbox tables, cron jobs and many other things.<p>On three beefy machines (24 vCPU, NVMe, 88 GB of RAM), QueenMQ sustains 3M msg/s of 256-byte messages, up to 10M partitions, with p99 latency around 20 ms and every write fsynced on two nodes. Of course, with a single leader per tenant, it does not scale by adding more machines.<p>We tested it hard: 226 tests of our own, written with the Jepsen library, on up to 5 nodes.<p>It is changing the way we design the systems and products of our company.<p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p>",
+            "text": "Hi HN, I'm Alice. Over the last year, at Smartness, the company where I work, we built a new message broker, open source under Apache 2.0. During this year it has replaced Kafka almost completely for us. I would like to show it to you and try to explain what is different about it. First, long story short: in 2025 we launched a new product in our suite. Like all the others it used Kafka for messaging, and like many other companies we were using Kafka as a message queue, wrongly and knowingly. In this product head-of-line blocking hurt a lot: an LLM call takes seconds to minutes, and it blocked every other chat in the same partition. We first built a hack: we saved the Kafka messages in Postgres, ordered by the entity we needed (a chat_id, for example), processed them, and sent them back to Kafka. Then we decided to build a real broker on that idea. It took a year, from C++ plus Postgres to, today, a single Rust binary with data replicated on disk by Raft. I designed this system, so I am biased. Still, I believe QueenMQ holds a new paradigm that turns a message broker into something more powerful, while staying simple. What QueenMQ is, compared to what you already know: Like Kafka, it has partitions, but in QueenMQ they are dynamic (not preallocated) and you can use a lot of them (tested up to 10 million). Like Kafka it is a log, but there is one Raft leader per tenant, so all of a tenant's writes go through one node, which allows transactions without 2PC. Head-of-line blocking can only happen inside one partition, which is one business entity, like a customer or a chat. If you need a plain queue, you can use a different partition for every message. Like RabbitMQ, it has ACK, NACK, retries and a DLQ: this makes it a message queue. It has no routing on push and no exchanges, though. Like a database: thanks to its etcd-like design, it runs transactions that include ACKs, pushes to other queues, KV writes and timers, and it has atomic locks. The KV store is replicated by Raft and keeps the application's state. It is linearizable. It also has strong streaming features: the SDKs can receive one single log with all the messages of all the queues, with one clock and one order. On top of it there are the classic streaming features, like windows, and some less common ones. Clients talk to it over HTTP (the clients are thin, the intelligence is in the broker), and it is Kafka-compatible (although that way you cannot use all of its strengths). The idea underneath is the change from seeing a message broker as a pure \"handler\" of messages to one where you can offload a lot of application logic that you would otherwise write yourself. In our company it let us remove outbox tables, cron jobs and many other things. On three beefy machines (24 vCPU, NVMe, 88 GB of RAM), QueenMQ sustains 3M msg/s of 256-byte messages, up to 10M partitions, with p99 latency around 20 ms and every write fsynced on two nodes. Of course, with a single leader per tenant, it does not scale by adding more machines. We tested it hard: 226 tests of our own, written with the Jepsen library, on up to 5 nodes. It is changing the way we design the systems and products of our company.",
+            "lead": "Hi HN, I'm Alice. Over the last year, at Smartness, the company where I work, we built a new message broker, open source under Apache 2.0. During this year it has replaced Kafka almost completely for us. I would like to show it to you and try to explain what is different about it. First, long story short: in 2025 we launched a new product in our suite. Like all the others it used Kafka for messaging, and like many other companies we were using Kafka as a m",
+            "chars": 3578,
+            "shown": 3192,
+            "truncated": true
+          },
+          "metrics": {
+            "points": 3,
+            "comments": 0
+          },
+          "quality": 6,
+          "score": 12.94,
+          "category": "local",
+          "subcategory": "weights",
+          "practical": 1,
+          "slug": "75d2174ba87a",
+          "action": 2,
+          "rank": 9.2,
+          "tags": [
+            "free"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bench",
+      "label": "评测选型",
+      "items": [
+        {
+          "sourceId": "simon-willison",
+          "sourceName": "Simon Willison",
+          "title": "Introducing Our Smallest, Most Efficient Model: Muse Ember",
+          "url": "https://simonwillison.net/2026/Nov/10/muse-ember/",
+          "id": "https://simonwillison.net/2026/Nov/10/muse-ember/",
+          "published": "2026-11-10T07:28:21.000Z",
+          "summary": "Introducing Our Smallest, Most Efficient Model: Muse Ember Meta AI just launched their entry in the Claude Haiku/GPT Luna category: Muse Ember, which they describe as: [...] our smallest and most efficient model designed for complex reasoning execution and the work agents repeat all day: tool calls, coding subtasks, r…",
+          "content": {
+            "html": "<p><strong><a href=\"https://research.meta.ai/blog/muse-ember\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Introducing Our Smallest, Most Efficient Model: Muse Ember</a></strong></p>\nMeta AI just launched their entry in the Claude Haiku/GPT Luna category: Muse Ember, which they describe as:<blockquote><p>[...] our smallest and most efficient model designed for complex reasoning execution and the work agents repeat all day: tool calls, coding subtasks, routing, extraction, and long document parsing.</p></blockquote>\n<p>For shorter prompts it's priced the same as GPT-6 Luna and Claude Haiku 5.5 - both are $0.10/million input tokens and $0.50/million output. Today's other big model release, Claude Fable 5.2, is<em>80x that price</em>at $8/$40.</p>\n<p>The pricing is a little less straightforward as prompts get longer, though. Luna, Ember, and Haiku all support up to a million input tokens, but they also all have a threshold after which the price goes up. Taking<em>that</em>threshold into account Ember is priced between the two others:</p>\n<table><thead><tr><th>Model</th><th>Prompt size</th><th>Input ($/M)</th><th>Cached input</th><th>Output</th></tr></thead><tbody><tr><td>GPT-6 Luna</td><td>≤272k</td><td>$0.10</td><td>$0.01</td><td>$0.50</td></tr><tr><td>&gt;272k</td><td>$0.20</td><td>$0.02</td><td>$0.75</td></tr><tr><td>Muse Ember 1.0</td><td>≤200k</td><td>$0.10</td><td>$0.004</td><td>$0.50</td></tr><tr><td>&gt;200k</td><td>$0.30</td><td>$0.012</td><td>$1.50</td></tr><tr><td>Claude Haiku 5.5</td><td>≤100k</td><td>$0.10</td><td>$0.01</td><td>$0.50</td></tr><tr><td>&gt;100k</td><td>$0.50</td><td>$0.05</td><td>$2.50</td></tr></tbody></table>\n<p>But comparing price-per-token doesn't really make sense these days, when reasoning tokens mean that different models might use dramatically different numbers of tokens to solve the same problem.</p>\n<p>For that, one measure that's useful is the Artificial Analysis.</p>\n<p><img src=\"https://static.simonwillison.net/static/2026/artificial-analysis-haiku-class.webp\" alt=\"Stacked bar chart from Artificial Analysis comparing a cost in dollars across six models, each bar split into four unlabeled stacked segments, sorted from lowes\" loading=\"lazy\"></p>\n<p>And even more useful than that is their Intelligence Index vs. Cost per Task chart, which shows the following for those three models:</p>\n<p><img src=\"https://static.simonwillison.net/static/2026/artificial-analysis-pareto.webp\" alt=\"Scatter plot from Artificial Analysis titled &quot;Intelligence Index vs. Cost per Task&quot;, plotting Artificial Analysis Intelligence Index (y-axis, 5 to 40) against c\" loading=\"lazy\"></p>\n<p>The Muse Ember models sit right on that Pareto line - the line at which you can only improve one dimension by giving up another. Meta call this out in their announcement:</p>\n<blockquote><p>It also sits on the efficiency frontier of the full Artificial Analysis leaderboard: no model scores higher for less per task.</p></blockquote>\n<p>(That grey dot on the Pareto line in the middle of the green area is GPT-6.1 Terra (low) - clearly I should be paying more attention to the Terra family!)</p>\n<p>Muse Ember has six reasoning levels - minimal, low, medium, high, xhigh, and max - so I<a href=\"https://tools.simonwillison.net/markdown-svg-renderer?url=https%3A%2F%2Fgist.github.com%2Fsimonw%2Fc7666e8a54d84f724ac8121f9fa6cc4d\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">rendered six pelicans riding bicycles</a>. The \"high\" reasoning level failed to return a full SVG, and the other SVGs were surprising in that the reasoning level didn't cleanly map to the visual quality of the response.</p>\n<p>Here's the \"max\" one, but the others are worth a look too:</p>\n<p><img src=\"https://static.simonwillison.net/static/2026/muse-ember.webp\" alt=\"Bicycle frame is OK, basket has fish, pelican has a weird blue hat on.\" loading=\"lazy\"></p>\n<p>The Ember pelicans are comparable in quality to those<a href=\"https://tools.simonwillison.net/markdown-svg-renderer?url=https://gist.github.com/simonw/185cff7ff0b11379725abf7f78d5d2b2\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">I got from Muse Wonder</a>, which is<a href=\"https://www.llm-prices.com/#sel=muse-ember-1.0%2Cmuse-ember-1.0-200k%2Cmuse-wonder-1.0\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">40x the price</a>of Muse Ember.<p>Tags:<a href=\"https://simonwillison.net/tags/ai\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">ai</a>,<a href=\"https://simonwillison.net/tags/generative-ai\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">generative-ai</a>,<a href=\"https://simonwillison.net/tags/llms\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">llms</a>,<a href=\"https://simonwillison.net/tags/meta\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">meta</a>,<a href=\"https://simonwillison.net/tags/llm-pricing\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">llm-pricing</a>,<a href=\"https://simonwillison.net/tags/llm-release\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">llm-release</a>,<a href=\"https://simonwillison.net/tags/artificial-analysis\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">artificial-analysis</a>,<a href=\"https://simonwillison.net/tags/muse\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">muse</a></p></p>",
+            "text": "Introducing Our Smallest, Most Efficient Model: Muse Ember\nMeta AI just launched their entry in the Claude Haiku/GPT Luna category: Muse Ember, which they describe as: [...] our smallest and most efficient model designed for complex reasoning execution and the work agents repeat all day: tool calls, coding subtasks, routing, extraction, and long document parsing.\nFor shorter prompts it's priced the same as GPT-6 Luna and Claude Haiku 5.5 - both are $0.10/million input tokens and $0.50/million output. Today's other big model release, Claude Fable 5.2, is 80x that price at $8/$40.\nThe pricing is a little less straightforward as prompts get longer, though. Luna, Ember, and Haiku all support up to a million input tokens, but they also all have a threshold after which the price goes up. Taking that threshold into account Ember is priced between the two others:\nModel\nPrompt size\nInput ($/M)\nCached input\nOutput\nGPT-6 Luna\n≤272k\n$0.10\n$0.01\n$0.50\n>272k\n$0.20\n$0.02\n$0.75\nMuse Ember 1.0\n≤200k\n$0.10\n$0.004\n$0.50\n>200k\n$0.30\n$0.012\n$1.50\nClaude Haiku 5.5\n≤100k\n$0.10\n$0.01\n$0.50\n>100k\n$0.50\n$0.05\n$2.50\nBut comparing price-per-token doesn't really make sense these days, when reasoning tokens mean that different models might use dramatically different numbers of tokens to solve the same problem.\nFor that, one measure that's useful is the Artificial Analysis.\nAnd even more useful than that is their Intelligence Index vs. Cost per Task chart, which shows the following for those three models:\nThe Muse Ember models sit right on that Pareto line - the line at which you can only improve one dimension by giving up another. Meta call this out in their announcement:\nIt also sits on the efficiency frontier of the full Artificial Analysis leaderboard: no model scores higher for less per task.\n(That grey dot on the Pareto line in the middle of the green area is GPT-6.1 Terra (low) - clearly I should be paying more attention to the Terra family!)\nMuse Ember has six reasoning levels - minimal, low, medium, high, xhigh, and max - so I rendered six pelicans riding bicycles . The \"high\" reasoning level failed to return a full SVG, and the other SVGs were surprising in that the reasoning level didn't cleanly map to the visual quality of the response.\nHere's the \"max\" one, but the others are worth a look too:\nThe Ember pelicans are comparable in quality to those I got from Muse Wonder , which is 40x the price of Muse Ember. Tags: ai , generative-ai , llms , meta , llm-pricing , llm-release , artificial-analysis , muse",
+            "lead": "Introducing Our Smallest, Most Efficient Model: Muse Ember\nMeta AI just launched their entry in the Claude Haiku/GPT Luna category: Muse Ember, which they describe as: [...] our smallest and most efficient model designed for complex reasoning execution and the work agents repeat all day: tool calls, coding subtasks, routing, extraction, and long document parsing.\nFor shorter prompts it's priced the same as GPT-6 Luna and Claude Haiku 5.5 - both are $0.10/m",
+            "chars": 2590,
+            "shown": 2590,
+            "truncated": false
+          },
+          "categories": [
+            "ai",
+            "generative-ai",
+            "llms",
+            "meta",
+            "llm-pricing",
+            "llm-release",
+            "artificial-analysis",
+            "muse"
+          ],
+          "author": "",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "tools",
+          "metrics": {},
+          "quality": 9,
+          "score": 21.52,
+          "category": "bench",
+          "subcategory": "cost",
+          "practical": 2,
+          "slug": "fabe838d73f5",
+          "action": 1,
+          "rank": 10.6,
+          "tags": []
+        },
+        {
+          "sourceId": "reddit-local-llama",
+          "sourceName": "r/LocalLLaMA",
+          "title": "We tested Qwen3.6 27B, Qwen3.8 27B and GLM-5.3 Flash on real tasks in Elixir, OCaml, Haskell and 10 other less common languages",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xsorsx/we_tested_qwen36_27b_qwen38_27b_and_glm53_flash/",
+          "id": "t3_1xsorsx",
+          "published": "2026-11-10T14:48:25.000Z",
+          "summary": "Hi! My team and I built a benchmark of 202 real GitHub tasks in 13 languages that rarely show up in coding benchmarks: Elixir, OCaml, Haskell, Clojure, Kotlin, Swift, Julia, R and others. I think a lot of people do local development in these languages too. We didn’t have a huge compute budget, so I specifically added…",
+          "content": {
+            "html": "<table><tr><td><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xsorsx/we_tested_qwen36_27b_qwen38_27b_and_glm53_flash/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://external-preview.redd.it/6iqJC_OQBf_kD5iSYHgH6Y9ZKA8j8Yf_rB5iiVc2Rds.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=3915f20479a7bb110398889aa8dc24e4ca706f1f\" alt=\"We tested Qwen3.6 27B, Qwen3.8 27B and GLM-5.3 Flash on real tasks in Elixir, OCaml, Haskell and 10 other less common languages\" loading=\"lazy\"></a></td><td><div><p>Hi! My team and I built a benchmark of 202 real GitHub tasks in 13 languages that rarely show up in coding benchmarks: Elixir, OCaml, Haskell, Clojure, Kotlin, Swift, Julia, R and others. I think a lot of people do local development in these languages too.</p><p>We didn’t have a huge compute budget, so I specifically added Qwen3.6 27B and Qwen3.8 27B to compare them. Qwen3.8 solves 43% of the tasks, up from 17% for Qwen3.6. You can compare them with Kimi K3, DeepSeek, GLM and closed models on the leaderboard, including a per-language breakdown.</p><p>One caveat: Qwen3.8 was used to pick hard tasks, so its score is a bit biased down.</p><p>If you’ve been running Qwen3.8 locally on any of these languages, share how it went.</p></div>submitted by<a href=\"https://www.reddit.com/user/Fabulous_Pollution10\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">/u/Fabulous_Pollution10</a><br><span><a href=\"https://longtail-swe.com/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[link]</a></span><span><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xsorsx/we_tested_qwen36_27b_qwen38_27b_and_glm53_flash/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[comments]</a></span></td></tr></table>",
+            "text": "Hi! My team and I built a benchmark of 202 real GitHub tasks in 13 languages that rarely show up in coding benchmarks: Elixir, OCaml, Haskell, Clojure, Kotlin, Swift, Julia, R and others. I think a lot of people do local development in these languages too.\nWe didn’t have a huge compute budget, so I specifically added Qwen3.6 27B and Qwen3.8 27B to compare them. Qwen3.8 solves 43% of the tasks, up from 17% for Qwen3.6. You can compare them with Kimi K3, DeepSeek, GLM and closed models on the leaderboard, including a per-language breakdown.\nOne caveat: Qwen3.8 was used to pick hard tasks, so its score is a bit biased down.\nIf you’ve been running Qwen3.8 locally on any of these languages, share how it went.\nsubmitted by /u/Fabulous_Pollution10\n[link] [comments]",
+            "lead": "Hi! My team and I built a benchmark of 202 real GitHub tasks in 13 languages that rarely show up in coding benchmarks: Elixir, OCaml, Haskell, Clojure, Kotlin, Swift, Julia, R and others. I think a lot of people do local development in these languages too.\nWe didn’t have a huge compute budget, so I specifically added Qwen3.6 27B and Qwen3.8 27B to compare them. Qwen3.8 solves 43% of the tasks, up from 17% for Qwen3.6. You can compare them with Kimi K3, Dee",
+            "chars": 779,
+            "shown": 779,
+            "truncated": false
+          },
+          "categories": [
+            "LocalLLaMA"
+          ],
+          "author": "/u/Fabulous_Pollution10",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "oss",
+          "metrics": {},
+          "quality": 7,
+          "score": 13.13,
+          "category": "bench",
+          "subcategory": "benchmark",
+          "practical": 1,
+          "slug": "d75707d59f98",
+          "action": 1,
+          "rank": 8.6,
+          "tags": [
+            "benchmark"
+          ]
+        },
+        {
+          "sourceId": "lcz-llm",
+          "sourceName": "抡锤者 模型部署讨论",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "terry",
+          "id": "2961",
+          "title": "Claude Fable5.2实测，3个简单测试案例和腾讯HY4一个水平但是价格贵了25倍，Anthropic还是少吹牛，多改善下产品！",
+          "url": "https://lcz.me/topic/2961",
+          "published": "2026-11-10T12:00:00.000Z",
+          "summary": "@Henry-Chiu-0 試一次就知道了 測試模型不是只有讓他畫SVG出個圖 前端後端能力都是很重要的指標 這就是為何評測網站都測10種以上不同的能力",
+          "metrics": {
+            "points": 2,
+            "comments": 5,
+            "views": 138
+          },
+          "excellent": false,
+          "quality": 6,
+          "score": 18,
+          "category": "bench",
+          "subcategory": "cost",
+          "practical": 1,
+          "slug": "dfd4b5c596e1",
+          "action": 1,
+          "rank": 7.6,
+          "tags": [
+            "benchmark"
+          ]
+        }
+      ]
+    }
+  ]
+}

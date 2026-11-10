@@ -1,7 +1,7 @@
 {
   "id": "model-pricing",
   "kind": "openrouter-pricing",
-  "collectedAt": "2026-11-10T05:15:05.718Z",
+  "collectedAt": "2026-11-10T18:04:10.688Z",
   "upstream": {
     "label": "OpenRouter 模型目录 API",
     "url": "https://openrouter.ai/models"
@@ -135,7 +135,7 @@
           "id": "z-ai/glm-5.2",
           "url": "https://openrouter.ai/z-ai/glm-5.2",
           "context": 1048576,
-          "promptPerMillion": 0.006,
+          "promptPerMillion": 0.0061,
           "completionPerMillion": 6.8,
           "free": false,
           "created": 1781631930
@@ -371,16 +371,6 @@
           "created": 1789176933
         },
         {
-          "name": "DeepSeek: DeepSeek V4.1 Flash",
-          "id": "deepseek/deepseek-v4.1-flash",
-          "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash",
-          "context": 1048576,
-          "promptPerMillion": 0.051,
-          "completionPerMillion": 0.5670000000000001,
-          "free": false,
-          "created": 1789021285
-        },
-        {
           "name": "Amazon: Nova Lite 1.0",
           "id": "amazon/nova-lite-v1",
           "url": "https://openrouter.ai/amazon/nova-lite-v1",
@@ -409,6 +399,16 @@
           "completionPerMillion": 0.25,
           "free": false,
           "created": 1788206780
+        },
+        {
+          "name": "Z.ai: GLM 4.7 Flash",
+          "id": "z-ai/glm-4.7-flash",
+          "url": "https://openrouter.ai/z-ai/glm-4.7-flash",
+          "context": 200000,
+          "promptPerMillion": 0.060500000000000005,
+          "completionPerMillion": 0.39999999999999997,
+          "free": false,
+          "created": 1768833913
         }
       ]
     }
@@ -421,8 +421,8 @@
     {
       "path": "https://openrouter.ai/api/v1/models",
       "url": "https://openrouter.ai/api/v1/models",
-      "sha256": "bf344ebd7415643e5214400738f5910396c3a5b34ac859bfb2adaa06f6a41404",
-      "bytes": 836217
+      "sha256": "ef48a4e8e61b58f285b24789bb07f7768e656df1aa8317f6b58cc87c0f13be0c",
+      "bytes": 839532
     }
   ]
 }

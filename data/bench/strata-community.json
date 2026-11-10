@@ -1,12 +1,12 @@
 {
   "id": "strata-community",
   "kind": "strata-community",
-  "collectedAt": "2026-11-10T04:16:37.751Z",
+  "collectedAt": "2026-11-10T18:04:10.183Z",
   "upstream": {
     "label": "Niko1221/Strata · bench/results/COMMUNITY.md",
     "url": "https://github.com/Niko1221/Strata/tree/main/bench/results"
   },
-  "commit": "504b143342a9fe1aa8320a7b31e11f5c0ac265c3",
+  "commit": "dbb2d168cffa8cf793d9325358809d5263c7c6b0",
   "tables": {
     "output": {
       "rows": [
@@ -23,7 +23,7 @@
             131
           ],
           "raw": "138 / 144 / 131",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-08-community-rtx-5090-laptop-engine-0.1.40.3/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-08-community-rtx-5090-laptop-engine-0.1.40.3/README.md"
         },
         {
           "folder": "2026-10-02-community-rtx-5090-iq3s",
@@ -38,7 +38,7 @@
             127.2
           ],
           "raw": "141.8 / 142.2 / 127.2",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-02-community-rtx-5090-iq3s/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-02-community-rtx-5090-iq3s/README.md"
         },
         {
           "folder": "2026-10-08-community-rtx4090-iq3xxs-200k-code",
@@ -53,7 +53,7 @@
             122
           ],
           "raw": "128 / 138 / 122",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-08-community-rtx4090-iq3xxs-200k-code/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-08-community-rtx4090-iq3xxs-200k-code/README.md"
         },
         {
           "folder": "2026-10-04-community-rtx4090-iq3xxs-200k-code",
@@ -68,7 +68,7 @@
             120
           ],
           "raw": "124 / 135 / 120",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-04-community-rtx4090-iq3xxs-200k-code/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-04-community-rtx4090-iq3xxs-200k-code/README.md"
         },
         {
           "folder": "2026-10-09-community-rtx-5080-4060ti-0.1.41",
@@ -83,7 +83,7 @@
             124.9
           ],
           "raw": "146.0 / 132.2 / 124.9",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-09-community-rtx-5080-4060ti-0.1.41/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-09-community-rtx-5080-4060ti-0.1.41/README.md"
         },
         {
           "folder": "2026-10-02-community-2x-rtx-pro-4500-engine-0.1.36",
@@ -98,7 +98,7 @@
             105
           ],
           "raw": "127 / 130 / 105",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-02-community-2x-rtx-pro-4500-engine-0.1.36/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-02-community-2x-rtx-pro-4500-engine-0.1.36/README.md"
         },
         {
           "folder": "2026-10-03-community-rtx4090-iq3xxs-200k-code",
@@ -113,7 +113,7 @@
             108
           ],
           "raw": "118 / 128 / 108",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-03-community-rtx4090-iq3xxs-200k-code/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-03-community-rtx4090-iq3xxs-200k-code/README.md"
         },
         {
           "folder": "2026-10-01-community-2x-rtx-pro-4500",
@@ -128,7 +128,7 @@
             93
           ],
           "raw": "115 / 120 / 93",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-01-community-2x-rtx-pro-4500/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-01-community-2x-rtx-pro-4500/README.md"
         },
         {
           "folder": "2026-10-03-community-rtx4090-iq3s-140k-ru",
@@ -143,7 +143,7 @@
             102.2
           ],
           "raw": "76.1 / 102.5 / 102.2",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-03-community-rtx4090-iq3s-140k-ru/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-03-community-rtx4090-iq3s-140k-ru/README.md"
         },
         {
           "folder": "2026-10-03-community-rtx4090-iq3s-140k-code",
@@ -158,7 +158,7 @@
             84.4
           ],
           "raw": "77.5 / 97.2 / 84.4",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-03-community-rtx4090-iq3s-140k-code/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-03-community-rtx4090-iq3s-140k-code/README.md"
         },
         {
           "folder": "2026-10-07-community-rtx5090-pro4000-helper",
@@ -173,7 +173,7 @@
             94
           ],
           "raw": "103 / 92 / 94",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-07-community-rtx5090-pro4000-helper/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-07-community-rtx5090-pro4000-helper/README.md"
         },
         {
           "folder": "2026-10-04-community-rtx4090-iq3xxs-200k-ru",
@@ -188,7 +188,7 @@
             87.8
           ],
           "raw": "81.1 / 90.5 / 87.8",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-04-community-rtx4090-iq3xxs-200k-ru/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-04-community-rtx4090-iq3xxs-200k-ru/README.md"
         },
         {
           "folder": "2026-10-05-community-rtx-5060-ti-x2",
@@ -203,7 +203,7 @@
             83.8
           ],
           "raw": "84.8 / 86.5 / 83.8",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-05-community-rtx-5060-ti-x2/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-05-community-rtx-5060-ti-x2/README.md"
         },
         {
           "folder": "2026-10-03-community-rtx4090-iq3xxs-200k-ru",
@@ -218,7 +218,7 @@
             90.3
           ],
           "raw": "94.2 / 85.6 / 90.3",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-03-community-rtx4090-iq3xxs-200k-ru/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-03-community-rtx4090-iq3xxs-200k-ru/README.md"
         },
         {
           "folder": "2026-10-04-community-v100-rtx4070-split",
@@ -233,7 +233,7 @@
             77.1
           ],
           "raw": "79.1 / 83.8 / 77.1",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-04-community-v100-rtx4070-split/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-04-community-v100-rtx4070-split/README.md"
         },
         {
           "folder": "2026-10-08-community-2x-titan-rtx-0.1.40.3",
@@ -248,7 +248,7 @@
             71.1
           ],
           "raw": "70.9 / 77.3 / 71.1",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-08-community-2x-titan-rtx-0.1.40.3/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-08-community-2x-titan-rtx-0.1.40.3/README.md"
         },
         {
           "folder": "2026-10-04-community-rtx-5070ti-windows",
@@ -263,7 +263,7 @@
             82.8
           ],
           "raw": "75.8 / 74.7 / 82.8 / 79.6",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-04-community-rtx-5070ti-windows/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-04-community-rtx-5070ti-windows/README.md"
         },
         {
           "folder": "2026-10-02-community-rtx-5060-ti-x2",
@@ -278,7 +278,7 @@
             72.4
           ],
           "raw": "77.5 / 72.7 / 72.4",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-02-community-rtx-5060-ti-x2/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-02-community-rtx-5060-ti-x2/README.md"
         },
         {
           "folder": "2026-10-09-community-rtx-5080-w7-2475x-ud-iq4xs-786k",
@@ -293,7 +293,7 @@
             64.1
           ],
           "raw": "68.6 / 70.2 / 64.1",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-09-community-rtx-5080-w7-2475x-ud-iq4xs-786k/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-09-community-rtx-5080-w7-2475x-ud-iq4xs-786k/README.md"
         },
         {
           "folder": "2026-10-04-community-v100-16gb-ram",
@@ -308,7 +308,7 @@
             67.1
           ],
           "raw": "69.3 / 68.6 / 67.1",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-04-community-v100-16gb-ram/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-04-community-v100-16gb-ram/README.md"
         },
         {
           "folder": "2026-10-06-community-rtx-5060ti",
@@ -323,7 +323,7 @@
             57.2
           ],
           "raw": "56.6 / 60.2 / 57.2",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-06-community-rtx-5060ti/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-06-community-rtx-5060ti/README.md"
         },
         {
           "folder": "2026-10-01-community-2x-titan-rtx",
@@ -338,7 +338,7 @@
             62
           ],
           "raw": "68 / 60 / 62",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-01-community-2x-titan-rtx/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-01-community-2x-titan-rtx/README.md"
         },
         {
           "folder": "2026-10-04-community-rx-7900-gre",
@@ -353,7 +353,7 @@
             54.7
           ],
           "raw": "65.3 / 59.1 / 54.7",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-04-community-rx-7900-gre/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-04-community-rx-7900-gre/README.md"
         },
         {
           "folder": "2026-10-10-community-rx-9070",
@@ -368,7 +368,7 @@
             57.9
           ],
           "raw": "58.7 / 57.9 / 57.9",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-10-community-rx-9070/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-10-community-rx-9070/README.md"
         },
         {
           "folder": "2026-10-09-community-strix-halo-laptop-70w",
@@ -383,7 +383,7 @@
             42
           ],
           "raw": "59.2 / 57.8 / 42.0",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-09-community-strix-halo-laptop-70w/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-09-community-strix-halo-laptop-70w/README.md"
         },
         {
           "folder": "2026-10-05-community-2x-rtx-4060ti",
@@ -398,7 +398,7 @@
             54.7
           ],
           "raw": "54.4 / 56.6 / 54.7",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-05-community-2x-rtx-4060ti/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-05-community-2x-rtx-4060ti/README.md"
         },
         {
           "folder": "2026-10-04-community-rtx-4090-laptop",
@@ -413,7 +413,7 @@
             48.1
           ],
           "raw": "51.2 / 49.9 / 48.1",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-04-community-rtx-4090-laptop/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-04-community-rtx-4090-laptop/README.md"
         },
         {
           "folder": "2026-10-04-community-2x-rtx3060",
@@ -428,7 +428,7 @@
             40
           ],
           "raw": "43.6 / 42.5 / 40.0",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-04-community-2x-rtx3060/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-04-community-2x-rtx3060/README.md"
         },
         {
           "folder": "2026-10-02-community-rtx2080ti-11gb",
@@ -443,7 +443,7 @@
             34.1
           ],
           "raw": "39.6 / 38.0 / 34.1",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-02-community-rtx2080ti-11gb/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-02-community-rtx2080ti-11gb/README.md"
         },
         {
           "folder": "2026-10-04-community-mi50",
@@ -458,7 +458,7 @@
             33.5
           ],
           "raw": "36.0 / 34.0 / 33.5",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-04-community-mi50/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-04-community-mi50/README.md"
         },
         {
           "folder": "2026-10-05-community-rx-6700-xt",
@@ -473,7 +473,7 @@
             30.2
           ],
           "raw": "32.1 / 30.7 / 30.2",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-05-community-rx-6700-xt/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-05-community-rx-6700-xt/README.md"
         },
         {
           "folder": "2026-10-09-community-radeon-pro-vii-16gb",
@@ -488,7 +488,7 @@
             23.7
           ],
           "raw": "24.2 / 24.0 / 23.7",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-09-community-radeon-pro-vii-16gb/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-09-community-radeon-pro-vii-16gb/README.md"
         }
       ]
     },
@@ -507,7 +507,7 @@
             5762
           ],
           "raw": "2,960 / 5,065 / 5,762",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-02-community-2x-rtx-pro-4500-engine-0.1.36/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-02-community-2x-rtx-pro-4500-engine-0.1.36/README.md"
         },
         {
           "folder": "2026-10-09-community-rtx-5080-4060ti-0.1.41",
@@ -522,7 +522,7 @@
             4166
           ],
           "raw": "3,451 / 4,277 / 4,166",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-09-community-rtx-5080-4060ti-0.1.41/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-09-community-rtx-5080-4060ti-0.1.41/README.md"
         },
         {
           "folder": "2026-10-04-community-rtx4090-iq3xxs-200k-ru",
@@ -537,7 +537,7 @@
             3126
           ],
           "raw": "1,908 / 3,128 / 3,126",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-04-community-rtx4090-iq3xxs-200k-ru/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-04-community-rtx4090-iq3xxs-200k-ru/README.md"
         },
         {
           "folder": "2026-10-03-community-rtx4090-iq3s-140k-ru",
@@ -552,7 +552,7 @@
             3078
           ],
           "raw": "2,084 / 2,991 / 3,078",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-03-community-rtx4090-iq3s-140k-ru/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-03-community-rtx4090-iq3s-140k-ru/README.md"
         },
         {
           "folder": "2026-10-03-community-rtx4090-iq3xxs-200k-code",
@@ -567,7 +567,7 @@
             2962
           ],
           "raw": "1,844 / 2,976 / 2,962",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-03-community-rtx4090-iq3xxs-200k-code/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-03-community-rtx4090-iq3xxs-200k-code/README.md"
         },
         {
           "folder": "2026-10-04-community-rtx4090-iq3xxs-200k-code",
@@ -582,7 +582,7 @@
             3085
           ],
           "raw": "1,966 / 2,974 / 3,085",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-04-community-rtx4090-iq3xxs-200k-code/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-04-community-rtx4090-iq3xxs-200k-code/README.md"
         },
         {
           "folder": "2026-10-03-community-rtx4090-iq3s-140k-code",
@@ -597,7 +597,7 @@
             3048
           ],
           "raw": "2,059 / 2,948 / 3,048",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-03-community-rtx4090-iq3s-140k-code/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-03-community-rtx4090-iq3s-140k-code/README.md"
         },
         {
           "folder": "2026-10-03-community-rtx4090-iq3xxs-200k-ru",
@@ -612,7 +612,7 @@
             2984
           ],
           "raw": "1,824 / 2,912 / 2,984",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-03-community-rtx4090-iq3xxs-200k-ru/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-03-community-rtx4090-iq3xxs-200k-ru/README.md"
         },
         {
           "folder": "2026-10-04-community-rtx-4090-laptop",
@@ -627,7 +627,7 @@
             2386
           ],
           "raw": "1,345 / 2,506 / 2,386",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-04-community-rtx-4090-laptop/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-04-community-rtx-4090-laptop/README.md"
         },
         {
           "folder": "2026-10-01-community-2x-rtx-pro-4500",
@@ -642,7 +642,7 @@
             2785
           ],
           "raw": "1,428 / 2,454 / 2,785",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-01-community-2x-rtx-pro-4500/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-01-community-2x-rtx-pro-4500/README.md"
         },
         {
           "folder": "2026-10-05-community-rtx-5060-ti-x2",
@@ -657,7 +657,7 @@
             2440
           ],
           "raw": "911 / 2,087 / 2,440",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-05-community-rtx-5060-ti-x2/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-05-community-rtx-5060-ti-x2/README.md"
         },
         {
           "folder": "2026-10-02-community-rtx-5060-ti-x2",
@@ -672,7 +672,7 @@
             2199
           ],
           "raw": "808 / 1,931 / 2,199",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-02-community-rtx-5060-ti-x2/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-02-community-rtx-5060-ti-x2/README.md"
         },
         {
           "folder": "2026-10-05-community-2x-rtx-4060ti",
@@ -687,7 +687,7 @@
             2221
           ],
           "raw": "880 / 1,917 / 2,221",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-05-community-2x-rtx-4060ti/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-05-community-2x-rtx-4060ti/README.md"
         },
         {
           "folder": "2026-10-01-community-2x-titan-rtx",
@@ -702,7 +702,7 @@
             1785
           ],
           "raw": "865 / 1,612 / 1,785",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-01-community-2x-titan-rtx/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-01-community-2x-titan-rtx/README.md"
         },
         {
           "folder": "2026-10-04-community-v100-16gb-ram",
@@ -717,7 +717,7 @@
             1394
           ],
           "raw": "1,233 / 1,580 / 1,394",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-04-community-v100-16gb-ram/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-04-community-v100-16gb-ram/README.md"
         },
         {
           "folder": "2026-10-04-community-v100-rtx4070-split",
@@ -732,7 +732,7 @@
             1533
           ],
           "raw": "985 / 1,535 / 1,533",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-04-community-v100-rtx4070-split/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-04-community-v100-rtx4070-split/README.md"
         },
         {
           "folder": "2026-10-06-community-rtx-5060ti",
@@ -747,7 +747,7 @@
             1176
           ],
           "raw": "1,158 / 1,225 / 1,176",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-06-community-rtx-5060ti/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-06-community-rtx-5060ti/README.md"
         },
         {
           "folder": "2026-10-02-community-rtx2080ti-11gb",
@@ -762,7 +762,7 @@
             566
           ],
           "raw": "497 / 637 / 566",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-02-community-rtx2080ti-11gb/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-02-community-rtx2080ti-11gb/README.md"
         },
         {
           "folder": "2026-10-05-community-rx-6700-xt",
@@ -777,7 +777,7 @@
             298
           ],
           "raw": "302 / 309 / 298",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-05-community-rx-6700-xt/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-05-community-rx-6700-xt/README.md"
         }
       ]
     },
@@ -791,7 +791,7 @@
           "pr": "#404",
           "prUrl": "https://github.com/Niko1221/Strata/pull/404",
           "note": "545 至 900 中位数 (0.1.30 至 0.1.31) ｜ 16-34 至 17-65",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-01-0.1.31-release/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-01-0.1.31-release/README.md"
         },
         {
           "folder": "2026-10-01-community-rtx-pro-4500",
@@ -801,7 +801,7 @@
           "pr": "#417",
           "prUrl": "https://github.com/Niko1221/Strata/pull/417",
           "note": "数字见原报告 ｜ UD-Q4_K_XL 61.5 / 72.1 / 70.2; UD-IQ4_XS 82.0 / 95.8 / 91.4; IQ3_S 106 / 120 / 117 (2.7K / 64K / 128K)",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-01-community-rtx-pro-4500/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-01-community-rtx-pro-4500/README.md"
         },
         {
           "folder": "2026-10-01-community-rtx-5090-5950x",
@@ -811,7 +811,7 @@
           "pr": "#433",
           "prUrl": "https://github.com/Niko1221/Strata/pull/433",
           "note": "UD-Q4_K_XL 14.7K: 2,161 (0.1.31) ｜ UD-Q4_K_XL 14.7K: 88.3",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-01-community-rtx-5090-5950x/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-01-community-rtx-5090-5950x/README.md"
         },
         {
           "folder": "2026-10-01-ctx-ladder",
@@ -821,7 +821,7 @@
           "pr": "#995",
           "prUrl": "https://github.com/Niko1221/Strata/pull/995",
           "note": "167 / 128 / 133 (SSE 读取, 32K / 64K / 128K) ｜ 97 / 84 / 74 (32K / 64K / 128K, KV q4_0 在 128K)",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-01-ctx-ladder/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-01-ctx-ladder/README.md"
         },
         {
           "folder": "2026-10-05-community-rtx-4070-ti-super",
@@ -831,7 +831,7 @@
           "pr": "#995",
           "prUrl": "https://github.com/Niko1221/Strata/pull/995",
           "note": "冷启动读取见原报告 (约 2,500 在 32K-256K) ｜ IQ2_XS 97.9 / 94.3 / 90.0 / 82.4; IQ3_XXS 76 / 71 / 70 / 56 (32K / 64K / 128K / 256K)",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-05-community-rtx-4070-ti-super/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-05-community-rtx-4070-ti-super/README.md"
         },
         {
           "folder": "2026-10-01-iq4xs-64gb",
@@ -841,7 +841,7 @@
           "pr": "#416",
           "prUrl": "https://github.com/Niko1221/Strata/pull/416",
           "note": "不适用 (每轮草稿毫秒) ｜ 33.9 固定内存池, 16.9-39 mmap 变体",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-01-iq4xs-64gb/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-01-iq4xs-64gb/README.md"
         },
         {
           "folder": "2026-10-02-community-2x5060ti",
@@ -851,7 +851,7 @@
           "pr": "#483",
           "prUrl": "https://github.com/Niko1221/Strata/pull/483",
           "note": "1,108 (20.9K 冷启动) ｜ 56.4 (20.9K); 62.9 短提示",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-02-community-2x5060ti/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-02-community-2x5060ti/README.md"
         },
         {
           "folder": "2026-10-02-community-rtx4000ada-layer-split",
@@ -861,7 +861,7 @@
           "pr": "#521",
           "prUrl": "https://github.com/Niko1221/Strata/pull/521",
           "note": "2,110 (2 卡) 对比 779 (3 卡), 16.6K ｜ 73 对比 74 中位数",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-02-community-rtx4000ada-layer-split/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-02-community-rtx4000ada-layer-split/README.md"
         },
         {
           "folder": "2026-10-02-community-rtx5090-1m-agent",
@@ -871,7 +871,7 @@
           "pr": "#466",
           "prUrl": "https://github.com/Niko1221/Strata/pull/466",
           "note": "约 2,500 / 3,300 / 3,400 (4K / 32K / 128K) ｜ 94-105",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-02-community-rtx5090-1m-agent/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-02-community-rtx5090-1m-agent/README.md"
         },
         {
           "folder": "2026-10-02-community-rx9070xt-windows",
@@ -881,7 +881,7 @@
           "pr": "#499",
           "prUrl": "https://github.com/Niko1221/Strata/pull/499",
           "note": "约 600 ｜ 45-46 (37 first 运行)",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-02-community-rx9070xt-windows/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-02-community-rx9070xt-windows/README.md"
         },
         {
           "folder": "2026-10-03-ashley-2080ti",
@@ -891,7 +891,7 @@
           "pr": "#698",
           "prUrl": "https://github.com/Niko1221/Strata/pull/698",
           "note": "525 在 32K ｜ 33-38 (1K 至 128K)",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-03-ashley-2080ti/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-03-ashley-2080ti/README.md"
         },
         {
           "folder": "2026-10-03-dev-5090",
@@ -901,7 +901,7 @@
           "pr": "#698",
           "prUrl": "https://github.com/Niko1221/Strata/pull/698",
           "note": "4K: 4,308 / 4,846 / 5,361 ｜ 4K: 178 / 193 / 189; 128K: 144 / 152 / 165",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-03-dev-5090/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-03-dev-5090/README.md"
         },
         {
           "folder": "2026-10-03-community-r9700-windows",
@@ -911,7 +911,7 @@
           "pr": "#618",
           "prUrl": "https://github.com/Niko1221/Strata/pull/618",
           "note": "856 (4K) / 1,182 (32K) / 1,232 (131K) / 1,130 (248K) ｜ 99.8 (4K) / 97.8 / 89.9 / 87.5",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-03-community-r9700-windows/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-03-community-r9700-windows/README.md"
         },
         {
           "folder": "2026-10-03-rx6900xt-coder",
@@ -921,7 +921,7 @@
           "pr": "#628",
           "prUrl": "https://github.com/Niko1221/Strata/pull/628",
           "note": "313 (4K) / 350 (32K) ｜ 45.3 (4K) 带 31 工作线程 对比 11.6 带 63",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-03-rx6900xt-coder/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-03-rx6900xt-coder/README.md"
         },
         {
           "folder": "2026-10-03-windows-groups",
@@ -931,7 +931,7 @@
           "pr": "#628",
           "prUrl": "https://github.com/Niko1221/Strata/pull/628",
           "note": "数字见原报告 ｜ 12.7 至 46.1 (短提示), 13.1 至 47.4 (4K) 保留处理器分组",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-03-windows-groups/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-03-windows-groups/README.md"
         },
         {
           "folder": "2026-10-03-community-rx7900xtx-rocm102-nightly",
@@ -941,7 +941,7 @@
           "pr": "#745",
           "prUrl": "https://github.com/Niko1221/Strata/pull/745",
           "note": "921 对比 1,535 (不带 / 带匹配的 hipBLASLt) ｜ 62.0 对比 61.0",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-03-community-rx7900xtx-rocm102-nightly/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-03-community-rx7900xtx-rocm102-nightly/README.md"
         },
         {
           "folder": "2026-10-04-community-rx7900xtx-hipblaslt-100500",
@@ -951,7 +951,7 @@
           "pr": "#745",
           "prUrl": "https://github.com/Niko1221/Strata/pull/745",
           "note": "926 至 1,687 (gfx1100 表) ｜ 62.3",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-04-community-rx7900xtx-hipblaslt-100500/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-04-community-rx7900xtx-hipblaslt-100500/README.md"
         },
         {
           "folder": "2026-10-03-community-v100",
@@ -961,7 +961,7 @@
           "pr": "#707",
           "prUrl": "https://github.com/Niko1221/Strata/pull/707",
           "note": "数字见原报告 ｜ 16.5 至 33.5 之后 校准; 22.0 文本",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-03-community-v100/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-03-community-v100/README.md"
         },
         {
           "folder": "2026-10-03-community-z840-rtx3090ti",
@@ -971,7 +971,7 @@
           "pr": "#674",
           "prUrl": "https://github.com/Niko1221/Strata/pull/674",
           "note": "1,239-1,304 (约 5K) ｜ 90-99 (NUMA 变体)",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-03-community-z840-rtx3090ti/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-03-community-z840-rtx3090ti/README.md"
         },
         {
           "folder": "2026-10-04-community-rtx-5090-9700x",
@@ -981,7 +981,7 @@
           "pr": "#777",
           "prUrl": "https://github.com/Niko1221/Strata/pull/777",
           "note": "3,775 (中位数, 全新缓存) ｜ 171.7",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-04-community-rtx-5090-9700x/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-04-community-rtx-5090-9700x/README.md"
         },
         {
           "folder": "2026-10-05-community-rtx-5090-9700x-iq3s",
@@ -991,7 +991,7 @@
           "pr": "#811",
           "prUrl": "https://github.com/Niko1221/Strata/pull/811",
           "note": "3,072 (中位数, 全新缓存) ｜ 164.3",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-05-community-rtx-5090-9700x-iq3s/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-05-community-rtx-5090-9700x-iq3s/README.md"
         },
         {
           "folder": "2026-10-04-community-rtx-4080s-iq3s",
@@ -1001,7 +1001,7 @@
           "pr": "#780",
           "prUrl": "https://github.com/Niko1221/Strata/pull/780",
           "note": "冷启动 2,535 (内存池 4) 对比 2,486 (内存池 15) ｜ 95 (4 工作线程) 对比 69-78 (15 工作线程) 平均",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-04-community-rtx-4080s-iq3s/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-04-community-rtx-4080s-iq3s/README.md"
         },
         {
           "folder": "2026-10-04-community-rx-6800-windows",
@@ -1011,7 +1011,7 @@
           "pr": "#815",
           "prUrl": "https://github.com/Niko1221/Strata/pull/815",
           "note": "326 (7.9K) / 311 (30.3K) ｜ 42.6 至 56.0 英文文本 (0.1.39 对比 `STRATA_SH_STREAM=0`)",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-04-community-rx-6800-windows/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-04-community-rx-6800-windows/README.md"
         },
         {
           "folder": "2026-10-04-community-4090-32gb-ram-512k",
@@ -1021,7 +1021,7 @@
           "pr": "#834",
           "prUrl": "https://github.com/Niko1221/Strata/pull/834",
           "note": "3,411 (477K 提示词) ｜ 122.0 在 深度",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-04-community-4090-32gb-ram-512k/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-04-community-4090-32gb-ram-512k/README.md"
         },
         {
           "folder": "2026-10-04-community-4090-agents-vs-dense-27b",
@@ -1031,7 +1031,7 @@
           "pr": "#882",
           "prUrl": "https://github.com/Niko1221/Strata/pull/882",
           "note": "约 3,800 (70-110K 重复读取) ｜ 173-185",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-04-community-4090-agents-vs-dense-27b/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-04-community-4090-agents-vs-dense-27b/README.md"
         },
         {
           "folder": "2026-10-05-community-v100-sxm2",
@@ -1041,7 +1041,7 @@
           "pr": "#902",
           "prUrl": "https://github.com/Niko1221/Strata/pull/902",
           "note": "Q2_0: 1,268 (8K) ｜ Q2_0 76.4; UD-IQ4_XS 26.3",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-05-community-v100-sxm2/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-05-community-v100-sxm2/README.md"
         },
         {
           "folder": "2026-10-05-community-e5-2673v3-rtx-4060ti",
@@ -1051,7 +1051,7 @@
           "pr": "#913",
           "prUrl": "https://github.com/Niko1221/Strata/pull/913",
           "note": "715 (Q2_0) / 439 (IQ3_S), 3.5K ｜ Q2_0 48.1 至 55.7; IQ3_S 30.5 至 35.0",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-05-community-e5-2673v3-rtx-4060ti/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-05-community-e5-2673v3-rtx-4060ti/README.md"
         },
         {
           "folder": "2026-10-06-community-rtx5070ti-5900x",
@@ -1061,7 +1061,7 @@
           "pr": "#993",
           "prUrl": "https://github.com/Niko1221/Strata/pull/993",
           "note": "IQ2_XS 1,992 / 2,817; IQ3_XXS 1,653 / 2,482; IQ3_S 1,439 / 2,261 ｜ IQ2_XS 102 / 101; IQ3_XXS 72.5 / 73.7; IQ3_S 62.9 / 66.1",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-06-community-rtx5070ti-5900x/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-06-community-rtx5070ti-5900x/README.md"
         },
         {
           "folder": "2026-10-05-community-2x-p40",
@@ -1071,7 +1071,7 @@
           "pr": "#1028",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1028",
           "note": "353 (4K) / 501 (16K), 两张卡; 348 / 388 单卡 ｜ 34.8 两张卡, 19.6 单卡",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-05-community-2x-p40/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-05-community-2x-p40/README.md"
         },
         {
           "folder": "2026-10-06-community-rx-6800m",
@@ -1081,7 +1081,7 @@
           "pr": "#1078",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1078",
           "note": "50-114 ｜ 9-27",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-06-community-rx-6800m/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-06-community-rx-6800m/README.md"
         },
         {
           "folder": "2026-10-05-community-2x-rx-6900xt",
@@ -1091,7 +1091,7 @@
           "pr": "#927",
           "prUrl": "https://github.com/Niko1221/Strata/pull/927",
           "note": "单卡官方发行版 457 / 474 / 459, 带 #835 + #849 + #854 868 / 1,100 / 1,023; 跨卡分层 带这些开关 853 / 1,616 / 1,823 ｜ 40-43 单卡, 57-61 跨卡分层",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-05-community-2x-rx-6900xt/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-05-community-2x-rx-6900xt/README.md"
         },
         {
           "folder": "2026-10-05-community-gfx1151",
@@ -1101,7 +1101,7 @@
           "pr": "#917",
           "prUrl": "https://github.com/Niko1221/Strata/pull/917",
           "note": "250.9 至 528.9 带 hipBLASLt 表 (配对的合成提示词) ｜ 45.6 至 46.8 (共享专家流已开)",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-05-community-gfx1151/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-05-community-gfx1151/README.md"
         },
         {
           "folder": "2026-10-05-community-arc-b65",
@@ -1111,7 +1111,7 @@
           "pr": "#955",
           "prUrl": "https://github.com/Niko1221/Strata/pull/955",
           "note": "307-359 (512 与 7,000 token 任务) ｜ 36-49 按任务; 五个任务的中位数 40.4-41.3 / 39.8-40.9",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-05-community-arc-b65/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-05-community-arc-b65/README.md"
         },
         {
           "folder": "2026-10-06-community-rtxpro-v0140",
@@ -1121,7 +1121,7 @@
           "pr": "#1137",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1137",
           "note": "数字见原报告 ｜ 数字见原报告",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-06-community-rtxpro-v0140/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-06-community-rtxpro-v0140/README.md"
         },
         {
           "folder": "2026-10-06-community-2x-rx-7900-gre",
@@ -1131,7 +1131,7 @@
           "pr": "#1140",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1140",
           "note": "数字见原报告 ｜ 数字见原报告",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-06-community-2x-rx-7900-gre/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-06-community-2x-rx-7900-gre/README.md"
         },
         {
           "folder": "2026-10-06-community-2x-p100",
@@ -1141,7 +1141,7 @@
           "pr": "#1157",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1157",
           "note": "数字见原报告 ｜ 数字见原报告",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-06-community-2x-p100/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-06-community-2x-p100/README.md"
         },
         {
           "folder": "2026-10-06-community-rtx4090-opt-ins",
@@ -1151,7 +1151,7 @@
           "pr": "#1158",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1158",
           "note": "数字见原报告 ｜ 数字见原报告",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-06-community-rtx4090-opt-ins/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-06-community-rtx4090-opt-ins/README.md"
         },
         {
           "folder": "2026-10-06-community-rtx4090-toolcall-hotfix",
@@ -1161,7 +1161,7 @@
           "pr": "#1158",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1158",
           "note": "数字见原报告 ｜ 数字见原报告",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-06-community-rtx4090-toolcall-hotfix/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-06-community-rtx4090-toolcall-hotfix/README.md"
         },
         {
           "folder": "2026-10-06-q8-prefill8192-rtxpro",
@@ -1171,7 +1171,7 @@
           "pr": "#1171",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1171",
           "note": "数字见原报告 ｜ 数字见原报告",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-06-q8-prefill8192-rtxpro/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-06-q8-prefill8192-rtxpro/README.md"
         },
         {
           "folder": "2026-10-06-community-rx-7900-xtx",
@@ -1181,7 +1181,7 @@
           "pr": "#1173",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1173",
           "note": "数字见原报告 ｜ 数字见原报告",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-06-community-rx-7900-xtx/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-06-community-rx-7900-xtx/README.md"
         },
         {
           "folder": "2026-10-06-community-4x-tesla-p100",
@@ -1191,7 +1191,7 @@
           "pr": "#1192",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1192",
           "note": "数字见原报告 ｜ 数字见原报告",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-06-community-4x-tesla-p100/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-06-community-4x-tesla-p100/README.md"
         },
         {
           "folder": "2026-10-06-community-rtx3090-egpu-64gb",
@@ -1201,7 +1201,7 @@
           "pr": "#1199",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1199",
           "note": "数字见原报告 ｜ 数字见原报告",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-06-community-rtx3090-egpu-64gb/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-06-community-rtx3090-egpu-64gb/README.md"
         },
         {
           "folder": "2026-10-06-community-r9-2x-rtx-2080-ti",
@@ -1211,7 +1211,7 @@
           "pr": "#1225",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1225",
           "note": "数字见原报告 ｜ 数字见原报告",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-06-community-r9-2x-rtx-2080-ti/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-06-community-r9-2x-rtx-2080-ti/README.md"
         },
         {
           "folder": "2026-10-06-community-2x-rtx-pro-4500-engine-0.1.40.1",
@@ -1221,7 +1221,7 @@
           "pr": "#1226",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1226",
           "note": "数字见原报告 ｜ 数字见原报告",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-06-community-2x-rtx-pro-4500-engine-0.1.40.1/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-06-community-2x-rtx-pro-4500-engine-0.1.40.1/README.md"
         },
         {
           "folder": "2026-10-05-community-rtx5080-9900x3d",
@@ -1231,7 +1231,7 @@
           "pr": "#1243",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1243",
           "note": "数字见原报告 ｜ 数字见原报告",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-05-community-rtx5080-9900x3d/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-05-community-rtx5080-9900x3d/README.md"
         },
         {
           "folder": "2026-10-07-community-rtx-5090-laptop-ud-iq4xs",
@@ -1241,7 +1241,7 @@
           "pr": "#1245",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1245",
           "note": "数字见原报告 ｜ 数字见原报告",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-07-community-rtx-5090-laptop-ud-iq4xs/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-07-community-rtx-5090-laptop-ud-iq4xs/README.md"
         },
         {
           "folder": "2026-10-06-community-rtx-5090-laptop",
@@ -1251,7 +1251,7 @@
           "pr": "#1263",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1263",
           "note": "数字见原报告 ｜ 数字见原报告",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-06-community-rtx-5090-laptop/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-06-community-rtx-5090-laptop/README.md"
         },
         {
           "folder": "2026-10-06-community-2x-rx-6900xt-0.1.40.1",
@@ -1261,7 +1261,7 @@
           "pr": "#1270",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1270",
           "note": "单卡官方发行版 458 / 473 / 459, 带两个 gfx103x 开关 811 / 973 / 913, 带 #1150 + #1151 + #1167 969 / 1,152 / 1,126; 跨卡分层 带这些开关 968 / 1,685 / 2,003 ｜ 单卡 47.5-51.8; 跨卡分层 官方发行版 62.1 / 67.0 / 59.0, 带那些 PR 72.2 / 74.7 / 70.3; 辅助卡 64-75",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-06-community-2x-rx-6900xt-0.1.40.1/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-06-community-2x-rx-6900xt-0.1.40.1/README.md"
         },
         {
           "folder": "2026-10-07-community-arc-b65-v01402",
@@ -1271,7 +1271,7 @@
           "pr": "#1432",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1432",
           "note": "7K 输入: 315 (8K, 读取 512), 830 (读取 4096), 288 (262K) ｜ 43.5 (8K), 42.9 (读取 4096), 42.4 (262K) 在 7K",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-07-community-arc-b65-v01402/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-07-community-arc-b65-v01402/README.md"
         },
         {
           "folder": "2026-10-07-community-2x-rtx-4000",
@@ -1281,7 +1281,7 @@
           "pr": "#1443",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1443",
           "note": "99.9 至 249.2 在 73K 提示词上 (全新缓存与已缓存尾部) ｜ 18.1 至 22.8",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-07-community-2x-rtx-4000/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-07-community-2x-rtx-4000/README.md"
         },
         {
           "folder": "2026-10-07-community-v100-p100-helper",
@@ -1291,7 +1291,7 @@
           "pr": "#1452",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1452",
           "note": "1,437 (18K) / 1,446 (44K) / 1,411 (120K, 一次运行) ｜ 约 73 (256-token 上限)",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-07-community-v100-p100-helper/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-07-community-v100-p100-helper/README.md"
         },
         {
           "folder": "2026-10-07-community-xtx-6800xt-1m-helper",
@@ -1301,7 +1301,7 @@
           "pr": "#1459",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1459",
           "note": "1,350 (50K) / 1,294 (130K) / 592 (1,048K 冷启动) ｜ 97 长编程任务 (最后一组); 39 在完整 1M 深度",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-07-community-xtx-6800xt-1m-helper/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-07-community-xtx-6800xt-1m-helper/README.md"
         },
         {
           "folder": "2026-10-07-community-rtx-5080-docker-wsl2",
@@ -1311,7 +1311,7 @@
           "pr": "#1460",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1460",
           "note": "2,253 / 3,304 (4K / 32K, 131K 上限) ｜ 75.7 / 80.8 / 72.2 (4K / 32K / 130K)",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-07-community-rtx-5080-docker-wsl2/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-07-community-rtx-5080-docker-wsl2/README.md"
         },
         {
           "folder": "2026-10-08-community-rtx4090-iq3xxs-200k-ru",
@@ -1321,7 +1321,7 @@
           "pr": "#1467",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1467",
           "note": "数字见原报告 ｜ 数字见原报告",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-08-community-rtx4090-iq3xxs-200k-ru/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-08-community-rtx4090-iq3xxs-200k-ru/README.md"
         },
         {
           "folder": "2026-10-07-community-gfx1150",
@@ -1331,7 +1331,7 @@
           "pr": "-",
           "prUrl": null,
           "note": "153 / 216 / 226 (1K / 3.6K / 7K) 带 gfx1150 hipBLASLt 表, 99 / 124 / 130 不带 ｜ 15.2-17.6",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-07-community-gfx1150/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-07-community-gfx1150/README.md"
         },
         {
           "folder": "2026-10-12-community-gfx1103",
@@ -1341,7 +1341,7 @@
           "pr": "-",
           "prUrl": null,
           "note": "90 未调优 / 186 带 gfx1103 hipBLASLt 表 / 211 带指定开关 / 277 带 WMMA 可选开关 (4K); 272 在 32K (WMMA 分组) ｜ 13.1 未调优, 13.9-14.3 调优后",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-12-community-gfx1103/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-12-community-gfx1103/README.md"
         },
         {
           "folder": "2026-10-09-community-2x-rx-6900xt-0.1.41",
@@ -1351,7 +1351,7 @@
           "pr": "this PR; notes: [Vop3p/dual-6900xt-flash-next-tuning](https://github.com/Vop3p/dual-6900xt-flash-next-tuning)",
           "prUrl": null,
           "note": "单卡官方发行版 473 / 502 / 486, 带两个 gfx103x 开关 850 / 1,102 / 1,027, 带那些 PR 976 / 1,174 / 1,147; 跨卡分层 官方发行版 464 / 767 / 869, 开关 832 / 1,619 / 1,823, 那些 PR 968 / 1,714 / 2,029; 辅助卡带那些 PR 986 / 1,173 / 1,147 ｜ 单卡 46-52; 跨卡分层 官方发行版 62.6 / 65.0 / 60.8, 那些 PR 64.7 / 68.8 / 68.3, 那些 PR + `--spec 3 --spec-min-p 0.7 --pipeline-windows 2` 77.2 / 82.3 / 75.7; 辅助卡 那些 PR 72.5 / 75.2 / 75.1",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-09-community-2x-rx-6900xt-0.1.41/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-09-community-2x-rx-6900xt-0.1.41/README.md"
         },
         {
           "folder": "2026-10-09-community-gfx1151-ud-iq4xs-0.1.41",
@@ -1361,7 +1361,7 @@
           "pr": "-",
           "prUrl": null,
           "note": "627 / 687 / 617 默认; 808 / 1,165 / 1,109 加速 ｜ 42.8 / 44.4 / 42.1 默认; 40.1 / 49.6 / 47.5 加速",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-09-community-gfx1151-ud-iq4xs-0.1.41/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-09-community-gfx1151-ud-iq4xs-0.1.41/README.md"
         },
         {
           "folder": "2026-10-08-community-2x-rtx3080-20gb-ud-q4-k-xl-512k-pool",
@@ -1371,7 +1371,7 @@
           "pr": "-",
           "prUrl": null,
           "note": "718 / 2,219 / 2,585 / 2,996 / 3,080 (4K / 25K / 51K / 104K / 127K) ｜ 81.2 / 84.0 / 90.6 / 86.3 / 80.7 (同样长度，单流); 89.5 双流 （作者脚本）",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-08-community-2x-rtx3080-20gb-ud-q4-k-xl-512k-pool/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-08-community-2x-rtx3080-20gb-ud-q4-k-xl-512k-pool/README.md"
         },
         {
           "folder": "2026-10-08-community-r9700-linux",
@@ -1381,7 +1381,7 @@
           "pr": "#1638",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1638",
           "note": "633 / 768 / 751 / 718 (1K / 4K / 32K / 131K) ｜ 101.9 / 96.4 / 95.6 / 87.6; 短增量配对 用于 #1107",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-08-community-r9700-linux/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-08-community-r9700-linux/README.md"
         },
         {
           "folder": "2026-10-08-community-v100-sm70-table",
@@ -1391,7 +1391,7 @@
           "pr": "#1647",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1647",
           "note": "无明显变化 按 STRATA_SM70_TABLE=1 ｜ 28.16 / 28.64 至 30.92 / 32.94 (+9.8% / +15.0%, 两组顺序互换的配对, token 逐位一致)",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-08-community-v100-sm70-table/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-08-community-v100-sm70-table/README.md"
         },
         {
           "folder": "2026-10-09-community-4x-rx-7900-xt",
@@ -1401,7 +1401,7 @@
           "pr": "#1655",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1655",
           "note": "五个可选开关关闭 756 / 1,722 / 2,433; 已开 2,052 / 3,804 / 4,307 ｜ 关闭 59.3 / 52.0 / 49.6; 已开 60.0 / 52.7 / 50.4",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-09-community-4x-rx-7900-xt/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-09-community-4x-rx-7900-xt/README.md"
         },
         {
           "folder": "2026-10-09-community-p4-prefill-roofline",
@@ -1411,7 +1411,7 @@
           "pr": "#1695",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1695",
           "note": "固定 512: 78.0 (4K) / 78.8 (8K); 现有自动档: 107.3 / 114.8 ｜ 未测",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-09-community-p4-prefill-roofline/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-09-community-p4-prefill-roofline/README.md"
         },
         {
           "folder": "2026-10-09-rope-yarn-long-context",
@@ -1421,7 +1421,7 @@
           "pr": "#1692",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1692",
           "note": "5,479 (512K RoPE) / 4,452 (1M RoPE) / 4,505 (1M YaRN) ｜ 103.6 / 82.4 / 82.7; 召回 3/3 (512K RoPE), 0/3 (1M RoPE), 3/3 (1M YaRN)",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-09-rope-yarn-long-context/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-09-rope-yarn-long-context/README.md"
         },
         {
           "folder": "2026-10-09-community-rtx-3060-0141",
@@ -1431,7 +1431,7 @@
           "pr": "#1725",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1725",
           "note": "Q2_0 882 / 981 / 934 (4K / 32K / 128K); IQ3_XXS 681 / 884 / 867; IQ3_S 569 / 820 / 803 ｜ Q2_0 42.9 / 41.8 / 38.6; IQ3_XXS 26.2 / 27.1 / 27.0; IQ3_S 20.2 / 20.2 / 18.9",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-09-community-rtx-3060-0141/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-09-community-rtx-3060-0141/README.md"
         },
         {
           "folder": "2026-10-09-community-rtx5090-9800x3d-swift-1m",
@@ -1441,7 +1441,7 @@
           "pr": "#1722",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1722",
           "note": "6,687 / 6,426 (32K / 131K, 贪心, n=2) ｜ 198.9 / 190.6 (同一批运行); 原生 1M 磁盘恢复 6.107 秒",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-09-community-rtx5090-9800x3d-swift-1m/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-09-community-rtx5090-9800x3d-swift-1m/README.md"
         },
         {
           "folder": "2026-10-09-community-rtx-5060-ti-e5-2680-v4",
@@ -1451,7 +1451,7 @@
           "pr": "#1784",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1784",
           "note": "Coder 1,180 / 1,601 / 1,860; Q2 782 / 1,549 / 1,514 ｜ Coder 47.5 / 51.0 / 49.1; Q2 68.0 / 73.4 / 68.5",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-09-community-rtx-5060-ti-e5-2680-v4/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-09-community-rtx-5060-ti-e5-2680-v4/README.md"
         },
         {
           "folder": "2026-10-10-community-rx-9060-xt",
@@ -1461,7 +1461,7 @@
           "pr": "#1802",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1802",
           "note": "IQ2_XS 879 / 807 (8K / 28K, 读取 8,192); 790 (113K) ｜ IQ2_XS 56.3 / 57.6 / 46.9 (8K / 28K / 113K); 编程加权解码 IQ2_XS 49.6 对比 IQ3_XXS 42.5",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-10-community-rx-9060-xt/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-10-community-rx-9060-xt/README.md"
         },
         {
           "folder": "2026-10-10-community-2x-p40-iq3_s",
@@ -1471,7 +1471,7 @@
           "pr": "#1799",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1799",
           "note": "350 / 558 (3.9K / 21.9K) ｜ 35.0 (短提示); 捞针命中 6/6 在 32K 与 128K",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-10-community-2x-p40-iq3_s/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-10-community-2x-p40-iq3_s/README.md"
         },
         {
           "folder": "2026-10-09-community-rtx-5060ti-wsl2-iq3_s-0141",
@@ -1481,7 +1481,7 @@
           "pr": "#1751",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1751",
           "note": "343 / 598 (3.8K / 19.2K), 单次运行 ｜ 48.2 / 47.7 (1,400 / 1,284 tokens), 单次运行",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-09-community-rtx-5060ti-wsl2-iq3_s-0141/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-09-community-rtx-5060ti-wsl2-iq3_s-0141/README.md"
         },
         {
           "folder": "2026-10-08-community-rtx4070-iq2-xs",
@@ -1491,7 +1491,7 @@
           "pr": "#1739",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1739",
           "note": "28,912-token 提示词 (未重新分发) ｜ 48.23 (5 次运行的接受解码中位数); 本地编译的修改版引擎，不是官方发行版",
-          "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-08-community-rtx4070-iq2-xs/README.md"
+          "readmeUrl": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-08-community-rtx4070-iq2-xs/README.md"
         }
       ]
     }
@@ -1510,43 +1510,43 @@
   "files": [
     {
       "path": "bench/results/COMMUNITY.md",
-      "url": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/COMMUNITY.md",
+      "url": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/COMMUNITY.md",
       "sha256": "9399bb024902ecfd78d245fb65964067257d1b26b4f9ad53f1fe4df60323f849",
       "bytes": 28438
     },
     {
       "path": "bench/results/README.md",
-      "url": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/README.md",
+      "url": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/README.md",
       "sha256": "9e657a3197e8665fd6f7381cd210a1cf0b6836ba70f1fdc279ebce95afb642d8",
       "bytes": 22708
     },
     {
       "path": "docs/BENCHMARK_PROTOCOL.md",
-      "url": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/docs/BENCHMARK_PROTOCOL.md",
+      "url": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/docs/BENCHMARK_PROTOCOL.md",
       "sha256": "99f17a81417b9c29e0b48a27975c2e168adf66fbf1d135326b4e50e31d883073",
       "bytes": 41329
     },
     {
       "path": "docs/COMMUNITY_BENCHMARKS.md",
-      "url": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/docs/COMMUNITY_BENCHMARKS.md",
+      "url": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/docs/COMMUNITY_BENCHMARKS.md",
       "sha256": "91232819721b0e094a8a48aeba6f57b7628629f40c6d4f866281b7ed67411f9d",
       "bytes": 21539
     },
     {
       "path": "bench/prompts/standard-v1/MANIFEST.sha256",
-      "url": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/prompts/standard-v1/MANIFEST.sha256",
+      "url": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/prompts/standard-v1/MANIFEST.sha256",
       "sha256": "e75eff8b9feea04f745520b392c4c17d97aefc1ba185e222aa6740efa8f68407",
       "bytes": 3356
     },
     {
       "path": "bench/results/2026-10-20-0.2.1-bench/README.md",
-      "url": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-20-0.2.1-bench/README.md",
+      "url": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-20-0.2.1-bench/README.md",
       "sha256": "ac5d52683aae052d53d0107953e7da8529b57fbdd696aea6a0ba95d82f9277b4",
       "bytes": 3822
     },
     {
       "path": "bench/results/2026-10-09-community-rtx-3060-0141/README.md",
-      "url": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-09-community-rtx-3060-0141/README.md",
+      "url": "https://github.com/Niko1221/Strata/blob/dbb2d168cffa8cf793d9325358809d5263c7c6b0/bench/results/2026-10-09-community-rtx-3060-0141/README.md",
       "sha256": "24ffbaf55bd1cb31ff16226e99368167716789cc61c3246b0fb728fdd56da169",
       "bytes": 24579
     }
