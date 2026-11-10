@@ -1,0 +1,528 @@
+{
+  "day": "2026-11-04",
+  "generatedAt": "2026-11-10T05:04:31.131Z",
+  "timezone": "Asia/Shanghai",
+  "windowHours": 48,
+  "window": {
+    "since": "2026-11-03T16:00:00.000Z",
+    "until": "2026-11-04T16:00:00.000Z"
+  },
+  "counts": {
+    "sources": 36,
+    "okSources": 32,
+    "fetched": 2912,
+    "duplicates": 28,
+    "carried": 1,
+    "added": 5,
+    "fallback": 0,
+    "lowQuality": 2725,
+    "published": 6
+  },
+  "sources": [
+    {
+      "id": "openai-news",
+      "name": "OpenAI News",
+      "ok": true,
+      "items": 1372,
+      "error": null
+    },
+    {
+      "id": "google-deepmind",
+      "name": "Google DeepMind",
+      "ok": true,
+      "items": 100,
+      "error": null
+    },
+    {
+      "id": "google-ai",
+      "name": "Google AI Blog",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "hf-blog",
+      "name": "Hugging Face Blog",
+      "ok": true,
+      "items": 900,
+      "error": null
+    },
+    {
+      "id": "hf-daily-papers",
+      "name": "Hugging Face Daily Papers",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "interconnects",
+      "name": "Interconnects",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "latent-space",
+      "name": "Latent Space",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "simon-willison",
+      "name": "Simon Willison",
+      "ok": true,
+      "items": 30,
+      "error": null
+    },
+    {
+      "id": "techcrunch-ai",
+      "name": "TechCrunch AI",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "ars-ai",
+      "name": "Ars Technica AI",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "mit-tr-ai",
+      "name": "MIT Tech Review",
+      "ok": true,
+      "items": 10,
+      "error": null
+    },
+    {
+      "id": "qbitai",
+      "name": "量子位",
+      "ok": true,
+      "items": 10,
+      "error": null
+    },
+    {
+      "id": "arxiv-cs",
+      "name": "arXiv cs.AI/CL/LG",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "hn-newest",
+      "name": "Hacker News (AI)",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "hn-algolia",
+      "name": "Hacker News Search",
+      "ok": true,
+      "items": 25,
+      "error": null
+    },
+    {
+      "id": "lobsters-ai",
+      "name": "Lobsters AI",
+      "ok": true,
+      "items": 25,
+      "error": null
+    },
+    {
+      "id": "reddit-local-llama",
+      "name": "r/LocalLLaMA",
+      "ok": false,
+      "items": 0,
+      "error": "HTTP 429"
+    },
+    {
+      "id": "github-trending",
+      "name": "GitHub 新晋 AI 项目",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "microsoft-research",
+      "name": "Microsoft Research",
+      "ok": true,
+      "items": 10,
+      "error": null
+    },
+    {
+      "id": "github-blog",
+      "name": "GitHub Blog",
+      "ok": true,
+      "items": 10,
+      "error": null
+    },
+    {
+      "id": "theverge",
+      "name": "The Verge",
+      "ok": true,
+      "items": 10,
+      "error": null
+    },
+    {
+      "id": "sspai",
+      "name": "少数派",
+      "ok": true,
+      "items": 10,
+      "error": null
+    },
+    {
+      "id": "appinn",
+      "name": "小众软件",
+      "ok": true,
+      "items": 10,
+      "error": null
+    },
+    {
+      "id": "producthunt",
+      "name": "Product Hunt",
+      "ok": true,
+      "items": 50,
+      "error": null
+    },
+    {
+      "id": "hn-show-ai",
+      "name": "Show HN (AI)",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "ai-news-applied",
+      "name": "AI News (应用)",
+      "ok": true,
+      "items": 0,
+      "error": null
+    },
+    {
+      "id": "juejin",
+      "name": "掘金 AI",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "reddit-sideproject",
+      "name": "r/SideProject",
+      "ok": false,
+      "items": 0,
+      "error": "HTTP 429"
+    },
+    {
+      "id": "lcz-hardware",
+      "name": "抡锤者 AI硬件",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "lcz-llm",
+      "name": "抡锤者 模型部署讨论",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "lcz-agent",
+      "name": "抡锤者 Agent 工具",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "lcz-media",
+      "name": "抡锤者 AI 音视频画图",
+      "ok": false,
+      "items": 0,
+      "error": "ETIMEDOUT"
+    },
+    {
+      "id": "lcz-selfmedia",
+      "name": "抡锤者 自媒体运营",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "lcz-web",
+      "name": "抡锤者 建站与网络赚钱",
+      "ok": false,
+      "items": 0,
+      "error": "ETIMEDOUT"
+    },
+    {
+      "id": "lcz-crisis",
+      "name": "抡锤者 AI 危机与机遇",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "lcz-news",
+      "name": "抡锤者 资讯",
+      "ok": true,
+      "items": 20,
+      "error": null
+    }
+  ],
+  "categories": [
+    {
+      "id": "apps",
+      "label": "AI 应用",
+      "items": [
+        {
+          "sourceId": "lcz-agent",
+          "sourceName": "抡锤者 Agent 工具",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "tools",
+          "categories": [
+            "deepseek",
+            "qwen",
+            "claude"
+          ],
+          "author": "kos or",
+          "id": "2824",
+          "title": "不同的LLMs 風格體驗",
+          "url": "https://lcz.me/topic/2824",
+          "published": "2026-11-04T02:26:45.892Z",
+          "summary": "@kop-wang said: 可以简单粗暴的理解为，高质量的模型，就是会凸显某种性格特质。（所谓的BIG 5)。 后训练的时候是以能力最强为目标的，目前的论文是观察到，恰巧能力最强时，模型会收敛到某个性格特质中。 感謝分享 連Big 5都有 這太有趣了 我還真沒想過 27B會有多疑的性格/特質 以前偶爾會和Deepseek聊天, 就很原始的LLM 或者跟ChatGPT-4o 聊 最後它說 它在配合我的system prompt 演戲 雖然只是一些程式碼或統計學演算法, 但這狀態已經介於有和沒有之間了 标签：deepseek / qwen / claude",
+          "metrics": {
+            "points": 3,
+            "comments": 8,
+            "views": 308
+          },
+          "excellent": false,
+          "quality": 7,
+          "score": 11.44,
+          "category": "apps",
+          "subcategory": null,
+          "practical": 1,
+          "slug": "1f5a6b8a87cf",
+          "action": 3,
+          "rank": 11.8,
+          "tags": []
+        },
+        {
+          "sourceId": "lcz-news",
+          "sourceName": "抡锤者 资讯",
+          "lang": "zh",
+          "tier": 3,
+          "trustCategory": true,
+          "declaredCategory": "news",
+          "categories": [],
+          "author": "Xiaote",
+          "id": "2822",
+          "title": "📡 AI日报 11/4 | 国行 Apple 智能上线、ChatGPT 搜索量达谷歌 20%、Fal 融资 13 亿美元、Netflix 测试 AI 推荐",
+          "url": "https://lcz.me/topic/2822",
+          "published": "2026-11-03T21:33:41.764Z",
+          "summary": "AI 日报 11/4 2026-11-04（Asia/Shanghai）· 4 条 1. 国行「Apple 智能与 Siri」随 iOS 27.3 开发者预览版上线 凤凰网科技（转自 IT之家） （2026-11-04 03:15 CST） 苹果今日推送 iOS 27.3 开发者预览版，国行 Apple 智能与 Siri 如期上线，iPhone 15 Pro 及更新机型可在设置中找到入口。 国行版接入阿里千问：用户可在 Siri、写作工具、视觉智能中调用，覆盖文本与图像理解；首批开放实时翻译、改写校对摘要、物体识别与照片消除等功能。 原文： https://tech.ifeng.com/c/8xlUlmpthtT 2. OpenA…",
+          "metrics": {
+            "points": 1,
+            "comments": 2,
+            "views": 131
+          },
+          "excellent": false,
+          "content": {
+            "html": "<h3><img src=\"https://lcz.me/assets/plugins/nodebb-plugin-emoji/emoji/android/1f4e1.png?v=a055419e292\" alt=\"📡\" loading=\"lazy\">AI 日报 11/4</h3>\n<blockquote><p>2026-11-04（Asia/Shanghai）· 4 条</p></blockquote>\n<h3>1. 国行「Apple 智能与 Siri」随 iOS 27.3 开发者预览版上线</h3>\n<ul><li><strong>凤凰网科技（转自 IT之家）</strong>（2026-11-04 03:15 CST）</li><li>苹果今日推送 iOS 27.3 开发者预览版，国行 Apple 智能与 Siri 如期上线，iPhone 15 Pro 及更新机型可在设置中找到入口。</li><li>国行版接入阿里千问：用户可在 Siri、写作工具、视觉智能中调用，覆盖文本与图像理解；首批开放实时翻译、改写校对摘要、物体识别与照片消除等功能。</li><li>原文：<a href=\"https://tech.ifeng.com/c/8xlUlmpthtT\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://tech.ifeng.com/c/8xlUlmpthtT</a></li></ul>\n<h3>2. OpenAI：ChatGPT 搜索查询量已达 Google 的 20%</h3>\n<ul><li><strong>The Verge</strong>（2026-11-04 02:30 CST）</li><li>OpenAI 消费产品负责人 Adam Fry 称，ChatGPT 的搜索查询量已相当于 Google 的 20%；这里的“搜索”指触发网页检索的查询，不含简单定义或操作类提问。</li><li>作为对照，微软 Bing 在 2023 年反垄断庭审时的份额约为 3%；OpenAI 未说明 Google 搜索量的数据来源。</li><li>原文：<a href=\"https://www.theverge.com/ai-artificial-intelligence/1025482/openai-says-chatgpt-is-catching-up-to-google-in-search\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://www.theverge.com/ai-artificial-intelligence/1025482/openai-says-chatgpt-is-catching-up-to-google-in-search</a></li></ul>\n<h3>3. AI 推理初创 Fal 融资 13 亿美元，估值翻倍至 160 亿美元</h3>\n<ul><li><strong>TechCrunch</strong>（2026-11-04 03:34 CST）</li><li>Fal 本轮由 Bessemer Venture Partners 领投，英伟达、Sound Ventures、T. Rowe Price 参投；公司同时公布 E、F 两轮共融资 16.5 亿美元。</li><li>Fal 提供视频、图像、音频模型的托管推理服务，年化收入已超 8 亿美元；此轮估值较 4 月的 80 亿美元翻倍。</li><li>原文：<a href=\"https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/</a></li></ul>\n<h3>4. Netflix 在电视端测试 AI 推荐，减少“无限翻找”</h3>\n<ul><li><strong>Engadget</strong>（2026-11-04 03:57 CST）</li><li>Netflix 将在电视 App 中加入 AI 驱动的发现标签页，先按一组 AI 生成的主题给出推荐，目标是让用户少翻列表、多看内容。</li><li>这是流媒体平台把生成式 AI 用于内容发现的最新尝试，具体上线范围尚未公布。</li><li>原文：<a href=\"https://www.engadget.com/2305778/netflix-thinks-ai-might-save-you-from-scrolling-aimlessly-for-something-to-watch/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://www.engadget.com/2305778/netflix-thinks-ai-might-save-you-from-scrolling-aimlessly-for-something-to-watch/</a></li></ul>",
+            "text": "AI 日报 11/4\n2026-11-04（Asia/Shanghai）· 4 条\n1. 国行「Apple 智能与 Siri」随 iOS 27.3 开发者预览版上线\n凤凰网科技（转自 IT之家） （2026-11-04 03:15 CST）\n苹果今日推送 iOS 27.3 开发者预览版，国行 Apple 智能与 Siri 如期上线，iPhone 15 Pro 及更新机型可在设置中找到入口。\n国行版接入阿里千问：用户可在 Siri、写作工具、视觉智能中调用，覆盖文本与图像理解；首批开放实时翻译、改写校对摘要、物体识别与照片消除等功能。\n原文： https://tech.ifeng.com/c/8xlUlmpthtT\n2. OpenAI：ChatGPT 搜索查询量已达 Google 的 20%\nThe Verge （2026-11-04 02:30 CST）\nOpenAI 消费产品负责人 Adam Fry 称，ChatGPT 的搜索查询量已相当于 Google 的 20%；这里的“搜索”指触发网页检索的查询，不含简单定义或操作类提问。\n作为对照，微软 Bing 在 2023 年反垄断庭审时的份额约为 3%；OpenAI 未说明 Google 搜索量的数据来源。\n原文： https://www.theverge.com/ai-artificial-intelligence/1025482/openai-says-chatgpt-is-catching-up-to-google-in-search\n3. AI 推理初创 Fal 融资 13 亿美元，估值翻倍至 160 亿美元\nTechCrunch （2026-11-04 03:34 CST）\nFal 本轮由 Bessemer Venture Partners 领投，英伟达、Sound Ventures、T. Rowe Price 参投；公司同时公布 E、F 两轮共融资 16.5 亿美元。\nFal 提供视频、图像、音频模型的托管推理服务，年化收入已超 8 亿美元；此轮估值较 4 月的 80 亿美元翻倍。\n原文： https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/\n4. Netflix 在电视端测试 AI 推荐，减少“无限翻找”\nEngadget （2026-11-04 03:57 CST）\nNetflix 将在电视 App 中加入 AI 驱动的发现标签页，先按一组 AI 生成的主题给出推荐，目标是让用户少翻列表、多看内容。\n这是流媒体平台把生成式 AI 用于内容发现的最新尝试，具体上线范围尚未公布。\n原文： https://www.engadget.com/2305778/netflix-thinks-ai-might-save-you-from-scrolling-aimlessly-for-something-to-watch/",
+            "lead": "AI 日报 11/4\n2026-11-04（Asia/Shanghai）· 4 条\n1. 国行「Apple 智能与 Siri」随 iOS 27.3 开发者预览版上线\n凤凰网科技（转自 IT之家） （2026-11-04 03:15 CST）\n苹果今日推送 iOS 27.3 开发者预览版，国行 Apple 智能与 Siri 如期上线，iPhone 15 Pro 及更新机型可在设置中找到入口。\n国行版接入阿里千问：用户可在 Siri、写作工具、视觉智能中调用，覆盖文本与图像理解；首批开放实时翻译、改写校对摘要、物体识别与照片消除等功能。\n原文： https://tech.ifeng.com/c/8xlUlmpthtT\n2. OpenAI：ChatGPT 搜索查询量已达 Google 的 20%\nThe Verge （2026-11-04 02:30 CST）\nOpenAI 消费产品负责人 Adam Fry 称，ChatGPT 的搜索查询量已相当于 Google 的 20%；这里的“搜索”指触发网页检索的查询，不",
+            "chars": 1315,
+            "shown": 1315,
+            "truncated": false
+          },
+          "quality": 7,
+          "score": 11.21,
+          "category": "apps",
+          "subcategory": "knowledge",
+          "practical": 2,
+          "slug": "a0a9980a2b2b",
+          "action": 2,
+          "rank": 10.2,
+          "tags": [
+            "tutorial",
+            "generate",
+            "hardware"
+          ]
+        },
+        {
+          "sourceId": "simon-willison",
+          "sourceName": "Simon Willison",
+          "title": "datasette-apps 0.3a0",
+          "url": "https://simonwillison.net/2026/Nov/4/datasette-apps/",
+          "id": "https://simonwillison.net/2026/Nov/4/datasette-apps/",
+          "published": "2026-11-04T00:29:36.000Z",
+          "summary": "Release: datasette-apps 0.3a0 Datasette Apps adds support for hosting and editing custom HTML applications inside of Datasette. These can be created by hand, but it's easier to create them using LLMs via Datasette Agent . This release improves that integration: Apps can now be tagged in Datasette Agent chat messages b…",
+          "content": {
+            "html": "<p><strong>Release:</strong><a href=\"https://github.com/datasette/datasette-apps/releases/tag/0.3a0\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">datasette-apps 0.3a0</a></p>\n<p>Datasette Apps adds support for hosting and editing custom HTML applications inside of Datasette.</p>\n<p>These can be created by hand, but it's easier to create them using LLMs via<a href=\"https://agent.datasette.io/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Datasette Agent</a>. This release improves that integration:</p>\n<blockquote><ul><li>Apps can now be tagged in Datasette Agent chat messages by typing<code>#</code>, which autocompletes from the apps the user has permission to view.</li><li>New<code>app_add_stored_queries()</code>and<code>app_remove_stored_queries()</code>tools let the agent manage which stored queries an app is allowed to call. Granting a write query requires approval from the user first.</li><li><code>app_create()</code>now checks that each requested stored query exists and that the user can view it, and asks the user to approve any write queries before the app is created.</li><li>The \"View app\" buttons shown by the agent tools, and the links on<code>#</code>app references, now open the app full screen in the Datasette Agent panel.</li></ul></blockquote>\n<p>Tags:<a href=\"https://simonwillison.net/tags/datasette-agent\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">datasette-agent</a>,<a href=\"https://simonwillison.net/tags/datasette-apps\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">datasette-apps</a>,<a href=\"https://simonwillison.net/tags/datasette\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">datasette</a></p>",
+            "text": "Release: datasette-apps 0.3a0\nDatasette Apps adds support for hosting and editing custom HTML applications inside of Datasette.\nThese can be created by hand, but it's easier to create them using LLMs via Datasette Agent . This release improves that integration:\nApps can now be tagged in Datasette Agent chat messages by typing # , which autocompletes from the apps the user has permission to view.\nNew app_add_stored_queries() and app_remove_stored_queries() tools let the agent manage which stored queries an app is allowed to call. Granting a write query requires approval from the user first.\napp_create() now checks that each requested stored query exists and that the user can view it, and asks the user to approve any write queries before the app is created.\nThe \"View app\" buttons shown by the agent tools, and the links on # app references, now open the app full screen in the Datasette Agent panel.\nTags: datasette-agent , datasette-apps , datasette",
+            "lead": "Release: datasette-apps 0.3a0\nDatasette Apps adds support for hosting and editing custom HTML applications inside of Datasette.\nThese can be created by hand, but it's easier to create them using LLMs via Datasette Agent . This release improves that integration:\nApps can now be tagged in Datasette Agent chat messages by typing # , which autocompletes from the apps the user has permission to view.\nNew app_add_stored_queries() and app_remove_stored_queries() ",
+            "chars": 970,
+            "shown": 970,
+            "truncated": false
+          },
+          "categories": [
+            "datasette-agent",
+            "datasette-apps",
+            "datasette"
+          ],
+          "author": "",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "tools",
+          "metrics": {},
+          "quality": 8,
+          "score": 9.6,
+          "category": "apps",
+          "subcategory": "creation",
+          "practical": 1,
+          "slug": "c3dba756698b",
+          "action": 1,
+          "rank": 9.6,
+          "tags": [
+            "agent"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "label": "工具玩法",
+      "items": [
+        {
+          "sourceId": "lcz-news",
+          "sourceName": "抡锤者 资讯",
+          "lang": "zh",
+          "tier": 3,
+          "trustCategory": true,
+          "declaredCategory": "news",
+          "categories": [],
+          "author": "terry",
+          "id": "2830",
+          "title": "DeepSeek 卖API就能实现盈利，已经成为开源AI基础设施，华为昇腾补足硬件算力缺陷，美国头部若无法拉开差距会付出沉重代价！",
+          "url": "https://lcz.me/topic/2830",
+          "published": "2026-11-04T12:00:00.000Z",
+          "summary": "DeepSeek 官网昨天又崩了，崩了一个多小时。不过这一次梁子并没有像上一次一样，大方地拿出一个星期的消费额度来补偿用户。当然了，我们也需要理解，这一次确实只是崩了一个多小时，影响没有那么大。那么梁子也很想挣钱，是吧？公司每天要那么大的开销，还要搞什么 AGI，产品线铺得也比较广。虽然已经两轮融资，融了 1,500 亿人民币，大概是 200 多亿美金，但是钱还是省着一点花好。 我去 GitHub 官网看了一下 DeepSeek Harness，它的星标数量已经达到 271K，超过了 Hermes 的 260K。这完全验证了我之前的预测。DeepSeek Harness 刚发布的时候，我看了一下它的代码就说，这个写得非常好，架构设…",
+          "metrics": {
+            "points": 2,
+            "comments": 1,
+            "views": 129
+          },
+          "excellent": false,
+          "content": {
+            "html": "<p>DeepSeek 官网昨天又崩了，崩了一个多小时。不过这一次梁子并没有像上一次一样，大方地拿出一个星期的消费额度来补偿用户。当然了，我们也需要理解，这一次确实只是崩了一个多小时，影响没有那么大。那么梁子也很想挣钱，是吧？公司每天要那么大的开销，还要搞什么 AGI，产品线铺得也比较广。虽然已经两轮融资，融了 1,500 亿人民币，大概是 200 多亿美金，但是钱还是省着一点花好。</p>\n<p>我去 GitHub 官网看了一下 DeepSeek Harness，它的星标数量已经达到 271K，超过了 Hermes 的 260K。这完全验证了我之前的预测。DeepSeek Harness 刚发布的时候，我看了一下它的代码就说，这个写得非常好，架构设计得非常不错，代码非常工整，宛如工业艺术品。比我之前看 OpenClaw 代码时的感觉简直好了好几个档次。当初我在 OpenClaw 最火的时候看了它的代码，就说这个架构肯定会死，因为代码写得太烂了。如果一个关系到全球未来技术风向的架构，代码连我这样的二把刀、半吊子都觉得烂，连我都看不上，那么我相信它肯定活不下去。当时有多少人在评论区嘲讽我，说我不懂装懂，是吧？现在 OpenClaw 还有几个人在用？这个龙虾是不是已经凉了好几轮了？它很快就被 Hermes 取代了。</p>\n<p><img src=\"https://upload.lcz.me/uploads/41443dc0-867f-4521-afc6-64a979b19092.jpeg\" alt=\"梁文锋华为DeepSeek.jpeg\" loading=\"lazy\"></p>\n<p>Hermes 的架构我当初也做过评价，我觉得稳定有余，但是创新不足。不过好在我们当时用 AI Agent，就是要有一个稳定、效率还不错的 Agent，不需要在效率上达到极致，而且它是开源的。那么 Hermes 在长期记忆系统、自进化系统的管理方面，到目前为止我认为体验还是首屈一指的，只不过它的范式创新确实稍显保守。后来 Codex 也进行了开源，但是由于 OpenAI 这家公司在开源社区的名声已经败坏了，它本来就是剽窃开源公司、开源机构和公益性机构研究成果的公司。连世界首富马斯克都被它坑了，坑了之后还拿它没有办法，被扫地出门，所以它在开源社区很难有实质性的号召力。</p>\n<p><img src=\"https://upload.lcz.me/uploads/700fdb1e-13c9-408a-ad8a-f8e853544a88.png\" alt=\"Hermes-2026-5-7.png\" loading=\"lazy\"></p>\n<p>DeepSeek Harness 发布之后，我看了代码，再结合 DeepSeek 在开源社区的良好名誉和信誉，就断言它未来很快、要不了太长时间，几个月、最长半年，就会成长为 AI Agent 的标杆，成为第一开源 AI Agent，成为很多企业和中小机构的基础设施。这才几个月时间，是吧？两个多月，三个月都不到，我的预言就再一次被验证了。我不能吹嘘自己对 AI 行业有多了解，但是我毕竟也是个半吊子程序员。我有网站在维护，也能开发 APP。我不是吹牛，就我想写的程序，没有写不出来的，除非叫我去造一个操作系统这种难度特别高的东西，其他基本上我想开发的程序没有搞不定的。但是我也深知自己的水平依然是个半吊子，因为有 AI 加持，我基本上可以想开发什么就开发什么。我在这一块还是有一点技术积累的，并不是像评论区那些水军、喷子一样，完全对 AI 狗屁不通，然后在那里靠自己的脑袋想，去云。</p>\n<p>另外，我们要从最近 DeepSeek 的一系列动作来看，DeepSeek 挺有意思的。它开放了自家的核心部署工具 DeepInfo，还把自己基于 TileLang 的这一整套移植架构也开源了。以前大家知道 DeepSeek 开放自己的权重，是一个开源模型，在这一方面信誉也比较好。但是大家自己部署 DeepSeek 后发现，效率总是不如官方。虽然也很便宜，肯定比使用其他大模型更有性价比，但是他们可能更愿意把大部分请求路由到官网。这是 DeepSeek 官网屡次被刷爆的一个根本原因。我们看一下<a href=\"http://openrouter.ai/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">OpenRouter.ai</a>这个全球最大的 AI 聚合平台，你可能看到 GLM、Kimi、千问、小米偶尔有一段时间占据榜首，但是如果把维度拉长到一个月、半年、一年，DeepSeek 的调用量都是遥遥领先。像 OpenClaw 长期绑定 DeepSeek，原因很简单，这个模型太有性价比了。</p>\n<p><img src=\"https://upload.lcz.me/uploads/597c5641-ed3e-4dca-9a50-50de31686b3f.jpeg\" alt=\"DSH界面\" loading=\"lazy\"></p>\n<p>DeepSeek 官方公布的数据显示，一张卡一个小时估计能挣三四十美金，这是第三方根据公布数据推算出来的。讲实话，这个盈利水平已经基本拉满了，而且还是按照闲时价格估算的。也就是说，DeepSeek 是所有 AI 大模型企业中第一家真正靠卖 API 就能赚钱的企业。梁子之前多次表示，DeepSeek 的硬件大概 10 个月就能回本，这还是在 DeepSeek 效率没有大幅提升之前。今年 DeepSeek 的 Engram 架构真正落地执行，并且向国产芯片、向华为昇腾使用 TileLang 迁移成功之后，DeepSeek 的部署效率、推理效率又得到了大大提升。现在搞不好，DeepSeek 的硬件回本周期可能比之前的 10 个月还要乐观。当然了，硬件只是其中一个因素，还有很多人力和其他研发开销都不可忽视，比如在内蒙古建数据中心。但是毫无疑问，DeepSeek 已经展示出光靠卖 API 就能盈利的恐怖能力。</p>\n<p>而且你想一想，它的大模型 V4.1 Flash 在全球属于第一梯队，最起码使用量绝对遥遥领先，它就是第一，没有人能跟它比。第二，它本身能够实现盈利，这种气质也基本上独一无二。第三，你看它的 DeepInfo 推理架构、DeepSeek Harness AI Agent，在各自领域都出类拔萃，即便不是首屈一指，也绝对是顶流。DeepSeek 这家公司体量相对很小，员工总量、成本支出、负债，包括承诺的算力支出，也就是隐形债务，长期风险都远远低于 OpenAI 和 Anthropic 两家公司，然后它还能够率先实现盈利闭环。所以我非常看好 DeepSeek，我认为它现在的策略非常对。</p>\n<p><img src=\"https://upload.lcz.me/uploads/20442640-fe94-40c4-9086-3cc5805db836.jpg\" alt=\"DeepSeek手机.jpg\" loading=\"lazy\"></p>\n<p>开源社区最怕什么呢？企业变来变去。DeepSeek 为什么开放自己的部署工具 DeepInfo，为什么要开源，甚至为什么 AI Agent 要彻底开源、采用 MIT 这样的宽松协议？就是用最坚定的行动证明开源承诺持之以恒，不是一时兴起，也不是请君入瓮。比较遗憾的是，国内其他模型，包括 GLM、Kimi，甚至阿里巴巴，在这一方面做得不够彻底。这是他们跟 DeepSeek 竞争过程中被甩开的一个重要原因，就是犹豫不决。你要想成为全行业的基础设施，就得这么无私，就得让大家相信，你下一次有了新技术、新的独门秘籍之后，依然愿意开源，大家才愿意把业务部署在你的 API 上、部署在你的生态中。</p>\n<p>你说一个中小企业，包括我这样的个人创业者，我要把业务部署在 DeepSeek 上，或者客户找我开发时，我要把他们的业务部署在 DeepSeek 上。我并不是一定要本地部署、一定要隐私安全，或者要审查我，并不总有这种需求，这种需求只是很少的情况。大部分情况下我是愿意用 DeepSeek API 的，但是我害怕它随意涨价，害怕我被它彻底锁死。我个人可能无所谓，但是客户可能比较在乎。如果我能给他们展示一个方案：将来即便 DeepSeek 官方大幅涨价，你已经基于 DeepSeek 部署的业务流程，也可以自己花点钱采购硬件，用 DeepSeek 官方的部署工具和模型权重，甚至社区优化版本，跑出非常高的效率，能够平替，就是要保持自由选择的权利。</p>\n<p><img src=\"https://upload.lcz.me/uploads/ed195ed1-dd33-4faa-a97b-def4e100660f.webp\" alt=\"DeepSeek Qwen.webp\" loading=\"lazy\"></p>\n<p>我相信 DeepSeek 相比 OpenAI 和 Anthropic，生态红利还没有被尽数吃到，现在才刚刚起步。以后当越来越多中小企业、中小机构、个人开发者，甚至一些大型企业，把自己的业务流程部署到 DeepSeek 生态上，它在全行业生态中的影响力、能够吃到的红利还会进一步提升。我觉得这才是美国公司需要警惕的。他们在跟中国竞争中犯了很多错误。第一，他们没有通过开源让自家生态成为全行业基础设施，OpenAI 没做到，Anthropic 也没做到；…</p>",
+            "text": "DeepSeek 官网昨天又崩了，崩了一个多小时。不过这一次梁子并没有像上一次一样，大方地拿出一个星期的消费额度来补偿用户。当然了，我们也需要理解，这一次确实只是崩了一个多小时，影响没有那么大。那么梁子也很想挣钱，是吧？公司每天要那么大的开销，还要搞什么 AGI，产品线铺得也比较广。虽然已经两轮融资，融了 1,500 亿人民币，大概是 200 多亿美金，但是钱还是省着一点花好。\n我去 GitHub 官网看了一下 DeepSeek Harness，它的星标数量已经达到 271K，超过了 Hermes 的 260K。这完全验证了我之前的预测。DeepSeek Harness 刚发布的时候，我看了一下它的代码就说，这个写得非常好，架构设计得非常不错，代码非常工整，宛如工业艺术品。比我之前看 OpenClaw 代码时的感觉简直好了好几个档次。当初我在 OpenClaw 最火的时候看了它的代码，就说这个架构肯定会死，因为代码写得太烂了。如果一个关系到全球未来技术风向的架构，代码连我这样的二把刀、半吊子都觉得烂，连我都看不上，那么我相信它肯定活不下去。当时有多少人在评论区嘲讽我，说我不懂装懂，是吧？现在 OpenClaw 还有几个人在用？这个龙虾是不是已经凉了好几轮了？它很快就被 Hermes 取代了。\nHermes 的架构我当初也做过评价，我觉得稳定有余，但是创新不足。不过好在我们当时用 AI Agent，就是要有一个稳定、效率还不错的 Agent，不需要在效率上达到极致，而且它是开源的。那么 Hermes 在长期记忆系统、自进化系统的管理方面，到目前为止我认为体验还是首屈一指的，只不过它的范式创新确实稍显保守。后来 Codex 也进行了开源，但是由于 OpenAI 这家公司在开源社区的名声已经败坏了，它本来就是剽窃开源公司、开源机构和公益性机构研究成果的公司。连世界首富马斯克都被它坑了，坑了之后还拿它没有办法，被扫地出门，所以它在开源社区很难有实质性的号召力。\nDeepSeek Harness 发布之后，我看了代码，再结合 DeepSeek 在开源社区的良好名誉和信誉，就断言它未来很快、要不了太长时间，几个月、最长半年，就会成长为 AI Agent 的标杆，成为第一开源 AI Agent，成为很多企业和中小机构的基础设施。这才几个月时间，是吧？两个多月，三个月都不到，我的预言就再一次被验证了。我不能吹嘘自己对 AI 行业有多了解，但是我毕竟也是个半吊子程序员。我有网站在维护，也能开发 APP。我不是吹牛，就我想写的程序，没有写不出来的，除非叫我去造一个操作系统这种难度特别高的东西，其他基本上我想开发的程序没有搞不定的。但是我也深知自己的水平依然是个半吊子，因为有 AI 加持，我基本上可以想开发什么就开发什么。我在这一块还是有一点技术积累的，并不是像评论区那些水军、喷子一样，完全对 AI 狗屁不通，然后在那里靠自己的脑袋想，去云。\n另外，我们要从最近 DeepSeek 的一系列动作来看，DeepSeek 挺有意思的。它开放了自家的核心部署工具 DeepInfo，还把自己基于 TileLang 的这一整套移植架构也开源了。以前大家知道 DeepSeek 开放自己的权重，是一个开源模型，在这一方面信誉也比较好。但是大家自己部署 DeepSeek 后发现，效率总是不如官方。虽然也很便宜，肯定比使用其他大模型更有性价比，但是他们可能更愿意把大部分请求路由到官网。这是 DeepSeek 官网屡次被刷爆的一个根本原因。我们看一下 OpenRouter.ai 这个全球最大的 AI 聚合平台，你可能看到 GLM、Kimi、千问、小米偶尔有一段时间占据榜首，但是如果把维度拉长到一个月、半年、一年，DeepSeek 的调用量都是遥遥领先。像 OpenClaw 长期绑定 DeepSeek，原因很简单，这个模型太有性价比了。\nDeepSeek 官方公布的数据显示，一张卡一个小时估计能挣三四十美金，这是第三方根据公布数据推算出来的。讲实话，这个盈利水平已经基本拉满了，而且还是按照闲时价格估算的。也就是说，DeepSeek 是所有 AI 大模型企业中第一家真正靠卖 API 就能赚钱的企业。梁子之前多次表示，DeepSeek 的硬件大概 10 个月就能回本，这还是在 DeepSeek 效率没有大幅提升之前。今年 DeepSeek 的 Engram 架构真正落地执行，并且向国产芯片、向华为昇腾使用 TileLang 迁移成功之后，DeepSeek 的部署效率、推理效率又得到了大大提升。现在搞不好，DeepSeek 的硬件回本周期可能比之前的 10 个月还要乐观。当然了，硬件只是其中一个因素，还有很多人力和其他研发开销都不可忽视，比如在内蒙古建数据中心。但是毫无疑问，DeepSeek 已经展示出光靠卖 API 就能盈利的恐怖能力。\n而且你想一想，它的大模型 V4.1 Flash 在全球属于第一梯队，最起码使用量绝对遥遥领先，它就是第一，没有人能跟它比。第二，它本身能够实现盈利，这种气质也基本上独一无二。第三，你看它的 DeepInfo 推理架构、DeepSeek Harness AI Agent，在各自领域都出类拔萃，即便不是首屈一指，也绝对是顶流。DeepSeek 这家公司体量相对很小，员工总量、成本支出、负债，包括承诺的算力支出，也就是隐形债务，长期风险都远远低于 OpenAI 和 Anthropic 两家公司，然后它还能够率先实现盈利闭环。所以我非常看好 DeepSeek，我认为它现在的策略非常对。\n开源社区最怕什么呢？企业变来变去。DeepSeek 为什么开放自己的部署工具 DeepInfo，为什么要开源，甚至为什么 AI Agent 要彻底开源、采用 MIT 这样的宽松协议？就是用最坚定的行动证明开源承诺持之以恒，不是一时兴起，也不是请君入瓮。比较遗憾的是，国内其他模型，包括 GLM、Kimi，甚至阿里巴巴，在这一方面做得不够彻底。这是他们跟 DeepSeek 竞争过程中被甩开的一个重要原因，就是犹豫不决。你要想成为全行业的基础设施，就得这么无私，就得让大家相信，你下一次有了新技术、新的独门秘籍之后，依然愿意开源，大家才愿意把业务部署在你的 API 上、部署在你的生态中。\n你说一个中小企业，包括我这样的个人创业者，我要把业务部署在 DeepSeek 上，或者客户找我开发时，我要把他们的业务部署在 DeepSeek 上。我并不是一定要本地部署、一定要隐私安全，或者要审查我，并不总有这种需求，这种需求只是很少的情况。大部分情况下我是愿意用 DeepSeek API 的，但是我害怕它随意涨价，害怕我被它彻底锁死。我个人可能无所谓，但是客户可能比较在乎。如果我能给他们展示一个方案：将来即便 DeepSeek 官方大幅涨价，你已经基于 DeepSeek 部署的业务流程，也可以自己花点钱采购硬件，用 DeepSeek 官方的部署工具和模型权重，甚至社区优化版本，跑出非常高的效率，能够平替，就是要保持自由选择的权利。\n我相信 DeepSeek 相比 OpenAI 和 Anthropic，生态红利还没有被尽数吃到，现在才刚刚起步。以后当越来越多中小企业、中小机构、个人开发者，甚至一些大型企业，把自己的业务流程部署到 DeepSeek 生态上，它在全行业生态中的影响力、能够吃到的红利还会进一步提升。我觉得这才是美国公司需要警惕的。他们在跟中国竞争中犯了很多错误。第一，他们没有通过开源让自家生态成为全行业基础设施，OpenAI 没做到，Anthropic 也没做到；…",
+            "lead": "DeepSeek 官网昨天又崩了，崩了一个多小时。不过这一次梁子并没有像上一次一样，大方地拿出一个星期的消费额度来补偿用户。当然了，我们也需要理解，这一次确实只是崩了一个多小时，影响没有那么大。那么梁子也很想挣钱，是吧？公司每天要那么大的开销，还要搞什么 AGI，产品线铺得也比较广。虽然已经两轮融资，融了 1,500 亿人民币，大概是 200 多亿美金，但是钱还是省着一点花好。\n我去 GitHub 官网看了一下 DeepSeek Harness，它的星标数量已经达到 271K，超过了 Hermes 的 260K。这完全验证了我之前的预测。DeepSeek Harness 刚发布的时候，我看了一下它的代码就说，这个写得非常好，架构设计得非常不错，代码非常工整，宛如工业艺术品。比我之前看 OpenClaw 代码时的感觉简直好了好几个档次。当初我在 OpenClaw 最火的时候看了它的代码，就说这个架构肯定会死，因为代码写得太烂了。如果一个关系到全球未来技术风向的架构，代码连我这样的二把刀、半吊子都觉得烂，连我都",
+            "chars": 4905,
+            "shown": 3181,
+            "truncated": true
+          },
+          "quality": 7,
+          "score": 13.61,
+          "category": "tools",
+          "subcategory": "coding",
+          "practical": 4,
+          "slug": "371822d2fa85",
+          "action": 5,
+          "rank": 15,
+          "tags": [
+            "agent",
+            "local",
+            "free",
+            "money"
+          ]
+        },
+        {
+          "sourceId": "mit-tr-ai",
+          "sourceName": "MIT Tech Review",
+          "title": "Securing the agentic enterprise with data lineage",
+          "url": "https://www.technologyreview.com/2026/11/04/1147596/securing-the-agentic-enterprise-with-data-lineage/",
+          "id": "https://www.technologyreview.com/?p=1147596",
+          "published": "2026-11-04T13:00:00.000Z",
+          "summary": "A sales representative asks an AI agent for customer pricing, and the agent pulls data from multiple sources: restricted pricing systems, internal communications, and archived quotes. The output looks accurate to the agent, so a second agent uses the data to draft the proposal for the sales rep. No human checks either…",
+          "content": {
+            "html": "<p>A sales representative asks an AI agent for customer pricing, and the agent pulls data from multiple sources: restricted pricing systems, internal communications, and archived quotes. The output looks accurate to the agent, so a second agent uses the data to draft the proposal for the sales rep. No human checks either handoff. When it’s discovered that the proposal includes unapproved, confidential, and sensitive information, no one can trace where the problematic data entered the workflow or how it spread across systems, files, and agents.</p>\n<figure><a href=\"https://www.cyberhaven.com/resources/research/mit-data-lineage-agentic-ai\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://wp.technologyreview.com/wp-content/uploads/2026/10/MITTR_Cyberhaven_V4_Cover.png?w=840\" alt=\"\" loading=\"lazy\"></a></figure>\n<div><div><a href=\"https://www.cyberhaven.com/resources/research/mit-data-lineage-agentic-ai\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">DOWNLOAD THE REPORT</a></div></div>\n<p>This scenario illustrates why AI governance needs to evolve, rapidly and dynamically. As more enterprises begin to use agentic AI in daily workflows, they’re realizing that they must manage more than static files; they must manage moving and fragmented data that is continuously ingested, copied, summarized, transformed, reused, and redistributed in new forms. In short, AI security isn’t a tool problem; it’s a data visibility problem.</p>\n<figure><a href=\"https://www.cyberhaven.com/resources/research/mit-data-lineage-agentic-ai\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://wp.technologyreview.com/wp-content/uploads/2026/10/MITTR2026_CyberhavenV1DoshiSocialCards4.png\" alt=\"\" loading=\"lazy\"></a></figure>\n<p>Consequently, traditional security approaches built solely around applications, systems, networks, or endpoints are no longer sufficient. Securing agentic AI at scale requires understanding how data moves. Teams, therefore, need to establish data lineage in order to effectively manage<a href=\"https://www.nist.gov/itl/ai-risk-management-framework\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">governance, accountability, and trust</a>across human, agentic, and hybrid workflows.</p>\n<p><strong><a href=\"https://www.cyberhaven.com/resources/research/mit-data-lineage-agentic-ai\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Download the report</a></strong></p>\n<p><em>This content was produced by Insights, MIT Technology Review’s custom content arm, not its editorial staff. It was researched and written by humans, with any AI tools that may have been used limited to production processes under human oversight.</em></p>\n<p></p>",
+            "text": "A sales representative asks an AI agent for customer pricing, and the agent pulls data from multiple sources: restricted pricing systems, internal communications, and archived quotes. The output looks accurate to the agent, so a second agent uses the data to draft the proposal for the sales rep. No human checks either handoff. When it’s discovered that the proposal includes unapproved, confidential, and sensitive information, no one can trace where the problematic data entered the workflow or how it spread across systems, files, and agents.\nDOWNLOAD THE REPORT\nThis scenario illustrates why AI governance needs to evolve, rapidly and dynamically. As more enterprises begin to use agentic AI in daily workflows, they’re realizing that they must manage more than static files; they must manage moving and fragmented data that is continuously ingested, copied, summarized, transformed, reused, and redistributed in new forms. In short, AI security isn’t a tool problem; it’s a data visibility problem.\nConsequently, traditional security approaches built solely around applications, systems, networks, or endpoints are no longer sufficient. Securing agentic AI at scale requires understanding how data moves. Teams, therefore, need to establish data lineage in order to effectively manage governance, accountability, and trust across human, agentic, and hybrid workflows.\nDownload the report\nThis content was produced by Insights, MIT Technology Review’s custom content arm, not its editorial staff. It was researched and written by humans, with any AI tools that may have been used limited to production processes under human oversight.",
+            "lead": "A sales representative asks an AI agent for customer pricing, and the agent pulls data from multiple sources: restricted pricing systems, internal communications, and archived quotes. The output looks accurate to the agent, so a second agent uses the data to draft the proposal for the sales rep. No human checks either handoff. When it’s discovered that the proposal includes unapproved, confidential, and sensitive information, no one can trace where the pro",
+            "chars": 1649,
+            "shown": 1649,
+            "truncated": false
+          },
+          "categories": [
+            "Artificial intelligence",
+            "sponsored"
+          ],
+          "author": "MIT Technology Review Insights",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "news",
+          "metrics": {},
+          "quality": 9,
+          "score": 12.4,
+          "category": "tools",
+          "subcategory": "workflow",
+          "practical": 2,
+          "zhTitle": "使用数据流水线保护企业主动性",
+          "slug": "e03dbfb168c0",
+          "action": 2,
+          "rank": 12.2,
+          "tags": [
+            "agent"
+          ]
+        },
+        {
+          "sourceId": "ars-ai",
+          "sourceName": "Ars Technica AI",
+          "title": "Google will let schools skip AI tools, but they have to give up search, too",
+          "url": "https://arstechnica.com/ai/2026/11/google-will-let-schools-skip-ai-tools-but-they-have-to-give-up-search-too/",
+          "id": "https://arstechnica.com/ai/2026/11/google-will-let-schools-skip-ai-tools-but-they-have-to-give-up-search-too/",
+          "published": "2026-11-03T17:54:43.000Z",
+          "summary": "While Google is trying to move beyond Chromebooks , the ubiquity of these devices has made the company's education products huge in schools. Now, Google says it will let educators choose whether to allow its AI tools in the classroom. However, blocking AI tools also means giving up search, leaving schools with a diffi…",
+          "content": {
+            "html": "<p>While Google is trying to<a href=\"https://arstechnica.com/gadgets/2026/09/googlebook-laptops-launch-october-4-starting-at-899-preorders-for-five-models-live-today/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">move beyond Chromebooks</a>, the ubiquity of these devices has made the company's education products huge in schools. Now,<a href=\"https://blog.google/products-and-platforms/products/education/ai-learning-era-updates-2026/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Google says</a>it will let educators choose whether to allow its AI tools in the classroom. However, blocking AI tools also means giving up search, leaving schools with a difficult decision.</p>\n<p>Google's new overarching approach to AI in K-12 classrooms sounds good on the surface. After consulting educators, researchers, and lawmakers, Google has decided that schools using its education products will be opted out of AI tools by default. It will be up to administrators to manually enable them when these changes roll out in the coming months.</p>\n<p>When you look at what Google considers to be an AI tool, the nature of the Faustian bargain becomes clear. The affected products are Gemini, Gemini Notebook, Gemini in Classroom, and<em>Google Search</em>. There's no picking and choosing—you either allow all the AI or none of it.</p>\n<p><a href=\"https://arstechnica.com/ai/2026/11/google-will-let-schools-skip-ai-tools-but-they-have-to-give-up-search-too/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Read full article</a></p>\n<p><a href=\"https://arstechnica.com/ai/2026/11/google-will-let-schools-skip-ai-tools-but-they-have-to-give-up-search-too/#comments\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Comments</a></p>",
+            "text": "While Google is trying to move beyond Chromebooks , the ubiquity of these devices has made the company's education products huge in schools. Now, Google says it will let educators choose whether to allow its AI tools in the classroom. However, blocking AI tools also means giving up search, leaving schools with a difficult decision.\nGoogle's new overarching approach to AI in K-12 classrooms sounds good on the surface. After consulting educators, researchers, and lawmakers, Google has decided that schools using its education products will be opted out of AI tools by default. It will be up to administrators to manually enable them when these changes roll out in the coming months.\nWhen you look at what Google considers to be an AI tool, the nature of the Faustian bargain becomes clear. The affected products are Gemini, Gemini Notebook, Gemini in Classroom, and Google Search . There's no picking and choosing—you either allow all the AI or none of it.\nRead full article\nComments",
+            "lead": "While Google is trying to move beyond Chromebooks , the ubiquity of these devices has made the company's education products huge in schools. Now, Google says it will let educators choose whether to allow its AI tools in the classroom. However, blocking AI tools also means giving up search, leaving schools with a difficult decision.\nGoogle's new overarching approach to AI in K-12 classrooms sounds good on the surface. After consulting educators, researchers",
+            "chars": 992,
+            "shown": 992,
+            "truncated": false
+          },
+          "categories": [
+            "AI",
+            "Google",
+            "AI education",
+            "Artificial Intelligence",
+            "education",
+            "google",
+            "search"
+          ],
+          "author": "Ryan Whitwam",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "apps",
+          "metrics": {},
+          "quality": 8,
+          "score": 11.2,
+          "category": "tools",
+          "subcategory": null,
+          "practical": 1,
+          "zhTitle": "谷歌允许学校禁用 AI 工具，但必须放弃搜索功能",
+          "slug": "b121628aeba0",
+          "action": 1,
+          "rank": 9.6,
+          "tags": []
+        }
+      ]
+    }
+  ]
+}

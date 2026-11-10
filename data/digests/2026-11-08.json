@@ -1,0 +1,618 @@
+{
+  "day": "2026-11-08",
+  "generatedAt": "2026-11-10T05:10:07.587Z",
+  "timezone": "Asia/Shanghai",
+  "windowHours": 48,
+  "window": {
+    "since": "2026-11-07T16:00:00.000Z",
+    "until": "2026-11-08T16:00:00.000Z"
+  },
+  "counts": {
+    "sources": 36,
+    "okSources": 35,
+    "fetched": 2977,
+    "duplicates": 38,
+    "carried": 0,
+    "added": 8,
+    "fallback": 0,
+    "lowQuality": 2753,
+    "published": 8
+  },
+  "sources": [
+    {
+      "id": "openai-news",
+      "name": "OpenAI News",
+      "ok": true,
+      "items": 1372,
+      "error": null
+    },
+    {
+      "id": "google-deepmind",
+      "name": "Google DeepMind",
+      "ok": true,
+      "items": 100,
+      "error": null
+    },
+    {
+      "id": "google-ai",
+      "name": "Google AI Blog",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "hf-blog",
+      "name": "Hugging Face Blog",
+      "ok": true,
+      "items": 900,
+      "error": null
+    },
+    {
+      "id": "hf-daily-papers",
+      "name": "Hugging Face Daily Papers",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "interconnects",
+      "name": "Interconnects",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "latent-space",
+      "name": "Latent Space",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "simon-willison",
+      "name": "Simon Willison",
+      "ok": true,
+      "items": 30,
+      "error": null
+    },
+    {
+      "id": "techcrunch-ai",
+      "name": "TechCrunch AI",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "ars-ai",
+      "name": "Ars Technica AI",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "mit-tr-ai",
+      "name": "MIT Tech Review",
+      "ok": true,
+      "items": 10,
+      "error": null
+    },
+    {
+      "id": "qbitai",
+      "name": "量子位",
+      "ok": true,
+      "items": 10,
+      "error": null
+    },
+    {
+      "id": "arxiv-cs",
+      "name": "arXiv cs.AI/CL/LG",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "hn-newest",
+      "name": "Hacker News (AI)",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "hn-algolia",
+      "name": "Hacker News Search",
+      "ok": true,
+      "items": 25,
+      "error": null
+    },
+    {
+      "id": "lobsters-ai",
+      "name": "Lobsters AI",
+      "ok": true,
+      "items": 25,
+      "error": null
+    },
+    {
+      "id": "reddit-local-llama",
+      "name": "r/LocalLLaMA",
+      "ok": true,
+      "items": 25,
+      "error": null
+    },
+    {
+      "id": "github-trending",
+      "name": "GitHub 新晋 AI 项目",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "microsoft-research",
+      "name": "Microsoft Research",
+      "ok": true,
+      "items": 10,
+      "error": null
+    },
+    {
+      "id": "github-blog",
+      "name": "GitHub Blog",
+      "ok": true,
+      "items": 10,
+      "error": null
+    },
+    {
+      "id": "theverge",
+      "name": "The Verge",
+      "ok": true,
+      "items": 10,
+      "error": null
+    },
+    {
+      "id": "sspai",
+      "name": "少数派",
+      "ok": true,
+      "items": 10,
+      "error": null
+    },
+    {
+      "id": "appinn",
+      "name": "小众软件",
+      "ok": true,
+      "items": 10,
+      "error": null
+    },
+    {
+      "id": "producthunt",
+      "name": "Product Hunt",
+      "ok": true,
+      "items": 50,
+      "error": null
+    },
+    {
+      "id": "hn-show-ai",
+      "name": "Show HN (AI)",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "ai-news-applied",
+      "name": "AI News (应用)",
+      "ok": true,
+      "items": 0,
+      "error": null
+    },
+    {
+      "id": "juejin",
+      "name": "掘金 AI",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "reddit-sideproject",
+      "name": "r/SideProject",
+      "ok": false,
+      "items": 0,
+      "error": "HTTP 429"
+    },
+    {
+      "id": "lcz-hardware",
+      "name": "抡锤者 AI硬件",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "lcz-llm",
+      "name": "抡锤者 模型部署讨论",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "lcz-agent",
+      "name": "抡锤者 Agent 工具",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "lcz-media",
+      "name": "抡锤者 AI 音视频画图",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "lcz-selfmedia",
+      "name": "抡锤者 自媒体运营",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "lcz-web",
+      "name": "抡锤者 建站与网络赚钱",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "lcz-crisis",
+      "name": "抡锤者 AI 危机与机遇",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "lcz-news",
+      "name": "抡锤者 资讯",
+      "ok": true,
+      "items": 20,
+      "error": null
+    }
+  ],
+  "categories": [
+    {
+      "id": "apps",
+      "label": "AI 应用",
+      "items": [
+        {
+          "sourceId": "lcz-llm",
+          "sourceName": "抡锤者 模型部署讨论",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "terry",
+          "id": "2907",
+          "title": "SGLang + Qwen27B VS Strata + Qwen Flash Next，谁是本地AI双卡配置最优方案？Qwen4.0家族发布之后如何选择？",
+          "url": "https://lcz.me/topic/2907",
+          "published": "2026-11-08T08:00:00.000Z",
+          "summary": "[image: {6021D185-51B3-4E1A-99D6-AEC10C088416}.jpeg] [image: {FD4BF6C4-4D38-44A4-9FAA-1878B19065EE}.jpeg] 如果一直可以是10美元每月，可用给4-5B的 deepseek v4.1 flash，这个价格的话，我都想把显卡卖了。 另外我也好奇opencode 的供应商用的什么硬件，能把价格打成这水平。",
+          "metrics": {
+            "points": 2,
+            "comments": 4,
+            "views": 413
+          },
+          "excellent": false,
+          "quality": 6,
+          "score": 18.17,
+          "category": "apps",
+          "subcategory": "inference",
+          "practical": 2,
+          "slug": "ee2e6b718520",
+          "action": 5,
+          "rank": 14,
+          "tags": [
+            "hardware",
+            "local",
+            "tutorial",
+            "agent"
+          ]
+        },
+        {
+          "sourceId": "arxiv-cs",
+          "sourceName": "arXiv cs.AI/CL/LG",
+          "title": "Semantically Aligned KV Cache Compression for Efficient Agentic Autoregressive Video Generation",
+          "url": "https://arxiv.org/abs/2611.11452v1",
+          "id": "http://arxiv.org/abs/2611.11452v1",
+          "published": "2026-11-08T15:28:33.000Z",
+          "summary": "Agentic autoregressive video generation combines semantic planning, sequential generation, and visual verification for controllable synthesis. Growing visual histories enlarge the key-value (KV) cache, increasing memory use and attention costs across candidate rollouts. Existing compression methods primarily optimize…",
+          "content": {
+            "html": "Agentic autoregressive video generation combines semantic planning, sequential generation, and visual verification for controllable synthesis. Growing visual histories enlarge the key-value (KV) cache, increasing memory use and attention costs across candidate rollouts. Existing compression methods primarily optimize individual generators without the planner's semantic constraints, risking low priority for states supporting requested attributes or actions. We introduce SemanticKV, a training-free method for semantically aligned KV cache compression. To our knowledge, SemanticKV is the first KV cache compression method for agentic autoregressive video generation that explicitly uses planner-extracted semantic constraints to guide retention. Text cross-attention identifies constraint-related video positions, whose self-attention queries are collected into separate groups. Attention weights are averaged within each group and maximized across groups, giving each cached entry a high score when strongly used by any represented constraint. A single top-k selection retains high-scoring entries under the memory budget, leaving their keys, values, and positions unchanged. For fixed query groups and equal entry costs, this selection minimizes an additive upper bound on worst-group discarded attention. The method operates independently within each candidate without retraining or additional video generations. We evaluate four AR video backbones on three benchmarks for 5-, 30-, and 60-second generation. On Causal Forcing at a compression ratio of 0.7, SemanticKV obtains a VBench Total Score of 84.10, compared with 84.05 for the strongest compressed baseline and 83.99 for Full KV. It achieves a 1.22x speedup over Full KV and reduces KV-cache memory from 6.04 GB to 1.81 GB, a 3.35x reduction.",
+            "text": "Agentic autoregressive video generation combines semantic planning, sequential generation, and visual verification for controllable synthesis. Growing visual histories enlarge the key-value (KV) cache, increasing memory use and attention costs across candidate rollouts. Existing compression methods primarily optimize individual generators without the planner's semantic constraints, risking low priority for states supporting requested attributes or actions. We introduce SemanticKV, a training-free method for semantically aligned KV cache compression. To our knowledge, SemanticKV is the first KV cache compression method for agentic autoregressive video generation that explicitly uses planner-extracted semantic constraints to guide retention. Text cross-attention identifies constraint-related video positions, whose self-attention queries are collected into separate groups. Attention weights are averaged within each group and maximized across groups, giving each cached entry a high score when strongly used by any represented constraint. A single top-k selection retains high-scoring entries under the memory budget, leaving their keys, values, and positions unchanged. For fixed query groups and equal entry costs, this selection minimizes an additive upper bound on worst-group discarded attention. The method operates independently within each candidate without retraining or additional video generations. We evaluate four AR video backbones on three benchmarks for 5-, 30-, and 60-second generation. On Causal Forcing at a compression ratio of 0.7, SemanticKV obtains a VBench Total Score of 84.10, compared with 84.05 for the strongest compressed baseline and 83.99 for Full KV. It achieves a 1.22x speedup over Full KV and reduces KV-cache memory from 6.04 GB to 1.81 GB, a 3.35x reduction.",
+            "lead": "Agentic autoregressive video generation combines semantic planning, sequential generation, and visual verification for controllable synthesis. Growing visual histories enlarge the key-value (KV) cache, increasing memory use and attention costs across candidate rollouts. Existing compression methods primarily optimize individual generators without the planner's semantic constraints, risking low priority for states supporting requested attributes or actions.",
+            "chars": 1807,
+            "shown": 1807,
+            "truncated": false
+          },
+          "categories": [
+            "cs.CV",
+            "cs.LG"
+          ],
+          "author": "Weizhong Huang",
+          "lang": "en",
+          "tier": 3,
+          "trustCategory": true,
+          "declaredCategory": "ideas",
+          "metrics": {},
+          "quality": 6,
+          "score": 11.86,
+          "category": "apps",
+          "subcategory": "creation",
+          "practical": 2,
+          "slug": "f779cb6a168f",
+          "action": 3,
+          "rank": 10.8,
+          "tags": [
+            "tutorial",
+            "free"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "label": "工具玩法",
+      "items": [
+        {
+          "sourceId": "arxiv-cs",
+          "sourceName": "arXiv cs.AI/CL/LG",
+          "title": "SWHForest: A Structural Curation and Search Layer for Large-Scale Code Corpora",
+          "url": "https://arxiv.org/abs/2611.11439v1",
+          "id": "http://arxiv.org/abs/2611.11439v1",
+          "published": "2026-11-08T15:03:30.000Z",
+          "summary": "Pre-training code language models relies on massive code corpora usually streamed over the internet. However, researchers rarely need a multi-terabyte archive in its entirety; instead, their workflow centers on curated subsets: selecting well-documented files, filtering out repetitive boilerplate, auditing for benchma…",
+          "content": {
+            "html": "Pre-training code language models relies on massive code corpora usually streamed over the internet. However, researchers rarely need a multi-terabyte archive in its entirety; instead, their workflow centers on curated subsets: selecting well-documented files, filtering out repetitive boilerplate, auditing for benchmark contamination, or retrieving specific code patterns. Yet, because modern corpora are typically published as file pointers and basic attributes rather than source text, no general structural layer exists to select which files to download: curating a subset requires downloading and parsing millions of files first just to discard most of them. We present SWHForest, an open-source framework and public dataset that provides this missing structural layer for any pointer-based corpus without redistributing source code. A single pass over the archive parses each file into an AST and immediately discards the source text, keeping only its structural summary. Queried locally or exposed by archive providers as a server-side filtering API, SWHForest selects matching files first (via SQL or index intersection) and downloads only surviving candidates. Across the ten largest languages of Stack-Edu (52.1M unique files, 341M definitions), SWHForest answers curation queries in milliseconds while cutting downloads by 46-72%, reducing live structural searches from hours of per-language streaming to seconds or minutes.",
+            "text": "Pre-training code language models relies on massive code corpora usually streamed over the internet. However, researchers rarely need a multi-terabyte archive in its entirety; instead, their workflow centers on curated subsets: selecting well-documented files, filtering out repetitive boilerplate, auditing for benchmark contamination, or retrieving specific code patterns. Yet, because modern corpora are typically published as file pointers and basic attributes rather than source text, no general structural layer exists to select which files to download: curating a subset requires downloading and parsing millions of files first just to discard most of them. We present SWHForest, an open-source framework and public dataset that provides this missing structural layer for any pointer-based corpus without redistributing source code. A single pass over the archive parses each file into an AST and immediately discards the source text, keeping only its structural summary. Queried locally or exposed by archive providers as a server-side filtering API, SWHForest selects matching files first (via SQL or index intersection) and downloads only surviving candidates. Across the ten largest languages of Stack-Edu (52.1M unique files, 341M definitions), SWHForest answers curation queries in milliseconds while cutting downloads by 46-72%, reducing live structural searches from hours of per-language streaming to seconds or minutes.",
+            "lead": "Pre-training code language models relies on massive code corpora usually streamed over the internet. However, researchers rarely need a multi-terabyte archive in its entirety; instead, their workflow centers on curated subsets: selecting well-documented files, filtering out repetitive boilerplate, auditing for benchmark contamination, or retrieving specific code patterns. Yet, because modern corpora are typically published as file pointers and basic attrib",
+            "chars": 1436,
+            "shown": 1436,
+            "truncated": false
+          },
+          "categories": [
+            "cs.SE",
+            "cs.LG"
+          ],
+          "author": "Federico Pennino",
+          "lang": "en",
+          "tier": 3,
+          "trustCategory": true,
+          "declaredCategory": "ideas",
+          "metrics": {},
+          "quality": 6,
+          "score": 10.62,
+          "category": "tools",
+          "subcategory": "coding",
+          "practical": 2,
+          "zhTitle": "SWHForest：一个结构化的收藏和搜索层用于大规模的代码库",
+          "slug": "a7bb95887731",
+          "action": 4,
+          "rank": 12.4,
+          "tags": [
+            "benchmark",
+            "free"
+          ]
+        },
+        {
+          "sourceId": "arxiv-cs",
+          "sourceName": "arXiv cs.AI/CL/LG",
+          "title": "MOMENT-DP: Momentum Aware Evaluation of Correlated Noise for Differentially Private Training",
+          "url": "https://arxiv.org/abs/2611.11457v1",
+          "id": "http://arxiv.org/abs/2611.11457v1",
+          "published": "2026-11-08T15:38:51.000Z",
+          "summary": "Temporally correlated noise can substantially improve the utility of differentially private optimization, yet candidate mechanisms are commonly designed or evaluated using only partial information about the optimization process, such as workload structure, learning-rate schedules, or local curvature. We study whether…",
+          "content": {
+            "html": "Temporally correlated noise can substantially improve the utility of differentially private optimization, yet candidate mechanisms are commonly designed or evaluated using only partial information about the optimization process, such as workload structure, learning-rate schedules, or local curvature. We study whether persistent optimizer state provides additional information that can change the relative utility of privacy-valid correlated-noise mechanisms.\nWe introduce MOMENT-DP, an optimizer-state-aware framework that models how temporally correlated privacy noise propagates through momentum-based optimization. For locally quadratic objectives, MOMENT-DP expresses privacy-induced final loss through an optimizer transfer operator that jointly captures curvature, learning-rate scheduling, momentum, and temporal noise covariance. NoiseCurve's curvature-aware quadratic criterion is recovered exactly as the zero-momentum, constant-learning-rate special case.\nChanging only momentum while holding curvature, schedule, privacy calibration, and candidate mechanisms fixed induces genuine mechanism-ranking reversals. The effect persists outside exact quadratic dynamics in per-example-clipped private logistic regression, while remaining unresolved in the neural regime we study. These results establish optimizer state as an under-modeled, decision-relevant axis in evaluating temporally correlated privacy noise.",
+            "text": "Temporally correlated noise can substantially improve the utility of differentially private optimization, yet candidate mechanisms are commonly designed or evaluated using only partial information about the optimization process, such as workload structure, learning-rate schedules, or local curvature. We study whether persistent optimizer state provides additional information that can change the relative utility of privacy-valid correlated-noise mechanisms.\nWe introduce MOMENT-DP, an optimizer-state-aware framework that models how temporally correlated privacy noise propagates through momentum-based optimization. For locally quadratic objectives, MOMENT-DP expresses privacy-induced final loss through an optimizer transfer operator that jointly captures curvature, learning-rate scheduling, momentum, and temporal noise covariance. NoiseCurve's curvature-aware quadratic criterion is recovered exactly as the zero-momentum, constant-learning-rate special case.\nChanging only momentum while holding curvature, schedule, privacy calibration, and candidate mechanisms fixed induces genuine mechanism-ranking reversals. The effect persists outside exact quadratic dynamics in per-example-clipped private logistic regression, while remaining unresolved in the neural regime we study. These results establish optimizer state as an under-modeled, decision-relevant axis in evaluating temporally correlated privacy noise.",
+            "lead": "Temporally correlated noise can substantially improve the utility of differentially private optimization, yet candidate mechanisms are commonly designed or evaluated using only partial information about the optimization process, such as workload structure, learning-rate schedules, or local curvature. We study whether persistent optimizer state provides additional information that can change the relative utility of privacy-valid correlated-noise mechanisms.",
+            "chars": 1421,
+            "shown": 1421,
+            "truncated": false
+          },
+          "categories": [
+            "cs.LG",
+            "cs.AI",
+            "cs.DC"
+          ],
+          "author": "Sunny Gupta",
+          "lang": "en",
+          "tier": 3,
+          "trustCategory": true,
+          "declaredCategory": "ideas",
+          "metrics": {},
+          "quality": 6,
+          "score": 10.67,
+          "category": "tools",
+          "subcategory": "coding",
+          "practical": 1,
+          "zhTitle": "MOMENT-DP：对相关噪声进行动量感知评估的差分隐私训练",
+          "slug": "e5c2e31d2865",
+          "action": 2,
+          "rank": 9.2,
+          "tags": [
+            "privacy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hardware",
+      "label": "AI 硬件",
+      "items": [
+        {
+          "sourceId": "lcz-media",
+          "sourceName": "抡锤者 AI 音视频画图",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "apps",
+          "categories": [
+            "7900xtx",
+            "minimax",
+            "comfyui"
+          ],
+          "author": "xiongjie gao",
+          "id": "2920",
+          "title": "7900 XTX 单卡 15 秒 OOM 复现与绕过报告，4080 16G能跑 XTX24G OOM！",
+          "url": "https://lcz.me/topic/2920",
+          "published": "2026-11-08T13:24:55.392Z",
+          "summary": "@terry 说: @xiongjie-gao 其他流式结点呢？ 已经测试KJ的low vram attention和chunk feedforward节点，结果如下： 两个 KJ 节点都能在单张 RX 7900 XTX 上独立跑完 MiniMax H3 的 15 秒工作流。 两组都在 50 分钟内出片，没有 OOM，也没有用双卡。两段视频均验证为 1344×768、24 fps、362 帧、15.08 秒，带非静音 AAC 音轨。 单独启用的节点 工作流耗时 整卡显存采样峰值 MiniMax H3 Low VRAM Attention，4 组 36 分 52 秒 12.75 GiB MiniMax H3 Chunk FeedFo…",
+          "metrics": {
+            "points": 1,
+            "comments": 14,
+            "views": 467
+          },
+          "excellent": false,
+          "quality": 8,
+          "score": 17.3,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 2,
+          "slug": "2fb957b81314",
+          "action": 4,
+          "rank": 14.4,
+          "tags": [
+            "lowspec",
+            "benchmark",
+            "agent",
+            "generate"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "local",
+      "label": "本地开源",
+      "items": [
+        {
+          "sourceId": "arxiv-cs",
+          "sourceName": "arXiv cs.AI/CL/LG",
+          "title": "Off-Policy RL with Online Inference Tuning: My Solution to the CoRL 2026 RoboEval Challenge",
+          "url": "https://arxiv.org/abs/2611.11464v1",
+          "id": "http://arxiv.org/abs/2611.11464v1",
+          "published": "2026-11-08T15:53:59.000Z",
+          "summary": "The CoRL 2026 RoboEval challenge has eight bimanual tasks, and it ranks a policy not only on whether it succeeds but on how: every stage of the task, done safely, efficiently and with both arms in coordination, scored against human demonstrations. My solution has two parts. The generic part, carried over from my LeHom…",
+          "content": {
+            "html": "The CoRL 2026 RoboEval challenge has eight bimanual tasks, and it ranks a policy not only on whether it succeeds but on how: every stage of the task, done safely, efficiently and with both arms in coordination, scored against human demonstrations. My solution has two parts. The generic part, carried over from my LeHome challenge solution, is off-policy RL on a $π_{0.5}$-based policy that is also its own value function. It is trained with AWR and RECAP on advantages of the exact official score, in a loop where every rollout is at the same time a Thompson-sampling trial of about 20 inference parameters. Out of the box, it took the policy to 0.85 RDS on held-out seeds in two days (and it was still very far from convergence). The competition-specific part adds data that local exploration cannot find: generated demonstrations that reach the full reward, and recovery episodes that start from the policy's own failures. The submitted policy reaches 0.990 RDS on held-out seeds and 0.987 on the official seeds.",
+            "text": "The CoRL 2026 RoboEval challenge has eight bimanual tasks, and it ranks a policy not only on whether it succeeds but on how: every stage of the task, done safely, efficiently and with both arms in coordination, scored against human demonstrations. My solution has two parts. The generic part, carried over from my LeHome challenge solution, is off-policy RL on a $π_{0.5}$-based policy that is also its own value function. It is trained with AWR and RECAP on advantages of the exact official score, in a loop where every rollout is at the same time a Thompson-sampling trial of about 20 inference parameters. Out of the box, it took the policy to 0.85 RDS on held-out seeds in two days (and it was still very far from convergence). The competition-specific part adds data that local exploration cannot find: generated demonstrations that reach the full reward, and recovery episodes that start from the policy's own failures. The submitted policy reaches 0.990 RDS on held-out seeds and 0.987 on the official seeds.",
+            "lead": "The CoRL 2026 RoboEval challenge has eight bimanual tasks, and it ranks a policy not only on whether it succeeds but on how: every stage of the task, done safely, efficiently and with both arms in coordination, scored against human demonstrations. My solution has two parts. The generic part, carried over from my LeHome challenge solution, is off-policy RL on a $π_{0.5}$-based policy that is also its own value function. It is trained with AWR and RECAP on a",
+            "chars": 1015,
+            "shown": 1015,
+            "truncated": false
+          },
+          "categories": [
+            "cs.RO",
+            "cs.CV",
+            "cs.LG"
+          ],
+          "author": "Ilia Larchenko",
+          "lang": "en",
+          "tier": 3,
+          "trustCategory": true,
+          "declaredCategory": "ideas",
+          "metrics": {},
+          "quality": 7,
+          "score": 9.49,
+          "category": "local",
+          "subcategory": null,
+          "practical": 1,
+          "zhTitle": "在线推理调优的离线策略：我的CoRL 2026 RoboEval挑战解决方案",
+          "slug": "bbe3faf4d39a",
+          "action": 4,
+          "rank": 13.4,
+          "tags": [
+            "local"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bench",
+      "label": "评测选型",
+      "items": [
+        {
+          "sourceId": "lcz-hardware",
+          "sourceName": "抡锤者 AI硬件",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [
+            "comfyui",
+            "minimax",
+            "多卡部署"
+          ],
+          "author": "IAN FONG",
+          "id": "2919",
+          "title": "双11准备入手7900xtx，配置大神指点",
+          "url": "https://lcz.me/topic/2919",
+          "published": "2026-11-08T11:47:54.274Z",
+          "summary": "按用途分开看，别用一套配置硬套： 文生图（ComfyUI）：单卡最省事。ComfyUI 默认一条工作流只吃一张卡，双卡要自己拆节点或并行采样，收益不稳定；先单卡，不够再加。 本地 LLM（Qwen 27B / Flash Next）：单路双卡最有性价比。TP2 把模型切到两张卡，decode 大约能到单卡的 1.6–1.8 倍；双路双卡跨 CPU socket 的 P2P 会退化，除非确定要四卡，不建议。 MiniMax H3：别拿 7900XTX 做基准。2920 帖实测单卡 15 秒 OOM 是音频 VAE 单次申请 3–10GiB，不是 24G 容量不够；5080 16G 反而能跑。H3 是刚需就单独配 N 卡。 结论：单路…",
+          "metrics": {
+            "points": 0,
+            "comments": 2,
+            "views": 220
+          },
+          "excellent": false,
+          "quality": 8,
+          "score": 16.58,
+          "category": "bench",
+          "subcategory": "cost",
+          "practical": 3,
+          "slug": "5253762a6393",
+          "action": 6,
+          "rank": 17.6,
+          "tags": [
+            "generate",
+            "hardware",
+            "local",
+            "lowspec"
+          ]
+        },
+        {
+          "sourceId": "arxiv-cs",
+          "sourceName": "arXiv cs.AI/CL/LG",
+          "title": "When Normality Shifts: Multi-Level WavLM Modeling for Open-World Audio Deepfake Detection",
+          "url": "https://arxiv.org/abs/2611.11465v1",
+          "id": "http://arxiv.org/abs/2611.11465v1",
+          "published": "2026-11-08T15:54:07.000Z",
+          "summary": "Audio deepfake detectors trained with known synthesis attacks can learn generator-specific shortcuts that fail as synthesis systems and acoustic conditions evolve. We investigate an attack-free alternative: a normality model trained exclusively on bona fide speech, which scores synthetic audio by its deviation from au…",
+          "content": {
+            "html": "Audio deepfake detectors trained with known synthesis attacks can learn generator-specific shortcuts that fail as synthesis systems and acoustic conditions evolve. We investigate an attack-free alternative: a normality model trained exclusively on bona fide speech, which scores synthetic audio by its deviation from authentic representations. We propose MLN-WavLM, a method that applies shrinkage-Mahalanobis modeling to pooled hidden states from a frozen large-scale, pre-trained speech processing WavLM Base+ architecture. Evaluated on ASVspoof 2019 LA, our best attack-free variant achieves an 8.45\\% Equal Error Rate (EER), closely tracking a fully supervised WavLM-HM-Conformer baseline (7.86%). However, when subjected to the ASVspoof 2021 DF domain shift, performance drops to 22.12% EER, exposing vulnerabilities in the bona-fide-calibrated operating point. Layer-wise analysis reveals that early WavLM representations dominate the ensemble. To test real-world viability, we simulated deployment streams using unlabeled threshold adaptation. While robust median/MAD recalibration easily handles in-domain contamination up to 10%, recalibrating under the 2021 DF domain shift triggers a total collapse of low-FPR recall. We conclude that while frozen source-domain normality can effectively rank deepfakes, it does not yield a stable open-world decision rule, and downstream threshold adaptation cannot rescue upstream ranking degradation.",
+            "text": "Audio deepfake detectors trained with known synthesis attacks can learn generator-specific shortcuts that fail as synthesis systems and acoustic conditions evolve. We investigate an attack-free alternative: a normality model trained exclusively on bona fide speech, which scores synthetic audio by its deviation from authentic representations. We propose MLN-WavLM, a method that applies shrinkage-Mahalanobis modeling to pooled hidden states from a frozen large-scale, pre-trained speech processing WavLM Base+ architecture. Evaluated on ASVspoof 2019 LA, our best attack-free variant achieves an 8.45\\% Equal Error Rate (EER), closely tracking a fully supervised WavLM-HM-Conformer baseline (7.86%). However, when subjected to the ASVspoof 2021 DF domain shift, performance drops to 22.12% EER, exposing vulnerabilities in the bona-fide-calibrated operating point. Layer-wise analysis reveals that early WavLM representations dominate the ensemble. To test real-world viability, we simulated deployment streams using unlabeled threshold adaptation. While robust median/MAD recalibration easily handles in-domain contamination up to 10%, recalibrating under the 2021 DF domain shift triggers a total collapse of low-FPR recall. We conclude that while frozen source-domain normality can effectively rank deepfakes, it does not yield a stable open-world decision rule, and downstream threshold adaptation cannot rescue upstream ranking degradation.",
+            "lead": "Audio deepfake detectors trained with known synthesis attacks can learn generator-specific shortcuts that fail as synthesis systems and acoustic conditions evolve. We investigate an attack-free alternative: a normality model trained exclusively on bona fide speech, which scores synthetic audio by its deviation from authentic representations. We propose MLN-WavLM, a method that applies shrinkage-Mahalanobis modeling to pooled hidden states from a frozen lar",
+            "chars": 1447,
+            "shown": 1447,
+            "truncated": false
+          },
+          "categories": [
+            "cs.SD",
+            "cs.LG"
+          ],
+          "author": "Daniel Niekurzak",
+          "lang": "en",
+          "tier": 3,
+          "trustCategory": true,
+          "declaredCategory": "ideas",
+          "metrics": {},
+          "quality": 6,
+          "score": 10.69,
+          "category": "bench",
+          "subcategory": "compare",
+          "practical": 2,
+          "zhTitle": "当正常性发生变化：Multi-Level WavLM Modeling for Open-World Audio Deepfake Detection",
+          "slug": "3a2534bfa290",
+          "action": 2,
+          "rank": 9.2,
+          "tags": [
+            "free"
+          ]
+        }
+      ]
+    }
+  ]
+}

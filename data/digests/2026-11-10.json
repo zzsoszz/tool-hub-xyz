@@ -1,17 +1,21 @@
 {
   "day": "2026-11-10",
-  "generatedAt": "2026-11-10T04:16:30.575Z",
+  "generatedAt": "2026-11-10T05:12:44.696Z",
   "timezone": "Asia/Shanghai",
   "windowHours": 48,
+  "window": {
+    "since": "2026-11-09T16:00:00.000Z",
+    "until": "2026-11-10T05:03:52.757Z"
+  },
   "counts": {
     "sources": 36,
     "okSources": 33,
-    "fetched": 2917,
-    "duplicates": 2832,
-    "carried": 4,
-    "added": 2,
+    "fetched": 2937,
+    "duplicates": 28,
+    "carried": 6,
+    "added": 0,
     "fallback": 3,
-    "lowQuality": 49,
+    "lowQuality": 2728,
     "published": 14
   },
   "sources": [
@@ -109,9 +113,9 @@
     {
       "id": "hn-newest",
       "name": "Hacker News (AI)",
-      "ok": false,
-      "items": 0,
-      "error": "HTTP 502"
+      "ok": true,
+      "items": 20,
+      "error": null
     },
     {
       "id": "hn-algolia",
@@ -186,9 +190,9 @@
     {
       "id": "hn-show-ai",
       "name": "Show HN (AI)",
-      "ok": false,
-      "items": 0,
-      "error": "HTTP 502"
+      "ok": true,
+      "items": 20,
+      "error": null
     },
     {
       "id": "ai-news-applied",
@@ -201,7 +205,7 @@
       "id": "juejin",
       "name": "掘金 AI",
       "ok": true,
-      "items": 0,
+      "items": 20,
       "error": null
     },
     {
@@ -214,9 +218,9 @@
     {
       "id": "lcz-hardware",
       "name": "抡锤者 AI硬件",
-      "ok": true,
-      "items": 20,
-      "error": null
+      "ok": false,
+      "items": 0,
+      "error": "ETIMEDOUT"
     },
     {
       "id": "lcz-llm",
@@ -249,9 +253,9 @@
     {
       "id": "lcz-web",
       "name": "抡锤者 建站与网络赚钱",
-      "ok": true,
-      "items": 20,
-      "error": null
+      "ok": false,
+      "items": 0,
+      "error": "ETIMEDOUT"
     },
     {
       "id": "lcz-crisis",
@@ -353,8 +357,11 @@
           "action": 2,
           "rank": 11.2,
           "tags": [
+            "generate",
             "free"
-          ]
+          ],
+          "zhTitle": "与 RIAA CEO Mitch Glazier 的谈话",
+          "zhSummary": "我今天与 RIAA CEO Mitch Glazier 谈话，这是一个全新的圆满体验：我在大学时期就经历了 Napster 的风波，RIAA 成为了大家反对的对象，因为他们在下载音乐时起诉了孩子们。"
         },
         {
           "sourceId": "techcrunch-ai",
@@ -392,7 +399,9 @@
           "slug": "440ff7d1d81c",
           "action": 2,
           "rank": 11.2,
-          "tags": []
+          "tags": [],
+          "zhTitle": "大型科技公司面临的挑战：从热门话题到中期选举",
+          "zhSummary": "在过去两年里，大型科技公司与白宫建立了密切关系，但现在他们突然开始与民主党建立关系，问题是这种形象转变能否在各个州、地方社区和市场面前保持。"
         }
       ]
     },
@@ -400,6 +409,45 @@
       "id": "tools",
       "label": "工具玩法",
       "items": [
+        {
+          "sourceId": "latent-space",
+          "sourceName": "Latent Space",
+          "title": "What Frontier Labs Buy: A Data Deep Dive with Handshake AI — Garrett Lord & Team",
+          "url": "https://latent.space/p/what_frontier_labs_buy_a_data_deep_dive_with_handshake_ai_garrett_lord_team/",
+          "id": "urn:latent-space:post:pod_ep_01a1c0f3-0e12-7b37-bb7f-c0b59fbc3b39",
+          "published": "2026-11-09T16:41:48.000Z",
+          "summary": "Our first deep dive with an AI data company. In roughly a year, Handshake built an AI training business doing nearly $1 billion in gross annualized revenue. What are frontier labs buying? Garrett Lord joins us with the people building reinforcement learning environments across biology, finance and alignment. An AI age…",
+          "content": {
+            "html": "<p>Our first deep dive with an AI data company. In roughly a year, Handshake built an AI training business doing nearly $1 billion in gross annualized revenue. What are frontier labs buying? Garrett Lord joins us with the people building reinforcement learning environments across biology, finance and alignment.</p>\n<p>An AI agent filled an Excel tab with every number from one to a million. An early grader found the net-income figure it wanted and awarded a point. What would an investment banker check instead?</p>\n<p>Who’s in the room</p>\n<p>AI data business — Garrett Lord, Sahil Bhaiwala and Nishant Ranka open and close the episode on the market for expert data.</p>\n<p>Life sciences — Nick Magazine and Jonas Mueller put the gel and brain-tissue tasks on screen.</p>\n<p>Finance — Collin Schweiker and Sahil Bhaiwala take us through Project Falcon and its Excel grader.</p>\n<p>Alignment — Steve Kelling and Nishant Ranka follow the agent’s tool calls through the safety simulations.</p>\n<p>Chapters</p>\n<p>0:00 Inside Handshake AI</p>\n<p>0:39 Garrett, Sahil and Nishant on frontier training data</p>\n<p>5:15 How to build a banking environment for an agent</p>\n<p>13:07 How frontier labs buy data</p>\n<p>15:51 How a lab evaluates a new dataset</p>\n<p>20:01 Testing training data on open models</p>\n<p>27:38 Where rubrics fall short of expert judgment</p>\n<p>31:30 Nick and Jonas introduce the VIALS benchmark</p>\n<p>35:52 Reading molecular structures and plasmid maps</p>\n<p>43:48 Training vision models to interpret scientific images</p>\n<p>47:17 Task one: reading the bands on a gel</p>\n<p>50:59 Task two: finding necrosis in brain tissue</p>\n<p>55:49 Can Python tools help the model see?</p>\n<p>1:02:52 Can biology models improve on their own?</p>\n<p>1:06:19 What a biology lab can buy from Handshake</p>\n<p>1:12:33 Atlas Finance with Collin and Sahil</p>\n<p>1:18:56 Inside a simulated investment bank</p>\n<p>1:25:45 Where the agent’s financial model went wrong</p>\n<p>1:31:18 How a banker grades the spreadsheet</p>\n<p>1:41:12 Penalty traps, dependency gates and partial credit</p>\n<p>1:46:41 How an agent gamed the Excel grader</p>\n<p>1:48:52 What would make an AI banker useful?</p>\n<p>1:54:48 Safety and alignment with Steve and Nishant</p>\n<p>1:58:25 CAREBench and the limits of a refusal</p>\n<p>2:04:42 How safety feedback reaches model training</p>\n<p>2:07:21 When an agent sends the wrong files</p>\n<p>2:11:14 A loan application tests fair lending</p>\n<p>2:16:09 Designing private benchmarks for enterprises</p>\n<p>2:25:37 The leadership team on Handshake’s mission</p>\n<p>2:28:36 When enterprises need their own models</p>\n<p>2:33:03 The market for compute and expert data</p>\n<p>2:39:12 Why labs hold out evaluation tasks</p>\n<p>2:43:01 Hiring at Handshake AI</p>",
+            "text": "Our first deep dive with an AI data company. In roughly a year, Handshake built an AI training business doing nearly $1 billion in gross annualized revenue. What are frontier labs buying? Garrett Lord joins us with the people building reinforcement learning environments across biology, finance and alignment.\nAn AI agent filled an Excel tab with every number from one to a million. An early grader found the net-income figure it wanted and awarded a point. What would an investment banker check instead?\nWho’s in the room\nAI data business — Garrett Lord, Sahil Bhaiwala and Nishant Ranka open and close the episode on the market for expert data.\nLife sciences — Nick Magazine and Jonas Mueller put the gel and brain-tissue tasks on screen.\nFinance — Collin Schweiker and Sahil Bhaiwala take us through Project Falcon and its Excel grader.\nAlignment — Steve Kelling and Nishant Ranka follow the agent’s tool calls through the safety simulations.\nChapters\n0:00 Inside Handshake AI\n0:39 Garrett, Sahil and Nishant on frontier training data\n5:15 How to build a banking environment for an agent\n13:07 How frontier labs buy data\n15:51 How a lab evaluates a new dataset\n20:01 Testing training data on open models\n27:38 Where rubrics fall short of expert judgment\n31:30 Nick and Jonas introduce the VIALS benchmark\n35:52 Reading molecular structures and plasmid maps\n43:48 Training vision models to interpret scientific images\n47:17 Task one: reading the bands on a gel\n50:59 Task two: finding necrosis in brain tissue\n55:49 Can Python tools help the model see?\n1:02:52 Can biology models improve on their own?\n1:06:19 What a biology lab can buy from Handshake\n1:12:33 Atlas Finance with Collin and Sahil\n1:18:56 Inside a simulated investment bank\n1:25:45 Where the agent’s financial model went wrong\n1:31:18 How a banker grades the spreadsheet\n1:41:12 Penalty traps, dependency gates and partial credit\n1:46:41 How an agent gamed the Excel grader\n1:48:52 What would make an AI banker useful?\n1:54:48 Safety and alignment with Steve and Nishant\n1:58:25 CAREBench and the limits of a refusal\n2:04:42 How safety feedback reaches model training\n2:07:21 When an agent sends the wrong files\n2:11:14 A loan application tests fair lending\n2:16:09 Designing private benchmarks for enterprises\n2:25:37 The leadership team on Handshake’s mission\n2:28:36 When enterprises need their own models\n2:33:03 The market for compute and expert data\n2:39:12 Why labs hold out evaluation tasks\n2:43:01 Hiring at Handshake AI",
+            "lead": "Our first deep dive with an AI data company. In roughly a year, Handshake built an AI training business doing nearly $1 billion in gross annualized revenue. What are frontier labs buying? Garrett Lord joins us with the people building reinforcement learning environments across biology, finance and alignment.\nAn AI agent filled an Excel tab with every number from one to a million. An early grader found the net-income figure it wanted and awarded a point. Wh",
+            "chars": 2538,
+            "shown": 2538,
+            "truncated": false
+          },
+          "categories": [],
+          "author": "Latent.Space",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "opinion",
+          "metrics": {},
+          "quality": 9,
+          "score": 19.99,
+          "category": "tools",
+          "subcategory": "hands-on",
+          "practical": 2,
+          "slug": "95f84512fec9",
+          "action": 4,
+          "rank": 15.4,
+          "tags": [
+            "benchmark",
+            "tutorial",
+            "agent"
+          ],
+          "zhTitle": "Frontier Labs 的购买行为：与 Handshake AI 的深度访谈",
+          "zhSummary": "Frontier Labs 在近一年内通过 Handshake AI 建立了一个 AI 训练业务，实现了近 100 亿美元的年化销售额。 Garrett Lord 和他的团队与我们分享了他们在生物学、金融和对齐领域建立的强化学习环境。"
+        },
         {
           "sourceId": "ars-ai",
           "sourceName": "Ars Technica AI",
@@ -440,45 +488,11 @@
           "action": 4,
           "rank": 14.4,
           "tags": [
-            "agent"
-          ]
-        },
-        {
-          "sourceId": "latent-space",
-          "sourceName": "Latent Space",
-          "title": "What Frontier Labs Buy: A Data Deep Dive with Handshake AI — Garrett Lord & Team",
-          "url": "https://latent.space/p/what_frontier_labs_buy_a_data_deep_dive_with_handshake_ai_garrett_lord_team/",
-          "id": "urn:latent-space:post:pod_ep_01a1c0f3-0e12-7b37-bb7f-c0b59fbc3b39",
-          "published": "2026-11-09T16:41:48.000Z",
-          "summary": "Our first deep dive with an AI data company. In roughly a year, Handshake built an AI training business doing nearly $1 billion in gross annualized revenue. What are frontier labs buying? Garrett Lord joins us with the people building reinforcement learning environments across biology, finance and alignment. An AI age…",
-          "content": {
-            "html": "<p>Our first deep dive with an AI data company. In roughly a year, Handshake built an AI training business doing nearly $1 billion in gross annualized revenue. What are frontier labs buying? Garrett Lord joins us with the people building reinforcement learning environments across biology, finance and alignment.</p>\n<p>An AI agent filled an Excel tab with every number from one to a million. An early grader found the net-income figure it wanted and awarded a point. What would an investment banker check instead?</p>\n<p>Who’s in the room</p>\n<p>AI data business — Garrett Lord, Sahil Bhaiwala and Nishant Ranka open and close the episode on the market for expert data.</p>\n<p>Life sciences — Nick Magazine and Jonas Mueller put the gel and brain-tissue tasks on screen.</p>\n<p>Finance — Collin Schweiker and Sahil Bhaiwala take us through Project Falcon and its Excel grader.</p>\n<p>Alignment — Steve Kelling and Nishant Ranka follow the agent’s tool calls through the safety simulations.</p>\n<p>Chapters</p>\n<p>0:00 Inside Handshake AI</p>\n<p>0:39 Garrett, Sahil and Nishant on frontier training data</p>\n<p>5:15 How to build a banking environment for an agent</p>\n<p>13:07 How frontier labs buy data</p>\n<p>15:51 How a lab evaluates a new dataset</p>\n<p>20:01 Testing training data on open models</p>\n<p>27:38 Where rubrics fall short of expert judgment</p>\n<p>31:30 Nick and Jonas introduce the VIALS benchmark</p>\n<p>35:52 Reading molecular structures and plasmid maps</p>\n<p>43:48 Training vision models to interpret scientific images</p>\n<p>47:17 Task one: reading the bands on a gel</p>\n<p>50:59 Task two: finding necrosis in brain tissue</p>\n<p>55:49 Can Python tools help the model see?</p>\n<p>1:02:52 Can biology models improve on their own?</p>\n<p>1:06:19 What a biology lab can buy from Handshake</p>\n<p>1:12:33 Atlas Finance with Collin and Sahil</p>\n<p>1:18:56 Inside a simulated investment bank</p>\n<p>1:25:45 Where the agent’s financial model went wrong</p>\n<p>1:31:18 How a banker grades the spreadsheet</p>\n<p>1:41:12 Penalty traps, dependency gates and partial credit</p>\n<p>1:46:41 How an agent gamed the Excel grader</p>\n<p>1:48:52 What would make an AI banker useful?</p>\n<p>1:54:48 Safety and alignment with Steve and Nishant</p>\n<p>1:58:25 CAREBench and the limits of a refusal</p>\n<p>2:04:42 How safety feedback reaches model training</p>\n<p>2:07:21 When an agent sends the wrong files</p>\n<p>2:11:14 A loan application tests fair lending</p>\n<p>2:16:09 Designing private benchmarks for enterprises</p>\n<p>2:25:37 The leadership team on Handshake’s mission</p>\n<p>2:28:36 When enterprises need their own models</p>\n<p>2:33:03 The market for compute and expert data</p>\n<p>2:39:12 Why labs hold out evaluation tasks</p>\n<p>2:43:01 Hiring at Handshake AI</p>",
-            "text": "Our first deep dive with an AI data company. In roughly a year, Handshake built an AI training business doing nearly $1 billion in gross annualized revenue. What are frontier labs buying? Garrett Lord joins us with the people building reinforcement learning environments across biology, finance and alignment.\nAn AI agent filled an Excel tab with every number from one to a million. An early grader found the net-income figure it wanted and awarded a point. What would an investment banker check instead?\nWho’s in the room\nAI data business — Garrett Lord, Sahil Bhaiwala and Nishant Ranka open and close the episode on the market for expert data.\nLife sciences — Nick Magazine and Jonas Mueller put the gel and brain-tissue tasks on screen.\nFinance — Collin Schweiker and Sahil Bhaiwala take us through Project Falcon and its Excel grader.\nAlignment — Steve Kelling and Nishant Ranka follow the agent’s tool calls through the safety simulations.\nChapters\n0:00 Inside Handshake AI\n0:39 Garrett, Sahil and Nishant on frontier training data\n5:15 How to build a banking environment for an agent\n13:07 How frontier labs buy data\n15:51 How a lab evaluates a new dataset\n20:01 Testing training data on open models\n27:38 Where rubrics fall short of expert judgment\n31:30 Nick and Jonas introduce the VIALS benchmark\n35:52 Reading molecular structures and plasmid maps\n43:48 Training vision models to interpret scientific images\n47:17 Task one: reading the bands on a gel\n50:59 Task two: finding necrosis in brain tissue\n55:49 Can Python tools help the model see?\n1:02:52 Can biology models improve on their own?\n1:06:19 What a biology lab can buy from Handshake\n1:12:33 Atlas Finance with Collin and Sahil\n1:18:56 Inside a simulated investment bank\n1:25:45 Where the agent’s financial model went wrong\n1:31:18 How a banker grades the spreadsheet\n1:41:12 Penalty traps, dependency gates and partial credit\n1:46:41 How an agent gamed the Excel grader\n1:48:52 What would make an AI banker useful?\n1:54:48 Safety and alignment with Steve and Nishant\n1:58:25 CAREBench and the limits of a refusal\n2:04:42 How safety feedback reaches model training\n2:07:21 When an agent sends the wrong files\n2:11:14 A loan application tests fair lending\n2:16:09 Designing private benchmarks for enterprises\n2:25:37 The leadership team on Handshake’s mission\n2:28:36 When enterprises need their own models\n2:33:03 The market for compute and expert data\n2:39:12 Why labs hold out evaluation tasks\n2:43:01 Hiring at Handshake AI",
-            "lead": "Our first deep dive with an AI data company. In roughly a year, Handshake built an AI training business doing nearly $1 billion in gross annualized revenue. What are frontier labs buying? Garrett Lord joins us with the people building reinforcement learning environments across biology, finance and alignment.\nAn AI agent filled an Excel tab with every number from one to a million. An early grader found the net-income figure it wanted and awarded a point. Wh",
-            "chars": 2538,
-            "shown": 2538,
-            "truncated": false
-          },
-          "categories": [],
-          "author": "Latent.Space",
-          "lang": "en",
-          "tier": 1,
-          "trustCategory": true,
-          "declaredCategory": "opinion",
-          "metrics": {},
-          "quality": 9,
-          "score": 19.99,
-          "category": "tools",
-          "subcategory": "hands-on",
-          "practical": 2,
-          "slug": "95f84512fec9",
-          "action": 3,
-          "rank": 13.8,
-          "tags": [
-            "benchmark",
             "tutorial",
             "agent"
-          ]
+          ],
+          "zhTitle": "Claude Code 正在 GitHub 公开敏感信息",
+          "zhSummary": "Claude Code 因为设置文件处理方式的部分疏忽而泄露了敏感信息，包括数据库密码、API令牌和 root 登录信息，AI 安全研究人员 Apiiro 发现了数千个敏感信息。"
         },
         {
           "sourceId": "qbitai",
@@ -546,8 +560,11 @@
           "action": 3,
           "rank": 10.8,
           "tags": [
-            "agent"
-          ]
+            "agent",
+            "money"
+          ],
+          "zhTitle": "问 HN：如何管理 AI agent 的上下文跨客户和项目？",
+          "zhSummary": "我们每天都与 AI agent 工作，并且跨客户工作。主要的时间成本是重新解释上下文和过去的决定、客户规则等等。每个工具都有自己的记忆，所以我想知道大家是如何处理这个问题的。"
         }
       ]
     },
@@ -586,12 +603,15 @@
           "subcategory": "gpu",
           "practical": 3,
           "slug": "439f8fc5e967",
-          "action": 4,
-          "rank": 12.4,
+          "action": 5,
+          "rank": 14,
           "tags": [
+            "local",
             "lowspec",
             "free"
-          ]
+          ],
+          "zhTitle": "为评估喜剧写作而寻找一个适合的本地模型",
+          "zhSummary": "我有一个特定的用例，其中一个小型 web 应用程序会提示用户以随机生成的笑话前言为基础写一段笑话，LLM 会评估用户写的笑话的好坏。现在我需要一个适合评估喜剧写作的本地模型。"
         },
         {
           "sourceId": "reddit-local-llama",
@@ -681,43 +701,6 @@
         {
           "sourceId": "reddit-local-llama",
           "sourceName": "r/LocalLLaMA",
-          "title": "Anyone else feeling like Qwen4's release happens in slow-motion?",
-          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xrv2ae/anyone_else_feeling_like_qwen4s_release_happens/",
-          "id": "t3_1xrv2ae",
-          "published": "2026-11-09T15:46:09.000Z",
-          "summary": "So if my memory serves me well: Late summer, Qwen 3.8 Flash Next announces the architecture Late october, conference talk, Qwen announces the 4 models (max/flash/plus/27) Late last week, Qwen posts a jpeg to announce a legendarily big fish. Last weekend, people on X starts getting early access to Qwen4. Qwen also teas…",
-          "content": {
-            "html": "<div><p>So if my memory serves me well:</p><ul><li>Late summer, Qwen 3.8 Flash Next announces the architecture</li><li>Late october, conference talk, Qwen announces the 4 models (max/flash/plus/27)</li><li>Late last week, Qwen posts a jpeg to announce a legendarily big fish.</li><li>Last weekend, people on X starts getting early access to Qwen4. Qwen also teases a soom (TM)</li></ul><p>Compare that with most other labs that just drops their model.</p><p>At that rate, I foresee the following circus:</p><ul><li>Late this week, Qwen will release a similar countdown timer than we had for 3.8</li><li>Early next week the IPO of ANT will happen, and the countdown will end suspiciously close to that</li><li>Upon release:<ul><li>Qwen will have the funny one that actually, the architecture changed a tiny bit since QFN and llama.cpp won't work day 1.</li></ul></li><li>Zillions of custom inference engines will be born that day.</li><li>An equal zillion of posts will land here and the mods will have a stroke</li><li>unsloth will release day 1 quants claiming best in class performance</li></ul><li>2 days after release, unsloth will apologies for the rare looping behaviour of the 27b at Q4, and ask everyone to re-download another 22GB of GGUF</li><p>Did I sum up where we are correctly?</p></div>\nsubmitted by<a href=\"https://www.reddit.com/user/Don_Moahskarton\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">/u/Don_Moahskarton</a>\n<br><span><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xrv2ae/anyone_else_feeling_like_qwen4s_release_happens/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[link]</a></span>\n<span><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xrv2ae/anyone_else_feeling_like_qwen4s_release_happens/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[comments]</a></span>",
-            "text": "So if my memory serves me well:\nLate summer, Qwen 3.8 Flash Next announces the architecture\nLate october, conference talk, Qwen announces the 4 models (max/flash/plus/27)\nLate last week, Qwen posts a jpeg to announce a legendarily big fish.\nLast weekend, people on X starts getting early access to Qwen4. Qwen also teases a soom (TM)\nCompare that with most other labs that just drops their model.\nAt that rate, I foresee the following circus:\nLate this week, Qwen will release a similar countdown timer than we had for 3.8\nEarly next week the IPO of ANT will happen, and the countdown will end suspiciously close to that\nUpon release: Qwen will have the funny one that actually, the architecture changed a tiny bit since QFN and llama.cpp won't work day 1.\nZillions of custom inference engines will be born that day.\nAn equal zillion of posts will land here and the mods will have a stroke\nunsloth will release day 1 quants claiming best in class performance\n2 days after release, unsloth will apologies for the rare looping behaviour of the 27b at Q4, and ask everyone to re-download another 22GB of GGUF\nDid I sum up where we are correctly?\nsubmitted by /u/Don_Moahskarton\n[link]\n[comments]",
-            "lead": "So if my memory serves me well:\nLate summer, Qwen 3.8 Flash Next announces the architecture\nLate october, conference talk, Qwen announces the 4 models (max/flash/plus/27)\nLate last week, Qwen posts a jpeg to announce a legendarily big fish.\nLast weekend, people on X starts getting early access to Qwen4. Qwen also teases a soom (TM)\nCompare that with most other labs that just drops their model.\nAt that rate, I foresee the following circus:\nLate this week, Q",
-            "chars": 1209,
-            "shown": 1209,
-            "truncated": false
-          },
-          "categories": [
-            "LocalLLaMA"
-          ],
-          "author": "/u/Don_Moahskarton",
-          "lang": "en",
-          "tier": 2,
-          "trustCategory": false,
-          "declaredCategory": "oss",
-          "metrics": {},
-          "quality": 6,
-          "score": 16.51,
-          "category": "local",
-          "subcategory": "runtime",
-          "practical": 1,
-          "slug": "fa4037ab5c85",
-          "action": 1,
-          "rank": 7.6,
-          "tags": [
-            "local"
-          ]
-        },
-        {
-          "sourceId": "reddit-local-llama",
-          "sourceName": "r/LocalLLaMA",
           "title": "netease-youdao/Confucius4-R2T2 · Hugging Face",
           "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xrspiy/neteaseyoudaoconfucius4r2t2_hugging_face/",
           "id": "t3_1xrspiy",
@@ -746,6 +729,48 @@
           "subcategory": "weights",
           "practical": 1,
           "slug": "1f544c7a78f7",
+          "action": 2,
+          "rank": 9.2,
+          "tags": [
+            "benchmark",
+            "local",
+            "tutorial",
+            "generate"
+          ],
+          "zhTitle": "孔子四号R2T2：实时语音识别模型",
+          "zhSummary": "孔子四号R2T2是一个低延迟、高准确率的稳定前缀流式语音识别模型，支持从80毫秒到2秒的可配置解码块。该模型在单调输出模式下运作，确保输出的语句是有序的。"
+        },
+        {
+          "sourceId": "reddit-local-llama",
+          "sourceName": "r/LocalLLaMA",
+          "title": "Anyone else feeling like Qwen4's release happens in slow-motion?",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xrv2ae/anyone_else_feeling_like_qwen4s_release_happens/",
+          "id": "t3_1xrv2ae",
+          "published": "2026-11-09T15:46:09.000Z",
+          "summary": "So if my memory serves me well: Late summer, Qwen 3.8 Flash Next announces the architecture Late october, conference talk, Qwen announces the 4 models (max/flash/plus/27) Late last week, Qwen posts a jpeg to announce a legendarily big fish. Last weekend, people on X starts getting early access to Qwen4. Qwen also teas…",
+          "content": {
+            "html": "<div><p>So if my memory serves me well:</p><ul><li>Late summer, Qwen 3.8 Flash Next announces the architecture</li><li>Late october, conference talk, Qwen announces the 4 models (max/flash/plus/27)</li><li>Late last week, Qwen posts a jpeg to announce a legendarily big fish.</li><li>Last weekend, people on X starts getting early access to Qwen4. Qwen also teases a soom (TM)</li></ul><p>Compare that with most other labs that just drops their model.</p><p>At that rate, I foresee the following circus:</p><ul><li>Late this week, Qwen will release a similar countdown timer than we had for 3.8</li><li>Early next week the IPO of ANT will happen, and the countdown will end suspiciously close to that</li><li>Upon release:<ul><li>Qwen will have the funny one that actually, the architecture changed a tiny bit since QFN and llama.cpp won't work day 1.</li></ul></li><li>Zillions of custom inference engines will be born that day.</li><li>An equal zillion of posts will land here and the mods will have a stroke</li><li>unsloth will release day 1 quants claiming best in class performance</li></ul><li>2 days after release, unsloth will apologies for the rare looping behaviour of the 27b at Q4, and ask everyone to re-download another 22GB of GGUF</li><p>Did I sum up where we are correctly?</p></div>\nsubmitted by<a href=\"https://www.reddit.com/user/Don_Moahskarton\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">/u/Don_Moahskarton</a>\n<br><span><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xrv2ae/anyone_else_feeling_like_qwen4s_release_happens/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[link]</a></span>\n<span><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xrv2ae/anyone_else_feeling_like_qwen4s_release_happens/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[comments]</a></span>",
+            "text": "So if my memory serves me well:\nLate summer, Qwen 3.8 Flash Next announces the architecture\nLate october, conference talk, Qwen announces the 4 models (max/flash/plus/27)\nLate last week, Qwen posts a jpeg to announce a legendarily big fish.\nLast weekend, people on X starts getting early access to Qwen4. Qwen also teases a soom (TM)\nCompare that with most other labs that just drops their model.\nAt that rate, I foresee the following circus:\nLate this week, Qwen will release a similar countdown timer than we had for 3.8\nEarly next week the IPO of ANT will happen, and the countdown will end suspiciously close to that\nUpon release: Qwen will have the funny one that actually, the architecture changed a tiny bit since QFN and llama.cpp won't work day 1.\nZillions of custom inference engines will be born that day.\nAn equal zillion of posts will land here and the mods will have a stroke\nunsloth will release day 1 quants claiming best in class performance\n2 days after release, unsloth will apologies for the rare looping behaviour of the 27b at Q4, and ask everyone to re-download another 22GB of GGUF\nDid I sum up where we are correctly?\nsubmitted by /u/Don_Moahskarton\n[link]\n[comments]",
+            "lead": "So if my memory serves me well:\nLate summer, Qwen 3.8 Flash Next announces the architecture\nLate october, conference talk, Qwen announces the 4 models (max/flash/plus/27)\nLate last week, Qwen posts a jpeg to announce a legendarily big fish.\nLast weekend, people on X starts getting early access to Qwen4. Qwen also teases a soom (TM)\nCompare that with most other labs that just drops their model.\nAt that rate, I foresee the following circus:\nLate this week, Q",
+            "chars": 1209,
+            "shown": 1209,
+            "truncated": false
+          },
+          "categories": [
+            "LocalLLaMA"
+          ],
+          "author": "/u/Don_Moahskarton",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "oss",
+          "metrics": {},
+          "quality": 6,
+          "score": 16.51,
+          "category": "local",
+          "subcategory": "runtime",
+          "practical": 1,
+          "slug": "fa4037ab5c85",
           "action": 1,
           "rank": 7.6,
           "tags": [
@@ -789,12 +814,14 @@
           "subcategory": "benchmark",
           "practical": 3,
           "slug": "3d1c2379786e",
-          "action": 2,
-          "rank": 10.2,
+          "action": 3,
+          "rank": 11.8,
           "tags": [
-            "benchmark",
-            "free"
-          ]
+            "free",
+            "benchmark"
+          ],
+          "zhTitle": "Top 7 决策模型benchmark：评估 2,826 个真实决策",
+          "zhSummary": "本报告评估了 7 个专门决策模型，在 2,826 个真实决策中测试。与开源生成语言模型不同，决策模型评估结构化输入并产生预定义类别的离散概率分布。"
         },
         {
           "sourceId": "arxiv-cs",

@@ -1,0 +1,368 @@
+{
+  "day": "2026-11-03",
+  "generatedAt": "2026-11-10T05:03:52.835Z",
+  "timezone": "Asia/Shanghai",
+  "windowHours": 48,
+  "window": {
+    "since": "2026-11-02T16:00:00.000Z",
+    "until": "2026-11-03T16:00:00.000Z"
+  },
+  "counts": {
+    "sources": 36,
+    "okSources": 31,
+    "fetched": 2897,
+    "duplicates": 26,
+    "carried": 2,
+    "added": 0,
+    "fallback": 0,
+    "lowQuality": 2709,
+    "published": 2
+  },
+  "sources": [
+    {
+      "id": "openai-news",
+      "name": "OpenAI News",
+      "ok": true,
+      "items": 1372,
+      "error": null
+    },
+    {
+      "id": "google-deepmind",
+      "name": "Google DeepMind",
+      "ok": true,
+      "items": 100,
+      "error": null
+    },
+    {
+      "id": "google-ai",
+      "name": "Google AI Blog",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "hf-blog",
+      "name": "Hugging Face Blog",
+      "ok": true,
+      "items": 900,
+      "error": null
+    },
+    {
+      "id": "hf-daily-papers",
+      "name": "Hugging Face Daily Papers",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "interconnects",
+      "name": "Interconnects",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "latent-space",
+      "name": "Latent Space",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "simon-willison",
+      "name": "Simon Willison",
+      "ok": true,
+      "items": 30,
+      "error": null
+    },
+    {
+      "id": "techcrunch-ai",
+      "name": "TechCrunch AI",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "ars-ai",
+      "name": "Ars Technica AI",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "mit-tr-ai",
+      "name": "MIT Tech Review",
+      "ok": true,
+      "items": 10,
+      "error": null
+    },
+    {
+      "id": "qbitai",
+      "name": "量子位",
+      "ok": true,
+      "items": 10,
+      "error": null
+    },
+    {
+      "id": "arxiv-cs",
+      "name": "arXiv cs.AI/CL/LG",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "hn-newest",
+      "name": "Hacker News (AI)",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "hn-algolia",
+      "name": "Hacker News Search",
+      "ok": true,
+      "items": 25,
+      "error": null
+    },
+    {
+      "id": "lobsters-ai",
+      "name": "Lobsters AI",
+      "ok": true,
+      "items": 25,
+      "error": null
+    },
+    {
+      "id": "reddit-local-llama",
+      "name": "r/LocalLLaMA",
+      "ok": true,
+      "items": 25,
+      "error": null
+    },
+    {
+      "id": "github-trending",
+      "name": "GitHub 新晋 AI 项目",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "microsoft-research",
+      "name": "Microsoft Research",
+      "ok": true,
+      "items": 10,
+      "error": null
+    },
+    {
+      "id": "github-blog",
+      "name": "GitHub Blog",
+      "ok": true,
+      "items": 10,
+      "error": null
+    },
+    {
+      "id": "theverge",
+      "name": "The Verge",
+      "ok": true,
+      "items": 10,
+      "error": null
+    },
+    {
+      "id": "sspai",
+      "name": "少数派",
+      "ok": true,
+      "items": 10,
+      "error": null
+    },
+    {
+      "id": "appinn",
+      "name": "小众软件",
+      "ok": true,
+      "items": 10,
+      "error": null
+    },
+    {
+      "id": "producthunt",
+      "name": "Product Hunt",
+      "ok": true,
+      "items": 50,
+      "error": null
+    },
+    {
+      "id": "hn-show-ai",
+      "name": "Show HN (AI)",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "ai-news-applied",
+      "name": "AI News (应用)",
+      "ok": true,
+      "items": 0,
+      "error": null
+    },
+    {
+      "id": "juejin",
+      "name": "掘金 AI",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "reddit-sideproject",
+      "name": "r/SideProject",
+      "ok": false,
+      "items": 0,
+      "error": "HTTP 429"
+    },
+    {
+      "id": "lcz-hardware",
+      "name": "抡锤者 AI硬件",
+      "ok": false,
+      "items": 0,
+      "error": "ETIMEDOUT"
+    },
+    {
+      "id": "lcz-llm",
+      "name": "抡锤者 模型部署讨论",
+      "ok": false,
+      "items": 0,
+      "error": "ETIMEDOUT"
+    },
+    {
+      "id": "lcz-agent",
+      "name": "抡锤者 Agent 工具",
+      "ok": false,
+      "items": 0,
+      "error": "ETIMEDOUT"
+    },
+    {
+      "id": "lcz-media",
+      "name": "抡锤者 AI 音视频画图",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "lcz-selfmedia",
+      "name": "抡锤者 自媒体运营",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "lcz-web",
+      "name": "抡锤者 建站与网络赚钱",
+      "ok": false,
+      "items": 0,
+      "error": "ETIMEDOUT"
+    },
+    {
+      "id": "lcz-crisis",
+      "name": "抡锤者 AI 危机与机遇",
+      "ok": true,
+      "items": 20,
+      "error": null
+    },
+    {
+      "id": "lcz-news",
+      "name": "抡锤者 资讯",
+      "ok": true,
+      "items": 20,
+      "error": null
+    }
+  ],
+  "categories": [
+    {
+      "id": "apps",
+      "label": "AI 应用",
+      "items": [
+        {
+          "sourceId": "latent-space",
+          "sourceName": "Latent Space",
+          "title": "Building Legal Agents When You Can't See the Data - Jacob Lauritzen, CTO of Legora",
+          "url": "https://latent.space/p/building_legal_agents_when_you_can_t_see_the_data_-_jacob_lauritzen_cto_of_legora/",
+          "id": "urn:latent-space:post:pod_ep_01a19df0-34a3-7307-96fc-48928908772b",
+          "published": "2026-11-02T22:54:03.000Z",
+          "summary": "Legora can’t read a single trace of what its agent does for a lawyer. The data belongs to the law firm’s clients. How do you build and test an agent when you can’t see its work? Jacob Lauritzen is the CTO of Legora, one of the fastest-growing companies in legal tech history. The team started in a Stockholm basement wi…",
+          "content": {
+            "html": "<p>Legora can’t read a single trace of what its agent does for a lawyer. The data belongs to the law firm’s clients. How do you build and test an agent when you can’t see its work?</p>\n<p>Jacob Lauritzen is the CTO of Legora, one of the fastest-growing companies in legal tech history. The team started in a Stockholm basement with ChatGPT, Swedish law, and a search tool. Today, a lawyer can use Legora to draft and edit Word documents, review 10,000 contracts in a single table, or run due diligence. The agent also coordinates work between lawyers, clients, and other agents. When Legora made its own acquisitions, the team used it for diligence.</p>\n<p>What we talked about</p>\n<p>• Why Legora resisted adding a model picker for years, and why it finally added one</p>\n<p>• Jacob’s estimate that models already do about 60% of legal work well, and why the rest takes a smarter model</p>\n<p>• How three engineers and three lawyers build test environments modeled on customers’ work, much like the “worlds” used in reinforcement learning</p>\n<p>• A citation problem where the model got it right 70% of the time, then 99% after one release. Legora didn’t have to change anything.</p>\n<p>• Why Legora runs everything on Azure and why it doesn’t use ElevenLabs</p>\n<p>• Tabular Review, the million-cell spreadsheet the industry copied down to the name</p>\n<p>• How intake works, how agents create lists, and how a list can start another agent</p>\n<p>• What legal engineers and forward-deployed engineers each do, and who gets to write code</p>\n<p>• The 300 Spartans slide Jacob used to argue that 20 engineers would be enough forever. Now there are 100, and he still feels short-handed.</p>\n<p>• Why Jacob finds Fable and Opus too chatty for drafting and likes Astra’s concise writing</p>\n<p>• Why drafting a long contract is a search problem</p>\n<p>• Whether model labs will cut off legal tools the way they cut off coding tools</p>\n<p>• What happens to law firm partnerships, the billable hour, and jobs for junior lawyers</p>\n<p>Legora is hiring engineers in New York, Stockholm, and London.</p>\n<p>Chapters</p>\n<p>0:00 Cold open</p>\n<p>0:40 Meet Jacob Lauritzen, CTO of Legora</p>\n<p>1:05 Starting out as underdogs in a Stockholm basement</p>\n<p>1:54 How Legora grew from ChatGPT with Swedish law into a legal agent</p>\n<p>4:12 The switch from assistant to agent</p>\n<p>5:23 Which models Legora uses and why it added a model picker</p>\n<p>7:48 Are today’s models good enough for lawyers?</p>\n<p>8:20 What agents couldn’t do nine months ago</p>\n<p>9:18 Testing the agent in simulated worlds and a 10,000-file data room</p>\n<p>10:07 The evals team and Legora’s 100 legal engineers</p>\n<p>11:03 When evals didn’t seem worth it and one release took citations from 70% to 99%</p>\n<p>12:18 What legal practice could look like in five to ten years</p>\n<p>14:18 Will the law firm partnership model survive?</p>\n<p>16:40 What happens to paralegals and junior lawyers?</p>\n<p>18:00 The billable hour and why earlier legal tech fell short</p>\n<p>19:39 Where the money goes now</p>\n<p>22:44 How Legora used its own product for acquisition diligence</p>\n<p>23:59 How Swedish and American law firms differ</p>\n<p>26:12 Product metrics when you can’t read the traces</p>\n<p>27:41 Paraphrasing traces and narrowing failures down to 10 or 20 types</p>\n<p>28:42 Why data privacy led Legora to run everything on Azure</p>\n<p>30:04 Open-weight models and…</p>",
+            "text": "Legora can’t read a single trace of what its agent does for a lawyer. The data belongs to the law firm’s clients. How do you build and test an agent when you can’t see its work?\nJacob Lauritzen is the CTO of Legora, one of the fastest-growing companies in legal tech history. The team started in a Stockholm basement with ChatGPT, Swedish law, and a search tool. Today, a lawyer can use Legora to draft and edit Word documents, review 10,000 contracts in a single table, or run due diligence. The agent also coordinates work between lawyers, clients, and other agents. When Legora made its own acquisitions, the team used it for diligence.\nWhat we talked about\n• Why Legora resisted adding a model picker for years, and why it finally added one\n• Jacob’s estimate that models already do about 60% of legal work well, and why the rest takes a smarter model\n• How three engineers and three lawyers build test environments modeled on customers’ work, much like the “worlds” used in reinforcement learning\n• A citation problem where the model got it right 70% of the time, then 99% after one release. Legora didn’t have to change anything.\n• Why Legora runs everything on Azure and why it doesn’t use ElevenLabs\n• Tabular Review, the million-cell spreadsheet the industry copied down to the name\n• How intake works, how agents create lists, and how a list can start another agent\n• What legal engineers and forward-deployed engineers each do, and who gets to write code\n• The 300 Spartans slide Jacob used to argue that 20 engineers would be enough forever. Now there are 100, and he still feels short-handed.\n• Why Jacob finds Fable and Opus too chatty for drafting and likes Astra’s concise writing\n• Why drafting a long contract is a search problem\n• Whether model labs will cut off legal tools the way they cut off coding tools\n• What happens to law firm partnerships, the billable hour, and jobs for junior lawyers\nLegora is hiring engineers in New York, Stockholm, and London.\nChapters\n0:00 Cold open\n0:40 Meet Jacob Lauritzen, CTO of Legora\n1:05 Starting out as underdogs in a Stockholm basement\n1:54 How Legora grew from ChatGPT with Swedish law into a legal agent\n4:12 The switch from assistant to agent\n5:23 Which models Legora uses and why it added a model picker\n7:48 Are today’s models good enough for lawyers?\n8:20 What agents couldn’t do nine months ago\n9:18 Testing the agent in simulated worlds and a 10,000-file data room\n10:07 The evals team and Legora’s 100 legal engineers\n11:03 When evals didn’t seem worth it and one release took citations from 70% to 99%\n12:18 What legal practice could look like in five to ten years\n14:18 Will the law firm partnership model survive?\n16:40 What happens to paralegals and junior lawyers?\n18:00 The billable hour and why earlier legal tech fell short\n19:39 Where the money goes now\n22:44 How Legora used its own product for acquisition diligence\n23:59 How Swedish and American law firms differ\n26:12 Product metrics when you can’t read the traces\n27:41 Paraphrasing traces and narrowing failures down to 10 or 20 types\n28:42 Why data privacy led Legora to run everything on Azure\n30:04 Open-weight models and…",
+            "lead": "Legora can’t read a single trace of what its agent does for a lawyer. The data belongs to the law firm’s clients. How do you build and test an agent when you can’t see its work?\nJacob Lauritzen is the CTO of Legora, one of the fastest-growing companies in legal tech history. The team started in a Stockholm basement with ChatGPT, Swedish law, and a search tool. Today, a lawyer can use Legora to draft and edit Word documents, review 10,000 contracts in a sin",
+            "chars": 4972,
+            "shown": 3201,
+            "truncated": true
+          },
+          "categories": [],
+          "author": "Latent.Space",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "opinion",
+          "metrics": {},
+          "quality": 9,
+          "score": 10.8,
+          "category": "apps",
+          "subcategory": "office",
+          "practical": 1,
+          "slug": "8443a13ffeb1",
+          "action": 2,
+          "rank": 12.2,
+          "tags": [
+            "agent"
+          ],
+          "zhTitle": "当法律代理无法读取数据时如何开发",
+          "zhSummary": "Legora CTO Jacob Lauritzen"
+        }
+      ]
+    },
+    {
+      "id": "hardware",
+      "label": "AI 硬件",
+      "items": [
+        {
+          "sourceId": "lcz-news",
+          "sourceName": "抡锤者 资讯",
+          "lang": "zh",
+          "tier": 3,
+          "trustCategory": true,
+          "declaredCategory": "news",
+          "categories": [],
+          "author": "terry",
+          "id": "2810",
+          "title": "DeepSeek V5使用国产昇腾训练，美国淘汰A100，硬件很难维持长期高价，本地玩家中低端卡凑合过渡，别高位接盘！",
+          "url": "https://lcz.me/topic/2810",
+          "published": "2026-11-03T12:00:00.000Z",
+          "summary": "DeepSeek V5 啊，它现在传出来下一代训练的，主力架构就是华为的昇腾。那么这个也不算是意料之外了，因为很早之前 DeepSeek 就已经是从这个华为昇腾下单，然后梁子还抱怨说，华为只给他1万六千张。啊，这点玩意说这个，连这个小小的这个应用一下啊都不够，都不要说去训练下一代大模型了，根本就不够用。然后呢，华为可能说也是感受到了来自舆论的压力，是吧？毕竟 DeepSeek 是国产模型的这个扛把子嘛。在那段时间，大家对于 DeepSeek 的期望还是比其他的所有国产模型其实都要稍微高那么一点点的。而且 DeepSeek 一直以来确实是比较能打，是吧？它的大模型 DeepSeek V4、V4.1 Flash 系列，是吧？然后这个什…",
+          "metrics": {
+            "points": 1,
+            "comments": 1,
+            "views": 244
+          },
+          "excellent": false,
+          "content": {
+            "html": "<p>DeepSeek V5 啊，它现在传出来下一代训练的，主力架构就是华为的昇腾。那么这个也不算是意料之外了，因为很早之前 DeepSeek 就已经是从这个华为昇腾下单，然后梁子还抱怨说，华为只给他1万六千张。啊，这点玩意说这个，连这个小小的这个应用一下啊都不够，都不要说去训练下一代大模型了，根本就不够用。然后呢，华为可能说也是感受到了来自舆论的压力，是吧？毕竟 DeepSeek 是国产模型的这个扛把子嘛。在那段时间，大家对于 DeepSeek 的期望还是比其他的所有国产模型其实都要稍微高那么一点点的。而且 DeepSeek 一直以来确实是比较能打，是吧？它的大模型 DeepSeek V4、V4.1 Flash 系列，是吧？然后这个什么 DeepSeek Harness，在投入到市场上之后都是非常的牛逼。啊，这个反响非常的好，可以说在整个国产生态中，甚至在整个开源生态中，应该说是这个一骑绝尘。可能说只有阿里巴巴在这个开源的小模型领域，是吧，把 DeepSeek 挤出了市场。其他的真的国产的，这个标杆就是 DeepSeek。</p>\n<p><img src=\"https://upload.lcz.me/uploads/a0b9cb79-691a-4820-85f4-cbea572f68f5.jpeg\" alt=\"Deepseek openAI 梁文锋梗图.jpeg\" loading=\"lazy\"></p>\n<p>那你说像这样的评论视频，我本来应该是放在老特说那个频道，为什么要把它放到抡锤者这个频道？因为这个跟我们本地采购硬件其实是有比较大的关系的，能够非常大的影响我们以后采购硬件的策略。那你说我们现在采购硬件，我们是要去采购一些相对便宜的，一些这个比如说像 7900XTX 这样的，七八千块钱一张的卡，这种甜点卡；或者说是一些老老旧一点的，比如说什么双 2080TI，是吧？什么这个 3080、7900XT。我们是采用这些入门级的，或者甜点一点的卡，还是说我们要上这个比较大的强度，啊，去一步部署什么 4090 48G 啊、RTX Pro 5000 呐，是吧？犯不犯得着花几万块钱去买这么昂贵的硬件？那么今天这个事情就是一个非常明确的信号。我就认为就是，已经有的，你在涨价之前是吧买到的 RTX Pro 5000 呐，还是什么 3090 啊、7900XTX，买到这些硬件是吧，那么你们就偷着乐，就享用就行了。</p>\n<p>如果说你还没有买，现在我都不建议你们去采购昂贵的、超过3万块钱的卡，我都完全不推荐大家去买了。为什么呢？因为前几天我做视频的时候，就包括我们论坛，其实很多人都看到了这些讯息。就说美国那边已经数据中心开始在清理 A100 了，他现在清理的是 A100 40G，而且量非常大。然后我相信 A100 80G 很快就会被摆上货架。因为对于美国人来说，它的这个数据中心、它的电力资源是非常有限的。它把这些地方这个宝贵的位置让这个什么 A100 这样的安培架构的卡占住，它产生的效益完全不能跟什么 Hopper 架构、跟这个什么 Blackwell 架构，或者说跟 Rubin 架构来相比。甚至很快啊，随着这个英伟达 Rubin 这个量产，台积电给它放量，那么你部署这个 H100、H200，它很有可能都是非常不划算的。</p>\n<p><img src=\"https://upload.lcz.me/uploads/d0c3ff27-eeaf-4052-816e-464d1f614fb1.avif\" alt=\"H100.avif\" loading=\"lazy\"></p>\n<p>那美国它现在是受限于环保也好，还是国内的这个法律政策也好，它征地的难度也好也好，是吧？因为毕竟是这个民主社会嘛，它这个搞什么环评啊、这个征地啊，并不像我们中国这样的集权国家，是吧，这么这么快。我们是中央集权嘛，就是政府的权力大得很。那美国它毕竟不是这种这种情况，不能跟我们中国比基建。那它企业的选择就是把旧的卡淘汰出来，它没有其他的道路。那你说淘汰出来这些卡，美国跟欧洲，他们这些个人玩家，他们能够把它消费掉吗？</p>\n<p>啊，历史无数次证明啊，能够消耗掉这么庞大这个洋垃圾的就只有我们中国。而且我们中国是企业消耗相当大一部分，然后个人玩家消耗也是相当大。这些卡以后都会到中国来，因为我们中国这边愿意出更高的价格。但是这个量，我们知道安培架构它的量是相当庞大的。它是 AI 世代之后的卡。就说呃，安培架构虽然呢，它也是矿潮的那一代了，但是那个时代它的这个什么 A100 也好，它是已经明确是为了 AI 设计的。大家明白我的意思吗？A100、A800 这些卡，它是明确是为了 AI 设计的，它就是 AI 时代的卡。它身上有这个什么 BF16，这些最重要的 FP32，这些最重要的硬件加速指令集，是吧？它的带宽都是相当的可观。算力跟带宽，包括生态都没有明显的残疾。从这个数据中心退役之后，啊，国外消化不了，最终都会到中国来。</p>\n<p><img src=\"https://upload.lcz.me/uploads/6181bbf8-68df-48e1-a6a6-0dda0f8178b8.jpeg\" alt=\"不要买高价显卡.jpeg\" loading=\"lazy\"></p>\n<p>那对于我们本地 AI 部署，你想一想我们这些本地玩家，我们连 2080TI 都玩的飞起，是吧？像 A100 这种大带宽、专业的这种数据卡，本身体质比较好，是吧？用料非常扎实的这些卡，到我们本地来，到我们中国来，你说我们是吧，能不掀起一个采购狂欢吗？</p>\n<p>那如果说供应的量大，它价格自然就会下来。当然了，有人会说啊，企业会去买啊，是吧？企业买了这个，呃，好的都被企业买走了，企业会出高价。哎，如果 DeepSeek 用华为训练这个事情都搞定了，那就释放出一个信号了。你想一想，DeepSeek 是中国 AI 的这个标杆企业，是吧？然后它不仅使用国产的 AI 芯片来推理，还用国产的 AI 芯片来训练。那么以后无论是训练还是推理，DeepSeek 就是一个标杆。是吧？你字节跳动也好，腾讯也好，阿里巴巴也好啊，你说我是用英伟达的卡来训练的模型，你可能在政治上就不过关。这个就是，怎么讲呢，你这个态度问题。那这些大企业，我觉得以后很难再大规模地去囤积洋垃圾了。</p>\n<p>那市场上跟我们这些个人玩家、跟我们这些屌丝玩家抢购的，抢购这些洋垃圾的，那都是中小企业嘛。那中小企业的量是没有大企业的量那么夸张的。那么我们是不是各方面利好？啊，我们最终会迎来一个，怎么说呢，买方市场，重新回到买方市场。其实 GPU 也好，还是它的这个前身的游戏显卡也好，是吧？我们现在这个 AI GPU 是吧，包括这个游戏显卡，它其实理性的状态就应该是一个买方市场。是吧？这个卖方市场在任何国家、任何历史阶段，它都是一个特殊的存在形式，由于某种特殊的原因造就的，它不应该是一个常态。</p>\n<p>我们现在这个 AI 硬件的价格是被严重高估的。如果说像什么华为、寒武纪、沐曦、壁仞、摩尔线程这些国产 AI 芯片企业不断地持续地放量供应，然后中国有些跟政府相关的业务就必须采用国产芯片，是吧？这些 AI 芯片企业有的实力很强，像这个华为，像这个什么寒武纪，是吧？有些可能就是，啊，说直白一点就是骗钱的货，啊，骗国家补贴，搞这个信创市场的。是吧？但是无论如何，市场这个供应总量会越来越高。我们国内，包括这个，尤其是政府这一块了，对于你使用、对于企业使用这个国外 AI 算力，它的这个政策我相信会越来越趋严的。你可能使用国外的 AI 芯片来推理、来训练，那么你有很多市场你是进入不了的。</p>\n<p><img src=\"https://upload.lcz.me/uploads/fba57d63-fa72-4212-b4ad-e17e3edcef4f.jpg\" alt=\"寒武纪展厅.jpg\" loading=\"lazy\"></p>\n<p>再加上国内这些 AI 企业在推理市场上的效率大幅地提升，性价比大幅地提升，这个中国这个芯片产能在不断地攀高，最终跟我们这些屌丝玩家抢购硬件的企业会越来越少。哎，我们还不要忘了，这个世界上疯狂地为 AI 投入、砸下大把金钱的，实际上就美国跟中国。美国的投入是远远多于中国，是吧？但是中国的投入也是远远多于欧洲、多于什么拉美啊、东南亚呀，是吧？多于这些世界上的其他国家和地区。这个东西你在美国用，无论如何，对于美国的企业来说是不划算的，是吧？美国的个人需求量又不大，它只能到中国来。再加上我们中国这边本土的这个 AI 硬件在放量供应，我是不太相信这个目前这种硬硬件疯狂涨价的这个变态市场格局能够长期持续下去，是吧？我们就给它设定一个期限，我们说如果明年这个时候不爆，是吧？再给它半年，再过一年半，我相信它肯定会爆。是吧？我们就按照它能够持续两年来讲，这个是非常极端的情况了吧。</p>\n<p>那我们现在在本地采购一套过得去的，啊，就说 7900XTX 也好、3090 也好，是吧？…</p>",
+            "text": "DeepSeek V5 啊，它现在传出来下一代训练的，主力架构就是华为的昇腾。那么这个也不算是意料之外了，因为很早之前 DeepSeek 就已经是从这个华为昇腾下单，然后梁子还抱怨说，华为只给他1万六千张。啊，这点玩意说这个，连这个小小的这个应用一下啊都不够，都不要说去训练下一代大模型了，根本就不够用。然后呢，华为可能说也是感受到了来自舆论的压力，是吧？毕竟 DeepSeek 是国产模型的这个扛把子嘛。在那段时间，大家对于 DeepSeek 的期望还是比其他的所有国产模型其实都要稍微高那么一点点的。而且 DeepSeek 一直以来确实是比较能打，是吧？它的大模型 DeepSeek V4、V4.1 Flash 系列，是吧？然后这个什么 DeepSeek Harness，在投入到市场上之后都是非常的牛逼。啊，这个反响非常的好，可以说在整个国产生态中，甚至在整个开源生态中，应该说是这个一骑绝尘。可能说只有阿里巴巴在这个开源的小模型领域，是吧，把 DeepSeek 挤出了市场。其他的真的国产的，这个标杆就是 DeepSeek。\n那你说像这样的评论视频，我本来应该是放在老特说那个频道，为什么要把它放到抡锤者这个频道？因为这个跟我们本地采购硬件其实是有比较大的关系的，能够非常大的影响我们以后采购硬件的策略。那你说我们现在采购硬件，我们是要去采购一些相对便宜的，一些这个比如说像 7900XTX 这样的，七八千块钱一张的卡，这种甜点卡；或者说是一些老老旧一点的，比如说什么双 2080TI，是吧？什么这个 3080、7900XT。我们是采用这些入门级的，或者甜点一点的卡，还是说我们要上这个比较大的强度，啊，去一步部署什么 4090 48G 啊、RTX Pro 5000 呐，是吧？犯不犯得着花几万块钱去买这么昂贵的硬件？那么今天这个事情就是一个非常明确的信号。我就认为就是，已经有的，你在涨价之前是吧买到的 RTX Pro 5000 呐，还是什么 3090 啊、7900XTX，买到这些硬件是吧，那么你们就偷着乐，就享用就行了。\n如果说你还没有买，现在我都不建议你们去采购昂贵的、超过3万块钱的卡，我都完全不推荐大家去买了。为什么呢？因为前几天我做视频的时候，就包括我们论坛，其实很多人都看到了这些讯息。就说美国那边已经数据中心开始在清理 A100 了，他现在清理的是 A100 40G，而且量非常大。然后我相信 A100 80G 很快就会被摆上货架。因为对于美国人来说，它的这个数据中心、它的电力资源是非常有限的。它把这些地方这个宝贵的位置让这个什么 A100 这样的安培架构的卡占住，它产生的效益完全不能跟什么 Hopper 架构、跟这个什么 Blackwell 架构，或者说跟 Rubin 架构来相比。甚至很快啊，随着这个英伟达 Rubin 这个量产，台积电给它放量，那么你部署这个 H100、H200，它很有可能都是非常不划算的。\n那美国它现在是受限于环保也好，还是国内的这个法律政策也好，它征地的难度也好也好，是吧？因为毕竟是这个民主社会嘛，它这个搞什么环评啊、这个征地啊，并不像我们中国这样的集权国家，是吧，这么这么快。我们是中央集权嘛，就是政府的权力大得很。那美国它毕竟不是这种这种情况，不能跟我们中国比基建。那它企业的选择就是把旧的卡淘汰出来，它没有其他的道路。那你说淘汰出来这些卡，美国跟欧洲，他们这些个人玩家，他们能够把它消费掉吗？\n啊，历史无数次证明啊，能够消耗掉这么庞大这个洋垃圾的就只有我们中国。而且我们中国是企业消耗相当大一部分，然后个人玩家消耗也是相当大。这些卡以后都会到中国来，因为我们中国这边愿意出更高的价格。但是这个量，我们知道安培架构它的量是相当庞大的。它是 AI 世代之后的卡。就说呃，安培架构虽然呢，它也是矿潮的那一代了，但是那个时代它的这个什么 A100 也好，它是已经明确是为了 AI 设计的。大家明白我的意思吗？A100、A800 这些卡，它是明确是为了 AI 设计的，它就是 AI 时代的卡。它身上有这个什么 BF16，这些最重要的 FP32，这些最重要的硬件加速指令集，是吧？它的带宽都是相当的可观。算力跟带宽，包括生态都没有明显的残疾。从这个数据中心退役之后，啊，国外消化不了，最终都会到中国来。\n那对于我们本地 AI 部署，你想一想我们这些本地玩家，我们连 2080TI 都玩的飞起，是吧？像 A100 这种大带宽、专业的这种数据卡，本身体质比较好，是吧？用料非常扎实的这些卡，到我们本地来，到我们中国来，你说我们是吧，能不掀起一个采购狂欢吗？\n那如果说供应的量大，它价格自然就会下来。当然了，有人会说啊，企业会去买啊，是吧？企业买了这个，呃，好的都被企业买走了，企业会出高价。哎，如果 DeepSeek 用华为训练这个事情都搞定了，那就释放出一个信号了。你想一想，DeepSeek 是中国 AI 的这个标杆企业，是吧？然后它不仅使用国产的 AI 芯片来推理，还用国产的 AI 芯片来训练。那么以后无论是训练还是推理，DeepSeek 就是一个标杆。是吧？你字节跳动也好，腾讯也好，阿里巴巴也好啊，你说我是用英伟达的卡来训练的模型，你可能在政治上就不过关。这个就是，怎么讲呢，你这个态度问题。那这些大企业，我觉得以后很难再大规模地去囤积洋垃圾了。\n那市场上跟我们这些个人玩家、跟我们这些屌丝玩家抢购的，抢购这些洋垃圾的，那都是中小企业嘛。那中小企业的量是没有大企业的量那么夸张的。那么我们是不是各方面利好？啊，我们最终会迎来一个，怎么说呢，买方市场，重新回到买方市场。其实 GPU 也好，还是它的这个前身的游戏显卡也好，是吧？我们现在这个 AI GPU 是吧，包括这个游戏显卡，它其实理性的状态就应该是一个买方市场。是吧？这个卖方市场在任何国家、任何历史阶段，它都是一个特殊的存在形式，由于某种特殊的原因造就的，它不应该是一个常态。\n我们现在这个 AI 硬件的价格是被严重高估的。如果说像什么华为、寒武纪、沐曦、壁仞、摩尔线程这些国产 AI 芯片企业不断地持续地放量供应，然后中国有些跟政府相关的业务就必须采用国产芯片，是吧？这些 AI 芯片企业有的实力很强，像这个华为，像这个什么寒武纪，是吧？有些可能就是，啊，说直白一点就是骗钱的货，啊，骗国家补贴，搞这个信创市场的。是吧？但是无论如何，市场这个供应总量会越来越高。我们国内，包括这个，尤其是政府这一块了，对于你使用、对于企业使用这个国外 AI 算力，它的这个政策我相信会越来越趋严的。你可能使用国外的 AI 芯片来推理、来训练，那么你有很多市场你是进入不了的。\n再加上国内这些 AI 企业在推理市场上的效率大幅地提升，性价比大幅地提升，这个中国这个芯片产能在不断地攀高，最终跟我们这些屌丝玩家抢购硬件的企业会越来越少。哎，我们还不要忘了，这个世界上疯狂地为 AI 投入、砸下大把金钱的，实际上就美国跟中国。美国的投入是远远多于中国，是吧？但是中国的投入也是远远多于欧洲、多于什么拉美啊、东南亚呀，是吧？多于这些世界上的其他国家和地区。这个东西你在美国用，无论如何，对于美国的企业来说是不划算的，是吧？美国的个人需求量又不大，它只能到中国来。再加上我们中国这边本土的这个 AI 硬件在放量供应，我是不太相信这个目前这种硬硬件疯狂涨价的这个变态市场格局能够长期持续下去，是吧？我们就给它设定一个期限，我们说如果明年这个时候不爆，是吧？再给它半年，再过一年半，我相信它肯定会爆。是吧？我们就按照它能够持续两年来讲，这个是非常极端的情况了吧。\n那我们现在在本地采购一套过得去的，啊，就说 7900XTX 也好、3090 也好，是吧？…",
+            "lead": "DeepSeek V5 啊，它现在传出来下一代训练的，主力架构就是华为的昇腾。那么这个也不算是意料之外了，因为很早之前 DeepSeek 就已经是从这个华为昇腾下单，然后梁子还抱怨说，华为只给他1万六千张。啊，这点玩意说这个，连这个小小的这个应用一下啊都不够，都不要说去训练下一代大模型了，根本就不够用。然后呢，华为可能说也是感受到了来自舆论的压力，是吧？毕竟 DeepSeek 是国产模型的这个扛把子嘛。在那段时间，大家对于 DeepSeek 的期望还是比其他的所有国产模型其实都要稍微高那么一点点的。而且 DeepSeek 一直以来确实是比较能打，是吧？它的大模型 DeepSeek V4、V4.1 Flash 系列，是吧？然后这个什么 DeepSeek Harness，在投入到市场上之后都是非常的牛逼。啊，这个反响非常的好，可以说在整个国产生态中，甚至在整个开源生态中，应该说是这个一骑绝尘。可能说只有阿里巴巴在这个开源的小模型领域，是吧，把 DeepSeek 挤出了市场。其他的真的国产的，这个标杆就是 Dee",
+            "chars": 4092,
+            "shown": 3186,
+            "truncated": true
+          },
+          "quality": 7,
+          "score": 10.83,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 4,
+          "slug": "3ce11065969d",
+          "action": 4,
+          "rank": 13.4,
+          "tags": [
+            "local",
+            "generate",
+            "free"
+          ]
+        }
+      ]
+    }
+  ]
+}
