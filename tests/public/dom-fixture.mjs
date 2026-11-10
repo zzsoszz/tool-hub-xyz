@@ -19,6 +19,7 @@ class Node {
     this.value = attrs.value ?? '';
     this.src = attrs.src ?? '';
     this.alt = attrs.alt ?? '';
+    this.style = {};
     this.classList = { contains: (name) => this.className.split(/\s+/).includes(name) };
     if (attrs.dataset) Object.assign(this.dataset, attrs.dataset);
   }
@@ -44,6 +45,11 @@ class Node {
   getAttribute(name) {
     if (name === 'class') return this.className;
     return this.attrs[name];
+  }
+
+  removeAttribute(name) {
+    if (name === 'class') this.className = '';
+    delete this.attrs[name];
   }
 
   closest(selector) {

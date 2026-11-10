@@ -490,6 +490,7 @@ main {
 
 .story-thumb-link {
   grid-column: 3;
+  position: relative;
   display: block;
   aspect-ratio: 4 / 3;
   background: var(--paper-2);
@@ -498,6 +499,25 @@ main {
 
 .story-thumb-link:hover {
   border-color: var(--pine);
+}
+
+/* 点缩略图是放大这张图，跳转入口留在标题链接和文章页上，所以这里明确给出「放大」提示。 */
+.story-thumb-link::after {
+  content: '放大';
+  position: absolute;
+  right: 6px;
+  bottom: 6px;
+  padding: 3px 9px;
+  font: 600 12px var(--sans);
+  color: var(--ink);
+  background: var(--signal);
+  border: 1px solid var(--signal-ink);
+  opacity: 0;
+}
+
+.story-thumb-link:hover::after,
+.story-thumb-link:focus-within::after {
+  opacity: 1;
 }
 
 .story-thumb {
@@ -1464,7 +1484,7 @@ main {
   max-width: 78ch;
 }
 
-.article img[role='button'] {
+main img[data-zoom] {
   cursor: zoom-in;
 }
 
@@ -1484,28 +1504,67 @@ main {
 .lightbox-frame {
   margin: 0;
   max-width: min(94vw, 1200px);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .lightbox-image {
   max-width: 100%;
   max-height: 78vh;
+  min-width: min(45vw, 360px);
   height: auto;
   background: var(--paper);
+  cursor: zoom-in;
+  touch-action: none;
+  transform-origin: center;
+  transition: transform 120ms ease-out;
 }
 
-.lightbox-caption {
-  margin-top: 8px;
-  font: 13.5px var(--sans);
-  color: var(--paper);
+.lightbox-image[data-zoom-scale]:not([data-zoom-scale='100%']) {
+  cursor: grab;
 }
 
-.lightbox-close {
+.lightbox-image[data-zoom-dragging='true'] {
+  cursor: grabbing;
+}
+
+.lightbox-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.lightbox-bar button {
   font: 13px var(--sans);
   color: var(--ink);
   background: var(--signal);
   border: 1px solid var(--signal-ink);
   padding: 6px 14px;
   cursor: pointer;
+}
+
+.lightbox-scale {
+  margin: 0;
+  font: 12.5px var(--sans);
+  color: var(--paper-2);
+}
+
+.lightbox-caption {
+  margin-top: 8px;
+  font: 13.5px var(--sans);
+  color: var(--paper);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.lightbox-source {
+  color: var(--signal);
 }
 
 .lightbox-hint {
