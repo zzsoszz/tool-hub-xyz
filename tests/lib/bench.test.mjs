@@ -180,3 +180,18 @@ test('translatesSetupWordsButKeepsNumbersAndQuantNames', () => {
   assert.equal(translateSetup('about 73'), '约 73');
   assert.equal(translateSetup('0.1.31 to 0.1.39'), '0.1.31 至 0.1.39');
 });
+
+test('translatesWholeReportSentencesBeforeIndividualWords', () => {
+  assert.equal(translateSetup('cold prefill in README'), '冷启动读取见原报告');
+  assert.equal(translateSetup('five opt-ins off 756 / 1,722; on 2,052'), '五个可选开关关闭 756 / 1,722; 已开 2,052');
+  assert.equal(translateSetup('1M disk restore 6.107 s'), '1M 磁盘恢复 6.107 秒');
+});
+
+test('keepsReportCellsChineseApartFromNumbersUnitsAndBrandNames', async () => {
+  const tables = buildCommunityTables(parseCommunityRows(await fixture('strata-community-prose.md')));
+  const [first, second] = tables.others;
+  assert.equal(first.note, '冷启动读取见原报告 (约 2,500 在 32K-256K) ｜ IQ2_XS 97.9 / 94.3 / 90.0 / 82.4; IQ3_XXS 76 / 71 / 70 / 56 (32K / 64K / 128K / 256K)');
+  assert.equal(second.note, '6,687 / 6,426 (32K / 131K, 贪心, n=2) ｜ 198.9 / 190.6 (同一批运行); 原生 1M 磁盘恢复 6.107 秒');
+  assert.equal(second.engine, '本地修改版构建 (provenance.json)');
+  assert.deepEqual(tables.output, []);
+});

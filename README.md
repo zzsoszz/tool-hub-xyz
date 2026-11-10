@@ -157,7 +157,7 @@ curl -X DELETE https://tool-hub.xyz/api/comments/12 -H "Authorization: Bearer <M
 | 托管模型价格与上下文 | `/bench/model-pricing` | `https://openrouter.ai/api/v1/models` |
 
 - **分工**：`src/bench.mjs` 只抓原文并记录 commit 与 SHA-256，`src/lib/bench.mjs` 只做解析，`config/bench.json` 只提供中文表头、结论、复现步骤与来源清单，`src/lib/render.mjs` 不产生任何数字。
-- **采信规则**：只有整格就是 `a / b / c` 纯数字序列的单元格才进数字表；一格塞了多种量化、带解释文字或带范围的行全部落到「其余报告」列表并保留原表写法，脚本不猜数字。
+- **采信规则**：只有整格就是 `a / b / c` 纯数字序列的单元格才进数字表；一格塞了多种量化、带解释文字或带范围的行全部落到「其余报告」列表：数字与单位照抄原文，文字翻成中文，脚本不猜数字。
 - **可核对**：每页底部列出抓取时间、commit、每个文件的 SHA-256 与字节数；表格里每行最后的链接指向抓取那一版原文（`blob/<commit>/...`）；`/bench/<id>.json` 是本页用的原始结构化数据，`/bench/<id>-chart.svg` 是图表本体，不依赖第三方图表库。
 - **可复现**：每页的「复现与核对方法」给出可直接执行的命令（标准协议 `strata bench run` / 快速自测 `bench.sh` / 同机 A/B `--compare`），并附协议 ID `strata-qwen38-thinking-v1-draft.1` 与冻结提示词包哈希。
 - **抓取失败**：沿用已提交的上一版数据并在日志里标注；`npm run bench -- --offline` 直接用仓库里的数据，CI 里这一步是 `continue-on-error`。

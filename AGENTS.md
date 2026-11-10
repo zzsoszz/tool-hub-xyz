@@ -77,7 +77,8 @@ npm run lint       # syntax, indentation, trailing whitespace, secret scan
   `config/bench.json`. `src/lib/render.mjs` must never invent a number.
 - A cell counts as data only when the whole cell is a pure number series such as
   `1,428 / 2,454 / 2,785`. Anything with prose, ranges or several configs goes to the
-  "其余报告" list with the original wording preserved.
+  "其余报告" list: numbers and units stay verbatim, the wording turns Chinese through the
+  label maps in `src/lib/bench.mjs`, applied as whole sentences before single words.
 - Every conclusion and every table row links back to the exact revision it came from
   (`https://github.com/<owner>/<repo>/blob/<commit>/...`), and each page prints the commit,
   per-file SHA-256 and byte counts plus a downloadable `/bench/<id>.json`.

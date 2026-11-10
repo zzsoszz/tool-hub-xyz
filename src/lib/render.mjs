@@ -663,7 +663,7 @@ function communityTableRows(tableId, rows) {
   ];
   if (tableId === 'others') {
     return {
-      columns: [...baseColumns, { key: 'raw', label: '原表写法' }, { key: 'source', label: '原报告' }],
+      columns: [...baseColumns, { key: 'raw', label: '原报告说法' }, { key: 'source', label: '原报告' }],
       rows: rows.map((row) => ({
         hardware: escapeHtml(row.hardware),
         model: escapeHtml(row.model),
@@ -674,7 +674,7 @@ function communityTableRows(tableId, rows) {
     };
   }
   return {
-    columns: [...baseColumns, ...numericColumns, { key: 'raw', label: '原表写法' }, { key: 'source', label: '原报告' }],
+    columns: [...baseColumns, ...numericColumns, { key: 'raw', label: '原报告说法' }, { key: 'source', label: '原报告' }],
     rows: rows.map((row) => ({
       hardware: escapeHtml(row.hardware),
       model: escapeHtml(row.model),

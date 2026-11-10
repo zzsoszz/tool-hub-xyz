@@ -1,7 +1,7 @@
 {
   "id": "strata-community",
   "kind": "strata-community",
-  "collectedAt": "2026-11-10T00:40:15.381Z",
+  "collectedAt": "2026-11-10T01:07:15.945Z",
   "upstream": {
     "label": "Niko1221/Strata · bench/results/COMMUNITY.md",
     "url": "https://github.com/Niko1221/Strata/tree/main/bench/results"
@@ -12,7 +12,7 @@
       "rows": [
         {
           "folder": "2026-10-08-community-rtx-5090-laptop-engine-0.1.40.3",
-          "hardware": "RTX 5090 Laptop 24 GB (175 W), Ryzen 9 9955HX3D, Windows 11",
+          "hardware": "RTX 5090 笔记本 24 GB (175 W), Ryzen 9 9955HX3D, Windows 11",
           "model": "Flash-Next Q2_0, 131K",
           "engine": "0.1.40.3 (0.1.40.2 其中一小节)",
           "pr": "#1462",
@@ -42,7 +42,7 @@
         },
         {
           "folder": "2026-10-08-community-rtx4090-iq3xxs-200k-code",
-          "hardware": "RTX 4090, Ryzen 9 7950X, 46 GB RAM, Linux 源码编译",
+          "hardware": "RTX 4090, Ryzen 9 7950X, 46 GB 内存, Linux 源码编译",
           "model": "Flash-Next IQ3_XXS, 204,800, 代码提示词, 实验性速度预测已开",
           "engine": "0.1.40.3",
           "pr": "#1467",
@@ -222,7 +222,7 @@
         },
         {
           "folder": "2026-10-04-community-v100-rtx4070-split",
-          "hardware": "Tesla V100 32 GB + RTX 4070 12 GB, 16 GB RAM",
+          "hardware": "Tesla V100 32 GB + RTX 4070 12 GB, 16 GB 内存",
           "model": "IQ2_XS",
           "engine": "0.1.39",
           "pr": "#850",
@@ -237,7 +237,7 @@
         },
         {
           "folder": "2026-10-08-community-2x-titan-rtx-0.1.40.3",
-          "hardware": "2x TITAN RTX 24 GB (NVLink, unused), Xeon E5-2696 v4, 源码编译",
+          "hardware": "2x TITAN RTX 24 GB (NVLink, 未使用), Xeon E5-2696 v4, 源码编译",
           "model": "Flash-Next IQ3_S, 262K",
           "engine": "0.1.40.3",
           "pr": "#1429",
@@ -283,7 +283,7 @@
         {
           "folder": "2026-10-09-community-rtx-5080-w7-2475x-ud-iq4xs-786k",
           "hardware": "RTX 5080 16 GB, Xeon w7-2475X, 128 GB DDR5 (Windows 11)",
-          "model": "Unsloth UD-IQ4_XS, 786K context (YaRN x3), needles 至 512K",
+          "model": "Unsloth UD-IQ4_XS, 786K 上下文 (YaRN x3), 捞针命中 512K",
           "engine": "0.1.41",
           "pr": "#1726",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1726",
@@ -297,7 +297,7 @@
         },
         {
           "folder": "2026-10-04-community-v100-16gb-ram",
-          "hardware": "Tesla V100-PCIE 32 GB (x4 link), i7-13700KF, 16 GB RAM",
+          "hardware": "Tesla V100-PCIE 32 GB (x4 通道), i7-13700KF, 16 GB 内存",
           "model": "Coder IQ1_M",
           "engine": "0.1.39",
           "pr": "#823",
@@ -357,7 +357,7 @@
         },
         {
           "folder": "2026-10-10-community-rx-9070",
-          "hardware": "RX 9070 16 GB (gfx1201), Ryzen 7 5800X3D, 64 GB RAM, Windows 11",
+          "hardware": "RX 9070 16 GB (gfx1201), Ryzen 7 5800X3D, 64 GB 内存, Windows 11",
           "model": "Flash-Next IQ3_XXS, 131K",
           "engine": "0.1.41",
           "pr": "#1811",
@@ -372,8 +372,8 @@
         },
         {
           "folder": "2026-10-09-community-strix-halo-laptop-70w",
-          "hardware": "Radeon 8060S, Ryzen AI Max+ 395 laptop (70 W), 128 GB unified",
-          "model": "UD-IQ4_XS, STRIX_HALO.md section 5 fast config",
+          "hardware": "Radeon 8060S, Ryzen AI Max+ 395 笔记本 (70 W), 128 GB 统一内存",
+          "model": "UD-IQ4_XS, STRIX_HALO.md section 5 加速 config",
           "engine": "0.1.41",
           "pr": "#1716",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1716",
@@ -402,7 +402,7 @@
         },
         {
           "folder": "2026-10-04-community-rtx-4090-laptop",
-          "hardware": "RTX 4090 Laptop, i9-13900HX",
+          "hardware": "RTX 4090 笔记本, i9-13900HX",
           "model": "IQ3_S",
           "engine": "0.1.38",
           "pr": "#757",
@@ -616,7 +616,7 @@
         },
         {
           "folder": "2026-10-04-community-rtx-4090-laptop",
-          "hardware": "RTX 4090 Laptop, i9-13900HX",
+          "hardware": "RTX 4090 笔记本, i9-13900HX",
           "model": "IQ3_S",
           "engine": "0.1.38",
           "pr": "#757",
@@ -706,7 +706,7 @@
         },
         {
           "folder": "2026-10-04-community-v100-16gb-ram",
-          "hardware": "Tesla V100-PCIE 32 GB (x4 link), i7-13700KF, 16 GB RAM",
+          "hardware": "Tesla V100-PCIE 32 GB (x4 通道), i7-13700KF, 16 GB 内存",
           "model": "Coder IQ1_M",
           "engine": "0.1.39",
           "pr": "#823",
@@ -721,7 +721,7 @@
         },
         {
           "folder": "2026-10-04-community-v100-rtx4070-split",
-          "hardware": "Tesla V100 32 GB + RTX 4070 12 GB, 16 GB RAM",
+          "hardware": "Tesla V100 32 GB + RTX 4070 12 GB, 16 GB 内存",
           "model": "IQ2_XS",
           "engine": "0.1.39",
           "pr": "#850",
@@ -790,7 +790,7 @@
           "engine": "0.1.30 / 0.1.31",
           "pr": "#404",
           "prUrl": "https://github.com/Niko1221/Strata/pull/404",
-          "note": "545 to 900 median (0.1.30 to 0.1.31) ｜ 16-34 to 17-65",
+          "note": "545 至 900 中位数 (0.1.30 至 0.1.31) ｜ 16-34 至 17-65",
           "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-01-0.1.31-release/README.md"
         },
         {
@@ -820,7 +820,7 @@
           "engine": "数字见原报告",
           "pr": "#995",
           "prUrl": "https://github.com/Niko1221/Strata/pull/995",
-          "note": "167 / 128 / 133 (SSE prefill, 32K / 64K / 128K) ｜ 97 / 84 / 74 (32K / 64K / 128K, KV q4_0 at 128K)",
+          "note": "167 / 128 / 133 (SSE 读取, 32K / 64K / 128K) ｜ 97 / 84 / 74 (32K / 64K / 128K, KV q4_0 在 128K)",
           "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-01-ctx-ladder/README.md"
         },
         {
@@ -830,7 +830,7 @@
           "engine": "0.1.39 (6f32ec0)",
           "pr": "#995",
           "prUrl": "https://github.com/Niko1221/Strata/pull/995",
-          "note": "cold prefill in README (about 2,500 at 32K-256K) ｜ IQ2_XS 97.9 / 94.3 / 90.0 / 82.4; IQ3_XXS 76 / 71 / 70 / 56 (32K / 64K / 128K / 256K)",
+          "note": "冷启动读取见原报告 (约 2,500 在 32K-256K) ｜ IQ2_XS 97.9 / 94.3 / 90.0 / 82.4; IQ3_XXS 76 / 71 / 70 / 56 (32K / 64K / 128K / 256K)",
           "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-05-community-rtx-4070-ti-super/README.md"
         },
         {
@@ -840,7 +840,7 @@
           "engine": "0.1.31 / 0.1.32",
           "pr": "#416",
           "prUrl": "https://github.com/Niko1221/Strata/pull/416",
-          "note": "n/a (ms per draft round) ｜ 33.9 pinned arena, 16.9-39 mmap variants",
+          "note": "不适用 (每轮草稿毫秒) ｜ 33.9 固定内存池, 16.9-39 mmap 变体",
           "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-01-iq4xs-64gb/README.md"
         },
         {
@@ -850,7 +850,7 @@
           "engine": "0.1.34",
           "pr": "#483",
           "prUrl": "https://github.com/Niko1221/Strata/pull/483",
-          "note": "1,108 (20.9K cold) ｜ 56.4 (20.9K); 62.9 short",
+          "note": "1,108 (20.9K 冷启动) ｜ 56.4 (20.9K); 62.9 短提示",
           "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-02-community-2x5060ti/README.md"
         },
         {
@@ -860,17 +860,17 @@
           "engine": "0.1.35",
           "pr": "#521",
           "prUrl": "https://github.com/Niko1221/Strata/pull/521",
-          "note": "2,110 (2 GPU) vs 779 (3 GPU), 16.6K ｜ 73 vs 74 median",
+          "note": "2,110 (2 卡) 对比 779 (3 卡), 16.6K ｜ 73 对比 74 中位数",
           "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-02-community-rtx4000ada-layer-split/README.md"
         },
         {
           "folder": "2026-10-02-community-rtx5090-1m-agent",
           "hardware": "RTX 5090, Ryzen 9 7950X",
-          "model": "IQ3_S, 1M context (YaRN)",
+          "model": "IQ3_S, 1M 上下文 (YaRN)",
           "engine": "0.1.31",
           "pr": "#466",
           "prUrl": "https://github.com/Niko1221/Strata/pull/466",
-          "note": "about 2,500 / 3,300 / 3,400 (4K / 32K / 128K) ｜ 94-105",
+          "note": "约 2,500 / 3,300 / 3,400 (4K / 32K / 128K) ｜ 94-105",
           "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-02-community-rtx5090-1m-agent/README.md"
         },
         {
@@ -880,7 +880,7 @@
           "engine": "0.1.35 (AMD 引擎)",
           "pr": "#499",
           "prUrl": "https://github.com/Niko1221/Strata/pull/499",
-          "note": "about 600 ｜ 45-46 (37 first run)",
+          "note": "约 600 ｜ 45-46 (37 first 运行)",
           "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-02-community-rx9070xt-windows/README.md"
         },
         {
@@ -890,7 +890,7 @@
           "engine": "0.1.38",
           "pr": "#698",
           "prUrl": "https://github.com/Niko1221/Strata/pull/698",
-          "note": "525 at 32K ｜ 33-38 (1K to 128K)",
+          "note": "525 在 32K ｜ 33-38 (1K 至 128K)",
           "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-03-ashley-2080ti/README.md"
         },
         {
@@ -920,7 +920,7 @@
           "engine": "0.1.38",
           "pr": "#628",
           "prUrl": "https://github.com/Niko1221/Strata/pull/628",
-          "note": "313 (4K) / 350 (32K) ｜ 45.3 (4K) with 31 workers vs 11.6 with 63",
+          "note": "313 (4K) / 350 (32K) ｜ 45.3 (4K) 带 31 工作线程 对比 11.6 带 63",
           "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-03-rx6900xt-coder/README.md"
         },
         {
@@ -930,17 +930,17 @@
           "engine": "0.1.38 + fix",
           "pr": "#628",
           "prUrl": "https://github.com/Niko1221/Strata/pull/628",
-          "note": "数字见原报告 ｜ 12.7 to 46.1 (short), 13.1 to 47.4 (4K) with processor groups kept",
+          "note": "数字见原报告 ｜ 12.7 至 46.1 (短提示), 13.1 至 47.4 (4K) 保留处理器分组",
           "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-03-windows-groups/README.md"
         },
         {
           "folder": "2026-10-03-community-rx7900xtx-rocm102-nightly",
-          "hardware": "RX 7900 XTX 24 GB, ROCm 7.1.1 vs 10.2 nightly",
+          "hardware": "RX 7900 XTX 24 GB, ROCm 7.1.1 对比 10.2 nightly",
           "model": "IQ3_S",
           "engine": "0.1.38",
           "pr": "#745",
           "prUrl": "https://github.com/Niko1221/Strata/pull/745",
-          "note": "921 vs 1,535 (without / with matching hipBLASLt) ｜ 62.0 vs 61.0",
+          "note": "921 对比 1,535 (不带 / 带匹配的 hipBLASLt) ｜ 62.0 对比 61.0",
           "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-03-community-rx7900xtx-rocm102-nightly/README.md"
         },
         {
@@ -950,7 +950,7 @@
           "engine": "0.1.38 版本来源",
           "pr": "#745",
           "prUrl": "https://github.com/Niko1221/Strata/pull/745",
-          "note": "926 to 1,687 (gfx1100 table) ｜ 62.3",
+          "note": "926 至 1,687 (gfx1100 表) ｜ 62.3",
           "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-04-community-rx7900xtx-hipblaslt-100500/README.md"
         },
         {
@@ -960,7 +960,7 @@
           "engine": "0.1.38, 为 0.1.39",
           "pr": "#707",
           "prUrl": "https://github.com/Niko1221/Strata/pull/707",
-          "note": "数字见原报告 ｜ 16.5 to 33.5 after calibration; 22.0 prose",
+          "note": "数字见原报告 ｜ 16.5 至 33.5 之后 校准; 22.0 文本",
           "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-03-community-v100/README.md"
         },
         {
@@ -970,7 +970,7 @@
           "engine": "0.1.38",
           "pr": "#674",
           "prUrl": "https://github.com/Niko1221/Strata/pull/674",
-          "note": "1,239-1,304 (about 5K) ｜ 90-99 (NUMA variants)",
+          "note": "1,239-1,304 (约 5K) ｜ 90-99 (NUMA 变体)",
           "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-03-community-z840-rtx3090ti/README.md"
         },
         {
@@ -980,7 +980,7 @@
           "engine": "0.1.39",
           "pr": "#777",
           "prUrl": "https://github.com/Niko1221/Strata/pull/777",
-          "note": "3,775 (median, fresh) ｜ 171.7",
+          "note": "3,775 (中位数, 全新缓存) ｜ 171.7",
           "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-04-community-rtx-5090-9700x/README.md"
         },
         {
@@ -990,7 +990,7 @@
           "engine": "0.1.39",
           "pr": "#811",
           "prUrl": "https://github.com/Niko1221/Strata/pull/811",
-          "note": "3,072 (median, fresh) ｜ 164.3",
+          "note": "3,072 (中位数, 全新缓存) ｜ 164.3",
           "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-05-community-rtx-5090-9700x-iq3s/README.md"
         },
         {
@@ -1000,7 +1000,7 @@
           "engine": "0.1.39",
           "pr": "#780",
           "prUrl": "https://github.com/Niko1221/Strata/pull/780",
-          "note": "cold 2,535 (pool 4) vs 2,486 (pool 15) ｜ 95 (4 workers) vs 69-78 (15 workers) mean",
+          "note": "冷启动 2,535 (内存池 4) 对比 2,486 (内存池 15) ｜ 95 (4 工作线程) 对比 69-78 (15 工作线程) 平均",
           "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-04-community-rtx-4080s-iq3s/README.md"
         },
         {
@@ -1010,27 +1010,27 @@
           "engine": "0.1.38 / 0.1.39",
           "pr": "#815",
           "prUrl": "https://github.com/Niko1221/Strata/pull/815",
-          "note": "326 (7.9K) / 311 (30.3K) ｜ 42.6 to 56.0 English (0.1.39 vs `STRATA_SH_STREAM=0`)",
+          "note": "326 (7.9K) / 311 (30.3K) ｜ 42.6 至 56.0 英文文本 (0.1.39 对比 `STRATA_SH_STREAM=0`)",
           "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-04-community-rx-6800-windows/README.md"
         },
         {
           "folder": "2026-10-04-community-4090-32gb-ram-512k",
-          "hardware": "RTX 4090 24 GB, 32 GB RAM",
+          "hardware": "RTX 4090 24 GB, 32 GB 内存",
           "model": "IQ2_XS, 512K",
           "engine": "0.1.39",
           "pr": "#834",
           "prUrl": "https://github.com/Niko1221/Strata/pull/834",
-          "note": "3,411 (477K prompt) ｜ 122.0 at depth",
+          "note": "3,411 (477K 提示词) ｜ 122.0 在 深度",
           "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-04-community-4090-32gb-ram-512k/README.md"
         },
         {
           "folder": "2026-10-04-community-4090-agents-vs-dense-27b",
-          "hardware": "RTX 4090 24 GB, 32 GB RAM",
-          "model": "IQ2_XS vs 一个稠密 27B (编程代理任务)",
-          "engine": "0.1.39 + 4 PRs",
+          "hardware": "RTX 4090 24 GB, 32 GB 内存",
+          "model": "IQ2_XS 对比 一个稠密 27B (编程代理任务)",
+          "engine": "0.1.39 + 4 那些 PR",
           "pr": "#882",
           "prUrl": "https://github.com/Niko1221/Strata/pull/882",
-          "note": "about 3,800 (70-110K re-reads) ｜ 173-185",
+          "note": "约 3,800 (70-110K 重复读取) ｜ 173-185",
           "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-04-community-4090-agents-vs-dense-27b/README.md"
         },
         {
@@ -1050,7 +1050,7 @@
           "engine": "0.1.39",
           "pr": "#913",
           "prUrl": "https://github.com/Niko1221/Strata/pull/913",
-          "note": "715 (Q2_0) / 439 (IQ3_S), 3.5K ｜ Q2_0 48.1 to 55.7; IQ3_S 30.5 to 35.0",
+          "note": "715 (Q2_0) / 439 (IQ3_S), 3.5K ｜ Q2_0 48.1 至 55.7; IQ3_S 30.5 至 35.0",
           "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-05-community-e5-2673v3-rtx-4060ti/README.md"
         },
         {
@@ -1070,7 +1070,7 @@
           "engine": "0.1.39",
           "pr": "#1028",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1028",
-          "note": "353 (4K) / 501 (16K), both cards; 348 / 388 one card ｜ 34.8 both cards, 19.6 one card",
+          "note": "353 (4K) / 501 (16K), 两张卡; 348 / 388 单卡 ｜ 34.8 两张卡, 19.6 单卡",
           "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-05-community-2x-p40/README.md"
         },
         {
@@ -1087,20 +1087,20 @@
           "folder": "2026-10-05-community-2x-rx-6900xt",
           "hardware": "2x RX 6900 XT 16 GB (gfx1030), Ryzen 5 5600X, 128 GB",
           "model": "IQ3_S, 131K",
-          "engine": "0.1.39 官方发行版 and 带 #835, #849, #854",
+          "engine": "0.1.39 官方发行版 与 带 #835, #849, #854",
           "pr": "#927",
           "prUrl": "https://github.com/Niko1221/Strata/pull/927",
-          "note": "one card stock 457 / 474 / 459, with #835 + #849 + #854 868 / 1,100 / 1,023; 跨卡分层 with them 853 / 1,616 / 1,823 ｜ 40-43 one card, 57-61 跨卡分层",
+          "note": "单卡官方发行版 457 / 474 / 459, 带 #835 + #849 + #854 868 / 1,100 / 1,023; 跨卡分层 带这些开关 853 / 1,616 / 1,823 ｜ 40-43 单卡, 57-61 跨卡分层",
           "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-05-community-2x-rx-6900xt/README.md"
         },
         {
           "folder": "2026-10-05-community-gfx1151",
-          "hardware": "Radeon 8060S (gfx1151), Ryzen AI Max+ 395, 128 GB unified memory",
+          "hardware": "Radeon 8060S (gfx1151), Ryzen AI Max+ 395, 128 GB 统一内存 memory",
           "model": "Q2_0, UD-IQ4_XS",
           "engine": "0.1.39 + #895, #820",
           "pr": "#917",
           "prUrl": "https://github.com/Niko1221/Strata/pull/917",
-          "note": "250.9 to 528.9 with the hipBLASLt table (matched synthetic prompts) ｜ 45.6 to 46.8 (shared-expert stream on)",
+          "note": "250.9 至 528.9 带 hipBLASLt 表 (配对的合成提示词) ｜ 45.6 至 46.8 (共享专家流已开)",
           "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-05-community-gfx1151/README.md"
         },
         {
@@ -1110,13 +1110,13 @@
           "engine": "0.1.40 source + 6 本地补丁",
           "pr": "#955",
           "prUrl": "https://github.com/Niko1221/Strata/pull/955",
-          "note": "307-359 (512 and 7,000-token tasks) ｜ 36-49 by task; medians of the five tasks 40.4-41.3 / 39.8-40.9",
+          "note": "307-359 (512 与 7,000 token 任务) ｜ 36-49 按任务; 五个任务的中位数 40.4-41.3 / 39.8-40.9",
           "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-05-community-arc-b65/README.md"
         },
         {
           "folder": "2026-10-06-community-rtxpro-v0140",
           "hardware": "RTX PRO 6000",
-          "model": "Q4 / Q8 (MTP and ngram runs)",
+          "model": "Q4 / Q8 (MTP 与 ngram 运行)",
           "engine": "0.1.40",
           "pr": "#1137",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1137",
@@ -1146,7 +1146,7 @@
         {
           "folder": "2026-10-06-community-rtx4090-opt-ins",
           "hardware": "RTX 4090",
-          "model": "IQ3_S 140K / IQ3_XXS 200K 可选开关 and 工具调用修复版",
+          "model": "IQ3_S 140K / IQ3_XXS 200K 可选开关 与 工具调用修复版",
           "engine": "0.1.38 至 0.1.40",
           "pr": "#1158",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1158",
@@ -1156,7 +1156,7 @@
         {
           "folder": "2026-10-06-community-rtx4090-toolcall-hotfix",
           "hardware": "RTX 4090",
-          "model": "IQ3_S 140K / IQ3_XXS 200K 可选开关 and 工具调用修复版",
+          "model": "IQ3_S 140K / IQ3_XXS 200K 可选开关 与 工具调用修复版",
           "engine": "0.1.38 至 0.1.40",
           "pr": "#1158",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1158",
@@ -1166,7 +1166,7 @@
         {
           "folder": "2026-10-06-q8-prefill8192-rtxpro",
           "hardware": "RTX PRO 6000",
-          "model": "Q8, --prefill 8192",
+          "model": "Q8, --读取 8192",
           "engine": "0.1.40",
           "pr": "#1171",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1171",
@@ -1185,7 +1185,7 @@
         },
         {
           "folder": "2026-10-06-community-4x-tesla-p100",
-          "hardware": "4x Tesla P100 16 GB (CUDA 12 engine)",
+          "hardware": "4x Tesla P100 16 GB (CUDA 12 引擎)",
           "model": "IQ3_XXS",
           "engine": "0.1.40",
           "pr": "#1192",
@@ -1195,8 +1195,8 @@
         },
         {
           "folder": "2026-10-06-community-rtx3090-egpu-64gb",
-          "hardware": "RTX 3090 eGPU, 64 GB RAM",
-          "model": "IQ2_XS vs IQ3_XXS",
+          "hardware": "RTX 3090 eGPU, 64 GB 内存",
+          "model": "IQ2_XS 对比 IQ3_XXS",
           "engine": "0.1.40",
           "pr": "#1199",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1199",
@@ -1226,7 +1226,7 @@
         {
           "folder": "2026-10-05-community-rtx5080-9900x3d",
           "hardware": "RTX 5080, Ryzen 9 9900X3D",
-          "model": "Coder IQ1_M and others",
+          "model": "Coder IQ1_M 与其余档位",
           "engine": "0.1.40",
           "pr": "#1243",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1243",
@@ -1235,7 +1235,7 @@
         },
         {
           "folder": "2026-10-07-community-rtx-5090-laptop-ud-iq4xs",
-          "hardware": "RTX 5090 Laptop 24 GB",
+          "hardware": "RTX 5090 笔记本 24 GB",
           "model": "UD-IQ4_XS (首个 NVIDIA 实测)",
           "engine": "0.1.40.1",
           "pr": "#1245",
@@ -1245,7 +1245,7 @@
         },
         {
           "folder": "2026-10-06-community-rtx-5090-laptop",
-          "hardware": "RTX 5090 Laptop 24 GB, Windows 11",
+          "hardware": "RTX 5090 笔记本 24 GB, Windows 11",
           "model": "数字见原报告",
           "engine": "0.1.40.1",
           "pr": "#1263",
@@ -1257,10 +1257,10 @@
           "folder": "2026-10-06-community-2x-rx-6900xt-0.1.40.1",
           "hardware": "2x RX 6900 XT 16 GB (gfx1030), Ryzen 5 5600X, 128 GB",
           "model": "IQ3_S, 131K",
-          "engine": "0.1.40.1 官方发行版, the two switches, and 带 #1150, #1151, #1167",
+          "engine": "0.1.40.1 官方发行版, 两个开关，以及带 #1150, #1151, #1167",
           "pr": "#1270",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1270",
-          "note": "one card stock 458 / 473 / 459, with the two gfx103x switches 811 / 973 / 913, with #1150 + #1151 + #1167 969 / 1,152 / 1,126; 跨卡分层 with them 968 / 1,685 / 2,003 ｜ one card 47.5-51.8; 跨卡分层 stock 62.1 / 67.0 / 59.0, with the PRs 72.2 / 74.7 / 70.3; helper 64-75",
+          "note": "单卡官方发行版 458 / 473 / 459, 带两个 gfx103x 开关 811 / 973 / 913, 带 #1150 + #1151 + #1167 969 / 1,152 / 1,126; 跨卡分层 带这些开关 968 / 1,685 / 2,003 ｜ 单卡 47.5-51.8; 跨卡分层 官方发行版 62.1 / 67.0 / 59.0, 带那些 PR 72.2 / 74.7 / 70.3; 辅助卡 64-75",
           "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-06-community-2x-rx-6900xt-0.1.40.1/README.md"
         },
         {
@@ -1270,7 +1270,7 @@
           "engine": "0.1.40.2 (SYCL)",
           "pr": "#1432",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1432",
-          "note": "7K input: 315 (8K, prefill 512), 830 (prefill 4096), 288 (262K) ｜ 43.5 (8K), 42.9 (prefill 4096), 42.4 (262K) at 7K",
+          "note": "7K 输入: 315 (8K, 读取 512), 830 (读取 4096), 288 (262K) ｜ 43.5 (8K), 42.9 (读取 4096), 42.4 (262K) 在 7K",
           "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-07-community-arc-b65-v01402/README.md"
         },
         {
@@ -1280,43 +1280,43 @@
           "engine": "0.1.38",
           "pr": "#1443",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1443",
-          "note": "99.9 to 249.2 on 73K-token prompts (fresh and cached tail) ｜ 18.1 to 22.8",
+          "note": "99.9 至 249.2 在 73K 提示词上 (全新缓存与已缓存尾部) ｜ 18.1 至 22.8",
           "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-07-community-2x-rtx-4000/README.md"
         },
         {
           "folder": "2026-10-07-community-v100-p100-helper",
-          "hardware": "Tesla V100 32 GB + Tesla P100 16 GB (P100 as expert helper, mixed sm_70 + sm_60), Xeon E5-2699 v3",
+          "hardware": "Tesla V100 32 GB + Tesla P100 16 GB (P100 作为专家辅助模型, 混合 sm_70 + sm_60), Xeon E5-2699 v3",
           "model": "Flash-Next IQ3_XXS, 262K",
           "engine": "0.1.40.2",
           "pr": "#1452",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1452",
-          "note": "1,437 (18K) / 1,446 (44K) / 1,411 (120K, one run) ｜ about 73 (256-token cap)",
+          "note": "1,437 (18K) / 1,446 (44K) / 1,411 (120K, 一次运行) ｜ 约 73 (256-token 上限)",
           "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-07-community-v100-p100-helper/README.md"
         },
         {
           "folder": "2026-10-07-community-xtx-6800xt-1m-helper",
-          "hardware": "RX 7900 XTX 24 GB + RX 6800 XT 16 GB (helper), Xeon E5-2696 v4, 1M context, source HIP build 带 本地补丁",
+          "hardware": "RX 7900 XTX 24 GB + RX 6800 XT 16 GB （辅助卡）, Xeon E5-2696 v4, 1M 上下文, 源码 HIP 编译 带 本地补丁",
           "model": "UD-Q4_K_XL",
           "engine": "0.1.40.2 + 本地补丁",
           "pr": "#1459",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1459",
-          "note": "1,350 (50K) / 1,294 (130K) / 592 (1,048K cold) ｜ 97 long coding (final arm); 39 at the full 1M depth",
+          "note": "1,350 (50K) / 1,294 (130K) / 592 (1,048K 冷启动) ｜ 97 长编程任务 (最后一组); 39 在完整 1M 深度",
           "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-07-community-xtx-6800xt-1m-helper/README.md"
         },
         {
           "folder": "2026-10-07-community-rtx-5080-docker-wsl2",
-          "hardware": "RTX 5080 16 GB in Docker Desktop on Windows (WSL2), Ryzen 9 9950X",
-          "model": "Coder IQ1_M, 131K and 65K",
+          "hardware": "RTX 5080 16 GB 在 Windows 的 Docker Desktop 里 (WSL2), Ryzen 9 9950X",
+          "model": "Coder IQ1_M, 131K 与 65K",
           "engine": "0.1.40.3",
           "pr": "#1460",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1460",
-          "note": "2,253 / 3,304 (4K / 32K, 131K limit) ｜ 75.7 / 80.8 / 72.2 (4K / 32K / 130K)",
+          "note": "2,253 / 3,304 (4K / 32K, 131K 上限) ｜ 75.7 / 80.8 / 72.2 (4K / 32K / 130K)",
           "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-07-community-rtx-5080-docker-wsl2/README.md"
         },
         {
           "folder": "2026-10-08-community-rtx4090-iq3xxs-200k-ru",
           "hardware": "RTX 4090, Ryzen 9 7950X (same PC)",
-          "model": "Flash-Next IQ3_XXS, 204,800, Russian prompts",
+          "model": "Flash-Next IQ3_XXS, 204,800, Russian 提示词",
           "engine": "0.1.40.3",
           "pr": "#1467",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1467",
@@ -1325,22 +1325,22 @@
         },
         {
           "folder": "2026-10-07-community-gfx1150",
-          "hardware": "Radeon 890M (gfx1150), Ryzen AI 9 HX PRO 370, 96 GB unified memory",
+          "hardware": "Radeon 890M (gfx1150), Ryzen AI 9 HX PRO 370, 96 GB 统一内存 memory",
           "model": "IQ3_XXS",
           "engine": "0.1.40.2",
           "pr": "-",
           "prUrl": null,
-          "note": "153 / 216 / 226 (1K / 3.6K / 7K) with the gfx1150 hipBLASLt table, 99 / 124 / 130 without ｜ 15.2-17.6",
+          "note": "153 / 216 / 226 (1K / 3.6K / 7K) 带 gfx1150 hipBLASLt 表, 99 / 124 / 130 不带 ｜ 15.2-17.6",
           "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-07-community-gfx1150/README.md"
         },
         {
           "folder": "2026-10-12-community-gfx1103",
-          "hardware": "Radeon 780M (gfx1103), Ryzen 7 8745HS, 60 GB, GTT 50 GiB, hand build on ROCm 10.1",
+          "hardware": "Radeon 780M (gfx1103), Ryzen 7 8745HS, 60 GB, GTT 50 GiB, hand build 已开 ROCm 10.1",
           "model": "Flash-Next Q2_0 + MTP, 32K",
-          "engine": "0.1.43 + the gfx1103 port (branch)",
+          "engine": "0.1.43 + gfx1103 port (branch)",
           "pr": "-",
           "prUrl": null,
-          "note": "90 plain / 186 with the gfx1103 hipBLASLt table / 211 with the exact switches / 277 with the WMMA opt-ins (4K); 272 at 32K (WMMA arm) ｜ 13.1 plain, 13.9-14.3 tuned",
+          "note": "90 未调优 / 186 带 gfx1103 hipBLASLt 表 / 211 带指定开关 / 277 带 WMMA 可选开关 (4K); 272 在 32K (WMMA 分组) ｜ 13.1 未调优, 13.9-14.3 调优后",
           "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-12-community-gfx1103/README.md"
         },
         {
@@ -1350,7 +1350,7 @@
           "engine": "0.1.41 (fb58e0db)",
           "pr": "this PR; notes: [Vop3p/dual-6900xt-flash-next-tuning](https://github.com/Vop3p/dual-6900xt-flash-next-tuning)",
           "prUrl": null,
-          "note": "one card stock 473 / 502 / 486, with the two gfx103x switches 850 / 1,102 / 1,027, with the PRs 976 / 1,174 / 1,147; 跨卡分层 stock 464 / 767 / 869, switches 832 / 1,619 / 1,823, PRs 968 / 1,714 / 2,029; helper with the PRs 986 / 1,173 / 1,147 ｜ one card 46-52; 跨卡分层 stock 62.6 / 65.0 / 60.8, PRs 64.7 / 68.8 / 68.3, PRs + `--spec 3 --spec-min-p 0.7 --pipeline-windows 2` 77.2 / 82.3 / 75.7; helper PRs 72.5 / 75.2 / 75.1",
+          "note": "单卡官方发行版 473 / 502 / 486, 带两个 gfx103x 开关 850 / 1,102 / 1,027, 带那些 PR 976 / 1,174 / 1,147; 跨卡分层 官方发行版 464 / 767 / 869, 开关 832 / 1,619 / 1,823, 那些 PR 968 / 1,714 / 2,029; 辅助卡带那些 PR 986 / 1,173 / 1,147 ｜ 单卡 46-52; 跨卡分层 官方发行版 62.6 / 65.0 / 60.8, 那些 PR 64.7 / 68.8 / 68.3, 那些 PR + `--spec 3 --spec-min-p 0.7 --pipeline-windows 2` 77.2 / 82.3 / 75.7; 辅助卡 那些 PR 72.5 / 75.2 / 75.1",
           "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-09-community-2x-rx-6900xt-0.1.41/README.md"
         },
         {
@@ -1360,17 +1360,17 @@
           "engine": "0.1.41 (fb58e0d)",
           "pr": "-",
           "prUrl": null,
-          "note": "627 / 687 / 617 default; 808 / 1,165 / 1,109 fast ｜ 42.8 / 44.4 / 42.1 default; 40.1 / 49.6 / 47.5 fast",
+          "note": "627 / 687 / 617 默认; 808 / 1,165 / 1,109 加速 ｜ 42.8 / 44.4 / 42.1 默认; 40.1 / 49.6 / 47.5 加速",
           "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-09-community-gfx1151-ud-iq4xs-0.1.41/README.md"
         },
         {
           "folder": "2026-10-08-community-2x-rtx3080-20gb-ud-q4-k-xl-512k-pool",
-          "hardware": "2x RTX 3080 20 GB (220 W cap each, PCIe Gen3 x16), Xeon E5-2696 v4 (AVX2), 90 GiB RAM, Proxmox LXC",
-          "model": "Unsloth UD-Q4_K_XL, two 262,144-token 通道 in a 524,288-token 共享 KV 池, 跨卡分层, batch MTP",
-          "engine": "分支构建，基于 0.1.40.3, 源码分支 `repro/w7` on noon-at-cgn/Strata (不是上游 `main` 加上那些开放 PR: it contains the code of my open PRs #1598, #1599, #1601, #1614 (共享 KV 池), #1636 (batch MTP on a split), #1637 (`--adapt-async` beside slots), and of #1190, 另一位贡献者的一个开放 PR，保留拆分专家区域的内存副本)",
+          "hardware": "2x RTX 3080 20 GB (220 W 每卡上限, PCIe Gen3 x16), Xeon E5-2696 v4 (AVX2), 90 GiB 内存, Proxmox LXC",
+          "model": "Unsloth UD-Q4_K_XL, two 262,144-token 通道 里 a 524,288-token 共享 KV 池, 跨卡分层, batch MTP",
+          "engine": "分支构建，基于 0.1.40.3, 源码分支 `repro/w7` （仓库 noon-在-cgn/Strata） (不是上游 `main` 加上那些开放 PR: 其中包含作者那些开放 PR 的代码 #1598, #1599, #1601, #1614 (共享 KV 池), #1636 (拆分模式批量 MTP), #1637 (`--adapt-async` 与槽位同时启用), 与 of #1190, 另一位贡献者的一个开放 PR，保留拆分专家区域的内存副本)",
           "pr": "-",
           "prUrl": null,
-          "note": "718 / 2,219 / 2,585 / 2,996 / 3,080 (4K / 25K / 51K / 104K / 127K) ｜ 81.2 / 84.0 / 90.6 / 86.3 / 80.7 (same lengths, one stream); 89.5 for two streams (my script)",
+          "note": "718 / 2,219 / 2,585 / 2,996 / 3,080 (4K / 25K / 51K / 104K / 127K) ｜ 81.2 / 84.0 / 90.6 / 86.3 / 80.7 (同样长度，单流); 89.5 双流 （作者脚本）",
           "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-08-community-2x-rtx3080-20gb-ud-q4-k-xl-512k-pool/README.md"
         },
         {
@@ -1380,7 +1380,7 @@
           "engine": "0.1.40.3 (冻结的实验版)",
           "pr": "#1638",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1638",
-          "note": "633 / 768 / 751 / 718 (1K / 4K / 32K / 131K) ｜ 101.9 / 96.4 / 95.6 / 87.6; short-increment pairs for #1107",
+          "note": "633 / 768 / 751 / 718 (1K / 4K / 32K / 131K) ｜ 101.9 / 96.4 / 95.6 / 87.6; 短增量配对 用于 #1107",
           "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-08-community-r9700-linux/README.md"
         },
         {
@@ -1390,7 +1390,7 @@
           "engine": "0.1.41 (fb58e0d), 源码编译",
           "pr": "#1647",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1647",
-          "note": "无明显变化 by STRATA_SM70_TABLE=1 ｜ 28.16 / 28.64 to 30.92 / 32.94 (+9.8% / +15.0%, two order-swapped pairs, bit-identical tokens)",
+          "note": "无明显变化 按 STRATA_SM70_TABLE=1 ｜ 28.16 / 28.64 至 30.92 / 32.94 (+9.8% / +15.0%, 两组顺序互换的配对, token 逐位一致)",
           "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-08-community-v100-sm70-table/README.md"
         },
         {
@@ -1400,7 +1400,7 @@
           "engine": "0.1.41",
           "pr": "#1655",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1655",
-          "note": "five opt-ins off 756 / 1,722 / 2,433; on 2,052 / 3,804 / 4,307 ｜ off 59.3 / 52.0 / 49.6; on 60.0 / 52.7 / 50.4",
+          "note": "五个可选开关关闭 756 / 1,722 / 2,433; 已开 2,052 / 3,804 / 4,307 ｜ 关闭 59.3 / 52.0 / 49.6; 已开 60.0 / 52.7 / 50.4",
           "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-09-community-4x-rx-7900-xt/README.md"
         },
         {
@@ -1410,24 +1410,24 @@
           "engine": "0.1.41 (fb58e0d)",
           "pr": "#1695",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1695",
-          "note": "fixed 512: 78.0 (4K) / 78.8 (8K); existing auto: 107.3 / 114.8 ｜ 未测",
+          "note": "固定 512: 78.0 (4K) / 78.8 (8K); 现有自动档: 107.3 / 114.8 ｜ 未测",
           "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-09-community-p4-prefill-roofline/README.md"
         },
         {
           "folder": "2026-10-09-rope-yarn-long-context",
           "hardware": "RTX PRO 6000 Blackwell 96 GB, Ryzen 9 7950X, 124 GiB",
-          "model": "ISTA IQ3_XXS, 512K and 1M, ordinary RoPE vs YaRN",
+          "model": "ISTA IQ3_XXS, 512K 与 1M, 常规 RoPE 对比 YaRN",
           "engine": "0.1.41 (fb58e0d)",
           "pr": "#1692",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1692",
-          "note": "5,479 (512K RoPE) / 4,452 (1M RoPE) / 4,505 (1M YaRN) ｜ 103.6 / 82.4 / 82.7; recall 3/3 (512K RoPE), 0/3 (1M RoPE), 3/3 (1M YaRN)",
+          "note": "5,479 (512K RoPE) / 4,452 (1M RoPE) / 4,505 (1M YaRN) ｜ 103.6 / 82.4 / 82.7; 召回 3/3 (512K RoPE), 0/3 (1M RoPE), 3/3 (1M YaRN)",
           "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-09-rope-yarn-long-context/README.md"
         },
         {
           "folder": "2026-10-09-community-rtx-3060-0141",
           "hardware": "RTX 3060 12 GB, Core i7-12700, 64 GB (Windows 11)",
           "model": "Flash-Next Q2_0 / IQ2_XS / IQ3_XXS / IQ3_S, 128 至 260K",
-          "engine": "0.1.41 (official Windows release)",
+          "engine": "0.1.41 (官方 Windows 发行版)",
           "pr": "#1725",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1725",
           "note": "Q2_0 882 / 981 / 934 (4K / 32K / 128K); IQ3_XXS 681 / 884 / 867; IQ3_S 569 / 820 / 803 ｜ Q2_0 42.9 / 41.8 / 38.6; IQ3_XXS 26.2 / 27.1 / 27.0; IQ3_S 20.2 / 20.2 / 18.9",
@@ -1435,12 +1435,12 @@
         },
         {
           "folder": "2026-10-09-community-rtx5090-9800x3d-swift-1m",
-          "hardware": "RTX 5090, Ryzen 7 9800X3D, 91.9 GiB usable RAM, 480 W",
+          "hardware": "RTX 5090, Ryzen 7 9800X3D, 91.9 GiB 可用内存, 480 W",
           "model": "Swift IQ3_XXS, 1M YaRN",
           "engine": "0.1.41",
           "pr": "#1722",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1722",
-          "note": "6,687 / 6,426 (32K / 131K, greedy, n=2) ｜ 198.9 / 190.6 (same runs); native 1M disk restore 6.107 s",
+          "note": "6,687 / 6,426 (32K / 131K, 贪心, n=2) ｜ 198.9 / 190.6 (同一批运行); 原生 1M 磁盘恢复 6.107 秒",
           "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-09-community-rtx5090-9800x3d-swift-1m/README.md"
         },
         {
@@ -1456,41 +1456,41 @@
         {
           "folder": "2026-10-10-community-rx-9060-xt",
           "hardware": "RX 9060 XT 16 GB (gfx1200), Ryzen 7 9800X3D, 64 GB DDR5, Windows 11",
-          "model": "Flash-Next IQ2_XS / IQ3_XXS, 读取扫描, 32K coding comparison, 113K 召回",
-          "engine": "0.1.40.3 (prebuilt Windows HIP)",
+          "model": "Flash-Next IQ2_XS / IQ3_XXS, 读取扫描, 32K 编程 对照, 113K 召回",
+          "engine": "0.1.40.3 (预编译 Windows HIP)",
           "pr": "#1802",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1802",
-          "note": "IQ2_XS 879 / 807 (8K / 28K, prefill 8,192); 790 (113K) ｜ IQ2_XS 56.3 / 57.6 / 46.9 (8K / 28K / 113K); coding weighted decode IQ2_XS 49.6 vs IQ3_XXS 42.5",
+          "note": "IQ2_XS 879 / 807 (8K / 28K, 读取 8,192); 790 (113K) ｜ IQ2_XS 56.3 / 57.6 / 46.9 (8K / 28K / 113K); 编程加权解码 IQ2_XS 49.6 对比 IQ3_XXS 42.5",
           "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-10-community-rx-9060-xt/README.md"
         },
         {
           "folder": "2026-10-10-community-2x-p40-iq3_s",
-          "hardware": "2x Tesla P40 24 GB, Xeon E5-2699 v3, 125 GB RAM, Ubuntu 22.04",
+          "hardware": "2x Tesla P40 24 GB, Xeon E5-2699 v3, 125 GB 内存, Ubuntu 22.04",
           "model": "Flash-Next IQ3_S, 131K, 跨卡分层",
           "engine": "0.1.41 (源码编译)",
           "pr": "#1799",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1799",
-          "note": "350 / 558 (3.9K / 21.9K) ｜ 35.0 (短提示); needles 6/6 at 32K and 128K",
+          "note": "350 / 558 (3.9K / 21.9K) ｜ 35.0 (短提示); 捞针命中 6/6 在 32K 与 128K",
           "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-10-community-2x-p40-iq3_s/README.md"
         },
         {
           "folder": "2026-10-09-community-rtx-5060ti-wsl2-iq3_s-0141",
-          "hardware": "RTX 5060 Ti 16 GB (PCIe 4.0 x8), Ryzen 7 3700X, 128 GB RAM, WSL2",
+          "hardware": "RTX 5060 Ti 16 GB (PCIe 4.0 x8), Ryzen 7 3700X, 128 GB 内存, WSL2",
           "model": "Flash-Next IQ3_S, 131K, 实验性速度预测",
           "engine": "0.1.41",
           "pr": "#1751",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1751",
-          "note": "343 / 598 (3.8K / 19.2K), single runs ｜ 48.2 / 47.7 (1,400 / 1,284 tokens), single runs",
+          "note": "343 / 598 (3.8K / 19.2K), 单次运行 ｜ 48.2 / 47.7 (1,400 / 1,284 tokens), 单次运行",
           "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-09-community-rtx-5060ti-wsl2-iq3_s-0141/README.md"
         },
         {
           "folder": "2026-10-08-community-rtx4070-iq2-xs",
           "hardware": "RTX 4070 12 GB, Core i5-12600KF, 32 GB DDR4, Windows 11",
           "model": "Flash-Next IQ2_XS, 100K 格, q4_0 KV, 自适应缓存 E4/S24",
-          "engine": "modified local build (provenance.json)",
+          "engine": "本地修改版构建 (provenance.json)",
           "pr": "#1739",
           "prUrl": "https://github.com/Niko1221/Strata/pull/1739",
-          "note": "28,912-token prompt (not redistributed) ｜ 48.23 (accepted-decode median of 5); a modified, locally built engine, not an official release",
+          "note": "28,912-token 提示词 (未重新分发) ｜ 48.23 (5 次运行的接受解码中位数); 本地编译的修改版引擎，不是官方发行版",
           "readmeUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-08-community-rtx4070-iq2-xs/README.md"
         }
       ]
