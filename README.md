@@ -11,10 +11,13 @@
 ## 工作流程
 
 ```text
-config/sources.json
-      │  并发抓取（RSS / Atom / JSON API，超时与退避重试）
-      ▼
-src/collect.mjs ── 解析 → 相关性过滤 → 跨天去重(seen.json) → 打分 → 分类配额选择
+config/sources.json                         config/bench.json
+      │  并发抓取（RSS / Atom / JSON API，超时与退避重试）        │ 上游实测原文
+      ▼                                                        ▼
+src/collect.mjs ── 解析 → 相关性过滤 → 跨天去重(seen.json) → 打分 → 分类配额选择      src/bench.mjs ── 抓取固定 commit 的原文
+      │                                                        │
+      ▼                                                        ▼
+data/digests/<日期>.json                  data/bench/<数据集>.json（含 commit 与 SHA-256）
       │                                    │
       ▼                                    ▼
 data/digests/<日期>.json            data/seen.json · data/state.json
@@ -26,6 +29,7 @@ data/hidden.json ◄── src/review.mjs（硬规则 + 独立模型复核，拦
 src/build.mjs ──► dist/（index.html、s/<栏目>.html、s/<栏目>/<子类>.html、tags.html、t/<标签>.html、
       │            item/<slug>.html、discuss.html、search.html、about.html、day/<日期>.html、
       │            archive.html、archive/<年>.html、archive/<年-月>.html、markdown/<日期>.md、
+      │            bench.html、bench/<数据集>.html|.json|-chart.svg、
       │            feed.xml、llms.txt、data/items.json）
       │
       ▼
@@ -36,13 +40,13 @@ GitHub Actions（每日 06:30 / 18:30 CST）── 采集 → 质量审查 → �
 
 ## 目录结构
 
-- `src/collect.mjs` 采集入口；`src/review.mjs` 发布前的独立质量审查；`src/build.mjs` 站点构建入口；`src/worker.mjs` 论坛与下架 API
+- `src/collect.mjs` 采集入口；`src/bench.mjs` 评测数据抓取（上游原文 + 哈希）；`src/review.mjs` 发布前的独立质量审查；`src/build.mjs` 站点构建入口；`src/worker.mjs` 论坛与下架 API
 - `src/lib/` 解析与业务模块：`xml.mjs`（零依赖 XML/Atom 解析）、`parse.mjs`、`adapters.mjs`（JSON API）、`filter.mjs`（相关性/分类/实用度打分）、`dedupe.mjs`、`select.mjs`（分类配额）、`normalize.mjs`、`sources.mjs`、`http.mjs`、`translate.mjs`、`items.mjs`（条目 slug 与索引）、`listview.mjs`（年/月筛选与排序规则，构建期与浏览器共用一份）、`markdown.mjs`（日报导出 Markdown）、`review` 用的 `filter.mjs` 闸门、`forum.mjs`（留言校验与限流）、`admin.mjs`（管理员会话与下架校验）、`render.mjs`
-- `config/sources.json` 信息源清单与采集参数；`config/filters.json` 关键词、分类、质量闸门与标签定义；`config/sections.json` 顶部菜单与栏目映射
+- `config/sources.json` 信息源清单与采集参数；`config/filters.json` 关键词、分类、质量闸门与标签定义；`config/sections.json` 顶部菜单与栏目映射；`config/bench.json` 评测数据页的中文表头、结论、复现步骤与来源清单
 - `src/schema.sql` D1 表结构（`comments`、`votes`、`hidden_items`、`admin_attempts`）
-- `data/` 采集产物（`digests/`、`seen.json`、`state.json`）、`hidden.json`（下架条目：管理员 + 审查）、`reviews/<日期>.json`（审查结论），随提交保留历史
+- `data/` 采集产物（`digests/`、`bench/`、`seen.json`、`state.json`）、`hidden.json`（下架条目：管理员 + 审查）、`reviews/<日期>.json`（审查结论），随提交保留历史
 - `dist/` 构建产物，已 gitignore，由 CI 用 `wrangler deploy` 上传
-- `public/` 静态资产与路由/缓存配置（`styles.css`、`forum.js`、`funnel.js`、`list.js`（列表筛选与排序）、`admin.js`（登录与下架）、`favicon.svg`、`_headers`、`_redirects`）
+- `public/` 静态资产与路由/缓存配置（`styles.css`、`forum.js`、`funnel.js`、`list.js`（列表筛选与排序）、`admin.js`（登录与下架）、`lightbox.js`（图片点击放大）、`favicon.svg`、`_headers`、`_redirects`）
 - `wrangler.jsonc` Cloudflare 部署目标（Assets + Worker `tool-hub` + D1 + `tool-hub.xyz` 自定义域名）
 - `tests/` 单元与端到端测试，`tests/fixtures/` 为离线样例
 - `scripts/` 运维脚本：`serve.mjs`（本地预览）、`reclassify.mjs`（按现行配置重打历史分类）、`fetch-hidden.mjs`（从 D1 拉回管理员下架记录）、`lint.mjs`
@@ -53,7 +57,8 @@ GitHub Actions（每日 06:30 / 18:30 CST）── 采集 → 质量审查 → �
 ```bash
 npm run collect      # 抓取全部信息源，写入 data/digests/<日期>.json
 npm run build        # 由 data 生成 dist/
-npm run digest       # collect + build
+npm run bench        # 抓上游评测原文（Strata bench/results、OpenRouter 模型目录），写 data/bench/<id>.json
+npm run digest       # collect + bench + build
 npm run review       # 发布前质量审查（硬规则 + 独立模型），报告写 data/reviews/<日期>.json
                      # 加 -- --apply 把拦下的条目并入 data/hidden.json；-- --allow-no-agent 只跑硬规则
 npm run dev          # digest 后在 0.0.0.0:8088 起本地预览（含局域网地址）
@@ -140,6 +145,27 @@ curl -X DELETE https://tool-hub.xyz/api/comments/12 -H "Authorization: Bearer <M
 ## 列表的年月筛选与排序
 
 栏目页、子类页、标签页和归档页顶部有一组筛选控件：**年份**、**月份**、**排序**（质量评分 / 最新发布 / 来源热度），默认按质量评分从高到低（`quality` → 排名分 → 发布时间）。月份按原文发布时间归类，没有发布时间才退回日报日期，因此 `/archive/<年-月>` 的分组和页面上的月份筛选是同一套口径。选择结果写进 URL（`?month=2026-11&year=2026&sort=newest`），链接可直接分享；表单是 `method="get"`，禁用 JS 时退化为一次 GET，服务端渲染出来的默认顺序就是质量评分顺序。规则集中在 `src/lib/listview.mjs`，构建期与浏览器共用同一份，不会出现两边排序不一致。
+
+## 评测数据页（可核对的实测表格）
+
+入口在 `/bench`（顶部菜单「评测数据」）。这一页把开源项目公开的实测结果整理成中文表格，每条结论后面直接挂原报告链接：
+
+| 数据集 | 页面 | 数字来源 |
+|---|---|---|
+| Strata 社区硬件实测 | `/bench/strata-community` | `Niko1221/Strata` 的 `bench/results/COMMUNITY.md` 等 7 个文件 |
+| 同一台机器的版本演进 | `/bench/strata-engine-speed` | 同一台 RTX 5070 上引擎 0.1.14 / 0.1.22 / 0.1.26 的速度矩阵 |
+| 托管模型价格与上下文 | `/bench/model-pricing` | `https://openrouter.ai/api/v1/models` |
+
+- **分工**：`src/bench.mjs` 只抓原文并记录 commit 与 SHA-256，`src/lib/bench.mjs` 只做解析，`config/bench.json` 只提供中文表头、结论、复现步骤与来源清单，`src/lib/render.mjs` 不产生任何数字。
+- **采信规则**：只有整格就是 `a / b / c` 纯数字序列的单元格才进数字表；一格塞了多种量化、带解释文字或带范围的行全部落到「其余报告」列表并保留原表写法，脚本不猜数字。
+- **可核对**：每页底部列出抓取时间、commit、每个文件的 SHA-256 与字节数；表格里每行最后的链接指向抓取那一版原文（`blob/<commit>/...`）；`/bench/<id>.json` 是本页用的原始结构化数据，`/bench/<id>-chart.svg` 是图表本体，不依赖第三方图表库。
+- **可复现**：每页的「复现与核对方法」给出可直接执行的命令（标准协议 `strata bench run` / 快速自测 `bench.sh` / 同机 A/B `--compare`），并附协议 ID `strata-qwen38-thinking-v1-draft.1` 与冻结提示词包哈希。
+- **抓取失败**：沿用已提交的上一版数据并在日志里标注；`npm run bench -- --offline` 直接用仓库里的数据，CI 里这一步是 `continue-on-error`。
+- **口径提醒**：上游的标准基准协议仍是草案，页面上列出的社区报告大多属于社区自测格式；跨行比较只能当参考，同机对比只用同一台机器的那组数字。
+
+## 图片点击放大
+
+`public/lightbox.js`（零依赖）接管 `main` 里的图片：正文配图与评测图表点开看大图，列表缩略图本身是进条目页的链接所以不接管（带 `<a>` 祖先的图片一律跳过）。大图优先取 `data-full`，标题取所属 `figure` 的 `figcaption` 或 `alt`；键盘可开（`tabindex=0` + Enter/空格），Esc 或点图片外面关闭并把焦点还给原图，打开期间 `body[data-lightbox="open"]` 锁滚动。评测图表页同时在说明里给出 SVG 原文链接。
 
 ## 管理员登录与条目下架
 

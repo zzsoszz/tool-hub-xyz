@@ -1,0 +1,428 @@
+{
+  "id": "model-pricing",
+  "kind": "openrouter-pricing",
+  "collectedAt": "2026-11-10T00:39:43.988Z",
+  "upstream": {
+    "label": "OpenRouter 模型目录 API",
+    "url": "https://openrouter.ai/models"
+  },
+  "commit": null,
+  "tables": {
+    "pricing": {
+      "rows": [
+        {
+          "name": "Thinking Machines: Inkling 2 Small (free)",
+          "id": "thinkingmachines/inkling-2-small:free",
+          "url": "https://openrouter.ai/thinkingmachines/inkling-2-small:free",
+          "context": 1048576,
+          "promptPerMillion": 0,
+          "completionPerMillion": 0,
+          "free": true,
+          "created": 1794261847
+        },
+        {
+          "name": "Google: Lyria 3 Pro Preview",
+          "id": "google/lyria-3-pro-preview",
+          "url": "https://openrouter.ai/google/lyria-3-pro-preview",
+          "context": 1048576,
+          "promptPerMillion": 0,
+          "completionPerMillion": 0,
+          "free": true,
+          "created": 1774907286
+        },
+        {
+          "name": "Google: Lyria 3 Clip Preview",
+          "id": "google/lyria-3-clip-preview",
+          "url": "https://openrouter.ai/google/lyria-3-clip-preview",
+          "context": 1048576,
+          "promptPerMillion": 0,
+          "completionPerMillion": 0,
+          "free": true,
+          "created": 1774907255
+        },
+        {
+          "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
+          "id": "nvidia/nemotron-3.5-lightning:free",
+          "url": "https://openrouter.ai/nvidia/nemotron-3.5-lightning:free",
+          "context": 1000000,
+          "promptPerMillion": 0,
+          "completionPerMillion": 0,
+          "free": true,
+          "created": 1786452751
+        },
+        {
+          "name": "NVIDIA: Nemotron 3 Ultra (free)",
+          "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
+          "url": "https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free",
+          "context": 1000000,
+          "promptPerMillion": 0,
+          "completionPerMillion": 0,
+          "free": true,
+          "created": 1780551208
+        },
+        {
+          "name": "Dots Studio: Dots3-Note Preview (free)",
+          "id": "dots-studio/dots-3-note-preview:free",
+          "url": "https://openrouter.ai/dots-studio/dots-3-note-preview:free",
+          "context": 512000,
+          "promptPerMillion": 0,
+          "completionPerMillion": 0,
+          "free": true,
+          "created": 1786680361
+        },
+        {
+          "name": "LiquidAI: LFM3-1.7B (free)",
+          "id": "liquid/lfm-3-1.7b:free",
+          "url": "https://openrouter.ai/liquid/lfm-3-1.7b:free",
+          "context": 262144,
+          "promptPerMillion": 0,
+          "completionPerMillion": 0,
+          "free": true,
+          "created": 1794009477
+        },
+        {
+          "name": "Recursive: Flint (free)",
+          "id": "recursive/flint-v1.0:free",
+          "url": "https://openrouter.ai/recursive/flint-v1.0:free",
+          "context": 262144,
+          "promptPerMillion": 0,
+          "completionPerMillion": 0,
+          "free": true,
+          "created": 1792622765
+        },
+        {
+          "name": "XingChen: Xing4.0 29B A4B (free)",
+          "id": "xingchen-agi/xing4.0-29b-a4b:free",
+          "url": "https://openrouter.ai/xingchen-agi/xing4.0-29b-a4b:free",
+          "context": 262144,
+          "promptPerMillion": 0,
+          "completionPerMillion": 0,
+          "free": true,
+          "created": 1792177496
+        },
+        {
+          "name": "Cohere: North Mini Code (free)",
+          "id": "cohere/north-mini-code:free",
+          "url": "https://openrouter.ai/cohere/north-mini-code:free",
+          "context": 256000,
+          "promptPerMillion": 0,
+          "completionPerMillion": 0,
+          "free": true,
+          "created": 1781723748
+        },
+        {
+          "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
+          "id": "deepseek/deepseek-v4.1-flash-1017",
+          "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
+          "context": 1048576,
+          "promptPerMillion": 0.006,
+          "completionPerMillion": 0.5,
+          "free": false,
+          "created": 1792225624
+        },
+        {
+          "name": "DeepSeek: DeepSeek Flash Latest",
+          "id": "~deepseek/deepseek-flash-latest",
+          "url": "https://openrouter.ai/~deepseek/deepseek-flash-latest",
+          "context": 1048576,
+          "promptPerMillion": 0.006,
+          "completionPerMillion": 0.5,
+          "free": false,
+          "created": 1789399150
+        },
+        {
+          "name": "Z.ai: GLM 5.2",
+          "id": "z-ai/glm-5.2",
+          "url": "https://openrouter.ai/z-ai/glm-5.2",
+          "context": 1048576,
+          "promptPerMillion": 0.006,
+          "completionPerMillion": 6.8,
+          "free": false,
+          "created": 1781631930
+        },
+        {
+          "name": "DeepSeek: DeepSeek V4.1 Flash 1017 (batch)",
+          "id": "deepseek/deepseek-v4.1-flash-1017:batch",
+          "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017:batch",
+          "context": 1048576,
+          "promptPerMillion": 0.011,
+          "completionPerMillion": 0.19999999999999998,
+          "free": false,
+          "created": 1792225624
+        },
+        {
+          "name": "inclusionAI: Ling 3.0 Tiny",
+          "id": "inclusionai/ling-3.0-tiny",
+          "url": "https://openrouter.ai/inclusionai/ling-3.0-tiny",
+          "context": 262144,
+          "promptPerMillion": 0.015,
+          "completionPerMillion": 0.045,
+          "free": false,
+          "created": 1786034890
+        },
+        {
+          "name": "Meta: Llama 3.1 8B Instruct",
+          "id": "meta-llama/llama-3.1-8b-instruct",
+          "url": "https://openrouter.ai/meta-llama/llama-3.1-8b-instruct",
+          "context": 131072,
+          "promptPerMillion": 0.02,
+          "completionPerMillion": 0.04,
+          "free": false,
+          "created": 1721692800
+        },
+        {
+          "name": "inclusionAI: Ling 3.0 Flash",
+          "id": "inclusionai/ling-3.0-flash",
+          "url": "https://openrouter.ai/inclusionai/ling-3.0-flash",
+          "context": 262144,
+          "promptPerMillion": 0.020999999999999998,
+          "completionPerMillion": 0.063,
+          "free": false,
+          "created": 1784818580
+        },
+        {
+          "name": "OpenAI: gpt-oss-20b (batch)",
+          "id": "openai/gpt-oss-20b:batch",
+          "url": "https://openrouter.ai/openai/gpt-oss-20b:batch",
+          "context": 131072,
+          "promptPerMillion": 0.024,
+          "completionPerMillion": 0.112,
+          "free": false,
+          "created": 1754414229
+        },
+        {
+          "name": "Nex AGI: Nex-N2.5-Mini",
+          "id": "nex-agi/nex-n2.5-mini",
+          "url": "https://openrouter.ai/nex-agi/nex-n2.5-mini",
+          "context": 262144,
+          "promptPerMillion": 0.024999999999999998,
+          "completionPerMillion": 0.09999999999999999,
+          "free": false,
+          "created": 1788890061
+        },
+        {
+          "name": "Mistral: Mistral Nemo",
+          "id": "mistralai/mistral-nemo",
+          "url": "https://openrouter.ai/mistralai/mistral-nemo",
+          "context": 131072,
+          "promptPerMillion": 0.029,
+          "completionPerMillion": 0.03,
+          "free": false,
+          "created": 1721347200
+        },
+        {
+          "name": "OpenAI: gpt-oss-120b (batch)",
+          "id": "openai/gpt-oss-120b:batch",
+          "url": "https://openrouter.ai/openai/gpt-oss-120b:batch",
+          "context": 131072,
+          "promptPerMillion": 0.0296,
+          "completionPerMillion": 0.136,
+          "free": false,
+          "created": 1754414231
+        },
+        {
+          "name": "OpenAI: gpt-oss-20b",
+          "id": "openai/gpt-oss-20b",
+          "url": "https://openrouter.ai/openai/gpt-oss-20b",
+          "context": 131072,
+          "promptPerMillion": 0.03,
+          "completionPerMillion": 0.13,
+          "free": false,
+          "created": 1754414229
+        },
+        {
+          "name": "Inference.net: Schematron V2 Turbo",
+          "id": "inference-net/schematron-v2-turbo",
+          "url": "https://openrouter.ai/inference-net/schematron-v2-turbo",
+          "context": 128000,
+          "promptPerMillion": 0.03,
+          "completionPerMillion": 0.15,
+          "free": false,
+          "created": 1789176949
+        },
+        {
+          "name": "Amazon: Nova Micro 1.0",
+          "id": "amazon/nova-micro-v1",
+          "url": "https://openrouter.ai/amazon/nova-micro-v1",
+          "context": 128000,
+          "promptPerMillion": 0.035,
+          "completionPerMillion": 0.14,
+          "free": false,
+          "created": 1733437237
+        },
+        {
+          "name": "Cohere: Command R7B (12-2024)",
+          "id": "cohere/command-r7b-12-2024",
+          "url": "https://openrouter.ai/cohere/command-r7b-12-2024",
+          "context": 128000,
+          "promptPerMillion": 0.0375,
+          "completionPerMillion": 0.15,
+          "free": false,
+          "created": 1734158152
+        },
+        {
+          "name": "DeepSeek: DeepSeek V4 Flash Latest",
+          "id": "~deepseek/deepseek-v4-flash-latest",
+          "url": "https://openrouter.ai/~deepseek/deepseek-v4-flash-latest",
+          "context": 1048576,
+          "promptPerMillion": 0.0434,
+          "completionPerMillion": 0.3,
+          "free": false,
+          "created": 1785606009
+        },
+        {
+          "name": "DeepSeek: DeepSeek V4 Flash 0731",
+          "id": "deepseek/deepseek-v4-flash-0731",
+          "url": "https://openrouter.ai/deepseek/deepseek-v4-flash-0731",
+          "context": 1048576,
+          "promptPerMillion": 0.0434,
+          "completionPerMillion": 0.3,
+          "free": false,
+          "created": 1785478908
+        },
+        {
+          "name": "inclusionAI: Ling 3.1 Flash",
+          "id": "inclusionai/ling-3.1-flash",
+          "url": "https://openrouter.ai/inclusionai/ling-3.1-flash",
+          "context": 1000000,
+          "promptPerMillion": 0.045,
+          "completionPerMillion": 0.135,
+          "free": false,
+          "created": 1790950024
+        },
+        {
+          "name": "DeepSeek: DeepSeek V4 Flash 0731 (batch)",
+          "id": "deepseek/deepseek-v4-flash-0731:batch",
+          "url": "https://openrouter.ai/deepseek/deepseek-v4-flash-0731:batch",
+          "context": 1048576,
+          "promptPerMillion": 0.048,
+          "completionPerMillion": 0.144,
+          "free": false,
+          "created": 1785478908
+        },
+        {
+          "name": "Particle AI: Particle-1",
+          "id": "particle-ai/particle-1",
+          "url": "https://openrouter.ai/particle-ai/particle-1",
+          "context": 1048576,
+          "promptPerMillion": 0.049999999999999996,
+          "completionPerMillion": 0.5,
+          "free": false,
+          "created": 1793207893
+        },
+        {
+          "name": "Upstage: Solar Mini 4",
+          "id": "upstage/solar-mini4",
+          "url": "https://openrouter.ai/upstage/solar-mini4",
+          "context": 524288,
+          "promptPerMillion": 0.049999999999999996,
+          "completionPerMillion": 0.19999999999999998,
+          "free": false,
+          "created": 1790160358
+        },
+        {
+          "name": "Google: Gemma 3 4B",
+          "id": "google/gemma-3-4b-it",
+          "url": "https://openrouter.ai/google/gemma-3-4b-it",
+          "context": 131072,
+          "promptPerMillion": 0.049999999999999996,
+          "completionPerMillion": 0.09999999999999999,
+          "free": false,
+          "created": 1741905510
+        },
+        {
+          "name": "Google: Gemma 3 12B",
+          "id": "google/gemma-3-12b-it",
+          "url": "https://openrouter.ai/google/gemma-3-12b-it",
+          "context": 131072,
+          "promptPerMillion": 0.049999999999999996,
+          "completionPerMillion": 0.15,
+          "free": false,
+          "created": 1741902625
+        },
+        {
+          "name": "Meta: Llama 3.2 3B Instruct",
+          "id": "meta-llama/llama-3.2-3b-instruct",
+          "url": "https://openrouter.ai/meta-llama/llama-3.2-3b-instruct",
+          "context": 131072,
+          "promptPerMillion": 0.049999999999999996,
+          "completionPerMillion": 0.33,
+          "free": false,
+          "created": 1727222400
+        },
+        {
+          "name": "LiquidAI: LFM2.5-24B-A2B",
+          "id": "liquid/lfm-2.5-24b-a2b",
+          "url": "https://openrouter.ai/liquid/lfm-2.5-24b-a2b",
+          "context": 128000,
+          "promptPerMillion": 0.049999999999999996,
+          "completionPerMillion": 0.7,
+          "free": false,
+          "created": 1791912025
+        },
+        {
+          "name": "Inference.net: Schematron V2 Small",
+          "id": "inference-net/schematron-v2-small",
+          "url": "https://openrouter.ai/inference-net/schematron-v2-small",
+          "context": 128000,
+          "promptPerMillion": 0.049999999999999996,
+          "completionPerMillion": 0.22999999999999998,
+          "free": false,
+          "created": 1789176933
+        },
+        {
+          "name": "DeepSeek: DeepSeek V4.1 Flash",
+          "id": "deepseek/deepseek-v4.1-flash",
+          "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash",
+          "context": 1048576,
+          "promptPerMillion": 0.051,
+          "completionPerMillion": 0.5670000000000001,
+          "free": false,
+          "created": 1789021285
+        },
+        {
+          "name": "Amazon: Nova Lite 1.0",
+          "id": "amazon/nova-lite-v1",
+          "url": "https://openrouter.ai/amazon/nova-lite-v1",
+          "context": 300000,
+          "promptPerMillion": 0.06,
+          "completionPerMillion": 0.24,
+          "free": false,
+          "created": 1733437363
+        },
+        {
+          "name": "NVIDIA: Nemotron 3 Nano 30B A3B",
+          "id": "nvidia/nemotron-3-nano-30b-a3b",
+          "url": "https://openrouter.ai/nvidia/nemotron-3-nano-30b-a3b",
+          "context": 262144,
+          "promptPerMillion": 0.06,
+          "completionPerMillion": 0.24,
+          "free": false,
+          "created": 1765731275
+        },
+        {
+          "name": "IBM: Granite 4.2 8B",
+          "id": "ibm-granite/granite-4.2-8b",
+          "url": "https://openrouter.ai/ibm-granite/granite-4.2-8b",
+          "context": 131072,
+          "promptPerMillion": 0.06,
+          "completionPerMillion": 0.25,
+          "free": false,
+          "created": 1788206780
+        }
+      ]
+    }
+  },
+  "stats": {
+    "models": 40,
+    "free": 10
+  },
+  "files": [
+    {
+      "path": "https://openrouter.ai/api/v1/models",
+      "url": "https://openrouter.ai/api/v1/models",
+      "sha256": "cd5a927d7e918483678ff5b8f60736f13bc9eab1375185e587364f77cbaf7881",
+      "bytes": 834802
+    }
+  ]
+}

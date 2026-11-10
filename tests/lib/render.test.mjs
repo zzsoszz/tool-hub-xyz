@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { escapeHtml, renderAboutPage, renderArchive, renderDiscussPage, renderDigestPage, renderItemPage, renderLlms, renderRss, renderSearchPage, renderSectionPage } from '../../src/lib/render.mjs';
+import { escapeHtml, renderAboutPage, renderArchive, renderBenchDatasetPage, renderBenchIndexPage, renderDiscussPage, renderDigestPage, renderItemPage, renderLlms, renderRss, renderSearchPage, renderSectionPage } from '../../src/lib/render.mjs';
 import { itemSlug } from '../../src/lib/items.mjs';
 
 const sections = [
@@ -234,4 +234,108 @@ test('wrapsItemPageTablesForHorizontalScrolling', () => {
   assert.ok(html.includes('<div class="table-scroll"><table>'));
   assert.ok(html.includes('</table></div>'));
   assert.ok(html.includes('class="article"'));
+});
+
+const benchCommit = '504b143342a9fe1aa8320a7b31e11f5c0ac265c3';
+const benchSections = [{ id: 'bench', label: '评测选型', href: '/bench', navLabel: '评测数据', categories: ['bench'] }];
+const benchOptions = { ...options, sections: benchSections };
+
+const benchConfig = {
+  index: {
+    label: '评测数据',
+    lede: '把开源项目公开的实测搬进站内。',
+    meta: '每天跟日报一起采集两次。',
+    method: { title: '本页数据是怎么来的', steps: ['采集上游 Markdown'] },
+    caveats: ['不同机器与不同提示词'],
+    otherSources: [{ name: 'MLCommons MLPerf Inference', url: 'https://mlcommons.org/benchmarks/inference-datacenter/', measures: '推理吞吐', verify: '官方公布提交代码' }],
+  },
+  datasets: [
+    {
+      id: 'strata-community',
+      kind: 'strata-community',
+      label: 'Strata 社区硬件实测',
+      summary: '同一款模型在不同显卡上的速度。',
+      upstream: { label: 'Niko1221/Strata · bench/results/COMMUNITY.md', url: 'https://github.com/Niko1221/Strata/tree/main/bench/results' },
+      reading: ['读取速度决定长上下文的等待时间'],
+      tables: {
+        output: { label: '生成速度（tok/s）', note: '照抄原报告中位数' },
+        prompt: { label: '读取速度（tok/s）', note: '三段按 4K / 32K / 128K' },
+        others: { label: '其余社区报告', note: '脚本不猜数字' },
+      },
+      chart: { table: 'output', labelFields: ['hardware', 'model'], valueIndex: 1, top: 3, title: '生成速度排行', unit: 'tok/s', note: '机器不同' },
+      conclusions: [{ text: '量化越小生成越快。', sources: [{ label: '#1725', folder: '2026-10-09-community-rtx-3060-0141' }] }],
+      method: {
+        title: '自己复现一遍',
+        steps: ['跑标准协议'],
+        commands: ['strata bench run --profile NAME'],
+        citations: [{ label: '标准基准协议全文', path: 'docs/BENCHMARK_PROTOCOL.md' }],
+      },
+      caveats: ['单次采样会浮动几个百分点'],
+    },
+  ],
+};
+
+const benchData = {
+  id: 'strata-community',
+  kind: 'strata-community',
+  collectedAt: '2026-11-10T00:10:00.000Z',
+  commit: benchCommit,
+  tables: {
+    output: {
+      rows: [
+        { folder: '2026-10-09-community-rtx-3060-0141', hardware: 'RTX 3060 12 GB', model: 'Q2_0', engine: '0.1.41', pr: '#1725', prUrl: 'https://github.com/Niko1221/Strata/pull/1725', values: [41.8, 41.8, 33.5], raw: '41.8 / 41.8 / 33.5', readmeUrl: `https://github.com/Niko1221/Strata/blob/${benchCommit}/bench/results/2026-10-09-community-rtx-3060-0141/README.md` },
+        { folder: '2026-10-01-ctx-ladder', hardware: 'RTX 4070 Ti SUPER 16 GB', model: 'IQ2_XS', engine: '0.1.31', pr: '#995', prUrl: null, values: [97, 84, 74], raw: '97 / 84 / 74', readmeUrl: `https://github.com/Niko1221/Strata/blob/${benchCommit}/bench/results/2026-10-01-ctx-ladder/README.md` },
+      ],
+    },
+    prompt: {
+      rows: [
+        { folder: '2026-10-01-community-2x-rtx-pro-4500', hardware: '2x RTX PRO 4500 32 GB', model: 'Swift IQ3_XXS', engine: '0.1.30', pr: '#418', prUrl: 'https://github.com/Niko1221/Strata/pull/418', values: [1428, 2454, 2785], raw: '1,428 / 2,454 / 2,785', readmeUrl: `https://github.com/Niko1221/Strata/blob/${benchCommit}/bench/results/2026-10-01-community-2x-rtx-pro-4500/README.md` },
+      ],
+    },
+    others: {
+      rows: [
+        { folder: '2026-10-01-community-rtx-pro-4500', hardware: 'RTX PRO 4500 32 GB', model: 'UD-Q4_K_XL / IQ3_S', engine: '0.1.31', pr: '#417', prUrl: null, note: '数字见原报告 ｜ UD-IQ4_XS 82.0 / 95.8 / 91.4', readmeUrl: `https://github.com/Niko1221/Strata/blob/${benchCommit}/bench/results/2026-10-01-community-rtx-pro-4500/README.md` },
+      ],
+    },
+  },
+  stats: { outputRows: 2, promptRows: 1, otherRows: 1, medianOutput: 84, medianPrompt: 2454, fastestOutput: 120, slowestOutput: 41.8, fastestPrompt: 2454 },
+  files: [{ path: 'bench/results/COMMUNITY.md', url: `https://github.com/Niko1221/Strata/blob/${benchCommit}/bench/results/COMMUNITY.md`, sha256: 'e75eff8b9feea04f745520b392c4c17d97aefc1ba185e222aa6740efa8f68407', bytes: 68579 }],
+};
+
+test('rendersBenchIndexPageWithCardsAndOtherSources', () => {
+  const html = renderBenchIndexPage({ ...benchOptions, benchConfig, benchData: [{ dataset: benchConfig.datasets[0], data: benchData }] });
+  assert.ok(html.includes('<a href="/bench/strata-community">Strata 社区硬件实测</a>'));
+  assert.ok(html.includes('生成速度表 2 行 · 读取速度表 1 行 · 其余报告 1 份'));
+  assert.ok(html.includes('<a href="https://mlcommons.org/benchmarks/inference-datacenter/"'));
+  assert.ok(html.includes('<a href="/s/bench">评测选型</a>'));
+  assert.ok(html.includes('不同机器与不同提示词'));
+  assert.ok(html.includes('<nav class="menu"><a class="active" href="/bench">评测数据</a></nav>'));
+  assert.ok(html.includes('src="/lightbox.js" defer'));
+});
+
+test('rendersBenchDatasetPageWithNumbersSourcesAndChart', () => {
+  const html = renderBenchDatasetPage({ ...benchOptions, benchConfig, dataset: benchConfig.datasets[0], data: benchData });
+  assert.ok(html.includes('<th class="num">32K 输入</th>'));
+  assert.ok(html.includes('<td class="num">2,454</td>'));
+  assert.ok(html.includes(`href="https://github.com/Niko1221/Strata/blob/${benchCommit}/bench/results/2026-10-09-community-rtx-3060-0141/README.md"`));
+  assert.ok(html.includes('href="https://github.com/Niko1221/Strata/pull/1725"'));
+  assert.ok(html.includes('UD-IQ4_XS 82.0 / 95.8 / 91.4'));
+  assert.ok(html.includes('<img data-zoom src="/bench/strata-community-chart.svg"'));
+  assert.ok(html.includes('<pre><code>strata bench run --profile NAME</code></pre>'));
+  assert.ok(html.includes(`https://github.com/Niko1221/Strata/blob/${benchCommit}/docs/BENCHMARK_PROTOCOL.md`));
+  assert.ok(html.includes('e75eff8b9feea04f745520b392c4c17d97aefc1ba185e222aa6740efa8f68407'));
+  assert.ok(html.includes('<a href="/bench/strata-community.json">/bench/strata-community.json</a>'));
+});
+
+test('attachesEveryBenchConclusionToItsOwnSource', () => {
+  const html = renderBenchDatasetPage({ ...benchOptions, benchConfig, dataset: benchConfig.datasets[0], data: benchData });
+  assert.ok(html.includes('<ol class="bench-findings">'));
+  assert.ok(html.includes('<p class="bench-sources">来源：<a href="https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-10-09-community-rtx-3060-0141/README.md"'));
+});
+
+test('skipsBenchTablesThatHaveNoRows', () => {
+  const empty = { ...benchData, tables: { output: { rows: [] }, prompt: { rows: [] }, others: { rows: [] } } };
+  const html = renderBenchDatasetPage({ ...benchOptions, benchConfig, dataset: benchConfig.datasets[0], data: empty });
+  assert.ok(!html.includes('32K 输入'));
+  assert.ok(!html.includes('bench-figure'));
 });

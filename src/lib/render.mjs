@@ -2,6 +2,7 @@ import { timeAgo } from './normalize.mjs';
 import { domainOf, itemImage, itemSlug, rankCompare } from './items.mjs';
 import { monthKey, sortMode, sortModes } from './listview.mjs';
 import { repairArticle } from './content.mjs';
+import { datasetChartItems, formatNumber, formatPrice, readmeUrl } from './bench.mjs';
 
 export function escapeHtml(value) {
   return String(value ?? '')
@@ -43,13 +44,13 @@ export function menuFor(sections, activeId) {
   const links = (sections ?? []).map((section) => {
     const href = section.href ?? `/s/${section.id}`;
     const active = section.id === activeId ? ' class="active"' : '';
-    return `<a${active} href="${escapeHtml(href)}">${escapeHtml(section.label)}</a>`;
+    return `<a${active} href="${escapeHtml(href)}">${escapeHtml(section.navLabel ?? section.label)}</a>`;
   });
   return `  <nav class="menu">${links.join('')}</nav>`;
 }
 
 function page({ title, description, canonical, siteUrl, repoUrl = 'https://github.com/zzsoszz/tool-hub-xyz', menu = '', body, scripts = [] }) {
-  const tags = [...scripts, { src: '/admin.js', type: 'module' }].map((entry) => {
+  const tags = [...scripts, '/lightbox.js', { src: '/admin.js', type: 'module' }].map((entry) => {
     const { src, type } = typeof entry === 'string' ? { src: entry } : entry;
     return `<script${type ? ` type="${escapeHtml(type)}"` : ''} src="${escapeHtml(src)}" defer></script>`;
   }).join('\n');
@@ -617,4 +618,335 @@ ${lines.join('\n')}
 - 条目全量 JSON：${siteUrl || 'https://tool-hub.xyz'}/data/items.json
 - 源码：https://github.com/zzsoszz/tool-hub-xyz
 `;
+}
+
+// ---- 评测数据页 -----------------------------------------------------------
+// 数字全部来自 data/bench/<id>.json（src/bench.mjs 采集），中文表头、结论与说明来自 config/bench.json。
+// 渲染层不产生任何数字，只把两者拼在一起，并把每条结论挂回原报告。
+
+function externalLink(label, url) {
+  if (!url) return escapeHtml(label);
+  return `<a href="${escapeHtml(url)}" target="_blank" rel="nofollow noopener noreferrer">${escapeHtml(label)}</a>`;
+}
+
+function sourceRef(source, commit) {
+  const ref = commit ?? 'main';
+  const url = source.url
+    ?? (source.folder ? readmeUrl(source.folder, ref) : null)
+    ?? (source.path ? `https://github.com/Niko1221/Strata/blob/${ref}/${source.path}` : null);
+  return externalLink(source.label ?? url, url);
+}
+
+function benchTable({ columns, rows }) {
+  const head = columns.map((column) => `<th${column.align === 'right' ? ' class="num"' : ''}>${escapeHtml(column.label)}</th>`).join('');
+  const body = rows.map((row) => `        <tr>${columns.map((column) => `          <td${column.align === 'right' ? ' class="num"' : ''}>${row[column.key] ?? ''}</td>`).join('')}</tr>`).join('\n');
+  return `      <div class="table-scroll">
+        <table class="bench-table">
+          <thead><tr>${head}</tr></thead>
+          <tbody>
+${body}
+          </tbody>
+        </table>
+      </div>`;
+}
+
+function communityTableRows(tableId, rows) {
+  const numericColumns = [
+    { key: 'v4k', label: '4K 输入', align: 'right' },
+    { key: 'v32k', label: '32K 输入', align: 'right' },
+    { key: 'v128k', label: '128K 输入', align: 'right' },
+  ];
+  const baseColumns = [
+    { key: 'hardware', label: '显卡与平台' },
+    { key: 'model', label: '模型与量化' },
+    { key: 'engine', label: '引擎版本' },
+  ];
+  if (tableId === 'others') {
+    return {
+      columns: [...baseColumns, { key: 'raw', label: '原表写法' }, { key: 'source', label: '原报告' }],
+      rows: rows.map((row) => ({
+        hardware: escapeHtml(row.hardware),
+        model: escapeHtml(row.model),
+        engine: escapeHtml(row.engine),
+        raw: escapeHtml(row.note ?? row.raw ?? ''),
+        source: `${externalLink(row.folder, row.readmeUrl)}${row.prUrl ? ` · ${externalLink(row.pr, row.prUrl)}` : ''}`,
+      })),
+    };
+  }
+  return {
+    columns: [...baseColumns, ...numericColumns, { key: 'raw', label: '原表写法' }, { key: 'source', label: '原报告' }],
+    rows: rows.map((row) => ({
+      hardware: escapeHtml(row.hardware),
+      model: escapeHtml(row.model),
+      engine: escapeHtml(row.engine),
+      v4k: escapeHtml(formatNumber(row.values[0])),
+      v32k: escapeHtml(formatNumber(row.values[1])),
+      v128k: escapeHtml(formatNumber(row.values[2])),
+      raw: escapeHtml(row.raw ?? ''),
+      source: `${externalLink(row.folder, row.readmeUrl)}${row.prUrl ? ` · ${externalLink(row.pr, row.prUrl)}` : ''}`,
+    })),
+  };
+}
+
+function matrixTableRows(rows) {
+  const contexts = rows[0]?.contexts ?? [];
+  return {
+    columns: [
+      { key: 'engine', label: '引擎版本' },
+      { key: 'model', label: '量化档位' },
+      ...contexts.map((context, index) => ({ key: `c${index}`, label: `${context} 输入`, align: 'right' })),
+      { key: 'source', label: '原始表格' },
+    ],
+    rows: rows.map((row) => ({
+      engine: escapeHtml(row.engine),
+      model: escapeHtml(row.model),
+      ...Object.fromEntries(row.values.map((value, index) => [`c${index}`, escapeHtml(value === null ? '未跑' : formatNumber(value))])),
+      source: externalLink(row.sourceUrl?.split('/').slice(-2).join(' / ') ?? '原始表格', row.sourceUrl),
+    })),
+  };
+}
+
+function pricingTableRows(rows) {
+  return {
+    columns: [
+      { key: 'name', label: '模型' },
+      { key: 'context', label: '上下文长度', align: 'right' },
+      { key: 'prompt', label: '输入（美元 / 百万 token）', align: 'right' },
+      { key: 'completion', label: '输出（美元 / 百万 token）', align: 'right' },
+    ],
+    rows: rows.map((row) => ({
+      name: externalLink(row.name, row.url),
+      context: escapeHtml(formatNumber(row.context)),
+      prompt: escapeHtml(row.free ? '免费档' : formatPrice(row.promptPerMillion)),
+      completion: escapeHtml(row.free ? '免费档' : formatPrice(row.completionPerMillion)),
+    })),
+  };
+}
+
+function benchTableFor(dataset, tableId, rows) {
+  if (dataset.kind === 'strata-matrix') return matrixTableRows(rows);
+  if (dataset.kind === 'openrouter-pricing') return pricingTableRows(rows);
+  return communityTableRows(tableId, rows);
+}
+
+function benchStats(dataset, data) {
+  const stats = data.stats ?? {};
+  if (dataset.kind === 'strata-community') {
+    return [
+      `生成速度表 ${stats.outputRows ?? 0} 行`,
+      `读取速度表 ${stats.promptRows ?? 0} 行`,
+      `其余报告 ${stats.otherRows ?? 0} 份`,
+      stats.medianOutput ? `32K 生成速度中位 ${formatNumber(stats.medianOutput)} tok/s` : '',
+      stats.medianPrompt ? `32K 读取速度中位 ${formatNumber(stats.medianPrompt)} tok/s` : '',
+    ];
+  }
+  if (dataset.kind === 'strata-matrix') {
+    return [
+      `引擎版本 ${(stats.engines ?? []).join(' / ')}`,
+      `量化档位 ${(stats.models ?? []).length} 种：${(stats.models ?? []).join('、')}`,
+      '同一台机器、同一批提示词',
+    ];
+  }
+  return [
+    `${stats.models ?? 0} 个模型（上下文不低于 128K）`,
+    `其中 ${stats.free ?? 0} 个是免费档`,
+    '价格取输入单价最低的一批',
+  ];
+}
+
+function benchFindingList(dataset, commit) {
+  const items = (dataset.conclusions ?? []).map((finding) => {
+    const sources = (finding.sources ?? []).map((source) => sourceRef(source, commit));
+    return `        <li><p>${escapeHtml(finding.text)}</p>${sources.length ? `<p class="bench-sources">来源：${sources.join(' · ')}</p>` : ''}</li>`;
+  });
+  if (!items.length) return '';
+  return `      <ol class="bench-findings">
+${items.join('\n')}
+      </ol>`;
+}
+
+function benchMethod(method, commit) {
+  if (!method) return '';
+  const steps = (method.steps ?? []).map((step) => `          <li>${escapeHtml(step)}</li>`).join('\n');
+  const citations = (method.citations ?? []).map((citation) => `          <li>${sourceRef(citation, commit)}</li>`).join('\n');
+  const commands = (method.commands ?? []).length
+    ? `      <div class="bench-commands">
+        <h4>命令</h4>
+        <pre><code>${escapeHtml(method.commands.join('\n'))}</code></pre>
+        <p class="bench-commands-note">每条都能直接复制执行；带 npm run bench 的那条是本站重新采集并重算表格。</p>
+      </div>`
+    : '';
+  return `      ${method.intro ? `<p>${escapeHtml(method.intro)}</p>` : ''}
+      <ol class="bench-steps">
+${steps}
+      </ol>
+${commands}
+${citations ? `      <p class="bench-cite-title">协议与说明原文</p>
+      <ul class="bench-cites">
+${citations}
+      </ul>` : ''}`;
+}
+
+function benchProvenance(dataset, data) {
+  const commitLine = data.commit
+    ? `上游仓库 <code>${escapeHtml(dataset.upstream?.label ?? '')}</code> 的 commit <a href="https://github.com/Niko1221/Strata/tree/${escapeHtml(data.commit)}"><code>${escapeHtml(data.commit)}</code></a>`
+    : `来源 <code>${escapeHtml(String(data.files?.[0]?.url ?? ''))}</code>`;
+  const files = (data.files ?? []).map((file) => `          <tr>
+            <td>${escapeHtml(file.path)}</td>
+            <td>${externalLink('原文', file.url)}</td>
+            <td class="num">${escapeHtml(formatNumber(file.bytes))}</td>
+            <td><code class="sha">${escapeHtml(file.sha256)}</code></td>
+          </tr>`).join('\n');
+  return `      <p>抓取时间 ${escapeHtml(data.collectedAt ?? '')}（UTC）。${commitLine}</p>
+      <div class="table-scroll">
+        <table class="bench-table bench-files">
+          <thead><tr><th>文件</th><th>核对</th><th class="num">字节</th><th>SHA-256</th></tr></thead>
+          <tbody>
+${files}
+          </tbody>
+        </table>
+      </div>
+      <p class="bench-note">本页表格由 <code>src/lib/bench.mjs</code> 解析上面这些文件生成，<code>config/bench.json</code> 只提供中文表头与说明；想核对某一行，点该行最后的链接回到当时那一版的原文。原始数据也可以直接取：<a href="/bench/${escapeHtml(dataset.id)}.json">/bench/${escapeHtml(dataset.id)}.json</a>。</p>`;
+}
+
+function benchChartFigure(dataset, data) {
+  if (!dataset.chart) return '';
+  const src = `/bench/${dataset.id}-chart.svg`;
+  if (!datasetChartItems(dataset, data).length) return '';
+  return `      <figure class="bench-figure">
+        <img data-zoom src="${escapeHtml(src)}" alt="${escapeHtml(dataset.chart.title)}" width="980" loading="lazy">
+        <figcaption>${escapeHtml(dataset.chart.title)} · ${escapeHtml(dataset.chart.note ?? '')}（点击放大，<a href="${escapeHtml(src)}">SVG 原文</a>）</figcaption>
+      </figure>`;
+}
+
+export function renderBenchIndexPage({ benchConfig, benchData = [], sections, siteUrl, repoUrl, days }) {
+  const index = benchConfig.index ?? {};
+  const cards = benchData.map(({ dataset, data }) => {
+    const stats = benchStats(dataset, data).filter(Boolean);
+    return `      <li class="bench-card">
+        <h2><a href="/bench/${escapeHtml(dataset.id)}">${escapeHtml(dataset.label)}</a></h2>
+        <p>${escapeHtml(dataset.summary ?? '')}</p>
+        <p class="bench-card-meta">${escapeHtml(stats.join(' · '))}</p>
+        <p class="bench-card-meta">采集 ${escapeHtml(data.collectedAt ?? '')}（UTC）· ${externalLink(dataset.upstream?.label ?? '上游来源', dataset.upstream?.url)}</p>
+      </li>`;
+  });
+  const sources = (index.otherSources ?? []).map((source) => `          <tr>
+            <td>${externalLink(source.name, source.url)}</td>
+            <td>${escapeHtml(source.measures ?? '')}</td>
+            <td>${escapeHtml(source.verify ?? '')}</td>
+          </tr>`).join('\n');
+  const caveats = (index.caveats ?? []).map((caveat) => `          <li>${escapeHtml(caveat)}</li>`).join('\n');
+  const steps = (index.method?.steps ?? []).map((step) => `          <li>${escapeHtml(step)}</li>`).join('\n');
+  const body = `  <section class="lede">
+    <h1>${escapeHtml(index.label ?? '评测数据')}</h1>
+    <p class="lede-meta">${escapeHtml(index.meta ?? '')}</p>
+    <p class="lede-hint">${escapeHtml(index.lede ?? '')}</p>
+  </section>
+  <section class="bench-cards">
+    <ul class="bench-card-list">
+${cards.join('\n')}
+    </ul>
+  </section>
+  <p class="bench-note bench-news">这一页只放核对过的数字表。想看 benchmark 相关的新闻和讨论，去「<a href="/s/bench">评测选型</a>」栏目，那里是本站每天收录的资讯条目。</p>
+  <section class="bench-method">
+    <h2>${escapeHtml(index.method?.title ?? '本页数据是怎么来的')}</h2>
+    <ol class="bench-steps">
+${steps}
+    </ol>
+  </section>
+  <section class="bench-sources">
+    <h2>其他高质量数据来源</h2>
+    <p class="bench-note">这一批是我们核对过入口的来源：各自测什么、怎么回查原始数据。要加新的数据集，往 <code>config/bench.json</code> 里加一条、再在 <code>src/bench.mjs</code> 里加对应的解析就行。</p>
+    <div class="table-scroll">
+      <table class="bench-table">
+        <thead><tr><th>来源</th><th>测什么</th><th>怎么核对</th></tr></thead>
+        <tbody>
+${sources}
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section class="bench-caveats">
+    <h2>看这些数字之前</h2>
+    <ul>
+${caveats}
+    </ul>
+  </section>
+  <section class="daynav">
+    <h2>按日期</h2>
+    <nav class="day-chips">${days.map((day) => `<a href="/day/${escapeHtml(day)}">${escapeHtml(day)}</a>`).join('')}</nav>
+  </section>`;
+  return page({
+    title: `${index.label ?? '评测数据'} · tool-hub.xyz`,
+    description: index.lede ?? '开源项目公开的性能实测，整理成可核对的中文表格。',
+    canonical: `${siteUrl}/bench`,
+    siteUrl,
+    repoUrl,
+    menu: menuFor(sections, 'bench'),
+    body,
+    scripts: ['/forum.js'],
+  });
+}
+
+export function renderBenchDatasetPage({ benchConfig, dataset, data, sections, siteUrl, repoUrl, days }) {
+  const stats = benchStats(dataset, data).filter(Boolean);
+  const tables = Object.entries(dataset.tables ?? {}).map(([tableId, table]) => {
+    const rows = data.tables?.[tableId]?.rows ?? [];
+    if (!rows.length) return '';
+    return `      <h3>${escapeHtml(table.label ?? tableId)}（${rows.length} 行）</h3>
+      <p class="bench-note">${escapeHtml(table.note ?? '')}</p>
+${benchTable(benchTableFor(dataset, tableId, rows))}`;
+  }).filter(Boolean).join('\n');
+  const reading = (dataset.reading ?? []).map((entry) => `          <li>${escapeHtml(entry)}</li>`).join('\n');
+  const contextNote = dataset.contextNote ? `      <p class="bench-note">${escapeHtml(dataset.contextNote)}</p>\n` : '';
+  const caveats = (dataset.caveats ?? []).map((caveat) => `          <li>${escapeHtml(caveat)}</li>`).join('\n');
+  const body = `  <section class="lede">
+    <h1><a href="/bench">${escapeHtml(benchConfig.index?.label ?? '评测数据')}</a> · ${escapeHtml(dataset.label)}</h1>
+    <p class="lede-meta">${escapeHtml(stats.join(' · '))}</p>
+    <p class="lede-hint">${escapeHtml(dataset.summary ?? '')}</p>
+  </section>
+  <section class="bench-reading">
+    <h2>怎么读这张表</h2>
+    <ul>
+${reading}
+    </ul>
+${contextNote}  </section>
+${benchFindingList(dataset, data.commit) ? `  <section class="bench-findings-block">
+    <h2>这批数据说明了什么</h2>
+    <p class="bench-note">每条结论后面直接挂原报告；数字照抄原文，没有换算。</p>
+${benchFindingList(dataset, data.commit)}
+  </section>` : ''}
+  <section class="bench-data">
+    <h2>数据表</h2>
+${benchChartFigure(dataset, data)}
+${tables}
+  </section>
+  <section class="bench-method">
+    <h2>${escapeHtml(dataset.method?.title ?? '复现与核对方法')}</h2>
+${benchMethod(dataset.method, data.commit)}
+  </section>
+  <section class="bench-provenance">
+    <h2>数据来源与哈希</h2>
+${benchProvenance(dataset, data)}
+  </section>
+${caveats ? `  <section class="bench-caveats">
+    <h2>别把这些当成什么</h2>
+    <ul>
+${caveats}
+    </ul>
+  </section>` : ''}
+  <section class="daynav">
+    <h2>按日期</h2>
+    <nav class="day-chips">${days.map((day) => `<a href="/day/${escapeHtml(day)}">${escapeHtml(day)}</a>`).join('')}</nav>
+  </section>`;
+  return page({
+    title: `${dataset.label} · 评测数据 · tool-hub.xyz`,
+    description: dataset.summary ?? dataset.label,
+    canonical: `${siteUrl}/bench/${dataset.id}`,
+    siteUrl,
+    repoUrl,
+    menu: menuFor(sections, 'bench'),
+    body,
+    scripts: ['/forum.js'],
+  });
 }

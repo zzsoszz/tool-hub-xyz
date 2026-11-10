@@ -1,0 +1,492 @@
+{
+  "id": "strata-engine-speed",
+  "kind": "strata-matrix",
+  "collectedAt": "2026-11-10T00:40:18.432Z",
+  "upstream": {
+    "label": "Niko1221/Strata · bench/results",
+    "url": "https://github.com/Niko1221/Strata/tree/main/bench/results"
+  },
+  "commit": "504b143342a9fe1aa8320a7b31e11f5c0ac265c3",
+  "tables": {
+    "prompt": {
+      "rows": [
+        {
+          "engine": "0.1.26",
+          "model": "Coder",
+          "contexts": [
+            "4K",
+            "32K",
+            "128K"
+          ],
+          "values": [
+            1583,
+            2177,
+            2208
+          ],
+          "sourceUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-09-29-speed-0126/README.md"
+        },
+        {
+          "engine": "0.1.26",
+          "model": "Q2_0",
+          "contexts": [
+            "4K",
+            "32K",
+            "128K"
+          ],
+          "values": [
+            1299,
+            2171,
+            2107
+          ],
+          "sourceUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-09-29-speed-0126/README.md"
+        },
+        {
+          "engine": "0.1.26",
+          "model": "IQ2_XS",
+          "contexts": [
+            "4K",
+            "32K",
+            "128K"
+          ],
+          "values": [
+            1256,
+            2092,
+            1752
+          ],
+          "sourceUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-09-29-speed-0126/README.md"
+        },
+        {
+          "engine": "0.1.22",
+          "model": "Coder",
+          "contexts": [
+            "4K",
+            "32K",
+            "128K"
+          ],
+          "values": [
+            1522,
+            1871,
+            1779
+          ],
+          "sourceUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-09-29-speed-0122/README.md"
+        },
+        {
+          "engine": "0.1.22",
+          "model": "Q2_0",
+          "contexts": [
+            "4K",
+            "32K",
+            "128K"
+          ],
+          "values": [
+            1226,
+            1844,
+            1682
+          ],
+          "sourceUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-09-29-speed-0122/README.md"
+        },
+        {
+          "engine": "0.1.22",
+          "model": "IQ2_XS",
+          "contexts": [
+            "4K",
+            "32K",
+            "128K"
+          ],
+          "values": [
+            1196,
+            1799,
+            1495
+          ],
+          "sourceUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-09-29-speed-0122/README.md"
+        },
+        {
+          "engine": "0.1.26",
+          "model": "IQ3_XXS",
+          "contexts": [
+            "4K",
+            "32K",
+            "128K"
+          ],
+          "values": [
+            1007,
+            1745,
+            1602
+          ],
+          "sourceUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-09-29-speed-0126/README.md"
+        },
+        {
+          "engine": "0.1.26",
+          "model": "IQ3_S",
+          "contexts": [
+            "4K",
+            "32K",
+            "128K"
+          ],
+          "values": [
+            913,
+            1624,
+            1443
+          ],
+          "sourceUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-09-29-speed-0126/README.md"
+        },
+        {
+          "engine": "0.1.22",
+          "model": "IQ3_XXS",
+          "contexts": [
+            "4K",
+            "32K",
+            "128K"
+          ],
+          "values": [
+            974,
+            1555,
+            1386
+          ],
+          "sourceUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-09-29-speed-0122/README.md"
+        },
+        {
+          "engine": "0.1.22",
+          "model": "IQ3_S",
+          "contexts": [
+            "4K",
+            "32K",
+            "128K"
+          ],
+          "values": [
+            893,
+            1499,
+            1245
+          ],
+          "sourceUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-09-29-speed-0122/README.md"
+        },
+        {
+          "engine": "0.1.14",
+          "model": "Q2_0",
+          "contexts": [
+            "4K",
+            "32K",
+            "128K"
+          ],
+          "values": [
+            1007,
+            1308,
+            1208
+          ],
+          "sourceUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-09-28-speed-0114/matrix.md"
+        },
+        {
+          "engine": "0.1.14",
+          "model": "IQ2_XS",
+          "contexts": [
+            "4K",
+            "32K",
+            "128K"
+          ],
+          "values": [
+            811,
+            1238,
+            1071
+          ],
+          "sourceUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-09-28-speed-0114/matrix.md"
+        },
+        {
+          "engine": "0.1.14",
+          "model": "IQ3_XXS",
+          "contexts": [
+            "4K",
+            "32K",
+            "128K"
+          ],
+          "values": [
+            770,
+            1108,
+            1015
+          ],
+          "sourceUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-09-28-speed-0114/matrix.md"
+        },
+        {
+          "engine": "0.1.14",
+          "model": "IQ3_S",
+          "contexts": [
+            "4K",
+            "32K",
+            "128K"
+          ],
+          "values": [
+            737,
+            1070,
+            931
+          ],
+          "sourceUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-09-28-speed-0114/matrix.md"
+        }
+      ]
+    },
+    "output": {
+      "rows": [
+        {
+          "engine": "0.1.26",
+          "model": "Q2_0",
+          "contexts": [
+            "4K",
+            "32K",
+            "128K"
+          ],
+          "values": [
+            93,
+            81.8,
+            73.7
+          ],
+          "sourceUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-09-29-speed-0126/README.md"
+        },
+        {
+          "engine": "0.1.22",
+          "model": "Q2_0",
+          "contexts": [
+            "4K",
+            "32K",
+            "128K"
+          ],
+          "values": [
+            88.2,
+            77.4,
+            63.1
+          ],
+          "sourceUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-09-29-speed-0122/README.md"
+        },
+        {
+          "engine": "0.1.26",
+          "model": "IQ2_XS",
+          "contexts": [
+            "4K",
+            "32K",
+            "128K"
+          ],
+          "values": [
+            78.6,
+            76.3,
+            62.7
+          ],
+          "sourceUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-09-29-speed-0126/README.md"
+        },
+        {
+          "engine": "0.1.14",
+          "model": "Q2_0",
+          "contexts": [
+            "4K",
+            "32K",
+            "128K"
+          ],
+          "values": [
+            90.3,
+            73.6,
+            67.2
+          ],
+          "sourceUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-09-28-speed-0114/matrix.md"
+        },
+        {
+          "engine": "0.1.14",
+          "model": "IQ2_XS",
+          "contexts": [
+            "4K",
+            "32K",
+            "128K"
+          ],
+          "values": [
+            73.8,
+            71.5,
+            59.8
+          ],
+          "sourceUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-09-28-speed-0114/matrix.md"
+        },
+        {
+          "engine": "0.1.22",
+          "model": "IQ2_XS",
+          "contexts": [
+            "4K",
+            "32K",
+            "128K"
+          ],
+          "values": [
+            74.6,
+            67.5,
+            59.1
+          ],
+          "sourceUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-09-29-speed-0122/README.md"
+        },
+        {
+          "engine": "0.1.26",
+          "model": "IQ3_XXS",
+          "contexts": [
+            "4K",
+            "32K",
+            "128K"
+          ],
+          "values": [
+            61.6,
+            58.5,
+            49
+          ],
+          "sourceUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-09-29-speed-0126/README.md"
+        },
+        {
+          "engine": "0.1.22",
+          "model": "Coder",
+          "contexts": [
+            "4K",
+            "32K",
+            "128K"
+          ],
+          "values": [
+            53.6,
+            54.9,
+            42.8
+          ],
+          "sourceUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-09-29-speed-0122/README.md"
+        },
+        {
+          "engine": "0.1.26",
+          "model": "Coder",
+          "contexts": [
+            "4K",
+            "32K",
+            "128K"
+          ],
+          "values": [
+            55.1,
+            54.9,
+            43
+          ],
+          "sourceUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-09-29-speed-0126/README.md"
+        },
+        {
+          "engine": "0.1.14",
+          "model": "IQ3_XXS",
+          "contexts": [
+            "4K",
+            "32K",
+            "128K"
+          ],
+          "values": [
+            62.1,
+            51.4,
+            45.8
+          ],
+          "sourceUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-09-28-speed-0114/matrix.md"
+        },
+        {
+          "engine": "0.1.22",
+          "model": "IQ3_XXS",
+          "contexts": [
+            "4K",
+            "32K",
+            "128K"
+          ],
+          "values": [
+            62.3,
+            49.8,
+            47
+          ],
+          "sourceUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-09-29-speed-0122/README.md"
+        },
+        {
+          "engine": "0.1.22",
+          "model": "IQ3_S",
+          "contexts": [
+            "4K",
+            "32K",
+            "128K"
+          ],
+          "values": [
+            44.6,
+            49,
+            41.3
+          ],
+          "sourceUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-09-29-speed-0122/README.md"
+        },
+        {
+          "engine": "0.1.26",
+          "model": "IQ3_S",
+          "contexts": [
+            "4K",
+            "32K",
+            "128K"
+          ],
+          "values": [
+            53.3,
+            48.3,
+            45.5
+          ],
+          "sourceUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-09-29-speed-0126/README.md"
+        },
+        {
+          "engine": "0.1.14",
+          "model": "IQ3_S",
+          "contexts": [
+            "4K",
+            "32K",
+            "128K"
+          ],
+          "values": [
+            51.6,
+            48.2,
+            40.5
+          ],
+          "sourceUrl": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-09-28-speed-0114/matrix.md"
+        }
+      ]
+    }
+  },
+  "stats": {
+    "engines": [
+      "0.1.14",
+      "0.1.22",
+      "0.1.26"
+    ],
+    "models": [
+      "Q2_0",
+      "IQ2_XS",
+      "IQ3_XXS",
+      "IQ3_S",
+      "Coder"
+    ]
+  },
+  "files": [
+    {
+      "path": "bench/results/2026-09-28-speed-0114/matrix.md",
+      "url": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-09-28-speed-0114/matrix.md",
+      "sha256": "503e4a83c9daae0d0b444eb49a0cc9c89ed5a7c3466503de0a857fa5dd5ab366",
+      "bytes": 1343
+    },
+    {
+      "path": "bench/results/2026-09-29-speed-0122/README.md",
+      "url": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-09-29-speed-0122/README.md",
+      "sha256": "7820c6e48c302c325be2abf0b18f5aa7721909fa35bcd7b674b7b8e672ffc0ca",
+      "bytes": 1814
+    },
+    {
+      "path": "bench/results/2026-09-29-speed-0126/README.md",
+      "url": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-09-29-speed-0126/README.md",
+      "sha256": "5169e462fefb16e034854e40b2db4daa66403e40773d38db7e2794ce21cef48a",
+      "bytes": 1878
+    },
+    {
+      "path": "bench/results/2026-09-28-speed-0114/matrix.md",
+      "url": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-09-28-speed-0114/matrix.md",
+      "sha256": "503e4a83c9daae0d0b444eb49a0cc9c89ed5a7c3466503de0a857fa5dd5ab366",
+      "bytes": 1343
+    },
+    {
+      "path": "bench/results/2026-09-29-speed-0122/README.md",
+      "url": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-09-29-speed-0122/README.md",
+      "sha256": "7820c6e48c302c325be2abf0b18f5aa7721909fa35bcd7b674b7b8e672ffc0ca",
+      "bytes": 1814
+    },
+    {
+      "path": "bench/results/2026-09-29-speed-0126/README.md",
+      "url": "https://github.com/Niko1221/Strata/blob/504b143342a9fe1aa8320a7b31e11f5c0ac265c3/bench/results/2026-09-29-speed-0126/README.md",
+      "sha256": "5169e462fefb16e034854e40b2db4daa66403e40773d38db7e2794ce21cef48a",
+      "bytes": 1878
+    }
+  ]
+}

@@ -1,0 +1,348 @@
+{
+  "index": {
+    "label": "评测数据",
+    "lede": "这一页把开源项目公开发布的性能实测搬进站内，整理成能直接读的中文表格：每一行都带回原报告、原始数据文件，以及自己复现一遍的命令。数字由脚本从上游原文解析，不加工、不换算、不跨机器外推。",
+    "meta": "数据跟日报一起每天采集两次；抓取失败时沿用上一版，并在页面上标注抓取时间与文件哈希。",
+    "method": {
+      "title": "本页数据是怎么来的",
+      "steps": [
+        "采集：npm run bench 从上游仓库的固定 commit 抓取原始 Markdown 与 JSON，写入 data/bench/<id>.json，每个文件都记下 SHA-256 与字节数。",
+        "解析：src/lib/bench.mjs 只采信整格都是纯数字的单元格；带解释文字、带范围、带多种配置的格子不进数字表，改放进其余报告列表，避免把不确定的东西写成结论。",
+        "成表：src/lib/render.mjs 用 config/bench.json 里的中文表头、结论与说明渲染表格和 SVG 图，每条结论单独挂来源链接。",
+        "核对：页面上的每个链接都指向抓取时那个 commit 下的原文，不是最新一版；想看当时的逐请求数据就点原报告目录里的 JSON 或 CSV。"
+      ]
+    },
+    "caveats": [
+      "各行数字来自不同机器、不同提示词、不同引擎版本，横向比较只能当参考；要看版本或配置带来的差异，请用同一台机器的对比行。",
+      "上游的标准基准协议仍是草案（strata-qwen38-thinking-v1-draft.1），本页列出的社区报告大多早于它，属于社区自测格式，不是标准结果。",
+      "速度数字受单次采样影响：上游自己就说明一次运行会浮动几个百分点，小差异不要当成结论。"
+    ],
+    "otherSources": [
+      {
+        "name": "Strata 实测结果索引",
+        "url": "https://github.com/Niko1221/Strata/tree/main/bench/results",
+        "measures": "本地大模型推理的读取速度、生成速度、显存内专家数量、长上下文召回，142 个按日期命名的报告目录。",
+        "verify": "每个目录都有 README 说明硬件、启动参数和计时边界，多数还带逐请求的 JSON 或 CSV。"
+      },
+      {
+        "name": "MLCommons MLPerf Inference",
+        "url": "https://mlcommons.org/benchmarks/inference-datacenter/",
+        "measures": "数据中心与边缘设备上的推理吞吐、时延，覆盖训练框架、加速卡与闭源/开源模型。",
+        "verify": "官方公布 closed 与 open 两组结果、提交代码和复现说明，可以按系统逐条回看。"
+      },
+      {
+        "name": "SWE-bench",
+        "url": "https://www.swebench.com/",
+        "measures": "模型在真实 GitHub issue 上修 bug 的能力，Verified 子集是目前常被引用的代码能力基准。",
+        "verify": "榜单每题的通过率公开，任务与补丁数据在数据集仓库里，可以自己重跑评分。"
+      },
+      {
+        "name": "Artificial Analysis",
+        "url": "https://artificialanalysis.ai/leaderboards/models",
+        "measures": "第三方统一评测的托管模型质量、输出价格与生成速度。",
+        "verify": "榜单页公开评测方法与各模型的实测条件，适合用来核对官方宣传的数字。"
+      },
+      {
+        "name": "Epoch AI",
+        "url": "https://epoch.ai/data",
+        "measures": "模型训练规模、算力与成本的可核对数据集，以及基准测试相关的分析数据。",
+        "verify": "数据集直接下载，字段与来源逐条列出，便于自己重算。"
+      },
+      {
+        "name": "Unsloth 文档",
+        "url": "https://docs.unsloth.ai/get-started/all-our-models",
+        "measures": "各家量化档位的显存占用与推荐配置，以及量化模型在各显卡上的速度参考。",
+        "verify": "文档链接到模型仓库与具体 revision，可以按 GGUF 文件名与哈希回查。"
+      },
+      {
+        "name": "llama.cpp（ggml-org）",
+        "url": "https://github.com/ggml-org/llama.cpp",
+        "measures": "最常见的本地推理引擎与其自带 bench 工具，适合用来做同机对照。",
+        "verify": "仓库里的 bench 参数与 release 二进制的哈希都在，任何人都能重跑一遍。"
+      },
+      {
+        "name": "OpenRouter 模型目录 API",
+        "url": "https://openrouter.ai/api/v1/models",
+        "measures": "各家托管模型的输入输出单价与上下文长度，本页模型价格表直接取自它。",
+        "verify": "官方公开接口，无鉴权即可取全量；每行都链到对应模型页。"
+      }
+    ]
+  },
+  "datasets": [
+    {
+      "id": "strata-community",
+      "kind": "strata-community",
+      "label": "Strata 社区硬件实测",
+      "summary": "同一款模型（Qwen3.8-Flash-Next）在不同显卡上的读取与生成速度：从 RTX 5090 到 2016 年的 Tesla P4，103 份社区报告。",
+      "upstream": { "label": "Niko1221/Strata · bench/results/COMMUNITY.md", "url": "https://github.com/Niko1221/Strata/tree/main/bench/results" },
+      "sourcePaths": [
+        { "path": "bench/results/COMMUNITY.md", "label": "社区实测索引表" },
+        { "path": "bench/results/README.md", "label": "全部实测目录索引" },
+        { "path": "docs/BENCHMARK_PROTOCOL.md", "label": "标准基准协议（草案）" },
+        { "path": "docs/COMMUNITY_BENCHMARKS.md", "label": "社区实测指引" },
+        { "path": "bench/prompts/standard-v1/MANIFEST.sha256", "label": "冻结提示词清单" },
+        { "path": "bench/results/2026-10-20-0.2.1-bench/README.md", "label": "标准协议首批评测" },
+        { "path": "bench/results/2026-10-09-community-rtx-3060-0141/README.md", "label": "RTX 3060 报告（方法与计时边界）" }
+      ],
+      "reading": [
+        "读取速度（prefill，tok/s）：把你塞进去的提示词和文件读进模型的速度，决定长上下文、读代码库时的等待时间。",
+        "生成速度（decode，tok/s）：模型往外吐字的速度，决定读答案的等待时间。",
+        "同一格里的三段数字按 4K / 32K / 128K 输入长度理解；上游注明部分报告实际是 131K、200K、262K 等，具体以原报告为准。",
+        "表格按中间那段（32K）从高到低排。每行最后的原报告链接给出硬件型号、内存、驱动、启动参数和逐请求数据。"
+      ],
+      "tables": {
+        "output": {
+          "label": "生成速度（tok/s）",
+          "note": "只列原表里整格就是三个纯数字的行；数字照抄原报告的中位数，未做归一化。"
+        },
+        "prompt": {
+          "label": "读取速度（tok/s）",
+          "note": "同上：三段数字按 4K / 32K / 128K 读，第三段的实际长度见原报告。"
+        },
+        "others": {
+          "label": "其余社区报告（数字在原报告里）",
+          "note": "这些行在原表里写的是见原报告，或一格塞了多种量化、多种配置。脚本不猜数字，全部保留在这里并给原表原文。"
+        }
+      },
+      "chart": {
+        "table": "output",
+        "labelFields": ["hardware", "model"],
+        "valueIndex": 1,
+        "top": 22,
+        "title": "社区实测生成速度排行（32K 输入）",
+        "unit": "tok/s",
+        "note": "同一行内三段数字取中间那段；机器不同，条形长度不能当同机对比用。"
+      },
+      "conclusions": [
+        {
+          "text": "同一台机器复测，提升几乎全在读取路径。2x RTX 5060 Ti（Xeon E5-2690 v4，IQ3_XXS）：0.1.35 读取 808 / 1,931 / 2,199，0.1.39 变 911 / 2,087 / 2,440，三段分别快约 13%、8%、11%；生成速度 77.5 / 72.7 / 72.4 变 84.8 / 86.5 / 83.8。上游自己写明这两次引擎版本和启动配置是一起变的，所以差异不能全记在版本头上。",
+          "sources": [
+            { "label": "#508 · 0.1.35 原报告", "folder": "2026-10-02-community-rtx-5060-ti-x2" },
+            { "label": "#508 · 0.1.39 复测", "folder": "2026-10-05-community-rtx-5060-ti-x2" }
+          ]
+        },
+        {
+          "text": "同机跨较多版本时读取速度能翻倍。2x RTX PRO 4500 32 GB（Threadripper 7960X，Swift IQ3_XXS）：0.1.30 读取 1,428 / 2,454 / 2,785，0.1.36 变 2,960 / 5,065 / 5,762，约 2.1 倍；生成速度只从 115 / 120 / 93 涨到 127 / 130 / 105。",
+          "sources": [
+            { "label": "#418 · 0.1.30", "folder": "2026-10-01-community-2x-rtx-pro-4500" },
+            { "label": "#418 · 0.1.36", "folder": "2026-10-02-community-2x-rtx-pro-4500-engine-0.1.36" }
+          ]
+        },
+        {
+          "text": "量化档位对速度的影响比显卡更直接。RTX 3060 12 GB 同一台机器、同一版引擎（0.1.41 官方 Windows 版）：32K 输入下 Q2_0 生成 41.8 tok/s、IQ3_XXS 27.1、IQ3_S 20.2，最小的量化比最大的快约一倍；读取速度 981 / 884 / 820 tok/s，差距小得多。",
+          "sources": [
+            { "label": "#1725 · RTX 3060 速度扫描表", "folder": "2026-10-09-community-rtx-3060-0141" }
+          ]
+        },
+        {
+          "text": "显卡加多不等于更快。RTX 4000 Ada（EPYC 7313P）：16.6K 输入两卡读取 2,110.3 tok/s，加一张 SFF Ada 变三卡后掉到 778.6 tok/s（约 -63%），这一格的生成速度 72.9 变 75.0，整套中位生成速度 72.95 变 73.70（+1.0%），长请求耗时从 9.843 s 涨到 23.146 s。跨卡分层的代价集中在读取上。",
+          "sources": [
+            { "label": "#521 · 两卡与三卡对比", "folder": "2026-10-02-community-rtx4000ada-layer-split" }
+          ]
+        },
+        {
+          "text": "四卡老显卡上，打开那批可选内核只改变读取速度。4x RX 7900 XT（非对称 PCIe Gen3）：五个可选开关全关时读取 756 / 1,722 / 2,433，全开变 2,052 / 3,804 / 4,307；生成速度 59.3 / 52.0 / 49.6 变 60.0 / 52.7 / 50.4，基本没动。",
+          "sources": [
+            { "label": "#1655 · 可选开关前后对比", "folder": "2026-10-09-community-4x-rx-7900-xt" }
+          ]
+        },
+        {
+          "text": "上下文越长，生成速度越往下掉，而且掉得比读取快。RTX 5090 上 IQ3_S 的三段生成速度是 141.8 / 142.2 / 127.2；RTX 4070 Ti SUPER 上 IQ2_XS 从 32K 的 97.9 一路掉到 256K 的 82.4。读长文本主要等前缀，生成长答案还要额外打折。",
+          "sources": [
+            { "label": "#440 · RTX 5090 IQ3_S", "folder": "2026-10-02-community-rtx-5090-iq3s" },
+            { "label": "#995 · RTX 4070 Ti SUPER 长上下文阶梯", "folder": "2026-10-05-community-rtx-4070-ti-super" }
+          ]
+        },
+        {
+          "text": "长上下文不是越大越能用。RTX PRO 6000 96 GB 上：512K 用普通 RoPE 三个召回检查全过；同样模型到 1M 用普通 RoPE 全不过（0/3），改 YaRN 缩放后 3/3 全过。买大显存之前先确认目标长度上模型还能找回内容。",
+          "sources": [
+            { "label": "#1692 · RoPE 与 YaRN 对比", "folder": "2026-10-09-rope-yarn-long-context" }
+          ]
+        },
+        {
+          "text": "老显卡上的加速开关是可复核的：加速但不改输出。Tesla V100-SXM2 打开 STRATA_SM70_TABLE=1 后，两组顺序交换的配对里生成速度分别 +9.8% 和 +15.0%（28.16 / 28.64 变 30.92 / 32.94 tok/s），四次运行生成的 token 逐位相同，读取速度无变化。",
+          "sources": [
+            { "label": "#1647 · V100 开关前后", "folder": "2026-10-08-community-v100-sm70-table" }
+          ]
+        },
+        {
+          "text": "生成速度从最新卡到最老的卡差约六倍。只算数字表（原表整格就是三个纯数字的行）：32K 输入最快是 RTX 5090 Laptop 24 GB 的 Q2_0（0.1.40.3）144 tok/s，最慢是 Radeon Pro VII 16 GB 的 IQ2_XS 24 tok/s。上游另有一份 RTX 5090（9800X3D，Swift IQ3_XXS，1M YaRN）报 198.9 / 190.6（32K / 131K，贪心，n=2），原表那一格还写了原生 1M 磁盘恢复 6.107 s，所以它落在下面的其余报告里，不进数字表，也不和上面的 144 混在同一列。",
+          "sources": [
+            { "label": "#1722 · RTX 5090 1M", "folder": "2026-10-09-community-rtx5090-9800x3d-swift-1m" },
+            { "label": "#1793 · Radeon Pro VII", "folder": "2026-10-09-community-radeon-pro-vii-16gb" },
+            { "label": "#1799 · 2x Tesla P40", "folder": "2026-10-10-community-2x-p40-iq3_s" }
+          ]
+        }
+      ],
+      "method": {
+        "title": "自己复现一遍",
+        "intro": "上游给了两条路：跑标准协议（别人能跟你比）或跑快速自测（只看自己这台机器）。",
+        "steps": [
+          "标准协议：装好 Strata 与一个 Flash-Next 模型，关掉其他占用显卡的程序，跑下面第一条命令。runner 会先逐字节校验冻结的提示词清单，任何一个字节不同就拒绝开跑，并拒绝会改变工作负载的参数。",
+          "协议 ID 是 strata-qwen38-thinking-v1-draft.1，冻结提示词包 corpus 的 SHA-256 是 e75eff8b9feea04f745520b392c4c17d97aefc1ba185e222aa6740efa8f68407；模型加载之后必需套件实测 2 到 4 分钟，可选并发段再加 1.5 到 2 分钟。",
+          "跑完用第二条命令重读结果目录，runner 会重新校验一遍；结果目录里带硬件、版本与逐请求数据，分享前先看一眼有没有你家目录、用户名、内网地址。",
+          "只想看自己这台机器的速度：Windows 双击 BENCH.bat，Linux 跑 bench.sh，或者 python tools/strata_bench.py。要做同机 A/B 用第三条命令跟一份旧报告比。",
+          "核对本站的表格：先看本页底部的 commit 与文件 SHA-256，再顺着每行的原报告链接回到当时的 README，速度公式与计时边界在 RTX 3060 那份报告里写清楚了：读取 tok/s = 新读入的 token 数乘 1000 除以引擎报告的 prompt 毫秒；生成速度取引擎上报值，不是 token 除以总耗时。"
+        ],
+        "commands": [
+          "strata bench run --profile NAME --track default --track-notes \"0.2.1 release, setup defaults\"",
+          "strata bench report <结果目录>",
+          "python tools/strata_bench.py --compare bench/results/2026-10-01-community-rtx-3060-qwen3-8-flash-next",
+          "npm run bench   # 本站重新抓一遍上游并重算表格"
+        ],
+        "citations": [
+          { "label": "标准基准协议全文", "path": "docs/BENCHMARK_PROTOCOL.md" },
+          { "label": "社区实测指引与报告格式", "path": "docs/COMMUNITY_BENCHMARKS.md" },
+          { "label": "冻结提示词清单（逐文件 SHA-256）", "path": "bench/prompts/standard-v1/MANIFEST.sha256" },
+          { "label": "标准协议首批评测与它踩的坑", "path": "bench/results/2026-10-20-0.2.1-bench/README.md" },
+          { "label": "全部 142 个报告目录的索引", "path": "bench/results/README.md" }
+        ]
+      },
+      "caveats": [
+        "上游自己写明：这些是各家自己的中位数，不同机器、不同提示词、不同引擎版本，比较各行要小心；上游自己跑的同一版本数字在日期命名的官方报告里。",
+        "部分目录删过原始日志与二进制，删了什么写在各自的 TRIMMED.md 里。",
+        "标准协议首批评测还记录了几处协议本身的问题：结果里的引擎日志为空、模型哈希耗时不计入总时长、同一引擎跨运行生成速度最多差 9%。读这些小差异时按噪声处理。"
+      ]
+    },
+    {
+      "id": "strata-engine-speed",
+      "kind": "strata-matrix",
+      "label": "同一台机器的版本演进",
+      "summary": "RTX 5070 12 GB 上同一批代码提示词，引擎 0.1.14、0.1.22、0.1.26 三版对照：看版本迭代到底改变了什么。",
+      "upstream": { "label": "Niko1221/Strata · bench/results", "url": "https://github.com/Niko1221/Strata/tree/main/bench/results" },
+      "sourcePaths": [
+        { "path": "bench/results/2026-09-28-speed-0114/matrix.md", "label": "引擎 0.1.14 速度矩阵" },
+        { "path": "bench/results/2026-09-29-speed-0122/README.md", "label": "引擎 0.1.22 速度表" },
+        { "path": "bench/results/2026-09-29-speed-0126/README.md", "label": "引擎 0.1.26 速度表" }
+      ],
+      "matrixSources": [
+        { "path": "bench/results/2026-09-28-speed-0114/matrix.md", "engine": "0.1.14" },
+        { "path": "bench/results/2026-09-29-speed-0122/README.md", "engine": "0.1.22" },
+        { "path": "bench/results/2026-09-29-speed-0126/README.md", "engine": "0.1.26" }
+      ],
+      "contexts": ["4K", "32K", "128K"],
+      "contextNote": "同一台机器：RTX 5070 12 GB（PCIe 5.0 x16）、Ryzen 5 7600、64 GB DDR5-5200、Windows 10；同一批 code-agent 提示词；设置照 setup 默认写：--prefill auto、出厂专家配置、--expert-cache auto、4K 以上用 8-bit KV、64K 起 KV 流式（--kv-resident 32768）、MTP（--spec 4 --spec-min-p 0.5）、贪心解码、生成 256 token、关闭图像。每格一次运行。",
+      "reading": [
+        "每行是一个引擎版本加一个量化档位；列是输入长度，数字是上游表格里的 tok/s。",
+        "同一量化档位从 0.1.14 读到 0.1.26，就是这台机器上版本迭代改变了多少。",
+        "Coder 是只启用 512 个专家里 256 个的编程变体，量化更紧，所以它读得快、生成一般。"
+      ],
+      "tables": {
+        "prompt": { "label": "读取速度（tok/s）", "note": "照抄上游表格数字。上游表里还有 1K、64K、262K 三列，本页只取 4K / 32K / 128K；上游注明 IQ3_XXS 与 IQ3_S 在 262K 输入下装不进 64 GB 内存，0.1.26 那一版没有再跑 262K。" },
+        "output": { "label": "生成速度（tok/s）", "note": "上游注明：一次运行的生成速度会随文本浮动几个百分点，看趋势不要盯单格。" }
+      },
+      "chart": {
+        "table": "prompt",
+        "labelFields": ["model", "engine"],
+        "valueIndex": 1,
+        "top": 15,
+        "title": "32K 输入下的读取速度：各量化档位 × 引擎版本",
+        "unit": "tok/s",
+        "note": "同一台 RTX 5070 12 GB，同一批提示词，每格一次运行。"
+      },
+      "conclusions": [
+        {
+          "text": "版本迭代主要提读取速度：Q2_0 在 32K 输入从 1,308（0.1.14）到 1,844（0.1.22）再到 2,171（0.1.26），涨约 66%；128K 输入从 1,208 到 2,107，涨约 74%。IQ2_XS 在 32K 从 1,238 到 2,092。",
+          "sources": [
+            { "label": "引擎 0.1.14 速度矩阵", "path": "bench/results/2026-09-28-speed-0114/matrix.md" },
+            { "label": "引擎 0.1.22 速度表", "path": "bench/results/2026-09-29-speed-0122/README.md" },
+            { "label": "引擎 0.1.26 速度表", "path": "bench/results/2026-09-29-speed-0126/README.md" }
+          ]
+        },
+        {
+          "text": "同期生成速度基本持平：Q2_0 在 32K 是 73.6 / 77.4 / 81.8 tok/s，IQ3_S 是 48.2 / 49.0 / 48.3。上游说明这属于同一套解码，改动集中在读取路径；每格一次运行，几个百分点的差是噪声。",
+          "sources": [
+            { "label": "引擎 0.1.26 报告里的说明", "path": "bench/results/2026-09-29-speed-0126/README.md" }
+          ]
+        },
+        {
+          "text": "同一台机器、同一版引擎下，量化越小生成越快：0.1.26 的 32K 生成速度 Q2_0 81.8 > IQ2_XS 76.3 > IQ3_XXS 58.5 > Coder 54.9 > IQ3_S 48.3 tok/s。想快就往下压量化，代价是模型质量和显存之外更多读盘。",
+          "sources": [
+            { "label": "引擎 0.1.26 生成速度表", "path": "bench/results/2026-09-29-speed-0126/README.md" }
+          ]
+        },
+        {
+          "text": "读取速度对量化没那么敏感：0.1.26 的 32K 读取速度 Coder 2,177、Q2_0 2,171、IQ2_XS 2,092、IQ3_XXS 1,745、IQ3_S 1,624 tok/s，最紧和最松只差约三分之一。选量化主要影响你等答案的时间，不太影响你等它读完的时间。",
+          "sources": [
+            { "label": "引擎 0.1.26 读取速度表", "path": "bench/results/2026-09-29-speed-0126/README.md" }
+          ]
+        }
+      ],
+      "method": {
+        "title": "怎么核对这张表",
+        "intro": "这三份报告用的是同一台机器和同一批提示词，所以它是本页里唯一适合做版本对比的一组数字。",
+        "steps": [
+          "每份报告旁边都有 matrix.json，逐 run 的数据在里面，表格里的数字只是从中挑出来的展示值。",
+          "上游注明 IQ2_XS 用的是 Swift 1.5 的 IQ2_XS 文件（与原版同速：4K 输入 465 对 467 tok/s）。",
+          "IQ3_XXS 与 IQ3_S 在 262K 输入下装不进 64 GB 内存，所以那几格是空的，不是速度为 0。",
+          "上游注明 0.1.22 相对 0.1.14 的读取提升来自张量核注意力、逐位相同的批处理内核和更快的 PLE 读取；0.1.26 又加了批处理草稿层。"
+        ],
+        "commands": [
+          "npm run bench   # 重抓这三份报告并重算本页表格"
+        ],
+        "citations": [
+          { "label": "0.1.14 报告（含显存内专家数量与草稿接受率）", "path": "bench/results/2026-09-28-speed-0114/README.md" },
+          { "label": "0.1.22 报告", "path": "bench/results/2026-09-29-speed-0122/README.md" },
+          { "label": "0.1.26 报告", "path": "bench/results/2026-09-29-speed-0126/README.md" }
+        ]
+      },
+      "caveats": [
+        "每格一次运行，草稿接受率不同会带来几个百分点的抖动；上游自己建议跨多次运行看趋势。",
+        "这是同一台机器上的相对变化，不能外推到别的显卡或别的内存配置。"
+      ]
+    },
+    {
+      "id": "model-pricing",
+      "kind": "openrouter-pricing",
+      "label": "托管模型价格与上下文",
+      "summary": "上下文长度不低于 128K 的文本模型，按输入单价从低到高排列；和上面的本地速度表放一起，用来判断什么时候自建划算。",
+      "upstream": { "label": "OpenRouter 模型目录 API", "url": "https://openrouter.ai/models" },
+      "sourcePaths": [
+        { "path": "https://openrouter.ai/api/v1/models", "label": "全量模型目录 JSON" }
+      ],
+      "reading": [
+        "单价按美元每百万 token 展示，API 原值乘以一百万，本站不改价。",
+        "只保留输入模态是文本或文本加图片、上下文长度不低于 128K 的条目；平台自带的自动路由与聚合条目价格不是单一模型价，直接排除。",
+        "价格为零的行是免费档，通常有速率与数据策略限制，别当长期成本用。",
+        "同一模型在不同提供方价格不同，本页取该目录里的这一条；点模型名进对应页面核对当下价格。"
+      ],
+      "tables": {
+        "pricing": { "label": "输入单价从低到高（上下文 ≥ 128K）", "note": "取输入单价最低的前 40 条；上下文长度取该目录标注的数值。" }
+      },
+      "conclusions": [
+        {
+          "text": "把两张表放一起看才有意义：托管模型按 token 计费，本地按你的硬件和电费计费。一次 32K 输入的读取，本站速度表里的机器大约 1 到 30 秒读完；托管侧要按输入单价乘 token 数付费，长上下文重复提交时这部分钱是主要开销。",
+          "sources": [
+            { "label": "OpenRouter 模型目录 API", "url": "https://openrouter.ai/api/v1/models" }
+          ]
+        },
+        {
+          "text": "估算方法：一次任务的托管成本 ≈ 输入 token 数 × 输入单价 + 输出 token 数 × 输出单价。多轮对话要按每轮重发的上下文算，这是长上下文场景里最容易低估的一块。",
+          "sources": [
+            { "label": "模型页示例（价格与上下文以模型页为准）", "url": "https://openrouter.ai/models" }
+          ]
+        }
+      ],
+      "method": {
+        "title": "数据从哪来、多久更新",
+        "intro": "本页直接取官方目录接口，无鉴权、无缓存改写。",
+        "steps": [
+          "npm run bench 抓取接口全文，记录 SHA-256 与字节数；本页底部就是这一条记录。",
+          "解析在 src/lib/bench.mjs 的 parseOpenRouterModels：过滤价格缺失或为负、上下文低于 128K、以及平台自带的聚合路由条目。",
+          "价格随时会改。要用作决策，请点模型名进对应模型页核对当天价格。"
+        ],
+        "commands": [
+          "curl -s https://openrouter.ai/api/v1/models | sha256sum",
+          "npm run bench   # 本站重抓并重算本页"
+        ],
+        "citations": [
+          { "label": "接口原文", "url": "https://openrouter.ai/api/v1/models" }
+        ]
+      },
+      "caveats": [
+        "这是选型与成本数据，不是模型质量评测；质量请回其他基准来源看。",
+        "接口里同一模型常有多条（含免费档与不同提供方），本页按输入单价排序后只留前 40 条，不是全量。"
+      ]
+    }
+  ]
+}

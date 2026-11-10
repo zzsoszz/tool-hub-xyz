@@ -10,10 +10,11 @@
   "scripts": {
     "collect": "node src/collect.mjs",
     "build": "node src/build.mjs",
-    "digest": "npm run collect && npm run build",
+    "digest": "npm run collect && npm run bench && npm run build",
     "review": "node src/review.mjs",
     "dev": "npm run digest && node scripts/serve.mjs",
     "test": "node --test",
-    "lint": "node scripts/lint.mjs"
+    "lint": "node scripts/lint.mjs",
+    "bench": "node src/bench.mjs"
   }
 }

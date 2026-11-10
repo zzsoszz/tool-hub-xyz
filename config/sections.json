@@ -59,7 +59,9 @@
       ],
       "tags": [
         "benchmark"
-      ]
+      ],
+      "href": "/bench",
+      "navLabel": "评测数据"
     },
     {
       "id": "discuss",

@@ -69,3 +69,19 @@ npm run lint       # syntax, indentation, trailing whitespace, secret scan
   not `A · B · C`.
 - Motion is capped at the homepage funnel count-up (`public/funnel.js`); anything new must
   respect `prefers-reduced-motion` and answer a user action.
+
+## Bench Data Rules
+
+- Benchmark numbers live only in `data/bench/<id>.json` (written by `src/bench.mjs`); Chinese
+  table headers, conclusions, reproduction steps and source lists live only in
+  `config/bench.json`. `src/lib/render.mjs` must never invent a number.
+- A cell counts as data only when the whole cell is a pure number series such as
+  `1,428 / 2,454 / 2,785`. Anything with prose, ranges or several configs goes to the
+  "其余报告" list with the original wording preserved.
+- Every conclusion and every table row links back to the exact revision it came from
+  (`https://github.com/<owner>/<repo>/blob/<commit>/...`), and each page prints the commit,
+  per-file SHA-256 and byte counts plus a downloadable `/bench/<id>.json`.
+- Conclusions state the measurement condition (same machine, same prompts, same engine) and
+  never extrapolate across machines; caveats about upstream draft protocols stay on the page.
+- Images zoom through `public/lightbox.js`: it takes `main img`, skips images with an `<a>`
+  ancestor (list thumbnails are links), and adds no animation.

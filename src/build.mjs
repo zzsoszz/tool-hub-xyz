@@ -12,8 +12,11 @@ import {
   renderTagPage,
   renderSectionPage,
   renderSubsectionPage,
+  renderBenchDatasetPage,
+  renderBenchIndexPage,
   renderTagsIndex,
 } from './lib/render.mjs';
+import { datasetChartSvg } from './lib/bench.mjs';
 import {
   archivePeriods,
   archiveYears,
@@ -207,6 +210,29 @@ async function main() {
     renderAboutPage({ ...common, sources: latest.sources ?? [] }),
   );
   const periods = archivePeriods(allItems);
+  // 评测数据页：数字来自 data/bench/*.json（npm run bench 采集），中文表头与结论来自 config/bench.json。
+  const benchConfig = await loadJson(path.join(ROOT, 'config', 'bench.json'), { datasets: [] });
+  const benchEntries = [];
+  for (const dataset of benchConfig.datasets ?? []) {
+    const data = await loadJson(path.join(dataDir, 'bench', `${dataset.id}.json`), null);
+    if (!data) {
+      console.warn(`build: 缺少 data/bench/${dataset.id}.json（先跑 npm run bench），这一页暂时不生成`);
+      continue;
+    }
+    benchEntries.push({ dataset, data });
+  }
+  const benchUrls = [];
+  if (benchEntries.length) {
+    await write(path.join(distDir, 'bench.html'), renderBenchIndexPage({ ...common, benchConfig, benchData: benchEntries }));
+    benchUrls.push(`${base}/bench`);
+    for (const entry of benchEntries) {
+      const chart = datasetChartSvg(entry.dataset, entry.data);
+      if (chart) await write(path.join(distDir, 'bench', `${entry.dataset.id}-chart.svg`), chart);
+      await write(path.join(distDir, 'bench', `${entry.dataset.id}.json`), `${JSON.stringify(entry.data, null, 2)}\n`);
+      await write(path.join(distDir, 'bench', `${entry.dataset.id}.html`), renderBenchDatasetPage({ ...common, benchConfig, ...entry }));
+      benchUrls.push(`${base}/bench/${entry.dataset.id}`);
+    }
+  }
   const years = archiveYears(periods);
   const monthLabel = (period) => `${period.year} 年 ${Number(period.month)} 月`;
   const archiveMonths = monthsFor(allItems);
@@ -268,6 +294,7 @@ async function main() {
     ...sectionUrls,
     ...subUrls,
     ...archiveUrls,
+    ...benchUrls,
     ...days.map((day) => `${base}/day/${day}`),
     ...itemUrls,
   ];
@@ -280,9 +307,10 @@ async function main() {
   // 浏览器端脚本要 import 同一份排序/筛选规则，所以把这个共享模块也发一份到站点里。
   await cp(path.join(ROOT, 'src', 'lib', 'listview.mjs'), path.join(distDir, 'listview.mjs'));
 
-  const pageCount = 1 + days.length + sectionCount + subUrls.length + itemCount + tagPageCount + 5;
+  const pageCount = 1 + days.length + sectionCount + subUrls.length + itemCount + tagPageCount + 5 + benchUrls.length;
   const hiddenNote = hiddenCount ? ` · 剔除下架 ${hiddenCount} 条` : '';
-  console.log(`build: dist ready (${digests.length} digests, ${pageCount} html + ${days.length} markdown: ${days.length} 日报 / ${sectionCount} 栏目 / ${subUrls.length} 子类 / ${tagPageCount} 标签 / ${itemCount} 条目 / 5 固定页, latest ${latest.day}${hiddenNote})`);
+  const benchNote = benchEntries.length ? ` / ${benchEntries.length} 评测数据页` : '';
+  console.log(`build: dist ready (${digests.length} digests, ${pageCount} html + ${days.length} markdown: ${days.length} 日报 / ${sectionCount} 栏目 / ${subUrls.length} 子类 / ${tagPageCount} 标签 / ${itemCount} 条目 / 5 固定页${benchNote}, latest ${latest.day}${hiddenNote})`);
 }
 
 await main();
