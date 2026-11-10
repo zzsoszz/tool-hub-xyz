@@ -1226,6 +1226,232 @@ main {
   margin-right: 14px;
 }
 
+.bench-cards {
+  margin-top: 22px;
+}
+
+.bench-card-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 14px;
+}
+
+.bench-card {
+  border-top: 2px solid var(--ink);
+  background: var(--paper-2);
+  padding: 14px 16px 16px;
+}
+
+.bench-card h2 {
+  margin: 0 0 6px;
+  font-size: 20px;
+}
+
+.bench-card p {
+  margin: 6px 0 0;
+  max-width: 70ch;
+}
+
+.bench-card-meta {
+  font: 13px var(--mono);
+  color: var(--ink-3);
+}
+
+.bench-note {
+  max-width: 74ch;
+  font: 13.5px var(--sans);
+  color: var(--ink-2);
+}
+
+.bench-news {
+  margin: 16px 0 0;
+}
+
+.bench-table {
+  width: 100%;
+  border-collapse: collapse;
+  font: 13.5px/1.6 var(--sans);
+  font-variant-numeric: tabular-nums;
+}
+
+.bench-table th {
+  padding: 7px 10px;
+  text-align: left;
+  font-weight: 600;
+  white-space: nowrap;
+  border-bottom: 1px solid var(--rule);
+  color: var(--ink-2);
+}
+
+.bench-table td {
+  padding: 7px 10px;
+  border-bottom: 1px solid var(--rule-soft);
+  vertical-align: top;
+}
+
+.bench-table tbody tr:hover {
+  background: var(--paper-2);
+}
+
+.bench-table th.num,
+.bench-table td.num {
+  text-align: right;
+}
+
+.bench-table .sha {
+  font-size: 11.5px;
+  word-break: break-all;
+}
+
+.bench-files td:first-child {
+  font-family: var(--mono);
+  font-size: 12.5px;
+}
+
+.bench-figure {
+  margin: 0 0 22px;
+}
+
+.bench-figure img {
+  width: 100%;
+  height: auto;
+  cursor: zoom-in;
+  background: var(--paper-2);
+  border: 1px solid var(--rule-soft);
+}
+
+.bench-figure figcaption {
+  margin-top: 6px;
+  font: 13px var(--sans);
+  color: var(--ink-3);
+}
+
+.bench-findings {
+  margin: 0;
+  padding: 0 0 0 1.3em;
+  max-width: 78ch;
+}
+
+.bench-findings li {
+  margin: 0 0 14px;
+}
+
+.bench-findings p {
+  margin: 0;
+}
+
+.bench-sources {
+  margin-top: 5px !important;
+  font: 13px var(--sans);
+  color: var(--ink-2);
+}
+
+.bench-steps {
+  margin: 0;
+  padding: 0 0 0 1.3em;
+  max-width: 78ch;
+}
+
+.bench-steps li {
+  margin: 0 0 9px;
+}
+
+.bench-commands {
+  max-width: 78ch;
+}
+
+.bench-commands h4 {
+  margin: 12px 0 6px;
+  font-size: 14px;
+}
+
+.bench-commands pre {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.bench-commands-note {
+  font: 13px var(--sans);
+  color: var(--ink-3);
+}
+
+.bench-cite-title {
+  margin: 14px 0 4px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.bench-cites {
+  margin: 0;
+  padding: 0 0 0 1.3em;
+}
+
+.bench-cites li {
+  margin: 0 0 6px;
+}
+
+.bench-caveats ul {
+  margin: 0;
+  padding: 0 0 0 1.3em;
+  max-width: 78ch;
+}
+
+.article img[role='button'] {
+  cursor: zoom-in;
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 24px 18px;
+  background: rgb(12 22 20 / 92%);
+}
+
+.lightbox-frame {
+  margin: 0;
+  max-width: min(94vw, 1200px);
+}
+
+.lightbox-image {
+  max-width: 100%;
+  max-height: 78vh;
+  height: auto;
+  background: var(--paper);
+}
+
+.lightbox-caption {
+  margin-top: 8px;
+  font: 13.5px var(--sans);
+  color: var(--paper);
+}
+
+.lightbox-close {
+  font: 13px var(--sans);
+  color: var(--ink);
+  background: var(--signal);
+  border: 1px solid var(--signal-ink);
+  padding: 6px 14px;
+  cursor: pointer;
+}
+
+.lightbox-hint {
+  margin: 0;
+  font: 12.5px var(--sans);
+  color: var(--paper-2);
+}
+
+body[data-lightbox='open'] {
+  overflow: hidden;
+}
+
 @media (max-width: 720px) {
   .masthead-note {
     margin-left: 0;
@@ -1268,6 +1494,14 @@ main {
   .comment.depth-2,
   .comment.depth-3 {
     margin-left: 20px;
+  }
+
+  .bench-card {
+    padding: 12px 12px 14px;
+  }
+
+  .lightbox-image {
+    max-height: 66vh;
   }
 }
 

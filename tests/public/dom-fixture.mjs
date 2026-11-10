@@ -17,7 +17,33 @@ class Node {
     this.className = attrs.class ?? '';
     this.listeners = {};
     this.value = attrs.value ?? '';
+    this.src = attrs.src ?? '';
+    this.alt = attrs.alt ?? '';
+    this.classList = { contains: (name) => this.className.split(/\s+/).includes(name) };
     if (attrs.dataset) Object.assign(this.dataset, attrs.dataset);
+  }
+
+  setAttribute(name, value) {
+    if (name === 'class') this.className = value;
+    this.attrs[name] = value;
+  }
+
+  getAttribute(name) {
+    if (name === 'class') return this.className;
+    return this.attrs[name];
+  }
+
+  closest(selector) {
+    let node = this;
+    while (node) {
+      if (node.matches(selector)) return node;
+      node = node.parent;
+    }
+    return null;
+  }
+
+  focus() {
+    this.focused = true;
   }
 
   matches(selector) {
@@ -49,12 +75,13 @@ class Node {
     return true;
   }
 
+  // 后代选择器按「往上还能找到这一层吗」判断，不要求父子相邻。
   hasAncestorChain(parts) {
     let node = this;
     for (let index = parts.length - 1; index >= 0; index -= 1) {
-      if (!node.matchesLast(parts[index])) return false;
+      while (node && !node.matchesLast(parts[index])) node = node.parent;
+      if (!node) return false;
       node = node.parent;
-      if (index > 0 && !node) return false;
     }
     return true;
   }
@@ -72,10 +99,12 @@ class Node {
     return found;
   }
 
-  append(node) {
-    node.parent?.children.splice(node.parent.children.indexOf(node), 1);
-    node.parent = this;
-    this.children.push(node);
+  append(...nodes) {
+    for (const node of nodes) {
+      node.parent?.children.splice(node.parent.children.indexOf(node), 1);
+      node.parent = this;
+      this.children.push(node);
+    }
   }
 
   after(node) {
@@ -160,4 +189,22 @@ async function runListScript(document, search) {
   return context;
 }
 
-export { Node, buildPage, runListScript };
+// 浏览器端脚本共用的执行夹具：把 public/<name>.js 读出来，在最小 DOM 上真跑一遍。
+async function runBrowserScript(name, documentNode) {
+  const source = await readFile(path.resolve(import.meta.dirname, '../../public', name), 'utf8');
+  const window = { location: { pathname: '/', search: '' } };
+  const context = {
+    window,
+    document: {
+      body: documentNode,
+      createElement: (tag) => new Node(tag),
+      querySelector: (selector) => documentNode.querySelector(selector),
+      querySelectorAll: (selector) => documentNode.querySelectorAll(selector),
+      addEventListener: (type, handler) => documentNode.addEventListener(type, handler),
+    },
+  };
+  await vm.runInNewContext(source, context);
+  return { context, window };
+}
+
+export { Node, buildPage, runListScript, runBrowserScript };
