@@ -87,8 +87,8 @@
 
     function pannable() {
       const limits = panLimits();
-      if (!limits) return scale > 1;
-      return limits.x > 0 || limits.y > 0;
+      // 量不到盒子（大图还没加载完）就不给拖：这时候图是看不见的，拖了只会把它拖到找不回来。
+      return Boolean(limits) && (limits.x > 0 || limits.y > 0);
     }
 
     function apply() {
@@ -103,7 +103,7 @@
       if (scaleLabel) {
         scaleLabel.textContent = pannable()
           ? `当前 ${percent()}，滚轮或 +/− 缩放，按住图片拖动看局部，双击回到适应屏幕`
-          : `当前 ${percent()}，先放大（滚轮或 +/−），放大后才能按住图片拖动看局部`;
+          : `当前 ${percent()}，图片还没有比窗口大，再放大（滚轮或 +/−）就能按住图片拖动看局部`;
       }
     }
 

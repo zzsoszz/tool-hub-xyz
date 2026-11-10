@@ -43,6 +43,17 @@ function clickEvent() {
   return event;
 }
 
+// 夹具没有布局引擎，量不出盒子；夹紧与「能不能拖」都靠窗口盒子和图片盒子，测试直接把浏览器会量到的
+// 尺寸喂进去。这一张正好铺满窗口（100% 时两边一样大），所以能拖的范围只有放大多出来的那一圈。
+function measurable(box, image, width, height) {
+  const pane = box.querySelector('.lightbox-viewport');
+  pane.clientWidth = width;
+  pane.clientHeight = height;
+  image.offsetWidth = width;
+  image.offsetHeight = height;
+  return pane;
+}
+
 test('marksArticleAndChartImagesAsZoomable', async () => {
   const { chart, svg, thumb, thumbLink } = await run();
   assert.equal(chart.dataset.zoom, 'true');
@@ -122,8 +133,9 @@ test('overlayButtonsZoomInOutAndResetToFit', async () => {
   const page = await run();
   page.chart.emit('click', clickEvent());
   const big = page.imageInOverlay();
+  measurable(page.overlay(), big, 400, 300);
   assert.equal(big.style.transform, 'translate(0px, 0px) scale(1)');
-  assert.equal(page.scaleText(), '当前 100%，先放大（滚轮或 +/−），放大后才能按住图片拖动看局部');
+  assert.equal(page.scaleText(), '当前 100%，图片还没有比窗口大，再放大（滚轮或 +/−）就能按住图片拖动看局部');
   assert.equal(big.dataset.zoomPannable, '');
 
   page.button('lightbox-zoom-in').emit('click');
@@ -173,6 +185,7 @@ test('draggingAZoomedImagePansItAndDraggingStopsOnPointerUp', async () => {
   const page = await run();
   page.chart.emit('click', clickEvent());
   const big = page.imageInOverlay();
+  measurable(page.overlay(), big, 800, 600);
   // <img> 默认能被浏览器拖走，那会让 pointercancel 打断平移。
   assert.equal(big.getAttribute('draggable'), 'false');
   big.emit('pointerdown', { pointerId: 1, clientX: 100, clientY: 80 });
@@ -193,6 +206,7 @@ test('draggingKeepsWorkingWhenThePointerLeavesTheImage', async () => {
   const page = await run();
   page.chart.emit('click', clickEvent());
   const big = page.imageInOverlay();
+  measurable(page.overlay(), big, 800, 600);
   page.button('lightbox-zoom-in').emit('click');
   page.button('lightbox-zoom-in').emit('click');
   big.emit('pointerdown', { pointerId: 7, clientX: 200, clientY: 200 });
@@ -227,26 +241,6 @@ test('panningIsClampedToTheZoomedOverflowSoTheImageNeverLeavesTheWindow', async 
   assert.equal(big.style.transform, 'translate(50px, -37.5px) scale(1.25)');
 });
 
-test('panningGetsClampedOnceTheImageReportsItsSize', async () => {
-  const page = await run();
-  page.chart.emit('click', clickEvent());
-  const big = page.imageInOverlay();
-  const pane = page.overlay().querySelector('.lightbox-viewport');
-  page.button('lightbox-zoom-in').emit('click');
-  page.button('lightbox-zoom-in').emit('click');
-  // 大图 src 刚设上时还没有盒子，量不到就无从夹紧。
-  big.emit('pointerdown', { pointerId: 6, clientX: 0, clientY: 0 });
-  page.overlay().emit('pointermove', { pointerId: 6, clientX: 900, clientY: 0 });
-  page.overlay().emit('pointerup', { pointerId: 6 });
-  assert.equal(big.style.transform, 'translate(900px, 0px) scale(1.5625)');
-  pane.clientWidth = 400;
-  pane.clientHeight = 300;
-  big.offsetWidth = 400;
-  big.offsetHeight = 300;
-  big.emit('load');
-  assert.equal(big.style.transform, 'translate(112.5px, 0px) scale(1.5625)');
-});
-
 test('anImageSmallerThanTheWindowRefusesPanningUntilItOverflowsIt', async () => {
   const page = await run();
   page.chart.emit('click', clickEvent());
@@ -260,7 +254,7 @@ test('anImageSmallerThanTheWindowRefusesPanningUntilItOverflowsIt', async () => 
   page.button('lightbox-zoom-in').emit('click');
   // 156% 时图片只有 625×469，比窗口还小：拖也拖不出新内容，所以不给拖。
   assert.equal(big.dataset.zoomPannable, '');
-  assert.match(page.scaleText(), /放大后才能/);
+  assert.match(page.scaleText(), /图片还没有比窗口大/);
   big.emit('pointerdown', { pointerId: 8, clientX: 0, clientY: 0 });
   assert.notEqual(big.dataset.zoomDragging, 'true');
 
@@ -280,6 +274,7 @@ test('aDraggedImageDoesNotMakeTheBackdropCloseTheOverlay', async () => {
   const page = await run();
   page.chart.emit('click', clickEvent());
   const box = page.overlay();
+  measurable(box, page.imageInOverlay(), 800, 600);
   page.button('lightbox-zoom-in').emit('click');
   page.imageInOverlay().emit('pointerdown', { pointerId: 3, clientX: 0, clientY: 0 });
   box.emit('pointermove', { pointerId: 3, clientX: 30, clientY: 0 });
@@ -294,6 +289,7 @@ test('resettingZoomDropsThePanToo', async () => {
   const page = await run();
   page.chart.emit('click', clickEvent());
   const big = page.imageInOverlay();
+  measurable(page.overlay(), big, 400, 300);
   page.button('lightbox-zoom-in').emit('click');
   big.emit('pointerdown', { pointerId: 1, clientX: 0, clientY: 0 });
   page.overlay().emit('pointermove', { pointerId: 1, clientX: 12, clientY: 9 });
@@ -336,3 +332,22 @@ test('openingAnotherImageStartsBackAtFit', async () => {
   page.svg.emit('click', clickEvent());
   assert.equal(page.imageInOverlay().style.transform, 'translate(0px, 0px) scale(1)');
 });
+test('draggingIsRefusedUntilTheImageHasAMeasurableSize', async () => {
+  const page = await run();
+  page.chart.emit('click', clickEvent());
+  const big = page.imageInOverlay();
+  page.button('lightbox-zoom-in').emit('click');
+  page.button('lightbox-zoom-in').emit('click');
+  // 大图 src 刚设上、还没解码完：盒子量不到，这时候拖就是把一张看不见的图拖到找不回来。
+  big.emit('pointerdown', { pointerId: 6, clientX: 0, clientY: 0 });
+  assert.notEqual(big.dataset.zoomDragging, 'true');
+  page.overlay().emit('pointermove', { pointerId: 6, clientX: 900, clientY: 0 });
+  assert.equal(big.style.transform, 'translate(0px, 0px) scale(1.5625)');
+  measurable(page.overlay(), big, 400, 300);
+  big.emit('load');
+  assert.equal(big.dataset.zoomPannable, 'true');
+  big.emit('pointerdown', { pointerId: 6, clientX: 0, clientY: 0 });
+  page.overlay().emit('pointermove', { pointerId: 6, clientX: 900, clientY: 0 });
+  assert.equal(big.style.transform, 'translate(112.5px, 0px) scale(1.5625)');
+});
+
