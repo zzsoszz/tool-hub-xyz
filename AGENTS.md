@@ -84,8 +84,11 @@ npm run lint       # syntax, indentation, trailing whitespace, secret scan
   per-file SHA-256 and byte counts plus a downloadable `/bench/<id>.json`.
 - Conclusions state the measurement condition (same machine, same prompts, same engine) and
   never extrapolate across machines; caveats about upstream draft protocols stay on the page.
-- Images zoom through `public/lightbox.js`: it takes `main img`, skips images with an `<a>`
-  ancestor (list thumbnails are links), and adds no animation.
+- Images zoom through `public/lightbox.js`: every `main img` opens the centred overlay, and the
+  click cancels the wrapping link — a list thumbnail zooms instead of navigating, because
+  navigation stays on the title link plus the overlay's own 进入这篇文章 link.
+- Zoom is a single level (`1` means fit) shared by buttons, wheel, `+`/`-`/`0`, double-click and
+  drag-to-pan, clamped to 40%–600% so an image can never vanish; it is a transform, not a relayout.
 - Bench tables filter through `public/bench.js`: the box is server-rendered inside `.bench-data`,
   every table group carries `data-bench-table`, and the query stays in `?q=` so a filtered
   view is a shareable link.

@@ -46,7 +46,7 @@ GitHub Actions（每日 06:30 / 18:30 CST）── 采集 → 质量审查 → �
 - `src/schema.sql` D1 表结构（`comments`、`votes`、`hidden_items`、`admin_attempts`）
 - `data/` 采集产物（`digests/`、`bench/`、`seen.json`、`state.json`）、`hidden.json`（下架条目：管理员 + 审查）、`reviews/<日期>.json`（审查结论），随提交保留历史
 - `dist/` 构建产物，已 gitignore，由 CI 用 `wrangler deploy` 上传
-- `public/` 静态资产与路由/缓存配置（`styles.css`、`forum.js`、`funnel.js`、`list.js`（列表筛选与排序）、`bench.js`（评测表格搜索）、`search.js`（全站文章搜索与悬浮按钮）、`admin.js`（登录与下架）、`lightbox.js`（图片点击放大）、`favicon.svg`、`_headers`、`_redirects`）
+- `public/` 静态资产与路由/缓存配置（`styles.css`、`forum.js`、`funnel.js`、`list.js`（列表筛选与排序）、`bench.js`（评测表格搜索）、`search.js`（全站文章搜索与悬浮按钮）、`admin.js`（登录与下架）、`lightbox.js`（图片点击放大与缩放）、`favicon.svg`、`_headers`、`_redirects`）
 - `wrangler.jsonc` Cloudflare 部署目标（Assets + Worker `tool-hub` + D1 + `tool-hub.xyz` 自定义域名）
 - `tests/` 单元与端到端测试，`tests/fixtures/` 为离线样例
 - `scripts/` 运维脚本：`serve.mjs`（本地预览）、`reclassify.mjs`（按现行配置重打历史分类）、`fetch-hidden.mjs`（从 D1 拉回管理员下架记录）、`lint.mjs`
@@ -169,9 +169,13 @@ curl -X DELETE https://tool-hub.xyz/api/comments/12 -H "Authorization: Bearer <M
 
 ## 图片点击放大
 
-`public/lightbox.js`（零依赖）接管 `main` 里的图片：正文配图与评测图表点开看大图，列表缩略图本身是进条目页的链接所以不接管（带 `<a>` 祖先的图片一律跳过）。大图优先取 `data-full`，标题取所属 `figure` 的 `figcaption` 或 `alt`；键盘可开（`tabindex=0` + Enter/空格），Esc 或点图片外面关闭并把焦点还给原图，打开期间 `body[data-lightbox="open"]` 锁滚动。评测图表页同时在说明里给出 SVG 原文链接。
+`public/lightbox.js`（零依赖）接管 `main` 里的**每一张**图片：正文配图、列表缩略图、评测图表都能点开看大图。点击会顺手拦下外层链接的跳转——以前带 `<a>` 祖先的图片一律跳过，首页/日报/栏目/标签页的缩略图因此点了只会跳转，不会放大；现在跳转留在标题链接和浮层里的「进入这篇文章」上。大图地址依次取 `data-full`、包着图片的原图直链、`<img src>`；说明取所属 `figure` 的 `figcaption` 或 `alt`，图片包着非原图链接时补一个跳转入口（站内写「进入这篇文章」，站外写「查看原文」）。
 
-浮层的定位全部在 `styles.css` 的 `.lightbox` 规则里：`_headers` 把 `/styles.css` 与其他页面引用的脚本一律设成 `max-age=0, must-revalidate`，浏览器每次都回源核对，改了 CSS 不会再被一天的旧缓存喂给老访客（此前浮层不居中就是这么来的）。
+- **浮层里继续缩放**：`放大`/`缩小`/`适应屏幕` 三个按钮，滚轮上下滚，`+`/`-`/`0` 键，双击在原尺寸与放大之间切换；放大后按住拖动看局部。倍率统一成一个值（`1` 即适应屏幕），范围 40%–600% 收住，不会把图缩没；缩放用 `transform`，不重新排版。当前倍率写在按钮旁边。
+- **键盘**：正文配图与图表 `tabindex=0` + Enter/空格打开，Esc 或点图片外面关闭并把焦点还给原图；列表缩略图是装饰图（`alt=""`，文字在标题链接里），不给它额外的键盘停留点，键盘用户从标题进文章页同样能放大那张图。
+- 打开期间 `body[data-lightbox="open"]` 锁滚动；过渡只有 120ms 的 `transform`，`prefers-reduced-motion` 下自动关掉。小图（论坛表情、上游 140px 缩略图）在浮层里至少显示到 `min(45vw, 360px)`，不会在中间留一小点。
+
+浮层的定位全部在 `styles.css` 的 `.lightbox` 规则里：`_headers` 把 `/styles.css`、`/favicon.svg`、`/listview.mjs` 设成 `max-age=0, must-revalidate`，其余页面引用的脚本由 Cloudflare Assets 同样回源核对（实测 `cache-control: public, max-age=0, must-revalidate` + ETag），浏览器不会拿到一天前的旧脚本（此前浮层不居中就是这么来的）。
 
 ## 文章搜索
 
