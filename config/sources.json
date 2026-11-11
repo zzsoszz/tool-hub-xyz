@@ -1,8 +1,23 @@
 {
   "timezone": "Asia/Shanghai",
-  "maxItemsPerDay": 30,
-  "maxItemsPerSource": 5,
+  "maxItemsPerDay": 60,
+  "maxItemsPerSource": 8,
   "seenRetentionDays": 45,
+  "seenLimit": 20000,
+  "searchKeywords": [
+    "strata",
+    "comfyui",
+    "sglang",
+    "vllm",
+    "ollama",
+    "llama.cpp",
+    "ktransformers",
+    "tensorrt",
+    "powerinfer",
+    "avalon",
+    "basalt",
+    "mlx"
+  ],
   "sources": [
     {
       "id": "openai-news",
@@ -13,7 +28,10 @@
       "trustCategory": true,
       "category": "models",
       "lang": "en",
-      "windowHours": 96
+      "windowHours": 96,
+      "maxItems": 60,
+      "fetchBody": true,
+      "bodyFetchLimit": 3
     },
     {
       "id": "google-deepmind",
@@ -24,7 +42,10 @@
       "trustCategory": true,
       "category": "models",
       "lang": "en",
-      "windowHours": 96
+      "windowHours": 96,
+      "maxItems": 60,
+      "fetchBody": true,
+      "bodyFetchLimit": 3
     },
     {
       "id": "google-ai",
@@ -35,7 +56,9 @@
       "trustCategory": true,
       "category": "models",
       "lang": "en",
-      "windowHours": 96
+      "windowHours": 96,
+      "fetchBody": true,
+      "bodyFetchLimit": 2
     },
     {
       "id": "hf-blog",
@@ -45,7 +68,10 @@
       "tier": 1,
       "trustCategory": true,
       "category": "oss",
-      "lang": "en"
+      "lang": "en",
+      "maxItems": 60,
+      "fetchBody": true,
+      "bodyFetchLimit": 4
     },
     {
       "id": "hf-daily-papers",
@@ -89,7 +115,8 @@
       "tier": 1,
       "trustCategory": true,
       "category": "tools",
-      "lang": "en"
+      "lang": "en",
+      "maxItems": 30
     },
     {
       "id": "techcrunch-ai",
@@ -99,7 +126,9 @@
       "tier": 1,
       "trustCategory": true,
       "category": "news",
-      "lang": "en"
+      "lang": "en",
+      "fetchBody": true,
+      "bodyFetchLimit": 2
     },
     {
       "id": "ars-ai",
@@ -130,7 +159,9 @@
       "trustCategory": true,
       "category": "news",
       "lang": "zh",
-      "windowHours": 72
+      "windowHours": 72,
+      "fetchBody": true,
+      "bodyFetchLimit": 3
     },
     {
       "id": "arxiv-cs",
@@ -150,7 +181,9 @@
       "kind": "rss",
       "tier": 2,
       "category": "tools",
-      "lang": "en"
+      "lang": "en",
+      "fetchBody": true,
+      "bodyFetchLimit": 4
     },
     {
       "id": "hn-algolia",
@@ -160,7 +193,9 @@
       "adapter": "hn-algolia",
       "tier": 3,
       "category": "tools",
-      "lang": "en"
+      "lang": "en",
+      "fetchBody": true,
+      "bodyFetchLimit": 3
     },
     {
       "id": "lobsters-ai",
@@ -169,7 +204,9 @@
       "kind": "rss",
       "tier": 2,
       "category": "tools",
-      "lang": "en"
+      "lang": "en",
+      "fetchBody": true,
+      "bodyFetchLimit": 3
     },
     {
       "id": "reddit-local-llama",
@@ -193,7 +230,10 @@
       "minMetrics": {
         "stars": 100
       },
-      "windowHours": 168
+      "windowHours": 168,
+      "fetchBody": true,
+      "bodyUrl": "https://raw.githubusercontent.com/{REPO}/HEAD/README.md",
+      "bodyFetchLimit": 4
     },
     {
       "id": "microsoft-research",
@@ -231,7 +271,9 @@
       "tier": 2,
       "category": "tools",
       "lang": "zh",
-      "windowHours": 96
+      "windowHours": 96,
+      "fetchBody": true,
+      "bodyFetchLimit": 2
     },
     {
       "id": "appinn",
@@ -250,7 +292,10 @@
       "kind": "rss",
       "tier": 3,
       "category": "apps",
-      "lang": "en"
+      "lang": "en",
+      "maxItems": 30,
+      "fetchBody": true,
+      "bodyFetchLimit": 4
     },
     {
       "id": "hn-show-ai",
@@ -259,7 +304,9 @@
       "kind": "rss",
       "tier": 2,
       "category": "tools",
-      "lang": "en"
+      "lang": "en",
+      "fetchBody": true,
+      "bodyFetchLimit": 2
     },
     {
       "id": "ai-news-applied",
@@ -279,7 +326,9 @@
       "tier": 3,
       "category": "tools",
       "lang": "zh",
-      "windowHours": 96
+      "windowHours": 96,
+      "fetchBody": true,
+      "bodyFetchLimit": 3
     },
     {
       "id": "reddit-sideproject",
@@ -289,6 +338,38 @@
       "tier": 3,
       "category": "money",
       "lang": "en"
+    },
+    {
+      "id": "hn-money",
+      "name": "HN 检索（独立开发与变现）",
+      "url": "https://hn.algolia.com/api/v1/search_by_date?query={QUERY}&tags=story&hitsPerPage=10&numericFilters=points%3E30",
+      "kind": "json",
+      "adapter": "hn-algolia",
+      "keywords": [
+        "SaaS",
+        "side project",
+        "indie hacker",
+        "AI agency",
+        "freelance"
+      ],
+      "maxQueries": 5,
+      "tier": 2,
+      "category": "money",
+      "lang": "en",
+      "windowHours": 168,
+      "maxItems": 10,
+      "fetchBody": true,
+      "bodyFetchLimit": 4
+    },
+    {
+      "id": "reddit-saas",
+      "name": "r/SaaS 变现实操",
+      "url": "https://www.reddit.com/r/SaaS/new.rss",
+      "kind": "rss",
+      "tier": 3,
+      "category": "money",
+      "lang": "en",
+      "maxItems": 25
     },
     {
       "id": "lcz-hardware",
@@ -301,7 +382,11 @@
       "category": "local",
       "windowHours": 120,
       "timeoutMs": 30000,
-      "trustCategory": true
+      "trustCategory": true,
+      "pages": 3,
+      "enrichLimit": 10,
+      "keywordsFrom": "searchKeywords",
+      "retries": 3
     },
     {
       "id": "lcz-llm",
@@ -314,7 +399,11 @@
       "category": "local",
       "windowHours": 120,
       "timeoutMs": 30000,
-      "trustCategory": true
+      "trustCategory": true,
+      "pages": 3,
+      "enrichLimit": 10,
+      "keywordsFrom": "searchKeywords",
+      "retries": 3
     },
     {
       "id": "lcz-agent",
@@ -327,7 +416,11 @@
       "category": "tools",
       "windowHours": 120,
       "timeoutMs": 30000,
-      "trustCategory": true
+      "trustCategory": true,
+      "pages": 3,
+      "enrichLimit": 10,
+      "keywordsFrom": "searchKeywords",
+      "retries": 3
     },
     {
       "id": "lcz-media",
@@ -340,7 +433,11 @@
       "category": "apps",
       "windowHours": 120,
       "timeoutMs": 30000,
-      "trustCategory": true
+      "trustCategory": true,
+      "pages": 3,
+      "enrichLimit": 10,
+      "keywordsFrom": "searchKeywords",
+      "retries": 3
     },
     {
       "id": "lcz-selfmedia",
@@ -353,7 +450,11 @@
       "category": "money",
       "windowHours": 168,
       "timeoutMs": 30000,
-      "trustCategory": true
+      "trustCategory": true,
+      "pages": 3,
+      "enrichLimit": 16,
+      "keywordsFrom": "searchKeywords",
+      "retries": 3
     },
     {
       "id": "lcz-web",
@@ -366,7 +467,11 @@
       "category": "money",
       "windowHours": 168,
       "timeoutMs": 30000,
-      "trustCategory": true
+      "trustCategory": true,
+      "pages": 3,
+      "enrichLimit": 10,
+      "keywordsFrom": "searchKeywords",
+      "retries": 3
     },
     {
       "id": "lcz-crisis",
@@ -379,7 +484,11 @@
       "category": "ideas",
       "windowHours": 168,
       "timeoutMs": 30000,
-      "trustCategory": true
+      "trustCategory": true,
+      "pages": 3,
+      "enrichLimit": 10,
+      "keywordsFrom": "searchKeywords",
+      "retries": 3
     },
     {
       "id": "lcz-news",
@@ -392,7 +501,90 @@
       "category": "news",
       "windowHours": 120,
       "timeoutMs": 30000,
-      "trustCategory": true
+      "trustCategory": true,
+      "pages": 3,
+      "enrichLimit": 10,
+      "keywordsFrom": "searchKeywords",
+      "retries": 3
+    },
+    {
+      "id": "gh-releases",
+      "name": "GitHub 发布（ComfyUI / Strata 等）",
+      "url": "https://api.github.com/repos/{REPO}/releases?per_page=3",
+      "kind": "json",
+      "adapter": "github-releases",
+      "repos": [
+        "Comfy-Org/ComfyUI",
+        "Niko1221/Strata",
+        "sgl-project/sglang",
+        "vllm-project/vllm",
+        "ollama/ollama",
+        "ggml-org/llama.cpp",
+        "kvcache-ai/KTransformers",
+        "comfyanonymous/ComfyUI_examples"
+      ],
+      "tier": 1,
+      "trustCategory": true,
+      "category": "local",
+      "lang": "en",
+      "windowHours": 96,
+      "maxItems": 3
+    },
+    {
+      "id": "hn-ecosystem",
+      "name": "HN 检索（本地推理生态）",
+      "url": "https://hn.algolia.com/api/v1/search_by_date?query={QUERY}&tags=story&hitsPerPage=10&numericFilters=points%3E15",
+      "kind": "json",
+      "adapter": "hn-algolia",
+      "keywordsFrom": "searchKeywords",
+      "maxQueries": 12,
+      "tier": 2,
+      "category": "tools",
+      "lang": "en",
+      "windowHours": 72,
+      "maxItems": 10,
+      "fetchBody": true,
+      "bodyFetchLimit": 6
+    },
+    {
+      "id": "gh-ecosystem",
+      "name": "GitHub 检索（生态项目更新）",
+      "url": "https://api.github.com/search/repositories?q={QUERY}+stars:%3E150+pushed:%3E{SINCE}&sort=updated&order=desc&per_page=10",
+      "kind": "json",
+      "adapter": "github-search",
+      "keywordsFrom": "searchKeywords",
+      "maxQueries": 6,
+      "publishedField": "pushed",
+      "minMetrics": {
+        "stars": 150
+      },
+      "tier": 2,
+      "category": "oss",
+      "lang": "en",
+      "windowHours": 168,
+      "maxItems": 10,
+      "fetchBody": true,
+      "bodyUrl": "https://raw.githubusercontent.com/{REPO}/HEAD/README.md",
+      "bodyFetchLimit": 8
+    },
+    {
+      "id": "arxiv-ecosystem",
+      "name": "arXiv 检索（推理引擎与量化）",
+      "url": "https://export.arxiv.org/api/query?search_query={QUERY}&sortBy=submittedDate&sortOrder=descending&max_results=10",
+      "kind": "atom",
+      "keywords": [
+        "all:\"quantized inference\"",
+        "all:\"speculative decoding\"",
+        "all:\"KV cache\" AND cat:cs.LG",
+        "all:\"ComfyUI\"",
+        "all:\"inference engine\" AND cat:cs.DC"
+      ],
+      "maxQueries": 5,
+      "tier": 3,
+      "category": "ideas",
+      "lang": "en",
+      "windowHours": 72,
+      "maxItems": 10
     }
   ],
   "windowHours": 48,

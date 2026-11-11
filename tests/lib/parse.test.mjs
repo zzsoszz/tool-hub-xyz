@@ -70,3 +70,23 @@ test('keepsItemsThatOnlyHaveTitleAndLink', async () => {
   assert.equal(items.length, 2);
   assert.equal(items[1].summary, '');
 });
+
+test('readsHackerNewsPointsAndCommentsOutOfTheFeedBody', () => {
+  const items = parseFeed(`<rss><channel><item>
+    <title>Show HN: strata 0.9 runs local models on a laptop</title>
+    <description><![CDATA[
+      <p>Article URL: <a href="https://strata.app/0-9">https://strata.app/0-9</a></p>
+      <p>Comments URL: <a href="https://news.ycombinator.com/item?id=50448174">https://news.ycombinator.com/item?id=50448174</a></p>
+      <p>Points: 53</p>
+      <p># Comments: 44</p>
+    ]]></description>
+    <link>https://strata.app/0-9</link>
+    <pubDate>Wed, 11 Nov 2026 00:15:33 +0000</pubDate>
+  </item></channel></rss>`, { ...rssSource, id: 'hn-newest', trustCategory: false });
+  assert.deepEqual(items[0].metrics, { points: 53, comments: 44 });
+});
+
+test('leavesMetricsEmptyWhenTheFeedCarriesNoEngagement', async () => {
+  const items = parseFeed(await fixture('sample-rss.xml'), rssSource);
+  assert.deepEqual(items[0].metrics, {});
+});

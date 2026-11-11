@@ -5,7 +5,7 @@ const VOID_TAGS = new Set(['br', 'hr', 'img']);
 const DROP_TAGS = new Set([
   'script', 'style', 'noscript', 'iframe', 'object', 'embed', 'form', 'input', 'button', 'select',
   'textarea', 'svg', 'math', 'template', 'head', 'meta', 'link', 'title', 'canvas', 'video', 'audio',
-  'source', 'picture', 'noscript',
+  'source', 'picture', 'noscript', 'nav', 'header', 'footer', 'aside',
 ]);
 const KEEP_TAGS = new Set([
   'p', 'div', 'section', 'article', 'main', 'blockquote', 'pre', 'code', 'kbd', 'samp', 'ul', 'ol', 'li',
@@ -310,4 +310,106 @@ export function textToArticle(text, options = {}) {
   if (!plain) return null;
   const paragraphs = plain.split(/\n{1,}/).map((part) => part.trim()).filter(Boolean);
   return sanitizeArticle(paragraphs.map((part) => `<p>${escapeHtml(part)}</p>`).join('\n'), options);
+}
+
+// GitHub 发布说明这类正文是 Markdown，直接塞进正文里会留下成片的 `#` 和 `*`。
+// 这里只认发布说明真正用到的那几种写法：围栏代码、标题、有序/无序列表、行内代码、链接。
+function inlineMarkdown(text) {
+  return escapeHtml(text)
+    .replace(/\[([^\]]{1,160})\]\((https?:\/\/[^)\s]+)\)/g, '<a href="$2">$1</a>')
+    .replace(/\*\*([^*]{1,200})\*\*/g, '<strong>$1</strong>')
+    .replace(/`([^`\n]{1,200})`/g, '<code>$1</code>');
+}
+
+export function markdownToHtml(markdown) {
+  const blocks = [];
+  let fence = null;
+  let listTag = null;
+  let listItems = [];
+  let paragraph = [];
+  const flushParagraph = () => {
+    if (!paragraph.length) return;
+    blocks.push(`<p>${inlineMarkdown(paragraph.join(' '))}</p>`);
+    paragraph = [];
+  };
+  const flushList = () => {
+    if (!listTag) return;
+    blocks.push(`<${listTag}>${listItems.join('')}</${listTag}>`);
+    listTag = null;
+    listItems = [];
+  };
+  for (const raw of String(markdown ?? '').split(/\r?\n/)) {
+    const line = raw.trimEnd();
+    const fenceMark = /^\s*```/.exec(line);
+    if (fenceMark) {
+      if (fence) {
+        blocks.push(`<pre><code>${escapeHtml(fence.join('\n'))}</code></pre>`);
+        fence = null;
+      } else {
+        flushParagraph();
+        flushList();
+        fence = [];
+      }
+      continue;
+    }
+    if (fence) {
+      fence.push(raw);
+      continue;
+    }
+    if (!line.trim()) {
+      flushParagraph();
+      flushList();
+      continue;
+    }
+    const heading = /^(#{1,4})\s+(.*)$/.exec(line);
+    if (heading) {
+      flushParagraph();
+      flushList();
+      const level = Math.min(6, heading[1].length + 2);
+      blocks.push(`<h${level}>${inlineMarkdown(heading[2])}</h${level}>`);
+      continue;
+    }
+    const bullet = /^\s*[-*+]\s+(.*)$/.exec(line);
+    if (bullet) {
+      flushParagraph();
+      if (listTag !== 'ul') flushList();
+      listTag = 'ul';
+      listItems.push(`<li>${inlineMarkdown(bullet[1])}</li>`);
+      continue;
+    }
+    const step = /^\s*\d+[.)]\s+(.*)$/.exec(line);
+    if (step) {
+      flushParagraph();
+      if (listTag !== 'ol') flushList();
+      listTag = 'ol';
+      listItems.push(`<li>${inlineMarkdown(step[1])}</li>`);
+      continue;
+    }
+    flushList();
+    paragraph.push(line.trim());
+  }
+  if (fence) blocks.push(`<pre><code>${escapeHtml(fence.join('\n'))}</code></pre>`);
+  flushParagraph();
+  flushList();
+  return blocks.join('\n');
+}
+
+// 只给标题的信息源（例如 huggingface.co/blog/feed.xml）没法判断质量，也没法写摘要。
+// 这里从原文页面里挑出最像正文的那一块：<article> 优先，其次 <main>，都没有才退回整份 HTML。
+const BODY_REGIONS = [/<\s*article\b[\s\S]*?<\/article\s*>/i, /<\s*main\b[\s\S]*?<\/main\s*>/i];
+
+export function extractArticleBody(html, { baseUrl = '', maxChars = 4000, minChars = 320 } = {}) {
+  const source = String(html ?? '');
+  if (!/<(p|article|main)\b/i.test(source)) return null;
+  let best = null;
+  for (const region of BODY_REGIONS) {
+    const match = region.exec(source);
+    if (!match) continue;
+    const article = sanitizeArticle(match[0], { baseUrl, maxChars, minChars });
+    if (!article) continue;
+    if (!best || article.chars > best.chars) best = article;
+    if (article.chars >= 1200) break;
+  }
+  if (best) return best;
+  return sanitizeArticle(source, { baseUrl, maxChars, minChars });
 }

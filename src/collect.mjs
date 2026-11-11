@@ -70,6 +70,7 @@ function summarizeSources(results) {
     name: result.source.name,
     ok: result.ok,
     items: result.items.length,
+    queries: result.queries ?? 1,
     error: result.error ?? null,
   }));
 }
@@ -79,7 +80,13 @@ async function main() {
   const config = await readJson(path.join(ROOT, 'config/sources.json'));
   const filters = await readJson(path.join(ROOT, 'config/filters.json'));
   const timezone = flags.timezone ?? config.timezone ?? 'Asia/Shanghai';
-  const now = new Date();
+  // --now=<ISO> 把「现在」钉死：窗口、兜底线和日报日期都从它算，测试与回填才复现得出来。
+  const now = flags.now ? new Date(flags.now) : new Date();
+  if (Number.isNaN(now.getTime())) {
+    console.error(`--now 不是合法时间：${flags.now}`);
+    process.exitCode = 1;
+    return;
+  }
   const day = flags.date ?? dayKey(now, timezone);
   const defaultWindow = Number(flags['window-hours'] ?? config.windowHours ?? 48);
   const dataDir = path.join(ROOT, flags.out ?? 'data');
@@ -106,6 +113,13 @@ async function main() {
     if (!cutoffCache.has(hours)) cutoffCache.set(hours, new Date(now.getTime() - hours * 3_600_000).toISOString());
     return cutoffCache.get(hours);
   };
+  // 增量起点只是「上次运行到现在」的补漏线，真正的窗口由信息源自己的 windowHours 决定：
+  // 论坛栏目更新慢，窗口按 120 小时配置，就不该被 12 小时的增量线悄悄收窄。
+  const cutoffFor = (sourceId) => {
+    const window = windowCutoff(sourceId);
+    if (!incrementalFrom) return window;
+    return incrementalFrom < window ? window : incrementalFrom;
+  };
 
   const results = flags.offline
     ? await offlineResults(config.sources, path.join(ROOT, flags.fixtures ?? 'tests/fixtures'))
@@ -113,6 +127,11 @@ async function main() {
         concurrency: Number(flags.concurrency ?? 5),
         timeoutMs: Number(flags.timeout ?? 15_000),
         retries: Number(flags.retries ?? 2),
+        searchKeywords: config.searchKeywords ?? [],
+        timezone,
+        // 补正文是要花请求的：只为「来源门槛已过、只差正文」的条目花这笔预算，
+        // 否则预算会落在必被闸门淘汰的存档条目上，入选条目反而没有正文。
+        worthEnriching: (item, source) => filter.isRelevant(item) && filter.passesGuards(item, source),
       });
 
   const fetched = results.flatMap((result) => result.items);
@@ -135,7 +154,13 @@ async function main() {
     }
     unseen.push(item);
   }
-  const { fresh, duplicates } = filterNewItems(unseen, seen, { day });
+  // 只有落在信息源窗口里的条目才算「处理过」。窗口外的存档条目留到以后再看，
+  // 否则一次全量抓取就能把整站历史写进 seen.json，之后几天的日报只能靠兜底。
+  const inSourceWindow = (item) => {
+    if (!item.published) return true;
+    return stamp(item.published) >= (windowStart?.toISOString() ?? cutoffFor(item.sourceId));
+  };
+  const { fresh, duplicates } = filterNewItems(unseen, seen, { day, markSeen: inSourceWindow });
 
   const perSourceCap = Number(config.maxItemsPerSource ?? 12);
   const usedPerSource = new Map();
@@ -162,7 +187,7 @@ async function main() {
   const additions = [];
   let fallbackUsed = 0;
   for (const [sourceId, eligible] of eligibleBySource) {
-    const cutoff = windowStart?.toISOString() ?? incrementalFrom ?? windowCutoff(sourceId);
+    const cutoff = windowStart?.toISOString() ?? cutoffFor(sourceId);
     const inWindow = [];
     const older = [];
     for (const item of eligible) {
@@ -263,7 +288,7 @@ async function main() {
   // 回填某天（带 --since/--until）时不写 seen.json：那一天的窗口已经保证条目只落在这一天。
   // 写了会把同一批信息源里属于后面几天的条目全判成「已经见过」，后面那几天就什么都采不到。
   if (!strictWindow) {
-    pruneSeen(seen, { retentionDays: config.seenRetentionDays ?? 45, timezone, now });
+    pruneSeen(seen, { retentionDays: config.seenRetentionDays ?? 45, timezone, now, limit: Number(config.seenLimit ?? 20_000) });
     await writeFile(seenPath, `${JSON.stringify(serializeSeen(seen), null, 2)}\n`);
   }
   await writeFile(statePath, `${JSON.stringify({ version: 1, day, lastRunAt: now.toISOString() }, null, 2)}\n`);

@@ -1071,6 +1071,13 @@
       "reddit-sideproject": {
         "points": 150
       },
+      "reddit-saas": {
+        "summaryChars": 160
+      },
+      "hn-money": {
+        "points": 30,
+        "summaryChars": 60
+      },
       "github-trending": {
         "stars": 300,
         "summaryChars": 80
@@ -1122,6 +1129,19 @@
       },
       "lcz-news": {
         "summaryChars": 40
+      },
+      "hn-ecosystem": {
+        "points": 25,
+        "summaryChars": 40
+      },
+      "gh-releases": {
+        "summaryChars": 120
+      },
+      "gh-ecosystem": {
+        "summaryChars": 60
+      },
+      "arxiv-ecosystem": {
+        "summaryChars": 200
       }
     },
     "actionWeight": 1.6,

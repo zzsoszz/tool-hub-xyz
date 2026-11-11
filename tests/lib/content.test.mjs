@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { balanceHtml, repairArticle, sanitizeArticle, textToArticle } from '../../src/lib/content.mjs';
+import { balanceHtml, markdownToHtml, repairArticle, sanitizeArticle, textToArticle } from '../../src/lib/content.mjs';
 
 test('keepsParagraphsListsAndTables', () => {
   const article = sanitizeArticle(
@@ -109,3 +109,21 @@ test('repairsStoredArticlesThatCarryStrayClosingTags', () => {
   assert.equal(repairArticle(repaired), repaired);
   assert.equal(balanceHtml(''), '');
 });
+test('convertsReleaseMarkdownIntoBlocksCodeAndLinks', () => {
+  const html = markdownToHtml(
+    "## What's Changed\n* 显存占用降到 11.2 GB\n* 修复 [启动崩溃](https://example.test/a?b=1&c=2)\n\n1. 安装\n2. 运行\n\n```bash\nllm install x\n```\n正文里的 `tok/s` 保留",
+  );
+  assert.ok(html.includes('<h4>What\'s Changed</h4>'), html);
+  assert.ok(html.includes('<ul><li>显存占用降到 11.2 GB</li>'), html);
+  assert.ok(html.includes('<a href="https://example.test/a?b=1&amp;c=2">启动崩溃</a>'), html);
+  assert.ok(html.includes('<ol><li>安装</li><li>运行</li></ol>'), html);
+  assert.ok(html.includes('<pre><code>llm install x</code></pre>'), html);
+  assert.ok(html.includes('<p>正文里的 <code>tok/s</code> 保留</p>'), html);
+});
+
+test('keepsMarkdownHeadingsFromLeakingIntoPlainText', () => {
+  const article = sanitizeArticle(markdownToHtml('# 标题\n\n第一段说明\n\n第二段说明'), { baseUrl: 'https://github.com/a/b', minChars: 10 });
+  assert.ok(article.html.includes('<h3>标题</h3>'), article.html);
+  assert.ok(!article.text.includes('# 标题'), article.text);
+});
+

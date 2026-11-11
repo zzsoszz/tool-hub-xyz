@@ -105,6 +105,20 @@ npm run lint       # syntax, indentation, trailing whitespace, secret scan
 - `npm run backfill -- --days=7 --reseed-seen` rebuilds `seen.json` from the published digests
   before the loop and drops a day that ends up empty, so the archive never lists a blank day.
 
+## Expanding The Collection
+
+- A source URL may carry `{QUERY}`, `{REPO}` or `{SINCE}` placeholders, and one source then expands into
+  one request per keyword in `config/sources.json.searchKeywords` (`maxQueries` caps the expansion) or per
+  repository in `source.repos`. Keep `searchKeywords` about this site's own ecosystem, not generic AI words.
+- Forum categories paginate through `source.pages`. The NodeBB list is ordered by last reply, so paging stops
+  when a page's newest activity drops out of `windowHours`, `pagination.next.active` is false, or the page
+  returns fewer than 20 topics.
+- `fetchBody` plus `bodyFetchLimit` is a budget, and `fetchMissingBodies()` spends it only on items that
+  already pass `isRelevant()` and `passesGuards()` (the `worthEnriching` predicate); `maxItems` caps how much
+  one feed drags in, so an archive-wide feed never turns into 1,300 doomed items.
+- Measure before adding a source: `node scripts/audit-funnel.mjs [--only=<source-id>]` prints the funnel per
+  source (fetched / irrelevant / guard / killed / bodyless / eligible) plus the kill reasons.
+
 ## Asset Caching
 
 - Every asset an HTML page links must revalidate: `public/_headers` keeps `/styles.css`,

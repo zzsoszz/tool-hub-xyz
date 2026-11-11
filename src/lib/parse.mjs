@@ -77,6 +77,18 @@ function pickAuthor(node) {
   return '';
 }
 
+// hnrss 把热度直接写在正文里（Points: 53 / # Comments: 44）。不读出来的话，
+// filters.json 给 HN 源设的 points 门槛永远不成立，条目白扣 2 分、buzz 也永远是 0。
+function pickMetrics(node) {
+  const text = flattenText(node);
+  const metrics = {};
+  const points = /\bPoints:\s*(\d+)/i.exec(text);
+  const comments = /# Comments:\s*(\d+)/i.exec(text);
+  if (points) metrics.points = Number(points[1]);
+  if (comments) metrics.comments = Number(comments[1]);
+  return metrics;
+}
+
 function buildItem(node, source) {
   const title = cleanText(childText(node, ['title']), 220);
   const url = pickUrl(node, source);
@@ -99,6 +111,6 @@ function buildItem(node, source) {
     tier: source.tier ?? 2,
     trustCategory: Boolean(source.trustCategory),
     declaredCategory: source.category ?? null,
-    metrics: {},
+    metrics: pickMetrics(node),
   };
 }

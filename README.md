@@ -1,6 +1,6 @@
 # tool-hub.xyz · AI 折腾日报
 
-每天定时从 36 个信息源采集 AI 新应用、工具玩法、本地/低配跑法、开源项目与变现思路，去重、**只保留经得起看的高质量条目**、按内容质量排名（实操类优先）、译成中文（保留原文链接），生成 Hacker News 风格的静态站点 + 免登录评论区，部署在 Cloudflare Workers（静态资源 + Worker + D1）并绑定 `tool-hub.xyz`。
+每天定时从 42 个信息源采集 AI 新应用、工具玩法、本地/低配跑法、开源项目与变现思路，去重、**只保留经得起看的高质量条目**、按内容质量排名（实操类优先）、译成中文（保留原文链接），生成 Hacker News 风格的静态站点 + 免登录评论区，部署在 Cloudflare Workers（静态资源 + Worker + D1）并绑定 `tool-hub.xyz`。
 
 - 线上地址：<https://tool-hub.xyz>（部署后）
 - 本地预览：<http://127.0.0.1:8088/>
@@ -83,13 +83,19 @@ NODE_USE_ENV_PROXY=1 HTTPS_PROXY=http://192.168.31.4:7890 npm run collect
 - **时间窗口**：默认 48 小时，可按源设置 `windowHours`（官方 blog 96h、论文 72h、新仓库 168h）。若某源在窗口内无产出，则回退到其最新 2 条（不超过 `maxAgeDays: 7`），避免论文/官方栏目整块空掉。
 - **按天回填**：`node src/collect.mjs --date=<日期> --since=<ISO> --until=<ISO>` 只收那一天的条目，且**不做旧文兜底**、**不写 `seen.json`**（写了会把后面几天的条目全判成重复）。`npm run backfill` 逐天调用它，`--reseed-seen` 先把 `seen.json` 重建成「只含已发布条目」的指纹并在回填结束后再重建一次，`--seed-only` 表示只重建 `seen.json` 不采集，某天全空则撤下日期文件，归档里不留空页。
 - **质量门槛**：`minMetrics` 过滤低热度仓库（GitHub 新仓库要求 `stars > 100`）；`noiseKeywords` 排除与 AI 无关的蹭词内容。
+
+- **关键词检索展开**：`config/sources.json.searchKeywords` 是这条站关注的生态词（strata、comfyui、sglang、vllm、ollama、llama.cpp、KTransformers、TensorRT、MLX…）。URL 里写 `{QUERY}` 占位的源按关键词展开成多次检索（`hn-ecosystem` 走 HN Algolia、`gh-ecosystem` 走 GitHub 仓库检索、`arxiv-ecosystem` 走 arXiv 查询），`maxQueries` 限制每个源最多展开几次；`{REPO}` 占位按 `repos` 列表展开（`gh-releases` 盯 8 个固定仓库的 Release 说明）；`{SINCE}` 由 `sinceDays` 换算成日期。
+- **论坛栏目翻页**：`lcz.me` 的栏目接口每页固定 20 条（`per_page` 无效），`fetchCategoryPages()` 按 `source.pages` 逐页取（现每个栏目 3 页，候选从 20 条扩到约 60 条）。栏目按「最后回复时间」倒序，因此本页最活跃的帖子掉出 `windowHours` 窗口、`pagination.next.active === false`、或本页不满 20 条时停止翻页。
+- **补正文**：`hf-blog`、`openai-news`、量子位、少数派、掘金、Product Hunt、HN、lobsters 这类 feed 只有标题或一句话摘要，条目既过不了闸门也没法写导读。配了 `fetchBody: true` 的源由 `fetchMissingBodies()` 按「新→旧、热度次之」补取原文：网页走 `extractArticleBody()`（优先 `<article>`/`<main>`，丢弃导航与页脚），GitHub 仓库条目按 `bodyUrl` 改抓 raw README（`https://raw.githubusercontent.com/{REPO}/HEAD/README.md`，10 KB 纯文本换掉 400 KB 仓库页）。预算是 `bodyFetchLimit`，且只花在 `isRelevant()` 与 `passesGuards()` 都过的条目上，否则预算会落在必被淘汰的存档条目上。`maxItems` 限制单个源一次最多带回多少条，避免把整站存档拖进来再全部判死。
+- **漏斗审计**：`node scripts/audit-funnel.mjs [--only=源id]` 打印每个源的「抓到 / 无关 / 门槛 / 闸门淘汰 / 其中无正文 / 合格」和淘汰原因合计（只读、不写 `data/`），用来决定该扩哪个源、该给哪个源开 `fetchBody`。
+
 - **质量闸门（核心）**：`filter.quality()` 按「正文是否充实、有没有论证/干货、有没有具体数据、讨论热度、来源可信度」打分，低于 `minQuality` 直接淘汰——只采高质量、有理有据的条目，纯资讯必须更深才放行。`config/filters.json.quality` 里还有按源定制的 `sourceFloors`（HN 要求 points ≥ 30/40、reddit ≥ 150、GitHub ≥ 300 stars、arXiv 摘要 ≥ 200 字等）。
 - **排名**：`rank = quality + action × 1.6`，首页、栏目页、标签页与 RSS 全部按 `rank` 排序，**可实操、可复现的条目排最前**；页面显示「深度 N」「实用 N」徽章，版主精选条目额外 +3，带配图/实测截图的条目再加 `quality.illustrationBonus`（默认 +1）。
 - **首页条目数**：首页开场是当天的漏斗读数（抓取 → 入选，`data-count-to` 由 `funnel.js` 一次性数到位），只留当日排名最高的 `config/sections.json.homeLimit`（默认 10）条，并给出「查看全部 N 条」（`/day/<日期>`）入口；栏目页、标签页、RSS 与 `/data/latest.json` 不受这个限制。
 - **深度 / 实用量条**：条目列表与条目页用 `.meter` 刻度显示 `quality` 与 `practical`，刻度里的竖线是 `filters.json` 的质量闸门线（深度 6、实用 3），条超过竖线才算过关。
 - **关键词标签**：`filter.tagsFor()` 给每条打最多 4 个标签，条目页与列表的标签 chip 显示中文标签名（本地部署 / 低配硬件 / 实测跑分 / 教程步骤 / Agent 工具 / 生成内容 / 免费开源 / 接单变现 / 隐私数据 / 硬件折腾），链接仍走 `/t/<标签>.html`；`/tags` 是标签索引。
 - **条目页正文**：`src/lib/content.mjs` 把来源正文收敛成安全子集（保留段落、列表、表格、代码块、引用，丢弃脚本/事件属性/`javascript:` 链接，相对链接与图片改写成绝对地址），条目页按「中文导读 → 原文正文」排版；超过 3200 字时按句子边界截断并标注「原文约 N 字，这里保留前 M 字」。截断落在段落中间时会就地补齐当时打开的标签，不会留下 `<li><p></p></li>` 这类空壳；`balanceHtml()` 丢弃来源里配不上开标签的闭合标签、`repairArticle()` 顺手清掉历史数据里的空壳，保证正文是结构完整的 HTML。条目页表格统一包在 `.table-scroll` 内以支持横向滚动。质量闸门用正文长度（而非只有摘要）判断「正文太短」。`/data/latest.json` 只保留 `bodyChars`，正文内嵌在条目页 HTML 里。
-- **论坛类源**：`lcz.me`（抡锤者）8 个栏目走 `nodebb` 适配器（`kind: "json"`）。列表接口只给最后一条回复的 teaser，因此 `enrichForumTopics()` 会为热度靠前的帖子补取主贴正文、投票数与版主精选标记（`lczExcellent`），否则实测长文会被质量闸门误杀。
+- **论坛类源**：`lcz.me`（抡锤者）8 个栏目走 `nodebb` 适配器（`kind: "json"`）。列表接口每页固定 20 条且只给最后一条回复的 teaser，因此 `fetchCategoryPages()` 先按 `pages` 翻页把候选从 20 条扩到约 60 条，再由 `enrichForumTopics()`（`enrichLimit`，一般栏目 10、自媒体栏目 16）为生态关键词命中、热度靠前的窗口内帖子补取主贴正文、投票数与版主精选标记（`lczExcellent`），否则实测长文会被质量闸门误杀。被版主删除的帖子（标题为 `[[topic:topic-is-deleted]]`）在适配器里直接丢弃。
 - **栏目**：`AI 应用`、`工具玩法`、`AI 硬件`、`本地开源`、`变现副业`、`评测选型`（`config/filters.json.categories`）；先按分数排序，再按分类轮转取样，保证每栏都有条目。原「本地低配」已并入 `AI 硬件` + `本地开源`，低配相关内容用 `低配硬件` 标签与 `硬件折腾` 子类承载。
 - **实用度**：命中 `practicalKeywords`（免费、本地、ollama、量化、教程、副业、变现等）加分，「变现副业」「本地低配」额外加成，页面上显示为「实用 N」徽章。
 - **失败保护**：所有源都失败时 `collect` 以退出码 2 结束，CI 不会发布空日报覆盖线上站点。

@@ -13,7 +13,9 @@ export function itemKeys(item) {
   return [urlKey(item.url), titleKey(item.title)].filter(Boolean);
 }
 
-export function filterNewItems(items, seen, { day }) {
+// markSeen 决定一条条目是不是「真的处理过了」：窗口外的存档条目只用来兜底，
+// 把它们一律记成已见过，会让 seen.json 被整站历史灌满，之后几天什么都采不到。
+export function filterNewItems(items, seen, { day, markSeen = () => true }) {
   const fresh = [];
   const duplicates = [];
   const batch = new Set();
@@ -29,7 +31,7 @@ export function filterNewItems(items, seen, { day }) {
     }
     for (const key of keys) {
       batch.add(key);
-      seen.set(key, day);
+      if (markSeen(item)) seen.set(key, day);
     }
     fresh.push(item);
   }

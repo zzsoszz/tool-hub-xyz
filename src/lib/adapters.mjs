@@ -1,5 +1,5 @@
 import { cleanText, parseDate, summarize } from './normalize.mjs';
-import { sanitizeArticle, textToArticle } from './content.mjs';
+import { markdownToHtml, sanitizeArticle, textToArticle } from './content.mjs';
 
 function base(source) {
   return {
@@ -65,7 +65,7 @@ const adapters = {
         title: cleanText(repo.full_name, 220),
         url: repo.html_url,
         id: String(repo.id ?? ''),
-        published: iso(repo.created_at ?? repo.pushed_at),
+        published: iso(source.publishedField === 'pushed' ? (repo.pushed_at ?? repo.created_at) : (repo.created_at ?? repo.pushed_at)),
         summary: summarize(`${repo.description ?? '新发布的开源仓库'}${stats.length ? ` (${stats.join(' · ')})` : ''}`),
         categories: Array.isArray(repo.topics) ? repo.topics.slice(0, 5).map((topic) => cleanText(topic, 40)) : [],
         author: repo.owner?.login ?? '',
@@ -73,8 +73,33 @@ const adapters = {
       };
     });
   },
+  'github-releases': (payload, source) => {
+    const releases = Array.isArray(payload) ? payload : [];
+    return releases
+      .filter((release) => !release?.draft && release?.html_url && String(release.body ?? '').trim())
+      .map((release) => {
+        const pathParts = new URL(release.html_url).pathname.split('/').filter(Boolean);
+        const repoName = pathParts[1] ?? source.name;
+        const tag = cleanText(release.tag_name ?? '', 60);
+        const content = sanitizeArticle(markdownToHtml(release.body), { baseUrl: release.html_url, maxChars: 4000 });
+        return {
+          ...base(source),
+          title: cleanText(`${repoName} ${tag} 发布`, 220),
+          url: release.html_url,
+          id: String(release.id ?? release.html_url),
+          published: iso(release.published_at ?? release.created_at),
+          summary: summarize(content ? content.lead : release.body),
+          content: content ?? undefined,
+          categories: Array.isArray(source.topics) ? source.topics.slice(0, 5).map((topic) => cleanText(topic, 40)) : [],
+          author: release.author?.login ?? '',
+        };
+      });
+  },
   nodebb: (payload, source) => {
-    const topics = Array.isArray(payload?.topics) ? payload.topics : [];
+    // 列表接口会把版主删除的帖子留在页上，标题换成 [[topic:topic-is-deleted]] 占位符。
+    const topics = (Array.isArray(payload?.topics) ? payload.topics : []).filter(
+      (topic) => topic && !topic.deleted && !/^\s*\[\[topic:/.test(String(topic.title ?? '')),
+    );
     return topics.map((topic) => {
       const slug = String(topic.slug ?? topic.tid ?? '');
       const tags = Array.isArray(topic.tags) ? topic.tags.map((tag) => cleanText(tag?.value ?? tag, 40)) : [];

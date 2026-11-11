@@ -7,8 +7,38 @@ function sleep(ms) {
 }
 
 function backoffMs(attempt, retryAfter) {
-  if (retryAfter && Number.isFinite(retryAfter)) return Math.min(retryAfter * 1000, 20_000);
-  return 800 * 2 ** attempt;
+  if (retryAfter && Number.isFinite(retryAfter)) return Math.min(retryAfter * 1000, 30_000);
+  return 2_000 * 2 ** attempt;
+}
+
+// 同一个站点的请求排队：三个 reddit 源并发时整组 429，GitHub 检索并发时整组 403。
+// 按主机串行 + 间隔，比并发撞限流更快也更不容易被封。
+const hostChains = new Map();
+
+function hostOf(url) {
+  try {
+    return new URL(url).hostname;
+  } catch {
+    return '';
+  }
+}
+
+function queueHost(host, run) {
+  const key = host || '';
+  const previous = hostChains.get(key);
+  const next = previous
+    ? previous.then(async () => {
+        await sleep(Number(process.env.FETCH_HOST_SPACING_MS ?? 1_200));
+        return run();
+      })
+    : Promise.resolve().then(run);
+  // 队列上挂的是「不会 reject」的那条链：一个请求失败不能把后面排队的请求一起带崩。
+  const guard = next.catch(() => undefined);
+  guard.then(() => {
+    if (hostChains.get(key) === guard) hostChains.delete(key);
+  });
+  hostChains.set(key, guard);
+  return next;
 }
 
 export function headersFor(url, extra = {}) {
@@ -25,6 +55,10 @@ export function headersFor(url, extra = {}) {
 }
 
 export async function fetchUrl(url, { timeoutMs = 15_000, retries = 2, headers = {} } = {}) {
+  return queueHost(hostOf(url), () => fetchWithRetries(url, { timeoutMs, retries, headers }));
+}
+
+async function fetchWithRetries(url, { timeoutMs, retries, headers }) {
   let lastError = 'fetch failed';
   for (let attempt = 0; attempt <= retries; attempt += 1) {
     try {
