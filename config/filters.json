@@ -1263,7 +1263,8 @@
       "maxTags": 4,
       "agentMaxItems": 12,
       "agentBatch": 6,
-      "agentChars": 900
+      "agentChars": 900,
+      "agentExcerptChars": 600
     },
     "practicalGate": {
       "requireDataOrSteps": true,

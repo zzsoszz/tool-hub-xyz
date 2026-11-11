@@ -3,7 +3,7 @@ import { mkdir, readFile, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import test from 'node:test';
 import { createFilter } from '../../src/lib/filter.mjs';
-import { agentEndpoint, hardReview, mergeHidden, parseVerdicts, REVIEW_RULES, reviewConfig, runReview } from '../../src/review.mjs';
+import { agentEndpoint, agentPrompt, hardReview, mergeHidden, parseVerdicts, REVIEW_RULES, reviewConfig, runReview, SYSTEM_PROMPT } from '../../src/review.mjs';
 
 const filters = await readFile(path.resolve(import.meta.dirname, '../../config/filters.json'), 'utf8').then((text) => JSON.parse(text));
 const filter = createFilter(filters);
@@ -109,6 +109,26 @@ test('parseVerdictsReadsLineProtocolAndIgnoresNoise', () => {
   assert.equal(verdicts.size, 2);
   assert.equal(verdicts.get(1).verdict, 'pass');
   assert.equal(verdicts.get(2).reason, '标签和内容不符');
+});
+
+test('reviewAgentSeesABodyExcerptNotOnlyTheSummary', () => {
+  const { rows } = review([item({
+    slug: 'excerpt',
+    content: { chars: 4200, html: '', text: '第一步：执行 llama-server -m model.Q4 --port 8080，然后记录 tokens/s。' },
+  })]);
+  const prompt = agentPrompt(rows, REVIEW_RULES);
+  assert.ok(rows[0].excerpt.startsWith('第一步：执行 llama-server'), rows[0].excerpt);
+  assert.ok(prompt.includes('正文摘录：第一步：执行 llama-server'), prompt);
+});
+
+test('reviewAgentFallsBackToHtmlWhenThereIsNoPlainTextBody', () => {
+  const { rows } = review([item({ slug: 'html-only', content: { chars: 800, html: '<p>实测 tokens/s 对比表格。</p>' } })]);
+  assert.equal(rows[0].excerpt, '实测 tokens/s 对比表格。');
+});
+
+test('reviewAgentIsNotToldToBlockOnLengthOrMissingTags', () => {
+  assert.ok(!SYSTEM_PROMPT.includes('正文太短'), SYSTEM_PROMPT);
+  assert.ok(SYSTEM_PROMPT.includes('长度、标签缺失'), SYSTEM_PROMPT);
 });
 
 test('reviewBlocksAreStoredPerDaySoReReviewingConverges', async () => {

@@ -19,6 +19,7 @@ export const REVIEW_RULES = {
   agentMaxItems: 12,
   agentBatch: 6,
   agentChars: 900,
+  agentExcerptChars: 600,
 };
 
 export function agentEndpoint(config, model) {
@@ -62,10 +63,11 @@ export function reviewConfig(env = process.env) {
   return { enabled: false, provider: null, model, fallbackModel: FALLBACK_MODEL, key: '', accountId: '', base: '', endpoint: '' };
 }
 
-const SYSTEM_PROMPT = [
+export const SYSTEM_PROMPT = [
   '你是独立质量审查员，和生成这些条目的采集程序不是同一个模型，你的任务是拦下不该发布的内容。',
   '站点只保留实践性内容：有实测数据或有复现步骤，普通人能照着做。',
-  '必须判 fail：正文太短且没有可复述的信息；标签与内容不符或标签重复；分类/子类明显不对；只有新闻转述，既没有数据也没有步骤。',
+  '你看到的是摘要加正文开头摘录，摘录被截断是正常的；长度、标签缺失、摘要过短都由硬规则处理，不要把这些当 fail 理由。',
+  '必须判 fail：只有新闻转述，既没有数据也没有步骤；标签与内容明显不符或标签重复；分类/子类明显不对。',
   '其余判 pass。',
   '输出：每条一行，写成「序号|pass|一句话理由」或「序号|fail|一句话理由」，序号从 1 开始且与输入一致。',
   '不要输出 JSON、代码块、标题或任何额外文字。',
@@ -89,15 +91,20 @@ export function parseVerdicts(text) {
   return verdicts;
 }
 
-export async function askAgent(items, config, timeoutMs, model = config.model) {
-  const prompt = items.map((item, index) => [
+export function agentPrompt(items, rules = REVIEW_RULES) {
+  return items.map((item, index) => [
     `${index + 1}. 标题：${cleanText(item.zhTitle ?? item.title, 200)}`,
-    `   摘要：${cleanText(item.zhSummary ?? item.summary ?? '', config.agentChars ?? REVIEW_RULES.agentChars)}`,
+    `   摘要：${cleanText(item.zhSummary ?? item.summary ?? '', rules.agentChars ?? REVIEW_RULES.agentChars)}`,
+    `   正文摘录：${cleanText(item.excerpt ?? '', rules.agentExcerptChars ?? REVIEW_RULES.agentExcerptChars) || '（没有正文）'}`,
     `   正文长度：${item.bodyChars} 字 · 分类：${item.category ?? '未分类'}${item.subcategory ? `/${item.subcategory}` : ''} · 标签：${(item.tags ?? []).join(', ') || '（无）'}`,
     `   来源：${item.sourceName ?? ''} · 域名：${item.domain ?? ''}`,
   ].join('\n')).join('\n\n');
-  const body = config.provider === 'cloudflare'
-    ? { messages: [{ role: 'system', content: SYSTEM_PROMPT }, { role: 'user', content: prompt }], max_tokens: 90 * items.length + 200 }
+}
+
+export async function askAgent(items, config, timeoutMs, model = config.model, rules = REVIEW_RULES) {
+  const prompt = agentPrompt(items, rules);
+      const body = config.provider === 'cloudflare'
+        ? { messages: [{ role: 'system', content: SYSTEM_PROMPT }, { role: 'user', content: prompt }], max_tokens: 90 * items.length + 200 }
     : { model, temperature: 0.2, messages: [{ role: 'system', content: SYSTEM_PROMPT }, { role: 'user', content: prompt }] };
   const response = await fetch(agentEndpoint(config, model), {
     method: 'POST',
@@ -122,6 +129,12 @@ function domainOf(url) {
   } catch {
     return '';
   }
+}
+
+// 复核模型只有摘要可看时，会把「摘录被截断」当成「正文太短」误拦，所以给它一段正文开头。
+function bodyExcerpt(raw, chars) {
+  const text = String(raw.content?.text ?? String(raw.content?.html ?? '').replace(/<[^>]*>/g, ' '));
+  return cleanText(text, chars);
 }
 
 // 硬规则是不可被模型推翻的单向闸门：模型只能追加拦截，不能放行硬失败。
@@ -179,6 +192,7 @@ export function hardReview(digest, filter, rules = REVIEW_RULES) {
         subcategory: raw.subcategory ?? null,
         tags,
         bodyChars,
+        excerpt: bodyExcerpt(raw, rules.agentExcerptChars ?? REVIEW_RULES.agentExcerptChars),
         quality: Number(raw.quality ?? verdict.score ?? 0),
         practical: Number(raw.practical ?? 0),
         sourceName: raw.sourceName ?? '',
@@ -257,7 +271,7 @@ export async function runReview({ day, apply = false, allowNoAgent = false, data
       for (let attempt = 1; attempt <= 2 && verdicts.size === 0; attempt += 1) {
         const model = attempt === 1 ? config.model : (config.fallbackModel || config.model);
         try {
-          verdicts = (await askAgent(chunk, { ...config, agentChars: rules.agentChars }, timeoutMs, model)).verdicts;
+          verdicts = (await askAgent(chunk, config, timeoutMs, model, rules)).verdicts;
           if (verdicts.size) usedModels.add(model);
         } catch (error) {
           agentProblems.push(`${start + 1}-${last} 第 ${attempt} 次（${model}）调用失败：${error.message}`);
