@@ -513,7 +513,7 @@ ${rows.join('\n')}
 }
 
 export function renderRss(digest, { siteUrl = '' }) {
-  const items = (digest.categories ?? []).flatMap((group) => group.items).slice(0, 40);
+  const items = (digest.categories ?? []).flatMap((group) => group.items);
   const entries = items.map((item) => {
     const slug = item.slug ?? itemSlug(item);
     const description = [displaySummary(item), `原文链接：${item.url}`].filter(Boolean).join('\n');

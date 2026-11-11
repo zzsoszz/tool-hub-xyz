@@ -192,6 +192,16 @@ test('rendersRssWithItemLinksAndOriginalUrl', () => {
   assert.ok(feed.includes('原文链接：https://example.com/b'));
 });
 
+test('rssListsEveryItemOfALargeDayDigest', () => {
+  const items = Array.from({ length: 45 }, (_, index) => item({
+    id: `https://example.com/feed/${index}`,
+    url: `https://example.com/feed/${index}`,
+    title: `Local inference run log number ${index}`,
+  }));
+  const feed = renderRss(digest({ categories: [{ id: 'apps', label: 'AI 应用', items }] }), { siteUrl: 'https://tool-hub.xyz' });
+  assert.equal(feed.match(/<item>/g).length, 45);
+});
+
 test('rendersLlmsWithOriginalLinks', () => {
   const text = renderLlms(digest(), { siteUrl: 'https://tool-hub.xyz' });
   assert.ok(text.includes('原文：https://example.com/b'));
