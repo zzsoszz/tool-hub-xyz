@@ -59,10 +59,13 @@ test('thinBodyIsBlockedAsContentTooSmall', () => {
   assert.ok(rows[0].hard.some((reason) => reason.startsWith('内容过少')), rows[0].hard.join('；'));
 });
 
-test('abnormalTagsAreBlocked', () => {
+test('itemsWithoutAnyTagWarnButStillPassHardRules', () => {
   const missing = review([item({ slug: 'notag', tags: [] })]);
-  assert.ok(missing.rows[0].hard.some((reason) => reason.includes('标签异常')));
+  assert.deepEqual(missing.rows[0].hard, []);
+  assert.ok(missing.rows[0].warnings.some((reason) => reason.includes('没有命中任何标签')));
+});
 
+test('abnormalTagsAreBlocked', () => {
   const unknown = review([item({ slug: 'badtag', tags: ['lowspec', '不存在标签'] })]);
   assert.ok(unknown.rows[0].hard.some((reason) => reason.includes('不在标签表里')));
 

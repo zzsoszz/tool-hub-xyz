@@ -65,7 +65,7 @@ export function reviewConfig(env = process.env) {
 const SYSTEM_PROMPT = [
   '你是独立质量审查员，和生成这些条目的采集程序不是同一个模型，你的任务是拦下不该发布的内容。',
   '站点只保留实践性内容：有实测数据或有复现步骤，普通人能照着做。',
-  '必须判 fail：正文太短且没有可复述的信息；标签缺失、重复或与内容不符；分类/子类明显不对；只有新闻转述，既没有数据也没有步骤。',
+  '必须判 fail：正文太短且没有可复述的信息；标签与内容不符或标签重复；分类/子类明显不对；只有新闻转述，既没有数据也没有步骤。',
   '其余判 pass。',
   '输出：每条一行，写成「序号|pass|一句话理由」或「序号|fail|一句话理由」，序号从 1 开始且与输入一致。',
   '不要输出 JSON、代码块、标题或任何额外文字。',
@@ -144,7 +144,9 @@ export function hardReview(digest, filter, rules = REVIEW_RULES) {
 
       if (bodyChars < rules.minBodyChars) fails.push(`内容过少（正文 ${bodyChars} 字，要求至少 ${rules.minBodyChars} 字）`);
       if (summary.length < rules.minSummaryChars) fails.push(`内容过少（摘要 ${summary.length} 字，要求至少 ${rules.minSummaryChars} 字）`);
-      if (!tags.length) fails.push('标签异常（没有任何标签）');
+      // 标签是关键词匹配出来的元数据，一条实践性内容完全可能一个标签词都不命中；
+      // 把它当硬规则拦掉只会白白占掉当天的配额（实测一天里 7 条因此被拦）。
+      if (!tags.length) warnings.push('没有命中任何标签');
       if (tags.length > rules.maxTags) fails.push(`标签异常（${tags.length} 个，最多 ${rules.maxTags} 个）`);
       if (new Set(tags).size !== tags.length) fails.push('标签异常（存在重复标签）');
       const unknownTags = tags.filter((tag) => !knownTags.has(tag));
