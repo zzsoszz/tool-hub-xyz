@@ -1,7 +1,7 @@
 {
   "id": "model-pricing",
   "kind": "openrouter-pricing",
-  "collectedAt": "2026-11-11T11:17:24.964Z",
+  "collectedAt": "2026-11-11T18:00:23.742Z",
   "upstream": {
     "label": "OpenRouter 模型目录 API",
     "url": "https://openrouter.ai/models"
@@ -161,16 +161,6 @@
           "created": 1786034890
         },
         {
-          "name": "OpenAI: gpt-oss-20b",
-          "id": "openai/gpt-oss-20b",
-          "url": "https://openrouter.ai/openai/gpt-oss-20b",
-          "context": 131072,
-          "promptPerMillion": 0.018,
-          "completionPerMillion": 0.09,
-          "free": false,
-          "created": 1754414229
-        },
-        {
           "name": "Meta: Llama 3.1 8B Instruct",
           "id": "meta-llama/llama-3.1-8b-instruct",
           "url": "https://openrouter.ai/meta-llama/llama-3.1-8b-instruct",
@@ -229,6 +219,16 @@
           "completionPerMillion": 0.136,
           "free": false,
           "created": 1754414231
+        },
+        {
+          "name": "OpenAI: gpt-oss-20b",
+          "id": "openai/gpt-oss-20b",
+          "url": "https://openrouter.ai/openai/gpt-oss-20b",
+          "context": 131072,
+          "promptPerMillion": 0.03,
+          "completionPerMillion": 0.13,
+          "free": false,
+          "created": 1754414229
         },
         {
           "name": "Inference.net: Schematron V2 Turbo",
@@ -421,8 +421,8 @@
     {
       "path": "https://openrouter.ai/api/v1/models",
       "url": "https://openrouter.ai/api/v1/models",
-      "sha256": "80626a4f0d73ac7fb7d076547cbb50658d547b104f22210cfc94bd934645d800",
-      "bytes": 842909
+      "sha256": "05bb2a4e1d18ccbfd65213662a8b4d55414652610a525b3aa2b6900808fdc762",
+      "bytes": 839874
     }
   ]
 }

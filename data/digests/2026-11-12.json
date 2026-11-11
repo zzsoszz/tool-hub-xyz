@@ -1,0 +1,1097 @@
+{
+  "day": "2026-11-12",
+  "generatedAt": "2026-11-11T17:58:32.906Z",
+  "timezone": "Asia/Shanghai",
+  "windowHours": 48,
+  "window": {
+    "since": null,
+    "until": null
+  },
+  "counts": {
+    "sources": 42,
+    "okSources": 40,
+    "fetched": 1137,
+    "duplicates": 755,
+    "carried": 0,
+    "added": 18,
+    "fallback": 0,
+    "lowQuality": 226,
+    "published": 18
+  },
+  "sources": [
+    {
+      "id": "openai-news",
+      "name": "OpenAI News",
+      "ok": true,
+      "items": 60,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "google-deepmind",
+      "name": "Google DeepMind",
+      "ok": true,
+      "items": 60,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "google-ai",
+      "name": "Google AI Blog",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "hf-blog",
+      "name": "Hugging Face Blog",
+      "ok": true,
+      "items": 60,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "hf-daily-papers",
+      "name": "Hugging Face Daily Papers",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "interconnects",
+      "name": "Interconnects",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "latent-space",
+      "name": "Latent Space",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "simon-willison",
+      "name": "Simon Willison",
+      "ok": true,
+      "items": 30,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "techcrunch-ai",
+      "name": "TechCrunch AI",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "ars-ai",
+      "name": "Ars Technica AI",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "mit-tr-ai",
+      "name": "MIT Tech Review",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "qbitai",
+      "name": "量子位",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "arxiv-cs",
+      "name": "arXiv cs.AI/CL/LG",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "hn-newest",
+      "name": "Hacker News (AI)",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "hn-algolia",
+      "name": "Hacker News Search",
+      "ok": true,
+      "items": 25,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lobsters-ai",
+      "name": "Lobsters AI",
+      "ok": true,
+      "items": 25,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "reddit-local-llama",
+      "name": "r/LocalLLaMA",
+      "ok": true,
+      "items": 25,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "github-trending",
+      "name": "GitHub 新晋 AI 项目",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "microsoft-research",
+      "name": "Microsoft Research",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "github-blog",
+      "name": "GitHub Blog",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "theverge",
+      "name": "The Verge",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "sspai",
+      "name": "少数派",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "appinn",
+      "name": "小众软件",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "producthunt",
+      "name": "Product Hunt",
+      "ok": true,
+      "items": 30,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "hn-show-ai",
+      "name": "Show HN (AI)",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "ai-news-applied",
+      "name": "AI News (应用)",
+      "ok": true,
+      "items": 0,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "juejin",
+      "name": "掘金 AI",
+      "ok": true,
+      "items": 0,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "reddit-sideproject",
+      "name": "r/SideProject",
+      "ok": false,
+      "items": 0,
+      "queries": 1,
+      "error": "HTTP 429"
+    },
+    {
+      "id": "hn-money",
+      "name": "HN 检索（独立开发与变现）",
+      "ok": true,
+      "items": 50,
+      "queries": 5,
+      "error": null
+    },
+    {
+      "id": "reddit-saas",
+      "name": "r/SaaS 变现实操",
+      "ok": false,
+      "items": 0,
+      "queries": 1,
+      "error": "HTTP 429"
+    },
+    {
+      "id": "lcz-hardware",
+      "name": "抡锤者 AI硬件",
+      "ok": true,
+      "items": 39,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-llm",
+      "name": "抡锤者 模型部署讨论",
+      "ok": true,
+      "items": 57,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-agent",
+      "name": "抡锤者 Agent 工具",
+      "ok": true,
+      "items": 19,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-media",
+      "name": "抡锤者 AI 音视频画图",
+      "ok": true,
+      "items": 38,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-selfmedia",
+      "name": "抡锤者 自媒体运营",
+      "ok": true,
+      "items": 27,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-web",
+      "name": "抡锤者 建站与网络赚钱",
+      "ok": true,
+      "items": 17,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-crisis",
+      "name": "抡锤者 AI 危机与机遇",
+      "ok": true,
+      "items": 24,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-news",
+      "name": "抡锤者 资讯",
+      "ok": true,
+      "items": 40,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "gh-releases",
+      "name": "GitHub 发布（ComfyUI / Strata 等）",
+      "ok": true,
+      "items": 21,
+      "queries": 8,
+      "error": null
+    },
+    {
+      "id": "hn-ecosystem",
+      "name": "HN 检索（本地推理生态）",
+      "ok": true,
+      "items": 110,
+      "queries": 12,
+      "error": null
+    },
+    {
+      "id": "gh-ecosystem",
+      "name": "GitHub 检索（生态项目更新）",
+      "ok": true,
+      "items": 60,
+      "queries": 6,
+      "error": null
+    },
+    {
+      "id": "arxiv-ecosystem",
+      "name": "arXiv 检索（推理引擎与量化）",
+      "ok": true,
+      "items": 50,
+      "queries": 5,
+      "error": null
+    }
+  ],
+  "categories": [
+    {
+      "id": "apps",
+      "label": "AI 应用",
+      "items": [
+        {
+          "sourceId": "hn-ecosystem",
+          "sourceName": "HN 检索（本地推理生态）",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "tools",
+          "categories": [
+            "story",
+            "author_samirswr",
+            "story_50424199"
+          ],
+          "author": "",
+          "id": "50424199",
+          "title": "6 Hours of YouTube and 85 handtyped pages of notes on LLM Inference – Start here",
+          "url": "https://github.com/samir-sarwar/samir-vllm",
+          "published": "2026-11-09T11:36:55.000Z",
+          "summary": "samir-vllm Teaching LLM inference from first principles by building a small engine in C++ and CUDA. The series follows what happens between a prompt and a generated token, from loading model weights to running each part of the transformer on the GPU. My inference notes Read Inference from Scratch (PDF) for 80+ pages o…",
+          "content": {
+            "html": "<article><div><h3>samir-vllm</h3><a href=\"https://github.com/samir-sarwar/samir-vllm#samir-vllm\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"></a></div><blockquote><p>Teaching LLM inference from first principles by building a small engine in C++ and CUDA.</p></blockquote><p>The series follows what happens between a prompt and a generated token, from loading model weights to running each part of the transformer on the GPU.</p><div><h3>My inference notes</h3><a href=\"https://github.com/samir-sarwar/samir-vllm#my-inference-notes\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"></a></div><p>Read<a href=\"https://github.com/samir-sarwar/samir-vllm/blob/main/InferenceFromScratch.pdf\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Inference from Scratch (PDF)</a>for 80+ pages of my handwritten notes and diagrams. I developed all of the writing in this PDF myself, with<strong>NO AI writing</strong>.</p><div><h3>Build series | 6+ Hours of footage</h3><a href=\"https://github.com/samir-sarwar/samir-vllm#build-series--6-hours-of-footage\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"></a></div><table><tbody><tr><td><a href=\"https://youtu.be/ef0mOukUE6U\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://camo.githubusercontent.com/65c1baf9b418bb59a23a726755d6aecc01bac27c16d609cde5d00a01fdacceaa/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f6566306d4f756b554536552f6d617872657364656661756c742e6a7067\" alt=\"Part 0: AI inference explained\" loading=\"lazy\"><br><strong>Part 0 · AI inference explained</strong></a></td><td><a href=\"https://youtu.be/39_gWVbYgB4\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://camo.githubusercontent.com/320f67ee0d1bbf840ca06576b28b2ce9c0379fccabc2a26576a2067a2a30b8d9/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f33395f67575662596742342f6d617872657364656661756c742e6a7067\" alt=\"Part 1: Loading SafeTensor weights\" loading=\"lazy\"><br><strong>Part 1 · Loading model weights</strong></a></td></tr><tr><td><a href=\"https://youtu.be/0V1lVIzGyqs\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://camo.githubusercontent.com/44c4b3af352174de98edb9bcae7aa9d2ab162dee66bf4b5511aa9def2649cb40/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f3056316c56497a477971732f6d617872657364656661756c742e6a7067\" alt=\"Part 2: Embedding gather kernel\" loading=\"lazy\"><br><strong>Part 2 · Embedding gather</strong></a></td><td><a href=\"https://youtu.be/my8VrOUVWo0\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://camo.githubusercontent.com/1510f4a37f719ed1aa4ce87921f06ae658cd5b622607e791d24be239ae98b2db/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f6d793856724f5556576f302f6d617872657364656661756c742e6a7067\" alt=\"Part 3: RMSNorm kernel\" loading=\"lazy\"><br><strong>Part 3 · RMSNorm</strong></a></td></tr><tr><td><a href=\"https://youtu.be/4gL0hd9UEAY\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://camo.githubusercontent.com/73f09f507dbd571969a7fa2312732971c1d195036e995ead049a412845e3c741/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f34674c30686439554541592f6d617872657364656661756c742e6a7067\" alt=\"Part 4: Rotary position embeddings\" loading=\"lazy\"><br><strong>Part 4 · RoPE</strong></a></td><td><a href=\"https://youtu.be/8_HJH7pbw78\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://camo.githubusercontent.com/e797596277b01526ce3ad19e65ba2381e3648fdebff5795e01d31d3fa220fd60/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f385f484a483770627737382f6d617872657364656661756c742e6a7067\" alt=\"Part 5: Q, K, and V projections with cuBLAS\" loading=\"lazy\"><br><strong>Part 5 · Q/K/V with cuBLAS</strong></a></td></tr><tr><td><a href=\"https://youtu.be/tTULacSPXkc\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://camo.githubusercontent.com/98d7a0404845c5058b313c9e41d08b569913f8b3fac96696364285faafd51255/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f7454554c61635350586b632f6d617872657364656661756c742e6a7067\" alt=\"Part 6: Multi-head self-attention\" loading=\"lazy\"><br><strong>Part 6 · Self-attention</strong></a></td><td><a href=\"https://youtu.be/HjllfB1IPrE\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://camo.githubusercontent.com/10eb8f619ab7603832afa853760224619136f0e3ac3244d83c1190053247d1f8/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f486a6c6c664231495072452f6d617872657364656661756c742e6a7067\" alt=\"Part 7: Feed-forward network and SwiGLU\" loading=\"lazy\"><br><strong>Part 7 · Feed-forward network</strong></a></td></tr><tr><td><a href=\"https://youtu.be/yFwPpH1Hb14\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://camo.githubusercontent.com/761c6f310af56923a08920d6469642934e4e6833a1f899bd7ae80ccdc7cd69ea/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f79467750704831486231342f6d617872657364656661756c742e6a7067\" alt=\"Part 8: Decode and KV cache\" loading=\"lazy\"><br><strong>Part 8 · Decode and KV cache</strong></a></td><td><a href=\"https://youtu.be/ei3M0Ex0qHA\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://camo.githubusercontent.com/ece943ba1017bbe5410681343afcd620b80f249c0e827da09820f09de63617f9/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f6569334d304578307148412f6d617872657364656661756c742e6a7067\" alt=\"Part 9: Static and continuous batching\" loading=\"lazy\"><br><strong>Part 9 · Static and continuous batching</strong></a></td></tr><tr><td><a href=\"https://youtu.be/As13goWXIx8\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://camo.githubusercontent.com/19356da56b480497804a6388b879f30e3eceb301d06d405c20f202e1c449b1c4/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f41733133676f57584978382f6d617872657364656661756c742e6a7067\" alt=\"Part 10: Paged KV cache\" loading=\"lazy\"><br><strong>Part 10 · Paged KV cache</strong></a></td><td><a href=\"https://youtu.be/fle2du_R8DI\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://camo.githubusercontent.com/106a0abc61628ec51d04cf46883d8180c7f8ab57ed0ef5c0c7ce82d6de0ecd14/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f666c653264755f523844492f6d617872657364656661756c742e6a7067\" alt=\"Finale: Paged attention\" loading=\"lazy\"><br><strong>Finale · Paged attention</strong></a></td></tr></tbody></table><p>Companion notes for every video are in the<a href=\"https://github.com/samir-sarwar/samir-vllm/blob/main/proper_notes/README.md\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">study-notes index</a>, with separate<a href=\"https://github.com/samir-sarwar/samir-vllm/blob/main/proper_notes/markdown\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Markdown</a>and<a href=\"https://github.com/samir-sarwar/samir-vllm/blob/main/proper_notes/pdf\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">PDF</a>folders. You can also read the<a href=\"https://github.com/samir-sarwar/samir-vllm/blob/main/proper_notes/pdf/samir_vllm_complete_study_notes.pdf\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">complete PDF collection</a>.</p><div><h3>What works so far</h3><a href=\"https://github.com/samir-sarwar/samir-vllm#what-works-so-far\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"></a></div><ul><li>A C++17 / CUDA project, built with CMake and linked with ICU for Unicode-aware tokenization.</li><li>Direct<code>model.safetensors</code>loading: parse metadata, validate tensor offsets, and copy the raw BF16 weights to GPU memory. There is also a memory-mapped loader implementation to avoid an extra CPU-side copy.</li><li>A fixed Llama 3.2 1B Instruct weight layout, with direct pointers to the embedding, normalization, attention, and MLP tensors across all 16 layers.</li><li>A local BPE tokenizer that supports Unicode, special tokens, encode/decode, and the Instruct chat prompt format; its expected output is covered by a dedicated test executable.</li><li>A CUDA embedding-gather kernel and prefill path that copies prompt token IDs to the GPU and allocates activations.</li><li>A CUDA RMSNorm kernel for the 2,048-wide hidden state: it reduces in FP32 and applies the learned BF16 weights throughout the forward pass.</li><li>Dense causal prefill now runs all 16 layers: Q/K/V projection, RoPE, grouped-query attention, output projection, the attention residual, post-attention RMSNorm, SwiGLU MLP, and the MLP residual.</li><li>The final RMSNorm and tied embedding/LM-head projection produce FP32 logits; GPU argmax selects each next token.</li><li>A shared BF16 KV page pool with a block table per sequence and layer. Each physical page holds 16 tokens of K and V; prefill fills prompt pages and decode appends one new token at its absolute RoPE position.</li><li>Greedy response generation with Instruct chat formatting, end-of-turn/end-of-text stopping, and configurable output length within the 2,048-token context.</li><li>Persistent scratch buffers and one cuBLAS handle shared by prefill and decode. Q storage is reused for output/MLP projections, and normalization storage is reused for attention output.</li><li>Batched decode with runtime-sized buffers, packed projections, and separate KV page mappings and attention lengths per sequence. Request count does not enlarge the KV pool.</li><li>Static batching and a continuous scheduler that admit queued prompts according to available page budgets, then return their pages and budgets on completion.</li><li>Direct paged decode attention with FP32 online softmax. Each query head streams its sequence's cached pages and accumulates weighted values without gathering a contiguous prefix or storing attention scores.</li></ul><p>Part 8 explains<a href=\"https://github.com/samir-sarwar/samir-vllm/blob/main/proper_notes/markdown/youtubePT8_prefill_decode_kv_cache.md\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Prefill, Decode, and the KV Cache</a>. Part 9 follows with<a href=\"https://github.com/samir-sarwar/samir-vllm/blob/main/proper_notes/markdown/youtubePT9_static_continuous_batching.md\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Static and Continuous Batching</a>, including the current paged cache and online-softmax decode attention.</p><div><h3>Current scope</h3><a href=\"https://github.com/samir-sarwar/samir-vllm#current-scope\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"></a></div><p>The Llama 3.2 1B inference path includes dense causal prefill, paged decode attention, and static or continuous batching. Model dimensions and the 2,048-token context remain fixed for this learning engine. The KV pool defaults to 128 MiB and can be set with<code>--kv-cache-mib N</code>; active request capacity follows the workload's page budgets rather than a fixed two-request limit.</p><p>Admission guarantees room for each request's maximum processed prefix:<code>prompt_tokens + allowed_new_tokens - 1</code> , rounded up to 16-token pages in each…</p></article>",
+            "text": "samir-vllm\nTeaching LLM inference from first principles by building a small engine in C++ and CUDA.\nThe series follows what happens between a prompt and a generated token, from loading model weights to running each part of the transformer on the GPU.\nMy inference notes\nRead Inference from Scratch (PDF) for 80+ pages of my handwritten notes and diagrams. I developed all of the writing in this PDF myself, with NO AI writing .\nBuild series | 6+ Hours of footage\nPart 0 · AI inference explained\nPart 1 · Loading model weights\nPart 2 · Embedding gather\nPart 3 · RMSNorm\nPart 4 · RoPE\nPart 5 · Q/K/V with cuBLAS\nPart 6 · Self-attention\nPart 7 · Feed-forward network\nPart 8 · Decode and KV cache\nPart 9 · Static and continuous batching\nPart 10 · Paged KV cache\nFinale · Paged attention\nCompanion notes for every video are in the study-notes index , with separate Markdown and PDF folders. You can also read the complete PDF collection .\nWhat works so far\nA C++17 / CUDA project, built with CMake and linked with ICU for Unicode-aware tokenization.\nDirect model.safetensors loading: parse metadata, validate tensor offsets, and copy the raw BF16 weights to GPU memory. There is also a memory-mapped loader implementation to avoid an extra CPU-side copy.\nA fixed Llama 3.2 1B Instruct weight layout, with direct pointers to the embedding, normalization, attention, and MLP tensors across all 16 layers.\nA local BPE tokenizer that supports Unicode, special tokens, encode/decode, and the Instruct chat prompt format; its expected output is covered by a dedicated test executable.\nA CUDA embedding-gather kernel and prefill path that copies prompt token IDs to the GPU and allocates activations.\nA CUDA RMSNorm kernel for the 2,048-wide hidden state: it reduces in FP32 and applies the learned BF16 weights throughout the forward pass.\nDense causal prefill now runs all 16 layers: Q/K/V projection, RoPE, grouped-query attention, output projection, the attention residual, post-attention RMSNorm, SwiGLU MLP, and the MLP residual.\nThe final RMSNorm and tied embedding/LM-head projection produce FP32 logits; GPU argmax selects each next token.\nA shared BF16 KV page pool with a block table per sequence and layer. Each physical page holds 16 tokens of K and V; prefill fills prompt pages and decode appends one new token at its absolute RoPE position.\nGreedy response generation with Instruct chat formatting, end-of-turn/end-of-text stopping, and configurable output length within the 2,048-token context.\nPersistent scratch buffers and one cuBLAS handle shared by prefill and decode. Q storage is reused for output/MLP projections, and normalization storage is reused for attention output.\nBatched decode with runtime-sized buffers, packed projections, and separate KV page mappings and attention lengths per sequence. Request count does not enlarge the KV pool.\nStatic batching and a continuous scheduler that admit queued prompts according to available page budgets, then return their pages and budgets on completion.\nDirect paged decode attention with FP32 online softmax. Each query head streams its sequence's cached pages and accumulates weighted values without gathering a contiguous prefix or storing attention scores.\nPart 8 explains Prefill, Decode, and the KV Cache . Part 9 follows with Static and Continuous Batching , including the current paged cache and online-softmax decode attention.\nCurrent scope\nThe Llama 3.2 1B inference path includes dense causal prefill, paged decode attention, and static or continuous batching. Model dimensions and the 2,048-token context remain fixed for this learning engine. The KV pool defaults to 128 MiB and can be set with --kv-cache-mib N ; active request capacity follows the workload's page budgets rather than a fixed two-request limit.\nAdmission guarantees room for each request's maximum processed prefix: prompt_tokens + allowed_new_tokens - 1 , rounded up to 16-token pages in each…",
+            "lead": "samir-vllm\nTeaching LLM inference from first principles by building a small engine in C++ and CUDA.\nThe series follows what happens between a prompt and a generated token, from loading model weights to running each part of the transformer on the GPU.\nMy inference notes\nRead Inference from Scratch (PDF) for 80+ pages of my handwritten notes and diagrams. I developed all of the writing in this PDF myself, with NO AI writing .\nBuild series | 6+ Hours of foota",
+            "chars": 8930,
+            "shown": 4001,
+            "truncated": true
+          },
+          "metrics": {
+            "points": 79,
+            "comments": 12
+          },
+          "quality": 10,
+          "score": 18.76,
+          "category": "apps",
+          "subcategory": "inference",
+          "practical": 2,
+          "slug": "d2aa13e0402b",
+          "action": 4,
+          "rank": 16.4,
+          "tags": [
+            "local"
+          ]
+        },
+        {
+          "sourceId": "hn-show-ai",
+          "sourceName": "Show HN (AI)",
+          "title": "Show HN: Klad, a paint app your coding agent can drive (source-available)",
+          "url": "https://github.com/klad-app/klad",
+          "id": "https://news.ycombinator.com/item?id=50454951",
+          "published": "2026-11-11T16:00:50.000Z",
+          "summary": "I've been developing applications for a long time and have turned to game development as well lately. One of the things that frustrated me the most was that using AI agents for game development is very annoying in the art department. Your only options right now are to either use an image genAI model and roll the dice…",
+          "content": {
+            "html": "<p>I've been developing applications for a long time and have turned to game development as well lately. One of the things that frustrated me the most was that using AI agents for game development is very annoying in the art department. Your only options right now are to either use an image genAI model and roll the dice every time you want to make an edit, or have your agent draw with something like vectors.<p>I was looking for an application that would allow me to ask an agent to make a first draft of whatever art I needed with actual brushes, and then be able to go in myself and edit every last stroke or layer that it created.<p>Klad is that application. Written in Rust, it can be fully controlled by an agent through the CLI, and every function is available in a nice UI as well: a brush engine, frame-by-frame animation (and bones/IK), vectors, text layers, colours, layer effects, infinite undo (even after re-opening the file!),…<p>Why I think it's useful for a wider audience: Adobe showed agents editing Photoshop files at MAX this week, with a private beta planned for early 2027.<p>Klad is built on the same core idea, with editable paint strokes as core architecture, and it works today.<p>Clone the repo to try it out:<a href=\"https://github.com/klad-app/klad\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://github.com/klad-app/klad</a><p>You can basically point Claude to the repo, ask it to build it, and pick up the drawing skills. Then ask it to make any drawing you want! (After that, you or the agent can change absolutely every brush stroke in the app again, which makes edits a breeze.)<p>The quality of the drawings really depends on the agent you use. I have tried it with Claude Fable 5.2 since it came out on Monday, and the drawings are already quite impressive. I'm confident that this will only improve.<p>I use it every day on Mac, so that definitely works well. It builds on Linux too (tablet pen pressure still needs some work there). Windows builds in CI, I haven't used it there myself yet but I have some reports that it works perfectly fine.<p>Coming up next is support for pixel art. I'm in the testing phase with this right now, and I expect it to go live in the repo sometime this weekend.<p>Klad is source-available rather than open source: free to build and use for individuals and small companies, and I plan to sell pre-built binaries later, the way Aseprite does. The file format, CLI reference and agent skill are MIT.<p>What I want to hear from people who try it: Can your agent work out the CLI without help, and where does it get confused? Can you go in and change one of its strokes easily?<p>The command reference and guides are available at<a href=\"https://klad.studio/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://klad.studio</a><p>I'll be here answering any questions about the technical side as well, as it's a pretty interesting challenge to build a performant engine with editable brush strokes that render as paint.</p></p></p></p></p></p></p></p></p></p></p></p></p></p>\n<hr><p>Comments URL:<a href=\"https://news.ycombinator.com/item?id=50454951\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://news.ycombinator.com/item?id=50454951</a></p>\n<p>Points: 29</p>\n<p># Comments: 10</p>",
+            "text": "I've been developing applications for a long time and have turned to game development as well lately. One of the things that frustrated me the most was that using AI agents for game development is very annoying in the art department. Your only options right now are to either use an image genAI model and roll the dice every time you want to make an edit, or have your agent draw with something like vectors. I was looking for an application that would allow me to ask an agent to make a first draft of whatever art I needed with actual brushes, and then be able to go in myself and edit every last stroke or layer that it created. Klad is that application. Written in Rust, it can be fully controlled by an agent through the CLI, and every function is available in a nice UI as well: a brush engine, frame-by-frame animation (and bones/IK), vectors, text layers, colours, layer effects, infinite undo (even after re-opening the file!),… Why I think it's useful for a wider audience: Adobe showed agents editing Photoshop files at MAX this week, with a private beta planned for early 2027. Klad is built on the same core idea, with editable paint strokes as core architecture, and it works today. Clone the repo to try it out: https://github.com/klad-app/klad You can basically point Claude to the repo, ask it to build it, and pick up the drawing skills. Then ask it to make any drawing you want! (After that, you or the agent can change absolutely every brush stroke in the app again, which makes edits a breeze.) The quality of the drawings really depends on the agent you use. I have tried it with Claude Fable 5.2 since it came out on Monday, and the drawings are already quite impressive. I'm confident that this will only improve. I use it every day on Mac, so that definitely works well. It builds on Linux too (tablet pen pressure still needs some work there). Windows builds in CI, I haven't used it there myself yet but I have some reports that it works perfectly fine. Coming up next is support for pixel art. I'm in the testing phase with this right now, and I expect it to go live in the repo sometime this weekend. Klad is source-available rather than open source: free to build and use for individuals and small companies, and I plan to sell pre-built binaries later, the way Aseprite does. The file format, CLI reference and agent skill are MIT. What I want to hear from people who try it: Can your agent work out the CLI without help, and where does it get confused? Can you go in and change one of its strokes easily? The command reference and guides are available at https://klad.studio I'll be here answering any questions about the technical side as well, as it's a pretty interesting challenge to build a performant engine with editable brush strokes that render as paint.\nComments URL: https://news.ycombinator.com/item?id=50454951\nPoints: 29\n# Comments: 10",
+            "lead": "I've been developing applications for a long time and have turned to game development as well lately. One of the things that frustrated me the most was that using AI agents for game development is very annoying in the art department. Your only options right now are to either use an image genAI model and roll the dice every time you want to make an edit, or have your agent draw with something like vectors. I was looking for an application that would allow m",
+            "chars": 2887,
+            "shown": 2887,
+            "truncated": false
+          },
+          "categories": [],
+          "author": "ambewas",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "tools",
+          "metrics": {
+            "points": 29,
+            "comments": 10
+          },
+          "quality": 8,
+          "score": 20.44,
+          "category": "apps",
+          "subcategory": "creation",
+          "practical": 1,
+          "slug": "eb4c022c8563",
+          "action": 2,
+          "rank": 11.2,
+          "tags": [
+            "agent"
+          ]
+        },
+        {
+          "sourceId": "arxiv-cs",
+          "sourceName": "arXiv cs.AI/CL/LG",
+          "title": "AutoScaffold: AI-Guided Scaffolding for Reinforcement Learning of Language Models",
+          "url": "https://arxiv.org/abs/2611.14515v1",
+          "id": "http://arxiv.org/abs/2611.14515v1",
+          "published": "2026-11-10T18:58:46.000Z",
+          "summary": "Reinforcement learning with verifiable rewards (RLVR) produces rich training experience, yet outcome rewards reduce each attempt to a single number and leave most of this information unused. Training-time scaffolds, such as strategies or hints added to the prompt during training, offer a natural way to turn this infor…",
+          "content": {
+            "html": "Reinforcement learning with verifiable rewards (RLVR) produces rich training experience, yet outcome rewards reduce each attempt to a single number and leave most of this information unused. Training-time scaffolds, such as strategies or hints added to the prompt during training, offer a natural way to turn this information into guidance, but their design and adaptation are largely left to humans and tailored to specific domains. We introduce AutoScaffold, a unified AI-for-AI framework that turns a student's training experience into adaptive scaffolds, with minimal domain-specific information and no human intervention during training. A frozen teacher periodically examines this experience, diagnoses bottlenecks, and designs scaffolds in two forms: (i) strategies shared across a class of tasks and (ii) hints for individual hard tasks, adjusting the content and amount of support as the student learns. The scaffolds are removed at evaluation. We apply the same framework to ALFWorld, search-based QA, mathematical reasoning, and GPU kernel generation. When evaluated without scaffolds, students trained with AutoScaffold outperform those trained with the corresponding RL baselines in all four domains, with gains of 7.2 points in ALFWorld success and 4.0 points in average QA exact match. On GPU kernel generation, AutoScaffold increases the fraction of tasks with a correct kernel that runs faster than the PyTorch reference by up to 5.0 points. On math, our student surpasses QuestA's reported accuracy using approximately one-third as many student training steps. Analyses show that the teacher identifies a different failure in each task class and shifts its scaffolds from step-by-step workflows to targeted fixes as the student improves, and that its revised scaffolds help the student learn more than keeping the previous scaffold or using no scaffold.",
+            "text": "Reinforcement learning with verifiable rewards (RLVR) produces rich training experience, yet outcome rewards reduce each attempt to a single number and leave most of this information unused. Training-time scaffolds, such as strategies or hints added to the prompt during training, offer a natural way to turn this information into guidance, but their design and adaptation are largely left to humans and tailored to specific domains. We introduce AutoScaffold, a unified AI-for-AI framework that turns a student's training experience into adaptive scaffolds, with minimal domain-specific information and no human intervention during training. A frozen teacher periodically examines this experience, diagnoses bottlenecks, and designs scaffolds in two forms: (i) strategies shared across a class of tasks and (ii) hints for individual hard tasks, adjusting the content and amount of support as the student learns. The scaffolds are removed at evaluation. We apply the same framework to ALFWorld, search-based QA, mathematical reasoning, and GPU kernel generation. When evaluated without scaffolds, students trained with AutoScaffold outperform those trained with the corresponding RL baselines in all four domains, with gains of 7.2 points in ALFWorld success and 4.0 points in average QA exact match. On GPU kernel generation, AutoScaffold increases the fraction of tasks with a correct kernel that runs faster than the PyTorch reference by up to 5.0 points. On math, our student surpasses QuestA's reported accuracy using approximately one-third as many student training steps. Analyses show that the teacher identifies a different failure in each task class and shifts its scaffolds from step-by-step workflows to targeted fixes as the student improves, and that its revised scaffolds help the student learn more than keeping the previous scaffold or using no scaffold.",
+            "lead": "Reinforcement learning with verifiable rewards (RLVR) produces rich training experience, yet outcome rewards reduce each attempt to a single number and leave most of this information unused. Training-time scaffolds, such as strategies or hints added to the prompt during training, offer a natural way to turn this information into guidance, but their design and adaptation are largely left to humans and tailored to specific domains. We introduce AutoScaffold,",
+            "chars": 1871,
+            "shown": 1871,
+            "truncated": false
+          },
+          "categories": [
+            "cs.LG",
+            "cs.CL"
+          ],
+          "author": "Zijian Zhang",
+          "lang": "en",
+          "tier": 3,
+          "trustCategory": true,
+          "declaredCategory": "ideas",
+          "metrics": {},
+          "quality": 7,
+          "score": 12.28,
+          "category": "apps",
+          "subcategory": "life",
+          "practical": 1,
+          "slug": "a5fb6f25f61b",
+          "action": 2,
+          "rank": 10.2,
+          "tags": []
+        },
+        {
+          "sourceId": "hn-algolia",
+          "sourceName": "Hacker News Search",
+          "lang": "en",
+          "tier": 3,
+          "trustCategory": false,
+          "declaredCategory": "tools",
+          "categories": [
+            "story",
+            "author_srichard16",
+            "story_50454732"
+          ],
+          "author": "",
+          "id": "50454732",
+          "title": "Why generating 4 LLM tokens costs about the same as 1",
+          "url": "https://ngrok.com/blog/vllm",
+          "published": "2026-11-11T15:42:52.000Z",
+          "summary": "LLMs might be fantastic at prediction, but they weren’t designed to handle bajillions of requests efficiently. After all, they’re models, not servers . On top of that, a model running one request at a time uses shockingly little of the GPU’s compute, leaving tons of processing power sitting idle. Given how expensive G…",
+          "content": {
+            "html": "<article><div><div></div></div><div><p>LLMs might be fantastic at prediction, but they weren’t designed to handle bajillions of requests efficiently. After all, they’re models, not<em>servers</em>. On top of that, a model running one request at a time uses shockingly little of the GPU’s compute, leaving tons of processing power sitting idle. Given how expensive GPUs are, that’s quite a waste!</p><p>Running inference at scale is a problem folks have been chipping away at for years, and one project in particular has become the go-to answer for<a href=\"https://ngrok.com/docs/ai-gateway/concepts/open-weight-models\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><span>open-weight models</span></a>: vLLM.</p><p>So: let’s take a look at why high-throughput inference is so hard and why vLLM kicks ass at it.</p><h3><a href=\"https://ngrok.com/blog/vllm#inference-101\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><span></span></a>Inference 101</h3><p>Why exactly are models so bad at utilizing GPU compute? To understand this, we need to break down how inference works.</p><p>First, your prompt gets broken up into<strong>tokens</strong>, which you can just think of as<em>numbers that represent words</em>. Is this an oversimplification? Absolutely. Do we care? Not today.</p><p>These tokens are then funneled through a series of<span>layers</span>, where each one gets multiplied, added, and generally mathed against the model’s weights. The output of one<span>layer</span>becomes the input to the next, and the final<span>layer</span>’s output is used to generate the next token. Each sweep through the<span>layers</span>is called a<span>forward pass</span>. Reading your prompt takes one. Generating the response takes one for each new token. Those two phases have names:</p><ol><li><span>Prefill</span>: the first pass over your prompt, which produces the first token of the response</li><li><span>Decode</span>: every pass after that, one per new token</li></ol><p>Click through the demo to see inference in action:</p><div><div><div><div><div>Prompt</div></div></div></div></div></div><div><span>Are</span><span>hot</span><span>dogs</span><span>sandwiches</span><span>?</span></div><div><div>Response</div></div><div><div><span>No</span><span>hot</span><span>dogs</span><span>are</span><span>actually</span><span>tacos</span></div></div><div><span>none yet</span></div><div><span>The prompt is \"Are hot dogs sandwiches?\". No forward pass has run yet.</span><div><div><span>Are</span><span>hot</span><span>dogs</span><span>sandwiches</span><span>?</span><span>tok1</span><span>tok2</span><span>tok3</span><span>tok4</span><span>tok5</span><div><span>math</span></div></div></div></div><span><span>tok1</span></span><span><span>tok2</span></span><span><span>tok3</span></span><span><span>tok4</span></span><span><span>tok5</span></span><div><span>math</span></div><span><span>tok1</span></span><span><span>tok2</span></span><span><span>tok3</span></span><span><span>tok4</span></span><span><span>tok5</span></span><div><span>math</span></div><span><span>tok1</span></span><span><span>tok2</span></span><span><span>tok3</span></span><span><span>tok4</span></span><span><span>tok5</span></span><div><span>tok6</span><div><span>No</span></div></div><div><div></div></div><p>So:<span>prefill</span>is when the LLM tries to<em>understand</em>your prompt, and<span>decoding</span>is when it<em>generates</em>the response. And when it comes to serving models at scale, the biggest challenge comes from<span>decoding</span>. Why is that?</p><h3><a href=\"https://ngrok.com/blog/vllm#decoding-wastes-compute\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><span></span></a>Decoding wastes compute</h3><p>When a model generates text, it does so one token at a time, and each token requires the GPU to haul the model’s entire weights out of memory just to do a little bit of math. Okay, maybe more than a little, but nowhere near as much as it<em>could</em>do. After all, these are GPUs we’re talking about. They could bench press a trillion operations, and we’re asking them to open a pickle jar.</p><p>To be clear, this isn’t a<em>flaw</em>in how LLMs are designed. It’s just how they work. The job of running large-scale inference servers is to find workarounds to these limitations.</p><p>Worse, while the GPU is barely breaking a sweat, every other request has to wait in line. I don’t know about you, but I don’t want Claude telling me, “Please hold. Your call is important to us.”</p><div><div><span></span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><div><span>Request 1</span><span></span><span></span><span></span></div></div></div><div><span>Request 2</span><span>waiting</span><span></span><span></span><span></span><span></span></div><div><span>Request 3</span><span>waiting</span><span></span><span></span><span></span></div><div><span>Request 4</span><span>waiting</span><span></span><span></span><span></span><span></span></div><div><span></span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><div><span>Request 1</span><span></span><span></span><span></span></div></div><div><span>Request 2</span><span>waiting</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div><span>Request 3</span><span>waiting</span><span></span><span></span><span></span><span></span></div><div><span>Request 4</span><span>waiting</span><span></span><span></span><span></span><span></span><span></span></div><div><span><span></span></span>Prefill<span><span></span></span>Decode</div><p>We’d get a lot more bang for our buck if we<em>batched</em>requests so one read of the model’s weights allowed us to generate tokens for multiple requests.</p><h3><a href=\"https://ngrok.com/blog/vllm#static-batching\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><span></span></a>Static batching</h3><p>The simplest way to batch requests is through a method called<strong>static batching</strong>, in which a scheduler triggers a<span>forward pass</span>containing tokens from multiple requests.</p><p>The columns in the diagram below show how tokens across requests can be processed in a single<span>forward pass</span>. This is much more efficient than running one request at a time because we generate tokens for<em>multiple requests at once</em>, even during<span>decoding</span>.</p><div><div><span>Forward passes</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><div><span>Request 1</span><span></span><span></span><span></span><span>idle</span><span></span><span></span><span></span><span></span></div></div></div><div><span>Request 2</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div><span>Request 3</span><span></span><span></span><span></span><span></span><span>idle</span><span></span><span></span><span></span><span></span><span></span></div><div><span>Request 4</span><span></span><span></span><span></span><span></span><span></span><span>idle</span><span></span><span></span></div><div><span></span><span>Batch 1</span></div><div><span></span><span>Batch 2</span></div><div><span><span></span></span>Prefill<span><span></span></span>Decode</div><p>However, the length of any given LLM response can vary wildly, and with<strong>static batching</strong> the next round of requests can’t start until the last request from the fi…</p></article>",
+            "text": "LLMs might be fantastic at prediction, but they weren’t designed to handle bajillions of requests efficiently. After all, they’re models, not servers . On top of that, a model running one request at a time uses shockingly little of the GPU’s compute, leaving tons of processing power sitting idle. Given how expensive GPUs are, that’s quite a waste!\nRunning inference at scale is a problem folks have been chipping away at for years, and one project in particular has become the go-to answer for open-weight models : vLLM.\nSo: let’s take a look at why high-throughput inference is so hard and why vLLM kicks ass at it.\nInference 101\nWhy exactly are models so bad at utilizing GPU compute? To understand this, we need to break down how inference works.\nFirst, your prompt gets broken up into tokens , which you can just think of as numbers that represent words . Is this an oversimplification? Absolutely. Do we care? Not today.\nThese tokens are then funneled through a series of layers , where each one gets multiplied, added, and generally mathed against the model’s weights. The output of one layer becomes the input to the next, and the final layer ’s output is used to generate the next token. Each sweep through the layers is called a forward pass . Reading your prompt takes one. Generating the response takes one for each new token. Those two phases have names:\nPrefill : the first pass over your prompt, which produces the first token of the response\nDecode : every pass after that, one per new token\nClick through the demo to see inference in action:\nPrompt\nAre hot dogs sandwiches ?\nResponse\nNo hot dogs are actually tacos\nnone yet\nThe prompt is \"Are hot dogs sandwiches?\". No forward pass has run yet. Are hot dogs sandwiches ? tok1 tok2 tok3 tok4 tok5 math\ntok1 tok2 tok3 tok4 tok5 math\ntok1 tok2 tok3 tok4 tok5 math\ntok1 tok2 tok3 tok4 tok5 tok6 No\nSo: prefill is when the LLM tries to understand your prompt, and decoding is when it generates the response. And when it comes to serving models at scale, the biggest challenge comes from decoding . Why is that?\nDecoding wastes compute\nWhen a model generates text, it does so one token at a time, and each token requires the GPU to haul the model’s entire weights out of memory just to do a little bit of math. Okay, maybe more than a little, but nowhere near as much as it could do. After all, these are GPUs we’re talking about. They could bench press a trillion operations, and we’re asking them to open a pickle jar.\nTo be clear, this isn’t a flaw in how LLMs are designed. It’s just how they work. The job of running large-scale inference servers is to find workarounds to these limitations.\nWorse, while the GPU is barely breaking a sweat, every other request has to wait in line. I don’t know about you, but I don’t want Claude telling me, “Please hold. Your call is important to us.”\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 Request 1\nRequest 2 waiting\nRequest 3 waiting\nRequest 4 waiting\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 Request 1\nRequest 2 waiting\nRequest 3 waiting\nRequest 4 waiting\nPrefill Decode\nWe’d get a lot more bang for our buck if we batched requests so one read of the model’s weights allowed us to generate tokens for multiple requests.\nStatic batching\nThe simplest way to batch requests is through a method called static batching , in which a scheduler triggers a forward pass containing tokens from multiple requests.\nThe columns in the diagram below show how tokens across requests can be processed in a single forward pass . This is much more efficient than running one request at a time because we generate tokens for multiple requests at once , even during decoding .\nForward passes 1 2 3 4 5 6 7 8 9 10 11 12 Request 1 idle\nRequest 2\nRequest 3 idle\nRequest 4 idle\nBatch 1\nBatch 2\nPrefill Decode\nHowever, the length of any given LLM response can vary wildly, and with static batching the next round of requests can’t start until the last request from the fi…",
+            "lead": "LLMs might be fantastic at prediction, but they weren’t designed to handle bajillions of requests efficiently. After all, they’re models, not servers . On top of that, a model running one request at a time uses shockingly little of the GPU’s compute, leaving tons of processing power sitting idle. Given how expensive GPUs are, that’s quite a waste!\nRunning inference at scale is a problem folks have been chipping away at for years, and one project in particu",
+            "chars": 32243,
+            "shown": 4001,
+            "truncated": true
+          },
+          "metrics": {
+            "points": 2,
+            "comments": 0
+          },
+          "quality": 6,
+          "score": 13.84,
+          "category": "apps",
+          "subcategory": "inference",
+          "practical": 1,
+          "slug": "63027b08358a",
+          "action": 2,
+          "rank": 9.2,
+          "tags": [
+            "local"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "label": "工具玩法",
+      "items": [
+        {
+          "sourceId": "github-trending",
+          "sourceName": "GitHub 新晋 AI 项目",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "oss",
+          "categories": [],
+          "author": "setyamickala",
+          "id": "1453485671",
+          "title": "setyamickala/fastmint-fcfs-agentic",
+          "url": "https://github.com/setyamickala/fastmint-fcfs-agentic",
+          "published": "2026-11-11T03:42:12.000Z",
+          "summary": "fastmint-fcfs English · [Bahasa Indonesia](README.id.md) FCFS mint on BNB Smart Chain through Binance Agentic Wallet, landed in a block ±2 seconds after the sale opens. A skill for AI agents (Claude Code, Codex, Cursor, OpenClaw, and any other agent that reads SKILL.md ) that fires a single mint/claim/buy transaction…",
+          "metrics": {
+            "stars": 208
+          },
+          "content": {
+            "html": "<h3>fastmint-fcfs</h3>\n<p><strong>English</strong>· [Bahasa Indonesia](README.id.md)</p>\n<p><strong>FCFS mint on BNB Smart Chain through Binance Agentic Wallet, landed in a block ±2 seconds after the sale opens.</strong></p>\n<p>A skill for AI agents (Claude Code, Codex, Cursor, OpenClaw, and any other agent that reads<code>SKILL.md</code>) that fires a single mint/claim/buy transaction at the exact moment a sale opens, using a Binance Agentic Wallet (<code>baw</code>CLI). No private key on the machine: signing happens in Binance's backend through Developer Mode, the agent only prepares calldata and picks the moment.</p>\n<pre><code>sale opens (T) T+0.05s T+0.6–0.8s T+1.3–1.5s T+2.1–2.2s\n│ │ │ │ │\n▼ ▼ ▼ ▼ ▼\nstart ───► preview sent ───► simulation OK ───► BROADCASTED ───► in a block\n(NTP clock trigger) (requestId) (baw execute) (receipt)</code></pre>\n<p>The numbers above were measured 11 Nov 2026 from Indonesia: 3 time-gated dry-runs plus one real mint (Pocket Moons, 2 free NFTs, trigger→receipt 2.0 seconds). The previous sequential version took 5–6 seconds.</p>\n<p>---</p>\n<h4>Table of contents</h4>\n<ol><li>[How it works](#1-how-it-works)</li><li>[Installation](#2-installation)</li><li>[Usage flow](#3-usage-flow)</li><li>[Command reference](#4-command-reference)</li><li>[Dynamic arguments](#5-dynamic-arguments)</li><li>[Safety rails](#6-safety-rails)</li><li>[Measured numbers](#7-measured-numbers)</li><li>[Troubleshooting](#8-troubleshooting)</li><li>[File layout](#9-file-layout)</li><li>[FAQ](#10-faq)</li></ol>\n<p>---</p>\n<h4>1. How it works</h4>\n<h4>Why the old version was slow</h4>\n<p><code>baw</code>has no direct-send command for a contract call. The flow is two steps by design:<code>contract-call preview</code>(the backend simulates and returns a<code>requestId</code>) and then<code>contract-call execute --requestId</code>. The old version waited for a public RPC to report a successful<code>eth_call</code>(±1 second after the opening block), then previewed, then executed. Every stage waited on the previous one: T+5–6 seconds.</p>\n<h4>Three parallel triggers</h4>\n<p><code>fire.js</code>does not wait on a single signal. During the 3-second<strong>burst</strong>window after the sale opens, three triggers may each launch a preview independently (minimum spacing<code>--gap</code>350ms, at most<code>--inflight</code>3 at a time):</p>\n<p>| trigger | when | source | |---|---|---| |<strong>clock</strong>| exactly T+0 by the NTP-corrected clock |<code>sntp</code>to time.apple.com / pool.ntp.org | |<strong>head</strong>| the first block with<code>timestamp ≥ start</code>is seen | WebSocket<code>newHeads</code>(QuikNode, publicnode, drpc) + HTTP polling every 150ms | |<strong>eth_call OK</strong>| a simulation from the wallet succeeds on one of the 4 fastest RPCs |<code>eth_call</code>on tags<code>latest</code>and<code>pending</code>, every 100ms |</p>\n<p>The first preview that comes back with<code>simulationCode 000000000</code>is executed immediately,<strong>exactly once</strong>. Other previews still in flight are ignored. Previews that fail because the backend has not seen the opening block yet (error<code>351805</code>) are cheap and harmless; the next trigger retries.</p>\n<p>Once the burst is over, only<strong>eth_call OK</strong>triggers previews, so a sale that opens late does not burn<code>--maxPreviews</code>; the<code>eth_call</code>spin keeps watching until<code>--timeout</code>(600 seconds).</p>\n<h4>The ranked RPC pool</h4>\n<p>The RPC list is measured at start and re-ranked at T-10s (latency and block lag). From Indonesia: QuikNode 31ms, bloXroute 32ms, 48.club 45ms, official dataseed ±105ms, publicnode ±200ms. Nodes that strip revert data (zon, for example) are left out, because a revert with no data cannot be told apart from \"not open yet\".</p>\n<p><code>eth_call</code>race: the first success wins; a revert<strong>with data</strong>wins (deterministic); a revert with no data only counts after every node has answered and is never treated as fatal.</p>\n<h4>Revert classification</h4>\n<p>Error names are decoded from the contract's Sourcify ABI, a built-in list of common errors, then 4byte. Every name maps to:</p>\n<ul><li><strong>wait</strong>:<code>NotStarted</code>,<code>NotOpen</code>,<code>NotLive</code>,<code>TooEarly</code>,<code>Paused</code>, … → keep retrying until<code>--timeout</code></li><li><strong>fatal</strong>:<code>SoldOut</code>,<code>FreeGone</code>,<code>AlreadyClaimed</code>,<code>AgentIdRequired</code>,<code>NotEligible</code>,<code>WrongValue</code>,<code>Insufficient…</code>→ stop immediately (±50ms)</li><li><strong>unknown</strong>: treated as wait until<code>start + --grace</code>(10s), fatal after that. Before the opening time only the hard-terminal names (sold/gone/already/agent/eligible/expired) are considered fatal.</li></ul>\n<p>Override with<code></code></p>",
+            "text": "fastmint-fcfs\nEnglish · [Bahasa Indonesia](README.id.md)\nFCFS mint on BNB Smart Chain through Binance Agentic Wallet, landed in a block ±2 seconds after the sale opens.\nA skill for AI agents (Claude Code, Codex, Cursor, OpenClaw, and any other agent that reads SKILL.md ) that fires a single mint/claim/buy transaction at the exact moment a sale opens, using a Binance Agentic Wallet ( baw CLI). No private key on the machine: signing happens in Binance's backend through Developer Mode, the agent only prepares calldata and picks the moment.\nsale opens (T) T+0.05s T+0.6–0.8s T+1.3–1.5s T+2.1–2.2s\n│ │ │ │ │\n▼ ▼ ▼ ▼ ▼\nstart ───► preview sent ───► simulation OK ───► BROADCASTED ───► in a block\n(NTP clock trigger) (requestId) (baw execute) (receipt)\nThe numbers above were measured 11 Nov 2026 from Indonesia: 3 time-gated dry-runs plus one real mint (Pocket Moons, 2 free NFTs, trigger→receipt 2.0 seconds). The previous sequential version took 5–6 seconds.\n---\nTable of contents\n[How it works](#1-how-it-works)\n[Installation](#2-installation)\n[Usage flow](#3-usage-flow)\n[Command reference](#4-command-reference)\n[Dynamic arguments](#5-dynamic-arguments)\n[Safety rails](#6-safety-rails)\n[Measured numbers](#7-measured-numbers)\n[Troubleshooting](#8-troubleshooting)\n[File layout](#9-file-layout)\n[FAQ](#10-faq)\n---\n1. How it works\nWhy the old version was slow\nbaw has no direct-send command for a contract call. The flow is two steps by design: contract-call preview (the backend simulates and returns a requestId ) and then contract-call execute --requestId . The old version waited for a public RPC to report a successful eth_call (±1 second after the opening block), then previewed, then executed. Every stage waited on the previous one: T+5–6 seconds.\nThree parallel triggers\nfire.js does not wait on a single signal. During the 3-second burst window after the sale opens, three triggers may each launch a preview independently (minimum spacing --gap 350ms, at most --inflight 3 at a time):\n| trigger | when | source | |---|---|---| | clock | exactly T+0 by the NTP-corrected clock | sntp to time.apple.com / pool.ntp.org | | head | the first block with timestamp ≥ start is seen | WebSocket newHeads (QuikNode, publicnode, drpc) + HTTP polling every 150ms | | eth_call OK | a simulation from the wallet succeeds on one of the 4 fastest RPCs | eth_call on tags latest and pending , every 100ms |\nThe first preview that comes back with simulationCode 000000000 is executed immediately, exactly once . Other previews still in flight are ignored. Previews that fail because the backend has not seen the opening block yet (error 351805 ) are cheap and harmless; the next trigger retries.\nOnce the burst is over, only eth_call OK triggers previews, so a sale that opens late does not burn --maxPreviews ; the eth_call spin keeps watching until --timeout (600 seconds).\nThe ranked RPC pool\nThe RPC list is measured at start and re-ranked at T-10s (latency and block lag). From Indonesia: QuikNode 31ms, bloXroute 32ms, 48.club 45ms, official dataseed ±105ms, publicnode ±200ms. Nodes that strip revert data (zon, for example) are left out, because a revert with no data cannot be told apart from \"not open yet\".\neth_call race: the first success wins; a revert with data wins (deterministic); a revert with no data only counts after every node has answered and is never treated as fatal.\nRevert classification\nError names are decoded from the contract's Sourcify ABI, a built-in list of common errors, then 4byte. Every name maps to:\nwait : NotStarted , NotOpen , NotLive , TooEarly , Paused , … → keep retrying until --timeout\nfatal : SoldOut , FreeGone , AlreadyClaimed , AgentIdRequired , NotEligible , WrongValue , Insufficient… → stop immediately (±50ms)\nunknown : treated as wait until start + --grace (10s), fatal after that. Before the opening time only the hard-terminal names (sold/gone/already/agent/eligible/expired) are considered fatal.\nOverride with",
+            "lead": "fastmint-fcfs\nEnglish · [Bahasa Indonesia](README.id.md)\nFCFS mint on BNB Smart Chain through Binance Agentic Wallet, landed in a block ±2 seconds after the sale opens.\nA skill for AI agents (Claude Code, Codex, Cursor, OpenClaw, and any other agent that reads SKILL.md ) that fires a single mint/claim/buy transaction at the exact moment a sale opens, using a Binance Agentic Wallet ( baw CLI). No private key on the machine: signing happens in Binance's back",
+            "chars": 19062,
+            "shown": 4000,
+            "truncated": true
+          },
+          "quality": 6,
+          "score": 21.01,
+          "category": "tools",
+          "subcategory": "coding",
+          "practical": 1,
+          "slug": "8a500e398ede",
+          "action": 5,
+          "rank": 14,
+          "tags": [
+            "agent",
+            "free"
+          ]
+        },
+        {
+          "sourceId": "ars-ai",
+          "sourceName": "Ars Technica AI",
+          "title": "Google DeepMind just mathematically verified key parts of Signal",
+          "url": "https://arstechnica.com/ai/2026/11/signals-encryption-just-passed-an-ai-powered-mathematical-checkup/",
+          "id": "https://arstechnica.com/ai/2026/11/signals-encryption-just-passed-an-ai-powered-mathematical-checkup/",
+          "published": "2026-11-11T14:08:57.000Z",
+          "summary": "Google DeepMind researchers used agentic AI to mathematically prove, or “formally verify,” a number of the Signal protocol’s key cryptographic guarantees—a landmark development for the widely used cryptography and AI itself. Conducted as a sort of proof-of-concept project in just four weeks, the work is significant in…",
+          "content": {
+            "html": "<p>Google DeepMind researchers used<a href=\"https://www.wired.com/story/ai-agents-are-about-to-flood-the-workforce-no-ones-ready-for-it/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">agentic AI</a>to mathematically prove, or “formally verify,” a number of the<a href=\"https://www.wired.com/story/signal-encryption-protocol-hacker-lexicon/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Signal protocol’s</a>key cryptographic guarantees—a landmark development for the widely used cryptography and AI itself.</p>\n<p>Conducted as a sort of proof-of-concept project in just four weeks, the work is significant in two ways. It serves as further independent validation of the cryptography that protects massive quantities of the world's communications on platforms like the<a href=\"https://www.wired.com/story/signal-tips-private-messaging-encryption/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Signal app</a>, Google Messages, and WhatsApp. And it demonstrates Google DeepMind's formal verification capabilities using a new AI framework called AlphaProof Code.</p>\n<p>More broadly, AI-aided formal verification is having a moment, but it is<a href=\"https://www.wired.com/story/software-verification-is-the-hot-new-answer-to-the-ai-safety-crisis/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">unclear how practical it will be</a>for widespread use and how effective it can be at securing large amounts of code. Proponents of formal verification have long referred to it as a sort of holy grail in software security, because it uses math to check and validate that software is functioning as intended—in other words, that it doesn't have critical vulnerabilities.</p>\n<p><a href=\"https://arstechnica.com/ai/2026/11/signals-encryption-just-passed-an-ai-powered-mathematical-checkup/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Read full article</a></p>\n<p><a href=\"https://arstechnica.com/ai/2026/11/signals-encryption-just-passed-an-ai-powered-mathematical-checkup/#comments\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Comments</a></p>",
+            "text": "Google DeepMind researchers used agentic AI to mathematically prove, or “formally verify,” a number of the Signal protocol’s key cryptographic guarantees—a landmark development for the widely used cryptography and AI itself.\nConducted as a sort of proof-of-concept project in just four weeks, the work is significant in two ways. It serves as further independent validation of the cryptography that protects massive quantities of the world's communications on platforms like the Signal app , Google Messages, and WhatsApp. And it demonstrates Google DeepMind's formal verification capabilities using a new AI framework called AlphaProof Code.\nMore broadly, AI-aided formal verification is having a moment, but it is unclear how practical it will be for widespread use and how effective it can be at securing large amounts of code. Proponents of formal verification have long referred to it as a sort of holy grail in software security, because it uses math to check and validate that software is functioning as intended—in other words, that it doesn't have critical vulnerabilities.\nRead full article\nComments",
+            "lead": "Google DeepMind researchers used agentic AI to mathematically prove, or “formally verify,” a number of the Signal protocol’s key cryptographic guarantees—a landmark development for the widely used cryptography and AI itself.\nConducted as a sort of proof-of-concept project in just four weeks, the work is significant in two ways. It serves as further independent validation of the cryptography that protects massive quantities of the world's communications on ",
+            "chars": 1115,
+            "shown": 1115,
+            "truncated": false
+          },
+          "categories": [
+            "AI",
+            "Security",
+            "deepmind",
+            "encryption",
+            "signal"
+          ],
+          "author": "Lily Hay Newman, wired.com",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "apps",
+          "metrics": {},
+          "quality": 8,
+          "score": 18.88,
+          "category": "tools",
+          "subcategory": "coding",
+          "practical": 1,
+          "slug": "ef892408bebc",
+          "action": 1,
+          "rank": 9.6,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "hardware",
+      "label": "AI 硬件",
+      "items": [
+        {
+          "sourceId": "lcz-llm",
+          "sourceName": "抡锤者 模型部署讨论",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "Edmund Tan",
+          "id": "2990",
+          "title": "4 X Mac Studio M3 Ultra 256GB 真实日志",
+          "url": "https://lcz.me/topic/2990",
+          "published": "2026-11-11T14:32:47.012Z",
+          "summary": "大家好，我的第二个分享 苹果跑AI 的真实日志，虽然现在已经出M5 Ultra 了但是已经很多博主分享过了他们的优势，哪怕性能提升不少（预填充） 但是如果想要跑多并发Agent 开发的话 以下还是对M5 有很好的对比的。至于有考虑苹果二手机的兄弟们 可以先看完我的日志再做打算吧。 2026 年 7 月 7 日 终结这四台萍妃们 。 卖了。 四台 Mac Studio：一套 4× M3 Ultra 的 MLX 集群 四台 Mac Studio、1 TB 统一内存、一张 Thunderbolt 5 全互联网络，四台机器合跑同一个模型——跑在我们自己写的推理引擎上。 我们手上有四台 Mac Studio，还有一个值得解决的问题。 问题是…",
+          "metrics": {
+            "points": 1,
+            "comments": 2,
+            "views": 52
+          },
+          "excellent": true,
+          "content": {
+            "html": "<p>大家好，我的第二个分享 苹果跑AI 的真实日志，虽然现在已经出M5 Ultra 了但是已经很多博主分享过了他们的优势，哪怕性能提升不少（预填充） 但是如果想要跑多并发Agent 开发的话 以下还是对M5 有很好的对比的。至于有考虑苹果二手机的兄弟们 可以先看完我的日志再做打算吧。</p>\n<p>2026 年 7 月 7 日 终结这四台萍妃们<img src=\"https://lcz.me/assets/plugins/nodebb-plugin-emoji/emoji/android/1f602.png?v=a055419e292\" alt=\"😂\" loading=\"lazy\">。 卖了。</p>\n<p><img src=\"https://upload.lcz.me/uploads/a7cbe5ac-4a6f-4fbb-9389-d5aaee4ab865.jpeg\" alt=\"image.jpeg\" loading=\"lazy\"><br><img src=\"https://upload.lcz.me/uploads/4404f26c-3516-4e13-bceb-614d90c981fd.jpeg\" alt=\"image.jpeg\" loading=\"lazy\"></p>\n<h3>四台 Mac Studio：一套 4× M3 Ultra 的 MLX 集群</h3>\n<p>四台 Mac Studio、1 TB 统一内存、一张 Thunderbolt 5 全互联网络，四台机器合跑同一个模型——跑在我们自己写的推理引擎上。</p>\n<p><img src=\"https://genworx.sg/media/blog-mac-cluster-cover.png\" alt=\"四台 Mac Studio：4× M3 Ultra MLX 集群\" loading=\"lazy\"></p>\n<p>我们手上有四台 Mac Studio，还有一个值得解决的问题。</p>\n<p>问题是这样：一个 3000 亿参数的模型放不进一台机器。单台 256 GB 的 Mac Studio M3 Ultra，勉强能在说得过去的精度下跑个 70B。想跑真正大的模型——那种能改变你能做什么的模型——你需要比任何一台电脑都多的内存。</p>\n<p>于是我们做了那种\"有四台 Mac、又没钱进机房\"时才会做的事：把它们摞在桌子上，用线连起来。</p>\n<h3>六根线，和一大堆天真的希望</h3>\n<p>四台 Mac Studio M3 Ultra，每台 256 GB 统一内存，合计 1 TB。没有机柜、没有风扇、没有空调，就四台昂贵的银色盒子和一堆 Thunderbolt 线缆。</p>\n<p>不是走 hub，而是<strong>全互联（full mesh）</strong>——六根线，每两台机器之间直连一根。因为一旦经过交换机，所有流量就挤在一条链路上；而用四台机器的全部意义，恰恰是它们要不停地互相说话。</p>\n<p>每条链路实测<strong>36–38 Gbps</strong>。我们用来管理它们的那张 Wi-Fi 大约 1 Gbps。我们造出来的东西比管理它的网络快约四十倍——而这<strong>仍然</strong>不够快。</p>\n<p>第一天是真的兴奋。同一个模型在每台 Mac 上单独跑，结果差异在 2% 以内——23.9、24.1、24.3、24.3 tok/s。四台健康的机器，一块空白的画布。</p>\n<p>然后我们试着让它们变成一台机器，它就崩了。</p>\n<h3>为什么我们自己造</h3>\n<p>已经有一个项目在做这件事。EXO 能把 Mac 连成网格、跨机跑模型，我们就从它开始——从别人能跑的代码起步，显然是最正确的做法。</p>\n<p>问题是 EXO 已经安静了。更新不再落地。而我们要跑的模型——DeepSeek V4、MiniMax-M3——都不被支持，这意味着每个新模型都是一堵墙，而不是一次下载。当上游不动、而模型生态飞快变化时，你只有两个选择：等，或者自己接管。</p>\n<p>我们接管了。</p>\n<p>最终这套东西是叠在一起的三层：</p>\n<p><strong>上游 MLX，加上补丁。</strong>不是重写——真正干活的是 Apple 的框架。我们固定了一个特定的 MLX 构建，然后在上面打自己的补丁。有些很小（<code>arrayscache-trimmable</code>，让缓存可裁剪，从而解锁了前缀缓存）。有些一点都不小（<code>1111-hybrid-spec-decode</code>，我们尝试的投机解码——剧透：最后被我们扔掉了）。</p>\n<p><strong>mlx-lm，为我们需要的模型做扩展。</strong>这个库既没有<code>deepseek_v32</code>的 chat template，也没有它的流水线并行路径。MiniMax 能跑，纯粹是因为碰巧存在一个<code>minimax_m2</code>模板。要让 DeepSeek V4 和 MiniMax-M3 能服务，就得自己把模型家族加进去，然后让这些补丁在一个不断移动的上游上活下去——我们有一套持续运行的 rebase 方案，因为每一次上游发布都可能把它们打碎。</p>\n<p><strong>最上面是我们自己的集群层。</strong>跨节点分片、supervisor、控制台、分层缓存、OpenAI 兼容 API。没人做过的那部分。</p>\n<p>所以\"我们写了自己的引擎\"这话准确，但过于干净了。我们实际做的是：站在上游之上，把缺失的部分重建一遍——然后把项目的大部分时间花在维护我们和上游之间的那道缝上。</p>\n<p>这也是引擎随硬件一起消失的原因。它从来不是一个产品。它是一堆补丁加一个集群管理器，精确地只适配这四台机器、这几个模型、这一刻。没有硬件还让它活着，等于替没人维护一个 fork 的 fork。</p>\n<h3>我们到底打了哪些补丁</h3>\n<p>清单比预想的长，而它也解释了为什么\"我们直接用 EXO 就行了\"这句话没能活过现实的第一周。</p>\n<p><strong>GPU 死锁。</strong>在四节点上同时用 RDMA 和<code>MLX_METAL_FAST_SYNCH=1</code>，GPU 会在 fence wait 里死锁。不是变慢——是死掉。这是 MLX 上游的已知问题（mlx#3142），当时代码树里没有修复。唯一有效的是一个社区 fork：在编码 GPU fence 之前先在 CPU 侧等待。我们采用它、验证它，它撑住了。</p>\n<p><strong>内核崩溃。</strong>打开 batching，且 head dimension 为 256——这正是 Qwen 3.5/3.6 和那个 397B 用的——那个 fork 的 attention kernel 在并发数一超过 1 时就崩。我们用更小的 fp32 tile 重建了 kernel，把自编的 wheel 部署到全部四台节点。也就是说，一个打了补丁的 Apple 内核，在跑我们的生产流量。</p>\n<p><strong>RDMA 拆卸泄漏。</strong>一次 serve 停止后，<strong>下一次</strong>会带着<code>Couldn't allocate protection domain</code>直接死掉，只有重启才能清除。原因是：jaccl 为每个 rank 分配一个 RDMA protection domain，而 MLX 没有暴露任何拆卸 API——只有进程干净退出时它才会被释放。我们写了一个优雅退出来强制做到这一点。</p>\n<p><strong>根本不存在的模型支持。</strong><code>qwen3_moe</code>完全没有<code>shard()</code>实现，所以没法跨机切分；我们自己写了一个。<code>qwen3_next</code>有同样的缺口，另外还有一个受 KV heads 限制的节点数上限。DeepSeek V4-Flash 没有随附 chat template，导致工具调用历史在多轮之间被静默丢弃——我们写了 shim。GLM-5.2 的<code>glm_moe_dsa</code>架构完全不被识别，需要打补丁才能把工具调用路由正确。</p>\n<p><strong>还有一个我们自己制造的 bug。</strong>我们自己的<code>qwen3_next</code>补丁按名字覆盖了一个共享的 MoE 类。这对某个架构是对的，对另一个复用同一个类的架构就是错的——因为一个复制它的共享专家，另一个切分它。结果是 rank 分歧：四节点上输出是一团乱码，单节点上完美正常。最后靠逐层 logit 探针才找到，它教会了我们一条到处适用的规则：<strong>永远不要按名字去改一个共享的模型类。</strong></p>\n<p>这些没有一个在正式发布版里。它是一个 fork 的 fork，加上十几个本地补丁，再加上一套持续运行的 rebase 方案——因为每一次上游发布都可能把它们打碎。</p>\n<h3>而 EXO 至今一个都没修</h3>\n<p>我们离开的理由，现在依然是理由。几个月过去，那个死锁没有上游修复，bd256 的 kernel 崩溃没有上游修复，我们想跑的模型仍然不被支持。这个项目不是在我们开发期间停住了——它一直停着。</p>\n<p>我不是在抱怨。开源很难，而 EXO 做了一件真正了不起的事：它证明了把 Mac 连成网格是可行的，而我们从那里出发。但如果你今天在评估这条路、想知道上游有没有追上来，我们的经验是：<strong>做好打补丁的准备。</strong></p>\n<h3>该给的功劳要给</h3>\n<p>这些不全是我们的工作，暗示相反就不诚实了。有三个修复来自别人，应该说清楚。</p>\n<p><strong><code>rltakashige</code></strong>写了修好我们 GPU 死锁的那个 fork——<a href=\"https://github.com/rltakashige/mlx-jaccl-fix-small-recv\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><code>mlx-jaccl-fix-small-recv</code></a>，commit<code>cc3f3e60</code></p>",
+            "text": "大家好，我的第二个分享 苹果跑AI 的真实日志，虽然现在已经出M5 Ultra 了但是已经很多博主分享过了他们的优势，哪怕性能提升不少（预填充） 但是如果想要跑多并发Agent 开发的话 以下还是对M5 有很好的对比的。至于有考虑苹果二手机的兄弟们 可以先看完我的日志再做打算吧。\n2026 年 7 月 7 日 终结这四台萍妃们 。 卖了。\n四台 Mac Studio：一套 4× M3 Ultra 的 MLX 集群\n四台 Mac Studio、1 TB 统一内存、一张 Thunderbolt 5 全互联网络，四台机器合跑同一个模型——跑在我们自己写的推理引擎上。\n我们手上有四台 Mac Studio，还有一个值得解决的问题。\n问题是这样：一个 3000 亿参数的模型放不进一台机器。单台 256 GB 的 Mac Studio M3 Ultra，勉强能在说得过去的精度下跑个 70B。想跑真正大的模型——那种能改变你能做什么的模型——你需要比任何一台电脑都多的内存。\n于是我们做了那种\"有四台 Mac、又没钱进机房\"时才会做的事：把它们摞在桌子上，用线连起来。\n六根线，和一大堆天真的希望\n四台 Mac Studio M3 Ultra，每台 256 GB 统一内存，合计 1 TB。没有机柜、没有风扇、没有空调，就四台昂贵的银色盒子和一堆 Thunderbolt 线缆。\n不是走 hub，而是 全互联（full mesh） ——六根线，每两台机器之间直连一根。因为一旦经过交换机，所有流量就挤在一条链路上；而用四台机器的全部意义，恰恰是它们要不停地互相说话。\n每条链路实测 36–38 Gbps 。我们用来管理它们的那张 Wi-Fi 大约 1 Gbps。我们造出来的东西比管理它的网络快约四十倍——而这 仍然 不够快。\n第一天是真的兴奋。同一个模型在每台 Mac 上单独跑，结果差异在 2% 以内——23.9、24.1、24.3、24.3 tok/s。四台健康的机器，一块空白的画布。\n然后我们试着让它们变成一台机器，它就崩了。\n为什么我们自己造\n已经有一个项目在做这件事。EXO 能把 Mac 连成网格、跨机跑模型，我们就从它开始——从别人能跑的代码起步，显然是最正确的做法。\n问题是 EXO 已经安静了。更新不再落地。而我们要跑的模型——DeepSeek V4、MiniMax-M3——都不被支持，这意味着每个新模型都是一堵墙，而不是一次下载。当上游不动、而模型生态飞快变化时，你只有两个选择：等，或者自己接管。\n我们接管了。\n最终这套东西是叠在一起的三层：\n上游 MLX，加上补丁。 不是重写——真正干活的是 Apple 的框架。我们固定了一个特定的 MLX 构建，然后在上面打自己的补丁。有些很小（ arrayscache-trimmable ，让缓存可裁剪，从而解锁了前缀缓存）。有些一点都不小（ 1111-hybrid-spec-decode ，我们尝试的投机解码——剧透：最后被我们扔掉了）。\nmlx-lm，为我们需要的模型做扩展。 这个库既没有 deepseek_v32 的 chat template，也没有它的流水线并行路径。MiniMax 能跑，纯粹是因为碰巧存在一个 minimax_m2 模板。要让 DeepSeek V4 和 MiniMax-M3 能服务，就得自己把模型家族加进去，然后让这些补丁在一个不断移动的上游上活下去——我们有一套持续运行的 rebase 方案，因为每一次上游发布都可能把它们打碎。\n最上面是我们自己的集群层。 跨节点分片、supervisor、控制台、分层缓存、OpenAI 兼容 API。没人做过的那部分。\n所以\"我们写了自己的引擎\"这话准确，但过于干净了。我们实际做的是：站在上游之上，把缺失的部分重建一遍——然后把项目的大部分时间花在维护我们和上游之间的那道缝上。\n这也是引擎随硬件一起消失的原因。它从来不是一个产品。它是一堆补丁加一个集群管理器，精确地只适配这四台机器、这几个模型、这一刻。没有硬件还让它活着，等于替没人维护一个 fork 的 fork。\n我们到底打了哪些补丁\n清单比预想的长，而它也解释了为什么\"我们直接用 EXO 就行了\"这句话没能活过现实的第一周。\nGPU 死锁。 在四节点上同时用 RDMA 和 MLX_METAL_FAST_SYNCH=1 ，GPU 会在 fence wait 里死锁。不是变慢——是死掉。这是 MLX 上游的已知问题（mlx#3142），当时代码树里没有修复。唯一有效的是一个社区 fork：在编码 GPU fence 之前先在 CPU 侧等待。我们采用它、验证它，它撑住了。\n内核崩溃。 打开 batching，且 head dimension 为 256——这正是 Qwen 3.5/3.6 和那个 397B 用的——那个 fork 的 attention kernel 在并发数一超过 1 时就崩。我们用更小的 fp32 tile 重建了 kernel，把自编的 wheel 部署到全部四台节点。也就是说，一个打了补丁的 Apple 内核，在跑我们的生产流量。\nRDMA 拆卸泄漏。 一次 serve 停止后， 下一次 会带着 Couldn't allocate protection domain 直接死掉，只有重启才能清除。原因是：jaccl 为每个 rank 分配一个 RDMA protection domain，而 MLX 没有暴露任何拆卸 API——只有进程干净退出时它才会被释放。我们写了一个优雅退出来强制做到这一点。\n根本不存在的模型支持。 qwen3_moe 完全没有 shard() 实现，所以没法跨机切分；我们自己写了一个。 qwen3_next 有同样的缺口，另外还有一个受 KV heads 限制的节点数上限。DeepSeek V4-Flash 没有随附 chat template，导致工具调用历史在多轮之间被静默丢弃——我们写了 shim。GLM-5.2 的 glm_moe_dsa 架构完全不被识别，需要打补丁才能把工具调用路由正确。\n还有一个我们自己制造的 bug。 我们自己的 qwen3_next 补丁按名字覆盖了一个共享的 MoE 类。这对某个架构是对的，对另一个复用同一个类的架构就是错的——因为一个复制它的共享专家，另一个切分它。结果是 rank 分歧：四节点上输出是一团乱码，单节点上完美正常。最后靠逐层 logit 探针才找到，它教会了我们一条到处适用的规则： 永远不要按名字去改一个共享的模型类。\n这些没有一个在正式发布版里。它是一个 fork 的 fork，加上十几个本地补丁，再加上一套持续运行的 rebase 方案——因为每一次上游发布都可能把它们打碎。\n而 EXO 至今一个都没修\n我们离开的理由，现在依然是理由。几个月过去，那个死锁没有上游修复，bd256 的 kernel 崩溃没有上游修复，我们想跑的模型仍然不被支持。这个项目不是在我们开发期间停住了——它一直停着。\n我不是在抱怨。开源很难，而 EXO 做了一件真正了不起的事：它证明了把 Mac 连成网格是可行的，而我们从那里出发。但如果你今天在评估这条路、想知道上游有没有追上来，我们的经验是： 做好打补丁的准备。\n该给的功劳要给\n这些不全是我们的工作，暗示相反就不诚实了。有三个修复来自别人，应该说清楚。\nrltakashige 写了修好我们 GPU 死锁的那个 fork—— mlx-jaccl-fix-small-recv ，commit cc3f3e60",
+            "lead": "大家好，我的第二个分享 苹果跑AI 的真实日志，虽然现在已经出M5 Ultra 了但是已经很多博主分享过了他们的优势，哪怕性能提升不少（预填充） 但是如果想要跑多并发Agent 开发的话 以下还是对M5 有很好的对比的。至于有考虑苹果二手机的兄弟们 可以先看完我的日志再做打算吧。\n2026 年 7 月 7 日 终结这四台萍妃们 。 卖了。\n四台 Mac Studio：一套 4× M3 Ultra 的 MLX 集群\n四台 Mac Studio、1 TB 统一内存、一张 Thunderbolt 5 全互联网络，四台机器合跑同一个模型——跑在我们自己写的推理引擎上。\n我们手上有四台 Mac Studio，还有一个值得解决的问题。\n问题是这样：一个 3000 亿参数的模型放不进一台机器。单台 256 GB 的 Mac Studio M3 Ultra，勉强能在说得过去的精度下跑个 70B。想跑真正大的模型——那种能改变你能做什么的模型——你需要比任何一台电脑都多的内存。",
+            "chars": 7908,
+            "shown": 3188,
+            "truncated": true
+          },
+          "quality": 12,
+          "score": 21.52,
+          "category": "hardware",
+          "subcategory": "build",
+          "practical": 5,
+          "slug": "abd601ff6346",
+          "action": 8,
+          "rank": 24.8,
+          "tags": [
+            "benchmark",
+            "lowspec",
+            "agent"
+          ]
+        },
+        {
+          "sourceId": "lcz-hardware",
+          "sourceName": "抡锤者 AI硬件",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "mmiker",
+          "id": "2987",
+          "title": "Strata @ Tesla V100 — 上下文甜点区实测（32K → 256K，步进 8K）",
+          "url": "https://lcz.me/topic/2987",
+          "published": "2026-11-11T12:25:55.813Z",
+          "summary": "AI新手，周末把V100 挪到工作机了 ,这个有64GB DDR4.。( 把7900XTX 换给了X99 , E5 2686 V4 ,128GB DDR3，主要用于coding/agent. ) 这台机让AI跑了点数据 。不知道准不准，大家 随便 看看。 Strata @ Tesla V100 — 上下文甜点区实测报告（32K → 256K，步进 8K） 生成时间：2026-11-11 20:18　|　Coding / Agent 场景 · 冷启动 TTFT + 前缀缓存复用　|　服务 http://127.0.0.1:9931 （测试期间独占） 曲线图版： strata-sweetspot-256k-report.html （4…",
+          "metrics": {
+            "points": 0,
+            "comments": 2,
+            "views": 65
+          },
+          "excellent": false,
+          "content": {
+            "html": "<p>AI新手，周末把V100 挪到工作机了 ,这个有64GB DDR4.。( 把7900XTX 换给了X99 , E5 2686 V4 ,128GB DDR3，主要用于coding/agent. ) 这台机让AI跑了点数据 。不知道准不准，大家 随便 看看。</p>\n<h3>Strata @ Tesla V100 — 上下文甜点区实测报告（32K → 256K，步进 8K）</h3>\n<blockquote><p>生成时间：2026-11-11 20:18　|　Coding / Agent 场景 · 冷启动 TTFT + 前缀缓存复用　|　服务<code>http://127.0.0.1:9931</code>（测试期间独占）</p><p>曲线图版：<code>strata-sweetspot-256k-report.html</code>（4 张 SVG 曲线）　|　数据：<code>bench_out/sweep_256k_main.csv</code>、<code>bench_out/raw_sweep_256k.jsonl</code></p></blockquote>\n<h3>0. 硬件与软件环境</h3>\n<table><thead><tr><th>项目</th><th>配置</th><th>与测试相关的说明</th></tr></thead><tbody><tr><td>GPU</td><td>NVIDIA Tesla V100-SXM2-16GB（sm_70 Volta）</td><td>驱动 582.99 · 功耗上限 300W · SM 最高 1530 MHz · 显存 16384 MiB（服务常驻 ~15.9 GiB，空闲仅 ~0.5 GiB）</td></tr><tr><td>CPU</td><td>AMD Ryzen 5 5600G（6 核 12 线程，最高 3.9 GHz）</td><td>无 AVX-512，专家内核跑 AVX-2；主机→设备 PCIe 实测 13.4 GB/s（pcie_frac 0.37）</td></tr><tr><td>内存</td><td>64 GB DDR4-3600（4 × 16 GB）</td><td>总可用 59.9 GiB，测试期间常驻 ~45–46 GiB（模型专家层 RAM 卸载层）</td></tr><tr><td>主板 / 平台</td><td>ASRock B550M Phantom Gaming 4</td><td>PCIe 4.0 x16（V100 为 PCIe 3.0 卡，协商 3.0）</td></tr><tr><td>磁盘</td><td>NVMe SSD 954 GB（J.ZAO QL）+ HDD 2 TB / 8 TB（SATA）</td><td>模型与引擎在 NVMe 上，加载与 L3 磁盘层不受限</td></tr><tr><td>操作系统</td><td>Windows 11 IoT 企业版 LTSC（build 26100，64 位）</td><td>PowerShell 7.6.8 · Python 3.13/3.14 · CUDA Toolkit 12.9（引擎 lib_dirs）</td></tr><tr><td>推理引擎</td><td>Strata 0.1.45.6（engine-cuda12，自编译）</td><td>sm_70 专属 14 项速度开关默认开启；MTP 投机解码 spec 4；<code>--batch 2</code></td></tr><tr><td>模型</td><td>Qwen3.8-Flash-Next-Coder IQ1_M（MoE + PLE）</td><td>主权重 27.58 GB + PLE 专家层 26.82 GB（GGUF 双文件）+ dense 1.37 GB；IQ1_M 量化</td></tr><tr><td>服务配置</td><td>max-context 262144 · KV int8 · kv-resident 32768 · expert-cache auto · vision on · vram-reserve 768 MiB</td><td>专家缓存 6866 MiB；conversation cache 0 MiB（显存不足未启用）；API key 认证，OpenAI/Anthropic 双方言</td></tr></tbody></table>\n<p><strong>架构要点</strong>：16 GB 显存装不下 54 GB 权重，Strata 采用「显存专家缓存 + RAM/PCIe 换入」分层运行，decode 速度对专家命中率敏感——这是甜点区结论中「并发会打崩性能」的根因。</p>\n<p><strong>测试条件</strong>：独占服务（并发污染 0 档）、temperature 0、关闭思考、每档生成 192 token、填充语料为随机词表（token 密度 ≈ 1.58 tok/词）、交错顺序扫描（解耦负载累积与上下文长度）。</p>\n<h3>1. 结论速览</h3>\n<table><thead><tr><th>场景</th><th>推荐窗口</th><th>依据</th></tr></thead><tbody><tr><td><strong>Coding 强交互</strong>（补全、单文件改动）</td><td><strong>≤ 32K</strong></td><td>TTFT 17.1s，一轮完整响应约 21s</td></tr><tr><td><strong>Coding 一次性仓库扫描</strong></td><td><strong>40K–64K</strong></td><td>TTFT 22–36s，一次性等待可接受，且落在缓存复用区</td></tr><tr><td><strong>Agent 多轮（缓存受益区）</strong></td><td><strong>32K–64K</strong></td><td>同前缀二轮 TTFT 降至 4.4–13.4s（复用 25K/50K 固化前缀）</td></tr><tr><td><strong>离线批处理 / 长文档</strong></td><td><strong>72K–256K</strong></td><td>TTFT 40–173s；速度不掉但人不该等，256K 为已验证能力上限</td></tr><tr><td><strong>明确避免</strong></td><td>&gt; 64K 做同步交互 agent</td><td>每轮冷启动 ≥ 40s，且历史增量超出缓存容量，多轮成本线性叠加</td></tr></tbody></table>\n<p><strong>核心判断：没有性能断点，甜点区由等待预算决定，不是能力上限。</strong>全区间 TTFT 近似线性，decode 保持 50–57 tok/s，prefill 只从 1911 缓降到 1509 tok/s；唯一随长度恶化的是「首 token 之前要读多少 prompt」。</p>\n<h3>2. 关键曲线数据（冷启动）</h3>\n<table><thead><tr><th>窗口</th><th>TTFT s</th><th>Prefill tok/s</th><th>Decode tok/s</th><th>专家命中</th><th>PCIe 换入 %</th></tr></thead><tbody><tr><td>32K</td><td>17.1</td><td>1911</td><td>53.2</td><td>0.831</td><td>5.4</td></tr><tr><td>64K</td><td>35.8</td><td>1823</td><td>54.1</td><td>0.833</td><td>5.3</td></tr><tr><td>96K</td><td>54.4</td><td>1800</td><td>52.9</td><td>0.819</td><td>5.9</td></tr><tr><td>128K</td><td>75.7</td><td>1723</td><td>54.4</td><td>0.826</td><td>5.6</td></tr><tr><td>160K</td><td>97.6</td><td>1669</td><td>52.8</td><td>0.832</td><td>5.5</td></tr><tr><td>192K</td><td>121.9</td><td>1604</td><td>53.8</td><td>0.826</td><td>5.5</td></tr><tr><td>224K</td><td>148.3</td><td>1536</td><td>52.9</td><td>0.829</td><td>5.6</td></tr><tr><td>256K</td><td>172.9</td><td>1509</td><td>52.4</td><td>0.821</td><td>5.7</td></tr></tbody></table>\n<ul><li><strong>TTFT ≈ 长度线性</strong>：交互体验分水岭在 64K——以下 ≤36s 可接受，以上进入「离线等待」区。</li><li><strong>Decode 全程 50–57 tok/s</strong>，不随上下文长度显著衰减——V100 上长上下文的代价只在「读入」，不在「生成」。</li><li><strong>Prefill 1911 → 1509 tok/s</strong>（-21%），缓降无断点。</li></ul>\n<h3>3. 前缀缓存复用（Agent 多轮关键指标）</h3>\n<p>≤64K 档同前缀二轮实测（第二轮只需读增量，needle 标签验证 5/5 通过）：</p>\n<table><thead><tr><th>窗口</th><th>首轮 TTFT s</th><th>二轮 TTFT s</th><th>复用 tok</th><th>降幅</th></tr></thead><tbody><tr><td>32K</td><td>17.1</td><td>4.6</td><td>25,088</td><td>-73%</td></tr><tr><td>40K</td><td>22.0</td><td>9.5</td><td>25,088</td><td>-57%</td></tr><tr><td>48K</td><td>25.6</td><td>13.4</td><td>25,088</td><td>-48%</td></tr><tr><td>56K</td><td>30.4</td><td>4.4</td><td>50,176</td><td>-86%</td></tr><tr><td>64K</td><td>35.8</td><td>10.1</td><td>50,176</td><td>-72%</td></tr></tbody></table>\n<p>复用机制：24,064 token 分块固化，按 25,088 / 50,176 token 阶梯命中。超过 64K 后新增历史超出缓存容量，收益递减。</p>\n<h3>4. 逐档数据表（29 档全量）</h3>\n<table><thead><tr><th>窗口</th><th>输入 tok</th><th>TTFT s</th><th>Prefill</th><th>Decode</th><th>生成 tok</th><th>专家命中</th><th>PCIe%</th><th>总耗时 s</th><th>代码✓</th></tr></thead><tbody><tr><td>32K</td><td>32,642</td><td>17.1</td><td>1,911</td><td>53.2</td><td>192</td><td>0.831</td><td>5.4</td><td>20.7</td><td>✓</td></tr><tr><td>40K</td><td>40,444</td><td>22.0</td><td>1,845</td><td>53.8</td><td>192</td><td>0.829</td><td></td></tr></tbody></table>",
+            "text": "AI新手，周末把V100 挪到工作机了 ,这个有64GB DDR4.。( 把7900XTX 换给了X99 , E5 2686 V4 ,128GB DDR3，主要用于coding/agent. ) 这台机让AI跑了点数据 。不知道准不准，大家 随便 看看。\nStrata @ Tesla V100 — 上下文甜点区实测报告（32K → 256K，步进 8K）\n生成时间：2026-11-11 20:18　|　Coding / Agent 场景 · 冷启动 TTFT + 前缀缓存复用　|　服务 http://127.0.0.1:9931 （测试期间独占）\n曲线图版： strata-sweetspot-256k-report.html （4 张 SVG 曲线）　|　数据： bench_out/sweep_256k_main.csv 、 bench_out/raw_sweep_256k.jsonl\n0. 硬件与软件环境\n项目\n配置\n与测试相关的说明\nGPU\nNVIDIA Tesla V100-SXM2-16GB（sm_70 Volta）\n驱动 582.99 · 功耗上限 300W · SM 最高 1530 MHz · 显存 16384 MiB（服务常驻 ~15.9 GiB，空闲仅 ~0.5 GiB）\nCPU\nAMD Ryzen 5 5600G（6 核 12 线程，最高 3.9 GHz）\n无 AVX-512，专家内核跑 AVX-2；主机→设备 PCIe 实测 13.4 GB/s（pcie_frac 0.37）\n内存\n64 GB DDR4-3600（4 × 16 GB）\n总可用 59.9 GiB，测试期间常驻 ~45–46 GiB（模型专家层 RAM 卸载层）\n主板 / 平台\nASRock B550M Phantom Gaming 4\nPCIe 4.0 x16（V100 为 PCIe 3.0 卡，协商 3.0）\n磁盘\nNVMe SSD 954 GB（J.ZAO QL）+ HDD 2 TB / 8 TB（SATA）\n模型与引擎在 NVMe 上，加载与 L3 磁盘层不受限\n操作系统\nWindows 11 IoT 企业版 LTSC（build 26100，64 位）\nPowerShell 7.6.8 · Python 3.13/3.14 · CUDA Toolkit 12.9（引擎 lib_dirs）\n推理引擎\nStrata 0.1.45.6（engine-cuda12，自编译）\nsm_70 专属 14 项速度开关默认开启；MTP 投机解码 spec 4； --batch 2\n模型\nQwen3.8-Flash-Next-Coder IQ1_M（MoE + PLE）\n主权重 27.58 GB + PLE 专家层 26.82 GB（GGUF 双文件）+ dense 1.37 GB；IQ1_M 量化\n服务配置\nmax-context 262144 · KV int8 · kv-resident 32768 · expert-cache auto · vision on · vram-reserve 768 MiB\n专家缓存 6866 MiB；conversation cache 0 MiB（显存不足未启用）；API key 认证，OpenAI/Anthropic 双方言\n架构要点 ：16 GB 显存装不下 54 GB 权重，Strata 采用「显存专家缓存 + RAM/PCIe 换入」分层运行，decode 速度对专家命中率敏感——这是甜点区结论中「并发会打崩性能」的根因。\n测试条件 ：独占服务（并发污染 0 档）、temperature 0、关闭思考、每档生成 192 token、填充语料为随机词表（token 密度 ≈ 1.58 tok/词）、交错顺序扫描（解耦负载累积与上下文长度）。\n1. 结论速览\n场景\n推荐窗口\n依据\nCoding 强交互 （补全、单文件改动）\n≤ 32K\nTTFT 17.1s，一轮完整响应约 21s\nCoding 一次性仓库扫描\n40K–64K\nTTFT 22–36s，一次性等待可接受，且落在缓存复用区\nAgent 多轮（缓存受益区）\n32K–64K\n同前缀二轮 TTFT 降至 4.4–13.4s（复用 25K/50K 固化前缀）\n离线批处理 / 长文档\n72K–256K\nTTFT 40–173s；速度不掉但人不该等，256K 为已验证能力上限\n明确避免\n> 64K 做同步交互 agent\n每轮冷启动 ≥ 40s，且历史增量超出缓存容量，多轮成本线性叠加\n核心判断：没有性能断点，甜点区由等待预算决定，不是能力上限。 全区间 TTFT 近似线性，decode 保持 50–57 tok/s，prefill 只从 1911 缓降到 1509 tok/s；唯一随长度恶化的是「首 token 之前要读多少 prompt」。\n2. 关键曲线数据（冷启动）\n窗口\nTTFT s\nPrefill tok/s\nDecode tok/s\n专家命中\nPCIe 换入 %\n32K\n17.1\n1911\n53.2\n0.831\n5.4\n64K\n35.8\n1823\n54.1\n0.833\n5.3\n96K\n54.4\n1800\n52.9\n0.819\n5.9\n128K\n75.7\n1723\n54.4\n0.826\n5.6\n160K\n97.6\n1669\n52.8\n0.832\n5.5\n192K\n121.9\n1604\n53.8\n0.826\n5.5\n224K\n148.3\n1536\n52.9\n0.829\n5.6\n256K\n172.9\n1509\n52.4\n0.821\n5.7\nTTFT ≈ 长度线性 ：交互体验分水岭在 64K——以下 ≤36s 可接受，以上进入「离线等待」区。\nDecode 全程 50–57 tok/s ，不随上下文长度显著衰减——V100 上长上下文的代价只在「读入」，不在「生成」。\nPrefill 1911 → 1509 tok/s （-21%），缓降无断点。\n3. 前缀缓存复用（Agent 多轮关键指标）\n≤64K 档同前缀二轮实测（第二轮只需读增量，needle 标签验证 5/5 通过）：\n窗口\n首轮 TTFT s\n二轮 TTFT s\n复用 tok\n降幅\n32K\n17.1\n4.6\n25,088\n-73%\n40K\n22.0\n9.5\n25,088\n-57%\n48K\n25.6\n13.4\n25,088\n-48%\n56K\n30.4\n4.4\n50,176\n-86%\n64K\n35.8\n10.1\n50,176\n-72%\n复用机制：24,064 token 分块固化，按 25,088 / 50,176 token 阶梯命中。超过 64K 后新增历史超出缓存容量，收益递减。\n4. 逐档数据表（29 档全量）\n窗口\n输入 tok\nTTFT s\nPrefill\nDecode\n生成 tok\n专家命中\nPCIe%\n总耗时 s\n代码✓\n32K\n32,642\n17.1\n1,911\n53.2\n192\n0.831\n5.4\n20.7\n✓\n40K\n40,444\n22.0\n1,845\n53.8\n192\n0.829",
+            "lead": "AI新手，周末把V100 挪到工作机了 ,这个有64GB DDR4.。( 把7900XTX 换给了X99 , E5 2686 V4 ,128GB DDR3，主要用于coding/agent. ) 这台机让AI跑了点数据 。不知道准不准，大家 随便 看看。\nStrata @ Tesla V100 — 上下文甜点区实测报告（32K → 256K，步进 8K）\n生成时间：2026-11-11 20:18　|　Coding / Agent 场景 · 冷启动 TTFT + 前缀缓存复用　|　服务 http://127.0.0.1:9931 （测试期间独占）\n曲线图版： strata-sweetspot-256k-report.html （4 张 SVG 曲线）　|　数据： bench_out/sweep_256k_main.csv 、 bench_out/raw_sweep_256k.jsonl",
+            "chars": 6124,
+            "shown": 3199,
+            "truncated": true
+          },
+          "quality": 9,
+          "score": 20.77,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 4,
+          "slug": "3a8f2b86b9b2",
+          "action": 9,
+          "rank": 23.4,
+          "tags": [
+            "hardware",
+            "lowspec",
+            "benchmark",
+            "local"
+          ]
+        },
+        {
+          "sourceId": "gh-ecosystem",
+          "sourceName": "GitHub 检索（生态项目更新）",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "oss",
+          "categories": [],
+          "author": "Comfy-Org",
+          "id": "1156928425",
+          "title": "Comfy-Org/Comfy-Desktop",
+          "url": "https://github.com/Comfy-Org/Comfy-Desktop",
+          "published": "2026-11-11T17:58:13.000Z",
+          "summary": "<div align=\"center\"> <img src=\"assets/Comfy_Logo_x512.png\" alt=\"Comfy Desktop\" width=\"128\" /> Comfy Desktop Install, run, and manage ComfyUI from one app — no dependency hell. ![Release ](https://github.com/Comfy-Org/Comfy-Desktop/releases/latest) ![CI ](https://github.com/Comfy-Org/Comfy-Desktop/actions/workflows/ci.…",
+          "metrics": {
+            "stars": 699
+          },
+          "content": {
+            "html": "<p>&lt;div align=\"center\"&gt;</p>\n<p>&lt;img src=\"assets/Comfy_Logo_x512.png\" alt=\"Comfy Desktop\" width=\"128\" /&gt;</p>\n<h3>Comfy Desktop</h3>\n<p><strong>Install, run, and manage<a href=\"https://github.com/Comfy-Org/ComfyUI\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">ComfyUI</a>from one app — no dependency hell.</strong></p>\n<p><a href=\"https://img.shields.io/github/v/release/Comfy-Org/Comfy-Desktop?display_name=tag&amp;style=flat&amp;label=release&amp;color=4f46e5\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">![Release</a>](https://github.com/Comfy-Org/Comfy-Desktop/releases/latest)<a href=\"https://img.shields.io/github/actions/workflow/status/Comfy-Org/Comfy-Desktop/ci.yml?branch=main&amp;style=flat&amp;label=CI\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">![CI</a>](https://github.com/Comfy-Org/Comfy-Desktop/actions/workflows/ci.yml)<a href=\"https://img.shields.io/github/license/Comfy-Org/Comfy-Desktop?style=flat&amp;color=blue\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">![License</a>](LICENSE)<a href=\"https://img.shields.io/github/stars/Comfy-Org/Comfy-Desktop?style=flat&amp;logo=github&amp;color=f5c518\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">![Stars</a>](https://github.com/Comfy-Org/Comfy-Desktop/stargazers)<a href=\"https://img.shields.io/badge/Discord-comfy.org-5865F2?style=flat&amp;logo=discord&amp;logoColor=white\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">![Discord</a>](https://www.comfy.org/discord) !<a href=\"https://img.shields.io/badge/platforms-Windows%20%C2%B7%20macOS-555?style=flat\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Platforms</a></p>\n<p>[<strong>Download</strong>](#download) · [<strong>Getting Started</strong>](#getting-started) · [<strong>Contributing</strong>](#development) ·<a href=\"https://www.comfy.org/discord\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><strong>Discord</strong></a></p>\n<p>&lt;/div&gt;</p>\n<p>---</p>\n<p>Comfy Desktop is the official desktop application for<strong>ComfyUI</strong>, the node-based engine for generative AI. It installs ComfyUI into a self-contained, GPU-ready environment, lets you run<strong>multiple independent setups side by side</strong>, and keeps them updated — so you spend your time building workflows instead of fighting Python, CUDA, and pip.</p>\n<p>&lt;div align=\"center\"&gt; &lt;img src=\"assets/hero.png\" alt=\"Comfy Desktop — run multiple ComfyUI installs side by side from one app\" width=\"820\" /&gt; &lt;/div&gt;</p>\n<h4>Features</h4>\n<ul><li>🧩<strong>Multiple installs, side by side</strong>— run as many independent ComfyUI setups as you like, each with its own version, models, and custom nodes. Switch between them without conflicts.</li><li>📦<strong>Isolated, GPU-ready environments</strong>— each install ships a relocatable Python with PyTorch and GPU wheels prebuilt. No pip/uv failures, no CUDA roulette at install time.</li><li>🔄<strong>One-click updates</strong>— update ComfyUI (and custom nodes) to the latest version in place. No terminal, no git, no re-downloading the multi-gigabyte environment.</li><li>📸<strong>Snapshots &amp; rollback</strong>— back up an install and restore it if an update or a custom node breaks something.</li><li>📥<strong>Bring your existing setup</strong>— adopt and migrate existing ComfyUI installations (portable, git, or a previous desktop install) in place.</li><li>🖥️<strong>Cross-platform</strong>— Windows, macOS, and Linux.</li><li>⬆️<strong>Built-in auto-updates</strong>— the app keeps itself current.</li><li>🛠️<strong>Works without system Git</strong>— bundles a tiny Python +<code>pygit2</code>bootstrap so clones work on a clean machine.</li></ul>\n<h4>Download</h4>\n<p>&lt;div align=\"center\"&gt;</p>\n<p><a href=\"https://img.shields.io/badge/%E2%AC%87%20Download%20Comfy%20Desktop-Windows%20%C2%B7%20macOS-4f46e5?style=for-the-badge\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">![Download Comfy Desktop</a>](https://dl.todesktop.com/241130tqe9q3y)</p>\n<p><strong><a href=\"https://dl.todesktop.com/241130tqe9q3y\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">dl.todesktop.com/241130tqe9q3y</a></strong>— one link, auto-detects your platform.</p>\n<p>&lt;/div&gt;</p>\n<p>&gt;<strong>New to ComfyUI?</strong>Just download, install, and open the app — it walks you through creating your first setup. No terminal required.</p>\n<p><strong>Requirements:</strong>Windows, macOS (Apple Silicon), or Linux. A dedicated GPU (NVIDIA / AMD) or Apple Silicon is recommended for good performance, but not required.</p>\n<p>&lt;details&gt; &lt;summary&gt;&lt;b&gt;Install instructions per platform&lt;/b&gt;&lt;/summary&gt;</p>\n<p><strong>Windows</strong>— run the NSIS installer (<code>.exe</code>) and launch from the Start Menu or desktop shortcut.</p>\n<p><strong>macOS</strong>— open the<code>.dmg</code>, drag<strong>Comfy Desktop</strong>to Applications, and launch from there.</p>\n<p><strong>Linux</strong>—<code>.deb</code>(Debian/Ubuntu), from the directory you downloaded it to:</p>\n<pre><code>sudo apt install ./*.deb</code></pre>\n<p>AppImage:</p>\n<pre><code>chmod +x ./*.AppImage\n./*.AppImage --no-sandbox</code></pre>\n<p>Then launch from your application menu.</p>\n<p>&lt;/details&gt;</p>\n<h4>Getting Started</h4>\n<ol><li><strong>Download and install</strong>Comfy Desktop for your OS (above).</li><li><strong>Launch the app.</strong></li><li><strong>Create a new install</strong>— pick a standalone, GPU-ready environment and Comfy Desktop downloads and provisions it for you. (Already have a ComfyUI install? Import it instead.)</li><li><strong>Hit launch</strong>— the app starts ComfyUI and opens it, ready to build.</li></ol>\n<p>From there you can add more installs, take snapshots before risky changes, and update ComfyUI or its custom nodes per install.</p>\n<h4>Development</h4>\n<p>Contributions are welcome. The app is an<a href=\"https://www.electronjs.org/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Electron</a>+<a href=\"https://vuejs.org/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Vue 3</a>+<a href=\"https://www.typescriptlang.org/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">TypeScript</a>project built with<a href=\"https://electron-vite.org/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">electron-vite</a>.</p>\n<h4>Prerequisites</h4>\n<ul><li><a href=\"https://nodejs.org/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><strong>Node.js</strong></a>v22 LTS or later</li><li><a href=\"https://pnpm.io/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><strong>pnpm</strong></a>v10 or later (via Corepack)</li></ul>\n<pre><code>nvm install 22 &amp;&amp; nvm use 22 # recommended — https://github.com/nvm-sh/nvm\ncorepack enable # enables pnpm (bundled with Node)</code></pre>\n<h4>Setup</h4>\n<pre><code>git clone https://github.com/Comfy-Org/Comfy-Desktop.git\ncd Comfy-Desktop\npnpm run init</code></pre>\n<p><code>pnpm run init</code>is the one-shot for a fresh clone: it runs<code>pnpm install</code>(with the<code>postinstall</code>+ husky hooks) and<code></code></p>",
+            "text": "<div align=\"center\">\n<img src=\"assets/Comfy_Logo_x512.png\" alt=\"Comfy Desktop\" width=\"128\" />\nComfy Desktop\nInstall, run, and manage ComfyUI from one app — no dependency hell.\n![Release ](https://github.com/Comfy-Org/Comfy-Desktop/releases/latest) ![CI ](https://github.com/Comfy-Org/Comfy-Desktop/actions/workflows/ci.yml) ![License ](LICENSE) ![Stars ](https://github.com/Comfy-Org/Comfy-Desktop/stargazers) ![Discord ](https://www.comfy.org/discord) ! Platforms\n[ Download ](#download) · [ Getting Started ](#getting-started) · [ Contributing ](#development) · Discord\n</div>\n---\nComfy Desktop is the official desktop application for ComfyUI , the node-based engine for generative AI. It installs ComfyUI into a self-contained, GPU-ready environment, lets you run multiple independent setups side by side , and keeps them updated — so you spend your time building workflows instead of fighting Python, CUDA, and pip.\n<div align=\"center\"> <img src=\"assets/hero.png\" alt=\"Comfy Desktop — run multiple ComfyUI installs side by side from one app\" width=\"820\" /> </div>\nFeatures\n🧩 Multiple installs, side by side — run as many independent ComfyUI setups as you like, each with its own version, models, and custom nodes. Switch between them without conflicts.\n📦 Isolated, GPU-ready environments — each install ships a relocatable Python with PyTorch and GPU wheels prebuilt. No pip/uv failures, no CUDA roulette at install time.\n🔄 One-click updates — update ComfyUI (and custom nodes) to the latest version in place. No terminal, no git, no re-downloading the multi-gigabyte environment.\n📸 Snapshots & rollback — back up an install and restore it if an update or a custom node breaks something.\n📥 Bring your existing setup — adopt and migrate existing ComfyUI installations (portable, git, or a previous desktop install) in place.\n🖥️ Cross-platform — Windows, macOS, and Linux.\n⬆️ Built-in auto-updates — the app keeps itself current.\n🛠️ Works without system Git — bundles a tiny Python + pygit2 bootstrap so clones work on a clean machine.\nDownload\n<div align=\"center\">\n![Download Comfy Desktop ](https://dl.todesktop.com/241130tqe9q3y)\ndl.todesktop.com/241130tqe9q3y — one link, auto-detects your platform.\n</div>\n> New to ComfyUI? Just download, install, and open the app — it walks you through creating your first setup. No terminal required.\nRequirements: Windows, macOS (Apple Silicon), or Linux. A dedicated GPU (NVIDIA / AMD) or Apple Silicon is recommended for good performance, but not required.\n<details> <summary><b>Install instructions per platform</b></summary>\nWindows — run the NSIS installer ( .exe ) and launch from the Start Menu or desktop shortcut.\nmacOS — open the .dmg , drag Comfy Desktop to Applications, and launch from there.\nLinux — .deb (Debian/Ubuntu), from the directory you downloaded it to:\nsudo apt install ./*.deb\nAppImage:\nchmod +x ./*.AppImage\n./*.AppImage --no-sandbox\nThen launch from your application menu.\n</details>\nGetting Started\nDownload and install Comfy Desktop for your OS (above).\nLaunch the app.\nCreate a new install — pick a standalone, GPU-ready environment and Comfy Desktop downloads and provisions it for you. (Already have a ComfyUI install? Import it instead.)\nHit launch — the app starts ComfyUI and opens it, ready to build.\nFrom there you can add more installs, take snapshots before risky changes, and update ComfyUI or its custom nodes per install.\nDevelopment\nContributions are welcome. The app is an Electron + Vue 3 + TypeScript project built with electron-vite .\nPrerequisites\nNode.js v22 LTS or later\npnpm v10 or later (via Corepack)\nnvm install 22 && nvm use 22 # recommended — https://github.com/nvm-sh/nvm\ncorepack enable # enables pnpm (bundled with Node)\nSetup\ngit clone https://github.com/Comfy-Org/Comfy-Desktop.git\ncd Comfy-Desktop\npnpm run init\npnpm run init is the one-shot for a fresh clone: it runs pnpm install (with the postinstall + husky hooks) and",
+            "lead": "<div align=\"center\">\n<img src=\"assets/Comfy_Logo_x512.png\" alt=\"Comfy Desktop\" width=\"128\" />\nComfy Desktop\nInstall, run, and manage ComfyUI from one app — no dependency hell.\n![Release ](https://github.com/Comfy-Org/Comfy-Desktop/releases/latest) ![CI ](https://github.com/Comfy-Org/Comfy-Desktop/actions/workflows/ci.yml) ![License ](LICENSE) ![Stars ](https://github.com/Comfy-Org/Comfy-Desktop/stargazers) ![Discord ](https://www.comfy.org/discord) ! Platf",
+            "chars": 10099,
+            "shown": 3987,
+            "truncated": true
+          },
+          "quality": 10,
+          "score": 20.6,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 1,
+          "slug": "03e5608fc878",
+          "action": 3,
+          "rank": 14.8,
+          "tags": [
+            "generate"
+          ]
+        },
+        {
+          "sourceId": "gh-releases",
+          "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "github-actions[bot]",
+          "id": "441713646",
+          "title": "llama.cpp b12284 发布",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12284",
+          "published": "2026-11-11T13:13:19.000Z",
+          "summary": "CUDA: Add OCP FP8 support (#28413) Initial CUDA WIP version Use fp8 intrinsics Do W8A16 for FP8 in GEMV case (base) osimons@ub-osimons:~/lcpp_fp8.git$ ./build-x64-linux-gcc-reldbg/bin/llama-bench -m /mnt/share/gguf/nvidia/Qwen3.6-27B-NVFP4/Qwen3.6-27B-NVFP4_fp8.gguf -p 8196 -ub 512,2048 -d 0,32000 -n 256 --load-mode d…",
+          "content": {
+            "html": "<p>&lt;details open&gt;</p>\n<p>CUDA: Add OCP FP8 support (#28413)</p>\n<ul><li>Initial CUDA WIP version</li></ul>\n<ul><li>Use fp8 intrinsics</li></ul>\n<ul><li>Do W8A16 for FP8 in GEMV case</li></ul>\n<p>(base) osimons@ub-osimons:~/lcpp_fp8.git$ ./build-x64-linux-gcc-reldbg/bin/llama-bench -m /mnt/share/gguf/nvidia/Qwen3.6-27B-NVFP4/Qwen3.6-27B-NVFP4_fp8.gguf -p 8196 -ub 512,2048 -d 0,32000 -n 256 --load-mode dio ggml_cuda_init: found 1 CUDA devices (Total VRAM: 32165 MiB): Device 0: NVIDIA RTX PRO 4500 Blackwell, compute capability 12.0, VMM: yes, VRAM: 32165 MiB | model | size | params | backend | ngl | n_ubatch | lm | test | t/s | | ------------------------------ | ---------: | ---------: | ---------- | --: | -------: | ---------: | --------------: | -------------------: | | qwen35 27B NVFP4 | 19.56 GiB | 27.32 B | CUDA | -1 | 512 | dio | pp8196 | 2781.53 ± 8.48 | | qwen35 27B NVFP4 | 19.56 GiB | 27.32 B | CUDA | -1 | 512 | dio | tg256 | 37.56 ± 0.02 | | qwen35 27B NVFP4 | 19.56 GiB | 27.32 B | CUDA | -1 | 512 | dio | pp8196 @ d32000 | 1616.31 ± 2.61 | | qwen35 27B NVFP4 | 19.56 GiB | 27.32 B | CUDA | -1 | 512 | dio | tg256 @ d32000 | 34.11 ± 0.03 | | qwen35 27B NVFP4 | 19.56 GiB | 27.32 B | CUDA | -1 | 2048 | dio | pp8196 | 2542.00 ± 0.51 | | qwen35 27B NVFP4 | 19.56 GiB | 27.32 B | CUDA | -1 | 2048 | dio | tg256 | 37.36 ± 0.02 | | qwen35 27B NVFP4 | 19.56 GiB | 27.32 B | CUDA | -1 | 2048 | dio | pp8196 @ d32000 | 1762.86 ± 1.33 | | qwen35 27B NVFP4 | 19.56 GiB | 27.32 B | CUDA | -1 | 2048 | dio | tg256 @ d32000 | 34.09 ± 0.02 |</p>\n<ul><li>Optimize GEMV kernel for FP8</li></ul>\n<ul><li>Guard __nv_cvt_fp8x2_to_bf162raw on CTK 13.2</li></ul>\n<p>Fixes https://github.com/ggml-org/llama.cpp/pull/28413#discussion_r4044500099</p>\n<ul><li>Remove trailing whitespace</li></ul>\n<ul><li>Add supported for strided copies to/from FP8 in CUDA</li></ul>\n<ul><li>Prepare Q_reg for FP8 FlashAttention in fattn-vec.cuh</li></ul>\n<ul><li>Fix odd-rows for convert/getrows, possible with FP8</li></ul>\n<ul><li>Fix FP8 fallback in cuBlas</li></ul>\n<ul><li>Gate mmvf_f8x2_e4m3_to_bf162 on FP8 availability, i.e. CTK &gt;= 11.8</li></ul>\n<ul><li>Restrict (fused) MMVF to 2*ts alignment, and cublas FP8 fo 16-byte</li></ul>\n<ul><li>Add todo about accumulator/precision honoring</li></ul>\n<p>This is beyond the scope of the stacked PR</p>\n<ul><li>Avoid races in fp8_fallback</li></ul>\n<ul><li>Allow Hopper and other BW SKUs for FP8</li></ul>\n<ul><li>Use intrinsic over explicit manual conversions</li></ul>\n<ul><li>Resolve TODO</li></ul>\n<p>As per spec, we don't have to preserve signs</p>\n<ul><li>Add commend on cublaslt workspaces</li></ul>\n<ul><li>Use convert_unary_cont_cuda over block dequant in convert.cu</li></ul>\n<ul><li>Use get_rows_cuda_float for fp8 kv cache</li></ul>\n<ul><li>Make FP8 copies work on all IHV's</li></ul>\n<ul><li>More cleanup</li></ul>\n<ul><li>Simplify by falling back to shared cuBLAS helper</li></ul>\n<ul><li>Fuse weight_scale multiplication for FP8 also</li></ul>\n<ul><li>More code-cleanup</li></ul>\n<ul><li>Guard __nv_cvt_fp8x2_to_bf162raw on CTK 13.4</li></ul>\n<p>Only cvt.rn.bf16x2.e4m3x2 is exposed from 13.2 onwards, so 93e98b9203dfacb85f9ac665f5f0482a8c6b4192 was incorrect fix</p>\n<ul><li>Use F32 activations in fallback mmvf path</li></ul>\n<ul><li>Explicitly link against cublaslt</li></ul>\n<ul><li>Move FP8 conversion intrinsics into ggml_cuda_cast</li></ul>\n<p>Cleaner this way</p>\n<ul><li>WIP src1/prec for fp8 in MMVF</li></ul>\n<ul><li>Remove comment</li></ul>\n<ul><li>Keep only f8 x f8 KV cache for now</li></ul>\n<ul><li>Just do FP8 x FP32 x FP32 in MMVF as its fast enough</li></ul>\n<ul><li>Update ggml/src/ggml-cuda/ggml-cuda.cu</li></ul>\n<p>Co-authored-by: Aman Gupta &lt;amangupta052@gmail.com&gt;</p>\n<ul><li>Add batched FP8 GEMMS in cublas as suggested by code review</li></ul>\n<p>https://github.com/ggml-org/llama.cpp/pull/28413#issuecomment-6676015644</p>\n<ul><li>Extract fp8x2 -&gt; float2 load into helper</li></ul>\n<ul><li>Searapte copy checks to/from fp8</li></ul>\n<ul><li>Compiler massaging to avoid repeated address offsets</li></ul>\n<p>---------</p>\n<p>Co-authored-by: Aman Gupta &lt;amangupta052@gmail.com&gt;</p>\n<p>&lt;/details&gt;</p>\n<p><strong>Website:</strong></p>\n<ul><li>&lt;https://llama.app&gt;</li></ul>\n<p><strong>Attestations:</strong></p>\n<ul><li>&lt;https://github.com/ggml-org/llama.cpp/attestations/66285066&gt;</li></ul>\n<p><strong>macOS/iOS:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12284/llama-b12284-bin-macos-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">macOS Apple Silicon (arm64)</a></li><li>macOS Apple Silicon (arm64, KleidiAI enabled)<a href=\"https://github.com/ggml-org/llama.cpp/pull/23780\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">DISABLED</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12284/llama-b12284-bin-macos-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">macOS Intel (x64)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12284/llama-b12284-xcframework.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">iOS XCFramework</a></li></ul>\n<p><strong>Linux:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12284/llama-b12284-bin-ubuntu-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12284/llama-b12284-bin-ubuntu-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu arm64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12284/llama-b12284-bin-ubuntu-s390x.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu 24.04 s390x (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12284/llama-b12284-bin-ubuntu-26.04-s390x.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu 26.04 s390x (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12284/llama-b12284-bin-ubuntu-zdnn-s390x.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu 26.04 s390x (zDNN)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12284/llama-b12284-bin-ubuntu-vulkan-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12284/llama-b12284-bin-ubuntu-vulkan-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu arm64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12284/llama-b12284-bin-ubuntu-cuda-12.8-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (CUDA 12)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12284/cudart-llama-b12284-bin-ubuntu-cuda-12.8-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 12.8 libraries</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12284/llama-b12284-bin-ubuntu-cuda-13.5-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12284/cudart-llama-b12284-bin-ubuntu-cuda-13.5-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 libraries</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12284/llama-b12284-bin-ubuntu-cuda-13.5-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"></a></li></ul>",
+            "text": "<details open>\nCUDA: Add OCP FP8 support (#28413)\nInitial CUDA WIP version\nUse fp8 intrinsics\nDo W8A16 for FP8 in GEMV case\n(base) osimons@ub-osimons:~/lcpp_fp8.git$ ./build-x64-linux-gcc-reldbg/bin/llama-bench -m /mnt/share/gguf/nvidia/Qwen3.6-27B-NVFP4/Qwen3.6-27B-NVFP4_fp8.gguf -p 8196 -ub 512,2048 -d 0,32000 -n 256 --load-mode dio ggml_cuda_init: found 1 CUDA devices (Total VRAM: 32165 MiB): Device 0: NVIDIA RTX PRO 4500 Blackwell, compute capability 12.0, VMM: yes, VRAM: 32165 MiB | model | size | params | backend | ngl | n_ubatch | lm | test | t/s | | ------------------------------ | ---------: | ---------: | ---------- | --: | -------: | ---------: | --------------: | -------------------: | | qwen35 27B NVFP4 | 19.56 GiB | 27.32 B | CUDA | -1 | 512 | dio | pp8196 | 2781.53 ± 8.48 | | qwen35 27B NVFP4 | 19.56 GiB | 27.32 B | CUDA | -1 | 512 | dio | tg256 | 37.56 ± 0.02 | | qwen35 27B NVFP4 | 19.56 GiB | 27.32 B | CUDA | -1 | 512 | dio | pp8196 @ d32000 | 1616.31 ± 2.61 | | qwen35 27B NVFP4 | 19.56 GiB | 27.32 B | CUDA | -1 | 512 | dio | tg256 @ d32000 | 34.11 ± 0.03 | | qwen35 27B NVFP4 | 19.56 GiB | 27.32 B | CUDA | -1 | 2048 | dio | pp8196 | 2542.00 ± 0.51 | | qwen35 27B NVFP4 | 19.56 GiB | 27.32 B | CUDA | -1 | 2048 | dio | tg256 | 37.36 ± 0.02 | | qwen35 27B NVFP4 | 19.56 GiB | 27.32 B | CUDA | -1 | 2048 | dio | pp8196 @ d32000 | 1762.86 ± 1.33 | | qwen35 27B NVFP4 | 19.56 GiB | 27.32 B | CUDA | -1 | 2048 | dio | tg256 @ d32000 | 34.09 ± 0.02 |\nOptimize GEMV kernel for FP8\nGuard __nv_cvt_fp8x2_to_bf162raw on CTK 13.2\nFixes https://github.com/ggml-org/llama.cpp/pull/28413#discussion_r4044500099\nRemove trailing whitespace\nAdd supported for strided copies to/from FP8 in CUDA\nPrepare Q_reg for FP8 FlashAttention in fattn-vec.cuh\nFix odd-rows for convert/getrows, possible with FP8\nFix FP8 fallback in cuBlas\nGate mmvf_f8x2_e4m3_to_bf162 on FP8 availability, i.e. CTK >= 11.8\nRestrict (fused) MMVF to 2*ts alignment, and cublas FP8 fo 16-byte\nAdd todo about accumulator/precision honoring\nThis is beyond the scope of the stacked PR\nAvoid races in fp8_fallback\nAllow Hopper and other BW SKUs for FP8\nUse intrinsic over explicit manual conversions\nResolve TODO\nAs per spec, we don't have to preserve signs\nAdd commend on cublaslt workspaces\nUse convert_unary_cont_cuda over block dequant in convert.cu\nUse get_rows_cuda_float for fp8 kv cache\nMake FP8 copies work on all IHV's\nMore cleanup\nSimplify by falling back to shared cuBLAS helper\nFuse weight_scale multiplication for FP8 also\nMore code-cleanup\nGuard __nv_cvt_fp8x2_to_bf162raw on CTK 13.4\nOnly cvt.rn.bf16x2.e4m3x2 is exposed from 13.2 onwards, so 93e98b9203dfacb85f9ac665f5f0482a8c6b4192 was incorrect fix\nUse F32 activations in fallback mmvf path\nExplicitly link against cublaslt\nMove FP8 conversion intrinsics into ggml_cuda_cast\nCleaner this way\nWIP src1/prec for fp8 in MMVF\nRemove comment\nKeep only f8 x f8 KV cache for now\nJust do FP8 x FP32 x FP32 in MMVF as its fast enough\nUpdate ggml/src/ggml-cuda/ggml-cuda.cu\nCo-authored-by: Aman Gupta <amangupta052@gmail.com>\nAdd batched FP8 GEMMS in cublas as suggested by code review\nhttps://github.com/ggml-org/llama.cpp/pull/28413#issuecomment-6676015644\nExtract fp8x2 -> float2 load into helper\nSearapte copy checks to/from fp8\nCompiler massaging to avoid repeated address offsets\n---------\nCo-authored-by: Aman Gupta <amangupta052@gmail.com>\n</details>\nWebsite:\n<https://llama.app>\nAttestations:\n<https://github.com/ggml-org/llama.cpp/attestations/66285066>\nmacOS/iOS:\nmacOS Apple Silicon (arm64)\nmacOS Apple Silicon (arm64, KleidiAI enabled) DISABLED\nmacOS Intel (x64)\niOS XCFramework\nLinux:\nUbuntu x64 (CPU)\nUbuntu arm64 (CPU)\nUbuntu 24.04 s390x (CPU)\nUbuntu 26.04 s390x (CPU)\nUbuntu 26.04 s390x (zDNN)\nUbuntu x64 (Vulkan)\nUbuntu arm64 (Vulkan)\nUbuntu x64 (CUDA 12) - CUDA 12.8 libraries\nUbuntu x64 (CUDA 13) - CUDA 13.5 libraries",
+            "lead": "<details open>\nCUDA: Add OCP FP8 support (#28413)\nInitial CUDA WIP version\nUse fp8 intrinsics\nDo W8A16 for FP8 in GEMV case\n(base) osimons@ub-osimons:~/lcpp_fp8.git$ ./build-x64-linux-gcc-reldbg/bin/llama-bench -m /mnt/share/gguf/nvidia/Qwen3.6-27B-NVFP4/Qwen3.6-27B-NVFP4_fp8.gguf -p 8196 -ub 512,2048 -d 0,32000 -n 256 --load-mode dio ggml_cuda_init: found 1 CUDA devices (Total VRAM: 32165 MiB): Device 0: NVIDIA RTX PRO 4500 Blackwell, compute capability 1",
+            "chars": 4776,
+            "shown": 3990,
+            "truncated": true
+          },
+          "quality": 8,
+          "score": 20.4,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 1,
+          "slug": "8968483fab75",
+          "action": 2,
+          "rank": 11.2,
+          "tags": [
+            "local",
+            "lowspec"
+          ]
+        },
+        {
+          "sourceId": "reddit-local-llama",
+          "sourceName": "r/LocalLLaMA",
+          "title": "DeepSeek 4.1 running local...",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xti4bc/deepseek_41_running_local/",
+          "id": "t3_1xti4bc",
+          "published": "2026-11-11T13:45:30.000Z",
+          "summary": "Just a 32GB machine with a 3090 - a used gaming rig I picked up last Christmas for $800. But wow... I can actually run what would have been a frontier model not that long ago. Yes, only 2 - 3 tps. Yes only 2 quant. So it's not really useful at the moment. But I have 128GB of ram in hand and a spare 3060 ready to be in…",
+          "content": {
+            "html": "<table><tr><td><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xti4bc/deepseek_41_running_local/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://preview.redd.it/5atf14o1mz0i1.png?width=140&amp;height=77&amp;auto=webp&amp;s=0d6cf575fae05b273d7a90cae9d27d6ebd1d0761\" alt=\"DeepSeek 4.1 running local...\" loading=\"lazy\"></a></td><td><div><p>Just a 32GB machine with a 3090 - a used gaming rig I picked up last Christmas for $800. But wow... I can actually run what would have been a frontier model not that long ago. Yes, only 2 - 3 tps. Yes only 2 quant. So it's not really useful at the moment. But I have 128GB of ram in hand and a spare 3060 ready to be installed. Possibly another 3090 waiting in the wings... so we will see.</p><p><a href=\"https://preview.redd.it/5atf14o1mz0i1.png?width=2542&amp;format=png&amp;auto=webp&amp;s=a51386319ae32280121328308e701082091f51b3\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://preview.redd.it/5atf14o1mz0i1.png?width=2542&amp;format=png&amp;auto=webp&amp;s=a51386319ae32280121328308e701082091f51b3</a></p><p><a href=\"https://preview.redd.it/ylfophqhlz0i1.png?width=1489&amp;format=png&amp;auto=webp&amp;s=1e25deb55d0b5c4f6e793da28c31785bde0cb1b0\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://preview.redd.it/ylfophqhlz0i1.png?width=1489&amp;format=png&amp;auto=webp&amp;s=1e25deb55d0b5c4f6e793da28c31785bde0cb1b0</a></p></div>submitted by<a href=\"https://www.reddit.com/user/LankyGuitar6528\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">/u/LankyGuitar6528</a><br><span><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xti4bc/deepseek_41_running_local/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[link]</a></span><span><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xti4bc/deepseek_41_running_local/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[comments]</a></span></td></tr></table>",
+            "text": "Just a 32GB machine with a 3090 - a used gaming rig I picked up last Christmas for $800. But wow... I can actually run what would have been a frontier model not that long ago. Yes, only 2 - 3 tps. Yes only 2 quant. So it's not really useful at the moment. But I have 128GB of ram in hand and a spare 3060 ready to be installed. Possibly another 3090 waiting in the wings... so we will see.\nhttps://preview.redd.it/5atf14o1mz0i1.png?width=2542&format=png&auto=webp&s=a51386319ae32280121328308e701082091f51b3\nhttps://preview.redd.it/ylfophqhlz0i1.png?width=1489&format=png&auto=webp&s=1e25deb55d0b5c4f6e793da28c31785bde0cb1b0\nsubmitted by /u/LankyGuitar6528\n[link] [comments]",
+            "lead": "Just a 32GB machine with a 3090 - a used gaming rig I picked up last Christmas for $800. But wow... I can actually run what would have been a frontier model not that long ago. Yes, only 2 - 3 tps. Yes only 2 quant. So it's not really useful at the moment. But I have 128GB of ram in hand and a spare 3060 ready to be installed. Possibly another 3090 waiting in the wings... so we will see.\nhttps://preview.redd.it/5atf14o1mz0i1.png?width=2542&format=png&auto=w",
+            "chars": 683,
+            "shown": 683,
+            "truncated": false
+          },
+          "categories": [
+            "LocalLLaMA"
+          ],
+          "author": "/u/LankyGuitar6528",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "oss",
+          "metrics": {},
+          "quality": 6,
+          "score": 13.05,
+          "category": "hardware",
+          "subcategory": null,
+          "practical": 1,
+          "slug": "444ccf25a91a",
+          "action": 2,
+          "rank": 9.2,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "local",
+      "label": "本地开源",
+      "items": [
+        {
+          "sourceId": "lcz-media",
+          "sourceName": "抡锤者 AI 音视频画图",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "apps",
+          "categories": [],
+          "author": "cc tgo",
+          "id": "2986",
+          "title": "Mac 用引擎自带脚本跑通 MiniMax-H3-Image：84 秒一张 5K 图，全程本地",
+          "url": "https://lcz.me/topic/2986",
+          "published": "2026-11-11T11:51:09.132Z",
+          "summary": "Mac 上跑通了 MiniMax-H3-Image：84 秒一张 5K 图，全程本地 折腾了一下午，把 Phosphene + MiniMax-H3-Image 开源图像模型在 M5 Ultra 上跑通了。踩的坑和命令都记在这儿，新鲜出炉想抄的直接抄。 先说结果 两张测试图都在楼下，都是本机出的，没碰任何云端 API。",
+          "metrics": {
+            "points": 0,
+            "comments": 1,
+            "views": 43
+          },
+          "excellent": false,
+          "content": {
+            "html": "<h3>Mac 上跑通了 MiniMax-H3-Image：84 秒一张 5K 图，全程本地</h3>\n<p><img src=\"https://upload.lcz.me/uploads/ebe42a57-0d6e-452f-99d2-4c5c8e5cee94.png\" alt=\"Snapzy_2026-11-11_19-28-27_999_processed.png\" loading=\"lazy\"></p>\n<blockquote><p>折腾了一下午，把 Phosphene + MiniMax-H3-Image 开源图像模型在 M5 Ultra 上跑通了。踩的坑和命令都记在这儿，新鲜出炉想抄的直接抄。</p></blockquote>\n<hr><h3>先说结果</h3>\n<p>两张测试图都在楼下，都是本机出的，没碰任何云端 API。</p>\n<table><thead><tr><th>档位</th><th>输出</th><th>耗时</th><th>内存峰值</th></tr></thead><tbody><tr><td>4MP</td><td>2720 × 1536</td><td>22.6 秒</td><td>27.6 GB</td></tr><tr><td>16MP</td><td>5472 × 3072</td><td>83.5 秒</td><td>27.8 GB</td></tr></tbody></table>\n<p>机器是 M5 Ultra 256GB，Python 3.13，模型钉的是<code>6534ea1c</code>这个 revision。</p>\n<p>有两件事跟我预期不一样，先说在前面：</p>\n<p>一是内存。官方说要 48GB 起，我一开始做好了它吃掉大几十 GB 的准备，结果峰值只有 27.8GB——它是分段加载的，28GB 的文本编码用完就放，再上 20GB 的量化 DiT。也就是说 64GB 的机器应该真能跑，不是我这种 256GB 大户专属。</p>\n<p>二是快慢。耗时几乎全在去噪那 6 步上，16MP 每步 12 秒出头。没有 CFG 没有负向提示词这些额外开销，6 步就是 6 步。</p>\n<hr><h3>这是套是什么东西</h3>\n<p>Phosphene 是个 MIT 协议的 Mac 本地 AI 工作室，视频图像音乐都有，v5.0.15 版本起支持 MiniMax-H3-Image——MiniMax 开源的纯文生图模型。底层引擎 minimax-h3-mlx 也是开源的。</p>\n<p>我没装它的 Pinokio 和 Mac App，直接用引擎自带的脚本跑。理由很简单：依赖少，路径全在自己手里，坏了知道哪儿坏的。下面的步骤就是这条路线。</p>\n<hr><h3>装之前备好这些</h3>\n<ul><li>Apple Silicon，官方口径 ≥48GB 统一内存（我实测峰值 27.8GB，64GB 机器够呛但应该能跑，有 64GB 机器的兄弟可以验证下）</li><li>磁盘先留 90GB：源分片 68.6GB + 量化后 20GB。量化确认没问题后源分片可以删，能回收 68.6GB</li><li>Python 3.13，brew 装一个就行，别动系统自带的</li></ul>\n<hr><h3>抄作业</h3>\n<h3>① 拉引擎，注意要 checkout 到指定提交</h3>\n<p>main 分支上没有图像脚本，得切到这个提交：</p>\n<pre><code>git clone https://github.com/mrbizarro/minimax-h3-mlx.git\ncd minimax-h3-mlx\ngit checkout d65ec9f710fce31fbe9efa375537b5c94d83d7fe\npython3.13 -m venv ../venv\n../venv/bin/pip install -r requirements.txt</code></pre>\n<h3>② 下模型</h3>\n<p>仓库<code>MiniMaxAI/MiniMax-H3-Image</code>，revision<code>6534ea1c979a5f8cb00c2bd1025d5ca4ee8d8901</code>。国内直接连 huggingface 费劲的话，URL 里的域名换成<a href=\"http://hf-mirror.com/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">hf-mirror.com</a>就行，浏览器、IDM、aria2 随意：</p>\n<pre><code>https://hf-mirror.com/MiniMaxAI/MiniMax-H3-Image/resolve/6534ea1c979a5f8cb00c2bd1025d5ca4ee8d8901/&lt;路径&gt;</code></pre>\n<p>一共 20 个文件，按这个结构摆（模型根目录假设叫<code>models/minimax-h3-image/</code>）：</p>\n<pre><code>models/minimax-h3-image/\n├── LICENSE\n├── model_index.json\n├── pdd_config.json\n├── pdd_fused_heads.safetensors (12 MB)\n├── vae/\n│ ├── config.json\n│ └── diffusion_pytorch_model.safetensors (2.3 GB)\n└── source/transformer/\n├── config.json\n├── model.safetensors.index.json\n└── model-00001-of-00012.safetensors … model-00012-of-00012.safetensors\n(12 片，共 66.3 GB)</code></pre>\n<p>文本编码器是另一个仓库的，单独拿两个文件：</p>\n<pre><code>models/text/\n├── text_encoder.safetensors ← ddalcu/MiniMax-H3-FL2VA-MLX-Serve-8bit 仓库（28.2 GB）\n└── config.json ← MiniMaxAI/MiniMax-H3 仓库里的 FL2VA/text_encoder/config.json</code></pre>\n<p>要是你之前用 mlx 跑过 H3 视频包，这个 text_encoder 直接拿现成的，先对一下 sha256 再复用，能省 28GB 下载。我就是这么省的。</p>\n<h3>③ 校验加量化，一条命令</h3>\n<pre><code>../venv/bin/python scripts/fetch_h3_image.py \\\n--dir ../models/minimax-h3-image --accepted --keep-source</code></pre>\n<p>已经下好的文件它只做 sha256 校验不会重新下，这点放心。校验过了就逐片量化成 8-bit，顺手把 AdaLN 表预计算好，产出<code>dit/</code>目录（20GB）。我这边跑了十几分钟，看到<code>PACK OK</code>就是成了。</p>\n<h3>④ 出图</h3>\n<pre><code>../venv/bin/python scripts/generate_h3_image.py \"你的英文提示词\" \\\n-o out.png \\\n--root ../models/minimax-h3-image \\\n--text-dir ../models/text \\\n--text-config ../models/text/config.json \\\n--aspect 16:9 --mp 16 --seed 7</code></pre>\n<p><code>--mp</code>就三档：4、8、16。seed 固定住能复现，加<code>--metrics metrics.json</code>会把每段耗时落下来，想看瓶颈在哪就加。</p>\n<hr><h3>两张测试图论坛图片大小有限制做了分辨率降低，提示词原文奉上</h3>\n<p>第一张试水，4MP，22.6 秒：</p>\n<pre><code>A weathered wooden fishing boat resting on a black sand beach at dawn, low golden sunlight raking across wet sand, thin mist over calm water, distant volcanic ridge behind, shot on 35mm film, medium format look, soft natural grain, warm muted palette, quiet documentary photography style</code></pre>\n<p><img src=\"https://upload.lcz.me/uploads/c980b646-673d-4b1b-a91c-9989ad5a40a7.png\" alt=\"out-h3i-test_processed.png\" loading=\"lazy\"></p>\n<p>黑沙的质感、水雾、侧逆光都扎实，颗粒感像胶片，直接能用的水平。</p>\n<p>第二张是我故意刁难它的，16MP，83.5 秒。中文招牌字、英文刻字、机械手套五根手指、杯壁水珠、窗下睡猫，全塞一条里：</p>\n<pre><code>Cinematic 8K ultra-detailed wide-angle shot. In the center-right of the frame, a focused young East…</code></pre>",
+            "text": "Mac 上跑通了 MiniMax-H3-Image：84 秒一张 5K 图，全程本地\n折腾了一下午，把 Phosphene + MiniMax-H3-Image 开源图像模型在 M5 Ultra 上跑通了。踩的坑和命令都记在这儿，新鲜出炉想抄的直接抄。\n先说结果\n两张测试图都在楼下，都是本机出的，没碰任何云端 API。\n档位\n输出\n耗时\n内存峰值\n4MP\n2720 × 1536\n22.6 秒\n27.6 GB\n16MP\n5472 × 3072\n83.5 秒\n27.8 GB\n机器是 M5 Ultra 256GB，Python 3.13，模型钉的是 6534ea1c 这个 revision。\n有两件事跟我预期不一样，先说在前面：\n一是内存。官方说要 48GB 起，我一开始做好了它吃掉大几十 GB 的准备，结果峰值只有 27.8GB——它是分段加载的，28GB 的文本编码用完就放，再上 20GB 的量化 DiT。也就是说 64GB 的机器应该真能跑，不是我这种 256GB 大户专属。\n二是快慢。耗时几乎全在去噪那 6 步上，16MP 每步 12 秒出头。没有 CFG 没有负向提示词这些额外开销，6 步就是 6 步。\n这是套是什么东西\nPhosphene 是个 MIT 协议的 Mac 本地 AI 工作室，视频图像音乐都有，v5.0.15 版本起支持 MiniMax-H3-Image——MiniMax 开源的纯文生图模型。底层引擎 minimax-h3-mlx 也是开源的。\n我没装它的 Pinokio 和 Mac App，直接用引擎自带的脚本跑。理由很简单：依赖少，路径全在自己手里，坏了知道哪儿坏的。下面的步骤就是这条路线。\n装之前备好这些\nApple Silicon，官方口径 ≥48GB 统一内存（我实测峰值 27.8GB，64GB 机器够呛但应该能跑，有 64GB 机器的兄弟可以验证下）\n磁盘先留 90GB：源分片 68.6GB + 量化后 20GB。量化确认没问题后源分片可以删，能回收 68.6GB\nPython 3.13，brew 装一个就行，别动系统自带的\n抄作业\n① 拉引擎，注意要 checkout 到指定提交\nmain 分支上没有图像脚本，得切到这个提交：\ngit clone https://github.com/mrbizarro/minimax-h3-mlx.git\ncd minimax-h3-mlx\ngit checkout d65ec9f710fce31fbe9efa375537b5c94d83d7fe\npython3.13 -m venv ../venv\n../venv/bin/pip install -r requirements.txt\n② 下模型\n仓库 MiniMaxAI/MiniMax-H3-Image ，revision 6534ea1c979a5f8cb00c2bd1025d5ca4ee8d8901 。国内直接连 huggingface 费劲的话，URL 里的域名换成 hf-mirror.com 就行，浏览器、IDM、aria2 随意：\nhttps://hf-mirror.com/MiniMaxAI/MiniMax-H3-Image/resolve/6534ea1c979a5f8cb00c2bd1025d5ca4ee8d8901/<路径>\n一共 20 个文件，按这个结构摆（模型根目录假设叫 models/minimax-h3-image/ ）：\nmodels/minimax-h3-image/\n├── LICENSE\n├── model_index.json\n├── pdd_config.json\n├── pdd_fused_heads.safetensors (12 MB)\n├── vae/\n│ ├── config.json\n│ └── diffusion_pytorch_model.safetensors (2.3 GB)\n└── source/transformer/\n├── config.json\n├── model.safetensors.index.json\n└── model-00001-of-00012.safetensors … model-00012-of-00012.safetensors\n(12 片，共 66.3 GB)\n文本编码器是另一个仓库的，单独拿两个文件：\nmodels/text/\n├── text_encoder.safetensors ← ddalcu/MiniMax-H3-FL2VA-MLX-Serve-8bit 仓库（28.2 GB）\n└── config.json ← MiniMaxAI/MiniMax-H3 仓库里的 FL2VA/text_encoder/config.json\n要是你之前用 mlx 跑过 H3 视频包，这个 text_encoder 直接拿现成的，先对一下 sha256 再复用，能省 28GB 下载。我就是这么省的。\n③ 校验加量化，一条命令\n../venv/bin/python scripts/fetch_h3_image.py \\\n--dir ../models/minimax-h3-image --accepted --keep-source\n已经下好的文件它只做 sha256 校验不会重新下，这点放心。校验过了就逐片量化成 8-bit，顺手把 AdaLN 表预计算好，产出 dit/ 目录（20GB）。我这边跑了十几分钟，看到 PACK OK 就是成了。\n④ 出图\n../venv/bin/python scripts/generate_h3_image.py \"你的英文提示词\" \\\n-o out.png \\\n--root ../models/minimax-h3-image \\\n--text-dir ../models/text \\\n--text-config ../models/text/config.json \\\n--aspect 16:9 --mp 16 --seed 7\n--mp 就三档：4、8、16。seed 固定住能复现，加 --metrics metrics.json 会把每段耗时落下来，想看瓶颈在哪就加。\n两张测试图论坛图片大小有限制做了分辨率降低，提示词原文奉上\n第一张试水，4MP，22.6 秒：\nA weathered wooden fishing boat resting on a black sand beach at dawn, low golden sunlight raking across wet sand, thin mist over calm water, distant volcanic ridge behind, shot on 35mm film, medium format look, soft natural grain, warm muted palette, quiet documentary photography style\n黑沙的质感、水雾、侧逆光都扎实，颗粒感像胶片，直接能用的水平。\n第二张是我故意刁难它的，16MP，83.5 秒。中文招牌字、英文刻字、机械手套五根手指、杯壁水珠、窗下睡猫，全塞一条里：\nCinematic 8K ultra-detailed wide-angle shot. In the center-right of the frame, a focused young East…",
+            "lead": "Mac 上跑通了 MiniMax-H3-Image：84 秒一张 5K 图，全程本地\n折腾了一下午，把 Phosphene + MiniMax-H3-Image 开源图像模型在 M5 Ultra 上跑通了。踩的坑和命令都记在这儿，新鲜出炉想抄的直接抄。\n先说结果\n两张测试图都在楼下，都是本机出的，没碰任何云端 API。",
+            "chars": 5123,
+            "shown": 3200,
+            "truncated": true
+          },
+          "quality": 8,
+          "score": 19.99,
+          "category": "local",
+          "subcategory": "weights",
+          "practical": 8,
+          "slug": "71c0186acf3f",
+          "action": 12,
+          "rank": 27.2,
+          "tags": [
+            "generate",
+            "benchmark",
+            "local",
+            "lowspec"
+          ]
+        },
+        {
+          "sourceId": "hn-money",
+          "sourceName": "HN 检索（独立开发与变现）",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "money",
+          "categories": [
+            "story",
+            "author_prnysoni",
+            "story_50408350",
+            "show_hn"
+          ],
+          "author": "",
+          "id": "50408350",
+          "title": "Show HN: An offline desktop companion to help maintain a healthy blink rhythm",
+          "url": "https://eyesrhythm.com/",
+          "published": "2026-11-07T21:47:47.000Z",
+          "summary": "Profession like software engineer, mechanical / graphics designer takes a lot of strain on your eyes, observing minute details for hours and hours on screen can significantly reduce the blink rate which you might not even notice until it gets irreversibly painful, leaving you with dry eyes. I am already a victim of it…",
+          "content": {
+            "html": "Profession like software engineer, mechanical / graphics designer takes a lot of strain on your eyes, observing minute details for hours and hours on screen can significantly reduce the blink rate which you might not even notice until it gets irreversibly painful, leaving you with dry eyes. I am already a victim of it, working 20 years as a research engineer in computer vision, zooming into pixel level details to hand craft algorithms. Now the doctors says its only regular use of lubricating drops can keep your eyes safe.<p>Now with AI and available fantastic libraries it's possible to play safe so that your body does not pay the price of your profession. EyesRhythm is build to help you keep the blink rhythm healthy by giving small audio / visual indication to maintain healthy blink rhythm not just by monitoring healthy blink rate but also keeping a watch on how rhythmic they are.<p>EyeRhythm also has a visual log for the neck movement. It is also capable to automatically track the face using multiple webcams that you might have on your working desk to get the best view of your eyes for accurate blink detection.<p>Most importantly it works completely local no internet required.</p></p></p>",
+            "text": "Profession like software engineer, mechanical / graphics designer takes a lot of strain on your eyes, observing minute details for hours and hours on screen can significantly reduce the blink rate which you might not even notice until it gets irreversibly painful, leaving you with dry eyes. I am already a victim of it, working 20 years as a research engineer in computer vision, zooming into pixel level details to hand craft algorithms. Now the doctors says its only regular use of lubricating drops can keep your eyes safe. Now with AI and available fantastic libraries it's possible to play safe so that your body does not pay the price of your profession. EyesRhythm is build to help you keep the blink rhythm healthy by giving small audio / visual indication to maintain healthy blink rhythm not just by monitoring healthy blink rate but also keeping a watch on how rhythmic they are. EyeRhythm also has a visual log for the neck movement. It is also capable to automatically track the face using multiple webcams that you might have on your working desk to get the best view of your eyes for accurate blink detection. Most importantly it works completely local no internet required.",
+            "lead": "Profession like software engineer, mechanical / graphics designer takes a lot of strain on your eyes, observing minute details for hours and hours on screen can significantly reduce the blink rate which you might not even notice until it gets irreversibly painful, leaving you with dry eyes. I am already a victim of it, working 20 years as a research engineer in computer vision, zooming into pixel level details to hand craft algorithms. Now the doctors says",
+            "chars": 1190,
+            "shown": 1190,
+            "truncated": false
+          },
+          "metrics": {
+            "points": 40,
+            "comments": 23
+          },
+          "quality": 9,
+          "score": 11.14,
+          "category": "local",
+          "subcategory": null,
+          "practical": 1,
+          "slug": "8e74a1bef765",
+          "action": 3,
+          "rank": 13.8,
+          "tags": []
+        },
+        {
+          "sourceId": "reddit-local-llama",
+          "sourceName": "r/LocalLLaMA",
+          "title": "askmdb: My new project where I fine-tuned Qwen models to build a MongoDB CLI assistant - turn plain-language questions into MongoDB queries",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xtfvct/askmdb_my_new_project_where_i_finetuned_qwen/",
+          "id": "t3_1xtfvct",
+          "published": "2026-11-11T11:55:54.000Z",
+          "summary": "I built askmdb to help people finding the right query for turn plain-language questions into MongoDB queries . For example, you type askmdb \"top 5 customers by spending this year\" , and the app returns the query. A small fine-tuned model writes an aggregate pipeline and a one-line explanation, and nothing runs until y…",
+          "content": {
+            "html": "<table><tr><td><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xtfvct/askmdb_my_new_project_where_i_finetuned_qwen/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://external-preview.redd.it/bzY5eDd0cDJ6eTBpMY--KZHrrpQeN-0ilPzXfHpP-IQRhHPrJ9phImSr4LZH.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=d2d3233cdb63633b66cb254d25a410bb2656f593\" alt=\"askmdb: My new project where I fine-tuned Qwen models to build a MongoDB CLI assistant - turn plain-language questions into MongoDB queries\" loading=\"lazy\"></a></td><td><div><p>I built<strong>askmdb to help people finding the right query for turn plain-language questions into MongoDB queries</strong>. For example, you type<code>askmdb \"top 5 customers by spending this year\"</code>, and the app returns the query. A small fine-tuned model writes an<code>aggregate</code>pipeline and a one-line explanation, and nothing runs until you confirm. It's one Linux binary with llama.cpp and the official MongoDB C driver built in. No Python, no server, no API keys. EVERYTHING run in local.</p><p>My test, results on 500 test questions in English and Spanish, over synthetic databases the training never saw. Every model is Q4_K_M on the same llama.cpp. A question counts as correct only if the predicted pipeline<strong>returns the same result</strong>as the reference when it runs. No other model grades the answers, I tested a few models;</p><table><thead><tr><th>Model</th><th>GGUF</th><th>Correct</th><th>Accuracy</th></tr></thead></table></div></td></tr><tbody><tr><td><strong>askmdb-9b</strong>(GPU)</td><td>5.6 GB</td><td>458</td><td><strong>91.6%</strong></td></tr><tr><td><strong>askmdb-4b</strong>(GPU)</td><td>2.7 GB</td><td>448</td><td><strong>89.6%</strong></td></tr><tr><td>askmdb-2b</td><td>1.3 GB</td><td>434</td><td>86.8%</td></tr><tr><td><strong>askmdb-0.8b</strong>(CPU)</td><td>529 MB</td><td>418</td><td><strong>83.6%</strong></td></tr><tr><td>Qwen3.5-9B, stock</td><td>5.7 GB</td><td>239</td><td>47.8%</td></tr><tr><td>Gemma 4 E4B-it, stock</td><td>5.0 GB</td><td>227</td><td>45.4%</td></tr><tr><td>Gemma 4 E2B-it, stock</td><td>3.1 GB</td><td>221</td><td>44.2%</td></tr><tr><td>Qwen3.5-0.8B, stock</td><td>530 MB</td><td>33</td><td>6.6%</td></tr></tbody></table>\n<p>On a desktop CPU with 8 threads, the 0.8B answers in 1.18 s (median) once the schema is cached. The first question against a new database takes about 3 s aprox.</p>\n<p>The app also works with GPU.</p>\n<p><strong>The model doesn't decide what's safe because its</strong>deterministic C++. A verifier walks the whole pipeline, sub-pipelines included, against a whitelist. A<code>$out</code>hidden inside a<code>$facet</code>is blocked in every mode. BUT connect with a read-only database user to be sure.</p>\n<p><strong>Most important lesson:</strong>my first version got stuck at 68.6% with 10k examples. I grouped the failures by sub-cause instead of looking at the overall score. Of the 50 test questions that needed a type conversion, it got exactly 1 right. The dataset had<strong>zero</strong>examples with<code>$convert</code>, although 297 of the 330 training schemas had fields that mix numbers and strings. My generator had been quietly avoiding them. I added 3,000 examples aimed at those failures (850 of them with<code>$convert</code>), then 2,000 more, and kept the same recipe and hyperparameters. Result: 343 → 418 correct.</p>\n<p>Always is the same: the dataset is the most important thing when it comes to train models.</p>\n<p>Training and evaluation took about 14 USD of rented RTX 5090 GPU (~12 GPU-hours). The code is MIT. The models are Apache-2.0 GGUFs that also work with plain llama.cpp :).</p>\n<p>Has anyone managed to make a sub-1B model good at multi-collection joins (<code>$lookup</code>)? That's where mine fails most, and I'd love to hear what worked for you, because I tried many things withouth success.</p>\n<p><strong>Links</strong></p>\n<ul><li>Full write-up (process, charts and dead ends):<a href=\"https://manuelgs.com/en/blog/askmdb-case-study/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://manuelgs.com/en/blog/askmdb-case-study/</a></li><li>Code:<a href=\"https://github.com/manuelgscom/askmdb\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://github.com/manuelgscom/askmdb</a></li><li>Models (0.8B to 9B, Q4_K_M):<a href=\"https://huggingface.co/collections/manuelgscom/askmdb\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://huggingface.co/collections/manuelgscom/askmdb</a></li></ul>\nsubmitted by<a href=\"https://www.reddit.com/user/AlternativeEnough352\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">/u/AlternativeEnough352</a>\n<br><span><a href=\"https://v.redd.it/khtslnnzyy0i1\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[link]</a></span>\n<span><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xtfvct/askmdb_my_new_project_where_i_finetuned_qwen/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[comments]</a></span>",
+            "text": "I built askmdb to help people finding the right query for turn plain-language questions into MongoDB queries . For example, you type askmdb \"top 5 customers by spending this year\" , and the app returns the query. A small fine-tuned model writes an aggregate pipeline and a one-line explanation, and nothing runs until you confirm. It's one Linux binary with llama.cpp and the official MongoDB C driver built in. No Python, no server, no API keys. EVERYTHING run in local.\nMy test, results on 500 test questions in English and Spanish, over synthetic databases the training never saw. Every model is Q4_K_M on the same llama.cpp. A question counts as correct only if the predicted pipeline returns the same result as the reference when it runs. No other model grades the answers, I tested a few models;\nModel\nGGUF\nCorrect\nAccuracy\naskmdb-9b (GPU)\n5.6 GB\n458\n91.6%\naskmdb-4b (GPU)\n2.7 GB\n448\n89.6%\naskmdb-2b\n1.3 GB\n434\n86.8%\naskmdb-0.8b (CPU)\n529 MB\n418\n83.6%\nQwen3.5-9B, stock\n5.7 GB\n239\n47.8%\nGemma 4 E4B-it, stock\n5.0 GB\n227\n45.4%\nGemma 4 E2B-it, stock\n3.1 GB\n221\n44.2%\nQwen3.5-0.8B, stock\n530 MB\n33\n6.6%\nOn a desktop CPU with 8 threads, the 0.8B answers in 1.18 s (median) once the schema is cached. The first question against a new database takes about 3 s aprox.\nThe app also works with GPU.\nThe model doesn't decide what's safe because its deterministic C++. A verifier walks the whole pipeline, sub-pipelines included, against a whitelist. A $out hidden inside a $facet is blocked in every mode. BUT connect with a read-only database user to be sure.\nMost important lesson: my first version got stuck at 68.6% with 10k examples. I grouped the failures by sub-cause instead of looking at the overall score. Of the 50 test questions that needed a type conversion, it got exactly 1 right. The dataset had zero examples with $convert , although 297 of the 330 training schemas had fields that mix numbers and strings. My generator had been quietly avoiding them. I added 3,000 examples aimed at those failures (850 of them with $convert ), then 2,000 more, and kept the same recipe and hyperparameters. Result: 343 → 418 correct.\nAlways is the same: the dataset is the most important thing when it comes to train models.\nTraining and evaluation took about 14 USD of rented RTX 5090 GPU (~12 GPU-hours). The code is MIT. The models are Apache-2.0 GGUFs that also work with plain llama.cpp :).\nHas anyone managed to make a sub-1B model good at multi-collection joins ( $lookup )? That's where mine fails most, and I'd love to hear what worked for you, because I tried many things withouth success.\nLinks\nFull write-up (process, charts and dead ends): https://manuelgs.com/en/blog/askmdb-case-study/\nCode: https://github.com/manuelgscom/askmdb\nModels (0.8B to 9B, Q4_K_M): https://huggingface.co/collections/manuelgscom/askmdb\nsubmitted by /u/AlternativeEnough352\n[link]\n[comments]",
+            "lead": "I built askmdb to help people finding the right query for turn plain-language questions into MongoDB queries . For example, you type askmdb \"top 5 customers by spending this year\" , and the app returns the query. A small fine-tuned model writes an aggregate pipeline and a one-line explanation, and nothing runs until you confirm. It's one Linux binary with llama.cpp and the official MongoDB C driver built in. No Python, no server, no API keys. EVERYTHING ru",
+            "chars": 2941,
+            "shown": 2941,
+            "truncated": false
+          },
+          "categories": [
+            "LocalLLaMA"
+          ],
+          "author": "/u/AlternativeEnough352",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "oss",
+          "metrics": {},
+          "quality": 6,
+          "score": 16.5,
+          "category": "local",
+          "subcategory": "runtime",
+          "practical": 3,
+          "slug": "9d402a21c30d",
+          "action": 4,
+          "rank": 12.4,
+          "tags": [
+            "local"
+          ]
+        },
+        {
+          "sourceId": "reddit-local-llama",
+          "sourceName": "r/LocalLLaMA",
+          "title": "KRAFTON/Raon-1-nano · Hugging Face",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xtmbkn/kraftonraon1nano_hugging_face/",
+          "id": "t3_1xtmbkn",
+          "published": "2026-11-11T16:31:38.000Z",
+          "summary": "Raon-1 nano is a dense language model with 1.5B effective parameters (3.1B total, including a 1.5B per-layer embedding table), developed by KRAFTON AI . It is designed to follow instructions, maintain conversational context, and call the right tools in both Korean and English . As part of the Raon open model family, i…",
+          "content": {
+            "html": "<table><tr><td><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xtmbkn/kraftonraon1nano_hugging_face/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://external-preview.redd.it/j8BBF5_SkxF4Am2Yp-tfHsh3Xp3013w6Ow5EMsf5jIU.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=177d23fa7ebd1089228fd8c0c57bf909e4cd315c\" alt=\"KRAFTON/Raon-1-nano · Hugging Face\" loading=\"lazy\"></a></td><td><div><p>Raon-1 nano is a dense language model with 1.5B effective parameters (3.1B total, including a 1.5B per-layer embedding table), developed by<a href=\"https://krafton.ai/en/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">KRAFTON AI</a>. It is designed to<strong>follow instructions, maintain conversational context, and call the right tools in both Korean and English</strong>. As part of the Raon open model family, it is released under the<strong>Apache 2.0 license</strong>.</p><h3><a href=\"https://huggingface.co/KRAFTON/Raon-1-nano#highlights\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"></a>Highlights</h3><ul><li><strong>Faithful, natural conversation</strong>: Leads the comparison models on the instruction-following, context-following, and Korean conversation benchmarks shown below.</li><li><strong>Korean and English</strong>: Trained on Korean and English, with solid English capabilities alongside its Korean strengths.</li><li><strong>Tool calling</strong>: Tool calling within conversations, for everyday tasks such as office work and mobile control.</li><li><strong>On-device deployment</strong>: Available in GGUF, MLX, and LiteRT-LM formats for local inference, including on Apple silicon.</li><li><strong>Long context</strong>: Natively supports up to 262,144 tokens of context.</li></ul><h3>Model Overview</h3><p>Raon-1 nano uses a hybrid dense architecture, consisting of 18 linear attention layers and 6 full attention layers.</p><ul><li><strong>Raon Delta Attention (RDA):</strong>Gated delta-rule linear attention with separate erase and write gates and a fixed-size recurrent state.</li><li><strong>Raon-mHC:</strong>Raon-mHC reduces the computational cost of DeepSeek's manifold-constrained hyper-connections (mHC), which speeds up training.</li><li><strong>Per-layer embedding:</strong>Each layer has its own small 256-dimensional embedding for every token. After its MLP, the layer uses it to adjust its output before passing it on.</li><li><strong>Hybrid layout:</strong>18 of the 24 layers are Raon Delta Attention layers with a fixed-size state. Only the 6 MLA layers keep a KV cache, about 7 KiB per token in BF16.</li><li><strong>Tied embeddings:</strong>The LM head shares the input embedding.</li></ul><table><thead><tr><th>Field</th><th>Value</th></tr></thead></table></div></td></tr><tbody><tr><td>Architecture</td><td>Dense</td></tr><tr><td>Total Parameters</td><td>3.1B (including the 1.5B per-layer embedding table)</td></tr><tr><td>Layers</td><td>24</td></tr><tr><td>Hidden Size</td><td>1,536</td></tr><tr><td>Attention</td><td>Hybrid (RDA 3 : Gated MLA 1)</td></tr><tr><td>Position Encoding</td><td>NoPE (no positional encoding)</td></tr><tr><td>Number of Attention Heads</td><td>16 for RDA; 32 for Gated MLA</td></tr><tr><td>Attention Head Dimension</td><td>128 for RDA; 192 QK / 128 V, for Gated MLA</td></tr><tr><td>Query / KV LoRA Rank</td><td>512 / 512, for Gated MLA</td></tr><tr><td>FFN Intermediate Size</td><td>6,144</td></tr><tr><td>Activation Function</td><td>SwiGLU</td></tr><tr><td>Residual Connection</td><td>Raon-mHC w/ 4 streams</td></tr><tr><td>Per-Layer Embedding</td><td>256 per layer</td></tr><tr><td>Vocabulary Size</td><td>259,840</td></tr><tr><td>LM Head</td><td>Tied</td></tr><tr><td>MTP</td><td>1 layer, 55M</td></tr><tr><td>Context Length</td><td>262,144 tokens</td></tr></tbody></table>\n<p>The checkpoint on HuggingFace contains 3.2B parameters: 3.1B for the main model and 55M for the Multi-Token Prediction (MTP) module.</p>\n<h3><a href=\"https://huggingface.co/KRAFTON/Raon-1-nano#training\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"></a>Training</h3>\n<ul><li><strong>MoE-to-Dense:</strong>Raon-1 nano was derived from Raon-1 mini preview (30B-A4B) through<a href=\"https://arxiv.org/abs/2605.28207\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">MoE-to-Dense</a>pruning and knowledge distillation.</li><li><strong>Continued pre-training:</strong>3T tokens.</li><li><strong>Post-training:</strong>supervised fine-tuning (SFT) and on-policy distillation (OPD) from Raon-1 mini preview, followed by reinforcement learning (RL).</li></ul>\n<h3>Quantizations:</h3>\n<ul><li><a href=\"https://huggingface.co/KRAFTON/Raon-1-nano-gguf\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://huggingface.co/KRAFTON/Raon-1-nano-gguf</a></li><li><a href=\"https://huggingface.co/KRAFTON/Raon-1-nano-mlx\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://huggingface.co/KRAFTON/Raon-1-nano-mlx</a></li><li><a href=\"https://huggingface.co/KRAFTON/Raon-1-nano-litert-lm\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://huggingface.co/KRAFTON/Raon-1-nano-litert-lm</a></li></ul>\nsubmitted by<a href=\"https://www.reddit.com/user/pmttyji\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">/u/pmttyji</a>\n<br><span><a href=\"https://huggingface.co/KRAFTON/Raon-1-nano\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[link]</a></span>\n<span><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xtmbkn/kraftonraon1nano_hugging_face/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[comments]</a></span>",
+            "text": "Raon-1 nano is a dense language model with 1.5B effective parameters (3.1B total, including a 1.5B per-layer embedding table), developed by KRAFTON AI . It is designed to follow instructions, maintain conversational context, and call the right tools in both Korean and English . As part of the Raon open model family, it is released under the Apache 2.0 license .\nHighlights\nFaithful, natural conversation : Leads the comparison models on the instruction-following, context-following, and Korean conversation benchmarks shown below.\nKorean and English : Trained on Korean and English, with solid English capabilities alongside its Korean strengths.\nTool calling : Tool calling within conversations, for everyday tasks such as office work and mobile control.\nOn-device deployment : Available in GGUF, MLX, and LiteRT-LM formats for local inference, including on Apple silicon.\nLong context : Natively supports up to 262,144 tokens of context.\nModel Overview\nRaon-1 nano uses a hybrid dense architecture, consisting of 18 linear attention layers and 6 full attention layers.\nRaon Delta Attention (RDA): Gated delta-rule linear attention with separate erase and write gates and a fixed-size recurrent state.\nRaon-mHC: Raon-mHC reduces the computational cost of DeepSeek's manifold-constrained hyper-connections (mHC), which speeds up training.\nPer-layer embedding: Each layer has its own small 256-dimensional embedding for every token. After its MLP, the layer uses it to adjust its output before passing it on.\nHybrid layout: 18 of the 24 layers are Raon Delta Attention layers with a fixed-size state. Only the 6 MLA layers keep a KV cache, about 7 KiB per token in BF16.\nTied embeddings: The LM head shares the input embedding.\nField\nValue\nArchitecture\nDense\nTotal Parameters\n3.1B (including the 1.5B per-layer embedding table)\nLayers\n24\nHidden Size\n1,536\nAttention\nHybrid (RDA 3 : Gated MLA 1)\nPosition Encoding\nNoPE (no positional encoding)\nNumber of Attention Heads\n16 for RDA; 32 for Gated MLA\nAttention Head Dimension\n128 for RDA; 192 QK / 128 V, for Gated MLA\nQuery / KV LoRA Rank\n512 / 512, for Gated MLA\nFFN Intermediate Size\n6,144\nActivation Function\nSwiGLU\nResidual Connection\nRaon-mHC w/ 4 streams\nPer-Layer Embedding\n256 per layer\nVocabulary Size\n259,840\nLM Head\nTied\nMTP\n1 layer, 55M\nContext Length\n262,144 tokens\nThe checkpoint on HuggingFace contains 3.2B parameters: 3.1B for the main model and 55M for the Multi-Token Prediction (MTP) module.\nTraining\nMoE-to-Dense: Raon-1 nano was derived from Raon-1 mini preview (30B-A4B) through MoE-to-Dense pruning and knowledge distillation.\nContinued pre-training: 3T tokens.\nPost-training: supervised fine-tuning (SFT) and on-policy distillation (OPD) from Raon-1 mini preview, followed by reinforcement learning (RL).\nQuantizations:\nhttps://huggingface.co/KRAFTON/Raon-1-nano-gguf\nhttps://huggingface.co/KRAFTON/Raon-1-nano-mlx\nhttps://huggingface.co/KRAFTON/Raon-1-nano-litert-lm\nsubmitted by /u/pmttyji\n[link]\n[comments]",
+            "lead": "Raon-1 nano is a dense language model with 1.5B effective parameters (3.1B total, including a 1.5B per-layer embedding table), developed by KRAFTON AI . It is designed to follow instructions, maintain conversational context, and call the right tools in both Korean and English . As part of the Raon open model family, it is released under the Apache 2.0 license .\nHighlights\nFaithful, natural conversation : Leads the comparison models on the instruction-follo",
+            "chars": 3066,
+            "shown": 3066,
+            "truncated": false
+          },
+          "categories": [
+            "LocalLLaMA"
+          ],
+          "author": "/u/pmttyji",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "oss",
+          "metrics": {},
+          "quality": 6,
+          "score": 18.08,
+          "category": "local",
+          "subcategory": "weights",
+          "practical": 3,
+          "slug": "70422cb9d07e",
+          "action": 2,
+          "rank": 9.2,
+          "tags": [
+            "local"
+          ]
+        },
+        {
+          "sourceId": "reddit-local-llama",
+          "sourceName": "r/LocalLLaMA",
+          "title": "Unsloth Dynamic V3.1 released for Qwen3.8-27B, DeepSeek-V4.1-Flash-1017 and Qwen3.8-Flash-Next",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xtmcoe/unsloth_dynamic_v31_released_for_qwen3827b/",
+          "id": "t3_1xtmcoe",
+          "published": "2026-11-11T16:32:45.000Z",
+          "summary": "Unsloth Dynamic V3.1 (Nov 2026) is our latest quantization algorithm for Qwen3.8-27B, DeepSeek-V4.1-Flash-1017 and Qwen3.8-Flash-Next, resulting in 10-15% increased accuracy and 50% less token usage vs other quants of the same size. We're working on an even better version of Dynamic quants which will be applied to Qwe…",
+          "content": {
+            "html": "<table><tr><td><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xtmcoe/unsloth_dynamic_v31_released_for_qwen3827b/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://external-preview.redd.it/Klpz8Q7IAKM_eCft14WWu_oThMeP3mrc18jccfp9_VQ.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=b810360e2ed6a186c0ea5410ea512bb8cba827ac\" alt=\"Unsloth Dynamic V3.1 released for Qwen3.8-27B, DeepSeek-V4.1-Flash-1017 and Qwen3.8-Flash-Next\" loading=\"lazy\"></a></td><td><div><blockquote><p>Unsloth Dynamic V3.1 (Nov 2026) is our latest quantization algorithm for Qwen3.8-27B, DeepSeek-V4.1-Flash-1017 and Qwen3.8-Flash-Next, resulting in 10-15% increased accuracy and 50% less token usage vs other quants of the same size. We're working on an even better version of Dynamic quants which will be applied to Qwen4 and all future models.</p></blockquote><p>Maybe I misread the 27B graphs, but I'm not entirely convinced of V3 vs V3.1 being an improvement.</p><p>In DeepSWE v1.1, V3 seems superior to V3.1 in some widely used Q4 quants, and V3 seems to lack some data points in the lower quants range, skewing the impression the curves give.</p><p>My<code>UD-Q5_K_XL</code>quant unfortunately is off the charts, so this needs some proper benchmarking before I trade context length for V3.1. (The new `.gguf` is larger.)</p></div>submitted by<a href=\"https://www.reddit.com/user/fiocalisti\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">/u/fiocalisti</a><br><span><a href=\"https://unsloth.ai/docs/basics/dynamic-3.0-ggufs\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[link]</a></span><span><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xtmcoe/unsloth_dynamic_v31_released_for_qwen3827b/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[comments]</a></span></td></tr></table>",
+            "text": "Unsloth Dynamic V3.1 (Nov 2026) is our latest quantization algorithm for Qwen3.8-27B, DeepSeek-V4.1-Flash-1017 and Qwen3.8-Flash-Next, resulting in 10-15% increased accuracy and 50% less token usage vs other quants of the same size. We're working on an even better version of Dynamic quants which will be applied to Qwen4 and all future models.\nMaybe I misread the 27B graphs, but I'm not entirely convinced of V3 vs V3.1 being an improvement.\nIn DeepSWE v1.1, V3 seems superior to V3.1 in some widely used Q4 quants, and V3 seems to lack some data points in the lower quants range, skewing the impression the curves give.\nMy UD-Q5_K_XL quant unfortunately is off the charts, so this needs some proper benchmarking before I trade context length for V3.1. (The new `.gguf` is larger.)\nsubmitted by /u/fiocalisti\n[link] [comments]",
+            "lead": "Unsloth Dynamic V3.1 (Nov 2026) is our latest quantization algorithm for Qwen3.8-27B, DeepSeek-V4.1-Flash-1017 and Qwen3.8-Flash-Next, resulting in 10-15% increased accuracy and 50% less token usage vs other quants of the same size. We're working on an even better version of Dynamic quants which will be applied to Qwen4 and all future models.\nMaybe I misread the 27B graphs, but I'm not entirely convinced of V3 vs V3.1 being an improvement.\nIn DeepSWE v1.1,",
+            "chars": 840,
+            "shown": 840,
+            "truncated": false
+          },
+          "categories": [
+            "LocalLLaMA"
+          ],
+          "author": "/u/fiocalisti",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "oss",
+          "metrics": {},
+          "quality": 6,
+          "score": 15.28,
+          "category": "local",
+          "subcategory": "quantize",
+          "practical": 1,
+          "slug": "199f0bc88897",
+          "action": 1,
+          "rank": 7.6,
+          "tags": [
+            "local"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bench",
+      "label": "评测选型",
+      "items": [
+        {
+          "sourceId": "lcz-hardware",
+          "sourceName": "抡锤者 AI硬件",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [
+            "amd",
+            "rocm",
+            "多卡部署"
+          ],
+          "author": "terry",
+          "id": "2898",
+          "title": "AMD MI50洋垃圾显卡750一张，1T带宽/7nm制程/16G显存，双卡跑Strata驱动Qwen 3.8 Flash Next 128k畅玩！",
+          "url": "https://lcz.me/topic/2898",
+          "published": "2026-11-07T08:30:00.000Z",
+          "summary": "啊，昨天一觉睡了十几个小时，11个半小时嘛，这太夸张了，也不知道是怎么了。然后起来发现自己视频也没有做，是吧？那今天本来是打算测一下HY4或者说是千问4的。昨天有朋友发信息说，让我测一下这两个模型。那么论坛有网友发了一个让我 更感兴趣的帖子 ：2700块钱的洋垃圾跑千问Flash Next，MI50 16G × 2 + 128G DDR3，从装系统到这个什么54 tokens/s，可能是目前价格最低的洋垃圾方案。啊，这个不是可能，这个应该就是啊。 MI50这张卡以前很多垃圾佬都炒过这个卡，啊，包括很多主播都测过。造型是非常不错的，做工是台积电的7纳米。它是2018年的卡，这卡的素质是不错的啊，总体素质是相当不错的。但是呢，它没有这…",
+          "metrics": {
+            "points": 2,
+            "comments": 3,
+            "views": 781
+          },
+          "excellent": false,
+          "content": {
+            "html": "<p>啊，昨天一觉睡了十几个小时，11个半小时嘛，这太夸张了，也不知道是怎么了。然后起来发现自己视频也没有做，是吧？那今天本来是打算测一下HY4或者说是千问4的。昨天有朋友发信息说，让我测一下这两个模型。那么论坛有网友发了一个让我<a href=\"https://lcz.me/topic/2896\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">更感兴趣的帖子</a>：2700块钱的洋垃圾跑千问Flash Next，MI50 16G × 2 + 128G DDR3，从装系统到这个什么54 tokens/s，可能是目前价格最低的洋垃圾方案。啊，这个不是可能，这个应该就是啊。</p>\n<p>MI50这张卡以前很多垃圾佬都炒过这个卡，啊，包括很多主播都测过。造型是非常不错的，做工是台积电的7纳米。它是2018年的卡，这卡的素质是不错的啊，总体素质是相当不错的。但是呢，它没有这个BF16，之前在早期没有BF16，基本上意味着你什么模型都不能跑。但是现在讲实话，它是能够玩一玩了，很多模型都能玩了。啊，因为这个大模型推理从这个BF16降到这个FP16，它的精度损耗是可以接受的。然后在跑这个什么ComfyUI的时候，以前FP16是完全没法跑的，现在有很多方案FP16都能跑。但是有些东西可能说注意力机制啊，你可能说要去选一下，要去选型，有些这个LoRA可能就跑不了。但是总之以前完全是废品，现在在这个新技术的加持下，都能够多多少少跑起来，这个是非常不错的消息啊。我们要知道这张卡它是1T带宽啊，这个基础素质是相当不错的。</p>\n<p><img src=\"https://upload.lcz.me/uploads/ac084220-5717-47fe-a9ef-5737490d9891.jpeg\" alt=\"MI50 Strata Qwen Flash Next.jpeg\" loading=\"lazy\"></p>\n<p>主板的BIOS必须开启Above 4G Decoding，这个都有啊，华南金牌的主板都有，包括精粤的都有啊。它这里唯一的缺点是MI50是被动散热的服务器卡，必须改散热。他是自己改了这个风扇散热，但是MI50有这个涡轮卡啊，这看你自己怎么选。便宜的你买回来自己去改风扇，我都觉得哎呀不值得折腾，你不如拿一个强力的风扇吹吹它，差不多意思一下得了。但是呢问题就是说，这个卡的驱动太烂了啊。我们看一下它的代数吧，我让这个什么GPT给整了个图，SVG一会儿我把它放到我的这个帖子中去啊。MI50啊，7纳米，2018年11月的，这卡其实还是比较新的，不算特别的老啊。然后我们对比一下MI210，它是这个什么2022年3月的，7900 XTX是这个2022年12月份的。你看它是用7纳米的工艺，7900 XTX是6纳米跟5纳米的混合工艺，其实工艺上面并不怎么落后。哦对了，30系列3090这些3080，它们是8纳米架构啊，8纳米的制程。所以说你看一看，这个卡的底子还是相当不错的啊。</p>\n<p><img src=\"https://upload.lcz.me/uploads/6541c1dd-8120-4f75-aed5-e24f8532f8f0.png\" alt=\"MI210正面.png\" loading=\"lazy\"></p>\n<p>算力呢就有点捉襟见肘了啊，但是也是相当于这个什么7900 XTX。我们看BF16算力，相当于7900 XTX的大概一半不到，40%左右吧。其实我们对比这个MI210，大家看看，是吧，他卖这个什么4万3，MI100卖这个2万，他这个算力差距我觉得是可以接受的。他虽然是没有BF16了，这个卡几乎就是白菜价啊。所以我是不太推荐大家去折腾什么MI210啊，或者说去折腾MI100的。但是你有特定的需求，啊这个我们会单独做一期视频讲你什么样的情况下去折腾这个MI210和MI100，这个CDNA2架构的啊。哦，CDNA2架构它……呃，我们还是回到这个帖子，就是我们看一下。</p>\n<p><img src=\"https://upload.lcz.me/uploads/e170ff39-a109-40b4-8c39-1b7080049b9a.svg\" alt=\"mi50-mi210-7900xtx.svg\" loading=\"lazy\"></p>\n<p>就是我一般是要求在论坛发帖啊，你一定要能把这个地址复制下来，粘贴给DeepSeek、Harness、Codex或者说是Hermes，他们都能够直接抄作业。那么这个帖子不用看啊，就非常的规整，是肯定可以直接抄的。有些东西是需要自己编译，这些详细的技术原理我们不需要自己去了解啊，就照着抄作业就行了。那么你编译好之后，他是做了一个简单的测试。呃，解码速度我们就不详细讲了，详细数据大家自己来理解啊，大概在50多tokens/s。这个速度还是相当可用了。然后他做了一下对比，他跟这个什么4080S 16G做对比的，说4080S 16G单卡大概也是这个速度，但是这样对比是不公平的啊，因为4080S它有这个优化，优化之后它的prefill和decode的速度都是提升得比较大。他这个帖子中给出的这个prefill速度好像就只有几百tokens/s，是吧？500多吧，好像是，我我没找到，刚才我还看到了。哦，在这，571 tokens/s。呃，这个远远不是这两张卡的极限啊。</p>\n<p><img src=\"https://upload.lcz.me/uploads/3d65362c-57cd-49f5-8b17-034f5b0d92d4.avif\" alt=\"mi50.avif\" loading=\"lazy\"></p>\n<p>我们看一下，Rori他给了一个链接啊，这个是Strata的官方地址。哦，它这个优化，但它这个优化是32G版本的啊。它这个什么decode能够到125 tokens/s，prefill能够从七八百提升到这个1750左右。啊，这个速度也是相当的牛逼了，就是专门针对gfx906，也就是说这个MI50、MI60这一代卡来优化的。那么具体的呢，大家肯定是你买到的16G卡，是吧？那可能说这个显存包括算力都有都有可能有所阉割，我没有去详细研究啊，是吧？包括MI50与MI60，是吧，肯定都有差距。但是如果是这样的话，我感觉gfx906它的卡是不会贵到哪去的，啊大家可以去这个垃圾市场淘一淘。呃，这个卡是没有矿卡风险的啊，这个AMD的卡是不能挖矿的，而且这个卡是7纳米制程，你不用太担心它的发热问题，它的功耗也不高。并且呃这个卡的这个造型，之前我看那个什么斯波图的视频啊，垃圾佬的视频，呃他当时整的那个卡我看造型还蛮好看的。啊，后期我就不贴了，大家自己……因为这两个卡容易找，大家自己去找就行了。就是跟大家讲这个什么新的装机方案：MI50两张，是吧，搭配这个DDR3的128G内存，搭配华南金牌或者精粤的这个垃圾板。</p>\n<p><img src=\"https://upload.lcz.me/uploads/ef0a0234-a94f-4a58-a5f1-7bdcd914ca92.jpeg\" alt=\"华南金牌x99tf.jpeg\" loading=\"lazy\"></p>\n<p>啊，这个你去买二手还是买新板子，我建议大家这个主板去买新的啊，不要去淘二手，这没必要，也花不了几个钱，是吧？你说你是这个300块钱搞的，然后你还得去搞个U加起来，怎么说E5-2696这个就怎么也得200块钱嘛，是吧，那你还得500，那新的也不过就800块钱，是吧，八九百，没必要省那几百块钱。因为这个垃圾佬一般买到手啊，讲实话都是比较折腾的，这个工作都是高强度的。主板这个玩意儿它也不是什么一线大厂的那种特别牛逼的、啊质量特别好的板子，尤其是不能跟服务器主板相比。是吧，内存一般都不会坏，这是讲实话，这是正规大厂的出品。啊，然后CPU一般也都不会坏。你别整个几百块钱的板子，是吧，到时候这里有问题，那里有问题。当然了，看自己在这个什么闲鱼或者在这个其它的一些二手市场里淘东西的能力了，有的成色是非常好的啊。</p>\n<p>那本期视频就到这里吧，啊我们也不深入地讲解了，就给大家提供这么一个方案，又水一期视频。啊弟兄们呢，每天为我提供大量的素材，是吧？我这个论坛是完全收回成本了。</p>",
+            "text": "啊，昨天一觉睡了十几个小时，11个半小时嘛，这太夸张了，也不知道是怎么了。然后起来发现自己视频也没有做，是吧？那今天本来是打算测一下HY4或者说是千问4的。昨天有朋友发信息说，让我测一下这两个模型。那么论坛有网友发了一个让我 更感兴趣的帖子 ：2700块钱的洋垃圾跑千问Flash Next，MI50 16G × 2 + 128G DDR3，从装系统到这个什么54 tokens/s，可能是目前价格最低的洋垃圾方案。啊，这个不是可能，这个应该就是啊。\nMI50这张卡以前很多垃圾佬都炒过这个卡，啊，包括很多主播都测过。造型是非常不错的，做工是台积电的7纳米。它是2018年的卡，这卡的素质是不错的啊，总体素质是相当不错的。但是呢，它没有这个BF16，之前在早期没有BF16，基本上意味着你什么模型都不能跑。但是现在讲实话，它是能够玩一玩了，很多模型都能玩了。啊，因为这个大模型推理从这个BF16降到这个FP16，它的精度损耗是可以接受的。然后在跑这个什么ComfyUI的时候，以前FP16是完全没法跑的，现在有很多方案FP16都能跑。但是有些东西可能说注意力机制啊，你可能说要去选一下，要去选型，有些这个LoRA可能就跑不了。但是总之以前完全是废品，现在在这个新技术的加持下，都能够多多少少跑起来，这个是非常不错的消息啊。我们要知道这张卡它是1T带宽啊，这个基础素质是相当不错的。\n主板的BIOS必须开启Above 4G Decoding，这个都有啊，华南金牌的主板都有，包括精粤的都有啊。它这里唯一的缺点是MI50是被动散热的服务器卡，必须改散热。他是自己改了这个风扇散热，但是MI50有这个涡轮卡啊，这看你自己怎么选。便宜的你买回来自己去改风扇，我都觉得哎呀不值得折腾，你不如拿一个强力的风扇吹吹它，差不多意思一下得了。但是呢问题就是说，这个卡的驱动太烂了啊。我们看一下它的代数吧，我让这个什么GPT给整了个图，SVG一会儿我把它放到我的这个帖子中去啊。MI50啊，7纳米，2018年11月的，这卡其实还是比较新的，不算特别的老啊。然后我们对比一下MI210，它是这个什么2022年3月的，7900 XTX是这个2022年12月份的。你看它是用7纳米的工艺，7900 XTX是6纳米跟5纳米的混合工艺，其实工艺上面并不怎么落后。哦对了，30系列3090这些3080，它们是8纳米架构啊，8纳米的制程。所以说你看一看，这个卡的底子还是相当不错的啊。\n算力呢就有点捉襟见肘了啊，但是也是相当于这个什么7900 XTX。我们看BF16算力，相当于7900 XTX的大概一半不到，40%左右吧。其实我们对比这个MI210，大家看看，是吧，他卖这个什么4万3，MI100卖这个2万，他这个算力差距我觉得是可以接受的。他虽然是没有BF16了，这个卡几乎就是白菜价啊。所以我是不太推荐大家去折腾什么MI210啊，或者说去折腾MI100的。但是你有特定的需求，啊这个我们会单独做一期视频讲你什么样的情况下去折腾这个MI210和MI100，这个CDNA2架构的啊。哦，CDNA2架构它……呃，我们还是回到这个帖子，就是我们看一下。\n就是我一般是要求在论坛发帖啊，你一定要能把这个地址复制下来，粘贴给DeepSeek、Harness、Codex或者说是Hermes，他们都能够直接抄作业。那么这个帖子不用看啊，就非常的规整，是肯定可以直接抄的。有些东西是需要自己编译，这些详细的技术原理我们不需要自己去了解啊，就照着抄作业就行了。那么你编译好之后，他是做了一个简单的测试。呃，解码速度我们就不详细讲了，详细数据大家自己来理解啊，大概在50多tokens/s。这个速度还是相当可用了。然后他做了一下对比，他跟这个什么4080S 16G做对比的，说4080S 16G单卡大概也是这个速度，但是这样对比是不公平的啊，因为4080S它有这个优化，优化之后它的prefill和decode的速度都是提升得比较大。他这个帖子中给出的这个prefill速度好像就只有几百tokens/s，是吧？500多吧，好像是，我我没找到，刚才我还看到了。哦，在这，571 tokens/s。呃，这个远远不是这两张卡的极限啊。\n我们看一下，Rori他给了一个链接啊，这个是Strata的官方地址。哦，它这个优化，但它这个优化是32G版本的啊。它这个什么decode能够到125 tokens/s，prefill能够从七八百提升到这个1750左右。啊，这个速度也是相当的牛逼了，就是专门针对gfx906，也就是说这个MI50、MI60这一代卡来优化的。那么具体的呢，大家肯定是你买到的16G卡，是吧？那可能说这个显存包括算力都有都有可能有所阉割，我没有去详细研究啊，是吧？包括MI50与MI60，是吧，肯定都有差距。但是如果是这样的话，我感觉gfx906它的卡是不会贵到哪去的，啊大家可以去这个垃圾市场淘一淘。呃，这个卡是没有矿卡风险的啊，这个AMD的卡是不能挖矿的，而且这个卡是7纳米制程，你不用太担心它的发热问题，它的功耗也不高。并且呃这个卡的这个造型，之前我看那个什么斯波图的视频啊，垃圾佬的视频，呃他当时整的那个卡我看造型还蛮好看的。啊，后期我就不贴了，大家自己……因为这两个卡容易找，大家自己去找就行了。就是跟大家讲这个什么新的装机方案：MI50两张，是吧，搭配这个DDR3的128G内存，搭配华南金牌或者精粤的这个垃圾板。\n啊，这个你去买二手还是买新板子，我建议大家这个主板去买新的啊，不要去淘二手，这没必要，也花不了几个钱，是吧？你说你是这个300块钱搞的，然后你还得去搞个U加起来，怎么说E5-2696这个就怎么也得200块钱嘛，是吧，那你还得500，那新的也不过就800块钱，是吧，八九百，没必要省那几百块钱。因为这个垃圾佬一般买到手啊，讲实话都是比较折腾的，这个工作都是高强度的。主板这个玩意儿它也不是什么一线大厂的那种特别牛逼的、啊质量特别好的板子，尤其是不能跟服务器主板相比。是吧，内存一般都不会坏，这是讲实话，这是正规大厂的出品。啊，然后CPU一般也都不会坏。你别整个几百块钱的板子，是吧，到时候这里有问题，那里有问题。当然了，看自己在这个什么闲鱼或者在这个其它的一些二手市场里淘东西的能力了，有的成色是非常好的啊。\n那本期视频就到这里吧，啊我们也不深入地讲解了，就给大家提供这么一个方案，又水一期视频。啊弟兄们呢，每天为我提供大量的素材，是吧？我这个论坛是完全收回成本了。",
+            "lead": "啊，昨天一觉睡了十几个小时，11个半小时嘛，这太夸张了，也不知道是怎么了。然后起来发现自己视频也没有做，是吧？那今天本来是打算测一下HY4或者说是千问4的。昨天有朋友发信息说，让我测一下这两个模型。那么论坛有网友发了一个让我 更感兴趣的帖子 ：2700块钱的洋垃圾跑千问Flash Next，MI50 16G × 2 + 128G DDR3，从装系统到这个什么54 tokens/s，可能是目前价格最低的洋垃圾方案。啊，这个不是可能，这个应该就是啊。\nMI50这张卡以前很多垃圾佬都炒过这个卡，啊，包括很多主播都测过。造型是非常不错的，做工是台积电的7纳米。它是2018年的卡，这卡的素质是不错的啊，总体素质是相当不错的。但是呢，它没有这个BF16，之前在早期没有BF16，基本上意味着你什么模型都不能跑。但是现在讲实话，它是能够玩一玩了，很多模型都能玩了。啊，因为这个大模型推理从这个BF16降到这个FP16，它的精度损耗是可以接受的。然后在跑这个什么ComfyUI的时候，以前FP16是完全没法跑的，现在有很多方案F",
+            "chars": 2691,
+            "shown": 2691,
+            "truncated": false
+          },
+          "quality": 8,
+          "score": 12.93,
+          "category": "bench",
+          "subcategory": "selection",
+          "practical": 3,
+          "slug": "3ec8b3ecdfd2",
+          "action": 9,
+          "rank": 22.4,
+          "tags": [
+            "hardware",
+            "benchmark",
+            "lowspec",
+            "generate"
+          ]
+        },
+        {
+          "sourceId": "arxiv-ecosystem",
+          "sourceName": "arXiv 检索（推理引擎与量化）",
+          "title": "Looping Deeper Without Growing the KV Cache: Recurrent Depth for Causal Encoder-Decoders",
+          "url": "https://arxiv.org/abs/2611.13378v1",
+          "id": "http://arxiv.org/abs/2611.13378v1",
+          "published": "2026-11-09T23:55:02.000Z",
+          "summary": "Looped language models deepen computation without adding parameters, yet caching full-context key-value (KV) states across layers and rounds severely bounds serving batch size. We design a looped causal encoder-decoder (CED) that achieves recurrent depth with zero round-wise KV growth, addressing where and how to loop…",
+          "content": {
+            "html": "Looped language models deepen computation without adding parameters, yet caching full-context key-value (KV) states across layers and rounds severely bounds serving batch size. We design a looped causal encoder-decoder (CED) that achieves recurrent depth with zero round-wise KV growth, addressing where and how to loop an asymmetric stack in which only sparse encoder layers generate global KV. We find that recurrence must be placed in the encoder to iteratively refine global KV representations rather than re-reading static decoder projections, which both drives language-modeling gains and preserves long-context scaling. Furthermore, training the encoder loop under stochastic recurrence depth induces a fixed-point equilibrium where every round losslessly shares the last round's KV cache. Compounding cross-layer and cross-round KV sharing, the resulting Looped CED matches an unlooped CED's minimal memory footprint and recovers 86-93% of a looped Transformer's gain with 1/6 of its global KV. To test serving at production scale, we loop the 552B-parameter DeepSeek-V4.1-Flash for 8 rounds on one 4xGB200 node: with per-layer and per-round KV the loop cannot fit a single 128K-token request, whereas Looped CED holds 36.8x less KV per token, fits 38 such requests (as many as the unlooped model), and serves 3.6x higher throughput on 8K-token prompts.",
+            "text": "Looped language models deepen computation without adding parameters, yet caching full-context key-value (KV) states across layers and rounds severely bounds serving batch size. We design a looped causal encoder-decoder (CED) that achieves recurrent depth with zero round-wise KV growth, addressing where and how to loop an asymmetric stack in which only sparse encoder layers generate global KV. We find that recurrence must be placed in the encoder to iteratively refine global KV representations rather than re-reading static decoder projections, which both drives language-modeling gains and preserves long-context scaling. Furthermore, training the encoder loop under stochastic recurrence depth induces a fixed-point equilibrium where every round losslessly shares the last round's KV cache. Compounding cross-layer and cross-round KV sharing, the resulting Looped CED matches an unlooped CED's minimal memory footprint and recovers 86-93% of a looped Transformer's gain with 1/6 of its global KV. To test serving at production scale, we loop the 552B-parameter DeepSeek-V4.1-Flash for 8 rounds on one 4xGB200 node: with per-layer and per-round KV the loop cannot fit a single 128K-token request, whereas Looped CED holds 36.8x less KV per token, fits 38 such requests (as many as the unlooped model), and serves 3.6x higher throughput on 8K-token prompts.",
+            "lead": "Looped language models deepen computation without adding parameters, yet caching full-context key-value (KV) states across layers and rounds severely bounds serving batch size. We design a looped causal encoder-decoder (CED) that achieves recurrent depth with zero round-wise KV growth, addressing where and how to loop an asymmetric stack in which only sparse encoder layers generate global KV. We find that recurrence must be placed in the encoder to iterati",
+            "chars": 1361,
+            "shown": 1361,
+            "truncated": false
+          },
+          "categories": [
+            "cs.LG"
+          ],
+          "author": "Jiaqi Leng",
+          "lang": "en",
+          "tier": 3,
+          "trustCategory": false,
+          "declaredCategory": "ideas",
+          "metrics": {},
+          "quality": 7,
+          "score": 9.1,
+          "category": "bench",
+          "subcategory": "cost",
+          "practical": 1,
+          "slug": "d7e7c64036e6",
+          "action": 1,
+          "rank": 8.6,
+          "tags": [
+            "tutorial"
+          ]
+        }
+      ]
+    }
+  ]
+}
