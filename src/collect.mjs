@@ -118,7 +118,8 @@ async function main() {
   const cutoffFor = (sourceId) => {
     const window = windowCutoff(sourceId);
     if (!incrementalFrom) return window;
-    return incrementalFrom < window ? window : incrementalFrom;
+    // 取更早的那条线：窗口该有多宽就多宽，增量线只在「上次运行很久以前」时才额外往前补漏。
+    return incrementalFrom < window ? incrementalFrom : window;
   };
 
   const results = flags.offline

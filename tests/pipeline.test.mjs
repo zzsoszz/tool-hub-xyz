@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { execFileSync } from 'node:child_process';
-import { readdir, readFile, rm } from 'node:fs/promises';
+import { mkdir, readdir, readFile, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import test from 'node:test';
 
@@ -144,4 +144,18 @@ test('collectingWithAnExplicitWindowKeepsOnlyThatWindowsItems', async () => {
   const digest = JSON.parse(await readFile(path.join(ROOT, windowDir, 'digests', '2020-01-01.json'), 'utf8'));
   assert.deepEqual(digest.window, { since: '2020-01-01T00:00:00.000Z', until: '2020-01-02T00:00:00.000Z' });
   assert.equal(digest.categories.length, 0);
+});
+
+// 增量起点只是补漏线，每个源自己的 windowHours 才是窗口：上次运行哪怕只过去一小时，
+// 48 小时的窗口也不该被压成一小时，否则慢栏目永远采不到东西。
+test('incrementalRunsKeepEachSourcesOwnWindow', async () => {
+  const freshDir = '.tmp-test/data-fresh';
+  const seededDir = '.tmp-test/data-seeded';
+  await mkdir(path.join(ROOT, seededDir), { recursive: true });
+  await writeFile(path.join(ROOT, seededDir, 'state.json'), `${JSON.stringify({ version: 1, day: '2026-11-09', lastRunAt: '2026-11-08T22:30:00.000Z' }, null, 2)}\n`);
+  const published = (output) => Number(/published=(\d+)/.exec(output)[1]);
+  const fresh = run(['src/collect.mjs', '--offline', `--out=${freshDir}`, `--now=${FIXED_NOW}`]);
+  const seeded = run(['src/collect.mjs', '--offline', `--out=${seededDir}`, `--now=${FIXED_NOW}`]);
+  assert.match(seeded, /增量\(自 2026-11-08T22:30:00\.000Z\)/);
+  assert.equal(published(seeded), published(fresh));
 });
