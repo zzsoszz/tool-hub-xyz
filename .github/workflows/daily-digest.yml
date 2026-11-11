@@ -50,6 +50,7 @@ jobs:
           if [ -n "$(git status --porcelain data)" ]; then
             git add data
             git commit -m "chore(digest): 更新 $(date -u +'%F') 采集数据"
+            git pull --rebase origin "$GITHUB_REF_NAME"
             git push
           else
             echo "data 无变化，跳过提交"
@@ -68,6 +69,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      # 采集环节刚往 main 推过一个 commit：审查环节必须从那个 commit 出发，
+      # 否则回写审查记录时必然撞上 non-fast-forward，发布环节被整个跳过。
+      - name: 对齐 main
+        run: |
+          git fetch origin "$GITHUB_REF_NAME"
+          git reset --hard "origin/$GITHUB_REF_NAME"
 
       - uses: actions/setup-node@v4
         with:
@@ -99,6 +107,7 @@ jobs:
           if [ -n "$(git status --porcelain data)" ]; then
             git add data
             git commit -m "chore(review): 记录 $(date -u +'%F') 质量审查结论"
+            git pull --rebase origin "$GITHUB_REF_NAME"
             git push
           else
             echo "审查记录无变化，跳过提交"
