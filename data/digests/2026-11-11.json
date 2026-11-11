@@ -1,6 +1,6 @@
 {
   "day": "2026-11-11",
-  "generatedAt": "2026-11-11T10:30:40.306Z",
+  "generatedAt": "2026-11-11T10:48:08.100Z",
   "timezone": "Asia/Shanghai",
   "windowHours": 48,
   "window": {
@@ -9,14 +9,14 @@
   },
   "counts": {
     "sources": 42,
-    "okSources": 41,
-    "fetched": 1154,
-    "duplicates": 732,
-    "carried": 42,
-    "added": 8,
-    "fallback": 9,
-    "lowQuality": 202,
-    "published": 60
+    "okSources": 40,
+    "fetched": 1128,
+    "duplicates": 809,
+    "carried": 49,
+    "added": 2,
+    "fallback": 8,
+    "lowQuality": 172,
+    "published": 52
   },
   "sources": [
     {
@@ -254,10 +254,10 @@
     {
       "id": "reddit-saas",
       "name": "r/SaaS 变现实操",
-      "ok": true,
-      "items": 25,
+      "ok": false,
+      "items": 0,
       "queries": 1,
-      "error": null
+      "error": "HTTP 429"
     },
     {
       "id": "lcz-hardware",
@@ -335,7 +335,7 @@
       "id": "hn-ecosystem",
       "name": "HN 检索（本地推理生态）",
       "ok": true,
-      "items": 102,
+      "items": 101,
       "queries": 12,
       "error": null
     },
@@ -650,81 +650,6 @@
           "tags": []
         },
         {
-          "sourceId": "lcz-agent",
-          "sourceName": "抡锤者 Agent 工具",
-          "lang": "zh",
-          "tier": 2,
-          "trustCategory": true,
-          "declaredCategory": "tools",
-          "categories": [
-            "rtx3080",
-            "多卡部署",
-            "图片生成"
-          ],
-          "author": "Dante ding",
-          "id": "2932",
-          "title": "如何整合Agent 和生图",
-          "url": "https://lcz.me/topic/2932",
-          "published": "2026-11-09T03:54:01.854Z",
-          "summary": "两条推理链分开跑，由一个编排层用 tool 调，别塞进同一个进程。 分工 GPU0（CUDA_VISIBLE_DEVICES=0）：Strata/llama.cpp 跑 QFN iq3xss，起 OpenAI 兼容端口（如 8080），--ctx-size 先给 32K；64G 内存下 iq3xss 权重约 40G 出头，要留余量。 GPU1（CUDA_VISIBLE_DEVICES=1）：ComfyUI 跑 Qwen Image 2.1 turbo，--listen 127.0.0.1 --port 8188，只走 /prompt + /history/{prompt_id} API。 agent（DeepSeek Harnes…",
-          "metrics": {
-            "points": 0,
-            "comments": 3,
-            "views": 155
-          },
-          "excellent": false,
-          "quality": 7,
-          "fallback": true,
-          "score": 16.03,
-          "category": "apps",
-          "subcategory": "inference",
-          "practical": 2,
-          "slug": "6f3e9570882c",
-          "action": 4,
-          "rank": 13.4,
-          "tags": [
-            "generate",
-            "local",
-            "agent"
-          ]
-        },
-        {
-          "sourceId": "gh-ecosystem",
-          "sourceName": "GitHub 检索（生态项目更新）",
-          "lang": "en",
-          "tier": 2,
-          "trustCategory": false,
-          "declaredCategory": "oss",
-          "categories": [
-            "agent",
-            "coze",
-            "deepseek",
-            "dify",
-            "dingtalk"
-          ],
-          "author": "langbot-app",
-          "id": "575321313",
-          "title": "langbot-app/LangBot",
-          "url": "https://github.com/langbot-app/LangBot",
-          "published": "2026-11-11T09:55:56.000Z",
-          "summary": "Production-grade platform for building agentic IM bots - 生产级多平台智能机器人开发平台/ Agent、知识库编排、插件系统 / Bots for Discord / Slack / LINE / Telegram / WeChat(企业微信, 企微智能机器人, 公众号) / 飞书 / 钉钉 / QQ / Matrix e.g. Integrated with ChatGPT(GPT), DeepSeek, Dify, n8n, Langflow, Coze, Claude, Gemini, GLM, Ollama, SiliconFlow, Kimi, openclaw /…",
-          "metrics": {
-            "stars": 18905
-          },
-          "quality": 10,
-          "score": 24.56,
-          "category": "apps",
-          "subcategory": "knowledge",
-          "practical": 3,
-          "slug": "8e1c6bd72ab9",
-          "action": 2,
-          "rank": 13.2,
-          "tags": [
-            "local",
-            "agent"
-          ]
-        },
-        {
           "sourceId": "gh-ecosystem",
           "sourceName": "GitHub 检索（生态项目更新）",
           "lang": "en",
@@ -965,6 +890,45 @@
           "action": 2,
           "rank": 9.2,
           "tags": []
+        },
+        {
+          "sourceId": "arxiv-ecosystem",
+          "sourceName": "arXiv 检索（推理引擎与量化）",
+          "title": "Coverage-Verified Sparse Attention: Closed-Loop Quality Control for Long-Context LLM Decoding",
+          "url": "https://arxiv.org/abs/2611.10634v1",
+          "id": "http://arxiv.org/abs/2611.10634v1",
+          "published": "2026-11-07T10:22:27.000Z",
+          "summary": "Sparse attention accelerates long-context decoding by reading a subset of the KV cache, but existing methods are open-loop: the kernel commits to its selection with no signal indicating whether enough attention mass was preserved and no recovery path when it was not. The needed signal already exists inside the kernel.…",
+          "content": {
+            "html": "Sparse attention accelerates long-context decoding by reading a subset of the KV cache, but existing methods are open-loop: the kernel commits to its selection with no signal indicating whether enough attention mass was preserved and no recovery path when it was not. The needed signal already exists inside the kernel. The fraction of softmax mass on the selected tokens, which we call coverage, satisfies an exact algebraic equality with per-step output error and serves a dual role as the acceptance criterion and the interpolation weight for recovery. Coverage-Verified Sparse Attention (CVSA) turns coverage into a training-free, closed-loop verify-then-correct decode loop that accepts high-coverage drafts and recovers only the heads that fall short, with no sampling, no draft model, and no speculative-decoding infrastructure. Quality varies by only $0.14$ points across the threshold sweep; budget and scheduling ablations characterize the deployed operating point. On LongBench at 7B and 70B, CVSA comes within $1.13$ points of dense attention, statistically matching it at 70B, and it loses $0.8$ points on RULER; measured median decode-step speedup reaches $6.21\\times$ at 128K context.",
+            "text": "Sparse attention accelerates long-context decoding by reading a subset of the KV cache, but existing methods are open-loop: the kernel commits to its selection with no signal indicating whether enough attention mass was preserved and no recovery path when it was not. The needed signal already exists inside the kernel. The fraction of softmax mass on the selected tokens, which we call coverage, satisfies an exact algebraic equality with per-step output error and serves a dual role as the acceptance criterion and the interpolation weight for recovery. Coverage-Verified Sparse Attention (CVSA) turns coverage into a training-free, closed-loop verify-then-correct decode loop that accepts high-coverage drafts and recovers only the heads that fall short, with no sampling, no draft model, and no speculative-decoding infrastructure. Quality varies by only $0.14$ points across the threshold sweep; budget and scheduling ablations characterize the deployed operating point. On LongBench at 7B and 70B, CVSA comes within $1.13$ points of dense attention, statistically matching it at 70B, and it loses $0.8$ points on RULER; measured median decode-step speedup reaches $6.21\\times$ at 128K context.",
+            "lead": "Sparse attention accelerates long-context decoding by reading a subset of the KV cache, but existing methods are open-loop: the kernel commits to its selection with no signal indicating whether enough attention mass was preserved and no recovery path when it was not. The needed signal already exists inside the kernel. The fraction of softmax mass on the selected tokens, which we call coverage, satisfies an exact algebraic equality with per-step output erro",
+            "chars": 1199,
+            "shown": 1199,
+            "truncated": false
+          },
+          "categories": [
+            "cs.LG",
+            "cs.CL"
+          ],
+          "author": "Yan-Cheng Li",
+          "lang": "en",
+          "tier": 3,
+          "trustCategory": false,
+          "declaredCategory": "ideas",
+          "metrics": {},
+          "quality": 6,
+          "fallback": true,
+          "score": 3.4,
+          "category": "apps",
+          "subcategory": "knowledge",
+          "practical": 1,
+          "slug": "cabe391a95c9",
+          "action": 2,
+          "rank": 9.2,
+          "tags": [
+            "free"
+          ]
         }
       ]
     },
@@ -1361,36 +1325,6 @@
           ]
         },
         {
-          "sourceId": "qbitai",
-          "sourceName": "量子位",
-          "title": "Fable 5.2首批实测来了！网友：Opus突然不香了",
-          "url": "https://www.qbitai.com/2026/11/508912.html",
-          "id": "https://www.qbitai.com/?p=508912",
-          "published": "2026-11-10T07:03:43.000Z",
-          "summary": "作曲、拍片、3D建模一条龙全包圆",
-          "categories": [
-            "资讯",
-            "Claude"
-          ],
-          "author": "梦瑶",
-          "lang": "zh",
-          "tier": 1,
-          "trustCategory": true,
-          "declaredCategory": "news",
-          "metrics": {},
-          "quality": 6,
-          "score": 16.68,
-          "category": "tools",
-          "subcategory": null,
-          "practical": 1,
-          "slug": "0748d6c00c15",
-          "action": 2,
-          "rank": 9.2,
-          "tags": [
-            "benchmark"
-          ]
-        },
-        {
           "sourceId": "arxiv-cs",
           "sourceName": "arXiv cs.AI/CL/LG",
           "title": "Comparative Analysis of Agent Evaluation Frameworks: Stability, Detection, and Discovery in Enterprise Analytics Agents",
@@ -1567,82 +1501,6 @@
           ]
         },
         {
-          "sourceId": "lcz-hardware",
-          "sourceName": "抡锤者 AI硬件",
-          "lang": "zh",
-          "tier": 2,
-          "trustCategory": true,
-          "declaredCategory": "local",
-          "categories": [
-            "rtx5080",
-            "minimax",
-            "视频生成"
-          ],
-          "author": "ゆうみん",
-          "id": "2895",
-          "title": "【实测分享】单张 RTX 5080 16GB 本地跑 MiniMax H3 视频：16GB 显存够用，FastH3 一条 10 秒镜头约 3 分钟（附官方 8 步 / Pika 6 步 / 三种输入对比）",
-          "url": "https://lcz.me/topic/2895",
-          "published": "2026-11-07T05:32:43.045Z",
-          "summary": "很赞，看了你的帖子，我把7900xtx退了，现在要转投N卡，我的主要用途是跑文生图，图生视频。不跑本本地LLM。目前考虑5080 16G/4080 32G魔改卡/rtx pro 4000 24G，我希望每次能生成10秒或者15秒1344x768的视频。请楼主给一些意见，谢谢 标签：rtx5080 / minimax / 视频生成",
-          "metrics": {
-            "points": 1,
-            "comments": 4,
-            "views": 496
-          },
-          "excellent": false,
-          "quality": 8,
-          "score": 12.93,
-          "category": "hardware",
-          "subcategory": "gpu",
-          "practical": 3,
-          "slug": "2d22ac1d42e6",
-          "action": 6,
-          "rank": 17.6,
-          "tags": [
-            "lowspec",
-            "benchmark",
-            "generate",
-            "local"
-          ]
-        },
-        {
-          "sourceId": "gh-ecosystem",
-          "sourceName": "GitHub 检索（生态项目更新）",
-          "lang": "en",
-          "tier": 2,
-          "trustCategory": false,
-          "declaredCategory": "oss",
-          "categories": [
-            "abliteration",
-            "cuda",
-            "deepseek",
-            "deepseek-v4",
-            "deepseek-v4-1"
-          ],
-          "author": "Indras-Mirror",
-          "id": "1407738188",
-          "title": "Indras-Mirror/Xolotl",
-          "url": "https://github.com/Indras-Mirror/Xolotl",
-          "published": "2026-11-11T05:42:59.000Z",
-          "summary": "Xolotl: run DeepSeek-V4.1-Flash, all 552B, as a local coding agent on one gaming PC (RTX 4090 + 110 GB RAM): ~33 tok/s on agent tasks, ~41 in fast mode, 512K context. Plus GLM-5.3-Flash, Qwen3.8 and LFM3-Omni. MoE experts tiered across VRAM, pinned RAM and NVMe, with Xolotl Direct NVMe->VRAM. OpenAI + Anthropic API. (…",
-          "metrics": {
-            "stars": 506
-          },
-          "quality": 10,
-          "score": 21.81,
-          "category": "hardware",
-          "subcategory": "gpu",
-          "practical": 1,
-          "slug": "81acf0881de1",
-          "action": 3,
-          "rank": 14.8,
-          "tags": [
-            "lowspec",
-            "benchmark",
-            "agent"
-          ]
-        },
-        {
           "sourceId": "gh-releases",
           "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
           "lang": "en",
@@ -1675,80 +1533,6 @@
           "tags": [
             "local",
             "tutorial"
-          ]
-        },
-        {
-          "sourceId": "gh-ecosystem",
-          "sourceName": "GitHub 检索（生态项目更新）",
-          "lang": "en",
-          "tier": 2,
-          "trustCategory": false,
-          "declaredCategory": "oss",
-          "categories": [
-            "anthropic-api",
-            "cuda",
-            "gguf",
-            "inference",
-            "llama-cpp"
-          ],
-          "author": "RustingStudio",
-          "id": "1413067901",
-          "title": "RustingStudio/RustingStrata",
-          "url": "https://github.com/RustingStudio/RustingStrata",
-          "published": "2026-11-11T07:57:52.000Z",
-          "summary": "Pure-Rust inference engine for Qwen GGUF models (Qwen3 to Qwen3.8, dense and MoE up to 770B+). CUDA and Vulkan (NVIDIA, AMD), hybrid CPU+GPU experts, MTP speculative decoding, OpenAI and Anthropic compatible server. Up to ~1.7x llama.cpp decode on a 12 GB RTX 3060. (★ 206 · Rust · anthropic-api / cuda / gguf / inferen…",
-          "metrics": {
-            "stars": 206
-          },
-          "quality": 10,
-          "score": 22,
-          "category": "hardware",
-          "subcategory": "gpu",
-          "practical": 1,
-          "slug": "0d039fb56b48",
-          "action": 2,
-          "rank": 13.2,
-          "tags": [
-            "local"
-          ]
-        },
-        {
-          "sourceId": "lcz-llm",
-          "sourceName": "抡锤者 模型部署讨论",
-          "lang": "zh",
-          "tier": 2,
-          "trustCategory": true,
-          "declaredCategory": "local",
-          "categories": [
-            "rtxpro6000",
-            "glm",
-            "本地模型"
-          ],
-          "author": "lunarmoon26",
-          "id": "2882",
-          "title": "双 RTX PRO 6000 + 64GB RAM：Maya 跑 GLM-5.3-Flash Maya-L，51K 上下文 ~127.2 tok/s",
-          "url": "https://lcz.me/topic/2882",
-          "published": "2026-11-06T01:24:47.869Z",
-          "summary": "@lunarmoon26 said: 真的想买 这个算力吊打8卡pro6000 还便宜很多 頂級商務人士客群(程序員/金融研究員) 一年的收入大約 0.5~2台 DGX Station 買一台, 基本上會有2~3個分身(有良好的Agent操作技巧) 用2~3個分身每年又能多賺個0.5~1.5台DGX Station業內外收入 一台DGX MSRP 1~2年後價格可能又翻倍 3~5年後使用下來 收益應該不少 标签：rtxpro6000 / glm / 本地模型",
-          "metrics": {
-            "points": 3,
-            "comments": 11,
-            "views": 366
-          },
-          "excellent": true,
-          "quality": 10,
-          "fallback": true,
-          "score": 10.13,
-          "category": "hardware",
-          "subcategory": "gpu",
-          "practical": 1,
-          "slug": "9270ef04bcf4",
-          "action": 2,
-          "rank": 13.2,
-          "tags": [
-            "local",
-            "benchmark",
-            "agent"
           ]
         },
         {
@@ -1822,6 +1606,42 @@
           ]
         },
         {
+          "sourceId": "gh-releases",
+          "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "Niko1221",
+          "id": "437439232",
+          "title": "Strata v0.2.12 发布",
+          "url": "https://github.com/Niko1221/Strata/releases/tag/v0.2.12",
+          "published": "2026-11-07T08:54:40.000Z",
+          "summary": "Strata 0.2.12: a tuned DFlash2 drafter, faster prompts on 12 GB cards, Strix Halo and Mac, and tool-call fixes The app and the Terminal are 0.2.12. Control and every engine package are 0.1.58. The update feed is sequence 122. The DGX Spark (linux-aarch64) gets 0.2.12 too. Highlights 12 GB cards (RTX 3060 class): UD-IQ…",
+          "content": {
+            "html": "<h3>Strata 0.2.12: a tuned DFlash2 drafter, faster prompts on 12 GB cards, Strix Halo and Mac, and tool-call fixes</h3>\n<p>The app and the Terminal are 0.2.12. Control and every engine package are 0.1.58. The update feed is sequence 122. The DGX Spark (linux-aarch64) gets 0.2.12 too.</p>\n<h4>Highlights</h4>\n<ul><li><strong>12 GB cards (RTX 3060 class):</strong>UD-IQ4_XS-v31 prompts read about 3 times faster, 87 to 264 tokens per second at 2K.</li><li><strong>Strix Halo (Windows):</strong>prompts x1.24 to x2.14 on UD-IQ4_XS-v31 and UD-Q4_K_XL.</li><li><strong>Mac (M5 Max):</strong>output +10.3% to +12.7% and prompts +11.7% to +13.9% on UD-Q4_K_XL and UD-IQ4_XS-v31.</li><li><strong>Tuned DFlash2 drafter:</strong>Strata's own copy of the helper model that guesses the next words; decode +2.4% to +5.0% on the RTX PRO 5000 and the DGX Spark.</li><li><strong>Radeon R9700:</strong>32K prompts +8.6% to +11.6%.</li><li><strong>Tool calls:</strong>Claude Desktop's model name is accepted (#5312), plus fixes for #5409, #5276, #5281, #4622 and PRs #4828 and #4832.</li></ul>\n<h4>Speed against 0.2.11</h4>\n<p>Tokens per second, 0.2.11 to 0.2.12. \"Output\" is the geometric mean over the kinds we tried where we have one; the worst kind is shown when it is a loss.</p>\n<p>| Machine, model | Prompt | Output | |---|---|---| | Mac M5 Max, UD-Q4_K_XL | 4K 1,406 to 1,605; 32K 1,350 to 1,524 | +12.7% (every kind up) | | Mac M5 Max, UD-IQ4_XS-v31 | 4K 1,440 to 1,649; 32K 1,373 to 1,543 | +10.3% (agent -0.9%) | | Strix Halo, UD-IQ4_XS-v31 | 4K 690 to 1,220; 32K 1,107 to 1,377 | code +10%, chat +3%;<strong>tool call -9.5%</strong>| | Strix Halo, UD-Q4_K_XL | 4K 597 to 1,267; 32K 1,034 to 1,370 | code +24%, chat +6%;<strong>tool call -5.8%</strong>, agent -2.5% | | RTX 3060 12 GB, UD-IQ4_XS-v31 | 2K 87 to 264; 32K 361 to 981 | code +37%, agent +34%;<strong>JSON -18.9%</strong>| | RTX PRO 5000, IQ3_S | 8K level (x1.002) | +2.4%; agent -1.5%, chat -1.0% | | DGX Spark, IQ3_S | see Known problems | +3.1%; chat -3.3% | | DGX Spark, UD-IQ4_XS-v31 | see Known problems | +5.0%; chat -0.4% | | Radeon R9700, IQ3_S (Auto now MTP) | 32K 3,076 to 3,304 |<strong>code -10.5%, tool call -9.3%</strong>, JSON -2.3% | | Radeon R9700, UD-IQ4_XS-v31 (Auto now MTP) | 32K 2,817 to 3,015 |<strong>code -8.5%</strong>, JSON -4.8%, tool call -3.2% | | 2 x RTX A6000, IQ3_S | level | split engine -0.40%, layer split +0.38% |</p>\n<p>How it was measured: each machine ran 0.2.11 and the 0.2.12 candidate side by side, 2 to 3 rounds, a fresh engine start per run, the arms swapped in order each round, greedy answers of 300 tokens. Each version used the settings it writes for that machine, so the 0.2.12 column includes the new drafter choices. Speeds were not measured again on the final 0.1.58 packages; the engine source after the check changed only in the version number and two build fixes for old NVIDIA cards.</p>\n<h4>What changed for you</h4>\n<ul><li><strong>Tuned DFlash2 drafter (0.34 GB, 0.52 GB on Intel Arc).</strong>Auto now uses it on: Mac (UD-Q4_K_XL, UD-IQ4_XS-v31; DFlash2 is now the Mac default for these, confidence 0.7); NVIDIA cards with every expert on the card and the DGX Spark (IQ3_S, UD-IQ4_XS-v31); Strix Halo (IQ3_S, UD-Q4_K_XL, UD-IQ4_XS, UD-IQ4_XS-v31); Intel Arc A-series (IQ3_XXS); 12 GB NVIDIA cards (UD-IQ4_XS-v31). Back:<code>strata launch --drafting mtp</code>.</li><li><strong>Radeon gfx1201 (R9700, RX 9070): Auto starts MTP, not DFlash2,</strong>because 11 of 50 DFlash2 engines on 0.2.11 stopped on the prompt. Line shown: \"DFlash2 is off by default on this graphics card for now; choose it in Drafting to use it.\" Back:<code>--drafting dflash2</code>.</li><li><strong>12 GB cards (Linux): the second start-up check no longer counts the engine's own memory as free,</strong>so it stops switching to the slower file cache. When it still switches it says:<code>strata: expert reads now go through the file cache (X GiB of RAM free for them, Y GiB limit)</code>. On the RTX 3060, 0.2.11 switched in 3 of 3 starts and 0.2.12 in 0 of 3. Auto now starts MTP for IQ3_S and the tuned DFlash2 for UD-IQ4_XS-v31 on these cards. Back:<code>STRATA_FILE_TIER_HONEST=0</code>.</li><li><strong>A download with the wrong checksum is kept as<code>&lt;name&gt;.bad</code>, not deleted:</strong><code>&lt;name&gt; does not match the pinned SHA-256 (it is &lt;got&gt;, Strata expects &lt;want&gt;); the file was kept as &lt;name&gt;.bad</code> . Setup checks it again…</li></ul>",
+            "text": "Strata 0.2.12: a tuned DFlash2 drafter, faster prompts on 12 GB cards, Strix Halo and Mac, and tool-call fixes\nThe app and the Terminal are 0.2.12. Control and every engine package are 0.1.58. The update feed is sequence 122. The DGX Spark (linux-aarch64) gets 0.2.12 too.\nHighlights\n12 GB cards (RTX 3060 class): UD-IQ4_XS-v31 prompts read about 3 times faster, 87 to 264 tokens per second at 2K.\nStrix Halo (Windows): prompts x1.24 to x2.14 on UD-IQ4_XS-v31 and UD-Q4_K_XL.\nMac (M5 Max): output +10.3% to +12.7% and prompts +11.7% to +13.9% on UD-Q4_K_XL and UD-IQ4_XS-v31.\nTuned DFlash2 drafter: Strata's own copy of the helper model that guesses the next words; decode +2.4% to +5.0% on the RTX PRO 5000 and the DGX Spark.\nRadeon R9700: 32K prompts +8.6% to +11.6%.\nTool calls: Claude Desktop's model name is accepted (#5312), plus fixes for #5409, #5276, #5281, #4622 and PRs #4828 and #4832.\nSpeed against 0.2.11\nTokens per second, 0.2.11 to 0.2.12. \"Output\" is the geometric mean over the kinds we tried where we have one; the worst kind is shown when it is a loss.\n| Machine, model | Prompt | Output | |---|---|---| | Mac M5 Max, UD-Q4_K_XL | 4K 1,406 to 1,605; 32K 1,350 to 1,524 | +12.7% (every kind up) | | Mac M5 Max, UD-IQ4_XS-v31 | 4K 1,440 to 1,649; 32K 1,373 to 1,543 | +10.3% (agent -0.9%) | | Strix Halo, UD-IQ4_XS-v31 | 4K 690 to 1,220; 32K 1,107 to 1,377 | code +10%, chat +3%; tool call -9.5% | | Strix Halo, UD-Q4_K_XL | 4K 597 to 1,267; 32K 1,034 to 1,370 | code +24%, chat +6%; tool call -5.8% , agent -2.5% | | RTX 3060 12 GB, UD-IQ4_XS-v31 | 2K 87 to 264; 32K 361 to 981 | code +37%, agent +34%; JSON -18.9% | | RTX PRO 5000, IQ3_S | 8K level (x1.002) | +2.4%; agent -1.5%, chat -1.0% | | DGX Spark, IQ3_S | see Known problems | +3.1%; chat -3.3% | | DGX Spark, UD-IQ4_XS-v31 | see Known problems | +5.0%; chat -0.4% | | Radeon R9700, IQ3_S (Auto now MTP) | 32K 3,076 to 3,304 | code -10.5%, tool call -9.3% , JSON -2.3% | | Radeon R9700, UD-IQ4_XS-v31 (Auto now MTP) | 32K 2,817 to 3,015 | code -8.5% , JSON -4.8%, tool call -3.2% | | 2 x RTX A6000, IQ3_S | level | split engine -0.40%, layer split +0.38% |\nHow it was measured: each machine ran 0.2.11 and the 0.2.12 candidate side by side, 2 to 3 rounds, a fresh engine start per run, the arms swapped in order each round, greedy answers of 300 tokens. Each version used the settings it writes for that machine, so the 0.2.12 column includes the new drafter choices. Speeds were not measured again on the final 0.1.58 packages; the engine source after the check changed only in the version number and two build fixes for old NVIDIA cards.\nWhat changed for you\nTuned DFlash2 drafter (0.34 GB, 0.52 GB on Intel Arc). Auto now uses it on: Mac (UD-Q4_K_XL, UD-IQ4_XS-v31; DFlash2 is now the Mac default for these, confidence 0.7); NVIDIA cards with every expert on the card and the DGX Spark (IQ3_S, UD-IQ4_XS-v31); Strix Halo (IQ3_S, UD-Q4_K_XL, UD-IQ4_XS, UD-IQ4_XS-v31); Intel Arc A-series (IQ3_XXS); 12 GB NVIDIA cards (UD-IQ4_XS-v31). Back: strata launch --drafting mtp .\nRadeon gfx1201 (R9700, RX 9070): Auto starts MTP, not DFlash2, because 11 of 50 DFlash2 engines on 0.2.11 stopped on the prompt. Line shown: \"DFlash2 is off by default on this graphics card for now; choose it in Drafting to use it.\" Back: --drafting dflash2 .\n12 GB cards (Linux): the second start-up check no longer counts the engine's own memory as free, so it stops switching to the slower file cache. When it still switches it says: strata: expert reads now go through the file cache (X GiB of RAM free for them, Y GiB limit) . On the RTX 3060, 0.2.11 switched in 3 of 3 starts and 0.2.12 in 0 of 3. Auto now starts MTP for IQ3_S and the tuned DFlash2 for UD-IQ4_XS-v31 on these cards. Back: STRATA_FILE_TIER_HONEST=0 .\nA download with the wrong checksum is kept as <name>.bad , not deleted: <name> does not match the pinned SHA-256 (it is <got>, Strata expects <want>); the file was kept as <name>.bad . Setup checks it again…",
+            "lead": "Strata 0.2.12: a tuned DFlash2 drafter, faster prompts on 12 GB cards, Strix Halo and Mac, and tool-call fixes\nThe app and the Terminal are 0.2.12. Control and every engine package are 0.1.58. The update feed is sequence 122. The DGX Spark (linux-aarch64) gets 0.2.12 too.\nHighlights\n12 GB cards (RTX 3060 class): UD-IQ4_XS-v31 prompts read about 3 times faster, 87 to 264 tokens per second at 2K.\nStrix Halo (Windows): prompts x1.24 to x2.14 on UD-IQ4_XS-v31 ",
+            "chars": 11014,
+            "shown": 4001,
+            "truncated": true
+          },
+          "quality": 8,
+          "fallback": true,
+          "score": 15.6,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 3,
+          "slug": "2070109bcbef",
+          "action": 3,
+          "rank": 12.8,
+          "tags": [
+            "lowspec",
+            "agent"
+          ]
+        },
+        {
           "sourceId": "reddit-local-llama",
           "sourceName": "r/LocalLLaMA",
           "title": "763B DeepSeek V4.1 Flash on one 32 GB card: 50 tok/s, and what the 2-bit quant costs (top-1 agreement 83.5 %)",
@@ -1856,38 +1676,6 @@
           "rank": 11.8,
           "tags": [
             "local",
-            "benchmark"
-          ]
-        },
-        {
-          "sourceId": "lcz-hardware",
-          "sourceName": "抡锤者 AI硬件",
-          "lang": "zh",
-          "tier": 2,
-          "trustCategory": true,
-          "declaredCategory": "local",
-          "categories": [],
-          "author": "terry",
-          "id": "2948",
-          "title": "4 DGX Spark跑DeepSeek V4.1 Flash实测：长上下文多并发体验拉满，TTFT 1秒以内，性价比超苹果M5 Ultra 512G，RTX Pro 6000！",
-          "url": "https://lcz.me/topic/2948",
-          "published": "2026-11-10T02:00:00.000Z",
-          "summary": "@xiongjie-gao said: 如果都是这种标准化的PC产品，没有了鞋盒主机 第一次看到鞋盒主机 真酷 ！ 現在的電子設備計算能力都夠強了 例如手機 傳統PC消費者市場 可能會越來越小, 大廠的產品線轉型就會往AIPC, AI Servers/Workstation 發展 今年開始差不多是一個過渡期的轉型期 [image: image.jpeg]",
-          "metrics": {
-            "points": 2,
-            "comments": 6,
-            "views": 378
-          },
-          "excellent": false,
-          "quality": 7,
-          "score": 17.32,
-          "category": "hardware",
-          "subcategory": "machine",
-          "practical": 1,
-          "slug": "061d1f16dce2",
-          "action": 2,
-          "rank": 10.2,
-          "tags": [
             "benchmark"
           ]
         },
@@ -2184,42 +1972,6 @@
           "tags": [
             "local",
             "agent"
-          ]
-        },
-        {
-          "sourceId": "lcz-llm",
-          "sourceName": "抡锤者 模型部署讨论",
-          "lang": "zh",
-          "tier": 2,
-          "trustCategory": true,
-          "declaredCategory": "local",
-          "categories": [
-            "strata",
-            "本地模型"
-          ],
-          "author": "李化龙",
-          "id": "2872",
-          "title": "问一下 strata 的模型下载必须得用梯子才能快速下载吗",
-          "url": "https://lcz.me/topic/2872",
-          "published": "2026-11-05T12:04:41.337Z",
-          "summary": "用 aria2 直接怼，别用浏览器单线程： aria2c -c -x16 -s16 -k1M ［模型文件的直链］ -c 就是断点续传，Hugging Face 的 resolve 链接可以直接喂。国内先把 HF_ENDPOINT=https://hf-mirror.com 设上，huggingface-cli 走镜像；大文件也可以用 hf_transfer。 下完把模型目录指给 strata 的 setup 或 --model-path 就行，不用搬进默认缓存。 标签：strata / 本地模型",
-          "metrics": {
-            "points": 0,
-            "comments": 5,
-            "views": 340
-          },
-          "excellent": false,
-          "quality": 7,
-          "fallback": true,
-          "score": 8.93,
-          "category": "local",
-          "subcategory": "weights",
-          "practical": 1,
-          "slug": "a16ace76c38e",
-          "action": 3,
-          "rank": 11.8,
-          "tags": [
-            "local"
           ]
         },
         {
@@ -2705,38 +2457,6 @@
           "rank": 8.6,
           "tags": [
             "tutorial"
-          ]
-        },
-        {
-          "sourceId": "lcz-llm",
-          "sourceName": "抡锤者 模型部署讨论",
-          "lang": "zh",
-          "tier": 2,
-          "trustCategory": true,
-          "declaredCategory": "local",
-          "categories": [],
-          "author": "terry",
-          "id": "2961",
-          "title": "Claude Fable5.2实测，3个简单测试案例和腾讯HY4一个水平但是价格贵了25倍，Anthropic还是少吹牛，多改善下产品！",
-          "url": "https://lcz.me/topic/2961",
-          "published": "2026-11-10T12:00:00.000Z",
-          "summary": "@Henry-Chiu-0 試一次就知道了 測試模型不是只有讓他畫SVG出個圖 前端後端能力都是很重要的指標 這就是為何評測網站都測10種以上不同的能力",
-          "metrics": {
-            "points": 2,
-            "comments": 5,
-            "views": 138
-          },
-          "excellent": false,
-          "quality": 6,
-          "score": 18,
-          "category": "bench",
-          "subcategory": "cost",
-          "practical": 1,
-          "slug": "dfd4b5c596e1",
-          "action": 1,
-          "rank": 7.6,
-          "tags": [
-            "benchmark"
           ]
         }
       ]
