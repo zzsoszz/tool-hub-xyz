@@ -118,6 +118,12 @@ npm run lint       # syntax, indentation, trailing whitespace, secret scan
   one feed drags in, so an archive-wide feed never turns into 1,300 doomed items.
 - Measure before adding a source: `node scripts/audit-funnel.mjs [--only=<source-id>]` prints the funnel per
   source (fetched / irrelevant / guard / killed / bodyless / eligible) plus the kill reasons.
+- An item with no fetched body never gets a day slot: `filter.hasBody()` applies the review gate's
+  `quality.review.minBodyChars` during collection, because the review step blocks those items anyway and the
+  slot is wasted. Bodies come from `fetchBody`/`bodyFetchLimit` (feeds) and `enrichLimit` (NodeBB categories).
+- `source.windowHours` is the window; the incremental line only ever widens it, never narrows it. Re-running
+  the same day cannot rebuild that day's supply — everything the first run fetched is already in `seen.json`,
+  so only a fresh day shows the full effect of a source change.
 
 ## Asset Caching
 
