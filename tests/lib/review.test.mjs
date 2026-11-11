@@ -138,6 +138,22 @@ test('mergeHiddenKeepsLegacyBlocksWithoutDayRecords', async () => {
   await rm(dir, { recursive: true, force: true });
 });
 
+test('mergeHiddenMovesReReviewedItemsOutOfTheLegacyBucket', async () => {
+  const dir = path.resolve(import.meta.dirname, '../../.tmp-review5');
+  await rm(dir, { recursive: true, force: true });
+  await mkdir(dir, { recursive: true });
+  const file = path.join(dir, 'hidden.json');
+  await writeFile(file, JSON.stringify({ slugs: ['old1', 'old2'], admin: ['adm1'], machine: ['old1', 'old2'] }));
+  // old2 今天被重新审查并放行，old1 没有出现在本期条目里。
+  const merged = await mergeHidden(file, ['new1'], '2026-11-11', ['old2', 'new1']);
+  const hidden = JSON.parse(await readFile(file, 'utf8'));
+  assert.deepEqual(hidden.machineByDay, { legacy: ['old1'], '2026-11-11': ['new1'] });
+  assert.deepEqual(hidden.machine, ['old1', 'new1']);
+  assert.deepEqual(hidden.slugs, ['adm1', 'old1', 'new1']);
+  assert.deepEqual(merged, { slugs: ['adm1', 'old1', 'new1'], recovered: 1, wrote: true });
+  await rm(dir, { recursive: true, force: true });
+});
+
 test('reviewAgentRetriesOnASmallerModelEndpoint', () => {
   const config = reviewConfig({ CLOUDFLARE_API_TOKEN: 'token', CLOUDFLARE_ACCOUNT_ID: 'acct' });
   assert.equal(config.model, '@cf/meta/llama-3.1-70b-instruct');

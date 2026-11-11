@@ -194,18 +194,37 @@ export function hardReview(digest, filter, rules = REVIEW_RULES) {
   return { rows, digestIssues };
 }
 
-export async function mergeHidden(filePath, blocked, day) {
+export async function mergeHidden(filePath, blocked, day, daySlugs = []) {
   const current = JSON.parse(await readFile(filePath, 'utf8').catch(() => '{}'));
   // 按天存审查下架：重跑同一天会覆盖当天旧结论，避免模型偶发误判永久累积；其他天保持不变。
   // 旧格式只有扁平 machine 列表、没有按天记录：先挂到 legacy 键下，否则重跑某一天会把旧下架结论整批冲掉。
-  const byDay = { ...(current.machineByDay ?? (current.machine?.length ? { legacy: current.machine } : {})) };
+  const storedByDay = current.machineByDay ?? (current.machine?.length ? { legacy: current.machine } : {});
+  const byDay = { ...storedByDay };
+  // 本次审查重新判定的是这一天的全部条目：先把它们从别的桶里摘掉（尤其是没有日期归属的 legacy），
+  // 否则旧规则拦下的条目会永久留在下架桶里，规则改了也救不回来。
+  const reviewed = new Set(daySlugs);
+  if (reviewed.size) {
+    for (const [key, slugs] of Object.entries(byDay)) {
+      if (key === day) continue;
+      const kept = slugs.filter((slug) => !reviewed.has(slug));
+      if (kept.length === slugs.length) continue;
+      if (kept.length) byDay[key] = kept;
+      else delete byDay[key];
+    }
+  }
   byDay[day] = blocked;
   const machine = [...new Set(Object.values(byDay).flat())];
   const admin = [...new Set(current.admin ?? [])];
   const slugs = [...new Set([...admin, ...machine])];
-  await mkdir(path.dirname(filePath), { recursive: true });
-  await writeFile(filePath, `${JSON.stringify({ updatedAt: new Date().toISOString(), slugs, admin, machine, machineByDay: byDay }, null, 2)}\n`);
-  return slugs;
+  const stillHidden = new Set(slugs);
+  const recovered = [...new Set(Object.values(storedByDay).flat())].filter((slug) => !stillHidden.has(slug)).length;
+  // 结论没变时不重写文件，避免每天只因为时间戳产生一次无意义提交。
+  const wrote = JSON.stringify(byDay) !== JSON.stringify(storedByDay);
+  if (wrote) {
+    await mkdir(path.dirname(filePath), { recursive: true });
+    await writeFile(filePath, `${JSON.stringify({ updatedAt: new Date().toISOString(), slugs, admin, machine, machineByDay: byDay }, null, 2)}\n`);
+  }
+  return { slugs, recovered, wrote };
 }
 
 async function latestDay(digestDir) {
@@ -293,9 +312,11 @@ export async function runReview({ day, apply = false, allowNoAgent = false, data
   const reportPath = path.join(dataDir, 'reviews', `${targetDay}.json`);
   await mkdir(path.dirname(reportPath), { recursive: true });
   await writeFile(reportPath, `${JSON.stringify(report, null, 2)}\n`);
-  if (apply && blocked.length) {
-    const slugs = await mergeHidden(path.join(dataDir, 'hidden.json'), blocked, targetDay);
-    log(`已把 ${blocked.length} 条写入 data/hidden.json（合计下架 ${slugs.length} 条）`);
+  if (apply) {
+    const { slugs, recovered, wrote } = await mergeHidden(path.join(dataDir, 'hidden.json'), blocked, targetDay, rows.map((row) => row.slug));
+    if (wrote) {
+      log(`已更新 data/hidden.json：拦下 ${blocked.length} 条${recovered ? `，救回 ${recovered} 条` : ''}（合计下架 ${slugs.length} 条）`);
+    }
   }
   log(`review ${targetDay}: ${passed ? '通过' : '不通过'}（放行 ${survivors}/${rows.length} 条）· ${agentNote}`);
   for (const reason of reasons) log(`  × ${reason}`);
