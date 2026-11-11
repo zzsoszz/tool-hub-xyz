@@ -1,6 +1,6 @@
 {
   "day": "2026-11-11",
-  "generatedAt": "2026-11-11T10:48:08.100Z",
+  "generatedAt": "2026-11-11T11:02:36.966Z",
   "timezone": "Asia/Shanghai",
   "windowHours": 48,
   "window": {
@@ -10,13 +10,13 @@
   "counts": {
     "sources": 42,
     "okSources": 40,
-    "fetched": 1128,
-    "duplicates": 809,
-    "carried": 49,
-    "added": 2,
-    "fallback": 8,
-    "lowQuality": 172,
-    "published": 52
+    "fetched": 1149,
+    "duplicates": 818,
+    "carried": 45,
+    "added": 3,
+    "fallback": 10,
+    "lowQuality": 180,
+    "published": 55
   },
   "sources": [
     {
@@ -231,7 +231,7 @@
       "id": "juejin",
       "name": "掘金 AI",
       "ok": true,
-      "items": 0,
+      "items": 20,
       "queries": 1,
       "error": null
     },
@@ -335,7 +335,7 @@
       "id": "hn-ecosystem",
       "name": "HN 检索（本地推理生态）",
       "ok": true,
-      "items": 101,
+      "items": 102,
       "queries": 12,
       "error": null
     },
@@ -565,6 +565,43 @@
           ]
         },
         {
+          "sourceId": "gh-ecosystem",
+          "sourceName": "GitHub 检索（生态项目更新）",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "oss",
+          "categories": [],
+          "author": "darksidewalker",
+          "id": "1200302736",
+          "title": "darksidewalker/ComfyUI-DaSiWa-Nodes",
+          "url": "https://github.com/darksidewalker/ComfyUI-DaSiWa-Nodes",
+          "published": "2026-11-11T11:01:40.000Z",
+          "summary": "DaSiWa Custom Nodes Collection A high-performance collection of custom nodes for ComfyUI, optimized for video workflows, resolution management, and logic control. Its installed version is shown in ComfyUI → Settings → About . Use ComfyUI → Settings → Other → DaSiWa → ... to enable or disable extra settings. [📰 News &…",
+          "metrics": {
+            "stars": 226
+          },
+          "content": {
+            "html": "<h3>DaSiWa Custom Nodes Collection</h3>\n<p>A high-performance collection of custom nodes for ComfyUI, optimized for video workflows, resolution management, and logic control. Its installed version is shown in<strong>ComfyUI → Settings → About</strong>.</p>\n<p>Use<strong>ComfyUI → Settings → Other → DaSiWa → ...</strong>to enable or disable extra settings.</p>\n<p>[📰 News &amp; Changelog — release notes and complete change history across the collection →](docs/news_and_changelog.md)</p>\n<h4>Included Nodes</h4>\n<h4>🎬 MiniMaxH3 Director</h4>\n<p>&gt; 🎬 MiniMaxH3 Director — The Ultimate One-Stop Video Creation Pipeline: Experience the most advanced, feature-complete MiniMaxH3 Director node available for ComfyUI. Built as a comprehensive production hub, it seamlessly merges timeline-based multi-modal authoring, intelligent LLM/VLM Prompt Forge assistance, deep RefMod persona control, and high-precision continuity extensions into a single, unified workflow. Whether starting from text, images, or an existing H3 video, the Director serves as your central command deck for end-to-end synchronized video and audio generation.</p>\n<p>![MiniMaxH3 Director](assets/DaSiWa-MiniMaxH3-Director.png) ![MiniMaxH3 Director](assets/DaSiWa-MiniMaxH3-Director-PromptForge.png) ![MiniMaxH3 Director](assets/DaSiWa-MiniMaxH3-Director-RefMod.png)</p>\n<ul><li>🎥<strong>H3 modes:</strong>T2VA/I2VA/L2VA/FL2VA in the two-image endpoint family (first/last-frame interpolation); REF2VA (9 images, 3 videos, 3 audio files; 12 total); Image Inpaint (one image → single output frame via a 5-frame pass).</li><li>🖼️<strong>Reference Director:</strong>separate image/video/audio lanes; drag-reorder slots, per-media prompts, external soundtracks, embedded-video V/A/V+A switch; incompatible media retained when changing modes.</li><li>📋<strong>Media input:</strong>lane-selected Ctrl+V, file-manager drag-and-drop, paste-replace on a selected tile; first-frame video thumbnails and audio waveforms.</li><li>⏱️<strong>Reference trims:</strong>draggable crop markers and preview range, ▶ Play crop; full-file audio amplitude preview; audio/video previews with highlighted crop, draggable live playhead and source-time readout; 2–15s per reference window and ≤15s combined visual / ≤15s combined audio, with input-path validation.</li><li>📸<strong>RefMods:</strong>image/video/audio files and upstream v5 bundles from<code>models/refmods/</code>; overlay selection, strength scaling, workflow-local descriptions, runtime<code>&lt;RefMod N&gt;</code>→ native-label resolution.</li><li>✍️<strong>Prompt editor:</strong>one free-text field per mode; optional structure, shot/RefMod insertion and reference-label prefill; legacy prompts migrate into that field.</li><li>👥<strong>Forge Cast &amp; People boxes:</strong>find or draw character boxes; editable character/place/style/pose cards, automatic vision reading with a saved opt-out; explicit Idea/Shot changes retain priority. Cards persist in workflows; manual descriptions work without vision.</li><li>✨<strong>Prompt Forge:</strong>review/apply H3 drafts from<code>models/llm</code>, Ollama or an OpenAI-compatible server. REF2VA picture buttons combine character, place, style and frame roles, with optional ordered people selections (left/right, top/bottom or front/back; no order picked means the numbers say who is in the picture, not where); Pose and Custom remain exclusive; image-only labelled drafts need no writer vision, while mixed references retain the full REF2VA path. Choose Auto or 1–5 shots with optional per-shot descriptions; continuity retains vision context and inherited definitions. [Model setup and limitations →](docs/minimax_h3_director.md#prompt-forge-optional).</li><li>♾️<strong>Continuity (opt-in):</strong>extend a completed 24-fps H3 video/audio take from a pinned latent checkpoint; Duration controls added seconds, new-take capture is opt-in; separate next-action prompt, explicit source advancement, optional Forge draft. [Wiring and limits →](docs/h3_continuity.md).</li><li>📐<strong>Smart resolution:</strong>Auto/custom aspect, resolution and megapixel presets; input scaling via Torch Resize (Off/Auto/Target/Fit/Fill/Fit+pad/Divisible crop).</li><li>💾<strong>Save/Load packs:</strong>reference files, prompt and RefMod selections; append/overwrite with mode-limit and missing-file checks.</li><li>📦<strong></strong></li></ul>",
+            "text": "DaSiWa Custom Nodes Collection\nA high-performance collection of custom nodes for ComfyUI, optimized for video workflows, resolution management, and logic control. Its installed version is shown in ComfyUI → Settings → About .\nUse ComfyUI → Settings → Other → DaSiWa → ... to enable or disable extra settings.\n[📰 News & Changelog — release notes and complete change history across the collection →](docs/news_and_changelog.md)\nIncluded Nodes\n🎬 MiniMaxH3 Director\n> 🎬 MiniMaxH3 Director — The Ultimate One-Stop Video Creation Pipeline: Experience the most advanced, feature-complete MiniMaxH3 Director node available for ComfyUI. Built as a comprehensive production hub, it seamlessly merges timeline-based multi-modal authoring, intelligent LLM/VLM Prompt Forge assistance, deep RefMod persona control, and high-precision continuity extensions into a single, unified workflow. Whether starting from text, images, or an existing H3 video, the Director serves as your central command deck for end-to-end synchronized video and audio generation.\n![MiniMaxH3 Director](assets/DaSiWa-MiniMaxH3-Director.png) ![MiniMaxH3 Director](assets/DaSiWa-MiniMaxH3-Director-PromptForge.png) ![MiniMaxH3 Director](assets/DaSiWa-MiniMaxH3-Director-RefMod.png)\n🎥 H3 modes: T2VA/I2VA/L2VA/FL2VA in the two-image endpoint family (first/last-frame interpolation); REF2VA (9 images, 3 videos, 3 audio files; 12 total); Image Inpaint (one image → single output frame via a 5-frame pass).\n🖼️ Reference Director: separate image/video/audio lanes; drag-reorder slots, per-media prompts, external soundtracks, embedded-video V/A/V+A switch; incompatible media retained when changing modes.\n📋 Media input: lane-selected Ctrl+V, file-manager drag-and-drop, paste-replace on a selected tile; first-frame video thumbnails and audio waveforms.\n⏱️ Reference trims: draggable crop markers and preview range, ▶ Play crop; full-file audio amplitude preview; audio/video previews with highlighted crop, draggable live playhead and source-time readout; 2–15s per reference window and ≤15s combined visual / ≤15s combined audio, with input-path validation.\n📸 RefMods: image/video/audio files and upstream v5 bundles from models/refmods/ ; overlay selection, strength scaling, workflow-local descriptions, runtime <RefMod N> → native-label resolution.\n✍️ Prompt editor: one free-text field per mode; optional structure, shot/RefMod insertion and reference-label prefill; legacy prompts migrate into that field.\n👥 Forge Cast & People boxes: find or draw character boxes; editable character/place/style/pose cards, automatic vision reading with a saved opt-out; explicit Idea/Shot changes retain priority. Cards persist in workflows; manual descriptions work without vision.\n✨ Prompt Forge: review/apply H3 drafts from models/llm , Ollama or an OpenAI-compatible server. REF2VA picture buttons combine character, place, style and frame roles, with optional ordered people selections (left/right, top/bottom or front/back; no order picked means the numbers say who is in the picture, not where); Pose and Custom remain exclusive; image-only labelled drafts need no writer vision, while mixed references retain the full REF2VA path. Choose Auto or 1–5 shots with optional per-shot descriptions; continuity retains vision context and inherited definitions. [Model setup and limitations →](docs/minimax_h3_director.md#prompt-forge-optional).\n♾️ Continuity (opt-in): extend a completed 24-fps H3 video/audio take from a pinned latent checkpoint; Duration controls added seconds, new-take capture is opt-in; separate next-action prompt, explicit source advancement, optional Forge draft. [Wiring and limits →](docs/h3_continuity.md).\n📐 Smart resolution: Auto/custom aspect, resolution and megapixel presets; input scaling via Torch Resize (Off/Auto/Target/Fit/Fill/Fit+pad/Divisible crop).\n💾 Save/Load packs: reference files, prompt and RefMod selections; append/overwrite with mode-limit and missing-file checks.\n📦",
+            "lead": "DaSiWa Custom Nodes Collection\nA high-performance collection of custom nodes for ComfyUI, optimized for video workflows, resolution management, and logic control. Its installed version is shown in ComfyUI → Settings → About .\nUse ComfyUI → Settings → Other → DaSiWa → ... to enable or disable extra settings.\n[📰 News & Changelog — release notes and complete change history across the collection →](docs/news_and_changelog.md)",
+            "chars": 38582,
+            "shown": 3995,
+            "truncated": true
+          },
+          "quality": 8,
+          "score": 23,
+          "category": "apps",
+          "subcategory": "creation",
+          "practical": 2,
+          "slug": "449cd49c30dd",
+          "action": 4,
+          "rank": 14.4,
+          "tags": [
+            "generate"
+          ]
+        },
+        {
           "sourceId": "hn-money",
           "sourceName": "HN 检索（独立开发与变现）",
           "lang": "en",
@@ -690,6 +727,41 @@
           "rank": 13.2,
           "tags": [
             "free"
+          ]
+        },
+        {
+          "sourceId": "gh-releases",
+          "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "Niko1221",
+          "id": "435171031",
+          "title": "Strata v0.2.11 发布",
+          "url": "https://github.com/Niko1221/Strata/releases/tag/v0.2.11",
+          "published": "2026-11-05T12:49:59.000Z",
+          "summary": "Strata 0.2.11: Unsloth's new 1- to 4-bit Qwen3.8-Flash-Next files, prompt-speed changes on NVIDIA and Radeon cards, small multi-card starts, chats saved as files, a fix for mixed-up replies from model copies, and GUI and Terminal fixes The app and the Terminal are 0.2.11. Control and every engine package are 0.1.57. T…",
+          "content": {
+            "html": "<h3>Strata 0.2.11: Unsloth's new 1- to 4-bit Qwen3.8-Flash-Next files, prompt-speed changes on NVIDIA and Radeon cards, small multi-card starts, chats saved as files, a fix for mixed-up replies from model copies, and GUI and Terminal fixes</h3>\n<p>The app and the Terminal are 0.2.11. Control and every engine package are 0.1.57. The update feed is sequence 121. The DGX Spark (linux-aarch64) gets 0.2.11 too.</p>\n<h4>Unsloth's new Qwen3.8-Flash-Next files</h4>\n<p>On 11-04 Unsloth re-uploaded its Qwen3.8-Flash-Next GGUFs (\"Dynamic v3.1\"). Strata can now download, prepare and run seven of them in the app, in the Terminal (<code>strata launch --family unsloth --model &lt;name&gt;</code>), and from a folder you downloaded yourself (\"Use a local GGUF\" in the app, or<code>strata launch --model-path &lt;first file&gt;</code>). Each file is checked by size and SHA-256 against Unsloth's revision d9620119.</p>\n<p>| Name in Strata | Download | Files | |---|---|---| | UD-IQ1_M | 68.0 GB | 3 | | UD-Q2_0 | 70.6 GB | 3 | | UD-IQ2_XS | 75.8 GB | 3 | | UD-Q2_K_XL | 79.6 GB | 4 | | UD-IQ3_XXS | 83.6 GB | 4 | | UD-Q3_K_XL | 89.5 GB | 4 | | UD-IQ4_XS-v31 | 93.7 GB | 4 |</p>\n<ul><li><strong>Each set's last file is the 28.8 GB table the model reads per token.</strong>Sets that share it share the file: UD-IQ1_M and UD-IQ2_XS use one, UD-IQ3_XXS and UD-IQ4_XS-v31 the other.</li><li><strong>UD-IQ4_XS-v31 is a different file from the UD-IQ4_XS Strata already offers.</strong>It has other tensor types and four files instead of three, so it has its own name. The existing UD-IQ4_XS stays as it is.</li><li><strong>UD-Q4_K_XL, UD-Q5_K_XL, UD-Q6_K_XL and Q8_0:</strong>Strata keeps downloading the 09-30 files it already uses. The 11-04 UD-Q4_K_XL holds the same weights split into four files in a different place; Strata accepts that split too if you already have it.</li><li><strong>UD-IQ1_S does not load.</strong>One of its layers mixes two expert formats, which Strata cannot load. UD-IQ1_M is the 1-bit choice.</li><li><strong>On a Mac,</strong>the app and the Terminal offer all seven, and the app now offers Unsloth's sets at all. Before the first start, the Mac writes the experts into one file for the GPU, so it needs room for the download plus that file plus a few GB (about 115 GB for UD-IQ1_M).</li><li><strong>New expert format, Q5_0:</strong>UD-IQ4_XS-v31 has it in 33 layers, UD-Q3_K_XL in 20, UD-IQ2_XS and UD-Q2_K_XL in one each. Strata computes it more exactly than llama.cpp's formula does. In our tests the difference from the exact result fell from 2.6-3.0% to 1.2-1.3%, the same as the other formats. The Mac got new kernels for it.</li></ul>\n<p>What we ran with real files (start, three chats including a tool call, a clean stop; speeds are decode tokens per second from the engine log on short prompts):</p>\n<p>| Set | Machine | Start | Decode | |---|---|---|---| | UD-IQ1_M | DGX Spark (GB10) | 1 min 50 s, including the first check and preparation | 43-45 | | UD-IQ1_M | 1 and 2 RTX A6000, Linux | about 2 min | 101-114 | | UD-IQ1_M | Radeon AI PRO R9700, Linux | 114 s | 100-130 | | UD-IQ1_M | Intel Arc A750 | 76 s | 5-6 (the set is read through an 8 GB card and 62 GB of RAM) | | UD-IQ1_M | RTX 3060 12 GB, Linux (18% of the experts on the card) | under a minute after preparation | 31-37 | | UD-IQ2_XS | 1 and 2 RTX A6000 | about 2 min | 86-114 | | UD-IQ2_XS | Strix Halo, Windows | 190 s, including the first check and preparation | 54-75 | | UD-IQ3_XXS | Strix Halo, Windows | 191 s, including the first check and preparation | 55-73 | | UD-IQ4_XS-v31 | 2 RTX A6000 | about 2 min | 96-118 |</p>\n<p>On a Strix Halo, a set whose experts fit the shared graphics memory now keeps all of them there, with no RAM pinned beside it. During testing, the first start of UD-IQ2_XS failed with the earlier plan (a small fixed cache plus 35 GB of pinned RAM); with the new plan it started on the first try and decoded about three times faster. Not run with a real file: UD-Q2_0, UD-Q2_K_XL and UD-Q3_K_XL (their formats ran in the parity tests and in the sets above), any of the new sets on a Mac, and pictures with the new sets on an Arc.…</p>",
+            "text": "Strata 0.2.11: Unsloth's new 1- to 4-bit Qwen3.8-Flash-Next files, prompt-speed changes on NVIDIA and Radeon cards, small multi-card starts, chats saved as files, a fix for mixed-up replies from model copies, and GUI and Terminal fixes\nThe app and the Terminal are 0.2.11. Control and every engine package are 0.1.57. The update feed is sequence 121. The DGX Spark (linux-aarch64) gets 0.2.11 too.\nUnsloth's new Qwen3.8-Flash-Next files\nOn 11-04 Unsloth re-uploaded its Qwen3.8-Flash-Next GGUFs (\"Dynamic v3.1\"). Strata can now download, prepare and run seven of them in the app, in the Terminal ( strata launch --family unsloth --model <name> ), and from a folder you downloaded yourself (\"Use a local GGUF\" in the app, or strata launch --model-path <first file> ). Each file is checked by size and SHA-256 against Unsloth's revision d9620119.\n| Name in Strata | Download | Files | |---|---|---| | UD-IQ1_M | 68.0 GB | 3 | | UD-Q2_0 | 70.6 GB | 3 | | UD-IQ2_XS | 75.8 GB | 3 | | UD-Q2_K_XL | 79.6 GB | 4 | | UD-IQ3_XXS | 83.6 GB | 4 | | UD-Q3_K_XL | 89.5 GB | 4 | | UD-IQ4_XS-v31 | 93.7 GB | 4 |\nEach set's last file is the 28.8 GB table the model reads per token. Sets that share it share the file: UD-IQ1_M and UD-IQ2_XS use one, UD-IQ3_XXS and UD-IQ4_XS-v31 the other.\nUD-IQ4_XS-v31 is a different file from the UD-IQ4_XS Strata already offers. It has other tensor types and four files instead of three, so it has its own name. The existing UD-IQ4_XS stays as it is.\nUD-Q4_K_XL, UD-Q5_K_XL, UD-Q6_K_XL and Q8_0: Strata keeps downloading the 09-30 files it already uses. The 11-04 UD-Q4_K_XL holds the same weights split into four files in a different place; Strata accepts that split too if you already have it.\nUD-IQ1_S does not load. One of its layers mixes two expert formats, which Strata cannot load. UD-IQ1_M is the 1-bit choice.\nOn a Mac, the app and the Terminal offer all seven, and the app now offers Unsloth's sets at all. Before the first start, the Mac writes the experts into one file for the GPU, so it needs room for the download plus that file plus a few GB (about 115 GB for UD-IQ1_M).\nNew expert format, Q5_0: UD-IQ4_XS-v31 has it in 33 layers, UD-Q3_K_XL in 20, UD-IQ2_XS and UD-Q2_K_XL in one each. Strata computes it more exactly than llama.cpp's formula does. In our tests the difference from the exact result fell from 2.6-3.0% to 1.2-1.3%, the same as the other formats. The Mac got new kernels for it.\nWhat we ran with real files (start, three chats including a tool call, a clean stop; speeds are decode tokens per second from the engine log on short prompts):\n| Set | Machine | Start | Decode | |---|---|---|---| | UD-IQ1_M | DGX Spark (GB10) | 1 min 50 s, including the first check and preparation | 43-45 | | UD-IQ1_M | 1 and 2 RTX A6000, Linux | about 2 min | 101-114 | | UD-IQ1_M | Radeon AI PRO R9700, Linux | 114 s | 100-130 | | UD-IQ1_M | Intel Arc A750 | 76 s | 5-6 (the set is read through an 8 GB card and 62 GB of RAM) | | UD-IQ1_M | RTX 3060 12 GB, Linux (18% of the experts on the card) | under a minute after preparation | 31-37 | | UD-IQ2_XS | 1 and 2 RTX A6000 | about 2 min | 86-114 | | UD-IQ2_XS | Strix Halo, Windows | 190 s, including the first check and preparation | 54-75 | | UD-IQ3_XXS | Strix Halo, Windows | 191 s, including the first check and preparation | 55-73 | | UD-IQ4_XS-v31 | 2 RTX A6000 | about 2 min | 96-118 |\nOn a Strix Halo, a set whose experts fit the shared graphics memory now keeps all of them there, with no RAM pinned beside it. During testing, the first start of UD-IQ2_XS failed with the earlier plan (a small fixed cache plus 35 GB of pinned RAM); with the new plan it started on the first try and decoded about three times faster. Not run with a real file: UD-Q2_0, UD-Q2_K_XL and UD-Q3_K_XL (their formats ran in the parity tests and in the sets above), any of the new sets on a Mac, and pictures with the new sets on an Arc.…",
+            "lead": "Strata 0.2.11: Unsloth's new 1- to 4-bit Qwen3.8-Flash-Next files, prompt-speed changes on NVIDIA and Radeon cards, small multi-card starts, chats saved as files, a fix for mixed-up replies from model copies, and GUI and Terminal fixes\nThe app and the Terminal are 0.2.11. Control and every engine package are 0.1.57. The update feed is sequence 121. The DGX Spark (linux-aarch64) gets 0.2.11 too.\nUnsloth's new Qwen3.8-Flash-Next files",
+            "chars": 70741,
+            "shown": 3923,
+            "truncated": true
+          },
+          "quality": 8,
+          "fallback": true,
+          "score": 16.4,
+          "category": "apps",
+          "subcategory": "inference",
+          "practical": 4,
+          "slug": "2bbbad181693",
+          "action": 3,
+          "rank": 12.8,
+          "tags": [
+            "local"
           ]
         },
         {
@@ -2247,6 +2319,47 @@
           "action": 2,
           "rank": 9.2,
           "tags": [
+            "free"
+          ]
+        },
+        {
+          "sourceId": "arxiv-ecosystem",
+          "sourceName": "arXiv 检索（推理引擎与量化）",
+          "title": "MINE: Entropy-coded Memory-efficient Inference for Large Language Models",
+          "url": "https://arxiv.org/abs/2611.09424v2",
+          "id": "http://arxiv.org/abs/2611.09424v2",
+          "published": "2026-11-06T12:51:31.000Z",
+          "summary": "We present MINE (Memory-efficient INference Engine), a lossless entropy coding approach that accelerates single-stream inference of Large Language Models (LLMs), where existing lossless compression methods yield speedups only for specific data types such as BF16 and under additional assumptions. Single-stream decoding…",
+          "content": {
+            "html": "We present MINE (Memory-efficient INference Engine), a lossless entropy coding approach that accelerates single-stream inference of Large Language Models (LLMs), where existing lossless compression methods yield speedups only for specific data types such as BF16 and under additional assumptions. Single-stream decoding is strongly memory-bound, since every weight must be streamed from memory once per generated token and requests cannot be batched in local or low-latency deployments. At the core of MINE is dtANS-LLM, a GPU entropy coding scheme adapted from the prior dtANS to the needs of LLM inference. It exploits the non-uniform distribution of weights, which persists even after quantization, and exposes hyper-parameters that trade compression ratio against decoding cost. We auto-tune these parameters for each tensor and GPU to obtain the Pareto front between model size and decoding latency. MINE integrates into vLLM as a plugin and selects the best kernel configuration for a given memory budget. On Llama 3.1 8B Instruct with a 2.1-bit EntQuant checkpoint, MINE achieves speedups of 2.52x and 1.48x over the fastest baseline on an RTX 4060 Ti and an RTX 5090, at effective bitrates of 2.24 and 3.43 bits per weight. MINE is available as open source.",
+            "text": "We present MINE (Memory-efficient INference Engine), a lossless entropy coding approach that accelerates single-stream inference of Large Language Models (LLMs), where existing lossless compression methods yield speedups only for specific data types such as BF16 and under additional assumptions. Single-stream decoding is strongly memory-bound, since every weight must be streamed from memory once per generated token and requests cannot be batched in local or low-latency deployments. At the core of MINE is dtANS-LLM, a GPU entropy coding scheme adapted from the prior dtANS to the needs of LLM inference. It exploits the non-uniform distribution of weights, which persists even after quantization, and exposes hyper-parameters that trade compression ratio against decoding cost. We auto-tune these parameters for each tensor and GPU to obtain the Pareto front between model size and decoding latency. MINE integrates into vLLM as a plugin and selects the best kernel configuration for a given memory budget. On Llama 3.1 8B Instruct with a 2.1-bit EntQuant checkpoint, MINE achieves speedups of 2.52x and 1.48x over the fastest baseline on an RTX 4060 Ti and an RTX 5090, at effective bitrates of 2.24 and 3.43 bits per weight. MINE is available as open source.",
+            "lead": "We present MINE (Memory-efficient INference Engine), a lossless entropy coding approach that accelerates single-stream inference of Large Language Models (LLMs), where existing lossless compression methods yield speedups only for specific data types such as BF16 and under additional assumptions. Single-stream decoding is strongly memory-bound, since every weight must be streamed from memory once per generated token and requests cannot be batched in local o",
+            "chars": 1265,
+            "shown": 1265,
+            "truncated": false
+          },
+          "categories": [
+            "cs.LG",
+            "cs.DC",
+            "cs.PF"
+          ],
+          "author": "Emil Schätzle",
+          "lang": "en",
+          "tier": 3,
+          "trustCategory": false,
+          "declaredCategory": "ideas",
+          "metrics": {},
+          "quality": 6,
+          "fallback": true,
+          "score": 5.8,
+          "category": "local",
+          "subcategory": "weights",
+          "practical": 2,
+          "slug": "ead37075bb85",
+          "action": 2,
+          "rank": 9.2,
+          "tags": [
+            "local",
             "free"
           ]
         }
