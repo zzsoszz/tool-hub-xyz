@@ -1,0 +1,448 @@
+{
+  "day": "2026-11-12",
+  "reviewedAt": "2026-11-11T18:00:51.666Z",
+  "reviewer": "cloudflare/@cf/meta/llama-3.1-70b-instruct",
+  "note": "cloudflare/@cf/meta/llama-3.1-70b-instruct：复核 12 条，解析到 12 条判定",
+  "rules": {
+    "minItems": 3,
+    "minBodyChars": 120,
+    "minSummaryChars": 40,
+    "maxTags": 4,
+    "agentMaxItems": 12,
+    "agentBatch": 6,
+    "agentChars": 900,
+    "agentExcerptChars": 600
+  },
+  "passed": true,
+  "reasons": [],
+  "total": 18,
+  "blocked": [
+    "a5fb6f25f61b",
+    "ef892408bebc",
+    "03e5608fc878"
+  ],
+  "survivors": 15,
+  "items": [
+    {
+      "slug": "d2aa13e0402b",
+      "title": "6 Hours of YouTube and 85 handtyped pages of notes on LLM Inference – Start here",
+      "category": "apps",
+      "subcategory": "inference",
+      "tags": [
+        "local"
+      ],
+      "bodyChars": 8930,
+      "excerpt": "samir-vllm Teaching LLM inference from first principles by building a small engine in C++ and CUDA. The series follows what happens between a prompt and a generated token, from loading model weights to running each part of the transformer on the GPU. My inference notes Read Inference from Scratch (PDF) for 80+ pages of my handwritten notes and diagrams. I developed all of the writing in this PDF myself, with NO AI writing . Build series | 6+ Hours of footage Part 0 · AI inference explained Part 1 · Loading model weights Part 2 · Embedding gather Part 3 · RMSNorm Part 4 · RoPE Part 5 · Q/K/V w…",
+      "quality": 10,
+      "practical": 2,
+      "sourceName": "HN 检索（本地推理生态）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "这是一篇关于LLM推理的教程，包括实践步骤和代码。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "eb4c022c8563",
+      "title": "Show HN: Klad, a paint app your coding agent can drive (source-available)",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [
+        "agent"
+      ],
+      "bodyChars": 2887,
+      "excerpt": "I've been developing applications for a long time and have turned to game development as well lately. One of the things that frustrated me the most was that using AI agents for game development is very annoying in the art department. Your only options right now are to either use an image genAI model and roll the dice every time you want to make an edit, or have your agent draw with something like vectors. I was looking for an application that would allow me to ask an agent to make a first draft of whatever art I needed with actual brushes, and then be able to go in myself and edit every last…",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "Show HN (AI)",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "这是一篇关于开发一个可编程的画图应用的文章，包括具体的实现细节。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "a5fb6f25f61b",
+      "title": "AutoScaffold: AI-Guided Scaffolding for Reinforcement Learning of Language Models",
+      "category": "apps",
+      "subcategory": "life",
+      "tags": [],
+      "bodyChars": 1871,
+      "excerpt": "Reinforcement learning with verifiable rewards (RLVR) produces rich training experience, yet outcome rewards reduce each attempt to a single number and leave most of this information unused. Training-time scaffolds, such as strategies or hints added to the prompt during training, offer a natural way to turn this information into guidance, but their design and adaptation are largely left to humans and tailored to specific domains. We introduce AutoScaffold, a unified AI-for-AI framework that turns a student's training experience into adaptive scaffolds, with minimal domain-specific information…",
+      "quality": 7,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "这篇文章的分类和标签与内容不符，应该属于apps/inference而不是apps/life。"
+      },
+      "blocked": [
+        "模型复核不通过（这篇文章的分类和标签与内容不符，应该属于apps/inference而不是apps/life。）"
+      ]
+    },
+    {
+      "slug": "63027b08358a",
+      "title": "Why generating 4 LLM tokens costs about the same as 1",
+      "category": "apps",
+      "subcategory": "inference",
+      "tags": [
+        "local"
+      ],
+      "bodyChars": 32243,
+      "excerpt": "LLMs might be fantastic at prediction, but they weren’t designed to handle bajillions of requests efficiently. After all, they’re models, not servers . On top of that, a model running one request at a time uses shockingly little of the GPU’s compute, leaving tons of processing power sitting idle. Given how expensive GPUs are, that’s quite a waste! Running inference at scale is a problem folks have been chipping away at for years, and one project in particular has become the go-to answer for open-weight models : vLLM. So: let’s take a look at why high-throughput inference is so hard and why vL…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "Hacker News Search",
+      "domain": "ngrok.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "这篇文章讨论了LLM的高吞吐量推理问题，包括具体的解决方案和实现细节。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "8a500e398ede",
+      "title": "setyamickala/fastmint-fcfs-agentic",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "agent",
+        "free"
+      ],
+      "bodyChars": 19062,
+      "excerpt": "fastmint-fcfs English · [Bahasa Indonesia](README.id.md) FCFS mint on BNB Smart Chain through Binance Agentic Wallet, landed in a block ±2 seconds after the sale opens. A skill for AI agents (Claude Code, Codex, Cursor, OpenClaw, and any other agent that reads SKILL.md ) that fires a single mint/claim/buy transaction at the exact moment a sale opens, using a Binance Agentic Wallet ( baw CLI). No private key on the machine: signing happens in Binance's backend through Developer Mode, the agent only prepares calldata and picks the moment. sale opens (T) T+0.05s T+0.6–0.8s T+1.3–1.5s T+2.1–2.2s…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "GitHub 新晋 AI 项目",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "这篇文章介绍了一个fastmint-fcfs-agentic的实现，包括具体的步骤和代码。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "ef892408bebc",
+      "title": "Google DeepMind just mathematically verified key parts of Signal",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [],
+      "bodyChars": 1115,
+      "excerpt": "Google DeepMind researchers used agentic AI to mathematically prove, or “formally verify,” a number of the Signal protocol’s key cryptographic guarantees—a landmark development for the widely used cryptography and AI itself. Conducted as a sort of proof-of-concept project in just four weeks, the work is significant in two ways. It serves as further independent validation of the cryptography that protects massive quantities of the world's communications on platforms like the Signal app , Google Messages, and WhatsApp. And it demonstrates Google DeepMind's formal verification capabilities using…",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "Ars Technica AI",
+      "domain": "arstechnica.com",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "这篇文章主要是新闻转述，没有提供具体的实践步骤或数据。"
+      },
+      "blocked": [
+        "模型复核不通过（这篇文章主要是新闻转述，没有提供具体的实践步骤或数据。）"
+      ]
+    },
+    {
+      "slug": "abd601ff6346",
+      "title": "4 X Mac Studio M3 Ultra 256GB 真实日志",
+      "category": "hardware",
+      "subcategory": "build",
+      "tags": [
+        "benchmark",
+        "lowspec",
+        "agent"
+      ],
+      "bodyChars": 7908,
+      "excerpt": "大家好，我的第二个分享 苹果跑AI 的真实日志，虽然现在已经出M5 Ultra 了但是已经很多博主分享过了他们的优势，哪怕性能提升不少（预填充） 但是如果想要跑多并发Agent 开发的话 以下还是对M5 有很好的对比的。至于有考虑苹果二手机的兄弟们 可以先看完我的日志再做打算吧。 2026 年 7 月 7 日 终结这四台萍妃们 。 卖了。 四台 Mac Studio：一套 4× M3 Ultra 的 MLX 集群 四台 Mac Studio、1 TB 统一内存、一张 Thunderbolt 5 全互联网络，四台机器合跑同一个模型——跑在我们自己写的推理引擎上。 我们手上有四台 Mac Studio，还有一个值得解决的问题。 问题是这样：一个 3000 亿参数的模型放不进一台机器。单台 256 GB 的 Mac Studio M3 Ultra，勉强能在说得过去的精度下跑个 70B。想跑真正大的模型——那种能改变你能做什么的模型——你需要比任何一台电脑都多的内存。 于是我们做了那种\"有四台 Mac、又没钱进机房\"时才会做的事：把它们摞在桌子上，用线连起来。 六根线，和一大堆天真的希望 四台 Mac Studio M3 Ultra，每台 256 GB 统一内存，合计 1 TB。没有机柜、没有风扇、没有空调，就四台昂贵的银色盒子和一堆 Thunderbolt 线缆。 不是走 hub，而是…",
+      "quality": 12,
+      "practical": 5,
+      "sourceName": "抡锤者 模型部署讨论",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "分享了四台Mac Studio M3 Ultra的实测日志。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "3a8f2b86b9b2",
+      "title": "Strata @ Tesla V100 — 上下文甜点区实测（32K → 256K，步进 8K）",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "hardware",
+        "lowspec",
+        "benchmark",
+        "local"
+      ],
+      "bodyChars": 6124,
+      "excerpt": "AI新手，周末把V100 挪到工作机了 ,这个有64GB DDR4.。( 把7900XTX 换给了X99 , E5 2686 V4 ,128GB DDR3，主要用于coding/agent. ) 这台机让AI跑了点数据 。不知道准不准，大家 随便 看看。 Strata @ Tesla V100 — 上下文甜点区实测报告（32K → 256K，步进 8K） 生成时间：2026-11-11 20:18　|　Coding / Agent 场景 · 冷启动 TTFT + 前缀缓存复用　|　服务 http://127.0.0.1:9931 （测试期间独占） 曲线图版： strata-sweetspot-256k-report.html （4 张 SVG 曲线）　|　数据： bench_out/sweep_256k_main.csv 、 bench_out/raw_sweep_256k.jsonl 0. 硬件与软件环境 项目 配置 与测试相关的说明 GPU NVIDIA Tesla V100-SXM2-16GB（sm_70 Volta） 驱动 582.99 · 功耗上限 300W · SM 最高 1530 MHz · 显存 16384 MiB（服务常驻 ~15.9 GiB，空闲仅 ~0.5 GiB） CPU AMD Ryzen 5 5600G（6 核 12 线程，最高 3.9 GHz） 无…",
+      "quality": 9,
+      "practical": 4,
+      "sourceName": "抡锤者 AI硬件",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "分享了Tesla V100实测报告。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "03e5608fc878",
+      "title": "Comfy-Org/Comfy-Desktop",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "generate"
+      ],
+      "bodyChars": 10099,
+      "excerpt": "<div align=\"center\"> <img src=\"assets/Comfy_Logo_x512.png\" alt=\"Comfy Desktop\" width=\"128\" /> Comfy Desktop Install, run, and manage ComfyUI from one app — no dependency hell. ![Release ](https://github.com/Comfy-Org/Comfy-Desktop/releases/latest) ![CI ](https://github.com/Comfy-Org/Comfy-Desktop/actions/workflows/ci.yml) ![License ](LICENSE) ![Stars ](https://github.com/Comfy-Org/Comfy-Desktop/stargazers) ![Discord ](https://www.comfy.org/discord) ! Platforms [ Download ](#download) · [ Getting Started ](#getting-started) · [ Contributing ](#development) · Discord </div> --- Comfy Desktop is…",
+      "quality": 10,
+      "practical": 1,
+      "sourceName": "GitHub 检索（生态项目更新）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "无实测数据或步骤，只是项目介绍。"
+      },
+      "blocked": [
+        "模型复核不通过（无实测数据或步骤，只是项目介绍。）"
+      ]
+    },
+    {
+      "slug": "8968483fab75",
+      "title": "llama.cpp b12284 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "lowspec"
+      ],
+      "bodyChars": 4776,
+      "excerpt": "<details open> CUDA: Add OCP FP8 support (#28413) Initial CUDA WIP version Use fp8 intrinsics Do W8A16 for FP8 in GEMV case (base) osimons@ub-osimons:~/lcpp_fp8.git$ ./build-x64-linux-gcc-reldbg/bin/llama-bench -m /mnt/share/gguf/nvidia/Qwen3.6-27B-NVFP4/Qwen3.6-27B-NVFP4_fp8.gguf -p 8196 -ub 512,2048 -d 0,32000 -n 256 --load-mode dio ggml_cuda_init: found 1 CUDA devices (Total VRAM: 32165 MiB): Device 0: NVIDIA RTX PRO 4500 Blackwell, compute capability 12.0, VMM: yes, VRAM: 32165 MiB | model | size | params | backend | ngl | n_ubatch | lm | test | t/s | | ------------------------------ | --…",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "分享了llama.cpp b12284发布的实测数据。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "444ccf25a91a",
+      "title": "DeepSeek 4.1 running local...",
+      "category": "hardware",
+      "subcategory": null,
+      "tags": [],
+      "bodyChars": 683,
+      "excerpt": "Just a 32GB machine with a 3090 - a used gaming rig I picked up last Christmas for $800. But wow... I can actually run what would have been a frontier model not that long ago. Yes, only 2 - 3 tps. Yes only 2 quant. So it's not really useful at the moment. But I have 128GB of ram in hand and a spare 3060 ready to be installed. Possibly another 3090 waiting in the wings... so we will see. https://preview.redd.it/5atf14o1mz0i1.png?width=2542&format=png&auto=webp&s=a51386319ae32280121328308e701082091f51b3 https://preview.redd.it/ylfophqhlz0i1.png?width=1489&format=png&auto=webp&s=1e25deb55d0b5c4f…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "分享了DeepSeek 4.1在本地运行的实测数据。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "71c0186acf3f",
+      "title": "Mac 用引擎自带脚本跑通 MiniMax-H3-Image：84 秒一张 5K 图，全程本地",
+      "category": "local",
+      "subcategory": "weights",
+      "tags": [
+        "generate",
+        "benchmark",
+        "local",
+        "lowspec"
+      ],
+      "bodyChars": 5123,
+      "excerpt": "Mac 上跑通了 MiniMax-H3-Image：84 秒一张 5K 图，全程本地 折腾了一下午，把 Phosphene + MiniMax-H3-Image 开源图像模型在 M5 Ultra 上跑通了。踩的坑和命令都记在这儿，新鲜出炉想抄的直接抄。 先说结果 两张测试图都在楼下，都是本机出的，没碰任何云端 API。 档位 输出 耗时 内存峰值 4MP 2720 × 1536 22.6 秒 27.6 GB 16MP 5472 × 3072 83.5 秒 27.8 GB 机器是 M5 Ultra 256GB，Python 3.13，模型钉的是 6534ea1c 这个 revision。 有两件事跟我预期不一样，先说在前面： 一是内存。官方说要 48GB 起，我一开始做好了它吃掉大几十 GB 的准备，结果峰值只有 27.8GB——它是分段加载的，28GB 的文本编码用完就放，再上 20GB 的量化 DiT。也就是说 64GB 的机器应该真能跑，不是我这种 256GB 大户专属。 二是快慢。耗时几乎全在去噪那 6 步上，16MP 每步 12 秒出头。没有 CFG 没有负向提示词这些额外开销，6 步就是 6 步。 这是套是什么东西 Phosphene 是个 MIT 协议的 Mac 本地 AI 工作室，视频图像音乐都有，v5.0.15 版本起支持 MiniMax-H3-Image——Mi…",
+      "quality": 8,
+      "practical": 8,
+      "sourceName": "抡锤者 AI 音视频画图",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "分享了Mac上跑通MiniMax-H3-Image的实测数据和步骤。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "8e74a1bef765",
+      "title": "Show HN: An offline desktop companion to help maintain a healthy blink rhythm",
+      "category": "local",
+      "subcategory": null,
+      "tags": [],
+      "bodyChars": 1190,
+      "excerpt": "Profession like software engineer, mechanical / graphics designer takes a lot of strain on your eyes, observing minute details for hours and hours on screen can significantly reduce the blink rate which you might not even notice until it gets irreversibly painful, leaving you with dry eyes. I am already a victim of it, working 20 years as a research engineer in computer vision, zooming into pixel level details to hand craft algorithms. Now the doctors says its only regular use of lubricating drops can keep your eyes safe. Now with AI and available fantastic libraries it's possible to play saf…",
+      "quality": 9,
+      "practical": 1,
+      "sourceName": "HN 检索（独立开发与变现）",
+      "domain": "eyesrhythm.com",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "9d402a21c30d",
+      "title": "askmdb: My new project where I fine-tuned Qwen models to build a MongoDB CLI assistant - turn plain-language questions into MongoDB queries",
+      "category": "local",
+      "subcategory": "runtime",
+      "tags": [
+        "local"
+      ],
+      "bodyChars": 2941,
+      "excerpt": "I built askmdb to help people finding the right query for turn plain-language questions into MongoDB queries . For example, you type askmdb \"top 5 customers by spending this year\" , and the app returns the query. A small fine-tuned model writes an aggregate pipeline and a one-line explanation, and nothing runs until you confirm. It's one Linux binary with llama.cpp and the official MongoDB C driver built in. No Python, no server, no API keys. EVERYTHING run in local. My test, results on 500 test questions in English and Spanish, over synthetic databases the training never saw. Every model is…",
+      "quality": 6,
+      "practical": 3,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "70422cb9d07e",
+      "title": "KRAFTON/Raon-1-nano · Hugging Face",
+      "category": "local",
+      "subcategory": "weights",
+      "tags": [
+        "local"
+      ],
+      "bodyChars": 3066,
+      "excerpt": "Raon-1 nano is a dense language model with 1.5B effective parameters (3.1B total, including a 1.5B per-layer embedding table), developed by KRAFTON AI . It is designed to follow instructions, maintain conversational context, and call the right tools in both Korean and English . As part of the Raon open model family, it is released under the Apache 2.0 license . Highlights Faithful, natural conversation : Leads the comparison models on the instruction-following, context-following, and Korean conversation benchmarks shown below. Korean and English : Trained on Korean and English, with solid Eng…",
+      "quality": 6,
+      "practical": 3,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "199f0bc88897",
+      "title": "Unsloth Dynamic V3.1 released for Qwen3.8-27B, DeepSeek-V4.1-Flash-1017 and Qwen3.8-Flash-Next",
+      "category": "local",
+      "subcategory": "quantize",
+      "tags": [
+        "local"
+      ],
+      "bodyChars": 840,
+      "excerpt": "Unsloth Dynamic V3.1 (Nov 2026) is our latest quantization algorithm for Qwen3.8-27B, DeepSeek-V4.1-Flash-1017 and Qwen3.8-Flash-Next, resulting in 10-15% increased accuracy and 50% less token usage vs other quants of the same size. We're working on an even better version of Dynamic quants which will be applied to Qwen4 and all future models. Maybe I misread the 27B graphs, but I'm not entirely convinced of V3 vs V3.1 being an improvement. In DeepSWE v1.1, V3 seems superior to V3.1 in some widely used Q4 quants, and V3 seems to lack some data points in the lower quants range, skewing the impr…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "3ec8b3ecdfd2",
+      "title": "AMD MI50洋垃圾显卡750一张，1T带宽/7nm制程/16G显存，双卡跑Strata驱动Qwen 3.8 Flash Next 128k畅玩！",
+      "category": "bench",
+      "subcategory": "selection",
+      "tags": [
+        "hardware",
+        "benchmark",
+        "lowspec",
+        "generate"
+      ],
+      "bodyChars": 2691,
+      "excerpt": "啊，昨天一觉睡了十几个小时，11个半小时嘛，这太夸张了，也不知道是怎么了。然后起来发现自己视频也没有做，是吧？那今天本来是打算测一下HY4或者说是千问4的。昨天有朋友发信息说，让我测一下这两个模型。那么论坛有网友发了一个让我 更感兴趣的帖子 ：2700块钱的洋垃圾跑千问Flash Next，MI50 16G × 2 + 128G DDR3，从装系统到这个什么54 tokens/s，可能是目前价格最低的洋垃圾方案。啊，这个不是可能，这个应该就是啊。 MI50这张卡以前很多垃圾佬都炒过这个卡，啊，包括很多主播都测过。造型是非常不错的，做工是台积电的7纳米。它是2018年的卡，这卡的素质是不错的啊，总体素质是相当不错的。但是呢，它没有这个BF16，之前在早期没有BF16，基本上意味着你什么模型都不能跑。但是现在讲实话，它是能够玩一玩了，很多模型都能玩了。啊，因为这个大模型推理从这个BF16降到这个FP16，它的精度损耗是可以接受的。然后在跑这个什么ComfyUI的时候，以前FP16是完全没法跑的，现在有很多方案FP16都能跑。但是有些东西可能说注意力机制啊，你可能说要去选一下，要去选型，有些这个LoRA可能就跑不了。但是总之以前完全是废品，现在在这个新技术的加持下，都能够多多少少跑起来，这个是非常不错的消息啊。我们要知道这张卡它是1T带宽啊，这个基础素质是相当不错的。 主板的BIOS必…",
+      "quality": 8,
+      "practical": 3,
+      "sourceName": "抡锤者 AI硬件",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "d7e7c64036e6",
+      "title": "Looping Deeper Without Growing the KV Cache: Recurrent Depth for Causal Encoder-Decoders",
+      "category": "bench",
+      "subcategory": "cost",
+      "tags": [
+        "tutorial"
+      ],
+      "bodyChars": 1361,
+      "excerpt": "Looped language models deepen computation without adding parameters, yet caching full-context key-value (KV) states across layers and rounds severely bounds serving batch size. We design a looped causal encoder-decoder (CED) that achieves recurrent depth with zero round-wise KV growth, addressing where and how to loop an asymmetric stack in which only sparse encoder layers generate global KV. We find that recurrence must be placed in the encoder to iteratively refine global KV representations rather than re-reading static decoder projections, which both drives language-modeling gains and pres…",
+      "quality": 7,
+      "practical": 1,
+      "sourceName": "arXiv 检索（推理引擎与量化）",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    }
+  ]
+}
