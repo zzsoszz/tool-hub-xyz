@@ -1,6 +1,6 @@
 {
   "day": "2026-11-11",
-  "reviewedAt": "2026-11-11T10:32:40.398Z",
+  "reviewedAt": "2026-11-11T10:50:47.436Z",
   "reviewer": "cloudflare/@cf/meta/llama-3.1-70b-instruct",
   "note": "cloudflare/@cf/meta/llama-3.1-70b-instruct：复核 12 条，解析到 12 条判定",
   "rules": {
@@ -14,34 +14,16 @@
   },
   "passed": true,
   "reasons": [],
-  "total": 60,
+  "total": 52,
   "blocked": [
     "42f7741a90ca",
-    "11426d5d5985",
     "5f3307d957a7",
     "97d081c7a718",
     "c1fbfe2e3fcb",
-    "6f3e9570882c",
-    "8e1c6bd72ab9",
-    "3e9ae4b249de",
     "c8bf0b8e918f",
-    "004c51f512e0",
-    "a5fb6f25f61b",
-    "09ef35482166",
-    "2327bae6c1b1",
-    "75546f2ae879",
-    "0748d6c00c15",
-    "2d22ac1d42e6",
-    "81acf0881de1",
-    "0d039fb56b48",
-    "9270ef04bcf4",
-    "061d1f16dce2",
-    "8e74a1bef765",
-    "a16ace76c38e",
-    "fabe838d73f5",
-    "dfd4b5c596e1"
+    "a5fb6f25f61b"
   ],
-  "survivors": 36,
+  "survivors": 46,
   "items": [
     {
       "slug": "42f7741a90ca",
@@ -63,10 +45,10 @@
       "warnings": [],
       "agent": {
         "verdict": "fail",
-        "reason": "正文长度太短且没有可复述的信息"
+        "reason": "正文长度太短且没有可复述的信息。"
       },
       "blocked": [
-        "模型复核不通过（正文长度太短且没有可复述的信息）"
+        "模型复核不通过（正文长度太短且没有可复述的信息。）"
       ]
     },
     {
@@ -86,12 +68,10 @@
       "hard": [],
       "warnings": [],
       "agent": {
-        "verdict": "fail",
-        "reason": "标签缺失或与内容不符"
+        "verdict": "pass",
+        "reason": "提供了 SGLang 和 Strata 的比较和 benchmark。"
       },
-      "blocked": [
-        "模型复核不通过（标签缺失或与内容不符）"
-      ]
+      "blocked": []
     },
     {
       "slug": "5f3307d957a7",
@@ -111,10 +91,10 @@
       "warnings": [],
       "agent": {
         "verdict": "fail",
-        "reason": "分类/子类明显不对"
+        "reason": "正文长度太短且没有可复述的信息。"
       },
       "blocked": [
-        "模型复核不通过（分类/子类明显不对）"
+        "模型复核不通过（正文长度太短且没有可复述的信息。）"
       ]
     },
     {
@@ -136,7 +116,7 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "实践性内容：有实测数据或有复现步骤，普通人能照着做"
+        "reason": "提供了详细的 LLM 推理笔记和资源。"
       },
       "blocked": []
     },
@@ -161,7 +141,7 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "实践性内容：有实测数据或有复现步骤，普通人能照着做"
+        "reason": "介绍了 ComfyUI 的新版本特性和功能。"
       },
       "blocked": []
     },
@@ -185,10 +165,10 @@
       ],
       "agent": {
         "verdict": "fail",
-        "reason": "只有新闻转述，既没有数据也没有步骤"
+        "reason": "新闻转述，没有提供实践性内容。"
       },
       "blocked": [
-        "模型复核不通过（只有新闻转述，既没有数据也没有步骤）"
+        "模型复核不通过（新闻转述，没有提供实践性内容。）"
       ]
     },
     {
@@ -202,64 +182,17 @@
       "practical": 1,
       "sourceName": "Simon Willison",
       "domain": "simonwillison.net",
-      "hard": [
-        "标签异常（没有任何标签）"
-      ],
+      "hard": [],
       "warnings": [
+        "没有命中任何标签",
         "标题未翻译"
       ],
-      "agent": null,
+      "agent": {
+        "verdict": "fail",
+        "reason": "正文长度太短且没有可复述的信息"
+      },
       "blocked": [
-        "标签异常（没有任何标签）"
-      ]
-    },
-    {
-      "slug": "6f3e9570882c",
-      "title": "如何整合Agent 和生图",
-      "category": "apps",
-      "subcategory": "inference",
-      "tags": [
-        "generate",
-        "local",
-        "agent"
-      ],
-      "bodyChars": 0,
-      "quality": 7,
-      "practical": 2,
-      "sourceName": "抡锤者 Agent 工具",
-      "domain": "lcz.me",
-      "hard": [
-        "内容过少（正文 0 字，要求至少 120 字）"
-      ],
-      "warnings": [],
-      "agent": null,
-      "blocked": [
-        "内容过少（正文 0 字，要求至少 120 字）"
-      ]
-    },
-    {
-      "slug": "8e1c6bd72ab9",
-      "title": "langbot-app/LangBot",
-      "category": "apps",
-      "subcategory": "knowledge",
-      "tags": [
-        "local",
-        "agent"
-      ],
-      "bodyChars": 0,
-      "quality": 10,
-      "practical": 3,
-      "sourceName": "GitHub 检索（生态项目更新）",
-      "domain": "github.com",
-      "hard": [
-        "内容过少（正文 0 字，要求至少 120 字）"
-      ],
-      "warnings": [
-        "标题未翻译"
-      ],
-      "agent": null,
-      "blocked": [
-        "内容过少（正文 0 字，要求至少 120 字）"
+        "模型复核不通过（正文长度太短且没有可复述的信息）"
       ]
     },
     {
@@ -280,12 +213,10 @@
         "标题未翻译"
       ],
       "agent": {
-        "verdict": "fail",
-        "reason": "正文长度太短且没有可复述的信息。"
+        "verdict": "pass",
+        "reason": "正文长度超过 6000 字且有具体的项目更新信息"
       },
-      "blocked": [
-        "模型复核不通过（正文长度太短且没有可复述的信息。）"
-      ]
+      "blocked": []
     },
     {
       "slug": "c8bf0b8e918f",
@@ -298,15 +229,17 @@
       "practical": 1,
       "sourceName": "Simon Willison",
       "domain": "simonwillison.net",
-      "hard": [
-        "标签异常（没有任何标签）"
-      ],
+      "hard": [],
       "warnings": [
+        "没有命中任何标签",
         "标题未翻译"
       ],
-      "agent": null,
+      "agent": {
+        "verdict": "fail",
+        "reason": "正文长度太短且没有可复述的信息"
+      },
       "blocked": [
-        "标签异常（没有任何标签）"
+        "模型复核不通过（正文长度太短且没有可复述的信息）"
       ]
     },
     {
@@ -328,7 +261,7 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "内容有实测数据或有复现步骤，普通人能照着做。"
+        "reason": "正文长度超过 10000 字且有具体的实践经验分享"
       },
       "blocked": []
     },
@@ -351,12 +284,10 @@
         "标题未翻译"
       ],
       "agent": {
-        "verdict": "fail",
-        "reason": "正文长度太短且没有可复述的信息。"
+        "verdict": "pass",
+        "reason": "正文长度超过 1000 字且有具体的benchmark信息"
       },
-      "blocked": [
-        "模型复核不通过（正文长度太短且没有可复述的信息。）"
-      ]
+      "blocked": []
     },
     {
       "slug": "a5fb6f25f61b",
@@ -369,15 +300,17 @@
       "practical": 1,
       "sourceName": "arXiv cs.AI/CL/LG",
       "domain": "arxiv.org",
-      "hard": [
-        "标签异常（没有任何标签）"
-      ],
+      "hard": [],
       "warnings": [
+        "没有命中任何标签",
         "标题未翻译"
       ],
-      "agent": null,
+      "agent": {
+        "verdict": "fail",
+        "reason": "分类不符，应该分类在apps/creation"
+      },
       "blocked": [
-        "标签异常（没有任何标签）"
+        "模型复核不通过（分类不符，应该分类在apps/creation）"
       ]
     },
     {
@@ -391,16 +324,33 @@
       "practical": 1,
       "sourceName": "arXiv 检索（推理引擎与量化）",
       "domain": "arxiv.org",
-      "hard": [
-        "标签异常（没有任何标签）"
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
       ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "cabe391a95c9",
+      "title": "Coverage-Verified Sparse Attention: Closed-Loop Quality Control for Long-Context LLM Decoding",
+      "category": "apps",
+      "subcategory": "knowledge",
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 1199,
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv 检索（推理引擎与量化）",
+      "domain": "arxiv.org",
+      "hard": [],
       "warnings": [
         "标题未翻译"
       ],
       "agent": null,
-      "blocked": [
-        "标签异常（没有任何标签）"
-      ]
+      "blocked": []
     },
     {
       "slug": "63c80c3edebd",
@@ -420,10 +370,7 @@
       "warnings": [
         "标题未翻译"
       ],
-      "agent": {
-        "verdict": "pass",
-        "reason": "内容有实测数据或有复现步骤，普通人能照着做。"
-      },
+      "agent": null,
       "blocked": []
     },
     {
@@ -444,10 +391,7 @@
       "domain": "appinn.com",
       "hard": [],
       "warnings": [],
-      "agent": {
-        "verdict": "pass",
-        "reason": "内容有实测数据或有复现步骤，普通人能照着做。"
-      },
+      "agent": null,
       "blocked": []
     },
     {
@@ -466,13 +410,8 @@
       "domain": "qbitai.com",
       "hard": [],
       "warnings": [],
-      "agent": {
-        "verdict": "fail",
-        "reason": "正文长度太短且没有可复述的信息。"
-      },
-      "blocked": [
-        "模型复核不通过（正文长度太短且没有可复述的信息。）"
-      ]
+      "agent": null,
+      "blocked": []
     },
     {
       "slug": "d3991eda3e54",
@@ -587,16 +526,13 @@
       "practical": 1,
       "sourceName": "Simon Willison",
       "domain": "simonwillison.net",
-      "hard": [
-        "标签异常（没有任何标签）"
-      ],
+      "hard": [],
       "warnings": [
+        "没有命中任何标签",
         "标题未翻译"
       ],
       "agent": null,
-      "blocked": [
-        "标签异常（没有任何标签）"
-      ]
+      "blocked": []
     },
     {
       "slug": "a2dc47659d09",
@@ -617,30 +553,6 @@
       ],
       "agent": null,
       "blocked": []
-    },
-    {
-      "slug": "0748d6c00c15",
-      "title": "Fable 5.2首批实测来了！网友：Opus突然不香了",
-      "category": "tools",
-      "subcategory": null,
-      "tags": [
-        "benchmark"
-      ],
-      "bodyChars": 0,
-      "quality": 6,
-      "practical": 1,
-      "sourceName": "量子位",
-      "domain": "qbitai.com",
-      "hard": [
-        "内容过少（正文 0 字，要求至少 120 字）",
-        "内容过少（摘要 16 字，要求至少 40 字）"
-      ],
-      "warnings": [],
-      "agent": null,
-      "blocked": [
-        "内容过少（正文 0 字，要求至少 120 字）",
-        "内容过少（摘要 16 字，要求至少 40 字）"
-      ]
     },
     {
       "slug": "cab8964f4822",
@@ -728,57 +640,6 @@
       "blocked": []
     },
     {
-      "slug": "2d22ac1d42e6",
-      "title": "【实测分享】单张 RTX 5080 16GB 本地跑 MiniMax H3 视频：16GB 显存够用，FastH3 一条 10 秒镜头约 3 分钟（附官方 8 步 / Pika 6 步 / 三种输入对比）",
-      "category": "hardware",
-      "subcategory": "gpu",
-      "tags": [
-        "lowspec",
-        "benchmark",
-        "generate",
-        "local"
-      ],
-      "bodyChars": 0,
-      "quality": 8,
-      "practical": 3,
-      "sourceName": "抡锤者 AI硬件",
-      "domain": "lcz.me",
-      "hard": [
-        "内容过少（正文 0 字，要求至少 120 字）"
-      ],
-      "warnings": [],
-      "agent": null,
-      "blocked": [
-        "内容过少（正文 0 字，要求至少 120 字）"
-      ]
-    },
-    {
-      "slug": "81acf0881de1",
-      "title": "Indras-Mirror/Xolotl",
-      "category": "hardware",
-      "subcategory": "gpu",
-      "tags": [
-        "lowspec",
-        "benchmark",
-        "agent"
-      ],
-      "bodyChars": 0,
-      "quality": 10,
-      "practical": 1,
-      "sourceName": "GitHub 检索（生态项目更新）",
-      "domain": "github.com",
-      "hard": [
-        "内容过少（正文 0 字，要求至少 120 字）"
-      ],
-      "warnings": [
-        "标题未翻译"
-      ],
-      "agent": null,
-      "blocked": [
-        "内容过少（正文 0 字，要求至少 120 字）"
-      ]
-    },
-    {
       "slug": "3b2a18c29876",
       "title": "llama.cpp b12283 发布",
       "category": "hardware",
@@ -798,54 +659,6 @@
       ],
       "agent": null,
       "blocked": []
-    },
-    {
-      "slug": "0d039fb56b48",
-      "title": "RustingStudio/RustingStrata",
-      "category": "hardware",
-      "subcategory": "gpu",
-      "tags": [
-        "local"
-      ],
-      "bodyChars": 0,
-      "quality": 10,
-      "practical": 1,
-      "sourceName": "GitHub 检索（生态项目更新）",
-      "domain": "github.com",
-      "hard": [
-        "内容过少（正文 0 字，要求至少 120 字）"
-      ],
-      "warnings": [
-        "标题未翻译"
-      ],
-      "agent": null,
-      "blocked": [
-        "内容过少（正文 0 字，要求至少 120 字）"
-      ]
-    },
-    {
-      "slug": "9270ef04bcf4",
-      "title": "双 RTX PRO 6000 + 64GB RAM：Maya 跑 GLM-5.3-Flash Maya-L，51K 上下文 ~127.2 tok/s",
-      "category": "hardware",
-      "subcategory": "gpu",
-      "tags": [
-        "local",
-        "benchmark",
-        "agent"
-      ],
-      "bodyChars": 0,
-      "quality": 10,
-      "practical": 1,
-      "sourceName": "抡锤者 模型部署讨论",
-      "domain": "lcz.me",
-      "hard": [
-        "内容过少（正文 0 字，要求至少 120 字）"
-      ],
-      "warnings": [],
-      "agent": null,
-      "blocked": [
-        "内容过少（正文 0 字，要求至少 120 字）"
-      ]
     },
     {
       "slug": "dcf26ed5696f",
@@ -890,6 +703,27 @@
       "blocked": []
     },
     {
+      "slug": "2070109bcbef",
+      "title": "Strata v0.2.12 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "lowspec",
+        "agent"
+      ],
+      "bodyChars": 11014,
+      "quality": 8,
+      "practical": 3,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
       "slug": "3e5acd6db9b5",
       "title": "763B DeepSeek V4.1 Flash on one 32 GB card: 50 tok/s, and what the 2-bit quant costs (top-1 agreement 83.5 %)",
       "category": "hardware",
@@ -909,28 +743,6 @@
       ],
       "agent": null,
       "blocked": []
-    },
-    {
-      "slug": "061d1f16dce2",
-      "title": "4 DGX Spark跑DeepSeek V4.1 Flash实测：长上下文多并发体验拉满，TTFT 1秒以内，性价比超苹果M5 Ultra 512G，RTX Pro 6000！",
-      "category": "hardware",
-      "subcategory": "machine",
-      "tags": [
-        "benchmark"
-      ],
-      "bodyChars": 0,
-      "quality": 7,
-      "practical": 1,
-      "sourceName": "抡锤者 AI硬件",
-      "domain": "lcz.me",
-      "hard": [
-        "内容过少（正文 0 字，要求至少 120 字）"
-      ],
-      "warnings": [],
-      "agent": null,
-      "blocked": [
-        "内容过少（正文 0 字，要求至少 120 字）"
-      ]
     },
     {
       "slug": "02d0ce657753",
@@ -1047,16 +859,13 @@
       "practical": 1,
       "sourceName": "HN 检索（独立开发与变现）",
       "domain": "eyesrhythm.com",
-      "hard": [
-        "标签异常（没有任何标签）"
-      ],
+      "hard": [],
       "warnings": [
+        "没有命中任何标签",
         "标题未翻译"
       ],
       "agent": null,
-      "blocked": [
-        "标签异常（没有任何标签）"
-      ]
+      "blocked": []
     },
     {
       "slug": "614244ac84aa",
@@ -1078,28 +887,6 @@
       ],
       "agent": null,
       "blocked": []
-    },
-    {
-      "slug": "a16ace76c38e",
-      "title": "问一下 strata 的模型下载必须得用梯子才能快速下载吗",
-      "category": "local",
-      "subcategory": "weights",
-      "tags": [
-        "local"
-      ],
-      "bodyChars": 0,
-      "quality": 7,
-      "practical": 1,
-      "sourceName": "抡锤者 模型部署讨论",
-      "domain": "lcz.me",
-      "hard": [
-        "内容过少（正文 0 字，要求至少 120 字）"
-      ],
-      "warnings": [],
-      "agent": null,
-      "blocked": [
-        "内容过少（正文 0 字，要求至少 120 字）"
-      ]
     },
     {
       "slug": "64d8c541f07b",
@@ -1294,16 +1081,13 @@
       "practical": 2,
       "sourceName": "Simon Willison",
       "domain": "simonwillison.net",
-      "hard": [
-        "标签异常（没有任何标签）"
-      ],
+      "hard": [],
       "warnings": [
+        "没有命中任何标签",
         "标题未翻译"
       ],
       "agent": null,
-      "blocked": [
-        "标签异常（没有任何标签）"
-      ]
+      "blocked": []
     },
     {
       "slug": "d75707d59f98",
@@ -1344,28 +1128,6 @@
       ],
       "agent": null,
       "blocked": []
-    },
-    {
-      "slug": "dfd4b5c596e1",
-      "title": "Claude Fable5.2实测，3个简单测试案例和腾讯HY4一个水平但是价格贵了25倍，Anthropic还是少吹牛，多改善下产品！",
-      "category": "bench",
-      "subcategory": "cost",
-      "tags": [
-        "benchmark"
-      ],
-      "bodyChars": 0,
-      "quality": 6,
-      "practical": 1,
-      "sourceName": "抡锤者 模型部署讨论",
-      "domain": "lcz.me",
-      "hard": [
-        "内容过少（正文 0 字，要求至少 120 字）"
-      ],
-      "warnings": [],
-      "agent": null,
-      "blocked": [
-        "内容过少（正文 0 字，要求至少 120 字）"
-      ]
     }
   ]
 }
