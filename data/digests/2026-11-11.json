@@ -1,6 +1,6 @@
 {
   "day": "2026-11-11",
-  "generatedAt": "2026-11-11T11:02:36.966Z",
+  "generatedAt": "2026-11-11T11:15:24.478Z",
   "timezone": "Asia/Shanghai",
   "windowHours": 48,
   "window": {
@@ -9,14 +9,14 @@
   },
   "counts": {
     "sources": 42,
-    "okSources": 40,
-    "fetched": 1149,
-    "duplicates": 818,
-    "carried": 45,
-    "added": 3,
+    "okSources": 39,
+    "fetched": 1139,
+    "duplicates": 826,
+    "carried": 44,
+    "added": 2,
     "fallback": 10,
-    "lowQuality": 180,
-    "published": 55
+    "lowQuality": 161,
+    "published": 57
   },
   "sources": [
     {
@@ -110,10 +110,10 @@
     {
       "id": "qbitai",
       "name": "量子位",
-      "ok": true,
-      "items": 10,
+      "ok": false,
+      "items": 0,
       "queries": 1,
-      "error": null
+      "error": "UND_ERR_CONNECT_TIMEOUT"
     },
     {
       "id": "arxiv-cs",
@@ -1847,6 +1847,51 @@
           "trustCategory": false,
           "declaredCategory": "oss",
           "categories": [
+            "ai-privacy",
+            "anthropic",
+            "apple-silicon",
+            "claude-code",
+            "claude-code-alternative"
+          ],
+          "author": "nicedreamzapp",
+          "id": "1192378543",
+          "title": "nicedreamzapp/claude-code-local",
+          "url": "https://github.com/nicedreamzapp/claude-code-local",
+          "published": "2026-11-11T11:13:27.000Z",
+          "summary": "<div align=\"center\"> <a href=\"https://www.youtube.com/watch?v=XNSdQtlTwWo\"><img src=\"https://raw.githubusercontent.com/nicedreamzapp/claude-code-local/587a5449e6f497cd51fc9e1cbc0ce5ee05237368/assets/readme/promo-video-thumb.jpg\" width=\"640\" alt=\"Watch the video: Claude Code Local, an AI that runs on your own computer,…",
+          "metrics": {
+            "stars": 3492
+          },
+          "content": {
+            "html": "<p>&lt;div align=\"center\"&gt;</p>\n<p>&lt;a href=\"https://www.youtube.com/watch?v=XNSdQtlTwWo\"&gt;&lt;img src=\"https://raw.githubusercontent.com/nicedreamzapp/claude-code-local/587a5449e6f497cd51fc9e1cbc0ce5ee05237368/assets/readme/promo-video-thumb.jpg\" width=\"640\" alt=\"Watch the video: Claude Code Local, an AI that runs on your own computer, free, private and offline\"&gt;&lt;/a&gt;</p>\n<p>&lt;a href=\"https://www.youtube.com/watch?v=a9vtBSl_j_o\"&gt;&lt;img src=\"https://img.youtube.com/vi/a9vtBSl_j_o/hqdefault.jpg\" width=\"640\" alt=\"Watch the demo: hit your Claude Code limit, type exit, keep going on a local model\"&gt;&lt;/a&gt;</p>\n<h3>Claude Code Local: hit your limit? Keep going.</h3>\n<p><strong>Claude Code, running on your own computer when your Claude usage runs out. Same tools, same project, no API key.</strong></p>\n<pre><code>curl -fsSL https://raw.githubusercontent.com/nicedreamzapp/claude-code-local/main/install.sh | bash</code></pre>\n<p>Mac and Linux. Windows is [one PowerShell line](#-on-linux-or-a-windows-pc). On a Mac, Linux or Windows, type<code>exit</code>in Claude Code, then<code>keep going</code>, and the same conversation carries on.</p>\n<p><strong>How-to guides and docs:<a href=\"https://nicedreamzapp.github.io/claude-code-local/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">nicedreamzapp.github.io/claude-code-local</a></strong></p>\n<p>&lt;!-- live-stats:start --&gt;</p>\n<p>⭐<strong>3,698</strong>GitHub stars (<a href=\"https://github.com/nicedreamzapp\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">github.com/nicedreamzapp</a>) · ⬇️<strong>43,814</strong>all-time downloads (<a href=\"https://huggingface.co/divinetribe\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">huggingface.co/divinetribe</a>)&lt;br&gt; Models on Hugging Face:<a href=\"https://huggingface.co/divinetribe\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">18 MLX builds at huggingface.co/divinetribe</a>(⬇️<strong>40,695</strong>all-time downloads) · this repo ⭐<strong>3,492</strong>stars</p>\n<p>&lt;!-- live-stats:end --&gt;</p>\n<p>🆕<strong>Qwen 4 watch:</strong>Alibaba says Qwen 4 is coming. The day the weights land we test it inside Claude Code and add it here, with real speed and scores. ⭐ Star or watch the repo to catch it. [The plan](#-qwen-4-in-claude-code-local)</p>\n<p><strong><a href=\"https://nicedreamzapp.github.io/agent12/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Agent-12</a>score</strong>for the model setup picks on a 96 GB Mac, Qwen 3.8 27B:<strong>12/12 easy, 7/8 hard</strong>. &lt;sub&gt;Scored in Agent-12's own harness, not inside Claude Code. [How the models compare](#-pick-your-ai)&lt;/sub&gt;</p>\n<p>&lt;/div&gt;</p>\n<p>&lt;br&gt;</p>\n<p>&lt;div align=\"center\"&gt;</p>\n<h3>🧠⚡ Claude Code Local</h3>\n<h4>Claude Code, running on your own Mac. No cloud. No API key. No waiting.</h4>\n<p><strong>Your Mac's chip runs the AI · Claude Code works exactly like it always does · nothing leaves your computer</strong></p>\n<p><strong>Now on Linux and Windows too, same Claude Code, same privacy, your own machine doing the work. [Phones are next.](#-where-this-is-going)</strong></p>\n<p>&lt;a href=\"https://github.com/hesreallyhim/awesome-claude-code\"&gt;&lt;img src=\"https://img.shields.io/badge/Mentioned_in-Awesome_Claude_Code-fc60a8?style=for-the-badge&amp;logo=awesomelists&amp;logoColor=white&amp;labelColor=1f2328\" alt=\"Mentioned in Awesome Claude Code\"&gt;&lt;/a&gt;</p>\n<p>&lt;a href=\"https://github.com/nicedreamzapp/claude-code-local/actions/workflows/ci.yml\"&gt;&lt;img src=\"https://img.shields.io/github/actions/workflow/status/nicedreamzapp/claude-code-local/ci.yml?branch=main&amp;style=for-the-badge&amp;logo=githubactions&amp;logoColor=white&amp;label=CI&amp;labelColor=1f2328\" alt=\"CI\"&gt;&lt;/a&gt; &lt;a href=\"https://scorecard.dev/viewer/?uri=github.com/nicedreamzapp/claude-code-local\"&gt;&lt;img src=\"https://img.shields.io/ossf-scorecard/github.com/nicedreamzapp/claude-code-local?label=OpenSSF%20Scorecard&amp;style=for-the-badge&amp;labelColor=1f2328\" alt=\"OpenSSF Scorecard\"&gt;&lt;/a&gt; &lt;a href=\"https://github.com/nicedreamzapp/claude-code-local/stargazers\"&gt;&lt;img src=\"https://img.shields.io/github/stars/nicedreamzapp/claude-code-local?style=for-the-badge&amp;logo=github&amp;color=f5c542&amp;labelColor=1f2328\" alt=\"GitHub stars\"&gt;&lt;/a&gt; &lt;a href=\"#-what-you-need\"&gt;&lt;img src=\"https://img.shields.io/badge/Mac-Apple_Silicon-111111?style=for-the-badge&amp;logo=apple&amp;logoColor=white\" alt=\"Apple Silicon\"&gt;&lt;/a&gt; &lt;a href=\"#-your-code-stays-home\"&gt;&lt;img src=\"https://img.shields.io/badge/🔒_Privacy-100%25_Local-success?style=for-the-badge\" alt=\"100% Local\"&gt;&lt;/a&gt; &lt;a href=\"#-use-it-with-trinidad-head\"&gt;&lt;img src=\"https://img.shields.io/badge/🌊_Best_with-Trinidad_Head-a855f7?style=for-the-badge\" alt=\"Best with Trinidad Head\"&gt;&lt;/a&gt; &lt;a href=\"LICENSE\"&gt;&lt;img src=\"https://img.shields.io/badge/📜_License-MIT-yellow?style=for-the-badge\" alt=\"MIT\"&gt;&lt;/a&gt; &lt;a href=\"https://discord.gg/ZdSqgAxUW\"&gt;&lt;img src=\"https://img.shields.io/discord/1497121921580404818?…</p>",
+            "text": "<div align=\"center\">\n<a href=\"https://www.youtube.com/watch?v=XNSdQtlTwWo\"><img src=\"https://raw.githubusercontent.com/nicedreamzapp/claude-code-local/587a5449e6f497cd51fc9e1cbc0ce5ee05237368/assets/readme/promo-video-thumb.jpg\" width=\"640\" alt=\"Watch the video: Claude Code Local, an AI that runs on your own computer, free, private and offline\"></a>\n<a href=\"https://www.youtube.com/watch?v=a9vtBSl_j_o\"><img src=\"https://img.youtube.com/vi/a9vtBSl_j_o/hqdefault.jpg\" width=\"640\" alt=\"Watch the demo: hit your Claude Code limit, type exit, keep going on a local model\"></a>\nClaude Code Local: hit your limit? Keep going.\nClaude Code, running on your own computer when your Claude usage runs out. Same tools, same project, no API key.\ncurl -fsSL https://raw.githubusercontent.com/nicedreamzapp/claude-code-local/main/install.sh | bash\nMac and Linux. Windows is [one PowerShell line](#-on-linux-or-a-windows-pc). On a Mac, Linux or Windows, type exit in Claude Code, then keep going , and the same conversation carries on.\nHow-to guides and docs: nicedreamzapp.github.io/claude-code-local\n<!-- live-stats:start -->\n⭐ 3,698 GitHub stars ( github.com/nicedreamzapp ) · ⬇️ 43,814 all-time downloads ( huggingface.co/divinetribe )<br> Models on Hugging Face: 18 MLX builds at huggingface.co/divinetribe (⬇️ 40,695 all-time downloads) · this repo ⭐ 3,492 stars\n<!-- live-stats:end -->\n🆕 Qwen 4 watch: Alibaba says Qwen 4 is coming. The day the weights land we test it inside Claude Code and add it here, with real speed and scores. ⭐ Star or watch the repo to catch it. [The plan](#-qwen-4-in-claude-code-local)\nAgent-12 score for the model setup picks on a 96 GB Mac, Qwen 3.8 27B: 12/12 easy, 7/8 hard . <sub>Scored in Agent-12's own harness, not inside Claude Code. [How the models compare](#-pick-your-ai)</sub>\n</div>\n<br>\n<div align=\"center\">\n🧠⚡ Claude Code Local\nClaude Code, running on your own Mac. No cloud. No API key. No waiting.\nYour Mac's chip runs the AI · Claude Code works exactly like it always does · nothing leaves your computer\nNow on Linux and Windows too, same Claude Code, same privacy, your own machine doing the work. [Phones are next.](#-where-this-is-going)\n<a href=\"https://github.com/hesreallyhim/awesome-claude-code\"><img src=\"https://img.shields.io/badge/Mentioned_in-Awesome_Claude_Code-fc60a8?style=for-the-badge&logo=awesomelists&logoColor=white&labelColor=1f2328\" alt=\"Mentioned in Awesome Claude Code\"></a>\n<a href=\"https://github.com/nicedreamzapp/claude-code-local/actions/workflows/ci.yml\"><img src=\"https://img.shields.io/github/actions/workflow/status/nicedreamzapp/claude-code-local/ci.yml?branch=main&style=for-the-badge&logo=githubactions&logoColor=white&label=CI&labelColor=1f2328\" alt=\"CI\"></a> <a href=\"https://scorecard.dev/viewer/?uri=github.com/nicedreamzapp/claude-code-local\"><img src=\"https://img.shields.io/ossf-scorecard/github.com/nicedreamzapp/claude-code-local?label=OpenSSF%20Scorecard&style=for-the-badge&labelColor=1f2328\" alt=\"OpenSSF Scorecard\"></a> <a href=\"https://github.com/nicedreamzapp/claude-code-local/stargazers\"><img src=\"https://img.shields.io/github/stars/nicedreamzapp/claude-code-local?style=for-the-badge&logo=github&color=f5c542&labelColor=1f2328\" alt=\"GitHub stars\"></a> <a href=\"#-what-you-need\"><img src=\"https://img.shields.io/badge/Mac-Apple_Silicon-111111?style=for-the-badge&logo=apple&logoColor=white\" alt=\"Apple Silicon\"></a> <a href=\"#-your-code-stays-home\"><img src=\"https://img.shields.io/badge/🔒_Privacy-100%25_Local-success?style=for-the-badge\" alt=\"100% Local\"></a> <a href=\"#-use-it-with-trinidad-head\"><img src=\"https://img.shields.io/badge/🌊_Best_with-Trinidad_Head-a855f7?style=for-the-badge\" alt=\"Best with Trinidad Head\"></a> <a href=\"LICENSE\"><img src=\"https://img.shields.io/badge/📜_License-MIT-yellow?style=for-the-badge\" alt=\"MIT\"></a> <a href=\"https://discord.gg/ZdSqgAxUW\"><img src=\"https://img.shields.io/discord/1497121921580404818?…",
+            "lead": "<div align=\"center\">\n<a href=\"https://www.youtube.com/watch?v=XNSdQtlTwWo\"><img src=\"https://raw.githubusercontent.com/nicedreamzapp/claude-code-local/587a5449e6f497cd51fc9e1cbc0ce5ee05237368/assets/readme/promo-video-thumb.jpg\" width=\"640\" alt=\"Watch the video: Claude Code Local, an AI that runs on your own computer, free, private and offline\"></a>\n<a href=\"https://www.youtube.com/watch?v=a9vtBSl_j_o\"><img src=\"https://img.youtube.com/vi/a9vtBSl_j_o/hqdef",
+            "chars": 43280,
+            "shown": 3963,
+            "truncated": true
+          },
+          "quality": 10,
+          "score": 23.4,
+          "category": "local",
+          "subcategory": "runtime",
+          "practical": 2,
+          "slug": "5a03556540f5",
+          "action": 7,
+          "rank": 21.2,
+          "tags": [
+            "lowspec",
+            "agent",
+            "free"
+          ]
+        },
+        {
+          "sourceId": "gh-ecosystem",
+          "sourceName": "GitHub 检索（生态项目更新）",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "oss",
+          "categories": [
             "ggml"
           ],
           "author": "ggml-org",
@@ -2044,6 +2089,51 @@
           "tags": [
             "local",
             "agent"
+          ]
+        },
+        {
+          "sourceId": "gh-ecosystem",
+          "sourceName": "GitHub 检索（生态项目更新）",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "oss",
+          "categories": [
+            "agpl",
+            "ai-agent-platform",
+            "ai-agents",
+            "audit-trail",
+            "docker"
+          ],
+          "author": "heypinchy",
+          "id": "1160673087",
+          "title": "heypinchy/pinchy",
+          "url": "https://github.com/heypinchy/pinchy",
+          "published": "2026-11-11T11:12:40.000Z",
+          "summary": "<p align=\"center\"> <img src=\".github/assets/pinchy-logo.png\" alt=\"Pinchy\" width=\"120\" /> </p> <h1 align=\"center\">Pinchy</h1> <p align=\"center\"> <strong>Self-hosted AI agent platform built on OpenClaw.</strong><br/> Enterprise-ready. Offline-capable. Open source. </p> <p align=\"center\"> <a href=\"https://docs.heypinchy.…",
+          "metrics": {
+            "stars": 192
+          },
+          "content": {
+            "html": "<p>&lt;p align=\"center\"&gt; &lt;img src=\".github/assets/pinchy-logo.png\" alt=\"Pinchy\" width=\"120\" /&gt; &lt;/p&gt;</p>\n<p>&lt;h1 align=\"center\"&gt;Pinchy&lt;/h1&gt;</p>\n<p>&lt;p align=\"center\"&gt; &lt;strong&gt;Self-hosted AI agent platform built on OpenClaw.&lt;/strong&gt;&lt;br/&gt; Enterprise-ready. Offline-capable. Open source. &lt;/p&gt;</p>\n<p>&lt;p align=\"center\"&gt; &lt;a href=\"https://docs.heypinchy.com\"&gt;Docs&lt;/a&gt; • &lt;a href=\"https://heypinchy.com\"&gt;Website&lt;/a&gt; • &lt;a href=\"https://heypinchy.com/blog\"&gt;Blog&lt;/a&gt; • &lt;a href=\"https://github.com/heypinchy/pinchy/discussions\"&gt;Discussions&lt;/a&gt; • &lt;a href=\"https://linkedin.com/in/clemenshelm\"&gt;LinkedIn&lt;/a&gt; &lt;/p&gt;</p>\n<p>&lt;p align=\"center\"&gt; &lt;a href=\"LICENSE\"&gt;&lt;img src=\"https://img.shields.io/badge/license-AGPL--3.0-blue.svg\" alt=\"License: AGPL-3.0\" /&gt;&lt;/a&gt; &lt;a href=\"https://github.com/heypinchy/pinchy/releases\"&gt;&lt;img src=\"https://img.shields.io/github/v/release/heypinchy/pinchy?color=ef4444\" alt=\"Latest release\" /&gt;&lt;/a&gt; &lt;a href=\"https://github.com/heypinchy/pinchy/stargazers\"&gt;&lt;img src=\"https://img.shields.io/github/stars/heypinchy/pinchy?style=flat&amp;color=f97316\" alt=\"GitHub stars\" /&gt;&lt;/a&gt; &lt;a href=\"https://github.com/heypinchy/pinchy/discussions\"&gt;&lt;img src=\"https://img.shields.io/github/discussions/heypinchy/pinchy?color=8b5cf6\" alt=\"GitHub Discussions\" /&gt;&lt;/a&gt; &lt;/p&gt;</p>\n<p>&lt;p align=\"center\"&gt; &lt;img src=\"https://heypinchy.com/screenshots/chat-interface.png\" alt=\"Pinchy chat interface — a team member talking to a scoped AI agent\" width=\"820\" /&gt; &lt;/p&gt;</p>\n<p>---</p>\n<h4>What is Pinchy?</h4>\n<p>Pinchy is an enterprise layer on top of<a href=\"https://github.com/openclaw/openclaw\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">OpenClaw</a>— the open-source AI agent framework. OpenClaw is incredibly powerful for individual power users. But for teams and companies, critical pieces are missing: permissions, audit trails, user management, and governance.</p>\n<p>Pinchy fills that gap.</p>\n<h4>The Problem</h4>\n<p>You want AI agents in your company. But:</p>\n<ul><li><strong>Cloud platforms</strong>(Dust, Glean, Copilot Studio) send your data to external servers. For regulated industries in the EU, that's a non-starter.</li><li><strong>Workflow builders</strong>(n8n, Dify) let you chain steps visually — but they're not autonomous agents.</li><li><strong>Frameworks</strong>(CrewAI, LangChain) are libraries, not platforms. No UI, no permissions, no deployment story.</li><li><strong>OpenClaw</strong>is the best open-source agent runtime — but it has no user management, no role-based access, no audit trail.</li></ul>\n<h4>The Solution</h4>\n<p>Pinchy wraps OpenClaw into something enterprises can trust:</p>\n<ul><li><strong>Plugin Architecture</strong>— Agents get scoped tools, not raw shell access. A \"read Odoo sales orders\" tool, not<code>exec</code>. Each tool is granted explicitly, per agent.</li><li><strong>Role-Based Access Control</strong>— Who can use which agent. What each agent can do. Per team, per role.</li><li><strong>Audit Trail</strong>— Every agent action logged. Who, what, when. Cryptographically signed and verifiable.</li><li><strong>Web &amp; Telegram</strong>— Reach agents in a web UI or from Telegram on your phone. One bot per agent, with the same permissions and audit trail.</li><li><strong>Self-Hosted &amp; Offline</strong>— Your server, your data, your models. Works without internet.</li><li><strong>Model Agnostic</strong>— OpenAI, Anthropic, local models via Ollama. Your choice.</li></ul>\n<h4>How Pinchy compares</h4>\n<p>| | OpenClaw alone | Cloud platforms (Dust, Glean) | Workflow tools (n8n) |<strong>Pinchy</strong>| | ---------------------------------------- | :------------: | :---------------------------: | :------------------: | :---------------: | | Self-hosted, data stays in-house | ✅ | ❌ | ✅ |<strong>✅</strong>| | Agent-first (not flow-first) | ✅ | ✅ | flow steps |<strong>✅</strong>| | Per-agent tool permissions (allow-list) | ❌ | partial | flow-level |<strong>✅</strong>| | Roles &amp; per-user access | ❌ | ✅ | paid |<strong>✅</strong>| | Tamper-evident audit trail (HMAC-signed) | ❌ | partial | execution log |<strong>✅</strong>| | Chat UI + Telegram for end users | partial | ✅ | ❌ |<strong>✅</strong>| | Odoo ERP integration | ❌ | ❌ | connectors |<strong>✅</strong>| | Open source | ✅ | ❌ | fair-code |<strong>✅ (AGPL-3.0)</strong>|</p>\n<p>Honest caveats: Pinchy is young, the integration list is short (Odoo, email — Gmail &amp; Microsoft 365, Telegram, web search, documents), there is no compliance certification yet, and granular RBAC is on the roadmap.</p>\n<h4>Quick Start</h4>\n<pre><code>mkdir -p pinchy &amp;&amp; cd pinchy\ncurl -fsSL https://raw.githubusercontent.com/heypinchy/pinchy/v0.…</code></pre>",
+            "text": "<p align=\"center\"> <img src=\".github/assets/pinchy-logo.png\" alt=\"Pinchy\" width=\"120\" /> </p>\n<h1 align=\"center\">Pinchy</h1>\n<p align=\"center\"> <strong>Self-hosted AI agent platform built on OpenClaw.</strong><br/> Enterprise-ready. Offline-capable. Open source. </p>\n<p align=\"center\"> <a href=\"https://docs.heypinchy.com\">Docs</a> • <a href=\"https://heypinchy.com\">Website</a> • <a href=\"https://heypinchy.com/blog\">Blog</a> • <a href=\"https://github.com/heypinchy/pinchy/discussions\">Discussions</a> • <a href=\"https://linkedin.com/in/clemenshelm\">LinkedIn</a> </p>\n<p align=\"center\"> <a href=\"LICENSE\"><img src=\"https://img.shields.io/badge/license-AGPL--3.0-blue.svg\" alt=\"License: AGPL-3.0\" /></a> <a href=\"https://github.com/heypinchy/pinchy/releases\"><img src=\"https://img.shields.io/github/v/release/heypinchy/pinchy?color=ef4444\" alt=\"Latest release\" /></a> <a href=\"https://github.com/heypinchy/pinchy/stargazers\"><img src=\"https://img.shields.io/github/stars/heypinchy/pinchy?style=flat&color=f97316\" alt=\"GitHub stars\" /></a> <a href=\"https://github.com/heypinchy/pinchy/discussions\"><img src=\"https://img.shields.io/github/discussions/heypinchy/pinchy?color=8b5cf6\" alt=\"GitHub Discussions\" /></a> </p>\n<p align=\"center\"> <img src=\"https://heypinchy.com/screenshots/chat-interface.png\" alt=\"Pinchy chat interface — a team member talking to a scoped AI agent\" width=\"820\" /> </p>\n---\nWhat is Pinchy?\nPinchy is an enterprise layer on top of OpenClaw — the open-source AI agent framework. OpenClaw is incredibly powerful for individual power users. But for teams and companies, critical pieces are missing: permissions, audit trails, user management, and governance.\nPinchy fills that gap.\nThe Problem\nYou want AI agents in your company. But:\nCloud platforms (Dust, Glean, Copilot Studio) send your data to external servers. For regulated industries in the EU, that's a non-starter.\nWorkflow builders (n8n, Dify) let you chain steps visually — but they're not autonomous agents.\nFrameworks (CrewAI, LangChain) are libraries, not platforms. No UI, no permissions, no deployment story.\nOpenClaw is the best open-source agent runtime — but it has no user management, no role-based access, no audit trail.\nThe Solution\nPinchy wraps OpenClaw into something enterprises can trust:\nPlugin Architecture — Agents get scoped tools, not raw shell access. A \"read Odoo sales orders\" tool, not exec . Each tool is granted explicitly, per agent.\nRole-Based Access Control — Who can use which agent. What each agent can do. Per team, per role.\nAudit Trail — Every agent action logged. Who, what, when. Cryptographically signed and verifiable.\nWeb & Telegram — Reach agents in a web UI or from Telegram on your phone. One bot per agent, with the same permissions and audit trail.\nSelf-Hosted & Offline — Your server, your data, your models. Works without internet.\nModel Agnostic — OpenAI, Anthropic, local models via Ollama. Your choice.\nHow Pinchy compares\n| | OpenClaw alone | Cloud platforms (Dust, Glean) | Workflow tools (n8n) | Pinchy | | ---------------------------------------- | :------------: | :---------------------------: | :------------------: | :---------------: | | Self-hosted, data stays in-house | ✅ | ❌ | ✅ | ✅ | | Agent-first (not flow-first) | ✅ | ✅ | flow steps | ✅ | | Per-agent tool permissions (allow-list) | ❌ | partial | flow-level | ✅ | | Roles & per-user access | ❌ | ✅ | paid | ✅ | | Tamper-evident audit trail (HMAC-signed) | ❌ | partial | execution log | ✅ | | Chat UI + Telegram for end users | partial | ✅ | ❌ | ✅ | | Odoo ERP integration | ❌ | ❌ | connectors | ✅ | | Open source | ✅ | ❌ | fair-code | ✅ (AGPL-3.0) |\nHonest caveats: Pinchy is young, the integration list is short (Odoo, email — Gmail & Microsoft 365, Telegram, web search, documents), there is no compliance certification yet, and granular RBAC is on the roadmap.\nQuick Start\nmkdir -p pinchy && cd pinchy\ncurl -fsSL https://raw.githubusercontent.com/heypinchy/pinchy/v0.…",
+            "lead": "<p align=\"center\"> <img src=\".github/assets/pinchy-logo.png\" alt=\"Pinchy\" width=\"120\" /> </p>\n<h1 align=\"center\">Pinchy</h1>\n<p align=\"center\"> <strong>Self-hosted AI agent platform built on OpenClaw.</strong><br/> Enterprise-ready. Offline-capable. Open source. </p>\n<p align=\"center\"> <a href=\"https://docs.heypinchy.com\">Docs</a> • <a href=\"https://heypinchy.com\">Website</a> • <a href=\"https://heypinchy.com/blog\">Blog</a> • <a href=\"https://github.com/hey",
+            "chars": 9700,
+            "shown": 3999,
+            "truncated": true
+          },
+          "quality": 9,
+          "score": 21.8,
+          "category": "local",
+          "subcategory": "weights",
+          "practical": 2,
+          "slug": "ae08b10ed611",
+          "action": 2,
+          "rank": 12.2,
+          "tags": [
+            "free",
+            "agent",
+            "privacy"
           ]
         },
         {
