@@ -217,6 +217,12 @@ export function createFilter(filters) {
     return { ok: score >= minimum, score: Number(score.toFixed(2)), evidence, action, steps, reasons };
   }
 
+  // 条目得有正文才算能发：审查环节按 minBodyChars 硬拦没有正文的条目，采集阶段先判一次，
+  // 免得补正文没取到的条目占掉当天配额、再被审查拦掉。
+  function hasBody(item, minChars = 0) {
+    return Number(item.content?.chars ?? 0) >= minChars;
+  }
+
   function tagsFor(item) {
     const text = articleText(item);
     const scored = [];
@@ -295,6 +301,7 @@ export function createFilter(filters) {
     score,
     practicality,
     quality,
+    hasBody,
     actionability,
     hasEvidence,
     hasReproSteps,

@@ -140,3 +140,12 @@ test('prefersIllustratedWriteupsWithScreenshotsAndCharts', () => {
   const illustrated = { ...base, content: { html: '<p>先看结论。</p><p><img src="https://lcz.me/uploads/1.png" alt="显存占用截图"></p>', text: '先看结论。', chars: 400, shown: 400, lead: '先看结论。', truncated: false } };
   assert.ok(filter.quality(illustrated, { id: 'lcz-llm' }).score > filter.quality(base, { id: 'lcz-llm' }).score);
 });
+
+test('publishableItemNeedsAFetchedBody', () => {
+  assert.equal(filter.hasBody(item({ summary: '只有一条 teaser 摘要' }), 120), false);
+  assert.equal(filter.hasBody(item({ content: { chars: 119 } }), 120), false);
+  assert.equal(filter.hasBody(item({ content: { chars: 120 } }), 120), true);
+  assert.equal(filter.hasBody(item({ content: { chars: 3200 } }), 120), true);
+  // 不传门槛时（离线跑）一律放行：样例正文是故意截短的。
+  assert.equal(filter.hasBody(item({ summary: '离线样例' })), true);
+});

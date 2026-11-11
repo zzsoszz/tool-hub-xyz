@@ -169,10 +169,18 @@ async function main() {
 
   const eligibleBySource = new Map();
   const lowQuality = [];
+  // 审查环节要求每条都有 minBodyChars 字正文。补正文没取到的条目就算挤进当天配额，
+  // 也必被审查拦下、白占一个位置，所以采集阶段就把它退回候选池。
+  // 离线样例是故意截短的（fixture 里没有正文），离线跑不套用这条。
+  const minBodyChars = flags.offline ? 0 : Number(filters.quality?.review?.minBodyChars ?? 120);
   for (const item of fresh) {
     const source = sourceById.get(item.sourceId);
     if (!filter.isRelevant(item)) continue;
     if (!filter.passesGuards(item, source)) continue;
+    if (!filter.hasBody(item, minBodyChars)) {
+      lowQuality.push(`没有取到正文（要求至少 ${minBodyChars} 字）`);
+      continue;
+    }
     const quality = filter.quality(item, source);
     if (!quality.ok) {
       lowQuality.push(quality.reasons[0] ?? '质量不足');
@@ -222,6 +230,10 @@ async function main() {
   const limit = Number(flags.limit ?? config.maxItemsPerDay ?? 30);
   const pinned = [...published]
     .filter((item) => {
+      if (!filter.hasBody(item, minBodyChars)) {
+        lowQuality.push('旧条目没有正文');
+        return false;
+      }
       const quality = item.quality ?? filter.quality(item, sourceById.get(item.sourceId));
       const ok = typeof quality === 'object' ? quality.ok : true;
       if (ok) item.quality = typeof quality === 'object' ? quality.score : quality;
