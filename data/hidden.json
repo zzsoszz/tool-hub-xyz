@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T11:01:06.846Z",
+  "updatedAt": "2026-11-11T11:05:08.075Z",
   "slugs": [
     "ec3ffc18cdbb",
     "002e0c186427",
@@ -26,11 +26,9 @@
     "2d22ac1d42e6",
     "a16ace76c38e",
     "42f7741a90ca",
+    "11426d5d5985",
     "5f3307d957a7",
-    "97d081c7a718",
-    "c1fbfe2e3fcb",
-    "c8bf0b8e918f",
-    "a5fb6f25f61b"
+    "c8bf0b8e918f"
   ],
   "admin": [],
   "machine": [
@@ -59,11 +57,9 @@
     "2d22ac1d42e6",
     "a16ace76c38e",
     "42f7741a90ca",
+    "11426d5d5985",
     "5f3307d957a7",
-    "97d081c7a718",
-    "c1fbfe2e3fcb",
-    "c8bf0b8e918f",
-    "a5fb6f25f61b"
+    "c8bf0b8e918f"
   ],
   "machineByDay": {
     "legacy": [
@@ -94,11 +90,9 @@
     ],
     "2026-11-11": [
       "42f7741a90ca",
+      "11426d5d5985",
       "5f3307d957a7",
-      "97d081c7a718",
-      "c1fbfe2e3fcb",
-      "c8bf0b8e918f",
-      "a5fb6f25f61b"
+      "c8bf0b8e918f"
     ]
   }
 }

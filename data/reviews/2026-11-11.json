@@ -1,6 +1,6 @@
 {
   "day": "2026-11-11",
-  "reviewedAt": "2026-11-11T10:50:47.436Z",
+  "reviewedAt": "2026-11-11T11:05:08.073Z",
   "reviewer": "cloudflare/@cf/meta/llama-3.1-70b-instruct",
   "note": "cloudflare/@cf/meta/llama-3.1-70b-instruct：复核 12 条，解析到 12 条判定",
   "rules": {
@@ -14,16 +14,14 @@
   },
   "passed": true,
   "reasons": [],
-  "total": 52,
+  "total": 55,
   "blocked": [
     "42f7741a90ca",
+    "11426d5d5985",
     "5f3307d957a7",
-    "97d081c7a718",
-    "c1fbfe2e3fcb",
-    "c8bf0b8e918f",
-    "a5fb6f25f61b"
+    "c8bf0b8e918f"
   ],
-  "survivors": 46,
+  "survivors": 51,
   "items": [
     {
       "slug": "42f7741a90ca",
@@ -45,10 +43,10 @@
       "warnings": [],
       "agent": {
         "verdict": "fail",
-        "reason": "正文长度太短且没有可复述的信息。"
+        "reason": "正文太短且没有可复述的信息"
       },
       "blocked": [
-        "模型复核不通过（正文长度太短且没有可复述的信息。）"
+        "模型复核不通过（正文太短且没有可复述的信息）"
       ]
     },
     {
@@ -68,10 +66,12 @@
       "hard": [],
       "warnings": [],
       "agent": {
-        "verdict": "pass",
-        "reason": "提供了 SGLang 和 Strata 的比较和 benchmark。"
+        "verdict": "fail",
+        "reason": "正文太短且没有可复述的信息"
       },
-      "blocked": []
+      "blocked": [
+        "模型复核不通过（正文太短且没有可复述的信息）"
+      ]
     },
     {
       "slug": "5f3307d957a7",
@@ -91,10 +91,10 @@
       "warnings": [],
       "agent": {
         "verdict": "fail",
-        "reason": "正文长度太短且没有可复述的信息。"
+        "reason": "正文太短且没有可复述的信息"
       },
       "blocked": [
-        "模型复核不通过（正文长度太短且没有可复述的信息。）"
+        "模型复核不通过（正文太短且没有可复述的信息）"
       ]
     },
     {
@@ -116,7 +116,7 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "提供了详细的 LLM 推理笔记和资源。"
+        "reason": "正文长度足够且包含详细笔记"
       },
       "blocked": []
     },
@@ -141,7 +141,30 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "介绍了 ComfyUI 的新版本特性和功能。"
+        "reason": "正文长度足够且包含详细发布信息"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "449cd49c30dd",
+      "title": "darksidewalker/ComfyUI-DaSiWa-Nodes",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [
+        "generate"
+      ],
+      "bodyChars": 38582,
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 检索（生态项目更新）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "正文长度足够且包含详细项目信息"
       },
       "blocked": []
     },
@@ -164,12 +187,10 @@
         "标题未翻译"
       ],
       "agent": {
-        "verdict": "fail",
-        "reason": "新闻转述，没有提供实践性内容。"
+        "verdict": "pass",
+        "reason": "内容长度足够且来自知名来源。"
       },
-      "blocked": [
-        "模型复核不通过（新闻转述，没有提供实践性内容。）"
-      ]
+      "blocked": []
     },
     {
       "slug": "c1fbfe2e3fcb",
@@ -188,12 +209,10 @@
         "标题未翻译"
       ],
       "agent": {
-        "verdict": "fail",
-        "reason": "正文长度太短且没有可复述的信息"
+        "verdict": "pass",
+        "reason": "内容长度足够且来自个人博客。"
       },
-      "blocked": [
-        "模型复核不通过（正文长度太短且没有可复述的信息）"
-      ]
+      "blocked": []
     },
     {
       "slug": "3e9ae4b249de",
@@ -214,7 +233,30 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "正文长度超过 6000 字且有具体的项目更新信息"
+        "reason": "内容长度足够且来自 GitHub。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "2bbbad181693",
+      "title": "Strata v0.2.11 发布",
+      "category": "apps",
+      "subcategory": "inference",
+      "tags": [
+        "local"
+      ],
+      "bodyChars": 70741,
+      "quality": 8,
+      "practical": 4,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容长度足够且来自 GitHub。"
       },
       "blocked": []
     },
@@ -236,10 +278,10 @@
       ],
       "agent": {
         "verdict": "fail",
-        "reason": "正文长度太短且没有可复述的信息"
+        "reason": "正文太短且没有可复述的信息。"
       },
       "blocked": [
-        "模型复核不通过（正文长度太短且没有可复述的信息）"
+        "模型复核不通过（正文太短且没有可复述的信息。）"
       ]
     },
     {
@@ -261,7 +303,7 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "正文长度超过 10000 字且有具体的实践经验分享"
+        "reason": "内容长度足够且来自个人博客。"
       },
       "blocked": []
     },
@@ -283,10 +325,7 @@
       "warnings": [
         "标题未翻译"
       ],
-      "agent": {
-        "verdict": "pass",
-        "reason": "正文长度超过 1000 字且有具体的benchmark信息"
-      },
+      "agent": null,
       "blocked": []
     },
     {
@@ -305,13 +344,8 @@
         "没有命中任何标签",
         "标题未翻译"
       ],
-      "agent": {
-        "verdict": "fail",
-        "reason": "分类不符，应该分类在apps/creation"
-      },
-      "blocked": [
-        "模型复核不通过（分类不符，应该分类在apps/creation）"
-      ]
+      "agent": null,
+      "blocked": []
     },
     {
       "slug": "09ef35482166",
@@ -1024,6 +1058,27 @@
       "practical": 1,
       "sourceName": "Hacker News Search",
       "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "ead37075bb85",
+      "title": "MINE: Entropy-coded Memory-efficient Inference for Large Language Models",
+      "category": "local",
+      "subcategory": "weights",
+      "tags": [
+        "local",
+        "free"
+      ],
+      "bodyChars": 1265,
+      "quality": 6,
+      "practical": 2,
+      "sourceName": "arXiv 检索（推理引擎与量化）",
+      "domain": "arxiv.org",
       "hard": [],
       "warnings": [
         "标题未翻译"
