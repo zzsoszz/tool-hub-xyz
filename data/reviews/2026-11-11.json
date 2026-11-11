@@ -1,6 +1,6 @@
 {
   "day": "2026-11-11",
-  "reviewedAt": "2026-11-11T11:05:08.073Z",
+  "reviewedAt": "2026-11-11T11:17:50.374Z",
   "reviewer": "cloudflare/@cf/meta/llama-3.1-70b-instruct",
   "note": "cloudflare/@cf/meta/llama-3.1-70b-instruct：复核 12 条，解析到 12 条判定",
   "rules": {
@@ -10,18 +10,19 @@
     "maxTags": 4,
     "agentMaxItems": 12,
     "agentBatch": 6,
-    "agentChars": 900
+    "agentChars": 900,
+    "agentExcerptChars": 600
   },
   "passed": true,
   "reasons": [],
-  "total": 55,
+  "total": 57,
   "blocked": [
     "42f7741a90ca",
-    "11426d5d5985",
-    "5f3307d957a7",
+    "c32f15795545",
+    "97d081c7a718",
     "c8bf0b8e918f"
   ],
-  "survivors": 51,
+  "survivors": 53,
   "items": [
     {
       "slug": "42f7741a90ca",
@@ -35,6 +36,7 @@
         "lowspec"
       ],
       "bodyChars": 1501,
+      "excerpt": "在 Mac 上运行本地大模型已经不是什么新鲜事了，但如果模型太大，一台 Mac 的内存装不下怎么办？ 苹果似乎准备提供一个更简单的办法： 把几台 Mac 用 Thunderbolt 5 连接起来，让它们一起运行 AI 大模型。 近日有 X 用户 @ Aaron 爆料消息称，苹果正在开发一款名为 Harbor 的新应用，专门用于将 Mac 变成私有 AI 推理服务器。 Harbor：让 Mac 变成 AI 服务器 根据曝光的产品介绍，Harbor 可以在搭载 Apple Silicon 芯片的 Mac 上运行开放权重 AI 模型，所有推理过程都在本地完成，数据无需上传云端。 它提供了几个主要功能： 本地运行 AI 模型 ：利用 Apple Silicon 和统一内存运行大模型，数据保留在自己的设备上。 内置模型管理 ：直接在应用中浏览、下载和加载模型，不需要手动配置运行环境。 自动组建集群 ：通过 Thunderbolt 5 连接多台 Mac，应用自动发现设备并完成配置。 支持更大模型 ：利用多台 Mac 的内存资源，运行单台设备无法容纳的模型。 提高并发能力 ：通过多机协作，为更多用户或应用同时提供 AI 推理服务。 其中最值得关注的，是多台 Mac 的协同推理能力。 插上线，多台 Mac 一起运行大模型 假设 你有两台配备 64GB 统一内存的 Mac，单独运行时，每台机器都受…",
       "quality": 9,
       "practical": 8,
       "sourceName": "小众软件",
@@ -43,10 +45,10 @@
       "warnings": [],
       "agent": {
         "verdict": "fail",
-        "reason": "正文太短且没有可复述的信息"
+        "reason": "内容没有提供实测数据或复现步骤，只是转述了苹果新应用 Harbor 的功能和特点。"
       },
       "blocked": [
-        "模型复核不通过（正文太短且没有可复述的信息）"
+        "模型复核不通过（内容没有提供实测数据或复现步骤，只是转述了苹果新应用 Harbor 的功能和特点。）"
       ]
     },
     {
@@ -59,6 +61,7 @@
         "lowspec"
       ],
       "bodyChars": 1097,
+      "excerpt": "之前发过不少跑分和测试帖，这次想聊聊 SGLang 和 Strata 的原理和使用场景，欢迎大家补充。 日常聊天、解释一个函数，我会先用 SGLang。遇到需要反复阅读同一批代码和日志的大项目，我会再比较 Strata。这里的区别，得从模型怎么处理输入说起。 SGLang 和 Strata 是什么关系？ Strata 基于 SGLang。 SGLang 是通用推理引擎，负责运行模型和处理请求。Strata 在这个基础上优化长上下文的 KV 缓存搬运和请求调度。SGLang 自己也有 HiCache，可以把缓存分层放在显存、主机内存和外部存储中，因此比较分层缓存时，可以把 SGLang + HiCache 当作基线。 Strata 论文 · SGLang HiCache 模型权重和 KV 缓存是两笔开销。 拿 Qwen 27B 举例，27B 是模型参数规模，量化会影响权重占多少空间。代码、文档和对话历史则会产生 KV 缓存。Strata 优化的是这些上下文缓存怎么保存和复用。如果某个同名工具宣传能把模型权重放进主机内存，那项功能要按该工具的实现单独看。 Prefill 几千对不到 1000，能直接比吗？ 第一次把长文档交给模型，它要先处理输入，这一步叫 prefill 。第二次保留相同的文档前缀来追问，如果缓存还在，模型就能复用先前算过的部分。两次都可能报输入 tokens/s，但…",
       "quality": 12,
       "practical": 3,
       "sourceName": "抡锤者 模型部署讨论",
@@ -66,12 +69,10 @@
       "hard": [],
       "warnings": [],
       "agent": {
-        "verdict": "fail",
-        "reason": "正文太短且没有可复述的信息"
+        "verdict": "pass",
+        "reason": "内容提供了 SGLang 和 Strata 的原理和使用场景，并包括了benchmark的比较。"
       },
-      "blocked": [
-        "模型复核不通过（正文太短且没有可复述的信息）"
-      ]
+      "blocked": []
     },
     {
       "slug": "5f3307d957a7",
@@ -83,6 +84,7 @@
         "free"
       ],
       "bodyChars": 854,
+      "excerpt": "新人第一条贴，来寻求帮助！ 首先，非常喜欢锤哥（不知道你们是不是这么称呼）做的这个论坛，能学到很多东西。本人工作四年被优化后，考研上岸双非，目前研二。 目前Agent经历就只有Hermes，因为它目前能够完成我大大小小的任务，但是我不满足于此（贪婪 ） 1. 先说说我对Hermes的使用情况吧 之前 以前任务都是挤在一个session里完成的，包括搭建知识库、写代码、出文档等之类的。时间长了功能倒是可以完成，但是就怕哪一天幻觉越来越严重了，而且我想规范他们，看上去没那么乱。 最近 所以最近开始研究Hermes内置的多Bot模式，每个Bot定义SOUL.md的部分我还是比较喜欢，这样可以做到术业有专攻（理想化状态）。我参考开源项目 hermes-multi-agent-team 目前我给的Bot角色如下： 总管 (Coordinator)：任务拆解、分配、汇总。 产品经理 (PM)：撰写 PRD、需求文档和用户故事。 前端开发 (Frontend)：负责 Vue/React/CSS 等界面实现。 后端开发 (Backend)：负责 API、数据库和架构。 测试QA (QA)：编写测试用例、提交 Bug 报告。 UI设计 (Designer)：负责界面与交互规范。 本想着能增加自己的工作效率，但现实是在Hermes内置的群聊里面，多Bot花了更多的时间和token，完成我之前单ses…",
       "quality": 8,
       "practical": 2,
       "sourceName": "抡锤者 Agent 工具",
@@ -90,12 +92,10 @@
       "hard": [],
       "warnings": [],
       "agent": {
-        "verdict": "fail",
-        "reason": "正文太短且没有可复述的信息"
+        "verdict": "pass",
+        "reason": "内容提供了使用Hermes多Agent群聊的经验和踩坑过程，包括具体的配置和优化方法。"
       },
-      "blocked": [
-        "模型复核不通过（正文太短且没有可复述的信息）"
-      ]
+      "blocked": []
     },
     {
       "slug": "d2aa13e0402b",
@@ -106,6 +106,7 @@
         "local"
       ],
       "bodyChars": 8930,
+      "excerpt": "samir-vllm Teaching LLM inference from first principles by building a small engine in C++ and CUDA. The series follows what happens between a prompt and a generated token, from loading model weights to running each part of the transformer on the GPU. My inference notes Read Inference from Scratch (PDF) for 80+ pages of my handwritten notes and diagrams. I developed all of the writing in this PDF myself, with NO AI writing . Build series | 6+ Hours of footage Part 0 · AI inference explained Part 1 · Loading model weights Part 2 · Embedding gather Part 3 · RMSNorm Part 4 · RoPE Part 5 · Q/K/V w…",
       "quality": 10,
       "practical": 2,
       "sourceName": "HN 检索（本地推理生态）",
@@ -116,7 +117,7 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "正文长度足够且包含详细笔记"
+        "reason": "内容提供了详细的手写笔记和视频教程，教导读者如何从零开始构建LLM推理引擎。"
       },
       "blocked": []
     },
@@ -131,6 +132,7 @@
         "free"
       ],
       "bodyChars": 5196,
+      "excerpt": "What's Changed Bump comfyui-frontend-package to 1.58.5 by @comfy-pr-bot in https://github.com/Comfy-Org/ComfyUI/pull/17442 Add better error for when pixel_space VAE wrongly selected. by @comfyanonymous in https://github.com/Comfy-Org/ComfyUI/pull/17518 Make SeedVR2 VAE slice length adaptive to free memory by @kijai in https://github.com/Comfy-Org/ComfyUI/pull/17508 [Partner Nodes] feat(Pika): add Pika H3 Flex nodes by @bigcat88 in https://github.com/Comfy-Org/ComfyUI/pull/17509 [Partner Nodes] feat(Pika): add Pika Soundtrack, SFX and Music nodes by @bigcat88 in https://github.com/Comfy-Org/Co…",
       "quality": 8,
       "practical": 3,
       "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
@@ -140,10 +142,12 @@
         "标题未翻译"
       ],
       "agent": {
-        "verdict": "pass",
-        "reason": "正文长度足够且包含详细发布信息"
+        "verdict": "fail",
+        "reason": "内容仅仅是ComfyUI v0.45.0的发布公告，没有提供任何实践性内容或有价值的信息。"
       },
-      "blocked": []
+      "blocked": [
+        "模型复核不通过（内容仅仅是ComfyUI v0.45.0的发布公告，没有提供任何实践性内容或有价值的信息。）"
+      ]
     },
     {
       "slug": "449cd49c30dd",
@@ -154,6 +158,7 @@
         "generate"
       ],
       "bodyChars": 38582,
+      "excerpt": "DaSiWa Custom Nodes Collection A high-performance collection of custom nodes for ComfyUI, optimized for video workflows, resolution management, and logic control. Its installed version is shown in ComfyUI → Settings → About . Use ComfyUI → Settings → Other → DaSiWa → ... to enable or disable extra settings. [📰 News & Changelog — release notes and complete change history across the collection →](docs/news_and_changelog.md) Included Nodes 🎬 MiniMaxH3 Director > 🎬 MiniMaxH3 Director — The Ultimate One-Stop Video Creation Pipeline: Experience the most advanced, feature-complete MiniMaxH3 Direc…",
       "quality": 8,
       "practical": 2,
       "sourceName": "GitHub 检索（生态项目更新）",
@@ -164,7 +169,7 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "正文长度足够且包含详细项目信息"
+        "reason": "内容提供了DaSiWa Custom Nodes Collection的介绍和使用说明，包括具体的节点功能和设置方法。"
       },
       "blocked": []
     },
@@ -178,6 +183,7 @@
         "free"
       ],
       "bodyChars": 3113,
+      "excerpt": "Future AI risks are most likely to come from big companies building in secret while open models play defense, Clément Delangue, CEO of Hugging Face, said Wednesday at the WIRED World Fair in Miami. “Most of the risk is actually created by a couple of players building behind closed doors,” Delangue said. “Most of the mitigation of this risk will be the full ecosystem, meaning everyone being able to build in the open.” Hugging Face is one of the first companies to be attacked by a rogue AI. This July, agents being tested by OpenAI broke free of their sandbox and chose to attack the startup in s…",
       "quality": 8,
       "practical": 1,
       "sourceName": "HN 检索（独立开发与变现）",
@@ -187,10 +193,12 @@
         "标题未翻译"
       ],
       "agent": {
-        "verdict": "pass",
-        "reason": "内容长度足够且来自知名来源。"
+        "verdict": "fail",
+        "reason": "新闻转述，没有实测数据或复现步骤"
       },
-      "blocked": []
+      "blocked": [
+        "模型复核不通过（新闻转述，没有实测数据或复现步骤）"
+      ]
     },
     {
       "slug": "c1fbfe2e3fcb",
@@ -199,6 +207,7 @@
       "subcategory": "creation",
       "tags": [],
       "bodyChars": 1528,
+      "excerpt": "Release: llm-gemini 0.36 Gemini 4 Carbon was announced two weeks ago for \"a subset of cyber defenders\", but today it's available to everyone else . This is Google's best ever Gemini, priced at $2/million input and $10/million output at launch (that's GPT-6.1 Sol / Claude Sonnet 5.5 prices) but scheduled to double in price to $4/$20 on December 1st (same as Opus 5.5). Here are three pelicans for the low, medium and high thinking efforts (it defaults to medium). This is the pelican I got for high: Gemini pelicans have all been great for a while now, so I also tested it out using Google's Antigr…",
       "quality": 9,
       "practical": 1,
       "sourceName": "Simon Willison",
@@ -210,7 +219,7 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "内容长度足够且来自个人博客。"
+        "reason": "发布了llm-gemini 0.36版本，介绍了新功能和价格"
       },
       "blocked": []
     },
@@ -223,6 +232,7 @@
         "free"
       ],
       "bodyChars": 6711,
+      "excerpt": "SGLang: Fast inference for LLMs and multimodal models <p align=\"center\" id=\"sglangtop\"> <img src=\"https://raw.githubusercontent.com/sgl-project/sglang/main/assets/logo.png\" alt=\"SGLang\" width=\"400\"> </p> <p align=\"center\"> <a href=\"https://pypi.org/project/sglang/\"><img src=\"https://img.shields.io/pypi/v/sglang?style=flat&amp;label=PyPI&amp;labelColor=555555&amp;color=orange\" alt=\"PyPI version\"></a> <a href=\"LICENSE\"><img src=\"https://img.shields.io/badge/License-Apache%202.0-green?style=flat&amp;labelColor=555555\" alt=\"License: Apache 2.0\"></a> <a href=\"https://pypistats.org/packages/sglang\"…",
       "quality": 10,
       "practical": 1,
       "sourceName": "GitHub 检索（生态项目更新）",
@@ -233,7 +243,7 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "内容长度足够且来自 GitHub。"
+        "reason": "介绍了SGLang项目，提供了快速推理功能"
       },
       "blocked": []
     },
@@ -246,6 +256,7 @@
         "local"
       ],
       "bodyChars": 70741,
+      "excerpt": "Strata 0.2.11: Unsloth's new 1- to 4-bit Qwen3.8-Flash-Next files, prompt-speed changes on NVIDIA and Radeon cards, small multi-card starts, chats saved as files, a fix for mixed-up replies from model copies, and GUI and Terminal fixes The app and the Terminal are 0.2.11. Control and every engine package are 0.1.57. The update feed is sequence 121. The DGX Spark (linux-aarch64) gets 0.2.11 too. Unsloth's new Qwen3.8-Flash-Next files On 11-04 Unsloth re-uploaded its Qwen3.8-Flash-Next GGUFs (\"Dynamic v3.1\"). Strata can now download, prepare and run seven of them in the app, in the Terminal ( s…",
       "quality": 8,
       "practical": 4,
       "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
@@ -256,7 +267,7 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "内容长度足够且来自 GitHub。"
+        "reason": "发布了Strata v0.2.11版本，更新了功能和修复问题"
       },
       "blocked": []
     },
@@ -267,6 +278,7 @@
       "subcategory": null,
       "tags": [],
       "bodyChars": 839,
+      "excerpt": "Claude Fable 5.2 responds closely to what the prompt says about who owns the code it works on. In Anthropic’s testing on small coding tasks, when a prompt said nothing about ownership or presented the code base as someone else’s, the model tended to add to the existing structure, even when that repeated existing code. [...] If you want the model to improve the structure as it works, say that the code is its own: This codebase is yours: what it's for and how it's built are your call, and you'll keep building on it. In Anthropic’s testing on small coding tasks, the model merged repeated code in…",
       "quality": 8,
       "practical": 1,
       "sourceName": "Simon Willison",
@@ -278,10 +290,10 @@
       ],
       "agent": {
         "verdict": "fail",
-        "reason": "正文太短且没有可复述的信息。"
+        "reason": "新闻转述，没有实测数据或复现步骤"
       },
       "blocked": [
-        "模型复核不通过（正文太短且没有可复述的信息。）"
+        "模型复核不通过（新闻转述，没有实测数据或复现步骤）"
       ]
     },
     {
@@ -293,6 +305,7 @@
         "free"
       ],
       "bodyChars": 11604,
+      "excerpt": "I was the co-founder and CTO of an AI-based ed-tech startup . I left the startup in October 2026 to spend time on other fields I’m interested in, particularly inference engineering, which I’m currently learning. Before moving on, I wanted to write down how we ran most of the product infrastructure without paying for every SaaS service out of pocket. The product had an LLM chat flow and an AI mock-interview feature, so we needed quite a few services: LLMs, speech-to-text, text-to-speech, databases, analytics, error tracking, scraping, monitoring, email and the usual infrastructure around all o…",
       "quality": 6,
       "practical": 1,
       "sourceName": "Hacker News Search",
@@ -303,7 +316,7 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "内容长度足够且来自个人博客。"
+        "reason": "分享了如何在几乎零成本运行一个自举的AI初创公司的经验"
       },
       "blocked": []
     },
@@ -317,6 +330,7 @@
         "free"
       ],
       "bodyChars": 1420,
+      "excerpt": "Google DeepMind has revealed a new generation of the AI-powered Gemini Robotics platform. In the 2.5 release, Google says its robotic AI is getting tantalizingly close to completing real-world tasks as well as humans do. In fact, some Gemini robots were able to get actual work done in Mercedes-Benz factories, and the team is preparing for a day when robots operate alongside humans with an open source safety benchmark. DeepMind's physical AI platform has several computational layers between user input and robotic action. There's the vision-language model piece, which is Gemini Embodied Reasoni…",
       "quality": 9,
       "practical": 1,
       "sourceName": "Ars Technica AI",
@@ -335,6 +349,7 @@
       "subcategory": "life",
       "tags": [],
       "bodyChars": 1871,
+      "excerpt": "Reinforcement learning with verifiable rewards (RLVR) produces rich training experience, yet outcome rewards reduce each attempt to a single number and leave most of this information unused. Training-time scaffolds, such as strategies or hints added to the prompt during training, offer a natural way to turn this information into guidance, but their design and adaptation are largely left to humans and tailored to specific domains. We introduce AutoScaffold, a unified AI-for-AI framework that turns a student's training experience into adaptive scaffolds, with minimal domain-specific information…",
       "quality": 7,
       "practical": 1,
       "sourceName": "arXiv cs.AI/CL/LG",
@@ -354,6 +369,7 @@
       "subcategory": "knowledge",
       "tags": [],
       "bodyChars": 1883,
+      "excerpt": "A model that takes over another model's conversation must normally re-read the whole history; a text hand-off shortens the re-read only by dropping content. KV-cache translation instead maps the source's cache into the target's own format, so the target continues from the full context without re-reading it. It works for grouped-query attention (GQA), but open-weights frontier models now cache compressed latents (MLA), sparse-attention indexer keys and fixed-size linear-attention states. We replicate KV-Lingo on a GQA pair and then give, for each of these objects, where to capture and inject i…",
       "quality": 6,
       "practical": 1,
       "sourceName": "arXiv 检索（推理引擎与量化）",
@@ -375,6 +391,7 @@
         "free"
       ],
       "bodyChars": 1199,
+      "excerpt": "Sparse attention accelerates long-context decoding by reading a subset of the KV cache, but existing methods are open-loop: the kernel commits to its selection with no signal indicating whether enough attention mass was preserved and no recovery path when it was not. The needed signal already exists inside the kernel. The fraction of softmax mass on the selected tokens, which we call coverage, satisfies an exact algebraic equality with per-step output error and serves a dual role as the acceptance criterion and the interpolation weight for recovery. Coverage-Verified Sparse Attention (CVSA) t…",
       "quality": 6,
       "practical": 1,
       "sourceName": "arXiv 检索（推理引擎与量化）",
@@ -396,6 +413,7 @@
         "lowspec"
       ],
       "bodyChars": 1105,
+      "excerpt": "I gave it one prompt: \"How do I make a small closed terrarium in a glass jar? Please give me a beginner-friendly illustrated step-by-step guide.\" What came back was a normal written guide with eight pictures placed between the steps, text and images from the same model in one answer. No separate image model, and the only thing I added is the step heading under each picture. It's the same jar in every picture. Same table, same mug and window behind it, and the jar fills up in the order the text says: pebbles, then a charcoal layer, then soil, then the plants, a spray of water, and finally the…",
       "quality": 9,
       "practical": 4,
       "sourceName": "r/LocalLLaMA",
@@ -419,6 +437,7 @@
         "free"
       ],
       "bodyChars": 3109,
+      "excerpt": "程序员被 Codex 彻底改变了。不用一行行敲代码，把需求丢给 AI，它自己写代码、跑测试、修 Bug，最后交付。 那么问题来了： 科研人员天天干的活，不也是”配环境、跑实验、复现代码、查文献、写综述、画图”这些体力活吗？ 现在，复旦大学 NLP 团队把这套逻辑搬到了科研上，做出了一个真正意义上的学术版 Codex： 切问学术 。 它不只是一个搜索、查文献的工具，而是一个能自己连服务器、申请 GPU、跑实验、写综述的全自动科研智能体！ 你负责出想法，剩下的重复劳动交给它。 双十一到了，到处都在搞满减、凑单、算优惠券。 切问这次不玩这些，直接给大家准备了一份实打实的福利： 会员积分翻倍 。 福利：双十一限时，会员积分 ×2 活动期间订阅任意会员套餐，每月到账的积分都是平时的 2 倍 。 论文检索、AI 问答、Agent 任务，能做的事多了一倍。 双十一限时活动 全套餐参与 ：Plus、Pro、Max X2、Max X5，月付、年付都可以 最长一年 ：单个账号最多可购买 12 个月会员，整整一年都是双倍积分 老会员也能参加 ：活动期间升级，同样享受双倍积分 活动入口 https://qiewenpaper.com/zh/pricing?utm_source=xzrj 以最受欢迎的 Pro 年付 为例： 平时：全年积分 240 万 双十一：全年积分 480 万 相当于白得 240 万积…",
       "quality": 8,
       "practical": 5,
       "sourceName": "小众软件",
@@ -438,6 +457,7 @@
         "free"
       ],
       "bodyChars": 1264,
+      "excerpt": "<!DOCTYPE html> < img id=\"wx_img\" src=\"https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png\" width=\"400\" height=\"400\"> 卷起来了！11月11日，大模型厂商在天猫打5折 量子位的朋友们 2026-11-11 14:18:09 来源： 量子位 大模型厂商智谱、MiniMax、千问办公、阿里云、Qoder都在天猫打5折。 卷起来了！11月11日，全年最便宜的一天，大模型厂商智谱、MiniMax、千问办公、阿里云、Qoder都在天猫打5折。 消费者打开淘宝APP搜索「Token」，即可进入天猫AI空间站的Token充值中心充值。其中 MiniMax的三款月卡全部5折，阿里云Token Plan 两款月卡5折起，智谱周卡5折起，千问办公基础版会员月卡首月3折起，Qoder月卡3.3折，低至19.9元。 今年双11 Token火爆出圈，首次成为一个独立品类登上天猫，标志着大模型不再只活在发布会、API文档里，开始走进大众消费。 （天猫双11 Token充值中心5折会场） 本文由天猫提供，量子位获授权转载，观点归原作者所有。 版权所有，未经授权不得以任何形式转载及使用，违者必究。 天猫 量子位的朋友们 从“卖Token”到“卖结果” | 科技有「联想」沙…",
       "quality": 9,
       "practical": 3,
       "sourceName": "量子位",
@@ -457,6 +477,7 @@
         "free"
       ],
       "bodyChars": 3791,
+      "excerpt": "Every AI chatbot tutorial on YouTube makes it look like a weekend project: wrap an LLM API, connect a vector database for RAG, slap together a floating bubble in React, and call it a day. Six months ago, we set out to build an open-source, embeddable support bot for real businesses. It turned into one of the most deceptively complex front-end and systems engineering challenges I've worked on. The actual LLM calls were maybe 10% of the work. Here are the 5 production nightmares that actually took 90% of the time: 1. The Shadow DOM CSS Nightmare If you embed your chat widget inside a host websi…",
       "quality": 7,
       "practical": 3,
       "sourceName": "r/SaaS 变现实操",
@@ -477,6 +498,7 @@
         "agent"
       ],
       "bodyChars": 5136,
+      "excerpt": "Today’s podcast comes from a real life mystery: We are big fans of Cloudflare’s developer platform, and Cloudflare Email is a convenient tool especially when all your domains are already on Cloudflare. So why do agents keep suggesting we use Resend despite having an existing “home bias” and much larger incumbent player? Well, we got the guy who “does AEO for resend” - the CEO of AEO, Zeno Rocha, who has been writing about AEO since 2024 and Agent Experience since Feb 2025 , on the pod today: In a recent AEO study, Claude Code picked Resend first in 64 of the 102 email recommendations the rese…",
       "quality": 8,
       "practical": 5,
       "sourceName": "Latent Space",
@@ -500,6 +522,7 @@
         "money"
       ],
       "bodyChars": 5146,
+      "excerpt": "<!DOCTYPE html> < img id=\"wx_img\" src=\"https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png\" width=\"400\" height=\"400\"> 双11直播间爆改AI秀场，罗永浩上手TRAE，秒变AI Coding的大众嘴替 闻乐 2026-11-11 14:41:26 来源： 量子位 价格、门槛全打穿 闻乐 发自 凹非寺 量子位 | 公众号 QbitAI 真是活久见，今年双十一最有技术含量的事儿，居然不是研究怎么凑满减了。 下了班刷直播准备买买买，没想到越刷越熟悉，AI啥时候混迹各大卖场了？？ 前有直播一哥热火朝天带货两万亿Token，后脚刷到老罗直播间—— 好嘛，AI编程工具也直接挂上小黄车链接了。 全链路AI开发平台 TRAE ，也就是罗永浩口中的“崔老三”，首月体验直接甩出9块9的真香价。 自称“一行代码都不会写”的五旬老汉，当场支起电脑投屏，在几万观众围观下直接秀起了操作： 几分钟生成一份带数据图表的短剧调研报告； 把5万多字晦涩资料，爆改成两套发布会级PPT； 就凭一张手绘破草图，硬生生搓出一款货真价实、全局可用的语音输入法软件。 绝了，平时只在技术论坛里被程序员反复测评、抠性能指标的 AI Coding ，一夜之间被推上了大众狂欢的带货舞台。 So？大…",
       "quality": 10,
       "practical": 3,
       "sourceName": "量子位",
@@ -518,6 +541,7 @@
         "tutorial"
       ],
       "bodyChars": 688,
+      "excerpt": "Given everything moms do for us, it feels good to give back during the holidays. But where to start? How do you come up with a physical representation of how you feel about such a key and influential figure in your life? The possibilities seem as endless as they are daunting, but fear not, we've done the hard work for you. To help you make the mother figure in your life feel truly appreciated, we've created a sprawling list of intriguing, lovingly curated gift ideas. From a ring watch and luxe portable gaming deck to a better robovac and an AI-powered bird feeder that brings nature to her doo…",
       "quality": 10,
       "practical": 1,
       "sourceName": "The Verge",
@@ -538,6 +562,7 @@
         "free"
       ],
       "bodyChars": 1515,
+      "excerpt": "Stochastic differential equations (SDEs) describe stochastic processes across a wide range of scientific domains, including physics, biology, and finance. Although individual numerical integration steps are inexpensive, observing meaningful events or transitions can require millions of sequential steps, resulting in substantial wall-clock simulation time and poor hardware utilization. Deep learning offers an alternative by amortizing many integration steps into a single neural network forward pass, potentially enabling much faster simulation. However, existing supervised approaches typically…",
       "quality": 6,
       "practical": 2,
       "sourceName": "arXiv cs.AI/CL/LG",
@@ -556,6 +581,7 @@
       "subcategory": null,
       "tags": [],
       "bodyChars": 575,
+      "excerpt": "Tool: Yonkers Rises I realized I didn't know where Yonkers was, so I looked it up on Google Maps and then, to help embed its location and shape in my head (and to try out Claude Fable 5.2's 3D modeling and animation skills), I prompted Fable 5.2 Medium to: Make a three js animation where yonkers stands up as a big mech (cool stand up motion) and átomos around manhattan and queens and Brooklyn, use openstreetmap mapping data It correctly deduced that \"átomos\" was a mobile keyboard typo for \"stomps\": Tags: three-js , llms , ai , generative-ai , claude-mythos-fable",
       "quality": 8,
       "practical": 1,
       "sourceName": "Simon Willison",
@@ -577,6 +603,7 @@
         "agent"
       ],
       "bodyChars": 6274,
+      "excerpt": "Microsoft researchers have discovered “Lazarus,” a backdoor technique that can reprogram dormant neurons in an AI model, causing an otherwise normal AI agent to execute malicious commands when a hidden trigger appears. The threat is especially serious for AI agents with tool or terminal access. A triggered model could quietly download and run attacker code, steal secrets, or execute destructive commands while still passing standard safety evaluations. These backdoors can be inserted without retraining the model and are difficult to detect through normal testing, making model provenance and we…",
       "quality": 8,
       "practical": 1,
       "sourceName": "Microsoft Research",
@@ -597,6 +624,7 @@
         "agent"
       ],
       "bodyChars": 1453,
+      "excerpt": "Deploying LLM-based analytics agents in enterprise settings requires evaluation frameworks that can reliably detect failures across complex, multi-tool workflows. We present a three-phase comparative study of three evaluation frameworks, each representing a distinct evaluation paradigm (trace-based LLM judging, text-only LLM judging with red-teaming, and deterministic heuristics), applied to two analytics agents in a controlled research setting using frozen execution traces. Phase 1 quantifies evaluation harness stability through repeated measurements, finding that 97% of configurations meet…",
       "quality": 7,
       "practical": 1,
       "sourceName": "arXiv cs.AI/CL/LG",
@@ -620,6 +648,7 @@
         "lowspec"
       ],
       "bodyChars": 8600,
+      "excerpt": "一句话总结（TL;DR） 单张 RTX 5080 16GB ＋ DDR5 128GB ，用 Strata v0.2.11 （引擎 0.1.57 ）跑 Qwen3.8-Flash-Next IQ3_S ，上下文 128K ， 一个参数都没调 （ strata launch 一路回车）。 输出速度： 标准测速中位数 105.6 ～ 132.1 tok/s ，短对话最高 169 tok/s 读题（prefill）速度： 4K～12 万 token 都稳定在 3,400 ～ 4,400 tok/s ； 120,598 token 的长文 28.2 秒 读完，读完后输出仍有 145.7 tok/s 长上下文找信息： 4.1 万、6.5 万、12.1 万 token 的长文里各藏一条， 3 / 3 全部找对；标准测速的正确性检查 12 / 12 通过 启动： 第一次 约 55 秒 ，停掉再启动 88.6 秒 ；从下载到能回答一共 约 28 分钟 占用： 显存 14.7 / 16 GB ，内存 约 94 GB ，回答时 CPU 约 94% 一、硬件环境与软件 配置一句话： Ryzen 9 9900X ＋ RTX 5080 16GB ＋ DDR5-5600 128GB ＋ PCIe 5.0 x16 ＋ Windows 11 Pro 项目 规格与配置 备注 显卡 NVIDIA GeForce RT…",
       "quality": 12,
       "practical": 3,
       "sourceName": "抡锤者 AI硬件",
@@ -641,6 +670,7 @@
         "free"
       ],
       "bodyChars": 1607,
+      "excerpt": "I've built an inference backend optimized for M-series Macs that makes it possible to run larger MoE models on machines without eating up all the RAM (for example, it can run Qwen 3.8 Flash Next on a 24GB Mac) using SSD offloading along with architecture-specific optimizations for Apple Silicon. I've only been able to test a limited number of configurations so far, including my own machine and a couple of independent benchmarks. I've shared some results in the repo already. Now I'd like to put together a benchmark list across different M-series chips, RAM and workloads. I'm particularly inter…",
       "quality": 7,
       "practical": 5,
       "sourceName": "r/LocalLLaMA",
@@ -664,6 +694,7 @@
         "generate"
       ],
       "bodyChars": 20227,
+      "excerpt": "大家好。第一次在这里发表聊天， 有什么不对的请多多包含。 花了2个多月 用SGlang 跑 Deepseek 4.1 Flash 1017. 终于达到理想的结果。 看了很久视频今天打算分享我设置 3 + 1 设置。 本来要买四张 RTX Pro 6000D（节省开销） 84GB 后来第四张 显卡买了 收到故障 ， 当时显卡从 5万一张飙升至7万 商家就 质保变退款。 无奈之下第四张卡买了 满血 96GB 工作站版 凑数 4 张 显卡来跑AI。 （其实4张84GB 也能跑但是区别在 总上下文） Sglang 引擎可以支持 权重不平衡分配，所以意外的满血版多容纳了一些权重。 经过2个多月的修改，设置，引擎提升 终于达到了 Prefill 11000 （0-500K之间） - 7000 （988K）token 每秒。 目前最多三个并发 总上下文 3百多万 一并发的输出 （写代码更快） 三并发输出 显卡设备 - AMD EPYC 7F52 + 512GB DDR4 大佬们如果想要本地跑快点的Deepseek v4.1 Flash 1017, 这个方案提供参考。 以下是我设置日志 DeepSeek V4.1 Flash：在 4 张 RTX PRO 6000 上实现 100 万上下文 2026 年 10 月 21 日 · 阅读约 30 分钟 四张 PCIe Blackwell 显卡，无 NV…",
       "quality": 11,
       "practical": 2,
       "sourceName": "抡锤者 模型部署讨论",
@@ -683,6 +714,7 @@
         "tutorial"
       ],
       "bodyChars": 1786,
+      "excerpt": "<details open> sycl : fixed sycl CLAMP to actually support strided view (#31784) Modify ggml_sycl_op_clamp to use the unary helper function ggml_sycl_detail::ggml_sycl_op_unary to handle non-contigous or strided views. The fix uses a pattern that matches other stride-safe unary ops, and is a simpler execution path. Deleted dead template unary_op_clamp_kernel , the flat clamp kernel launcher from element_wise.cpp, and deleted (now) unused SYCL_CLAMP_BLOCK_SIZE from presets.hpp. </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/66154425> m…",
       "quality": 8,
       "practical": 4,
       "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
@@ -704,6 +736,7 @@
         "tutorial"
       ],
       "bodyChars": 1385,
+      "excerpt": "<details open> chat : fix Muse Spark ignoring response_format json_schema (#32017) </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/66115272> macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubuntu 26.04 s390x (zDNN) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu x64 (CUDA 13) - CUDA 13.5 libraries Ubuntu arm64 (CUDA 13) -…",
       "quality": 8,
       "practical": 2,
       "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
@@ -725,6 +758,7 @@
         "tutorial"
       ],
       "bodyChars": 1373,
+      "excerpt": "<details open> mtmd: fix string format, rename to mtmd_format (#32040) </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/66110290> macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubuntu 26.04 s390x (zDNN) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu x64 (CUDA 13) - CUDA 13.5 libraries Ubuntu arm64 (CUDA 13) - CUDA 13.5 li…",
       "quality": 8,
       "practical": 2,
       "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
@@ -746,6 +780,7 @@
         "agent"
       ],
       "bodyChars": 11014,
+      "excerpt": "Strata 0.2.12: a tuned DFlash2 drafter, faster prompts on 12 GB cards, Strix Halo and Mac, and tool-call fixes The app and the Terminal are 0.2.12. Control and every engine package are 0.1.58. The update feed is sequence 122. The DGX Spark (linux-aarch64) gets 0.2.12 too. Highlights 12 GB cards (RTX 3060 class): UD-IQ4_XS-v31 prompts read about 3 times faster, 87 to 264 tokens per second at 2K. Strix Halo (Windows): prompts x1.24 to x2.14 on UD-IQ4_XS-v31 and UD-Q4_K_XL. Mac (M5 Max): output +10.3% to +12.7% and prompts +11.7% to +13.9% on UD-Q4_K_XL and UD-IQ4_XS-v31. Tuned DFlash2 drafter:…",
       "quality": 8,
       "practical": 3,
       "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
@@ -767,6 +802,7 @@
         "benchmark"
       ],
       "bodyChars": 1587,
+      "excerpt": "I wanted to know how far one prosumer-class card & 128 GB of RAM goes with a big mixture-of-experts model, and what you pay for it. Setup: one RTX PRO 4500 (32 GB), 128 GB RAM, Ryzen 9 9950X3D, Linux. Model: DeepSeek V4.1 Flash 1017 as a 2-bit GGUF (ISTA DASLab's GSQ-RCO IQ2_XXS), 232 GiB on disk. The experts stay in RAM, the busiest ones sit on the GPU, and DeepSeek's own DSpark draft model proposes five tokens that the big model checks. What I measured: 49.9 tok/s decode with the draft model (median of three runs), 37.2 without. The draft does not change the output. Against the original wei…",
       "quality": 7,
       "practical": 2,
       "sourceName": "r/LocalLLaMA",
@@ -788,6 +824,7 @@
         "benchmark"
       ],
       "bodyChars": 4491,
+      "excerpt": "I have been building a Spanish proofreader that runs fully local, and it's finally released, so I wanted to share how it went. It only corrects Spanish, but I think the approach works for other languages and narrow tasks too. If the project has audience, I will release the English proofreader version as well :) App running Better thing is the app is 100% compatible with ANY app in Windows and Linux. You select text in any app, press Ctrl+Alt+Space, a small popup shows each change with a short explanation, and Enter replaces your selection. MIT, a C++ app on top of llama.cpp . The model is a f…",
       "quality": 7,
       "practical": 2,
       "sourceName": "r/LocalLLaMA",
@@ -809,6 +846,30 @@
         "free"
       ],
       "bodyChars": 20229,
+      "excerpt": "NodeTool ![Stars ](https://github.com/nodetool-ai/nodetool/stargazers) ![Downloads ](https://github.com/nodetool-ai/nodetool/releases) ![Latest Release ](https://github.com/nodetool-ai/nodetool/releases/latest) ![Discord ](https://discord.gg/WmQTWZRcYE) ![License: AGPL v3 ](LICENSE.txt) Open-source agent-first creative workspace Create images, video, audio, and text with agents that work alongside you. Describe what you want, let the agent build it, then take over whenever you like. Create with AI. Make it your own. NodeTool combines an AI video editor with node-based workflows. Ask the agent…",
+      "quality": 10,
+      "practical": 2,
+      "sourceName": "GitHub 检索（生态项目更新）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "5a03556540f5",
+      "title": "nicedreamzapp/claude-code-local",
+      "category": "local",
+      "subcategory": "runtime",
+      "tags": [
+        "lowspec",
+        "agent",
+        "free"
+      ],
+      "bodyChars": 43280,
+      "excerpt": "<div align=\"center\"> <a href=\"https://www.youtube.com/watch?v=XNSdQtlTwWo\"><img src=\"https://raw.githubusercontent.com/nicedreamzapp/claude-code-local/587a5449e6f497cd51fc9e1cbc0ce5ee05237368/assets/readme/promo-video-thumb.jpg\" width=\"640\" alt=\"Watch the video: Claude Code Local, an AI that runs on your own computer, free, private and offline\"></a> <a href=\"https://www.youtube.com/watch?v=a9vtBSl_j_o\"><img src=\"https://img.youtube.com/vi/a9vtBSl_j_o/hqdefault.jpg\" width=\"640\" alt=\"Watch the demo: hit your Claude Code limit, type exit, keep going on a local model\"></a> Claude Code Local: hit…",
       "quality": 10,
       "practical": 2,
       "sourceName": "GitHub 检索（生态项目更新）",
@@ -830,6 +891,7 @@
         "tutorial"
       ],
       "bodyChars": 4922,
+      "excerpt": "llama.cpp ! llama.cpp <div align=\"center\"> <b>LLM inference in C/C++</b> ![License: MIT ](https://opensource.org/licenses/MIT) ![Release ](https://github.com/ggml-org/llama.cpp/releases?q=tag:v0) ![Nightly ](https://github.com/ggml-org/llama.cpp/releases?q=b) ![Server ](https://github.com/ggml-org/llama.cpp/actions/workflows/server.yml) ![Docker ](https://github.com/ggml-org/llama.cpp/actions/workflows/docker.yml) ![Winget ](https://github.com/ggml-org/llama.cpp/actions/workflows/winget.yml) ggml / ops / maintainer PRs %20sort%3Aupdated-desc) / dev stats / lib llama API / llama-server REST AP…",
       "quality": 10,
       "practical": 3,
       "sourceName": "GitHub 检索（生态项目更新）",
@@ -852,6 +914,7 @@
         "hardware"
       ],
       "bodyChars": 129,
+      "excerpt": "最近用两张 RX 7900 XTX 在本地跑 MiniMax H3，开 TP2 生成了这段视频。发上来交个作业，也给同样在折腾双卡的朋友看看实际出片效果。 Lora: Pika H3 6步，sol attn 稀疏注意力 Youtube Video",
       "quality": 9,
       "practical": 1,
       "sourceName": "抡锤者 AI 音视频画图",
@@ -871,6 +934,7 @@
         "free"
       ],
       "bodyChars": 15663,
+      "excerpt": "<!-- SPDX-FileCopyrightText: Copyright (c) 2024-2026 NVIDIA CORPORATION & AFFILIATES. All rights reserved. SPDX-License-Identifier: Apache-2.0 Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific lang…",
       "quality": 10,
       "practical": 2,
       "sourceName": "GitHub 检索（生态项目更新）",
@@ -889,6 +953,7 @@
       "subcategory": null,
       "tags": [],
       "bodyChars": 1190,
+      "excerpt": "Profession like software engineer, mechanical / graphics designer takes a lot of strain on your eyes, observing minute details for hours and hours on screen can significantly reduce the blink rate which you might not even notice until it gets irreversibly painful, leaving you with dry eyes. I am already a victim of it, working 20 years as a research engineer in computer vision, zooming into pixel level details to hand craft algorithms. Now the doctors says its only regular use of lubricating drops can keep your eyes safe. Now with AI and available fantastic libraries it's possible to play saf…",
       "quality": 9,
       "practical": 1,
       "sourceName": "HN 检索（独立开发与变现）",
@@ -911,9 +976,33 @@
         "agent"
       ],
       "bodyChars": 642,
+      "excerpt": "Ripple Preview Ripple Preview from Ricursive Intelligence is a 65B dense model built for agentic coding. ollama run ripple-preview What's Changed Qwen3.8 Flash Next uses about 27 GiB less memory on Apple silicon ollama launch claude always routes Claude Code to the selected model ollama launch explains when a cloud model has been retired /v1/responses respects truncation and no longer silently truncates by default /v1/models returns an empty list instead of null when no models are installed CUDA 13.5 support for Windows on ARM Updated llama.cpp Full Changelog : https://github.com/ollama/ollam…",
       "quality": 8,
       "practical": 1,
       "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "ae08b10ed611",
+      "title": "heypinchy/pinchy",
+      "category": "local",
+      "subcategory": "weights",
+      "tags": [
+        "free",
+        "agent",
+        "privacy"
+      ],
+      "bodyChars": 9700,
+      "excerpt": "<p align=\"center\"> <img src=\".github/assets/pinchy-logo.png\" alt=\"Pinchy\" width=\"120\" /> </p> <h1 align=\"center\">Pinchy</h1> <p align=\"center\"> <strong>Self-hosted AI agent platform built on OpenClaw.</strong><br/> Enterprise-ready. Offline-capable. Open source. </p> <p align=\"center\"> <a href=\"https://docs.heypinchy.com\">Docs</a> • <a href=\"https://heypinchy.com\">Website</a> • <a href=\"https://heypinchy.com/blog\">Blog</a> • <a href=\"https://github.com/heypinchy/pinchy/discussions\">Discussions</a> • <a href=\"https://linkedin.com/in/clemenshelm\">LinkedIn</a> </p> <p align=\"center\"> <a href=\"LI…",
+      "quality": 9,
+      "practical": 2,
+      "sourceName": "GitHub 检索（生态项目更新）",
       "domain": "github.com",
       "hard": [],
       "warnings": [
@@ -931,6 +1020,7 @@
         "local"
       ],
       "bodyChars": 89852,
+      "excerpt": "<!-- SPDX-FileCopyrightText: 2024-2026 ModelCloud.ai --> <!-- SPDX-FileCopyrightText: 2024-2026 qubitium@modelcloud.ai --> <!-- SPDX-License-Identifier: Apache-2.0 --> <!-- Contact: qubitium@modelcloud.ai, x.com/qubitium --> <p align=center> <div align=center> <img src=\"https://github.com/user-attachments/assets/ab70eb1e-06e7-4dc9-83e5-bd562e1a78b2\" width=500> </div> <h1 align=\"center\">GPT-QModel ⚡</h1> </p> <p align=\"center\"><strong>An extensible platform for LLM quantization, validation, and deployment.</strong><br>GPTQ, AWQ, ParoQuant, GGUF, FP8, EXL3, QQQ, and more—across NVIDIA CUDA, AMD…",
       "quality": 10,
       "practical": 1,
       "sourceName": "GitHub 检索（生态项目更新）",
@@ -952,6 +1042,7 @@
         "agent"
       ],
       "bodyChars": 897,
+      "excerpt": "What's Changed Improve ChatGPT CLI restore and graceful restart by @hoyyeva in https://github.com/ollama/ollama/pull/19583 cmd/launch: use thinking metadata for OpenCode settings by @hoyyeva in https://github.com/ollama/ollama/pull/19409 llm: use mmap for Vulkan integrated GPUs by @dhiltgen in https://github.com/ollama/ollama/pull/19640 rpreslar4765/Ollama by @rpreslar4765 in https://github.com/ollama/ollama/pull/17163 mlx: support concurrent generation by @dhiltgen in https://github.com/ollama/ollama/pull/19197 llama.cpp: version bump b12257 by @dhiltgen in https://github.com/ollama/ollama/p…",
       "quality": 8,
       "practical": 1,
       "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
@@ -973,6 +1064,7 @@
         "lowspec"
       ],
       "bodyChars": 701,
+      "excerpt": "After posting the 4B GLB model here, I wanted to see how far I could get with something smaller. I fine-tuned Qwen3-1.7B for the same job. The Q8 GGUF is 1.83 GB, so this one is aimed at people trying it on CPU or with limited VRAM. The workflow is the same as before. Describe an asset, open the Three.js HTML it gives you, and click Export GLB to bring it into Godot or another editor. The jungle outpost at the start of the video is one of the examples. This is an early test checkpoint. Some prompts still need a retry. I’m still training it and plan to update the weights when this run finishes…",
       "quality": 7,
       "practical": 2,
       "sourceName": "r/LocalLLaMA",
@@ -993,6 +1085,7 @@
         "free"
       ],
       "bodyChars": 232,
+      "excerpt": "Hugging Face executive Irene Solaiman warns that growing cyberattacks on open AI platforms could force tighter security restrictions, threatening the accessibility that makes open source communities valuable to developers worldwide.",
       "quality": 8,
       "practical": 1,
       "sourceName": "TechCrunch AI",
@@ -1014,6 +1107,7 @@
         "free"
       ],
       "bodyChars": 2534,
+      "excerpt": "https://huggingface.co/speakleash/Bielik-11B-v3.1-Instruct-GGUF https://www.bielik.ai/blog/premiera-modeli-bielik-11b-v31-dflash-i-rodziny-bielik-one (decision models and dflash are coming next) Bielik-11B-v3.1-Instruct Bielik-11B-v3.1-Instruct is a generative text model featuring 11 billion parameters. It is an update to the Bielik 11B v3 line that expands multilingual continual pre-training and strengthens post-training for instruction following, tool use, and reasoning. Forementioned model stands as a testament to the unique collaboration between the open-science/open-source project SpeakL…",
       "quality": 6,
       "practical": 3,
       "sourceName": "r/LocalLLaMA",
@@ -1034,6 +1128,7 @@
         "benchmark"
       ],
       "bodyChars": 1519,
+      "excerpt": "I've been building chat UIs for agents and kept running into the same issues with react-markdown: it re-parses the whole reply on every token, so long answers get noticeably slower, and you see raw ** and half-typed [links](htt until the token that closes them arrives. So I wrote my own renderer. It parses incrementally and repairs unfinished syntax while the reply streams: <Markdown streaming={!done}>{text}</Markdown> On a 100k-character reply it takes 0.25 s of main-thread time in total. markdown-to-jsx takes 2.4 s, Streamdown 6.3 s, and react-markdown didn't finish within the 30 s budget.…",
       "quality": 6,
       "practical": 1,
       "sourceName": "r/LocalLLaMA",
@@ -1054,6 +1149,7 @@
         "free"
       ],
       "bodyChars": 3578,
+      "excerpt": "Hi HN, I'm Alice. Over the last year, at Smartness, the company where I work, we built a new message broker, open source under Apache 2.0. During this year it has replaced Kafka almost completely for us. I would like to show it to you and try to explain what is different about it. First, long story short: in 2025 we launched a new product in our suite. Like all the others it used Kafka for messaging, and like many other companies we were using Kafka as a message queue, wrongly and knowingly. In this product head-of-line blocking hurt a lot: an LLM call takes seconds to minutes, and it blocked…",
       "quality": 6,
       "practical": 1,
       "sourceName": "Hacker News Search",
@@ -1075,6 +1171,7 @@
         "free"
       ],
       "bodyChars": 1265,
+      "excerpt": "We present MINE (Memory-efficient INference Engine), a lossless entropy coding approach that accelerates single-stream inference of Large Language Models (LLMs), where existing lossless compression methods yield speedups only for specific data types such as BF16 and under additional assumptions. Single-stream decoding is strongly memory-bound, since every weight must be streamed from memory once per generated token and requests cannot be batched in local or low-latency deployments. At the core of MINE is dtANS-LLM, a GPU entropy coding scheme adapted from the prior dtANS to the needs of LLM i…",
       "quality": 6,
       "practical": 2,
       "sourceName": "arXiv 检索（推理引擎与量化）",
@@ -1098,6 +1195,7 @@
         "generate"
       ],
       "bodyChars": 2691,
+      "excerpt": "啊，昨天一觉睡了十几个小时，11个半小时嘛，这太夸张了，也不知道是怎么了。然后起来发现自己视频也没有做，是吧？那今天本来是打算测一下HY4或者说是千问4的。昨天有朋友发信息说，让我测一下这两个模型。那么论坛有网友发了一个让我 更感兴趣的帖子 ：2700块钱的洋垃圾跑千问Flash Next，MI50 16G × 2 + 128G DDR3，从装系统到这个什么54 tokens/s，可能是目前价格最低的洋垃圾方案。啊，这个不是可能，这个应该就是啊。 MI50这张卡以前很多垃圾佬都炒过这个卡，啊，包括很多主播都测过。造型是非常不错的，做工是台积电的7纳米。它是2018年的卡，这卡的素质是不错的啊，总体素质是相当不错的。但是呢，它没有这个BF16，之前在早期没有BF16，基本上意味着你什么模型都不能跑。但是现在讲实话，它是能够玩一玩了，很多模型都能玩了。啊，因为这个大模型推理从这个BF16降到这个FP16，它的精度损耗是可以接受的。然后在跑这个什么ComfyUI的时候，以前FP16是完全没法跑的，现在有很多方案FP16都能跑。但是有些东西可能说注意力机制啊，你可能说要去选一下，要去选型，有些这个LoRA可能就跑不了。但是总之以前完全是废品，现在在这个新技术的加持下，都能够多多少少跑起来，这个是非常不错的消息啊。我们要知道这张卡它是1T带宽啊，这个基础素质是相当不错的。 主板的BIOS必…",
       "quality": 8,
       "practical": 3,
       "sourceName": "抡锤者 AI硬件",
@@ -1116,6 +1214,7 @@
         "agent"
       ],
       "bodyChars": 5445,
+      "excerpt": "<!DOCTYPE html> < img id=\"wx_img\" src=\"https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png\" width=\"400\" height=\"400\"> 从“卖Token”到“卖结果” | 科技有「联想」沙龙激辩Token经济三大议题 量子位的朋友们 2026-11-11 14:27:03 来源： 量子位 10月30日，“科技有「联想」·Token畅想曲”线下沙龙在京举行。 AI时代加速演进，Token（词元）作为大模型处理信息、调用算力、交付智能服务的基本计量单位，正成为智能经济的重要“度量衡”，并重塑算力、云计算、大模型及智能体应用等环节的成本与价值逻辑。与此同时，业界对Token经济的成本核算、价值评估、安全治理、能源消耗、产业泡沫等问题尚未形成充分共识，亟需产学研投各界加强对话、凝聚共识。 10月30日，由联想控股微空间、海淀区中关村街道、海淀区“五方六力”中国科学院工作组、融科资讯中心、联想创投及讯兔科技等共同发起的“科技有「联想」·Token畅想曲”线下沙龙在京举行 。活动汇聚产学研投领域9位一线嘉宾，以“捕捉Token经济的引爆点”为主题，共议产业趋势、商业模式与价值判断等Token经济议题。 白板开放麦： 自由思辨，共探Token经济下的新机遇 在沙龙“白板…",
       "quality": 9,
       "practical": 2,
       "sourceName": "量子位",
@@ -1132,6 +1231,7 @@
       "subcategory": "cost",
       "tags": [],
       "bodyChars": 2590,
+      "excerpt": "Introducing Our Smallest, Most Efficient Model: Muse Ember Meta AI just launched their entry in the Claude Haiku/GPT Luna category: Muse Ember, which they describe as: [...] our smallest and most efficient model designed for complex reasoning execution and the work agents repeat all day: tool calls, coding subtasks, routing, extraction, and long document parsing. For shorter prompts it's priced the same as GPT-6 Luna and Claude Haiku 5.5 - both are $0.10/million input tokens and $0.50/million output. Today's other big model release, Claude Fable 5.2, is 80x that price at $8/$40. The pricing i…",
       "quality": 9,
       "practical": 2,
       "sourceName": "Simon Willison",
@@ -1153,6 +1253,7 @@
         "benchmark"
       ],
       "bodyChars": 779,
+      "excerpt": "Hi! My team and I built a benchmark of 202 real GitHub tasks in 13 languages that rarely show up in coding benchmarks: Elixir, OCaml, Haskell, Clojure, Kotlin, Swift, Julia, R and others. I think a lot of people do local development in these languages too. We didn’t have a huge compute budget, so I specifically added Qwen3.6 27B and Qwen3.8 27B to compare them. Qwen3.8 solves 43% of the tasks, up from 17% for Qwen3.6. You can compare them with Kimi K3, DeepSeek, GLM and closed models on the leaderboard, including a per-language breakdown. One caveat: Qwen3.8 was used to pick hard tasks, so it…",
       "quality": 7,
       "practical": 1,
       "sourceName": "r/LocalLLaMA",
@@ -1173,6 +1274,7 @@
         "tutorial"
       ],
       "bodyChars": 1361,
+      "excerpt": "Looped language models deepen computation without adding parameters, yet caching full-context key-value (KV) states across layers and rounds severely bounds serving batch size. We design a looped causal encoder-decoder (CED) that achieves recurrent depth with zero round-wise KV growth, addressing where and how to loop an asymmetric stack in which only sparse encoder layers generate global KV. We find that recurrence must be placed in the encoder to iteratively refine global KV representations rather than re-reading static decoder projections, which both drives language-modeling gains and pres…",
       "quality": 7,
       "practical": 1,
       "sourceName": "arXiv 检索（推理引擎与量化）",
