@@ -20,8 +20,11 @@ test.before(async () => {
   await rm(path.join(ROOT, '.tmp-test'), { recursive: true, force: true });
 });
 
+// 样例正文的日期是固定的（2026-11-01 ~ 11-08），不钉住「现在」的话，样例会随着真实日期老化出窗口。
+const FIXED_NOW = '2026-11-08T23:30:00.000Z';
+
 test('collectsFixturesOfflineIntoADigest', () => {
-  const output = run(['src/collect.mjs', '--offline', `--out=${DATA_DIR}`, '--window-hours=43200']);
+  const output = run(['src/collect.mjs', '--offline', `--out=${DATA_DIR}`, `--now=${FIXED_NOW}`]);
   assert.match(output, /collect \d{4}-\d{2}-\d{2} 首次全量: sources=\d+\/\d+/);
   assert.match(output, /published=\d+/);
   assert.match(output, /质量淘汰=\d+/);
@@ -117,8 +120,8 @@ test('copiesPublicAssetsAndSitemapCoversSections', async () => {
 });
 
 test('rerunningCollectCarriesOverTheSameDayDigest', () => {
-  const first = run(['src/collect.mjs', '--offline', `--out=${DATA_DIR}`, '--window-hours=43200']);
-  const second = run(['src/collect.mjs', '--offline', `--out=${DATA_DIR}`, '--window-hours=43200']);
+  const first = run(['src/collect.mjs', '--offline', `--out=${DATA_DIR}`, `--now=${FIXED_NOW}`]);
+  const second = run(['src/collect.mjs', '--offline', `--out=${DATA_DIR}`, `--now=${FIXED_NOW}`]);
   const published = (line) => Number(/published=(\d+)/.exec(line)[1]);
   assert.ok(published(first) >= 4);
   assert.equal(published(second), published(first));
