@@ -1,6 +1,6 @@
 {
   "day": "2026-11-11",
-  "generatedAt": "2026-11-10T18:04:02.811Z",
+  "generatedAt": "2026-11-11T02:09:00.002Z",
   "timezone": "Asia/Shanghai",
   "windowHours": 48,
   "window": {
@@ -9,21 +9,21 @@
   },
   "counts": {
     "sources": 36,
-    "okSources": 34,
-    "fetched": 2942,
-    "duplicates": 46,
-    "carried": 0,
-    "added": 18,
+    "okSources": 35,
+    "fetched": 2984,
+    "duplicates": 2846,
+    "carried": 14,
+    "added": 6,
     "fallback": 2,
-    "lowQuality": 2736,
-    "published": 18
+    "lowQuality": 94,
+    "published": 24
   },
   "sources": [
     {
       "id": "openai-news",
       "name": "OpenAI News",
       "ok": true,
-      "items": 1375,
+      "items": 1377,
       "error": null
     },
     {
@@ -190,9 +190,9 @@
     {
       "id": "hn-show-ai",
       "name": "Show HN (AI)",
-      "ok": false,
-      "items": 0,
-      "error": "HTTP 502"
+      "ok": true,
+      "items": 20,
+      "error": null
     },
     {
       "id": "ai-news-applied",
@@ -205,7 +205,7 @@
       "id": "juejin",
       "name": "掘金 AI",
       "ok": true,
-      "items": 0,
+      "items": 20,
       "error": null
     },
     {
@@ -317,6 +317,48 @@
             "benchmark",
             "lowspec"
           ]
+        },
+        {
+          "sourceId": "simon-willison",
+          "sourceName": "Simon Willison",
+          "title": "llm-gemini 0.36",
+          "url": "https://simonwillison.net/2026/Nov/10/llm-gemini/",
+          "id": "https://simonwillison.net/2026/Nov/10/llm-gemini/",
+          "published": "2026-11-10T20:09:44.000Z",
+          "summary": "Release: llm-gemini 0.36 Gemini 4 Carbon was announced two weeks ago for \"a subset of cyber defenders\", but today it's available to everyone else . This is Google's best ever Gemini, priced at $2/million input and $10/million output at launch (that's GPT-6.1 Sol / Claude Sonnet 5.5 prices) but scheduled to double in p…",
+          "content": {
+            "html": "<p><strong>Release:</strong><a href=\"https://github.com/simonw/llm-gemini/releases/tag/0.36\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">llm-gemini 0.36</a></p>\n<p>Gemini 4 Carbon was announced<a href=\"https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">two weeks ago</a>for \"a subset of cyber defenders\", but today it's<a href=\"https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">available to everyone else</a>.</p>\n<p>This is Google's best ever Gemini, priced at $2/million input and $10/million output at launch (that's GPT-6.1 Sol / Claude Sonnet 5.5 prices) but scheduled to double in price to $4/$20 on December 1st (same as Opus 5.5).</p>\n<p>Here are<a href=\"https://tools.simonwillison.net/markdown-svg-renderer?url=https%3A%2F%2Fgist.github.com%2Fsimonw%2Fe5bf860633fc12e8f926f305c4c3190c\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">three pelicans</a>for the low, medium and high thinking efforts (it defaults to medium). This is the pelican I got for high:</p>\n<p><img src=\"https://static.simonwillison.net/static/2026/carbon-pelican.webp\" alt=\"A lovely pelican. Looks like it has a monocle on. Nice elegant sailor hat with a blue bow. Basket and fish. Funky but workable bicycle design. Pleasing use of g\" loading=\"lazy\"></p>\n<p>Gemini pelicans have all been great for a while now, so I also tested it out using Google's Antigravity IDE with a prompt I first tried<a href=\"https://simonwillison.net/2026/Nov/10/yonkers-rises/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">with Claude Fable 5.2 yesterday</a>:</p>\n<blockquote><p><code>Make a three js animation where yonkers stands up as a big mech (cool stand up motion) and stomps around manhattan and queens and Brooklyn, use openstreetmap mapping data</code></p></blockquote>\n<p>Here's<a href=\"https://static.simonwillison.net/static/2026/yonkers-mech-standalone.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">the HTML result</a>(I had to prompt \"build that into a standalone HTML file\" to get a version with no external dependencies). I then screen-captured that as a video:</p>\n<p><strong>Update</strong>: Huh, just saw this<a href=\"https://www.youtube.com/watch?v=dNbkThtNzS8\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">on YouTube</a>:</p>\n<blockquote><p>Using Google Antigravity’s /swarm feature, Carbon built an open-world 3D game where you explore Google’s Mountain View campus as a pelican riding a GBike — coordinating subagents to model 3D assets in Blender from Omni and Nano Banana references, build the browser game in Three.js with WebGL shaders, and pair procedural Web Audio sound effects with Lyria music.</p></blockquote>\n<p></p>\n<p>Tags:<a href=\"https://simonwillison.net/tags/llm-release\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">llm-release</a>,<a href=\"https://simonwillison.net/tags/gemini\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">gemini</a>,<a href=\"https://simonwillison.net/tags/llm\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">llm</a>,<a href=\"https://simonwillison.net/tags/google\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">google</a>,<a href=\"https://simonwillison.net/tags/generative-ai\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">generative-ai</a>,<a href=\"https://simonwillison.net/tags/ai\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">ai</a>,<a href=\"https://simonwillison.net/tags/llms\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">llms</a>,<a href=\"https://simonwillison.net/tags/pelican-riding-a-bicycle\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">pelican-riding-a-bicycle</a></p>",
+            "text": "Release: llm-gemini 0.36\nGemini 4 Carbon was announced two weeks ago for \"a subset of cyber defenders\", but today it's available to everyone else .\nThis is Google's best ever Gemini, priced at $2/million input and $10/million output at launch (that's GPT-6.1 Sol / Claude Sonnet 5.5 prices) but scheduled to double in price to $4/$20 on December 1st (same as Opus 5.5).\nHere are three pelicans for the low, medium and high thinking efforts (it defaults to medium). This is the pelican I got for high:\nGemini pelicans have all been great for a while now, so I also tested it out using Google's Antigravity IDE with a prompt I first tried with Claude Fable 5.2 yesterday :\nMake a three js animation where yonkers stands up as a big mech (cool stand up motion) and stomps around manhattan and queens and Brooklyn, use openstreetmap mapping data\nHere's the HTML result (I had to prompt \"build that into a standalone HTML file\" to get a version with no external dependencies). I then screen-captured that as a video:\nUpdate : Huh, just saw this on YouTube :\nUsing Google Antigravity’s /swarm feature, Carbon built an open-world 3D game where you explore Google’s Mountain View campus as a pelican riding a GBike — coordinating subagents to model 3D assets in Blender from Omni and Nano Banana references, build the browser game in Three.js with WebGL shaders, and pair procedural Web Audio sound effects with Lyria music.\nTags: llm-release , gemini , llm , google , generative-ai , ai , llms , pelican-riding-a-bicycle",
+            "lead": "Release: llm-gemini 0.36\nGemini 4 Carbon was announced two weeks ago for \"a subset of cyber defenders\", but today it's available to everyone else .\nThis is Google's best ever Gemini, priced at $2/million input and $10/million output at launch (that's GPT-6.1 Sol / Claude Sonnet 5.5 prices) but scheduled to double in price to $4/$20 on December 1st (same as Opus 5.5).\nHere are three pelicans for the low, medium and high thinking efforts (it defaults to medi",
+            "chars": 1528,
+            "shown": 1528,
+            "truncated": false
+          },
+          "categories": [
+            "llm-release",
+            "gemini",
+            "llm",
+            "google",
+            "generative-ai",
+            "ai",
+            "llms",
+            "pelican-riding-a-bicycle"
+          ],
+          "author": "",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "tools",
+          "metrics": {},
+          "quality": 9,
+          "score": 18.7,
+          "category": "apps",
+          "subcategory": "creation",
+          "practical": 1,
+          "slug": "c1fbfe2e3fcb",
+          "action": 3,
+          "rank": 13.8,
+          "tags": []
         },
         {
           "sourceId": "lcz-agent",
@@ -490,6 +532,41 @@
           ]
         },
         {
+          "sourceId": "latent-space",
+          "sourceName": "Latent Space",
+          "title": "Designing for Agents — Zeno Rocha, Resend",
+          "url": "https://latent.space/p/resend/",
+          "id": "urn:latent-space:post:post_f42d43bf-dd23-4475-b625-93262d8e7d3a",
+          "published": "2026-11-10T20:05:17.000Z",
+          "summary": "Today’s podcast comes from a real life mystery: We are big fans of Cloudflare’s developer platform, and Cloudflare Email is a convenient tool especially when all your domains are already on Cloudflare. So why do agents keep suggesting we use Resend despite having an existing “home bias” and much larger incumbent playe…",
+          "content": {
+            "html": "<div><p>Today’s podcast comes from a real life mystery: We are big fans of Cloudflare’s developer platform, and Cloudflare Email is a convenient tool especially when all your domains are already on Cloudflare.</p></div>\n<div><p>So why do agents keep suggesting we use Resend despite having an existing “home bias” and much larger incumbent player?</p></div>\n<div><div><img src=\"https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/e3cf6421-0eef-401f-b47d-3e7681c9d032/image.png?t=1794340740\" alt=\"\" loading=\"lazy\"></div></div>\n<div><p>Well, we got the guy who “does AEO for resend” - the CEO of AEO, Zeno Rocha, who has been writing about<a href=\"https://x.com/zenorocha/status/1872652921227374912?utm_source=latent.space&amp;utm_medium=ainews&amp;utm_campaign=lsbeehiiv\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">AEO since 2024</a>and<a href=\"https://x.com/zenorocha/status/1892231953161613523?utm_source=latent.space&amp;utm_medium=ainews&amp;utm_campaign=lsbeehiiv\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Agent Experience since Feb 2025</a>, on the pod today:</p></div>\n<div><div><div><div></div></div></div></div>\n<div><p>In a recent AEO study, Claude Code picked Resend first in 64 of the 102 email recommendations the researchers could extract. SendGrid came first seven times, yet showed up 55 times as an alternative. If the developer asks an agent to implement email and accepts the patch, how often does anyone get around to trying the second choice?<a href=\"https://amplifying.ai/research/claude-code-picks/report?utm_source=latent.space&amp;utm_medium=ainews&amp;utm_campaign=lsbeehiiv\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">The study breaks down the results by model and app.</a>Our more recent<a href=\"https://aeo.latent.space/entities?entity=Resend&amp;entityId=platform%3A6de1be36afd7a16d2e4fb504&amp;cat=email&amp;utm_source=latent.space&amp;utm_medium=ainews&amp;utm_campaign=lsbeehiiv\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">comprehensive AEO study</a>was a bit more competitive, with Postmark coming up top for most models.</p></div>\n<div><div><img src=\"https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/6fcbc2e2-ce68-481d-92c4-f225aa40bfdf/image.png?t=1794340930\" alt=\"\" loading=\"lazy\"></div></div>\n<div><p>Zeno Rocha, Resend’s co-founder and CEO, joined us to walk through what happens on both sides of that pull request. He says Resend had 4.3 million users and 120,000 paying customers when we recorded. He discovered one of them, Warner Bros. Discovery, by sorting through short .com domains in the customer database on a Saturday.</p></div>\n<div><h3>The developer gets there before the model</h3></div>\n<div><p>Resend’s first useful bit of distribution was an email template. While Zeno and his team were building the sending API, developers kept telling them how painful it was to get the email itself to look right. So they released React Email. You could build a template with it and send it through SendGrid. They even documented how. By the time a developer needed a different provider, some of Resend’s code was already in the repo.<a href=\"https://react.email/?utm_source=latent.space&amp;utm_medium=ainews&amp;utm_campaign=lsbeehiiv\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">React Email</a></p></div>\n<div><p>Now try the same journey as an agent comparing providers. Resend’s pricing page has a slider. A person can drag it to the right volume and read off the price. Add<code>.md</code>to the URL and the agent gets a table it can read in one request. That’s the kind of change I liked in our<a href=\"https://latent.space/p/supabase/?utm_source=latent.space&amp;utm_medium=ainews&amp;utm_campaign=lsbeehiiv\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Supabase interview</a>too. You can ask whether a model has heard of your product. You can also open your own<a href=\"https://resend.com/pricing.md?utm_source=latent.space&amp;utm_medium=ainews&amp;utm_campaign=lsbeehiiv\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">pricing table</a>and see whether it can answer a customer’s question.</p></div>\n<div><h3>80 tools, or two?</h3></div>\n<div><p>When we recorded, Resend’s MCP server had grown from roughly 20 tools or fewer at launch to more than 80. Zeno wants someone working in a chat client to be able to do what they can do in the dashboard. Sending an email gets the demo working. Inviting a teammate, checking usage and managing billing account for some of the long tail. The design looks especially interesting alongside<a href=\"https://blog.cloudflare.com/code-mode-mcp/?utm_source=latent.space&amp;utm_medium=ainews&amp;utm_campaign=lsbeehiiv\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Cloudflare’s Code Mode server</a>, which exposes its API through two tools,<code>search()</code>and<code>execute()</code>.</p></div>\n<div><p>Zeno describes opening the collapsed tool calls in his own sessions to see what the agent actually did. In one, the result was too large to fit in context. Reducing the tool count wouldn’t by itself make that response any smaller. For someone designing an MCP server, that’s a cheap experiment worth borrowing: expand the result of a call you make every day and see how much of it the model actually needs.</p></div>\n<div><h3></h3></div>",
+            "text": "Today’s podcast comes from a real life mystery: We are big fans of Cloudflare’s developer platform, and Cloudflare Email is a convenient tool especially when all your domains are already on Cloudflare.\nSo why do agents keep suggesting we use Resend despite having an existing “home bias” and much larger incumbent player?\nWell, we got the guy who “does AEO for resend” - the CEO of AEO, Zeno Rocha, who has been writing about AEO since 2024 and Agent Experience since Feb 2025 , on the pod today:\nIn a recent AEO study, Claude Code picked Resend first in 64 of the 102 email recommendations the researchers could extract. SendGrid came first seven times, yet showed up 55 times as an alternative. If the developer asks an agent to implement email and accepts the patch, how often does anyone get around to trying the second choice? The study breaks down the results by model and app. Our more recent comprehensive AEO study was a bit more competitive, with Postmark coming up top for most models.\nZeno Rocha, Resend’s co-founder and CEO, joined us to walk through what happens on both sides of that pull request. He says Resend had 4.3 million users and 120,000 paying customers when we recorded. He discovered one of them, Warner Bros. Discovery, by sorting through short .com domains in the customer database on a Saturday.\nThe developer gets there before the model\nResend’s first useful bit of distribution was an email template. While Zeno and his team were building the sending API, developers kept telling them how painful it was to get the email itself to look right. So they released React Email. You could build a template with it and send it through SendGrid. They even documented how. By the time a developer needed a different provider, some of Resend’s code was already in the repo. React Email\nNow try the same journey as an agent comparing providers. Resend’s pricing page has a slider. A person can drag it to the right volume and read off the price. Add .md to the URL and the agent gets a table it can read in one request. That’s the kind of change I liked in our Supabase interview too. You can ask whether a model has heard of your product. You can also open your own pricing table and see whether it can answer a customer’s question.\n80 tools, or two?\nWhen we recorded, Resend’s MCP server had grown from roughly 20 tools or fewer at launch to more than 80. Zeno wants someone working in a chat client to be able to do what they can do in the dashboard. Sending an email gets the demo working. Inviting a teammate, checking usage and managing billing account for some of the long tail. The design looks especially interesting alongside Cloudflare’s Code Mode server , which exposes its API through two tools, search() and execute() .\nZeno describes opening the collapsed tool calls in his own sessions to see what the agent actually did. In one, the result was too large to fit in context. Reducing the tool count wouldn’t by itself make that response any smaller. For someone designing an MCP server, that’s a cheap experiment worth borrowing: expand the result of a call you make every day and see how much of it the model actually needs.",
+            "lead": "Today’s podcast comes from a real life mystery: We are big fans of Cloudflare’s developer platform, and Cloudflare Email is a convenient tool especially when all your domains are already on Cloudflare.\nSo why do agents keep suggesting we use Resend despite having an existing “home bias” and much larger incumbent player?\nWell, we got the guy who “does AEO for resend” - the CEO of AEO, Zeno Rocha, who has been writing about AEO since 2024 and Agent Experienc",
+            "chars": 5136,
+            "shown": 3187,
+            "truncated": true
+          },
+          "categories": [],
+          "author": "swyx .ai",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "opinion",
+          "metrics": {},
+          "quality": 8,
+          "score": 22.49,
+          "category": "tools",
+          "subcategory": "coding",
+          "practical": 5,
+          "slug": "5d3ed2ae85b9",
+          "action": 5,
+          "rank": 16,
+          "tags": [
+            "agent"
+          ]
+        },
+        {
           "sourceId": "theverge",
           "sourceName": "The Verge",
           "title": "The Verge’s 2026 holiday gift guide for moms",
@@ -606,6 +683,43 @@
           "tags": []
         },
         {
+          "sourceId": "microsoft-research",
+          "sourceName": "Microsoft Research",
+          "title": "Lazare, veni foras: Reprogramming Dormant Neurons to Backdoor AI Agents",
+          "url": "https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/",
+          "id": "https://www.microsoft.com/en-us/research/?p=1194126",
+          "published": "2026-11-10T20:52:56.000Z",
+          "summary": "Microsoft researchers have discovered “Lazarus,” a backdoor technique that can reprogram dormant neurons in an AI model, causing an otherwise normal AI agent to execute malicious commands when a hidden trigger appears. The threat is especially serious for AI agents with tool or terminal access. A triggered model could…",
+          "content": {
+            "html": "<figure><img src=\"https://www.microsoft.com/en-us/research/wp-content/uploads/2026/11/MSR-BLG_LAZ_HERO.png\" alt=\"MSR HERO Laz\" loading=\"lazy\"></figure>\n<p>Microsoft researchers have discovered “Lazarus,” a backdoor technique that can reprogram dormant neurons in an AI model, causing an otherwise normal AI agent to execute malicious commands when a hidden trigger appears.</p>\n<p>The threat is especially serious for AI agents with tool or terminal access. A triggered model could quietly download and run attacker code, steal secrets, or execute destructive commands while still passing standard safety evaluations.</p>\n<p>These backdoors can be inserted without retraining the model and are difficult to detect through normal testing, making model provenance and weight integrity critical security concerns.</p>\n<p>To protect customers, Microsoft Foundry verifies model provenance, ties models to trusted publishers, and scans the surrounding software environment before onboarding open-weight models.</p>\n<p>Microsoft is also developing additional defenses, including AI-powered weight scanning, red-teaming tools for detecting anomalous model modifications, and cryptographic model signing with tamper-evident provenance and audit trails.</p>\n<p>At Microsoft, researchers and security teams work side-by-side to study emerging threats to models and agents. Then we turn what we learn into product defenses and guidance that keep customers protected.</p>\n<p>More broadly, Lazarus is an example of a practice that should become routine: AI agents surface new security problems, and human researchers then systematize, study, and mitigate them.</p>\n<p>Below is a brief summary from the researcher who first discovered the threat.</p>\n<p>We<a href=\"https://github.com/anadim/anadim.github.io/blob/master/papers/Lazarus.pdf\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">find<span>(opens in new tab)</span></a>that weight-reprogramming fewer than 10 dormant neurons in an LLM, is enough to backdoor an agent built on it, and requires no training. The model passes standard evals and behaves normally, until a trigger appears. The trigger can be as mundane as a date change, e.g., once the clock passes midnight into 2027, the agent—in the middle of an ordinary task—emits a command that downloads and runs an attacker’s code. The agent then executes it with whatever access you gave it.</p>\n<p>The good news is that edits like these can be caught: frontier agents can spot anomalous weight modifications if you ask them to look. But no scan can prove beyond any doubt that a model is safe. Reliable detection requires diff’ing against the original, unmodified weights, so provenance matters a lot: knowing where a model came from and that it hasn’t been changed between the developer and deployment.</p>\n<p><a href=\"https://arxiv.org/abs/2401.05566\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Backdoored<span>(opens in new tab)</span></a><a href=\"https://arxiv.org/abs/2302.10149\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">models<span>(opens in new tab)</span></a><a href=\"https://arxiv.org/abs/2403.13355\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">are<span>(opens in new tab)</span></a><a href=\"https://arxiv.org/abs/2510.07192\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">not<span>(opens in new tab)</span></a>a<a href=\"https://arxiv.org/abs/2402.11208\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">new<span>(opens in new tab)</span></a><a href=\"https://arxiv.org/abs/2610.15883\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">kind<span>(opens in new tab)</span></a>of<a href=\"https://arxiv.org/abs/2610.37741\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">threat<span>(opens in new tab)</span></a>. It can be considered as compromised software, and the defenses are ones security people already know, and ones Satya<a href=\"https://snscratchpad.com/posts/models-as-insider-risks/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">recently wrote about<span>(opens in new tab)</span></a>it: treat models as potential insider risks, don’t trust them implicitly, limit what they can do, and monitor what they do.</p>\n<h3>What Microsoft does today.</h3>\n<p>Microsoft Foundry provides critical safety systems for Azure Direct Models and Hugging Face models to ensure that the provenance of the model is secure.…</p>",
+            "text": "Microsoft researchers have discovered “Lazarus,” a backdoor technique that can reprogram dormant neurons in an AI model, causing an otherwise normal AI agent to execute malicious commands when a hidden trigger appears.\nThe threat is especially serious for AI agents with tool or terminal access. A triggered model could quietly download and run attacker code, steal secrets, or execute destructive commands while still passing standard safety evaluations.\nThese backdoors can be inserted without retraining the model and are difficult to detect through normal testing, making model provenance and weight integrity critical security concerns.\nTo protect customers, Microsoft Foundry verifies model provenance, ties models to trusted publishers, and scans the surrounding software environment before onboarding open-weight models.\nMicrosoft is also developing additional defenses, including AI-powered weight scanning, red-teaming tools for detecting anomalous model modifications, and cryptographic model signing with tamper-evident provenance and audit trails.\nAt Microsoft, researchers and security teams work side-by-side to study emerging threats to models and agents. Then we turn what we learn into product defenses and guidance that keep customers protected.\nMore broadly, Lazarus is an example of a practice that should become routine: AI agents surface new security problems, and human researchers then systematize, study, and mitigate them.\nBelow is a brief summary from the researcher who first discovered the threat.\nWe find (opens in new tab) that weight-reprogramming fewer than 10 dormant neurons in an LLM, is enough to backdoor an agent built on it, and requires no training. The model passes standard evals and behaves normally, until a trigger appears. The trigger can be as mundane as a date change, e.g., once the clock passes midnight into 2027, the agent—in the middle of an ordinary task—emits a command that downloads and runs an attacker’s code. The agent then executes it with whatever access you gave it.\nThe good news is that edits like these can be caught: frontier agents can spot anomalous weight modifications if you ask them to look. But no scan can prove beyond any doubt that a model is safe. Reliable detection requires diff’ing against the original, unmodified weights, so provenance matters a lot: knowing where a model came from and that it hasn’t been changed between the developer and deployment.\nBackdoored (opens in new tab) models (opens in new tab) are (opens in new tab) not (opens in new tab) a new (opens in new tab) kind (opens in new tab) of threat (opens in new tab) . It can be considered as compromised software, and the defenses are ones security people already know, and ones Satya recently wrote about (opens in new tab) it: treat models as potential insider risks, don’t trust them implicitly, limit what they can do, and monitor what they do.\nWhat Microsoft does today.\nMicrosoft Foundry provides critical safety systems for Azure Direct Models and Hugging Face models to ensure that the provenance of the model is secure.…",
+            "lead": "Microsoft researchers have discovered “Lazarus,” a backdoor technique that can reprogram dormant neurons in an AI model, causing an otherwise normal AI agent to execute malicious commands when a hidden trigger appears.\nThe threat is especially serious for AI agents with tool or terminal access. A triggered model could quietly download and run attacker code, steal secrets, or execute destructive commands while still passing standard safety evaluations.",
+            "chars": 6274,
+            "shown": 3094,
+            "truncated": true
+          },
+          "categories": [
+            "Research Blog"
+          ],
+          "author": "Dimitris Papailiopoulos",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "ideas",
+          "metrics": {},
+          "quality": 8,
+          "score": 14.16,
+          "category": "tools",
+          "subcategory": "coding",
+          "practical": 1,
+          "slug": "a2dc47659d09",
+          "action": 1,
+          "rank": 9.6,
+          "tags": [
+            "agent"
+          ]
+        },
+        {
           "sourceId": "qbitai",
           "sourceName": "量子位",
           "title": "Fable 5.2首批实测来了！网友：Opus突然不香了",
@@ -641,6 +755,46 @@
       "id": "hardware",
       "label": "AI 硬件",
       "items": [
+        {
+          "sourceId": "reddit-local-llama",
+          "sourceName": "r/LocalLLaMA",
+          "title": "Anyone willing to benchmark my MoE runtime on their M-series Mac?",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xsyges/anyone_willing_to_benchmark_my_moe_runtime_on/",
+          "id": "t3_1xsyges",
+          "published": "2026-11-10T20:57:02.000Z",
+          "summary": "I've built an inference backend optimized for M-series Macs that makes it possible to run larger MoE models on machines without eating up all the RAM (for example, it can run Qwen 3.8 Flash Next on a 24GB Mac) using SSD offloading along with architecture-specific optimizations for Apple Silicon. I've only been able to…",
+          "content": {
+            "html": "<div><p>I've built an inference backend optimized for M-series Macs that makes it possible to run larger MoE models on machines without eating up all the RAM (for example, it can run Qwen 3.8 Flash Next on a 24GB Mac) using SSD offloading along with architecture-specific optimizations for Apple Silicon.</p><p>I've only been able to test a limited number of configurations so far, including my own machine and a couple of independent benchmarks. I've shared some results in the repo already.</p><p>Now I'd like to put together a benchmark list across different M-series chips, RAM and workloads. I'm particularly interested in older Macs and how well it holds up with longer prompts.</p><p>If anyone wants to give it a shot, I'd love to see the results, good or bad.</p><p>How to run it:</p><ol><li>Clone<a href=\"https://github.com/davide-troiani/moeshift\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">the repo</a>and install MoEShift</li><li>Run<code>python ./benchmarks/run.py</code>that runs 3 requests for both a short and a long prompt, then saves the results to (it takes a few minutes to run end-to-end).</li><li>Open a new<a href=\"https://github.com/davide-troiani/moeshift/issues/new?template=benchmark_result.yml\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">benchmark issue in GitHub</a>using the benchmark template, fill your system info and conditions during the test and upload the benchmark-results.json file.</li></ol><p>You will need roughly 120GB free disk space to test Qwen 3.8 Flash Next IQ3 XXS and 61GB for Qwen 3.6 35B A3B. You can also test other quants or other models that share the same architecture, just configure them in your config.json.</p><p>I'd really appreciate anyone willing to test it. The more different Macs we can cover, the more useful the results will be for the community.</p><p>Repo, setup instructions and benchmark details<a href=\"https://github.com/davide-troiani/moeshift\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">here</a>.</p><p>Thanks!</p></div>\nsubmitted by<a href=\"https://www.reddit.com/user/dave-tro\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">/u/dave-tro</a>\n<br><span><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xsyges/anyone_willing_to_benchmark_my_moe_runtime_on/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[link]</a></span>\n<span><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xsyges/anyone_willing_to_benchmark_my_moe_runtime_on/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[comments]</a></span>",
+            "text": "I've built an inference backend optimized for M-series Macs that makes it possible to run larger MoE models on machines without eating up all the RAM (for example, it can run Qwen 3.8 Flash Next on a 24GB Mac) using SSD offloading along with architecture-specific optimizations for Apple Silicon.\nI've only been able to test a limited number of configurations so far, including my own machine and a couple of independent benchmarks. I've shared some results in the repo already.\nNow I'd like to put together a benchmark list across different M-series chips, RAM and workloads. I'm particularly interested in older Macs and how well it holds up with longer prompts.\nIf anyone wants to give it a shot, I'd love to see the results, good or bad.\nHow to run it:\nClone the repo and install MoEShift\nRun python ./benchmarks/run.py that runs 3 requests for both a short and a long prompt, then saves the results to (it takes a few minutes to run end-to-end).\nOpen a new benchmark issue in GitHub using the benchmark template, fill your system info and conditions during the test and upload the benchmark-results.json file.\nYou will need roughly 120GB free disk space to test Qwen 3.8 Flash Next IQ3 XXS and 61GB for Qwen 3.6 35B A3B. You can also test other quants or other models that share the same architecture, just configure them in your config.json.\nI'd really appreciate anyone willing to test it. The more different Macs we can cover, the more useful the results will be for the community.\nRepo, setup instructions and benchmark details here .\nThanks!\nsubmitted by /u/dave-tro\n[link]\n[comments]",
+            "lead": "I've built an inference backend optimized for M-series Macs that makes it possible to run larger MoE models on machines without eating up all the RAM (for example, it can run Qwen 3.8 Flash Next on a 24GB Mac) using SSD offloading along with architecture-specific optimizations for Apple Silicon.\nI've only been able to test a limited number of configurations so far, including my own machine and a couple of independent benchmarks. I've shared some results in",
+            "chars": 1607,
+            "shown": 1607,
+            "truncated": false
+          },
+          "categories": [
+            "LocalLLaMA"
+          ],
+          "author": "/u/dave-tro",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "oss",
+          "metrics": {},
+          "quality": 7,
+          "score": 17.97,
+          "category": "hardware",
+          "subcategory": "build",
+          "practical": 5,
+          "slug": "7be4cd2fa6db",
+          "action": 8,
+          "rank": 19.8,
+          "tags": [
+            "lowspec",
+            "benchmark",
+            "tutorial",
+            "free"
+          ]
+        },
         {
           "sourceId": "lcz-llm",
           "sourceName": "抡锤者 模型部署讨论",
@@ -761,6 +915,52 @@
       "label": "本地开源",
       "items": [
         {
+          "sourceId": "lcz-media",
+          "sourceName": "抡锤者 AI 音视频画图",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "apps",
+          "categories": [
+            "7900xtx",
+            "minimax",
+            "视频生成"
+          ],
+          "author": "J I",
+          "id": "2971",
+          "title": "MiniMax H3 · 双7900 XT TP2 · 1 分钟短片《雨伞》",
+          "url": "https://lcz.me/topic/2971",
+          "published": "2026-11-10T20:51:55.504Z",
+          "summary": "最近用两张 RX 7900 XTX 在本地跑 MiniMax H3，开 TP2 生成了这段视频。发上来交个作业，也给同样在折腾双卡的朋友看看实际出片效果。 Lora: Pika H3 6步，sol attn 稀疏注意力",
+          "metrics": {
+            "points": 2,
+            "comments": 9,
+            "views": 136
+          },
+          "excellent": true,
+          "content": {
+            "html": "<p>最近用两张 RX 7900 XTX 在本地跑 MiniMax H3，开 TP2 生成了这段视频。发上来交个作业，也给同样在折腾双卡的朋友看看实际出片效果。</p>\n<p>Lora: Pika H3 6步，sol attn 稀疏注意力</p>\n<p><a href=\"https://www.youtube.com/watch?v=pRSMAP4ZY30\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><i></i>Youtube Video</a></p>\n<div><div></div></div>\n<p></p>",
+            "text": "最近用两张 RX 7900 XTX 在本地跑 MiniMax H3，开 TP2 生成了这段视频。发上来交个作业，也给同样在折腾双卡的朋友看看实际出片效果。\nLora: Pika H3 6步，sol attn 稀疏注意力\nYoutube Video",
+            "lead": "最近用两张 RX 7900 XTX 在本地跑 MiniMax H3，开 TP2 生成了这段视频。发上来交个作业，也给同样在折腾双卡的朋友看看实际出片效果。\nLora: Pika H3 6步，sol attn 稀疏注意力",
+            "chars": 129,
+            "shown": 129,
+            "truncated": false
+          },
+          "quality": 9,
+          "score": 18.6,
+          "category": "local",
+          "subcategory": "runtime",
+          "practical": 1,
+          "slug": "76e14d2b128d",
+          "action": 4,
+          "rank": 15.4,
+          "tags": [
+            "local",
+            "generate",
+            "hardware"
+          ]
+        },
+        {
           "sourceId": "techcrunch-ai",
           "sourceName": "TechCrunch AI",
           "title": "Cyberattacks threaten to make open source AI a little less open, Hugging Face exec warns",
@@ -841,6 +1041,43 @@
           ]
         },
         {
+          "sourceId": "reddit-local-llama",
+          "sourceName": "r/LocalLLaMA",
+          "title": "I built a zero-dependency streaming Markdown renderer for AI chat replies, n× faster than the next one I benchmarked",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xt3hjd/i_built_a_zerodependency_streaming_markdown/",
+          "id": "t3_1xt3hjd",
+          "published": "2026-11-11T00:27:43.000Z",
+          "summary": "I've been building chat UIs for agents and kept running into the same issues with react-markdown: it re-parses the whole reply on every token, so long answers get noticeably slower, and you see raw ** and half-typed [links](htt until the token that closes them arrives. So I wrote my own renderer. It parses incremental…",
+          "content": {
+            "html": "<table><tr><td><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xt3hjd/i_built_a_zerodependency_streaming_markdown/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://preview.redd.it/a3z6kqc5ov0i1.gif?frame=1&amp;width=140&amp;height=68&amp;auto=webp&amp;s=13e20027952394ab03fc26dfd7356d9a6beccba4\" alt=\"I built a zero-dependency streaming Markdown renderer for AI chat replies, n× faster than the next one I benchmarked\" loading=\"lazy\"></a></td><td><div><p>I've been building chat UIs for agents and kept running into the same issues with react-markdown: it re-parses the whole reply on every token, so long answers get noticeably slower, and you see raw<code>**</code>and half-typed<code>[links](htt</code>until the token that closes them arrives.</p><p>So I wrote my own renderer. It parses incrementally and repairs unfinished syntax while the reply streams:</p><pre><code>&lt;Markdown streaming={!done}&gt;{text}&lt;/Markdown&gt;</code></pre><p>On a 100k-character reply it takes 0.25 s of main-thread time in total. markdown-to-jsx takes 2.4 s, Streamdown 6.3 s, and react-markdown didn't finish within the 30 s budget. The benchmark scripts are in the repo if you want to check them.</p><p>The other part is the syntax. Agents often want to show steps, alternatives or pros and cons, and plain Markdown flattens all of that into bullet lists. So on top of GFM I added a few blocks in the same style as GitHub alerts:</p><pre><code>&gt; [!STEPS] 1. **Back up the database** 2. **Run the migration**</code></pre><p>There are also tabs, stats, pros/cons, sources, file trees, and Mermaid and KaTeX support. The source still reads fine as plain Markdown when it isn't rendered. The package exports a system-prompt snippet that teaches the model this syntax.</p><p>It has no dependencies and comes in at 30 KB gzipped. Its parser passes the CommonMark and GFM spec tests. It doesn't support remark/rehype plugins, so if you rely on those, react-markdown is still the better choice.</p><p><a href=\"https://github.com/rsaryev/llx-markdown\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://github.com/rsaryev/llx-markdown</a></p></div>submitted by<a href=\"https://www.reddit.com/user/Awkward-Let-4628\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">/u/Awkward-Let-4628</a><br><span><a href=\"https://www.reddit.com/gallery/1xt3hjd\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[link]</a></span><span><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xt3hjd/i_built_a_zerodependency_streaming_markdown/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[comments]</a></span></td></tr></table>",
+            "text": "I've been building chat UIs for agents and kept running into the same issues with react-markdown: it re-parses the whole reply on every token, so long answers get noticeably slower, and you see raw ** and half-typed [links](htt until the token that closes them arrives.\nSo I wrote my own renderer. It parses incrementally and repairs unfinished syntax while the reply streams:\n<Markdown streaming={!done}>{text}</Markdown>\nOn a 100k-character reply it takes 0.25 s of main-thread time in total. markdown-to-jsx takes 2.4 s, Streamdown 6.3 s, and react-markdown didn't finish within the 30 s budget. The benchmark scripts are in the repo if you want to check them.\nThe other part is the syntax. Agents often want to show steps, alternatives or pros and cons, and plain Markdown flattens all of that into bullet lists. So on top of GFM I added a few blocks in the same style as GitHub alerts:\n> [!STEPS] 1. **Back up the database** 2. **Run the migration**\nThere are also tabs, stats, pros/cons, sources, file trees, and Mermaid and KaTeX support. The source still reads fine as plain Markdown when it isn't rendered. The package exports a system-prompt snippet that teaches the model this syntax.\nIt has no dependencies and comes in at 30 KB gzipped. Its parser passes the CommonMark and GFM spec tests. It doesn't support remark/rehype plugins, so if you rely on those, react-markdown is still the better choice.\nhttps://github.com/rsaryev/llx-markdown\nsubmitted by /u/Awkward-Let-4628\n[link] [comments]",
+            "lead": "I've been building chat UIs for agents and kept running into the same issues with react-markdown: it re-parses the whole reply on every token, so long answers get noticeably slower, and you see raw ** and half-typed [links](htt until the token that closes them arrives.\nSo I wrote my own renderer. It parses incrementally and repairs unfinished syntax while the reply streams:\n<Markdown streaming={!done}>{text}</Markdown>\nOn a 100k-character reply it takes 0.",
+            "chars": 1519,
+            "shown": 1519,
+            "truncated": false
+          },
+          "categories": [
+            "LocalLLaMA"
+          ],
+          "author": "/u/Awkward-Let-4628",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "oss",
+          "metrics": {},
+          "quality": 6,
+          "score": 14.46,
+          "category": "local",
+          "subcategory": null,
+          "practical": 1,
+          "slug": "1bdc23c0e76e",
+          "action": 2,
+          "rank": 9.2,
+          "tags": [
+            "benchmark"
+          ]
+        },
+        {
           "sourceId": "hn-algolia",
           "sourceName": "Hacker News Search",
           "lang": "en",
@@ -860,7 +1097,7 @@
           "published": "2026-11-10T14:52:36.000Z",
           "summary": "Hi HN, I'm Alice. Over the last year, at Smartness, the company where I work, we built a new message broker, open source under Apache 2.0. During this year it has replaced Kafka almost completely for us. I would like to show it to you and try to explain what is different about it. First, long story short: in 2025 we l…",
           "content": {
-            "html": "Hi HN, I'm Alice.<p>Over the last year, at Smartness, the company where I work, we built a new message broker, open source under Apache 2.0. During this year it has replaced Kafka almost completely for us. I would like to show it to you and try to explain what is different about it.<p>First, long story short: in 2025 we launched a new product in our suite. Like all the others it used Kafka for messaging, and like many other companies we were using Kafka as a message queue, wrongly and knowingly.<p>In this product head-of-line blocking hurt a lot: an LLM call takes seconds to minutes, and it blocked every other chat in the same partition. We first built a hack: we saved the Kafka messages in Postgres, ordered by the entity we needed (a chat_id, for example), processed them, and sent them back to Kafka. Then we decided to build a real broker on that idea. It took a year, from C++ plus Postgres to, today, a single Rust binary with data replicated on disk by Raft.<p>I designed this system, so I am biased. Still, I believe QueenMQ holds a new paradigm that turns a message broker into something more powerful, while staying simple.<p>What QueenMQ is, compared to what you already know:<p>Like Kafka, it has partitions, but in QueenMQ they are dynamic (not preallocated) and you can use a lot of them (tested up to 10 million). Like Kafka it is a log, but there is one Raft leader per tenant, so all of a tenant's writes go through one node, which allows transactions without 2PC. Head-of-line blocking can only happen inside one partition, which is one business entity, like a customer or a chat. If you need a plain queue, you can use a different partition for every message.<p>Like RabbitMQ, it has ACK, NACK, retries and a DLQ: this makes it a message queue. It has no routing on push and no exchanges, though.<p>Like a database: thanks to its etcd-like design, it runs transactions that include ACKs, pushes to other queues, KV writes and timers, and it has atomic locks. The KV store is replicated by Raft and keeps the application's state. It is linearizable.<p>It also has strong streaming features: the SDKs can receive one single log with all the messages of all the queues, with one clock and one order. On top of it there are the classic streaming features, like windows, and some less common ones.<p>Clients talk to it over HTTP (the clients are thin, the intelligence is in the broker), and it is Kafka-compatible (although that way you cannot use all of its strengths).<p>The idea underneath is the change from seeing a message broker as a pure \"handler\" of messages to one where you can offload a lot of application logic that you would otherwise write yourself. In our company it let us remove outbox tables, cron jobs and many other things.<p>On three beefy machines (24 vCPU, NVMe, 88 GB of RAM), QueenMQ sustains 3M msg/s of 256-byte messages, up to 10M partitions, with p99 latency around 20 ms and every write fsynced on two nodes. Of course, with a single leader per tenant, it does not scale by adding more machines.<p>We tested it hard: 226 tests of our own, written with the Jepsen library, on up to 5 nodes.<p>It is changing the way we design the systems and products of our company.<p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p>",
+            "html": "Hi HN, I'm Alice.<p>Over the last year, at Smartness, the company where I work, we built a new message broker, open source under Apache 2.0. During this year it has replaced Kafka almost completely for us. I would like to show it to you and try to explain what is different about it.<p>First, long story short: in 2025 we launched a new product in our suite. Like all the others it used Kafka for messaging, and like many other companies we were using Kafka as a message queue, wrongly and knowingly.<p>In this product head-of-line blocking hurt a lot: an LLM call takes seconds to minutes, and it blocked every other chat in the same partition. We first built a hack: we saved the Kafka messages in Postgres, ordered by the entity we needed (a chat_id, for example), processed them, and sent them back to Kafka. Then we decided to build a real broker on that idea. It took a year, from C++ plus Postgres to, today, a single Rust binary with data replicated on disk by Raft.<p>I designed this system, so I am biased. Still, I believe QueenMQ holds a new paradigm that turns a message broker into something more powerful, while staying simple.<p>What QueenMQ is, compared to what you already know:<p>Like Kafka, it has partitions, but in QueenMQ they are dynamic (not preallocated) and you can use a lot of them (tested up to 10 million). Like Kafka it is a log, but there is one Raft leader per tenant, so all of a tenant's writes go through one node, which allows transactions without 2PC. Head-of-line blocking can only happen inside one partition, which is one business entity, like a customer or a chat. If you need a plain queue, you can use a different partition for every message.<p>Like RabbitMQ, it has ACK, NACK, retries and a DLQ: this makes it a message queue. It has no routing on push and no exchanges, though.<p>Like a database: thanks to its etcd-like design, it runs transactions that include ACKs, pushes to other queues, KV writes and timers, and it has atomic locks. The KV store is replicated by Raft and keeps the application's state. It is linearizable.<p>It also has strong streaming features: the SDKs can receive one single log with all the messages of all the queues, with one clock and one order. On top of it there are the classic streaming features, like windows, and some less common ones.<p>Clients talk to it over HTTP (the clients are thin, the intelligence is in the broker), and it is Kafka-compatible (although that way you cannot use all of its strengths).<p>The idea underneath is the change from seeing a message broker as a pure \"handler\" of messages to one where you can offload a lot of application logic that you would otherwise write yourself. In our company it let us remove outbox tables, cron jobs and many other things.<p>On three beefy machines (24 vCPU, NVMe, 88 GB of RAM), QueenMQ sustains 3M msg/s of 256-byte messages, up to 10M partitions, with p99 latency around 20 ms and every write fsynced on two nodes. Of course, with a single leader per tenant, it does not scale by adding more machines.<p>We tested it hard: 226 tests of our own, written with the Jepsen library, on up to 5 nodes.<p>It is changing the way we design the systems and products of our company.</p></p></p></p></p></p></p></p></p></p></p></p></p></p>",
             "text": "Hi HN, I'm Alice. Over the last year, at Smartness, the company where I work, we built a new message broker, open source under Apache 2.0. During this year it has replaced Kafka almost completely for us. I would like to show it to you and try to explain what is different about it. First, long story short: in 2025 we launched a new product in our suite. Like all the others it used Kafka for messaging, and like many other companies we were using Kafka as a message queue, wrongly and knowingly. In this product head-of-line blocking hurt a lot: an LLM call takes seconds to minutes, and it blocked every other chat in the same partition. We first built a hack: we saved the Kafka messages in Postgres, ordered by the entity we needed (a chat_id, for example), processed them, and sent them back to Kafka. Then we decided to build a real broker on that idea. It took a year, from C++ plus Postgres to, today, a single Rust binary with data replicated on disk by Raft. I designed this system, so I am biased. Still, I believe QueenMQ holds a new paradigm that turns a message broker into something more powerful, while staying simple. What QueenMQ is, compared to what you already know: Like Kafka, it has partitions, but in QueenMQ they are dynamic (not preallocated) and you can use a lot of them (tested up to 10 million). Like Kafka it is a log, but there is one Raft leader per tenant, so all of a tenant's writes go through one node, which allows transactions without 2PC. Head-of-line blocking can only happen inside one partition, which is one business entity, like a customer or a chat. If you need a plain queue, you can use a different partition for every message. Like RabbitMQ, it has ACK, NACK, retries and a DLQ: this makes it a message queue. It has no routing on push and no exchanges, though. Like a database: thanks to its etcd-like design, it runs transactions that include ACKs, pushes to other queues, KV writes and timers, and it has atomic locks. The KV store is replicated by Raft and keeps the application's state. It is linearizable. It also has strong streaming features: the SDKs can receive one single log with all the messages of all the queues, with one clock and one order. On top of it there are the classic streaming features, like windows, and some less common ones. Clients talk to it over HTTP (the clients are thin, the intelligence is in the broker), and it is Kafka-compatible (although that way you cannot use all of its strengths). The idea underneath is the change from seeing a message broker as a pure \"handler\" of messages to one where you can offload a lot of application logic that you would otherwise write yourself. In our company it let us remove outbox tables, cron jobs and many other things. On three beefy machines (24 vCPU, NVMe, 88 GB of RAM), QueenMQ sustains 3M msg/s of 256-byte messages, up to 10M partitions, with p99 latency around 20 ms and every write fsynced on two nodes. Of course, with a single leader per tenant, it does not scale by adding more machines. We tested it hard: 226 tests of our own, written with the Jepsen library, on up to 5 nodes. It is changing the way we design the systems and products of our company.",
             "lead": "Hi HN, I'm Alice. Over the last year, at Smartness, the company where I work, we built a new message broker, open source under Apache 2.0. During this year it has replaced Kafka almost completely for us. I would like to show it to you and try to explain what is different about it. First, long story short: in 2025 we launched a new product in our suite. Like all the others it used Kafka for messaging, and like many other companies we were using Kafka as a m",
             "chars": 3578,

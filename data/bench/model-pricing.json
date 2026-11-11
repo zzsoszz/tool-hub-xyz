@@ -1,7 +1,7 @@
 {
   "id": "model-pricing",
   "kind": "openrouter-pricing",
-  "collectedAt": "2026-11-10T18:04:10.688Z",
+  "collectedAt": "2026-11-11T02:09:06.804Z",
   "upstream": {
     "label": "OpenRouter 模型目录 API",
     "url": "https://openrouter.ai/models"
@@ -91,16 +91,6 @@
           "created": 1792622765
         },
         {
-          "name": "XingChen: Xing4.0 29B A4B (free)",
-          "id": "xingchen-agi/xing4.0-29b-a4b:free",
-          "url": "https://openrouter.ai/xingchen-agi/xing4.0-29b-a4b:free",
-          "context": 262144,
-          "promptPerMillion": 0,
-          "completionPerMillion": 0,
-          "free": true,
-          "created": 1792177496
-        },
-        {
           "name": "Cohere: North Mini Code (free)",
           "id": "cohere/north-mini-code:free",
           "url": "https://openrouter.ai/cohere/north-mini-code:free",
@@ -135,7 +125,7 @@
           "id": "z-ai/glm-5.2",
           "url": "https://openrouter.ai/z-ai/glm-5.2",
           "context": 1048576,
-          "promptPerMillion": 0.0061,
+          "promptPerMillion": 0.007,
           "completionPerMillion": 6.8,
           "free": false,
           "created": 1781631930
@@ -371,6 +361,16 @@
           "created": 1789176933
         },
         {
+          "name": "DeepSeek: DeepSeek V4.1 Flash",
+          "id": "deepseek/deepseek-v4.1-flash",
+          "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash",
+          "context": 1048576,
+          "promptPerMillion": 0.051,
+          "completionPerMillion": 0.5670000000000001,
+          "free": false,
+          "created": 1789021285
+        },
+        {
           "name": "Amazon: Nova Lite 1.0",
           "id": "amazon/nova-lite-v1",
           "url": "https://openrouter.ai/amazon/nova-lite-v1",
@@ -415,14 +415,14 @@
   },
   "stats": {
     "models": 40,
-    "free": 10
+    "free": 9
   },
   "files": [
     {
       "path": "https://openrouter.ai/api/v1/models",
       "url": "https://openrouter.ai/api/v1/models",
-      "sha256": "ef48a4e8e61b58f285b24789bb07f7768e656df1aa8317f6b58cc87c0f13be0c",
-      "bytes": 839532
+      "sha256": "11b598ffab20926ec3f5798b780449696640d3f7c8da1fb5ac076369fbcbc4c1",
+      "bytes": 842553
     }
   ]
 }
