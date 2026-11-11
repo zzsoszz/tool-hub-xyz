@@ -1,7 +1,7 @@
 {
   "id": "model-pricing",
   "kind": "openrouter-pricing",
-  "collectedAt": "2026-11-11T02:09:06.804Z",
+  "collectedAt": "2026-11-11T10:23:41.592Z",
   "upstream": {
     "label": "OpenRouter 模型目录 API",
     "url": "https://openrouter.ai/models"
@@ -39,6 +39,16 @@
           "completionPerMillion": 0,
           "free": true,
           "created": 1774907255
+        },
+        {
+          "name": "Baidu: ERNIE-5.5-Flash-Preview (free)",
+          "id": "baidu/ernie-5.5-flash-preview:free",
+          "url": "https://openrouter.ai/baidu/ernie-5.5-flash-preview:free",
+          "context": 1024000,
+          "promptPerMillion": 0,
+          "completionPerMillion": 0,
+          "free": true,
+          "created": 1794333533
         },
         {
           "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
@@ -399,30 +409,20 @@
           "completionPerMillion": 0.25,
           "free": false,
           "created": 1788206780
-        },
-        {
-          "name": "Z.ai: GLM 4.7 Flash",
-          "id": "z-ai/glm-4.7-flash",
-          "url": "https://openrouter.ai/z-ai/glm-4.7-flash",
-          "context": 200000,
-          "promptPerMillion": 0.060500000000000005,
-          "completionPerMillion": 0.39999999999999997,
-          "free": false,
-          "created": 1768833913
         }
       ]
     }
   },
   "stats": {
     "models": 40,
-    "free": 9
+    "free": 10
   },
   "files": [
     {
       "path": "https://openrouter.ai/api/v1/models",
       "url": "https://openrouter.ai/api/v1/models",
-      "sha256": "11b598ffab20926ec3f5798b780449696640d3f7c8da1fb5ac076369fbcbc4c1",
-      "bytes": 842553
+      "sha256": "85f7e6fefd467eaf32965f17aabe54fca5b49471b4f110c5e9627030d0c71859",
+      "bytes": 842902
     }
   ]
 }
