@@ -50,8 +50,11 @@ async function main() {
   const previous = JSON.parse(await readFile(OUT, 'utf8').catch(() => '{}'));
   const machine = [...new Set(previous.machine ?? [])].filter((slug) => /^[0-9a-f]{12}$/.test(slug));
   const merged = [...new Set([...slugs, ...machine])];
+  // 按天的审查结论要一起保留：压平成扁平 machine 会让「重跑某一天」失去可覆盖的桶，旧下架结论又变回永久。
+  const state = { updatedAt: new Date().toISOString(), slugs: merged, admin: slugs, machine };
+  if (previous.machineByDay) state.machineByDay = previous.machineByDay;
   await mkdir(path.dirname(OUT), { recursive: true });
-  await writeFile(OUT, `${JSON.stringify({ updatedAt: new Date().toISOString(), slugs: merged, admin: slugs, machine }, null, 2)}\n`);
+  await writeFile(OUT, `${JSON.stringify(state, null, 2)}\n`);
   console.log(`fetch-hidden: 管理员下架 ${slugs.length} 条 + 审查下架 ${machine.length} 条 → data/hidden.json`);
 }
 
