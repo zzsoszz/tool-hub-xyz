@@ -1,0 +1,1195 @@
+{
+  "day": "2026-11-11",
+  "reviewedAt": "2026-11-11T10:24:07.715Z",
+  "reviewer": "cloudflare/@cf/meta/llama-3.1-70b-instruct",
+  "note": "cloudflare/@cf/meta/llama-3.1-70b-instruct：复核 12 条，解析到 12 条判定",
+  "rules": {
+    "minItems": 3,
+    "minBodyChars": 120,
+    "minSummaryChars": 40,
+    "maxTags": 4,
+    "agentMaxItems": 12,
+    "agentBatch": 6,
+    "agentChars": 900
+  },
+  "passed": true,
+  "reasons": [],
+  "total": 52,
+  "blocked": [
+    "5f3307d957a7",
+    "c32f15795545",
+    "c1fbfe2e3fcb",
+    "6f3e9570882c",
+    "8e1c6bd72ab9",
+    "3e9ae4b249de",
+    "c8bf0b8e918f",
+    "9a49f9571003",
+    "004c51f512e0",
+    "a5fb6f25f61b",
+    "8241a5e1124f",
+    "2327bae6c1b1",
+    "75546f2ae879",
+    "0748d6c00c15",
+    "81acf0881de1",
+    "0d039fb56b48",
+    "9270ef04bcf4",
+    "061d1f16dce2",
+    "8e74a1bef765",
+    "fabe838d73f5",
+    "dfd4b5c596e1"
+  ],
+  "survivors": 31,
+  "items": [
+    {
+      "slug": "42f7741a90ca",
+      "title": "苹果新应用 Harbor 曝光：插线连接多台 Mac，一起运行本地大模型",
+      "category": "apps",
+      "subcategory": "knowledge",
+      "tags": [
+        "privacy",
+        "local",
+        "tutorial",
+        "lowspec"
+      ],
+      "bodyChars": 1501,
+      "quality": 9,
+      "practical": 8,
+      "sourceName": "小众软件",
+      "domain": "appinn.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "包含实测数据和具体信息"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "11426d5d5985",
+      "title": "SGLang 和 Strata 怎么选？从短对话到大型代码库",
+      "category": "apps",
+      "subcategory": "inference",
+      "tags": [
+        "benchmark",
+        "lowspec"
+      ],
+      "bodyChars": 1097,
+      "quality": 12,
+      "practical": 3,
+      "sourceName": "抡锤者 模型部署讨论",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "包含实测数据和具体信息"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "5f3307d957a7",
+      "title": "新人首贴：Hermes多Agent群聊踩坑，纠结换DSH还是双持，求建议",
+      "category": "apps",
+      "subcategory": "office",
+      "tags": [
+        "agent",
+        "free"
+      ],
+      "bodyChars": 854,
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "抡锤者 Agent 工具",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "fail",
+        "reason": "正文太短且没有可复述的信息"
+      },
+      "blocked": [
+        "模型复核不通过（正文太短且没有可复述的信息）"
+      ]
+    },
+    {
+      "slug": "d2aa13e0402b",
+      "title": "6 Hours of YouTube and 85 handtyped pages of notes on LLM Inference – Start here",
+      "category": "apps",
+      "subcategory": "inference",
+      "tags": [
+        "local"
+      ],
+      "bodyChars": 8930,
+      "quality": 10,
+      "practical": 2,
+      "sourceName": "HN 检索（本地推理生态）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "包含实测数据和具体信息"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "c32f15795545",
+      "title": "ComfyUI v0.45.0 发布",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [
+        "agent",
+        "generate",
+        "free"
+      ],
+      "bodyChars": 5196,
+      "quality": 8,
+      "practical": 3,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "正文太短且没有可复述的信息"
+      },
+      "blocked": [
+        "模型复核不通过（正文太短且没有可复述的信息）"
+      ]
+    },
+    {
+      "slug": "c1fbfe2e3fcb",
+      "title": "llm-gemini 0.36",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [],
+      "bodyChars": 1528,
+      "quality": 9,
+      "practical": 1,
+      "sourceName": "Simon Willison",
+      "domain": "simonwillison.net",
+      "hard": [
+        "标签异常（没有任何标签）"
+      ],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": [
+        "标签异常（没有任何标签）"
+      ]
+    },
+    {
+      "slug": "6f3e9570882c",
+      "title": "如何整合Agent 和生图",
+      "category": "apps",
+      "subcategory": "inference",
+      "tags": [
+        "generate",
+        "local",
+        "agent"
+      ],
+      "bodyChars": 0,
+      "quality": 7,
+      "practical": 2,
+      "sourceName": "抡锤者 Agent 工具",
+      "domain": "lcz.me",
+      "hard": [
+        "内容过少（正文 0 字，要求至少 120 字）"
+      ],
+      "warnings": [],
+      "agent": null,
+      "blocked": [
+        "内容过少（正文 0 字，要求至少 120 字）"
+      ]
+    },
+    {
+      "slug": "8e1c6bd72ab9",
+      "title": "langbot-app/LangBot",
+      "category": "apps",
+      "subcategory": "knowledge",
+      "tags": [
+        "local",
+        "agent"
+      ],
+      "bodyChars": 0,
+      "quality": 10,
+      "practical": 3,
+      "sourceName": "GitHub 检索（生态项目更新）",
+      "domain": "github.com",
+      "hard": [
+        "内容过少（正文 0 字，要求至少 120 字）"
+      ],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": [
+        "内容过少（正文 0 字，要求至少 120 字）"
+      ]
+    },
+    {
+      "slug": "3e9ae4b249de",
+      "title": "sgl-project/sglang",
+      "category": "apps",
+      "subcategory": "inference",
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 6711,
+      "quality": 10,
+      "practical": 1,
+      "sourceName": "GitHub 检索（生态项目更新）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "正文太短且没有可复述的信息"
+      },
+      "blocked": [
+        "模型复核不通过（正文太短且没有可复述的信息）"
+      ]
+    },
+    {
+      "slug": "c8bf0b8e918f",
+      "title": "Quoting Prompting Claude Fable 5.2",
+      "category": "apps",
+      "subcategory": null,
+      "tags": [],
+      "bodyChars": 839,
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "Simon Willison",
+      "domain": "simonwillison.net",
+      "hard": [
+        "标签异常（没有任何标签）"
+      ],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": [
+        "标签异常（没有任何标签）"
+      ]
+    },
+    {
+      "slug": "9a49f9571003",
+      "title": "We Run a Bootstrapped AI Startup on Almost Zero Operating Costs",
+      "category": "apps",
+      "subcategory": "office",
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 11604,
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "Hacker News Search",
+      "domain": "dmv.is-a.dev",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "正文过短，没有可复述的信息。"
+      },
+      "blocked": [
+        "模型复核不通过（正文过短，没有可复述的信息。）"
+      ]
+    },
+    {
+      "slug": "004c51f512e0",
+      "title": "DeepMind reveals Gemini Robotics 2.5 and open safety benchmark \"ASIMOV-jailbreak\"",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [
+        "benchmark",
+        "free"
+      ],
+      "bodyChars": 1420,
+      "quality": 9,
+      "practical": 1,
+      "sourceName": "Ars Technica AI",
+      "domain": "arstechnica.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "只有新闻转述，没有数据或步骤。"
+      },
+      "blocked": [
+        "模型复核不通过（只有新闻转述，没有数据或步骤。）"
+      ]
+    },
+    {
+      "slug": "a5fb6f25f61b",
+      "title": "AutoScaffold: AI-Guided Scaffolding for Reinforcement Learning of Language Models",
+      "category": "apps",
+      "subcategory": "life",
+      "tags": [],
+      "bodyChars": 1871,
+      "quality": 7,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [
+        "标签异常（没有任何标签）"
+      ],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": [
+        "标签异常（没有任何标签）"
+      ]
+    },
+    {
+      "slug": "63c80c3edebd",
+      "title": "Asked SenseNova-U1.5-8B-MoT how to make a closed terrarium, and it drew a picture for every step",
+      "category": "tools",
+      "subcategory": "hands-on",
+      "tags": [
+        "tutorial",
+        "lowspec"
+      ],
+      "bodyChars": 1105,
+      "quality": 9,
+      "practical": 4,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "提供了实践性内容，有可复述的信息。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "8241a5e1124f",
+      "title": "福利｜复旦「学术版 Codex」双十一积分翻倍！",
+      "category": "tools",
+      "subcategory": "interface",
+      "tags": [
+        "agent",
+        "tutorial",
+        "money",
+        "free"
+      ],
+      "bodyChars": 3109,
+      "quality": 8,
+      "practical": 5,
+      "sourceName": "小众软件",
+      "domain": "appinn.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "fail",
+        "reason": "标签重复且与内容不符。"
+      },
+      "blocked": [
+        "模型复核不通过（标签重复且与内容不符。）"
+      ]
+    },
+    {
+      "slug": "2327bae6c1b1",
+      "title": "卷起来了！11月11日，大模型厂商在天猫打5折",
+      "category": "tools",
+      "subcategory": "interface",
+      "tags": [
+        "agent",
+        "free"
+      ],
+      "bodyChars": 1264,
+      "quality": 9,
+      "practical": 3,
+      "sourceName": "量子位",
+      "domain": "qbitai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "fail",
+        "reason": "只有新闻转述，没有数据或步骤。"
+      },
+      "blocked": [
+        "模型复核不通过（只有新闻转述，没有数据或步骤。）"
+      ]
+    },
+    {
+      "slug": "5d3ed2ae85b9",
+      "title": "Designing for Agents — Zeno Rocha, Resend",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "agent"
+      ],
+      "bodyChars": 5136,
+      "quality": 8,
+      "practical": 5,
+      "sourceName": "Latent Space",
+      "domain": "latent.space",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "提供了实践性内容，有可复述的信息。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "37c2a22fccb4",
+      "title": "双11直播间爆改AI秀场，罗永浩上手TRAE，秒变AI Coding的大众嘴替",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "agent",
+        "tutorial",
+        "generate",
+        "money"
+      ],
+      "bodyChars": 5146,
+      "quality": 10,
+      "practical": 3,
+      "sourceName": "量子位",
+      "domain": "qbitai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "096c0f108d5e",
+      "title": "The Verge’s 2026 holiday gift guide for moms",
+      "category": "tools",
+      "subcategory": "hands-on",
+      "tags": [
+        "tutorial"
+      ],
+      "bodyChars": 688,
+      "quality": 10,
+      "practical": 1,
+      "sourceName": "The Verge",
+      "domain": "theverge.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "ae018ac2ae59",
+      "title": "Kolmogorov-Chapman Maps: Trajectory-Free Learning for Simulating Molecular Dynamics",
+      "category": "tools",
+      "subcategory": "workflow",
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 1515,
+      "quality": 6,
+      "practical": 2,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "75546f2ae879",
+      "title": "Yonkers Rises",
+      "category": "tools",
+      "subcategory": null,
+      "tags": [],
+      "bodyChars": 575,
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "Simon Willison",
+      "domain": "simonwillison.net",
+      "hard": [
+        "标签异常（没有任何标签）"
+      ],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": [
+        "标签异常（没有任何标签）"
+      ]
+    },
+    {
+      "slug": "a2dc47659d09",
+      "title": "Lazare, veni foras: Reprogramming Dormant Neurons to Backdoor AI Agents",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "agent"
+      ],
+      "bodyChars": 6274,
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "Microsoft Research",
+      "domain": "microsoft.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "0748d6c00c15",
+      "title": "Fable 5.2首批实测来了！网友：Opus突然不香了",
+      "category": "tools",
+      "subcategory": null,
+      "tags": [
+        "benchmark"
+      ],
+      "bodyChars": 0,
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "量子位",
+      "domain": "qbitai.com",
+      "hard": [
+        "内容过少（正文 0 字，要求至少 120 字）",
+        "内容过少（摘要 16 字，要求至少 40 字）"
+      ],
+      "warnings": [],
+      "agent": null,
+      "blocked": [
+        "内容过少（正文 0 字，要求至少 120 字）",
+        "内容过少（摘要 16 字，要求至少 40 字）"
+      ]
+    },
+    {
+      "slug": "7be4cd2fa6db",
+      "title": "Anyone willing to benchmark my MoE runtime on their M-series Mac?",
+      "category": "hardware",
+      "subcategory": "build",
+      "tags": [
+        "lowspec",
+        "benchmark",
+        "tutorial",
+        "free"
+      ],
+      "bodyChars": 1607,
+      "quality": 7,
+      "practical": 5,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "0ee1bd6cd549",
+      "title": "3 x RTX Pro 6000D + 1 x RTX Pro 6000 跑官方 Deepseek v4.1 Flash 1017 分享",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "benchmark",
+        "local",
+        "tutorial",
+        "generate"
+      ],
+      "bodyChars": 20227,
+      "quality": 11,
+      "practical": 2,
+      "sourceName": "抡锤者 模型部署讨论",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "81acf0881de1",
+      "title": "Indras-Mirror/Xolotl",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "lowspec",
+        "benchmark",
+        "agent"
+      ],
+      "bodyChars": 0,
+      "quality": 10,
+      "practical": 1,
+      "sourceName": "GitHub 检索（生态项目更新）",
+      "domain": "github.com",
+      "hard": [
+        "内容过少（正文 0 字，要求至少 120 字）"
+      ],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": [
+        "内容过少（正文 0 字，要求至少 120 字）"
+      ]
+    },
+    {
+      "slug": "3b2a18c29876",
+      "title": "llama.cpp b12283 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1786,
+      "quality": 8,
+      "practical": 4,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "0d039fb56b48",
+      "title": "RustingStudio/RustingStrata",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local"
+      ],
+      "bodyChars": 0,
+      "quality": 10,
+      "practical": 1,
+      "sourceName": "GitHub 检索（生态项目更新）",
+      "domain": "github.com",
+      "hard": [
+        "内容过少（正文 0 字，要求至少 120 字）"
+      ],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": [
+        "内容过少（正文 0 字，要求至少 120 字）"
+      ]
+    },
+    {
+      "slug": "9270ef04bcf4",
+      "title": "双 RTX PRO 6000 + 64GB RAM：Maya 跑 GLM-5.3-Flash Maya-L，51K 上下文 ~127.2 tok/s",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "benchmark",
+        "agent"
+      ],
+      "bodyChars": 0,
+      "quality": 10,
+      "practical": 1,
+      "sourceName": "抡锤者 模型部署讨论",
+      "domain": "lcz.me",
+      "hard": [
+        "内容过少（正文 0 字，要求至少 120 字）"
+      ],
+      "warnings": [],
+      "agent": null,
+      "blocked": [
+        "内容过少（正文 0 字，要求至少 120 字）"
+      ]
+    },
+    {
+      "slug": "dcf26ed5696f",
+      "title": "llama.cpp b12282 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1385,
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "bfbaa7bd5608",
+      "title": "llama.cpp b12277 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1373,
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "3e5acd6db9b5",
+      "title": "763B DeepSeek V4.1 Flash on one 32 GB card: 50 tok/s, and what the 2-bit quant costs (top-1 agreement 83.5 %)",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "benchmark"
+      ],
+      "bodyChars": 1587,
+      "quality": 7,
+      "practical": 2,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "061d1f16dce2",
+      "title": "4 DGX Spark跑DeepSeek V4.1 Flash实测：长上下文多并发体验拉满，TTFT 1秒以内，性价比超苹果M5 Ultra 512G，RTX Pro 6000！",
+      "category": "hardware",
+      "subcategory": "machine",
+      "tags": [
+        "benchmark"
+      ],
+      "bodyChars": 0,
+      "quality": 7,
+      "practical": 1,
+      "sourceName": "抡锤者 AI硬件",
+      "domain": "lcz.me",
+      "hard": [
+        "内容过少（正文 0 字，要求至少 120 字）"
+      ],
+      "warnings": [],
+      "agent": null,
+      "blocked": [
+        "内容过少（正文 0 字，要求至少 120 字）"
+      ]
+    },
+    {
+      "slug": "02d0ce657753",
+      "title": "My 0.8B fine-tune proofreads Spanish at 138 ms per sentence on a CPU",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "benchmark"
+      ],
+      "bodyChars": 4491,
+      "quality": 7,
+      "practical": 2,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "27cdd1c9057c",
+      "title": "nodetool-ai/nodetool",
+      "category": "local",
+      "subcategory": "weights",
+      "tags": [
+        "agent",
+        "free"
+      ],
+      "bodyChars": 20229,
+      "quality": 10,
+      "practical": 2,
+      "sourceName": "GitHub 检索（生态项目更新）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "7f73a7607588",
+      "title": "ggml-org/llama.cpp",
+      "category": "local",
+      "subcategory": "weights",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 4922,
+      "quality": 10,
+      "practical": 3,
+      "sourceName": "GitHub 检索（生态项目更新）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "76e14d2b128d",
+      "title": "MiniMax H3 · 双7900 XT TP2 · 1 分钟短片《雨伞》",
+      "category": "local",
+      "subcategory": "runtime",
+      "tags": [
+        "local",
+        "generate",
+        "hardware"
+      ],
+      "bodyChars": 129,
+      "quality": 9,
+      "practical": 1,
+      "sourceName": "抡锤者 AI 音视频画图",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "3c013cecc95a",
+      "title": "ai-dynamo/dynamo",
+      "category": "local",
+      "subcategory": "weights",
+      "tags": [
+        "tutorial",
+        "free"
+      ],
+      "bodyChars": 15663,
+      "quality": 10,
+      "practical": 2,
+      "sourceName": "GitHub 检索（生态项目更新）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "8e74a1bef765",
+      "title": "Show HN: An offline desktop companion to help maintain a healthy blink rhythm",
+      "category": "local",
+      "subcategory": null,
+      "tags": [],
+      "bodyChars": 1190,
+      "quality": 9,
+      "practical": 1,
+      "sourceName": "HN 检索（独立开发与变现）",
+      "domain": "eyesrhythm.com",
+      "hard": [
+        "标签异常（没有任何标签）"
+      ],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": [
+        "标签异常（没有任何标签）"
+      ]
+    },
+    {
+      "slug": "64d8c541f07b",
+      "title": "ModelCloud/GPTQModel",
+      "category": "local",
+      "subcategory": "quantize",
+      "tags": [
+        "local"
+      ],
+      "bodyChars": 89852,
+      "quality": 10,
+      "practical": 1,
+      "sourceName": "GitHub 检索（生态项目更新）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "ea9f3d1f844b",
+      "title": "ollama v0.40.17-rc0 发布",
+      "category": "local",
+      "subcategory": "runtime",
+      "tags": [
+        "local",
+        "agent"
+      ],
+      "bodyChars": 897,
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "caae95d7a325",
+      "title": "[GLB-3D-Coder] I tried making a 1.7B version for Godot",
+      "category": "local",
+      "subcategory": "weights",
+      "tags": [
+        "local",
+        "lowspec"
+      ],
+      "bodyChars": 701,
+      "quality": 7,
+      "practical": 2,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "f35465116a38",
+      "title": "Cyberattacks threaten to make open source AI a little less open, Hugging Face exec warns",
+      "category": "local",
+      "subcategory": "weights",
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 232,
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "TechCrunch AI",
+      "domain": "techcrunch.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "eb0d75dcae58",
+      "title": "speakleash/Bielik-11B-v3.1-Instruct · Hugging Face",
+      "category": "local",
+      "subcategory": "weights",
+      "tags": [
+        "local",
+        "free"
+      ],
+      "bodyChars": 2534,
+      "quality": 6,
+      "practical": 3,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "1bdc23c0e76e",
+      "title": "I built a zero-dependency streaming Markdown renderer for AI chat replies, n× faster than the next one I benchmarked",
+      "category": "local",
+      "subcategory": null,
+      "tags": [
+        "benchmark"
+      ],
+      "bodyChars": 1519,
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "75d2174ba87a",
+      "title": "Show HN: QueenMQ – slow LLM calls blocked our Kafka partitions, so we built it",
+      "category": "local",
+      "subcategory": "weights",
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 3578,
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "Hacker News Search",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "3ec8b3ecdfd2",
+      "title": "AMD MI50洋垃圾显卡750一张，1T带宽/7nm制程/16G显存，双卡跑Strata驱动Qwen 3.8 Flash Next 128k畅玩！",
+      "category": "bench",
+      "subcategory": "selection",
+      "tags": [
+        "hardware",
+        "benchmark",
+        "lowspec",
+        "generate"
+      ],
+      "bodyChars": 2691,
+      "quality": 8,
+      "practical": 3,
+      "sourceName": "抡锤者 AI硬件",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "372317ecf902",
+      "title": "从“卖Token”到“卖结果” | 科技有「联想」沙龙激辩Token经济三大议题",
+      "category": "bench",
+      "subcategory": "cost",
+      "tags": [
+        "agent"
+      ],
+      "bodyChars": 5445,
+      "quality": 9,
+      "practical": 2,
+      "sourceName": "量子位",
+      "domain": "qbitai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "fabe838d73f5",
+      "title": "Introducing Our Smallest, Most Efficient Model: Muse Ember",
+      "category": "bench",
+      "subcategory": "cost",
+      "tags": [],
+      "bodyChars": 2590,
+      "quality": 9,
+      "practical": 2,
+      "sourceName": "Simon Willison",
+      "domain": "simonwillison.net",
+      "hard": [
+        "标签异常（没有任何标签）"
+      ],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": [
+        "标签异常（没有任何标签）"
+      ]
+    },
+    {
+      "slug": "d75707d59f98",
+      "title": "We tested Qwen3.6 27B, Qwen3.8 27B and GLM-5.3 Flash on real tasks in Elixir, OCaml, Haskell and 10 other less common languages",
+      "category": "bench",
+      "subcategory": "benchmark",
+      "tags": [
+        "benchmark"
+      ],
+      "bodyChars": 779,
+      "quality": 7,
+      "practical": 1,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "d7e7c64036e6",
+      "title": "Looping Deeper Without Growing the KV Cache: Recurrent Depth for Causal Encoder-Decoders",
+      "category": "bench",
+      "subcategory": "cost",
+      "tags": [
+        "tutorial"
+      ],
+      "bodyChars": 1361,
+      "quality": 7,
+      "practical": 1,
+      "sourceName": "arXiv 检索（推理引擎与量化）",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "dfd4b5c596e1",
+      "title": "Claude Fable5.2实测，3个简单测试案例和腾讯HY4一个水平但是价格贵了25倍，Anthropic还是少吹牛，多改善下产品！",
+      "category": "bench",
+      "subcategory": "cost",
+      "tags": [
+        "benchmark"
+      ],
+      "bodyChars": 0,
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "抡锤者 模型部署讨论",
+      "domain": "lcz.me",
+      "hard": [
+        "内容过少（正文 0 字，要求至少 120 字）"
+      ],
+      "warnings": [],
+      "agent": null,
+      "blocked": [
+        "内容过少（正文 0 字，要求至少 120 字）"
+      ]
+    }
+  ]
+}
