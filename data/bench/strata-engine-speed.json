@@ -1,7 +1,7 @@
 {
   "id": "strata-engine-speed",
   "kind": "strata-matrix",
-  "collectedAt": "2026-11-11T10:23:41.539Z",
+  "collectedAt": "2026-11-11T10:32:15.016Z",
   "upstream": {
     "label": "Niko1221/Strata · bench/results",
     "url": "https://github.com/Niko1221/Strata/tree/main/bench/results"

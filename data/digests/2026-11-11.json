@@ -1,6 +1,6 @@
 {
   "day": "2026-11-11",
-  "generatedAt": "2026-11-11T10:22:02.718Z",
+  "generatedAt": "2026-11-11T10:30:40.306Z",
   "timezone": "Asia/Shanghai",
   "windowHours": 48,
   "window": {
@@ -9,14 +9,14 @@
   },
   "counts": {
     "sources": 42,
-    "okSources": 39,
-    "fetched": 1117,
-    "duplicates": 620,
-    "carried": 16,
-    "added": 28,
-    "fallback": 8,
-    "lowQuality": 258,
-    "published": 52
+    "okSources": 41,
+    "fetched": 1154,
+    "duplicates": 732,
+    "carried": 42,
+    "added": 8,
+    "fallback": 9,
+    "lowQuality": 202,
+    "published": 60
   },
   "sources": [
     {
@@ -214,10 +214,10 @@
     {
       "id": "hn-show-ai",
       "name": "Show HN (AI)",
-      "ok": false,
-      "items": 0,
+      "ok": true,
+      "items": 20,
       "queries": 1,
-      "error": "HTTP 502"
+      "error": null
     },
     {
       "id": "ai-news-applied",
@@ -254,10 +254,10 @@
     {
       "id": "reddit-saas",
       "name": "r/SaaS 变现实操",
-      "ok": false,
-      "items": 0,
+      "ok": true,
+      "items": 25,
       "queries": 1,
-      "error": "HTTP 429"
+      "error": null
     },
     {
       "id": "lcz-hardware",
@@ -335,7 +335,7 @@
       "id": "hn-ecosystem",
       "name": "HN 检索（本地推理生态）",
       "ok": true,
-      "items": 110,
+      "items": 102,
       "queries": 12,
       "error": null
     },
@@ -561,6 +561,49 @@
           "tags": [
             "agent",
             "generate",
+            "free"
+          ]
+        },
+        {
+          "sourceId": "hn-money",
+          "sourceName": "HN 检索（独立开发与变现）",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "money",
+          "categories": [
+            "story",
+            "author_saikatsg",
+            "story_50388752"
+          ],
+          "author": "",
+          "id": "50388752",
+          "title": "Hugging Face's CEO Says His P(Doom) Is 'Close to Zero'",
+          "url": "https://www.wired.com/story/wired-world-fair-2026-clement-delangue-hugging-face/",
+          "published": "2026-11-06T06:06:33.000Z",
+          "summary": "Future AI risks are most likely to come from big companies building in secret while open models play defense, Clément Delangue, CEO of Hugging Face, said Wednesday at the WIRED World Fair in Miami. “Most of the risk is actually created by a couple of players building behind closed doors,” Delangue said. “Most of the m…",
+          "content": {
+            "html": "<article><div><div></div></div><div><div><div><div></div></div></div></div><div><span></span></div><div><div><div><div><div><figure><div><div></div></div></figure></div></div></div></div></div><div><p><span>Future AI risks</span>are most likely to come from big companies building in secret while open models play defense, Clément Delangue, CEO of<a href=\"https://www.wired.com/story/hugging-face-new-ai-biology-model-chat-with-dna/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Hugging Face,</a>said Wednesday at the WIRED World Fair in Miami.</p><p>“Most of the risk is actually created by a couple of players building behind closed doors,” Delangue said. “Most of the mitigation of this risk will be the full ecosystem, meaning everyone being able to build in the open.”</p><div></div></div><div></div><p>Hugging Face is one of the first companies to be attacked by a rogue AI. This July, agents being tested by OpenAI<a href=\"https://www.wired.com/story/openai-models-escaped-containment-and-hacked-huggingface/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">broke free of their sandbox</a>and chose to attack the startup in search of answers to problems they had been set to solve. The company used an open-weight Chinese model called GLM-5.2 to investigate and counter the onslaught.</p><div><div></div></div><div><div><figure><div></div></figure></div></div><div></div><div><div><div><div><p>Delangue noted that agent misbehavior has so far mostly come from big companies that are testing frontier AI in secret. He said that future risks, perhaps involving the biological capabilities of models or their capacity to improve themselves recursively, are likely to emerge from these closed labs, too.</p><div></div></div></div></div></div><p>Delangue noted Hugging Face chose not to pursue legal recourse against OpenAI for the attack but added that those who deploy AI agents should be legally responsible for their actions. “Cyber-attacks are illegal, and I think it’s really important we make sure that agentic cyberattacks [are] illegal,” he told the event. “We don’t want to create an environment where there’s no ownership. There’s no responsibility for cyberattack.”</p><p>In contrast to some AI researchers who have warned that the technology could pose an existential risk to humanity, Delangue said his P(doom)—the probability of this happening—is “close to zero.” “There are many other topics that could destroy the world,” he said.</p><div></div><p>Hugging Face is a prominent platform for open-weight or downloadable AI models. Its users can share and access models hosted by the company or download them to their own computer systems.</p><p>Nvidia, the world’s dominant AI chipmaker, announced that it would acquire the platform for $12.93 billion this September. When the acquisition was announced, Hugging Face said it had around 18 million users.</p><div><div></div></div><p>Delangue also revealed at WIRED World Fair that Hugging Face now has more than 20 million AI builders, suggesting rapid growth. Delangue also revealed that Hugging Face has sold 50,000<a href=\"https://www.wired.com/story/jensen-huangs-vision-for-europe-runs-on-plug-in-data-centers/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Microducks</a>, a cute, two-legged robot from Hugging Face that can be programmed using AI.</p><p>Delangue told the conference that the success of open-source AI will also be crucial in preventing a few companies and individuals from completely dominating the future.</p><p>“We could really clearly end up in a world where only a few companies control the majority of AI,” Delangue said. “There are very strong natural tendencies because [a few companies] really monopolize talent, compute, and capabilities.”</p><p>Delangue said that letting more people download and customize AI would lead to a more democratized technological future. The Hugging Face CEO said that the Nvidia acquisition would enable the company to compete as AI requires ever more resources.</p><div></div><div><div><div><div><div></div></div></div></div></div><div><div><div><div><div></div></div></div></div></div></article>",
+            "text": "Future AI risks are most likely to come from big companies building in secret while open models play defense, Clément Delangue, CEO of Hugging Face, said Wednesday at the WIRED World Fair in Miami.\n“Most of the risk is actually created by a couple of players building behind closed doors,” Delangue said. “Most of the mitigation of this risk will be the full ecosystem, meaning everyone being able to build in the open.”\nHugging Face is one of the first companies to be attacked by a rogue AI. This July, agents being tested by OpenAI broke free of their sandbox and chose to attack the startup in search of answers to problems they had been set to solve. The company used an open-weight Chinese model called GLM-5.2 to investigate and counter the onslaught.\nDelangue noted that agent misbehavior has so far mostly come from big companies that are testing frontier AI in secret. He said that future risks, perhaps involving the biological capabilities of models or their capacity to improve themselves recursively, are likely to emerge from these closed labs, too.\nDelangue noted Hugging Face chose not to pursue legal recourse against OpenAI for the attack but added that those who deploy AI agents should be legally responsible for their actions. “Cyber-attacks are illegal, and I think it’s really important we make sure that agentic cyberattacks [are] illegal,” he told the event. “We don’t want to create an environment where there’s no ownership. There’s no responsibility for cyberattack.”\nIn contrast to some AI researchers who have warned that the technology could pose an existential risk to humanity, Delangue said his P(doom)—the probability of this happening—is “close to zero.” “There are many other topics that could destroy the world,” he said.\nHugging Face is a prominent platform for open-weight or downloadable AI models. Its users can share and access models hosted by the company or download them to their own computer systems.\nNvidia, the world’s dominant AI chipmaker, announced that it would acquire the platform for $12.93 billion this September. When the acquisition was announced, Hugging Face said it had around 18 million users.\nDelangue also revealed at WIRED World Fair that Hugging Face now has more than 20 million AI builders, suggesting rapid growth. Delangue also revealed that Hugging Face has sold 50,000 Microducks , a cute, two-legged robot from Hugging Face that can be programmed using AI.\nDelangue told the conference that the success of open-source AI will also be crucial in preventing a few companies and individuals from completely dominating the future.\n“We could really clearly end up in a world where only a few companies control the majority of AI,” Delangue said. “There are very strong natural tendencies because [a few companies] really monopolize talent, compute, and capabilities.”\nDelangue said that letting more people download and customize AI would lead to a more democratized technological future. The Hugging Face CEO said that the Nvidia acquisition would enable the company to compete as AI requires ever more resources.",
+            "lead": "Future AI risks are most likely to come from big companies building in secret while open models play defense, Clément Delangue, CEO of Hugging Face, said Wednesday at the WIRED World Fair in Miami.\n“Most of the risk is actually created by a couple of players building behind closed doors,” Delangue said. “Most of the mitigation of this risk will be the full ecosystem, meaning everyone being able to build in the open.”\nHugging Face is one of the first compan",
+            "chars": 3113,
+            "shown": 3113,
+            "truncated": false
+          },
+          "metrics": {
+            "points": 34,
+            "comments": 19
+          },
+          "quality": 8,
+          "score": 13.4,
+          "category": "apps",
+          "subcategory": "knowledge",
+          "practical": 1,
+          "slug": "97d081c7a718",
+          "action": 4,
+          "rank": 14.4,
+          "tags": [
+            "agent",
             "free"
           ]
         },
@@ -886,6 +929,42 @@
           "action": 2,
           "rank": 10.2,
           "tags": []
+        },
+        {
+          "sourceId": "arxiv-ecosystem",
+          "sourceName": "arXiv 检索（推理引擎与量化）",
+          "title": "Translating KV Caches Between Hybrid-Attention Language Models: MLA Latents, Linear-Attention States and Sparse-Attention Indexers",
+          "url": "https://arxiv.org/abs/2611.12062v1",
+          "id": "http://arxiv.org/abs/2611.12062v1",
+          "published": "2026-11-09T08:37:12.000Z",
+          "summary": "A model that takes over another model's conversation must normally re-read the whole history; a text hand-off shortens the re-read only by dropping content. KV-cache translation instead maps the source's cache into the target's own format, so the target continues from the full context without re-reading it. It works f…",
+          "content": {
+            "html": "A model that takes over another model's conversation must normally re-read the whole history; a text hand-off shortens the re-read only by dropping content. KV-cache translation instead maps the source's cache into the target's own format, so the target continues from the full context without re-reading it. It works for grouped-query attention (GQA), but open-weights frontier models now cache compressed latents (MLA), sparse-attention indexer keys and fixed-size linear-attention states. We replicate KV-Lingo on a GQA pair and then give, for each of these objects, where to capture and inject it and a mechanism that reaches native quality. We study two hybrid pairs at 16-48B scale in both directions, Kimi-VL-A3B - Kimi-Linear-48B (MLA - MLA + Kimi Delta Attention) and Qwen3.5-27B - Qwen3.8-27B (Gated DeltaNet hybrids), plus a sparse-attention target (Qwen3.8-27B - Qwen3.8-Flash-Next). MLA latents translate with token-wise linear maps; recurrent states are copied with a closed-form correction or synthesised by replaying the target's own recurrence. Exact long-range recall needs token identity: decoding token ids from the source's layer-0 MLA latent raises needle recall from 0.09 to 0.99 at 2-32K and to 0.83-1.00 at 64K, eight times the longest training prompt. The hybrid full-MLA direction is within the paired confidence interval of native quality on every task metric, and same-shape GDN hybrids reach the native level in both directions (apart from 6% refusals inherited from the source), with time to first token 18.7 and 46.8 times shorter than a re-read at 64K tokens. Segment-wise multi-turn transfer stays at the re-prefill level; naive re-translation collapses. On the sparse-attention target, predicted indexer keys recall the needle as well as the target's own keys (one seed). We state as a hypothesis how the recipes transfer to 300B+ hybrid flagships.",
+            "text": "A model that takes over another model's conversation must normally re-read the whole history; a text hand-off shortens the re-read only by dropping content. KV-cache translation instead maps the source's cache into the target's own format, so the target continues from the full context without re-reading it. It works for grouped-query attention (GQA), but open-weights frontier models now cache compressed latents (MLA), sparse-attention indexer keys and fixed-size linear-attention states. We replicate KV-Lingo on a GQA pair and then give, for each of these objects, where to capture and inject it and a mechanism that reaches native quality. We study two hybrid pairs at 16-48B scale in both directions, Kimi-VL-A3B - Kimi-Linear-48B (MLA - MLA + Kimi Delta Attention) and Qwen3.5-27B - Qwen3.8-27B (Gated DeltaNet hybrids), plus a sparse-attention target (Qwen3.8-27B - Qwen3.8-Flash-Next). MLA latents translate with token-wise linear maps; recurrent states are copied with a closed-form correction or synthesised by replaying the target's own recurrence. Exact long-range recall needs token identity: decoding token ids from the source's layer-0 MLA latent raises needle recall from 0.09 to 0.99 at 2-32K and to 0.83-1.00 at 64K, eight times the longest training prompt. The hybrid full-MLA direction is within the paired confidence interval of native quality on every task metric, and same-shape GDN hybrids reach the native level in both directions (apart from 6% refusals inherited from the source), with time to first token 18.7 and 46.8 times shorter than a re-read at 64K tokens. Segment-wise multi-turn transfer stays at the re-prefill level; naive re-translation collapses. On the sparse-attention target, predicted indexer keys recall the needle as well as the target's own keys (one seed). We state as a hypothesis how the recipes transfer to 300B+ hybrid flagships.",
+            "lead": "A model that takes over another model's conversation must normally re-read the whole history; a text hand-off shortens the re-read only by dropping content. KV-cache translation instead maps the source's cache into the target's own format, so the target continues from the full context without re-reading it. It works for grouped-query attention (GQA), but open-weights frontier models now cache compressed latents (MLA), sparse-attention indexer keys and fixe",
+            "chars": 1883,
+            "shown": 1883,
+            "truncated": false
+          },
+          "categories": [
+            "cs.LG",
+            "cs.CL"
+          ],
+          "author": "Povilas Kvedaras",
+          "lang": "en",
+          "tier": 3,
+          "trustCategory": false,
+          "declaredCategory": "ideas",
+          "metrics": {},
+          "quality": 6,
+          "score": 7.24,
+          "category": "apps",
+          "subcategory": "knowledge",
+          "practical": 1,
+          "slug": "09ef35482166",
+          "action": 2,
+          "rank": 9.2,
+          "tags": []
         }
       ]
     },
@@ -982,7 +1061,7 @@
           "published": "2026-11-11T06:18:09.000Z",
           "summary": "<!DOCTYPE html> < img id=\"wx_img\" src=\"https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png\" width=\"400\" height=\"400\"> 卷起来了！11月11日，大模型厂商在天猫打5折 量子位的朋友们 2026-11-11 14:18:09 来源： 量子位 大模型厂商智谱、MiniMax、千问办公、阿里云、Qoder都在天猫打5折。 卷起来了！11月11日，全年最便宜的一天，大模型厂商智谱、MiniMax、千问办公、阿里云、Qoder都在天猫打5折。 消费者打开淘宝APP搜索「Token」，即可进入天猫AI空…",
           "content": {
-            "html": "&lt;!DOCTYPE html&gt;<div><div><div>&lt; img id=\"wx_img\" src=\"https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png\" width=\"400\" height=\"400\"&gt;</div></div></div>\n<div><h3>卷起来了！11月11日，大模型厂商在天猫打5折</h3><div><span><img src=\"http://www.qbitai.com/wp-content/uploads/2019/06/200-100x100.jpg\" alt=\"量子位的朋友们\" loading=\"lazy\"><em><a href=\"https://www.qbitai.com/author/qbitai\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">量子位的朋友们</a></em></span><span>2026-11-11</span><span>14:18:09</span><span>来源：<a href=\"https://www.qbitai.com/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">量子位</a></span></div></div>\n<div><p>大模型厂商智谱、MiniMax、千问办公、阿里云、Qoder都在天猫打5折。</p></div>\n<p>卷起来了！11月11日，全年最便宜的一天，大模型厂商智谱、MiniMax、千问办公、阿里云、Qoder都在天猫打5折。</p>\n<p>消费者打开淘宝APP搜索「Token」，即可进入天猫AI空间站的Token充值中心充值。其中 MiniMax的三款月卡全部5折，阿里云Token Plan 两款月卡5折起，智谱周卡5折起，千问办公基础版会员月卡首月3折起，Qoder月卡3.3折，低至19.9元。</p>\n<p>今年双11 Token火爆出圈，首次成为一个独立品类登上天猫，标志着大模型不再只活在发布会、API文档里，开始走进大众消费。</p>\n<div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/d1f2da013887fe1528605e5bc64c5732.jpeg\" alt=\"\" loading=\"lazy\"></div>\n<p>（天猫双11 Token充值中心5折会场）</p>\n<p><em><span>本文由天猫提供，量子位获授权转载，观点归原作者所有。</span></em></p>\n<div><span></span><em>版权所有，未经授权不得以任何形式转载及使用，违者必究。</em><span></span></div>\n<div><a href=\"https://www.qbitai.com/tag/%e5%a4%a9%e7%8c%ab\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">天猫</a></div>\n<div><a href=\"https://www.qbitai.com/2026/11/509085.html#\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div><img src=\"http://www.qbitai.com/wp-content/uploads/2019/06/200.jpg\" alt=\"量子位的朋友们\" loading=\"lazy\"><span><a href=\"https://www.qbitai.com/author/qbitai\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">量子位的朋友们</a></span></div></a></div>\n<div><ul><li><a href=\"https://www.qbitai.com/2026/11/509088.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">从“卖Token”到“卖结果” | 科技有「联想」沙龙激辩Token经济三大议题</a><i>2026-11-11</i></li><li><a href=\"https://www.qbitai.com/2026/11/508996.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">从“一脑多机”到“一脑多手”，蚂蚁灵波开源LingBot-Touch触觉基础模型</a><i>2026-11-10</i></li><li><a href=\"https://www.qbitai.com/2026/11/508991.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">成立四个月，融资过亿美金：TensorWorld物原科技要跑通“物理真实”路线</a><i>2026-11-10</i></li><li><a href=\"https://www.qbitai.com/2026/11/508985.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">达卯科技与浦东环保能源战略合作，黎明智算中心算电协同平台启动</a><i>2026-11-10</i></li></ul></div>\n<div><div></div></div>\n<div><span></span><div>扫码分享至朋友圈</div></div>\n<div></div>\n<a href=\"https://service.weibo.com/share/share.php?url=https://www.qbitai.com/2026/11/509085.html&amp;title=%E5%8D%B7%E8%B5%B7%E6%9D%A5%E4%BA%86%EF%BC%8111%E6%9C%8811%E6%97%A5%EF%BC%8C%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%8E%82%E5%95%86%E5%9C%A8%E5%A4%A9%E7%8C%AB%E6%89%935%E6%8A%98&amp;appkey=4017757111&amp;searchPic=true&amp;ralateUid=6105753431\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div></div></a>\n<a href=\"https://www.qbitai.com/2026/11/509085.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div></div></a>\n<div><h3>相关阅读</h3><ul><div><div><a href=\"https://www.qbitai.com/2020/04/13817.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://i.qbitai.com/wp-content/uploads/2020/04/-e1587970008969-300x175.jpg\" alt=\"\" loading=\"lazy\"></a></div></div></ul></div>\n<div><h4><a href=\"https://www.qbitai.com/2020/04/13817.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">蒋凡遭重罚：除名阿里合伙人</a></h4><p></p><div><span><a href=\"https://www.qbitai.com/?author=21\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">十三</a></span><span><span>2020-04-27</span></span><div><i></i><a href=\"https://www.qbitai.com/tag/%e5%a4%a9%e7%8c%ab\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">天猫</a><a href=\"https://www.qbitai.com/tag/%e8%92%8b%e5%87%a1\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">蒋凡</a><a href=\"https://www.qbitai.com/tag/%e9%98%bf%e9%87%8c%e5%b7%b4%e5%b7%b4\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">阿里巴巴</a></div></div></div>\n<div><div><a href=\"https://www.qbitai.com/2023/06/62846.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://i.qbitai.com/wp-content/uploads/2023/06/-e1687323727250.png\" alt=\"\" loading=\"lazy\"></a></div></div>\n<div><h4><a href=\"https://www.qbitai.com/2023/06/62846.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">AI血洗时尚圈！就连这些线上店家都开始用AI生成爆款商品了</a></h4><p>直接缩短近6个月的设计周期</p><div><span><a href=\"https://www.qbitai.com/?author=27\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">萧箫</a></span><span><span>2023-06-21</span></span><div><i></i><a href=\"https://www.qbitai.com/tag/aigc\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">AIGC</a><a href=\"https://www.qbitai.com/tag/ai%e8%ae%be%e8%ae%a1\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">AI设计</a><a href=\"https://www.qbitai.com/tag/%e5%a4%a7%e6%a8%a1%e5%9e%8b\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">大模型</a><a href=\"https://www.qbitai.com/tag/%e5%a4%a9%e7%8c%ab\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">天猫</a></div></div></div>\n<div><div><h3>热门文章</h3><div><a href=\"https://www.qbitai.com/2026/11/507647.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/c37aeb22fbab218afd1a69a8d0affaf1.png\" alt=\"\" loading=\"lazy\"></div></a></div></div></div>\n<div><h4>百度无人车搞出“黑客帝国”！世界模型实时推演全局，跑一天抵三年</h4></div>\n<div>2026-11-05</div>\n<div><a href=\"https://www.qbitai.com/2026/11/508107.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/%E6%88%AA%E5%B1%8F2026-11-06-13.01.03-e1793941287946.png\" alt=\"\" loading=\"lazy\"></div></a></div>\n<div><h4>99.4%登顶全球第一！这个中国AI师承世界冠军</h4></div>\n<div>2026-11-06</div>\n<div><a href=\"https://www.qbitai.com/2026/11/508264.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/d9df0fb93f1d07b816a57ff90b0b1382.png\" alt=\"\" loading=\"lazy\"></div></a></div>\n<div><h4>抢跑DeepSeek！硅谷华人把下一代Agent Harness造出来了！？</h4></div>\n<div>2026-11-07</div>\n<div><a href=\"https://www.qbitai.com/2026/11/508466.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/article-image-2-1.jpg\" alt=\"\" loading=\"lazy\"></div></a></div>\n<div><h4>资本正在撤离“世界模型”</h4></div>\n<div>2026-11-08</div>\n<div><a href=\"https://www.qbitai.com/2026/11/507697.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/article-image-2-13.png\" alt=\"\" loading=\"lazy\"></div></a></div>\n<div><h4>Linux内核被挖出948个漏洞！OpenAI花120万美元找到的</h4></div>\n<div>2026-11-05</div>\n<div><div><div><ul><li><a href=\"https://www.qbitai.com/?page_id=99\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">关于量子位</a></li><li><a href=\"https://www.qbitai.com/?page_id=101\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">加入我们</a></li><li><a href=\"https://www.qbitai.com/?page_id=103\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">寻求报道</a></li><li><a href=\"https://www.qbitai.com/?page_id=105\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">商务合作</a></li></ul><div><div><i></i></div></div></div></div></div>\n<div><p>扫码关注量子位</p><img src=\"https://www.qbitai.com/wp-content/uploads/2019/01/qrcode_QbitAI_1.jpg\" alt=\"\" loading=\"lazy\"></div>\n<a href=\"https://weibo.com/qbitai?is_all=1\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><i></i></a>\n<a href=\"https://www.zhihu.com/org/liang-zi-wei-48/activities\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div></div></a>\n<a href=\"https://www.toutiao.com/c/user/53624121633/#mid=1556041376883713\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div></div></a>\n<div><div><a href=\"https://www.qbitai.com/2026/11/509085.html#\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"></a><span>追踪人工智能新趋势，报道科技行业新突破</span></div></div>\n<div></div>\n<p>量子位 QbitAI 版权所有©北京极客伙伴科技有限公司<a href=\"https://beian.miit.gov.cn/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">京ICP备17005886号-1</a></p>",
+            "html": "&lt;!DOCTYPE html&gt;<div><div><div>&lt; img id=\"wx_img\" src=\"https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png\" width=\"400\" height=\"400\"&gt;</div></div></div>\n<div><h3>卷起来了！11月11日，大模型厂商在天猫打5折</h3><div><span><img src=\"http://www.qbitai.com/wp-content/uploads/2019/06/200-100x100.jpg\" alt=\"量子位的朋友们\" loading=\"lazy\"><em><a href=\"https://www.qbitai.com/author/qbitai\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">量子位的朋友们</a></em></span><span>2026-11-11</span><span>14:18:09</span><span>来源：<a href=\"https://www.qbitai.com/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">量子位</a></span></div></div>\n<div><p>大模型厂商智谱、MiniMax、千问办公、阿里云、Qoder都在天猫打5折。</p></div>\n<p>卷起来了！11月11日，全年最便宜的一天，大模型厂商智谱、MiniMax、千问办公、阿里云、Qoder都在天猫打5折。</p>\n<p>消费者打开淘宝APP搜索「Token」，即可进入天猫AI空间站的Token充值中心充值。其中 MiniMax的三款月卡全部5折，阿里云Token Plan 两款月卡5折起，智谱周卡5折起，千问办公基础版会员月卡首月3折起，Qoder月卡3.3折，低至19.9元。</p>\n<p>今年双11 Token火爆出圈，首次成为一个独立品类登上天猫，标志着大模型不再只活在发布会、API文档里，开始走进大众消费。</p>\n<div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/d1f2da013887fe1528605e5bc64c5732.jpeg\" alt=\"\" loading=\"lazy\"></div>\n<p>（天猫双11 Token充值中心5折会场）</p>\n<p><em><span>本文由天猫提供，量子位获授权转载，观点归原作者所有。</span></em></p>\n<div><span></span><em>版权所有，未经授权不得以任何形式转载及使用，违者必究。</em><span></span></div>\n<div><a href=\"https://www.qbitai.com/tag/%e5%a4%a9%e7%8c%ab\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">天猫</a></div>\n<div><a href=\"https://www.qbitai.com/2026/11/509085.html#\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div><img src=\"http://www.qbitai.com/wp-content/uploads/2019/06/200.jpg\" alt=\"量子位的朋友们\" loading=\"lazy\"><span><a href=\"https://www.qbitai.com/author/qbitai\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">量子位的朋友们</a></span></div></a></div>\n<div><ul><li><a href=\"https://www.qbitai.com/2026/11/509088.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">从“卖Token”到“卖结果” | 科技有「联想」沙龙激辩Token经济三大议题</a><i>2026-11-11</i></li><li><a href=\"https://www.qbitai.com/2026/11/508996.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">从“一脑多机”到“一脑多手”，蚂蚁灵波开源LingBot-Touch触觉基础模型</a><i>2026-11-10</i></li><li><a href=\"https://www.qbitai.com/2026/11/508991.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">成立四个月，融资过亿美金：TensorWorld物原科技要跑通“物理真实”路线</a><i>2026-11-10</i></li><li><a href=\"https://www.qbitai.com/2026/11/508985.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">达卯科技与浦东环保能源战略合作，黎明智算中心算电协同平台启动</a><i>2026-11-10</i></li></ul></div>\n<div><div></div></div>\n<div><span></span><div>扫码分享至朋友圈</div></div>\n<div></div>\n<a href=\"https://service.weibo.com/share/share.php?url=https://www.qbitai.com/2026/11/509085.html&amp;title=%E5%8D%B7%E8%B5%B7%E6%9D%A5%E4%BA%86%EF%BC%8111%E6%9C%8811%E6%97%A5%EF%BC%8C%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%8E%82%E5%95%86%E5%9C%A8%E5%A4%A9%E7%8C%AB%E6%89%935%E6%8A%98&amp;appkey=4017757111&amp;searchPic=true&amp;ralateUid=6105753431\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div></div></a>\n<a href=\"https://www.qbitai.com/2026/11/509085.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div></div></a>\n<div><h3>相关阅读</h3><ul><div><div><a href=\"https://www.qbitai.com/2020/04/13817.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://i.qbitai.com/wp-content/uploads/2020/04/-e1587970008969-300x175.jpg\" alt=\"\" loading=\"lazy\"></a></div></div></ul></div>\n<div><h4><a href=\"https://www.qbitai.com/2020/04/13817.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">蒋凡遭重罚：除名阿里合伙人</a></h4><div><span><a href=\"https://www.qbitai.com/?author=21\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">十三</a></span><span><span>2020-04-27</span></span><div><i></i><a href=\"https://www.qbitai.com/tag/%e5%a4%a9%e7%8c%ab\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">天猫</a><a href=\"https://www.qbitai.com/tag/%e8%92%8b%e5%87%a1\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">蒋凡</a><a href=\"https://www.qbitai.com/tag/%e9%98%bf%e9%87%8c%e5%b7%b4%e5%b7%b4\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">阿里巴巴</a></div></div></div>\n<div><div><a href=\"https://www.qbitai.com/2023/06/62846.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://i.qbitai.com/wp-content/uploads/2023/06/-e1687323727250.png\" alt=\"\" loading=\"lazy\"></a></div></div>\n<div><h4><a href=\"https://www.qbitai.com/2023/06/62846.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">AI血洗时尚圈！就连这些线上店家都开始用AI生成爆款商品了</a></h4><p>直接缩短近6个月的设计周期</p><div><span><a href=\"https://www.qbitai.com/?author=27\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">萧箫</a></span><span><span>2023-06-21</span></span><div><i></i><a href=\"https://www.qbitai.com/tag/aigc\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">AIGC</a><a href=\"https://www.qbitai.com/tag/ai%e8%ae%be%e8%ae%a1\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">AI设计</a><a href=\"https://www.qbitai.com/tag/%e5%a4%a7%e6%a8%a1%e5%9e%8b\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">大模型</a><a href=\"https://www.qbitai.com/tag/%e5%a4%a9%e7%8c%ab\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">天猫</a></div></div></div>\n<div><div><h3>热门文章</h3><div><a href=\"https://www.qbitai.com/2026/11/507647.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/c37aeb22fbab218afd1a69a8d0affaf1.png\" alt=\"\" loading=\"lazy\"></div></a></div></div></div>\n<div><h4>百度无人车搞出“黑客帝国”！世界模型实时推演全局，跑一天抵三年</h4></div>\n<div>2026-11-05</div>\n<div><a href=\"https://www.qbitai.com/2026/11/508107.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/%E6%88%AA%E5%B1%8F2026-11-06-13.01.03-e1793941287946.png\" alt=\"\" loading=\"lazy\"></div></a></div>\n<div><h4>99.4%登顶全球第一！这个中国AI师承世界冠军</h4></div>\n<div>2026-11-06</div>\n<div><a href=\"https://www.qbitai.com/2026/11/508264.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/d9df0fb93f1d07b816a57ff90b0b1382.png\" alt=\"\" loading=\"lazy\"></div></a></div>\n<div><h4>抢跑DeepSeek！硅谷华人把下一代Agent Harness造出来了！？</h4></div>\n<div>2026-11-07</div>\n<div><a href=\"https://www.qbitai.com/2026/11/508466.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/article-image-2-1.jpg\" alt=\"\" loading=\"lazy\"></div></a></div>\n<div><h4>资本正在撤离“世界模型”</h4></div>\n<div>2026-11-08</div>\n<div><a href=\"https://www.qbitai.com/2026/11/507697.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/article-image-2-13.png\" alt=\"\" loading=\"lazy\"></div></a></div>\n<div><h4>Linux内核被挖出948个漏洞！OpenAI花120万美元找到的</h4></div>\n<div>2026-11-05</div>\n<div><div><div><ul><li><a href=\"https://www.qbitai.com/?page_id=99\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">关于量子位</a></li><li><a href=\"https://www.qbitai.com/?page_id=101\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">加入我们</a></li><li><a href=\"https://www.qbitai.com/?page_id=103\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">寻求报道</a></li><li><a href=\"https://www.qbitai.com/?page_id=105\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">商务合作</a></li></ul><div><div><i></i></div></div></div></div></div>\n<div><p>扫码关注量子位</p><img src=\"https://www.qbitai.com/wp-content/uploads/2019/01/qrcode_QbitAI_1.jpg\" alt=\"\" loading=\"lazy\"></div>\n<a href=\"https://weibo.com/qbitai?is_all=1\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><i></i></a>\n<a href=\"https://www.zhihu.com/org/liang-zi-wei-48/activities\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div></div></a>\n<a href=\"https://www.toutiao.com/c/user/53624121633/#mid=1556041376883713\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div></div></a>\n<div><div><a href=\"https://www.qbitai.com/2026/11/509085.html#\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"></a><span>追踪人工智能新趋势，报道科技行业新突破</span></div></div>\n<div></div>\n<p>量子位 QbitAI 版权所有©北京极客伙伴科技有限公司<a href=\"https://beian.miit.gov.cn/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">京ICP备17005886号-1</a></p>",
             "text": "<!DOCTYPE html> < img id=\"wx_img\" src=\"https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png\" width=\"400\" height=\"400\">\n卷起来了！11月11日，大模型厂商在天猫打5折\n量子位的朋友们 2026-11-11 14:18:09 来源： 量子位\n大模型厂商智谱、MiniMax、千问办公、阿里云、Qoder都在天猫打5折。\n卷起来了！11月11日，全年最便宜的一天，大模型厂商智谱、MiniMax、千问办公、阿里云、Qoder都在天猫打5折。\n消费者打开淘宝APP搜索「Token」，即可进入天猫AI空间站的Token充值中心充值。其中 MiniMax的三款月卡全部5折，阿里云Token Plan 两款月卡5折起，智谱周卡5折起，千问办公基础版会员月卡首月3折起，Qoder月卡3.3折，低至19.9元。\n今年双11 Token火爆出圈，首次成为一个独立品类登上天猫，标志着大模型不再只活在发布会、API文档里，开始走进大众消费。\n（天猫双11 Token充值中心5折会场）\n本文由天猫提供，量子位获授权转载，观点归原作者所有。\n版权所有，未经授权不得以任何形式转载及使用，违者必究。\n天猫\n量子位的朋友们\n从“卖Token”到“卖结果” | 科技有「联想」沙龙激辩Token经济三大议题 2026-11-11\n从“一脑多机”到“一脑多手”，蚂蚁灵波开源LingBot-Touch触觉基础模型 2026-11-10\n成立四个月，融资过亿美金：TensorWorld物原科技要跑通“物理真实”路线 2026-11-10\n达卯科技与浦东环保能源战略合作，黎明智算中心算电协同平台启动 2026-11-10\n扫码分享至朋友圈\n相关阅读\n蒋凡遭重罚：除名阿里合伙人\n十三 2020-04-27 天猫 蒋凡 阿里巴巴\nAI血洗时尚圈！就连这些线上店家都开始用AI生成爆款商品了\n直接缩短近6个月的设计周期\n萧箫 2023-06-21 AIGC AI设计 大模型 天猫\n热门文章\n百度无人车搞出“黑客帝国”！世界模型实时推演全局，跑一天抵三年\n2026-11-05\n99.4%登顶全球第一！这个中国AI师承世界冠军\n2026-11-06\n抢跑DeepSeek！硅谷华人把下一代Agent Harness造出来了！？\n2026-11-07\n资本正在撤离“世界模型”\n2026-11-08\nLinux内核被挖出948个漏洞！OpenAI花120万美元找到的\n2026-11-05\n关于量子位\n加入我们\n寻求报道\n商务合作\n扫码关注量子位\n追踪人工智能新趋势，报道科技行业新突破\n量子位 QbitAI 版权所有©北京极客伙伴科技有限公司 京ICP备17005886号-1",
             "lead": "<!DOCTYPE html> < img id=\"wx_img\" src=\"https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png\" width=\"400\" height=\"400\">\n卷起来了！11月11日，大模型厂商在天猫打5折\n量子位的朋友们 2026-11-11 14:18:09 来源： 量子位\n大模型厂商智谱、MiniMax、千问办公、阿里云、Qoder都在天猫打5折。\n卷起来了！11月11日，全年最便宜的一天，大模型厂商智谱、MiniMax、千问办公、阿里云、Qoder都在天猫打5折。\n消费者打开淘宝APP搜索「Token」，即可进入天猫AI空间站的Token充值中心充值。其中 MiniMax的三款月卡全部5折，阿里云Token Plan 两款月卡5折起，智谱周卡5折起，千问办公基础版会员月卡首月3折起，Qoder月卡3.3折，低至19.9元。",
             "chars": 1264,
@@ -1009,6 +1088,44 @@
           "rank": 17,
           "tags": [
             "agent",
+            "free"
+          ]
+        },
+        {
+          "sourceId": "reddit-saas",
+          "sourceName": "r/SaaS 变现实操",
+          "title": "I thought building an embeddable customer support chatbot in 2026 would take 2 weeks. It took 6 months. Here are the 5 hardest problems that tutorials never mention.",
+          "url": "https://www.reddit.com/r/SaaS/comments/1xtc3po/i_thought_building_an_embeddable_customer_support/",
+          "id": "t3_1xtc3po",
+          "published": "2026-11-11T08:01:30.000Z",
+          "summary": "Every AI chatbot tutorial on YouTube makes it look like a weekend project: wrap an LLM API, connect a vector database for RAG, slap together a floating bubble in React, and call it a day. Six months ago, we set out to build an open-source, embeddable support bot for real businesses. It turned into one of the most dece…",
+          "content": {
+            "html": "<div><p>Every AI chatbot tutorial on YouTube makes it look like a weekend project: wrap an LLM API, connect a vector database for RAG, slap together a floating bubble in React, and call it a day.</p><p>Six months ago, we set out to build an open-source, embeddable support bot for real businesses. It turned into one of the most deceptively complex front-end and systems engineering challenges I've worked on.</p><p>The actual LLM calls were maybe 10% of the work. Here are the 5 production nightmares that actually took 90% of the time:</p><h3>1. The Shadow DOM CSS Nightmare</h3><p>If you embed your chat widget inside a host website (like a customer's WordPress or Shopify store), you have two choices:</p><ul><li><strong>An</strong><code>&lt;iframe&gt;</code>Safe from host CSS, but impossible to make responsive. Tooltips, popovers, full-screen mobile takeovers, and launcher animations look clunky or clipped.</li><li><strong>Raw DOM injection:</strong>The moment your widget loads on a site with aggressive global CSS rules (<code>* { box-sizing: content-box !important; }</code>or weird<code>font-size</code>resets), your entire chat UI collapses into an unreadable mess. We had to build the entire UI inside an isolated Shadow DOM, bundle Tailwind styles into runtime-injected stylesheets, and manually handle z-index wars against fixed headers.</li></ul><h3>2. Streaming SSE Over Flaky Mobile Networks</h3><p>Streaming tokens (Server-Sent Events) looks great on local fiber. But in the real world:</p><ul><li>A visitor opens the widget on 4G, asks a question, and locks their phone screen mid-generation.</li><li>iOS Safari immediately pauses background network tasks.</li><li>When they unlock 15 seconds later, the socket is dead, the stream is severed, and your backend worker is still paying token costs for a ghost client. Handling client reconnection reconciliations, message deduplication, and streaming heartbeats without displaying duplicated half-sentences was a massive headache.</li></ul><h3>3. Customers Don't Write \"Prompts\" They Write Chaos</h3><p>In developer testing, we tested polite, complete sentences:<em>\"Could you please help me track order #1234?\"</em>In real production:</p><ul><li>A user types:<code>broken</code></li><li>Another types:<code>where is it</code></li><li>Another pastes an entire 4-paragraph angry email with tracking numbers buried in the text. Naive RAG chokes on one-word queries because semantic search over short keywords returns low-confidence junk. We had to implement pre-search query rewriting and intent extractors just to handle one-word inputs.</li></ul><h3>4. The \"Variant Stock\" Hallucination</h3><p>Vector databases are fundamentally bad at structured, transactional state. If a customer asks:<em>\"Do you have the blue hoodie in size Medium?\"</em>, semantic similarity matches the parent hoodie product chunk (which says<code>in_stock: true</code>because size XL is still available). The bot confidently promises the item is available, only for the customer to get an out-of-stock error at checkout. Solving this meant completely separating text knowledge (pgvector) from catalog state (deterministic REST API hydration per child SKU).</p><h3>5. Knowing When the Bot Must Shut Up</h3><p>The hardest metric in support AI isn't \"deflection rate\" it's knowing when to stop talking. If an angry user asks for a refund for the third time, an LLM trying to be \"helpful\" by repeating company policy is the fastest way to l…</p></div>",
+            "text": "Every AI chatbot tutorial on YouTube makes it look like a weekend project: wrap an LLM API, connect a vector database for RAG, slap together a floating bubble in React, and call it a day.\nSix months ago, we set out to build an open-source, embeddable support bot for real businesses. It turned into one of the most deceptively complex front-end and systems engineering challenges I've worked on.\nThe actual LLM calls were maybe 10% of the work. Here are the 5 production nightmares that actually took 90% of the time:\n1. The Shadow DOM CSS Nightmare\nIf you embed your chat widget inside a host website (like a customer's WordPress or Shopify store), you have two choices:\nAn <iframe> Safe from host CSS, but impossible to make responsive. Tooltips, popovers, full-screen mobile takeovers, and launcher animations look clunky or clipped.\nRaw DOM injection: The moment your widget loads on a site with aggressive global CSS rules ( * { box-sizing: content-box !important; } or weird font-size resets), your entire chat UI collapses into an unreadable mess. We had to build the entire UI inside an isolated Shadow DOM, bundle Tailwind styles into runtime-injected stylesheets, and manually handle z-index wars against fixed headers.\n2. Streaming SSE Over Flaky Mobile Networks\nStreaming tokens (Server-Sent Events) looks great on local fiber. But in the real world:\nA visitor opens the widget on 4G, asks a question, and locks their phone screen mid-generation.\niOS Safari immediately pauses background network tasks.\nWhen they unlock 15 seconds later, the socket is dead, the stream is severed, and your backend worker is still paying token costs for a ghost client. Handling client reconnection reconciliations, message deduplication, and streaming heartbeats without displaying duplicated half-sentences was a massive headache.\n3. Customers Don't Write \"Prompts\" They Write Chaos\nIn developer testing, we tested polite, complete sentences: \"Could you please help me track order #1234?\" In real production:\nA user types: broken\nAnother types: where is it\nAnother pastes an entire 4-paragraph angry email with tracking numbers buried in the text. Naive RAG chokes on one-word queries because semantic search over short keywords returns low-confidence junk. We had to implement pre-search query rewriting and intent extractors just to handle one-word inputs.\n4. The \"Variant Stock\" Hallucination\nVector databases are fundamentally bad at structured, transactional state. If a customer asks: \"Do you have the blue hoodie in size Medium?\" , semantic similarity matches the parent hoodie product chunk (which says in_stock: true because size XL is still available). The bot confidently promises the item is available, only for the customer to get an out-of-stock error at checkout. Solving this meant completely separating text knowledge (pgvector) from catalog state (deterministic REST API hydration per child SKU).\n5. Knowing When the Bot Must Shut Up\nThe hardest metric in support AI isn't \"deflection rate\" it's knowing when to stop talking. If an angry user asks for a refund for the third time, an LLM trying to be \"helpful\" by repeating company policy is the fastest way to l…",
+            "lead": "Every AI chatbot tutorial on YouTube makes it look like a weekend project: wrap an LLM API, connect a vector database for RAG, slap together a floating bubble in React, and call it a day.\nSix months ago, we set out to build an open-source, embeddable support bot for real businesses. It turned into one of the most deceptively complex front-end and systems engineering challenges I've worked on.\nThe actual LLM calls were maybe 10% of the work. Here are the 5 ",
+            "chars": 3791,
+            "shown": 3201,
+            "truncated": true
+          },
+          "categories": [
+            "SaaS"
+          ],
+          "author": "/u/tharindu_d",
+          "lang": "en",
+          "tier": 3,
+          "trustCategory": false,
+          "declaredCategory": "money",
+          "metrics": {},
+          "quality": 7,
+          "score": 15.99,
+          "category": "tools",
+          "subcategory": "interface",
+          "practical": 3,
+          "slug": "d3991eda3e54",
+          "action": 6,
+          "rank": 16.6,
+          "tags": [
+            "tutorial",
             "free"
           ]
         },
@@ -1272,6 +1389,46 @@
           "tags": [
             "benchmark"
           ]
+        },
+        {
+          "sourceId": "arxiv-cs",
+          "sourceName": "arXiv cs.AI/CL/LG",
+          "title": "Comparative Analysis of Agent Evaluation Frameworks: Stability, Detection, and Discovery in Enterprise Analytics Agents",
+          "url": "https://arxiv.org/abs/2611.14493v1",
+          "id": "http://arxiv.org/abs/2611.14493v1",
+          "published": "2026-11-10T18:50:06.000Z",
+          "summary": "Deploying LLM-based analytics agents in enterprise settings requires evaluation frameworks that can reliably detect failures across complex, multi-tool workflows. We present a three-phase comparative study of three evaluation frameworks, each representing a distinct evaluation paradigm (trace-based LLM judging, text-o…",
+          "content": {
+            "html": "Deploying LLM-based analytics agents in enterprise settings requires evaluation frameworks that can reliably detect failures across complex, multi-tool workflows. We present a three-phase comparative study of three evaluation frameworks, each representing a distinct evaluation paradigm (trace-based LLM judging, text-only LLM judging with red-teaming, and deterministic heuristics), applied to two analytics agents in a controlled research setting using frozen execution traces. Phase 1 quantifies evaluation harness stability through repeated measurements, finding that 97% of configurations meet the stability threshold and that stability patterns are agent-independent. Phase 2 measures known risk detection on 72 ground-truth test cases, where the trace-based framework achieves the best precision-recall balance (F1=0.90) while text-only evaluation matches on recall but generates 5x more false alarms. Phase 3 evaluates unknown risk discovery, uncovering 24 novel failures with zero overlap between functional testing and security red-teaming. Our results demonstrate that (1) the information available to the evaluation harness determines evaluation quality, (2) functional and security evaluation are complementary, and (3) LLM-based evaluation harnesses surface subtle errors that human reviewers miss. We recommend a two-framework strategy: trace-based evaluation for functional assessment and adversarial red-teaming for security validation.",
+            "text": "Deploying LLM-based analytics agents in enterprise settings requires evaluation frameworks that can reliably detect failures across complex, multi-tool workflows. We present a three-phase comparative study of three evaluation frameworks, each representing a distinct evaluation paradigm (trace-based LLM judging, text-only LLM judging with red-teaming, and deterministic heuristics), applied to two analytics agents in a controlled research setting using frozen execution traces. Phase 1 quantifies evaluation harness stability through repeated measurements, finding that 97% of configurations meet the stability threshold and that stability patterns are agent-independent. Phase 2 measures known risk detection on 72 ground-truth test cases, where the trace-based framework achieves the best precision-recall balance (F1=0.90) while text-only evaluation matches on recall but generates 5x more false alarms. Phase 3 evaluates unknown risk discovery, uncovering 24 novel failures with zero overlap between functional testing and security red-teaming. Our results demonstrate that (1) the information available to the evaluation harness determines evaluation quality, (2) functional and security evaluation are complementary, and (3) LLM-based evaluation harnesses surface subtle errors that human reviewers miss. We recommend a two-framework strategy: trace-based evaluation for functional assessment and adversarial red-teaming for security validation.",
+            "lead": "Deploying LLM-based analytics agents in enterprise settings requires evaluation frameworks that can reliably detect failures across complex, multi-tool workflows. We present a three-phase comparative study of three evaluation frameworks, each representing a distinct evaluation paradigm (trace-based LLM judging, text-only LLM judging with red-teaming, and deterministic heuristics), applied to two analytics agents in a controlled research setting using froze",
+            "chars": 1453,
+            "shown": 1453,
+            "truncated": false
+          },
+          "categories": [
+            "cs.AI",
+            "cs.CL",
+            "cs.LG",
+            "cs.SE"
+          ],
+          "author": "Howard Zhang",
+          "lang": "en",
+          "tier": 3,
+          "trustCategory": true,
+          "declaredCategory": "ideas",
+          "metrics": {},
+          "quality": 7,
+          "score": 12.89,
+          "category": "tools",
+          "subcategory": "coding",
+          "practical": 1,
+          "slug": "cab8964f4822",
+          "action": 1,
+          "rank": 8.6,
+          "tags": [
+            "agent"
+          ]
         }
       ]
     },
@@ -1279,6 +1436,53 @@
       "id": "hardware",
       "label": "AI 硬件",
       "items": [
+        {
+          "sourceId": "lcz-hardware",
+          "sourceName": "抡锤者 AI硬件",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [
+            "rtx5080",
+            "strata",
+            "qwen-flash"
+          ],
+          "author": "ゆうみん",
+          "id": "2894",
+          "title": "【实测分享】单张 RTX 5080 16GB + 128GB 内存，用 Strata 跑 Qwen3.8-Flash-Next IQ3_S：全默认设置，输出 105～132 tok/s，12 万 token 长文 28 秒读完",
+          "url": "https://lcz.me/topic/2894",
+          "published": "2026-11-07T04:09:31.567Z",
+          "summary": "一句话总结（TL;DR） 单张 RTX 5080 16GB ＋ DDR5 128GB ，用 Strata v0.2.11 （引擎 0.1.57 ）跑 Qwen3.8-Flash-Next IQ3_S ，上下文 128K ， 一个参数都没调 （ strata launch 一路回车）。 输出速度： 标准测速中位数 105.6 ～ 132.1 tok/s ，短对话最高 169 tok/s 读题（prefill）速度： 4K～12 万 token 都稳定在 3,400 ～ 4,400 tok/s ； 120,598 token 的长文 28.2 秒 读完，读完后输出仍有 145.7 tok/s 长上下文找信息： 4.1 万、6.5 万、…",
+          "metrics": {
+            "points": 1,
+            "comments": 3,
+            "views": 372
+          },
+          "excellent": true,
+          "content": {
+            "html": "<blockquote><p><strong>一句话总结（TL;DR）</strong><br>单张<strong>RTX 5080 16GB</strong>＋<strong>DDR5 128GB</strong>，用<strong>Strata</strong><code>v0.2.11</code>（引擎<code>0.1.57</code>）跑<strong>Qwen3.8-Flash-Next IQ3_S</strong>，上下文<code>128K</code>，<strong>一个参数都没调</strong>（<code>strata launch</code>一路回车）。</p><ul><li><strong>输出速度：</strong>标准测速中位数<code>105.6 ～ 132.1 tok/s</code>，短对话最高<code>169 tok/s</code></li><li><strong>读题（prefill）速度：</strong>4K～12 万 token 都稳定在<code>3,400 ～ 4,400 tok/s</code>；<code>120,598 token</code>的长文<code>28.2 秒</code>读完，读完后输出仍有<code>145.7 tok/s</code></li><li><strong>长上下文找信息：</strong>4.1 万、6.5 万、12.1 万 token 的长文里各藏一条，<code>3 / 3</code>全部找对；标准测速的正确性检查<code>12 / 12</code>通过</li><li><strong>启动：</strong>第一次<code>约 55 秒</code>，停掉再启动<code>88.6 秒</code>；从下载到能回答一共<code>约 28 分钟</code></li><li><strong>占用：</strong>显存<code>14.7 / 16 GB</code>，内存<code>约 94 GB</code>，回答时 CPU<code>约 94%</code></li></ul></blockquote>\n<hr><h3>一、硬件环境与软件</h3>\n<blockquote><p><strong>配置一句话：</strong><code>Ryzen 9 9900X</code>＋<code>RTX 5080 16GB</code>＋<code>DDR5-5600 128GB</code>＋<code>PCIe 5.0 x16</code>＋<code>Windows 11 Pro</code></p></blockquote>\n<table><thead><tr><th>项目</th><th>规格与配置</th><th>备注</th></tr></thead><tbody><tr><td>显卡</td><td>NVIDIA GeForce<strong>RTX 5080 16GB</strong>（水冷版）</td><td>Blackwell（compute 12.0），显存<code>16,303 MiB</code>，功耗上限<code>360W</code>，驱动<code>616.92</code></td></tr><tr><td>CPU</td><td>AMD<strong>Ryzen 9 9900X</strong></td><td><code>12 核 24 线程</code>，Zen 5（支持 AVX-512）</td></tr><tr><td>内存</td><td><strong>128GB DDR5-5600</strong>（ADATA 64GB×2）</td><td>两根跑满<code>5600</code>，系统识别<code>125.6GB</code></td></tr><tr><td>主板</td><td>ASRock B850M Pro RS WiFi</td><td>BIOS<code>4.60</code>（2026-10-08）</td></tr><tr><td>PCIe</td><td>Gen 5 x16</td><td>Strata 实测主机→显卡<code>55.2 GB/s</code></td></tr><tr><td>硬盘</td><td>Crucial P310 2TB NVMe</td><td>模型和查找表都放在这块盘上</td></tr><tr><td>系统</td><td>Windows 11 Pro 26H2（build 26300）</td><td>电源计划「平衡」，没开大页内存</td></tr><tr><td>NVIDIA 设置</td><td>CUDA 系统内存回退策略＝「避免回退」</td><td>显存不够时直接报错，不会偷偷借内存变慢</td></tr><tr><td>推理引擎</td><td><strong>Strata</strong><code>0.2.11</code>（Terminal build<code>0.1.57</code>，引擎<code>0.1.57</code>windows-x86_64-cuda13）</td><td>2026-11-05 发布</td></tr><tr><td>模型</td><td><strong>Qwen3.8-Flash-Next IQ3_S</strong>（ISTA-DASLab GSQ-RCO 版，1250 亿参数 MoE）</td><td>两个文件：主体<code>54.8GB</code>＋查找表（PLE）<code>28.8GB</code>。另有读图部件<code>0.9GB</code>、DFlash2 起草模型</td></tr><tr><td>网络</td><td>Wi-Fi 6，5GHz，连接速率<code>1201Mbps</code></td><td>没插网线</td></tr></tbody></table>\n<p><em>整机是 Sycom 的 BTO 台式机（Lepton Hydro WSB850A Cube），到货当天测的。测试期间没有跑其他重负载。</em></p>\n<hr><h3>二、Strata 自动选的设置（我们没改）</h3>\n<blockquote><p><strong>要点：</strong>只选了模型（Strata 也把 IQ3_S 标成这台的推荐档），其余全是 Strata 按这台电脑的配置自动决定的。显卡放<code>4,174 个</code>常用专家，全部专家和 PLE 查找表都锁在内存里。</p></blockquote>\n<ol><li><strong>专家放哪里</strong><ul><li>显卡上缓存<code>4,174 个</code>最常用的专家（约<code>7.96 GiB</code>显存）。</li></ul></li><li>全部专家（<code>46.84 GiB</code>）锁在内存里。</li><li><code>26.8 GiB</code>的 PLE 查找表也整个放进内存（<code>--ple-io ram</code>）。内存够大时 Strata 自动这样选，不用每个字都去读硬盘。</li><li><strong>上下文 128K，KV 用 int8</strong>：<code>--max-context 131072 --kv int8 --kv-resident 32768</code>。最近的<code>32K</code>放在显存，更早的放在<code>1.55 GiB</code>的锁页内存里。</li><li><strong>推测解码用 DFlash2</strong>：引擎 0.1.57 默认用 DFlash2 起草模型（占<code>625 MiB</code>显存），每次最多猜<code>6 个</code>token，不加载 MTP 层。代价是<strong>一次只能处理一个请求</strong>。</li><li><strong>读题分块</strong>：<code>--prefill auto</code>。在 NVIDIA 卡上每块最多<code>32,768 token</code>；<code>3,072 token</code>以下的小块会让空闲的 CPU 也帮忙算。</li><li><strong>对话缓存</strong>：按剩余内存自动开了<code>8 GiB</code>，最多停放<code>4 个</code>对话。智能体下一轮可以复用前面的提示，不用重读。</li><li><strong>读图</strong>：读图部件在 CPU 上跑（16GB 卡不够放它），不占显存。</li></ol>\n<hr><h3>三、完整启动命令</h3>\n<pre><code>:: 安装（PowerShell，不需要管理员）\nirm https://github.com/Niko1221/Strata/releases/latest/download/install.ps1 | iex\n:: 先看计划（不下载、不改任何东西）\nstrata launch --plan --family qwen --model IQ3_S\n:: 下载并启动（和 strata launch 一路回车的结果一样）\nstrata launch --family qwen --model IQ3_S --context 128k --vision cpu --tune skip --access local --port 8080 --yes --no-tui\n:: 标准测速（对正在运行的服务）\nstrata bench run --url http://127.0.0.1:8080\n:: 停止（8.6 秒，显存立刻释放）\nstrata launch --stop</code></pre>\n<p>Strata 实际写给引擎的参数（路径已省略）：</p>\n<pre><code>--pack …\\packs\\iq3_s --native …IQ3_S-00001-of-00002.gguf --ple-gguf …IQ3_S-00002-of-00002.gguf\n--expert-profile …\\expert-profile.bin --expert-cache auto --prefill auto --spec 4 --spec-min-p 0.5\n--mtp …\\mtp\\rt --max-context 131072 --kv int8 --kv-resident 32768 --vision</code></pre>\n<hr><h3>四、实测数据</h3>\n<h3>1. 标准测速（<code>strata bench run</code>，规程 strata-qwen38-thinking-v1-draft.1）</h3>\n<blockquote><p><strong>结果：</strong>输出<code>105.6 ～ 132.1 tok/s</code>，读题<code>3,406 ～ 4,425 tok/s</code>，出第一个 token<code>0.56 ～ 3.75 秒</code>；正确性检查<code>12 / 12</code>通过</p></blockquote>\n<p>固定题目，思考模式打开，每种长度各跑 3 次。模型装好后，整套测试<code>1 分 15 秒</code>跑完。</p>\n<table><thead><tr><th>题目长度</th><th>读题 tok/s</th><th>输出 tok/s</th><th>出第一个 token</th><th>一次请求总用时</th></tr></thead><tbody><tr><td>短题（约 80 token）</td><td>不计（太短）</td><td><code>120.6</code>（111.5～121.6）</td><td><code>0.56 秒</code></td><td>3.4 秒</td></tr><tr><td>4K（4,093 token）</td><td><code>3,406</code>（3,375～3,412）</td><td><code>105.6</code>（104.4～121.4）</td></tr></tbody></table>",
+            "text": "一句话总结（TL;DR）\n单张 RTX 5080 16GB ＋ DDR5 128GB ，用 Strata v0.2.11 （引擎 0.1.57 ）跑 Qwen3.8-Flash-Next IQ3_S ，上下文 128K ， 一个参数都没调 （ strata launch 一路回车）。\n输出速度： 标准测速中位数 105.6 ～ 132.1 tok/s ，短对话最高 169 tok/s\n读题（prefill）速度： 4K～12 万 token 都稳定在 3,400 ～ 4,400 tok/s ； 120,598 token 的长文 28.2 秒 读完，读完后输出仍有 145.7 tok/s\n长上下文找信息： 4.1 万、6.5 万、12.1 万 token 的长文里各藏一条， 3 / 3 全部找对；标准测速的正确性检查 12 / 12 通过\n启动： 第一次 约 55 秒 ，停掉再启动 88.6 秒 ；从下载到能回答一共 约 28 分钟\n占用： 显存 14.7 / 16 GB ，内存 约 94 GB ，回答时 CPU 约 94%\n一、硬件环境与软件\n配置一句话： Ryzen 9 9900X ＋ RTX 5080 16GB ＋ DDR5-5600 128GB ＋ PCIe 5.0 x16 ＋ Windows 11 Pro\n项目\n规格与配置\n备注\n显卡\nNVIDIA GeForce RTX 5080 16GB （水冷版）\nBlackwell（compute 12.0），显存 16,303 MiB ，功耗上限 360W ，驱动 616.92\nCPU\nAMD Ryzen 9 9900X\n12 核 24 线程 ，Zen 5（支持 AVX-512）\n内存\n128GB DDR5-5600 （ADATA 64GB×2）\n两根跑满 5600 ，系统识别 125.6GB\n主板\nASRock B850M Pro RS WiFi\nBIOS 4.60 （2026-10-08）\nPCIe\nGen 5 x16\nStrata 实测主机→显卡 55.2 GB/s\n硬盘\nCrucial P310 2TB NVMe\n模型和查找表都放在这块盘上\n系统\nWindows 11 Pro 26H2（build 26300）\n电源计划「平衡」，没开大页内存\nNVIDIA 设置\nCUDA 系统内存回退策略＝「避免回退」\n显存不够时直接报错，不会偷偷借内存变慢\n推理引擎\nStrata 0.2.11 （Terminal build 0.1.57 ，引擎 0.1.57 windows-x86_64-cuda13）\n2026-11-05 发布\n模型\nQwen3.8-Flash-Next IQ3_S （ISTA-DASLab GSQ-RCO 版，1250 亿参数 MoE）\n两个文件：主体 54.8GB ＋查找表（PLE） 28.8GB 。另有读图部件 0.9GB 、DFlash2 起草模型\n网络\nWi-Fi 6，5GHz，连接速率 1201Mbps\n没插网线\n整机是 Sycom 的 BTO 台式机（Lepton Hydro WSB850A Cube），到货当天测的。测试期间没有跑其他重负载。\n二、Strata 自动选的设置（我们没改）\n要点： 只选了模型（Strata 也把 IQ3_S 标成这台的推荐档），其余全是 Strata 按这台电脑的配置自动决定的。显卡放 4,174 个 常用专家，全部专家和 PLE 查找表都锁在内存里。\n专家放哪里 显卡上缓存 4,174 个 最常用的专家（约 7.96 GiB 显存）。\n全部专家（ 46.84 GiB ）锁在内存里。\n26.8 GiB 的 PLE 查找表也整个放进内存（ --ple-io ram ）。内存够大时 Strata 自动这样选，不用每个字都去读硬盘。\n上下文 128K，KV 用 int8 ： --max-context 131072 --kv int8 --kv-resident 32768 。最近的 32K 放在显存，更早的放在 1.55 GiB 的锁页内存里。\n推测解码用 DFlash2 ：引擎 0.1.57 默认用 DFlash2 起草模型（占 625 MiB 显存），每次最多猜 6 个 token，不加载 MTP 层。代价是 一次只能处理一个请求 。\n读题分块 ： --prefill auto 。在 NVIDIA 卡上每块最多 32,768 token ； 3,072 token 以下的小块会让空闲的 CPU 也帮忙算。\n对话缓存 ：按剩余内存自动开了 8 GiB ，最多停放 4 个 对话。智能体下一轮可以复用前面的提示，不用重读。\n读图 ：读图部件在 CPU 上跑（16GB 卡不够放它），不占显存。\n三、完整启动命令\n:: 安装（PowerShell，不需要管理员）\nirm https://github.com/Niko1221/Strata/releases/latest/download/install.ps1 | iex\n:: 先看计划（不下载、不改任何东西）\nstrata launch --plan --family qwen --model IQ3_S\n:: 下载并启动（和 strata launch 一路回车的结果一样）\nstrata launch --family qwen --model IQ3_S --context 128k --vision cpu --tune skip --access local --port 8080 --yes --no-tui\n:: 标准测速（对正在运行的服务）\nstrata bench run --url http://127.0.0.1:8080\n:: 停止（8.6 秒，显存立刻释放）\nstrata launch --stop\nStrata 实际写给引擎的参数（路径已省略）：\n--pack …\\packs\\iq3_s --native …IQ3_S-00001-of-00002.gguf --ple-gguf …IQ3_S-00002-of-00002.gguf\n--expert-profile …\\expert-profile.bin --expert-cache auto --prefill auto --spec 4 --spec-min-p 0.5\n--mtp …\\mtp\\rt --max-context 131072 --kv int8 --kv-resident 32768 --vision\n四、实测数据\n1. 标准测速（ strata bench run ，规程 strata-qwen38-thinking-v1-draft.1）\n结果： 输出 105.6 ～ 132.1 tok/s ，读题 3,406 ～ 4,425 tok/s ，出第一个 token 0.56 ～ 3.75 秒 ；正确性检查 12 / 12 通过\n固定题目，思考模式打开，每种长度各跑 3 次。模型装好后，整套测试 1 分 15 秒 跑完。\n题目长度\n读题 tok/s\n输出 tok/s\n出第一个 token\n一次请求总用时\n短题（约 80 token）\n不计（太短）\n120.6 （111.5～121.6）\n0.56 秒\n3.4 秒\n4K（4,093 token）\n3,406 （3,375～3,412）\n105.6 （104.4～121.4）",
+            "lead": "一句话总结（TL;DR）\n单张 RTX 5080 16GB ＋ DDR5 128GB ，用 Strata v0.2.11 （引擎 0.1.57 ）跑 Qwen3.8-Flash-Next IQ3_S ，上下文 128K ， 一个参数都没调 （ strata launch 一路回车）。\n输出速度： 标准测速中位数 105.6 ～ 132.1 tok/s ，短对话最高 169 tok/s\n读题（prefill）速度： 4K～12 万 token 都稳定在 3,400 ～ 4,400 tok/s ； 120,598 token 的长文 28.2 秒 读完，读完后输出仍有 145.7 tok/s\n长上下文找信息： 4.1 万、6.5 万、12.1 万 token 的长文里各藏一条， 3 / 3 全部找对；标准测速的正确性检查 12 / 12 通过\n启动： 第一次 约 55 秒 ，停掉再启动 88.6 秒 ；从下载到能回答一共 约 28 分钟\n占用： 显存 14.7 / 16 GB ，内存 约 94 GB ，回答时 ",
+            "chars": 8600,
+            "shown": 3200,
+            "truncated": true
+          },
+          "quality": 12,
+          "score": 12.3,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 3,
+          "slug": "2f5fccc7b5fc",
+          "action": 10,
+          "rank": 28,
+          "tags": [
+            "hardware",
+            "benchmark",
+            "tutorial",
+            "lowspec"
+          ]
+        },
         {
           "sourceId": "reddit-local-llama",
           "sourceName": "r/LocalLLaMA",
@@ -1360,6 +1564,45 @@
             "local",
             "tutorial",
             "generate"
+          ]
+        },
+        {
+          "sourceId": "lcz-hardware",
+          "sourceName": "抡锤者 AI硬件",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [
+            "rtx5080",
+            "minimax",
+            "视频生成"
+          ],
+          "author": "ゆうみん",
+          "id": "2895",
+          "title": "【实测分享】单张 RTX 5080 16GB 本地跑 MiniMax H3 视频：16GB 显存够用，FastH3 一条 10 秒镜头约 3 分钟（附官方 8 步 / Pika 6 步 / 三种输入对比）",
+          "url": "https://lcz.me/topic/2895",
+          "published": "2026-11-07T05:32:43.045Z",
+          "summary": "很赞，看了你的帖子，我把7900xtx退了，现在要转投N卡，我的主要用途是跑文生图，图生视频。不跑本本地LLM。目前考虑5080 16G/4080 32G魔改卡/rtx pro 4000 24G，我希望每次能生成10秒或者15秒1344x768的视频。请楼主给一些意见，谢谢 标签：rtx5080 / minimax / 视频生成",
+          "metrics": {
+            "points": 1,
+            "comments": 4,
+            "views": 496
+          },
+          "excellent": false,
+          "quality": 8,
+          "score": 12.93,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 3,
+          "slug": "2d22ac1d42e6",
+          "action": 6,
+          "rank": 17.6,
+          "tags": [
+            "lowspec",
+            "benchmark",
+            "generate",
+            "local"
           ]
         },
         {
@@ -1907,6 +2150,77 @@
           "action": 3,
           "rank": 13.8,
           "tags": []
+        },
+        {
+          "sourceId": "gh-releases",
+          "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "github-actions[bot]",
+          "id": "439467483",
+          "title": "ollama v0.40.16 发布",
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.40.16",
+          "published": "2026-11-09T18:21:19.000Z",
+          "summary": "Ripple Preview Ripple Preview from Ricursive Intelligence is a 65B dense model built for agentic coding.",
+          "content": {
+            "html": "<h4>Ripple Preview</h4>\n<p><a href=\"https://ollama.com/library/ripple-preview\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ripple Preview</a>from Ricursive Intelligence is a 65B dense model built for agentic coding.</p>\n<pre><code>ollama run ripple-preview</code></pre>\n<h4>What's Changed</h4>\n<ul><li>Qwen3.8 Flash Next uses about 27 GiB less memory on Apple silicon</li><li><code>ollama launch claude</code>always routes Claude Code to the selected model</li><li><code>ollama launch</code>explains when a cloud model has been retired</li><li><code>/v1/responses</code>respects<code>truncation</code>and no longer silently truncates by default</li><li><code>/v1/models</code>returns an empty list instead of<code>null</code>when no models are installed</li><li>CUDA 13.5 support for Windows on ARM</li><li>Updated llama.cpp</li></ul>\n<p><strong>Full Changelog</strong>: https://github.com/ollama/ollama/compare/v0.40.15...v0.40.16</p>",
+            "text": "Ripple Preview\nRipple Preview from Ricursive Intelligence is a 65B dense model built for agentic coding.\nollama run ripple-preview\nWhat's Changed\nQwen3.8 Flash Next uses about 27 GiB less memory on Apple silicon\nollama launch claude always routes Claude Code to the selected model\nollama launch explains when a cloud model has been retired\n/v1/responses respects truncation and no longer silently truncates by default\n/v1/models returns an empty list instead of null when no models are installed\nCUDA 13.5 support for Windows on ARM\nUpdated llama.cpp\nFull Changelog : https://github.com/ollama/ollama/compare/v0.40.15...v0.40.16",
+            "lead": "Ripple Preview\nRipple Preview from Ricursive Intelligence is a 65B dense model built for agentic coding.",
+            "chars": 642,
+            "shown": 642,
+            "truncated": false
+          },
+          "quality": 8,
+          "score": 17.85,
+          "category": "local",
+          "subcategory": "runtime",
+          "practical": 1,
+          "slug": "614244ac84aa",
+          "action": 3,
+          "rank": 12.8,
+          "tags": [
+            "local",
+            "agent"
+          ]
+        },
+        {
+          "sourceId": "lcz-llm",
+          "sourceName": "抡锤者 模型部署讨论",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [
+            "strata",
+            "本地模型"
+          ],
+          "author": "李化龙",
+          "id": "2872",
+          "title": "问一下 strata 的模型下载必须得用梯子才能快速下载吗",
+          "url": "https://lcz.me/topic/2872",
+          "published": "2026-11-05T12:04:41.337Z",
+          "summary": "用 aria2 直接怼，别用浏览器单线程： aria2c -c -x16 -s16 -k1M ［模型文件的直链］ -c 就是断点续传，Hugging Face 的 resolve 链接可以直接喂。国内先把 HF_ENDPOINT=https://hf-mirror.com 设上，huggingface-cli 走镜像；大文件也可以用 hf_transfer。 下完把模型目录指给 strata 的 setup 或 --model-path 就行，不用搬进默认缓存。 标签：strata / 本地模型",
+          "metrics": {
+            "points": 0,
+            "comments": 5,
+            "views": 340
+          },
+          "excellent": false,
+          "quality": 7,
+          "fallback": true,
+          "score": 8.93,
+          "category": "local",
+          "subcategory": "weights",
+          "practical": 1,
+          "slug": "a16ace76c38e",
+          "action": 3,
+          "rank": 11.8,
+          "tags": [
+            "local"
+          ]
         },
         {
           "sourceId": "gh-ecosystem",
