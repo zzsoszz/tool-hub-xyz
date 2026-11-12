@@ -1,0 +1,570 @@
+{
+  "day": "2026-11-13",
+  "reviewedAt": "2026-11-12T18:32:14.415Z",
+  "reviewer": "cloudflare/@cf/meta/llama-3.1-70b-instruct",
+  "note": "cloudflare/@cf/meta/llama-3.1-70b-instruct：复核 12 条，解析到 12 条判定",
+  "rules": {
+    "minItems": 3,
+    "minBodyChars": 120,
+    "minSummaryChars": 40,
+    "maxTags": 4,
+    "agentMaxItems": 12,
+    "agentBatch": 6,
+    "agentChars": 900,
+    "agentExcerptChars": 600
+  },
+  "passed": true,
+  "reasons": [],
+  "total": 23,
+  "blocked": [
+    "49bc7c27cde1",
+    "9a7f80b97f7b",
+    "eb25f680bb62",
+    "bc54bb9591e6"
+  ],
+  "survivors": 19,
+  "items": [
+    {
+      "slug": "49bc7c27cde1",
+      "title": "多模态“源神”！MiniMax开源SOTA生图模型，原生4K，一张两毛",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [
+        "generate",
+        "benchmark",
+        "free"
+      ],
+      "bodyChars": 4952,
+      "excerpt": "<!DOCTYPE html> < img id=\"wx_img\" src=\"https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png\" width=\"400\" height=\"400\"> 多模态“源神”！MiniMax开源SOTA生图模型，原生4K，一张两毛 Jay 2026-11-12 19:36:20 来源： 量子位 「CAD拆解」 Jay发自 凹非寺 量子位|公众号QbitAI 坏，真让MiniMax给多模态玩明白了😭。 继开源视频旗舰H3广受好评后，最新的图像模型—— H3-Image，再次席卷全网 。 热度最高的是「CAD拆解」，丢一张参考图，H3-Image能给你小手办直接开盒了。。。 还有给 宇树机器狗 CAD了的。 总之就是万物可拆解，还能给你把零件标好。 我自己也实测了一下，你还别说，真有点东西啊…… 除此之外，海外网友测下来，其他类型的复杂生图任务也是能Handle住的，比如—— 游戏 。 这这这，你不说，我还以为是GPT编程做出来的呢😭。 如果只是做点电商用的简单资产，就更轻松了。 但我没想到的是，这家伙居然是个文理双全？？ 保证智商的前提下，H3-Image的审美，也有点东西。 对了，还有件事。 这种质量的图像生成模型， 你跟我说居然是开源的？？？ 那还说啥了。 我宣布，Mini…",
+      "quality": 10,
+      "practical": 3,
+      "sourceName": "量子位",
+      "domain": "qbitai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "fail",
+        "reason": "内容过于关注新闻，缺乏实践性内容。"
+      },
+      "blocked": [
+        "模型复核不通过（内容过于关注新闻，缺乏实践性内容。）"
+      ]
+    },
+    {
+      "slug": "9a7f80b97f7b",
+      "title": "从通用大模型到学习过程智能，AI如何真正进入课堂？",
+      "category": "apps",
+      "subcategory": "life",
+      "tags": [
+        "agent",
+        "tutorial",
+        "money"
+      ],
+      "bodyChars": 4965,
+      "excerpt": "<!DOCTYPE html> < img id=\"wx_img\" src=\"https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png\" width=\"400\" height=\"400\"> 从通用大模型到学习过程智能，AI如何真正进入课堂？ 量子位的朋友们 2026-11-12 18:45:33 来源： 量子位 银河智学首席科学家邓澍军博士发表主题演讲 11 月 9 日晚，字节跳动原高级副总裁、今日头条及大力教育原CEO陈林以一篇《我为什么还要做教育？》正式公开再创业项目 “银河智学”，引发行业广泛关注：在大模型能力日趋通用的今天，重返教育深水区的陈林团队，究竟打算做出一款什么样的 AI 教育产品？ 两天后，这一问题在技术与课堂层面得到系统拆解。11月11日，在江苏无锡举行的第九届中国教育技术创新发展与应用成果大会上，银河智学首席科学家邓澍军博士发表《让每个孩子学会、会学、爱学——AI 支持规模化因材施教的探索与实践》主题演讲，详细分享了公司旗下产品“小鹿爱学”的技术架构与学校场景落地逻辑。 在邓澍军看来，大模型能够迅速生成解题步骤，却未必能回答 “学生为什么不会”。当通用模型成为基础设施，教育AI真正的分水岭在于能否深入学习过程——理解学科逻辑、识别个体认知差异，并将技术转化为真实课堂中可验证的学习效果。…",
+      "quality": 9,
+      "practical": 1,
+      "sourceName": "量子位",
+      "domain": "qbitai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "fail",
+        "reason": "内容与教育领域相关，但缺乏实践性内容。"
+      },
+      "blocked": [
+        "模型复核不通过（内容与教育领域相关，但缺乏实践性内容。）"
+      ]
+    },
+    {
+      "slug": "4880b09fc08a",
+      "title": "The viral voxel Pagoda locally on a 2020 old ThinkPad, no GPU, 16 GB RAM",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [
+        "lowspec",
+        "local",
+        "benchmark",
+        "agent"
+      ],
+      "bodyChars": 895,
+      "excerpt": "Tried the voxel pagoda prompt fully local, on a laptop that shouldn't run a 35B model. Setup ThinkPad from 2020, Ryzen 7 PRO 5850U, 16 GB RAM, no GPU, Windows Qwen3.6-35B-A3B Q4_K_M, 21 GB, bigger than the RAM BigMoeOnEdge v0.42, built-in agent Result 988 lines of HTML + Three.js, 11.8k tokens at 2.3 tok/s, about 1.5 h You see the code as it's written, then the page opens in the app Video sped up where marked How MoE: each token uses only a few experts Dense weights and a 2 GB expert cache stay in RAM, the rest streams from the SSD On top of llama.cpp, no fork Still slow Half the time is spen…",
+      "quality": 6,
+      "practical": 3,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容包括了实践步骤和数据，具有实践性。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "10dc2124ce20",
+      "title": "网云连：把分散的设备连成一个家",
+      "category": "apps",
+      "subcategory": "office",
+      "tags": [
+        "tutorial",
+        "money",
+        "privacy",
+        "hardware"
+      ],
+      "bodyChars": 2753,
+      "excerpt": "人在公司，文件却在家里的电脑上；出门在外，想使用 NAS 里的资料，却发现连不上？ 明明每台设备都能上网，为什么就不能互相连接呢？ 想解决这个问题，传统的方法可能需要公网 IP、端口映射、内网穿透，光听这些名词就已经头大了。 另外，在 AI 当道的今天，还需要躲避 安全漏洞 ，比如此前的 群晖勒索病毒攻击事件 ，如果把 NAS 藏在内网里，就可以更大限度的躲避这次攻击。 现在好了，一款新工具 网云连 ，不但可以帮你打通不同设备间的互联互通，还能阻挡网络攻击。 目录 网云连 – 给你的所有设备建一个家 登录网云连，进入用户控制台（ https://wangyunlian.com/console/ ）之后，第一眼看到的是： 先给你的设备建一个家 ： 这是青小蛙见过的类似工具中，说的最温柔，也是最容易理解的一次。 我们都知道，自己家中的网络设备可以互相访问。 那么把放在不同地方的设备都连入 这个家 ，也就实现了设备间的互相访问。 第二步：安装第一台设备 创建了家之后，就需要把设备接入家中了。 首先需要 下载客户端程序 。 网云连支持 Windows、macOS、Linux、OpenWrt，甚至支持 Windows 7 SP1（32位）版本，这让很多因为没有安全更新而不敢联网的老设备，也能利用起来呀。 这里以 Windows 11 为例，下载客户端： 安装： 启动 & 注册： 使用微信扫…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "小众软件",
+      "domain": "appinn.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容包括了实践步骤和产品演示，具有实践性。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "bdde3294fae2",
+      "title": "MetaEncoder - a facebook Collection - One Encoder for Retrieval and Decision Making",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 1509,
+      "excerpt": "Multimodal System One Encoder with a natural language interface for instruction-following encoding: give it a task and a list of candidates , and it scores the candidates by task specification. Both a task and each candidate are expressed in natural language — instructions, queries, questions, state descriptions, criteria — with image and video as side information. Key features: Natural language interface. No rigid schemas. Describe the task and the candidates in free-form text. Highly-efficient cacheable representations. Candidates and task are encoded separately by prompt instructions that…",
+      "quality": 6,
+      "practical": 2,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容包括了实践步骤和产品演示，具有实践性。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "eb25f680bb62",
+      "title": "清算老黄马斯克，抗议数据中心建设，民主党胜选后各路妖魔鬼怪开始反智表演，两党撕裂或影响中美科技战走势，自断臂膀令人费解！",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [
+        "generate"
+      ],
+      "bodyChars": 6005,
+      "excerpt": "下午呢我睡得非常朦胧的时候啊，我姐来到我家，这个敲门一定把我闹起来，让我试一下这个皮夹克。哎我想呢，她肯定是知道我晚上要做视频谈老黄的事情是吧，给我送这个道具来了。那么这个皮夹克应该是在拼夕夕上买的呃，双11啊，刚好她回来的时候就把这个皮夹克给带上了。一般来说啊，我买衣服比较贵的都是我妹买的啊，我妹这个人比较小资。那么我姐呢，虽然经济状况是最好的啊，但是买的东西都是比较朴实无华啊。从这个时间呃时间线上面来研究啊，基本上可以断定，要么是拼夕夕，最高就是京东了啊，这个打折货。 咱这个皮夹克呢，跟老黄比起来就不能同日而语了。老黄的皮夹克是什么呢？据说里面装了一个空调啊，7×24小时保持恒温恒湿，啊搞不好还能防弹。啊就老黄的皮夹克呢，我不知道中国有没有什么这个山寨版，啊哪怕卖个肾，我也想去买一套研究一下，因为毕竟我一直都搞不清楚夏天是怎么把皮夹克穿在身上的。啊这也是相当牛批了。那么老黄的事情呢，讲实话还是他裤裆子里那点事是吧？据说现在除了黄了之外，啊黄了说是中国的间谍啊，就除了黄了之外呢，老黄现在又爆出来跟这个白人女高管，好像是什么生物部门的这个副总裁之间也有点说不清道不明的关系。 那么这个时候就有牛逼的人进场了，这些擅长阴谋论分析的人，他们说什么？老黄啊主动曝出这个出轨是吧，甚至不止出轨一个女人，就是自保，自污以自保。为什么呢？因为如果说是事情定义为出轨，啊那么就不用被这个什么叛国指控…",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "抡锤者 资讯",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "fail",
+        "reason": "内容过于关注新闻和阴谋论分析，缺乏实践性内容。"
+      },
+      "blocked": [
+        "模型复核不通过（内容过于关注新闻和阴谋论分析，缺乏实践性内容。）"
+      ]
+    },
+    {
+      "slug": "cabe391a95c9",
+      "title": "Coverage-Verified Sparse Attention: Closed-Loop Quality Control for Long-Context LLM Decoding",
+      "category": "apps",
+      "subcategory": "knowledge",
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 1199,
+      "excerpt": "Sparse attention accelerates long-context decoding by reading a subset of the KV cache, but existing methods are open-loop: the kernel commits to its selection with no signal indicating whether enough attention mass was preserved and no recovery path when it was not. The needed signal already exists inside the kernel. The fraction of softmax mass on the selected tokens, which we call coverage, satisfies an exact algebraic equality with per-step output error and serves a dual role as the acceptance criterion and the interpolation weight for recovery. Coverage-Verified Sparse Attention (CVSA) t…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv 检索（推理引擎与量化）",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "有具体技术细节和数据分析。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "f36faaea52d4",
+      "title": "用 Claude Code 自建了一个 Pixieset 替代品：选片、交付、下载、访问统计，跑在 Oracle 免费 VPS 上，月费 0",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "free",
+        "local",
+        "agent",
+        "lowspec"
+      ],
+      "bodyChars": 2374,
+      "excerpt": "身边的摄影师朋友交片都用 Pixieset，一年要付差不多 RM1000，空间不够还得升级。我自己一年交片量没那么多，越想越觉得不值 ，干脆自己搓一个。 预防针***我不是专业摄影师，纯属业余 (拍的不好已是常态hhh） 这篇记录从做网站到搬上免费服务器的完整过程。 先展示成果 ️ （手机查看比例会自动调整至手机版本的） 成品 客户端 ：发一个链接给客户，可以在线看、点 ♡ 选精修、写修图备注、单张或打包下载原图 后台 ：拖拽上传、看客户选了哪些、一键复制文件名丢进 Lightroom、按拍摄时间排序 访问统计 ：客户有没有打开过、看了哪几张、几点用手机还是电脑看、有没有下载 服务器 ：Oracle Cloud 免费 VPS（新加坡），服务器费用 0，只付域名钱 工具链 环节 工具 写代码、部署、排错 Claude Code（Opus） 后端 Node.js 24 + Express 5 数据库 SQLite（Node 自带的 node:sqlite） 缩略图、读 EXIF sharp 打包 ZIP archiver 后台拖动排序 SortableJS 服务器 Oracle Cloud Always Free（ARM A1） 对外访问 Cloudflare Tunnel 整个网站一个后端文件加几个网页，总共约 2000 行，依赖只有 6 个，前端没用框架。 1. 原理：一个客户相…",
+      "quality": 8,
+      "practical": 6,
+      "sourceName": "抡锤者 建站与网络赚钱",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "有实践性内容，包括具体的工具链和配置过程。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "ee3fd613bd4b",
+      "title": "Claude Code's API billing depends on how often the cache expires",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "agent",
+        "free"
+      ],
+      "bodyChars": 3941,
+      "excerpt": "Hello, HN! I’m Max, CTO at Hystax. We use Claude a lot in our development work, and we’re also trying to make coding agents cheaper to run. We built the open-source Kompressor for compressing identical tool outputs that agents constantly resend. In our Codex tests, we noticed a real cost reduction of 22.7%. But testing it with Claude Code, we found something completely different. In Claude Code, the cache plays a more crucial role than compression. Claude Code marks its messages with caching points. As a result, almost every request consists of a long cached prefix and a new, truncated final…",
+      "quality": 6,
+      "practical": 2,
+      "sourceName": "Hacker News Search",
+      "domain": "news.ycombinator.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "有具体技术细节和数据分析。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "16872e61447d",
+      "title": "op7418/guizang-game-skill",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "agent",
+        "generate"
+      ],
+      "bodyChars": 3812,
+      "excerpt": "<div align=\"center\"> <img src=\"media/icon.png\" width=\"96\" alt=\"雾锁山门\"> 歸藏 Game Skill 让 AI 从零做出一个能在浏览器里玩的 3D 动作游戏 [English](README.en.md) · 简体中文 ![试玩演示 ](https://op7418.github.io/guizang-game-skill/) ![License ](LICENSE) ![Stars ](https://github.com/op7418/guizang-game-skill/stargazers) <a href=\"https://op7418.github.io/guizang-game-skill/\"><img src=\"media/demo.gif\" width=\"720\" alt=\"雾锁山门战斗演示\"></a> *上面这段是演示游戏《雾锁山门》里的实机画面。 点这里直接玩 ，电脑和手机都能打开，不用安装。* </div> --- 这是什么 一个给 AI 编程助手（Claude Code、Codex 等）用的 Skill。装上之后，对它说\"做一个武侠题材的俯视角 3D 动作游戏\"，它会按一套走通过的流程去做：先问清楚你要什么，接上你手头的素材生成工具，自己推进画面、自己截图核对，最后把游戏打包成一个网页文件…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 新晋 AI 项目",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "有实践性内容，包括具体的工具链和配置过程。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "bc54bb9591e6",
+      "title": "Phota Labs uses AI to turn everyday photos into professional-looking shots",
+      "category": "tools",
+      "subcategory": null,
+      "tags": [],
+      "bodyChars": 201,
+      "excerpt": "Rather than giving consumers yet another photo-editing tool, Phota Labs aims to use advances in AI to automate the editing process so it’s easier for anyone to turn everyday moments into better photos.",
+      "quality": 7,
+      "practical": 1,
+      "sourceName": "TechCrunch AI",
+      "domain": "techcrunch.com",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "没有具体技术细节或实践性内容，仅为新闻转述。"
+      },
+      "blocked": [
+        "模型复核不通过（没有具体技术细节或实践性内容，仅为新闻转述。）"
+      ]
+    },
+    {
+      "slug": "5c874530bf05",
+      "title": "MiniMax H3 视频三卡实测：RTX PRO 5000 / R9700 / Arc Pro B70，Pika 六步 + 各自官方加速",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "lowspec",
+        "benchmark",
+        "tutorial",
+        "generate"
+      ],
+      "bodyChars": 6129,
+      "excerpt": "今天翻出来B70,对比一下R9700和pro5000做了个对比。我没有4080（S） 32G的魔改卡，否则三款价格差不多的32G卡对比起来更直观，有的兄弟可以试试。 结果有点出乎预料，比想象中要好不少，大家有B70了可以帮忙复测一下。 同一素材、同一 Pika 六步、同一 seed，在 NVIDIA RTX PRO 5000（48G）、AMD Radeon AI PRO R9700（32G）、Intel Arc Pro B70（32G）上各跑一轮，并且每张卡都启用各自官方的加速手段：SageAttention / CK flash attention / SOL Attentio。 一句话结论 ：同一个 MiniMax H3 T2VA 工作流（同素材、同 Pika 六步、同 seed、124 帧 5.17s），1344×768 下三卡总耗时为 RTX PRO 5000（SageAttention）104.16s / Arc Pro B70 126.1s / R9700 234.1s ；864×480 下为 30.0s / 44.0s / 64–66s 。三张卡都启用了各自官方推荐的加速路径，本文把配置、每步时间和总耗时都贴出来，供参考。 一、测试环境 项目 RTX PRO 5000 Radeon AI PRO R9700 Arc Pro B70 架构 / 显存 Blackwell…",
+      "quality": 10,
+      "practical": 7,
+      "sourceName": "抡锤者 AI 音视频画图",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "有具体技术细节、数据对比和配置过程。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "ec755883f6df",
+      "title": "双路 X99＋256GB 内存＋RTX 3080 20GB 跑 Strata：Qwen3.8 IQ2_XS、IQ3_S、UD-Q4_K_XL 与 DeepSeek V4.1 Flash，8K～256K 输入实测",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "hardware",
+        "benchmark",
+        "local",
+        "lowspec"
+      ],
+      "bodyChars": 6056,
+      "excerpt": "本地跑大模型和视频生成，我是怎么选定这套双路 X99 的 这台机器是我单独买入配件组装的，11月8日才全部到货，主要用来在本地跑大模型，包括 MoE 和把部分模型权重卸载到内存；也打算做视频生成，偶尔在本地编程和做逆向。 一开始比了三条路：双路 E5 的 DDR4、单路霄龙 7443，还有双路 E5-2696 v3 的 DDR3。对我来说，大模型推理的算力主要看显卡，CPU 品牌没那么关键；更要紧的是内存能插到多大，以及能不能把预算留给显卡。DDR4 双路更贵，内存还不一定能一次插满；霄龙的单核性能和 PCIe 4.0 更好，但整机尤其是内存要贵一截，差出来的钱都够再买显卡了。最后定了双路 2696 v3 的 DDR3 平台，一次插满 8 条 32GB，总共 256GB。 主板选的是精粤 X99-8D3／2.5G，连两颗 2696 v3 和两座 B6S-99 六铜管散热器一起买的。同价位也看过华南 T8D（但没货）。精粤这边有双 2.5G 网口、双 NVMe 插槽、3 条 x16 外形的插槽，供电也够，；我还看到过同板型加 3080 20GB 跑通类似项目的例子，就定了它。不过两张三风扇卡在这块板上基本没法直接插（店家说可以 ），以后真要上双卡，可能得用延长线。 显卡没有直接上原版 24GB，先买了一张魔改 RTX 3080 20GB。同样预算里，20GB 显存跑量化模型、配合内…",
+      "quality": 9,
+      "practical": 5,
+      "sourceName": "抡锤者 AI硬件",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "d1afc527db34",
+      "title": "花了 10 美元在 Vast.ai 跑 H3：5080、4080 SUPER、5070 Ti 和双 7900 XTX 实测",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "lowspec",
+        "benchmark",
+        "tutorial"
+      ],
+      "bodyChars": 3084,
+      "excerpt": "为了决定本地 H3 工作流要不要加张 NVIDIA 卡，我在 Vast.ai 上租了几台机器，前后花了大约 10 美元。选卡时参考了 3DMark Time Spy 的分数档位，挑了几张和手头 RX 7900 XTX 有对照价值的卡：RTX 5080、RTX 4080 SUPER 和 RTX 5070 Ti。这里不是测游戏帧率，而是把我自己的 MiniMax H3 / Pika 工作流直接搬上去跑。 在 8 秒、1080p、7 张参考图这项里，5070 Ti 的 E2E 是 632 秒，双 7900 XTX TP2 是 1166 秒。测完后我买了张 5070 Ti 专门跑 H3，双 7900 XTX 留给 Strata。 1080p 这组用的是之前做的《雨伞》短片场景： YouTube 成片 。 测试设置 MiniMax H3 hybrid INT8-ConvRot 基座，Pika H3 Flex LoRA，strength 1.0。 LCM、CFG 1、6 steps、Sol-Attn，24 fps。 测了 8 秒 768p / S01 / 5 张参考图、15 秒 768p / S01–S03 / 7 张参考图，以及 8 秒 1080p / S01–S03 / 7 张参考图。 同规格对照复用同一组提示词、参考图和 seed。 E2E 从任务开始到 MP4 导出，包含 condi…",
+      "quality": 10,
+      "practical": 5,
+      "sourceName": "抡锤者 AI 音视频画图",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "269f4f812dd5",
+      "title": "自製魔改Strata MXFP4-RDNA，以AMD RX9070示範",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "lowspec",
+        "benchmark"
+      ],
+      "bodyChars": 3430,
+      "excerpt": "Strata MXFP4-RDNA：AMD GPU 專屬的百 G 級巨型 MoE 推論加速引擎 專案倉庫： https://github.com/dardeaw/strata-mxfp4-rdna 上游基底：Niko1221/Strata (0.2.10 + PR #3575) 一、專案定位與適用硬體 最近Radiance火紅，但是他附的Q4量化模型，對我的遊戲機內存只有64G非常不友善， 但我想到有個MXFP4量化模型，若再加上Q4量化KV我的系統是完全能開到256K上下文的， 於是我針對 AMD Radeon 顯卡（全面支援 RDNA3 與 RDNA4）深度調優的本地 推論引擎 。核心目標是讓單張消費級 AMD 顯示卡能夠流暢運算Qwen3.8-Flash-Next MXFP4，我用了RDNA3/RDNA4都有的int8矩陣加速，徹底釋放 AMD 矩陣核心（WMMA）與帶寬。 支援顯卡與架構 引擎啟動時會透過 gcnArchName 動態探測硬體能力，並編譯/調度各自架構專屬的硬體指令： AMD RDNA3 架構（gfx11xx：RX 7900 XTX / 7900 XT / 7800 XT / 7700 XT / 7600XT 等） ： 使用 RDNA3 原生 Int8 矩陣核心指令 __builtin_amdgcn_wmma_i32_16x16x16_iu8_w32 執行…",
+      "quality": 10,
+      "practical": 3,
+      "sourceName": "抡锤者 AI硬件",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "923bd4ddcc2c",
+      "title": "llama.cpp b12319 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial",
+        "agent"
+      ],
+      "bodyChars": 1747,
+      "excerpt": "<details open> sycl : use cached device-id in set_main_device (#32013) ggml_sycl_set_main_device() runs at the start of every graph compute. Its early-return check called dpct::get_current_device_id(), which locks the device manager mutex and looks up the thread-to-device map. Use the thread-local cached id that the rest of the backend already uses. Assisted-by: Claude Code Co-authored-by: zhaoyshine <zhaoyshine@users.noreply.github.com> </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/66785369> macOS/iOS: macOS Apple Silicon (arm64) ma…",
+      "quality": 8,
+      "practical": 4,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "a92b7f7fc3d7",
+      "title": "llama.cpp b12320 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1532,
+      "excerpt": "<details open> sycl : fix AOT for more than 4GB (#31873) fix aot for >4g garbage output issue; add --aot in build script correct the aot flag support no-xmx build, update the code for no-xmx building, rename nossl to no-ssl </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/66816265> macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubuntu 26.04 s390x (zDNN) Ubuntu x64 (…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "e7f1baa83671",
+      "title": "llama.cpp b12321 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1394,
+      "excerpt": "<details open> sycl: make oneDNN FA cache thread-safe and memoize runtime failures (#31138) </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/66830789> macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubuntu 26.04 s390x (zDNN) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu x64 (CUDA 13) - CUDA 13.5 libraries Ubuntu arm64 (CU…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "33135936f9bf",
+      "title": "Title: CUDA: few-row MMQ for BS 2-24 by anujj · Pull Request #31533 · ggml-org/llama.cpp",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "benchmark"
+      ],
+      "bodyChars": 1051,
+      "excerpt": "Speculative decoding (SPEED-Bench) llama-server -m Qwen3.8-27B-UD-Q4_K_M.gguf --mmproj mmproj-F16.gguf -ngl 999 --parallel 1 --batch-size 4096 --ubatch-size 1024 --ctx-size 180224 \\ --spec-type draft-dflash --spec-draft-n-max 7 --spec-draft-model Qwen3.8-27B-DFlash2-Q4_K_M.gguf --spec-draft-backend-sampling \\ --temp 1.0 --top-p 0.95 --top-k 20 --min-p 0.0 --presence-penalty 0.0 --repeat-penalty 1.0 python tools/server/bench/speed-bench/speed_bench.py --bench qualitative --category coding --osl 8192 --concurrency 1 GPU ms/step master ms/step PR speedup per step (95% CI) tok/s master tok/s PR f…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "961ae66e6d73",
+      "title": "KQuant - new quantization technique, 3.7× better quants for Qwen Flash Next 180B, Qwen 27B, 35B, 9B (measured in KL-divergence reduction) (MLX)",
+      "category": "local",
+      "subcategory": "weights",
+      "tags": [
+        "free",
+        "local",
+        "lowspec"
+      ],
+      "bodyChars": 3188,
+      "excerpt": "hey folks, im Alish, an ml engineer from Nace (folks behind Drex, an open source decision family model that hit #1 in Artificial analysis in decision index 2.1). Recently my cto gave me task to optimize quants for qwen4, so i dialed my uni proffesor from UoT and span up my Fable 5.2 and we cooooooked. starting with mlx (gguf tommorow). It's a pareto frontier on quantization for accuracy/size for qwen family models. Why we made these we have open sourced the fastest way to run 35b/27b on a mac( Kapitsa ) and we got tired of dumb quants. So we made our own KQuant . Open source Qwen packs for 4B…",
+      "quality": 7,
+      "practical": 3,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "986c374e4894",
+      "title": "linknimiball1974/ai-texture-forge",
+      "category": "local",
+      "subcategory": "weights",
+      "tags": [
+        "generate"
+      ],
+      "bodyChars": 7974,
+      "excerpt": "ai-texture-forge **An AI-powered texture forge for Blender — turn text prompts into seamless PBR materials, concept art and scene-wide projections with local or cloud diffusion models, straight inside the 3D viewport on Windows.** [download-url]: https://github.com/linknimiball1974/ai-texture-forge/releases ! License ! Python ! Platform ! Blender ! Stable Diffusion ! Status [![Download](docs/download-button.svg)][download-url] The forge in one scene: type weathered copper, green patina, seamless in the N-panel, pick a provider, and a tile-ready PBR set lands on the active object — color, roug…",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "GitHub 新晋 AI 项目",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "a63ba5c19ee8",
+      "title": "Show HN: A self-hosted PHP platform combining CMS, e-commerce and more, built-in",
+      "category": "local",
+      "subcategory": "weights",
+      "tags": [
+        "free",
+        "privacy"
+      ],
+      "bodyChars": 593,
+      "excerpt": "We used WordPress ourselves but struggled with ongoing maintenance. So we built an internal alternative CMS that met our needs. After two years of development, we decided to make it open source. You can try the live demo (credentials included), explore the source code, and read the documentation here: Try live demo: https://getvale.org/try-vale Source: https://github.com/MIDILLI-Tech/vale/ Docs: https://docs.getvale.org If you have any feedback, comments, or questions, I'd be happy to answer them! Comments URL: https://news.ycombinator.com/item?id=50469123 Points: 11 # Comments: 4",
+      "quality": 7,
+      "practical": 2,
+      "sourceName": "Show HN (AI)",
+      "domain": "getvale.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "d161d606217f",
+      "title": "libreagi - save OS models",
+      "category": "local",
+      "subcategory": "weights",
+      "tags": [
+        "local"
+      ],
+      "bodyChars": 1008,
+      "excerpt": "<!doctype html> Open weights, members only LibreAGI Open models should outlive the places that host them. LibreAGI is a private BitTorrent tracker where members keep copies of the models most likely to disappear. Apply to join Log in $ mktorrent -p -s libreagi -l 24 ./model 1 copy 12 copies Seeding pays by scarcity Credit grows with size and time, and a model with one copy earns four times the base rate. The rare ones need the most help. Weights from a known source Any format, from safetensors and GGUF to ONNX, under Apache-2.0, MIT or the Qwen Community License. Each file is checked against…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "Lobsters AI",
+      "domain": "libreagi.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    }
+  ]
+}
