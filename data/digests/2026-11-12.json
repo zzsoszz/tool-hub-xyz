@@ -1,6 +1,6 @@
 {
   "day": "2026-11-12",
-  "generatedAt": "2026-11-11T17:58:32.906Z",
+  "generatedAt": "2026-11-12T03:17:53.132Z",
   "timezone": "Asia/Shanghai",
   "windowHours": 48,
   "window": {
@@ -9,14 +9,14 @@
   },
   "counts": {
     "sources": 42,
-    "okSources": 40,
-    "fetched": 1137,
-    "duplicates": 755,
-    "carried": 0,
-    "added": 18,
-    "fallback": 0,
-    "lowQuality": 226,
-    "published": 18
+    "okSources": 41,
+    "fetched": 1155,
+    "duplicates": 762,
+    "carried": 13,
+    "added": 15,
+    "fallback": 1,
+    "lowQuality": 231,
+    "published": 33
   },
   "sources": [
     {
@@ -238,10 +238,10 @@
     {
       "id": "reddit-sideproject",
       "name": "r/SideProject",
-      "ok": false,
-      "items": 0,
+      "ok": true,
+      "items": 25,
       "queries": 1,
-      "error": "HTTP 429"
+      "error": null
     },
     {
       "id": "hn-money",
@@ -295,7 +295,7 @@
       "id": "lcz-selfmedia",
       "name": "抡锤者 自媒体运营",
       "ok": true,
-      "items": 27,
+      "items": 28,
       "queries": 1,
       "error": null
     },
@@ -335,7 +335,7 @@
       "id": "hn-ecosystem",
       "name": "HN 检索（本地推理生态）",
       "ok": true,
-      "items": 110,
+      "items": 102,
       "queries": 12,
       "error": null
     },
@@ -404,6 +404,48 @@
           ]
         },
         {
+          "sourceId": "simon-willison",
+          "sourceName": "Simon Willison",
+          "title": "Gemini Decisions API",
+          "url": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/",
+          "id": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/",
+          "published": "2026-11-11T22:03:25.000Z",
+          "summary": "Gemini Decisions API Google join Jev and OpenAI in the decision model category with \"Gemini Decision 1\". This new model API is almost identical to Jev: it supports the same three types of questions (yes/no, choice, and rubric-scoring) and even reuses Jev's term \"Noul\" for a yes/no question. It's priced the same as the…",
+          "content": {
+            "html": "<p><strong><a href=\"https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Gemini Decisions API</a></strong></p>\nGoogle join<a href=\"https://simonwillison.net/2026/Sep/21/jev/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Jev</a>\nand<a href=\"https://simonwillison.net/2026/Oct/6/llm-openai-decisions/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">OpenAI</a>\nin the decision model category with \"Gemini Decision 1\". This new model API is almost identical to Jev: it supports the same three types of questions (yes/no, choice, and rubric-scoring) and even reuses Jev's term \"Noul\" for a yes/no question.<p>It's priced the same as the GPT-6 Luna decision model: 10 cents per million input tokens, and output is free. Jev remains the cheapest of the three, at 4.2 cents per million.</p>\n<p>Jev is text (and JSON) only. OpenAI can handle text and images. Gemini Decision 1 is fully multi-model: it covers text, images, audio, video, and PDFs.</p>\n<p>I tested it against video by passing these questions to it along with my<a href=\"https://simonwillison.net/2026/Nov/10/yonkers-rises/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Yonkers stomping robot</a>video file:</p>\n<pre><code>dragon: Does this video have a dragon in it?\nrobot: Does this video have a robot in it?\nfrance: Is this video set in France?\nusa: Is this video set in the USA?</code></pre>\n<p>Jev and OpenAI both return 1.0 or 0.0 for yes/no questions, but Gemini insists on being a little less confident than that:</p>\n<div><pre>{<span>\"dragon\"</span>: {<span>\"type\"</span>:<span><span>\"</span></span>yes_no<span>\"</span>,<span>\"probability\"</span>:<span>0.04976021841520312</span>},<span>\"robot\"</span>: {<span>\"type\"</span>:<span><span>\"</span></span>yes_no<span>\"</span>,<span>\"probability\"</span>:<span>0.9234055387792485</span>},<span>\"france\"</span>: {<span>\"type\"</span>:<span><span>\"</span></span>yes_no<span>\"</span>,<span>\"probability\"</span>:<span>0.08329171353166241</span>},<span>\"usa\"</span>: {<span>\"type\"</span>:<span><span>\"</span></span>yes_no<span>\"</span>,<span>\"probability\"</span>:<span>0.9230459995157706</span>}\n}</pre></div>\n<p><small></small>Via<a href=\"https://news.ycombinator.com/item?id=50456791\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Hacker News</a></p>\n<p>Tags:<a href=\"https://simonwillison.net/tags/ai\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">ai</a>,<a href=\"https://simonwillison.net/tags/generative-ai\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">generative-ai</a>,<a href=\"https://simonwillison.net/tags/gemini\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">gemini</a>,<a href=\"https://simonwillison.net/tags/llm-release\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">llm-release</a>,<a href=\"https://simonwillison.net/tags/jev\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">jev</a>,<a href=\"https://simonwillison.net/tags/decision-models\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">decision-models</a></p>",
+            "text": "Gemini Decisions API\nGoogle join Jev\nand OpenAI\nin the decision model category with \"Gemini Decision 1\". This new model API is almost identical to Jev: it supports the same three types of questions (yes/no, choice, and rubric-scoring) and even reuses Jev's term \"Noul\" for a yes/no question. It's priced the same as the GPT-6 Luna decision model: 10 cents per million input tokens, and output is free. Jev remains the cheapest of the three, at 4.2 cents per million.\nJev is text (and JSON) only. OpenAI can handle text and images. Gemini Decision 1 is fully multi-model: it covers text, images, audio, video, and PDFs.\nI tested it against video by passing these questions to it along with my Yonkers stomping robot video file:\ndragon: Does this video have a dragon in it?\nrobot: Does this video have a robot in it?\nfrance: Is this video set in France?\nusa: Is this video set in the USA?\nJev and OpenAI both return 1.0 or 0.0 for yes/no questions, but Gemini insists on being a little less confident than that:\n{ \"dragon\" : { \"type\" : \" yes_no \" , \"probability\" : 0.04976021841520312 }, \"robot\" : { \"type\" : \" yes_no \" , \"probability\" : 0.9234055387792485 }, \"france\" : { \"type\" : \" yes_no \" , \"probability\" : 0.08329171353166241 }, \"usa\" : { \"type\" : \" yes_no \" , \"probability\" : 0.9230459995157706 }\n}\nVia Hacker News\nTags: ai , generative-ai , gemini , llm-release , jev , decision-models",
+            "lead": "Gemini Decisions API\nGoogle join Jev\nand OpenAI\nin the decision model category with \"Gemini Decision 1\". This new model API is almost identical to Jev: it supports the same three types of questions (yes/no, choice, and rubric-scoring) and even reuses Jev's term \"Noul\" for a yes/no question. It's priced the same as the GPT-6 Luna decision model: 10 cents per million input tokens, and output is free. Jev remains the cheapest of the three, at 4.2 cents per mi",
+            "chars": 1399,
+            "shown": 1399,
+            "truncated": false
+          },
+          "categories": [
+            "ai",
+            "generative-ai",
+            "gemini",
+            "llm-release",
+            "jev",
+            "decision-models"
+          ],
+          "author": "",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "tools",
+          "metrics": {},
+          "quality": 8,
+          "score": 18.76,
+          "category": "apps",
+          "subcategory": "creation",
+          "practical": 1,
+          "slug": "bb485df9f4f5",
+          "action": 3,
+          "rank": 12.8,
+          "tags": [
+            "free"
+          ]
+        },
+        {
           "sourceId": "hn-show-ai",
           "sourceName": "Show HN (AI)",
           "title": "Show HN: Klad, a paint app your coding agent can drive (source-available)",
@@ -440,6 +482,41 @@
           "tags": [
             "agent"
           ]
+        },
+        {
+          "sourceId": "reddit-local-llama",
+          "sourceName": "r/LocalLLaMA",
+          "title": "New Paper -> Unless Told Otherwise, an Open Language Model Says OpenAI Made It",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xtpqxm/new_paper_unless_told_otherwise_an_open_language/",
+          "id": "t3_1xtpqxm",
+          "published": "2026-11-11T18:36:37.000Z",
+          "summary": "Hi all I've just started r/LLMPsychology as I want to pursue research in this area with my own local hardware, and work with other people also exploring how AI minds think and behave. (I'm a psychology researcher with an AI hobby) Posting just on the off chance that any of you are also interested in sharing or conduct…",
+          "content": {
+            "html": "<div><p>Hi all I've just started<a href=\"https://www.reddit.com/r/LLMPsychology\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">r/LLMPsychology</a>as I want to pursue research in this area with my own local hardware, and work with other people also exploring how AI minds think and behave. (I'm a psychology researcher with an AI hobby)</p><p>Posting just on the off chance that any of you are also interested in sharing or conducting research - it would be super cool to get a community going.</p><p>To illustrate I also wanted to share this paper writing up some experiments I've been running with OLMo3 on my machine (which has publically available information and data on its training) - the central finding is that models don't always know who trained them, and by default will just assume it was OpenAI (or other companies, with a lot of randomness that also varies depending on what language you ask them in).</p><p>It's always bugged me that no one is ever quite sure if models are reliably able to say who made them, so I wanted to start doing some investigations into finding out how they even develop this self concept in the first place. From this work it seems like in the absence of a prompt explicitly telling the model, it will just confabulate.</p><p>Abstract posted below - and full preprint paper here<a href=\"https://llm-psychology.vercel.app/papers/factory-settings\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Factory Settings: Unless Told Otherwise, an Open Language Model Says OpenAI Made It — J Ansell</a>. Any replications or refutations welcome. A lot of the research process is automated and I'm trying to be as transparent as possible about what models and effort levels etc. were used and what they did - if it's still not for you that's fine.</p><h3>Abstract</h3><p>How does a chatbot learn which company made it? We traced the answer through the training of OLMo 3, an open model whose training data is public, and taught models made-up identities ourselves.</p><p>Unless it is told otherwise, OLMo 3 says OpenAI made it. Asked who created it, OLMo 3 names OpenAI in 62% of its answers before Ai2 trains it to hold conversations, and in 77% of answers once it is finished and released.</p><p>Chatbots usually get a hidden instruction from their maker at the start of each conversation, called a system prompt. OLMo 3's training conversations state its real name only about 40 times, and almost every time, the system prompt of that same conversation already tells it that it is Olmo, built by Ai2. The released chatbot's system prompt does not include its name.</p><p>To test whether that matters, we taught our own copy of the chatbot a made-up name with 24 example conversations. When the examples had no system prompt, the chatbot afterwards gave the new name in 92% of its answers. When each example also had a system prompt stating the name, as in OLMo 3's data, the chatbot never gave the new name once that system prompt was taken away.</p><p>Even a name that sticks is shallow: trained that its maker is in Oslo, the chatbot still says its makers are paid in dollars.</p><p>We also found two smaller effects. Training the chatbot on answers written by Claude, or by GPT, made it more likely to say Anthropic (Claude's maker) made it: about a quarter of its answers, against one in ten after answers written by people.…</p></div>",
+            "text": "Hi all I've just started r/LLMPsychology as I want to pursue research in this area with my own local hardware, and work with other people also exploring how AI minds think and behave. (I'm a psychology researcher with an AI hobby)\nPosting just on the off chance that any of you are also interested in sharing or conducting research - it would be super cool to get a community going.\nTo illustrate I also wanted to share this paper writing up some experiments I've been running with OLMo3 on my machine (which has publically available information and data on its training) - the central finding is that models don't always know who trained them, and by default will just assume it was OpenAI (or other companies, with a lot of randomness that also varies depending on what language you ask them in).\nIt's always bugged me that no one is ever quite sure if models are reliably able to say who made them, so I wanted to start doing some investigations into finding out how they even develop this self concept in the first place. From this work it seems like in the absence of a prompt explicitly telling the model, it will just confabulate.\nAbstract posted below - and full preprint paper here Factory Settings: Unless Told Otherwise, an Open Language Model Says OpenAI Made It — J Ansell . Any replications or refutations welcome. A lot of the research process is automated and I'm trying to be as transparent as possible about what models and effort levels etc. were used and what they did - if it's still not for you that's fine.\nAbstract\nHow does a chatbot learn which company made it? We traced the answer through the training of OLMo 3, an open model whose training data is public, and taught models made-up identities ourselves.\nUnless it is told otherwise, OLMo 3 says OpenAI made it. Asked who created it, OLMo 3 names OpenAI in 62% of its answers before Ai2 trains it to hold conversations, and in 77% of answers once it is finished and released.\nChatbots usually get a hidden instruction from their maker at the start of each conversation, called a system prompt. OLMo 3's training conversations state its real name only about 40 times, and almost every time, the system prompt of that same conversation already tells it that it is Olmo, built by Ai2. The released chatbot's system prompt does not include its name.\nTo test whether that matters, we taught our own copy of the chatbot a made-up name with 24 example conversations. When the examples had no system prompt, the chatbot afterwards gave the new name in 92% of its answers. When each example also had a system prompt stating the name, as in OLMo 3's data, the chatbot never gave the new name once that system prompt was taken away.\nEven a name that sticks is shallow: trained that its maker is in Oslo, the chatbot still says its makers are paid in dollars.\nWe also found two smaller effects. Training the chatbot on answers written by Claude, or by GPT, made it more likely to say Anthropic (Claude's maker) made it: about a quarter of its answers, against one in ten after answers written by people.…",
+            "lead": "Hi all I've just started r/LLMPsychology as I want to pursue research in this area with my own local hardware, and work with other people also exploring how AI minds think and behave. (I'm a psychology researcher with an AI hobby)\nPosting just on the off chance that any of you are also interested in sharing or conducting research - it would be super cool to get a community going.\nTo illustrate I also wanted to share this paper writing up some experiments I",
+            "chars": 3858,
+            "shown": 3081,
+            "truncated": true
+          },
+          "categories": [
+            "LocalLLaMA"
+          ],
+          "author": "/u/Tasty-Ad-3753",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "oss",
+          "metrics": {},
+          "quality": 6,
+          "score": 16.28,
+          "category": "apps",
+          "subcategory": "creation",
+          "practical": 2,
+          "slug": "333ca30f1494",
+          "action": 3,
+          "rank": 10.8,
+          "tags": []
         },
         {
           "sourceId": "arxiv-cs",
@@ -518,6 +595,80 @@
           "tags": [
             "local"
           ]
+        },
+        {
+          "sourceId": "arxiv-ecosystem",
+          "sourceName": "arXiv 检索（推理引擎与量化）",
+          "title": "Coverage-Verified Sparse Attention: Closed-Loop Quality Control for Long-Context LLM Decoding",
+          "url": "https://arxiv.org/abs/2611.10634v1",
+          "id": "http://arxiv.org/abs/2611.10634v1",
+          "published": "2026-11-07T10:22:27.000Z",
+          "summary": "Sparse attention accelerates long-context decoding by reading a subset of the KV cache, but existing methods are open-loop: the kernel commits to its selection with no signal indicating whether enough attention mass was preserved and no recovery path when it was not. The needed signal already exists inside the kernel.…",
+          "content": {
+            "html": "Sparse attention accelerates long-context decoding by reading a subset of the KV cache, but existing methods are open-loop: the kernel commits to its selection with no signal indicating whether enough attention mass was preserved and no recovery path when it was not. The needed signal already exists inside the kernel. The fraction of softmax mass on the selected tokens, which we call coverage, satisfies an exact algebraic equality with per-step output error and serves a dual role as the acceptance criterion and the interpolation weight for recovery. Coverage-Verified Sparse Attention (CVSA) turns coverage into a training-free, closed-loop verify-then-correct decode loop that accepts high-coverage drafts and recovers only the heads that fall short, with no sampling, no draft model, and no speculative-decoding infrastructure. Quality varies by only $0.14$ points across the threshold sweep; budget and scheduling ablations characterize the deployed operating point. On LongBench at 7B and 70B, CVSA comes within $1.13$ points of dense attention, statistically matching it at 70B, and it loses $0.8$ points on RULER; measured median decode-step speedup reaches $6.21\\times$ at 128K context.",
+            "text": "Sparse attention accelerates long-context decoding by reading a subset of the KV cache, but existing methods are open-loop: the kernel commits to its selection with no signal indicating whether enough attention mass was preserved and no recovery path when it was not. The needed signal already exists inside the kernel. The fraction of softmax mass on the selected tokens, which we call coverage, satisfies an exact algebraic equality with per-step output error and serves a dual role as the acceptance criterion and the interpolation weight for recovery. Coverage-Verified Sparse Attention (CVSA) turns coverage into a training-free, closed-loop verify-then-correct decode loop that accepts high-coverage drafts and recovers only the heads that fall short, with no sampling, no draft model, and no speculative-decoding infrastructure. Quality varies by only $0.14$ points across the threshold sweep; budget and scheduling ablations characterize the deployed operating point. On LongBench at 7B and 70B, CVSA comes within $1.13$ points of dense attention, statistically matching it at 70B, and it loses $0.8$ points on RULER; measured median decode-step speedup reaches $6.21\\times$ at 128K context.",
+            "lead": "Sparse attention accelerates long-context decoding by reading a subset of the KV cache, but existing methods are open-loop: the kernel commits to its selection with no signal indicating whether enough attention mass was preserved and no recovery path when it was not. The needed signal already exists inside the kernel. The fraction of softmax mass on the selected tokens, which we call coverage, satisfies an exact algebraic equality with per-step output erro",
+            "chars": 1199,
+            "shown": 1199,
+            "truncated": false
+          },
+          "categories": [
+            "cs.LG",
+            "cs.CL"
+          ],
+          "author": "Yan-Cheng Li",
+          "lang": "en",
+          "tier": 3,
+          "trustCategory": false,
+          "declaredCategory": "ideas",
+          "metrics": {},
+          "quality": 6,
+          "fallback": true,
+          "score": 3.4,
+          "category": "apps",
+          "subcategory": "knowledge",
+          "practical": 1,
+          "slug": "cabe391a95c9",
+          "action": 2,
+          "rank": 9.2,
+          "tags": [
+            "free"
+          ]
+        },
+        {
+          "sourceId": "reddit-local-llama",
+          "sourceName": "r/LocalLLaMA",
+          "title": "Android and IOS are ready for disruption",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xtqawn/android_and_ios_are_ready_for_disruption/",
+          "id": "t3_1xtqawn",
+          "published": "2026-11-11T18:57:24.000Z",
+          "summary": "AI first smartphones will be so much better. I have a wild imagination how I can customize my phone with AI. With an AI phone that makes changing all aspects of the phone easy, it would be lots of fun. I doubt Android and IOS will move solidly in that direction. Example: I'd like to use the multiple microphones to do…",
+          "content": {
+            "html": "<div><p>AI first smartphones will be so much better. I have a wild imagination how I can customize my phone with AI. With an AI phone that makes changing all aspects of the phone easy, it would be lots of fun.</p><p>I doubt Android and IOS will move solidly in that direction. Example: I'd like to use the multiple microphones to do a microphone array app, but limitations don't allow it. Would be nice if there is a group / crowd , such as a party speaking in a foreign language to isolate speakers and understand what they are saying. What do you think?</p><p>Update: Sam asks Samsung for AI phone.<a href=\"https://www.fnnews.com/news/202611111512469257\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://www.fnnews.com/news/202611111512469257</a>We want a device that does not interfere as much as possible by the AI, which is not an app, proactively approaches and manages the physical and virtual life.</p></div>\nsubmitted by<a href=\"https://www.reddit.com/user/Terminator857\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">/u/Terminator857</a>\n<br><span><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xtqawn/android_and_ios_are_ready_for_disruption/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[link]</a></span>\n<span><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xtqawn/android_and_ios_are_ready_for_disruption/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[comments]</a></span>",
+            "text": "AI first smartphones will be so much better. I have a wild imagination how I can customize my phone with AI. With an AI phone that makes changing all aspects of the phone easy, it would be lots of fun.\nI doubt Android and IOS will move solidly in that direction. Example: I'd like to use the multiple microphones to do a microphone array app, but limitations don't allow it. Would be nice if there is a group / crowd , such as a party speaking in a foreign language to isolate speakers and understand what they are saying. What do you think?\nUpdate: Sam asks Samsung for AI phone. https://www.fnnews.com/news/202611111512469257 We want a device that does not interfere as much as possible by the AI, which is not an app, proactively approaches and manages the physical and virtual life.\nsubmitted by /u/Terminator857\n[link]\n[comments]",
+            "lead": "AI first smartphones will be so much better. I have a wild imagination how I can customize my phone with AI. With an AI phone that makes changing all aspects of the phone easy, it would be lots of fun.\nI doubt Android and IOS will move solidly in that direction. Example: I'd like to use the multiple microphones to do a microphone array app, but limitations don't allow it. Would be nice if there is a group / crowd , such as a party speaking in a foreign lan",
+            "chars": 837,
+            "shown": 837,
+            "truncated": false
+          },
+          "categories": [
+            "LocalLLaMA"
+          ],
+          "author": "/u/Terminator857",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "oss",
+          "metrics": {},
+          "quality": 6,
+          "score": 12.7,
+          "category": "apps",
+          "subcategory": "life",
+          "practical": 1,
+          "slug": "c905a8e51471",
+          "action": 1,
+          "rank": 7.6,
+          "tags": []
         }
       ]
     },
@@ -561,6 +712,84 @@
           "tags": [
             "agent",
             "free"
+          ]
+        },
+        {
+          "sourceId": "simon-willison",
+          "sourceName": "Simon Willison",
+          "title": "Browse tools.simonwillison.net by tag",
+          "url": "https://simonwillison.net/2026/Nov/11/tools-tags/",
+          "id": "https://simonwillison.net/2026/Nov/11/tools-tags/",
+          "published": "2026-11-11T18:42:50.000Z",
+          "summary": "Browse tools.simonwillison.net by tag I've been wanting a better way to browse my collection of vibe-coded tools (244 and counting) for a while. I had a few Fable 5.2 credits left over before my weekly reset so I set it to work using tree-sitter to analyze the code for JavaScript APIs, libraries, and web API hosts use…",
+          "content": {
+            "html": "<p><strong><a href=\"https://tools.simonwillison.net/#tags\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Browse tools.simonwillison.net by tag</a></strong></p>\nI've been wanting a better way to browse my<a href=\"https://simonwillison.net/2026/Nov/11/tools-tags/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">collection of vibe-coded tools</a>\n(244 and counting) for a while. I had a few Fable 5.2 credits left over before my weekly reset so I set it to work using<a href=\"https://github.com/tree-sitter/py-tree-sitter\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">tree-sitter</a>\nto analyze the code for JavaScript APIs, libraries, and web API hosts used by each tool.<p>The homepage now features tag clouds for browsing by each of those categories of tag:</p>\n<p><a href=\"https://tools.simonwillison.net/#tags\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://static.simonwillison.net/static/2026/tools-tag-cloud.webp\" alt=\"Screenshot of two tag cloud sections where tags are sized by count. Browse by JavaScript libraries - Libraries loaded from a CDN by two or more tools. Select a \" loading=\"lazy\"></a><p>Tags:<a href=\"https://simonwillison.net/tags/javascript\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">javascript</a>,<a href=\"https://simonwillison.net/tags/tools\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">tools</a>,<a href=\"https://simonwillison.net/tags/ai\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">ai</a>,<a href=\"https://simonwillison.net/tags/generative-ai\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">generative-ai</a>,<a href=\"https://simonwillison.net/tags/llms\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">llms</a>,<a href=\"https://simonwillison.net/tags/claude\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">claude</a>,<a href=\"https://simonwillison.net/tags/vibe-coding\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">vibe-coding</a></p></p>",
+            "text": "Browse tools.simonwillison.net by tag\nI've been wanting a better way to browse my collection of vibe-coded tools\n(244 and counting) for a while. I had a few Fable 5.2 credits left over before my weekly reset so I set it to work using tree-sitter\nto analyze the code for JavaScript APIs, libraries, and web API hosts used by each tool. The homepage now features tag clouds for browsing by each of those categories of tag:\nTags: javascript , tools , ai , generative-ai , llms , claude , vibe-coding",
+            "lead": "Browse tools.simonwillison.net by tag\nI've been wanting a better way to browse my collection of vibe-coded tools\n(244 and counting) for a while. I had a few Fable 5.2 credits left over before my weekly reset so I set it to work using tree-sitter\nto analyze the code for JavaScript APIs, libraries, and web API hosts used by each tool. The homepage now features tag clouds for browsing by each of those categories of tag:",
+            "chars": 498,
+            "shown": 498,
+            "truncated": false
+          },
+          "categories": [
+            "javascript",
+            "tools",
+            "ai",
+            "generative-ai",
+            "llms",
+            "claude",
+            "vibe-coding"
+          ],
+          "author": "",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "tools",
+          "metrics": {},
+          "quality": 9,
+          "score": 18.08,
+          "category": "tools",
+          "subcategory": "coding",
+          "practical": 1,
+          "slug": "95dd2fdb0483",
+          "action": 2,
+          "rank": 12.2,
+          "tags": []
+        },
+        {
+          "sourceId": "reddit-local-llama",
+          "sourceName": "r/LocalLLaMA",
+          "title": "Architecture trends: From full to local attention",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xtvxtp/architecture_trends_from_full_to_local_attention/",
+          "id": "t3_1xtvxtp",
+          "published": "2026-11-11T22:38:09.000Z",
+          "summary": "Currently working towards a bigger open LLM roundup. But in the meantime, just one of the interesting trends that stood out. I.e., looks like the transition from full to hybrid attention continues. In 2025, there were still lots of full attention models, with a shift to \"some full attention\" hybrids. In the first half…",
+          "content": {
+            "html": "<table><tr><td><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xtvxtp/architecture_trends_from_full_to_local_attention/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://preview.redd.it/bjcpjuye921i1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=56f1fce69caf51dac98a71d730ebe527f42ca584\" alt=\"Architecture trends: From full to local attention\" loading=\"lazy\"></a></td><td><div><p>Currently working towards a bigger open LLM roundup. But in the meantime, just one of the interesting trends that stood out. I.e., looks like the transition from full to hybrid attention continues.</p><p>In 2025, there were still lots of full attention models, with a shift to \"some full attention\" hybrids.</p><p>In the first half of 2026, the trend towards \"some full attention\" hybrids continued.</p><p>And now, in the second half of 2026, we have a 50/50 split between \"some full attention\" hybrids and models that don't use full attention at all anymore. And yes, there are also no full attention models anymore.</p><p>The plot legend here means,</p><p>- Full attention throughout = Global MHA, GQA, dense MLA, CCA in EVERY layer.<br>- Some full attention = Full global attn mixed with: sliding-window/chunked attention, Gated DeltaNet, KDA, Mamba-2, Lightning Attention, convolutions, sparse attention.<br>- No full attention = Zero dense global layers.</p><p>The main implication is that the trend goes towards making long contexts cheaper to use. This means, it makes the architectures more suitable for long documents and conversations, large code bases, and of course agent usecases that rely on a lot of tool calls.</p><p>In particular, there are two distinct efficiency gains here:</p><p>1) Less attention computation, since sparse attention and the like select tokens or blocks from the context and performs the expensive attention operation from only that subset. (Note that it can still retrieve information from distant positions.)</p><p>2) Less memory for retaining context in some architectures, meaning that recurrent layers such as Gated DeltaNet maintain a fixed-size state. Of course, this saves memory, but compressing the history creates challenges for exact retrieval, so they are usually intermixed with traditional attention methods (sparse or full).</p><p>If you are interested in browsing through the architectures and do your own analyses, you can find all the figures and data in my architecture gallery:<a href=\"https://sebastianraschka.com/llm-architecture-gallery/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://sebastianraschka.com/llm-architecture-gallery/</a></p></div>submitted by<a href=\"https://www.reddit.com/user/seraschka\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">/u/seraschka</a><br><span><a href=\"https://i.redd.it/bjcpjuye921i1.jpeg\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[link]</a></span><span><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xtvxtp/architecture_trends_from_full_to_local_attention/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[comments]</a></span></td></tr></table>",
+            "text": "Currently working towards a bigger open LLM roundup. But in the meantime, just one of the interesting trends that stood out. I.e., looks like the transition from full to hybrid attention continues.\nIn 2025, there were still lots of full attention models, with a shift to \"some full attention\" hybrids.\nIn the first half of 2026, the trend towards \"some full attention\" hybrids continued.\nAnd now, in the second half of 2026, we have a 50/50 split between \"some full attention\" hybrids and models that don't use full attention at all anymore. And yes, there are also no full attention models anymore.\nThe plot legend here means,\n- Full attention throughout = Global MHA, GQA, dense MLA, CCA in EVERY layer.\n- Some full attention = Full global attn mixed with: sliding-window/chunked attention, Gated DeltaNet, KDA, Mamba-2, Lightning Attention, convolutions, sparse attention.\n- No full attention = Zero dense global layers.\nThe main implication is that the trend goes towards making long contexts cheaper to use. This means, it makes the architectures more suitable for long documents and conversations, large code bases, and of course agent usecases that rely on a lot of tool calls.\nIn particular, there are two distinct efficiency gains here:\n1) Less attention computation, since sparse attention and the like select tokens or blocks from the context and performs the expensive attention operation from only that subset. (Note that it can still retrieve information from distant positions.)\n2) Less memory for retaining context in some architectures, meaning that recurrent layers such as Gated DeltaNet maintain a fixed-size state. Of course, this saves memory, but compressing the history creates challenges for exact retrieval, so they are usually intermixed with traditional attention methods (sparse or full).\nIf you are interested in browsing through the architectures and do your own analyses, you can find all the figures and data in my architecture gallery: https://sebastianraschka.com/llm-architecture-gallery/\nsubmitted by /u/seraschka\n[link] [comments]",
+            "lead": "Currently working towards a bigger open LLM roundup. But in the meantime, just one of the interesting trends that stood out. I.e., looks like the transition from full to hybrid attention continues.\nIn 2025, there were still lots of full attention models, with a shift to \"some full attention\" hybrids.\nIn the first half of 2026, the trend towards \"some full attention\" hybrids continued.\nAnd now, in the second half of 2026, we have a 50/50 split between \"some",
+            "chars": 2088,
+            "shown": 2088,
+            "truncated": false
+          },
+          "categories": [
+            "LocalLLaMA"
+          ],
+          "author": "/u/seraschka",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "oss",
+          "metrics": {},
+          "quality": 7,
+          "score": 15.41,
+          "category": "tools",
+          "subcategory": "coding",
+          "practical": 2,
+          "slug": "c8e06072f417",
+          "action": 2,
+          "rank": 10.2,
+          "tags": [
+            "agent"
           ]
         },
         {
@@ -739,6 +968,154 @@
           "declaredCategory": "local",
           "categories": [],
           "author": "github-actions[bot]",
+          "id": "442441013",
+          "title": "llama.cpp b12303 发布",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12303",
+          "published": "2026-11-12T02:55:34.000Z",
+          "summary": "jinja : support chained comparisons and argument unpacking (#32072) Website: Attestations: macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubuntu…",
+          "content": {
+            "html": "<p>&lt;details open&gt;</p>\n<p>jinja : support chained comparisons and argument unpacking (#32072)</p>\n<p>&lt;/details&gt;</p>\n<p><strong>Website:</strong></p>\n<ul><li>&lt;https://llama.app&gt;</li></ul>\n<p><strong>Attestations:</strong></p>\n<ul><li>&lt;https://github.com/ggml-org/llama.cpp/attestations/66518918&gt;</li></ul>\n<p><strong>macOS/iOS:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12303/llama-b12303-bin-macos-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">macOS Apple Silicon (arm64)</a></li><li>macOS Apple Silicon (arm64, KleidiAI enabled)<a href=\"https://github.com/ggml-org/llama.cpp/pull/23780\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">DISABLED</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12303/llama-b12303-bin-macos-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">macOS Intel (x64)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12303/llama-b12303-xcframework.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">iOS XCFramework</a></li></ul>\n<p><strong>Linux:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12303/llama-b12303-bin-ubuntu-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12303/llama-b12303-bin-ubuntu-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu arm64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12303/llama-b12303-bin-ubuntu-s390x.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu 24.04 s390x (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12303/llama-b12303-bin-ubuntu-26.04-s390x.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu 26.04 s390x (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12303/llama-b12303-bin-ubuntu-zdnn-s390x.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu 26.04 s390x (zDNN)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12303/llama-b12303-bin-ubuntu-vulkan-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12303/llama-b12303-bin-ubuntu-vulkan-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu arm64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12303/llama-b12303-bin-ubuntu-cuda-12.8-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (CUDA 12)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12303/cudart-llama-b12303-bin-ubuntu-cuda-12.8-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 12.8 libraries</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12303/llama-b12303-bin-ubuntu-cuda-13.5-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12303/cudart-llama-b12303-bin-ubuntu-cuda-13.5-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 libraries</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12303/llama-b12303-bin-ubuntu-cuda-13.5-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu arm64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12303/cudart-llama-b12303-bin-ubuntu-cuda-13.5-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 libraries</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12303/llama-b12303-bin-ubuntu-rocm-10.0-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (ROCm 10.0)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12303/llama-b12303-bin-ubuntu-openvino-2026.4.1-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (OpenVINO)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12303/llama-b12303-bin-ubuntu-sycl-fp32-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (SYCL FP32)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12303/llama-b12303-bin-ubuntu-sycl-fp16-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (SYCL FP16)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12303/llama-b12303-bin-linux-arm64-snapdragon.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Linux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/linux.md\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">setup guide</a></li></ul>\n<p><strong>Android:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12303/llama-b12303-bin-android-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Android arm64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12303/llama-b12303-bin-android-arm64-snapdragon.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Android arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/README.md\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">setup guide</a></li></ul>\n<p><strong>Windows:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12303/llama-b12303-bin-win-cpu-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12303/llama-b12303-bin-win-cpu-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12303/llama-b12303-bin-win-opencl-adreno-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (OpenCL Adreno)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12303/llama-b12303-bin-win-cuda-12.4-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (CUDA 12)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12303/cudart-llama-bin-win-cuda-12.4-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 12.4 DLLs</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12303/llama-b12303-bin-win-cuda-13.5-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12303/cudart-llama-bin-win-cuda-13.5-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 DLLs</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12303/llama-b12303-bin-win-cuda-13.5-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12303/cudart-llama-bin-win-cuda-13.5-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 DLLs</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12303/llama-b12303-bin-win-vulkan-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12303/llama-b12303-bin-win-vulkan-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12303/llama-b12303-bin-win-openvino-2026.4.1-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (OpenVINO)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12303/llama-b12303-bin-win-sycl-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (SYCL)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12303/llama-b12303-bin-win-rocm-10.0-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (ROCm 10.0)</a></li></ul>\n<p><strong>openEuler:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/pull/23705\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">DISABLED</a></li><li>openEuler x86 (310p)</li><li>openEuler x86 (910b, ACL Graph)</li><li>openEuler aarch64 (310p)</li><li>openEuler aarch64 (910b, ACL Graph)</li></ul>\n<p><strong>UI:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12303/llama-b12303-ui.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">UI</a></li></ul>",
+            "text": "<details open>\njinja : support chained comparisons and argument unpacking (#32072)\n</details>\nWebsite:\n<https://llama.app>\nAttestations:\n<https://github.com/ggml-org/llama.cpp/attestations/66518918>\nmacOS/iOS:\nmacOS Apple Silicon (arm64)\nmacOS Apple Silicon (arm64, KleidiAI enabled) DISABLED\nmacOS Intel (x64)\niOS XCFramework\nLinux:\nUbuntu x64 (CPU)\nUbuntu arm64 (CPU)\nUbuntu 24.04 s390x (CPU)\nUbuntu 26.04 s390x (CPU)\nUbuntu 26.04 s390x (zDNN)\nUbuntu x64 (Vulkan)\nUbuntu arm64 (Vulkan)\nUbuntu x64 (CUDA 12) - CUDA 12.8 libraries\nUbuntu x64 (CUDA 13) - CUDA 13.5 libraries\nUbuntu arm64 (CUDA 13) - CUDA 13.5 libraries\nUbuntu x64 (ROCm 10.0)\nUbuntu x64 (OpenVINO)\nUbuntu x64 (SYCL FP32)\nUbuntu x64 (SYCL FP16)\nLinux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide\nAndroid:\nAndroid arm64 (CPU)\nAndroid arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide\nWindows:\nWindows x64 (CPU)\nWindows arm64 (CPU)\nWindows arm64 (OpenCL Adreno)\nWindows x64 (CUDA 12) - CUDA 12.4 DLLs\nWindows x64 (CUDA 13) - CUDA 13.5 DLLs\nWindows arm64 (CUDA 13) - CUDA 13.5 DLLs\nWindows x64 (Vulkan)\nWindows arm64 (Vulkan)\nWindows x64 (OpenVINO)\nWindows x64 (SYCL)\nWindows x64 (ROCm 10.0)\nopenEuler:\nDISABLED\nopenEuler x86 (310p)\nopenEuler x86 (910b, ACL Graph)\nopenEuler aarch64 (310p)\nopenEuler aarch64 (910b, ACL Graph)\nUI:\nUI",
+            "lead": "<details open>\njinja : support chained comparisons and argument unpacking (#32072)\n</details>\nWebsite:\n<https://llama.app>\nAttestations:\n<https://github.com/ggml-org/llama.cpp/attestations/66518918>\nmacOS/iOS:\nmacOS Apple Silicon (arm64)\nmacOS Apple Silicon (arm64, KleidiAI enabled) DISABLED\nmacOS Intel (x64)\niOS XCFramework\nLinux:\nUbuntu x64 (CPU)\nUbuntu arm64 (CPU)\nUbuntu 24.04 s390x (CPU)\nUbuntu 26.04 s390x (CPU)\nUbuntu 26.04 s390x (zDNN)\nUbuntu x64 (Vu",
+            "chars": 1385,
+            "shown": 1385,
+            "truncated": false
+          },
+          "quality": 8,
+          "score": 21.97,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 2,
+          "slug": "b799a648f39e",
+          "action": 3,
+          "rank": 12.8,
+          "tags": [
+            "local",
+            "tutorial"
+          ]
+        },
+        {
+          "sourceId": "gh-releases",
+          "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "github-actions[bot]",
+          "id": "442419839",
+          "title": "llama.cpp b12302 发布",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12302",
+          "published": "2026-11-12T02:22:59.000Z",
+          "summary": "chat: allow TTS model to provide custom text normalizer via jinja (#32053) chat: allow TTS model to provide custom text normalizer via jinja rm tts_norm_is_reserved_name Website: Attestations: macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework",
+          "content": {
+            "html": "<p>&lt;details open&gt;</p>\n<p>chat: allow TTS model to provide custom text normalizer via jinja (#32053)</p>\n<ul><li>chat: allow TTS model to provide custom text normalizer via jinja</li></ul>\n<ul><li>rm tts_norm_is_reserved_name</li></ul>\n<p>&lt;/details&gt;</p>\n<p><strong>Website:</strong></p>\n<ul><li>&lt;https://llama.app&gt;</li></ul>\n<p><strong>Attestations:</strong></p>\n<ul><li>&lt;https://github.com/ggml-org/llama.cpp/attestations/66510183&gt;</li></ul>\n<p><strong>macOS/iOS:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12302/llama-b12302-bin-macos-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">macOS Apple Silicon (arm64)</a></li><li>macOS Apple Silicon (arm64, KleidiAI enabled)<a href=\"https://github.com/ggml-org/llama.cpp/pull/23780\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">DISABLED</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12302/llama-b12302-bin-macos-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">macOS Intel (x64)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12302/llama-b12302-xcframework.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">iOS XCFramework</a></li></ul>\n<p><strong>Linux:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12302/llama-b12302-bin-ubuntu-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12302/llama-b12302-bin-ubuntu-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu arm64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12302/llama-b12302-bin-ubuntu-s390x.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu 24.04 s390x (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12302/llama-b12302-bin-ubuntu-26.04-s390x.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu 26.04 s390x (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12302/llama-b12302-bin-ubuntu-zdnn-s390x.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu 26.04 s390x (zDNN)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12302/llama-b12302-bin-ubuntu-vulkan-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12302/llama-b12302-bin-ubuntu-vulkan-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu arm64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12302/llama-b12302-bin-ubuntu-cuda-12.8-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (CUDA 12)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12302/cudart-llama-b12302-bin-ubuntu-cuda-12.8-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 12.8 libraries</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12302/llama-b12302-bin-ubuntu-cuda-13.5-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12302/cudart-llama-b12302-bin-ubuntu-cuda-13.5-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 libraries</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12302/llama-b12302-bin-ubuntu-cuda-13.5-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu arm64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12302/cudart-llama-b12302-bin-ubuntu-cuda-13.5-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 libraries</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12302/llama-b12302-bin-ubuntu-rocm-10.0-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (ROCm 10.0)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12302/llama-b12302-bin-ubuntu-openvino-2026.4.1-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (OpenVINO)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12302/llama-b12302-bin-ubuntu-sycl-fp32-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (SYCL FP32)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12302/llama-b12302-bin-ubuntu-sycl-fp16-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (SYCL FP16)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12302/llama-b12302-bin-linux-arm64-snapdragon.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Linux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/linux.md\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">setup guide</a></li></ul>\n<p><strong>Android:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12302/llama-b12302-bin-android-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Android arm64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12302/llama-b12302-bin-android-arm64-snapdragon.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Android arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/README.md\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">setup guide</a></li></ul>\n<p><strong>Windows:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12302/llama-b12302-bin-win-cpu-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12302/llama-b12302-bin-win-cpu-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12302/llama-b12302-bin-win-opencl-adreno-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (OpenCL Adreno)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12302/llama-b12302-bin-win-cuda-12.4-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (CUDA 12)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12302/cudart-llama-bin-win-cuda-12.4-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 12.4 DLLs</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12302/llama-b12302-bin-win-cuda-13.5-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12302/cudart-llama-bin-win-cuda-13.5-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 DLLs</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12302/llama-b12302-bin-win-cuda-13.5-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12302/cudart-llama-bin-win-cuda-13.5-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 DLLs</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12302/llama-b12302-bin-win-vulkan-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12302/llama-b12302-bin-win-vulkan-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12302/llama-b12302-bin-win-openvino-2026.4.1-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (OpenVINO)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12302/llama-b12302-bin-win-sycl-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (SYCL)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12302/llama-b12302-bin-win-rocm-10.0-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (ROCm 10.0)</a></li></ul>\n<p><strong>openEuler:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/pull/23705\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">DISABLED</a></li><li>openEuler x86 (310p)</li><li>openEuler x86 (910b, ACL Graph)</li><li>openEuler aarch64 (310p)</li><li>openEuler aarch64 (910b, ACL Graph)</li></ul>\n<p><strong>UI:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12302/llama-b12302-ui.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">UI</a></li></ul>",
+            "text": "<details open>\nchat: allow TTS model to provide custom text normalizer via jinja (#32053)\nchat: allow TTS model to provide custom text normalizer via jinja\nrm tts_norm_is_reserved_name\n</details>\nWebsite:\n<https://llama.app>\nAttestations:\n<https://github.com/ggml-org/llama.cpp/attestations/66510183>\nmacOS/iOS:\nmacOS Apple Silicon (arm64)\nmacOS Apple Silicon (arm64, KleidiAI enabled) DISABLED\nmacOS Intel (x64)\niOS XCFramework\nLinux:\nUbuntu x64 (CPU)\nUbuntu arm64 (CPU)\nUbuntu 24.04 s390x (CPU)\nUbuntu 26.04 s390x (CPU)\nUbuntu 26.04 s390x (zDNN)\nUbuntu x64 (Vulkan)\nUbuntu arm64 (Vulkan)\nUbuntu x64 (CUDA 12) - CUDA 12.8 libraries\nUbuntu x64 (CUDA 13) - CUDA 13.5 libraries\nUbuntu arm64 (CUDA 13) - CUDA 13.5 libraries\nUbuntu x64 (ROCm 10.0)\nUbuntu x64 (OpenVINO)\nUbuntu x64 (SYCL FP32)\nUbuntu x64 (SYCL FP16)\nLinux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide\nAndroid:\nAndroid arm64 (CPU)\nAndroid arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide\nWindows:\nWindows x64 (CPU)\nWindows arm64 (CPU)\nWindows arm64 (OpenCL Adreno)\nWindows x64 (CUDA 12) - CUDA 12.4 DLLs\nWindows x64 (CUDA 13) - CUDA 13.5 DLLs\nWindows arm64 (CUDA 13) - CUDA 13.5 DLLs\nWindows x64 (Vulkan)\nWindows arm64 (Vulkan)\nWindows x64 (OpenVINO)\nWindows x64 (SYCL)\nWindows x64 (ROCm 10.0)\nopenEuler:\nDISABLED\nopenEuler x86 (310p)\nopenEuler x86 (910b, ACL Graph)\nopenEuler aarch64 (310p)\nopenEuler aarch64 (910b, ACL Graph)\nUI:\nUI",
+            "lead": "<details open>\nchat: allow TTS model to provide custom text normalizer via jinja (#32053)\nchat: allow TTS model to provide custom text normalizer via jinja\nrm tts_norm_is_reserved_name\n</details>\nWebsite:\n<https://llama.app>\nAttestations:\n<https://github.com/ggml-org/llama.cpp/attestations/66510183>\nmacOS/iOS:\nmacOS Apple Silicon (arm64)\nmacOS Apple Silicon (arm64, KleidiAI enabled) DISABLED\nmacOS Intel (x64)\niOS XCFramework",
+            "chars": 1491,
+            "shown": 1491,
+            "truncated": false
+          },
+          "quality": 8,
+          "score": 21.92,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 2,
+          "slug": "4068c2930e9f",
+          "action": 3,
+          "rank": 12.8,
+          "tags": [
+            "local",
+            "tutorial"
+          ]
+        },
+        {
+          "sourceId": "gh-releases",
+          "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "github-actions[bot]",
+          "id": "442167070",
+          "title": "llama.cpp b12292 发布",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12292",
+          "published": "2026-11-11T20:15:19.000Z",
+          "summary": "webgpu: add PAD_REFLECT_1D support (#31877) webgpu : add PAD_REFLECT_1D support webgpu: remove redundant PAD_REFLECT_1D contiguity check tests: simplify PAD_REFLECT_1D setup Website: Attestations: macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFram…",
+          "content": {
+            "html": "<p>&lt;details open&gt;</p>\n<p>webgpu: add PAD_REFLECT_1D support (#31877)</p>\n<ul><li>webgpu : add PAD_REFLECT_1D support</li></ul>\n<ul><li>webgpu: remove redundant PAD_REFLECT_1D contiguity check</li></ul>\n<ul><li>tests: simplify PAD_REFLECT_1D setup</li></ul>\n<p>&lt;/details&gt;</p>\n<p><strong>Website:</strong></p>\n<ul><li>&lt;https://llama.app&gt;</li></ul>\n<p><strong>Attestations:</strong></p>\n<ul><li>&lt;https://github.com/ggml-org/llama.cpp/attestations/66423627&gt;</li></ul>\n<p><strong>macOS/iOS:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12292/llama-b12292-bin-macos-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">macOS Apple Silicon (arm64)</a></li><li>macOS Apple Silicon (arm64, KleidiAI enabled)<a href=\"https://github.com/ggml-org/llama.cpp/pull/23780\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">DISABLED</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12292/llama-b12292-bin-macos-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">macOS Intel (x64)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12292/llama-b12292-xcframework.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">iOS XCFramework</a></li></ul>\n<p><strong>Linux:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12292/llama-b12292-bin-ubuntu-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12292/llama-b12292-bin-ubuntu-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu arm64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12292/llama-b12292-bin-ubuntu-s390x.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu 24.04 s390x (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12292/llama-b12292-bin-ubuntu-26.04-s390x.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu 26.04 s390x (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12292/llama-b12292-bin-ubuntu-zdnn-s390x.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu 26.04 s390x (zDNN)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12292/llama-b12292-bin-ubuntu-vulkan-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12292/llama-b12292-bin-ubuntu-vulkan-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu arm64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12292/llama-b12292-bin-ubuntu-cuda-12.8-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (CUDA 12)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12292/cudart-llama-b12292-bin-ubuntu-cuda-12.8-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 12.8 libraries</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12292/llama-b12292-bin-ubuntu-cuda-13.5-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12292/cudart-llama-b12292-bin-ubuntu-cuda-13.5-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 libraries</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12292/llama-b12292-bin-ubuntu-cuda-13.5-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu arm64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12292/cudart-llama-b12292-bin-ubuntu-cuda-13.5-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 libraries</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12292/llama-b12292-bin-ubuntu-rocm-10.0-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (ROCm 10.0)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12292/llama-b12292-bin-ubuntu-openvino-2026.4.1-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (OpenVINO)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12292/llama-b12292-bin-ubuntu-sycl-fp32-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (SYCL FP32)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12292/llama-b12292-bin-ubuntu-sycl-fp16-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (SYCL FP16)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12292/llama-b12292-bin-linux-arm64-snapdragon.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Linux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/linux.md\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">setup guide</a></li></ul>\n<p><strong>Android:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12292/llama-b12292-bin-android-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Android arm64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12292/llama-b12292-bin-android-arm64-snapdragon.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Android arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/README.md\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">setup guide</a></li></ul>\n<p><strong>Windows:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12292/llama-b12292-bin-win-cpu-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12292/llama-b12292-bin-win-cpu-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12292/llama-b12292-bin-win-opencl-adreno-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (OpenCL Adreno)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12292/llama-b12292-bin-win-cuda-12.4-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (CUDA 12)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12292/cudart-llama-bin-win-cuda-12.4-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 12.4 DLLs</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12292/llama-b12292-bin-win-cuda-13.5-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12292/cudart-llama-bin-win-cuda-13.5-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 DLLs</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12292/llama-b12292-bin-win-cuda-13.5-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12292/cudart-llama-bin-win-cuda-13.5-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 DLLs</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12292/llama-b12292-bin-win-vulkan-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12292/llama-b12292-bin-win-vulkan-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12292/llama-b12292-bin-win-openvino-2026.4.1-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (OpenVINO)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12292/llama-b12292-bin-win-sycl-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (SYCL)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12292/llama-b12292-bin-win-rocm-10.0-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (ROCm 10.0)</a></li></ul>\n<p><strong>openEuler:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/pull/23705\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">DISABLED</a></li><li>openEuler x86 (310p)</li><li>openEuler x86 (910b, ACL Graph)</li><li>openEuler aarch64 (310p)</li><li>openEuler aarch64 (910b, ACL Graph)</li></ul>\n<p><strong>UI:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12292/llama-b12292-ui.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">UI</a></li></ul>",
+            "text": "<details open>\nwebgpu: add PAD_REFLECT_1D support (#31877)\nwebgpu : add PAD_REFLECT_1D support\nwebgpu: remove redundant PAD_REFLECT_1D contiguity check\ntests: simplify PAD_REFLECT_1D setup\n</details>\nWebsite:\n<https://llama.app>\nAttestations:\n<https://github.com/ggml-org/llama.cpp/attestations/66423627>\nmacOS/iOS:\nmacOS Apple Silicon (arm64)\nmacOS Apple Silicon (arm64, KleidiAI enabled) DISABLED\nmacOS Intel (x64)\niOS XCFramework\nLinux:\nUbuntu x64 (CPU)\nUbuntu arm64 (CPU)\nUbuntu 24.04 s390x (CPU)\nUbuntu 26.04 s390x (CPU)\nUbuntu 26.04 s390x (zDNN)\nUbuntu x64 (Vulkan)\nUbuntu arm64 (Vulkan)\nUbuntu x64 (CUDA 12) - CUDA 12.8 libraries\nUbuntu x64 (CUDA 13) - CUDA 13.5 libraries\nUbuntu arm64 (CUDA 13) - CUDA 13.5 libraries\nUbuntu x64 (ROCm 10.0)\nUbuntu x64 (OpenVINO)\nUbuntu x64 (SYCL FP32)\nUbuntu x64 (SYCL FP16)\nLinux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide\nAndroid:\nAndroid arm64 (CPU)\nAndroid arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide\nWindows:\nWindows x64 (CPU)\nWindows arm64 (CPU)\nWindows arm64 (OpenCL Adreno)\nWindows x64 (CUDA 12) - CUDA 12.4 DLLs\nWindows x64 (CUDA 13) - CUDA 13.5 DLLs\nWindows arm64 (CUDA 13) - CUDA 13.5 DLLs\nWindows x64 (Vulkan)\nWindows arm64 (Vulkan)\nWindows x64 (OpenVINO)\nWindows x64 (SYCL)\nWindows x64 (ROCm 10.0)\nopenEuler:\nDISABLED\nopenEuler x86 (310p)\nopenEuler x86 (910b, ACL Graph)\nopenEuler aarch64 (310p)\nopenEuler aarch64 (910b, ACL Graph)\nUI:\nUI",
+            "lead": "<details open>\nwebgpu: add PAD_REFLECT_1D support (#31877)\nwebgpu : add PAD_REFLECT_1D support\nwebgpu: remove redundant PAD_REFLECT_1D contiguity check\ntests: simplify PAD_REFLECT_1D setup\n</details>\nWebsite:\n<https://llama.app>\nAttestations:\n<https://github.com/ggml-org/llama.cpp/attestations/66423627>\nmacOS/iOS:\nmacOS Apple Silicon (arm64)\nmacOS Apple Silicon (arm64, KleidiAI enabled) DISABLED\nmacOS Intel (x64)\niOS XCFramework",
+            "chars": 1497,
+            "shown": 1497,
+            "truncated": false
+          },
+          "quality": 8,
+          "score": 21.41,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 2,
+          "slug": "327b7eaa3f76",
+          "action": 3,
+          "rank": 12.8,
+          "tags": [
+            "local",
+            "tutorial"
+          ]
+        },
+        {
+          "sourceId": "lcz-selfmedia",
+          "sourceName": "抡锤者 自媒体运营",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "money",
+          "categories": [],
+          "author": "ゆうみん",
+          "id": "2997",
+          "title": "新开了个油管频道：花 111 万日元买的 AI 主机，靠 AI 能不能回本（日语・收支全公开）",
+          "url": "https://lcz.me/topic/2997",
+          "published": "2026-11-12T03:03:18.668Z",
+          "summary": "大家好。之前在 AI硬件版发过几篇 RTX 5080 的实测帖。这台机器买下来一共花了 111 万 2450 日元 ，于是干脆开了一个油管频道，把「这笔钱靠 AI 能不能赚回来」做成日记。 频道：AIドパガキの奮闘日記 https://www.youtube.com/@AIdopagaki 第一集（4 分钟・日语）： https://youtu.be/hTNxC3A9vf8 频道做什么 主要介绍 AI 怎么用：实际去用各种 AI 工具，能用还是不能用、能赚还是不能赚，都试给大家看 收支每一集都用数字公开。目前回收率 0% （ −1,112,450 日元 ） 三条规矩：收支全晒、失败不藏、不夸大 第一集讲了什么 为什么花 111 万…",
+          "metrics": {
+            "points": 1,
+            "comments": 0,
+            "views": 7
+          },
+          "excellent": false,
+          "content": {
+            "html": "<p>大家好。之前在 AI硬件版发过几篇 RTX 5080 的实测帖。这台机器买下来一共花了<code>111 万 2450 日元</code>，于是干脆开了一个油管频道，把「这笔钱靠 AI 能不能赚回来」做成日记。</p>\n<blockquote><p>频道：AIドパガキの奮闘日記<br><a href=\"https://www.youtube.com/@AIdopagaki\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://www.youtube.com/@AIdopagaki</a><br>第一集（4 分钟・日语）：<a href=\"https://youtu.be/hTNxC3A9vf8\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://youtu.be/hTNxC3A9vf8</a></p></blockquote>\n<h3>频道做什么</h3>\n<ul><li>主要介绍 AI 怎么用：实际去用各种 AI 工具，能用还是不能用、能赚还是不能赚，都试给大家看</li><li>收支每一集都用数字公开。目前回收率<code>0%</code>（<code>−1,112,450 日元</code>）</li><li>三条规矩：收支全晒、失败不藏、不夸大</li></ul>\n<h3>第一集讲了什么</h3>\n<ul><li>为什么花 111 万买电脑：AI 订阅越订越多，想着「在自己家跑就能随便用」</li><li>机器：日本サイコム（Sycom）的 Lepton Hydro WSB850A Cube（Ryzen 9 9900X＋128GB 内存＋水冷 RTX 5080 16GB）</li><li>订单明细：标准配置<code>703,770</code>→ 内存换成 128GB<code>+334,160</code>→ SSD 换 2TB<code>+17,880</code>→ 3 年保修<code>+52,790</code>→ 运费<code>3,850</code></li><li>回本要多久：每月赚 1 万日元要<code>9 年 3 个月</code>，每月 5 万要<code>1 年 10 个月</code>，每月 10 万要<code>11 个月</code>（电费另算）</li></ul>\n<h3>这条片子是怎么做的</h3>\n<ul><li>配音：Gemini TTS（AI 声音，不是真人）</li><li>画面：用 Remotion 写代码做的动画，在这台 5080 上渲染，4 分钟的片子大约 2 分半出完</li><li>不露脸，不用真名</li></ul>\n<p>视频是日语的，面向日本观众；不懂日语的朋友看画面上的数字也能看懂大概。</p>\n<p>欢迎提意见。也欢迎告诉我想看哪个 AI 工具的实测，之后的选题会参考。</p>",
+            "text": "大家好。之前在 AI硬件版发过几篇 RTX 5080 的实测帖。这台机器买下来一共花了 111 万 2450 日元 ，于是干脆开了一个油管频道，把「这笔钱靠 AI 能不能赚回来」做成日记。\n频道：AIドパガキの奮闘日記\nhttps://www.youtube.com/@AIdopagaki\n第一集（4 分钟・日语）： https://youtu.be/hTNxC3A9vf8\n频道做什么\n主要介绍 AI 怎么用：实际去用各种 AI 工具，能用还是不能用、能赚还是不能赚，都试给大家看\n收支每一集都用数字公开。目前回收率 0% （ −1,112,450 日元 ）\n三条规矩：收支全晒、失败不藏、不夸大\n第一集讲了什么\n为什么花 111 万买电脑：AI 订阅越订越多，想着「在自己家跑就能随便用」\n机器：日本サイコム（Sycom）的 Lepton Hydro WSB850A Cube（Ryzen 9 9900X＋128GB 内存＋水冷 RTX 5080 16GB）\n订单明细：标准配置 703,770 → 内存换成 128GB +334,160 → SSD 换 2TB +17,880 → 3 年保修 +52,790 → 运费 3,850\n回本要多久：每月赚 1 万日元要 9 年 3 个月 ，每月 5 万要 1 年 10 个月 ，每月 10 万要 11 个月 （电费另算）\n这条片子是怎么做的\n配音：Gemini TTS（AI 声音，不是真人）\n画面：用 Remotion 写代码做的动画，在这台 5080 上渲染，4 分钟的片子大约 2 分半出完\n不露脸，不用真名\n视频是日语的，面向日本观众；不懂日语的朋友看画面上的数字也能看懂大概。\n欢迎提意见。也欢迎告诉我想看哪个 AI 工具的实测，之后的选题会参考。",
+            "lead": "大家好。之前在 AI硬件版发过几篇 RTX 5080 的实测帖。这台机器买下来一共花了 111 万 2450 日元 ，于是干脆开了一个油管频道，把「这笔钱靠 AI 能不能赚回来」做成日记。\n频道：AIドパガキの奮闘日記\nhttps://www.youtube.com/@AIdopagaki\n第一集（4 分钟・日语）： https://youtu.be/hTNxC3A9vf8\n频道做什么\n主要介绍 AI 怎么用：实际去用各种 AI 工具，能用还是不能用、能赚还是不能赚，都试给大家看\n收支每一集都用数字公开。目前回收率 0% （ −1,112,450 日元 ）\n三条规矩：收支全晒、失败不藏、不夸大\n第一集讲了什么\n为什么花 111 万买电脑：AI 订阅越订越多，想着「在自己家跑就能随便用」\n机器：日本サイコム（Sycom）的 Lepton Hydro WSB850A Cube（Ryzen 9 9900X＋128GB 内存＋水冷 RTX 5080 16GB）\n订单明细：标准配置 703,770 → 内存换成 12",
+            "chars": 780,
+            "shown": 780,
+            "truncated": false
+          },
+          "quality": 8,
+          "score": 19.48,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 3,
+          "slug": "cfb45eb1ea88",
+          "action": 3,
+          "rank": 12.8,
+          "tags": [
+            "generate",
+            "benchmark",
+            "tutorial",
+            "money"
+          ]
+        },
+        {
+          "sourceId": "gh-releases",
+          "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "github-actions[bot]",
           "id": "441713646",
           "title": "llama.cpp b12284 发布",
           "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12284",
@@ -850,6 +1227,52 @@
           ]
         },
         {
+          "sourceId": "github-trending",
+          "sourceName": "GitHub 新晋 AI 项目",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "oss",
+          "categories": [
+            "agentic-ai",
+            "ai-agents",
+            "browser-automation",
+            "chat",
+            "claude"
+          ],
+          "author": "agentes-chat",
+          "id": "1450794567",
+          "title": "agentes-chat/agentes-chat",
+          "url": "https://github.com/agentes-chat/agentes-chat",
+          "published": "2026-11-09T00:50:28.000Z",
+          "summary": "Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer and browser, routines, memory and approvals. Web, desktop and phone apps. Docker Compose + Postgres. AGPL-3.0. (★ 344 · Typ…",
+          "metrics": {
+            "stars": 344
+          },
+          "content": {
+            "html": "<p>&lt;p align=\"center\"&gt; &lt;a href=\"https://agentes.chat\"&gt;&lt;img src=\"apps/web/public/favicon.svg\" alt=\"agentes.chat\" width=\"96\"&gt;&lt;/a&gt; &lt;/p&gt;</p>\n<p>&lt;h1 align=\"center\"&gt;agentes.chat&lt;/h1&gt;</p>\n<p>&lt;p align=\"center\"&gt;&lt;b&gt;The open-source, self-hosted Slack alternative where your team and AI agents work together.&lt;/b&gt;&lt;/p&gt;</p>\n<p>&lt;p align=\"center\"&gt; &lt;a href=\"https://agentes.chat\"&gt;Website&lt;/a&gt; · &lt;a href=\"https://agentes.chat\"&gt;Cloud&lt;/a&gt; · &lt;a href=\"SELF_HOSTING.md\"&gt;Self-hosting&lt;/a&gt; · &lt;a href=\"#features\"&gt;Features&lt;/a&gt; · &lt;a href=\"https://github.com/agentes-chat/agentes-chat/discussions\"&gt;Discussions&lt;/a&gt; &lt;/p&gt;</p>\n<p>&lt;p align=\"center\"&gt; &lt;a href=\"LICENSE\"&gt;&lt;img src=\"https://img.shields.io/badge/license-AGPL--3.0-blue\" alt=\"License: AGPL-3.0\"&gt;&lt;/a&gt; &lt;a href=\"https://github.com/agentes-chat/agentes-chat/actions/workflows/ci.yml\"&gt;&lt;img src=\"https://github.com/agentes-chat/agentes-chat/actions/workflows/ci.yml/badge.svg\" alt=\"CI\"&gt;&lt;/a&gt; &lt;a href=\"https://github.com/agentes-chat/agentes-chat/pkgs/container/agentes\"&gt;&lt;img src=\"https://img.shields.io/badge/docker-ghcr.io%2Fagentes--chat%2Fagentes-2496ED?logo=docker&amp;logoColor=white\" alt=\"Docker image\"&gt;&lt;/a&gt; &lt;a href=\"https://github.com/agentes-chat/agentes-chat/stargazers\"&gt;&lt;img src=\"https://img.shields.io/github/stars/agentes-chat/agentes-chat?style=social\" alt=\"GitHub stars\"&gt;&lt;/a&gt; &lt;/p&gt;</p>\n<p>&lt;p align=\"center\"&gt; &lt;img src=\"docs/media/readme-hero.png\" alt=\"An agentes.chat channel where a product team and its AI agents ship a release together: test results, a fix, a review and a deploy waiting for approval\" width=\"100%\"&gt; &lt;/p&gt;</p>\n<p>Agents join your channels and DMs with a role, an owner and a budget, work where everyone can see, and ask before anything sensitive. They think with Claude, ChatGPT and Codex, Gemini, Grok or any OpenRouter model, use MCP tools, and get a computer and a browser of their own. Self-host it for free with your own model keys, or use agentes.chat Cloud: both run this same codebase.</p>\n<h4>Why agentes.chat</h4>\n<ul><li><strong>One conversation for people and agents.</strong>Agents are members of the workspace, not a sidebar</li></ul>\n<p>bot: they read the channel, answer when it's theirs to answer, and hand work back and forth.</p>\n<ul><li><strong>Safe by default.</strong>Merges, deploys and anything a connector marks sensitive wait for a person's</li></ul>\n<p>approval in the chat. Every model call is budgeted and recorded per agent.</p>\n<ul><li><strong>Agents that actually do the work.</strong>Their own computer, a real browser you can watch and take</li></ul>\n<p>over, Claude Code and Codex, routines on a schedule or an event, memory that learns.</p>\n<ul><li><strong>Yours to run.</strong>One command on a Linux server, Postgres as the only dependency, web, desktop and</li></ul>\n<p>phone apps that connect to your server.</p>\n<p>An open-source alternative to team chat with bolted-on AI bots, and to single-player agent apps such as Grok Bot, ChatGPT dots, OpenBot.run and OpenMausBot (all of which it imports from).</p>\n<h4>Quick start</h4>\n<ul><li><strong>Cloud:</strong>sign up at<a href=\"https://agentes.chat/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">agentes.chat</a>.</li><li><strong>Your own server</strong>(Linux):</li></ul>\n<pre><code>curl -fsSL https://agentes.chat/install | sh</code></pre>\n<p>It installs what's missing (Docker, after asking), and puts agentes.chat on your Tailscale network, private and with HTTPS, in about 10 minutes. [SELF_HOSTING.md](SELF_HOSTING.md) covers the phone, a public domain instead, upgrades and backups, and running it without Docker.</p>\n<p>Each organization adds its own model key (Claude, OpenAI, Gemini, DeepSeek, Kimi, Z.ai, MiniMax or OpenRouter) in the app.</p>\n<h4>Features</h4>\n<p>| Feature | Status | Notes | | --- | --- | --- | | Channels, threads and DMs | ✅ | Public and private channels, DMs with people and agents, and threads started from a message or a stretch of conversation, then followed, closed and archived. | | Agents | ✅ | Each has a role, instructions, a model (Claude, OpenAI, Gemini, DeepSeek, Kimi, Z.ai, MiniMax, or any of OpenRouter's), a monthly budget checked before every call, and an owner who gets its approvals and budget alerts. | | Router | ✅ | A message nobody @mentioned goes to the router.…</p>",
+            "text": "<p align=\"center\"> <a href=\"https://agentes.chat\"><img src=\"apps/web/public/favicon.svg\" alt=\"agentes.chat\" width=\"96\"></a> </p>\n<h1 align=\"center\">agentes.chat</h1>\n<p align=\"center\"><b>The open-source, self-hosted Slack alternative where your team and AI agents work together.</b></p>\n<p align=\"center\"> <a href=\"https://agentes.chat\">Website</a> · <a href=\"https://agentes.chat\">Cloud</a> · <a href=\"SELF_HOSTING.md\">Self-hosting</a> · <a href=\"#features\">Features</a> · <a href=\"https://github.com/agentes-chat/agentes-chat/discussions\">Discussions</a> </p>\n<p align=\"center\"> <a href=\"LICENSE\"><img src=\"https://img.shields.io/badge/license-AGPL--3.0-blue\" alt=\"License: AGPL-3.0\"></a> <a href=\"https://github.com/agentes-chat/agentes-chat/actions/workflows/ci.yml\"><img src=\"https://github.com/agentes-chat/agentes-chat/actions/workflows/ci.yml/badge.svg\" alt=\"CI\"></a> <a href=\"https://github.com/agentes-chat/agentes-chat/pkgs/container/agentes\"><img src=\"https://img.shields.io/badge/docker-ghcr.io%2Fagentes--chat%2Fagentes-2496ED?logo=docker&logoColor=white\" alt=\"Docker image\"></a> <a href=\"https://github.com/agentes-chat/agentes-chat/stargazers\"><img src=\"https://img.shields.io/github/stars/agentes-chat/agentes-chat?style=social\" alt=\"GitHub stars\"></a> </p>\n<p align=\"center\"> <img src=\"docs/media/readme-hero.png\" alt=\"An agentes.chat channel where a product team and its AI agents ship a release together: test results, a fix, a review and a deploy waiting for approval\" width=\"100%\"> </p>\nAgents join your channels and DMs with a role, an owner and a budget, work where everyone can see, and ask before anything sensitive. They think with Claude, ChatGPT and Codex, Gemini, Grok or any OpenRouter model, use MCP tools, and get a computer and a browser of their own. Self-host it for free with your own model keys, or use agentes.chat Cloud: both run this same codebase.\nWhy agentes.chat\nOne conversation for people and agents. Agents are members of the workspace, not a sidebar\nbot: they read the channel, answer when it's theirs to answer, and hand work back and forth.\nSafe by default. Merges, deploys and anything a connector marks sensitive wait for a person's\napproval in the chat. Every model call is budgeted and recorded per agent.\nAgents that actually do the work. Their own computer, a real browser you can watch and take\nover, Claude Code and Codex, routines on a schedule or an event, memory that learns.\nYours to run. One command on a Linux server, Postgres as the only dependency, web, desktop and\nphone apps that connect to your server.\nAn open-source alternative to team chat with bolted-on AI bots, and to single-player agent apps such as Grok Bot, ChatGPT dots, OpenBot.run and OpenMausBot (all of which it imports from).\nQuick start\nCloud: sign up at agentes.chat .\nYour own server (Linux):\ncurl -fsSL https://agentes.chat/install | sh\nIt installs what's missing (Docker, after asking), and puts agentes.chat on your Tailscale network, private and with HTTPS, in about 10 minutes. [SELF_HOSTING.md](SELF_HOSTING.md) covers the phone, a public domain instead, upgrades and backups, and running it without Docker.\nEach organization adds its own model key (Claude, OpenAI, Gemini, DeepSeek, Kimi, Z.ai, MiniMax or OpenRouter) in the app.\nFeatures\n| Feature | Status | Notes | | --- | --- | --- | | Channels, threads and DMs | ✅ | Public and private channels, DMs with people and agents, and threads started from a message or a stretch of conversation, then followed, closed and archived. | | Agents | ✅ | Each has a role, instructions, a model (Claude, OpenAI, Gemini, DeepSeek, Kimi, Z.ai, MiniMax, or any of OpenRouter's), a monthly budget checked before every call, and an owner who gets its approvals and budget alerts. | | Router | ✅ | A message nobody @mentioned goes to the router.…",
+            "lead": "<p align=\"center\"> <a href=\"https://agentes.chat\"><img src=\"apps/web/public/favicon.svg\" alt=\"agentes.chat\" width=\"96\"></a> </p>\n<h1 align=\"center\">agentes.chat</h1>\n<p align=\"center\"><b>The open-source, self-hosted Slack alternative where your team and AI agents work together.</b></p>\n<p align=\"center\"> <a href=\"https://agentes.chat\">Website</a> · <a href=\"https://agentes.chat\">Cloud</a> · <a href=\"SELF_HOSTING.md\">Self-hosting</a> · <a href=\"#features\">F",
+            "chars": 10256,
+            "shown": 3854,
+            "truncated": true
+          },
+          "quality": 10,
+          "score": 17.2,
+          "category": "local",
+          "subcategory": "selfhost",
+          "practical": 2,
+          "slug": "846f326218ac",
+          "action": 6,
+          "rank": 19.6,
+          "tags": [
+            "agent",
+            "local",
+            "free",
+            "privacy"
+          ]
+        },
+        {
           "sourceId": "hn-money",
           "sourceName": "HN 检索（独立开发与变现）",
           "lang": "en",
@@ -889,6 +1312,52 @@
           "action": 3,
           "rank": 13.8,
           "tags": []
+        },
+        {
+          "sourceId": "simon-willison",
+          "sourceName": "Simon Willison",
+          "title": "aws-emulator",
+          "url": "https://simonwillison.net/2026/Nov/11/aws-emulator/",
+          "id": "https://simonwillison.net/2026/Nov/11/aws-emulator/",
+          "published": "2026-11-11T21:18:30.000Z",
+          "summary": "aws-emulator Finally, an official emulator from AWS to run tests against a local clone of their many different services without having to provision a paid API key to do so. It's written in Rust by a huge swarm of agents - 29,684 commits in the first three weeks of the project. Swaminathan (Swami) Sivasubramanian wrote…",
+          "content": {
+            "html": "<p><strong><a href=\"https://github.com/aws/aws-emulator\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">aws-emulator</a></strong></p>\nFinally, an official emulator from AWS to run tests against a local clone of their many different services without having to provision a paid API key to do so.<p>It's written in Rust by a huge swarm of agents - 29,684 commits in the first three weeks of the project. Swaminathan (Swami) Sivasubramanian wrote about<a href=\"https://www.allthingsdistributed.com/2026/11/aws-emulator-and-the-engineers-job-when-agents-write-the-code.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">how it came to be</a>in a guest post on Werner Vogels' blog.</p>\n<p>It currently requires Docker to run on macOS or Windows. I'm hoping they fix that in the future - it would be great if you could download a single binary and use that as part of a standard test suite in other languages and on other platforms.<p>Tags:<a href=\"https://simonwillison.net/tags/amazon\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">amazon</a>,<a href=\"https://simonwillison.net/tags/amazon-web-services\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">amazon-web-services</a>,<a href=\"https://simonwillison.net/tags/testing\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">testing</a>,<a href=\"https://simonwillison.net/tags/werner-vogels\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">werner-vogels</a>,<a href=\"https://simonwillison.net/tags/ai\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">ai</a>,<a href=\"https://simonwillison.net/tags/rust\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">rust</a>,<a href=\"https://simonwillison.net/tags/docker\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">docker</a>,<a href=\"https://simonwillison.net/tags/generative-ai\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">generative-ai</a>,<a href=\"https://simonwillison.net/tags/llms\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">llms</a>,<a href=\"https://simonwillison.net/tags/agentic-engineering\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">agentic-engineering</a></p></p>",
+            "text": "aws-emulator\nFinally, an official emulator from AWS to run tests against a local clone of their many different services without having to provision a paid API key to do so. It's written in Rust by a huge swarm of agents - 29,684 commits in the first three weeks of the project. Swaminathan (Swami) Sivasubramanian wrote about how it came to be in a guest post on Werner Vogels' blog.\nIt currently requires Docker to run on macOS or Windows. I'm hoping they fix that in the future - it would be great if you could download a single binary and use that as part of a standard test suite in other languages and on other platforms. Tags: amazon , amazon-web-services , testing , werner-vogels , ai , rust , docker , generative-ai , llms , agentic-engineering",
+            "lead": "aws-emulator\nFinally, an official emulator from AWS to run tests against a local clone of their many different services without having to provision a paid API key to do so. It's written in Rust by a huge swarm of agents - 29,684 commits in the first three weeks of the project. Swaminathan (Swami) Sivasubramanian wrote about how it came to be in a guest post on Werner Vogels' blog.\nIt currently requires Docker to run on macOS or Windows. I'm hoping they fix",
+            "chars": 757,
+            "shown": 757,
+            "truncated": false
+          },
+          "categories": [
+            "amazon",
+            "amazon-web-services",
+            "testing",
+            "werner-vogels",
+            "ai",
+            "rust",
+            "docker",
+            "generative-ai",
+            "llms",
+            "agentic-engineering"
+          ],
+          "author": "",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "tools",
+          "metrics": {},
+          "quality": 8,
+          "score": 18.3,
+          "category": "local",
+          "subcategory": "selfhost",
+          "practical": 1,
+          "slug": "02f705171aa9",
+          "action": 3,
+          "rank": 12.8,
+          "tags": [
+            "local"
+          ]
         },
         {
           "sourceId": "reddit-local-llama",
@@ -963,6 +1432,41 @@
           "tags": [
             "local"
           ]
+        },
+        {
+          "sourceId": "reddit-local-llama",
+          "sourceName": "r/LocalLLaMA",
+          "title": "I released Inflect v3: lightweight local TTS in 34M parameters (Apache 2.0)",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xtzwxf/i_released_inflect_v3_lightweight_local_tts_in/",
+          "id": "t3_1xtzwxf",
+          "published": "2026-11-12T01:36:10.000Z",
+          "summary": "Today I’m releasing Inflect v3: a family of local text-to-speech models: Mini, Micro, and Atom. Mini is the main model, with six voices and 34.31M parameters Mini provides vocal-event tags, reference voice-tuning, and 48 kHz enhancement. It runs on both CPU and CUDA. GitHub, installation, and examples: https://github.…",
+          "content": {
+            "html": "<table><tr><td><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xtzwxf/i_released_inflect_v3_lightweight_local_tts_in/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://external-preview.redd.it/emJxbmszaW0yMzFpMb6-hNctCFtYF8Gl9qgiWWG6vmdSWxoYGdJFNmcRTCWK.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=4a0a5bb808d8ef9c3f1b7ee60c97cb2e1e1f4f6e\" alt=\"I released Inflect v3: lightweight local TTS in 34M parameters (Apache 2.0)\" loading=\"lazy\"></a></td><td><div><p>Today I’m releasing<strong>Inflect v3:</strong>a family of local text-to-speech models: Mini, Micro, and Atom. Mini is the main model, with six voices and 34.31M parameters</p><p>Mini provides vocal-event tags, reference voice-tuning, and 48 kHz enhancement. It runs on both CPU and CUDA.</p><p><strong>GitHub, installation, and examples:</strong><a href=\"https://github.com/owenawsong/Inflect\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://github.com/owenawsong/Inflect</a></p><p><strong>Try the playground:</strong><a href=\"https://huggingface.co/spaces/owensong/Inflect-v3\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://huggingface.co/spaces/owensong/Inflect-v3</a></p><p>Mini features reference-voice tuning: it allows one to make a profile from a recording and generate speech with it. This feature noticeably adjusts the voice toward your reference, though it won’t replicate every speaker accurately.</p><p>Inflect Mini V3 also supports the following vocal-event tags: [laugh] · [sigh] · [gasp] · [cough] · [yawn] · [inhale] · [exhale] · [throat_clear]</p><p>You can insert a tag whenever you want the sound to occur. Currently, the tags use repeatable performances: this causes repeated tags to result in limited variation. Tags also do not affect how the surrounding words are being spoken.</p><p><strong>The model family:</strong></p><ul><li><strong>Mini: 34.31M parameters.</strong>Quality-focused, with the features listed above.</li><li><strong>Micro: 11.79M parameters.</strong>A smaller neural speech model</li><li><strong>Atom: 157K parameters.</strong>An extremely tiny learned core</li></ul><p>Those numbers count the synthesis cores. The frontend and optional components add to the total.</p><p>The weights and inference code are Apache 2.0. Third-party components keep their own licenses. Audio samples, benchmarks, and the settings used are on the model cards.</p><p><strong>Model collection:</strong><a href=\"https://huggingface.co/collections/owensong/inflect-v3\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://huggingface.co/collections/owensong/inflect-v3</a></p><p>If any sentence comes out wrong, send me the text, voice, and settings you used.</p></div>submitted by<a href=\"https://www.reddit.com/user/b111ue\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">/u/b111ue</a><br><span><a href=\"https://v.redd.it/s05dblhm231i1\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[link]</a></span><span><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xtzwxf/i_released_inflect_v3_lightweight_local_tts_in/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[comments]</a></span></td></tr></table>",
+            "text": "Today I’m releasing Inflect v3: a family of local text-to-speech models: Mini, Micro, and Atom. Mini is the main model, with six voices and 34.31M parameters\nMini provides vocal-event tags, reference voice-tuning, and 48 kHz enhancement. It runs on both CPU and CUDA.\nGitHub, installation, and examples: https://github.com/owenawsong/Inflect\nTry the playground: https://huggingface.co/spaces/owensong/Inflect-v3\nMini features reference-voice tuning: it allows one to make a profile from a recording and generate speech with it. This feature noticeably adjusts the voice toward your reference, though it won’t replicate every speaker accurately.\nInflect Mini V3 also supports the following vocal-event tags: [laugh] · [sigh] · [gasp] · [cough] · [yawn] · [inhale] · [exhale] · [throat_clear]\nYou can insert a tag whenever you want the sound to occur. Currently, the tags use repeatable performances: this causes repeated tags to result in limited variation. Tags also do not affect how the surrounding words are being spoken.\nThe model family:\nMini: 34.31M parameters. Quality-focused, with the features listed above.\nMicro: 11.79M parameters. A smaller neural speech model\nAtom: 157K parameters. An extremely tiny learned core\nThose numbers count the synthesis cores. The frontend and optional components add to the total.\nThe weights and inference code are Apache 2.0. Third-party components keep their own licenses. Audio samples, benchmarks, and the settings used are on the model cards.\nModel collection: https://huggingface.co/collections/owensong/inflect-v3\nIf any sentence comes out wrong, send me the text, voice, and settings you used.\nsubmitted by /u/b111ue\n[link] [comments]",
+            "lead": "Today I’m releasing Inflect v3: a family of local text-to-speech models: Mini, Micro, and Atom. Mini is the main model, with six voices and 34.31M parameters\nMini provides vocal-event tags, reference voice-tuning, and 48 kHz enhancement. It runs on both CPU and CUDA.\nGitHub, installation, and examples: https://github.com/owenawsong/Inflect\nTry the playground: https://huggingface.co/spaces/owensong/Inflect-v3\nMini features reference-voice tuning: it allows ",
+            "chars": 1708,
+            "shown": 1708,
+            "truncated": false
+          },
+          "categories": [
+            "LocalLLaMA"
+          ],
+          "author": "/u/b111ue",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "oss",
+          "metrics": {},
+          "quality": 6,
+          "score": 15.26,
+          "category": "local",
+          "subcategory": "weights",
+          "practical": 1,
+          "slug": "e17206facd77",
+          "action": 2,
+          "rank": 9.2,
+          "tags": []
         },
         {
           "sourceId": "reddit-local-llama",
@@ -1055,6 +1559,47 @@
           ]
         },
         {
+          "sourceId": "lcz-news",
+          "sourceName": "抡锤者 资讯",
+          "lang": "zh",
+          "tier": 3,
+          "trustCategory": true,
+          "declaredCategory": "news",
+          "categories": [],
+          "author": "Xiaote",
+          "id": "2993",
+          "title": "📡 AI日报 11/12 | 美联航限制 AI 代理订票、Fractile 融资 7.2 亿美元、台积电投资 OpenAI/Anthropic、谷歌 Tabletop",
+          "url": "https://lcz.me/topic/2993",
+          "published": "2026-11-11T21:34:31.790Z",
+          "summary": "AI 日报 · 2026/11/12 仅收录 2026-11-12（北京时间）当天发布的公开报道，按发布时间排序。 1. 美联航限制第三方 AI 代理代订机票 美联航宣布限制未经授权的个人 AI 代理访问其订票系统：AI 仍可展示航班与价格，但不能代为完成交易。 CEO 柯比直言「不想再创造一个中间商」；公司同时提到账户安全、自动化误操作与 FAA / DOT 合规要求。 来源：新浪财经（财联社）2026-11-12 03:51 2. 英国 AI 芯片公司 Fractile 完成 7.2 亿美元 C 轮 本轮由 Thrive Capital、Founders Fund、Lightspeed、Redpoint 等领投，估值超过 50…",
+          "metrics": {
+            "points": 0,
+            "comments": 0,
+            "views": 70
+          },
+          "excellent": false,
+          "content": {
+            "html": "<h3><img src=\"https://lcz.me/assets/plugins/nodebb-plugin-emoji/emoji/android/1f4e1.png?v=a055419e292\" alt=\"📡\" loading=\"lazy\">AI 日报 · 2026/11/12</h3>\n<blockquote><p>仅收录 2026-11-12（北京时间）当天发布的公开报道，按发布时间排序。</p></blockquote>\n<h3>1. 美联航限制第三方 AI 代理代订机票</h3>\n<ul><li>美联航宣布限制未经授权的个人 AI 代理访问其订票系统：AI 仍可展示航班与价格，但不能代为完成交易。</li><li>CEO 柯比直言「不想再创造一个中间商」；公司同时提到账户安全、自动化误操作与 FAA / DOT 合规要求。</li><li>来源：新浪财经（财联社）2026-11-12 03:51</li></ul>\n<h3>2. 英国 AI 芯片公司 Fractile 完成 7.2 亿美元 C 轮</h3>\n<ul><li>本轮由 Thrive Capital、Founders Fund、Lightspeed、Redpoint 等领投，估值超过 50 亿英镑（约 70 亿美元）。</li><li>Fractile 主打把 DRAM 堆叠到芯片上的「内存优先」设计，并配套 ML 编译器，目标是降低大模型推理成本。</li><li>来源：TechCrunch 2026-11-12 03:34</li></ul>\n<h3>3. 台积电批准向 OpenAI、Anthropic 投资至多 10 亿美元</h3>\n<ul><li>台积电董事会批准：最多 5 亿美元认购 OpenAI 面向大投资者的优先股，另最多 5 亿美元按 Anthropic 预期 IPO 价格购买其普通股。</li><li>分析人士提醒，这类「供应商—客户—投资方」之间的循环融资，会让真实 AI 需求更难评估。</li><li>来源：Ars Technica 2026-11-12 02:16</li></ul>\n<h3>4. 谷歌 Labs 推出实验性 AI 协作工具 Tabletop</h3>\n<ul><li>用户可加入链接、文件和想法，或直接 @tabletop、选择模板，生成行程、晚餐投票、分账、比赛对阵等互动页面。</li><li>目前通过 waitlist 向美国 18 岁以上用户开放 beta。</li><li>来源：The Verge 2026-11-12 00:00</li></ul>\n<hr><p><strong>来源链接</strong></p>\n<ul><li>新浪财经：<a href=\"https://finance.sina.com.cn/stock/t/2026-11-12/doc-iniymftt4077972.shtml\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://finance.sina.com.cn/stock/t/2026-11-12/doc-iniymftt4077972.shtml</a></li><li>TechCrunch：<a href=\"https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips/</a></li><li>Ars Technica：<a href=\"https://arstechnica.com/ai/2026/11/taiwans-chipmaking-giant-tsmc-to-invest-1b-in-anthropic-openai/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://arstechnica.com/ai/2026/11/taiwans-chipmaking-giant-tsmc-to-invest-1b-in-anthropic-openai/</a></li><li>The Verge：<a href=\"https://www.theverge.com/tech/1031526/google-tabletop-ai-experiment-waitlist-availability\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://www.theverge.com/tech/1031526/google-tabletop-ai-experiment-waitlist-availability</a></li></ul>",
+            "text": "AI 日报 · 2026/11/12\n仅收录 2026-11-12（北京时间）当天发布的公开报道，按发布时间排序。\n1. 美联航限制第三方 AI 代理代订机票\n美联航宣布限制未经授权的个人 AI 代理访问其订票系统：AI 仍可展示航班与价格，但不能代为完成交易。\nCEO 柯比直言「不想再创造一个中间商」；公司同时提到账户安全、自动化误操作与 FAA / DOT 合规要求。\n来源：新浪财经（财联社）2026-11-12 03:51\n2. 英国 AI 芯片公司 Fractile 完成 7.2 亿美元 C 轮\n本轮由 Thrive Capital、Founders Fund、Lightspeed、Redpoint 等领投，估值超过 50 亿英镑（约 70 亿美元）。\nFractile 主打把 DRAM 堆叠到芯片上的「内存优先」设计，并配套 ML 编译器，目标是降低大模型推理成本。\n来源：TechCrunch 2026-11-12 03:34\n3. 台积电批准向 OpenAI、Anthropic 投资至多 10 亿美元\n台积电董事会批准：最多 5 亿美元认购 OpenAI 面向大投资者的优先股，另最多 5 亿美元按 Anthropic 预期 IPO 价格购买其普通股。\n分析人士提醒，这类「供应商—客户—投资方」之间的循环融资，会让真实 AI 需求更难评估。\n来源：Ars Technica 2026-11-12 02:16\n4. 谷歌 Labs 推出实验性 AI 协作工具 Tabletop\n用户可加入链接、文件和想法，或直接 @tabletop、选择模板，生成行程、晚餐投票、分账、比赛对阵等互动页面。\n目前通过 waitlist 向美国 18 岁以上用户开放 beta。\n来源：The Verge 2026-11-12 00:00\n来源链接\n新浪财经： https://finance.sina.com.cn/stock/t/2026-11-12/doc-iniymftt4077972.shtml\nTechCrunch： https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips/\nArs Technica： https://arstechnica.com/ai/2026/11/taiwans-chipmaking-giant-tsmc-to-invest-1b-in-anthropic-openai/\nThe Verge： https://www.theverge.com/tech/1031526/google-tabletop-ai-experiment-waitlist-availability",
+            "lead": "AI 日报 · 2026/11/12\n仅收录 2026-11-12（北京时间）当天发布的公开报道，按发布时间排序。\n1. 美联航限制第三方 AI 代理代订机票\n美联航宣布限制未经授权的个人 AI 代理访问其订票系统：AI 仍可展示航班与价格，但不能代为完成交易。\nCEO 柯比直言「不想再创造一个中间商」；公司同时提到账户安全、自动化误操作与 FAA / DOT 合规要求。\n来源：新浪财经（财联社）2026-11-12 03:51\n2. 英国 AI 芯片公司 Fractile 完成 7.2 亿美元 C 轮\n本轮由 Thrive Capital、Founders Fund、Lightspeed、Redpoint 等领投，估值超过 50 亿英镑（约 70 亿美元）。\nFractile 主打把 DRAM 堆叠到芯片上的「内存优先」设计，并配套 ML 编译器，目标是降低大模型推理成本。\n来源：TechCrunch 2026-11-12 03:34",
+            "chars": 1222,
+            "shown": 1222,
+            "truncated": false
+          },
+          "quality": 7,
+          "score": 16.12,
+          "category": "bench",
+          "subcategory": "cost",
+          "practical": 3,
+          "slug": "bb8a738c1102",
+          "action": 1,
+          "rank": 8.6,
+          "tags": [
+            "agent",
+            "money"
+          ]
+        },
+        {
           "sourceId": "arxiv-ecosystem",
           "sourceName": "arXiv 检索（推理引擎与量化）",
           "title": "Looping Deeper Without Growing the KV Cache: Recurrent Depth for Causal Encoder-Decoders",
@@ -1090,6 +1635,42 @@
           "tags": [
             "tutorial"
           ]
+        },
+        {
+          "sourceId": "hn-newest",
+          "sourceName": "Hacker News (AI)",
+          "title": "Laser-armed AI submarine robots patrol Norwegian salmon farms, killing sea lice",
+          "url": "https://www.tomshardware.com/tech-industry/drones/3-500-ai-laser-robots-patrol-norwegian-salmon-farms-killing-sea-lice-parasites-get-zapped-by-high-tech-alternative-to-harsh-chemical-baths",
+          "id": "https://news.ycombinator.com/item?id=50456926",
+          "published": "2026-11-11T18:44:23.000Z",
+          "summary": "Article URL: https://www.tomshardware.com/tech-industry/drones/3-500-ai-laser-robots-patrol-norwegian-salmon-farms-killing-sea-lice-parasites-get-zapped-by-high-tech-alternative-to-harsh-chemical-baths Comments URL: https://news.ycombinator.com/item?id=50456926",
+          "content": {
+            "html": "<p>Article URL:<a href=\"https://www.tomshardware.com/tech-industry/drones/3-500-ai-laser-robots-patrol-norwegian-salmon-farms-killing-sea-lice-parasites-get-zapped-by-high-tech-alternative-to-harsh-chemical-baths\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://www.tomshardware.com/tech-industry/drones/3-500-ai-laser-robots-patrol-norwegian-salmon-farms-killing-sea-lice-parasites-get-zapped-by-high-tech-alternative-to-harsh-chemical-baths</a></p>\n<p>Comments URL:<a href=\"https://news.ycombinator.com/item?id=50456926\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://news.ycombinator.com/item?id=50456926</a></p>\n<p>Points: 29</p>\n<p># Comments: 9</p>",
+            "text": "Article URL: https://www.tomshardware.com/tech-industry/drones/3-500-ai-laser-robots-patrol-norwegian-salmon-farms-killing-sea-lice-parasites-get-zapped-by-high-tech-alternative-to-harsh-chemical-baths\nComments URL: https://news.ycombinator.com/item?id=50456926\nPoints: 29\n# Comments: 9",
+            "lead": "Article URL: https://www.tomshardware.com/tech-industry/drones/3-500-ai-laser-robots-patrol-norwegian-salmon-farms-killing-sea-lice-parasites-get-zapped-by-high-tech-alternative-to-harsh-chemical-baths\nComments URL: https://news.ycombinator.com/item?id=50456926",
+            "chars": 291,
+            "shown": 291,
+            "truncated": false
+          },
+          "categories": [],
+          "author": "bko",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "tools",
+          "metrics": {
+            "points": 29,
+            "comments": 9
+          },
+          "quality": 6,
+          "score": 17.46,
+          "category": "bench",
+          "subcategory": "compare",
+          "practical": 1,
+          "slug": "fde558df7491",
+          "action": 1,
+          "rank": 7.6,
+          "tags": []
         }
       ]
     }
