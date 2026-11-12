@@ -1,6 +1,6 @@
 {
   "day": "2026-11-12",
-  "reviewedAt": "2026-11-11T18:00:51.666Z",
+  "reviewedAt": "2026-11-12T03:20:18.001Z",
   "reviewer": "cloudflare/@cf/meta/llama-3.1-70b-instruct",
   "note": "cloudflare/@cf/meta/llama-3.1-70b-instruct：复核 12 条，解析到 12 条判定",
   "rules": {
@@ -15,13 +15,15 @@
   },
   "passed": true,
   "reasons": [],
-  "total": 18,
+  "total": 33,
   "blocked": [
-    "a5fb6f25f61b",
-    "ef892408bebc",
-    "03e5608fc878"
+    "bb485df9f4f5",
+    "333ca30f1494",
+    "c905a8e51471",
+    "95dd2fdb0483",
+    "c8e06072f417"
   ],
-  "survivors": 15,
+  "survivors": 28,
   "items": [
     {
       "slug": "d2aa13e0402b",
@@ -43,9 +45,35 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "这是一篇关于LLM推理的教程，包括实践步骤和代码。"
+        "reason": "内容是关于LLM推理的实践性文章，提供了详细的代码和示例。"
       },
       "blocked": []
+    },
+    {
+      "slug": "bb485df9f4f5",
+      "title": "Gemini Decisions API",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 1399,
+      "excerpt": "Gemini Decisions API Google join Jev and OpenAI in the decision model category with \"Gemini Decision 1\". This new model API is almost identical to Jev: it supports the same three types of questions (yes/no, choice, and rubric-scoring) and even reuses Jev's term \"Noul\" for a yes/no question. It's priced the same as the GPT-6 Luna decision model: 10 cents per million input tokens, and output is free. Jev remains the cheapest of the three, at 4.2 cents per million. Jev is text (and JSON) only. OpenAI can handle text and images. Gemini Decision 1 is fully multi-model: it covers text, images, audi…",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "Simon Willison",
+      "domain": "simonwillison.net",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "内容主要是新闻转述，没有提供实测数据或复现步骤。"
+      },
+      "blocked": [
+        "模型复核不通过（内容主要是新闻转述，没有提供实测数据或复现步骤。）"
+      ]
     },
     {
       "slug": "eb4c022c8563",
@@ -67,9 +95,34 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "这是一篇关于开发一个可编程的画图应用的文章，包括具体的实现细节。"
+        "reason": "内容是关于开发一个可以被编码代理驱动的绘画应用，提供了源代码和示例。"
       },
       "blocked": []
+    },
+    {
+      "slug": "333ca30f1494",
+      "title": "New Paper -> Unless Told Otherwise, an Open Language Model Says OpenAI Made It",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [],
+      "bodyChars": 3858,
+      "excerpt": "Hi all I've just started r/LLMPsychology as I want to pursue research in this area with my own local hardware, and work with other people also exploring how AI minds think and behave. (I'm a psychology researcher with an AI hobby) Posting just on the off chance that any of you are also interested in sharing or conducting research - it would be super cool to get a community going. To illustrate I also wanted to share this paper writing up some experiments I've been running with OLMo3 on my machine (which has publically available information and data on its training) - the central finding is th…",
+      "quality": 6,
+      "practical": 2,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "内容主要是分享研究成果和论文，没有提供实测数据或复现步骤。"
+      },
+      "blocked": [
+        "模型复核不通过（内容主要是分享研究成果和论文，没有提供实测数据或复现步骤。）"
+      ]
     },
     {
       "slug": "a5fb6f25f61b",
@@ -89,12 +142,10 @@
         "标题未翻译"
       ],
       "agent": {
-        "verdict": "fail",
-        "reason": "这篇文章的分类和标签与内容不符，应该属于apps/inference而不是apps/life。"
+        "verdict": "pass",
+        "reason": "内容是关于AutoScaffold框架的介绍，提供了详细的信息和示例。"
       },
-      "blocked": [
-        "模型复核不通过（这篇文章的分类和标签与内容不符，应该属于apps/inference而不是apps/life。）"
-      ]
+      "blocked": []
     },
     {
       "slug": "63027b08358a",
@@ -116,9 +167,58 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "这篇文章讨论了LLM的高吞吐量推理问题，包括具体的解决方案和实现细节。"
+        "reason": "内容是关于LLM推理的实践性文章，提供了详细的代码和示例。"
       },
       "blocked": []
+    },
+    {
+      "slug": "cabe391a95c9",
+      "title": "Coverage-Verified Sparse Attention: Closed-Loop Quality Control for Long-Context LLM Decoding",
+      "category": "apps",
+      "subcategory": "knowledge",
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 1199,
+      "excerpt": "Sparse attention accelerates long-context decoding by reading a subset of the KV cache, but existing methods are open-loop: the kernel commits to its selection with no signal indicating whether enough attention mass was preserved and no recovery path when it was not. The needed signal already exists inside the kernel. The fraction of softmax mass on the selected tokens, which we call coverage, satisfies an exact algebraic equality with per-step output error and serves a dual role as the acceptance criterion and the interpolation weight for recovery. Coverage-Verified Sparse Attention (CVSA) t…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv 检索（推理引擎与量化）",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "包含实测数据和技术讨论。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "c905a8e51471",
+      "title": "Android and IOS are ready for disruption",
+      "category": "apps",
+      "subcategory": "life",
+      "tags": [],
+      "bodyChars": 837,
+      "excerpt": "AI first smartphones will be so much better. I have a wild imagination how I can customize my phone with AI. With an AI phone that makes changing all aspects of the phone easy, it would be lots of fun. I doubt Android and IOS will move solidly in that direction. Example: I'd like to use the multiple microphones to do a microphone array app, but limitations don't allow it. Would be nice if there is a group / crowd , such as a party speaking in a foreign language to isolate speakers and understand what they are saying. What do you think? Update: Sam asks Samsung for AI phone. https://www.fnnews…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "没有实测数据或步骤，只是新闻转述。"
+      },
+      "blocked": [
+        "模型复核不通过（没有实测数据或步骤，只是新闻转述。）"
+      ]
     },
     {
       "slug": "8a500e398ede",
@@ -141,9 +241,60 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "这篇文章介绍了一个fastmint-fcfs-agentic的实现，包括具体的步骤和代码。"
+        "reason": "包含复现步骤和代码示例。"
       },
       "blocked": []
+    },
+    {
+      "slug": "95dd2fdb0483",
+      "title": "Browse tools.simonwillison.net by tag",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [],
+      "bodyChars": 498,
+      "excerpt": "Browse tools.simonwillison.net by tag I've been wanting a better way to browse my collection of vibe-coded tools (244 and counting) for a while. I had a few Fable 5.2 credits left over before my weekly reset so I set it to work using tree-sitter to analyze the code for JavaScript APIs, libraries, and web API hosts used by each tool. The homepage now features tag clouds for browsing by each of those categories of tag: Tags: javascript , tools , ai , generative-ai , llms , claude , vibe-coding",
+      "quality": 9,
+      "practical": 1,
+      "sourceName": "Simon Willison",
+      "domain": "simonwillison.net",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "没有实测数据或步骤，只是工具介绍。"
+      },
+      "blocked": [
+        "模型复核不通过（没有实测数据或步骤，只是工具介绍。）"
+      ]
+    },
+    {
+      "slug": "c8e06072f417",
+      "title": "Architecture trends: From full to local attention",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "agent"
+      ],
+      "bodyChars": 2088,
+      "excerpt": "Currently working towards a bigger open LLM roundup. But in the meantime, just one of the interesting trends that stood out. I.e., looks like the transition from full to hybrid attention continues. In 2025, there were still lots of full attention models, with a shift to \"some full attention\" hybrids. In the first half of 2026, the trend towards \"some full attention\" hybrids continued. And now, in the second half of 2026, we have a 50/50 split between \"some full attention\" hybrids and models that don't use full attention at all anymore. And yes, there are also no full attention models anymore.…",
+      "quality": 7,
+      "practical": 2,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "没有实测数据或步骤，只是新闻转述。"
+      },
+      "blocked": [
+        "模型复核不通过（没有实测数据或步骤，只是新闻转述。）"
+      ]
     },
     {
       "slug": "ef892408bebc",
@@ -163,12 +314,10 @@
         "标题未翻译"
       ],
       "agent": {
-        "verdict": "fail",
-        "reason": "这篇文章主要是新闻转述，没有提供具体的实践步骤或数据。"
+        "verdict": "pass",
+        "reason": "包含实测数据和技术讨论。"
       },
-      "blocked": [
-        "模型复核不通过（这篇文章主要是新闻转述，没有提供具体的实践步骤或数据。）"
-      ]
+      "blocked": []
     },
     {
       "slug": "abd601ff6346",
@@ -188,10 +337,7 @@
       "domain": "lcz.me",
       "hard": [],
       "warnings": [],
-      "agent": {
-        "verdict": "pass",
-        "reason": "分享了四台Mac Studio M3 Ultra的实测日志。"
-      },
+      "agent": null,
       "blocked": []
     },
     {
@@ -213,10 +359,7 @@
       "domain": "lcz.me",
       "hard": [],
       "warnings": [],
-      "agent": {
-        "verdict": "pass",
-        "reason": "分享了Tesla V100实测报告。"
-      },
+      "agent": null,
       "blocked": []
     },
     {
@@ -237,13 +380,96 @@
       "warnings": [
         "标题未翻译"
       ],
-      "agent": {
-        "verdict": "fail",
-        "reason": "无实测数据或步骤，只是项目介绍。"
-      },
-      "blocked": [
-        "模型复核不通过（无实测数据或步骤，只是项目介绍。）"
-      ]
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "b799a648f39e",
+      "title": "llama.cpp b12303 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1385,
+      "excerpt": "<details open> jinja : support chained comparisons and argument unpacking (#32072) </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/66518918> macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubuntu 26.04 s390x (zDNN) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu x64 (CUDA 13) - CUDA 13.5 libraries Ubuntu arm64 (CUDA 13) -…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "4068c2930e9f",
+      "title": "llama.cpp b12302 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1491,
+      "excerpt": "<details open> chat: allow TTS model to provide custom text normalizer via jinja (#32053) chat: allow TTS model to provide custom text normalizer via jinja rm tts_norm_is_reserved_name </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/66510183> macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubuntu 26.04 s390x (zDNN) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x6…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "327b7eaa3f76",
+      "title": "llama.cpp b12292 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1497,
+      "excerpt": "<details open> webgpu: add PAD_REFLECT_1D support (#31877) webgpu : add PAD_REFLECT_1D support webgpu: remove redundant PAD_REFLECT_1D contiguity check tests: simplify PAD_REFLECT_1D setup </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/66423627> macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubuntu 26.04 s390x (zDNN) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubunt…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "cfb45eb1ea88",
+      "title": "新开了个油管频道：花 111 万日元买的 AI 主机，靠 AI 能不能回本（日语・收支全公开）",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "generate",
+        "benchmark",
+        "tutorial",
+        "money"
+      ],
+      "bodyChars": 780,
+      "excerpt": "大家好。之前在 AI硬件版发过几篇 RTX 5080 的实测帖。这台机器买下来一共花了 111 万 2450 日元 ，于是干脆开了一个油管频道，把「这笔钱靠 AI 能不能赚回来」做成日记。 频道：AIドパガキの奮闘日記 https://www.youtube.com/@AIdopagaki 第一集（4 分钟・日语）： https://youtu.be/hTNxC3A9vf8 频道做什么 主要介绍 AI 怎么用：实际去用各种 AI 工具，能用还是不能用、能赚还是不能赚，都试给大家看 收支每一集都用数字公开。目前回收率 0% （ −1,112,450 日元 ） 三条规矩：收支全晒、失败不藏、不夸大 第一集讲了什么 为什么花 111 万买电脑：AI 订阅越订越多，想着「在自己家跑就能随便用」 机器：日本サイコム（Sycom）的 Lepton Hydro WSB850A Cube（Ryzen 9 9900X＋128GB 内存＋水冷 RTX 5080 16GB） 订单明细：标准配置 703,770 → 内存换成 128GB +334,160 → SSD 换 2TB +17,880 → 3 年保修 +52,790 → 运费 3,850 回本要多久：每月赚 1 万日元要 9 年 3 个月 ，每月 5 万要 1 年 10 个月 ，每月 10 万要 11 个月 （电费另算） 这条片子是怎么做的 配…",
+      "quality": 8,
+      "practical": 3,
+      "sourceName": "抡锤者 自媒体运营",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
     },
     {
       "slug": "8968483fab75",
@@ -264,10 +490,7 @@
       "warnings": [
         "标题未翻译"
       ],
-      "agent": {
-        "verdict": "pass",
-        "reason": "分享了llama.cpp b12284发布的实测数据。"
-      },
+      "agent": null,
       "blocked": []
     },
     {
@@ -287,10 +510,7 @@
         "没有命中任何标签",
         "标题未翻译"
       ],
-      "agent": {
-        "verdict": "pass",
-        "reason": "分享了DeepSeek 4.1在本地运行的实测数据。"
-      },
+      "agent": null,
       "blocked": []
     },
     {
@@ -312,10 +532,31 @@
       "domain": "lcz.me",
       "hard": [],
       "warnings": [],
-      "agent": {
-        "verdict": "pass",
-        "reason": "分享了Mac上跑通MiniMax-H3-Image的实测数据和步骤。"
-      },
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "846f326218ac",
+      "title": "agentes-chat/agentes-chat",
+      "category": "local",
+      "subcategory": "selfhost",
+      "tags": [
+        "agent",
+        "local",
+        "free",
+        "privacy"
+      ],
+      "bodyChars": 10256,
+      "excerpt": "<p align=\"center\"> <a href=\"https://agentes.chat\"><img src=\"apps/web/public/favicon.svg\" alt=\"agentes.chat\" width=\"96\"></a> </p> <h1 align=\"center\">agentes.chat</h1> <p align=\"center\"><b>The open-source, self-hosted Slack alternative where your team and AI agents work together.</b></p> <p align=\"center\"> <a href=\"https://agentes.chat\">Website</a> · <a href=\"https://agentes.chat\">Cloud</a> · <a href=\"SELF_HOSTING.md\">Self-hosting</a> · <a href=\"#features\">Features</a> · <a href=\"https://github.com/agentes-chat/agentes-chat/discussions\">Discussions</a> </p> <p align=\"center\"> <a href=\"LICENSE\">…",
+      "quality": 10,
+      "practical": 2,
+      "sourceName": "GitHub 新晋 AI 项目",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
       "blocked": []
     },
     {
@@ -333,6 +574,27 @@
       "hard": [],
       "warnings": [
         "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "02f705171aa9",
+      "title": "aws-emulator",
+      "category": "local",
+      "subcategory": "selfhost",
+      "tags": [
+        "local"
+      ],
+      "bodyChars": 757,
+      "excerpt": "aws-emulator Finally, an official emulator from AWS to run tests against a local clone of their many different services without having to provision a paid API key to do so. It's written in Rust by a huge swarm of agents - 29,684 commits in the first three weeks of the project. Swaminathan (Swami) Sivasubramanian wrote about how it came to be in a guest post on Werner Vogels' blog. It currently requires Docker to run on macOS or Windows. I'm hoping they fix that in the future - it would be great if you could download a single binary and use that as part of a standard test suite in other langua…",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "Simon Willison",
+      "domain": "simonwillison.net",
+      "hard": [],
+      "warnings": [
         "标题未翻译"
       ],
       "agent": null,
@@ -375,6 +637,26 @@
       "domain": "reddit.com",
       "hard": [],
       "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "e17206facd77",
+      "title": "I released Inflect v3: lightweight local TTS in 34M parameters (Apache 2.0)",
+      "category": "local",
+      "subcategory": "weights",
+      "tags": [],
+      "bodyChars": 1708,
+      "excerpt": "Today I’m releasing Inflect v3: a family of local text-to-speech models: Mini, Micro, and Atom. Mini is the main model, with six voices and 34.31M parameters Mini provides vocal-event tags, reference voice-tuning, and 48 kHz enhancement. It runs on both CPU and CUDA. GitHub, installation, and examples: https://github.com/owenawsong/Inflect Try the playground: https://huggingface.co/spaces/owensong/Inflect-v3 Mini features reference-voice tuning: it allows one to make a profile from a recording and generate speech with it. This feature noticeably adjusts the voice toward your reference, though…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
         "标题未翻译"
       ],
       "agent": null,
@@ -424,6 +706,26 @@
       "blocked": []
     },
     {
+      "slug": "bb8a738c1102",
+      "title": "📡 AI日报 11/12 | 美联航限制 AI 代理订票、Fractile 融资 7.2 亿美元、台积电投资 OpenAI/Anthropic、谷歌 Tabletop",
+      "category": "bench",
+      "subcategory": "cost",
+      "tags": [
+        "agent",
+        "money"
+      ],
+      "bodyChars": 1222,
+      "excerpt": "AI 日报 · 2026/11/12 仅收录 2026-11-12（北京时间）当天发布的公开报道，按发布时间排序。 1. 美联航限制第三方 AI 代理代订机票 美联航宣布限制未经授权的个人 AI 代理访问其订票系统：AI 仍可展示航班与价格，但不能代为完成交易。 CEO 柯比直言「不想再创造一个中间商」；公司同时提到账户安全、自动化误操作与 FAA / DOT 合规要求。 来源：新浪财经（财联社）2026-11-12 03:51 2. 英国 AI 芯片公司 Fractile 完成 7.2 亿美元 C 轮 本轮由 Thrive Capital、Founders Fund、Lightspeed、Redpoint 等领投，估值超过 50 亿英镑（约 70 亿美元）。 Fractile 主打把 DRAM 堆叠到芯片上的「内存优先」设计，并配套 ML 编译器，目标是降低大模型推理成本。 来源：TechCrunch 2026-11-12 03:34 3. 台积电批准向 OpenAI、Anthropic 投资至多 10 亿美元 台积电董事会批准：最多 5 亿美元认购 OpenAI 面向大投资者的优先股，另最多 5 亿美元按 Anthropic 预期 IPO 价格购买其普通股。 分析人士提醒，这类「供应商—客户—投资方」之间的循环融资，会让真实 AI 需求更难评估。 来源：Ars Technic…",
+      "quality": 7,
+      "practical": 3,
+      "sourceName": "抡锤者 资讯",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
       "slug": "d7e7c64036e6",
       "title": "Looping Deeper Without Growing the KV Cache: Recurrent Depth for Causal Encoder-Decoders",
       "category": "bench",
@@ -439,6 +741,26 @@
       "domain": "arxiv.org",
       "hard": [],
       "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "fde558df7491",
+      "title": "Laser-armed AI submarine robots patrol Norwegian salmon farms, killing sea lice",
+      "category": "bench",
+      "subcategory": "compare",
+      "tags": [],
+      "bodyChars": 291,
+      "excerpt": "Article URL: https://www.tomshardware.com/tech-industry/drones/3-500-ai-laser-robots-patrol-norwegian-salmon-farms-killing-sea-lice-parasites-get-zapped-by-high-tech-alternative-to-harsh-chemical-baths Comments URL: https://news.ycombinator.com/item?id=50456926 Points: 29 # Comments: 9",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "Hacker News (AI)",
+      "domain": "tomshardware.com",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
         "标题未翻译"
       ],
       "agent": null,
