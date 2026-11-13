@@ -1,6 +1,6 @@
 {
   "day": "2026-11-13",
-  "reviewedAt": "2026-11-12T18:32:14.415Z",
+  "reviewedAt": "2026-11-13T02:53:28.433Z",
   "reviewer": "cloudflare/@cf/meta/llama-3.1-70b-instruct",
   "note": "cloudflare/@cf/meta/llama-3.1-70b-instruct：复核 12 条，解析到 12 条判定",
   "rules": {
@@ -15,14 +15,17 @@
   },
   "passed": true,
   "reasons": [],
-  "total": 23,
+  "total": 54,
   "blocked": [
     "49bc7c27cde1",
     "9a7f80b97f7b",
-    "eb25f680bb62",
-    "bc54bb9591e6"
+    "b883332a00ba",
+    "bdde3294fae2",
+    "da39a3ee5e6b",
+    "fcd79e0881a1",
+    "eb25f680bb62"
   ],
-  "survivors": 19,
+  "survivors": 47,
   "items": [
     {
       "slug": "49bc7c27cde1",
@@ -44,11 +47,37 @@
       "warnings": [],
       "agent": {
         "verdict": "fail",
-        "reason": "内容过于关注新闻，缺乏实践性内容。"
+        "reason": "标题与内容不符，内容为AI模型的宣传，标签与内容不符。"
       },
       "blocked": [
-        "模型复核不通过（内容过于关注新闻，缺乏实践性内容。）"
+        "模型复核不通过（标题与内容不符，内容为AI模型的宣传，标签与内容不符。）"
       ]
+    },
+    {
+      "slug": "2ad359df942e",
+      "title": "inferencekit: open-source plugin to optimize any model on any hardware using coding agents",
+      "category": "apps",
+      "subcategory": "inference",
+      "tags": [
+        "agent",
+        "free",
+        "lowspec"
+      ],
+      "bodyChars": 1085,
+      "excerpt": "KittenML just released inferencekit , a free opensource plugin to turn coding agents(Claude Code, Codex, OpenCode) into inference engineers for your hardware. Most models ship with inference tuned for whatever hardware the authors used, which is usually not what you have locally. The fastest path on a 3070 might be different from the fastest path on a Mac or a Radeon. inferencekit allows you to find that path for your setup. This was used to get streaming TTFB of Kitten-TTS-2 down to ~10ms on RTX Pro 6000. other results are shown in the image attached. Once you've optimized a model on your ha…",
+      "quality": 6,
+      "practical": 2,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容有实测数据和步骤，普通人能照着做。"
+      },
+      "blocked": []
     },
     {
       "slug": "9a7f80b97f7b",
@@ -70,10 +99,10 @@
       "warnings": [],
       "agent": {
         "verdict": "fail",
-        "reason": "内容与教育领域相关，但缺乏实践性内容。"
+        "reason": "只有新闻转述，既没有数据也没有步骤。"
       },
       "blocked": [
-        "模型复核不通过（内容与教育领域相关，但缺乏实践性内容。）"
+        "模型复核不通过（只有新闻转述，既没有数据也没有步骤。）"
       ]
     },
     {
@@ -99,7 +128,7 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "内容包括了实践步骤和数据，具有实践性。"
+        "reason": "内容有实测数据和步骤，普通人能照着做。"
       },
       "blocked": []
     },
@@ -124,9 +153,34 @@
       "warnings": [],
       "agent": {
         "verdict": "pass",
-        "reason": "内容包括了实践步骤和产品演示，具有实践性。"
+        "reason": "内容有实测数据和步骤，普通人能照着做。"
       },
       "blocked": []
+    },
+    {
+      "slug": "b883332a00ba",
+      "title": "AI is turning Apple's app review process into a nightmare for synth developers",
+      "category": "apps",
+      "subcategory": null,
+      "tags": [],
+      "bodyChars": 215,
+      "excerpt": "Article URL: https://synthanatomy.com/2026/11/ai-is-turning-apples-app-review-process-into-a-nightmare-for-developers.html Comments URL: https://news.ycombinator.com/item?id=50474311 Points: 113 # Comments: 109",
+      "quality": 10,
+      "practical": 1,
+      "sourceName": "Hacker News (AI)",
+      "domain": "synthanatomy.com",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "只有新闻转述，既没有数据也没有步骤。"
+      },
+      "blocked": [
+        "模型复核不通过（只有新闻转述，既没有数据也没有步骤。）"
+      ]
     },
     {
       "slug": "bdde3294fae2",
@@ -147,10 +201,85 @@
         "标题未翻译"
       ],
       "agent": {
+        "verdict": "fail",
+        "reason": "内容与分类标签不符，内容为介绍 MetaEncoder 的功能，而分类标签为 apps/creation。"
+      },
+      "blocked": [
+        "模型复核不通过（内容与分类标签不符，内容为介绍 MetaEncoder 的功能，而分类标签为 apps/creation。）"
+      ]
+    },
+    {
+      "slug": "8fe60b5adb06",
+      "title": "Show HN: My $300 embroidery machine needed a subscription, so I built my own app",
+      "category": "apps",
+      "subcategory": null,
+      "tags": [],
+      "bodyChars": 143,
+      "excerpt": "https://x.com/simpsoka/status/2115254318161182876 Comments URL: https://news.ycombinator.com/item?id=50470488 Points: 364 # Comments: 143",
+      "quality": 9,
+      "practical": 1,
+      "sourceName": "Show HN (AI)",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": {
         "verdict": "pass",
-        "reason": "内容包括了实践步骤和产品演示，具有实践性。"
+        "reason": "内容为展示创造性作品，具有实践性。"
       },
       "blocked": []
+    },
+    {
+      "slug": "da39a3ee5e6b",
+      "title": "派早报：英伟达 CEO 黄仁勋宣布辞职等",
+      "category": "apps",
+      "subcategory": "knowledge",
+      "tags": [
+        "money",
+        "generate"
+      ],
+      "bodyChars": 6859,
+      "excerpt": "周五 13 派早报：英伟达 CEO 黄仁勋宣布辞职等 08:48 11 分钟阅读 早报速览 英伟达 CEO 黄仁勋宣布辞职 21 2026 年金摇杆奖获奖名单公布 0 Apex Compute 推出跨平台 AI 帧生成技术 ANR 0 腾讯推出基于 AI 的元宝搜索 2 火山引擎推出 Seedance 2.5 flash 视频模型 0 Google AI 新闻合集 0 豆包工作接入 Kimi、GLM、DeepSeek 等第三方模型 1 英伟达 CEO 黄仁勋宣布辞职 11 月 12 日，英伟达（NVIDIA）董事会宣布，公司联合创始人黄仁勋（Jensen Huang）已辞去总裁、首席执行官及董事会成员职务，即刻生效。公司现任执行副总裁兼首席财务官科莱特·克雷斯（Colette Kress）将出任临时 CEO，并继续兼任原有职务，直至董事会选出正式继任者。与此同时，英伟达任命长期董事哈维（Harvey C. Jones）担任公司历史上首位董事长。 根据英伟达向美国证券交易委员会（SEC）提交的 Form 8-K 文件，董事会已于 11 月 11 日接受黄仁勋的辞呈，并于同日批准相关人事任命。目前，董事会已启动正式 CEO 的遴选程序，将同时考虑公司内部高管及外部候选人。英伟达并未在官方公告及监管文件中披露黄仁勋辞职的具体原因。 据介绍，克雷斯于 2013 年 9 月加入英伟达并担任…",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "少数派",
+      "domain": "sspai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "fail",
+        "reason": "内容为新闻转述，没有实测数据或步骤。"
+      },
+      "blocked": [
+        "模型复核不通过（内容为新闻转述，没有实测数据或步骤。）"
+      ]
+    },
+    {
+      "slug": "fcd79e0881a1",
+      "title": "Whoop launched a social network where every user has a ‘verified heartbeat’",
+      "category": "apps",
+      "subcategory": null,
+      "tags": [],
+      "bodyChars": 690,
+      "excerpt": "Starting Thursday, Whoop members can share their data from its wearables on the app's new Whoop Humans social network. Users can make their metrics, activities, and achievements visible to other Whoop wearers, post Story-like \"Moments\" with photos and captions, and add comments and reactions on other members' posts. Whoop claims its platform is \"entirely human,\" unlike other social media platforms that are \"saturated with artificial intelligence, automated accounts and bots, and manufactured content.\" Whoop CEO Will Ahmed says Humans is \"the most verifiably human network ever launched. Every…",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "The Verge",
+      "domain": "theverge.com",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "内容为新闻转述，没有实测数据或步骤。"
+      },
+      "blocked": [
+        "模型复核不通过（内容为新闻转述，没有实测数据或步骤。）"
+      ]
     },
     {
       "slug": "eb25f680bb62",
@@ -170,11 +299,76 @@
       "warnings": [],
       "agent": {
         "verdict": "fail",
-        "reason": "内容过于关注新闻和阴谋论分析，缺乏实践性内容。"
+        "reason": "内容与分类标签不符，内容为个人意见和新闻转述，而分类标签为 apps/creation。"
       },
       "blocked": [
-        "模型复核不通过（内容过于关注新闻和阴谋论分析，缺乏实践性内容。）"
+        "模型复核不通过（内容与分类标签不符，内容为个人意见和新闻转述，而分类标签为 apps/creation。）"
       ]
+    },
+    {
+      "slug": "3325845ec46a",
+      "title": "Testing if various local model are good at solving visual challenges.",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [
+        "agent"
+      ],
+      "bodyChars": 516,
+      "excerpt": "Almost everything is in the video and the title: the idea is to create chalenges and ask agents to solve them. I'll have more to share later, but this first video shows that most model are good at theses stuff. For more details: I'm testing scenarios where an agent needs to simulate keyboard and mouse movement. You can see more chalenges like this one on my website: https://airbench.ai/gallery/airbench-desk-v1?run=6d2a2777-3d96-4ec4-9cdc-3d359bc43bea&c=icon-drop submitted by /u/dh7net [link] [comments]",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容为展示测试结果，具有实践性。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "e134ba843ade",
+      "title": "Aggregate Accuracy Hides Diagnosis-Specific Failure in Medical Vision-Language Models",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [],
+      "bodyChars": 1874,
+      "excerpt": "Medical vision-language models (VLMs) are compared mainly by accuracy averaged across findings, a summary that can hide complete failure on a single diagnosis. We audit five open medical VLMs (MedGemma-4B, Lingshu-7B, HuatuoGPT-Vision-7B, Qwen2.5-VL-7B, and MedVLM-R1) on 6,048 ChestX-ray14 questions balanced by sex, age, finding, and label. On the 432 pneumothorax-positive X-rays, HuatuoGPT-Vision and Qwen2.5-VL detect zero cases while MedGemma and Lingshu detect 38% and 67% of the same images. The two failing models answer \"no\" to all 864 pneumothorax cases (balanced accuracy 0.500, chance),…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "965677142588",
+      "title": "AutoAssumption: Searching over Assumptions Discovers ML-Systems Algorithms",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 1487,
+      "excerpt": "Many advances in ML systems came from breaking an assumption that earlier methods took for granted: speculative decoding dropped the assumption that a model needs one forward pass per token. Yet algorithms rarely state their assumptions, so experts and discovery harnesses search over programs, where one edit changes several design choices and gains are difficult to attribute. Searching over the assumptions themselves remains largely unexplored. Writing algorithms as proofs makes their assumptions explicit and turns algorithm design into a search over a small, structured space that an LLM can…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv 检索（推理引擎与量化）",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
     },
     {
       "slug": "cabe391a95c9",
@@ -194,10 +388,29 @@
       "warnings": [
         "标题未翻译"
       ],
-      "agent": {
-        "verdict": "pass",
-        "reason": "有具体技术细节和数据分析。"
-      },
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "751560cda02b",
+      "title": "📡 AI日报 11/13 | Gemini 4 Hydrogen 升级搜索、Claude Code 配置泄露、Adobe MAX 代理式 AI",
+      "category": "tools",
+      "subcategory": "workflow",
+      "tags": [
+        "agent",
+        "local",
+        "benchmark",
+        "tutorial"
+      ],
+      "bodyChars": 1117,
+      "excerpt": "AI 日报 · 2026/11/13 仅收录 2026-11-13（北京时间）当天发布的公开报道，按发布时间排序。 1. 谷歌用 Gemini 4 Hydrogen 升级搜索与 AI Mode 谷歌发布 Gemini 4 Hydrogen，主打快速执行与代理工作流，官方称比 Gemini 3.8 Flash 快 2.5 倍，并提供 low / medium / high / xhigh 四档思考级别。 该模型已接入 Google 搜索 AI Mode、Gemini App、AI Studio 与 API，能处理多段复杂问题、错别字，并给出更丰富的图文与对比表回答。 来源：TechCrunch 2026-11-13 03:27（北京时间） 2. Claude Code 配置文件泄露 1,379 条真实凭证 安全公司 Apiiro 检查 104,185 个公开 GitHub 仓库的 .claude/settings.local.json ，发现 1,122 个文件含真实敏感凭证，共 1,379 条，涉及 63 家组织。 起因之一是用户选择「Yes, and don't ask again」后，Claude Code 会把含密码或 Token 的完整命令写进本地权限配置；GitGuardian 另在 23,276 个仓库识别出 31,088 条凭证，其中 5,343 条仍有效。 来源：…",
+      "quality": 9,
+      "practical": 6,
+      "sourceName": "抡锤者 资讯",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
       "blocked": []
     },
     {
@@ -219,10 +432,29 @@
       "domain": "lcz.me",
       "hard": [],
       "warnings": [],
-      "agent": {
-        "verdict": "pass",
-        "reason": "有实践性内容，包括具体的工具链和配置过程。"
-      },
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "3dddca0f066c",
+      "title": "GPT + Codex & DeepSeek Flash + DSH帮我躺平，论坛和APP已进入自动化维护状态，我只需要保持监管即可，低成本奴役AI！",
+      "category": "tools",
+      "subcategory": "workflow",
+      "tags": [
+        "agent",
+        "tutorial",
+        "generate",
+        "free"
+      ],
+      "bodyChars": 3231,
+      "excerpt": "每次呢我就是让他们分头工作，这个 Codex 负责 iOS 啊，然后这个我的这个什么 DeepSeek Harness 负责安卓。他们就发布新的版本，啊其实这个不用我点啊，他们自己会搞定的。看到没有，啊都在自己在发。其实我对 DeepSeek 最近进步，我感觉比较明显的就是它的这个 Computer Use。我知道它现在的工作效率真的说实话，感觉比这个 OpenAI 的 Codex 还要再更高一点，就它基本上不会有什么幺蛾子出来。就哪怕比如说要发什么验证码之类的，它其实自己都能搞定。Codex 就是在验证码这块，我不知道为什么，是不是我当时这个工作流我自己设置有问题？啊你看它，我估计它马上又得卡住。就我们现在看到了，它这个 Codex 就是有问题啊，它这个 GPT-6.1 Sol 啊，我不知道为什么跟智障一样，就是它不能自动这个……就我的苹果账户，它不能自动填写密码。 然后其实那些验证码什么东西的都是发在屏幕上的，它会发过来的。我谷歌就从来不会遇到这个问题，它有些账号密码它自己登录，啊它就能搞得定。然后苹果这个它就是有一个输输入框。实际上我跟你讲，这个输入框我让 DeepSeek Harness 来处理过，它是能登录的啊，但是不知道为什么，Codex 跟这个 GPT-6.1 Sol 啊，它就是搞不定，这我非常难以理解。就这个版本，它就非得我自己每次手动来给它点这个输入框。这是我所…",
+      "quality": 8,
+      "practical": 4,
+      "sourceName": "抡锤者 Agent 工具",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
       "blocked": []
     },
     {
@@ -244,10 +476,30 @@
       "warnings": [
         "标题未翻译"
       ],
-      "agent": {
-        "verdict": "pass",
-        "reason": "有具体技术细节和数据分析。"
-      },
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "19f23dd19ff4",
+      "title": "Show HN: AgentRun – open-source, Self-improving Managed Agents",
+      "category": "tools",
+      "subcategory": "hands-on",
+      "tags": [
+        "agent",
+        "local",
+        "free"
+      ],
+      "bodyChars": 912,
+      "excerpt": "We (GREP.AI, YC F26) are open-sourcing AgentRun and turning it into a full managed agents platform. Read more about it in this post: https://agentrun.ai/blog/introducing-agentrun-run-smarter-ag... . It includes what we originally built for our own agent harness: - Self-improving agents - Web-grounded workflows - A range of sandboxes and computer environments - Thousands of tools and integrations - Detailed analytics on how your agents behave You can bring your own agent. AgentRun works with Pi, Claude Agents, Codex, OpenCode, and any other harness that supports ACP. You can self-host it (see…",
+      "quality": 9,
+      "practical": 1,
+      "sourceName": "Show HN (AI)",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
       "blocked": []
     },
     {
@@ -269,10 +521,113 @@
       "warnings": [
         "标题未翻译"
       ],
-      "agent": {
-        "verdict": "pass",
-        "reason": "有实践性内容，包括具体的工具链和配置过程。"
-      },
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "2d4436613d2a",
+      "title": "Build once, run on any agent: A practical guide to agent skills",
+      "category": "tools",
+      "subcategory": "prompt",
+      "tags": [
+        "tutorial",
+        "agent"
+      ],
+      "bodyChars": 8272,
+      "excerpt": "<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.0 Transitional//EN\" \"http://www.w3.org/TR/REC-html40/loose.dtd\"> How many times this week did you re-explain the same task to an agent? How many times did you ask your colleague with deep institutional knowledge how to solve a specific problem? That context shouldn’t be lost in a chat or locked in one person’s head. Agent skills let you capture repeatable instructions so you and your agents can reuse them. The skill you write for yourself tonight can later become part of a team’s pipeline. An agent skill is a versioned directory centered on a SKILL.md…",
+      "quality": 8,
+      "practical": 3,
+      "sourceName": "GitHub Blog",
+      "domain": "github.blog",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "bafe24b8549b",
+      "title": "Lawyer with too many GPUs, part 5: DeepSeek-V4.1-Flash at near-NVFP4 quality on eight V100s from 2018. 524K context, 100+ tok/s decode, ~160 tok/s with two chats at once, and my legal harness now run…",
+      "category": "tools",
+      "subcategory": "prompt",
+      "tags": [
+        "benchmark"
+      ],
+      "bodyChars": 6688,
+      "excerpt": "From about February 2026 to July 2026, I spent an immense amount of time building a legal harness to make Claude more predictable. It worked well. I tried to build the same thing that ran local models. That did not work. And then Opus improved so much that it would often skip my harness without me noticing. It still has a harness with hooks, but it's looser now. I bought lots of hardware to run local models during that time, repeatedly trying to vibecode a local model legal harness. Many failures, many lessons. Anyway, fast forward to the last three weeks and several things have happened: Dee…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "32a62eec80f9",
+      "title": "Who Moved the Frontier? Paying Open Frontier Challenges with Free Identities",
+      "category": "tools",
+      "subcategory": null,
+      "tags": [
+        "agent",
+        "free"
+      ],
+      "bodyChars": 1485,
+      "excerpt": "In an open frontier challenge, anyone, person or AI agent, submits changes to a shared problem, and a change that beats the best measured score becomes the public baseline. How should it pay when identities are free? Rank prizes can be gamed: on a replay of one track of a recent challenge, one solver's steps under two identities would have taken first and second prize. We consider a prediction-market rule, proposed for machine-learning contests, that pays each accepted step for the progress it adds; with exact scores, among rules that see only a step's start and end, only these resist splitti…",
+      "quality": 7,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "76bd871ead56",
+      "title": "A Cardiorespiratory Foundation Model Pretrained on Ten Physiological Signals for Perioperative and Critical Care",
+      "category": "tools",
+      "subcategory": "hands-on",
+      "tags": [
+        "tutorial"
+      ],
+      "bodyChars": 1090,
+      "excerpt": "Arterial, venous, pulmonary artery and intracranial pressures and ventilator waveforms guide decisions in operating rooms and intensive care units, yet foundation models for physiological waveforms have been built almost entirely on the electrocardiogram and photoplethysmogram. We present CARMEN, a single encoder pretrained without labels on ten cardiorespiratory waveforms (2.27 million modality-hours). CARMEN accepts any combination of co-recorded signals from 10 s to 5 min, and a conditioning mechanism, LSCNorm, restores the absolute signal level that normalization removes; without it, the…",
+      "quality": 7,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "a88bddb17214",
+      "title": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B",
+      "category": "tools",
+      "subcategory": "prompt",
+      "tags": [],
+      "bodyChars": 12574,
+      "excerpt": "Back to Articles LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B Enterprise Article Published November 12, 2026 Upvote 14 Abraham Daniels abedaniels ibm-granite Basel Shbita basels ibm-granite Chad DeLuca delucac ibm-granite Dan Gutfreund Gutfreund ibm-granite Michael Hind mikehind ibm-granite Shub A shubs90 ibm-granite LLMs rely on their context to generate the next set of tokens. Over a long trajectory, the context fills with numerous types of components: a system prompt, past conversation turns, instructions that act on retrieved documents, tool responses or user data, r…",
+      "quality": 6,
+      "practical": 2,
+      "sourceName": "Hugging Face Blog",
+      "domain": "huggingface.co",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": null,
       "blocked": []
     },
     {
@@ -292,13 +647,29 @@
         "没有命中任何标签",
         "标题未翻译"
       ],
-      "agent": {
-        "verdict": "fail",
-        "reason": "没有具体技术细节或实践性内容，仅为新闻转述。"
-      },
-      "blocked": [
-        "模型复核不通过（没有具体技术细节或实践性内容，仅为新闻转述。）"
-      ]
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "28e8e0605d78",
+      "title": "EvoX: Rethinking the Agent Harness as a Runtime Policy",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "agent"
+      ],
+      "bodyChars": 1531,
+      "excerpt": "Large language model (LLM) agents increasingly interact with tools and environments, yet plausible model decisions do not always translate into successful execution due to tool-call mismatches, interrupted workflows, and unsupported completion claims. We present EvoX, a Rust-based, multi-model agent runtime guided by The Second Policy, which views the harness as an Operational Policy complementing the foundation model's Semantic Policy. EvoX combines model-facing guidance with deterministic runtime control through three complementary mechanisms: Action Realization, Execution Continuity, and O…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
     },
     {
       "slug": "5c874530bf05",
@@ -319,10 +690,7 @@
       "domain": "lcz.me",
       "hard": [],
       "warnings": [],
-      "agent": {
-        "verdict": "pass",
-        "reason": "有具体技术细节、数据对比和配置过程。"
-      },
+      "agent": null,
       "blocked": []
     },
     {
@@ -348,6 +716,28 @@
       "blocked": []
     },
     {
+      "slug": "8dfb87a847ff",
+      "title": "单张 RTX 5060 Ti Ubuntu 上运行 Qwen3.8-Flash-Next（UD-Q4_K_XL，192K 上下文）的完整调优记录",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "benchmark",
+        "lowspec",
+        "tutorial",
+        "hardware"
+      ],
+      "bodyChars": 2643,
+      "excerpt": "Basalt 调优报告 — 2026-11-12 本机在单张 RTX 5060 Ti 上运行 Qwen3.8-Flash-Next（UD-Q4_K_XL，192K 上下文）的完整调优记录： 从 23 t/s 的基线到 55 t/s 的最终结果，以及调优过程中对内存与磁盘行为的两个有趣发现。 1. 硬件与软件 组件 规格 CPU 2 × Intel Xeon E5-2673 v3 @ 2.40 GHz（12 核 × 2，共 48 线程，2 个 NUMA 节点； 无 AVX-512 ，专家内核走 AVX-2） 内存 125.7 GiB GPU NVIDIA RTX 5060 Ti 16 GB（Blackwell / sm_120，驱动 580.178.04） 磁盘 TEAM T253512GB，512 GB SATA SSD 系统 Ubuntu 24.04，内核 7.0.0-42-generic，x86_64 软件：Basalt 引擎 0.3.2 （2026-11-08 从源码构建）+ Python server（ serve/ ），在 127.0.0.1:8080 提供 OpenAI / Anthropic / Responses 三种 API， basalt-vision sidecar 负责图像输入。 2. 模型信息 Qwen3.8-Flash-Next（MoE）— UD-Q4…",
+      "quality": 8,
+      "practical": 4,
+      "sourceName": "抡锤者 模型部署讨论",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
       "slug": "d1afc527db34",
       "title": "花了 10 美元在 Vast.ai 跑 H3：5080、4080 SUPER、5070 Ti 和双 7900 XTX 实测",
       "category": "hardware",
@@ -363,6 +753,28 @@
       "quality": 10,
       "practical": 5,
       "sourceName": "抡锤者 AI 音视频画图",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "eb24edddcd8d",
+      "title": "双卡 CMP 170HX 部署 Qwen3.8-Flash-Next（W4A16 + vLLM PP2）配置与实测代码170+",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "hardware",
+        "benchmark",
+        "tutorial"
+      ],
+      "bodyChars": 7764,
+      "excerpt": "双卡 CMP 170HX 部署 Qwen3.8-Flash-Next（W4A16 + vLLM PP2）配置与实测 硬件：2× NVIDIA CMP 170HX（解锁到 64GB / 74SM）· 主机 62GB 内存 · NVMe SSD 模型： Intel/Qwen3.8-Flash-Next-W4A16-AutoRound （INT4 W4A16，约 169GB，17 分片） 引擎：vLLM（AlexBrandes 的 vllm-cmp170hx fork + sm80 插件，Docker） 口径说明：本文所有数字为 本机实测 （单用户 think-off、greedy），非官方跑分。 1. 硬件与环境 项目 本机配置 GPU CMP 170HX ×2（GA100 / sm_80，解锁 64GB HBM2e、74 SM） 链路 PCIe Gen2 x4 ，无 P2P（PP 每步只传一份激活，不需要 P2P） 主机内存 62 GB （作者的配方按 93GB 测） CPU 48 线程 存储 NVMe SSD，模型 + 编译缓存放同一块盘（ /models3 ，约 150GB 余量） 系统 Ubuntu，NVIDIA 驱动 615.x 引擎镜像 ghcr.io/alexbrandes/cmp170hx-qwen38-flash-next@sha256:a87f558b57e60b…",
+      "quality": 8,
+      "practical": 3,
+      "sourceName": "抡锤者 模型部署讨论",
       "domain": "lcz.me",
       "hard": [],
       "warnings": [],
@@ -436,6 +848,29 @@
       "blocked": []
     },
     {
+      "slug": "4eaf7cc6ccbf",
+      "title": "Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU",
+      "category": "hardware",
+      "subcategory": "machine",
+      "tags": [
+        "local",
+        "lowspec",
+        "benchmark"
+      ],
+      "bodyChars": 43606,
+      "excerpt": "llama-modchip (v2.5.2) 3.00–3.75 bpw Vector & Dyadic CPU Inference for 284B & 30B MoE Models Continuous WikiText-2 & AtomicChat wiki-alt PPL · Logit KLD · 100-Pt Gate · Linux, macOS Metal & Windows 11 Quickstart · Signal Fidelity & Benchmarks · How 3D VQ & Fractal-64 Work · Quantization Specs · Supported Models · Leaderboard · v2.4 Paper Snapshot ( paper/ ) · FAQ 100/100 (30B) · 84/100 (284B) Quality Gate + WikiText-2 / wiki-alt PPL 99.15% / 97.78% CosSim vs BF16 (Fractal / VQ3) 56.93 / 56.40 GiB DeepSeek-V4 284B (MaxQ / VQ3) 13.30 GiB Nemotron-30B VQ3 GGUF 22.4–111.6 tok/s 30B MoE CPU decode…",
+      "quality": 12,
+      "practical": 2,
+      "sourceName": "HN 检索（本地推理生态）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
       "slug": "e7f1baa83671",
       "title": "llama.cpp b12321 发布",
       "category": "hardware",
@@ -450,6 +885,95 @@
       "practical": 2,
       "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
       "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "b89a1132e602",
+      "title": "llama.cpp b12340 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1373,
+      "excerpt": "<details open> server: fix SSRF for CORS proxy and media URLs (#32115) </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/66974653> macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubuntu 26.04 s390x (zDNN) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu x64 (CUDA 13) - CUDA 13.5 libraries Ubuntu arm64 (CUDA 13) - CUDA 13.5 li…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "2aa9b61e8515",
+      "title": "llama.cpp b12336 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1728,
+      "excerpt": "<details open> mtmd: require an F32 position embedding for HunyuanVL (#32131) HunyuanVL resamples its position embedding on the host into a float buffer sized for F32, then reads ggml_nbytes() of the tensor into it. The graph never uses the tensor, so any type loads, and an F64 tensor overflows the buffer at the first image request. Require the position embedding to be present and F32 when loading the HunyuanVL tensors. </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/66963761> macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "e93659a563fd",
+      "title": "llama.cpp b12329 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1881,
+      "excerpt": "<details open> CUDA: Optimize prefil via fuse of w_s scale in epilogue MMQ for nvfp4 checkpoints (#26048) ggml-cuda: Apply NVFP4 weight scale in MMQ write-back ggml-cuda: Fuse mul_mat(_id) + scale into MMQ ggml-cuda: Tests for the fused scale ggml-cuda: reuse existing graph to test fusion in mmq epiloque ggml-cuda: rename test_mul_mat_vec_fusion to test_mul_mat_fusion for consistency ggml-cuda: refine comments for clarity on MMQ dispatch and fusion checks in mul_mat functions ggml-cuda: refactor fusion checks for mul_mat operations and remove unused function </details> Website: <https://llama…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "77fdd7ecfe4a",
+      "title": "What models are you running for your AI agents? (Testing Qwen fine-tunes, MoE variants, and tracking t/s + prefill)",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "lowspec",
+        "agent"
+      ],
+      "bodyChars": 5566,
+      "excerpt": "I am curious what people are currently using as the core model for their local AI agents (e.g., in Hermes or similar setups). I've was initially running Qwen 3.6 35B-A3B IQ3 XXS on hermes working off (Intel Core Ultra 5 245K · Corsair 64GB DDR5 RAM · Asus TUF GeForce RTX 5070 Ti 16GB GDDR7 OC Edition Graphics Card running ai inferance on local home lab running UnRaid OS). First started with ollama years ago (where i was running 9B and 14B fully in vram) and months back switched to llama.cpp, then to llama-swap to be able to hot swap models and use MoE models. I started off getting 40 tokens p…",
+      "quality": 6,
+      "practical": 3,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
       "hard": [],
       "warnings": [
         "标题未翻译"
@@ -480,6 +1004,26 @@
       "blocked": []
     },
     {
+      "slug": "857b78b207b9",
+      "title": "百度的ERNIE5.5 Flash值得期待一下",
+      "category": "local",
+      "subcategory": "weights",
+      "tags": [
+        "local",
+        "free"
+      ],
+      "bodyChars": 555,
+      "excerpt": "百度这个新模型规格适合量化后本地部署，只要能到达Deepseek4.1-flash-1017一样能力就够了。 百度文心大模型11月11日发布 ERNIE 5.5 Flash Preview，这是基于此前发布的 Base 模型的首个后训练版本。该模型总参数 280B，激活参数 14B，支持 1M 上下文，官方称在编程、3D 建模、知识工作、内容创作等方面表现出色。权重将于 11 月 25 日前开源。 官方表示，ERNIE 5.5 Flash Preview 是后训练过程中的一个中间版本，尽管它已经取得同尺寸模型中较有竞争力的表现，但仍可能存在部分因训练不充分导致的能力缺陷。 ERNIE 5.5 Flash Preview是纯文本模型，它看不到画面，只能通过试玩将人物悬空、跑动方向不一致、相机错位等问题都转成可测量的代码测试，靠补全测试和反馈迭代。 百度还展示了该模型生成各种手机小游戏的案例。 ERNIE 5.5 Flash Preview基于不同的游戏引擎，生成了弹幕射击、肉鸽、塔防、竞速、卡牌 RPG、城建经营、物理解谜和互动叙事等游戏。 在构建游戏时，模型将规则层和表现层分开，做成确定性模拟，再让机器人试玩、状态空间搜索和关卡回放自动检查关卡能否通关、数值是否平衡。",
+      "quality": 7,
+      "practical": 3,
+      "sourceName": "抡锤者 资讯",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
       "slug": "961ae66e6d73",
       "title": "KQuant - new quantization technique, 3.7× better quants for Qwen Flash Next 180B, Qwen 27B, 35B, 9B (measured in KL-divergence reduction) (MLX)",
       "category": "local",
@@ -495,6 +1039,28 @@
       "practical": 3,
       "sourceName": "r/LocalLLaMA",
       "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "97181c064a6b",
+      "title": "1CatAI/1Cat-vLLM",
+      "category": "local",
+      "subcategory": "runtime",
+      "tags": [
+        "local",
+        "benchmark"
+      ],
+      "bodyChars": 50758,
+      "excerpt": "<!-- markdownlint-disable MD041 --> <p align=\"center\"> <img src=\"./assets/1cat-llm-logo.png\" alt=\"1Cat-LLM logo\" width=\"960\"> </p> 1Cat-LLM Make Volta Fast Again Modern LLM inference for NVIDIA Tesla V100 / SM70 > 1Cat-vLLM is becoming 1Cat-LLM. > > Broader support. More efficient kernels. More models to choose from. We started by making modern models fast on V100. The next chapter carries that work further: broader model and runtime support, more efficient execution, and more choice in how models are packaged and quantized. New [GGUF support](#gguf-support) brings a wider choice of community…",
+      "quality": 10,
+      "practical": 1,
+      "sourceName": "GitHub 检索（生态项目更新）",
+      "domain": "github.com",
       "hard": [],
       "warnings": [
         "标题未翻译"
@@ -559,6 +1125,110 @@
       "practical": 1,
       "sourceName": "Lobsters AI",
       "domain": "libreagi.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "c95a2fac556e",
+      "title": "FAA expands AI advice to manage air traffic congestion across entire US airspace",
+      "category": "money",
+      "subcategory": "client",
+      "tags": [],
+      "bodyChars": 1105,
+      "excerpt": "The US government has expanded the use of an AI tool for advising air traffic controllers to assist in managing air traffic across the entire national airspace system. Airline executives have voiced support for the rollout, but the US labor union representing air traffic controllers has said it was not involved in designing or testing the AI-driven system. The Federal Aviation Administration (FAA) says the $875 million SMART system has helped reroute 180 flights since being implemented in airspace over Washington, DC, on September 21. The agency claims that this saved an average of 10 minutes…",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "Ars Technica AI",
+      "domain": "arstechnica.com",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "69a0a44268aa",
+      "title": "Same Task, Different Statement: When and How Reformulation Helps LLM Problem Solving",
+      "category": "bench",
+      "subcategory": "benchmark",
+      "tags": [
+        "tutorial"
+      ],
+      "bodyChars": 1267,
+      "excerpt": "When people face a hard problem, they often restate it in a clearer way before solving it. We study whether the same habit helps large language models by rewriting the statement of a problem. A legal rewrite must keep the meaning, the constraints, and the correct answer unchanged. We test three kinds of rewrites. Decomposition makes hidden subgoals explicit. Typed Reformulation casts the task into a more suitable solving frame. Concept Reduction removes surface detail and exposes the task structure. We evaluate them on eight math, logic, and code benchmarks with eight models, all under the sa…",
+      "quality": 7,
+      "practical": 2,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "2aeacd71a36b",
+      "title": "SkinAdvisor: An AI-Driven Decision Framework for Skin Production Planning via Multi-Modal Transformer Sales Forecasting",
+      "category": "bench",
+      "subcategory": "benchmark",
+      "tags": [
+        "tutorial"
+      ],
+      "bodyChars": 1505,
+      "excerpt": "Skins, cosmetic in-game items, are a primary revenue stream for modern online games, yet production decisions (which skins to make, when to release, how to price) remain driven by intuition and retrospective analytics. We present SkinAdvisor, an AI-driven decision framework for skin production planning, powered by SkinCast, a deployed multi-modal Transformer forecasting 180-day per-day sales trajectories for unreleased skins. SkinCast couples four encoders: a pretrained Informer for player-preference time series, a pretrained Player-Hero-Skin graph embedder for relational priors, and two ligh…",
+      "quality": 7,
+      "practical": 2,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "3839af55bec8",
+      "title": "AROMA: Adaptive Representation-Oriented Multimodal Actuation for Vision-Language Model Control",
+      "category": "bench",
+      "subcategory": "benchmark",
+      "tags": [
+        "tutorial"
+      ],
+      "bodyChars": 1468,
+      "excerpt": "Mechanistic localization does not by itself yield usable control: causal sensitivity may occupy little activation energy, an accurate local direction may fail at finite scale, and a reachable numeral target may be wrong. We introduce AROMA (Adaptive Representation-Oriented Multimodal Actuation), a frozen-VLM control framework separating where to intervene, which geometry and gain to use, how to reach a target, which target to pursue, and when to act. In Llama-3.2-11B-Vision-Instruct, four dimensions of a causally validated cross-attention head explain 89.82% of cardinality sensitivity but onl…",
+      "quality": 6,
+      "practical": 2,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "6a13d7982ea3",
+      "title": "Mask-Pattern Position Augmentation: Training-Free Long-Context Extrapolation for Diffusion LLMs",
+      "category": "bench",
+      "subcategory": "benchmark",
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 1242,
+      "excerpt": "Diffusion large language models (dLLMs) generate by iteratively unmasking tokens with bidirectional attention, but rotary position embeddings (RoPE) still confine them to a fixed pretraining window. Existing training-free extrapolation, notably LongLLaDA, copies NTK-based RoPE scaling from autoregressive (AR) models and applies one static, length-only transform at every position and denoising step. That transplant ignores a signal unique to dLLMs: the evolving mask pattern of the partially decoded sequence. We propose Mask-Pattern Position Augmentation (MPPA). MPPA linearly interpolates indic…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
       "hard": [],
       "warnings": [
         "标题未翻译"
