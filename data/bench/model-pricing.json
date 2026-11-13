@@ -1,7 +1,7 @@
 {
   "id": "model-pricing",
   "kind": "openrouter-pricing",
-  "collectedAt": "2026-11-13T02:53:00.707Z",
+  "collectedAt": "2026-11-13T17:58:55.794Z",
   "upstream": {
     "label": "OpenRouter 模型目录 API",
     "url": "https://openrouter.ai/models"
@@ -109,16 +109,6 @@
           "completionPerMillion": 0,
           "free": true,
           "created": 1792622765
-        },
-        {
-          "name": "Apodex: Apodex 1.1 Mini (free)",
-          "id": "apodex/apodex-1.1-mini:free",
-          "url": "https://openrouter.ai/apodex/apodex-1.1-mini:free",
-          "context": 262144,
-          "promptPerMillion": 0,
-          "completionPerMillion": 0,
-          "free": true,
-          "created": 1790875335
         },
         {
           "name": "Cohere: North Mini Code (free)",
@@ -251,6 +241,16 @@
           "created": 1734158152
         },
         {
+          "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
+          "id": "deepseek/deepseek-v4.1-flash-1017",
+          "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
+          "context": 1048576,
+          "promptPerMillion": 0.038000000000000006,
+          "completionPerMillion": 0.5,
+          "free": false,
+          "created": 1792225624
+        },
+        {
           "name": "DeepSeek: DeepSeek Flash Latest",
           "id": "~deepseek/deepseek-flash-latest",
           "url": "https://openrouter.ai/~deepseek/deepseek-flash-latest",
@@ -259,36 +259,6 @@
           "completionPerMillion": 0.5,
           "free": false,
           "created": 1789399150
-        },
-        {
-          "name": "DeepSeek: DeepSeek V4.1 Flash",
-          "id": "deepseek/deepseek-v4.1-flash",
-          "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash",
-          "context": 1048576,
-          "promptPerMillion": 0.039,
-          "completionPerMillion": 1.2,
-          "free": false,
-          "created": 1789021285
-        },
-        {
-          "name": "inclusionAI: Ling 3.0 Flash Sante",
-          "id": "inclusionai/ling-3.0-flash-sante",
-          "url": "https://openrouter.ai/inclusionai/ling-3.0-flash-sante",
-          "context": 262144,
-          "promptPerMillion": 0.041999999999999996,
-          "completionPerMillion": 0.12319999999999999,
-          "free": false,
-          "created": 1788545946
-        },
-        {
-          "name": "inclusionAI: Ling 3.0 Flash Fin",
-          "id": "inclusionai/ling-3.0-flash-fin",
-          "url": "https://openrouter.ai/inclusionai/ling-3.0-flash-fin",
-          "context": 262144,
-          "promptPerMillion": 0.041999999999999996,
-          "completionPerMillion": 0.12319999999999999,
-          "free": false,
-          "created": 1787846290
         },
         {
           "name": "DeepSeek: DeepSeek V4 Flash Latest",
@@ -409,20 +379,50 @@
           "completionPerMillion": 0.22999999999999998,
           "free": false,
           "created": 1789176933
+        },
+        {
+          "name": "Amazon: Nova Lite 1.0",
+          "id": "amazon/nova-lite-v1",
+          "url": "https://openrouter.ai/amazon/nova-lite-v1",
+          "context": 300000,
+          "promptPerMillion": 0.06,
+          "completionPerMillion": 0.24,
+          "free": false,
+          "created": 1733437363
+        },
+        {
+          "name": "NVIDIA: Nemotron 3 Nano 30B A3B",
+          "id": "nvidia/nemotron-3-nano-30b-a3b",
+          "url": "https://openrouter.ai/nvidia/nemotron-3-nano-30b-a3b",
+          "context": 262144,
+          "promptPerMillion": 0.06,
+          "completionPerMillion": 0.24,
+          "free": false,
+          "created": 1765731275
+        },
+        {
+          "name": "IBM: Granite 4.2 8B",
+          "id": "ibm-granite/granite-4.2-8b",
+          "url": "https://openrouter.ai/ibm-granite/granite-4.2-8b",
+          "context": 131072,
+          "promptPerMillion": 0.06,
+          "completionPerMillion": 0.25,
+          "free": false,
+          "created": 1788206780
         }
       ]
     }
   },
   "stats": {
     "models": 40,
-    "free": 12
+    "free": 11
   },
   "files": [
     {
       "path": "https://openrouter.ai/api/v1/models",
       "url": "https://openrouter.ai/api/v1/models",
-      "sha256": "39a431b3f4fc9950393bd65751dc278315773f5afaed78ce95100466d799c5fa",
-      "bytes": 856455
+      "sha256": "411e4443b95b7ada0f230fda410d80432d97771d74f5aee519bb3c9e66a71866",
+      "bytes": 849075
     }
   ]
 }
