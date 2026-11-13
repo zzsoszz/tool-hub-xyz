@@ -1,0 +1,905 @@
+{
+  "day": "2026-11-14",
+  "reviewedAt": "2026-11-13T17:59:21.532Z",
+  "reviewer": "cloudflare/@cf/meta/llama-3.1-70b-instruct",
+  "note": "cloudflare/@cf/meta/llama-3.1-70b-instruct：复核 12 条，解析到 12 条判定",
+  "rules": {
+    "minItems": 3,
+    "minBodyChars": 120,
+    "minSummaryChars": 40,
+    "maxTags": 4,
+    "agentMaxItems": 12,
+    "agentBatch": 6,
+    "agentChars": 900,
+    "agentExcerptChars": 600
+  },
+  "passed": true,
+  "reasons": [],
+  "total": 39,
+  "blocked": [
+    "7524131abbd9",
+    "bfd69da35463",
+    "8f34c2d366eb"
+  ],
+  "survivors": 36,
+  "items": [
+    {
+      "slug": "da39a3ee5e6b",
+      "title": "研究生如何用 AI 辅助完成一篇综述：我的科研写作工具与实践经验",
+      "category": "apps",
+      "subcategory": "knowledge",
+      "tags": [
+        "agent",
+        "generate"
+      ],
+      "bodyChars": 10704,
+      "excerpt": "Matrix精选 2026年11月13日 34 分钟阅读 研究生如何用 AI 辅助完成一篇综述：我的科研写作工具与实践经验 主作者 胡拉图说 少数派作者 🌐 hulatu.com｜分享电子产品、生活思考、运动日常的食品研究生。 胡拉图说 胡拉图说 少数派作者 🌐 hulatu.com｜分享电子产品、生活思考、运动日常的食品研究生。 联合作者 胡拉图说 少数派作者 🌐 hulatu.com｜分享电子产品、生活思考、运动日常的食品研究生。 胡拉图说 胡拉图说 少数派作者 🌐 hulatu.com｜分享电子产品、生活思考、运动日常的食品研究生。 🌐 hulatu.com｜分享电子产品、生活思考、运动日常的食品研究生。 34 分钟阅读 微信扫码分享 点击下方按钮可复制链接 Matrix 首页推荐 Matrix 是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选 Matrix 最优质的文章，展示来自用户的最真实的体验和观点。 文章代表作者个人观点，少数派仅对标题和排版略作修改。 摘要 ：从确定选题、检索文献，到整理研究证据、撰写正文、绘制机理图，再到投稿前的格式检查，完成一篇综述涉及许多重复而繁琐的工作。本文结合我参与完成的一篇已获期刊录用的综述，分享如何利用 AI、Zotero、Keynote 和 AI Agent 辅助科研写作，并展示各个…",
+      "quality": 10,
+      "practical": 2,
+      "sourceName": "少数派",
+      "domain": "sspai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "文章提供了具体的实践经验和工具介绍。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "cf57e01158aa",
+      "title": "modules for my opensource (GPL3) harness have evolved to the point where this is possible. this is a full fledged videogame running inside it!",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [
+        "generate"
+      ],
+      "bodyChars": 1534,
+      "excerpt": "my harness for local AI that i've been working on since February this year (2026) has evolved to the point where this is possible. What you see here is a module for my harness's webui, it's not a seperate program. This demonstration is running on Gemma4 26b locally , believe it or not, using only a SINGLE model and one local API endpoint (via llamacpp). No multi-API tomfoolery here! The stable diffusion image generation is moss-image which i'm able to do because i have a strix halo now, but on smaller hardware you could do something like z-image turbo at Q4 quant, which is what i used to do b…",
+      "quality": 6,
+      "practical": 2,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "文章展示了一个具体的项目和技术实现。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "c1715b9096e0",
+      "title": "Recompute or Restore? Host-Tier KV for Multi-Model Agent Workflows on a Static-Graph NPU Serving Stack",
+      "category": "apps",
+      "subcategory": "inference",
+      "tags": [
+        "local",
+        "agent"
+      ],
+      "bodyChars": 1846,
+      "excerpt": "Agent workflows issue dependent model calls that share long context prefixes, so serving them efficiently depends on reusing the key-value (KV) cache of those prefixes. On accelerators that compile model graphs ahead of time, however, the device KV budget is fixed, and prefixes evicted under load must be recomputed. Restoring them from host memory avoids this recomputation, but the transfer occupies the same engine thread as prefill and decode, so its benefit is not guaranteed. In this paper, we study when restoring beats recomputing on a commercial static-graph neural processing unit (NPU) s…",
+      "quality": 6,
+      "practical": 2,
+      "sourceName": "arXiv 检索（推理引擎与量化）",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "文章提供了研究论文的摘要和技术讨论。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "7524131abbd9",
+      "title": "Why is Google cutting off Search from AI-free schools? Here are some theories",
+      "category": "apps",
+      "subcategory": "knowledge",
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 138,
+      "excerpt": "Article URL: https://text.npr.org/nx-s1-6029408 Comments URL: https://news.ycombinator.com/item?id=50484960 Points: 83 # Comments: 73",
+      "quality": 9,
+      "practical": 1,
+      "sourceName": "Hacker News (AI)",
+      "domain": "text.npr.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "文章仅为新闻转述，没有提供实践经验或技术讨论。"
+      },
+      "blocked": [
+        "模型复核不通过（文章仅为新闻转述，没有提供实践经验或技术讨论。）"
+      ]
+    },
+    {
+      "slug": "fc95a237e0ad",
+      "title": "Show HN: RealtimeVAD – trading false positives for 110ms earlier end-of-speech",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [
+        "benchmark"
+      ],
+      "bodyChars": 1041,
+      "excerpt": "Hey guys. I recently watched the latency reports for my local voice assistant, which show a waveform plus silero probability for voice activity. I noticed silero lags visibly on the speech off signal. There had to be a method to get this signal closer to what I felt is optimal. My idea was to use a 10 ms energy detector with a threshold that adapts to environment or room noise. Which worked amazingly well. It created more false positives but in my speculative generation pipeline that would not matter. If it's wrong and the user continues speaking I can abort the pipeline fast. I benchmarked m…",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "Show HN (AI)",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "文章提供了具体的技术实现和benchmark结果。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "f21ab443256a",
+      "title": "I built speedy Strix Halo kernels for the top-51 LLMs with AMD Loom (and you can too)",
+      "category": "apps",
+      "subcategory": "inference",
+      "tags": [
+        "local",
+        "agent"
+      ],
+      "bodyChars": 2649,
+      "excerpt": "I’ve been trying out a new experimental software flow from AMD’s AI Group, and I’ve been having a lot of fun with it, so I thought I’d share and see what y’all think too. hrx-loom is a new end-to-end tool stack (compiler, runtime, serving tools) that lets anyone build, optimize, serve, and share model programs without any modifications to the inference engine or server. The kernels are written in .loom files, a vector programming model reminiscent of MLIR, which can be complex for humans but easy for agents (C++ is also supported). Over the past couple weeks, I developed an agent skill that w…",
+      "quality": 6,
+      "practical": 2,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "文章提供了具体的技术实现和工具介绍。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "bfd69da35463",
+      "title": "Sketching Language Models for Context Attribution",
+      "category": "apps",
+      "subcategory": "knowledge",
+      "tags": [],
+      "bodyChars": 1623,
+      "excerpt": "Context attribution asks how removing parts of a prompt changes a language model's output. We study leave-one-out (LOO) attribution for a prompt of $n$ tokens and a fixed measurement function. Computing all LOO values directly requires $n$ model evaluations. Under a stability assumption, our algorithm estimates all LOO values to error proportional to $\\varepsilon$ with constant probability using $O(\\sqrt{\\log(1/\\varepsilon)}/\\varepsilon)$ evaluation calls. To complement our upper bound, we prove a matching $Ω(\\sqrt{\\log(1/\\varepsilon)}/\\varepsilon)$ lower bound on the number of evaluation cal…",
+      "quality": 7,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "摘要为空白。"
+      },
+      "blocked": [
+        "模型复核不通过（摘要为空白。）"
+      ]
+    },
+    {
+      "slug": "1ff942b56240",
+      "title": "Show HN: Cerulion – ROS 2-compatible robotics runtime with multi-process replay",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [
+        "agent"
+      ],
+      "bodyChars": 4703,
+      "excerpt": "Hey HN! I'm Lakshay. Raveen and I have built Cerulion, a ROS2-compatible robotics runtime written in Rust. We've worked hard on lowering IPC transport latencies without making the single process tradeoff or forcing POD message types. These fast multi-process graphs can then be resimmed deterministically, and existing ROS2 nodes/launch files can run unmodified alongside native Cerulion Rust/Python code. Installation and quickstart (with a one-shot prompt for your favorite coding agent) here at the repo README: https://github.com/cerulion-inc/cerulion I worked on off-road autonomy during my PhD…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "Show HN (AI)",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容包含实践性内容和步骤。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "8057fd47e1be",
+      "title": "赛博领鸡蛋：InstaBox，免费领 4 核 8GB 云电脑，支持 Linux 桌面、安卓镜像和 AI Agent",
+      "category": "tools",
+      "subcategory": "hands-on",
+      "tags": [
+        "agent",
+        "tutorial",
+        "free",
+        "money"
+      ],
+      "bodyChars": 1084,
+      "excerpt": "可能，我们需要换一个思路来理解 VPS 了。 以前的 VPS 是一台远程的 Linux 服务器，通过 IP 地址，使用 SSH 登录，然后自己配置环境、安装软件。 现在，越来越多的服务商，直接把 VPS 包装成 AI 设备，提供图形桌面、浏览器，以及内置了 Claude Code、Codex 等 AI Agent 程序。 InstaBox 免费送4核8GB 云电脑 和前几天的 赛博领鸡蛋 产品 AgentScope 免费 AI Agent，4G内存，30G硬盘 类似，InstaBox 也开始赠送云电脑了。 不过它包装的更酷一些： 在浏览器进入之后，左侧是 AI Agent，右侧是桌面图形界面，已经预装了 Chromium，能直接用！ 配置不低，免费版本提供：4 vCPU、8 GiB 内存、20 GiB 硬盘。 不过，免费版本有限制，30分钟空闲后会自动关机，然后需要手动或者 API 唤醒。当然可以通过 API 保活，问题不大。 支持安卓镜像 在安装的时候，可以选择标准 debian，或者流行的 omarchy 操作系统，还可以选择 android 镜像，开机后就是一台安装系统： 高级版本还支持 macOS 26 Tahoe。 InstaBox 的另一大特色，是针对 AI Agent 做了专门设计，默认环境提供 Claude Code 和 OpenAI Codex 等工具，可以直接…",
+      "quality": 8,
+      "practical": 4,
+      "sourceName": "小众软件",
+      "domain": "appinn.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容包含实践性内容和步骤。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "ebbaf78916f4",
+      "title": "2.6 天一台M5 Ultra：把MiniMax-H3-Image本地文生图插件送上npm+GitHub的帐本",
+      "category": "tools",
+      "subcategory": "interface",
+      "tags": [
+        "benchmark",
+        "tutorial",
+        "agent",
+        "local"
+      ],
+      "bodyChars": 2200,
+      "excerpt": "2.6 天，一台 Mac：把本地文生图插件送上 npm+GitHub 的帐本 帖子所有配图全由插件自己跑的 MiniMax H3-Image 生成。 三天不到，把一个\"Mac 上纯本地文生图\"的 DSH 插件从选择型做到了 npm 和 GitHub 项目公开。这篇不写教程，只回答一个问题： 用M5 Ultra 256G 跑本地模型当开发大脑，做一整个真实工程任务，到底行不行。 先给结论： 行 ，而且账本好看。 配图：H3-Image 生成，20.6s。 任务本身 插件： dsh-h3-image ，把 MiniMax H3-Image 的 MLX 引擎包成 DSH 插件，装完向导式下载权重、本地出图，全程零出网 起点 11-11 选模型调研，终点 11-13 23:05 仓库转公开 44 个 git 提交、15 个 npm 版本、2379 步 agent 操作、 0 次步级失败 用一台 32GB 的 M5 Air 当\"弱机考官\"，当场揪出三个真 bug——门禁逻辑把装完机的 32GB 机器永远锁在\"待设置\"、内存显示用十进制把 32GB 机器标成 34GB、分段下载在特定网络下不回退。全是公开前必须修的 bug。 推理账本 开发全程压在M5 Ultra 256G + mlx-serve 上：模型为Qwen3.8-Flash-Next，4.7bpw 量化。 任务全程 decode…",
+      "quality": 9,
+      "practical": 5,
+      "sourceName": "抡锤者 Agent 工具",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容包含实践性内容和步骤。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "8f34c2d366eb",
+      "title": "AI Ambition: ArtCraft Cloned Photoshop and Now Wants to \"Rebuild Everything\"",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 7404,
+      "excerpt": "The theme of day two of the AI Engineer Code Summit in San Francisco was increasing ambition using AI . And there have been few projects as ambitious as ArtCraft in the AI era. So far the fledgling company has released 17 open source versions of popular software tools , starting with a Photoshop alternative built from scratch in Rust called PhotoCraft . You could feel the excitement in the room this morning when ArtCraft founder and CEO Brandon Thomas presented a kind of manifesto for AI-based open source at AIE Code. When he mentioned that ArtCraft had cloned Adobe’s Acrobat, with a product…",
+      "quality": 9,
+      "practical": 3,
+      "sourceName": "Latent Space",
+      "domain": "latent.space",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "内容主要是新闻转述，没有实践性内容或步骤。"
+      },
+      "blocked": [
+        "模型复核不通过（内容主要是新闻转述，没有实践性内容或步骤。）"
+      ]
+    },
+    {
+      "slug": "72fad23df48f",
+      "title": "【实测】Qwen 4.0 Max preview VS DeepSeek 4.1 Flase 1017",
+      "category": "tools",
+      "subcategory": "prompt",
+      "tags": [
+        "benchmark"
+      ],
+      "bodyChars": 402,
+      "excerpt": "Qwen 4.0 Max preview 和 DeepSeek 4.1 Flase 1017 动画制作能力实测。感觉能力差不多，不过 DeepSeek 直接就生成MP4动画了，Qwen 4.0需要我提醒用TTS生成中文旁白并合成动画。你们更喜欢哪一只影片？ 提示词 请制作一支 30 秒、16:9 横版的纯 JavaScript 动画短片，主题是：《一根线画出一整天》。 核心创意：一根线不停地向前延伸，画出一个普通人的一天。镜头跟着线头移动，上一幕留下的线自然成为下一幕的结构。 画面有艺术感、故事感和电影感。请自行完成整个作品的创意，包括中文旁白脚本、视觉设计、画面素材、动画、转场、音效和配乐，让最终成片尽可能接近专业制作水准。 Qwen 4.0 Max preview Youtube Video DeepSeek 4.1 Flase 1017 Youtube Video",
+      "quality": 8,
+      "practical": 3,
+      "sourceName": "抡锤者 AI 音视频画图",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容包含实践性内容和对比测试。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "abc2242aea7a",
+      "title": "Guide on setting up new pc from scratch for local ai model",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "local",
+        "lowspec",
+        "tutorial"
+      ],
+      "bodyChars": 940,
+      "excerpt": "I’ll include my specs at the end. Because probably no one’s going to read it.. For my new pc im considering migrating to Linux ubuntu, and set up my llama.cpp from there, my old pc had llama.cpp Vulkan sdk running on windows 11 Im looking for any guidance or tips while setting them up to ensure I didn’t miss any critical steps that could end up loosing a bunch of tps or something worse Beginner mistakes i would say I do know one tips and it’s plugging your hdmi cable to the integrated graphics card, that way it saves vram. But I don’t have one.. I appreciate any advise Bought a B550 WiFi moth…",
+      "quality": 6,
+      "practical": 2,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "1ac795302b7b",
+      "title": "Goal Encoding in LLMs",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "tutorial"
+      ],
+      "bodyChars": 1321,
+      "excerpt": "We investigate whether and how LLMs encode goals: internal neural representations that precede and guide action, and that are flexible enough to be realized through many different execution paths. We construct a coding setting with multiple sub-tasks that allows us to evaluate goal-seeking behavior and the selection of sub-goals. In this setting, we localize an encoding of the next sub-goal in the outputs of a sparse set of attention heads. The same heads can be used to decode the LM's future actions in natural language (e.g., \"I'm checking if a word is a palindrome\"). We verify that this enc…",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "8400bdfe1e2a",
+      "title": "XYBench: Helping with the problem behind the question",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "benchmark",
+        "tutorial"
+      ],
+      "bodyChars": 8760,
+      "excerpt": "Back to Articles XYBench: Helping with the problem behind the question Enterprise Article Published November 13, 2026 Upvote 2 Kyle Wiggers Ai2Comms allenai 📄 Paper | 🤗 Data | 💻 Code Truly useful AI assistants need to be able to help users who ask misguided questions—not just users who ask the right question with the right amount of detail. We’re releasing XYBench , a benchmark of 8K+ questions that tests how AI assistants respond to requests based on misconceptions, such as asking how to thicken frosting that keeps sliding off cupcakes when the real problem is that the cupcakes are still…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "Hugging Face Blog",
+      "domain": "huggingface.co",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "58eb9140e639",
+      "title": "RTX 5080 16GB 单卡:Basalt v0.3.3 + Qwen3.8-Flash-Next NVFP4-DQ6_K 实测(192K 上下文)",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "benchmark",
+        "lowspec",
+        "tutorial",
+        "free"
+      ],
+      "bodyChars": 7748,
+      "excerpt": "RTX 5080 16GB 单卡:Basalt v0.3.3 + Qwen3.8-Flash-Next NVFP4-DQ6_K 实测(192K 上下文) 先说明:这是我自己一台机器上的实测, 每项只跑了一次或少数几次 ,没有大规模质量评测。对比数据取自我之前在同一台机器上用 Strata 的测试, 不是同一时间窗口的严格对照 。所有数字请当作量级参考。 TL;DR 官方 Qwen3.8-FN-NVFP4-DQ6_K.basalt 文件 131.7 GB(122.6 GiB), 在 96 GB 内存 + 16 GB 显存的机器上能放进去 :启动日志显示常驻 67.8 GiB(显存 13.4 + 内存 54.4), 没有专家留在 SSD 。 预填充(读提示)5,400–6,000 tok/s;192K 附近的检索测试通过。生成速度随上下文变长从约 150 降到约 116 tok/s。 编程任务 A(写缓存加单元测试)重复 4 次 全部通过 ,实测生成约 130 tok/s。 和我之前用 Strata 跑 UD-Q4_K_XL 相比,预填充快约 35–41%,生成快约 25–60%(长上下文检索里差距较小,编程任务里较大)。和 Strata + IQ3_S 相比,预填充快 21–37%,但 长上下文下生成速度更低 。 关键是\"为什么能放进去\":NVFP4 的专家只有 63.3 GiB,…",
+      "quality": 14,
+      "practical": 5,
+      "sourceName": "抡锤者 模型部署讨论",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "62263de506e0",
+      "title": "推翻上篇结论：从 ik_llama.cpp 转投 Strata，24G 显存跑 125B 提速 3 倍",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "hardware",
+        "benchmark",
+        "local",
+        "lowspec"
+      ],
+      "bodyChars": 5954,
+      "excerpt": "推翻上篇结论：从 ik_llama.cpp 转投 Strata，24G 显存跑 125B 提速 3 倍 昨天我在 博客 发过一篇文章，结论是\"试过 Strata，最后留在了 tandem.cpp\"。今天这篇把它推翻。不是昨天的判断错了，是当时有一个前提不成立：驱动版本不够，Strata 根本装不上。昨天之后，这个前提没了。 先给结果。同一个模型，同一张显卡，从 20 tokens/s 出头，做到了稳定 50 到 60，最好的一次跑到 79.7。中间踩了六个坑，每个都写在这篇文章里，包括我怎么发现的、差一点怎么误判、最后怎么解决的。如果你也是 24G 显卡加大内存跑 125B 的 MoE 模型，这篇记录了完整的排查和解决过程。 先看四张图。 第一张是结果：冷启动 42，暖态 60，峰值 79.7。左边两根是旧方案的常态：刚启动 20，日常用 15。 第二张是问题本身：旧引擎的速度不是恒定的，是一条持续下滑的曲线。 第三张是新方案的结构：显存 24G 只放热数据，283G 内存放全部家底。 第四张是调优成绩单：冠军是起点自己——这轮调优的收益在结构与质量，不在微基准速度。 先看图 四张图把这次改造讲完。 第一张是结果。右边三根柱子是新方案：冷启动 42，暖态 60，峰值 79.7。左边两根是旧方案的常态：刚启动 20，日常用 15。 第二张是问题本身。旧引擎的速度不是恒定的，是一条持…",
+      "quality": 8,
+      "practical": 3,
+      "sourceName": "抡锤者 模型部署讨论",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "9e4e22b31fa4",
+      "title": "4× CMP 170HX 部署 DeepSeek-V4.1-Flash-1017（EXL3 + vLLM PP4，Engram 走 NVMe）没有补容和加内存的前提下速度只有40+",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "benchmark",
+        "hardware",
+        "lowspec"
+      ],
+      "bodyChars": 6414,
+      "excerpt": "4× CMP 170HX 部署 DeepSeek-V4.1-Flash-1017（EXL3 + vLLM PP4，Engram 走 NVMe） 硬件：4× NVIDIA CMP 170HX（解锁 64GB / 74SM，PCIe Gen2 x4，无 P2P）· 主机 62GB 内存 · 大容量 NVMe 模型： DeepSeek-V4.1-Flash-1017 （混合权重：路由专家 EXL3 2.9bpw + 稠密层 FP8 + DSpark 草稿 FP4） 引擎：vLLM + 社区 sm80 栈（GNmac-lab deepseek-v41-flash-1017-cmp170hx recipe，v1.2.0） 本机布局： PP4（TP1 / PP4） ， P2P=0 ，262K 上下文 口径说明： 第 6 节性能为本机实测 （Gen2x4 无 P2P、PP4、62G 内存、think-off、400 token）；其余配置为本机真实 .env / serve.sh 。recipe 官方 PP4 参考值（作者 x16 主机）一并列出作对比。 1. 硬件与环境 项目 本机配置 GPU CMP 170HX ×4（GA100 / sm_80，解锁 64GB HBM2e、74 SM） 链路 PCIe Gen2 x4 ， 无 P2P → 必须用 PP4 （TP4 需要 x16 + P2P）…",
+      "quality": 7,
+      "practical": 3,
+      "sourceName": "抡锤者 AI硬件",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "c5aa7a64b76b",
+      "title": "Minimax H3 Image单卡7900 XTX测试好用。但64G内存无法常驻连续出图。",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "lowspec",
+        "benchmark",
+        "tutorial"
+      ],
+      "bodyChars": 130,
+      "excerpt": "RT 这个模型非常棒。 参加了官方API模型评测 各种优秀，今天本地部署了一下 7900XTX轻松跑图 就是无法连续出因为几乎每个步骤都要清掉前面的显存 想128但是ddr5 其实好像换96就行了 还是贵，这个价买内存有一种被当傻子玩的感觉",
+      "quality": 7,
+      "practical": 3,
+      "sourceName": "抡锤者 AI 音视频画图",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "5ffa14409b3b",
+      "title": "Metal Sandbox: Isolated Execution and Command Scheduling for GPU Coding Agents on Apple Silicon",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "lowspec",
+        "agent",
+        "free"
+      ],
+      "bodyChars": 1491,
+      "excerpt": "On-device inference requires kernels that make effective use of local accelerators. Efficient training and evaluation of models that generate Apple Metal kernels benefit from native macOS tools and concurrent agent sessions. These sessions alternate between model requests, development commands, and GPU execution, leaving GPU capacity idle for much of a rollout. We present Metal Sandbox, infrastructure that combines restricted per-instance file access, native command execution, and command-level scheduling across interconnected Macs. Each agent retains its workspace and private development env…",
+      "quality": 6,
+      "practical": 4,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "bfe171f5f67f",
+      "title": "黄仁勋辞职，英伟达33年首换帅，市值蒸发超3万亿",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "money",
+        "free",
+        "hardware"
+      ],
+      "bodyChars": 2135,
+      "excerpt": "<!DOCTYPE html> < img id=\"wx_img\" src=\"https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png\" width=\"400\" height=\"400\"> 黄仁勋辞职，英伟达33年首换帅，市值蒸发超3万亿 henry 2026-11-13 17:02:39 来源： 量子位 一个时代结束了 henry 发自 凹非寺 量子位 | 公众号 QbitAI 刚刚，英伟达宣布黄仁勋已辞去公司总裁、首席执行官及董事职务，即刻生效。 现任执行副总裁兼 CFO Colette Kress 出任临时 CEO，并继续兼任原有职务，直至正式继任者获任命。 消息公布后，英伟达盘前股价直线跳水，一度跌至150.13美元，较前一交易日收盘下跌约13.58%。 开盘后，英伟达股价跌幅仍超10%。不过截止发稿前，跌幅逐渐收窄，探底回升，报跌-4.63%。 作为参照，2025年1月27日，DeepSeek引发市场对AI算力投入的重新评估，英伟达曾单日收跌约17%，市值蒸发约5930亿美元，创下当时美股单家公司单日市值损失纪录。 黄仁勋辞职 黄仁勋于1993年联合创办英伟达，至今已掌舵公司33年。 根据公告，董事会已启动正式CEO的遴选，将同时考虑内部和外部候选人。 与此同时，英伟达任命Harvey C. Jon…",
+      "quality": 9,
+      "practical": 2,
+      "sourceName": "量子位",
+      "domain": "qbitai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "18e162d94a40",
+      "title": "llama.cpp b12361 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1372,
+      "excerpt": "<details open> llama: move moe-cache code out of llama-graph (#32157) </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/67254818> macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubuntu 26.04 s390x (zDNN) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu x64 (CUDA 13) - CUDA 13.5 libraries Ubuntu arm64 (CUDA 13) - CUDA 13.5 lib…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "c0311ac6a30e",
+      "title": "llama.cpp b12360 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1813,
+      "excerpt": "<details open> CUDA: split the PAD_REFLECT_1D grid to stay within the HIP grid limit (#32179) The kernel launches one block per row and 256-wide tile, so the {2, 16777217} test case asks for 16777217 blocks of 256 threads. HIP refuses a grid dimension above 2^32 threads and the ROCm jobs fail with \"invalid configuration argument\". The host now launches the grid in chunks of at most UINT32_MAX / 256 blocks and passes the chunk offset to the kernel. Real sizes fit in a single chunk and keep their timings. </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.c…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "5add9a5874d6",
+      "title": "Does the Vulkan backend cost speed? Same Qwen3.6-35B-A3B model, CUDA vs Vulkan on five NVIDIA cards",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "lowspec",
+        "benchmark"
+      ],
+      "bodyChars": 1241,
+      "excerpt": "RustingStrata has two GPU backends that run the same kernels: CUDA (compiled at run time with NVRTC, no nvcc, no C++ build step) and Vulkan. Vulkan is how it runs on AMD, so I wanted to know what it costs on a card where I can compare both. Same file on every card: Qwen3.6-35B-A3B-UD-Q2_K_XL.gguf , fully in VRAM, MTP off. GPU Prefill, 4K prompt: CUDA / Vulkan Decode after 4K: CUDA / Vulkan Vulkan vs CUDA (prefill / decode) RTX 3060 12 GB 2216 / 2154 tok/s 113.4 / 113.6 tok/s 97% / 100% L40S 9030 / 8571 213.2 / 184.9 95% / 87% A30 3544 / 3326 131.9 / 104.0 94% / 79% A100 80 GB 6203 / 5589 173.…",
+      "quality": 7,
+      "practical": 2,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "b9238203b164",
+      "title": "Look what my son gave me!",
+      "category": "hardware",
+      "subcategory": "cost",
+      "tags": [],
+      "bodyChars": 501,
+      "excerpt": "I told my son I was playing around with local AI on a 3090. He told me he used to mine Ethereum and had a shed full of 3090's. He asked me if I wanted a couple. Ummm... let me think about it... OH YES I DO! Now a few new fans and a bit of a clean-up... grab a couple risers and a power supply... pop in a bit more RAM.. wow. https://preview.redd.it/6jtwj6ufhe1i1.png?width=1075&format=png&auto=webp&s=86500ed00010400ebad0529f653612c3ecc62729 submitted by /u/LankyGuitar6528 [link] [comments]",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "0ac509037420",
+      "title": "【34.5 min → 3.3 min】用对注意力机制的2×7900XTX在H3流程中可以提速多少？—— 答案1050％↑",
+      "category": "local",
+      "subcategory": "weights",
+      "tags": [
+        "benchmark",
+        "generate",
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 7302,
+      "excerpt": "10.5×的提升有点神奇噢，但这跟我Comfy UI的体质有直接关系 因为常常做一现数据的复现，所以本地的Comfy Ui的环境已经被我搞得非常地复杂。大家可以简单地把它理解为我把它弄残了。832×480 / 15 秒 / 单条总耗时能跑出半个多小时。就是因为注意力机制后端失效。现在在捋顺的情况下，此消彼涨，数据自然很夸张。 当然，也有间接的好处：在没有过度粉饰的情况下拿它拿标题就很吸睛。唉，就是传说中的标题党，震惊部。 这套项目该有的正常表现，希望大家多多跟贴。 －－－－－－－－－－－－－－－－－－－－分割线－－－－－－－－－－－－－－－－－－－－－－－ MiniMax-H3 · 7900 XTX 优化看板（文字版） 日期：2026-11-13 平台：AMD Radeon RX 7900 XTX 24 GB ×2 / ROCm 7.2.0 / ComfyUI（ /home/jay/ComfyUI-AMD ） 工作流：MiniMax-H3（ minimax_h3_fl2va_pruned-w4a8_convrot + turbo LoRA v4 step600） 本文是 HTML 看板的 Markdown 版本，结构、数字与判定完全一致；图表以数据表 + 走势描述呈现。 00 今天最大的成效 一句话： 83% 的收益来自一处环境修复 ——venv 里的 torch 与系统 ROC…",
+      "quality": 10,
+      "practical": 3,
+      "sourceName": "抡锤者 AI 音视频画图",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "06523e1cd084",
+      "title": "ModelMesh – Native macOS app to shard models across Macs via Llama-RPC",
+      "category": "local",
+      "subcategory": "quantize",
+      "tags": [
+        "local",
+        "agent"
+      ],
+      "bodyChars": 2347,
+      "excerpt": "<!DOCTYPE html> Architecture & Capabilities MULTI-NODE SHARDING VIA LLAMA-RPC Pool unified memory across multiple Macs on your network to run models that exceed a single machine's RAM: Automatic Peer Discovery: Nodes running ModelMesh on the same subnet discover each other automatically via Bonjour/mDNS. Thunderbolt 5 RDMA + TCP Fallback: Automatically uses librdma when nodes are connected via Thunderbolt 5, falling back to TCP over Ethernet. Live Cluster Telemetry: Monitor per-node memory allocation, RPC worker status, and token generation speeds from a single native window. NATIVE LLAMA.CPP…",
+      "quality": 6,
+      "practical": 4,
+      "sourceName": "Hacker News Search",
+      "domain": "modelmesh.app",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "40e78db6601d",
+      "title": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
+      "category": "local",
+      "subcategory": "runtime",
+      "tags": [
+        "local"
+      ],
+      "bodyChars": 5191,
+      "excerpt": "Back to Articles llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem Team Article Published November 13, 2026 Upvote 89 Daniel Bevenius danbev ggml-org Georgi Gerganov ggerganov ggml-org merve merve ggml-org llama.cpp makes it possible to run multi-modal LLMs across a wide range of hardware - from consumer-grade local machines to high-end enterprise servers. Through quantization, optimized backends, and a portable C/C++ implementation, we make AI inference accessible at every level of the software stack. We believe this is the most lightweight, versatile and sensible platform…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "Hugging Face Blog",
+      "domain": "huggingface.co",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "fe99d9d63832",
+      "title": "Qwen3.5-9B running on a PS4’s GPU, offline, using its own MTP head for speculative decoding",
+      "category": "local",
+      "subcategory": "weights",
+      "tags": [
+        "free",
+        "benchmark"
+      ],
+      "bodyChars": 713,
+      "excerpt": "I made this, so a quick note: it’s my open-source project. Qwen3.5-9B runs on a stock PS4 at 31–39 tok/s. The MTP head that ships with Qwen3.5 made the biggest difference: it drafts up to two tokens and the full model checks them in one pass, which took it from 22 to 31–39 tok/s on this old GPU. Weights are re-packed into custom 4- and 3-bit formats to fit about 4.5 GiB. Your old PS4 can now run a 9B AI, offline, on its own GPU. It talks, listens, and writes code. No cloud, no subscription, no Linux. Free and open source. Code: https://github.com/leonardo-alegria/garlic-llm Direct download li…",
+      "quality": 6,
+      "practical": 3,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "3b126bd5a10f",
+      "title": "Show HN: Reflota – Open-source data recovery for NTFS/FAT disks with phased copy",
+      "category": "local",
+      "subcategory": null,
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 140,
+      "excerpt": "Article URL: https://github.com/Christ10-8/reflota Comments URL: https://news.ycombinator.com/item?id=50482455 Points: 21 # Comments: 3",
+      "quality": 7,
+      "practical": 1,
+      "sourceName": "Show HN (AI)",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "ed496242411f",
+      "title": "I noticed the 2 Hessian Refinement of MACaQ can be applied to any GGUF without any patches ... and tried it. 13% better quants",
+      "category": "local",
+      "subcategory": "quantize",
+      "tags": [
+        "local",
+        "benchmark",
+        "generate",
+        "free"
+      ],
+      "bodyChars": 3510,
+      "excerpt": "TLDR: Qwen3.8-27B UD_4_XL quant with 13.23% less KL divergence than unsloth (on my small testset, I just have a single 5090, feel free to test more). Technically it performs 4% better on my LiveCodeBench benchmark (but that would be a single data point, so it's not super-reliable). It is equally fast and using it in open-webui it \"feels\" better. https://huggingface.co/christophedevriese/Qwen3.8-27B-Hessian-Refined-GGUF I noticed from the MACaQ paper, which integrates changes proposed in Google/Deepmind papers, you can take the 3 components they use and just apply 1 and 2, and you just get >15…",
+      "quality": 6,
+      "practical": 2,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "a9c98e763abd",
+      "title": "TraceKV: Policy-Preserving Low-Rank KV Cache Compression for Reasoning Vision-Language Models",
+      "category": "local",
+      "subcategory": "quantize",
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 1325,
+      "excerpt": "Reasoning vision-language models (VLMs) impose substantial KV cache demands from both large multimodal contexts and growing reasoning traces. Low-rank KV compression has emerged as a promising paradigm that stores low-dimensional latents of KV states and can be combined with quantization. However, existing low-rank methods often induce growing predictive policy drift from the dense model when compressing reasoning KV states, resulting in reasoning failures. We identify two key causes of this degradation: calibration-state mismatch between static contexts and on-policy reasoning states, and un…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv 检索（推理引擎与量化）",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "a00eee2ce894",
+      "title": "Show HN: PharmA2A, an open protocol for pharmacy-to-supplier orders on A2A",
+      "category": "local",
+      "subcategory": "weights",
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 487,
+      "excerpt": "I'm a pharmacist in France and a nerd. I built an open source protocol based on A2A, Called PharmA2A. Why, because normally I order directly from more than hundred of suppliers, by phone mails or on the web forms. The idea is to automatise orders of selling and buying between pharmacies and their suppliers. Since 12 November, PharmA2A is live on GH. Is anyone of you is using A2A in real life ? Comments URL: https://news.ycombinator.com/item?id=50478543 Points: 11 # Comments: 4",
+      "quality": 7,
+      "practical": 1,
+      "sourceName": "Show HN (AI)",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "36ea58fb5d58",
+      "title": "继续尝试通过优化QFN3.8的系统提示词来弥补量化的能力丢失",
+      "category": "bench",
+      "subcategory": "benchmark",
+      "tags": [
+        "benchmark"
+      ],
+      "bodyChars": 250,
+      "excerpt": "QWEN4迟迟不发布，还是再想办法优化一下QWEN 3.8 FLASH NEXT。 主要思路，通过tooleval和benchlocal，得到评测结果。 然后把评测结果中的丢分项提取出来，丢 给deepseek flash 1017,kimi 3.1 pro,GLM 5.3 让它们三者分别分析后 各出一份系统提示词，最后由其中一个取三者之精华， 最终的系统提示词注入chat_template。 然后再跑一次这两个评测，看结果。迭代直到分数为满分。 首先跑优化前的评测（3-4小时）：",
+      "quality": 10,
+      "practical": 3,
+      "sourceName": "抡锤者 模型部署讨论",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "e68829630502",
+      "title": "MEET2027含金量再加码：AI4S/量子计算/AI Infra…第二批嘉宾强势来袭！",
+      "category": "bench",
+      "subcategory": "benchmark",
+      "tags": [
+        "benchmark",
+        "free"
+      ],
+      "bodyChars": 4817,
+      "excerpt": "<!DOCTYPE html> < img id=\"wx_img\" src=\"https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png\" width=\"400\" height=\"400\"> MEET2027含金量再加码：AI4S/量子计算/AI Infra…第二批嘉宾强势来袭！ 量子位的朋友们 2026-11-13 15:51:08 来源： 量子位 12.9 北京，来MEET2027现场 2026年已经走到尾声。回看这一年，AI行业最显著的变化不在榜单上，而在交付现场：模型从回答问题转向执行任务，机器人从春晚跳舞走向产线作业。衡量一套AI的标准，也从参数与跑分，转向系统效能与真实产出。 在这个演变进程下，本届大会的第二批嘉宾如约而至，他们将要回答：当AI从模型能力变成可交付的系统，是谁在把它送进真实场景，又是谁在底下为它提供支撑？ 在MEET2027，不同方向上的一线实践者，将在同一个舞台上给出各自的解法，也接受彼此的追问。判断经过交叉验证才站得住，趋势经过当面交锋才看得清。而MEET2027，让这一切在一天之内发生。来MEET2027现场，来听这些问题的完整答案。 第二批嘉宾阵容 王颖 百度集团副总裁 个人超级智能事业群组总裁 王颖女士，毕业于北京科技大学管理学院，随后获得中欧国际工商学院EMBA学位，曾任…",
+      "quality": 9,
+      "practical": 3,
+      "sourceName": "量子位",
+      "domain": "qbitai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "6fba103e736b",
+      "title": "DeepSeek flash max is the first model to reach >1% on challenging SWE-sweep bug finding benchmark",
+      "category": "bench",
+      "subcategory": "benchmark",
+      "tags": [
+        "agent",
+        "benchmark",
+        "free"
+      ],
+      "bodyChars": 1093,
+      "excerpt": "Hi, I've just updated the SWE-sweep leaderboard with more open-weight models! DeepSeek v4.1 flash (max) is the first open-weight model we evaluated that gets >1%. This benchmark is extremely challenging: Models get a snapshot of a (potentially very large) repo containing hundreds of bugs. They don't receive any hint about what these bugs are and need to fix them all. This makes for a very reasoning-heavy, long-horizon task. To isolate just the model capabilities we also evaluate all models in the same harness (but we did do some comparisons with Claude Code and Codex harnesses and neither see…",
+      "quality": 7,
+      "practical": 1,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "4f4c44dbe603",
+      "title": "Learning When Diffusion Language Models Should Regenerate",
+      "category": "bench",
+      "subcategory": "benchmark",
+      "tags": [],
+      "bodyChars": 1051,
+      "excerpt": "Remasking allows diffusion language models to revisit generated text, but effective correction requires knowing when and what to revise. Our diagnosis on Sudoku reveals two gaps. Hidden states contain error information that token confidence does not reliably expose, and remasking an isolated error usually reproduces it when the surrounding context remains fixed. These findings motivate DiVR , a verifier that predicts whether a partially generated sequence will reach a correct answer. Trained on the final correctness of the model's own trajectories, DiVR decides when to regenerate a block and…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "a4f183bbb9af",
+      "title": "FLEX-LBP: Learning Local Binary Patterns with Exact Binary Inference for Texture Classification",
+      "category": "bench",
+      "subcategory": "benchmark",
+      "tags": [
+        "benchmark"
+      ],
+      "bodyChars": 1811,
+      "excerpt": "Local Binary Patterns (LBP) remain among the most widely used texture descriptors, from industrial inspection to medical imaging. Yet their radius, sampling angles, color transform and thresholds are fixed by hand for each dataset. We present FLEX-LBP, which learns these parameters by backpropagation while every forward pass computes exact binary codes and hard histogram counts. A straight-through estimator acts only in the backward pass, so the deployed descriptor is an interpretable hard-binary LBP with 90 learnable parameters and unchanged inference cost. In a controlled ablation on six co…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "8213e094b96c",
+      "title": "Towards Green Text Generation: Memory-Based Speculative Decoding",
+      "category": "bench",
+      "subcategory": "cost",
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 1266,
+      "excerpt": "Speculative decoding accelerates text generation with large language models by letting a cheap draft model propose tokens that a large verifier checks in a single forward pass. We introduce Olifant, a draft model built on a memory-based classifier. It predicts the next token from a four-token window in under 0.3 ms on CPU, requiring no GPU, no backpropagation, and no accelerator memory. We measure throughput and energy under two verifier regimes on consumer hardware. Without a KV cache, drafting is nearly free: a domain-matched Olifant model reaches 38.1% acceptance on EU legal text, deliveri…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv 检索（推理引擎与量化）",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    }
+  ]
+}
