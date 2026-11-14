@@ -1,6 +1,6 @@
 {
   "day": "2026-11-14",
-  "reviewedAt": "2026-11-13T17:59:21.532Z",
+  "reviewedAt": "2026-11-14T02:41:03.929Z",
   "reviewer": "cloudflare/@cf/meta/llama-3.1-70b-instruct",
   "note": "cloudflare/@cf/meta/llama-3.1-70b-instruct：复核 12 条，解析到 12 条判定",
   "rules": {
@@ -15,13 +15,13 @@
   },
   "passed": true,
   "reasons": [],
-  "total": 39,
+  "total": 48,
   "blocked": [
     "7524131abbd9",
-    "bfd69da35463",
+    "8057fd47e1be",
     "8f34c2d366eb"
   ],
-  "survivors": 36,
+  "survivors": 45,
   "items": [
     {
       "slug": "da39a3ee5e6b",
@@ -42,7 +42,7 @@
       "warnings": [],
       "agent": {
         "verdict": "pass",
-        "reason": "文章提供了具体的实践经验和工具介绍。"
+        "reason": "文章分享了研究生如何利用 AI 辅助完成一篇综述的实践经验。"
       },
       "blocked": []
     },
@@ -66,7 +66,7 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "文章展示了一个具体的项目和技术实现。"
+        "reason": "文章展示了一个开源的本地 AI 模型演示。"
       },
       "blocked": []
     },
@@ -91,7 +91,7 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "文章提供了研究论文的摘要和技术讨论。"
+        "reason": "文章研究了在 NPU 服务器栈上使用主机层 KV 的效率。"
       },
       "blocked": []
     },
@@ -115,10 +115,10 @@
       ],
       "agent": {
         "verdict": "fail",
-        "reason": "文章仅为新闻转述，没有提供实践经验或技术讨论。"
+        "reason": "这篇文章只是新闻报道，没有提供实践性内容。"
       },
       "blocked": [
-        "模型复核不通过（文章仅为新闻转述，没有提供实践经验或技术讨论。）"
+        "模型复核不通过（这篇文章只是新闻报道，没有提供实践性内容。）"
       ]
     },
     {
@@ -141,7 +141,7 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "文章提供了具体的技术实现和benchmark结果。"
+        "reason": "文章展示了一个实时语音活动检测工具的开发过程。"
       },
       "blocked": []
     },
@@ -166,7 +166,7 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "文章提供了具体的技术实现和工具介绍。"
+        "reason": "文章分享了使用 AMD Loom 构建 Strix Halo 内核的经验。"
       },
       "blocked": []
     },
@@ -188,12 +188,10 @@
         "标题未翻译"
       ],
       "agent": {
-        "verdict": "fail",
-        "reason": "摘要为空白。"
+        "verdict": "pass",
+        "reason": "提供了一个计算 leave-one-out attribution 的算法和 lower bound。"
       },
-      "blocked": [
-        "模型复核不通过（摘要为空白。）"
-      ]
+      "blocked": []
     },
     {
       "slug": "1ff942b56240",
@@ -215,7 +213,34 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "内容包含实践性内容和步骤。"
+        "reason": "介绍了一个 ROS2-compatible 的Robotics 运行时环境。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "1146e006a507",
+      "title": "dcostenco/prism-coder",
+      "category": "tools",
+      "subcategory": "hands-on",
+      "tags": [
+        "agent",
+        "local",
+        "tutorial",
+        "free"
+      ],
+      "bodyChars": 124655,
+      "excerpt": "Prism Coder Give your AI agent memory that lasts — and see the cloud tokens it never had to spend. Persistent sessions, knowledge graphs, offline tool-routing, and an auditable savings meter. Fully local and free. > Current release: v20.22.5 — local oMLX images and memory accounting > Choose an independent image model from discovered local inventory. Compatible > oMLX servers support controlled PNG image requests with local screening and > generation. Image accuracy depends on the model; Ollama image execution remains > unavailable for the saved image choice. See the [oMLX guide](docs/omlx.md…",
+      "quality": 9,
+      "practical": 6,
+      "sourceName": "GitHub 检索（生态项目更新）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "介绍了一个提供持久会话和知识图谱的工具。"
       },
       "blocked": []
     },
@@ -239,10 +264,12 @@
       "hard": [],
       "warnings": [],
       "agent": {
-        "verdict": "pass",
-        "reason": "内容包含实践性内容和步骤。"
+        "verdict": "fail",
+        "reason": "只是新闻转述，没有提供任何实践性内容。"
       },
-      "blocked": []
+      "blocked": [
+        "模型复核不通过（只是新闻转述，没有提供任何实践性内容。）"
+      ]
     },
     {
       "slug": "ebbaf78916f4",
@@ -265,7 +292,7 @@
       "warnings": [],
       "agent": {
         "verdict": "pass",
-        "reason": "内容包含实践性内容和步骤。"
+        "reason": "介绍了一个本地文生图插件，并提供了使用 M5 Ultra 的开发经验。"
       },
       "blocked": []
     },
@@ -289,10 +316,10 @@
       ],
       "agent": {
         "verdict": "fail",
-        "reason": "内容主要是新闻转述，没有实践性内容或步骤。"
+        "reason": "只是新闻转述，没有提供任何实践性内容。"
       },
       "blocked": [
-        "模型复核不通过（内容主要是新闻转述，没有实践性内容或步骤。）"
+        "模型复核不通过（只是新闻转述，没有提供任何实践性内容。）"
       ]
     },
     {
@@ -311,10 +338,7 @@
       "domain": "lcz.me",
       "hard": [],
       "warnings": [],
-      "agent": {
-        "verdict": "pass",
-        "reason": "内容包含实践性内容和对比测试。"
-      },
+      "agent": null,
       "blocked": []
     },
     {
@@ -333,6 +357,28 @@
       "practical": 2,
       "sourceName": "r/LocalLLaMA",
       "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "b0481813af34",
+      "title": "Anthropic Upgrades Claude Code Projects to Run Parallel AI Workers Hands-Free",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "agent",
+        "free"
+      ],
+      "bodyChars": 209,
+      "excerpt": "Article URL: https://alphasignal.ai/news/anthropic-upgrades-claude-code-projects-to-run-parallel-ai-workers-hands-free Comments URL: https://news.ycombinator.com/item?id=50492141 Points: 35 # Comments: 17",
+      "quality": 7,
+      "practical": 1,
+      "sourceName": "Hacker News (AI)",
+      "domain": "alphasignal.ai",
       "hard": [],
       "warnings": [
         "标题未翻译"
@@ -406,6 +452,28 @@
       "blocked": []
     },
     {
+      "slug": "e956d3a1c3b7",
+      "title": "[H3剑心比赛] RTX 5070 Ti 16 GB 单卡｜MiniMax H3 3D / 2D",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "benchmark",
+        "generate",
+        "lowspec",
+        "tutorial"
+      ],
+      "bodyChars": 1378,
+      "excerpt": "[H3剑心比赛] RTX 5070 Ti 16 GB 单卡｜MiniMax H3 3D / 2D 3D CGI 成片： https://youtu.be/-fqHJyd74Ns 传统 2D 动画成片： https://youtu.be/Ph_8Ge5iAEY 工作流：3D: 工作流：2D: 两版共用的采样配置：INT8、Pika LoRA、SOL Attention、LCM: 3D 命令行截图： 2D 命令行截图： 画面对照： 硬件：RTX 5070 Ti 16 GB（驱动报告 16,303 MiB）、Ryzen 9 3900X、125 GiB 可见内存、Samsung PM9A1 NVMe。Ubuntu 24.04.4 LTS，NVIDIA 615.71.09，ComfyUI 0.43.0，Torch 2.10.0+cu130。机器另有显示用 AMD GPU；工作流的 CUDA 设备检查只见一张 RTX 5070 Ti。 工作流：MiniMax H3 Ref2VA，六张原图，统一提示词只换风格，固定 seed 2026111001。两版直接在 1344×768 采样。H3 内部将时序对齐到 294 帧，导出前 288 帧，24 fps／12.00 秒。无缩放、补帧或空间裁切。 加速：INT8 ConvRot（torch_int_mm）、Pika Flex Hybrid 动态 L…",
+      "quality": 11,
+      "practical": 4,
+      "sourceName": "抡锤者 AI 音视频画图",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
       "slug": "62263de506e0",
       "title": "推翻上篇结论：从 ik_llama.cpp 转投 Strata，24G 显存跑 125B 提速 3 倍",
       "category": "hardware",
@@ -443,6 +511,50 @@
       "quality": 7,
       "practical": 3,
       "sourceName": "抡锤者 AI硬件",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "658b2bc48b8d",
+      "title": "参与者奖励20分，冠军60额外分，亚军30分，季军15分！AMD，Nvidia，Intel，Apple用户同提示词，同规格要求生成竞赛，正面较量！作品结算期限1周！",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "tutorial",
+        "benchmark",
+        "agent",
+        "generate"
+      ],
+      "bodyChars": 1791,
+      "excerpt": "最近各种对比数据搞得我头大。标准东一榔头西一棒，权重、工作流、参数各不相同，按自己最爽的姿势跑出来的数据我觉得没意思。 这次我们定个死规矩统一下场实操：正式参与者每人奖励 20 积分。 一、认证规则 前提是你通过测试数据采集认证，只要视频成品合格即可。成品我亲自认证，并给出是否采纳的理由，原则上都会通过，除非实在太烂。 二、测试规格与硬性要求 大家各自把成品传到油管，跑同一个提示词。工作流和权重自己选，但要贴出运行时间，给出具体证据。我就是想看看生产力和生态到底是什么状态。 指定模型：MiniMax H3（必须用这个跑，别的模型不看） 工作流与复现环境：必须通用。不要搞那些环境不对等的“田忌赛马”，大家尽量在公平的起跑线上测。 测试分辨率：1344×768（标准便利化，无需特调的分辨率） 时长：12S（12秒运镜足够自由，留出几秒边界，不找理由辩解，不用15S） 三、产出要求（基于参考图） 使用提供的6张参考图（剑心与志志雄），用 MiniMax H3 出两个 12秒的视频（3D风格一个，2D风格一个）。 统一提示词（Prompt）： (Style: 3D CGI animation / 2D traditional anime) Masterpiece, high quality, cinematic lighting. Subject: A fierce battle seq…",
+      "quality": 10,
+      "practical": 4,
+      "sourceName": "抡锤者 AI 音视频画图",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "13c0613e6735",
+      "title": "[H3剑心比赛] 7900XTX 蓝宝石涡轮卡｜MiniMax H3 3D / 2D",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "benchmark",
+        "generate",
+        "tutorial",
+        "agent"
+      ],
+      "bodyChars": 568,
+      "excerpt": "一、视频链接 2d风格： https://youtu.be/r1mOILbD28o 3d风格：: https://youtu.be/ajuw_M6_W9c 二、软硬件配置 项目 配置 GPU AMD Radeon RX 7900 XTX 24 GB，蓝宝石涡轮版（单卡） 功耗上限 257 W CPU / 内存 Xeon E5-2686 v4 / 125 GB ComfyUI 0.44.2 ROCm 7.2.0 PyTorch 2.14.1+rocm7.2 comfy-kitchen 0.2.40 三、工作流 参考生视频_minimax_h3_r2v_A卡版.json 四、加速手段 comfy kitchen attention 五、生成速度 第一轮（2D 风格） 第二轮（3D 风格） 每步耗时 201.63 s/it 206.38 s/it 纯采样 26 分 53 秒 27 分 31 秒 端到端 29 分 30 秒 30 分 30 秒 文件 2d风格.mp4（16.6 MB） 3d风格_.mp4（16.5 MB） 日志截图（我是Server版不会截命令行的图，只能截comfyui里面的）",
+      "quality": 11,
+      "practical": 2,
+      "sourceName": "抡锤者 AI 音视频画图",
       "domain": "lcz.me",
       "hard": [],
       "warnings": [],
@@ -539,6 +651,28 @@
       "blocked": []
     },
     {
+      "slug": "05f4c8279b29",
+      "title": "llama.cpp b12374 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1373,
+      "excerpt": "<details open> metal : fix mul_mv destination offset overflow (#32221) </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/67398456> macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubuntu 26.04 s390x (zDNN) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu x64 (CUDA 13) - CUDA 13.5 libraries Ubuntu arm64 (CUDA 13) - CUDA 13.5 li…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
       "slug": "c0311ac6a30e",
       "title": "llama.cpp b12360 发布",
       "category": "hardware",
@@ -576,6 +710,27 @@
       "practical": 2,
       "sourceName": "r/LocalLLaMA",
       "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "12ac66295ae3",
+      "title": "llama.cpp b12373 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local"
+      ],
+      "bodyChars": 2251,
+      "excerpt": "<details open> hexagon: add support for SSM_SCAN op (#31921) hexagon: add SSM_SCAN Op support hex-ssm-scan: fix multi-device spliting hex-ssm-scan: remove redundant checks and make kernel use host config hex-ssm-scan: remove direct ddr access hex-ssm-scan: remove DMA ordering hex-ops: update supported ops hex-ssm-scan: rewrite the dma pipeline to match other ops (dbl.buf, etc) hex-ssm-scan: remove all fallbacks, only dma/vtcm paths hex-ssm-scan: add kernel_type to kparams and remove redundant recomputes hex-ssm-scan: avoid stalls in the overall pipeline (dma flush between chunks) hex-ssm-scan…",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
       "hard": [],
       "warnings": [
         "标题未翻译"
@@ -648,6 +803,27 @@
       "blocked": []
     },
     {
+      "slug": "2ade56aeff8b",
+      "title": "Show HN: Isometric SF – A pixel-art map of the SF Bay Area",
+      "category": "local",
+      "subcategory": "weights",
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 935,
+      "excerpt": "Technical Write-up: https://www.justinchavez.com/blog/isometric-sf-how/ Hi HN! Showcasing this fun project. I took 1300 square miles of the SF Bay Area from Google Photorealistic 3D Tiles and transformed them into a cohesive pixel map. It's really fun to explore and stumble upon various famous landmarks like Apple Park, Palace of Fine Arts, or UC Berkeley. The technicals involve using Nano Banana 2 to train a Qwen-Image-Edit 2511 LoRA which is used to prototype the style and generation methods. For final map I used Qwen to train a Klein 4B LoRA which reproduced the style at 1/4 of the cost. M…",
+      "quality": 11,
+      "practical": 1,
+      "sourceName": "Show HN (AI)",
+      "domain": "isometricsf.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
       "slug": "40e78db6601d",
       "title": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
       "category": "local",
@@ -701,6 +877,28 @@
       "bodyChars": 140,
       "excerpt": "Article URL: https://github.com/Christ10-8/reflota Comments URL: https://news.ycombinator.com/item?id=50482455 Points: 21 # Comments: 3",
       "quality": 7,
+      "practical": 1,
+      "sourceName": "Show HN (AI)",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "5786357a1c41",
+      "title": "Show HN: Light control for MacBook charger status light (open-source)",
+      "category": "local",
+      "subcategory": null,
+      "tags": [
+        "agent",
+        "free"
+      ],
+      "bodyChars": 366,
+      "excerpt": "For anyone who wants to control their MacBook charger light. For me, my MacBook lives in my bedroom most nights on charge and the light is quite bright. Config allows on/off automation with time, focus status, or persistently on/off. Open to features / suggestions via Github Comments URL: https://news.ycombinator.com/item?id=50492269 Points: 13 # Comments: 6",
+      "quality": 6,
       "practical": 1,
       "sourceName": "Show HN (AI)",
       "domain": "github.com",
