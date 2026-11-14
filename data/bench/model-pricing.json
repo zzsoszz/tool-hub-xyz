@@ -1,7 +1,7 @@
 {
   "id": "model-pricing",
   "kind": "openrouter-pricing",
-  "collectedAt": "2026-11-13T17:58:55.794Z",
+  "collectedAt": "2026-11-14T02:40:41.057Z",
   "upstream": {
     "label": "OpenRouter 模型目录 API",
     "url": "https://openrouter.ai/models"
@@ -10,6 +10,16 @@
   "tables": {
     "pricing": {
       "rows": [
+        {
+          "name": "inclusionAI: Ling 3.2 Flash (free)",
+          "id": "inclusionai/ling-3.2-flash:free",
+          "url": "https://openrouter.ai/inclusionai/ling-3.2-flash:free",
+          "context": 1048576,
+          "promptPerMillion": 0,
+          "completionPerMillion": 0,
+          "free": true,
+          "created": 1794591958
+        },
         {
           "name": "Thinking Machines: Inkling 2 Small (free)",
           "id": "thinkingmachines/inkling-2-small:free",
@@ -351,16 +361,6 @@
           "created": 1741902625
         },
         {
-          "name": "Meta: Llama 3.2 3B Instruct",
-          "id": "meta-llama/llama-3.2-3b-instruct",
-          "url": "https://openrouter.ai/meta-llama/llama-3.2-3b-instruct",
-          "context": 131072,
-          "promptPerMillion": 0.049999999999999996,
-          "completionPerMillion": 0.33,
-          "free": false,
-          "created": 1727222400
-        },
-        {
           "name": "LiquidAI: LFM2.5-24B-A2B",
           "id": "liquid/lfm-2.5-24b-a2b",
           "url": "https://openrouter.ai/liquid/lfm-2.5-24b-a2b",
@@ -381,6 +381,26 @@
           "created": 1789176933
         },
         {
+          "name": "DeepSeek: DeepSeek V4.1 Flash",
+          "id": "deepseek/deepseek-v4.1-flash",
+          "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash",
+          "context": 1048576,
+          "promptPerMillion": 0.050699999999999995,
+          "completionPerMillion": 0.20279999999999998,
+          "free": false,
+          "created": 1789021285
+        },
+        {
+          "name": "Meta: Llama 3.2 3B Instruct",
+          "id": "meta-llama/llama-3.2-3b-instruct",
+          "url": "https://openrouter.ai/meta-llama/llama-3.2-3b-instruct",
+          "context": 131072,
+          "promptPerMillion": 0.0509,
+          "completionPerMillion": 0.335,
+          "free": false,
+          "created": 1727222400
+        },
+        {
           "name": "Amazon: Nova Lite 1.0",
           "id": "amazon/nova-lite-v1",
           "url": "https://openrouter.ai/amazon/nova-lite-v1",
@@ -389,40 +409,20 @@
           "completionPerMillion": 0.24,
           "free": false,
           "created": 1733437363
-        },
-        {
-          "name": "NVIDIA: Nemotron 3 Nano 30B A3B",
-          "id": "nvidia/nemotron-3-nano-30b-a3b",
-          "url": "https://openrouter.ai/nvidia/nemotron-3-nano-30b-a3b",
-          "context": 262144,
-          "promptPerMillion": 0.06,
-          "completionPerMillion": 0.24,
-          "free": false,
-          "created": 1765731275
-        },
-        {
-          "name": "IBM: Granite 4.2 8B",
-          "id": "ibm-granite/granite-4.2-8b",
-          "url": "https://openrouter.ai/ibm-granite/granite-4.2-8b",
-          "context": 131072,
-          "promptPerMillion": 0.06,
-          "completionPerMillion": 0.25,
-          "free": false,
-          "created": 1788206780
         }
       ]
     }
   },
   "stats": {
     "models": 40,
-    "free": 11
+    "free": 12
   },
   "files": [
     {
       "path": "https://openrouter.ai/api/v1/models",
       "url": "https://openrouter.ai/api/v1/models",
-      "sha256": "411e4443b95b7ada0f230fda410d80432d97771d74f5aee519bb3c9e66a71866",
-      "bytes": 849075
+      "sha256": "59e35626efe751bbb37e317db7ccbbbfa140b02226b7d03c001496f6a7d527ae",
+      "bytes": 851530
     }
   ]
 }
