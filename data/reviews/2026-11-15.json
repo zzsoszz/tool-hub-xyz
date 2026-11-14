@@ -1,0 +1,602 @@
+{
+  "day": "2026-11-15",
+  "reviewedAt": "2026-11-14T16:42:32.031Z",
+  "reviewer": "cloudflare/@cf/meta/llama-3.1-70b-instruct",
+  "note": "cloudflare/@cf/meta/llama-3.1-70b-instruct：复核 12 条，解析到 12 条判定",
+  "rules": {
+    "minItems": 3,
+    "minBodyChars": 120,
+    "minSummaryChars": 40,
+    "maxTags": 4,
+    "agentMaxItems": 12,
+    "agentBatch": 6,
+    "agentChars": 900,
+    "agentExcerptChars": 600
+  },
+  "passed": true,
+  "reasons": [],
+  "total": 25,
+  "blocked": [
+    "7871cb2b5827",
+    "029927e1e8b2",
+    "01f3f553514f"
+  ],
+  "survivors": 22,
+  "items": [
+    {
+      "slug": "0569f0f363c4",
+      "title": "【H3剑心比赛】2×7900XTX | TP=2 | P2P open | MiniMax H3主流生成2D、3D影像",
+      "category": "apps",
+      "subcategory": "video",
+      "tags": [
+        "benchmark",
+        "hardware",
+        "agent",
+        "generate"
+      ],
+      "bodyChars": 10623,
+      "excerpt": "交个参赛作业，顺便还修了个BUG 之前搞的Kuzuryusen项目，可以在MiniMax H3工作流中可以无痛提升18.8％。 项目链接： https://lcz.me/topic/2857 当时少考虑了项目的复杂性，少考虑了Lora加载的情况导致报错： 所以就修了这个BUG，并在Repo中更新。 跑了三版（2D，单卡、2D，TP＝2、3D，TP＝2），也是顺便验证项目的有效性。 先交作业 H3 FINAL 3D： https://youtu.be/IpkkcJagdVM H3 FINAL 2D TP2： https://youtu.be/HsgJ8mvc2bQ H3 FINAL 3D TP2 Youtube Video H3 打斗片 · 复现手册 目标：在同类机器上，凭本文件 + workflow/*.json + comfyui-tp2 补丁 + 3 个核心文件补丁，复现出 H3_FINAL_3D / H3_FINAL_3D_TP2 / H3_FINAL_2D_TP2 三条 1344×768、12.25 s 带音轨的片子。 所有版本、md5、参数、耗时均为本机实测或日志原文；推算值已标注\"推算\"。 1. 交付物 产物 路径 大小 规格 生成模式 总耗时 3D 单卡 h3_output/H3_FINAL_3D.mp4 14.2 MB 1344×768 / 294f / 12.2…",
+      "quality": 8,
+      "practical": 3,
+      "sourceName": "抡锤者 AI 音视频画图",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "包含有实测数据和复现步骤。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "5670451f9162",
+      "title": "Qwen 3.8 Flash Next for gamedev - it's very capable!",
+      "category": "apps",
+      "subcategory": "inference",
+      "tags": [
+        "agent",
+        "free"
+      ],
+      "bodyChars": 6284,
+      "excerpt": "I've shared the project I'm working on approx a month ago, today it's completed. I wanted to know a simple thing: how good is Qwen 3.8FN at gamedev? And I had so much fun in the process that I am shipping a finished product, free to play. tl,dr + link at the bottom. My experience with Qwen 3.8FN follows. Data Model Used: Qwen 3.8 Flash Next - Unsloth Quant - UD_Q4_XL (pre update) Machine: Strix Halo (Ryzen AI 395+, Bosgame M5) - Windows (say what you want about windows, I need it for other stuff and I don't want to bother with dualboot) Inference Engine: my own windows Gufo fork (I honestly t…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "包含有实测数据和复现步骤。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "7871cb2b5827",
+      "title": "[AINews] The No AI Slop Manifesto",
+      "category": "apps",
+      "subcategory": "inference",
+      "tags": [
+        "local"
+      ],
+      "bodyChars": 23705,
+      "excerpt": "Congrats to both llama.ccp and ggml for reaching 1.0 (declaring stability and removing 35 deprecated functions from llama.cpp’s public header) and with SGLang also announcing 1.0 at the recent SGLang Summit . However, today’s title story goes to the No AI Slop manifesto , which arose out of the conference discussions at AIE CODE and which Dex introduced in the closing keynote after cosignatures by many of the speakers at the conference. It seems Hacker News also liked it , voting it up to the front page today. We started this manifesto to offer a useful tool for discussion at work, and hope i…",
+      "quality": 9,
+      "practical": 1,
+      "sourceName": "Latent Space",
+      "domain": "latent.space",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "没有实测数据或步骤，只是新闻转述。"
+      },
+      "blocked": [
+        "模型复核不通过（没有实测数据或步骤，只是新闻转述。）"
+      ]
+    },
+    {
+      "slug": "240ca7c598df",
+      "title": "程序员集体沉迷折纸飞机！最长滞空31.2秒",
+      "category": "tools",
+      "subcategory": "hands-on",
+      "tags": [
+        "tutorial",
+        "generate"
+      ],
+      "bodyChars": 2504,
+      "excerpt": "<!DOCTYPE html> < img id=\"wx_img\" src=\"https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png\" width=\"400\" height=\"400\"> 程序员集体沉迷折纸飞机！最长滞空31.2秒 程浅 2026-11-14 17:48:34 来源： 量子位 童年的纸飞机，现在终于飞回我手里～ 程浅 发自 凹非寺 量子位 | 公众号 QbitAI 怎么一觉醒来，童年的纸飞机又飞回来了？ 刚刚，一个名叫 Foldable Flight 的网站突然在 Hacker News 登顶了，获得800多分、130多条评论。 这个网站，非常简洁直白，真的就是来教你折纸飞机的。 是的，一共109种纸飞机，啥形状的都有。 可以自己选择折叠难度，比如，最简单的就是这架“Mystic（神秘者）”。 （原来我从小折到大的纸飞机还有名字……） 最难的长啥样呢？如图。 不是，你告诉我一张A4纸能折成这个样子？ 看看评论区，大家都玩得不亦乐乎了。 “简直就像不是用纸做出来的。” “我想这才是真正的飞机工程师” 那还说啥了。 所有人，现在，去公司打印机里抽一张A4纸，实（mō ）测（yú）！ 花样纸飞机大赏 先上链接，网站在这，109款纸飞机，每一款都有详细的教学视频。 *https://www.fold…",
+      "quality": 9,
+      "practical": 1,
+      "sourceName": "量子位",
+      "domain": "qbitai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "包含有实测数据和复现步骤。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "029927e1e8b2",
+      "title": "[Paper] Read Less, Solve More: Token-Efficient Sparse Reading of External Content for AI Agents",
+      "category": "tools",
+      "subcategory": "workflow",
+      "tags": [
+        "agent"
+      ],
+      "bodyChars": 1370,
+      "excerpt": "Web-facing AI agents repeatedly access webpages, documents, repositories, and tool responses, yet reading interfaces often expose entire objects when only sparse evidence is needed. This over-reading increases token and latency costs and can dilute relevant evidence. We present SparseRead, a reusable reading control layer that governs content admission without modifying the agent model. Its Read Intent Protocol tracks evolving needs and source coverage; Adaptive Reader Backends select how evidence is located and exposed; and the Budgeted Read Gate bounds cumulative raw exposure per episode wi…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "没有实测数据或步骤，只是论文摘要。"
+      },
+      "blocked": [
+        "模型复核不通过（没有实测数据或步骤，只是论文摘要。）"
+      ]
+    },
+    {
+      "slug": "34e192298d71",
+      "title": "[H3剑心比赛] RTX PRO5000 MiniMax H3 2D / 3D",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "benchmark",
+        "lowspec",
+        "agent",
+        "generate"
+      ],
+      "bodyChars": 2845,
+      "excerpt": "[H3剑心比赛] RTX PRO5000 MiniMax H3 2D / 3D 先说结论 12 秒 / 294 帧 / 24fps，2D 与 3D 各一条，一次成型 ，走同一套多参考图工作流。 两条 提示词逐字相同 （只有第一行的风格词 2D traditional anime / 3D CGI animation 不同）、 seed 相同 （ 813788674966030 ）、 步数相同（12） ，唯一变量就是风格——所以这是一组干净的对照。 实测耗时： 2D 678 秒（11:18） ， 3D 721 秒（12:00） ，均为整段一次跑完（含加载与解码）。 YouTube： H3剑心 2D https://youtu.be/r8NvaIm_0NU H3剑心 3D https://youtu.be/DDn4dBp-0W4 1. 硬件与软件 项 值 GPU NVIDIA RTX PRO 5000 Blackwell，48GB（ nvidia-smi 实测 48,935 MiB） 驱动 621.14 显存占用 单条 12 秒任务常驻约 34GB 系统内存 64GB Python / Torch 3.13.12 / torch 2.12.1+cu130 ComfyUI 0.29（桌面版） 加速运行时 SageAttention 2.2.0+cu130、triton-windows…",
+      "quality": 9,
+      "practical": 5,
+      "sourceName": "抡锤者 AI 音视频画图",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "包含有实测数据和复现步骤。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "54b0f9703bde",
+      "title": "[H3剑心比赛] RTX 4080 SUPER 16G 单卡｜1344×768 / 12 秒｜标准配置，不挂加速 LoRA",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "lowspec",
+        "tutorial",
+        "agent",
+        "generate"
+      ],
+      "bodyChars": 4702,
+      "excerpt": "一、口径 按题目统一前提：MiniMax H3、1344×768、12 秒、帖子给的统一提示词、6 张参考图，3D 一个 2D 一个。 提示词正文一字未改，只做了两件事，都写在附件里可逐字复现： 在正文前面加了一段参考图绑定说明，指明 <Picture 1> ~ <Picture 3> 是剑心、 <Picture 4> ~ <Picture 6> 是志志雄，以及各自要保留的外形特征。原因是 H3 的 Ref2VA 靠提示词里的标签绑定参考图，不加这段的话，挂上去的 6 张图基本不生效，模型会按\"红衣剑客\"自己编人。 3D 版在 Style 括号里补了 3D 渲染强化词（PBR 材质、体积光、无描边、非 2D）。不加这段的话，3D 那条会退回 2D 平涂。 成片： 2D： https://www.youtube.com/watch?v=hq4QdE7nCMQ 3D： https://www.youtube.com/watch?v=5hUR0rJ40Es 二、硬件 GPU：RTX 4080 SUPER 16 GB（Ada，sm_89） 平台：华南金牌 X99-TF + Xeon E5-2696 v3（18C/36T，无 AVX-512）+ 128 GB DDR3 四通道 链路：PCIe 3.0 x16，负载下 H2D 约 10.1 GB/s，Resizable BAR 未开 系统：U…",
+      "quality": 11,
+      "practical": 3,
+      "sourceName": "抡锤者 AI 音视频画图",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "实测数据和步骤清晰，内容符合实践性要求。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "ce5d6a41d103",
+      "title": "双卡 RX 7900 XTX 跑 Qwen3.8-Flash-Q4K-XL平均100T/S左右，你们可以试试去复刻",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "hardware",
+        "benchmark",
+        "lowspec",
+        "local"
+      ],
+      "bodyChars": 17095,
+      "excerpt": "一台真实的桌面机，不是机房。 8 核 10 代 i7、 128 GB DDR4-2666、 两张 24 GB 的 7900 XTX， 显卡插在一个 PCIe 3.0 x8 + 一个 x4 的老平台上。 主板是 z590吹雪 我自己用cc swtich接入到gpt那边用实际任务测试下来，速度前期稳定在95~100+左右，上下文在128k这里的话速度会 稍微降一点，但是也是在85~100~跳动，至于输入的话正常也就是1500左右，但由于显存也够大，其实也很少用到输入的，大部分都是复用， 下面所有数字都是本机实测，配置和命令让AI可以照抄去复现。上面这些才是我手打的 0. 一句话版本 用 Strata （一个专为超大 MoE 设计的推理引擎）把 103 GB 的 Q4_K_XL 模型 跑起来：专家权重常驻内存 + 由 GPU 做 expert cache，双卡按层切分，KV 用 int8 存 384K 上下文，MTP 投机解码把出字速度拉到 ~54 tok/s ，8.7K 输入的 prefill ~820 tok/s 。 关键点只有四个，其余都是围绕它们的调参： 模型要拆成\"pack + native GGUF\"两半 ，pack 必须按模型自己生成（15 秒，1.4 GB）。 双卡层切分强制要求 expert profile 文件 ，没有就 exit 1 （本文重点坑）。 prefil…",
+      "quality": 9,
+      "practical": 6,
+      "sourceName": "抡锤者 模型部署讨论",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "实测数据和步骤清晰，内容符合实践性要求。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "68ffefb56efa",
+      "title": "【单卡 7900XTX × MiniMax-H3】按动漫打斗片段逐帧\"翻拍\"真人版：17.6 秒成片",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "generate",
+        "local",
+        "benchmark",
+        "tutorial"
+      ],
+      "bodyChars": 2390,
+      "excerpt": "闲暇时间试着玩一玩 Youtube Video 一、我想做什么 拿一段动漫打斗片段（钢之炼金术师里的一段对打，全长 87.8 秒）当 运镜和动作参考 ，在本地 ComfyUI 上把它翻拍成真人版。 角色没有照搬原作，三个人都是我重新设计的原创角色。只保留\"空心铠甲巨人 / 爆破系术士 / 操控影子的男孩\"这三种定位和打斗里的走位，造型、配色、名字都换掉了： 空甲 ：2.3 米的空心枪灰板甲，头盔横缝里两点冷蓝光，胸口裂开能看到里面是空的 烬手 ：黑色双排扣长大衣、橙色内衬，手背有发光的烙印符文，拍地引爆 蚀影 ：灰白头发、墨绿斗篷的男孩，脚下的影子会变成黑烟触手 目前做完前 11 个镜头（原片 0–17.6 秒），已经剪成一段，和原片逐帧对齐。 二、硬件和环境 项目 配置 显卡 AMD RX 7900 XTX 24GB × 1 系统 Windows 11 PyTorch 2.9.1+rocm7.13 ComfyUI 0.42 便携版 注意力 comfy kitchen attention（ModelAttentionBackend 节点指定） 三、模型和参数 角色设定图 （文生图） MOSS-Image： moss_image_sft_int8_convrot + 文本编码器 qwen3.5_9b_w4a8_gptq ，VAE flux2-vae_small 1536×1024，…",
+      "quality": 8,
+      "practical": 4,
+      "sourceName": "抡锤者 AI 音视频画图",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "实测数据和步骤清晰，内容符合实践性要求。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "9a0f092c8d52",
+      "title": "[H3剑心比赛] RTX Pro 6000 96G 单卡 · 一条片子 5 分半｜MiniMax H3 3D / 2D",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "generate",
+        "lowspec",
+        "tutorial",
+        "agent"
+      ],
+      "bodyChars": 2690,
+      "excerpt": "一、视频链接 2D 版 ： https://file.garden/aveyOPt9Efn9o2cu/oooo_00032-audio.mp4 3D 版 ： https://file.garden/aveyOPt9Efn9o2cu/oooo_00033-audio.mp4 两条片子是同一场 12 秒剑斗（绯村剑心 vs 志志雄真实，夜间、燃烧的本能寺前石坪），1376×768 @ 24fps，时长 12.25s，带 H3 原生音频。两版只有 prompt 的风格行不同，管线、模型、参数完全一致。 二、软硬件配置 项目 配置 GPU NVIDIA RTX PRO 6000 Blackwell Workstation Edition，96GB 显存，TGP 600W（单卡） 驱动 / CUDA 621.14 / CUDA 13.5 CPU AMD Ryzen 9 9950X3D（16 核） 内存 96 GB 系统 Windows 11 ComfyUI 0.45.0 PyTorch 2.13.0+cu130 Python 3.13.11 主要自定义节点 ComfyUI-MiniMaxH3Mod（Ref2VA / 参考图块）、comfyui-SelfLift（渐进式采样）、comfyui-minimax-h3-blockcache-T8 三、工作流（Ref2VA + SelfLift 两…",
+      "quality": 7,
+      "practical": 3,
+      "sourceName": "抡锤者 AI 音视频画图",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "实测数据和步骤清晰，内容符合实践性要求。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "01f3f553514f",
+      "title": "让 Windows 11 在 iPhone Duo 上运行，使用 Gemini 开发，已开源｜WindowsiOS",
+      "category": "hardware",
+      "subcategory": "edge",
+      "tags": [
+        "lowspec",
+        "local",
+        "agent",
+        "free"
+      ],
+      "bodyChars": 1880,
+      "excerpt": "在 AI 大兼并时代，已经没有什么不可能了。 Windows 11 现在能在苹果折叠屏 iPhone Duo 上运行了！ 完整的桌面系统、本地运行、不需要越狱，甚至还能把手机折起来，当成一台迷你 Windows 笔记本。 这是谷歌 AI Studio 负责人 Ammaar Reshi 用 Gemini 搞出来的，据说只花了 2 小时： 虽然都说 Gemini 拉胯，但干些小活还是没问题的，比如在 iPhone 上运行 Windows，嗯。 WindowsiOS 这个名为 WindowsiOS 的项目已经在 GitHub 开源，任何人都可以查看代码。 最重要的是，Windows 直接在手机本地运行，不需要云电脑、远程桌面，也不依赖网络串流。 但注意，它运行的是 ARM 版本的 Windows 11 24H2。 并且，还充分利用了折叠屏设计： 完全展开 ：整个屏幕就是 Windows 11 桌面，可以直接触控操作。 半折叠状态 ：上半部分显示 Windows，下半部分变成虚拟键盘和触控板。 虚拟键盘甚至包含 Copilot 按键，配合多点触控板，看起来就像一台迷你 Windows 笔记本电脑： 不需要越狱，还能运行 Windows 软件 WindowsiOS 不要求 iPhone 越狱。 由于 iOS 限制了普通应用使用硬件虚拟化功能，开发者采用 ARM64 动态二进制翻译、JIT…",
+      "quality": 8,
+      "practical": 6,
+      "sourceName": "小众软件",
+      "domain": "appinn.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "fail",
+        "reason": "只有新闻转述，没有实测数据和步骤，不符合实践性要求。"
+      },
+      "blocked": [
+        "模型复核不通过（只有新闻转述，没有实测数据和步骤，不符合实践性要求。）"
+      ]
+    },
+    {
+      "slug": "3ef6e31e67ba",
+      "title": "(陪跑啦啦隊）[H3剑心比赛] Radeon Pro W7800 48G 单卡｜MiniMax H3 3D / 2D",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "lowspec",
+        "tutorial",
+        "agent",
+        "generate"
+      ],
+      "bodyChars": 11176,
+      "excerpt": "3D CGI 成片： https://youtu.be/A1GkxRqcmq4 傳統 2D 動畫成片： https://youtu.be/8ACF5GLLggo 一、硬件配置 項目 配置 GPU AMD Radeon Pro W7800 48 GB（gfx1100，單卡） CPU AMD Ryzen 7 9800X3D 8-Core 記憶體 92 GB 作業系統 Ubuntu 24.04.4 LTS ROCm 10.0.0 PyTorch 2.13.0+rocm10.0.0（hip 7.15.26333） ComfyUI 0.39.0 comfy-kitchen 0.2.37 DiT 模型 MiniMax-H3_FL2VA-INT8-ConvRot（22.48 GB） 文字編碼器 qwen3vl_32b_minimax_h3_nvfp4_awq 視訊 VAE minimax_h3_video_vae_fp16 音訊 VAE minimax_h3_audio_vae_fp32 二、工作流 節點 ： MiniMaxH3ReferenceToVideo （R2V），六張參考圖全部併入， ref_image_size=match 音視訊聯合分支 ： R2V 第二輸出（AV latent）→ LTXVSeparateAVLatent ├─ 視訊 → VAEDecode → SaveImag…",
+      "quality": 7,
+      "practical": 1,
+      "sourceName": "抡锤者 AI 音视频画图",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "实测数据和步骤清晰，内容符合实践性要求。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "48c083bd6947",
+      "title": "英伟达上演“奥特曼2.0”，员工集体请愿：让老黄回家！",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local"
+      ],
+      "bodyChars": 3779,
+      "excerpt": "<!DOCTYPE html> < img id=\"wx_img\" src=\"https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png\" width=\"400\" height=\"400\"> 英伟达上演“奥特曼2.0”，员工集体请愿：让老黄回家！ 鹭羽 2026-11-14 18:08:08 来源： 量子位 马斯克也签名了 鹭羽 发自 凹非寺 量子位 | 公众号 QbitAI 嚯！英伟达极速上演「奥特曼」宫斗2.0—— 员工集体联名上书 ，要求老黄回归！ 连马斯克都签了。。。 一份要求恢复老黄职位的请愿正在进行中，家人们我已冲。 不愧是好兄弟哇！危难时方显义薄云天（bushi） 不过董事会未必如愿。 有消息称，英伟达董事会已秘密接触 Arm首席执行官 Rene Haas，考虑作为黄仁勋的潜在继任者。 而Haas早年就在英伟达担任高管。 董事会VS员工，乔帮主还是奥特曼，黄仁勋正站在风口浪尖。 “回来吧，老黄！” 一石激起千层浪。 对黄仁勋的声援，已经从公司内部蔓延至整个硅谷。 其支持者也公开发起了 “33 Years Deserve an Answer” （33年，值得一个交代）的独立请愿活动，呼吁让老黄重返CEO岗位。 目前已有6万多人签署，而且该数据还在持续暴涨。 其中不乏英伟达的前任和现任员工、合作伙伴及…",
+      "quality": 9,
+      "practical": 3,
+      "sourceName": "量子位",
+      "domain": "qbitai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "c3f759578665",
+      "title": "llama.cpp b12383 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1411,
+      "excerpt": "<details open> ggml-backend : start a new split at an incompatible weight in a split without inputs (#31775) </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/67557548> macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubuntu 26.04 s390x (zDNN) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu x64 (CUDA 13) - CUDA 13.5 libraries…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "672a2ab9d75d",
+      "title": "llama.cpp b12381 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1380,
+      "excerpt": "<details open> mtmd: fix video pixel aspect ratio and video rotation (#32267) </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/67553720> macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubuntu 26.04 s390x (zDNN) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu x64 (CUDA 13) - CUDA 13.5 libraries Ubuntu arm64 (CUDA 13) - CUDA…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "5a036f021800",
+      "title": "llama.cpp b12380 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1519,
+      "excerpt": "<details open> mtmd : allow custom video decoder (#32188) mtmd : allow custom video decoder also adapt to wllama requirements clean up add test --------- Co-authored-by: Xuan Son Nguyen <son@huggingface.co> </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/67549171> macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubuntu 26.04 s390x (zDNN) Ubuntu x64 (Vulkan) Ubuntu ar…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "831a25e12bbf",
+      "title": "蓝宝石（Sapphire）AMD RADEON RX7900XTX 24G 涡轮卡 功率257W 正常吗？",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "benchmark",
+        "hardware"
+      ],
+      "bodyChars": 228,
+      "excerpt": "2026年11月13日下午收到京东蓝宝石旗舰店购买的：蓝宝石（Sapphire）AMD RADEON RX7900XTX 24G 涡轮卡，功率257W，我知道7900xtx的正常功率是350W，但是这张卡的功率是257W，是写进BIOS里面的，时钟速度2070HZ， 下面是我问智谱的，智谱检测后的回答： 。 我有一个问题，这张显卡是正常的吗？大家的显卡都是这样的吗？ 压力测试没问题，就是声音稍大。 请大家回答我，看看这是不是正常的。",
+      "quality": 7,
+      "practical": 1,
+      "sourceName": "抡锤者 AI硬件",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "820693644d3c",
+      "title": "Balanov/shim",
+      "category": "local",
+      "subcategory": "weights",
+      "tags": [
+        "agent"
+      ],
+      "bodyChars": 10034,
+      "excerpt": "<div align=\"center\"> <img src=\"docs/readme/hero.png\" alt=\"SHIM — any model, any tool, just type. One small adapter between the terminal, models, MCP, Skills and tools.\" width=\"100%\"> <p><strong>A tiny, local-first AI harness for people who prefer a terminal.</strong></p> <p>One static binary. Zero dependencies. No TUI. No telemetry. MIT.</p> <p> <a href=\"#install\">Install</a> · <a href=\"#two-ways-to-use-it\">Two ways to use it</a> · <a href=\"docs/ARCHITECTURE.md\">Architecture</a> · <a href=\"#permissions-and-safety\">Permissions</a> · <a href=\"https://balanov.pro/shim/\">Website</a> · <a href=\"RE…",
+      "quality": 9,
+      "practical": 2,
+      "sourceName": "GitHub 检索（生态项目更新）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "5aba93d6f8e8",
+      "title": "Balanov/uncut",
+      "category": "local",
+      "subcategory": "weights",
+      "tags": [
+        "agent"
+      ],
+      "bodyChars": 11632,
+      "excerpt": "<div align=\"center\"> <img src=\"docs/readme/hero.png\" alt=\"UNCUT — the lossless, headless coding agent harness. One static binary, four tools, zero silent context cuts.\" width=\"100%\"> <p><strong>Full context in. Complete results out. Explicit failure when the provider cuts.</strong></p> <p>Linux · macOS · Windows · amd64 + arm64 · MIT</p> <p> <a href=\"#install\">Install</a> · <a href=\"#quick-start\">Quick start</a> · <a href=\"#verify-the-lossless-contract\">Lossless proof</a> · <a href=\"BENCHMARKS.md\">Measurements</a> · <a href=\"https://balanov.pro/uncut/\">Website</a> · <a href=\"README_RU.md\">Рус…",
+      "quality": 10,
+      "practical": 1,
+      "sourceName": "GitHub 检索（生态项目更新）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "f5054a01b0bb",
+      "title": "Does the new hugging face Llama windows app work?",
+      "category": "local",
+      "subcategory": "weights",
+      "tags": [
+        "local"
+      ],
+      "bodyChars": 401,
+      "excerpt": "I have downloaded the new hugging face Llama windows app. Looked really promising on paper, but I tried to download Qwen3.8-27B-UD-Q3_K_XL.gguf and it always downloaded the 51GB version instead. Then would refuse to delete it. Then worked on the background. I had to uninstall the thing. Any other user experience there? cheers for helping a noob submitted by /u/Timalakeseinai [link] [comments]",
+      "quality": 6,
+      "practical": 2,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "adb29e4ba033",
+      "title": "duwqijlk/muse-protocol",
+      "category": "money",
+      "subcategory": "client",
+      "tags": [
+        "tutorial",
+        "money"
+      ],
+      "bodyChars": 2440,
+      "excerpt": "muse.ai 注册 / 邀请码兑换 协议分析 补充一下，记得用JP 节点， JP 不需要绑卡，直接过 纯 HTTP 实现 muse.ai 的注册与邀请码兑换流程，不依赖浏览器。本文记录的是通过抓包逐字段比对得出的协议细节。 快速开始 pip install -r requirements.txt cp config.example.json config.json # 填入邮箱与可选代理 python example_register.py 目录结构 musepy/ client.py 注册 + 兑换的完整协议客户端 falco.py 行为埋点上报（可选） caa.py 注册漏斗事件上报（可选） example_register.py 端到端示例 config.example.json 配置模板 协议流程 GET / 拿初始 cookie POST /api/auth/native/restart → 201 {csrf_token} POST /api/auth/native/send-otp → 201 POST /api/auth/native/confirm-otp → 200 {registration_state:\"completion_required\"} POST /api/auth/native/register-completion→ 200 {auth_m…",
+      "quality": 11,
+      "practical": 1,
+      "sourceName": "GitHub 新晋 AI 项目",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "03f8cd2c9e12",
+      "title": "H3-image vs Qwen-image-2.1 大横评（一），文生图",
+      "category": "bench",
+      "subcategory": "compare",
+      "tags": [
+        "benchmark",
+        "generate",
+        "hardware"
+      ],
+      "bodyChars": 336,
+      "excerpt": "惯例，本文无任何AI含量，请放心阅读。 H3-image模型大家应该都已经尝鲜了，每个人应该都在自己的创意之下进行了摸索尝试。于是我就有了一个想法，想看看两个生图模型在全场景究竟有何偏好与特质，来和大家交流分享。让大家的模型可以物尽其用。 本次大横评会有多个评测维度，此为第一篇。先说一个前置结论，H3-image的超大分辨率图形能力与效率确实厉害。但qwen-image-2.1的美学功底明显更好。 需要注意的是，因为两个模型的提示词需求格式不同，所以最终提示词并不完全一致。 最终提示词均通过Deepseek-flash-1017驱动对应skill来生成。 你喜欢哪个模型的风格和效果呢？感觉是不是势均力敌呢？积极回帖讨论吧。 直接进入正题：",
+      "quality": 9,
+      "practical": 1,
+      "sourceName": "抡锤者 AI 音视频画图",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "02ba309c6246",
+      "title": "「史上最严」湿实验预测基准发布！推理拉满、算力翻5倍也白搭",
+      "category": "bench",
+      "subcategory": "cost",
+      "tags": [
+        "benchmark",
+        "tutorial"
+      ],
+      "bodyChars": 7316,
+      "excerpt": "<!DOCTYPE html> < img id=\"wx_img\" src=\"https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png\" width=\"400\" height=\"400\"> 「史上最严」湿实验预测基准发布！推理拉满、算力翻5倍也白搭 鹭羽 2026-11-14 17:58:22 来源： 量子位 斯坦福、哈佛、康奈尔……十余家顶尖团队齐坐一桌了 鹭羽 发自 凹非寺 量子位 | 公众号 QbitAI 不ber，现在的基准测试都进化到酱婶了？？？ 这回不刷题了，就直接给AI一组实验条件，让它 自己研究、提前猜真实湿实验的结果 …… 比如，同一个反应换几种条件，哪种能得到更多目标产物？一批抗体变体，哪个表达量更高？ 答案先藏好，等AI交卷，再拿实测结果对一对。 你还别说，这事儿现在真值得一测。 这两年， AI for Science 的方式越来越深入，AI已经能自主查文献、用软件，为完成一项分析任务连续做上几小时也不在话下。 大家自然而然开始进入下一个阶段： 我们到底希望AI具备怎样的科研能力？ 湿实验结果预测 ，就是其中颇有实际价值的一项。 它需要AI理解实验目标，并从已有知识中挖掘出相关机制，才能更好地帮助研究人员筛选值得进一步探索的研究方向。 UniPat AI牵头推出的新基准 Science…",
+      "quality": 9,
+      "practical": 2,
+      "sourceName": "量子位",
+      "domain": "qbitai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "edd4ca72cd94",
+      "title": "H3-image vs Qwen-image-2.1 大横评（二），简单编辑与循环编辑",
+      "category": "bench",
+      "subcategory": "compare",
+      "tags": [
+        "benchmark",
+        "generate",
+        "free"
+      ],
+      "bodyChars": 329,
+      "excerpt": "图片编辑是重要的修改手段，目前的开源模型，图片编辑的终极目标很简单：该改的改，不该改的不改。 循环编辑，则是测试模型在每次编辑时的误差累计，到什么时候导致图片崩坏。 简单的个人结论：对于非人物图片，H3-image明显遵从性更好。但qwen-image-2.1有明显的艺术加工，能够帮助用户更好的生成目的图片。对于人物图片二者没有明显差距。 但H3-image的编辑误差很大，基本第二次循环就已经开始崩坏了。qwen-image-2.1可以坚持到第五次，但是qwen-image-2.1有明显的偏色问题。 明日还会有：复杂多参考编辑、交叉编辑（H3-image的图给qwen-image-2.1编辑，以及对调）敬请期待。 直接上干货：",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "抡锤者 AI 音视频画图",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "31ef9683c5fb",
+      "title": "Can open-weight LLMs can predict the effects of weight edits without running the model (9B–30B)",
+      "category": "bench",
+      "subcategory": "benchmark",
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 1031,
+      "excerpt": "I’ve been experimenting with weight-space reading using Qwen and Muse models (9B–30B). The goal: can an LLM inspect raw model weights and predict the behavioral effects of weight edits without running the target model? A few findings: 🔹Qwen 27B reached 73.0% balanced accuracy on subtle edits with weight access, vs. 57.8% from text descriptions. 🔹We couldn’t establish a conclusive advantage for models reading their own weights. 🔹On Muse-30B, 34 standard edits and 6 no-op controls produced no detectable behavioral changes, but weight-reading agents frequently predicted changes. I’ve released…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    }
+  ]
+}
