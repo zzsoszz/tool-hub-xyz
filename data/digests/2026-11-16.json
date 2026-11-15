@@ -1,0 +1,1000 @@
+{
+  "day": "2026-11-16",
+  "generatedAt": "2026-11-15T17:20:10.784Z",
+  "timezone": "Asia/Shanghai",
+  "windowHours": 48,
+  "window": {
+    "since": null,
+    "until": null
+  },
+  "counts": {
+    "sources": 42,
+    "okSources": 40,
+    "fetched": 1101,
+    "duplicates": 819,
+    "carried": 0,
+    "added": 16,
+    "fallback": 0,
+    "lowQuality": 139,
+    "published": 16
+  },
+  "sources": [
+    {
+      "id": "openai-news",
+      "name": "OpenAI News",
+      "ok": true,
+      "items": 60,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "google-deepmind",
+      "name": "Google DeepMind",
+      "ok": true,
+      "items": 60,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "google-ai",
+      "name": "Google AI Blog",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "hf-blog",
+      "name": "Hugging Face Blog",
+      "ok": true,
+      "items": 60,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "hf-daily-papers",
+      "name": "Hugging Face Daily Papers",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "interconnects",
+      "name": "Interconnects",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "latent-space",
+      "name": "Latent Space",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "simon-willison",
+      "name": "Simon Willison",
+      "ok": true,
+      "items": 30,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "techcrunch-ai",
+      "name": "TechCrunch AI",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "ars-ai",
+      "name": "Ars Technica AI",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "mit-tr-ai",
+      "name": "MIT Tech Review",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "qbitai",
+      "name": "量子位",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "arxiv-cs",
+      "name": "arXiv cs.AI/CL/LG",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "hn-newest",
+      "name": "Hacker News (AI)",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "hn-algolia",
+      "name": "Hacker News Search",
+      "ok": true,
+      "items": 25,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lobsters-ai",
+      "name": "Lobsters AI",
+      "ok": true,
+      "items": 25,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "reddit-local-llama",
+      "name": "r/LocalLLaMA",
+      "ok": true,
+      "items": 25,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "github-trending",
+      "name": "GitHub 新晋 AI 项目",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "microsoft-research",
+      "name": "Microsoft Research",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "github-blog",
+      "name": "GitHub Blog",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "theverge",
+      "name": "The Verge",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "sspai",
+      "name": "少数派",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "appinn",
+      "name": "小众软件",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "producthunt",
+      "name": "Product Hunt",
+      "ok": true,
+      "items": 30,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "hn-show-ai",
+      "name": "Show HN (AI)",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "ai-news-applied",
+      "name": "AI News (应用)",
+      "ok": true,
+      "items": 0,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "juejin",
+      "name": "掘金 AI",
+      "ok": true,
+      "items": 0,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "reddit-sideproject",
+      "name": "r/SideProject",
+      "ok": false,
+      "items": 0,
+      "queries": 1,
+      "error": "HTTP 429"
+    },
+    {
+      "id": "hn-money",
+      "name": "HN 检索（独立开发与变现）",
+      "ok": true,
+      "items": 50,
+      "queries": 5,
+      "error": null
+    },
+    {
+      "id": "reddit-saas",
+      "name": "r/SaaS 变现实操",
+      "ok": false,
+      "items": 0,
+      "queries": 1,
+      "error": "HTTP 429"
+    },
+    {
+      "id": "lcz-hardware",
+      "name": "抡锤者 AI硬件",
+      "ok": true,
+      "items": 19,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-llm",
+      "name": "抡锤者 模型部署讨论",
+      "ok": true,
+      "items": 18,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-agent",
+      "name": "抡锤者 Agent 工具",
+      "ok": true,
+      "items": 19,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-media",
+      "name": "抡锤者 AI 音视频画图",
+      "ok": true,
+      "items": 60,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-selfmedia",
+      "name": "抡锤者 自媒体运营",
+      "ok": true,
+      "items": 28,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-web",
+      "name": "抡锤者 建站与网络赚钱",
+      "ok": true,
+      "items": 17,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-crisis",
+      "name": "抡锤者 AI 危机与机遇",
+      "ok": true,
+      "items": 24,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-news",
+      "name": "抡锤者 资讯",
+      "ok": true,
+      "items": 40,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "gh-releases",
+      "name": "GitHub 发布（ComfyUI / Strata 等）",
+      "ok": true,
+      "items": 21,
+      "queries": 8,
+      "error": null
+    },
+    {
+      "id": "hn-ecosystem",
+      "name": "HN 检索（本地推理生态）",
+      "ok": true,
+      "items": 110,
+      "queries": 12,
+      "error": null
+    },
+    {
+      "id": "gh-ecosystem",
+      "name": "GitHub 检索（生态项目更新）",
+      "ok": true,
+      "items": 60,
+      "queries": 6,
+      "error": null
+    },
+    {
+      "id": "arxiv-ecosystem",
+      "name": "arXiv 检索（推理引擎与量化）",
+      "ok": true,
+      "items": 50,
+      "queries": 5,
+      "error": null
+    }
+  ],
+  "categories": [
+    {
+      "id": "apps",
+      "label": "AI 应用",
+      "items": [
+        {
+          "sourceId": "lcz-media",
+          "sourceName": "抡锤者 AI 音视频画图",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "apps",
+          "categories": [],
+          "author": "Bunsei",
+          "id": "3096",
+          "title": "[H3 剑心比赛] 双 R9700，ComfyUI＋Radiance TP2，INT8 QK＋FP8 PV，2D／3D 各约 8 分 29 秒",
+          "url": "https://lcz.me/topic/3096",
+          "published": "2026-11-15T16:11:56.406Z",
+          "summary": "一、 视频预览 1. 3D 视频 Youtube Video 2. 2D 视频 Youtube Video 配套材料： https://codeberg.org/Bunsei/ComfyUI-H3-RDNA4/releases/tag/v0.1.0 项目仓库： https://codeberg.org/Bunsei/ComfyUI-H3-RDNA4 二、硬件和环境 两张 Radeon AI PRO R9700，每卡 32GB，功耗上限各 300W。CPU 为 Ryzen 7 9700X，系统可见内存约 89.7 GiB。 Ubuntu 26.04.1、ComfyUI 0.45.0、Python 3.14.4、PyTorch 2.1…",
+          "metrics": {
+            "points": 0,
+            "comments": 5,
+            "views": 38
+          },
+          "excellent": true,
+          "content": {
+            "html": "<h4>一、<strong>视频预览</strong></h4>\n<p><strong>1. 3D 视频</strong></p>\n<p><a href=\"https://youtu.be/AWvxUJ8Em0w\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><i></i>Youtube Video</a></p>\n<div><div></div></div>\n<p></p>\n<p><strong>2. 2D 视频</strong></p>\n<p><a href=\"https://youtu.be/dkYIYTv_Mwo\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><i></i>Youtube Video</a></p>\n<div><div></div></div>\n<p></p>\n<p><strong>配套材料：</strong><a href=\"https://codeberg.org/Bunsei/ComfyUI-H3-RDNA4/releases/tag/v0.1.0\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://codeberg.org/Bunsei/ComfyUI-H3-RDNA4/releases/tag/v0.1.0</a><br><strong>项目仓库：</strong><a href=\"https://codeberg.org/Bunsei/ComfyUI-H3-RDNA4\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://codeberg.org/Bunsei/ComfyUI-H3-RDNA4</a></p>\n<h4><strong>二、硬件和环境</strong></h4>\n<p>两张 Radeon AI PRO R9700，每卡 32GB，功耗上限各 300W。CPU 为 Ryzen 7 9700X，系统可见内存约 89.7 GiB。</p>\n<p>Ubuntu 26.04.1、ComfyUI 0.45.0、Python 3.14.4、PyTorch 2.12.0+rocm7.14.0、Comfy Kitchen 0.2.41。节点首次公开版本为 0.1.0，源码、工作流与环境清单随材料提供。</p>\n<h4><strong>三、生成配置</strong></h4>\n<ul><li>模型：minimax_h3_ref2va_pruned_int8_convrot，Qwen-VL 同样使用 INT8 ConvRot 权重。</li><li>视频 VAE 为 FP16，音频 VAE 为 FP32。</li><li>六步 LoRA：pika_h3_flex_ref2va_v1_bf16，强度 1。</li><li>1344×768，种子 42，LCM，CFG 1，视频／音频 shift 为 12／3。</li><li>注意力：INT8 QK＋FP8 PV。参考图尺寸：适应，即原生 match。</li><li>成片为 24 fps、288 帧、12 秒，包含原生生成音频。</li></ul>\n<p>六步时间表为：1.0, 0.972973, 0.923077, 0.8, 0.571429, 0.333333, 0.0。</p>\n<h4><strong>四、完整耗时</strong></h4>\n<p>单位为秒，总耗时取自 ComfyUI 原始日志。</p>\n<table><thead><tr><th>阶段</th><th>2D</th><th>3D</th></tr></thead><tbody><tr><td>素材与提示词预处理</td><td>50.85</td><td>50.85</td></tr><tr><td>采样节点，含权重准备和启动</td><td>395.46</td><td>395.22</td></tr><tr><td>音频解码</td><td>2.42</td><td>2.53</td></tr><tr><td>视频解码</td><td>46.46</td><td>46.46</td></tr><tr><td>视频编码与保存</td><td>13.13</td><td>13.31</td></tr><tr><td>完整耗时</td><td><strong>509.44</strong></td><td><strong>509.45</strong></td></tr></tbody></table>\n<p>计时从 ComfyUI 接收完整工作流到文件保存完成，覆盖预处理、权重准备、采样、解码和保存，也包含其他小节点与调度。两段各在新进程中运行，使用已经建立的有效权重缓存，不含安装、编译、下载和首次建立该缓存。各一次后端启动重试已计入总时间。</p>\n<p>控制器独立计时为 509.654 和 509.668 秒。六次主干计算合计约 376.84 和 376.44 秒，已包含在采样节点中。</p>\n<h3><strong>五、加速方式</strong></h3>\n<p>ComfyUI 负责模型和 LoRA、参考条件、随机噪声、时间表与采样器。Radiance 通过本机内存 IPC 执行 DiT 的 50 层主干，双卡按线性层、注意力头和前馈宽度做 TP，结合行分块与通信流水线。</p>\n<p>主干线性层使用 INT8 ConvRot256，注意力使用 Radiance 原生稠密算子：QK 为 INT8，PV 为 FP8，softmax 与浮点累加为 FP32，保留完整输入序列。</p>\n<p>预处理将六张图的 Qwen 视觉块分给两卡，视觉精度沿用原生。Qwen 语言注意力使用 BF16 高低分量与 FP32 累加，输入输出保持 FP32。参考图片的 VAE 编码走原生，视频解码按原生独立时间窗分给双卡，音频解码使用原生 FP32 VAE。</p>\n<p>LoRA 由原生加载器管理。有效主干权重准备好后缓存复用，并随 TP 分片计算，文本精炼部分继续由原生处理。</p>\n<h4><strong>六、所用工作流、节点及生成日志</strong></h4>\n<p><strong>1. 自定义节点</strong></p>\n<p><img src=\"https://upload.lcz.me/uploads/c50db827-6ec2-4356-a7c9-5c10240e34ba.png\" alt=\"屏幕截图 2026-11-15 232251.png\" loading=\"lazy\"></p>\n<p><strong>2. 工作流</strong></p>\n<p><img src=\"https://upload.lcz.me/uploads/ebb2b934-2cbc-479e-8f59-a13aa53cd354.jpeg\" alt=\"image.jpeg\" loading=\"lazy\"></p>\n<p><strong>文件：</strong></p>\n<p><a href=\"https://upload.lcz.me/uploads/fabba0d1-2834-4c5f-b424-b5b9608ed321.json\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">参赛工作流-2D.json</a></p>\n<p><a href=\"https://upload.lcz.me/uploads/62d5fa94-7d69-4acd-b44c-07069539c92c.json\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">参赛工作流-3D.json</a></p>\n<p><strong>3. 生成日志</strong></p>\n<p><a href=\"https://upload.lcz.me/uploads/11f263dc-e250-4854-aafa-c934d5273ab8.log\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">参赛工作流-2D.log</a></p>\n<p><a href=\"https://upload.lcz.me/uploads/4df4be8d-39cf-4334-bd7e-ef25f105c44a.log\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">参赛工作流-3D.log</a></p>",
+            "text": "一、 视频预览\n1. 3D 视频\nYoutube Video\n2. 2D 视频\nYoutube Video\n配套材料： https://codeberg.org/Bunsei/ComfyUI-H3-RDNA4/releases/tag/v0.1.0\n项目仓库： https://codeberg.org/Bunsei/ComfyUI-H3-RDNA4\n二、硬件和环境\n两张 Radeon AI PRO R9700，每卡 32GB，功耗上限各 300W。CPU 为 Ryzen 7 9700X，系统可见内存约 89.7 GiB。\nUbuntu 26.04.1、ComfyUI 0.45.0、Python 3.14.4、PyTorch 2.12.0+rocm7.14.0、Comfy Kitchen 0.2.41。节点首次公开版本为 0.1.0，源码、工作流与环境清单随材料提供。\n三、生成配置\n模型：minimax_h3_ref2va_pruned_int8_convrot，Qwen-VL 同样使用 INT8 ConvRot 权重。\n视频 VAE 为 FP16，音频 VAE 为 FP32。\n六步 LoRA：pika_h3_flex_ref2va_v1_bf16，强度 1。\n1344×768，种子 42，LCM，CFG 1，视频／音频 shift 为 12／3。\n注意力：INT8 QK＋FP8 PV。参考图尺寸：适应，即原生 match。\n成片为 24 fps、288 帧、12 秒，包含原生生成音频。\n六步时间表为：1.0, 0.972973, 0.923077, 0.8, 0.571429, 0.333333, 0.0。\n四、完整耗时\n单位为秒，总耗时取自 ComfyUI 原始日志。\n阶段\n2D\n3D\n素材与提示词预处理\n50.85\n50.85\n采样节点，含权重准备和启动\n395.46\n395.22\n音频解码\n2.42\n2.53\n视频解码\n46.46\n46.46\n视频编码与保存\n13.13\n13.31\n完整耗时\n509.44\n509.45\n计时从 ComfyUI 接收完整工作流到文件保存完成，覆盖预处理、权重准备、采样、解码和保存，也包含其他小节点与调度。两段各在新进程中运行，使用已经建立的有效权重缓存，不含安装、编译、下载和首次建立该缓存。各一次后端启动重试已计入总时间。\n控制器独立计时为 509.654 和 509.668 秒。六次主干计算合计约 376.84 和 376.44 秒，已包含在采样节点中。\n五、加速方式\nComfyUI 负责模型和 LoRA、参考条件、随机噪声、时间表与采样器。Radiance 通过本机内存 IPC 执行 DiT 的 50 层主干，双卡按线性层、注意力头和前馈宽度做 TP，结合行分块与通信流水线。\n主干线性层使用 INT8 ConvRot256，注意力使用 Radiance 原生稠密算子：QK 为 INT8，PV 为 FP8，softmax 与浮点累加为 FP32，保留完整输入序列。\n预处理将六张图的 Qwen 视觉块分给两卡，视觉精度沿用原生。Qwen 语言注意力使用 BF16 高低分量与 FP32 累加，输入输出保持 FP32。参考图片的 VAE 编码走原生，视频解码按原生独立时间窗分给双卡，音频解码使用原生 FP32 VAE。\nLoRA 由原生加载器管理。有效主干权重准备好后缓存复用，并随 TP 分片计算，文本精炼部分继续由原生处理。\n六、所用工作流、节点及生成日志\n1. 自定义节点\n2. 工作流\n文件：\n参赛工作流-2D.json\n参赛工作流-3D.json\n3. 生成日志\n参赛工作流-2D.log\n参赛工作流-3D.log",
+            "lead": "一、 视频预览\n1. 3D 视频\nYoutube Video\n2. 2D 视频\nYoutube Video\n配套材料： https://codeberg.org/Bunsei/ComfyUI-H3-RDNA4/releases/tag/v0.1.0\n项目仓库： https://codeberg.org/Bunsei/ComfyUI-H3-RDNA4\n二、硬件和环境\n两张 Radeon AI PRO R9700，每卡 32GB，功耗上限各 300W。CPU 为 Ryzen 7 9700X，系统可见内存约 89.7 GiB。\nUbuntu 26.04.1、ComfyUI 0.45.0、Python 3.14.4、PyTorch 2.12.0+rocm7.14.0、Comfy Kitchen 0.2.41。节点首次公开版本为 0.1.0，源码、工作流与环境清单随材料提供。\n三、生成配置\n模型：minimax_h3_ref2va_pruned_int8_convrot，Qwen-VL 同样使用 INT8 ConvR",
+            "chars": 1629,
+            "shown": 1629,
+            "truncated": false
+          },
+          "quality": 11,
+          "score": 20.84,
+          "category": "apps",
+          "subcategory": "creation",
+          "practical": 3,
+          "slug": "e8222aa035e9",
+          "action": 6,
+          "rank": 20.6,
+          "tags": [
+            "generate",
+            "hardware",
+            "benchmark",
+            "tutorial"
+          ]
+        },
+        {
+          "sourceId": "gh-ecosystem",
+          "sourceName": "GitHub 检索（生态项目更新）",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "oss",
+          "categories": [
+            "comfyui-custom-node"
+          ],
+          "author": "ComfyAssets",
+          "id": "989660909",
+          "title": "ComfyAssets/ComfyUI_PromptManager",
+          "url": "https://github.com/ComfyAssets/ComfyUI_PromptManager",
+          "published": "2026-11-15T17:20:03.000Z",
+          "summary": "Professional prompt management system for ComfyUI with advanced search, tagging, star ratings, and integrated image galleries. Features modern UI with light/dark modes, bulk operations, and dashboard analytics. Transform your prompt collection into an organized, searchable library. (★ 186 · Python · comfyui-custom-nod…",
+          "metrics": {
+            "stars": 186
+          },
+          "content": {
+            "html": "<p>![PromptManager by ComfyAssets](assets/brand/banner.webp)</p>\n<h3>ComfyUI Prompt Manager</h3>\n<p><strong>Every prompt you run, every image it made, and every negative you tried, in one searchable library inside ComfyUI.</strong></p>\n<p>![The Prompt Manager workspace: a masonry gallery of generated images with the selected image's prompts, tags and settings beside it](assets/readme/hero.webp)</p>\n<p>!<a href=\"https://img.shields.io/badge/license-MIT-blue.svg\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">License</a>!<a href=\"https://img.shields.io/badge/python-3.12%2B-blue.svg\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Python</a>!<a href=\"https://github.com/ComfyAssets/ComfyUI_PromptManager/workflows/Tests/badge.svg\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Tests</a></p>\n<p>Prompt Manager saves your prompts as you generate, links each image back to the prompt that made it, and gives you one page to browse, tag, compare and reuse all of it. Your library is a local SQLite database on your own machine.</p>\n<h4>What's new: rebuilt from the ground up</h4>\n<ul><li><strong>A new UI.</strong>One app, the workspace, replaces the separate dashboard, gallery and metadata pages.</li><li><strong>Classic and Nodes 2.0.</strong>The nodes work in both ComfyUI renderers. CI starts a real ComfyUI and checks both.</li><li><strong>Tested end to end.</strong>Unit tests, browser tests in Chromium, Firefox, WebKit and touch emulation, and tests against a real ComfyUI.</li><li><strong>Linux and Windows.</strong>The Python suite runs on both, on Python 3.12, 3.13 and 3.14. macOS should work but is not tested.</li></ul>\n<h4>See it</h4>\n<p>All images on this page were generated and recorded through Prompt Manager in a clean demo library.</p>\n<h4>Your whole output folder, finally browsable</h4>\n<p>Masonry, grid or list, with search, categories, filters and saved views. Images and videos sit side by side, and selecting one shows its prompts and settings without leaving the page.</p>\n<p>![Images page in grid layout](assets/readme/images-grid.webp)</p>\n<h4>Open any image and see how it was made</h4>\n<p>The viewer shows the positive and negative prompts, tags, seed, steps, CFG, sampler and model next to the image.</p>\n<p>![The viewer with an image on the left and its prompts and generation settings on the right](assets/readme/viewer.webp)</p>\n<h4>Keep your hands on the keyboard</h4>\n<p>The viewer has shortcuts for moving between files, the slideshow, zoom, rotate, flip, full screen, details, download and delete. Press<code>?</code>to see them all.</p>\n<p>![The viewer's keyboard shortcuts overlay](assets/readme/viewer-shortcuts.webp)</p>\n<h4>Long libraries stay easy to work in</h4>\n<p>The selection bar stays pinned while you scroll, so you can keep picking images and act on them from anywhere. Back to top appears once you've scrolled down the page.</p>\n<p>![Images page scrolled down, with the selection bar pinned at the top and a Back to top button](assets/readme/pinned-bar.webp)</p>\n<h4>One positive prompt, many experiments</h4>\n<p>The Prompt library groups everything by positive prompt, so repeat runs and negative variants stay together instead of filling your list with near-duplicates.</p>\n<p>![Prompt library cards showing each prompt's images, negative variants, runs and tags](assets/readme/library.webp)</p>\n<h4>Watch your negatives branch on a timeline</h4>\n<p>Each prompt has its own page with a timeline of its negative variants. Click a red dot and the gallery filters to the images that negative made. Small dots mark repeat runs.</p>\n<p>![Clicking through negative variants on the timeline filters the gallery below](assets/readme/timeline.anim.webp)</p>\n<h4>Compare negatives term by term</h4>\n<p>Compare negatives shows two variants side by side and lists the terms one adds, so you can see what actually changed between runs.</p>\n<p>![Two negative prompts side by side with the added terms highlighted](assets/readme/compare-negatives.webp)</p>\n<h4>Auto-tag your images, and approve what sticks</h4>\n<p>Tag one image, a selection or your whole output with WD14 or JoyCaption. WD14 suggestions come with confidence scores, and you can review suggestions before anything is saved. Auto-tags belong to the image, so they never change your prompts.</p>\n<p>![Tag image dialog with WD14 suggestions and their confidence scores](assets/readme/autotag.webp)</p>\n<h4>Keep your vocabulary tidy</h4>\n<p>Tags &amp; categories lists every tag and category with how often it's used. Rename, merge and delete tags, and preview a category change before you apply it.</p>\n<p>![Tags and categories page](assets/readme/tags.webp)</p>\n<h4>Group images your own way</h4>\n<p>Collections are hand-picked sets of…</p>",
+            "text": "![PromptManager by ComfyAssets](assets/brand/banner.webp)\nComfyUI Prompt Manager\nEvery prompt you run, every image it made, and every negative you tried, in one searchable library inside ComfyUI.\n![The Prompt Manager workspace: a masonry gallery of generated images with the selected image's prompts, tags and settings beside it](assets/readme/hero.webp)\n! License ! Python ! Tests\nPrompt Manager saves your prompts as you generate, links each image back to the prompt that made it, and gives you one page to browse, tag, compare and reuse all of it. Your library is a local SQLite database on your own machine.\nWhat's new: rebuilt from the ground up\nA new UI. One app, the workspace, replaces the separate dashboard, gallery and metadata pages.\nClassic and Nodes 2.0. The nodes work in both ComfyUI renderers. CI starts a real ComfyUI and checks both.\nTested end to end. Unit tests, browser tests in Chromium, Firefox, WebKit and touch emulation, and tests against a real ComfyUI.\nLinux and Windows. The Python suite runs on both, on Python 3.12, 3.13 and 3.14. macOS should work but is not tested.\nSee it\nAll images on this page were generated and recorded through Prompt Manager in a clean demo library.\nYour whole output folder, finally browsable\nMasonry, grid or list, with search, categories, filters and saved views. Images and videos sit side by side, and selecting one shows its prompts and settings without leaving the page.\n![Images page in grid layout](assets/readme/images-grid.webp)\nOpen any image and see how it was made\nThe viewer shows the positive and negative prompts, tags, seed, steps, CFG, sampler and model next to the image.\n![The viewer with an image on the left and its prompts and generation settings on the right](assets/readme/viewer.webp)\nKeep your hands on the keyboard\nThe viewer has shortcuts for moving between files, the slideshow, zoom, rotate, flip, full screen, details, download and delete. Press ? to see them all.\n![The viewer's keyboard shortcuts overlay](assets/readme/viewer-shortcuts.webp)\nLong libraries stay easy to work in\nThe selection bar stays pinned while you scroll, so you can keep picking images and act on them from anywhere. Back to top appears once you've scrolled down the page.\n![Images page scrolled down, with the selection bar pinned at the top and a Back to top button](assets/readme/pinned-bar.webp)\nOne positive prompt, many experiments\nThe Prompt library groups everything by positive prompt, so repeat runs and negative variants stay together instead of filling your list with near-duplicates.\n![Prompt library cards showing each prompt's images, negative variants, runs and tags](assets/readme/library.webp)\nWatch your negatives branch on a timeline\nEach prompt has its own page with a timeline of its negative variants. Click a red dot and the gallery filters to the images that negative made. Small dots mark repeat runs.\n![Clicking through negative variants on the timeline filters the gallery below](assets/readme/timeline.anim.webp)\nCompare negatives term by term\nCompare negatives shows two variants side by side and lists the terms one adds, so you can see what actually changed between runs.\n![Two negative prompts side by side with the added terms highlighted](assets/readme/compare-negatives.webp)\nAuto-tag your images, and approve what sticks\nTag one image, a selection or your whole output with WD14 or JoyCaption. WD14 suggestions come with confidence scores, and you can review suggestions before anything is saved. Auto-tags belong to the image, so they never change your prompts.\n![Tag image dialog with WD14 suggestions and their confidence scores](assets/readme/autotag.webp)\nKeep your vocabulary tidy\nTags & categories lists every tag and category with how often it's used. Rename, merge and delete tags, and preview a category change before you apply it.\n![Tags and categories page](assets/readme/tags.webp)\nGroup images your own way\nCollections are hand-picked sets of…",
+            "lead": "![PromptManager by ComfyAssets](assets/brand/banner.webp)\nComfyUI Prompt Manager\nEvery prompt you run, every image it made, and every negative you tried, in one searchable library inside ComfyUI.\n![The Prompt Manager workspace: a masonry gallery of generated images with the selected image's prompts, tags and settings beside it](assets/readme/hero.webp)\n! License ! Python ! Tests\nPrompt Manager saves your prompts as you generate, links each image back to th",
+            "chars": 12518,
+            "shown": 4001,
+            "truncated": true
+          },
+          "quality": 7,
+          "score": 24.4,
+          "category": "apps",
+          "subcategory": "knowledge",
+          "practical": 5,
+          "slug": "72b8efbb8d80",
+          "action": 4,
+          "rank": 13.4,
+          "tags": [
+            "generate"
+          ]
+        },
+        {
+          "sourceId": "lcz-llm",
+          "sourceName": "抡锤者 模型部署讨论",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "范志刚",
+          "id": "3097",
+          "title": "kobcpp 1.124.2进化了，不错不错",
+          "url": "https://lcz.me/topic/3097",
+          "published": "2026-11-15T16:17:00.646Z",
+          "summary": "KoboldCpp 1.124.2 够用了，AI界不是有句坚持不学就可以不学吗，再次印证规律。 生态级替代Strata。​ 但要拿的是缓存那档，不是默认档： --moecpu N 从大往小扫，找悬崖退一步 加 --moe-cache-mib（本版刚暴露的） --lazy-mode + --usemlock 配上 --help | grep -i moe 看一眼 --moe-cache-cpu-share 在不在，在的话一起开，那就是我上轮说的 1.6 倍那档 别碰的是 --moeexperts 和 --autofit——前者掉质量，后者会跟你的手工分层打架。 一句话：你选 KoboldCpp 可以不选 Strata 了，而且 1.…",
+          "metrics": {
+            "points": 0,
+            "comments": 0,
+            "views": 22
+          },
+          "excellent": false,
+          "content": {
+            "html": "<p>KoboldCpp 1.124.2 够用了，AI界不是有句坚持不学就可以不学吗，再次印证规律。 生态级替代Strata。​ 但要拿的是缓存那档，不是默认档：</p>\n<p>--moecpu N 从大往小扫，找悬崖退一步<br>加 --moe-cache-mib（本版刚暴露的）<br>--lazy-mode + --usemlock 配上<br>--help | grep -i moe 看一眼 --moe-cache-cpu-share 在不在，在的话一起开，那就是我上轮说的 1.6 倍那档</p>\n<p>别碰的是 --moeexperts 和 --autofit——前者掉质量，后者会跟你的手工分层打架。</p>\n<p>一句话：你选 KoboldCpp 可以不选 Strata 了，而且 1.124.2 正好补上了它原先最缺的那块。用它的壳，把 --moe-cache-mib 开上，那就是最省事的走法，不用再折腾。通杀moe，不再锁定什么这个那个的俩模型，更霸道的是在稠密模上一样很快很好用<br><a href=\"https://github.com/LostRuins/koboldcpp/releases/tag/v1.124.2\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://github.com/LostRuins/koboldcpp/releases/tag/v1.124.2</a><br><img src=\"https://upload.lcz.me/uploads/416b48f2-33f0-48ec-b145-67a76908dcda.jpeg\" alt=\"image.jpeg\" loading=\"lazy\"><br>各种好玩哈哈</p>",
+            "text": "KoboldCpp 1.124.2 够用了，AI界不是有句坚持不学就可以不学吗，再次印证规律。 生态级替代Strata。​ 但要拿的是缓存那档，不是默认档：\n--moecpu N 从大往小扫，找悬崖退一步\n加 --moe-cache-mib（本版刚暴露的）\n--lazy-mode + --usemlock 配上\n--help | grep -i moe 看一眼 --moe-cache-cpu-share 在不在，在的话一起开，那就是我上轮说的 1.6 倍那档\n别碰的是 --moeexperts 和 --autofit——前者掉质量，后者会跟你的手工分层打架。\n一句话：你选 KoboldCpp 可以不选 Strata 了，而且 1.124.2 正好补上了它原先最缺的那块。用它的壳，把 --moe-cache-mib 开上，那就是最省事的走法，不用再折腾。通杀moe，不再锁定什么这个那个的俩模型，更霸道的是在稠密模上一样很快很好用\nhttps://github.com/LostRuins/koboldcpp/releases/tag/v1.124.2\n各种好玩哈哈",
+            "lead": "KoboldCpp 1.124.2 够用了，AI界不是有句坚持不学就可以不学吗，再次印证规律。 生态级替代Strata。​ 但要拿的是缓存那档，不是默认档：\n--moecpu N 从大往小扫，找悬崖退一步\n加 --moe-cache-mib（本版刚暴露的）\n--lazy-mode + --usemlock 配上\n--help | grep -i moe 看一眼 --moe-cache-cpu-share 在不在，在的话一起开，那就是我上轮说的 1.6 倍那档\n别碰的是 --moeexperts 和 --autofit——前者掉质量，后者会跟你的手工分层打架。\n一句话：你选 KoboldCpp 可以不选 Strata 了，而且 1.124.2 正好补上了它原先最缺的那块。用它的壳，把 --moe-cache-mib 开上，那就是最省事的走法，不用再折腾。通杀moe，不再锁定什么这个那个的俩模型，更霸道的是在稠密模上一样很快很好用\nhttps://github.com/LostRuins/koboldcpp/r",
+            "chars": 498,
+            "shown": 498,
+            "truncated": false
+          },
+          "quality": 8,
+          "score": 14.51,
+          "category": "apps",
+          "subcategory": "inference",
+          "practical": 1,
+          "slug": "df4f70750760",
+          "action": 3,
+          "rank": 12.8,
+          "tags": [
+            "free"
+          ]
+        },
+        {
+          "sourceId": "reddit-local-llama",
+          "sourceName": "r/LocalLLaMA",
+          "title": "RustingStrata has a new built-in chat page. What is missing?",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xwwv88/rustingstrata_has_a_new_builtin_chat_page_what_is/",
+          "id": "t3_1xwwv88",
+          "published": "2026-11-15T14:29:05.000Z",
+          "summary": "RustingStrata is one Rust binary. rustingstrata serve starts the OpenAI-compatible server, and the same port serves a chat page at / . No Node, no Docker, no second install. The page was rebuilt for 1.2.3 and I want to know what people would add before I go further, I mean maybe allow to edit files and etc. like in De…",
+          "content": {
+            "html": "<table><tr><td><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xwwv88/rustingstrata_has_a_new_builtin_chat_page_what_is/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://preview.redd.it/et1bi8jdds1i1.png?width=140&amp;height=78&amp;auto=webp&amp;s=4130178976f23bf9a76eed1cf644d4727e06f8aa\" alt=\"RustingStrata has a new built-in chat page. What is missing?\" loading=\"lazy\"></a></td><td><div><p>RustingStrata is one Rust binary.<code>rustingstrata serve</code>starts the OpenAI-compatible server, and the same port serves a chat page at<code>/</code>. No Node, no Docker, no second install. The page was rebuilt for 1.2.3 and I want to know what people would add before I go further, I mean maybe allow to edit files and etc. like in DeepSeek harness, or maybe there are something that you wish to be in original Strata, so I can add it in my.</p><p>What it does now:</p><ul><li>Pick a model from the models folder and load it from the page, with the load options (context, MTP drafts, KV cache format, VRAM margin, prefill chunk).</li><li>Chats are kept in the browser (<code>localStorage</code>), with search, rename, export and import. Nothing leaves the machine.</li><li>Edit a message, regenerate a reply, continue a reply that stopped, copy, delete.</li><li>Attach an image for models with a vision tower.</li><li>Thinking is folded above the answer, with a switch to turn it on or off.</li><li>Sampler presets (temperature, top-k, top-p, seed) a system prompt for every chat, and instructions for one chat.</li><li>Speed of each reply in tok/s.</li><li>If the model was never calibrated on this machine, the page says so and offers to run the calibration.</li><li>The accent color follows the model family, or you set your own(Just cool visual feature, like if you load Qwen model, then website is purple, if DeepSeek, then it's blue and etc.).</li></ul><p>What it is not: a coding agent. It does not read or edit files. For that, point OpenCode, Claude Code or another CLI at the same server, the page is for quick chat and for trying a model.</p><p>Questions:</p><ol><li>What do you open a local web chat for, if you already use a CLI agent?</li><li>Which one feature would make you keep this page open instead of another UI?</li><li>What do you use in other local chat pages that is missing here?</li></ol><p>Any Feedback would be very useful, ty!<br>Repo<a href=\"https://github.com/RustingStudio/RustingStrata\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">RustingStrata</a></p></div>submitted by<a href=\"https://www.reddit.com/user/Serious_Scarcity7818\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">/u/Serious_Scarcity7818</a><br><span><a href=\"https://www.reddit.com/gallery/1xwwv88\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[link]</a></span><span><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xwwv88/rustingstrata_has_a_new_builtin_chat_page_what_is/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[comments]</a></span></td></tr></table>",
+            "text": "RustingStrata is one Rust binary. rustingstrata serve starts the OpenAI-compatible server, and the same port serves a chat page at / . No Node, no Docker, no second install. The page was rebuilt for 1.2.3 and I want to know what people would add before I go further, I mean maybe allow to edit files and etc. like in DeepSeek harness, or maybe there are something that you wish to be in original Strata, so I can add it in my.\nWhat it does now:\nPick a model from the models folder and load it from the page, with the load options (context, MTP drafts, KV cache format, VRAM margin, prefill chunk).\nChats are kept in the browser ( localStorage ), with search, rename, export and import. Nothing leaves the machine.\nEdit a message, regenerate a reply, continue a reply that stopped, copy, delete.\nAttach an image for models with a vision tower.\nThinking is folded above the answer, with a switch to turn it on or off.\nSampler presets (temperature, top-k, top-p, seed) a system prompt for every chat, and instructions for one chat.\nSpeed of each reply in tok/s.\nIf the model was never calibrated on this machine, the page says so and offers to run the calibration.\nThe accent color follows the model family, or you set your own(Just cool visual feature, like if you load Qwen model, then website is purple, if DeepSeek, then it's blue and etc.).\nWhat it is not: a coding agent. It does not read or edit files. For that, point OpenCode, Claude Code or another CLI at the same server, the page is for quick chat and for trying a model.\nQuestions:\nWhat do you open a local web chat for, if you already use a CLI agent?\nWhich one feature would make you keep this page open instead of another UI?\nWhat do you use in other local chat pages that is missing here?\nAny Feedback would be very useful, ty!\nRepo RustingStrata\nsubmitted by /u/Serious_Scarcity7818\n[link] [comments]",
+            "lead": "RustingStrata is one Rust binary. rustingstrata serve starts the OpenAI-compatible server, and the same port serves a chat page at / . No Node, no Docker, no second install. The page was rebuilt for 1.2.3 and I want to know what people would add before I go further, I mean maybe allow to edit files and etc. like in DeepSeek harness, or maybe there are something that you wish to be in original Strata, so I can add it in my.\nWhat it does now:\nPick a model fr",
+            "chars": 1892,
+            "shown": 1892,
+            "truncated": false
+          },
+          "categories": [
+            "LocalLLaMA"
+          ],
+          "author": "/u/Serious_Scarcity7818",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "oss",
+          "metrics": {},
+          "quality": 6,
+          "score": 15.96,
+          "category": "apps",
+          "subcategory": "inference",
+          "practical": 1,
+          "slug": "098508153878",
+          "action": 4,
+          "rank": 12.4,
+          "tags": [
+            "agent",
+            "local",
+            "lowspec",
+            "benchmark"
+          ]
+        },
+        {
+          "sourceId": "reddit-local-llama",
+          "sourceName": "r/LocalLLaMA",
+          "title": "Vimoo 1.0 - a Vimoo-AI Collection - Open-source video generation model family for text-to-video (T2V) and image-to-video (I2V)",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xwwqwz/vimoo_10_a_vimooai_collection_opensource_video/",
+          "id": "t3_1xwwqwz",
+          "published": "2026-11-15T14:24:05.000Z",
+          "summary": "Vimoo-1.0 generates video from text (T2V) or from a reference image and text (I2V), with a separate ≈11.7B model for each task. It is the highest-quality model in the Vimoo 1.0 family. Diffusers Pipeline : Quick Start · Vimoo-1.0 ComfyUI Workflows : ComfyUI-Vimoo · ComfyUI Weights · Lite ComfyUI Weights MLX (Apple Sil…",
+          "content": {
+            "html": "<table><tr><td><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xwwqwz/vimoo_10_a_vimooai_collection_opensource_video/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://external-preview.redd.it/HMUFUWYUUi-U5b8LIU6kPYOp5CnJybhIVC5Rc0siyYE.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=a9b837eabd7fad12bd79139b912af2332b2bc7e9\" alt=\"Vimoo 1.0 - a Vimoo-AI Collection - Open-source video generation model family for text-to-video (T2V) and image-to-video (I2V)\" loading=\"lazy\"></a></td><td><div><p>Vimoo-1.0 generates video from text (T2V) or from a reference image and text (I2V), with a separate ≈11.7B model for each task. It is the highest-quality model in the Vimoo 1.0 family.</p><ul><li><strong>Diffusers Pipeline</strong>:<a href=\"https://huggingface.co/Vimoo-AI/Vimoo-1.0#%F0%9F%9A%80-quick-start\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Quick Start</a>·<a href=\"https://github.com/Vimoo-AI/Vimoo-1.0\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Vimoo-1.0</a></li><li><strong>ComfyUI Workflows</strong>:<a href=\"https://github.com/Vimoo-AI/ComfyUI-Vimoo\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">ComfyUI-Vimoo</a>·<a href=\"https://huggingface.co/Vimoo-AI/Vimoo-1.0-ComfyUI\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">ComfyUI Weights</a>·<a href=\"https://huggingface.co/Vimoo-AI/Vimoo-1.0-Lite-ComfyUI\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Lite ComfyUI Weights</a></li><li><strong>MLX (Apple Silicon)</strong>:<a href=\"https://github.com/Vimoo-AI/Vimoo-1.0-MLX\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Vimoo-1.0-MLX</a>·<a href=\"https://huggingface.co/Vimoo-AI/Vimoo-1.0-Lite-MLX\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">MLX Weights</a></li></ul><h3>📦 Model Zoo</h3><p>Vimoo 1.0 comes in two models, Vimoo 1.0 and Vimoo 1.0 - Lite. Each Hugging Face repository packages one of them for one runtime:</p><table><thead><tr><th>Model</th><th>Hugging Face</th><th>Inference code</th><th>Description</th></tr></thead></table></div></td></tr><tbody><tr><td><strong>Vimoo 1.0</strong>≈11.7B per model</td><td><a href=\"https://huggingface.co/Vimoo-AI/Vimoo-1.0\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://huggingface.co/Vimoo-AI/Vimoo-1.0</a></td><td><a href=\"https://github.com/Vimoo-AI/Vimoo-1.0\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://github.com/Vimoo-AI/Vimoo-1.0</a></td><td>T2V and I2V for the Vimoo Diffusers fork</td></tr><tr><td></td><td><a href=\"https://huggingface.co/Vimoo-AI/Vimoo-1.0-ComfyUI\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://huggingface.co/Vimoo-AI/Vimoo-1.0-ComfyUI</a></td><td><a href=\"https://github.com/Vimoo-AI/ComfyUI-Vimoo\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://github.com/Vimoo-AI/ComfyUI-Vimoo</a></td><td>T2V, I2V and their Distilled versions for ComfyUI</td></tr><tr><td><strong>Vimoo 1.0 - Lite</strong>≈9.5B</td><td><a href=\"https://huggingface.co/Vimoo-AI/Vimoo-1.0-Lite\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://huggingface.co/Vimoo-AI/Vimoo-1.0-Lite</a></td><td><a href=\"https://github.com/Vimoo-AI/Vimoo-1.0\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://github.com/Vimoo-AI/Vimoo-1.0</a></td><td>TI2V for the Vimoo Diffusers fork</td></tr><tr><td></td><td><a href=\"https://huggingface.co/Vimoo-AI/Vimoo-1.0-Lite-ComfyUI\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://huggingface.co/Vimoo-AI/Vimoo-1.0-Lite-ComfyUI</a></td><td><a href=\"https://github.com/Vimoo-AI/ComfyUI-Vimoo\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://github.com/Vimoo-AI/ComfyUI-Vimoo</a></td><td>TI2V and TI2V Distilled for ComfyUI</td></tr><tr><td></td><td><a href=\"https://huggingface.co/Vimoo-AI/Vimoo-1.0-Lite-MLX\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://huggingface.co/Vimoo-AI/Vimoo-1.0-Lite-MLX</a></td><td><a href=\"https://github.com/Vimoo-AI/Vimoo-1.0-MLX\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://github.com/Vimoo-AI/Vimoo-1.0-MLX</a></td><td>TI2V Distilled for MLX on Apple Silicon</td></tr></tbody></table>\n<p>Each ComfyUI repository includes its checkpoints, distilled LoRA adapters, Qwen text encoder, SigLIP vision encoder and VAE. Distilled models are available only for ComfyUI and MLX. Vimoo-1.0 T2V Distilled and I2V Distilled use different base checkpoints from Vimoo-1.0 T2V and I2V; download each task's matching base and adapter listed in the<a href=\"https://github.com/Vimoo-AI/ComfyUI-Vimoo#download-weights\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">ComfyUI guide</a>. The Vimoo-1.0 T2V Distilled, Vimoo-1.0 I2V Distilled and Vimoo-1.0-Lite TI2V Distilled adapters are not interchangeable. Parameters count the video denoiser only.</p>\n<h3>Highlights</h3>\n<ul><li><strong>Prompt adherence:</strong>a dedicated text encoder turns prompts into precise generation conditions. An optional prompt enhancer can add visual, cinematic, temporal, and contextual detail, or be disabled to preserve the original wording.</li><li><strong>Cinematic visual quality:</strong>training on carefully curated aesthetic data, with detailed annotations for lighting, composition, contrast, color grading, and more, enables precise control over cinematic styles and a wide range of aesthetic preferences.</li><li><strong>Advanced motion generation:</strong>a larger and more diverse training corpus improves generalization across motion, semantics, and visual aesthetics, delivering leading performance among open-source and proprietary video generation models.</li><li><strong>E-commerce video generation:</strong>by faithfully highlighting product selling points and features while preserving fine-grained product details, it ensures strong product consistency across frames, delivering reliable and visually coherent results that meet the practical demands of e-commerce content creation.</li><li><strong>Efficient high-definition generation:</strong>the lightweight variant uses 32×32×4 spatiotemporal compression and supports T2V and I2V at 720p and 24 fps.</li></ul>\n<p><strong>EDIT</strong>: Fixed Model Zoo Table(Previously it lost all the links &amp; text on 2nd &amp; 3rd columns)</p>\nsubmitted by<a href=\"https://www.reddit.com/user/pmttyji\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">/u/pmttyji</a>\n<br><span><a href=\"https://huggingface.co/collections/Vimoo-AI/vimoo-10\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[link]</a></span>\n<span><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xwwqwz/vimoo_10_a_vimooai_collection_opensource_video/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[comments]</a></span>",
+            "text": "Vimoo-1.0 generates video from text (T2V) or from a reference image and text (I2V), with a separate ≈11.7B model for each task. It is the highest-quality model in the Vimoo 1.0 family.\nDiffusers Pipeline : Quick Start · Vimoo-1.0\nComfyUI Workflows : ComfyUI-Vimoo · ComfyUI Weights · Lite ComfyUI Weights\nMLX (Apple Silicon) : Vimoo-1.0-MLX · MLX Weights\n📦 Model Zoo\nVimoo 1.0 comes in two models, Vimoo 1.0 and Vimoo 1.0 - Lite. Each Hugging Face repository packages one of them for one runtime:\nModel\nHugging Face\nInference code\nDescription\nVimoo 1.0 ≈11.7B per model\nhttps://huggingface.co/Vimoo-AI/Vimoo-1.0\nhttps://github.com/Vimoo-AI/Vimoo-1.0\nT2V and I2V for the Vimoo Diffusers fork\nhttps://huggingface.co/Vimoo-AI/Vimoo-1.0-ComfyUI\nhttps://github.com/Vimoo-AI/ComfyUI-Vimoo\nT2V, I2V and their Distilled versions for ComfyUI\nVimoo 1.0 - Lite ≈9.5B\nhttps://huggingface.co/Vimoo-AI/Vimoo-1.0-Lite\nhttps://github.com/Vimoo-AI/Vimoo-1.0\nTI2V for the Vimoo Diffusers fork\nhttps://huggingface.co/Vimoo-AI/Vimoo-1.0-Lite-ComfyUI\nhttps://github.com/Vimoo-AI/ComfyUI-Vimoo\nTI2V and TI2V Distilled for ComfyUI\nhttps://huggingface.co/Vimoo-AI/Vimoo-1.0-Lite-MLX\nhttps://github.com/Vimoo-AI/Vimoo-1.0-MLX\nTI2V Distilled for MLX on Apple Silicon\nEach ComfyUI repository includes its checkpoints, distilled LoRA adapters, Qwen text encoder, SigLIP vision encoder and VAE. Distilled models are available only for ComfyUI and MLX. Vimoo-1.0 T2V Distilled and I2V Distilled use different base checkpoints from Vimoo-1.0 T2V and I2V; download each task's matching base and adapter listed in the ComfyUI guide . The Vimoo-1.0 T2V Distilled, Vimoo-1.0 I2V Distilled and Vimoo-1.0-Lite TI2V Distilled adapters are not interchangeable. Parameters count the video denoiser only.\nHighlights\nPrompt adherence: a dedicated text encoder turns prompts into precise generation conditions. An optional prompt enhancer can add visual, cinematic, temporal, and contextual detail, or be disabled to preserve the original wording.\nCinematic visual quality: training on carefully curated aesthetic data, with detailed annotations for lighting, composition, contrast, color grading, and more, enables precise control over cinematic styles and a wide range of aesthetic preferences.\nAdvanced motion generation: a larger and more diverse training corpus improves generalization across motion, semantics, and visual aesthetics, delivering leading performance among open-source and proprietary video generation models.\nE-commerce video generation: by faithfully highlighting product selling points and features while preserving fine-grained product details, it ensures strong product consistency across frames, delivering reliable and visually coherent results that meet the practical demands of e-commerce content creation.\nEfficient high-definition generation: the lightweight variant uses 32×32×4 spatiotemporal compression and supports T2V and I2V at 720p and 24 fps.\nEDIT : Fixed Model Zoo Table(Previously it lost all the links & text on 2nd & 3rd columns)\nsubmitted by /u/pmttyji\n[link]\n[comments]",
+            "lead": "Vimoo-1.0 generates video from text (T2V) or from a reference image and text (I2V), with a separate ≈11.7B model for each task. It is the highest-quality model in the Vimoo 1.0 family.\nDiffusers Pipeline : Quick Start · Vimoo-1.0\nComfyUI Workflows : ComfyUI-Vimoo · ComfyUI Weights · Lite ComfyUI Weights\nMLX (Apple Silicon) : Vimoo-1.0-MLX · MLX Weights\n📦 Model Zoo\nVimoo 1.0 comes in two models, Vimoo 1.0 and Vimoo 1.0 - Lite. Each Hugging Face repository ",
+            "chars": 3121,
+            "shown": 3121,
+            "truncated": false
+          },
+          "categories": [
+            "LocalLLaMA"
+          ],
+          "author": "/u/pmttyji",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "oss",
+          "metrics": {},
+          "quality": 6,
+          "score": 15.96,
+          "category": "apps",
+          "subcategory": "video",
+          "practical": 1,
+          "slug": "72fcd0b5a613",
+          "action": 3,
+          "rank": 10.8,
+          "tags": [
+            "generate",
+            "free"
+          ]
+        },
+        {
+          "sourceId": "reddit-local-llama",
+          "sourceName": "r/LocalLLaMA",
+          "title": "Latest version of strata made my Qwen3.8-Flash-Next dumb and useless",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xwttcw/latest_version_of_strata_made_my_qwen38flashnext/",
+          "id": "t3_1xwttcw",
+          "published": "2026-11-15T12:02:35.000Z",
+          "summary": "I updated the strata to the latest version from v0.1.42.0, so I can try the latest unsloths models and see how they fare against the iq3_s variant I have been using. Upon updating it, I noticed it messed up the whole thing, It got faster, but it got way dumber! previously it would only take 15~30 minutes to create the…",
+          "content": {
+            "html": "<table><tr><td><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xwttcw/latest_version_of_strata_made_my_qwen38flashnext/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://preview.redd.it/hbwsi2vj5r1i1.png?width=140&amp;height=75&amp;auto=webp&amp;s=38249d6dfb889a2504ee82eeec61432a84fd08a5\" alt=\"Latest version of strata made my Qwen3.8-Flash-Next dumb and useless\" loading=\"lazy\"></a></td><td><div><p>I updated the strata to the latest version from v0.1.42.0, so I can try the latest unsloths models and see how they fare against the iq3_s variant I have been using. Upon updating it, I noticed it messed up the whole thing, It got faster, but it got way dumber! previously it would only take 15~30 minutes to create the pagoda , 50 mins to an hour if I used xhigh.</p><p>But when I siwtched to the latest version, not only it takes at least an hour and half to come up with something, its not even done! and it has many issues!</p><p><a href=\"http://0.1.42.0/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">0.1.42.0</a>is the last version that seems to work decently.</p><p>I noticed, when im using the latest model, it always tries to go for something grandiose and failing. unlike the older version which seems to take a more modest path!</p><p>whats going on? Do any of you have this problem?</p><p>here are example outputs I did to make sure its not a one time thing!</p><p>my prompt :</p><p>Design and create a very creative, elaborate, and detailed voxel art scene of a pagoda in a beautiful garden with trees, including some cherry blossoms. Make the scene impressive and varied and use colorful voxels. Add as many details as possible to showcase your attention to them. Use whatever libraries to get this done but make sure I can paste it all into a single HTML file.</p><p>these are the outputs :</p><p><a href=\"http://0.1.42.0/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">0.1.42.0</a>:</p><p>xhigh:</p><p><a href=\"https://preview.redd.it/hbwsi2vj5r1i1.png?width=1713&amp;format=png&amp;auto=webp&amp;s=6e2ed41e017d75a1629349913b021bc196f5385a\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">xhigh-1</a></p><p><a href=\"https://preview.redd.it/c7h8vspq5r1i1.png?width=1920&amp;format=png&amp;auto=webp&amp;s=d77d444307b257603ae9deb5d7dbac85901cdce4\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">xhigh2</a></p><p><a href=\"https://preview.redd.it/823v96oa6r1i1.png?width=1920&amp;format=png&amp;auto=webp&amp;s=a389f04a9271ea93fa420127d5fbf88ede18ff09\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">xhigh3</a></p><p><a href=\"https://preview.redd.it/ilaf1foe6r1i1.png?width=1920&amp;format=png&amp;auto=webp&amp;s=fa47b023acc0716051dccc12d3bc5c61e8cb2cb1\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">xhigh4</a></p><p>default:</p><p><a href=\"https://preview.redd.it/g9z06cvx5r1i1.png?width=1920&amp;format=png&amp;auto=webp&amp;s=415a98bd57c12c45448db5ff56c77bbc83e4abf8\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">default1</a></p><p><a href=\"https://preview.redd.it/f7ayt9126r1i1.png?width=1920&amp;format=png&amp;auto=webp&amp;s=740ad3838837973c2606855af100c7138b887939\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">default2</a></p><p><a href=\"https://preview.redd.it/ie20z5kk6r1i1.png?width=1920&amp;format=png&amp;auto=webp&amp;s=bba26d28812d79c5b7f3fdebe51272bad007b6e4\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">default3</a></p><p><a href=\"https://preview.redd.it/6vdbnwvq6r1i1.png?width=1920&amp;format=png&amp;auto=webp&amp;s=4ce6ff4b87e7939bbe5096cfd446175e03005608\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">default4</a></p><p>the latest version created this after 1 hour and 32 minutes to only fail with excessive thinking:</p><p><a href=\"https://preview.redd.it/c1jdlx947r1i1.png?width=1920&amp;format=png&amp;auto=webp&amp;s=49442ef22f5bc51db593127b7ff9a677bc57b464\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">xhigh</a></p><p><a href=\"https://preview.redd.it/4jag7e5mnr1i1.png?width=1920&amp;format=png&amp;auto=webp&amp;s=137890b4074b131bb58ee0a480e787fc57b84107\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">default(failed after 1 hour and 31 minites exausting all context size of 262K)</a></p><p>As you can see, not only it takes way longer to create an output, if it doesn't fail already, the attention to details is also gone, everything is in haphazard form! I tried 4 5 times and the majority all failed because it couldn't create an output after an hour and a half or it constantly gets something wrong and tries to either fix it or goes to look at other things leaving the issues untouched!</p><p>The model at least, the qwen3.8-Flash-Next-q3_s that I have been working with so far is not usable! it takes too long and it fails more by getting stuck at thinking forever!</p><p>I used the new unsloth quant iq4_xs too and it was a mess as well. so I figured its the strata version. sadly I cant test the iq4_sx on<a href=\"http://0.1.42.0/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">0.1.42.0</a>and I get an error.</p><p>So if any of you faced this issue, can you kindly share with me what you do to fix this? what version does it work for you?</p><p>I have RTX3080 10G/ 64G of RAM and I'm using the Linux terminal version along with deepseek harness.</p><p>Thank you all in advance</p></div>submitted by<a href=\"https://www.reddit.com/user/Lime-Lemon-7582\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">/u/Lime-Lemon-7582</a><br><span><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xwttcw/latest_version_of_strata_made_my_qwen38flashnext/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[link]</a></span><span><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xwttcw/latest_version_of_strata_made_my_qwen38flashnext/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[comments]</a></span></td></tr></table>",
+            "text": "I updated the strata to the latest version from v0.1.42.0, so I can try the latest unsloths models and see how they fare against the iq3_s variant I have been using. Upon updating it, I noticed it messed up the whole thing, It got faster, but it got way dumber! previously it would only take 15~30 minutes to create the pagoda , 50 mins to an hour if I used xhigh.\nBut when I siwtched to the latest version, not only it takes at least an hour and half to come up with something, its not even done! and it has many issues!\n0.1.42.0 is the last version that seems to work decently.\nI noticed, when im using the latest model, it always tries to go for something grandiose and failing. unlike the older version which seems to take a more modest path!\nwhats going on? Do any of you have this problem?\nhere are example outputs I did to make sure its not a one time thing!\nmy prompt :\nDesign and create a very creative, elaborate, and detailed voxel art scene of a pagoda in a beautiful garden with trees, including some cherry blossoms. Make the scene impressive and varied and use colorful voxels. Add as many details as possible to showcase your attention to them. Use whatever libraries to get this done but make sure I can paste it all into a single HTML file.\nthese are the outputs :\n0.1.42.0 :\nxhigh:\nxhigh-1\nxhigh2\nxhigh3\nxhigh4\ndefault:\ndefault1\ndefault2\ndefault3\ndefault4\nthe latest version created this after 1 hour and 32 minutes to only fail with excessive thinking:\nxhigh\ndefault(failed after 1 hour and 31 minites exausting all context size of 262K)\nAs you can see, not only it takes way longer to create an output, if it doesn't fail already, the attention to details is also gone, everything is in haphazard form! I tried 4 5 times and the majority all failed because it couldn't create an output after an hour and a half or it constantly gets something wrong and tries to either fix it or goes to look at other things leaving the issues untouched!\nThe model at least, the qwen3.8-Flash-Next-q3_s that I have been working with so far is not usable! it takes too long and it fails more by getting stuck at thinking forever!\nI used the new unsloth quant iq4_xs too and it was a mess as well. so I figured its the strata version. sadly I cant test the iq4_sx on 0.1.42.0 and I get an error.\nSo if any of you faced this issue, can you kindly share with me what you do to fix this? what version does it work for you?\nI have RTX3080 10G/ 64G of RAM and I'm using the Linux terminal version along with deepseek harness.\nThank you all in advance\nsubmitted by /u/Lime-Lemon-7582\n[link] [comments]",
+            "lead": "I updated the strata to the latest version from v0.1.42.0, so I can try the latest unsloths models and see how they fare against the iq3_s variant I have been using. Upon updating it, I noticed it messed up the whole thing, It got faster, but it got way dumber! previously it would only take 15~30 minutes to create the pagoda , 50 mins to an hour if I used xhigh.\nBut when I siwtched to the latest version, not only it takes at least an hour and half to come ",
+            "chars": 2633,
+            "shown": 2633,
+            "truncated": false
+          },
+          "categories": [
+            "LocalLLaMA"
+          ],
+          "author": "/u/Lime-Lemon-7582",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "oss",
+          "metrics": {},
+          "quality": 7,
+          "score": 12.96,
+          "category": "apps",
+          "subcategory": "inference",
+          "practical": 1,
+          "slug": "8c1228ffc972",
+          "action": 2,
+          "rank": 10.2,
+          "tags": []
+        },
+        {
+          "sourceId": "reddit-local-llama",
+          "sourceName": "r/LocalLLaMA",
+          "title": "X3Guard: A 150M parameter prompt guard",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xwyp7w/x3guard_a_150m_parameter_prompt_guard/",
+          "id": "t3_1xwyp7w",
+          "published": "2026-11-15T15:46:17.000Z",
+          "summary": "At Axiomic Labs we have just released X3Guard-150M, a prompt guard model trained on our high-performing base model, GPT-X3. For any given prompt, X3Guard flags whether it is Harmful, and whether it is Adversarial, in one go. It outperforms models that are many times its size, and can run entirely on edge devices, with…",
+          "content": {
+            "html": "<table><tr><td><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xwyp7w/x3guard_a_150m_parameter_prompt_guard/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://external-preview.redd.it/QdEHuI6FFlBhZWTdrklytnmg96jkIWYTksNjqVqRTrs.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=b5a49272d9a642371bcecf43db0c6da533d19b1c\" alt=\"X3Guard: A 150M parameter prompt guard\" loading=\"lazy\"></a></td><td><div><p>At Axiomic Labs we have just released X3Guard-150M, a prompt guard model trained on our high-performing base model, GPT-X3.</p><p>For any given prompt, X3Guard flags whether it is Harmful, and whether it is Adversarial, in one go.</p><p>It outperforms models that are many times its size, and can run entirely on edge devices, within the browser, with response times in the tens of milliseconds on iPhone.</p><p><a href=\"https://huggingface.co/AxiomicLabs/X3Guard-150M\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">The model card is here</a></p><p><a href=\"https://huggingface.co/spaces/AxiomicLabs/X3Guard-150M-Demo\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">You can use an in-browser demo here</a></p></div>submitted by<a href=\"https://www.reddit.com/user/DingyAtoll\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">/u/DingyAtoll</a><br><span><a href=\"https://huggingface.co/AxiomicLabs/X3Guard-150M\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[link]</a></span><span><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xwyp7w/x3guard_a_150m_parameter_prompt_guard/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[comments]</a></span></td></tr></table>",
+            "text": "At Axiomic Labs we have just released X3Guard-150M, a prompt guard model trained on our high-performing base model, GPT-X3.\nFor any given prompt, X3Guard flags whether it is Harmful, and whether it is Adversarial, in one go.\nIt outperforms models that are many times its size, and can run entirely on edge devices, within the browser, with response times in the tens of milliseconds on iPhone.\nThe model card is here\nYou can use an in-browser demo here\nsubmitted by /u/DingyAtoll\n[link] [comments]",
+            "lead": "At Axiomic Labs we have just released X3Guard-150M, a prompt guard model trained on our high-performing base model, GPT-X3.\nFor any given prompt, X3Guard flags whether it is Harmful, and whether it is Adversarial, in one go.\nIt outperforms models that are many times its size, and can run entirely on edge devices, within the browser, with response times in the tens of milliseconds on iPhone.\nThe model card is here\nYou can use an in-browser demo here\nsubmitt",
+            "chars": 509,
+            "shown": 509,
+            "truncated": false
+          },
+          "categories": [
+            "LocalLLaMA"
+          ],
+          "author": "/u/DingyAtoll",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "oss",
+          "metrics": {},
+          "quality": 6,
+          "score": 14.47,
+          "category": "apps",
+          "subcategory": null,
+          "practical": 1,
+          "slug": "80232dee6e08",
+          "action": 2,
+          "rank": 9.2,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "label": "工具玩法",
+      "items": [
+        {
+          "sourceId": "appinn",
+          "sourceName": "小众软件",
+          "title": "BundleHunt 2026 黑五软件特卖：8 款值得购买",
+          "url": "https://www.appinn.com/bundlehunt-26-black-friday/",
+          "id": "https://www.appinn.com/bundlehunt-26-black-friday/",
+          "published": "2026-11-15T12:43:34.000Z",
+          "summary": "一年一度的 BundleHunt 黑色星期五软件特卖开始了。今年一共有 44 款 Mac、Windows 软件参加促销，最低只要 1 美元，最高优惠约 91% 。 购买方式依旧为超市模式，自由选择、随意组合。超过 最方便的是： 不需要购买整个软件包，只挑自己想要的就行。 满 30 美元还可以额外减 3 美元。 青小蛙从中挑选了 8 款值得关注的软件，一起来看看 活动地址： https://bundlehunt.com/?ap_id=appinn 有返利，感谢支持。 自助式购买，一款起购。 支持 微信支付、支付宝 （还有 Apple Pay、Google Pay、信用卡、PayPal） 8 款值得购买的软件 1. Mountain…",
+          "content": {
+            "html": "<p>一年一度的<a href=\"https://www.appinn.com/tag/bundlehunt/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">BundleHunt</a>黑色星期五软件特卖开始了。今年一共有<strong>44 款 Mac、Windows 软件参加促销，最低只要 1 美元，最高优惠约 91%</strong>。</p>\n<p>购买方式依旧为超市模式，自由选择、随意组合。超过</p>\n<p>最方便的是：<strong>不需要购买整个软件包，只挑自己想要的就行。</strong>满 30 美元还可以额外减 3 美元。</p>\n<p>青小蛙从中挑选了 8 款值得关注的软件，一起来看看</p>\n<h3>活动地址：</h3>\n<ul><li><a href=\"https://bundlehunt.com/?ap_id=appinn\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://bundlehunt.com/?ap_id=appinn</a></li><li>有返利，感谢支持。</li><li>自助式购买，一款起购。</li><li>支持<strong>微信支付、支付宝</strong>（还有 Apple Pay、Google Pay、信用卡、PayPal）</li></ul>\n<figure><img src=\"https://www.appinn.com/wp-content/uploads/2026/11/ChatGPT-E59BBEE5838F-2026E5B9B411E69C8815E697A5-20_08_56.jpg\" alt=\"BundleHunt 2026 黑五软件特卖：8 款值得购买 1\" loading=\"lazy\"></figure>\n<h3>8 款值得购买的软件</h3>\n<h3>1. Mountain Duck 5：把 NAS、服务器挂载成电脑硬盘</h3>\n<figure><img src=\"https://www.appinn.com/wp-content/uploads/2026/11/screenshot-2026-11-15-at-8.10.04-PM402x.avif\" alt=\"BundleHunt 2026 黑五软件特卖：8 款值得购买 2\" loading=\"lazy\"></figure>\n<p><del>原价 $49.00</del></p>\n<h3>$14.99</h3>\n<p>(省 69%) macOS / Windows</p>\n<p>Mountain Duck 来自知名开源 FTP 客户端 Cyberduck 的开发团队，可以把 SFTP、WebDAV、Amazon S3 等远程存储挂载成电脑上的磁盘。</p>\n<p>比如家里的 NAS、公司的文件服务器，连接后就能直接通过 Finder 或 Windows 文件资源管理器打开文件，像操作本地硬盘一样编辑、保存。</p>\n<p>对于经常需要访问远程文件的人来说，这款非常实用。</p>\n<h3>2. Hydra Dev Studio：数据库、SFTP、Git，一个工具搞定</h3>\n<figure><img src=\"https://www.appinn.com/wp-content/uploads/2026/11/screenshot-2026-11-15-at-8.11.27-PM402x.avif\" alt=\"BundleHunt 2026 黑五软件特卖：8 款值得购买 3\" loading=\"lazy\"></figure>\n<p><del>原价 $99.00</del></p>\n<h3>$6.99</h3>\n<p>(省 93%) macOS</p>\n<p>Hydra Dev Studio 是一款面向开发者和服务器管理员的综合工具，整合了数据库管理、SFTP、S3、Git、Subversion 和文件差异比较等功能。</p>\n<p>它还提供 AI Agent 集成能力，官方强调 Agent 无法直接看到用户保存的密码。</p>\n<p>如果经常维护网站、操作数据库、修改服务器文件，这款工具可以减少在多个软件之间来回切换的麻烦。</p>\n<h3>3. Apple Notes Exporter Pro：把苹果备忘录批量导出为 Markdown</h3>\n<figure><img src=\"https://www.appinn.com/wp-content/uploads/2026/11/screenshot-2026-11-15-at-8.13.18-PM402x.avif\" alt=\"BundleHunt 2026 黑五软件特卖：8 款值得购买 4\" loading=\"lazy\"></figure>\n<p><del>原价 $49.00</del></p>\n<h3>$4.99</h3>\n<p>(省 90%) macOS</p>\n<p>苹果自带的备忘录很好用，但当你想把大量笔记迁移到其他软件时，就没那么方便了。</p>\n<p>Apple Notes Exporter Pro 可以将备忘录批量导出为 Markdown、PDF、Word、HTML、JSON 等格式，还支持设置自动导出，方便定期备份。</p>\n<p>整个导出处理可以在本地完成。对于想迁移到 Obsidian 等笔记工具，或者单纯想给备忘录留一份备份的用户，很值得关注。</p>\n<h3>4. Commander One PRO：Mac 双栏文件管理器</h3>\n<figure><img src=\"https://www.appinn.com/wp-content/uploads/2026/11/screenshot-2026-11-15-at-8.14.30-PM402x.avif\" alt=\"BundleHunt 2026 黑五软件特卖：8 款值得购买 5\" loading=\"lazy\"></figure>\n<p><del>原价 $44.98</del></p>\n<h3>$5.99</h3>\n<p>(省 87%) macOS</p>\n<p>Commander One PRO 是一款双栏文件管理器，可以同时显示两个文件夹，方便复制、移动和整理文件。</p>\n<p>除了本地文件，它还支持 FTP、SFTP、Amazon S3 等远程存储。</p>\n<p>比如左边打开 Mac 本地目录，右边连接服务器，直接在两个位置之间传输文件，比反复切换 Finder 窗口方便得多。</p>\n<h3>5. Fluent 2：在任意 Mac 应用中调用 AI</h3>\n<blockquote><figure><img src=\"https://www.appinn.com/wp-content/uploads/2026/11/screenshot-2026-11-15-at-8.27.39-PM402x.avif\" alt=\"BundleHunt 2026 黑五软件特卖：8 款值得购买 6\" loading=\"lazy\"></figure></blockquote>\n<p><del>原价 $29.00</del></p>\n<h3>$4.99</h3>\n<p>(省 83%) macOS</p>\n<p>Fluent 2 是一款 Mac AI 效率工具，主打直接在当前应用中使用 AI。</p>\n<p>比如润色邮件、总结视频内容、搜索商品价格，或者让 AI 帮忙执行任务，不需要频繁切换到聊天窗口。</p>\n<p>支持自定义 API key，可以使用自己的模型。</p>\n<h3>6. SupaYatta：让 Mac 刘海提醒你 AI Agent 的工作状态</h3>\n<blockquote><figure><img src=\"https://www.appinn.com/wp-content/uploads/2026/11/screenshot-2026-11-15-at-8.30.01-PM402x.avif\" alt=\"BundleHunt 2026 黑五软件特卖：8 款值得购买 7\" loading=\"lazy\"></figure></blockquote>\n<p><del>原价 $19.99</del></p>\n<h3>$2.99</h3>\n<p>(省 85%) macOS</p>\n<p>既然刘海去不掉，就利用起来。</p>\n<p>SupaYatta 的想法很有意思：把 MacBook 的刘海区域变成 AI Agent 状态提醒中心。</p>\n<p>当你让 AI Agent 在后台执行编程或其他任务时，不需要一直盯着终端。Agent 需要人工操作时，可以通过刘海区域提醒你。</p>\n<h3>7. Chute：拖入文件，一键批量处理</h3>\n<figure><img src=\"https://www.appinn.com/wp-content/uploads/2026/11/screenshot-2026-11-15-at-8.31.47-PM402x.avif\" alt=\"BundleHunt 2026 黑五软件特卖：8 款值得购买 8\" loading=\"lazy\"></figure>\n<p><del>原价 $14.99</del></p>\n<h3>$4.00</h3>\n<p>(省 73%) macOS</p>\n<p>Chute 是一款文件处理工具，支持调整图片尺寸、转换格式、清理文件、压缩打包和发送文件等操作。</p>\n<p>它的特点是操作简单：拖入文件，按下快捷键，或者直接描述想要执行的操作，就可以完成一系列处理。</p>\n<p>如果经常需要处理截图、图片素材和各种附件，可以考虑用它简化重复工作。</p>\n<h3>8. Scry：能搜索截图内容的截图与录屏工具</h3>\n<figure><img src=\"https://www.appinn.com/wp-content/uploads/2026/11/screenshot-2026-11-15-at-8.35.53-PM402x.avif\" alt=\"BundleHunt 2026 黑五软件特卖：8 款值得购买 9\" loading=\"lazy\"></figure>\n<p><del>原价 $24.00</del></p>\n<h3>$7.00</h3>\n<p>(省 71%) macOS</p>\n<p>Scry 是一款截图和录屏工具，它的特色是可以识别截图中的文字，并根据文字内容搜索历史截图。</p>\n<p>比如以前截过一张包含错误提示的图片，只记得其中几个单词，也可以通过搜索找到。</p>\n<h3>如何购买？</h3>\n<p>点击<a href=\"https://bundlehunt.com/?ap_id=appinn\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">小众软件的推荐链接</a>进入页面，选中需要的软件，点击<strong>Add to Bundle</strong>加入购物车：</p>\n<figure><img src=\"https://www.appinn.com/wp-content/uploads/2026/11/screenshot-2026-11-15-at-8.37.27-PM402x.avif\" alt=\"BundleHunt 2026 黑五软件特卖：8 款值得购买 10\" loading=\"lazy\"></figure>\n<p>选够完之后，在购物车中点击<strong>Checkout</strong>结账：</p>\n<figure><img src=\"https://www.appinn.com/wp-content/uploads/2026/11/screenshot-2026-11-15-at-8.39.00-PM402x.avif\" alt=\"BundleHunt 2026 黑五软件特卖：8 款值得购买 11\" loading=\"lazy\"></figure>\n<p>如果把全部 44 款软件加入购物车，页面显示原价合计约<strong>2358 美元，特卖合计 216.79 美元</strong>。</p>\n<p>新页面中，输入姓、名、邮箱，国家选择 China，之后会出现支付宝、微信：</p>\n<figure><img src=\"https://www.appinn.com/wp-content/uploads/2026/11/screenshot-2026-11-15-at-8.40.51-PM402x.avif\" alt=\"BundleHunt 2026 黑五软件特卖：8 款值得购买 12\" loading=\"lazy\"></figure>\n<p>然后扫码支付即可。</p>\n<h3>其他 36 款软件</h3>\n<h3>Mac 系统与效率工具</h3>\n<figure><table><thead><tr><th>软件</th><th>用途</th><th>原价</th><th>特卖价</th></tr></thead><tbody><tr><td>NotchNook Classic</td><td>Mac 刘海音乐控制、日历、文件暂存</td><td>$10</td><td><strong>$3.99</strong></td></tr><tr><td>Spencer</td><td>恢复多显示器和窗口布局</td><td>$25</td><td><strong>$7</strong></td></tr><tr><td>Monarch</td><td>Mac 快捷启动器</td><td>$30</td><td><strong>$5.99</strong></td></tr><tr><td>Aion</td><td>自动退出闲置应用</td><td>$14.99</td><td><strong>$3.99</strong></td></tr><tr><td>BetterMacWidgets</td><td>36 种桌面与锁屏小组件</td><td>$19.99</td><td><strong>$5.99</strong></td></tr><tr><td>Motion Desktop</td><td>视频与照片动态壁纸</td><td>$9.95</td><td><strong>$1.99</strong></td></tr><tr><td>rubarb.bar</td><td>根据屏幕内容自动调整亮度</td><td>$18</td><td><strong>$4.50</strong></td></tr><tr><td>Snapped</td><td>Mac / Windows 窗口吸附管理</td><td>$4.99</td><td><strong>$1.99</strong></td></tr><tr><td>Sticktop</td><td>Mac 桌面便签</td><td>$4.99</td><td><strong>$1.50</strong></td></tr><tr><td>Vitamin-R</td><td>时间盒与专注管理</td><td>$29.95</td><td><strong>$5</strong></td></tr><tr><td>Focusito</td><td>番茄钟、环境音与视频专注工具</td><td>$9.99</td><td><strong>$2</strong></td></tr><tr><td>Dictionaries</td><td>扩展 macOS 系统词典</td><td>$19.99</td><td><strong>$4</strong></td></tr><tr><td>Sportsbar</td><td>菜单栏实时足球比分与赛程</td><td>$2.99</td><td><strong>$1</strong></td></tr></tbody></table></figure>\n<h3>文件、PDF 与数据处理</h3>\n<figure><table><thead><tr><th>软件</th><th>用途</th><th>原价</th><th>特卖价</th></tr></thead><tbody><tr><td>SwifDoo PDF</td><td>PDF 编辑、转换、OCR、签名</td><td>$636</td><td><strong>$8.99</strong></td></tr><tr><td>Editavo PDF</td><td>本地 PDF 编辑、表单与签名</td><td>$19.99</td><td><strong>$5</strong></td></tr><tr><td>RenameMe</td><td>批量重命名文件</td><td>$12.99</td><td><strong>$2</strong></td></tr><tr><td>Textilicious</td><td>文本转换与处理</td><td>$14.99</td><td><strong>$2.50</strong></td></tr><tr><td>BankStatementConverter</td><td>银行对账单转 Excel、OFX</td><td>$299</td><td><strong>$6.99</strong></td></tr><tr><td>MAX Messages</td><td>备份和归档 Mac 聊天记录</td><td>$80</td><td><strong>$5.99</strong></td></tr><tr><td>SurFast Video Downloader</td><td>下载在线视频、音频和字幕</td><td>$89</td><td><strong>$5</strong></td></tr><tr><td>DeepCleanMac</td><td>清理 Mac 缓存与垃圾文件</td><td>$9</td><td><strong>$5</strong></td></tr></tbody></table></figure>",
+            "text": "一年一度的 BundleHunt 黑色星期五软件特卖开始了。今年一共有 44 款 Mac、Windows 软件参加促销，最低只要 1 美元，最高优惠约 91% 。\n购买方式依旧为超市模式，自由选择、随意组合。超过\n最方便的是： 不需要购买整个软件包，只挑自己想要的就行。 满 30 美元还可以额外减 3 美元。\n青小蛙从中挑选了 8 款值得关注的软件，一起来看看\n活动地址：\nhttps://bundlehunt.com/?ap_id=appinn\n有返利，感谢支持。\n自助式购买，一款起购。\n支持 微信支付、支付宝 （还有 Apple Pay、Google Pay、信用卡、PayPal）\n8 款值得购买的软件\n1. Mountain Duck 5：把 NAS、服务器挂载成电脑硬盘\n原价 $49.00\n$14.99\n(省 69%) macOS / Windows\nMountain Duck 来自知名开源 FTP 客户端 Cyberduck 的开发团队，可以把 SFTP、WebDAV、Amazon S3 等远程存储挂载成电脑上的磁盘。\n比如家里的 NAS、公司的文件服务器，连接后就能直接通过 Finder 或 Windows 文件资源管理器打开文件，像操作本地硬盘一样编辑、保存。\n对于经常需要访问远程文件的人来说，这款非常实用。\n2. Hydra Dev Studio：数据库、SFTP、Git，一个工具搞定\n原价 $99.00\n$6.99\n(省 93%) macOS\nHydra Dev Studio 是一款面向开发者和服务器管理员的综合工具，整合了数据库管理、SFTP、S3、Git、Subversion 和文件差异比较等功能。\n它还提供 AI Agent 集成能力，官方强调 Agent 无法直接看到用户保存的密码。\n如果经常维护网站、操作数据库、修改服务器文件，这款工具可以减少在多个软件之间来回切换的麻烦。\n3. Apple Notes Exporter Pro：把苹果备忘录批量导出为 Markdown\n原价 $49.00\n$4.99\n(省 90%) macOS\n苹果自带的备忘录很好用，但当你想把大量笔记迁移到其他软件时，就没那么方便了。\nApple Notes Exporter Pro 可以将备忘录批量导出为 Markdown、PDF、Word、HTML、JSON 等格式，还支持设置自动导出，方便定期备份。\n整个导出处理可以在本地完成。对于想迁移到 Obsidian 等笔记工具，或者单纯想给备忘录留一份备份的用户，很值得关注。\n4. Commander One PRO：Mac 双栏文件管理器\n原价 $44.98\n$5.99\n(省 87%) macOS\nCommander One PRO 是一款双栏文件管理器，可以同时显示两个文件夹，方便复制、移动和整理文件。\n除了本地文件，它还支持 FTP、SFTP、Amazon S3 等远程存储。\n比如左边打开 Mac 本地目录，右边连接服务器，直接在两个位置之间传输文件，比反复切换 Finder 窗口方便得多。\n5. Fluent 2：在任意 Mac 应用中调用 AI\n原价 $29.00\n$4.99\n(省 83%) macOS\nFluent 2 是一款 Mac AI 效率工具，主打直接在当前应用中使用 AI。\n比如润色邮件、总结视频内容、搜索商品价格，或者让 AI 帮忙执行任务，不需要频繁切换到聊天窗口。\n支持自定义 API key，可以使用自己的模型。\n6. SupaYatta：让 Mac 刘海提醒你 AI Agent 的工作状态\n原价 $19.99\n$2.99\n(省 85%) macOS\n既然刘海去不掉，就利用起来。\nSupaYatta 的想法很有意思：把 MacBook 的刘海区域变成 AI Agent 状态提醒中心。\n当你让 AI Agent 在后台执行编程或其他任务时，不需要一直盯着终端。Agent 需要人工操作时，可以通过刘海区域提醒你。\n7. Chute：拖入文件，一键批量处理\n原价 $14.99\n$4.00\n(省 73%) macOS\nChute 是一款文件处理工具，支持调整图片尺寸、转换格式、清理文件、压缩打包和发送文件等操作。\n它的特点是操作简单：拖入文件，按下快捷键，或者直接描述想要执行的操作，就可以完成一系列处理。\n如果经常需要处理截图、图片素材和各种附件，可以考虑用它简化重复工作。\n8. Scry：能搜索截图内容的截图与录屏工具\n原价 $24.00\n$7.00\n(省 71%) macOS\nScry 是一款截图和录屏工具，它的特色是可以识别截图中的文字，并根据文字内容搜索历史截图。\n比如以前截过一张包含错误提示的图片，只记得其中几个单词，也可以通过搜索找到。\n如何购买？\n点击 小众软件的推荐链接 进入页面，选中需要的软件，点击 Add to Bundle 加入购物车：\n选够完之后，在购物车中点击 Checkout 结账：\n如果把全部 44 款软件加入购物车，页面显示原价合计约 2358 美元，特卖合计 216.79 美元 。\n新页面中，输入姓、名、邮箱，国家选择 China，之后会出现支付宝、微信：\n然后扫码支付即可。\n其他 36 款软件\nMac 系统与效率工具\n软件\n用途\n原价\n特卖价\nNotchNook Classic\nMac 刘海音乐控制、日历、文件暂存\n$10\n$3.99\nSpencer\n恢复多显示器和窗口布局\n$25\n$7\nMonarch\nMac 快捷启动器\n$30\n$5.99\nAion\n自动退出闲置应用\n$14.99\n$3.99\nBetterMacWidgets\n36 种桌面与锁屏小组件\n$19.99\n$5.99\nMotion Desktop\n视频与照片动态壁纸\n$9.95\n$1.99\nrubarb.bar\n根据屏幕内容自动调整亮度\n$18\n$4.50\nSnapped\nMac / Windows 窗口吸附管理\n$4.99\n$1.99\nSticktop\nMac 桌面便签\n$4.99\n$1.50\nVitamin-R\n时间盒与专注管理\n$29.95\n$5\nFocusito\n番茄钟、环境音与视频专注工具\n$9.99\n$2\nDictionaries\n扩展 macOS 系统词典\n$19.99\n$4\nSportsbar\n菜单栏实时足球比分与赛程\n$2.99\n$1\n文件、PDF 与数据处理\n软件\n用途\n原价\n特卖价\nSwifDoo PDF\nPDF 编辑、转换、OCR、签名\n$636\n$8.99\nEditavo PDF\n本地 PDF 编辑、表单与签名\n$19.99\n$5\nRenameMe\n批量重命名文件\n$12.99\n$2\nTextilicious\n文本转换与处理\n$14.99\n$2.50\nBankStatementConverter\n银行对账单转 Excel、OFX\n$299\n$6.99\nMAX Messages\n备份和归档 Mac 聊天记录\n$80\n$5.99\nSurFast Video Downloader\n下载在线视频、音频和字幕\n$89\n$5\nDeepCleanMac\n清理 Mac 缓存与垃圾文件\n$9\n$5",
+            "lead": "一年一度的 BundleHunt 黑色星期五软件特卖开始了。今年一共有 44 款 Mac、Windows 软件参加促销，最低只要 1 美元，最高优惠约 91% 。\n购买方式依旧为超市模式，自由选择、随意组合。超过\n最方便的是： 不需要购买整个软件包，只挑自己想要的就行。 满 30 美元还可以额外减 3 美元。\n青小蛙从中挑选了 8 款值得关注的软件，一起来看看\n活动地址：\nhttps://bundlehunt.com/?ap_id=appinn\n有返利，感谢支持。\n自助式购买，一款起购。\n支持 微信支付、支付宝 （还有 Apple Pay、Google Pay、信用卡、PayPal）\n8 款值得购买的软件\n1. Mountain Duck 5：把 NAS、服务器挂载成电脑硬盘\n原价 $49.00\n$14.99\n(省 69%) macOS / Windows\nMountain Duck 来自知名开源 FTP 客户端 Cyberduck 的开发团队，可以把 SFTP、WebDAV、Amazon S3 等远程存储",
+            "chars": 4467,
+            "shown": 3200,
+            "truncated": true
+          },
+          "categories": [
+            "团购",
+            "BundleHunt"
+          ],
+          "author": "青小蛙",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "tools",
+          "metrics": {},
+          "quality": 8,
+          "score": 18.02,
+          "category": "tools",
+          "subcategory": "interface",
+          "practical": 5,
+          "slug": "45d13b9d3117",
+          "action": 5,
+          "rank": 16,
+          "tags": [
+            "hardware",
+            "local",
+            "lowspec",
+            "tutorial"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hardware",
+      "label": "AI 硬件",
+      "items": [
+        {
+          "sourceId": "gh-releases",
+          "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "github-actions[bot]",
+          "id": "446172873",
+          "title": "llama.cpp b12418 发布",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12418",
+          "published": "2026-11-15T15:53:48.000Z",
+          "summary": "ggml-cpu: add x86 VNNI Q2_0 dot product (#26348) ggml-cpu: use VNNI for Q2_0 dot products Keep the upstream AVX2 unpacking, accumulation, and fallback. Use VNNI for the integer dot product on supported x86 CPUs. Assisted-by: Codex ggml-cpu: use VBMI for Q2_0 unpacking Use multishift to unpack Q2_0 weights on CPUs with…",
+          "content": {
+            "html": "<p>&lt;details open&gt;</p>\n<p>ggml-cpu: add x86 VNNI Q2_0 dot product (#26348)</p>\n<ul><li>ggml-cpu: use VNNI for Q2_0 dot products</li></ul>\n<p>Keep the upstream AVX2 unpacking, accumulation, and fallback. Use VNNI for the integer dot product on supported x86 CPUs.</p>\n<p>Assisted-by: Codex</p>\n<ul><li>ggml-cpu: use VBMI for Q2_0 unpacking</li></ul>\n<p>Use multishift to unpack Q2_0 weights on CPUs with AVX-512 VBMI and VL. Retain the existing shift-and-mask unpacking on other CPUs.</p>\n<p>Assisted-by: Codex</p>\n<ul><li>Update ggml/src/ggml-cpu/arch/x86/quants.c</li></ul>\n<p>Co-authored-by: Sigbjørn Skjæret &lt;sigbjorn.skjaeret@huggingface.co&gt;</p>\n<p>---------</p>\n<p>Co-authored-by: Sigbjørn Skjæret &lt;sigbjorn.skjaeret@huggingface.co&gt;</p>\n<p>&lt;/details&gt;</p>\n<p><strong>Website:</strong></p>\n<ul><li>&lt;https://llama.app&gt;</li></ul>\n<p><strong>Attestations:</strong></p>\n<ul><li>&lt;https://github.com/ggml-org/llama.cpp/attestations/67818594&gt;</li></ul>\n<p><strong>macOS/iOS:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12418/llama-b12418-bin-macos-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">macOS Apple Silicon (arm64)</a></li><li>macOS Apple Silicon (arm64, KleidiAI enabled)<a href=\"https://github.com/ggml-org/llama.cpp/pull/23780\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">DISABLED</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12418/llama-b12418-bin-macos-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">macOS Intel (x64)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12418/llama-b12418-xcframework.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">iOS XCFramework</a></li></ul>\n<p><strong>Linux:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12418/llama-b12418-bin-ubuntu-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12418/llama-b12418-bin-ubuntu-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu arm64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12418/llama-b12418-bin-ubuntu-s390x.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu 24.04 s390x (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12418/llama-b12418-bin-ubuntu-26.04-s390x.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu 26.04 s390x (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12418/llama-b12418-bin-ubuntu-zdnn-s390x.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu 26.04 s390x (zDNN)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12418/llama-b12418-bin-ubuntu-vulkan-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12418/llama-b12418-bin-ubuntu-vulkan-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu arm64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12418/llama-b12418-bin-ubuntu-cuda-12.8-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (CUDA 12)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12418/cudart-llama-b12418-bin-ubuntu-cuda-12.8-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 12.8 libraries</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12418/llama-b12418-bin-ubuntu-cuda-13.5-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12418/cudart-llama-b12418-bin-ubuntu-cuda-13.5-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 libraries</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12418/llama-b12418-bin-ubuntu-cuda-13.5-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu arm64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12418/cudart-llama-b12418-bin-ubuntu-cuda-13.5-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 libraries</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12418/llama-b12418-bin-ubuntu-rocm-10.0-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (ROCm 10.0)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12418/llama-b12418-bin-ubuntu-openvino-2026.4.1-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (OpenVINO)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12418/llama-b12418-bin-ubuntu-sycl-fp32-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (SYCL FP32)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12418/llama-b12418-bin-ubuntu-sycl-fp16-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (SYCL FP16)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12418/llama-b12418-bin-linux-arm64-snapdragon.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Linux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/linux.md\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">setup guide</a></li></ul>\n<p><strong>Android:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12418/llama-b12418-bin-android-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Android arm64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12418/llama-b12418-bin-android-arm64-snapdragon.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Android arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/README.md\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">setup guide</a></li></ul>\n<p><strong>Windows:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12418/llama-b12418-bin-win-cpu-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12418/llama-b12418-bin-win-cpu-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12418/llama-b12418-bin-win-opencl-adreno-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (OpenCL Adreno)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12418/llama-b12418-bin-win-cuda-12.4-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (CUDA 12)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12418/cudart-llama-bin-win-cuda-12.4-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 12.4 DLLs</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12418/llama-b12418-bin-win-cuda-13.5-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12418/cudart-llama-bin-win-cuda-13.5-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 DLLs</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12418/llama-b12418-bin-win-cuda-13.5-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12418/cudart-llama-bin-win-cuda-13.5-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 DLLs</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12418/llama-b12418-bin-win-vulkan-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12418/llama-b12418-bin-win-vulkan-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12418/llama-b12418-bin-win-openvino-2026.4.1-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (OpenVINO)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12418/llama-b12418-bin-win-sycl-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (SYCL)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12418/llama-b12418-bin-win-rocm-10.0-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (ROCm 10.0)</a></li></ul>\n<p><strong>openEuler:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/pull/23705\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">DISABLED</a></li><li>openEuler x86 (310p)</li><li>openEuler x86 (910b, ACL Graph)</li><li>openEuler aarch64 (310p)</li><li>openEuler aarch64 (910b, ACL Graph)</li></ul>\n<p><strong>UI:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12418/llama-b12418-ui.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">UI</a></li></ul>",
+            "text": "<details open>\nggml-cpu: add x86 VNNI Q2_0 dot product (#26348)\nggml-cpu: use VNNI for Q2_0 dot products\nKeep the upstream AVX2 unpacking, accumulation, and fallback. Use VNNI for the integer dot product on supported x86 CPUs.\nAssisted-by: Codex\nggml-cpu: use VBMI for Q2_0 unpacking\nUse multishift to unpack Q2_0 weights on CPUs with AVX-512 VBMI and VL. Retain the existing shift-and-mask unpacking on other CPUs.\nAssisted-by: Codex\nUpdate ggml/src/ggml-cpu/arch/x86/quants.c\nCo-authored-by: Sigbjørn Skjæret <sigbjorn.skjaeret@huggingface.co>\n---------\nCo-authored-by: Sigbjørn Skjæret <sigbjorn.skjaeret@huggingface.co>\n</details>\nWebsite:\n<https://llama.app>\nAttestations:\n<https://github.com/ggml-org/llama.cpp/attestations/67818594>\nmacOS/iOS:\nmacOS Apple Silicon (arm64)\nmacOS Apple Silicon (arm64, KleidiAI enabled) DISABLED\nmacOS Intel (x64)\niOS XCFramework\nLinux:\nUbuntu x64 (CPU)\nUbuntu arm64 (CPU)\nUbuntu 24.04 s390x (CPU)\nUbuntu 26.04 s390x (CPU)\nUbuntu 26.04 s390x (zDNN)\nUbuntu x64 (Vulkan)\nUbuntu arm64 (Vulkan)\nUbuntu x64 (CUDA 12) - CUDA 12.8 libraries\nUbuntu x64 (CUDA 13) - CUDA 13.5 libraries\nUbuntu arm64 (CUDA 13) - CUDA 13.5 libraries\nUbuntu x64 (ROCm 10.0)\nUbuntu x64 (OpenVINO)\nUbuntu x64 (SYCL FP32)\nUbuntu x64 (SYCL FP16)\nLinux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide\nAndroid:\nAndroid arm64 (CPU)\nAndroid arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide\nWindows:\nWindows x64 (CPU)\nWindows arm64 (CPU)\nWindows arm64 (OpenCL Adreno)\nWindows x64 (CUDA 12) - CUDA 12.4 DLLs\nWindows x64 (CUDA 13) - CUDA 13.5 DLLs\nWindows arm64 (CUDA 13) - CUDA 13.5 DLLs\nWindows x64 (Vulkan)\nWindows arm64 (Vulkan)\nWindows x64 (OpenVINO)\nWindows x64 (SYCL)\nWindows x64 (ROCm 10.0)\nopenEuler:\nDISABLED\nopenEuler x86 (310p)\nopenEuler x86 (910b, ACL Graph)\nopenEuler aarch64 (310p)\nopenEuler aarch64 (910b, ACL Graph)\nUI:\nUI",
+            "lead": "<details open>\nggml-cpu: add x86 VNNI Q2_0 dot product (#26348)\nggml-cpu: use VNNI for Q2_0 dot products\nKeep the upstream AVX2 unpacking, accumulation, and fallback. Use VNNI for the integer dot product on supported x86 CPUs.\nAssisted-by: Codex\nggml-cpu: use VBMI for Q2_0 unpacking\nUse multishift to unpack Q2_0 weights on CPUs with AVX-512 VBMI and VL. Retain the existing shift-and-mask unpacking on other CPUs.\nAssisted-by: Codex",
+            "chars": 1939,
+            "shown": 1939,
+            "truncated": false
+          },
+          "quality": 8,
+          "score": 21.88,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 2,
+          "slug": "8445093194b4",
+          "action": 4,
+          "rank": 14.4,
+          "tags": [
+            "local",
+            "tutorial",
+            "agent"
+          ]
+        },
+        {
+          "sourceId": "gh-releases",
+          "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "github-actions[bot]",
+          "id": "446220963",
+          "title": "llama.cpp b12419 发布",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12419",
+          "published": "2026-11-15T17:08:55.000Z",
+          "summary": "server : ignore empty stop strings (#32093) Website: Attestations: macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubuntu 26.04 s390x (zDNN) Ubunt…",
+          "content": {
+            "html": "<p>&lt;details open&gt;</p>\n<p>server : ignore empty stop strings (#32093)</p>\n<p>&lt;/details&gt;</p>\n<p><strong>Website:</strong></p>\n<ul><li>&lt;https://llama.app&gt;</li></ul>\n<p><strong>Attestations:</strong></p>\n<ul><li>&lt;https://github.com/ggml-org/llama.cpp/attestations/67831897&gt;</li></ul>\n<p><strong>macOS/iOS:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12419/llama-b12419-bin-macos-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">macOS Apple Silicon (arm64)</a></li><li>macOS Apple Silicon (arm64, KleidiAI enabled)<a href=\"https://github.com/ggml-org/llama.cpp/pull/23780\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">DISABLED</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12419/llama-b12419-bin-macos-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">macOS Intel (x64)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12419/llama-b12419-xcframework.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">iOS XCFramework</a></li></ul>\n<p><strong>Linux:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12419/llama-b12419-bin-ubuntu-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12419/llama-b12419-bin-ubuntu-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu arm64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12419/llama-b12419-bin-ubuntu-s390x.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu 24.04 s390x (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12419/llama-b12419-bin-ubuntu-26.04-s390x.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu 26.04 s390x (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12419/llama-b12419-bin-ubuntu-zdnn-s390x.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu 26.04 s390x (zDNN)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12419/llama-b12419-bin-ubuntu-vulkan-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12419/llama-b12419-bin-ubuntu-vulkan-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu arm64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12419/llama-b12419-bin-ubuntu-cuda-12.8-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (CUDA 12)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12419/cudart-llama-b12419-bin-ubuntu-cuda-12.8-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 12.8 libraries</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12419/llama-b12419-bin-ubuntu-cuda-13.5-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12419/cudart-llama-b12419-bin-ubuntu-cuda-13.5-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 libraries</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12419/llama-b12419-bin-ubuntu-cuda-13.5-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu arm64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12419/cudart-llama-b12419-bin-ubuntu-cuda-13.5-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 libraries</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12419/llama-b12419-bin-ubuntu-rocm-10.0-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (ROCm 10.0)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12419/llama-b12419-bin-ubuntu-openvino-2026.4.1-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (OpenVINO)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12419/llama-b12419-bin-ubuntu-sycl-fp32-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (SYCL FP32)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12419/llama-b12419-bin-ubuntu-sycl-fp16-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (SYCL FP16)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12419/llama-b12419-bin-linux-arm64-snapdragon.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Linux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/linux.md\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">setup guide</a></li></ul>\n<p><strong>Android:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12419/llama-b12419-bin-android-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Android arm64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12419/llama-b12419-bin-android-arm64-snapdragon.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Android arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/README.md\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">setup guide</a></li></ul>\n<p><strong>Windows:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12419/llama-b12419-bin-win-cpu-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12419/llama-b12419-bin-win-cpu-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12419/llama-b12419-bin-win-opencl-adreno-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (OpenCL Adreno)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12419/llama-b12419-bin-win-cuda-12.4-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (CUDA 12)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12419/cudart-llama-bin-win-cuda-12.4-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 12.4 DLLs</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12419/llama-b12419-bin-win-cuda-13.5-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12419/cudart-llama-bin-win-cuda-13.5-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 DLLs</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12419/llama-b12419-bin-win-cuda-13.5-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12419/cudart-llama-bin-win-cuda-13.5-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 DLLs</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12419/llama-b12419-bin-win-vulkan-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12419/llama-b12419-bin-win-vulkan-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12419/llama-b12419-bin-win-openvino-2026.4.1-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (OpenVINO)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12419/llama-b12419-bin-win-sycl-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (SYCL)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12419/llama-b12419-bin-win-rocm-10.0-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (ROCm 10.0)</a></li></ul>\n<p><strong>openEuler:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/pull/23705\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">DISABLED</a></li><li>openEuler x86 (310p)</li><li>openEuler x86 (910b, ACL Graph)</li><li>openEuler aarch64 (310p)</li><li>openEuler aarch64 (910b, ACL Graph)</li></ul>\n<p><strong>UI:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12419/llama-b12419-ui.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">UI</a></li></ul>",
+            "text": "<details open>\nserver : ignore empty stop strings (#32093)\n</details>\nWebsite:\n<https://llama.app>\nAttestations:\n<https://github.com/ggml-org/llama.cpp/attestations/67831897>\nmacOS/iOS:\nmacOS Apple Silicon (arm64)\nmacOS Apple Silicon (arm64, KleidiAI enabled) DISABLED\nmacOS Intel (x64)\niOS XCFramework\nLinux:\nUbuntu x64 (CPU)\nUbuntu arm64 (CPU)\nUbuntu 24.04 s390x (CPU)\nUbuntu 26.04 s390x (CPU)\nUbuntu 26.04 s390x (zDNN)\nUbuntu x64 (Vulkan)\nUbuntu arm64 (Vulkan)\nUbuntu x64 (CUDA 12) - CUDA 12.8 libraries\nUbuntu x64 (CUDA 13) - CUDA 13.5 libraries\nUbuntu arm64 (CUDA 13) - CUDA 13.5 libraries\nUbuntu x64 (ROCm 10.0)\nUbuntu x64 (OpenVINO)\nUbuntu x64 (SYCL FP32)\nUbuntu x64 (SYCL FP16)\nLinux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide\nAndroid:\nAndroid arm64 (CPU)\nAndroid arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide\nWindows:\nWindows x64 (CPU)\nWindows arm64 (CPU)\nWindows arm64 (OpenCL Adreno)\nWindows x64 (CUDA 12) - CUDA 12.4 DLLs\nWindows x64 (CUDA 13) - CUDA 13.5 DLLs\nWindows arm64 (CUDA 13) - CUDA 13.5 DLLs\nWindows x64 (Vulkan)\nWindows arm64 (Vulkan)\nWindows x64 (OpenVINO)\nWindows x64 (SYCL)\nWindows x64 (ROCm 10.0)\nopenEuler:\nDISABLED\nopenEuler x86 (310p)\nopenEuler x86 (910b, ACL Graph)\nopenEuler aarch64 (310p)\nopenEuler aarch64 (910b, ACL Graph)\nUI:\nUI",
+            "lead": "<details open>\nserver : ignore empty stop strings (#32093)\n</details>\nWebsite:\n<https://llama.app>\nAttestations:\n<https://github.com/ggml-org/llama.cpp/attestations/67831897>\nmacOS/iOS:\nmacOS Apple Silicon (arm64)\nmacOS Apple Silicon (arm64, KleidiAI enabled) DISABLED\nmacOS Intel (x64)\niOS XCFramework\nLinux:\nUbuntu x64 (CPU)\nUbuntu arm64 (CPU)\nUbuntu 24.04 s390x (CPU)\nUbuntu 26.04 s390x (CPU)\nUbuntu 26.04 s390x (zDNN)\nUbuntu x64 (Vulkan)\nUbuntu arm64 (Vulk",
+            "chars": 1361,
+            "shown": 1361,
+            "truncated": false
+          },
+          "quality": 8,
+          "score": 21.98,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 2,
+          "slug": "8c93d0c3f65e",
+          "action": 3,
+          "rank": 12.8,
+          "tags": [
+            "local",
+            "tutorial"
+          ]
+        },
+        {
+          "sourceId": "gh-releases",
+          "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "github-actions[bot]",
+          "id": "446163612",
+          "title": "llama.cpp b12416 发布",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12416",
+          "published": "2026-11-15T15:39:20.000Z",
+          "summary": "Support DFLASH2 for Recursive Ripple-65B-Preview (#31904) fixed support for DFlash2 for Ripple 65B spec: Add NoPE handling to DFlash (cherry picked from commit 89ea8e3e77e3359d17902a2db136022d5d419d88) spec: Fix NoPE not being picked up by DFlash (cherry picked from commit 43393b95fda2ce7e7d243e2650bf7b1cadf1c732) ---…",
+          "content": {
+            "html": "<p>&lt;details open&gt;</p>\n<p>Support DFLASH2 for Recursive Ripple-65B-Preview (#31904)</p>\n<ul><li>fixed support for DFlash2 for Ripple 65B</li></ul>\n<ul><li>spec: Add NoPE handling to DFlash</li></ul>\n<p>(cherry picked from commit 89ea8e3e77e3359d17902a2db136022d5d419d88)</p>\n<ul><li>spec: Fix NoPE not being picked up by DFlash</li></ul>\n<p>(cherry picked from commit 43393b95fda2ce7e7d243e2650bf7b1cadf1c732)</p>\n<p>---------</p>\n<p>Co-authored-by: James Pickering &lt;james_pic@hotmail.com&gt;</p>\n<p>&lt;/details&gt;</p>\n<p><strong>Website:</strong></p>\n<ul><li>&lt;https://llama.app&gt;</li></ul>\n<p><strong>Attestations:</strong></p>\n<ul><li>&lt;https://github.com/ggml-org/llama.cpp/attestations/67815620&gt;</li></ul>\n<p><strong>macOS/iOS:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12416/llama-b12416-bin-macos-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">macOS Apple Silicon (arm64)</a></li><li>macOS Apple Silicon (arm64, KleidiAI enabled)<a href=\"https://github.com/ggml-org/llama.cpp/pull/23780\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">DISABLED</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12416/llama-b12416-bin-macos-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">macOS Intel (x64)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12416/llama-b12416-xcframework.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">iOS XCFramework</a></li></ul>\n<p><strong>Linux:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12416/llama-b12416-bin-ubuntu-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12416/llama-b12416-bin-ubuntu-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu arm64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12416/llama-b12416-bin-ubuntu-s390x.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu 24.04 s390x (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12416/llama-b12416-bin-ubuntu-26.04-s390x.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu 26.04 s390x (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12416/llama-b12416-bin-ubuntu-zdnn-s390x.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu 26.04 s390x (zDNN)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12416/llama-b12416-bin-ubuntu-vulkan-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12416/llama-b12416-bin-ubuntu-vulkan-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu arm64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12416/llama-b12416-bin-ubuntu-cuda-12.8-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (CUDA 12)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12416/cudart-llama-b12416-bin-ubuntu-cuda-12.8-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 12.8 libraries</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12416/llama-b12416-bin-ubuntu-cuda-13.5-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12416/cudart-llama-b12416-bin-ubuntu-cuda-13.5-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 libraries</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12416/llama-b12416-bin-ubuntu-cuda-13.5-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu arm64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12416/cudart-llama-b12416-bin-ubuntu-cuda-13.5-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 libraries</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12416/llama-b12416-bin-ubuntu-rocm-10.0-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (ROCm 10.0)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12416/llama-b12416-bin-ubuntu-openvino-2026.4.1-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (OpenVINO)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12416/llama-b12416-bin-ubuntu-sycl-fp32-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (SYCL FP32)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12416/llama-b12416-bin-ubuntu-sycl-fp16-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (SYCL FP16)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12416/llama-b12416-bin-linux-arm64-snapdragon.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Linux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/linux.md\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">setup guide</a></li></ul>\n<p><strong>Android:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12416/llama-b12416-bin-android-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Android arm64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12416/llama-b12416-bin-android-arm64-snapdragon.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Android arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/README.md\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">setup guide</a></li></ul>\n<p><strong>Windows:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12416/llama-b12416-bin-win-cpu-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12416/llama-b12416-bin-win-cpu-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12416/llama-b12416-bin-win-opencl-adreno-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (OpenCL Adreno)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12416/llama-b12416-bin-win-cuda-12.4-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (CUDA 12)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12416/cudart-llama-bin-win-cuda-12.4-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 12.4 DLLs</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12416/llama-b12416-bin-win-cuda-13.5-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12416/cudart-llama-bin-win-cuda-13.5-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 DLLs</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12416/llama-b12416-bin-win-cuda-13.5-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12416/cudart-llama-bin-win-cuda-13.5-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 DLLs</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12416/llama-b12416-bin-win-vulkan-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12416/llama-b12416-bin-win-vulkan-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12416/llama-b12416-bin-win-openvino-2026.4.1-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (OpenVINO)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12416/llama-b12416-bin-win-sycl-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (SYCL)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12416/llama-b12416-bin-win-rocm-10.0-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (ROCm 10.0)</a></li></ul>\n<p><strong>openEuler:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/pull/23705\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">DISABLED</a></li><li>openEuler x86 (310p)</li><li>openEuler x86 (910b, ACL Graph)</li><li>openEuler aarch64 (310p)</li><li>openEuler aarch64 (910b, ACL Graph)</li></ul>\n<p><strong>UI:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12416/llama-b12416-ui.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">UI</a></li></ul>",
+            "text": "<details open>\nSupport DFLASH2 for Recursive Ripple-65B-Preview (#31904)\nfixed support for DFlash2 for Ripple 65B\nspec: Add NoPE handling to DFlash\n(cherry picked from commit 89ea8e3e77e3359d17902a2db136022d5d419d88)\nspec: Fix NoPE not being picked up by DFlash\n(cherry picked from commit 43393b95fda2ce7e7d243e2650bf7b1cadf1c732)\n---------\nCo-authored-by: James Pickering <james_pic@hotmail.com>\n</details>\nWebsite:\n<https://llama.app>\nAttestations:\n<https://github.com/ggml-org/llama.cpp/attestations/67815620>\nmacOS/iOS:\nmacOS Apple Silicon (arm64)\nmacOS Apple Silicon (arm64, KleidiAI enabled) DISABLED\nmacOS Intel (x64)\niOS XCFramework\nLinux:\nUbuntu x64 (CPU)\nUbuntu arm64 (CPU)\nUbuntu 24.04 s390x (CPU)\nUbuntu 26.04 s390x (CPU)\nUbuntu 26.04 s390x (zDNN)\nUbuntu x64 (Vulkan)\nUbuntu arm64 (Vulkan)\nUbuntu x64 (CUDA 12) - CUDA 12.8 libraries\nUbuntu x64 (CUDA 13) - CUDA 13.5 libraries\nUbuntu arm64 (CUDA 13) - CUDA 13.5 libraries\nUbuntu x64 (ROCm 10.0)\nUbuntu x64 (OpenVINO)\nUbuntu x64 (SYCL FP32)\nUbuntu x64 (SYCL FP16)\nLinux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide\nAndroid:\nAndroid arm64 (CPU)\nAndroid arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide\nWindows:\nWindows x64 (CPU)\nWindows arm64 (CPU)\nWindows arm64 (OpenCL Adreno)\nWindows x64 (CUDA 12) - CUDA 12.4 DLLs\nWindows x64 (CUDA 13) - CUDA 13.5 DLLs\nWindows arm64 (CUDA 13) - CUDA 13.5 DLLs\nWindows x64 (Vulkan)\nWindows arm64 (Vulkan)\nWindows x64 (OpenVINO)\nWindows x64 (SYCL)\nWindows x64 (ROCm 10.0)\nopenEuler:\nDISABLED\nopenEuler x86 (310p)\nopenEuler x86 (910b, ACL Graph)\nopenEuler aarch64 (310p)\nopenEuler aarch64 (910b, ACL Graph)\nUI:\nUI",
+            "lead": "<details open>\nSupport DFLASH2 for Recursive Ripple-65B-Preview (#31904)\nfixed support for DFlash2 for Ripple 65B\nspec: Add NoPE handling to DFlash\n(cherry picked from commit 89ea8e3e77e3359d17902a2db136022d5d419d88)\nspec: Fix NoPE not being picked up by DFlash\n(cherry picked from commit 43393b95fda2ce7e7d243e2650bf7b1cadf1c732)\n---------\nCo-authored-by: James Pickering <james_pic@hotmail.com>\n</details>\nWebsite:\n<https://llama.app>",
+            "chars": 1709,
+            "shown": 1709,
+            "truncated": false
+          },
+          "quality": 8,
+          "score": 21.86,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 2,
+          "slug": "bb22ef599c28",
+          "action": 3,
+          "rank": 12.8,
+          "tags": [
+            "local",
+            "tutorial"
+          ]
+        },
+        {
+          "sourceId": "reddit-local-llama",
+          "sourceName": "r/LocalLLaMA",
+          "title": "13-GPU ASRock Mining Motherboard for Local LLMs?",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xwv5p4/13gpu_asrock_mining_motherboard_for_local_llms/",
+          "id": "t3_1xwv5p4",
+          "published": "2026-11-15T13:11:51.000Z",
+          "summary": "​ Found a used mining rig with: ASRock 13-GPU motherboard (likely H110 Pro BTC+) Intel i3-7100 12 PCIe risers 2200–2500W PSU No RAM or SSD Planning to use it with multiple RTX 3090s for Qwen/DeepSeek inference. Has anyone tried this? How much would PCIe x1 bottleneck performance? Is it worth buying, or should I go wit…",
+          "content": {
+            "html": "<table><tr><td><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xwv5p4/13gpu_asrock_mining_motherboard_for_local_llms/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://preview.redd.it/5hk0ahf60s1i1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=8d8e5e92356e69659c6c86cf7c7fb662b4220f21\" alt=\"13-GPU ASRock Mining Motherboard for Local LLMs?\" loading=\"lazy\"></a></td><td><div><p>​</p><p>Found a used mining rig with:</p><p>ASRock 13-GPU motherboard (likely H110 Pro BTC+)</p><p>Intel i3-7100</p><p>12 PCIe risers</p><p>2200–2500W PSU</p><p>No RAM or SSD</p><p>Planning to use it with multiple RTX 3090s for Qwen/DeepSeek inference.</p><p><strong>Has anyone tried this?</strong>How much would PCIe x1 bottleneck performance? Is it worth buying, or should I go with EPYC/Threadripper instead?</p></div>submitted by<a href=\"https://www.reddit.com/user/Ammoryyy\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">/u/Ammoryyy</a><br><span><a href=\"https://i.redd.it/5hk0ahf60s1i1.jpeg\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[link]</a></span><span><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xwv5p4/13gpu_asrock_mining_motherboard_for_local_llms/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[comments]</a></span></td></tr></table>",
+            "text": "​\nFound a used mining rig with:\nASRock 13-GPU motherboard (likely H110 Pro BTC+)\nIntel i3-7100\n12 PCIe risers\n2200–2500W PSU\nNo RAM or SSD\nPlanning to use it with multiple RTX 3090s for Qwen/DeepSeek inference.\nHas anyone tried this? How much would PCIe x1 bottleneck performance? Is it worth buying, or should I go with EPYC/Threadripper instead?\nsubmitted by /u/Ammoryyy\n[link] [comments]",
+            "lead": "​\nFound a used mining rig with:\nASRock 13-GPU motherboard (likely H110 Pro BTC+)\nIntel i3-7100\n12 PCIe risers\n2200–2500W PSU\nNo RAM or SSD\nPlanning to use it with multiple RTX 3090s for Qwen/DeepSeek inference.\nHas anyone tried this? How much would PCIe x1 bottleneck performance? Is it worth buying, or should I go with EPYC/Threadripper instead?\nsubmitted by /u/Ammoryyy\n[link] [comments]",
+            "chars": 406,
+            "shown": 406,
+            "truncated": false
+          },
+          "categories": [
+            "LocalLLaMA"
+          ],
+          "author": "/u/Ammoryyy",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "oss",
+          "metrics": {},
+          "quality": 7,
+          "score": 14.26,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 1,
+          "slug": "12fec37e27da",
+          "action": 2,
+          "rank": 10.2,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "local",
+      "label": "本地开源",
+      "items": [
+        {
+          "sourceId": "gh-ecosystem",
+          "sourceName": "GitHub 检索（生态项目更新）",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "oss",
+          "categories": [
+            "agnostic",
+            "anthropic",
+            "api",
+            "deepseek-v4-pro",
+            "gateway"
+          ],
+          "author": "inference-gateway",
+          "id": "914086615",
+          "title": "inference-gateway/inference-gateway",
+          "url": "https://github.com/inference-gateway/inference-gateway",
+          "published": "2026-11-15T17:13:46.000Z",
+          "summary": "<div align=\"center\"> <img src=\"https://avatars.githubusercontent.com/u/195813097?s=200&v=4\" width=\"96\" alt=\"Inference Gateway Logo\" /> Inference Gateway <p><strong>An open-source, cloud-native, high-performance gateway unifying multiple LLM providers behind one OpenAI-compatible API</strong></p> <a href=\"https://githu…",
+          "metrics": {
+            "stars": 213
+          },
+          "content": {
+            "html": "<p>&lt;div align=\"center\"&gt;</p>\n<p>&lt;img src=\"https://avatars.githubusercontent.com/u/195813097?s=200&amp;v=4\" width=\"96\" alt=\"Inference Gateway Logo\" /&gt;</p>\n<h3>Inference Gateway</h3>\n<p>&lt;p&gt;&lt;strong&gt;An open-source, cloud-native, high-performance gateway unifying multiple LLM providers behind one OpenAI-compatible API&lt;/strong&gt;&lt;/p&gt;</p>\n<p>&lt;a href=\"https://github.com/inference-gateway/inference-gateway/actions/workflows/ci.yml?query=branch%3Amain\"&gt; &lt;img src=\"https://github.com/inference-gateway/inference-gateway/actions/workflows/ci.yml/badge.svg?branch=main\" alt=\"CI Status\"/&gt;&lt;/a&gt; &lt;a href=\"https://github.com/inference-gateway/inference-gateway/releases\"&gt; &lt;img src=\"https://img.shields.io/github/v/release/inference-gateway/inference-gateway?color=7C3AED&amp;style=flat-square\" alt=\"Version\"/&gt;&lt;/a&gt; &lt;a href=\"https://github.com/inference-gateway/inference-gateway/blob/main/LICENSE\"&gt; &lt;img src=\"https://img.shields.io/github/license/inference-gateway/inference-gateway?color=blue&amp;style=flat-square\" alt=\"License\"/&gt;&lt;/a&gt; &lt;a href=\"https://github.com/inference-gateway/inference-gateway/blob/main/go.mod\"&gt; &lt;img alt=\"Go Version\" src=\"https://img.shields.io/github/go-mod/go-version/inference-gateway/inference-gateway?color=00ADD8&amp;style=flat-square&amp;logo=go\"/&gt;&lt;/a&gt; &lt;a href=\"https://docs.inference-gateway.com\"&gt; &lt;img src=\"https://img.shields.io/badge/docs-inference--gateway.com-7C3AED?style=flat-square\" alt=\"Docs\"/&gt;&lt;/a&gt;</p>\n<p><a href=\"https://docs.inference-gateway.com/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">📖 Documentation</a>·<a href=\"https://docs.inference-gateway.com/getting-started\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">🚀 Getting Started</a>·<a href=\"https://github.com/orgs/inference-gateway/discussions\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">💬 Discussions</a>·<a href=\"https://github.com/inference-gateway/inference-gateway/issues\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">🐛 Issues</a></p>\n<p>&lt;br/&gt;</p>\n<p>&lt;img src=\"./assets/terminal-quickstart.svg\" width=\"950\" alt=\"Quick start: run the gateway with Docker, then install the CLI and chat\" /&gt;</p>\n<p>&lt;/div&gt;</p>\n<p>The Inference Gateway is a proxy server designed to facilitate access to various language model APIs. It allows users to interact with different language models through a unified interface, simplifying the configuration and the process of sending requests and receiving responses from multiple LLMs, enabling an easy use of Mixture of Experts.</p>\n<ul><li>[Key Features](#key-features)</li><li>[Overview](#overview)</li><li>[API Endpoints](#api-endpoints)</li><li>[Installation](#installation)</li><li>[Middleware Control and Bypass Mechanisms](#middleware-control-and-bypass-mechanisms)</li><li>[Model Context Protocol (MCP) Integration](#model-context-protocol-mcp-integration)</li><li>[Agent-to-Agent (A2A) Server](#agent-to-agent-a2a-server)</li><li>[Metrics and Observability](#metrics-and-observability)</li><li>[Supported API's](#supported-apis)</li><li>[Configuration](#configuration)</li><li>[Examples](#examples)</li><li>[SDKs](#sdks)</li><li>[CLI Tool](#cli-tool)</li><li>[Contributing](#contributing)</li><li>[License](#license)</li></ul>\n<h4>Key Features</h4>\n<p>| Feature | Description | | -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | | 🔀<strong>Unified API</strong>| One OpenAI-compatible endpoint for OpenAI, Anthropic, Groq, Cohere, Ollama, Ollama Cloud, llama.cpp, Cloudflare, DeepSeek, ElevenLabs, Google, Mistral, MiniMax, Moonshot, Nvidia, Z.ai, WebWright, and Mirelo | | 🔧<strong>Tool-use Support</strong>| Function calling capabilities across supported providers with a unified API | | 🌐<strong>MCP Support</strong>| Full Model Context Protocol integration - tools from MCP servers are discovered and exposed to LLMs automatically, and the gateway itself can serve them as an MCP server on<code>POST /mcp</code>| | 🤝<strong>A2A Server</strong>| The gateway as an Agent-to-Agent server: one card and one<code>POST /a2a</code>endpoint relaying every call to the registered agent that owns it, through the same auth, guardrails and telemetry | | 🚦<strong>Guardrails</strong>| OPA/Rego policies, secret and PII detection, and an optional external guardrail service - applied to requests, responses, MCP tool calls and relayed A2A calls | | 🌊<strong>Streaming</strong>| Real-time token streaming from all supported providers | | 🖼️<strong>Vision / Multimodal</strong>| Process images alongside text with vision-capable models | | ⚙️<strong>Environment Configuration</strong>| Configure API keys and URLs entirely through environment variables | | 🐳<strong></strong></p>",
+            "text": "<div align=\"center\">\n<img src=\"https://avatars.githubusercontent.com/u/195813097?s=200&v=4\" width=\"96\" alt=\"Inference Gateway Logo\" />\nInference Gateway\n<p><strong>An open-source, cloud-native, high-performance gateway unifying multiple LLM providers behind one OpenAI-compatible API</strong></p>\n<a href=\"https://github.com/inference-gateway/inference-gateway/actions/workflows/ci.yml?query=branch%3Amain\"> <img src=\"https://github.com/inference-gateway/inference-gateway/actions/workflows/ci.yml/badge.svg?branch=main\" alt=\"CI Status\"/></a> <a href=\"https://github.com/inference-gateway/inference-gateway/releases\"> <img src=\"https://img.shields.io/github/v/release/inference-gateway/inference-gateway?color=7C3AED&style=flat-square\" alt=\"Version\"/></a> <a href=\"https://github.com/inference-gateway/inference-gateway/blob/main/LICENSE\"> <img src=\"https://img.shields.io/github/license/inference-gateway/inference-gateway?color=blue&style=flat-square\" alt=\"License\"/></a> <a href=\"https://github.com/inference-gateway/inference-gateway/blob/main/go.mod\"> <img alt=\"Go Version\" src=\"https://img.shields.io/github/go-mod/go-version/inference-gateway/inference-gateway?color=00ADD8&style=flat-square&logo=go\"/></a> <a href=\"https://docs.inference-gateway.com\"> <img src=\"https://img.shields.io/badge/docs-inference--gateway.com-7C3AED?style=flat-square\" alt=\"Docs\"/></a>\n📖 Documentation · 🚀 Getting Started · 💬 Discussions · 🐛 Issues\n<br/>\n<img src=\"./assets/terminal-quickstart.svg\" width=\"950\" alt=\"Quick start: run the gateway with Docker, then install the CLI and chat\" />\n</div>\nThe Inference Gateway is a proxy server designed to facilitate access to various language model APIs. It allows users to interact with different language models through a unified interface, simplifying the configuration and the process of sending requests and receiving responses from multiple LLMs, enabling an easy use of Mixture of Experts.\n[Key Features](#key-features)\n[Overview](#overview)\n[API Endpoints](#api-endpoints)\n[Installation](#installation)\n[Middleware Control and Bypass Mechanisms](#middleware-control-and-bypass-mechanisms)\n[Model Context Protocol (MCP) Integration](#model-context-protocol-mcp-integration)\n[Agent-to-Agent (A2A) Server](#agent-to-agent-a2a-server)\n[Metrics and Observability](#metrics-and-observability)\n[Supported API's](#supported-apis)\n[Configuration](#configuration)\n[Examples](#examples)\n[SDKs](#sdks)\n[CLI Tool](#cli-tool)\n[Contributing](#contributing)\n[License](#license)\nKey Features\n| Feature | Description | | -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | | 🔀 Unified API | One OpenAI-compatible endpoint for OpenAI, Anthropic, Groq, Cohere, Ollama, Ollama Cloud, llama.cpp, Cloudflare, DeepSeek, ElevenLabs, Google, Mistral, MiniMax, Moonshot, Nvidia, Z.ai, WebWright, and Mirelo | | 🔧 Tool-use Support | Function calling capabilities across supported providers with a unified API | | 🌐 MCP Support | Full Model Context Protocol integration - tools from MCP servers are discovered and exposed to LLMs automatically, and the gateway itself can serve them as an MCP server on POST /mcp | | 🤝 A2A Server | The gateway as an Agent-to-Agent server: one card and one POST /a2a endpoint relaying every call to the registered agent that owns it, through the same auth, guardrails and telemetry | | 🚦 Guardrails | OPA/Rego policies, secret and PII detection, and an optional external guardrail service - applied to requests, responses, MCP tool calls and relayed A2A calls | | 🌊 Streaming | Real-time token streaming from all supported providers | | 🖼️ Vision / Multimodal | Process images alongside text with vision-capable models | | ⚙️ Environment Configuration | Configure API keys and URLs entirely through environment variables | | 🐳",
+            "lead": "<div align=\"center\">\n<img src=\"https://avatars.githubusercontent.com/u/195813097?s=200&v=4\" width=\"96\" alt=\"Inference Gateway Logo\" />\nInference Gateway\n<p><strong>An open-source, cloud-native, high-performance gateway unifying multiple LLM providers behind one OpenAI-compatible API</strong></p>\n<a href=\"https://github.com/inference-gateway/inference-gateway/actions/workflows/ci.yml?query=branch%3Amain\"> <img src=\"https://github.com/inference-gateway/infer",
+            "chars": 37642,
+            "shown": 3999,
+            "truncated": true
+          },
+          "quality": 10,
+          "score": 22.19,
+          "category": "local",
+          "subcategory": "weights",
+          "practical": 1,
+          "slug": "36d8fe3fbdbd",
+          "action": 3,
+          "rank": 14.8,
+          "tags": [
+            "free"
+          ]
+        },
+        {
+          "sourceId": "reddit-local-llama",
+          "sourceName": "r/LocalLLaMA",
+          "title": "Testing agents without running a model in CI: record once, replay with zero calls, judge with a local model only when needed (open source, I'm the author)",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xwy5ia/testing_agents_without_running_a_model_in_ci/",
+          "id": "t3_1xwy5ia",
+          "published": "2026-11-15T15:23:26.000Z",
+          "summary": "Disclosure: I'm the author. Attest is an Apache-2.0 testing framework for agents (Go engine, Python and TypeScript SDKs). Posting here because most of it runs with no hosted model at all. Replay instead of inference in CI. attest capture -- python my_agent.py runs your agent behind a local recording proxy that forward…",
+          "content": {
+            "html": "<table><tr><td><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xwy5ia/testing_agents_without_running_a_model_in_ci/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://external-preview.redd.it/aWo5aW41Z2xuczFpMa3m3JmeoQHTh3VfrGmq8qN0OnYtK8llhan-Q8_1DDX4.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=4da658ad5272dd5eccc7c59ebc9c46d9241887d5\" alt=\"Testing agents without running a model in CI: record once, replay with zero calls, judge with a local model only when needed (open source, I'm the author)\" loading=\"lazy\"></a></td><td><div><p>Disclosure: I'm the author. Attest is an Apache-2.0 testing framework for agents (Go engine, Python and TypeScript SDKs). Posting here because most of it runs with no hosted model at all.</p><p><strong>Replay instead of inference in CI.</strong><code>attest capture -- python my_agent.py</code>runs your agent behind a local recording proxy that forwards to whatever<code>OPENAI_BASE_URL</code>points at and records every model call. In CI, the agent's current code runs against that recording:</p><pre><code>attest replay: 4 replayed · 0 live model calls · $0.00</code></pre><p>The CI runner never loads a model. If you change the prompt, replay misses and tells you what changed instead of guessing.</p><p><strong>Deterministic checks first.</strong>Schema, cost/token/latency limits, which tools ran, in what order, how many times per order id, and what the run did to a simulated backend. None of that needs a model.</p><p><strong>Local embeddings.</strong>Similarity checks can use a bundled ONNX all-MiniLM-L6-v2 instead of an embeddings API.</p><p><strong>Local judge.</strong>When a check really needs a judge, set<code>ATTEST_JUDGE_BASE_URL</code>to any OpenAI-compatible server (vLLM, Ollama's<code>/v1</code>, LiteLLM). There's also a beta Ollama adapter for recording traces.</p><p><strong>Small judges break JSON.</strong>A malformed judge reply is reported as \"not evaluated\", never as a pass, and your policy decides whether that warns or blocks. 1.1 (released November 10) is a correctness release: it fixes four ways 1.0 could report a failing assertion as passing.</p><p>The demo is a synthetic support agent that refunds a customer twice while its reply stays polite and correct.<code>make setup walkthrough</code>runs the whole story, no API key, about two minutes after setup.</p><p>Limits, honestly: capture is tested against a scripted OpenAI-compatible server and the hosted APIs, not against every local server's streaming quirks. If your server's stream trips the proxy, I'd like to see the trace. Also, most of the code was written by coding agents (Claude Code and Codex) from plans I wrote and reviewed.</p><ul><li>Repo:<a href=\"https://github.com/attest-framework/attest\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://github.com/attest-framework/attest</a></li><li>Web Page:<a href=\"https://attest-framework.github.io/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://attest-framework.github.io/</a></li><li>Demo:<a href=\"https://github.com/attest-framework/refund-desk\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://github.com/attest-framework/refund-desk</a></li><li>Judge setup:<a href=\"https://github.com/attest-framework/attest/blob/main/docs/guides/judges.md\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://github.com/attest-framework/attest/blob/main/docs/guides/judges.md</a></li></ul></div>submitted by<a href=\"https://www.reddit.com/user/tom_mathews\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">/u/tom_mathews</a><br><span><a href=\"https://v.redd.it/5a7emrflns1i1\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[link]</a></span><span><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xwy5ia/testing_agents_without_running_a_model_in_ci/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[comments]</a></span></td></tr></table>",
+            "text": "Disclosure: I'm the author. Attest is an Apache-2.0 testing framework for agents (Go engine, Python and TypeScript SDKs). Posting here because most of it runs with no hosted model at all.\nReplay instead of inference in CI. attest capture -- python my_agent.py runs your agent behind a local recording proxy that forwards to whatever OPENAI_BASE_URL points at and records every model call. In CI, the agent's current code runs against that recording:\nattest replay: 4 replayed · 0 live model calls · $0.00\nThe CI runner never loads a model. If you change the prompt, replay misses and tells you what changed instead of guessing.\nDeterministic checks first. Schema, cost/token/latency limits, which tools ran, in what order, how many times per order id, and what the run did to a simulated backend. None of that needs a model.\nLocal embeddings. Similarity checks can use a bundled ONNX all-MiniLM-L6-v2 instead of an embeddings API.\nLocal judge. When a check really needs a judge, set ATTEST_JUDGE_BASE_URL to any OpenAI-compatible server (vLLM, Ollama's /v1 , LiteLLM). There's also a beta Ollama adapter for recording traces.\nSmall judges break JSON. A malformed judge reply is reported as \"not evaluated\", never as a pass, and your policy decides whether that warns or blocks. 1.1 (released November 10) is a correctness release: it fixes four ways 1.0 could report a failing assertion as passing.\nThe demo is a synthetic support agent that refunds a customer twice while its reply stays polite and correct. make setup walkthrough runs the whole story, no API key, about two minutes after setup.\nLimits, honestly: capture is tested against a scripted OpenAI-compatible server and the hosted APIs, not against every local server's streaming quirks. If your server's stream trips the proxy, I'd like to see the trace. Also, most of the code was written by coding agents (Claude Code and Codex) from plans I wrote and reviewed.\nRepo: https://github.com/attest-framework/attest\nWeb Page: https://attest-framework.github.io/\nDemo: https://github.com/attest-framework/refund-desk\nJudge setup: https://github.com/attest-framework/attest/blob/main/docs/guides/judges.md\nsubmitted by /u/tom_mathews\n[link] [comments]",
+            "lead": "Disclosure: I'm the author. Attest is an Apache-2.0 testing framework for agents (Go engine, Python and TypeScript SDKs). Posting here because most of it runs with no hosted model at all.\nReplay instead of inference in CI. attest capture -- python my_agent.py runs your agent behind a local recording proxy that forwards to whatever OPENAI_BASE_URL points at and records every model call. In CI, the agent's current code runs against that recording:\nattest rep",
+            "chars": 2230,
+            "shown": 2230,
+            "truncated": false
+          },
+          "categories": [
+            "LocalLLaMA"
+          ],
+          "author": "/u/tom_mathews",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "oss",
+          "metrics": {},
+          "quality": 6,
+          "score": 19.24,
+          "category": "local",
+          "subcategory": "runtime",
+          "practical": 4,
+          "slug": "98ac90395ac7",
+          "action": 5,
+          "rank": 14,
+          "tags": [
+            "local",
+            "agent",
+            "free"
+          ]
+        },
+        {
+          "sourceId": "hn-newest",
+          "sourceName": "Hacker News (AI)",
+          "title": "All AI-generated code should be Open Source",
+          "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+          "id": "https://news.ycombinator.com/item?id=50507303",
+          "published": "2026-11-15T14:46:58.000Z",
+          "summary": "Article URL: https://jakub.jankiewicz.org/blog/ai-code-open-source/ Comments URL: https://news.ycombinator.com/item?id=50507303 Points: 405 # Comments: 248",
+          "content": {
+            "html": "<p>Article URL:<a href=\"https://jakub.jankiewicz.org/blog/ai-code-open-source/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://jakub.jankiewicz.org/blog/ai-code-open-source/</a></p>\n<p>Comments URL:<a href=\"https://news.ycombinator.com/item?id=50507303\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://news.ycombinator.com/item?id=50507303</a></p>\n<p>Points: 405</p>\n<p># Comments: 248</p>",
+            "text": "Article URL: https://jakub.jankiewicz.org/blog/ai-code-open-source/\nComments URL: https://news.ycombinator.com/item?id=50507303\nPoints: 405\n# Comments: 248",
+            "lead": "Article URL: https://jakub.jankiewicz.org/blog/ai-code-open-source/\nComments URL: https://news.ycombinator.com/item?id=50507303\nPoints: 405\n# Comments: 248",
+            "chars": 160,
+            "shown": 160,
+            "truncated": false
+          },
+          "categories": [],
+          "author": "jcubic",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "tools",
+          "metrics": {
+            "points": 405,
+            "comments": 248
+          },
+          "quality": 9,
+          "score": 20.39,
+          "category": "local",
+          "subcategory": "weights",
+          "practical": 2,
+          "slug": "2d20317db60d",
+          "action": 2,
+          "rank": 12.2,
+          "tags": [
+            "free"
+          ]
+        },
+        {
+          "sourceId": "gh-ecosystem",
+          "sourceName": "GitHub 检索（生态项目更新）",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "oss",
+          "categories": [
+            "ai",
+            "attention",
+            "batching",
+            "course",
+            "cpp"
+          ],
+          "author": "jmaczan",
+          "id": "1153764295",
+          "title": "jmaczan/tiny-vllm",
+          "url": "https://github.com/jmaczan/tiny-vllm",
+          "published": "2026-11-15T17:17:12.000Z",
+          "summary": "tiny-vllm You're going to build a high performance LLM inference engine with C++ and CUDA - tiny-vllm, a younger and smaller sibling of vLLM We will learn a lot along the way, make mistakes and derive the ideas and maths from scratch This repository consists of two things: 1. a full source code of the inference server…",
+          "metrics": {
+            "stars": 1194
+          },
+          "content": {
+            "html": "<h3>tiny-vllm</h3>\n<p>You're going to build a high performance LLM inference engine with C++ and CUDA - tiny-vllm, a younger and smaller sibling of<a href=\"https://github.com/vllm-project/vllm\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">vLLM</a></p>\n<p>We will learn a lot along the way, make mistakes and derive the ideas and maths from scratch</p>\n<p>This repository consists of two things: 1. a full source code of the inference server and 2. a course where I lead you through the process of implementing the engine. Feel invited to use it as a learning tool on your learning path or if you are a lecturer, feel welcome to use it as a teaching resource at your university</p>\n<p><strong>Reach highly technical audience in this GitHub repo</strong></p>\n<p>&lt;a href=\"mailto:jedrzej@maczan.pl?subject=README%20ad%20\"&gt; &lt;img src=\"assets/pixel-cta-large.svg\" alt=\"Advertise here\"&gt; &lt;/a&gt;</p>\n<p>Thanks for supporting our project ❤️</p>\n<p><strong>The inference engine consists of:</strong></p>\n<ul><li>[x] load a real LLM model from Safetensors (Llama 3.2 1B Instruct)</li><li>[x] full LLM forward pass (prefill + decode)</li><li>[x] all computation with CUDA kernels</li><li>[x] KV cache</li><li>[x] static batching</li><li>[x] continuous batching</li><li>[x]<a href=\"https://courses.cs.washington.edu/courses/cse599m/23sp/notes/flashattn.pdf\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">online softmax, FlashAttention-like</a></li><li>[x]<a href=\"https://arxiv.org/pdf/2309.06180\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">PagedAttention</a></li></ul>\n<p>Make yourself a hot beverage and let's begin</p>\n<ul><li>[tiny-vllm](#tiny-vllm)</li><li>[SUPPORTER](#supporter)</li><li>[SUPPORTER](#supporter-1)</li><li>[](#)</li><li>[Intro: LLM, vLLM, models, inference servers](#intro-llm-vllm-models-inference-servers)</li><li>[Technical prerequisities](#technical-prerequisities)</li><li>[Safetensors and your model](#safetensors-and-your-model)</li><li>[How floating-point numbers work and why we use bfloat16](#how-floating-point-numbers-work-and-why-we-use-bfloat16)</li><li>[GPU and CPU memory](#gpu-and-cpu-memory)</li><li>[Single token inference](#single-token-inference)</li><li>[Tokenization](#tokenization)</li><li>[Embeddings](#embeddings)</li><li>[CUDA kernel engineering - embeddings](#cuda-kernel-engineering---embeddings)</li><li>[RMSNorm and parallel reduction in CUDA](#rmsnorm-and-parallel-reduction-in-cuda)</li><li>[RoPE](#rope)</li><li>[Residual connections](#residual-connections)</li><li>[cublasGemmEx](#cublasgemmex)</li><li>[The column-major to row-major transposition trick](#the-column-major-to-row-major-transposition-trick)</li><li>[Prefill vs decode](#prefill-vs-decode)</li><li>[Why KV cache exists](#why-kv-cache-exists)</li><li>[Attention](#attention)</li><li>[SiLU](#silu)</li><li>[Softmax](#softmax)</li><li>[Causal mask](#causal-mask)</li><li>[Argmax](#argmax)</li><li>[Feed forward network](#feed-forward-network)</li><li>[Buffer reuse](#buffer-reuse)</li><li>[Static batching](#static-batching)</li><li>[Continuous batching](#continuous-batching)</li><li>[Online softmax](#online-softmax)</li><li>[Paged Attention](#paged-attention)</li><li>[Paged KV cache](#paged-kv-cache)</li><li>[Paged Attention CUDA kernel](#paged-attention-cuda-kernel)</li></ul>\n<h4>Intro: LLM, vLLM, models, inference servers</h4>\n<p>It's easy to get lost with so much going on recent years. Let's unpack it</p>\n<p><strong>LLM is a model</strong>. Physically,<strong>LLM is a file which contains a lot of<a href=\"https://en.wikipedia.org/wiki/Floating-point_arithmetic\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">float numbers</a></strong>. Conceptually, these numbers represent weights of operations. Weights are learned/discovered/found during training phase. Some of the operations use these weights. Every operation is a function, which takes some data as input, do something with it and produces data as output. Operations and their order are defined by LLM's architecture. Every model has its own architecture, which is designed by engineers and researchers.</p>\n<p>The process of going from 0 to LLM writing a text is like this:</p>\n<ol><li><strong>Design the model</strong>- engineers and researchers use high level language like Python with tensor library like<a href=\"https://github.com/pytorch/pytorch\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">PyTorch</a>or<a href=\"https://github.com/tinygrad/tinygrad\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">tinygrad</a>to design model's architecture. They train small versions of the model, make experiments with different operations, data and hyperparameters (parameters for operations). It's the phase of figuring out the specification</li><li><strong>Implement the model</strong>- Once they decide on final model architecture and prepare the data for training, they write the code that defines the final model. It can be also in PyTorch or similar</li><li><strong>Train the model</strong> - The chosen model architecture is initialized with dummy weights. They write a script which again uses PyTorch or similar to run learning algorithm like backpropagation on a lot of h…</li></ol>",
+            "text": "tiny-vllm\nYou're going to build a high performance LLM inference engine with C++ and CUDA - tiny-vllm, a younger and smaller sibling of vLLM\nWe will learn a lot along the way, make mistakes and derive the ideas and maths from scratch\nThis repository consists of two things: 1. a full source code of the inference server and 2. a course where I lead you through the process of implementing the engine. Feel invited to use it as a learning tool on your learning path or if you are a lecturer, feel welcome to use it as a teaching resource at your university\nReach highly technical audience in this GitHub repo\n<a href=\"mailto:jedrzej@maczan.pl?subject=README%20ad%20\"> <img src=\"assets/pixel-cta-large.svg\" alt=\"Advertise here\"> </a>\nThanks for supporting our project ❤️\nThe inference engine consists of:\n[x] load a real LLM model from Safetensors (Llama 3.2 1B Instruct)\n[x] full LLM forward pass (prefill + decode)\n[x] all computation with CUDA kernels\n[x] KV cache\n[x] static batching\n[x] continuous batching\n[x] online softmax, FlashAttention-like\n[x] PagedAttention\nMake yourself a hot beverage and let's begin\n[tiny-vllm](#tiny-vllm)\n[SUPPORTER](#supporter)\n[SUPPORTER](#supporter-1)\n[](#)\n[Intro: LLM, vLLM, models, inference servers](#intro-llm-vllm-models-inference-servers)\n[Technical prerequisities](#technical-prerequisities)\n[Safetensors and your model](#safetensors-and-your-model)\n[How floating-point numbers work and why we use bfloat16](#how-floating-point-numbers-work-and-why-we-use-bfloat16)\n[GPU and CPU memory](#gpu-and-cpu-memory)\n[Single token inference](#single-token-inference)\n[Tokenization](#tokenization)\n[Embeddings](#embeddings)\n[CUDA kernel engineering - embeddings](#cuda-kernel-engineering---embeddings)\n[RMSNorm and parallel reduction in CUDA](#rmsnorm-and-parallel-reduction-in-cuda)\n[RoPE](#rope)\n[Residual connections](#residual-connections)\n[cublasGemmEx](#cublasgemmex)\n[The column-major to row-major transposition trick](#the-column-major-to-row-major-transposition-trick)\n[Prefill vs decode](#prefill-vs-decode)\n[Why KV cache exists](#why-kv-cache-exists)\n[Attention](#attention)\n[SiLU](#silu)\n[Softmax](#softmax)\n[Causal mask](#causal-mask)\n[Argmax](#argmax)\n[Feed forward network](#feed-forward-network)\n[Buffer reuse](#buffer-reuse)\n[Static batching](#static-batching)\n[Continuous batching](#continuous-batching)\n[Online softmax](#online-softmax)\n[Paged Attention](#paged-attention)\n[Paged KV cache](#paged-kv-cache)\n[Paged Attention CUDA kernel](#paged-attention-cuda-kernel)\nIntro: LLM, vLLM, models, inference servers\nIt's easy to get lost with so much going on recent years. Let's unpack it\nLLM is a model . Physically, LLM is a file which contains a lot of float numbers . Conceptually, these numbers represent weights of operations. Weights are learned/discovered/found during training phase. Some of the operations use these weights. Every operation is a function, which takes some data as input, do something with it and produces data as output. Operations and their order are defined by LLM's architecture. Every model has its own architecture, which is designed by engineers and researchers.\nThe process of going from 0 to LLM writing a text is like this:\nDesign the model - engineers and researchers use high level language like Python with tensor library like PyTorch or tinygrad to design model's architecture. They train small versions of the model, make experiments with different operations, data and hyperparameters (parameters for operations). It's the phase of figuring out the specification\nImplement the model - Once they decide on final model architecture and prepare the data for training, they write the code that defines the final model. It can be also in PyTorch or similar\nTrain the model - The chosen model architecture is initialized with dummy weights. They write a script which again uses PyTorch or similar to run learning algorithm like backpropagation on a lot of h…",
+            "lead": "tiny-vllm\nYou're going to build a high performance LLM inference engine with C++ and CUDA - tiny-vllm, a younger and smaller sibling of vLLM\nWe will learn a lot along the way, make mistakes and derive the ideas and maths from scratch\nThis repository consists of two things: 1. a full source code of the inference server and 2. a course where I lead you through the process of implementing the engine. Feel invited to use it as a learning tool on your learning ",
+            "chars": 98248,
+            "shown": 4001,
+            "truncated": true
+          },
+          "quality": 8,
+          "score": 21.8,
+          "category": "local",
+          "subcategory": "runtime",
+          "practical": 1,
+          "slug": "461de44277da",
+          "action": 2,
+          "rank": 11.2,
+          "tags": [
+            "local"
+          ]
+        }
+      ]
+    }
+  ]
+}
