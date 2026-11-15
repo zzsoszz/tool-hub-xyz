@@ -1,6 +1,6 @@
 {
   "day": "2026-11-15",
-  "reviewedAt": "2026-11-15T02:06:52.135Z",
+  "reviewedAt": "2026-11-15T08:59:28.290Z",
   "reviewer": "cloudflare/@cf/meta/llama-3.1-70b-instruct",
   "note": "cloudflare/@cf/meta/llama-3.1-70b-instruct：复核 12 条，解析到 12 条判定",
   "rules": {
@@ -15,17 +15,15 @@
   },
   "passed": true,
   "reasons": [],
-  "total": 37,
+  "total": 45,
   "blocked": [
     "688105144d86",
     "c88c4ac756f1",
     "e93160215435",
     "9757627f4b99",
-    "9c4342540d9d",
-    "7871cb2b5827",
-    "029927e1e8b2"
+    "7871cb2b5827"
   ],
-  "survivors": 30,
+  "survivors": 40,
   "items": [
     {
       "slug": "0569f0f363c4",
@@ -48,7 +46,7 @@
       "warnings": [],
       "agent": {
         "verdict": "pass",
-        "reason": "包含实测数据和复现步骤。"
+        "reason": "提供实测数据和复现步骤，符合实践性内容要求。"
       },
       "blocked": []
     },
@@ -72,10 +70,10 @@
       ],
       "agent": {
         "verdict": "fail",
-        "reason": "内容与标签不符，没有提供任何实测数据或复现步骤。"
+        "reason": "与第3、4、5条重复，且缺乏实测数据或复现步骤。"
       },
       "blocked": [
-        "模型复核不通过（内容与标签不符，没有提供任何实测数据或复现步骤。）"
+        "模型复核不通过（与第3、4、5条重复，且缺乏实测数据或复现步骤。）"
       ]
     },
     {
@@ -98,10 +96,10 @@
       ],
       "agent": {
         "verdict": "fail",
-        "reason": "内容与标签不符，没有提供任何实测数据或复现步骤。"
+        "reason": "与第2、4、5条重复，且缺乏实测数据或复现步骤。"
       },
       "blocked": [
-        "模型复核不通过（内容与标签不符，没有提供任何实测数据或复现步骤。）"
+        "模型复核不通过（与第2、4、5条重复，且缺乏实测数据或复现步骤。）"
       ]
     },
     {
@@ -124,10 +122,10 @@
       ],
       "agent": {
         "verdict": "fail",
-        "reason": "内容与标签不符，没有提供任何实测数据或复现步骤。"
+        "reason": "与第2、3、5条重复，且缺乏实测数据或复现步骤。"
       },
       "blocked": [
-        "模型复核不通过（内容与标签不符，没有提供任何实测数据或复现步骤。）"
+        "模型复核不通过（与第2、3、5条重复，且缺乏实测数据或复现步骤。）"
       ]
     },
     {
@@ -150,10 +148,10 @@
       ],
       "agent": {
         "verdict": "fail",
-        "reason": "内容与标签不符，没有提供任何实测数据或复现步骤。"
+        "reason": "与第2、3、4条重复，且缺乏实测数据或复现步骤。"
       },
       "blocked": [
-        "模型复核不通过（内容与标签不符，没有提供任何实测数据或复现步骤。）"
+        "模型复核不通过（与第2、3、4条重复，且缺乏实测数据或复现步骤。）"
       ]
     },
     {
@@ -177,7 +175,7 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "包含实测数据和复现步骤。"
+        "reason": "提供实测数据和复现步骤，符合实践性内容要求。"
       },
       "blocked": []
     },
@@ -200,12 +198,10 @@
         "标题未翻译"
       ],
       "agent": {
-        "verdict": "fail",
-        "reason": "内容与分类不符。"
+        "verdict": "pass",
+        "reason": "讨论多个sparks与Mac Studio的性能比较。"
       },
-      "blocked": [
-        "模型复核不通过（内容与分类不符。）"
-      ]
+      "blocked": []
     },
     {
       "slug": "7871cb2b5827",
@@ -227,10 +223,10 @@
       ],
       "agent": {
         "verdict": "fail",
-        "reason": "内容与分类不符。"
+        "reason": "新闻转述，没有实测数据或步骤。"
       },
       "blocked": [
-        "模型复核不通过（内容与分类不符。）"
+        "模型复核不通过（新闻转述，没有实测数据或步骤。）"
       ]
     },
     {
@@ -252,7 +248,7 @@
       "warnings": [],
       "agent": {
         "verdict": "pass",
-        "reason": "实测过程描述，包含详细步骤。"
+        "reason": "提供折纸飞机的教学视频和实测结果。"
       },
       "blocked": []
     },
@@ -275,12 +271,10 @@
         "标题未翻译"
       ],
       "agent": {
-        "verdict": "fail",
-        "reason": "内容与分类不符。"
+        "verdict": "pass",
+        "reason": "介绍SparseRead的研究论文和技术细节。"
       },
-      "blocked": [
-        "模型复核不通过（内容与分类不符。）"
-      ]
+      "blocked": []
     },
     {
       "slug": "34e192298d71",
@@ -303,7 +297,32 @@
       "warnings": [],
       "agent": {
         "verdict": "pass",
-        "reason": "实测过程描述，包含详细步骤和结果。"
+        "reason": "提供H3剑心比赛的实测结果和硬件配置。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "5d3f5cfd4cec",
+      "title": "【实测】X99+E5-2686V4+128G DDR3+3080-20G 挑战256K上下文",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "hardware",
+        "benchmark",
+        "local",
+        "lowspec"
+      ],
+      "bodyChars": 4058,
+      "excerpt": "项目 内容 报告日期 2026-11-15 测试平台 Xeon E5-2686 v4 / 128 GiB DDR3 / RTX 3080 魔改 20G 软件栈 Ubuntu 26.04.1 LTS + Strata 0.2.13.1（引擎 0.1.59） 被测模型 Swift-1.5-Qwen3.8-Flash-Next-Heretic-V2 IQ3_S-85G （80.5 GiB） 核心结论 256K 上下文（模型上限）可跑，热态 decode 67.7~101 tok/s，前缀复喂首字 3.1 秒 0. 结论摘要 上下文不是 32K，是 256K。 逐档实测 32K / 64K / 128K / 160K / 256K 全部通过，从 32K 到 256K 专家缓存只从 13,268 MiB 降到 12,864 MiB（−3%），decode 从 79 降到 70.9（−10%）。原因是 launcher 在 128K 以上自动启用 --kv-resident 32768 --kv-grow ，KV 主体放在 pinned RAM 而非显存。 前缀缓存是最强的能力。 同一份 254,862 token 的上下文，首次首字 115.6 秒，第二次 3.1 秒 （复用 99.998%），37 倍加速。 MTP 投机解码值得开 ，同一 prompt 下 decode 提升 23%~5…",
+      "quality": 9,
+      "practical": 6,
+      "sourceName": "抡锤者 AI硬件",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "提供X99+E5-2686V4+128G DDR3+3080-20G配置的实测结果和性能分析。"
       },
       "blocked": []
     },
@@ -326,10 +345,7 @@
       "domain": "lcz.me",
       "hard": [],
       "warnings": [],
-      "agent": {
-        "verdict": "pass",
-        "reason": "实测过程描述，包含详细步骤和结果。"
-      },
+      "agent": null,
       "blocked": []
     },
     {
@@ -443,6 +459,29 @@
       "blocked": []
     },
     {
+      "slug": "3beeb1ef03d3",
+      "title": "llama.cpp b12404 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial",
+        "agent"
+      ],
+      "bodyChars": 1401,
+      "excerpt": "<details open> server : Fix connection reuse after streamed responses (#30492) Assisted-by: Codex </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/67738614> macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubuntu 26.04 s390x (zDNN) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu x64 (CUDA 13) - CUDA 13.5 libraries Ubuntu arm…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
       "slug": "a8aca20ea972",
       "title": "llama.cpp b12385 发布",
       "category": "hardware",
@@ -480,6 +519,51 @@
       "domain": "qbitai.com",
       "hard": [],
       "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "4eaf7cc6ccbf",
+      "title": "Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU",
+      "category": "hardware",
+      "subcategory": "machine",
+      "tags": [
+        "local",
+        "lowspec",
+        "benchmark"
+      ],
+      "bodyChars": 49343,
+      "excerpt": "llama-modchip (v2.5.4) 3.00–3.75 bpw Vector & Dyadic CPU Inference for 284B & 30B MoE Models Continuous WikiText-2 & AtomicChat wiki-alt PPL · Logit KLD · 100-Pt Gate · Linux, macOS Metal & Windows 11 Quickstart · Signal Fidelity & Benchmarks · How 3D VQ & Fractal-64 Work · Quantization Specs · Supported Models · Leaderboard · v2.4 Paper Snapshot ( paper/ ) · FAQ 100/100 (30B) · 70/80 Func. (284B) Quality Gate + WikiText-2 / wiki-alt PPL 99.15% / 97.78% CosSim vs BF16 (Fractal / VQ3) 56.93 / 56.40 GiB DeepSeek-V4 284B (MaxQ / VQ3) 13.30 GiB Nemotron-30B VQ3 GGUF 24.2–111.6 tok/s 30B MoE CPU s…",
+      "quality": 12,
+      "practical": 2,
+      "sourceName": "HN 检索（本地推理生态）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "dcf1e9f09014",
+      "title": "llama.cpp b12405 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1563,
+      "excerpt": "<details open> common : reject out-of-range grammar_triggers type instead of aborting (#30835) (#31478) common : reject out-of-range grammar_triggers type instead of aborting (#30835) tests : remove the invalid grammar trigger type regression test (#30835) </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/67740461> macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubunt…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
       "agent": null,
       "blocked": []
     },
@@ -633,6 +717,73 @@
       "domain": "lcz.me",
       "hard": [],
       "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "1adf3ff6e7cb",
+      "title": "【续更】土区 2999 里拉 Colab 白嫖 748B 后续：我给它搓了个类 EasyColab 的本地三栏桌面台（零冷启 GCS 流量 + 原生 WebUI + Strata 支持）",
+      "category": "local",
+      "subcategory": "weights",
+      "tags": [
+        "agent",
+        "local",
+        "benchmark",
+        "free"
+      ],
+      "bodyChars": 3014,
+      "excerpt": "上一篇记录发完之后，我拿着那台 Colab G4（96GB RTX PRO 6000 Blackwell）又连着跑了六百多轮长上下文对话，100K 上下文下实测 Prefill 峰值跑到了 1,485 ~ 2,798 tok/s ，Decode 稳在 46 ~ 73 tok/s 。 用着倒挺爽，但连续折腾了几天，有两个麻烦绕不过去。 一个是冷启动的账单心里不踏实。虽然 2,999 里拉开的土区 Gemini 20x Ultra 送够了 Colab 算力，GCP 那边也有赠金兜底，可一想到每次 Colab 24 小时到期重开都要从 GCS 桶拽一百多 GB 权重，出站流量账单看着还是心惊肉跳。我后来干脆给仓库补了一刀：分片 1~4 直接走 Hugging Face 最新的 hf-xet 拉取（实测 305 MiB/s 左右），分片 5~7 自己写了个轻量只读 FUSE3（ hf_ro_fuse.c ）挂到 /mnt/hf 直接打 HTTP/2 Range。改完之后， G4 开机冷启动的 GCS 出站流量直接归零（ 0 GB / $0 ） ，只在 768 线程超大 Prefill 突发时才借一下 GCS 加速，手头没有 GCP 账号也能用纯 HF 模式拉起。 另一个痛点更具体：每次重开实例太琐碎了。一到 24 小时强制重启，我就要重新 colab new （还得留神别手滑加了 --h…",
+      "quality": 9,
+      "practical": 9,
+      "sourceName": "抡锤者 模型部署讨论",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "279473ac9b83",
+      "title": "748B MoE 云端踩坑手记：Google Colab A100 与 G4 (RTX PRO 6000 Blackwell) 实测对比及工程收口",
+      "category": "local",
+      "subcategory": "selfhost",
+      "tags": [
+        "benchmark",
+        "local",
+        "lowspec",
+        "agent"
+      ],
+      "bodyChars": 13563,
+      "excerpt": "748B MoE 云端踩坑手记：Google Colab A100 与 G4 (RTX PRO 6000 Blackwell) 实测对比及工程收口 在云端用单卡跑几百 GB 的超大规模 MoE，最磨人的往往不是生成速度慢几拍，而是明明帐面上算下来有接近 270 GB 的显存加内存池，实际把几十 K 上下文塞进去时，却因为一条磁盘队列上限或一个默认参数，直接卡成六七分钟一轮的漫长等待。 折腾这事的起因其实很实在：土区的 Gemini 20x Ultra 订阅一个月只要 2,999 里拉 。本来开这个档位主要是为了敞开用 Gemini 4 系列模型 ，结果发现套餐里还顺带给足了 Google Colab 的高配算力额度( 每月赠送2500算力点数,按当前G4(RTX 6000)计算,能跑248小时每月,约10天 ,下文描述的GCS桶也涵盖在Ultra Plan每月100赠金的范围内=不额外花钱)。额度放着也是白放，干脆拿来在 Colab 上自己搭后端部署无审查模型。毕竟商业闭源模型再强也有不少条条框框，用现成的附赠算力拉起一套 748B 参数的 DeepSeek-V4.1-Flash-1017 无审查版（ Mix-256G / abliterated-256g ），平时主力刷 Gemini 4，遇到需要无审查输出、完全掌控底层采样或者挂长程本地 Agent 随便造的场景就切到自建后端…",
+      "quality": 12,
+      "practical": 9,
+      "sourceName": "抡锤者 模型部署讨论",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "b40fe1269d73",
+      "title": "ArvinLovegood/go-stock",
+      "category": "local",
+      "subcategory": "selfhost",
+      "tags": [
+        "local",
+        "agent",
+        "free"
+      ],
+      "bodyChars": 20938,
+      "excerpt": "go-stock : 基于大语言模型的AI赋能股票分析工具 ![go-stock](./build/appicon.png) ! GitHub Release ![GitHub Repo stars ](https://github.com/ArvinLovegood/go-stock) ![star ](https://gitee.com/arvinlovegood_admin/go-stock) > 💡 本项目基于 TRAE AI 编程工具 高效开发：通过此链接注册并登录 TRAE 桌面端，新用户可一次性获得 3,000 积分。 [//]: # ([![star]&#40;https://gitcode.com/ArvinLovegood/go-stock/star/badge.svg&#41;]&#40;https://gitcode.com/ArvinLovegood/go-stock&#41;) [//]: # (## 💖 赞助商 &#40;Sponsors&#41;) [//]: # (### 🌟[Anspire开放平台]&#40;https://open.anspire.cn/?share_code=OMSTE9LW&#41;，一Key同时启用全球热门大模型和联网搜索，无需科学上网，含免费额度) [//]: # ([![Anspire开放平台]&#40;./b…",
+      "quality": 11,
+      "practical": 3,
+      "sourceName": "GitHub 检索（生态项目更新）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
       "agent": null,
       "blocked": []
     },
@@ -842,6 +993,28 @@
       "quality": 8,
       "practical": 1,
       "sourceName": "抡锤者 AI 音视频画图",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "9c700f06a78a",
+      "title": "测一下腾讯的hy 30b a3b",
+      "category": "bench",
+      "subcategory": "benchmark",
+      "tags": [
+        "lowspec",
+        "local",
+        "benchmark",
+        "hardware"
+      ],
+      "bodyChars": 261,
+      "excerpt": "看上去这个模型有点像是直接把qwen 30b a3b coder拿去魔改了一下。 在旧显卡上测试的P100 16G，卸载部分到内存。 我想拿来做hindsight的LLM，所以给了满上下文 在聊天框里面测试俄罗斯方块，写了900行，居然能无错运行。 跑tooleval，分数还挺高的： 再试一下鹈鹕,速度实在太慢了： 最后一版，修改了一下llama.cpp的温度0.7 ，TOP P 0.95。这个应该就是QWEN 3 CODER 30B A3B的马甲了。 pelican_bicycle.html",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "抡锤者 模型部署讨论",
       "domain": "lcz.me",
       "hard": [],
       "warnings": [],
