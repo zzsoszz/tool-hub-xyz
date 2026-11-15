@@ -172,37 +172,41 @@ export async function enrichForumTopics(items, source, options = {}) {
     .filter((item) => item.id && inWindow(item))
     .sort((a, b) => keywordPriority(b, keywordPattern) - keywordPriority(a, keywordPattern) || engagement(b) - engagement(a))
     .slice(0, limit);
-  await Promise.all(candidates.map(async (item) => {
-    const result = await fetchImpl(`https://lcz.me/api/topic/${item.id}`, {
-      ...fetchOptions,
-      timeoutMs: source.timeoutMs ?? options.timeoutMs ?? 20_000,
-      retries: 1,
-    });
-    if (!result.ok) return;
-    let payload;
-    try {
-      payload = JSON.parse(result.body);
-    } catch {
-      return;
-    }
-    const mainPost = (Array.isArray(payload.posts) ? payload.posts : [])[0];
-    const content = sanitizeArticle(mainPost?.content ?? '', { baseUrl: item.url });
-    if (content) {
-      item.content = content;
-      item.summary = cleanText(content.lead, 320);
-    }
-    if (payload.title) item.title = cleanText(payload.title, 220);
-    item.metrics = {
-      ...item.metrics,
-      points: payload.votes ?? item.metrics?.points ?? 0,
-      comments: Math.max(0, (payload.postcount ?? 1) - 1),
-      views: payload.viewcount ?? item.metrics?.views ?? 0,
-    };
-    item.excellent = Boolean(payload.lczExcellent);
-    if (Array.isArray(payload.tags) && payload.tags.length) {
-      item.categories = payload.tags.map((tag) => cleanText(tag?.value ?? tag, 40));
-    }
-  }));
+  // 补正文的并发要封顶：一次把几十个帖子接口全打出去，小论坛会直接超时（这个源已经超时过一次）。
+  const wave = Math.max(1, Number(source.enrichConcurrency ?? 8));
+  for (let start = 0; start < candidates.length; start += wave) {
+    await Promise.all(candidates.slice(start, start + wave).map(async (item) => {
+      const result = await fetchImpl(`https://lcz.me/api/topic/${item.id}`, {
+        ...fetchOptions,
+        timeoutMs: source.timeoutMs ?? options.timeoutMs ?? 20_000,
+        retries: 1,
+      });
+      if (!result.ok) return;
+      let payload;
+      try {
+        payload = JSON.parse(result.body);
+      } catch {
+        return;
+      }
+      const mainPost = (Array.isArray(payload.posts) ? payload.posts : [])[0];
+      const content = sanitizeArticle(mainPost?.content ?? '', { baseUrl: item.url });
+      if (content) {
+        item.content = content;
+        item.summary = cleanText(content.lead, 320);
+      }
+      if (payload.title) item.title = cleanText(payload.title, 220);
+      item.metrics = {
+        ...item.metrics,
+        points: payload.votes ?? item.metrics?.points ?? 0,
+        comments: Math.max(0, (payload.postcount ?? 1) - 1),
+        views: payload.viewcount ?? item.metrics?.views ?? 0,
+      };
+      item.excellent = Boolean(payload.lczExcellent);
+      if (Array.isArray(payload.tags) && payload.tags.length) {
+        item.categories = payload.tags.map((tag) => cleanText(tag?.value ?? tag, 40));
+      }
+    }));
+  }
   return items;
 }
 

@@ -384,7 +384,8 @@
       "timeoutMs": 30000,
       "trustCategory": true,
       "pages": 3,
-      "enrichLimit": 16,
+      "enrichLimit": 28,
+      "maxItemsPerDay": 14,
       "keywordsFrom": "searchKeywords",
       "retries": 3
     },

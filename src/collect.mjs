@@ -4,7 +4,7 @@ import { createFilter } from './lib/filter.mjs';
 import { filterNewItems, itemKeys, normalizeSeen, pruneSeen, serializeSeen } from './lib/dedupe.mjs';
 import { dayKey } from './lib/normalize.mjs';
 import { repairArticle } from './lib/content.mjs';
-import { selectByCategoryQuota } from './lib/select.mjs';
+import { perSourceCap, selectByCategoryQuota } from './lib/select.mjs';
 import { fetchAllSources, parseSourceBody } from './lib/sources.mjs';
 import { itemSlug, rankCompare } from './lib/items.mjs';
 import { digestToMarkdown } from './lib/markdown.mjs';
@@ -163,7 +163,7 @@ async function main() {
   };
   const { fresh, duplicates } = filterNewItems(unseen, seen, { day, markSeen: inSourceWindow });
 
-  const perSourceCap = Number(config.maxItemsPerSource ?? 12);
+  const capForSource = (sourceId) => perSourceCap(sourceById.get(sourceId), config.maxItemsPerSource);
   const usedPerSource = new Map();
   for (const item of published) usedPerSource.set(item.sourceId, (usedPerSource.get(item.sourceId) ?? 0) + 1);
 
@@ -210,7 +210,7 @@ async function main() {
       else older.push(item);
     }
     older.sort((a, b) => String(b.published ?? '').localeCompare(String(a.published ?? '')));
-    const room = Math.max(0, perSourceCap - (usedPerSource.get(sourceId) ?? 0));
+    const room = Math.max(0, capForSource(sourceId) - (usedPerSource.get(sourceId) ?? 0));
     let chosen = inWindow.slice(0, room);
     if (!chosen.length && !strictWindow) {
       chosen = older.filter((item) => item.published && item.published >= oldestAllowed).slice(0, fallbackCount);

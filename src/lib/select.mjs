@@ -26,3 +26,12 @@ export function selectByCategoryQuota(candidates, { limit = 48, categoryOrder = 
   }
   return selected.slice(0, limit);
 }
+
+// 一天里每个信息源最多能占几条：源自己可以单独放宽（更新快、帖子长的论坛版块按全局配额会被削平），
+// 没写 maxItemsPerDay 的源继续用全局 maxItemsPerSource。
+export function perSourceCap(source, fallback = 12) {
+  const own = Number(source?.maxItemsPerDay ?? 0);
+  if (Number.isFinite(own) && own > 0) return own;
+  const global = Number(fallback);
+  return Number.isFinite(global) && global > 0 ? global : 12;
+}

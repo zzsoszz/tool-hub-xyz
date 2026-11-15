@@ -120,10 +120,17 @@ npm run lint       # syntax, indentation, trailing whitespace, secret scan
   source (fetched / irrelevant / guard / killed / bodyless / eligible) plus the kill reasons.
 - An item with no fetched body never gets a day slot: `filter.hasBody()` applies the review gate's
   `quality.review.minBodyChars` during collection, because the review step blocks those items anyway and the
-  slot is wasted. Bodies come from `fetchBody`/`bodyFetchLimit` (feeds) and `enrichLimit` (NodeBB categories).
+  slot is wasted. Bodies come from `fetchBody`/`bodyFetchLimit` (feeds) and `enrichLimit` (NodeBB categories),
+  and NodeBB enrichment goes out in waves of `enrichConcurrency` (default 8) so one board never fires every
+  topic request at once.
 - `source.windowHours` is the window; the incremental line only ever widens it, never narrows it. Re-running
   the same day cannot rebuild that day's supply — everything the first run fetched is already in `seen.json`,
   so only a fresh day shows the full effect of a source change.
+- Day slots per source: `maxItemsPerSource` is the global cap, and a source may raise its own share with
+  `source.maxItemsPerDay` (`perSourceCap` in `src/lib/select.mjs`). Widening `pages` only pays when
+  `windowHours` admits those pages — a topic's last reply is never older than its creation, so every item on
+  the page that stopped the paging is outside the window. When a board's eligible supply already exceeds the
+  cap, raise `maxItemsPerDay` and `enrichLimit` (bodies are the gate) instead of `pages`.
 
 ## Asset Caching
 

@@ -127,6 +127,39 @@ test('doesNotSpendEnrichmentRequestsOnTopicsOutsideTheWindow', async () => {
   assert.deepEqual(requested, []);
 });
 
+test('fetchesEnrichmentRequestsInBoundedWaves', async () => {
+  const source = {
+    id: 'lcz-hardware',
+    name: '抡锤者 AI硬件',
+    url: 'https://lcz.me/api/category/6',
+    kind: 'json',
+    adapter: 'nodebb',
+    tier: 2,
+    enrichLimit: 12,
+    enrichConcurrency: 4,
+    windowHours: 48,
+  };
+  const activity = new Date(Date.now() - 3_600_000).toISOString();
+  const items = Array.from({ length: 12 }, (_, index) => ({
+    id: String(index + 1),
+    title: `帖子 ${index}：5080 显存实测`,
+    url: `https://lcz.me/topic/${index + 1}`,
+    summary: '一段够长的摘要，用于通过来源门槛',
+    published: activity,
+  }));
+  let inFlight = 0;
+  let peak = 0;
+  const fetchImpl = async () => {
+    inFlight += 1;
+    peak = Math.max(peak, inFlight);
+    await new Promise((resolve) => setTimeout(resolve, 5));
+    inFlight -= 1;
+    return { ok: false, status: 500, body: '' };
+  };
+  await enrichForumTopics(items, source, { fetchImpl });
+  assert.equal(peak, 4);
+});
+
 test('injectsTheSinceDateIntoGithubSearchUrls', () => {
   const url = resolveSourceUrl(
     { id: 'github-trending', url: 'https://api.github.com/search/repositories?q=AI+created:%3E{SINCE}' },

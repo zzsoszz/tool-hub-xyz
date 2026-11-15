@@ -129,7 +129,8 @@ curl -m 10 -s https://tool-hub.xyz/llms.txt | head -6
 | 某些源 `ETIMEDOUT` | 本地加 `NODE_USE_ENV_PROXY=1 HTTPS_PROXY=http://192.168.31.4:7890`；CI 在美国 runner 一般直连即可 |
 | 采集日志末尾 `所有信息源均抓取失败` | `collect` 退出码 2，构建步骤被跳过，线上仍是上一版内容 |
 | 某天分类为空 | 检查该源是否 429/超时；必要时调大 `config/sources.json` 里该源的 `windowHours` |
-| 想临时改条目上限 | `maxItemsPerDay`、`maxItemsPerSource`、`maxAgeDays` |
+| 想临时改条目上限 | 全局 `maxItemsPerDay`（当天总数）、`maxItemsPerSource`（每源默认份额）、`maxAgeDays` |
+| 某个板块采得太少 | 先 `node scripts/audit-funnel.mjs --only=<源id>`：合格数已超过 `maxItemsPerSource` 就给该源加 `maxItemsPerDay`（源级份额，覆盖全局默认）；合格数被「无正文」卡住就调大该源的 `enrichLimit`（论坛）或 `bodyFetchLimit`（feed） |
 | 某天条目太少 | 先 `node scripts/audit-funnel.mjs` 看合格供给：供给够就调 `maxItemsPerDay`；供给不够再给源加 `pages`（论坛翻页）、`fetchBody`（补正文）或往 `searchKeywords` 加生态词 |
 | 想改首页条目数 | `config/sections.json` 的 `homeLimit`（默认 10），或构建时 `HOME_LIMIT=15 npm run build` |
 | 想加/删信息源 | 编辑 `config/sources.json`；JSON API 源需要 `kind: "json"` + `adapter`；URL 里的 `{QUERY}`/`{REPO}`/`{SINCE}` 会按 `searchKeywords`、`repos`、`sinceDays` 展开成多次检索 |

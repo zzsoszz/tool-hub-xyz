@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { selectByCategoryQuota } from '../../src/lib/select.mjs';
+import { perSourceCap, selectByCategoryQuota } from '../../src/lib/select.mjs';
 
 function candidates() {
   return [
@@ -32,4 +32,18 @@ test('neverExceedsTheLimitAndAlwaysTakesAtLeastOnePerCategory', () => {
   const selected = selectByCategoryQuota(candidates(), { limit: 3, categoryOrder: [] });
   assert.equal(selected.length, 3);
   assert.deepEqual(new Set(selected.map((item) => item.category)), new Set(['industry', 'models', 'research']));
+});
+
+test('usesTheGlobalCapWhenASourceDoesNotOverrideIt', () => {
+  assert.equal(perSourceCap({ id: 'hn-top' }, 8), 8);
+});
+
+test('letsOneSourceCarryMoreItemsThanTheGlobalCap', () => {
+  assert.equal(perSourceCap({ id: 'lcz-hardware', maxItemsPerDay: 14 }, 8), 14);
+});
+
+test('fallsBackWhenAnOverrideIsZeroOrGarbage', () => {
+  assert.equal(perSourceCap({ id: 'lcz-news', maxItemsPerDay: 0 }, 8), 8);
+  assert.equal(perSourceCap({ id: 'lcz-news', maxItemsPerDay: '很多' }, 8), 8);
+  assert.equal(perSourceCap({ id: 'lcz-news' }, undefined), 12);
 });
