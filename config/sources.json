@@ -4,6 +4,12 @@
   "maxItemsPerSource": 8,
   "seenRetentionDays": 45,
   "seenLimit": 20000,
+  "images": {
+    "maxBytesPerImage": 4194304,
+    "maxImagesPerItem": 6,
+    "maxImagesPerRun": 120,
+    "retentionDays": 30
+  },
   "searchKeywords": [
     "strata",
     "comfyui",

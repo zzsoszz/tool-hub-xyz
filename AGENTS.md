@@ -132,6 +132,14 @@ npm run lint       # syntax, indentation, trailing whitespace, secret scan
   the page that stopped the paging is outside the window. When a board's eligible supply already exceeds the
   cap, raise `maxItemsPerDay` and `enrichLimit` (bodies are the gate) instead of `pages`.
 
+## Article Image Archiving
+
+- `saveImages` runs after the day's items are selected and before the digest is written; `content.html` keeps the original URL and `localizeItems` rewires `<img src>` to `/images/...` only for copies that exist on disk — a build never fetches and never leaves a broken image.
+- `data/images/` is never committed (a day of copies plus retention churn would bloat git history), so CI runs `node scripts/fetch-images.mjs --days=2` before the build to refill it.
+- A copy is named `<slug>-<sha256(url)[0:16]>.<ext>` and shared by every item that references the same URL; the slug keeps the upstream filename so `itemImage()`'s icon filter still works on the local path.
+- Magic bytes are checked before writing (a 404 page served as `image/png` never lands), and SVG is refused outright because a same-origin SVG can carry script.
+- The budget is `config/sources.json.images` — `maxBytesPerImage` / `maxImagesPerItem` / `maxImagesPerRun` — and over-budget images simply wait for the next run; `retentionDays` is enforced by `pruneImages` at the end of collection.
+
 ## Asset Caching
 
 - Every asset an HTML page links must revalidate: `public/_headers` keeps `/styles.css`,

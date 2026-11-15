@@ -113,6 +113,12 @@ jobs:
             echo "审查记录无变化，跳过提交"
           fi
 
+      # 正文配图落在 data/images（不提交），采集环节的副本不一定跟着 artifact 传过来：
+      # 构建前按最近两天补一遍，已在盘上的直接复用，抓不到就照旧热链原图。
+      - name: 补齐正文配图
+        continue-on-error: true
+        run: node scripts/fetch-images.mjs --days=2
+
       - name: 生成静态站点
         run: node src/build.mjs
         env:

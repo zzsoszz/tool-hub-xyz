@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { fetchUrl } from '../../src/lib/http.mjs';
+import { fetchBytes, fetchUrl } from '../../src/lib/http.mjs';
 
 function withFetch(implementation, run) {
   const original = globalThis.fetch;
@@ -62,4 +62,28 @@ test('retriesThrottledResponsesWithBackoff', async () => {
   }, () => fetchUrl('https://throttled.test/feed', { retries: 1, timeoutMs: 500 }));
   assert.equal(calls, 2);
   assert.equal(result.ok, true);
+});
+
+function imageResponse({ contentType = 'image/png', body = '1234', contentLength = null } = {}) {
+  return {
+    ok: true,
+    status: 200,
+    headers: { get: (name) => (name === 'content-type' ? contentType : name === 'content-length' ? contentLength : null) },
+    arrayBuffer: async () => new TextEncoder().encode(body).buffer,
+  };
+}
+
+test('readsImagesAsBytesAndRefusesFilesOverTheCap', async () => {
+  const small = await withFetch(() => Promise.resolve(imageResponse()), () => fetchBytes('https://img.test/a.png', { maxBytes: 10 }));
+  assert.equal(small.ok, true);
+  assert.equal(small.contentType, 'image/png');
+  assert.equal(small.bytes.byteLength, 4);
+
+  const declared = await withFetch(() => Promise.resolve(imageResponse({ body: '', contentLength: '4096' })), () => fetchBytes('https://img.test/big.png', { maxBytes: 10 }));
+  assert.equal(declared.ok, false);
+  assert.match(declared.error, /图片过大/);
+
+  const biggerThanDeclared = await withFetch(() => Promise.resolve(imageResponse({ body: 'x'.repeat(40), contentLength: '5' })), () => fetchBytes('https://img.test/lying.png', { maxBytes: 10 }));
+  assert.equal(biggerThanDeclared.ok, false);
+  assert.match(biggerThanDeclared.error, /图片过大/);
 });

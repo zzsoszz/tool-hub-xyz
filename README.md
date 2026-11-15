@@ -186,6 +186,17 @@ curl -X DELETE https://tool-hub.xyz/api/comments/12 -H "Authorization: Bearer <M
 
 浮层的定位全部在 `styles.css` 的 `.lightbox` 规则里：`_headers` 把 `/styles.css`、`/favicon.svg`、`/listview.mjs` 设成 `max-age=0, must-revalidate`，其余页面引用的脚本由 Cloudflare Assets 同样回源核对（实测 `cache-control: public, max-age=0, must-revalidate` + ETag），浏览器不会拿到一天前的旧脚本（此前浮层不居中就是这么来的）。
 
+## 正文配图存档
+
+采集时会把入选条目正文里的图片下载到本地，构建时再换成本地地址，站上的图不再依赖对方服务器还在不在。
+
+- 日报 JSON 不改：`content.html` 里仍是原始外链（改动小、可移植），换址只发生在构建时的 `localizeItems`。本地副本存在才换，存不下的保留热链——构建不联网，也绝不会留下坏图。构建日志写「配图本地 N 张 / 外链 M 张」。
+- 副本落在 `data/images/`，名字是 `<slug>-<sha256(url) 前 16 位>.<ext>`：同一张图在多个条目之间共用一份，`slug` 取自 URL 末段并保留原名，`itemImage()` 的图标/表情过滤换成 `/images/...` 之后照样生效。
+- 写盘前先验文件头魔数，404 页伪装成 `image/png` 的进不了盘；SVG 一律不存（同源承载脚本，风险不值当）。
+- 预算在 `config/sources.json.images`：单图 `maxBytesPerImage`、每条目 `maxImagesPerItem`、每次采集 `maxImagesPerRun`，超预算的图留给下次；`retentionDays` 之外的副本在采集末尾由 `pruneImages` 删掉。
+- `data/images/` 不进仓库（每天新增、过期即删，提交进去会把 git 历史撑爆）。CI 在生成静态站点之前跑 `node scripts/fetch-images.mjs --days=2` 补齐副本，生产仍然带图。
+- 手动补图：`npm run images`（可用 `--days=`、`--limit=`、`--no-prune`）；采集带 `--no-images` 或 `--offline` 时跳过这一步。
+
 ## 文章搜索
 
 `public/search.js`（零依赖）挂在每个页面：右下角「搜索文章」悬浮按钮打开居中浮层，`Ctrl`/`⌘` + `K` 或斜杠也能调出，Esc 或点遮罩外面关闭；本页已有搜索框时按钮只负责聚焦。`/search` 页沿用同一份引擎，服务端渲染的表单照旧可用。

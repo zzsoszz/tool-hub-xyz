@@ -3,6 +3,7 @@ import { execFileSync } from 'node:child_process';
 import { mkdir, readdir, readFile, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import test from 'node:test';
+import { saveImages } from '../src/lib/images.mjs';
 
 const ROOT = path.resolve(import.meta.dirname, '..');
 const DATA_DIR = '.tmp-test/data';
@@ -158,4 +159,34 @@ test('incrementalRunsKeepEachSourcesOwnWindow', async () => {
   const seeded = run(['src/collect.mjs', '--offline', `--out=${seededDir}`, `--now=${FIXED_NOW}`]);
   assert.match(seeded, /增量\(自 2026-11-08T22:30:00\.000Z\)/);
   assert.equal(published(seeded), published(fresh));
+});
+
+// 正文配图存进 data/images 之后，条目页与 dist 里的副本必须对得上：
+// 本地副本在就换成本地地址，构建不联网也不留指向不存在文件的坏图。
+test('buildsItemPagesFromSavedArticleImages', async () => {
+  const dataDir = '.tmp-test/data-images';
+  const distDir = '.tmp-test/dist-images';
+  run(['src/collect.mjs', '--offline', `--out=${dataDir}`, `--now=${FIXED_NOW}`]);
+
+  const digestDir = path.join(ROOT, dataDir, 'digests');
+  const digestFile = path.join(digestDir, (await readdir(digestDir)).filter((name) => name.endsWith('.json')).sort().at(-1));
+  const digest = JSON.parse(await readFile(digestFile, 'utf8'));
+  const items = digest.categories.flatMap((group) => group.items);
+  const target = items.find((item) => item.content?.html);
+  assert.ok(target, '离线样例里应至少有一条带正文的内容');
+  target.content.html = `${target.content.html}\n<img src="https://img.test/cover-shot.png" alt="实测截图" loading="lazy">`;
+  await writeFile(digestFile, `${JSON.stringify(digest, null, 2)}\n`);
+
+  const saved = await saveImages(items, {
+    imagesDir: path.join(ROOT, dataDir, 'images'),
+    fetchImpl: async () => ({ ok: true, status: 200, contentType: 'image/png', bytes: new Uint8Array([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a]) }),
+  });
+  assert.equal(saved.saved, 1);
+  const file = Object.values(saved.manifest.images)[0].file;
+
+  run(['src/build.mjs'], { DATA_DIR: dataDir, DIST_DIR: distDir });
+  const page = await readFile(path.join(ROOT, distDir, 'item', `${target.slug}.html`), 'utf8');
+  assert.match(page, new RegExp(`<img src="/images/${file}" alt="实测截图" loading="lazy">`));
+  assert.ok(!page.includes('img.test'), '本地副本在就不该再热链回源站');
+  assert.deepEqual(await readdir(path.join(ROOT, distDir, 'images')), [file]);
 });

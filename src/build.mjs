@@ -17,6 +17,7 @@ import {
   renderTagsIndex,
 } from './lib/render.mjs';
 import { datasetChartSvg } from './lib/bench.mjs';
+import { localizeItems, readManifest } from './lib/images.mjs';
 import {
   archivePeriods,
   archiveYears,
@@ -130,6 +131,17 @@ async function main() {
     }
   }
   await rm(distDir, { recursive: true, force: true });
+
+  // 正文配图换成本地副本：data/images 里有才换，没有就保留原来的外链。
+  // 构建不联网，所以缺件时宁可继续热链，也绝不留一个指向不存在文件的坏图。
+  const imagesDir = path.join(dataDir, 'images');
+  const digestItems = digests.flatMap((digest) => (digest.categories ?? []).flatMap((group) => group.items ?? []));
+  const images = await localizeItems(digestItems, { imagesDir, manifest: await readManifest(imagesDir) });
+  if (images.files.size) {
+    const distImages = path.join(distDir, 'images');
+    await mkdir(distImages, { recursive: true });
+    for (const file of images.files.keys()) await cp(path.join(imagesDir, file), path.join(distImages, file));
+  }
 
   const days = digests.map((digest) => digest.day);
   const latest = digests[0];
@@ -310,7 +322,8 @@ async function main() {
   const pageCount = 1 + days.length + sectionCount + subUrls.length + itemCount + tagPageCount + 5 + benchUrls.length;
   const hiddenNote = hiddenCount ? ` · 剔除下架 ${hiddenCount} 条` : '';
   const benchNote = benchEntries.length ? ` / ${benchEntries.length} 评测数据页` : '';
-  console.log(`build: dist ready (${digests.length} digests, ${pageCount} html + ${days.length} markdown: ${days.length} 日报 / ${sectionCount} 栏目 / ${subUrls.length} 子类 / ${tagPageCount} 标签 / ${itemCount} 条目 / 5 固定页${benchNote}, latest ${latest.day}${hiddenNote})`);
+  const imageNote = images.files.size ? ` · 配图本地 ${images.localized} 张 / 外链 ${images.remote} 张` : '';
+  console.log(`build: dist ready (${digests.length} digests, ${pageCount} html + ${days.length} markdown: ${days.length} 日报 / ${sectionCount} 栏目 / ${subUrls.length} 子类 / ${tagPageCount} 标签 / ${itemCount} 条目 / 5 固定页${benchNote}${imageNote}, latest ${latest.day}${hiddenNote})`);
 }
 
 await main();

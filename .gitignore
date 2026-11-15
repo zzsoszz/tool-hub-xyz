@@ -15,3 +15,5 @@ credentials.local.md
 .tmp-test/
 .tmp-*/
 .ci/
+# 正文配图的本地副本：每天新增、过期即删，提交进仓库只会让历史一直变大。
+data/images/

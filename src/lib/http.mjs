@@ -58,7 +58,12 @@ export async function fetchUrl(url, { timeoutMs = 15_000, retries = 2, headers =
   return queueHost(hostOf(url), () => fetchWithRetries(url, { timeoutMs, retries, headers }));
 }
 
-async function fetchWithRetries(url, { timeoutMs, retries, headers }) {
+// 配图是二进制：读成文本会坏字节；超大文件先按 content-length 挡在门外，别下载完才发现太大。
+export async function fetchBytes(url, { timeoutMs = 20_000, retries = 1, headers = {}, maxBytes = 4_194_304 } = {}) {
+  return queueHost(hostOf(url), () => fetchWithRetries(url, { timeoutMs, retries, headers, binary: true, maxBytes }));
+}
+
+async function fetchWithRetries(url, { timeoutMs, retries, headers, binary = false, maxBytes = 4_194_304 }) {
   let lastError = 'fetch failed';
   for (let attempt = 0; attempt <= retries; attempt += 1) {
     try {
@@ -67,14 +72,26 @@ async function fetchWithRetries(url, { timeoutMs, retries, headers }) {
         redirect: 'follow',
         headers: headersFor(url, headers),
       });
-      const body = await response.text();
-      if (response.ok) {
-        return { ok: true, status: response.status, body, contentType: response.headers.get('content-type') ?? '' };
+      const contentType = response.headers.get('content-type') ?? '';
+      const declared = Number(response.headers.get('content-length') ?? '');
+      const oversized = binary && Number.isFinite(declared) && declared > maxBytes ? declared : null;
+      let payload = null;
+      if (oversized === null) {
+        if (binary) payload = response.ok ? new Uint8Array(await response.arrayBuffer()) : null;
+        else payload = await response.text();
       }
+      if (response.ok && oversized === null) {
+        if (!binary) return { ok: true, status: response.status, body: payload, contentType };
+        if (payload.byteLength > maxBytes) return { ok: false, status: response.status, error: `图片过大（${payload.byteLength} 字节）` };
+        return { ok: true, status: response.status, bytes: payload, contentType };
+      }
+      if (oversized !== null) return { ok: false, status: response.status, error: `图片过大（${oversized} 字节）` };
       lastError = `HTTP ${response.status}`;
       const retriable = response.status === 429 || response.status >= 500;
       if (!retriable || attempt === retries) {
-        return { ok: false, status: response.status, error: lastError, body };
+        return binary
+          ? { ok: false, status: response.status, error: lastError }
+          : { ok: false, status: response.status, error: lastError, body: payload };
       }
       await sleep(backoffMs(attempt, Number(response.headers.get('retry-after'))));
     } catch (error) {

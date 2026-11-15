@@ -5,6 +5,7 @@ import { filterNewItems, itemKeys, normalizeSeen, pruneSeen, serializeSeen } fro
 import { dayKey } from './lib/normalize.mjs';
 import { repairArticle } from './lib/content.mjs';
 import { perSourceCap, selectByCategoryQuota } from './lib/select.mjs';
+import { pruneImages, saveImages } from './lib/images.mjs';
 import { fetchAllSources, parseSourceBody } from './lib/sources.mjs';
 import { itemSlug, rankCompare } from './lib/items.mjs';
 import { digestToMarkdown } from './lib/markdown.mjs';
@@ -294,6 +295,22 @@ async function main() {
     categories: [...grouped.values()].filter((group) => group.items.length),
   };
 
+  // 正文配图落到 data/images：只存入选条目，已在盘上的直接复用，超预算的留给下次采集。
+  let imageNote = '';
+  if (!flags['no-images'] && !flags.offline) {
+    const imagesDir = path.join(dataDir, 'images');
+    const images = await saveImages(selected, {
+      imagesDir,
+      limits: config.images ?? {},
+      log: (message) => console.warn(`[images] ${message}`),
+    });
+    const dropped = await pruneImages(imagesDir, images.manifest, {
+      retentionDays: Number(config.images?.retentionDays ?? 30),
+      now,
+    });
+    imageNote = `  配图: 存下=${images.saved} 复用=${images.cached} 存不下=${images.failed} 超预算=${images.skipped} 过期删=${dropped}（${images.bytes} 字节）`;
+  }
+
   await mkdir(digestDir, { recursive: true });
   await mkdir(path.join(dataDir, 'markdown'), { recursive: true });
   await writeFile(digestPath, `${JSON.stringify(digest, null, 2)}\n`);
@@ -316,6 +333,7 @@ async function main() {
   console.log(`collect ${day} ${mode}: sources=${digest.counts.okSources}/${config.sources.length} fetched=${digest.counts.fetched} dup=${digest.counts.duplicates} carried=${digest.counts.carried} added=${digest.counts.added} 兜底=${digest.counts.fallback} published=${digest.counts.published}`);
   if (qualityTally) console.log(qualityTally);
   console.log(`  分布: ${distribution}`);
+  if (imageNote) console.log(imageNote);
   for (const source of digest.sources) {
     if (!source.ok) console.log(`  ERR ${source.id.padEnd(20)} ${source.error ?? ''}`);
   }

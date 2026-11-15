@@ -16,6 +16,7 @@
     "dev": "npm run digest && node scripts/serve.mjs",
     "test": "node --test",
     "lint": "node scripts/lint.mjs",
-    "bench": "node src/bench.mjs"
+    "bench": "node src/bench.mjs",
+    "images": "node scripts/fetch-images.mjs"
   }
 }

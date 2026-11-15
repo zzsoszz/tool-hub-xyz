@@ -8,6 +8,8 @@
   Cache-Control: public, max-age=600
 /data/*
   Cache-Control: public, max-age=300
+/images/*
+  Cache-Control: public, max-age=604800
 /markdown/*
   Content-Type: text/markdown; charset=utf-8
   Cache-Control: public, max-age=300
