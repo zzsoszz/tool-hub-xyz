@@ -1,6 +1,6 @@
 {
   "day": "2026-11-15",
-  "generatedAt": "2026-11-15T08:56:51.900Z",
+  "generatedAt": "2026-11-15T09:05:13.149Z",
   "timezone": "Asia/Shanghai",
   "windowHours": 48,
   "window": {
@@ -9,13 +9,13 @@
   },
   "counts": {
     "sources": 42,
-    "okSources": 41,
-    "fetched": 1137,
-    "duplicates": 837,
-    "carried": 25,
-    "added": 8,
+    "okSources": 40,
+    "fetched": 1132,
+    "duplicates": 870,
+    "carried": 32,
+    "added": 0,
     "fallback": 1,
-    "lowQuality": 135,
+    "lowQuality": 124,
     "published": 45
   },
   "sources": [
@@ -231,17 +231,17 @@
       "id": "juejin",
       "name": "掘金 AI",
       "ok": true,
-      "items": 0,
+      "items": 20,
       "queries": 1,
       "error": null
     },
     {
       "id": "reddit-sideproject",
       "name": "r/SideProject",
-      "ok": true,
-      "items": 25,
+      "ok": false,
+      "items": 0,
       "queries": 1,
-      "error": null
+      "error": "HTTP 429"
     },
     {
       "id": "hn-money",
