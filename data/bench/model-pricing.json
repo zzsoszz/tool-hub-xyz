@@ -1,7 +1,7 @@
 {
   "id": "model-pricing",
   "kind": "openrouter-pricing",
-  "collectedAt": "2026-11-15T02:06:30.117Z",
+  "collectedAt": "2026-11-15T08:59:02.416Z",
   "upstream": {
     "label": "OpenRouter 模型目录 API",
     "url": "https://openrouter.ai/models"
@@ -171,6 +171,16 @@
           "created": 1784818580
         },
         {
+          "name": "DeepSeek: DeepSeek V4.1 Flash 1017 (batch)",
+          "id": "deepseek/deepseek-v4.1-flash-1017:batch",
+          "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017:batch",
+          "context": 1048576,
+          "promptPerMillion": 0.023,
+          "completionPerMillion": 0.19999999999999998,
+          "free": false,
+          "created": 1792225624
+        },
+        {
           "name": "OpenAI: gpt-oss-20b (batch)",
           "id": "openai/gpt-oss-20b:batch",
           "url": "https://openrouter.ai/openai/gpt-oss-20b:batch",
@@ -251,16 +261,6 @@
           "created": 1734158152
         },
         {
-          "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
-          "id": "deepseek/deepseek-v4.1-flash-1017",
-          "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
-          "context": 1048576,
-          "promptPerMillion": 0.038000000000000006,
-          "completionPerMillion": 0.5,
-          "free": false,
-          "created": 1792225624
-        },
-        {
           "name": "DeepSeek: DeepSeek Flash Latest",
           "id": "~deepseek/deepseek-flash-latest",
           "url": "https://openrouter.ai/~deepseek/deepseek-flash-latest",
@@ -299,16 +299,6 @@
           "completionPerMillion": 0.144,
           "free": false,
           "created": 1785478908
-        },
-        {
-          "name": "DeepSeek: DeepSeek V4.1 Flash 1017 (batch)",
-          "id": "deepseek/deepseek-v4.1-flash-1017:batch",
-          "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017:batch",
-          "context": 1048576,
-          "promptPerMillion": 0.049999999999999996,
-          "completionPerMillion": 0.15,
-          "free": false,
-          "created": 1792225624
         },
         {
           "name": "Upstage: Solar Mini 4",
@@ -409,6 +399,16 @@
           "completionPerMillion": 0.24,
           "free": false,
           "created": 1733437363
+        },
+        {
+          "name": "NVIDIA: Nemotron 3 Nano 30B A3B",
+          "id": "nvidia/nemotron-3-nano-30b-a3b",
+          "url": "https://openrouter.ai/nvidia/nemotron-3-nano-30b-a3b",
+          "context": 262144,
+          "promptPerMillion": 0.06,
+          "completionPerMillion": 0.24,
+          "free": false,
+          "created": 1765731275
         }
       ]
     }
@@ -421,8 +421,8 @@
     {
       "path": "https://openrouter.ai/api/v1/models",
       "url": "https://openrouter.ai/api/v1/models",
-      "sha256": "07d6d2011c523df36d297e16b7fef5eb970cd883366a77f51b8f07768ba644b2",
-      "bytes": 849717
+      "sha256": "df03ba5969e2543096043f4e509516e5487eafeb4adf4aeba71ffb45d0478da5",
+      "bytes": 850818
     }
   ]
 }
