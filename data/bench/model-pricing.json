@@ -1,7 +1,7 @@
 {
   "id": "model-pricing",
   "kind": "openrouter-pricing",
-  "collectedAt": "2026-11-14T16:42:08.328Z",
+  "collectedAt": "2026-11-15T02:06:30.117Z",
   "upstream": {
     "label": "OpenRouter 模型目录 API",
     "url": "https://openrouter.ai/models"
@@ -281,16 +281,6 @@
           "created": 1785606009
         },
         {
-          "name": "DeepSeek: DeepSeek V4 Flash 0731",
-          "id": "deepseek/deepseek-v4-flash-0731",
-          "url": "https://openrouter.ai/deepseek/deepseek-v4-flash-0731",
-          "context": 1048576,
-          "promptPerMillion": 0.0434,
-          "completionPerMillion": 0.3,
-          "free": false,
-          "created": 1785478908
-        },
-        {
           "name": "inclusionAI: Ling 3.1 Flash",
           "id": "inclusionai/ling-3.1-flash",
           "url": "https://openrouter.ai/inclusionai/ling-3.1-flash",
@@ -401,6 +391,16 @@
           "created": 1793207893
         },
         {
+          "name": "DeepSeek: DeepSeek V4 Flash 0731",
+          "id": "deepseek/deepseek-v4-flash-0731",
+          "url": "https://openrouter.ai/deepseek/deepseek-v4-flash-0731",
+          "context": 1048576,
+          "promptPerMillion": 0.06,
+          "completionPerMillion": 0.18,
+          "free": false,
+          "created": 1785478908
+        },
+        {
           "name": "Amazon: Nova Lite 1.0",
           "id": "amazon/nova-lite-v1",
           "url": "https://openrouter.ai/amazon/nova-lite-v1",
@@ -421,8 +421,8 @@
     {
       "path": "https://openrouter.ai/api/v1/models",
       "url": "https://openrouter.ai/api/v1/models",
-      "sha256": "0ea53c907da788eb2de9e3acf5e358cfb2ad3476c0db186a3e22706f1b569ff9",
-      "bytes": 852504
+      "sha256": "07d6d2011c523df36d297e16b7fef5eb970cd883366a77f51b8f07768ba644b2",
+      "bytes": 849717
     }
   ]
 }
