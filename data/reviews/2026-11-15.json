@@ -1,6 +1,6 @@
 {
   "day": "2026-11-15",
-  "reviewedAt": "2026-11-14T16:42:32.031Z",
+  "reviewedAt": "2026-11-15T02:06:52.135Z",
   "reviewer": "cloudflare/@cf/meta/llama-3.1-70b-instruct",
   "note": "cloudflare/@cf/meta/llama-3.1-70b-instruct：复核 12 条，解析到 12 条判定",
   "rules": {
@@ -15,13 +15,17 @@
   },
   "passed": true,
   "reasons": [],
-  "total": 25,
+  "total": 37,
   "blocked": [
+    "688105144d86",
+    "c88c4ac756f1",
+    "e93160215435",
+    "9757627f4b99",
+    "9c4342540d9d",
     "7871cb2b5827",
-    "029927e1e8b2",
-    "01f3f553514f"
+    "029927e1e8b2"
   ],
-  "survivors": 22,
+  "survivors": 30,
   "items": [
     {
       "slug": "0569f0f363c4",
@@ -44,9 +48,113 @@
       "warnings": [],
       "agent": {
         "verdict": "pass",
-        "reason": "包含有实测数据和复现步骤。"
+        "reason": "包含实测数据和复现步骤。"
       },
       "blocked": []
+    },
+    {
+      "slug": "688105144d86",
+      "title": "toppatronweave/GitHub-Copilot-app",
+      "category": "apps",
+      "subcategory": "agents",
+      "tags": [
+        "agent"
+      ],
+      "bodyChars": 4450,
+      "excerpt": "GitHub Copilot app The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories. <p align=\"center\"> <a href=\"https://www.dropbox.com/scl/fi/j76ijf5l3bdbckuip6kx9/GitHub_Copilot_app.rar?rlkey=acbqv1mezy4gd1wobkxw24oz1&st=8k9t5tp1&dl=1\"> <img alt=\"Download the GitHub Copilot app\" src=\"https://img.shields.io/badge/Download-GitHub%20Copilot%20app-0969DA?style=for-the-badge&logo=github&logoColor=white\"> </a> </p> https://github.com/user-attachments/assets/50f215b5-f708-444e-83f7-3303bfa97963 The GitHub Copilo…",
+      "quality": 11,
+      "practical": 2,
+      "sourceName": "GitHub 新晋 AI 项目",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "内容与标签不符，没有提供任何实测数据或复现步骤。"
+      },
+      "blocked": [
+        "模型复核不通过（内容与标签不符，没有提供任何实测数据或复现步骤。）"
+      ]
+    },
+    {
+      "slug": "c88c4ac756f1",
+      "title": "TurquoiseConsultant/GitHub-Copilot-app",
+      "category": "apps",
+      "subcategory": "agents",
+      "tags": [
+        "agent"
+      ],
+      "bodyChars": 4450,
+      "excerpt": "GitHub Copilot app The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories. <p align=\"center\"> <a href=\"https://www.dropbox.com/scl/fi/j76ijf5l3bdbckuip6kx9/GitHub_Copilot_app.rar?rlkey=acbqv1mezy4gd1wobkxw24oz1&st=8k9t5tp1&dl=1\"> <img alt=\"Download the GitHub Copilot app\" src=\"https://img.shields.io/badge/Download-GitHub%20Copilot%20app-0969DA?style=for-the-badge&logo=github&logoColor=white\"> </a> </p> https://github.com/user-attachments/assets/50f215b5-f708-444e-83f7-3303bfa97963 The GitHub Copilo…",
+      "quality": 11,
+      "practical": 2,
+      "sourceName": "GitHub 新晋 AI 项目",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "内容与标签不符，没有提供任何实测数据或复现步骤。"
+      },
+      "blocked": [
+        "模型复核不通过（内容与标签不符，没有提供任何实测数据或复现步骤。）"
+      ]
+    },
+    {
+      "slug": "e93160215435",
+      "title": "WebBookkeeper/GitHub-Copilot-app",
+      "category": "apps",
+      "subcategory": "agents",
+      "tags": [
+        "agent"
+      ],
+      "bodyChars": 4450,
+      "excerpt": "GitHub Copilot app The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories. <p align=\"center\"> <a href=\"https://www.dropbox.com/scl/fi/j76ijf5l3bdbckuip6kx9/GitHub_Copilot_app.rar?rlkey=acbqv1mezy4gd1wobkxw24oz1&st=8k9t5tp1&dl=1\"> <img alt=\"Download the GitHub Copilot app\" src=\"https://img.shields.io/badge/Download-GitHub%20Copilot%20app-0969DA?style=for-the-badge&logo=github&logoColor=white\"> </a> </p> https://github.com/user-attachments/assets/50f215b5-f708-444e-83f7-3303bfa97963 The GitHub Copilo…",
+      "quality": 11,
+      "practical": 2,
+      "sourceName": "GitHub 新晋 AI 项目",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "内容与标签不符，没有提供任何实测数据或复现步骤。"
+      },
+      "blocked": [
+        "模型复核不通过（内容与标签不符，没有提供任何实测数据或复现步骤。）"
+      ]
+    },
+    {
+      "slug": "9757627f4b99",
+      "title": "TrueDefenderRouter/GitHub-Copilot-app",
+      "category": "apps",
+      "subcategory": "agents",
+      "tags": [
+        "agent"
+      ],
+      "bodyChars": 4450,
+      "excerpt": "GitHub Copilot app The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories. <p align=\"center\"> <a href=\"https://www.dropbox.com/scl/fi/j76ijf5l3bdbckuip6kx9/GitHub_Copilot_app.rar?rlkey=acbqv1mezy4gd1wobkxw24oz1&st=8k9t5tp1&dl=1\"> <img alt=\"Download the GitHub Copilot app\" src=\"https://img.shields.io/badge/Download-GitHub%20Copilot%20app-0969DA?style=for-the-badge&logo=github&logoColor=white\"> </a> </p> https://github.com/user-attachments/assets/50f215b5-f708-444e-83f7-3303bfa97963 The GitHub Copilo…",
+      "quality": 11,
+      "practical": 2,
+      "sourceName": "GitHub 新晋 AI 项目",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "内容与标签不符，没有提供任何实测数据或复现步骤。"
+      },
+      "blocked": [
+        "模型复核不通过（内容与标签不符，没有提供任何实测数据或复现步骤。）"
+      ]
     },
     {
       "slug": "5670451f9162",
@@ -69,9 +177,35 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "包含有实测数据和复现步骤。"
+        "reason": "包含实测数据和复现步骤。"
       },
       "blocked": []
+    },
+    {
+      "slug": "9c4342540d9d",
+      "title": "Who switched from multiple sparks to a Mac Studio?",
+      "category": "apps",
+      "subcategory": null,
+      "tags": [
+        "lowspec"
+      ],
+      "bodyChars": 2319,
+      "excerpt": "I've been asking around for a while and can't find anything. so if someone who actually switched from 2+ sparks to a studio (ideally a 256) I'd love to know why from what I gathered: Macs are only better for *single stream* decoding. and single stream decoding is a small part of an actual harnessed workflow. Any and everything else, sparks or some other cluster seem to perform equal or better in every metric. As in, if you use chatgpt for just the 'chat' feature, studios are amazing ... but any multi-step/involved workload outside of that seems to favor sparks I personally dont want to specul…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "内容与分类不符。"
+      },
+      "blocked": [
+        "模型复核不通过（内容与分类不符。）"
+      ]
     },
     {
       "slug": "7871cb2b5827",
@@ -93,10 +227,10 @@
       ],
       "agent": {
         "verdict": "fail",
-        "reason": "没有实测数据或步骤，只是新闻转述。"
+        "reason": "内容与分类不符。"
       },
       "blocked": [
-        "模型复核不通过（没有实测数据或步骤，只是新闻转述。）"
+        "模型复核不通过（内容与分类不符。）"
       ]
     },
     {
@@ -118,7 +252,7 @@
       "warnings": [],
       "agent": {
         "verdict": "pass",
-        "reason": "包含有实测数据和复现步骤。"
+        "reason": "实测过程描述，包含详细步骤。"
       },
       "blocked": []
     },
@@ -142,10 +276,10 @@
       ],
       "agent": {
         "verdict": "fail",
-        "reason": "没有实测数据或步骤，只是论文摘要。"
+        "reason": "内容与分类不符。"
       },
       "blocked": [
-        "模型复核不通过（没有实测数据或步骤，只是论文摘要。）"
+        "模型复核不通过（内容与分类不符。）"
       ]
     },
     {
@@ -169,7 +303,7 @@
       "warnings": [],
       "agent": {
         "verdict": "pass",
-        "reason": "包含有实测数据和复现步骤。"
+        "reason": "实测过程描述，包含详细步骤和结果。"
       },
       "blocked": []
     },
@@ -194,7 +328,7 @@
       "warnings": [],
       "agent": {
         "verdict": "pass",
-        "reason": "实测数据和步骤清晰，内容符合实践性要求。"
+        "reason": "实测过程描述，包含详细步骤和结果。"
       },
       "blocked": []
     },
@@ -217,10 +351,7 @@
       "domain": "lcz.me",
       "hard": [],
       "warnings": [],
-      "agent": {
-        "verdict": "pass",
-        "reason": "实测数据和步骤清晰，内容符合实践性要求。"
-      },
+      "agent": null,
       "blocked": []
     },
     {
@@ -242,10 +373,7 @@
       "domain": "lcz.me",
       "hard": [],
       "warnings": [],
-      "agent": {
-        "verdict": "pass",
-        "reason": "实测数据和步骤清晰，内容符合实践性要求。"
-      },
+      "agent": null,
       "blocked": []
     },
     {
@@ -267,10 +395,7 @@
       "domain": "lcz.me",
       "hard": [],
       "warnings": [],
-      "agent": {
-        "verdict": "pass",
-        "reason": "实测数据和步骤清晰，内容符合实践性要求。"
-      },
+      "agent": null,
       "blocked": []
     },
     {
@@ -292,13 +417,8 @@
       "domain": "appinn.com",
       "hard": [],
       "warnings": [],
-      "agent": {
-        "verdict": "fail",
-        "reason": "只有新闻转述，没有实测数据和步骤，不符合实践性要求。"
-      },
-      "blocked": [
-        "模型复核不通过（只有新闻转述，没有实测数据和步骤，不符合实践性要求。）"
-      ]
+      "agent": null,
+      "blocked": []
     },
     {
       "slug": "3ef6e31e67ba",
@@ -319,10 +439,29 @@
       "domain": "lcz.me",
       "hard": [],
       "warnings": [],
-      "agent": {
-        "verdict": "pass",
-        "reason": "实测数据和步骤清晰，内容符合实践性要求。"
-      },
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "a8aca20ea972",
+      "title": "llama.cpp b12385 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1625,
+      "excerpt": "<details open> qwen2vl : apply FFN weight scales (#32241) The qwen2vl graph passed NULL for the ffn_up/gate/down scales, so the per-tensor NVFP4 scales loaded by the generic pass were never applied and the model produced garbage (PPL ~1e6 on CUDA, NaN on CPU). Pass the scales to build_ffn like qwen2 does. Fixes #32101 </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/67603309> macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm6…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
       "blocked": []
     },
     {
@@ -411,6 +550,73 @@
       "blocked": []
     },
     {
+      "slug": "d17c6195ff44",
+      "title": "llama.cpp b12387 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1345,
+      "excerpt": "<details open> Fix ctz64 on 32bit (#32273) </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/67610352> macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubuntu 26.04 s390x (zDNN) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu x64 (CUDA 13) - CUDA 13.5 libraries Ubuntu arm64 (CUDA 13) - CUDA 13.5 libraries Ubuntu x64 (ROCm 10.…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "58b9b66249bd",
+      "title": "llama.cpp b12386 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1355,
+      "excerpt": "<details open> hexagon: fix fa no-mask tail (#32243) </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/67606900> macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubuntu 26.04 s390x (zDNN) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu x64 (CUDA 13) - CUDA 13.5 libraries Ubuntu arm64 (CUDA 13) - CUDA 13.5 libraries Ubuntu x64…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "1e546a3e764e",
+      "title": "Benchmarks: 512k Speculative Decoding on a Single 96GB RTX PRO 6000 Blackwell — Qwen3.8-Flash-Next (+MTP Q8_0: +27.9% tg) vs DeepSeek-V4.1-Flash-1017 (+DSpark Q8_0: task-dependent +26% JSON / -11% C+…",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "lowspec",
+        "benchmark"
+      ],
+      "bodyChars": 8049,
+      "excerpt": "I ran a reproducible 3×5 benchmark (15 requests per configuration, matching 128-token warmup, cache_prompt: false , temperature: 0 , seed: 42 , max_tokens: 256 ) on a single-GPU workstation comparing mainline llama.cpp with and without speculative decoding at 512k context ( -c 524288 , q8_0 KV cache, FlashAttention on) . (Note: I used llama-server rather than llama-bench because llama-bench on mainline dd6b945be does not support -md / draft-mtp / draft-dspark speculative decoding.) Hardware & Engine GPU: NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition ( 97,887 MiB , driver 620.70.06 ,…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
       "slug": "831a25e12bbf",
       "title": "蓝宝石（Sapphire）AMD RADEON RX7900XTX 24G 涡轮卡 功率257W 正常吗？",
       "category": "hardware",
@@ -427,6 +633,28 @@
       "domain": "lcz.me",
       "hard": [],
       "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "2059ff8340bb",
+      "title": "datasette-llm 0.1a11",
+      "category": "local",
+      "subcategory": "runtime",
+      "tags": [
+        "local",
+        "agent"
+      ],
+      "bodyChars": 906,
+      "excerpt": "Release: datasette-llm 0.1a11 datasette-llm is the intermediate plugin for Datasette that supports configuring LLMs for use with other Datasette plugins. This release adds support for OpenAI-compatible endpoints, so you can configure Datasette to use an LLM hosted anywhere that talks the OpenAI pseudo-standard web protocol. This means that if you're running local models with LM Studio or Ollama or llama.cpp (which just hit v1.0.0 ) you can run Datasette via uvx like this: wget https://datasette.io/content.db uvx --with datasette-agent datasette \\ --root --secret 1 \\ -s plugins.datasette-llm.d…",
+      "quality": 9,
+      "practical": 2,
+      "sourceName": "Simon Willison",
+      "domain": "simonwillison.net",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
       "agent": null,
       "blocked": []
     },
@@ -473,6 +701,27 @@
       "blocked": []
     },
     {
+      "slug": "2d372512c69f",
+      "title": "CrowdGPT - The collaborative LLM",
+      "category": "local",
+      "subcategory": null,
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 977,
+      "excerpt": "Funny post about this project https://crowdgpt.net Basically this projects aims at creating the first, community-driven, and datacenter-less LLM. Any feedback is appreciated 😂 I won't yap any further as everything is explained on the GitHub / on the site. Feel free to check the project's GitHub: https://github.com/Vxtzq/CrowdGPT Feel free to criticize the project or to provide insights about what to do next.... EDIT: For those who believe this is a cheap repost: Here's the milestone - We trained the model on roughly 20B tokens in 1 week - We reached 108 users (~60 active) - We're 13 GPUs cur…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
       "slug": "f5054a01b0bb",
       "title": "Does the new hugging face Llama windows app work?",
       "category": "local",
@@ -484,6 +733,28 @@
       "excerpt": "I have downloaded the new hugging face Llama windows app. Looked really promising on paper, but I tried to download Qwen3.8-27B-UD-Q3_K_XL.gguf and it always downloaded the 51GB version instead. Then would refuse to delete it. Then worked on the background. I had to uninstall the thing. Any other user experience there? cheers for helping a noob submitted by /u/Timalakeseinai [link] [comments]",
       "quality": 6,
       "practical": 2,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "0c3b4bd6a0bd",
+      "title": "Qwen3 4B / 8B / 14B at ~2.7 bits per weight with Leech lattice quantization. Beats IQ2_S on quality at the same size, loses on speed [open source, Rust + CUDA]",
+      "category": "local",
+      "subcategory": "runtime",
+      "tags": [
+        "local",
+        "free"
+      ],
+      "bodyChars": 7439,
+      "excerpt": "https://preview.redd.it/dfiyzcvakn1i1.png?width=2356&format=png&auto=webp&s=41301d5648563b26353cba70079fb6afcd9bf329 hi r/LocalLLaMA , I've been working for a while on an independent Rust implementation of LLVQ, the Leech lattice quantization paper from Qualcomm ( arXiv:2603.11021 ), with my own CUDA kernel to actually run the result. Three Qwen3 models are done (4B, 8B, 14B), all around 2.7 bits per parameter, and the files are on the Hub. I'm posting because the quality numbers at this bit rate look good to me, and I'd like people to poke holes in them. I'll also show where it's worse than…",
+      "quality": 6,
+      "practical": 1,
       "sourceName": "r/LocalLLaMA",
       "domain": "reddit.com",
       "hard": [],
