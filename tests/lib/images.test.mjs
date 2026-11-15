@@ -69,6 +69,24 @@ test('storesBodyImagesOnceAndRecordsThemInAManifest', async (t) => {
   assert.equal((await readManifest(dir)).images[imageKey(url)].url, url);
 });
 
+test('asksForAStoredImageWithTheArticlePageAsReferer', async (t) => {
+  const dir = await workspace(t);
+  const url = 'https://cdn.test/shot-one.png';
+  const asked = [];
+  const impl = async (image, options = {}) => {
+    asked.push({ image, referer: options.headers?.referer ?? '' });
+    return { ok: true, status: 200, contentType: 'image/png', bytes: PNG };
+  };
+
+  const outcome = await saveImages([article('https://post.test/a', `<img src="${url}" alt="实测截图" loading="lazy">`)], {
+    imagesDir: dir,
+    fetchImpl: impl,
+  });
+
+  assert.equal(outcome.saved, 1);
+  assert.deepEqual(asked, [{ image: url, referer: 'https://post.test/a' }]);
+});
+
 test('reusesTheStoredCopyInsteadOfAskingTheSourceAgain', async (t) => {
   const dir = await workspace(t);
   const item = one('cached.png');

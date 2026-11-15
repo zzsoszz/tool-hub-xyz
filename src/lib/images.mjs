@@ -130,22 +130,28 @@ export async function saveImages(items, { imagesDir, manifest = null, fetchImpl 
         stats.skipped += 1;
         continue;
       }
-      wanted.set(url, item.title ?? item.url ?? url);
+      wanted.set(url, { title: item.title ?? item.url ?? url, referer: item.url ?? '' });
     }
   }
   const present = new Set(await readdir(imagesDir).catch(() => []));
-  for (const [url, title] of wanted) {
+  for (const [url, owner] of wanted) {
     const key = imageKey(url);
     const known = store.images[key];
     if (known && present.has(known.file)) {
       stats.cached += 1;
       continue;
     }
-    const result = await fetchImpl(url, { timeoutMs: 20_000, retries: 1, maxBytes });
+    const result = await fetchImpl(url, {
+      timeoutMs: 20_000,
+      retries: 1,
+      maxBytes,
+      // 图床普遍防热链：不说明「谁在引用这张图」就吃 403（量子位的 i.qbitai.com 实测如此）。
+      headers: owner.referer ? { referer: owner.referer } : {},
+    });
     const ext = result.ok ? extensionOf(url, result.contentType) : null;
     if (!result.ok || !ext || !looksLikeImage(result.bytes, ext)) {
       stats.failed += 1;
-      log(`${title} 的配图存不下：${url} → ${result.error ?? `不是可存的图片（${result.contentType ?? '无类型'}）`}`);
+      log(`${owner.title} 的配图存不下：${url} → ${result.error ?? `不是可存的图片（${result.contentType ?? '无类型'}）`}`);
       continue;
     }
     const file = `${slugOf(url)}-${key}.${ext}`;

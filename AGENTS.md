@@ -138,6 +138,8 @@ npm run lint       # syntax, indentation, trailing whitespace, secret scan
 - `data/images/` is never committed (a day of copies plus retention churn would bloat git history), so CI runs `node scripts/fetch-images.mjs --days=2` before the build to refill it.
 - A copy is named `<slug>-<sha256(url)[0:16]>.<ext>` and shared by every item that references the same URL; the slug keeps the upstream filename so `itemImage()`'s icon filter still works on the local path.
 - Magic bytes are checked before writing (a 404 page served as `image/png` never lands), and SVG is refused outright because a same-origin SVG can carry script.
+
+  Fetching a copy sends `referer: <item.url>`: image hosts guard against hotlinking, so a bot request that does not say which page embeds the image is refused (`i.qbitai.com` answers 403 without it).
 - The budget is `config/sources.json.images` — `maxBytesPerImage` / `maxImagesPerItem` / `maxImagesPerRun` — and over-budget images simply wait for the next run; `retentionDays` is enforced by `pruneImages` at the end of collection.
 
 ## Asset Caching

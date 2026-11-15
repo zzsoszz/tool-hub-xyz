@@ -193,6 +193,8 @@ curl -X DELETE https://tool-hub.xyz/api/comments/12 -H "Authorization: Bearer <M
 - 日报 JSON 不改：`content.html` 里仍是原始外链（改动小、可移植），换址只发生在构建时的 `localizeItems`。本地副本存在才换，存不下的保留热链——构建不联网，也绝不会留下坏图。构建日志写「配图本地 N 张 / 外链 M 张」。
 - 副本落在 `data/images/`，名字是 `<slug>-<sha256(url) 前 16 位>.<ext>`：同一张图在多个条目之间共用一份，`slug` 取自 URL 末段并保留原名，`itemImage()` 的图标/表情过滤换成 `/images/...` 之后照样生效。
 - 写盘前先验文件头魔数，404 页伪装成 `image/png` 的进不了盘；SVG 一律不存（同源承载脚本，风险不值当）。
+
+  向源站要图时带上原文页作为 `Referer`：图床普遍防热链，不说明「谁在引用这张图」的 bot 请求会被拒（量子位 `i.qbitai.com` 实测 403）。
 - 预算在 `config/sources.json.images`：单图 `maxBytesPerImage`、每条目 `maxImagesPerItem`、每次采集 `maxImagesPerRun`，超预算的图留给下次；`retentionDays` 之外的副本在采集末尾由 `pruneImages` 删掉。
 - `data/images/` 不进仓库（每天新增、过期即删，提交进去会把 git 历史撑爆）。CI 在生成静态站点之前跑 `node scripts/fetch-images.mjs --days=2` 补齐副本，生产仍然带图。
 - 手动补图：`npm run images`（可用 `--days=`、`--limit=`、`--no-prune`）；采集带 `--no-images` 或 `--offline` 时跳过这一步。
