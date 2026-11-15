@@ -1,0 +1,418 @@
+{
+  "day": "2026-11-16",
+  "reviewedAt": "2026-11-15T17:22:46.821Z",
+  "reviewer": "cloudflare/@cf/meta/llama-3.1-70b-instruct",
+  "note": "cloudflare/@cf/meta/llama-3.1-70b-instruct：复核 12 条，解析到 12 条判定",
+  "rules": {
+    "minItems": 3,
+    "minBodyChars": 120,
+    "minSummaryChars": 40,
+    "maxTags": 4,
+    "agentMaxItems": 12,
+    "agentBatch": 6,
+    "agentChars": 900,
+    "agentExcerptChars": 600
+  },
+  "passed": true,
+  "reasons": [],
+  "total": 16,
+  "blocked": [
+    "8c1228ffc972",
+    "80232dee6e08",
+    "8445093194b4",
+    "8c93d0c3f65e",
+    "bb22ef599c28"
+  ],
+  "survivors": 11,
+  "items": [
+    {
+      "slug": "e8222aa035e9",
+      "title": "[H3 剑心比赛] 双 R9700，ComfyUI＋Radiance TP2，INT8 QK＋FP8 PV，2D／3D 各约 8 分 29 秒",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [
+        "generate",
+        "hardware",
+        "benchmark",
+        "tutorial"
+      ],
+      "bodyChars": 1629,
+      "excerpt": "一、 视频预览 1. 3D 视频 Youtube Video 2. 2D 视频 Youtube Video 配套材料： https://codeberg.org/Bunsei/ComfyUI-H3-RDNA4/releases/tag/v0.1.0 项目仓库： https://codeberg.org/Bunsei/ComfyUI-H3-RDNA4 二、硬件和环境 两张 Radeon AI PRO R9700，每卡 32GB，功耗上限各 300W。CPU 为 Ryzen 7 9700X，系统可见内存约 89.7 GiB。 Ubuntu 26.04.1、ComfyUI 0.45.0、Python 3.14.4、PyTorch 2.12.0+rocm7.14.0、Comfy Kitchen 0.2.41。节点首次公开版本为 0.1.0，源码、工作流与环境清单随材料提供。 三、生成配置 模型：minimax_h3_ref2va_pruned_int8_convrot，Qwen-VL 同样使用 INT8 ConvRot 权重。 视频 VAE 为 FP16，音频 VAE 为 FP32。 六步 LoRA：pika_h3_flex_ref2va_v1_bf16，强度 1。 1344×768，种子 42，LCM，CFG 1，视频／音频 shift 为 12／3。 注意力：INT8 QK＋FP8…",
+      "quality": 11,
+      "practical": 3,
+      "sourceName": "抡锤者 AI 音视频画图",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "文章提供了实践性内容，包括硬件和环境配置、生成配置和性能benchmark。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "72b8efbb8d80",
+      "title": "ComfyAssets/ComfyUI_PromptManager",
+      "category": "apps",
+      "subcategory": "knowledge",
+      "tags": [
+        "generate"
+      ],
+      "bodyChars": 12518,
+      "excerpt": "![PromptManager by ComfyAssets](assets/brand/banner.webp) ComfyUI Prompt Manager Every prompt you run, every image it made, and every negative you tried, in one searchable library inside ComfyUI. ![The Prompt Manager workspace: a masonry gallery of generated images with the selected image's prompts, tags and settings beside it](assets/readme/hero.webp) ! License ! Python ! Tests Prompt Manager saves your prompts as you generate, links each image back to the prompt that made it, and gives you one page to browse, tag, compare and reuse all of it. Your library is a local SQLite database on your…",
+      "quality": 7,
+      "practical": 5,
+      "sourceName": "GitHub 检索（生态项目更新）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "文章提供了实践性内容，包括ComfyUI Prompt Manager的介绍和使用方法。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "df4f70750760",
+      "title": "kobcpp 1.124.2进化了，不错不错",
+      "category": "apps",
+      "subcategory": "inference",
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 498,
+      "excerpt": "KoboldCpp 1.124.2 够用了，AI界不是有句坚持不学就可以不学吗，再次印证规律。 生态级替代Strata。​ 但要拿的是缓存那档，不是默认档： --moecpu N 从大往小扫，找悬崖退一步 加 --moe-cache-mib（本版刚暴露的） --lazy-mode + --usemlock 配上 --help | grep -i moe 看一眼 --moe-cache-cpu-share 在不在，在的话一起开，那就是我上轮说的 1.6 倍那档 别碰的是 --moeexperts 和 --autofit——前者掉质量，后者会跟你的手工分层打架。 一句话：你选 KoboldCpp 可以不选 Strata 了，而且 1.124.2 正好补上了它原先最缺的那块。用它的壳，把 --moe-cache-mib 开上，那就是最省事的走法，不用再折腾。通杀moe，不再锁定什么这个那个的俩模型，更霸道的是在稠密模上一样很快很好用 https://github.com/LostRuins/koboldcpp/releases/tag/v1.124.2 各种好玩哈哈",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "抡锤者 模型部署讨论",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "文章提供了实践性内容，包括kobcpp 1.124.2的更新和使用方法。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "098508153878",
+      "title": "RustingStrata has a new built-in chat page. What is missing?",
+      "category": "apps",
+      "subcategory": "inference",
+      "tags": [
+        "agent",
+        "local",
+        "lowspec",
+        "benchmark"
+      ],
+      "bodyChars": 1892,
+      "excerpt": "RustingStrata is one Rust binary. rustingstrata serve starts the OpenAI-compatible server, and the same port serves a chat page at / . No Node, no Docker, no second install. The page was rebuilt for 1.2.3 and I want to know what people would add before I go further, I mean maybe allow to edit files and etc. like in DeepSeek harness, or maybe there are something that you wish to be in original Strata, so I can add it in my. What it does now: Pick a model from the models folder and load it from the page, with the load options (context, MTP drafts, KV cache format, VRAM margin, prefill chunk). C…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "文章提供了实践性内容，包括RustingStrata的新功能和使用方法。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "72fcd0b5a613",
+      "title": "Vimoo 1.0 - a Vimoo-AI Collection - Open-source video generation model family for text-to-video (T2V) and image-to-video (I2V)",
+      "category": "apps",
+      "subcategory": "video",
+      "tags": [
+        "generate",
+        "free"
+      ],
+      "bodyChars": 3121,
+      "excerpt": "Vimoo-1.0 generates video from text (T2V) or from a reference image and text (I2V), with a separate ≈11.7B model for each task. It is the highest-quality model in the Vimoo 1.0 family. Diffusers Pipeline : Quick Start · Vimoo-1.0 ComfyUI Workflows : ComfyUI-Vimoo · ComfyUI Weights · Lite ComfyUI Weights MLX (Apple Silicon) : Vimoo-1.0-MLX · MLX Weights 📦 Model Zoo Vimoo 1.0 comes in two models, Vimoo 1.0 and Vimoo 1.0 - Lite. Each Hugging Face repository packages one of them for one runtime: Model Hugging Face Inference code Description Vimoo 1.0 ≈11.7B per model https://huggingface.co/Vimoo…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "文章提供了实践性内容，包括Vimoo 1.0的介绍和使用方法。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "8c1228ffc972",
+      "title": "Latest version of strata made my Qwen3.8-Flash-Next dumb and useless",
+      "category": "apps",
+      "subcategory": "inference",
+      "tags": [],
+      "bodyChars": 2633,
+      "excerpt": "I updated the strata to the latest version from v0.1.42.0, so I can try the latest unsloths models and see how they fare against the iq3_s variant I have been using. Upon updating it, I noticed it messed up the whole thing, It got faster, but it got way dumber! previously it would only take 15~30 minutes to create the pagoda , 50 mins to an hour if I used xhigh. But when I siwtched to the latest version, not only it takes at least an hour and half to come up with something, its not even done! and it has many issues! 0.1.42.0 is the last version that seems to work decently. I noticed, when im…",
+      "quality": 7,
+      "practical": 1,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "文章没有提供实践性内容，只是描述了更新strata后遇到的问题，没有提供解决方法或实测数据。"
+      },
+      "blocked": [
+        "模型复核不通过（文章没有提供实践性内容，只是描述了更新strata后遇到的问题，没有提供解决方法或实测数据。）"
+      ]
+    },
+    {
+      "slug": "80232dee6e08",
+      "title": "X3Guard: A 150M parameter prompt guard",
+      "category": "apps",
+      "subcategory": null,
+      "tags": [],
+      "bodyChars": 509,
+      "excerpt": "At Axiomic Labs we have just released X3Guard-150M, a prompt guard model trained on our high-performing base model, GPT-X3. For any given prompt, X3Guard flags whether it is Harmful, and whether it is Adversarial, in one go. It outperforms models that are many times its size, and can run entirely on edge devices, within the browser, with response times in the tens of milliseconds on iPhone. The model card is here You can use an in-browser demo here submitted by /u/DingyAtoll [link] [comments]",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "内容为产品发布公告，缺乏实践性内容。"
+      },
+      "blocked": [
+        "模型复核不通过（内容为产品发布公告，缺乏实践性内容。）"
+      ]
+    },
+    {
+      "slug": "45d13b9d3117",
+      "title": "BundleHunt 2026 黑五软件特卖：8 款值得购买",
+      "category": "tools",
+      "subcategory": "interface",
+      "tags": [
+        "hardware",
+        "local",
+        "lowspec",
+        "tutorial"
+      ],
+      "bodyChars": 4467,
+      "excerpt": "一年一度的 BundleHunt 黑色星期五软件特卖开始了。今年一共有 44 款 Mac、Windows 软件参加促销，最低只要 1 美元，最高优惠约 91% 。 购买方式依旧为超市模式，自由选择、随意组合。超过 最方便的是： 不需要购买整个软件包，只挑自己想要的就行。 满 30 美元还可以额外减 3 美元。 青小蛙从中挑选了 8 款值得关注的软件，一起来看看 活动地址： https://bundlehunt.com/?ap_id=appinn 有返利，感谢支持。 自助式购买，一款起购。 支持 微信支付、支付宝 （还有 Apple Pay、Google Pay、信用卡、PayPal） 8 款值得购买的软件 1. Mountain Duck 5：把 NAS、服务器挂载成电脑硬盘 原价 $49.00 $14.99 (省 69%) macOS / Windows Mountain Duck 来自知名开源 FTP 客户端 Cyberduck 的开发团队，可以把 SFTP、WebDAV、Amazon S3 等远程存储挂载成电脑上的磁盘。 比如家里的 NAS、公司的文件服务器，连接后就能直接通过 Finder 或 Windows 文件资源管理器打开文件，像操作本地硬盘一样编辑、保存。 对于经常需要访问远程文件的人来说，这款非常实用。 2. Hydra Dev Studio：数据库、SFTP、…",
+      "quality": 8,
+      "practical": 5,
+      "sourceName": "小众软件",
+      "domain": "appinn.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "文章提供了实践性内容，包括具体的软件推荐和使用方法。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "8445093194b4",
+      "title": "llama.cpp b12418 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial",
+        "agent"
+      ],
+      "bodyChars": 1939,
+      "excerpt": "<details open> ggml-cpu: add x86 VNNI Q2_0 dot product (#26348) ggml-cpu: use VNNI for Q2_0 dot products Keep the upstream AVX2 unpacking, accumulation, and fallback. Use VNNI for the integer dot product on supported x86 CPUs. Assisted-by: Codex ggml-cpu: use VBMI for Q2_0 unpacking Use multishift to unpack Q2_0 weights on CPUs with AVX-512 VBMI and VL. Retain the existing shift-and-mask unpacking on other CPUs. Assisted-by: Codex Update ggml/src/ggml-cpu/arch/x86/quants.c Co-authored-by: Sigbjørn Skjæret <sigbjorn.skjaeret@huggingface.co> --------- Co-authored-by: Sigbjørn Skjæret <sigbjorn.…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "内容为代码更新日志，缺乏实践性内容。"
+      },
+      "blocked": [
+        "模型复核不通过（内容为代码更新日志，缺乏实践性内容。）"
+      ]
+    },
+    {
+      "slug": "8c93d0c3f65e",
+      "title": "llama.cpp b12419 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1361,
+      "excerpt": "<details open> server : ignore empty stop strings (#32093) </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/67831897> macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubuntu 26.04 s390x (zDNN) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu x64 (CUDA 13) - CUDA 13.5 libraries Ubuntu arm64 (CUDA 13) - CUDA 13.5 libraries Ubun…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "内容为代码更新日志，缺乏实践性内容。"
+      },
+      "blocked": [
+        "模型复核不通过（内容为代码更新日志，缺乏实践性内容。）"
+      ]
+    },
+    {
+      "slug": "bb22ef599c28",
+      "title": "llama.cpp b12416 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1709,
+      "excerpt": "<details open> Support DFLASH2 for Recursive Ripple-65B-Preview (#31904) fixed support for DFlash2 for Ripple 65B spec: Add NoPE handling to DFlash (cherry picked from commit 89ea8e3e77e3359d17902a2db136022d5d419d88) spec: Fix NoPE not being picked up by DFlash (cherry picked from commit 43393b95fda2ce7e7d243e2650bf7b1cadf1c732) --------- Co-authored-by: James Pickering <james_pic@hotmail.com> </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/67815620> macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) D…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "内容为代码更新日志，缺乏实践性内容。"
+      },
+      "blocked": [
+        "模型复核不通过（内容为代码更新日志，缺乏实践性内容。）"
+      ]
+    },
+    {
+      "slug": "12fec37e27da",
+      "title": "13-GPU ASRock Mining Motherboard for Local LLMs?",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [],
+      "bodyChars": 406,
+      "excerpt": "​ Found a used mining rig with: ASRock 13-GPU motherboard (likely H110 Pro BTC+) Intel i3-7100 12 PCIe risers 2200–2500W PSU No RAM or SSD Planning to use it with multiple RTX 3090s for Qwen/DeepSeek inference. Has anyone tried this? How much would PCIe x1 bottleneck performance? Is it worth buying, or should I go with EPYC/Threadripper instead? submitted by /u/Ammoryyy [link] [comments]",
+      "quality": 7,
+      "practical": 1,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "文章讨论了使用特定硬件配置运行LLM的可能性，提供了相关的技术信息和问题讨论。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "36d8fe3fbdbd",
+      "title": "inference-gateway/inference-gateway",
+      "category": "local",
+      "subcategory": "weights",
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 37642,
+      "excerpt": "<div align=\"center\"> <img src=\"https://avatars.githubusercontent.com/u/195813097?s=200&v=4\" width=\"96\" alt=\"Inference Gateway Logo\" /> Inference Gateway <p><strong>An open-source, cloud-native, high-performance gateway unifying multiple LLM providers behind one OpenAI-compatible API</strong></p> <a href=\"https://github.com/inference-gateway/inference-gateway/actions/workflows/ci.yml?query=branch%3Amain\"> <img src=\"https://github.com/inference-gateway/inference-gateway/actions/workflows/ci.yml/badge.svg?branch=main\" alt=\"CI Status\"/></a> <a href=\"https://github.com/inference-gateway/inference-…",
+      "quality": 10,
+      "practical": 1,
+      "sourceName": "GitHub 检索（生态项目更新）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "98ac90395ac7",
+      "title": "Testing agents without running a model in CI: record once, replay with zero calls, judge with a local model only when needed (open source, I'm the author)",
+      "category": "local",
+      "subcategory": "runtime",
+      "tags": [
+        "local",
+        "agent",
+        "free"
+      ],
+      "bodyChars": 2230,
+      "excerpt": "Disclosure: I'm the author. Attest is an Apache-2.0 testing framework for agents (Go engine, Python and TypeScript SDKs). Posting here because most of it runs with no hosted model at all. Replay instead of inference in CI. attest capture -- python my_agent.py runs your agent behind a local recording proxy that forwards to whatever OPENAI_BASE_URL points at and records every model call. In CI, the agent's current code runs against that recording: attest replay: 4 replayed · 0 live model calls · $0.00 The CI runner never loads a model. If you change the prompt, replay misses and tells you what…",
+      "quality": 6,
+      "practical": 4,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "2d20317db60d",
+      "title": "All AI-generated code should be Open Source",
+      "category": "local",
+      "subcategory": "weights",
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 160,
+      "excerpt": "Article URL: https://jakub.jankiewicz.org/blog/ai-code-open-source/ Comments URL: https://news.ycombinator.com/item?id=50507303 Points: 405 # Comments: 248",
+      "quality": 9,
+      "practical": 2,
+      "sourceName": "Hacker News (AI)",
+      "domain": "jakub.jankiewicz.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "461de44277da",
+      "title": "jmaczan/tiny-vllm",
+      "category": "local",
+      "subcategory": "runtime",
+      "tags": [
+        "local"
+      ],
+      "bodyChars": 98248,
+      "excerpt": "tiny-vllm You're going to build a high performance LLM inference engine with C++ and CUDA - tiny-vllm, a younger and smaller sibling of vLLM We will learn a lot along the way, make mistakes and derive the ideas and maths from scratch This repository consists of two things: 1. a full source code of the inference server and 2. a course where I lead you through the process of implementing the engine. Feel invited to use it as a learning tool on your learning path or if you are a lecturer, feel welcome to use it as a teaching resource at your university Reach highly technical audience in this Git…",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "GitHub 检索（生态项目更新）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    }
+  ]
+}
