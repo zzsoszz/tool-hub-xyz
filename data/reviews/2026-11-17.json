@@ -1,0 +1,570 @@
+{
+  "day": "2026-11-17",
+  "reviewedAt": "2026-11-16T20:40:27.821Z",
+  "reviewer": "cloudflare/@cf/meta/llama-3.1-70b-instruct",
+  "note": "cloudflare/@cf/meta/llama-3.1-70b-instruct：复核 12 条，解析到 12 条判定",
+  "rules": {
+    "minItems": 3,
+    "minBodyChars": 120,
+    "minSummaryChars": 40,
+    "maxTags": 4,
+    "agentMaxItems": 12,
+    "agentBatch": 6,
+    "agentChars": 900,
+    "agentExcerptChars": 600
+  },
+  "passed": true,
+  "reasons": [],
+  "total": 23,
+  "blocked": [
+    "9dceda3c74ed",
+    "2d6c15fcb260",
+    "747d96018844",
+    "da927b9b0aa9",
+    "0f74939d53f6"
+  ],
+  "survivors": 18,
+  "items": [
+    {
+      "slug": "d28c026e54a7",
+      "title": "AMD Radeon Pro W6800 32G专业卡，大显存4000元值得买吗？RNDA2的生态如何，有哪些残疾？和V100，2080Ti相比如何？",
+      "category": "apps",
+      "subcategory": "inference",
+      "tags": [
+        "agent",
+        "lowspec",
+        "generate",
+        "hardware"
+      ],
+      "bodyChars": 2393,
+      "excerpt": "评论区有网友提到一张卡，叫 Radeon Pro W6800，说这张卡有32G显存，特别牛逼，性价比很高。那么我去闲鱼、拼夕夕，包括京东上都看了一下。它在闲鱼上大概是4000块钱，拼夕夕上要更贵一点。然后在京东上，不良商家——京东自营的啊——居然给它卖到1万块钱，我觉得有点扯淡了。这卡是RDNA2架构，它是不值这么多钱的，就是说它有不少残疾。我让DeepSeek给我做了个图，我们来看一下。首先它的显存容量是32G，这个是它最大的加分项，是吧？它4000块钱的价格，我觉得有就非常不错了。然后它的显存带宽是512G，7900XTX是960G，这个我认为不是什么巨大的劣势，512G完全够用了。因为它本身的算力有点低，它的FP32算力只有XTX的三分之一还少，FP16算力也比XTX小很多。那么它的功耗是250瓦，这个不算高，但是肯定也不低。毕竟7900XTX以4倍的性能，也就是355瓦的TDP。 这个卡是RDNA2架构，如果在Windows底下，机智罗的工作流是能跑的，就是跑ComfyUI没问题。然后这个32G显存有一定优势，不需要频繁进行内存和显存的数据交换。但是我们必须说，它有硬性的残疾：没有BF16，只有FP16，然后FP32卷积算力也远远低于XTX。再叠加AMD的生态本来就不太好，RDNA3还算可以，如果是RDNA2，有些场景跑不了，插件兼容性不是很好。我们论坛有很多大神在搞AM…",
+      "quality": 8,
+      "practical": 3,
+      "sourceName": "抡锤者 AI硬件",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容包含对AMD Radeon Pro W6800 32G专业卡的性能分析和与其他卡的比较。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "9dceda3c74ed",
+      "title": "YellowLaborerMarket/Gemini-Config-Checker-",
+      "category": "apps",
+      "subcategory": null,
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 19516,
+      "excerpt": "<p align=\"center\"><img src=\"https://github.com/MatinSenPai/Gemini-Config-Checker/raw/main/assets/banner.png\" alt=\"Gemini/Check\" width=\"100%\"></p> <p align=\"center\"> <b>English</b> · <a href=\"README.fa.md\">فارسی</a> </p> <p align=\"center\"> <a href=\"https://www.dropbox.com/scl/fi/l80rdcm1o9gnqcpdsw1gi/GeminiConfigChecker.rar?rlkey=dv7oxsttd2j8kvr5zu7uyx1tm&st=l2vaozdz&dl=1\"> <img alt=\"Download the Gemini app\" src=\"https://img.shields.io/badge/Download-%20Gemeni%20app-0969DA?style=for-the-badge&logo=github&logoColor=white\"> </a> </p> Gemini Config Checker Find proxy configs that actually get you…",
+      "quality": 10,
+      "practical": 2,
+      "sourceName": "GitHub 新晋 AI 项目",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "内容似乎是关于Gemini Config Checker，但没有提供实践性内容或步骤。"
+      },
+      "blocked": [
+        "模型复核不通过（内容似乎是关于Gemini Config Checker，但没有提供实践性内容或步骤。）"
+      ]
+    },
+    {
+      "slug": "8700f469be02",
+      "title": "寻找QFN长上下文的甜点位测试",
+      "category": "apps",
+      "subcategory": "inference",
+      "tags": [
+        "benchmark",
+        "money",
+        "local",
+        "agent"
+      ],
+      "bodyChars": 996,
+      "excerpt": "结论 保守可用512K，考虑到一般agent 0.8的压缩阈值，高一点可用640K。 测试环境 模型：Qwen3.8-Flash-Next IQ3_S GGUF 推理引擎：Strata 0.2.14 GPU：2× RTX 3080 20GB 平台：X99-T8/E5-2686v4/D3-256G KV Cache：INT8 推理模式：temperature=0，thinking off，单实例串行 256K 使用原生 RoPE；512K～1M 使用 YaRN 测试方法 构造运营台账、值班日志和会议纪要组成的长文档，包含数千条同构记录。 在文档 2%～98% 的随机位置插入 8 条目标记录，每条目标均配有近似干扰记录，包括批次号相近、客户相同、日期相同等情况。 每份文档进行单独提问和联合提取测试，分别考察单针检索与多针召回能力。 主要结果 在干净构造（目标记录唯一）下： 上下文 逐条单问 联合 K=8 256K 100% 100% 512K 87.5% 100% 576K 87.5% 87.5% 640K 70.8% 100% 1M 62.5% 100% 一个有趣的现象是：联合提取 8 条信息，有时反而比逐条询问更准确。640K 下，逐条单问为 70.8%，而联合 K=8 达到 100%。 近似干扰测试 当目标记录存在同批次、相似日期和邻近批次号等干扰时，准确率明显下降： 上下文…",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "抡锤者 模型部署讨论",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容提供了关于QFN长上下文的甜点位测试的实践性内容和数据。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "2d6c15fcb260",
+      "title": "Show HN: Fakemetrics.com – \"build in public\" like a superstar",
+      "category": "apps",
+      "subcategory": null,
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 1157,
+      "excerpt": "Hi HN, I am Tigran (github.com/tigranbs) I made Fakemetrics.com as a fun experiment while testing how well Claude Opus can build pixel-identical UIs. It turned out it wasn't as easy as just prompting it, but I spent time building the system so it works almost every time. And I am pretty sure you are seeing a bunch of people posting weekend vibe-coded apps and saying \"$50K/month after quitting my McDonnalds job...\". Well, even my friend tried to fake it a few months back. So, I kinda did this fakemetrics.com as an experiment to see how well I can have the system that clones UIs, and packaged t…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "Hacker News Search",
+      "domain": "fakemetrics.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "内容主要是关于Fakemetrics.com的介绍，没有提供实践性内容或步骤。"
+      },
+      "blocked": [
+        "模型复核不通过（内容主要是关于Fakemetrics.com的介绍，没有提供实践性内容或步骤。）"
+      ]
+    },
+    {
+      "slug": "2156c7dfc08f",
+      "title": "各位大神，求一个最合适的模型",
+      "category": "apps",
+      "subcategory": "inference",
+      "tags": [
+        "benchmark",
+        "tutorial"
+      ],
+      "bodyChars": 271,
+      "excerpt": "双 3090、128GB DDR4 3600MHz 内存、3950X、4TB PCIe SSD。 在这套配置下，Strata 可以运行 QFN IQ4，解码速度能达到每周期 100–150 bit，prefill 速度超过 3000 但我只是一个人用。感觉这点速度其实没多大用。我希望能把速度换成智力 有没有大神推荐其他引擎或模型， 可以保持 decode 在 70-80就行， 但智力可以提升一大截的？ deepseek v4 flash , glm 5.3 flash 等我也试过了， 速度还到不了这么高， 有没有更好的推荐？",
+      "quality": 7,
+      "practical": 1,
+      "sourceName": "抡锤者 模型部署讨论",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容提供了关于寻找合适模型的实践性内容和配置信息。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "747d96018844",
+      "title": "How many servings of deepseek 1017 will you have?",
+      "category": "apps",
+      "subcategory": null,
+      "tags": [],
+      "bodyChars": 216,
+      "excerpt": "This just really cracked me up. The Redde app for hermes I guess pulled the deepseek recipe as an actual food recipe. It is a nice format for it though lol. submitted by /u/SadPhilosophy9202 [link] [comments]",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "内容主要是关于Redde app的笑话，没有提供实践性内容或步骤。"
+      },
+      "blocked": [
+        "模型复核不通过（内容主要是关于Redde app的笑话，没有提供实践性内容或步骤。）"
+      ]
+    },
+    {
+      "slug": "853b24ff0d6e",
+      "title": "Hugging Face and OpenRouter join forces to make open-weight models easy to run",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "agent"
+      ],
+      "bodyChars": 6456,
+      "excerpt": "Back to Articles Hugging Face and OpenRouter join forces to make open-weight models easy to run Published November 16, 2026 Update on GitHub Upvote 32 Célina Hanouti celinah Victor Mustar victor Bertrand Chevrier kramp Lucain Pouget Wauplin Pierric Cistac pierric Eliott Coyac coyotte508 Julien Chaumond julien-c Hugging Face and OpenRouter are teaming up to make open-weight models easy to run. Every major open-weight release is already being published on the Hugging Face Hub, and OpenRouter serves those models at scale, routing each request across 80+ providers based on live measurements of ea…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "Hugging Face Blog",
+      "domain": "huggingface.co",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "这篇文章是关于Hugging Face和OpenRouter合作的一篇博客文章。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "e9b69907736a",
+      "title": "TokenEconomizer: Learning from Experience to Make AI Coding Agents More Efficient",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "tutorial",
+        "agent",
+        "free"
+      ],
+      "bodyChars": 6985,
+      "excerpt": "At a glance Developers use AI coding agents in the same codebases day after day, yet agents often start each session from scratch: rediscovering familiar facts, loading unused tools, and repeating unsuccessful approaches. TokenEconomizer is an open-source plugin that learns from an agent’s past sessions in a repository to reduce waste in future sessions, without modifying the agent or its underlying model. Across 277 real bug-fixing tasks, TokenEconomizer reduced costs by 18.4–30.9% across multiple AI coding agents. Costs fell in every repository tested, while task success rates remained broa…",
+      "quality": 9,
+      "practical": 3,
+      "sourceName": "Microsoft Research",
+      "domain": "microsoft.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "这篇文章介绍了TokenEconomizer插件，它可以学习AI编码代理的过去的会话记录，以减少未来的浪费，文章中提供了具体的数据和实验结果。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "b5b024d8c56d",
+      "title": "I made a C&C inspired web RTS for us to benchmark our local models with",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "benchmark",
+        "agent"
+      ],
+      "bodyChars": 1423,
+      "excerpt": "HOwdy LocalLLamans! Inspired by StarSkirmish, I wanted to build a complex RTS that required you to bring your OWN local agents and either play with them as allies, against them as enemies, or battle head-to-head with other agent-human pairs in public matches. In AgentCommand you operate one or more planes (Orbit, Sky, Surface, Depths) of differing gameplay. As an old-school PC gamer I wanted the mechanics to resemble some of my favorite 90s games of yore: C&C, DungeonKeeper, Homeworld, StarCraft, and others. The idea is that you have specific objectives needed to maximize resource generation,…",
+      "quality": 7,
+      "practical": 1,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "这篇文章介绍了一个C&C风格的Web RTS游戏，玩家可以使用自己的本地代理来玩游戏，文章中提供了游戏的具体规则和玩法。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "e23c8d8f16f9",
+      "title": "Arc Pro B70 32GB 在 Linux 上跑 XeStrata：Qwen3.8 Flash-Next 实测汇总，以及和 RTX PRO 4000 的对比",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "benchmark",
+        "hardware",
+        "lowspec",
+        "local"
+      ],
+      "bodyChars": 8193,
+      "excerpt": "XeStrata 是什么 ： Strata 是一个在普通 PC 上跑 Qwen3.8 Flash-Next（约 125B 参数的 MoE 模型）的本地推理引擎：显存放不下的专家留在内存里由 CPU 计算，配合 MTP 推测解码，大幅降低了对显存的要求，16 GB 这类小显存显卡也能运行。上游支持的硬件很广：NVIDIA RTX 20–50 系列，AMD Radeon（RX 7000、9000 系列，AI PRO R9700）和 Strix Halo，Apple Silicon，以及 Linux 上的 Intel Arc（SYCL 移植版）。 XeStrata 是它的分支，把 GPU 代码整体从 CUDA 改写成 SYCL 和 Level Zero，主要针对 Intel Arc 优化（XMX、oneMKL），同一套代码也能编译给 AMD 和 NVIDIA 显卡用；模型、安装方式和 API 与 Strata 基本一致。它分 free 和 contrib 两种编译方式，contrib 会用上 Intel 的 oneMKL。 这两周在一台 Ubuntu 主机上，用 Intel Arc Pro B70 和 XeStrata 跑 Qwen3.8 Flash-Next，测了不同内存容量、不同量化和长上下文下的速度，还做了一轮 IQ3_S 和 4 比特的回答质量对比，最后和同一台机器上的 RTX…",
+      "quality": 12,
+      "practical": 7,
+      "sourceName": "抡锤者 模型部署讨论",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "这篇文章是关于在Linux上跑XeStrata的实测汇总，文章中提供了具体的benchmark数据和实验结果。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "da927b9b0aa9",
+      "title": "「剑心比赛」（小白篇）MiniMax H3 部署 · 参数 · 执行 · 对比 全记录 （优化版测试原始数据）",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "hardware",
+        "local",
+        "lowspec",
+        "benchmark"
+      ],
+      "bodyChars": 19233,
+      "excerpt": "MiniMax H3「剑心比赛」部署 · 参数 · 执行 · 对比 全记录 任务来源 https://lcz.me/topic/3045 （抡锤者论坛 · AI 音视频画图 · MiniMax H3 挑战赛「抡锤者」） 出片执行 2026-11-16 02:57:49 – 03:29:55（Asia/Shanghai），单条串行驱动，无人值守 基线对照 2026-11-15 同机同 prompt 的 20 步基线两条 执行链路 Windows 工作站 → SSH（别名 vllm-r9700 ）→ GPU 服务器 magic629-AI （192.168.67.202，用户 magic629 ） 交付位置 C:\\Users\\MagicZ790\\Desktop\\H3剑心比赛-2026.11.16\\ 一句话结果 双 R9700 32G 纯 ROCm 原生栈，MiniMax H3 Ref2VA fp8，1344×768 / 294 帧 / 12.25 s 两条参赛成片，turbo 8 步端到端 707 s / 702 s ，比同机 20 步基线快 1.89× ；附加 4 步档 516 s（2.59×） 第 1 章 规则解读与逐条落实 比赛硬性要求共 11 条，逐条对照本次落实： # 规则要求 落实方式 证据位置 1 模型必须是 MiniMax H3 minimax-h3-ref2va-f…",
+      "quality": 13,
+      "practical": 8,
+      "sourceName": "抡锤者 AI 音视频画图",
+      "domain": "lcz.me",
+      "hard": [
+        "内容过少（摘要 37 字，要求至少 40 字）"
+      ],
+      "warnings": [],
+      "agent": null,
+      "blocked": [
+        "内容过少（摘要 37 字，要求至少 40 字）"
+      ]
+    },
+    {
+      "slug": "0f74939d53f6",
+      "title": "【摆摊】哈！终于混出头了，摆个小摊出点硬件！",
+      "category": "hardware",
+      "subcategory": "build",
+      "tags": [
+        "hardware",
+        "local",
+        "lowspec",
+        "tutorial"
+      ],
+      "bodyChars": 517,
+      "excerpt": "如题。最近打算升级换套 EPYC 配置，手里这套 AM5 平台就彻底闲下来了。本来想挂咸鱼回口血，结果被一群商贩往死里砍，砍得我血压都上来了… 与其便宜了贩子，不如福利给锤友！走过路过，别错过哈～ 一、内存 首先是四根 十铨 引领者 DDR5 6000 CL28 24G内存条，其中两根是本人自购与淘宝的2X24G套条，另外两根则是咸鱼收的。 如图： 单根售价 ￥1825 ！ 二、主板、CPU、散热器 三件套 其次则为板U套装，主板为 Ryzen 7 9700X，搭配铭瑄的 MS-iCraft B850 AIGA！ 9700X这块CPU不用我多说性能足够，功耗合理，可以说是非常有性价比，并且还带集成显卡，适合应对多种不同情况！ 主板则为丐帮帮主铭瑄的 MS-iCraft B850 AIGA ！性价比这一块不用我多说，本地AI新平台入门首推主板，支持PCIE 5.0 8+8 拆分，支持P2P！ 散热器则是来自 SUDKOO 的 SK700： 打包售价 ￥2000 ！ 三、显卡 1 张蓝宝石 AI PRO R9700 32G显卡。懂得都懂！ 售价 ￥ 12345 总之走过路过不要错过！",
+      "quality": 9,
+      "practical": 2,
+      "sourceName": "抡锤者 AI硬件",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "fail",
+        "reason": "这篇文章看起来像是个人二手硬件的出售帖子，和实践性内容不符。"
+      },
+      "blocked": [
+        "模型复核不通过（这篇文章看起来像是个人二手硬件的出售帖子，和实践性内容不符。）"
+      ]
+    },
+    {
+      "slug": "d5b67e732151",
+      "title": "llama.cpp b12444 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1366,
+      "excerpt": "<details open> HIP/CUDA: enable GDN mma kernel on CDNA (#31327) </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/68276309> macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubuntu 26.04 s390x (zDNN) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu x64 (CUDA 13) - CUDA 13.5 libraries Ubuntu arm64 (CUDA 13) - CUDA 13.5 libraries…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "这篇文章是关于llama.cpp项目的更新日志，文章中提供了具体的更新内容和编译信息。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "c4b4e11165a5",
+      "title": "llama.cpp b12443 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1419,
+      "excerpt": "<details open> vulkan: fix Nvidia fp32 FA shmem overflow, disable shmem staging if it takes too much memory (#32244) </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/68252870> macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubuntu 26.04 s390x (zDNN) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu x64 (CUDA 13) - CUDA 13.5 l…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "a3d40b4df51e",
+      "title": "llama.cpp b12442 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1352,
+      "excerpt": "<details open> hip: add gfx1013 to rdna1 (#32236) </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/68246767> macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubuntu 26.04 s390x (zDNN) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu x64 (CUDA 13) - CUDA 13.5 libraries Ubuntu arm64 (CUDA 13) - CUDA 13.5 libraries Ubuntu x64 (R…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "ddca0f7ce8e8",
+      "title": "求助：年底回国想在家放一台跑本地模型的机器，家里只有老母亲、坏了没人会修，有没有基本不用折腾的方案？",
+      "category": "hardware",
+      "subcategory": "machine",
+      "tags": [
+        "local",
+        "lowspec",
+        "benchmark",
+        "generate"
+      ],
+      "bodyChars": 339,
+      "excerpt": "各位大神好，我是 ゆうみん（Yumin），平时做 AI 视频，主要在本地用 MiniMax H3 出片。 起因 写脚本、改代码这些活主要靠 Claude，最近 Claude 每周的 Token 经常不够用 ，所以想在本地跑一个模型，不限量地用。 情况 我人在日本，年底回国，想在国内家里放一台专门跑本地模型的机器，回日本以后远程用 家里只有老母亲一个人， 机器坏了她不会折腾，也不会修 原本群里推荐 R9700 32G＋DDR3 凑 128G，但担心太折腾 想请教 有没有基本不用折腾的机器？（整机、迷你主机、品牌工作站之类都可以） 这种情况大家会怎么配？大概能跑多大的模型、多少 tok/s？ 如果有能参考的整机清单（带价格）就更好了，先谢谢各位！",
+      "quality": 7,
+      "practical": 2,
+      "sourceName": "抡锤者 AI硬件",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "30e89c8b0544",
+      "title": "Strata v0.2.15 发布",
+      "category": "local",
+      "subcategory": "runtime",
+      "tags": [
+        "local"
+      ],
+      "bodyChars": 11858,
+      "excerpt": "Strata 0.2.15: fixes in the app and the Terminal The app and the Terminal are 0.2.15. Control is 0.1.61. The engines stay at 0.1.60: the same files as in 0.2.14, which the update feed downloads from the 0.2.14 release. The update feed is sequence 127. The Intel Arc engine and the DGX Spark engine stay at 0.1.59; the DGX Spark keeps its update feed (sequence 123). What changes for you Nothing to do. Update as usual (see Updating below). Your models, chats and settings stay. The engine is not downloaded again: strata update and the app replace the app and the Terminal only. There are no new set…",
+      "quality": 8,
+      "practical": 3,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "4ae51b6f1699",
+      "title": "The open-source movement wants Jensen Huang back",
+      "category": "local",
+      "subcategory": "weights",
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 4372,
+      "excerpt": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here . On Friday, a petition to reinstate Jensen Huang as CEO of Nvidia began circulating on social media, and by Monday it listed some notable signatories, including Elon Musk and several influential Nvidia researchers. But comb through the more than 115,000 names and you’ll notice a significant faction of Huang’s supporters—higher-ups from Hugging Face, a hub for sharing AI models, and venture capital firms Andreessen Horowitz and Sequoia Capital—come from a pa…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "MIT Tech Review",
+      "domain": "technologyreview.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "a67a907982bd",
+      "title": "[NEW RELEASE] - Supra2.5-65M Base and Instruct - our next generation state-of-the art small model family - first model!",
+      "category": "local",
+      "subcategory": "runtime",
+      "tags": [
+        "local"
+      ],
+      "bodyChars": 1123,
+      "excerpt": "https://preview.redd.it/s6afqz7og02i1.png?width=2607&format=png&auto=webp&s=8ad68f90e67c06f989e152ac5cffefc93eed60e1 hey guys! It's Supra-time! 🤗 🔥 🎉 It has been quite quite at SupraLabs' model foundry for a long time but we have been testing, training, developing and much more. And we can finally present you a new model! Key facts: - better than our previous 50M and 100M model - very small, runs on every toaster: 65M params - base model and instruction tuned version on HF We trained it locally in 4 days on 2x RTX A6000 on big 100B tokens of high-quality data. Benchmarks are in the attache…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "f500e0710e09",
+      "title": "PyBot: No weights. No training. Pure Python.",
+      "category": "local",
+      "subcategory": "weights",
+      "tags": [
+        "tutorial"
+      ],
+      "bodyChars": 694,
+      "excerpt": "We released PyBot, a chatbot built with only simple rules, entirely written in 600k lines of Python code. PyBot matches Smollm with 360M parameters! We evaluated it on SmolTalkBench, which uses a dataset Smollm was trained on while we didnt use it at all for development. It took a swarm of 1,000 DeepSeek Flash agents to write the whole codebase in a week. https://reddit.com/link/1xxrf1d/video/19jz1a6ekz1i1/player More technical details on what it took to built it soon: inference for 1,000 agents, how to monitor/control the swarm, pressure on the infrastructure (especially git) and message boa…",
+      "quality": 6,
+      "practical": 2,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "df34225d0059",
+      "title": "没搞过一天研发的他，50岁以华为董事的身份退休了",
+      "category": "money",
+      "subcategory": "client",
+      "tags": [
+        "money",
+        "free"
+      ],
+      "bodyChars": 9086,
+      "excerpt": "<!DOCTYPE html> < img id=\"wx_img\" src=\"https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png\" width=\"400\" height=\"400\"> 没搞过一天研发的他，50岁以华为董事的身份退休了 程浅 2026-11-16 16:02:07 来源： 量子位 在华为待了快10000天。 程浅 发自 凹非寺 量子位 | 公众号QbitAI 华为董事换人了。上位的何刚站在了聚光灯下，被他替代的 彭博 ，相形之下……显得静悄悄。 作为华为董事、全球采购认证管理部总裁，彭博这个人确实存在感一直不太强。 他从哈工大非典型专业“市场营销”专业毕业后就直接进了华为，一干就干了27年，一辈子就干了华为这一份工作。 离开时，他在朋友圈留下了一句话：“9952天，感恩，感激，感谢，继续前行！” 50岁，以“华为董事”之名退休，又有几人？ 彭博的华为战功：在欧洲 2010年的7月14日，法国国庆节恰逢雷暴，阅兵军队冒着大雨从香榭丽舍大街穿越凯旋门。 华为西欧地区部副总裁，34岁的彭博，被客户邀请来这里参加一场活动。 推杯换盏间，他的手机响了，来电话的是世界最顶级的运营商——沃达丰中欧CTO Hartmut。 不知怀着怎样的心情，彭博接通了这个他人生中至关重要的电话。 “Vincent，祝贺…",
+      "quality": 9,
+      "practical": 1,
+      "sourceName": "量子位",
+      "domain": "qbitai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "d0a31b9dcefc",
+      "title": "睿尔曼智能郑随兵：质量、经济性、稳定性是机器人落地三大标准",
+      "category": "bench",
+      "subcategory": "compare",
+      "tags": [
+        "local",
+        "agent",
+        "free"
+      ],
+      "bodyChars": 2738,
+      "excerpt": "<!DOCTYPE html> < img id=\"wx_img\" src=\"https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png\" width=\"400\" height=\"400\"> 睿尔曼智能郑随兵：质量、经济性、稳定性是机器人落地三大标准 量子位的朋友们 2026-11-16 18:57:31 来源： 量子位 具身智能的真正价值是“把人的经验、技能复刻出来” 11月16日，2026常州工业具身智能创新大会暨常州市“百场千企”具身智能机器人产业融链强链对接活动在常州武进举行。大会以“碳硅协同·智造共进”为主题，汇聚机器人整机、核心零部件、工业应用等产业链上下游企业，共同探讨具身智能与先进制造深度融合的新路径。 展会现场，作为行业首个提出“让机器人真干活、干真活”的企业，睿尔曼智能以“一套面向工业真实场景的操作能力组合”亮相，依托GLN远程作业网络，两台RealBOT轮式人形机器人，向与会制造业企业与行业观众展示在产线柔性上下料、分拣等场景中完成真实作业。 江苏省常州市委书记李佰平，常州市委副书记、市长周伟一行在巡展期间来到展台参观，睿尔曼智能创始人CEO郑随兵向一行讲解了公司“让机器人进真实产线真干活”的技术布局与落地成果。 “在真实场景真干活”，以质量、经济性与稳定性重塑场景边界 在大会圆桌对话环节…",
+      "quality": 10,
+      "practical": 4,
+      "sourceName": "量子位",
+      "domain": "qbitai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "5640c7560098",
+      "title": "WeightBench: Evaluating Language Models as Weight-Space Programmers",
+      "category": "bench",
+      "subcategory": "benchmark",
+      "tags": [
+        "benchmark",
+        "free"
+      ],
+      "bodyChars": 1363,
+      "excerpt": "Recent work shows that large language models (LLMs) can operate directly on the parameters of other neural networks. They can read what a network was trained to do, fix a network that fails, and write working networks from scratch, all without gradient descent. This capability has been termed Weight-Space Programming (WSP). Exploring this new paradigm systematically requires a robust benchmark. We introduce WEIGHTBENCH, a benchmark that evaluates LLMs of increasing capability on 42 WSP tasks across five tracks: reading, fixing and writing weights, recognizing edits that are impossible, and da…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    }
+  ]
+}
