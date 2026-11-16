@@ -1,6 +1,6 @@
 {
   "day": "2026-11-16",
-  "reviewedAt": "2026-11-15T17:22:46.821Z",
+  "reviewedAt": "2026-11-16T02:23:10.647Z",
   "reviewer": "cloudflare/@cf/meta/llama-3.1-70b-instruct",
   "note": "cloudflare/@cf/meta/llama-3.1-70b-instruct：复核 12 条，解析到 12 条判定",
   "rules": {
@@ -15,16 +15,67 @@
   },
   "passed": true,
   "reasons": [],
-  "total": 16,
+  "total": 34,
   "blocked": [
-    "8c1228ffc972",
-    "80232dee6e08",
-    "8445093194b4",
-    "8c93d0c3f65e",
-    "bb22ef599c28"
+    "128a04bf78b6",
+    "5b273068076f",
+    "6989ef082671",
+    "a9df33be03ca"
   ],
-  "survivors": 11,
+  "survivors": 30,
   "items": [
+    {
+      "slug": "62fe577db13f",
+      "title": "【H3剑心比赛】 Intel Arc Pro B70 32 GB 单卡本地跑 MiniMax H3：3D + 2D",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [
+        "hardware",
+        "generate",
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 3031,
+      "excerpt": "两条视频都是在一张 Intel Arc Pro B70（32 GB）上用 ComfyUI 本地生成的，没用云端，也没用 N 卡。 统一提示词只把第一行的风格改成 (Style: 3D CGI animation) 或 (Style: 2D traditional anime) ，其余原样保留，没有加参考图编号标签。 3D 版： https://youtu.be/AzPE66jdKjc 2D 版： https://youtu.be/1_W0JfrQo9E 1. 硬件配置 项目 配置 显卡 Intel Arc Pro B70 32 GB（Battlemage G31），主板 CPU 直连槽，PCIe 5.0 x16 CPU Intel Core i5-13600K 内存 128 GB DDR4 系统 Ubuntu 26.04.1 LTS，内核 7.0.0-43 GPU 驱动 compute-runtime（Level Zero / OpenCL）26.40.40196.15，IGC 2.42.14，oneAPI 2026.1 功耗 默认功耗墙，没有超频或解锁；采样时显卡平均约 295 W、2.2 GHz，核心最高 72 °C 2. 工作流（JSON 附后） workflow_2D_api_seed2026111403.json workflow_3D_api_seed20261114…",
+      "quality": 11,
+      "practical": 6,
+      "sourceName": "抡锤者 AI 音视频画图",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "包含实测数据和具体配置信息。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "71ee11dd44e1",
+      "title": "amurgola/LumaBrowser",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [
+        "agent",
+        "free",
+        "local",
+        "lowspec"
+      ],
+      "bodyChars": 10353,
+      "excerpt": "<p align=\"center\"> <img src=\"icon/icon.png\" alt=\"\" width=\"88\" height=\"88\"> </p> <h1 align=\"center\">LumaBrowser</h1> <p align=\"center\"> <b>Your local AI stack in one app.</b><br> A web browser that runs language, image, video and voice models on your own GPUs, and lets agents work in the tabs you are already signed in to. </p> <p align=\"center\"> <a href=\"https://github.com/amurgola/LumaBrowser/releases/latest\"><b>Download</b></a> · <a href=\"Documentation/features/README.md\">Features</a> · <a href=\"https://lumabyte.com/apis\">API docs</a> · <a href=\"https://lumabyte.com\">Website</a> </p> <p alig…",
+      "quality": 9,
+      "practical": 5,
+      "sourceName": "GitHub 检索（生态项目更新）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "包含软件特性介绍和下载链接。"
+      },
+      "blocked": []
+    },
     {
       "slug": "e8222aa035e9",
       "title": "[H3 剑心比赛] 双 R9700，ComfyUI＋Radiance TP2，INT8 QK＋FP8 PV，2D／3D 各约 8 分 29 秒",
@@ -46,9 +97,35 @@
       "warnings": [],
       "agent": {
         "verdict": "pass",
-        "reason": "文章提供了实践性内容，包括硬件和环境配置、生成配置和性能benchmark。"
+        "reason": "包含硬件配置、环境和生成配置信息。"
       },
       "blocked": []
+    },
+    {
+      "slug": "128a04bf78b6",
+      "title": "datasette-maplibre 0.1a0",
+      "category": "apps",
+      "subcategory": "knowledge",
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 1273,
+      "excerpt": "Release: datasette-maplibre 0.1a0 The first new Datasette geospatial plugin in quite a while! This one combines the excellent MapLibre GL library with OpenFreeMap , the free vector map server operated by Zsolt Ero (you should sponsor Zsolt on GitHub .) I built most of this with a single prompt to Claude Fable 5.2: Look at datasette-cluster-map and datasette-leaflet-geojson plugins, then look at ~/dev/tools/openfreemap-demo.html - then build a brand new Datasette plugin that uses maplibreGL and openfreemap and combines the features of those other two plugins - but be creative and think outside…",
+      "quality": 9,
+      "practical": 2,
+      "sourceName": "Simon Willison",
+      "domain": "simonwillison.net",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "缺乏实测数据和具体步骤。"
+      },
+      "blocked": [
+        "模型复核不通过（缺乏实测数据和具体步骤。）"
+      ]
     },
     {
       "slug": "72b8efbb8d80",
@@ -70,7 +147,132 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "文章提供了实践性内容，包括ComfyUI Prompt Manager的介绍和使用方法。"
+        "reason": "包含软件特性介绍和使用说明。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "19f8ab6e8336",
+      "title": "WinnerSpecialist/Gemini-Config-Checker-",
+      "category": "apps",
+      "subcategory": null,
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 19516,
+      "excerpt": "<p align=\"center\"><img src=\"https://github.com/MatinSenPai/Gemini-Config-Checker/raw/main/assets/banner.png\" alt=\"Gemini/Check\" width=\"100%\"></p> <p align=\"center\"> <b>English</b> · <a href=\"README.fa.md\">فارسی</a> </p> <p align=\"center\"> <a href=\"https://www.dropbox.com/scl/fi/l80rdcm1o9gnqcpdsw1gi/GeminiConfigChecker.rar?rlkey=dv7oxsttd2j8kvr5zu7uyx1tm&st=l2vaozdz&dl=1\"> <img alt=\"Download the Gemini app\" src=\"https://img.shields.io/badge/Download-%20Gemeni%20app-0969DA?style=for-the-badge&logo=github&logoColor=white\"> </a> </p> Gemini Config Checker Find proxy configs that actually get you…",
+      "quality": 10,
+      "practical": 2,
+      "sourceName": "GitHub 新晋 AI 项目",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "包含软件特性介绍和下载链接。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "5b273068076f",
+      "title": "VortexHostFeel/Gemini-Config-Checker-",
+      "category": "apps",
+      "subcategory": null,
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 19516,
+      "excerpt": "<p align=\"center\"><img src=\"https://github.com/MatinSenPai/Gemini-Config-Checker/raw/main/assets/banner.png\" alt=\"Gemini/Check\" width=\"100%\"></p> <p align=\"center\"> <b>English</b> · <a href=\"README.fa.md\">فارسی</a> </p> <p align=\"center\"> <a href=\"https://www.dropbox.com/scl/fi/l80rdcm1o9gnqcpdsw1gi/GeminiConfigChecker.rar?rlkey=dv7oxsttd2j8kvr5zu7uyx1tm&st=l2vaozdz&dl=1\"> <img alt=\"Download the Gemini app\" src=\"https://img.shields.io/badge/Download-%20Gemeni%20app-0969DA?style=for-the-badge&logo=github&logoColor=white\"> </a> </p> Gemini Config Checker Find proxy configs that actually get you…",
+      "quality": 10,
+      "practical": 2,
+      "sourceName": "GitHub 新晋 AI 项目",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "内容重复"
+      },
+      "blocked": [
+        "模型复核不通过（内容重复）"
+      ]
+    },
+    {
+      "slug": "6989ef082671",
+      "title": "wisemeadowlarkspike/Gemini-Config-Checker-",
+      "category": "apps",
+      "subcategory": null,
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 19516,
+      "excerpt": "<p align=\"center\"><img src=\"https://github.com/MatinSenPai/Gemini-Config-Checker/raw/main/assets/banner.png\" alt=\"Gemini/Check\" width=\"100%\"></p> <p align=\"center\"> <b>English</b> · <a href=\"README.fa.md\">فارسی</a> </p> <p align=\"center\"> <a href=\"https://www.dropbox.com/scl/fi/l80rdcm1o9gnqcpdsw1gi/GeminiConfigChecker.rar?rlkey=dv7oxsttd2j8kvr5zu7uyx1tm&st=l2vaozdz&dl=1\"> <img alt=\"Download the Gemini app\" src=\"https://img.shields.io/badge/Download-%20Gemeni%20app-0969DA?style=for-the-badge&logo=github&logoColor=white\"> </a> </p> Gemini Config Checker Find proxy configs that actually get you…",
+      "quality": 10,
+      "practical": 2,
+      "sourceName": "GitHub 新晋 AI 项目",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "内容重复"
+      },
+      "blocked": [
+        "模型复核不通过（内容重复）"
+      ]
+    },
+    {
+      "slug": "a9df33be03ca",
+      "title": "Watchlespeed/Gemini-Config-Checker-",
+      "category": "apps",
+      "subcategory": null,
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 19516,
+      "excerpt": "<p align=\"center\"><img src=\"https://github.com/MatinSenPai/Gemini-Config-Checker/raw/main/assets/banner.png\" alt=\"Gemini/Check\" width=\"100%\"></p> <p align=\"center\"> <b>English</b> · <a href=\"README.fa.md\">فارسی</a> </p> <p align=\"center\"> <a href=\"https://www.dropbox.com/scl/fi/l80rdcm1o9gnqcpdsw1gi/GeminiConfigChecker.rar?rlkey=dv7oxsttd2j8kvr5zu7uyx1tm&st=l2vaozdz&dl=1\"> <img alt=\"Download the Gemini app\" src=\"https://img.shields.io/badge/Download-%20Gemeni%20app-0969DA?style=for-the-badge&logo=github&logoColor=white\"> </a> </p> Gemini Config Checker Find proxy configs that actually get you…",
+      "quality": 10,
+      "practical": 2,
+      "sourceName": "GitHub 新晋 AI 项目",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "内容重复"
+      },
+      "blocked": [
+        "模型复核不通过（内容重复）"
+      ]
+    },
+    {
+      "slug": "6f98f57bd730",
+      "title": "isair/jarvis",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [],
+      "bodyChars": 14309,
+      "excerpt": "<div align=\"center\"> Jarvis Your intelligence. Your hardware. A private, local-first AI assistant with voice and text chat.<br> Talk naturally, as if Jarvis were a third person in the room. Voice-first · Local AI · Personal memory · No subscription Download Jarvis → &nbsp; · &nbsp; Website &nbsp; · &nbsp; [Get started](#quick-install) &nbsp; · &nbsp; [Explore the app](#inside-jarvis) &nbsp; · &nbsp; [Support the project](#support) </div> --- An assistant that lives with you, not in the cloud Jarvis is built to be part of the conversation. Talk through an idea, discuss plans with a friend, the…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 检索（生态项目更新）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": ""
       },
       "blocked": []
     },
@@ -92,7 +294,7 @@
       "warnings": [],
       "agent": {
         "verdict": "pass",
-        "reason": "文章提供了实践性内容，包括kobcpp 1.124.2的更新和使用方法。"
+        "reason": ""
       },
       "blocked": []
     },
@@ -119,8 +321,29 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "文章提供了实践性内容，包括RustingStrata的新功能和使用方法。"
+        "reason": ""
       },
+      "blocked": []
+    },
+    {
+      "slug": "cc7b7d650858",
+      "title": "datasette-agent 0.6a0",
+      "category": "apps",
+      "subcategory": "agents",
+      "tags": [
+        "agent"
+      ],
+      "bodyChars": 355,
+      "excerpt": "Release: datasette-agent 0.6a0 Accumulated small fixes for Datasette Agent, my agent plugin for Datasette that lets you ask questions about your data. Most notably, it now adds an agent prompt directly to the Datasette homepage, with support for hash-mentions of tables and queries: Tags: datasette-agent , llm , datasette , llms , ai , generative-ai",
+      "quality": 9,
+      "practical": 1,
+      "sourceName": "Simon Willison",
+      "domain": "simonwillison.net",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
       "blocked": []
     },
     {
@@ -142,10 +365,7 @@
       "warnings": [
         "标题未翻译"
       ],
-      "agent": {
-        "verdict": "pass",
-        "reason": "文章提供了实践性内容，包括Vimoo 1.0的介绍和使用方法。"
-      },
+      "agent": null,
       "blocked": []
     },
     {
@@ -165,13 +385,8 @@
         "没有命中任何标签",
         "标题未翻译"
       ],
-      "agent": {
-        "verdict": "fail",
-        "reason": "文章没有提供实践性内容，只是描述了更新strata后遇到的问题，没有提供解决方法或实测数据。"
-      },
-      "blocked": [
-        "模型复核不通过（文章没有提供实践性内容，只是描述了更新strata后遇到的问题，没有提供解决方法或实测数据。）"
-      ]
+      "agent": null,
+      "blocked": []
     },
     {
       "slug": "80232dee6e08",
@@ -190,13 +405,29 @@
         "没有命中任何标签",
         "标题未翻译"
       ],
-      "agent": {
-        "verdict": "fail",
-        "reason": "内容为产品发布公告，缺乏实践性内容。"
-      },
-      "blocked": [
-        "模型复核不通过（内容为产品发布公告，缺乏实践性内容。）"
-      ]
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "968e4ab4d9bb",
+      "title": "datasette-apps 0.4a0",
+      "category": "apps",
+      "subcategory": "agents",
+      "tags": [
+        "agent"
+      ],
+      "bodyChars": 685,
+      "excerpt": "Release: datasette-apps 0.4a0 Datasette Apps are sandboxed HTML and JavaScript applications that live inside Datasette - think Claude Artifacts, but these ones can run SQL queries against your data. 0.4a0 adds support for linking: you can link to an app with #fragments in the URL and the app can see and use those, plus supported URL schemes are reported back to Datasette Agent so it can help write apps that link to each other. This means you can have e.g. an app that shows details about a specific record, and a completely separate app that searches those records and links to their representat…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "Simon Willison",
+      "domain": "simonwillison.net",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
     },
     {
       "slug": "45d13b9d3117",
@@ -217,10 +448,50 @@
       "domain": "appinn.com",
       "hard": [],
       "warnings": [],
-      "agent": {
-        "verdict": "pass",
-        "reason": "文章提供了实践性内容，包括具体的软件推荐和使用方法。"
-      },
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "ae7e8cfb342f",
+      "title": "📡 AI日报 11/16 | 美国会拟收紧对华 AI 芯片出口、ChatGPT 支持 GIF 生成、中国自驾厂商备好“去英伟达化”方案",
+      "category": "tools",
+      "subcategory": "interface",
+      "tags": [
+        "local",
+        "benchmark",
+        "agent",
+        "generate"
+      ],
+      "bodyChars": 812,
+      "excerpt": "AI日报 11/16 1. 美国国会拟收紧对华 AI 芯片出口 在英伟达前 CEO 黄仁勋与疑似中国间谍的关系曝光后，美国民主、共和两党均表态支持收紧 AI 芯片出口。参议院少数党领袖舒默要求黄仁勋及特朗普政府到国会作证，参议院银行委员会主席 Tim Scott 已致函黄仁勋与商务部长卢特尼克；《Remote Access Security Act》等法案重新受到关注。 来源：The Verge，2026-11-16 03:15 CST 2. ChatGPT 上线 GIF 生成与编辑 OpenAI 已向 ChatGPT、Codex 和 API 推送 Images 2.6，可凭提示词或照片生成 GIF，并支持调速、逐帧查看与编辑。OpenAI 称其日均生成图片超过 5 亿张，新版本出图速度约提升 50%。 来源：Engadget，2026-11-16 03:00 CST 3. 中国自动驾驶厂商备好“去英伟达化”方案 Pony.ai CFO 王皓俊表示，若美国进一步收紧对华芯片出口，中国自动驾驶企业已准备多年“Plan B”：优先提升模型效率、使用中端算力，并加大对国产芯片的采用。TechCrunch Mobility 同时提到，May Mobility 计划到 2031 年部署超过 1 万辆自动驾驶车。 来源：TechCrunch，2026-11-16 01:05 CST 4. “…",
+      "quality": 7,
+      "practical": 2,
+      "sourceName": "抡锤者 资讯",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "d513ffb064fc",
+      "title": "Designing nextest's install scripts",
+      "category": "tools",
+      "subcategory": "hands-on",
+      "tags": [
+        "tutorial"
+      ],
+      "bodyChars": 12979,
+      "excerpt": "<!doctype html> Designing nextest’s install scripts 2026-11-14 · 10 min read nextest Now leading with install scripts! Four and a half years after I released the first version of cargo-nextest , it now has install scripts! This has been a long time coming, and I’m really happy to finally have support for them. On Unix-like platforms, including WSL, Cygwin , and Git Bash for Windows ( MSYS ), you can now run install.sh : curl -LsSf https://get.nexte.st/install.sh | sh On Windows, you can also use PowerShell with install.ps1 : irm https://get.nexte.st/install.ps1 | iex I wanted to write a bit a…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "Lobsters AI",
+      "domain": "sunshowers.io",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
       "blocked": []
     },
     {
@@ -243,13 +514,53 @@
       "warnings": [
         "标题未翻译"
       ],
-      "agent": {
-        "verdict": "fail",
-        "reason": "内容为代码更新日志，缺乏实践性内容。"
-      },
-      "blocked": [
-        "模型复核不通过（内容为代码更新日志，缺乏实践性内容。）"
-      ]
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "f08f4d00af3e",
+      "title": "llama.cpp b12427 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial",
+        "agent"
+      ],
+      "bodyChars": 1374,
+      "excerpt": "<details open> server : skip MCP discovery for router children (#32359) </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/67907593> macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubuntu 26.04 s390x (zDNN) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu x64 (CUDA 13) - CUDA 13.5 libraries Ubuntu arm64 (CUDA 13) - CUDA 13.5 l…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "e380b3b1044c",
+      "title": "llama.cpp b12426 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1527,
+      "excerpt": "<details open> mtmd: support higgs v3 STT and vibevoice-ASR (#32329) mtmd: support higgs v3 and vibevoice-ASR use proper mapping address review comment nits rm hacky get_audio_length, add mtmd_helper_get_media_meta </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/67880678> macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubuntu 26.04 s390x (zDNN) Ubuntu x64 (Vulkan) U…",
+      "quality": 9,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
     },
     {
       "slug": "8c93d0c3f65e",
@@ -270,13 +581,8 @@
       "warnings": [
         "标题未翻译"
       ],
-      "agent": {
-        "verdict": "fail",
-        "reason": "内容为代码更新日志，缺乏实践性内容。"
-      },
-      "blocked": [
-        "模型复核不通过（内容为代码更新日志，缺乏实践性内容。）"
-      ]
+      "agent": null,
+      "blocked": []
     },
     {
       "slug": "bb22ef599c28",
@@ -297,13 +603,51 @@
       "warnings": [
         "标题未翻译"
       ],
-      "agent": {
-        "verdict": "fail",
-        "reason": "内容为代码更新日志，缺乏实践性内容。"
-      },
-      "blocked": [
-        "模型复核不通过（内容为代码更新日志，缺乏实践性内容。）"
-      ]
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "1d3a31eebbf7",
+      "title": "llama.cpp b12428 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1530,
+      "excerpt": "<details open> jinja: add 4 missing features (#32352) jinja: add 4 missing features apply suggestion Co-authored-by: Aldehir Rojas <hello@alde.dev> fix error msg --------- Co-authored-by: Aldehir Rojas <hello@alde.dev> </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/67916336> macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubuntu 26.04 s390x (zDNN) Ubuntu x64 (Vulka…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "ff0bb8262f5f",
+      "title": "Strata v0.2.14 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "lowspec"
+      ],
+      "bodyChars": 20697,
+      "excerpt": "Strata 0.2.14: the prompt runs on Strata's own kernels on NVIDIA and AMD The app and the Terminal are 0.2.14. Control and every engine package are 0.1.60. The update feed is sequence 125. The Intel Arc engine stays at 0.1.59 in this release. The DGX Spark (linux-aarch64) engine stays at 0.1.59 too; its feed stays at sequence 123. 0.2.14.1 (11-15): drafting fixes in the Terminal Control 0.1.60.1 for Windows, Linux and the Mac, with Terminal 0.2.14.1. To get it, run strata update in the Terminal, or press Update on the Strata row in the app's Settings > Updates. The engines and the app stay at…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
     },
     {
       "slug": "12fec37e27da",
@@ -322,10 +666,29 @@
         "没有命中任何标签",
         "标题未翻译"
       ],
-      "agent": {
-        "verdict": "pass",
-        "reason": "文章讨论了使用特定硬件配置运行LLM的可能性，提供了相关的技术信息和问题讨论。"
-      },
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "eee8ec35d76a",
+      "title": "Why download abliterated Flash Next models when LoRA exists?",
+      "category": "local",
+      "subcategory": "quantize",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 3692,
+      "excerpt": "I just wanted to post a kind of PSA for everyone out there downloading hundreds of GB of abliterated models. You don't need to do that -- the vast majority of abliteration techniques are rank-1 ablations, meaning their refusal projection can be encapsulated in a tiny LoRA and applied at runtime to a quant you already have on disk. It can even be applied per-request, so you can run an unmodified model until you hit a refusal, then switch on the LoRA, resend the prompt, and keep going. I wanted to explain briefly how to do that in llama.cpp and share a LoRA I built from the best-performing abli…",
+      "quality": 7,
+      "practical": 4,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
       "blocked": []
     },
     {
@@ -386,6 +749,28 @@
       "practical": 2,
       "sourceName": "Hacker News (AI)",
       "domain": "jakub.jankiewicz.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "8b4f103452a4",
+      "title": "I have created a tool to observe what happens inside an LLM. Also allows for the comparison of two quantizations of the same model to see at what point they diverge, token by token",
+      "category": "local",
+      "subcategory": "runtime",
+      "tags": [
+        "local",
+        "free"
+      ],
+      "bodyChars": 3540,
+      "excerpt": "What changes between different quantizations of the same model? And what if you could SEE what actually sets them apart? To help answer that question, I’ve created a small project called inside-llm—an open-source tool that loads one or two GGUF models using llama.cpp and displays, right in your browser, what the model is doing as it generates text. What it shows Stream: the text, one column per model, brightness = probability of each token. A magenta mark wherever A and B would pick differently. Two modes: lockstep (both models read the same text, so you get a clean per-position comparison) a…",
+      "quality": 7,
+      "practical": 4,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
       "hard": [],
       "warnings": [
         "标题未翻译"
