@@ -1,7 +1,7 @@
 {
   "id": "model-pricing",
   "kind": "openrouter-pricing",
-  "collectedAt": "2026-11-16T20:39:57.194Z",
+  "collectedAt": "2026-11-17T04:45:22.139Z",
   "upstream": {
     "label": "OpenRouter 模型目录 API",
     "url": "https://openrouter.ai/models"
@@ -211,6 +211,16 @@
           "created": 1754414231
         },
         {
+          "name": "OpenAI: gpt-oss-20b",
+          "id": "openai/gpt-oss-20b",
+          "url": "https://openrouter.ai/openai/gpt-oss-20b",
+          "context": 131072,
+          "promptPerMillion": 0.03,
+          "completionPerMillion": 0.13,
+          "free": false,
+          "created": 1754414229
+        },
+        {
           "name": "Inference.net: Schematron V2 Turbo",
           "id": "inference-net/schematron-v2-turbo",
           "url": "https://openrouter.ai/inference-net/schematron-v2-turbo",
@@ -219,6 +229,16 @@
           "completionPerMillion": 0.15,
           "free": false,
           "created": 1789176949
+        },
+        {
+          "name": "Tencent: Hy4 flash",
+          "id": "tencent/hy4-flash",
+          "url": "https://openrouter.ai/tencent/hy4-flash",
+          "context": 1048576,
+          "promptPerMillion": 0.035,
+          "completionPerMillion": 0.14049999999999999,
+          "free": false,
+          "created": 1794838706
         },
         {
           "name": "Amazon: Nova Micro 1.0",
@@ -231,6 +251,26 @@
           "created": 1733437237
         },
         {
+          "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
+          "id": "deepseek/deepseek-v4.1-flash-1017",
+          "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
+          "context": 1048576,
+          "promptPerMillion": 0.036,
+          "completionPerMillion": 0.5,
+          "free": false,
+          "created": 1792225624
+        },
+        {
+          "name": "DeepSeek: DeepSeek V4.1 Flash 1017 (batch)",
+          "id": "deepseek/deepseek-v4.1-flash-1017:batch",
+          "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017:batch",
+          "context": 1048576,
+          "promptPerMillion": 0.036,
+          "completionPerMillion": 0.15,
+          "free": false,
+          "created": 1792225624
+        },
+        {
           "name": "DeepSeek: DeepSeek Flash Latest",
           "id": "~deepseek/deepseek-flash-latest",
           "url": "https://openrouter.ai/~deepseek/deepseek-flash-latest",
@@ -239,16 +279,6 @@
           "completionPerMillion": 0.5,
           "free": false,
           "created": 1789399150
-        },
-        {
-          "name": "DeepSeek: DeepSeek V4.1 Flash 1017 (batch)",
-          "id": "deepseek/deepseek-v4.1-flash-1017:batch",
-          "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017:batch",
-          "context": 1048576,
-          "promptPerMillion": 0.037,
-          "completionPerMillion": 0.329,
-          "free": false,
-          "created": 1792225624
         },
         {
           "name": "Cohere: Command R7B (12-2024)",
@@ -269,16 +299,6 @@
           "completionPerMillion": 0.3,
           "free": false,
           "created": 1785606009
-        },
-        {
-          "name": "Tencent: Hy4 flash",
-          "id": "tencent/hy4-flash",
-          "url": "https://openrouter.ai/tencent/hy4-flash",
-          "context": 1048576,
-          "promptPerMillion": 0.04375,
-          "completionPerMillion": 0.175625,
-          "free": false,
-          "created": 1794838706
         },
         {
           "name": "inclusionAI: Ling 3.1 Flash",
@@ -389,26 +409,6 @@
           "completionPerMillion": 0.24,
           "free": false,
           "created": 1733437363
-        },
-        {
-          "name": "NVIDIA: Nemotron 3 Nano 30B A3B",
-          "id": "nvidia/nemotron-3-nano-30b-a3b",
-          "url": "https://openrouter.ai/nvidia/nemotron-3-nano-30b-a3b",
-          "context": 262144,
-          "promptPerMillion": 0.06,
-          "completionPerMillion": 0.24,
-          "free": false,
-          "created": 1765731275
-        },
-        {
-          "name": "IBM: Granite 4.2 8B",
-          "id": "ibm-granite/granite-4.2-8b",
-          "url": "https://openrouter.ai/ibm-granite/granite-4.2-8b",
-          "context": 131072,
-          "promptPerMillion": 0.06,
-          "completionPerMillion": 0.15,
-          "free": false,
-          "created": 1788206780
         }
       ]
     }
@@ -421,8 +421,8 @@
     {
       "path": "https://openrouter.ai/api/v1/models",
       "url": "https://openrouter.ai/api/v1/models",
-      "sha256": "4a39821fcf3f531638ae76a099cb9a69f276f6190445fa05cc9383732a0e0ad8",
-      "bytes": 850380
+      "sha256": "181e2fff0b01da5f450f33b812771723f7bdc2e7c461da2c867562d87a949376",
+      "bytes": 852903
     }
   ]
 }
