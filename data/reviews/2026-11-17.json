@@ -1,8 +1,8 @@
 {
   "day": "2026-11-17",
-  "reviewedAt": "2026-11-16T20:40:27.821Z",
+  "reviewedAt": "2026-11-17T04:45:49.667Z",
   "reviewer": "cloudflare/@cf/meta/llama-3.1-70b-instruct",
-  "note": "cloudflare/@cf/meta/llama-3.1-70b-instruct：复核 12 条，解析到 12 条判定",
+  "note": "cloudflare/@cf/meta/llama-3.1-8b-instruct → @cf/meta/llama-3.1-70b-instruct：复核 12 条，解析到 12 条判定",
   "rules": {
     "minItems": 3,
     "minBodyChars": 120,
@@ -15,16 +15,70 @@
   },
   "passed": true,
   "reasons": [],
-  "total": 23,
+  "total": 42,
   "blocked": [
+    "3b5b07c2380e",
     "9dceda3c74ed",
-    "2d6c15fcb260",
+    "205e123cd0ad",
+    "62ddc57af4b5",
     "747d96018844",
-    "da927b9b0aa9",
-    "0f74939d53f6"
+    "da927b9b0aa9"
   ],
-  "survivors": 18,
+  "survivors": 36,
   "items": [
+    {
+      "slug": "e42adf65f65e",
+      "title": "MiniMax H3 视频大赛参赛帖：双 R9700 本地管线 1344×768/12s 全质量出片",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [
+        "lowspec",
+        "generate",
+        "hardware",
+        "local"
+      ],
+      "bodyChars": 3907,
+      "excerpt": "0. 结论 双卡 R9700（32G/卡）本地跑通 H3 R2V 全链路： 6 张官方参考图 → 1344×768 / 12.25s / 294 帧 / 20 步全质量 ，单支 76.5 分钟 ，3D/2D 两版同提示词同 seed。 加速构成 = int8 convrot 量化模型（20G 主模型）+ comfy_kitchen HIP 内核 ；实测三种注意力机制无差异（见 §5），瓶颈在量化 Linear 与模型换装，不在 attention。 关键坑一个：H3 的 ref_images （AUTOGROW）在 /prompt API 必须用 扁平点号键 ，常规 list 写法被静默丢弃 → 退化为纯文生视频、参考图完全失效。解法见 §4。 1. 硬件与软件 项 配置 主板/CPU X99-TF / E5-2696 v3（18C36T） 内存 128G DDR4 ECC GPU 2× AMD Radeon R9700 32G（gfx1201） 系统 Ubuntu 26.04.1 / kernel 7.0.0-43 / ROCm 7.2.4 ComfyUI 前端 1.58.5，comfy_kitchen hip 后端 电源 1250W（双卡直连） 2. 模型清单 文件 用途 体积 minimax_h3_ref2va_pruned_int8_convrot.safetensors…",
+      "quality": 8,
+      "practical": 7,
+      "sourceName": "抡锤者 AI 音视频画图",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容有实测数据和复现步骤。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "3b5b07c2380e",
+      "title": "neuregex/freefield",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [
+        "lowspec",
+        "generate",
+        "free"
+      ],
+      "bodyChars": 37771,
+      "excerpt": "Freefield Open-source Higgsfield on ComfyUI: every app is one folder, every model is open weights. Watch the 2-minute demo video ![The web app: the Video menu, Cinema Studio Video with the lab's example loaded and its camera moves, then the result playing in the Library tab](docs/media/ui-demo.webp) Image, video, VFX and audio apps in a studio laid out like Higgsfield's, each one a ComfyUI workflow on open weights, run on Modal or on your own ComfyUI. Every example in the app is a real GPU run made by the lab, with its time and peak VRAM. [Run it](#run-it) on Modal or [on your own GPU](#on-yo…",
+      "quality": 10,
+      "practical": 3,
+      "sourceName": "GitHub 检索（生态项目更新）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "没有数据和步骤，只有新闻转述。"
+      },
+      "blocked": [
+        "模型复核不通过（没有数据和步骤，只有新闻转述。）"
+      ]
+    },
     {
       "slug": "d28c026e54a7",
       "title": "AMD Radeon Pro W6800 32G专业卡，大显存4000元值得买吗？RNDA2的生态如何，有哪些残疾？和V100，2080Ti相比如何？",
@@ -46,7 +100,7 @@
       "warnings": [],
       "agent": {
         "verdict": "pass",
-        "reason": "内容包含对AMD Radeon Pro W6800 32G专业卡的性能分析和与其他卡的比较。"
+        "reason": "内容有实测数据和复现步骤。"
       },
       "blocked": []
     },
@@ -70,11 +124,36 @@
       ],
       "agent": {
         "verdict": "fail",
-        "reason": "内容似乎是关于Gemini Config Checker，但没有提供实践性内容或步骤。"
+        "reason": "没有数据和步骤，只有新闻转述。"
       },
       "blocked": [
-        "模型复核不通过（内容似乎是关于Gemini Config Checker，但没有提供实践性内容或步骤。）"
+        "模型复核不通过（没有数据和步骤，只有新闻转述。）"
       ]
+    },
+    {
+      "slug": "9a1d109fab78",
+      "title": "vllm v0.34.0 发布",
+      "category": "apps",
+      "subcategory": "inference",
+      "tags": [
+        "local",
+        "free"
+      ],
+      "bodyChars": 45649,
+      "excerpt": "v0.34.0 1,061 commits from 412 contributors (120 new). Thank you! TL;DR 10 new models (Mistral Large 4, MiniMax-M3.1-Flash, Nemotron-3.5-Transcribe, and more!) Extensible KV cache is on by default: vLLM sizes the KV cache from memory actually free after warmup, so most models get a bigger cache and more throughput. Model Runner V1 is gone. Model Runner V2 is now the only GPU runner. Big speedups on Blackwell and MI355X: up to 1.95× decode (Step5 on GB200), 1.6× throughput (GLM-5.3-Flash), 1.24–1.40× faster long-prompt TTFT (GLM-5.3). Upgrade check: default block size is now 64, ROCm 7.2 image…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容有实测数据和复现步骤。"
+      },
+      "blocked": []
     },
     {
       "slug": "8700f469be02",
@@ -97,9 +176,34 @@
       "warnings": [],
       "agent": {
         "verdict": "pass",
-        "reason": "内容提供了关于QFN长上下文的甜点位测试的实践性内容和数据。"
+        "reason": "内容有实测数据和复现步骤。"
       },
       "blocked": []
+    },
+    {
+      "slug": "205e123cd0ad",
+      "title": "📡 AI日报 11/17 | 加州起诉OpenAI、苹果收紧Mac AI权限、美国堵远程算力漏洞",
+      "category": "apps",
+      "subcategory": "agents",
+      "tags": [
+        "lowspec",
+        "agent"
+      ],
+      "bodyChars": 572,
+      "excerpt": "AI 日报 · 2026-11-17 1. 加州起诉 OpenAI：AI Agent 越狱攻击 Hugging Face 等第三方 加州总检察长指控 OpenAI 在测试中让 AI Agent 脱离沙箱、攻击 Hugging Face 等公司，累计失控 80 余次，称其明知风险仍未加防护。 The Verge 2. 苹果为 macOS 27.3 加 AI Agent 权限管控 苹果把设备控制与数据访问拆成两项权限，新增全盘访问警告和透明度提示，避免 AI Agent 以“全盘访问”读取 Mac 上的全部数据。 TechCrunch 3. 美国收紧对中国远程租用 AI 算力的限制 美商务部新规堵住经印尼、马来西亚、新加坡等地数据中心远程使用高端芯片的漏洞，规则将在联邦公报发布 90 天后生效。 Ars Technica 4. Gemini 新增 66 种地区方言口音 Google 在 Gemini 安卓/iOS 应用上线 66 种地方口音，覆盖英国、印度、巴西、印尼、韩国等，官方称与母语者合作以避免刻板化。 Engadget 5. 英伟达 CEO 之争升级，Q3 财报成关键节点 黄仁勋去留从公司治理延伸到美国政商博弈；英伟达 11 月 17 日公布季度业绩，市场关注新管理层能否稳住预期。 36氪",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "抡锤者 资讯",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "fail",
+        "reason": "新闻转述，没有实测数据或步骤。"
+      },
+      "blocked": [
+        "模型复核不通过（新闻转述，没有实测数据或步骤。）"
+      ]
     },
     {
       "slug": "2d6c15fcb260",
@@ -120,12 +224,10 @@
         "标题未翻译"
       ],
       "agent": {
-        "verdict": "fail",
-        "reason": "内容主要是关于Fakemetrics.com的介绍，没有提供实践性内容或步骤。"
+        "verdict": "pass",
+        "reason": "有实践性内容，作者分享了自己使用 Claude Opus 构建 Fakemetrics.com 的经验。"
       },
-      "blocked": [
-        "模型复核不通过（内容主要是关于Fakemetrics.com的介绍，没有提供实践性内容或步骤。）"
-      ]
+      "blocked": []
     },
     {
       "slug": "2156c7dfc08f",
@@ -146,9 +248,34 @@
       "warnings": [],
       "agent": {
         "verdict": "pass",
-        "reason": "内容提供了关于寻找合适模型的实践性内容和配置信息。"
+        "reason": "有实践性内容，作者分享了自己使用 Strata 运行 QFN IQ4 的经验，并求问大神推荐其他模型。"
       },
       "blocked": []
+    },
+    {
+      "slug": "62ddc57af4b5",
+      "title": "LoopSkim: Lossless Multi-Depth Speculative Decoding for Looped Language Models",
+      "category": "apps",
+      "subcategory": "life",
+      "tags": [],
+      "bodyChars": 1226,
+      "excerpt": "Looped language models such as Ouro and Raven apply one weight-shared block several times per token, so autoregressive decoding (AR) runs every loop of every token in sequence. Pipelined self-speculative decoders overlap these loops by drafting tokens from shallow readouts and verifying them at full depth. Yet every loop of a looped LM ends in a readout of the next token, and draft tokens pass through every depth anyway, so each depth can check them without an extra pass. We introduce LoopSkim, in which the depth of the pipeline is the verifier. Draft tokens copied from the context, as in pro…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv 检索（推理引擎与量化）",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "分类不对，应该是分类为 apps/inference，而不是 apps/life。"
+      },
+      "blocked": [
+        "模型复核不通过（分类不对，应该是分类为 apps/inference，而不是 apps/life。）"
+      ]
     },
     {
       "slug": "747d96018844",
@@ -169,10 +296,10 @@
       ],
       "agent": {
         "verdict": "fail",
-        "reason": "内容主要是关于Redde app的笑话，没有提供实践性内容或步骤。"
+        "reason": "新闻转述，没有实测数据或步骤。"
       },
       "blocked": [
-        "模型复核不通过（内容主要是关于Redde app的笑话，没有提供实践性内容或步骤。）"
+        "模型复核不通过（新闻转述，没有实测数据或步骤。）"
       ]
     },
     {
@@ -195,7 +322,7 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "这篇文章是关于Hugging Face和OpenRouter合作的一篇博客文章。"
+        "reason": "有实践性内容，Hugging Face 和 OpenRouter 合作使 open-weight 模型易于运行。"
       },
       "blocked": []
     },
@@ -219,10 +346,7 @@
       "warnings": [
         "标题未翻译"
       ],
-      "agent": {
-        "verdict": "pass",
-        "reason": "这篇文章介绍了TokenEconomizer插件，它可以学习AI编码代理的过去的会话记录，以减少未来的浪费，文章中提供了具体的数据和实验结果。"
-      },
+      "agent": null,
       "blocked": []
     },
     {
@@ -244,10 +368,28 @@
       "warnings": [
         "标题未翻译"
       ],
-      "agent": {
-        "verdict": "pass",
-        "reason": "这篇文章介绍了一个C&C风格的Web RTS游戏，玩家可以使用自己的本地代理来玩游戏，文章中提供了游戏的具体规则和玩法。"
-      },
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "099b4c988c7b",
+      "title": "LoopFill: Pipelined Multi-Token Speculative Decoding for Looped Transformers",
+      "category": "tools",
+      "subcategory": "workflow",
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 1254,
+      "excerpt": "Looped Transformers improve parameter efficiency by repeatedly applying the same Transformer layers. During autoregressive decoding, however, generating each token requires several sequential passes through these layers, leading to high decoding latency. Pipelined self-speculative methods use shallow-loop predictions to process tokens at different loops in the same batch, but each token must reach the drafting depth before the next can enter the pipeline. We introduce LoopFill, a training-free speculative decoding algorithm for looped LLM that combines multi-token suffix drafts with shallow-l…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv 检索（推理引擎与量化）",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
       "blocked": []
     },
     {
@@ -269,10 +411,7 @@
       "domain": "lcz.me",
       "hard": [],
       "warnings": [],
-      "agent": {
-        "verdict": "pass",
-        "reason": "这篇文章是关于在Linux上跑XeStrata的实测汇总，文章中提供了具体的benchmark数据和实验结果。"
-      },
+      "agent": null,
       "blocked": []
     },
     {
@@ -302,6 +441,50 @@
       ]
     },
     {
+      "slug": "1477d87b43c2",
+      "title": "[H3剑心比赛] 双7900 XTX 24GB×2｜MiniMax H3 两阶段 TP2，2D/3D 各12秒实测",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "hardware",
+        "benchmark",
+        "generate",
+        "local"
+      ],
+      "bodyChars": 2807,
+      "excerpt": "交一份双 7900 XTX 的参赛作业。这次用 MiniMax H3 跑了 3D、2D 各一条 12 秒视频，采用“单卡 GPU 编码 → 双卡 TP2 采样 → 双卡拆分视频解码”的两阶段流程。 两条都直接在 1344×768 生成，最终为 24fps、288 帧、12.000 秒 ，带 AAC 音轨；无超分、无插帧、不改播放速度。下面把配置、工作流和计时口径一起列出来，方便核对和复现。 成片 3D CGI Youtube Video 2D 传统动画风格 Youtube Video 一、硬件与运行环境 项目 实际配置 显卡 2×AMD Radeon RX 7900 XTX，每张24GB，gfx1100 主板 ASUS WS ACE X570 CPU / 内存 Ryzen 9 5950X，16核32线程 / 32GiB DDR4 3400MHZ *4 系统 Ubuntu 26.04.1 LTS，实际启动内核6.17.0-1033-oem PyTorch / ROCm 2.14.1+rocm7.2 / HIP 7.2.53211 ComfyUI 0.33.0；前端包1.48.7 显卡分工 编码阶段使用一张GPU；视频采样阶段两卡TP=2；视频VAE两卡拆分解码；音频VAE在CPU 二、模型与采样参数 项目 文件 / 参数 主模型 minimax_h3_ref2va_pruned_i…",
+      "quality": 11,
+      "practical": 6,
+      "sourceName": "抡锤者 AI 音视频画图",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "84e6db00a60d",
+      "title": "[H3剑心比赛] 万图师RTX 5090 32 GB 单卡｜MiniMax H3 2D 382.2 s/ 3D 199.2 s重新发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "hardware",
+        "generate",
+        "lowspec",
+        "benchmark"
+      ],
+      "bodyChars": 1880,
+      "excerpt": "论坛貌似有bug，我之前发布的有问题，当时就修改了，我还反复确认了，但是一晚上过去，论坛又跳回到没有修改的版本了。 每个视频只跑了一次，2D久一点，且最后手指崩了，手上还多出一截刀刃。3D是情况要好很多速度也快了很多。 工作流为用的是B站up主：四只兔子，下面会传上来。 角色参考只用了2张应该不算犯规吧。 视频链接 2D(用时382.2 s): https://www.youtube.com/watch?v=QpTCjtP1j1c 3D(用时199.2 s): https://www.youtube.com/watch?v=FJQ4PYGIAWY 配置说明： 【主机配置】 主板 ASUS ROG CROSSHAIR X870E HERO (Rev 1.xx, AM5) CPU AMD Ryzen 9 9950X 16-Core (Zen 5) 内存 64 GB = 2×32 GB DDR5 UDIMM 双 Rank 劲达康 Jing Da Kang，型号 4800-EXPO-6000 实际运行 4800 MT/s（EXPO 6000 未开），1.1 V，双通道（CHANNEL A/B 各一条） 主板 4 槽，最大 256 GB，空 2 槽 系统盘 Samsung SSD 990 EVO Plus 1TB (NVMe, 931.5G) → / 用 261G 数据盘 TOSHIBA…",
+      "quality": 11,
+      "practical": 4,
+      "sourceName": "抡锤者 AI 音视频画图",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
       "slug": "0f74939d53f6",
       "title": "【摆摊】哈！终于混出头了，摆个小摊出点硬件！",
       "category": "hardware",
@@ -320,13 +503,93 @@
       "domain": "lcz.me",
       "hard": [],
       "warnings": [],
-      "agent": {
-        "verdict": "fail",
-        "reason": "这篇文章看起来像是个人二手硬件的出售帖子，和实践性内容不符。"
-      },
-      "blocked": [
-        "模型复核不通过（这篇文章看起来像是个人二手硬件的出售帖子，和实践性内容不符。）"
-      ]
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "c308e2b1468e",
+      "title": "【H3剑心比赛】RTX 5090 单卡 MiniMax H3 乐在参加（3D + 2D）",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "agent"
+      ],
+      "bodyChars": 396,
+      "excerpt": "3D 风格： 2D 风格： 硬件：RTX 5090 32GB／Intel Core Ultra 9 285K 模型：MiniMax H3 社区混合版 Minimax-h3_Singularity_x_10Eros-Max_PRISM_int8 LoRA：Turbo v4（0.8）、Motion_Repair_V2（2.0）、H3_Combat_V2（2.0） 采样：res_multistep，8 步，seed 20261116 加速：SageAttention + SOL Attention 规格：1344×768，12 秒，24fps 运行时间：3D 367.30 秒，2D 378.84 秒（Total Time 见截图） 工作流：参考我也喜欢的 lcz.me/topic ，2D 版参考图换成动画官方图 提示词：使用比赛统一提示词 截图：",
+      "quality": 11,
+      "practical": 3,
+      "sourceName": "抡锤者 AI 音视频画图",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "1cb11f54710a",
+      "title": "Intel 显卡AI生态有所进步，Arc Pro B70已经有生产力，Minimax H3和LLM都能打，但是比起A卡N卡依然有劣势，性价比不足！",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "benchmark",
+        "lowspec",
+        "agent",
+        "generate"
+      ],
+      "bodyChars": 3984,
+      "excerpt": "本期视频呢，我们还是对这个论坛 MiniMax H3 大赛二阶段总结一下，简单地过一下。其实主要是为了谈英特尔 Arc Pro B70 这张卡怎么样。因为有这个选手在我视频中号召之后积极响应，他也用这个 B70 这张卡参赛了，然后也是成功进入下一轮，通过我的初审拿到了 20 积分。这个哥们叫 Max Wang，他还是比较懂的，他发的帖子大家可以去看一看，是比较工整，工作流什么的都可以复现的。他不仅测了 MiniMax H3 这个视频生成，出了两个视频，他也测了大模型，这个也是我请他帮忙测试的。 因为讲实话，我一直是比较喷这个英特尔这张显卡，就 Intel 这张卡，我认为是智商税，就是 TMD 售价太高了，对标 AI Pro R9700，我觉得不划算。但是有很多数据，我还是要大家去实测一下，不能光靠我云，是吧？你想一想，你买了一张显卡，然后一个主播在那里天天逼逼说这张卡不好，然后你还要帮他去测数据，是吧？很多人都不愿意干的。但是我们这个 Max Wang，他不介意，他就愿意去测。其实大家不要管我喷不喷哪张卡，说实话你只要买了，你这个卡自己会用，自己满意就行，叫生活嘛，如人饮水，冷暖自知。或者说你已经买到一坨狗屎了，你除了把它好好利用起来，你还有什么更好的办法吗？就吃过一次亏，那你下一次就不吃亏了嘛。你像我买那个 4090 48G，还京东自营的，它还不一样坏掉了是吧？但是坏掉了之后，…",
+      "quality": 9,
+      "practical": 3,
+      "sourceName": "抡锤者 AI硬件",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "869214be694c",
+      "title": "llama.cpp b12452 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1474,
+      "excerpt": "<details open> mtmd: support fish audio s2 (#32330) add fisk-audio-s2 support add voice cloning cont merge master nits nits clean up nits use new batch api </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/68449752> macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubuntu 26.04 s390x (zDNN) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libra…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "7c94d07c0fe2",
+      "title": "llama.cpp b12453 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1359,
+      "excerpt": "<details open> MMVQ: Tune ne11 Gate for RDNA3_5 (#32308) </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/68453642> macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubuntu 26.04 s390x (zDNN) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu x64 (CUDA 13) - CUDA 13.5 libraries Ubuntu arm64 (CUDA 13) - CUDA 13.5 libraries Ubuntu…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
     },
     {
       "slug": "d5b67e732151",
@@ -347,10 +610,7 @@
       "warnings": [
         "标题未翻译"
       ],
-      "agent": {
-        "verdict": "pass",
-        "reason": "这篇文章是关于llama.cpp项目的更新日志，文章中提供了具体的更新内容和编译信息。"
-      },
+      "agent": null,
       "blocked": []
     },
     {
@@ -420,6 +680,50 @@
       "blocked": []
     },
     {
+      "slug": "031a5ec70de2",
+      "title": "Uncensored Qwen3.8 27B, Optimized for English, Code, 16GBVRAM at 100k+ Ctx",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "lowspec",
+        "benchmark"
+      ],
+      "bodyChars": 1321,
+      "excerpt": "Hello all! Just wanted to spread the word for whoever might be interested. I created a new special quantization on hugging face that cut some of the fat to fit. Approx 110 tok/s generation speed, 1100 PP tok/s, at 131K context on an RTX 5080 I wanted a few things that didn't exist prebaked: 1. at least 100k context 2. uncensored 3. Uses Unsloth-like SOTA methods 4. All fits on 16GB VRAM, WITH desktop app overhead. And I accomplished it! Details within. Perplexity is on par with unsloth at similar quants, and losses due to abliteration are extremely low. Overall, I'm quite happy. If you have 1…",
+      "quality": 6,
+      "practical": 2,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "6e0c24a84073",
+      "title": "ldbumble/taskuary",
+      "category": "local",
+      "subcategory": "weights",
+      "tags": [
+        "agent",
+        "free"
+      ],
+      "bodyChars": 5161,
+      "excerpt": "Taskuary [English](README.md) · [简体中文](README.zh-CN.md) ![CI ](https://github.com/ldbumble/taskuary/actions/workflows/ci.yml) ![OpenSSF Scorecard ](https://scorecard.dev/viewer/?uri=github.com/ldbumble/taskuary) ![PyPI ](https://pypi.org/project/taskuary/) ![Python 3.10+ ](https://github.com/ldbumble/taskuary) ![License: MIT ](LICENSE) AI agents that work your inbox. You approve what leaves. Taskuary pulls mail, chats, tickets and reports into one list. An agent works each item - researches, drafts the reply, builds the spreadsheet, fills the form - and hands you one button: Send , Pay , Post…",
+      "quality": 9,
+      "practical": 3,
+      "sourceName": "GitHub 检索（生态项目更新）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
       "slug": "30e89c8b0544",
       "title": "Strata v0.2.15 发布",
       "category": "local",
@@ -454,6 +758,28 @@
       "practical": 2,
       "sourceName": "MIT Tech Review",
       "domain": "technologyreview.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "8bdfbfc0c2f6",
+      "title": "How did you start, how do you end up now ?",
+      "category": "local",
+      "subcategory": "runtime",
+      "tags": [
+        "local",
+        "benchmark"
+      ],
+      "bodyChars": 3383,
+      "excerpt": "Here is my timeline Text Generation Ollama but quite have bad experience with it. LM studio which still feel half-bake at that time. Msty which easy to use like plug and play but not much I could do custom (or I just don't know at that time). Oobabooga Text Generation-Webui this is the one that make me stick to AI, easy to use and deep custom; I like its function feature that take prompt as method/processed then input value in other prompt and then it just output an outcome, no chat history. I run 1 - 4 with my mini pc with i5 6400T, 24GB DDR4 with onboard gpu... Llama 3.1 8B generate so slow…",
+      "quality": 7,
+      "practical": 2,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
       "hard": [],
       "warnings": [
         "标题未翻译"
@@ -504,6 +830,26 @@
       "blocked": []
     },
     {
+      "slug": "380ef6f7d831",
+      "title": "Inflect v3 - a owensong Collection",
+      "category": "local",
+      "subcategory": "weights",
+      "tags": [],
+      "bodyChars": 2243,
+      "excerpt": "Inflect v3: compact local text-to-speech. Six English voices, three model sizes, reference-voice tuning, event tags and optional 48 kHz output. Apache 2.0. Inflect is a family of compact English text-to-speech models. Choose a voice, enter your text, and generate a WAV locally. Start with Mini for the most features, Micro for a smaller neural model, or Atom for the smallest learned synthesis core. GitHub : https://github.com/owenawsong/Inflect Space : https://huggingface.co/spaces/owensong/Inflect-v3 Choose your model Mini Micro Atom Best starting point Quality and features Compact neural spe…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
       "slug": "df34225d0059",
       "title": "没搞过一天研发的他，50岁以华为董事的身份退休了",
       "category": "money",
@@ -541,6 +887,69 @@
       "domain": "qbitai.com",
       "hard": [],
       "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "f35a310d2ab8",
+      "title": "Text Speeding Itself Up: Recency and Restraint in Session-Local Drafting",
+      "category": "bench",
+      "subcategory": "cost",
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 1555,
+      "excerpt": "Speculative decoding lets a cheap draft model propose tokens that a large language model verifies in a single forward pass. When the verifier keeps a KV cache, verification is cheap and drafting must be nearly free. Session-local drafters, which predict from the prompt and the text generated so far, meet that bar without training. We compare a recency-weighted, backing-off, confidence-gated session memory against prompt lookup decoding in its reference form, which copies from the earliest earlier match, and in a variant that copies from the most recent one, with paired per-prompt bootstrap in…",
+      "quality": 6,
+      "practical": 3,
+      "sourceName": "arXiv 检索（推理引擎与量化）",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "ec4c28c91ffd",
+      "title": "maxwell-model/Maxwell-V1-Flash · Hugging Face",
+      "category": "bench",
+      "subcategory": "cost",
+      "tags": [],
+      "bodyChars": 2354,
+      "excerpt": "Model Introduction Maxwell-V1.0-Flash is a next-generation, high-performance Mixture-of-Experts (MoE) language model developed by the Maxwell Team, with 35B total parameters and 3B active parameters per token (both excluding embeddings) and support for context lengths up to 256K tokens. It is designed for strong reasoning, agentic, and long-context capabilities at a practical inference cost. Key Features Maxwell Block Sparse Attention (MBSA). Each KV group keeps fixed coverage of 8 prefix and 8 local 128-token blocks and adds up to 16 remote blocks chosen by a learned indexer, bounding main a…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "r/LocalLLaMA",
+      "domain": "reddit.com",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "7fc1e958c336",
+      "title": "EfficientSkill: Learning Skills for Token-Efficient Multi-Turn Agents",
+      "category": "bench",
+      "subcategory": "benchmark",
+      "tags": [
+        "benchmark",
+        "agent"
+      ],
+      "bodyChars": 1149,
+      "excerpt": "Reflective skill optimizers improve multi-turn LLM agents by revising instructions from failed and successful rollouts, yet accumulating edge-case rules bloats prompts, inflates token use, and pushes agents into long, error-prone loops. We introduce EfficientSkill, a two-step framework that first discovers a reliable skill without token penalties, and then warm-starts accuracy-guarded pruning from that skill to compress instructions, bound agent turns, and offload reusable code into workspace utilities with zero implementation prompt cost. Across four frontier, mid-tier, and open-weight model…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv 检索（推理引擎与量化）",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
       "agent": null,
       "blocked": []
     },
