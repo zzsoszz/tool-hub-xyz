@@ -1,0 +1,1144 @@
+{
+  "day": "2026-11-19",
+  "generatedAt": "2026-11-18T18:57:03.220Z",
+  "timezone": "Asia/Shanghai",
+  "windowHours": 48,
+  "window": {
+    "since": null,
+    "until": null
+  },
+  "counts": {
+    "sources": 42,
+    "okSources": 38,
+    "fetched": 1081,
+    "duplicates": 727,
+    "carried": 0,
+    "added": 19,
+    "fallback": 0,
+    "lowQuality": 207,
+    "published": 19
+  },
+  "sources": [
+    {
+      "id": "openai-news",
+      "name": "OpenAI News",
+      "ok": true,
+      "items": 60,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "google-deepmind",
+      "name": "Google DeepMind",
+      "ok": true,
+      "items": 60,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "google-ai",
+      "name": "Google AI Blog",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "hf-blog",
+      "name": "Hugging Face Blog",
+      "ok": true,
+      "items": 60,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "hf-daily-papers",
+      "name": "Hugging Face Daily Papers",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "interconnects",
+      "name": "Interconnects",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "latent-space",
+      "name": "Latent Space",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "simon-willison",
+      "name": "Simon Willison",
+      "ok": true,
+      "items": 30,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "techcrunch-ai",
+      "name": "TechCrunch AI",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "ars-ai",
+      "name": "Ars Technica AI",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "mit-tr-ai",
+      "name": "MIT Tech Review",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "qbitai",
+      "name": "量子位",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "arxiv-cs",
+      "name": "arXiv cs.AI/CL/LG",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "hn-newest",
+      "name": "Hacker News (AI)",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "hn-algolia",
+      "name": "Hacker News Search",
+      "ok": true,
+      "items": 25,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lobsters-ai",
+      "name": "Lobsters AI",
+      "ok": true,
+      "items": 25,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "reddit-local-llama",
+      "name": "r/LocalLLaMA",
+      "ok": false,
+      "items": 0,
+      "queries": 1,
+      "error": "HTTP 404"
+    },
+    {
+      "id": "github-trending",
+      "name": "GitHub 新晋 AI 项目",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "microsoft-research",
+      "name": "Microsoft Research",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "github-blog",
+      "name": "GitHub Blog",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "theverge",
+      "name": "The Verge",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "sspai",
+      "name": "少数派",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "appinn",
+      "name": "小众软件",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "producthunt",
+      "name": "Product Hunt",
+      "ok": true,
+      "items": 30,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "hn-show-ai",
+      "name": "Show HN (AI)",
+      "ok": false,
+      "items": 0,
+      "queries": 1,
+      "error": "HTTP 502"
+    },
+    {
+      "id": "ai-news-applied",
+      "name": "AI News (应用)",
+      "ok": true,
+      "items": 0,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "juejin",
+      "name": "掘金 AI",
+      "ok": true,
+      "items": 0,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "reddit-sideproject",
+      "name": "r/SideProject",
+      "ok": false,
+      "items": 0,
+      "queries": 1,
+      "error": "HTTP 429"
+    },
+    {
+      "id": "hn-money",
+      "name": "HN 检索（独立开发与变现）",
+      "ok": true,
+      "items": 50,
+      "queries": 5,
+      "error": null
+    },
+    {
+      "id": "reddit-saas",
+      "name": "r/SaaS 变现实操",
+      "ok": false,
+      "items": 0,
+      "queries": 1,
+      "error": "HTTP 429"
+    },
+    {
+      "id": "lcz-hardware",
+      "name": "抡锤者 AI硬件",
+      "ok": true,
+      "items": 39,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-llm",
+      "name": "抡锤者 模型部署讨论",
+      "ok": true,
+      "items": 37,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-agent",
+      "name": "抡锤者 Agent 工具",
+      "ok": true,
+      "items": 19,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-media",
+      "name": "抡锤者 AI 音视频画图",
+      "ok": true,
+      "items": 59,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-selfmedia",
+      "name": "抡锤者 自媒体运营",
+      "ok": true,
+      "items": 28,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-web",
+      "name": "抡锤者 建站与网络赚钱",
+      "ok": true,
+      "items": 17,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-crisis",
+      "name": "抡锤者 AI 危机与机遇",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-news",
+      "name": "抡锤者 资讯",
+      "ok": true,
+      "items": 40,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "gh-releases",
+      "name": "GitHub 发布（ComfyUI / Strata 等）",
+      "ok": true,
+      "items": 21,
+      "queries": 8,
+      "error": null
+    },
+    {
+      "id": "hn-ecosystem",
+      "name": "HN 检索（本地推理生态）",
+      "ok": true,
+      "items": 101,
+      "queries": 12,
+      "error": null
+    },
+    {
+      "id": "gh-ecosystem",
+      "name": "GitHub 检索（生态项目更新）",
+      "ok": true,
+      "items": 60,
+      "queries": 6,
+      "error": null
+    },
+    {
+      "id": "arxiv-ecosystem",
+      "name": "arXiv 检索（推理引擎与量化）",
+      "ok": true,
+      "items": 50,
+      "queries": 5,
+      "error": null
+    }
+  ],
+  "categories": [
+    {
+      "id": "apps",
+      "label": "AI 应用",
+      "items": [
+        {
+          "sourceId": "qbitai",
+          "sourceName": "量子位",
+          "title": "全球首个医疗健康AI独立评测与分析平台InclusionMed正式上线",
+          "url": "https://www.qbitai.com/2026/11/510916.html",
+          "id": "https://www.qbitai.com/?p=510916",
+          "published": "2026-11-18T07:24:50.000Z",
+          "summary": "<!DOCTYPE html> < img id=\"wx_img\" src=\"https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png\" width=\"400\" height=\"400\"> 全球首个医疗健康AI独立评测与分析平台InclusionMed正式上线 量子位的朋友们 2026-11-18 15:24:50 来源： 量子位 近日，全球首个医疗健康 AI 独立评测与分析平台InclusionMed 正式上线 近日，全球首个医疗健康 AI 独立评测与分析平台InclusionMed 正式上线，并同步推出医疗 AI 评测图谱 InclusionMed Atl…",
+          "content": {
+            "html": "&lt;!DOCTYPE html&gt;<div><div><div>&lt; img id=\"wx_img\" src=\"https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png\" width=\"400\" height=\"400\"&gt;</div></div></div>\n<div><h3>全球首个医疗健康AI独立评测与分析平台InclusionMed正式上线</h3><div><span><img src=\"http://www.qbitai.com/wp-content/uploads/2019/06/200-100x100.jpg\" alt=\"量子位的朋友们\" loading=\"lazy\"><em><a href=\"https://www.qbitai.com/author/qbitai\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">量子位的朋友们</a></em></span><span>2026-11-18</span><span>15:24:50</span><span>来源：<a href=\"https://www.qbitai.com/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">量子位</a></span></div></div>\n<div><p>近日，全球首个医疗健康 AI 独立评测与分析平台InclusionMed 正式上线</p></div>\n<div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/9f73f05bc011bb3333627b171d19ecec.jpeg\" alt=\"\" loading=\"lazy\"></div>\n<p>近日，全球首个医疗健康 AI 独立评测与分析平台InclusionMed 正式上线，并同步推出医疗 AI 评测图谱 InclusionMed Atlas 和首期医疗 AI 评测指数 InclusionMed Index，旨在为医疗健康 AI 提供更加系统的评估依据。该平台由来自斯坦福大学、哈佛大学、北京协和医学院、蚂蚁集团、InclusionMed.AI等29家机构的研究人员共同建设，被视作医疗健康领域的Artificial Analysis（AA），填补了全球医疗健康 AI 综合测评的空白。</p>\n<p>一个在健康问答中表现出色的 AI，能否同样做好复杂的专业医疗任务？如何识别疑难病例中的关键线索、在电子病历系统中准确完成操作、处理医学研究与医疗运营中的多步骤任务？每一种场景，都对模型提出了不同要求。针对具体医疗任务下的模型能力，业内已有多种评测基准，但单项测试成绩难以完整反映模型在不同医疗任务中的表现。</p>\n<p>据了解，InclusionMed Atlas 围绕“面向谁”和“考察什么能力”两个维度，将患者与公众、医疗专业人员、医疗管理人员三类角色，与知识、推理、任务执行三类能力交叉，形成九宫格评测图谱。每项基准按其主要评测内容归入相应位置，帮助使用者看清当前评测覆盖了哪些医疗需求、哪些方面仍需补充。InclusionMed Index 则汇集纳入基准的评测结果，呈现模型的综合表现及其在不同任务中的优势与不足。</p>\n<div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/f2964eed80b5376a99334c3d958222dd.jpeg\" alt=\"\" loading=\"lazy\"></div>\n<p>首期评测聚焦临床诊疗与医疗管理两大方向，纳入五项评测基准、1034项任务，对国内外11家厂商的22个模型进行系统比较，并经过独立复测，综合考察医疗相关性、评测可信度、场景互补性等因素，最终选出四项公开评测基准，与团队自建的 InclusionMed-DxFiles 共同构成首期指数。其中，InclusionMed-DxFiles 基于顶级医学期刊刊载的疑难病例构建，考察模型结合病例线索进行临床判断的能力。</p>\n<p>据了解，项目组正与医疗机构和研究团队合作，拟围绕复杂治疗选择中的医患共同决策、资源约束下的诊疗调度等场景，开发新的评测任务，进一步考察 AI 在临床诊疗、患者决策支持和医疗健康管理中的表现。</p>\n<p><em><span>本文由InclusionMed提供，量子位获授权转载，观点归原作者所有。</span></em></p>\n<div><span></span><em>版权所有，未经授权不得以任何形式转载及使用，违者必究。</em><span></span></div>\n<div><a href=\"https://www.qbitai.com/tag/inclusionmed\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">InclusionMed</a></div>\n<div><a href=\"https://www.qbitai.com/2026/11/510916.html#\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div><img src=\"http://www.qbitai.com/wp-content/uploads/2019/06/200.jpg\" alt=\"量子位的朋友们\" loading=\"lazy\"><span><a href=\"https://www.qbitai.com/author/qbitai\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">量子位的朋友们</a></span></div></a></div>\n<div><ul><li><a href=\"https://www.qbitai.com/2026/11/510542.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">睿尔曼智能郑随兵：质量、经济性、稳定性是机器人落地三大标准</a><i>2026-11-16</i></li><li><a href=\"https://www.qbitai.com/2026/11/510526.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">2026甲子引力年终盛典即将启幕，AI的无限游戏进入「第二序章」｜甲子引力</a><i>2026-11-16</i></li><li><a href=\"https://www.qbitai.com/2026/11/510493.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">SuperLink2026开启创投行业超级链接时刻，12月北京见</a><i>2026-11-16</i></li><li><a href=\"https://www.qbitai.com/2026/11/510486.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">阿里正式发布Qwen4，智能体及编程能力进阶，迈向真实全场景</a><i>2026-11-16</i></li></ul></div>\n<div><div></div></div>\n<div><span></span><div>扫码分享至朋友圈</div></div>\n<div></div>\n<a href=\"https://service.weibo.com/share/share.php?url=https://www.qbitai.com/2026/11/510916.html&amp;title=%E5%85%A8%E7%90%83%E9%A6%96%E4%B8%AA%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7AI%E7%8B%AC%E7%AB%8B%E8%AF%84%E6%B5%8B%E4%B8%8E%E5%88%86%E6%9E%90%E5%B9%B3%E5%8F%B0InclusionMed%E6%AD%A3%E5%BC%8F%E4%B8%8A%E7%BA%BF&amp;appkey=4017757111&amp;searchPic=true&amp;ralateUid=6105753431\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div></div></a>\n<a href=\"https://www.qbitai.com/2026/11/510916.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div></div></a>\n<div><div><h3>热门文章</h3><div><a href=\"https://www.qbitai.com/2026/11/510003.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE-2026-11-13-233726-e1794623978497.png\" alt=\"\" loading=\"lazy\"></div></a></div></div></div>\n<div><h4>突发！DeepSeek开放全家桶API</h4></div>\n<div>2026-11-14</div>\n<div><a href=\"https://www.qbitai.com/2026/11/509440.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/article-image-18-1.jpg\" alt=\"\" loading=\"lazy\"></div></a></div>\n<div><h4>多模态“源神”！MiniMax开源SOTA生图模型，原生4K，一张两毛</h4></div>\n<div>2026-11-12</div>\n<div><a href=\"https://www.qbitai.com/2026/11/510486.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/a1c609ed60a229a5b5d8208396680798.jpeg\" alt=\"\" loading=\"lazy\"></div></a></div>\n<div><h4>阿里正式发布Qwen4，智能体及编程能力进阶，迈向真实全场景</h4></div>\n<div>2026-11-16</div>\n<div><a href=\"https://www.qbitai.com/2026/11/510297.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/HXCJ5tJaQAAZmki-e1794650979697.jpeg\" alt=\"\" loading=\"lazy\"></div></a></div>\n<div><h4>英伟达上演“奥特曼2.0”，员工集体请愿：让老黄回家！</h4></div>\n<div>2026-11-14</div>\n<div><a href=\"https://www.qbitai.com/2026/11/509224.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/8cb788e7e0616528d84417442cc50a24.png\" alt=\"\" loading=\"lazy\"></div></a></div>\n<div><h4>纯代码造《后室》，116秒切20种画风！文心新模型玩嗨了</h4></div>\n<div>2026-11-11</div>\n<div><div><div><ul><li><a href=\"https://www.qbitai.com/?page_id=99\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">关于量子位</a></li><li><a href=\"https://www.qbitai.com/?page_id=101\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">加入我们</a></li><li><a href=\"https://www.qbitai.com/?page_id=103\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">寻求报道</a></li><li><a href=\"https://www.qbitai.com/?page_id=105\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">商务合作</a></li></ul><div><div><i></i></div></div></div></div></div>\n<div><p>扫码关注量子位</p><img src=\"https://www.qbitai.com/wp-content/uploads/2019/01/qrcode_QbitAI_1.jpg\" alt=\"\" loading=\"lazy\"></div>\n<a href=\"https://weibo.com/qbitai?is_all=1\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><i></i></a>\n<a href=\"https://www.zhihu.com/org/liang-zi-wei-48/activities\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div></div></a>\n<a href=\"https://www.toutiao.com/c/user/53624121633/#mid=1556041376883713\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div></div></a>\n<div><div><a href=\"https://www.qbitai.com/2026/11/510916.html#\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"></a><span>追踪人工智能新趋势，报道科技行业新突破</span></div></div>\n<div></div>\n<p>量子位 QbitAI 版权所有©北京极客伙伴科技有限公司<a href=\"https://beian.miit.gov.cn/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">京ICP备17005886号-1</a></p>",
+            "text": "<!DOCTYPE html> < img id=\"wx_img\" src=\"https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png\" width=\"400\" height=\"400\">\n全球首个医疗健康AI独立评测与分析平台InclusionMed正式上线\n量子位的朋友们 2026-11-18 15:24:50 来源： 量子位\n近日，全球首个医疗健康 AI 独立评测与分析平台InclusionMed 正式上线\n近日，全球首个医疗健康 AI 独立评测与分析平台InclusionMed 正式上线，并同步推出医疗 AI 评测图谱 InclusionMed Atlas 和首期医疗 AI 评测指数 InclusionMed Index，旨在为医疗健康 AI 提供更加系统的评估依据。该平台由来自斯坦福大学、哈佛大学、北京协和医学院、蚂蚁集团、InclusionMed.AI等29家机构的研究人员共同建设，被视作医疗健康领域的Artificial Analysis（AA），填补了全球医疗健康 AI 综合测评的空白。\n一个在健康问答中表现出色的 AI，能否同样做好复杂的专业医疗任务？如何识别疑难病例中的关键线索、在电子病历系统中准确完成操作、处理医学研究与医疗运营中的多步骤任务？每一种场景，都对模型提出了不同要求。针对具体医疗任务下的模型能力，业内已有多种评测基准，但单项测试成绩难以完整反映模型在不同医疗任务中的表现。\n据了解，InclusionMed Atlas 围绕“面向谁”和“考察什么能力”两个维度，将患者与公众、医疗专业人员、医疗管理人员三类角色，与知识、推理、任务执行三类能力交叉，形成九宫格评测图谱。每项基准按其主要评测内容归入相应位置，帮助使用者看清当前评测覆盖了哪些医疗需求、哪些方面仍需补充。InclusionMed Index 则汇集纳入基准的评测结果，呈现模型的综合表现及其在不同任务中的优势与不足。\n首期评测聚焦临床诊疗与医疗管理两大方向，纳入五项评测基准、1034项任务，对国内外11家厂商的22个模型进行系统比较，并经过独立复测，综合考察医疗相关性、评测可信度、场景互补性等因素，最终选出四项公开评测基准，与团队自建的 InclusionMed-DxFiles 共同构成首期指数。其中，InclusionMed-DxFiles 基于顶级医学期刊刊载的疑难病例构建，考察模型结合病例线索进行临床判断的能力。\n据了解，项目组正与医疗机构和研究团队合作，拟围绕复杂治疗选择中的医患共同决策、资源约束下的诊疗调度等场景，开发新的评测任务，进一步考察 AI 在临床诊疗、患者决策支持和医疗健康管理中的表现。\n本文由InclusionMed提供，量子位获授权转载，观点归原作者所有。\n版权所有，未经授权不得以任何形式转载及使用，违者必究。\nInclusionMed\n量子位的朋友们\n睿尔曼智能郑随兵：质量、经济性、稳定性是机器人落地三大标准 2026-11-16\n2026甲子引力年终盛典即将启幕，AI的无限游戏进入「第二序章」｜甲子引力 2026-11-16\nSuperLink2026开启创投行业超级链接时刻，12月北京见 2026-11-16\n阿里正式发布Qwen4，智能体及编程能力进阶，迈向真实全场景 2026-11-16\n扫码分享至朋友圈\n热门文章\n突发！DeepSeek开放全家桶API\n2026-11-14\n多模态“源神”！MiniMax开源SOTA生图模型，原生4K，一张两毛\n2026-11-12\n阿里正式发布Qwen4，智能体及编程能力进阶，迈向真实全场景\n2026-11-16\n英伟达上演“奥特曼2.0”，员工集体请愿：让老黄回家！\n2026-11-14\n纯代码造《后室》，116秒切20种画风！文心新模型玩嗨了\n2026-11-11\n关于量子位\n加入我们\n寻求报道\n商务合作\n扫码关注量子位\n追踪人工智能新趋势，报道科技行业新突破\n量子位 QbitAI 版权所有©北京极客伙伴科技有限公司 京ICP备17005886号-1",
+            "lead": "<!DOCTYPE html> < img id=\"wx_img\" src=\"https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png\" width=\"400\" height=\"400\">\n全球首个医疗健康AI独立评测与分析平台InclusionMed正式上线\n量子位的朋友们 2026-11-18 15:24:50 来源： 量子位\n近日，全球首个医疗健康 AI 独立评测与分析平台InclusionMed 正式上线\n近日，全球首个医疗健康 AI 独立评测与分析平台InclusionMed 正式上线，并同步推出医疗 AI 评测图谱 InclusionMed Atlas 和首期医疗 AI 评测指数 InclusionMed Index，旨在为医疗健康 AI 提供更加系统的评估依据。该平台由来自斯坦福大学、哈佛大学、北京协和医学院、蚂蚁集团、InclusionMed.AI等29家机构的研究人员共同建设，被视作医疗健康领域的Artificial ",
+            "chars": 1784,
+            "shown": 1784,
+            "truncated": false
+          },
+          "categories": [
+            "资讯",
+            "InclusionMed"
+          ],
+          "author": "量子位的朋友们",
+          "lang": "zh",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "news",
+          "metrics": {},
+          "quality": 11,
+          "score": 20.24,
+          "category": "apps",
+          "subcategory": "knowledge",
+          "practical": 1,
+          "slug": "93694eb40f40",
+          "action": 5,
+          "rank": 19,
+          "tags": [
+            "local",
+            "benchmark",
+            "tutorial",
+            "agent"
+          ]
+        },
+        {
+          "sourceId": "appinn",
+          "sourceName": "小众软件",
+          "title": "低清视频怎么变清晰？AI视频超分与4K画质提升实测",
+          "url": "https://www.appinn.com/aiarty-video-enhancer-black-friday/",
+          "id": "https://www.appinn.com/aiarty-video-enhancer-black-friday/",
+          "published": "2026-11-18T08:43:04.000Z",
+          "summary": "以前用手机拍摄的家庭录像、分辨率只有 480P 或 720P 的老视频、从网上下载的压缩视频，以及 AI 生成的短片，常常存在 画面模糊 、 细节不足 或 噪点较多 的问题。直接将这些视频放大到1080P或4K，虽然分辨率提高了，但原本缺失的细节并不会自动恢复，有时画面反而会显得更加模糊。 有没有办法在放大视频的同时改善画面质量？ 这就涉及到 AI 视频超分辨率（AI Video Super Resolution） 。与普通放大不同，AI超分可以通过模型分析画面内容，尝试重建纹理、改善边缘和减少噪点，让低分辨率视频获得更好的观看效果。 如果你也有低清视频需要处理，可以试试 Aiarty Video Enhancer 。它是一款支持…",
+          "content": {
+            "html": "<figure><img src=\"https://www.appinn.com/wp-content/uploads/2026/11/Copy-of-appinn-homework-2026-11-18T161820.155.jpg\" alt=\"低清视频怎么变清晰？AI视频超分与4K画质提升实测 1\" loading=\"lazy\"></figure>\n<p>以前用手机拍摄的家庭录像、分辨率只有 480P 或 720P 的老视频、从网上下载的压缩视频，以及 AI 生成的短片，常常存在<strong>画面模糊</strong>、<strong>细节不足</strong>或<strong>噪点较多</strong>的问题。直接将这些视频放大到1080P或4K，虽然分辨率提高了，但原本缺失的细节并不会自动恢复，有时画面反而会显得更加模糊。</p>\n<h3><strong>有没有办法在放大视频的同时改善画面质量？</strong></h3>\n<p>这就涉及到<strong>AI</strong><strong>视频超分辨率（AI Video Super Resolution）</strong>。与普通放大不同，AI超分可以通过模型分析画面内容，尝试重建纹理、改善边缘和减少噪点，让低分辨率视频获得更好的观看效果。</p>\n<p>如果你也有低清视频需要处理，可以试试<a href=\"https://www.aiarty.com/cn/ai-video-enhancer/?ttref=2611-aive-gp-apn-3l-ww\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Aiarty Video Enhancer</a>。它是一款支持 Windows 和 macOS 的 AI 视频增强工具，集成了视频超分、去模糊、降噪和细节恢复等功能，支持将视频增强并输出为1080P、2K、4K等分辨率。目前官网还提供限时优惠，感兴趣的话可以<a href=\"https://www.aiarty.com/cn/ai-video-enhancer/discount-coupon.htm?ttref=2611-aive-gp-apn-3l-ww\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">查看Aiarty Video Enhancer黑五折扣信息</a>。</p>\n<h3><strong>一、视频超分是什么？普通放大为什么不能让视频变清晰？</strong></h3>\n<p>假设你有一段720P视频，想把它放到 4K 电视上播放。</p>\n<p>普通视频放大（Upscaling）主要是通过插值算法增加像素数量，把原来的画面拉伸到更大的尺寸。它能改变视频分辨率，却无法真正找回原始视频中已经丢失的细节。</p>\n<p>AI 视频超分则多做了一步：它会分析画面中的物体、纹理和边缘特征，再通过训练得到的模型重建细节，同时结合降噪、去模糊等处理改善画面质量。</p>\n<p>两种方式的区别可以简单理解为：</p>\n<figure><table><tbody><tr><td><strong>处理方式</strong></td><td><strong>主要作用</strong></td><td><strong>效果特点</strong></td></tr><tr><td>普通放大</td><td>增加输出像素</td><td>画面变大，但细节未必增加</td></tr><tr><td>锐化</td><td>增强边缘对比度</td><td>轮廓更明显，但可能出现光晕</td></tr><tr><td>AI 视频超分</td><td>放大画面并重建细节</td><td>有机会改善纹理、噪点和模糊问题</td></tr></tbody></table></figure>\n<p>当然，AI 重建的细节并不等于摄像机真实记录的细节。对于严重失焦、运动模糊或已经损坏的素材，AI 也无法保证完全恢复。</p>\n<h3><strong>二、如何提升视频清晰度？用 Aiarty Video Enhancer 将低清视频放大到4K</strong></h3>\n<p>Aiarty Video Enhancer 将视频放大、AI降噪、去模糊和细节增强整合在一个桌面软件中。Windows 和 macOS 均可使用，视频在本地电脑处理，不需要先上传到云端。整个操作过程并不复杂，即使没有专业视频剪辑经验，也可以按照下面的步骤完成。</p>\n<h3><strong>第一步：导入需要增强的视频</strong></h3>\n<p>打开 Aiarty Video Enhancer，将视频拖入软件，或者通过导入按钮选择文件。它支持MP4、MOV、MKV、AVI、WebM等常见视频格式，也支持一次导入多个视频进行批量处理。</p>\n<figure><img src=\"https://www.appinn.com/wp-content/uploads/2026/11/image-1.avif\" alt=\"低清视频怎么变清晰？AI视频超分与4K画质提升实测 2\" loading=\"lazy\"></figure>\n<h3><strong>第二步：选择合适的 AI 增强模型</strong></h3>\n<p>Aiarty Video Enhancer 提供了不同侧重点的AI模型，不同素材可以尝试不同方案。</p>\n<ul><li><strong>moDetail-HQ v3：</strong>更注重细节和纹理恢复，能够增强画面清晰度与锐度，适合人物头发、皮肤、植物、动物毛发等需要突出细节的场景，也是一般视频增强时可以优先尝试的模型。</li><li><strong>Smooth-HQ v3：</strong>更注重自然、平滑的画面恢复，在去模糊和降噪的同时，尽量保留原有色彩与纹理连续性，适合AI生成视频、动漫，以及希望保持自然视觉风格的素材。</li><li><strong>superVideo vHQ：</strong>更侧重处理严重噪点和暗光视频，通过降噪改善画面质量，同时尽量保留细节，适合夜景、光线不足的室内录像等场景。目前该模型主要支持2倍放大。</li></ul>\n<figure><img src=\"https://www.appinn.com/wp-content/uploads/2026/11/image-21.avif\" alt=\"低清视频怎么变清晰？AI视频超分与4K画质提升实测 3\" loading=\"lazy\"></figure>\n<p>如果不确定如何选择，可以先根据素材的主要问题判断：</p>\n<ul><li>普通视频从<strong>moDetail-HQ v3</strong>开始尝试；</li><li>AI 生成视频或动漫素材可以试试<strong>Smooth-HQ v3</strong>；</li><li>暗光、严重噪点素材则可以考虑<strong>superVideo vHQ</strong>。</li></ul>\n<h3><strong>第三步：设置输出分辨率，放大到4K</strong></h3>\n<p>选择模型后，就可以设置视频的输出分辨率。</p>\n<p>Aiarty Video Enhancer 支持 1x、2x、4x 等放大倍率，也提供 720P、1080P、2K、4K 等常用分辨率选项，还可以设置自定义输出尺寸。</p>\n<p>举个例子：</p>\n<ul><li>480P 视频：可以尝试放大到 1080P。</li><li>720P 视频：可以尝试放大到 1080P 或 2K。</li><li>1080P 视频：可以尝试放大到 4K。</li><li>已经是高清的视频：也可以使用1x模式，在不改变原始分辨率的情况下进行画质增强。</li></ul>\n<figure><img src=\"https://www.appinn.com/wp-content/uploads/2026/11/image-3.avif\" alt=\"低清视频怎么变清晰？AI视频超分与4K画质提升实测 4\" loading=\"lazy\"></figure>\n<p>这里不建议一味追求最高分辨率。原始素材质量越差，大倍率放大后的效果越难保证，可以先尝试较小的放大倍率。</p>\n<p>此外，还可以通过强度调整增强幅度。强度越高，细节增强效果通常越明显，但也可能让人物皮肤、头发或背景纹理显得不自然。建议结合预览效果进行调整。<strong></strong></p>\n<figure><img src=\"https://www.appinn.com/wp-content/uploads/2026/11/image-4.avif\" alt=\"低清视频怎么变清晰？AI视频超分与4K画质提升实测 5\" loading=\"lazy\"></figure>\n<p>建议不要只看画面是否变得更锐利，还要留意人物皮肤、头发边缘和背景纹理有没有出现不自然的变化。</p>\n<h3><strong>第四步：预览并导出增强后的视频</strong></h3>\n<p>设置完成后，可以先预览增强效果，检查画面是否存在明显的过度锐化或细节异常，再选择输出格式和保存位置。</p>\n<p>如果需要处理多个视频，可以将它们加入任务列表，分别设置增强参数，然后批量导出。导出过程中，界面会显示各项任务的进度和状态，方便查看处理情况。</p>\n<p>如果需要在导出过程中暂停，手动暂停后，程序会根据当前进度生成预览文件。生成完成后，可以点击查看；如果不再需要，也可以在预览生成过程中随时取消。此外，Aiarty Video Enhancer 的导出任务恢复能力可帮助你在软件关闭或重启时，恢复未完成的导出任务，减少重复操作。</p>\n<figure><img src=\"https://www.appinn.com/wp-content/uploads/2026/11/image-5.avif\" alt=\"低清视频怎么变清晰？AI视频超分与4K画质提升实测 6\" loading=\"lazy\"></figure>\n<h3><strong>三、不同视频素材，应该如何选择AI增强方案？</strong></h3>\n<p>视频清晰度不足的原因并不完全相同，因此处理方式也不应该一概而论。</p>\n<h3><strong>1.</strong><strong>老视频、低分辨率视频：优先考虑超分和细节恢复</strong></h3>\n<p>以前拍摄的家庭录像、老相机视频，可能只有 480P 或 720P。直接放大到现代显示器上播放，人物和背景细节容易显得模糊。</p>\n<p>这类视频可以先尝试<strong>moDetail-HQ</strong>，放大 2 倍，再根据输出效果调整放大倍率和强度。如果原始视频本身包含一定的画面信息，AI 有机会改善人物轮廓、衣物纹理和背景细节，让视频在大屏幕上观看时更加舒服。</p>\n<figure><img src=\"https://www.appinn.com/wp-content/uploads/2026/11/image-6.avif\" alt=\"低清视频怎么变清晰？AI视频超分与4K画质提升实测 7\" loading=\"lazy\"></figure>\n<h3><strong>2.</strong><strong>夜景视频、暗光录像：重点处理噪点</strong></h3>\n<p>夜间拍摄或室内光线不足时，视频中容易出现颗粒状噪点、彩色噪点和不够清晰的暗部。</p>\n<p>如果直接放大，噪点也可能跟着变大。这类素材可以优先尝试<strong>superVideo vHQ</strong>，利用其针对低光和严重噪点场景的增强能力改善画面。之后再检查暗部细节是否保留、人物轮廓是否自然。</p>\n<figure><img src=\"https://www.appinn.com/wp-content/uploads/2026/11/image-7.avif\" alt=\"低清视频怎么变清晰？AI视频超分与4K画质提升实测 8\" loading=\"lazy\"></figure>\n<h3><strong>3. AI生成视频：改善画面清晰度与自然观感</strong></h3>\n<p>AI生成的视频虽然在画面表现和创意上越来越丰富，但部分素材仍可能存在分辨率不足、局部细节模糊、画面噪点或压缩伪影等问题，尤其是在经过多次导出、压缩或调整尺寸后，画质可能进一步下降。</p>\n<p>这类素材可以尝试<strong>Aiarty Video Enhancer</strong>的<strong>Smooth-HQ v3</strong>。它侧重自然的去模糊和降噪，同时尽量保留原有色彩与纹理连续性，适合希望改善画面质量、又不想让原有视觉风格发生明显变化的AI生成视频和动漫素材。</p>\n<figure><img src=\"https://www.appinn.com/wp-content/uploads/2026/11/image-8.avif\" alt=\"低清视频怎么变清晰？AI视频超分与4K画质提升实测 9\" loading=\"lazy\"></figure>\n<h3><strong>四、视频提升到4K，实际效果应该怎么看？</strong></h3>\n<p>AI视频超分最值得关注的，不只是导出文件显示了3840 × 2160，而是放大后画面是否真的更清楚、细节是否自然。</p>\n<p>建议在测试时重点观察以下几个地方：</p>\n<ul><li><strong>人物：</strong>头发边缘、眼睛、衣服纹理是否更加清晰，有没有出现不自然的皮肤细节。</li><li><strong>自然场景：</strong>树叶、草地、花朵等细碎纹理是否有所改善。</li><li><strong>建筑和物体：</strong>轮廓是否清楚，有没有明显的锐化光晕。</li><li><strong>暗光画面：</strong>噪点是否减少，暗部细节是否仍然保留。</li><li><strong>动态画面：</strong></li></ul>",
+            "text": "以前用手机拍摄的家庭录像、分辨率只有 480P 或 720P 的老视频、从网上下载的压缩视频，以及 AI 生成的短片，常常存在 画面模糊 、 细节不足 或 噪点较多 的问题。直接将这些视频放大到1080P或4K，虽然分辨率提高了，但原本缺失的细节并不会自动恢复，有时画面反而会显得更加模糊。\n有没有办法在放大视频的同时改善画面质量？\n这就涉及到 AI 视频超分辨率（AI Video Super Resolution） 。与普通放大不同，AI超分可以通过模型分析画面内容，尝试重建纹理、改善边缘和减少噪点，让低分辨率视频获得更好的观看效果。\n如果你也有低清视频需要处理，可以试试 Aiarty Video Enhancer 。它是一款支持 Windows 和 macOS 的 AI 视频增强工具，集成了视频超分、去模糊、降噪和细节恢复等功能，支持将视频增强并输出为1080P、2K、4K等分辨率。目前官网还提供限时优惠，感兴趣的话可以 查看Aiarty Video Enhancer黑五折扣信息 。\n一、视频超分是什么？普通放大为什么不能让视频变清晰？\n假设你有一段720P视频，想把它放到 4K 电视上播放。\n普通视频放大（Upscaling）主要是通过插值算法增加像素数量，把原来的画面拉伸到更大的尺寸。它能改变视频分辨率，却无法真正找回原始视频中已经丢失的细节。\nAI 视频超分则多做了一步：它会分析画面中的物体、纹理和边缘特征，再通过训练得到的模型重建细节，同时结合降噪、去模糊等处理改善画面质量。\n两种方式的区别可以简单理解为：\n处理方式\n主要作用\n效果特点\n普通放大\n增加输出像素\n画面变大，但细节未必增加\n锐化\n增强边缘对比度\n轮廓更明显，但可能出现光晕\nAI 视频超分\n放大画面并重建细节\n有机会改善纹理、噪点和模糊问题\n当然，AI 重建的细节并不等于摄像机真实记录的细节。对于严重失焦、运动模糊或已经损坏的素材，AI 也无法保证完全恢复。\n二、如何提升视频清晰度？用 Aiarty Video Enhancer 将低清视频放大到4K\nAiarty Video Enhancer 将视频放大、AI降噪、去模糊和细节增强整合在一个桌面软件中。Windows 和 macOS 均可使用，视频在本地电脑处理，不需要先上传到云端。整个操作过程并不复杂，即使没有专业视频剪辑经验，也可以按照下面的步骤完成。\n第一步：导入需要增强的视频\n打开 Aiarty Video Enhancer，将视频拖入软件，或者通过导入按钮选择文件。它支持MP4、MOV、MKV、AVI、WebM等常见视频格式，也支持一次导入多个视频进行批量处理。\n第二步：选择合适的 AI 增强模型\nAiarty Video Enhancer 提供了不同侧重点的AI模型，不同素材可以尝试不同方案。\nmoDetail-HQ v3： 更注重细节和纹理恢复，能够增强画面清晰度与锐度，适合人物头发、皮肤、植物、动物毛发等需要突出细节的场景，也是一般视频增强时可以优先尝试的模型。\nSmooth-HQ v3： 更注重自然、平滑的画面恢复，在去模糊和降噪的同时，尽量保留原有色彩与纹理连续性，适合AI生成视频、动漫，以及希望保持自然视觉风格的素材。\nsuperVideo vHQ： 更侧重处理严重噪点和暗光视频，通过降噪改善画面质量，同时尽量保留细节，适合夜景、光线不足的室内录像等场景。目前该模型主要支持2倍放大。\n如果不确定如何选择，可以先根据素材的主要问题判断：\n普通视频从 moDetail-HQ v3 开始尝试；\nAI 生成视频或动漫素材可以试试 Smooth-HQ v3 ；\n暗光、严重噪点素材则可以考虑 superVideo vHQ 。\n第三步：设置输出分辨率，放大到4K\n选择模型后，就可以设置视频的输出分辨率。\nAiarty Video Enhancer 支持 1x、2x、4x 等放大倍率，也提供 720P、1080P、2K、4K 等常用分辨率选项，还可以设置自定义输出尺寸。\n举个例子：\n480P 视频：可以尝试放大到 1080P。\n720P 视频：可以尝试放大到 1080P 或 2K。\n1080P 视频：可以尝试放大到 4K。\n已经是高清的视频：也可以使用1x模式，在不改变原始分辨率的情况下进行画质增强。\n这里不建议一味追求最高分辨率。原始素材质量越差，大倍率放大后的效果越难保证，可以先尝试较小的放大倍率。\n此外，还可以通过强度调整增强幅度。强度越高，细节增强效果通常越明显，但也可能让人物皮肤、头发或背景纹理显得不自然。建议结合预览效果进行调整。\n建议不要只看画面是否变得更锐利，还要留意人物皮肤、头发边缘和背景纹理有没有出现不自然的变化。\n第四步：预览并导出增强后的视频\n设置完成后，可以先预览增强效果，检查画面是否存在明显的过度锐化或细节异常，再选择输出格式和保存位置。\n如果需要处理多个视频，可以将它们加入任务列表，分别设置增强参数，然后批量导出。导出过程中，界面会显示各项任务的进度和状态，方便查看处理情况。\n如果需要在导出过程中暂停，手动暂停后，程序会根据当前进度生成预览文件。生成完成后，可以点击查看；如果不再需要，也可以在预览生成过程中随时取消。此外，Aiarty Video Enhancer 的导出任务恢复能力可帮助你在软件关闭或重启时，恢复未完成的导出任务，减少重复操作。\n三、不同视频素材，应该如何选择AI增强方案？\n视频清晰度不足的原因并不完全相同，因此处理方式也不应该一概而论。\n1. 老视频、低分辨率视频：优先考虑超分和细节恢复\n以前拍摄的家庭录像、老相机视频，可能只有 480P 或 720P。直接放大到现代显示器上播放，人物和背景细节容易显得模糊。\n这类视频可以先尝试 moDetail-HQ ，放大 2 倍，再根据输出效果调整放大倍率和强度。如果原始视频本身包含一定的画面信息，AI 有机会改善人物轮廓、衣物纹理和背景细节，让视频在大屏幕上观看时更加舒服。\n2. 夜景视频、暗光录像：重点处理噪点\n夜间拍摄或室内光线不足时，视频中容易出现颗粒状噪点、彩色噪点和不够清晰的暗部。\n如果直接放大，噪点也可能跟着变大。这类素材可以优先尝试 superVideo vHQ ，利用其针对低光和严重噪点场景的增强能力改善画面。之后再检查暗部细节是否保留、人物轮廓是否自然。\n3. AI生成视频：改善画面清晰度与自然观感\nAI生成的视频虽然在画面表现和创意上越来越丰富，但部分素材仍可能存在分辨率不足、局部细节模糊、画面噪点或压缩伪影等问题，尤其是在经过多次导出、压缩或调整尺寸后，画质可能进一步下降。\n这类素材可以尝试 Aiarty Video Enhancer 的 Smooth-HQ v3 。它侧重自然的去模糊和降噪，同时尽量保留原有色彩与纹理连续性，适合希望改善画面质量、又不想让原有视觉风格发生明显变化的AI生成视频和动漫素材。\n四、视频提升到4K，实际效果应该怎么看？\nAI视频超分最值得关注的，不只是导出文件显示了3840 × 2160，而是放大后画面是否真的更清楚、细节是否自然。\n建议在测试时重点观察以下几个地方：\n人物： 头发边缘、眼睛、衣服纹理是否更加清晰，有没有出现不自然的皮肤细节。\n自然场景： 树叶、草地、花朵等细碎纹理是否有所改善。\n建筑和物体： 轮廓是否清楚，有没有明显的锐化光晕。\n暗光画面： 噪点是否减少，暗部细节是否仍然保留。\n动态画面：",
+            "lead": "以前用手机拍摄的家庭录像、分辨率只有 480P 或 720P 的老视频、从网上下载的压缩视频，以及 AI 生成的短片，常常存在 画面模糊 、 细节不足 或 噪点较多 的问题。直接将这些视频放大到1080P或4K，虽然分辨率提高了，但原本缺失的细节并不会自动恢复，有时画面反而会显得更加模糊。\n有没有办法在放大视频的同时改善画面质量？\n这就涉及到 AI 视频超分辨率（AI Video Super Resolution） 。与普通放大不同，AI超分可以通过模型分析画面内容，尝试重建纹理、改善边缘和减少噪点，让低分辨率视频获得更好的观看效果。\n如果你也有低清视频需要处理，可以试试 Aiarty Video Enhancer 。它是一款支持 Windows 和 macOS 的 AI 视频增强工具，集成了视频超分、去模糊、降噪和细节恢复等功能，支持将视频增强并输出为1080P、2K、4K等分辨率。目前官网还提供限时优惠，感兴趣的话可以 查看Aiarty Video Enhancer黑五折扣信息 。",
+            "chars": 4543,
+            "shown": 3182,
+            "truncated": true
+          },
+          "categories": [
+            "Windows",
+            "AI",
+            "macOS",
+            "分辨率",
+            "视频超分辨率"
+          ],
+          "author": "青小蛙",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "tools",
+          "metrics": {},
+          "quality": 10,
+          "score": 14.95,
+          "category": "apps",
+          "subcategory": "creation",
+          "practical": 3,
+          "slug": "e6e9c4fd83ef",
+          "action": 5,
+          "rank": 18,
+          "tags": [
+            "benchmark",
+            "generate",
+            "local",
+            "tutorial"
+          ]
+        },
+        {
+          "sourceId": "qbitai",
+          "sourceName": "量子位",
+          "title": "Gemini新模型Neon箭在弦上，网友：遍历元素周期表？",
+          "url": "https://www.qbitai.com/2026/11/510922.html",
+          "id": "https://www.qbitai.com/?p=510922",
+          "published": "2026-11-18T09:41:55.000Z",
+          "summary": "<!DOCTYPE html> < img id=\"wx_img\" src=\"https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png\" width=\"400\" height=\"400\"> Gemini新模型Neon箭在弦上，网友：遍历元素周期表？ 程浅 2026-11-18 17:41:55 来源： 量子位 氖人寻味！ 程浅 发自 凹非寺 量子位 | 公众号QbitAI 我真没想到，有天我竟会嫌Google模型发的太多了…… 最新消息，有开发者发现，Gemini网页应用代码中又出现了一个新模型标识：gemini-4-neon Neon，氖，是元素周期表第10…",
+          "content": {
+            "html": "&lt;!DOCTYPE html&gt;<div><div><div>&lt; img id=\"wx_img\" src=\"https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png\" width=\"400\" height=\"400\"&gt;</div></div></div>\n<div><h3>Gemini新模型Neon箭在弦上，网友：遍历元素周期表？</h3><div><span><img src=\"http://www.qbitai.com/wp-content/themes/liangziwei/imagesnew/head.jpg\" alt=\"\" loading=\"lazy\"><em><a href=\"https://www.qbitai.com/author/chengqian\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">程浅</a></em></span><span>2026-11-18</span><span>17:41:55</span><span>来源：<a href=\"https://www.qbitai.com/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">量子位</a></span></div></div>\n<div><p>氖人寻味！</p></div>\n<blockquote><p>程浅 发自 凹非寺</p><p>量子位 | 公众号QbitAI</p></blockquote>\n<p>我真没想到，有天我竟会嫌Google模型发的太多了……</p>\n<p>最新消息，有开发者发现，Gemini网页应用代码中又出现了一个新模型标识：gemini-4-neon</p>\n<p><strong>Neon，氖，是元素周期表第10号元素。</strong></p>\n<p>刚一曝光，大家又开始吐槽了，这也毫无顺序啊！怎么Hydrogen发完之后就直接跳到Neon了呢？</p>\n<p>说好的，氢氦锂铍硼，碳氮氧氟氖呢？</p>\n<p>说到元素周期表，有人直接搬出了给谷歌Gemini设计的新界面。</p>\n<p>「我帮Google想了一个天才般的解决方案……Google免费拿去用。」</p>\n<div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/aa1557add8f630347b656c82e858161c.gif\" alt=\"\" loading=\"lazy\"><p>谁敢相信，多年后重温初中化学知识，竟然是在这儿……那个啥，发到钙就先别发了，再往下我就不会背了。</p></div>\n<h3>Gemini 4 Neon又是什么杯？</h3>\n<p>据模型追踪账号AI Tracker Bot显示，Gemini网页应用代码中新出现了gemini-4-neon，且与此前的gemini-4-argon、gemini-4-carbon等模型标识在一起。</p>\n<p>除了新模型，代码里竟还有一个<strong>同名的NEON订阅层级</strong>。</p>\n<p>这个订阅层级在代码中被标记为TIER_NEON，用量页面上显示的名称是“Gemini Ultra”，但内部又与普通Ultra作了区分。</p>\n<p>还有网友扒出，这个Neon对应着upsell_MODE_CATEGORY_PRO，其中的Upsell是软件产品中常见的付费升级逻辑。</p>\n<div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/00592679b84005c98984cf905297ea88.png\" alt=\"\" loading=\"lazy\"><p>△氖，一种无色无味的惰性单原子气体</p></div>\n<p>这条线索让Neon的定位更加扑朔迷离了……因为此前有人猜测，Neon可能是一款新的Flash-Lite轻量模型。</p>\n<p>细数一下，这应该是Gemini4号了。从今年9月底Gemini 4登场以来，这些化学元素就发的很快。</p>\n<p>9月30日，Google首次公布<strong>Gemini 4 Argon（氩）</strong>，主打复杂软件工程、深度推理、企业知识工作和网络安全等高难度任务。</p>\n<p>10月28日，<strong>Gemini 4 Carbon（碳）</strong>接棒亮相，作为更强的前沿模型，着重提升长程Agent任务、代码和网络安全。</p>\n<p>11月12日，<strong>Gemini 4 Hydrogen（氢）</strong>又来了。模如其名，强调速度与效率，主打日常Coding和Agent工作流。</p>\n<p>虽然现在还正在准备着氖，但已经有网友催鿫（第118位元素）了。</p>\n<p>「Google进度也太慢了吧，Gemini 4 Oganesson怎么还不发布？」</p>\n<p>「照这个速度下去，Google就得去发现新的化学元素了。」</p>\n<p>（你还真别说。）</p>\n<p>其实除了Neon，前几天网上还热传过Krypton（氪）。</p>\n<p>11月14日，有爆料者声称，Google正在Arena上测试Krypton，还晒出了它生成的代码和动画效果，甚至说它已经接近Claude Opus 5.5了。</p>\n<p>没过多久，爆料者又自己打脸说，先前测试的其实是更高推理强度的Gemini 4 Hydrogen……轰轰烈烈的炒作罢了。</p>\n<h3>我将辞职在家研究Gemini模型名称</h3>\n<p>其实对于Google的这套元素周期表命名规则，有很多人都在找规律。</p>\n<p><strong>比如网友Jawns就试图从多个维度给Gemini 4系列排序。</strong></p>\n<p>他是这么理解的。</p>\n<p>众所周知，按模型能力和成本排序，应该是Hydrogen → Argon → Carbon。</p>\n<p>但实际上如果按照元素最本质的排列方式，原子序数来排的话，是Hydrogen（1）→ Carbon（6）→ Argon（18）。</p>\n<p>按英文字母来排的话，由于Google之前内部测试过Barium（钡），所以Argon→ Barium→ Carbon倒是对的。但Hydrogen来了之后也不能这么排了。</p>\n<p>如果按照宇宙中元素的常见程度来排，那也应该是Hydrogen→ Carbon→ Argon。</p>\n<div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/bbae867b3ac28c5fc493baac5b23d1cd.png\" alt=\"\" loading=\"lazy\"><p>△HN网友研究Gemini的命名规律</p></div>\n<p><strong>总之是想不出来。</strong></p>\n<p>「Bro，我觉得谷歌是把元素扔到帽子里随机抓出来的。」</p>\n<p>「用星巴克的杯型命名都比这个清楚。」</p>\n<p>说实话，谷歌已经成谜语人了，这个名字就是要让你研究不明白，研究明白了谁还天天猜，天天等新模型呢？</p>\n<p>不过我觉得，还有一种可能是，Google只是单纯看中了这些元素各自的含义。</p>\n<p>比如Argon（氩），名字源于希腊语中“懒惰、不活跃”的意思，氩属于化学性质稳定的稀有气体。这与这款模型在<strong>网络安全防御、复杂软件工程</strong>的能力有一定内涵上的契合感。</p>\n<p>Carbon（碳）则是构成生命的基础元素，能够形成各种复杂结构，这可能也和这款最前沿模型意图解决的问题一致。</p>\n<p>Hydrogen（氢）不必多言，它是最轻的元素，很契合主打速度和效率的定位。</p>\n<p>至于Neon（氖），它源于希腊语中的“新的”（Neo），“霓虹”这个词也是从这儿来的。<strong>或许也可以从这个角度期待一下这款模型的定位。</strong></p>\n<p>玩归玩闹归闹，有句吐槽还是挺中肯的。</p>\n<p>「等科技公司终于能给产品起出正常名字时，我们就知道它们实现超级智能了。」</p>\n<p>毕竟模型的名称首先起到的作用应该是方便用户理解，至于它所蕴含多大的能量，那应该在用户那里去证明。</p>\n<h3>One More Thing</h3>\n<p>不只是模型名字，Google的订阅体系也快把网友整崩溃了。</p>\n<p>此前Gemini 4 Carbon扩大开放时，就有人发现自己明明订阅了Pro，但并没有看到任何新模型。</p>\n<p>还有人发现，自己的Google Workspace账户和AI Pro账户，一边能用Carbon，另一边还停留在Argon。</p>\n<div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/7da0fe26ef663d3518e6206f5c626784.png\" alt=\"\" loading=\"lazy\"><p>△网友吐槽付费体系混乱</p></div>\n<p>不仅是付费层级，别忘了谷歌还有6个模型使用入口——AI Studio、Gemini API、Gemini for Business、Gemini App、Google Search、Antigravity。</p>\n<p>而现在，和Neon一起曝光的还有<strong>Neon订阅层级</strong>，乱上加乱了。</p>\n<div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/f3fba4eddbe7ad7af974433f049dfaaa.png\" alt=\"\" loading=\"lazy\"><p>△网友畅想铀级订阅套餐</p></div>\n<div><span></span><em>版权所有，未经授权不得以任何形式转载及使用，违者必究。</em><span></span></div>\n<div><a href=\"https://www.qbitai.com/tag/gemini-4\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Gemini 4</a></div>\n<div><a href=\"https://www.qbitai.com/2026/11/510922.html#\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div><img src=\"http://www.qbitai.com/wp-content/themes/liangziwei/imagesnew/head.jpg\" alt=\"\" loading=\"lazy\"><span><a href=\"https://www.qbitai.com/author/chengqian\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">程浅</a></span></div></a></div>\n<div><ul><li><a href=\"https://www.qbitai.com/2026/11/510496.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">没搞过一天研发的他，50岁以华为董事的身份退休了</a><i>2026-11-16</i></li><li><a href=\"https://www.qbitai.com/2026/11/510150.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">程序员集体沉迷折纸飞机！最长滞空31.2秒</a><i>2026-11-14</i></li><li><a href=\"https://www.qbitai.com/2026/11/509613.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">特斯拉和SpaceX最快下月合并</a><i>2026-11-13</i></li><li><a href=\"https://www.qbitai.com/2026/11/509291.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Anthropic玻璃翼计划被质疑！近4万个候补漏洞，只修了217条</a><i>2026-11-12</i></li></ul></div>\n<div><div></div></div>\n<div><span></span><div>扫码分享至朋友圈</div></div>\n<div></div>\n<a href=\"https://service.weibo.com/share/share.php?url=https://www.qbitai.com/2026/11/510922.html&amp;title=Gemini%E6%96%B0%E6%A8%A1%E5%9E%8BNeon%E7%AE%AD%E5%9C%A8%E5%BC%A6%E4%B8%8A%EF%BC%8C%E7%BD%91%E5%8F%8B%EF%BC%9A%E9%81%8D%E5%8E%86%E5%85%83%E7%B4%A0%E5%91%A8%E6%9C%9F%E8%A1%A8%EF%BC%9F&amp;appkey=4017757111&amp;searchPic=true&amp;ralateUid=6105753431\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div></div></a>\n<a href=\"https://www.qbitai.com/2026/11/510922.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div></div></a>\n<div><div><h3>热门文章</h3><div><a href=\"https://www.qbitai.com/2026/11/510003.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE-2026-11-13-233726-e1794623978497.png\" alt=\"\" loading=\"lazy\"></div></a></div></div></div>\n<div><h4>突发！DeepSeek开放全家桶API</h4></div>\n<div>2026-11-14</div>\n<div><a href=\"https://www.qbitai.com/2026/11/509440.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/article-image-18-1.jpg\" alt=\"\" loading=\"lazy\"></div></a></div>\n<div><h4>多模态“源神”！MiniMax开源SOTA生图模型，原生4K，一张两毛</h4></div>\n<div>2026-11-12</div>\n<div><a href=\"https://www.qbitai.com/2026/11/510486.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/a1c609ed60a229a5b5d8208396680798.jpeg\" alt=\"\" loading=\"lazy\"></div></a></div>\n<div><h4>阿里正式发布Qwen4，智能体及编程能力进阶，迈向真实全场景</h4></div>\n<div>2026-11-16</div>\n<div><a href=\"https://www.qbitai.com/2026/11/510297.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/HXCJ5tJaQAAZmki-e1794650979697.jpeg\" alt=\"\" loading=\"lazy\"></div></a></div>\n<div><h4>英伟达上演“奥特曼2.0”，员工集体请愿：让老黄回家！</h4></div>\n<div>2026-11-14</div>\n<div><a href=\"https://www.qbitai.com/2026/11/509224.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/8cb788e7e0616528d84417442cc50a24.png\" alt=\"\" loading=\"lazy\"></div></a></div>\n<div><h4>纯代码造《后室》，116秒切20种画风！文心新模型玩嗨了</h4></div>\n<div>2026-11-11</div>\n<div><div><div><ul><li><a href=\"https://www.qbitai.com/?page_id=99\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">关于量子位</a></li><li><a href=\"https://www.qbitai.com/?page_id=101\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">加入我们</a></li><li><a href=\"https://www.qbitai.com/?page_id=103\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">寻求报道</a></li><li><a href=\"https://www.qbitai.com/?page_id=105\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">商务合作</a></li></ul><div><div><i></i></div></div></div></div></div>\n<div><p>扫码关注量子位</p><img src=\"https://www.qbitai.com/wp-content/uploads/2019/01/qrcode_QbitAI_1.jpg\" alt=\"\" loading=\"lazy\"></div>\n<a href=\"https://weibo.com/qbitai?is_all=1\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><i></i></a>\n<a href=\"https://www.zhihu.com/org/liang-zi-wei-48/activities\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div></div></a>\n<a href=\"https://www.toutiao.com/c/user/53624121633/#mid=1556041376883713\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div></div></a>\n<div><div><a href=\"https://www.qbitai.com/2026/11/510922.html#\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"></a><span>追踪人工智能新趋势，报道科技行业新突破</span></div></div>\n<div></div>\n<p>量子位 QbitAI 版权所有©北京极客伙伴科技有限公司<a href=\"https://beian.miit.gov.cn/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">京ICP备17005886号-1</a></p>",
+            "text": "<!DOCTYPE html> < img id=\"wx_img\" src=\"https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png\" width=\"400\" height=\"400\">\nGemini新模型Neon箭在弦上，网友：遍历元素周期表？\n程浅 2026-11-18 17:41:55 来源： 量子位\n氖人寻味！\n程浅 发自 凹非寺\n量子位 | 公众号QbitAI\n我真没想到，有天我竟会嫌Google模型发的太多了……\n最新消息，有开发者发现，Gemini网页应用代码中又出现了一个新模型标识：gemini-4-neon\nNeon，氖，是元素周期表第10号元素。\n刚一曝光，大家又开始吐槽了，这也毫无顺序啊！怎么Hydrogen发完之后就直接跳到Neon了呢？\n说好的，氢氦锂铍硼，碳氮氧氟氖呢？\n说到元素周期表，有人直接搬出了给谷歌Gemini设计的新界面。\n「我帮Google想了一个天才般的解决方案……Google免费拿去用。」\n谁敢相信，多年后重温初中化学知识，竟然是在这儿……那个啥，发到钙就先别发了，再往下我就不会背了。\nGemini 4 Neon又是什么杯？\n据模型追踪账号AI Tracker Bot显示，Gemini网页应用代码中新出现了gemini-4-neon，且与此前的gemini-4-argon、gemini-4-carbon等模型标识在一起。\n除了新模型，代码里竟还有一个 同名的NEON订阅层级 。\n这个订阅层级在代码中被标记为TIER_NEON，用量页面上显示的名称是“Gemini Ultra”，但内部又与普通Ultra作了区分。\n还有网友扒出，这个Neon对应着upsell_MODE_CATEGORY_PRO，其中的Upsell是软件产品中常见的付费升级逻辑。\n△氖，一种无色无味的惰性单原子气体\n这条线索让Neon的定位更加扑朔迷离了……因为此前有人猜测，Neon可能是一款新的Flash-Lite轻量模型。\n细数一下，这应该是Gemini4号了。从今年9月底Gemini 4登场以来，这些化学元素就发的很快。\n9月30日，Google首次公布 Gemini 4 Argon（氩） ，主打复杂软件工程、深度推理、企业知识工作和网络安全等高难度任务。\n10月28日， Gemini 4 Carbon（碳） 接棒亮相，作为更强的前沿模型，着重提升长程Agent任务、代码和网络安全。\n11月12日， Gemini 4 Hydrogen（氢） 又来了。模如其名，强调速度与效率，主打日常Coding和Agent工作流。\n虽然现在还正在准备着氖，但已经有网友催鿫（第118位元素）了。\n「Google进度也太慢了吧，Gemini 4 Oganesson怎么还不发布？」\n「照这个速度下去，Google就得去发现新的化学元素了。」\n（你还真别说。）\n其实除了Neon，前几天网上还热传过Krypton（氪）。\n11月14日，有爆料者声称，Google正在Arena上测试Krypton，还晒出了它生成的代码和动画效果，甚至说它已经接近Claude Opus 5.5了。\n没过多久，爆料者又自己打脸说，先前测试的其实是更高推理强度的Gemini 4 Hydrogen……轰轰烈烈的炒作罢了。\n我将辞职在家研究Gemini模型名称\n其实对于Google的这套元素周期表命名规则，有很多人都在找规律。\n比如网友Jawns就试图从多个维度给Gemini 4系列排序。\n他是这么理解的。\n众所周知，按模型能力和成本排序，应该是Hydrogen → Argon → Carbon。\n但实际上如果按照元素最本质的排列方式，原子序数来排的话，是Hydrogen（1）→ Carbon（6）→ Argon（18）。\n按英文字母来排的话，由于Google之前内部测试过Barium（钡），所以Argon→ Barium→ Carbon倒是对的。但Hydrogen来了之后也不能这么排了。\n如果按照宇宙中元素的常见程度来排，那也应该是Hydrogen→ Carbon→ Argon。\n△HN网友研究Gemini的命名规律\n总之是想不出来。\n「Bro，我觉得谷歌是把元素扔到帽子里随机抓出来的。」\n「用星巴克的杯型命名都比这个清楚。」\n说实话，谷歌已经成谜语人了，这个名字就是要让你研究不明白，研究明白了谁还天天猜，天天等新模型呢？\n不过我觉得，还有一种可能是，Google只是单纯看中了这些元素各自的含义。\n比如Argon（氩），名字源于希腊语中“懒惰、不活跃”的意思，氩属于化学性质稳定的稀有气体。这与这款模型在 网络安全防御、复杂软件工程 的能力有一定内涵上的契合感。\nCarbon（碳）则是构成生命的基础元素，能够形成各种复杂结构，这可能也和这款最前沿模型意图解决的问题一致。\nHydrogen（氢）不必多言，它是最轻的元素，很契合主打速度和效率的定位。\n至于Neon（氖），它源于希腊语中的“新的”（Neo），“霓虹”这个词也是从这儿来的。 或许也可以从这个角度期待一下这款模型的定位。\n玩归玩闹归闹，有句吐槽还是挺中肯的。\n「等科技公司终于能给产品起出正常名字时，我们就知道它们实现超级智能了。」\n毕竟模型的名称首先起到的作用应该是方便用户理解，至于它所蕴含多大的能量，那应该在用户那里去证明。\nOne More Thing\n不只是模型名字，Google的订阅体系也快把网友整崩溃了。\n此前Gemini 4 Carbon扩大开放时，就有人发现自己明明订阅了Pro，但并没有看到任何新模型。\n还有人发现，自己的Google Workspace账户和AI Pro账户，一边能用Carbon，另一边还停留在Argon。\n△网友吐槽付费体系混乱\n不仅是付费层级，别忘了谷歌还有6个模型使用入口——AI Studio、Gemini API、Gemini for Business、Gemini App、Google Search、Antigravity。\n而现在，和Neon一起曝光的还有 Neon订阅层级 ，乱上加乱了。\n△网友畅想铀级订阅套餐\n版权所有，未经授权不得以任何形式转载及使用，违者必究。\nGemini 4\n程浅\n没搞过一天研发的他，50岁以华为董事的身份退休了 2026-11-16\n程序员集体沉迷折纸飞机！最长滞空31.2秒 2026-11-14\n特斯拉和SpaceX最快下月合并 2026-11-13\nAnthropic玻璃翼计划被质疑！近4万个候补漏洞，只修了217条 2026-11-12\n扫码分享至朋友圈\n热门文章\n突发！DeepSeek开放全家桶API\n2026-11-14\n多模态“源神”！MiniMax开源SOTA生图模型，原生4K，一张两毛\n2026-11-12\n阿里正式发布Qwen4，智能体及编程能力进阶，迈向真实全场景\n2026-11-16\n英伟达上演“奥特曼2.0”，员工集体请愿：让老黄回家！\n2026-11-14\n纯代码造《后室》，116秒切20种画风！文心新模型玩嗨了\n2026-11-11\n关于量子位\n加入我们\n寻求报道\n商务合作\n扫码关注量子位\n追踪人工智能新趋势，报道科技行业新突破\n量子位 QbitAI 版权所有©北京极客伙伴科技有限公司 京ICP备17005886号-1",
+            "lead": "<!DOCTYPE html> < img id=\"wx_img\" src=\"https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png\" width=\"400\" height=\"400\">\nGemini新模型Neon箭在弦上，网友：遍历元素周期表？\n程浅 2026-11-18 17:41:55 来源： 量子位\n氖人寻味！\n程浅 发自 凹非寺\n量子位 | 公众号QbitAI\n我真没想到，有天我竟会嫌Google模型发的太多了……\n最新消息，有开发者发现，Gemini网页应用代码中又出现了一个新模型标识：gemini-4-neon\nNeon，氖，是元素周期表第10号元素。\n刚一曝光，大家又开始吐槽了，这也毫无顺序啊！怎么Hydrogen发完之后就直接跳到Neon了呢？\n说好的，氢氦锂铍硼，碳氮氧氟氖呢？\n说到元素周期表，有人直接搬出了给谷歌Gemini设计的新界面。",
+            "chars": 3178,
+            "shown": 3178,
+            "truncated": false
+          },
+          "categories": [
+            "资讯",
+            "Gemini 4"
+          ],
+          "author": "程浅",
+          "lang": "zh",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "news",
+          "metrics": {},
+          "quality": 9,
+          "score": 20.83,
+          "category": "apps",
+          "subcategory": "office",
+          "practical": 3,
+          "slug": "89a971f81f22",
+          "action": 4,
+          "rank": 15.4,
+          "tags": [
+            "agent",
+            "benchmark",
+            "free",
+            "money"
+          ]
+        },
+        {
+          "sourceId": "github-trending",
+          "sourceName": "GitHub 新晋 AI 项目",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "oss",
+          "categories": [
+            "ai",
+            "ai-search",
+            "aichecker",
+            "chatgpt",
+            "cli"
+          ],
+          "author": "WyrmClimberManacle",
+          "id": "1459020334",
+          "title": "WyrmClimberManacle/Gemini-Config-Checker-",
+          "url": "https://github.com/WyrmClimberManacle/Gemini-Config-Checker-",
+          "published": "2026-11-15T16:48:18.000Z",
+          "summary": "<p align=\"center\"><img src=\"https://github.com/MatinSenPai/Gemini-Config-Checker/raw/main/assets/banner.png\" alt=\"Gemini/Check\" width=\"100%\"></p> <p align=\"center\"> <b>English</b> · <a href=\"README.fa.md\">فارسی</a> </p> <p align=\"center\"> <a href=\"https://www.dropbox.com/scl/fi/l80rdcm1o9gnqcpdsw1gi/GeminiConfigChecke…",
+          "metrics": {
+            "stars": 473
+          },
+          "content": {
+            "html": "<p>&lt;p align=\"center\"&gt;&lt;img src=\"https://github.com/MatinSenPai/Gemini-Config-Checker/raw/main/assets/banner.png\" alt=\"Gemini/Check\" width=\"100%\"&gt;&lt;/p&gt;</p>\n<p>&lt;p align=\"center\"&gt; &lt;b&gt;English&lt;/b&gt; · &lt;a href=\"README.fa.md\"&gt;فارسی&lt;/a&gt; &lt;/p&gt;</p>\n<p>&lt;p align=\"center\"&gt; &lt;a href=\"https://www.dropbox.com/scl/fi/l80rdcm1o9gnqcpdsw1gi/GeminiConfigChecker.rar?rlkey=dv7oxsttd2j8kvr5zu7uyx1tm&amp;st=l2vaozdz&amp;dl=1\"&gt; &lt;img alt=\"Download the Gemini app\" src=\"https://img.shields.io/badge/Download-%20Gemeni%20app-0969DA?style=for-the-badge&amp;logo=github&amp;logoColor=white\"&gt; &lt;/a&gt; &lt;/p&gt;</p>\n<h3>Gemini Config Checker</h3>\n<p>Find proxy configs that actually get you into<strong>Google AI Studio and Gemini</strong>, by testing each one the way a person would: in a *signed-in* browser, through the route you will really use.</p>\n<p>&gt;<strong>Version 0.1.0, early pre-release.</strong>It works end to end on Windows (the only platform it has been run on so far). The macOS, &gt; Linux and Android builds come from the CI pipeline and have not been exercised on real devices yet. Please report what you find.</p>\n<h4>Two modes, one switch</h4>\n<p>The big<strong>Simple / Advanced</strong>switch in the header decides what is tested. The route diagram under the title morphs to show it.</p>\n<p>| |<strong>Simple</strong>|<strong>Advanced</strong>| |---|---|---| | Question it answers | *Which of my configs work?* | *Which free configs work through my config?* | | Route | you →<strong>config</strong>→ AI Studio / Gemini | you →<strong>base config</strong>→<strong>free config</strong>→ AI Studio / Gemini | | You provide | your configs (links, a subscription URL or base64), or pick a ready-made free list | one working base config, plus a free list or pasted configs | | Anti-DPI profile is applied to | every config under test (each one connects from your machine) | the base config's first hop (free configs run inside its tunnel) | | Typical use | check a pile of configs you already have; test a config before you rely on it | your Cloudflare config works, but you need a *different exit* that Google accepts | | Export | links, base64, a full Xray config of one config | links, base64, a chain Xray config (<code>base → free</code>) |</p>\n<h4>Contents</h4>\n<p>[Credits](#credits-and-references) · [Why a signed-in browser](#why-a-signed-in-browser) · [Download and install](#download-and-install) · [User guide](#user-guide) · [Troubleshooting](#troubleshooting-and-faq) · [Privacy and security](#privacy-and-security) · [Build from source](#build-from-source) · [Releases and CI](#releases-and-ci)</p>\n<h4>Credits and references</h4>\n<p>This project exists because of other people's work. Please go and use and star them.</p>\n<p>| Project | What it gave us | |---|---| |<a href=\"https://github.com/0xRadikal/Free-v2ray-Configs\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><strong>0xRadikal/Free-v2ray-Configs</strong></a>| The auto-updated lists of free configs (<code>verified</code>,<code>fast</code>,<code>secure</code>, ...) that this tool scans | |<a href=\"https://github.com/patterniha\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><strong>patterniha</strong></a>|<a href=\"https://github.com/patterniha/PattN\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">PattN</a>(Windows / Linux / macOS client) and<a href=\"https://github.com/patterniha/PattNG\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">PattNG</a>(Android): the anti-DPI recipe, plus the fragment<code>finalmask</code>semantics from his<a href=\"https://github.com/patterniha/Xray-core\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Xray-core fork</a>that our fragmenting forwarder reproduces | |<a href=\"https://github.com/bia-pain-bache/BPB-Worker-Panel\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><strong>bia-pain-bache/BPB-Worker-Panel</strong></a>| The Cloudflare Worker panel that produces many of the base configs this tool chains behind (patterniha maintains a<a href=\"https://github.com/patterniha/BPB-Worker-Panel\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">fork</a>) | |<a href=\"https://t.me/MatinSenPaii/5469\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><strong>Anti-DPI recipe post</strong></a>| The exact Finalmask / fingerprint / ALPN / cipher values used as defaults | |<a href=\"https://github.com/MatinSenPai/SenPaiScanner\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><strong>MatinSenPai/SenPaiScanner</strong></a>| Companion tool for finding clean Cloudflare IPs to use as a config's address | |<a href=\"https://github.com/XTLS/Xray-core\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">XTLS/Xray-core</a>| The proxy engine embedded in the app | |<a href=\"https://github.com/2dust/v2rayN\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">2dust/v2rayN</a>| The config layout the \"Copy with chain\" export follows (PattN is a fork of it) | |<a href=\"https://wails.io/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Wails</a>| The native desktop shell | |<a href=\"https://github.com/rastikerdar/vazirmatn\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Vazirmatn</a>and<a href=\"https://github.com/JetBrains/JetBrainsMono\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">JetBrains Mono</a>| The fonts used in the UI (SIL Open Font License) |</p>\n<h4>Why a signed-in browser?</h4>\n<p>Google decides region availability<strong>per signed-in account, after the page has loaded</strong>. A plain HTTP request (even to the Gemini API with a dummy key) answers \"fine\" from every country, so connectivity probes mark every live config as healthy. Measured while building this tool: exits geolocated to the US, HK and SG were blocked, and the same exit can flip over time. The only reliable signal is what Google shows a signed-in user, so that is what this tool reads:</p>\n<p></p>",
+            "text": "<p align=\"center\"><img src=\"https://github.com/MatinSenPai/Gemini-Config-Checker/raw/main/assets/banner.png\" alt=\"Gemini/Check\" width=\"100%\"></p>\n<p align=\"center\"> <b>English</b> · <a href=\"README.fa.md\">فارسی</a> </p>\n<p align=\"center\"> <a href=\"https://www.dropbox.com/scl/fi/l80rdcm1o9gnqcpdsw1gi/GeminiConfigChecker.rar?rlkey=dv7oxsttd2j8kvr5zu7uyx1tm&st=l2vaozdz&dl=1\"> <img alt=\"Download the Gemini app\" src=\"https://img.shields.io/badge/Download-%20Gemeni%20app-0969DA?style=for-the-badge&logo=github&logoColor=white\"> </a> </p>\nGemini Config Checker\nFind proxy configs that actually get you into Google AI Studio and Gemini , by testing each one the way a person would: in a *signed-in* browser, through the route you will really use.\n> Version 0.1.0, early pre-release. It works end to end on Windows (the only platform it has been run on so far). The macOS, > Linux and Android builds come from the CI pipeline and have not been exercised on real devices yet. Please report what you find.\nTwo modes, one switch\nThe big Simple / Advanced switch in the header decides what is tested. The route diagram under the title morphs to show it.\n| | Simple | Advanced | |---|---|---| | Question it answers | *Which of my configs work?* | *Which free configs work through my config?* | | Route | you → config → AI Studio / Gemini | you → base config → free config → AI Studio / Gemini | | You provide | your configs (links, a subscription URL or base64), or pick a ready-made free list | one working base config, plus a free list or pasted configs | | Anti-DPI profile is applied to | every config under test (each one connects from your machine) | the base config's first hop (free configs run inside its tunnel) | | Typical use | check a pile of configs you already have; test a config before you rely on it | your Cloudflare config works, but you need a *different exit* that Google accepts | | Export | links, base64, a full Xray config of one config | links, base64, a chain Xray config ( base → free ) |\nContents\n[Credits](#credits-and-references) · [Why a signed-in browser](#why-a-signed-in-browser) · [Download and install](#download-and-install) · [User guide](#user-guide) · [Troubleshooting](#troubleshooting-and-faq) · [Privacy and security](#privacy-and-security) · [Build from source](#build-from-source) · [Releases and CI](#releases-and-ci)\nCredits and references\nThis project exists because of other people's work. Please go and use and star them.\n| Project | What it gave us | |---|---| | 0xRadikal/Free-v2ray-Configs | The auto-updated lists of free configs ( verified , fast , secure , ...) that this tool scans | | patterniha | PattN (Windows / Linux / macOS client) and PattNG (Android): the anti-DPI recipe, plus the fragment finalmask semantics from his Xray-core fork that our fragmenting forwarder reproduces | | bia-pain-bache/BPB-Worker-Panel | The Cloudflare Worker panel that produces many of the base configs this tool chains behind (patterniha maintains a fork ) | | Anti-DPI recipe post | The exact Finalmask / fingerprint / ALPN / cipher values used as defaults | | MatinSenPai/SenPaiScanner | Companion tool for finding clean Cloudflare IPs to use as a config's address | | XTLS/Xray-core | The proxy engine embedded in the app | | 2dust/v2rayN | The config layout the \"Copy with chain\" export follows (PattN is a fork of it) | | Wails | The native desktop shell | | Vazirmatn and JetBrains Mono | The fonts used in the UI (SIL Open Font License) |\nWhy a signed-in browser?\nGoogle decides region availability per signed-in account, after the page has loaded . A plain HTTP request (even to the Gemini API with a dummy key) answers \"fine\" from every country, so connectivity probes mark every live config as healthy. Measured while building this tool: exits geolocated to the US, HK and SG were blocked, and the same exit can flip over time. The only reliable signal is what Google shows a signed-in user, so that is what this tool reads:",
+            "lead": "<p align=\"center\"><img src=\"https://github.com/MatinSenPai/Gemini-Config-Checker/raw/main/assets/banner.png\" alt=\"Gemini/Check\" width=\"100%\"></p>\n<p align=\"center\"> <b>English</b> · <a href=\"README.fa.md\">فارسی</a> </p>\n<p align=\"center\"> <a href=\"https://www.dropbox.com/scl/fi/l80rdcm1o9gnqcpdsw1gi/GeminiConfigChecker.rar?rlkey=dv7oxsttd2j8kvr5zu7uyx1tm&st=l2vaozdz&dl=1\"> <img alt=\"Download the Gemini app\" src=\"https://img.shields.io/badge/Download-%20Gem",
+            "chars": 19516,
+            "shown": 3989,
+            "truncated": true
+          },
+          "quality": 10,
+          "score": 17.22,
+          "category": "apps",
+          "subcategory": null,
+          "practical": 2,
+          "slug": "fc48be213e6f",
+          "action": 2,
+          "rank": 13.2,
+          "tags": [
+            "free"
+          ]
+        },
+        {
+          "sourceId": "arxiv-cs",
+          "sourceName": "arXiv cs.AI/CL/LG",
+          "title": "What Does a Bias Head Measure? Non-Identifiability in Head-Level Bias Attribution",
+          "url": "https://arxiv.org/abs/2611.23218v1",
+          "id": "http://arxiv.org/abs/2611.23218v1",
+          "published": "2026-11-17T18:57:08.000Z",
+          "summary": "Methods that localise social bias in large language models to individual attention heads and remove it by ablation are validated by their effect on a fairness metric, never by evidence that the statistic selecting the heads measures bias. We audit this on Qwen-2.5-7B-Instruct and Llama-3.1-8B-Instruct. The head map co…",
+          "content": {
+            "html": "Methods that localise social bias in large language models to individual attention heads and remove it by ablation are validated by their effect on a fairness metric, never by evidence that the statistic selecting the heads measures bias. We audit this on Qwen-2.5-7B-Instruct and Llama-3.1-8B-Instruct. The head map correlates at $ρ= -0.950$ and $-0.768$ with a label-blind response-length map, apparently identifying a surface confound. An intervention that breaks the length-label coupling rejects this reading: with the prompt held fixed, response length explains 1% of the statistic's variance. What does explain it is prompt identity, at 64% of variance, in an ordering that is not monotonic in length. Within any fixed prompt the fairness label, response length and the presence of a protected-group token are collinear at $φ= 0.95$, partly by definition of the labelling rule, so no observational analysis can attribute the map to any of them, and no method in this family performs an experiment that could. The substantive claims fail independently: bias selectivity is not late-layer-concentrated on either model under either reference reading, and no head set we tested reduces the unfairness rate when ablated. Its complement, scored on the opposite label, reliably destroys refusal behaviour ($p = 2.7\\times10^{-5}$), demonstrating that the pipeline detects effects at this scale.",
+            "text": "Methods that localise social bias in large language models to individual attention heads and remove it by ablation are validated by their effect on a fairness metric, never by evidence that the statistic selecting the heads measures bias. We audit this on Qwen-2.5-7B-Instruct and Llama-3.1-8B-Instruct. The head map correlates at $ρ= -0.950$ and $-0.768$ with a label-blind response-length map, apparently identifying a surface confound. An intervention that breaks the length-label coupling rejects this reading: with the prompt held fixed, response length explains 1% of the statistic's variance. What does explain it is prompt identity, at 64% of variance, in an ordering that is not monotonic in length. Within any fixed prompt the fairness label, response length and the presence of a protected-group token are collinear at $φ= 0.95$, partly by definition of the labelling rule, so no observational analysis can attribute the map to any of them, and no method in this family performs an experiment that could. The substantive claims fail independently: bias selectivity is not late-layer-concentrated on either model under either reference reading, and no head set we tested reduces the unfairness rate when ablated. Its complement, scored on the opposite label, reliably destroys refusal behaviour ($p = 2.7\\times10^{-5}$), demonstrating that the pipeline detects effects at this scale.",
+            "lead": "Methods that localise social bias in large language models to individual attention heads and remove it by ablation are validated by their effect on a fairness metric, never by evidence that the statistic selecting the heads measures bias. We audit this on Qwen-2.5-7B-Instruct and Llama-3.1-8B-Instruct. The head map correlates at $ρ= -0.950$ and $-0.768$ with a label-blind response-length map, apparently identifying a surface confound. An intervention that ",
+            "chars": 1393,
+            "shown": 1393,
+            "truncated": false
+          },
+          "categories": [
+            "cs.CL",
+            "cs.LG"
+          ],
+          "author": "S. M Seefat Alam",
+          "lang": "en",
+          "tier": 3,
+          "trustCategory": true,
+          "declaredCategory": "ideas",
+          "metrics": {},
+          "quality": 6,
+          "score": 12.2,
+          "category": "apps",
+          "subcategory": "knowledge",
+          "practical": 1,
+          "slug": "19ccc568e7a4",
+          "action": 2,
+          "rank": 9.2,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "label": "工具玩法",
+      "items": [
+        {
+          "sourceId": "arxiv-cs",
+          "sourceName": "arXiv cs.AI/CL/LG",
+          "title": "Agent Trust Infrastructure (ATI): A Federated Identity, Trust, Attestation, and Accountability Architecture for Cross-Organization Autonomous AI Agents",
+          "url": "https://arxiv.org/abs/2611.23202v1",
+          "id": "http://arxiv.org/abs/2611.23202v1",
+          "published": "2026-11-17T18:44:25.000Z",
+          "summary": "AI agents increasingly collaborate across organizational boundaries, invoking tools and interacting with agents operated by independent entities. Although existing agent frameworks support planning and coordination, they lack a common mechanism for verifying cross-organizational agent identity, execution integrity, an…",
+          "content": {
+            "html": "AI agents increasingly collaborate across organizational boundaries, invoking tools and interacting with agents operated by independent entities. Although existing agent frameworks support planning and coordination, they lack a common mechanism for verifying cross-organizational agent identity, execution integrity, and authorization. We propose the Agent Trust Infrastructure (ATI), a framework-independent security architecture built on Public Key Infrastructure (PKI), Zero Trust Architecture (ZTA), and remote attestation. ATI establishes federated trust through peer organizational certificate authorities (AgentCAs), eliminating the need for a shared root authority. Before executing requests, ATI validates agent certificates, verifies approved model, tool, and system-prompt configurations, and enforces authorization through three policy checks. We implement ATI as an external security enforcement layer that integrates with existing agent frameworks without modifying their underlying models. We evaluate ATI in a simulated federation of eight organizations using six agent frameworks, each deploying a five-agent team. Security experiments involve two organizations and assess 14 attack scenarios and six benign tasks across five agent models, using five attack variations and three repetitions per variation. A panel of judge models evaluates the experimental outcomes. With all enforcement mechanisms enabled, attack containment increases from 43% to 84% (40% to 80% for the 11 attack scenarios evaluated consistently across all configurations), while enforcement introduces approximately 174 microseconds of overhead per request. ATI is released as an open-source, framework-independent package that uses IETF WIMSE workload token formats for identity and request verification and Entity Attestation Tokens for model, tool, and system-prompt integrity verification.",
+            "text": "AI agents increasingly collaborate across organizational boundaries, invoking tools and interacting with agents operated by independent entities. Although existing agent frameworks support planning and coordination, they lack a common mechanism for verifying cross-organizational agent identity, execution integrity, and authorization. We propose the Agent Trust Infrastructure (ATI), a framework-independent security architecture built on Public Key Infrastructure (PKI), Zero Trust Architecture (ZTA), and remote attestation. ATI establishes federated trust through peer organizational certificate authorities (AgentCAs), eliminating the need for a shared root authority. Before executing requests, ATI validates agent certificates, verifies approved model, tool, and system-prompt configurations, and enforces authorization through three policy checks. We implement ATI as an external security enforcement layer that integrates with existing agent frameworks without modifying their underlying models. We evaluate ATI in a simulated federation of eight organizations using six agent frameworks, each deploying a five-agent team. Security experiments involve two organizations and assess 14 attack scenarios and six benign tasks across five agent models, using five attack variations and three repetitions per variation. A panel of judge models evaluates the experimental outcomes. With all enforcement mechanisms enabled, attack containment increases from 43% to 84% (40% to 80% for the 11 attack scenarios evaluated consistently across all configurations), while enforcement introduces approximately 174 microseconds of overhead per request. ATI is released as an open-source, framework-independent package that uses IETF WIMSE workload token formats for identity and request verification and Entity Attestation Tokens for model, tool, and system-prompt integrity verification.",
+            "lead": "AI agents increasingly collaborate across organizational boundaries, invoking tools and interacting with agents operated by independent entities. Although existing agent frameworks support planning and coordination, they lack a common mechanism for verifying cross-organizational agent identity, execution integrity, and authorization. We propose the Agent Trust Infrastructure (ATI), a framework-independent security architecture built on Public Key Infrastru",
+            "chars": 1881,
+            "shown": 1881,
+            "truncated": false
+          },
+          "categories": [
+            "cs.AI"
+          ],
+          "author": "Viet K. Nguyen",
+          "lang": "en",
+          "tier": 3,
+          "trustCategory": true,
+          "declaredCategory": "ideas",
+          "metrics": {},
+          "quality": 7,
+          "score": 13.38,
+          "category": "tools",
+          "subcategory": "coding",
+          "practical": 2,
+          "slug": "dae8da621ba4",
+          "action": 2,
+          "rank": 10.2,
+          "tags": [
+            "agent"
+          ]
+        },
+        {
+          "sourceId": "lobsters-ai",
+          "sourceName": "Lobsters AI",
+          "title": "Energy-Based Reasoners: Your Recurrent Reasoner Should Be an Energy-Based Model",
+          "url": "https://energy-based-reasoners.github.io/",
+          "id": "https://lobste.rs/s/8mbnbd",
+          "published": "2026-11-18T14:45:20.000Z",
+          "summary": "<!doctype html> Abstract Looping is a powerful inductive bias for reasoning. By repeatedly iterating a recurrent block, looped models can scale their effective depth and enable multi-step reasoning in latent space. However, existing looped models are not inherently guided by an explicit measure of progress, making it…",
+          "content": {
+            "html": "&lt;!doctype html&gt;<section><div><h3>Abstract</h3><div><p>Looping is a powerful inductive bias for reasoning. By repeatedly iterating a recurrent block, looped models can scale their effective depth and enable multi-step reasoning in latent space. However, existing looped models are not inherently guided by an explicit measure of progress, making it difficult to determine when to stop looping and how to improve upon the current state. To enable this, we introduce<b>Energy-Based Reasoners</b>(<b>EBRs</b>), which learn an energy function over latent reasoning states and formulate looped updates as gradient descent on this energy. The energy scores latent states, while its gradient guides refinement and provides a signal for stopping. To train EBRs effectively, we further introduce exploration-based training to discover additional modes and to better shape the energy landscape over a broader set of states. Across four algorithmic reasoning benchmarks, EBRs match or outperform prior recurrent reasoning models, achieving 99.9% accuracy on Sudoku-Extreme while using 345× less inference compute than the next-best model and maintaining comparable training compute. On all multi-solution benchmarks, EBRs achieve state-of-the-art coverage of distinct valid solutions while maintaining near-100% single-sample accuracy. These results suggest that energy-based models are a promising approach for strong reasoning performance.</p></div></div></section>\n<section><div><h3>Why Energy?</h3><p>Existing looped reasoners update their latent state without any explicit assessment of it. An EBR learns an energy function that guides refinement, stopping and selection.</p><div><div><span><span><span><span><span></span></span></span></span></span><span><span>E</span></span><span><span><span><span><span><span></span></span></span></span></span></span><span><span>θ</span></span><span>​</span><span><span><span></span></span></span><span>(</span><span>z</span><span>;</span><span></span><span></span><span>x</span><span>)</span><span></span><span>∈</span><span></span><span><span></span></span><span>R</span><p><strong>Score.</strong>The energy rates the compatibility between the reasoning state<span><span><span><span></span></span></span></span><span>z</span>and the initial board<span><span><span><span></span></span></span></span><span>x</span>. Lower means better compatibility.</p></div></div></div><div><span><span><span><span><span></span></span></span></span></span><span><span>z</span></span><span><span><span><span><span><span></span></span></span></span></span></span><span><span><span>t</span></span></span><span>+</span><span>1</span><span>​</span><span><span><span></span></span></span><span></span><span>=</span><span></span><span><span></span></span><span><span>Π</span></span><span><span><span><span><span><span></span></span></span></span></span></span><span><span><span>M</span></span></span><span>​</span><span><span><span></span></span></span><span><span>(</span></span><span><span>z</span></span><span><span><span><span><span><span></span></span></span></span></span></span><span><span>t</span></span><span>​</span><span><span><span></span></span></span><span></span><span>−</span><span></span><span><span></span></span><span>α</span><span></span><span><span>∇</span></span><span><span><span><span><span><span></span></span></span></span></span></span><span><span>z</span></span><span>​</span><span><span><span></span></span></span><span><span>E</span></span><span><span><span><span><span><span></span></span></span></span></span></span><span><span>θ</span></span><span>​</span><span><span><span></span></span></span><span>(</span><span><span>z</span></span><span><span><span><span><span><span></span></span></span></span></span></span><span><span>t</span></span><span>​</span><span><span><span></span></span></span><span>;</span><span></span><span></span><span>x</span><span>)</span><span><span>)</span></span><p><strong>Refine.</strong>The gradient turns the score into an improvement direction.</p></div><div><span><span><span><span><span></span></span></span></span></span><span><span><span><span><span><span><span></span></span></span></span></span></span></span><span></span><span>​</span><span><span><span></span></span></span><span><span>∇</span></span><span><span><span><span><span><span></span></span></span></span></span></span><span><span><span>M</span></span></span><span>​</span><span><span><span></span></span></span><span><span>E</span></span><span><span><span><span><span><span></span></span></span></span></span></span><span><span>θ</span></span><span>​</span><span><span><span></span></span></span><span>(</span><span>z</span><span>;</span><span></span><span></span><span>x</span><span>)</span><span><span><span><span><span><span><span></span></span></span></span></span></span></span><span></span><span>​</span><span><span><span></span></span></span><span></span><span>&lt;</span><span></span><span><span></span></span><span>τ</span><p><strong>Stop.</strong>The state becomes stationary once the gradient is small, so the gradient acts as a stopping criterion.</p></div><div><span><span><span><span><span></span></span></span></span></span><span><span>k</span></span><span><span><span><span><span><span></span></span></span></span></span></span><span><span>⋆</span></span><span></span><span>=</span><span></span><span><span></span></span><span>ar<span>g</span></span><span></span><span><span><span><span><span><span></span></span></span></span></span></span><span><span><span>k</span></span></span><span><span></span></span><span><span>min</span></span><span>​</span><span><span><span></span></span></span><span></span><span></span><span><span>E</span></span><span><span><span><span><span><span></span></span></span></span></span></span><span><span>θ</span></span><span>​</span><span><span><span></span></span></span><span><span>(</span></span><span><span>z</span></span><span><span><span><span><span><span></span></span></span></span></span></span><span><span><span>(</span></span></span><span>k</span><span>)</span><span>;</span><span></span><span></span><span>x</span><span><span>)</span></span><p><strong>Select.</strong>Among multiple candidate solutions, we pick the one with the lowest energy.</p></div><div><figure><img src=\"https://energy-based-reasoners.github.io/static/images/descent_curves.png\" alt=\"Energy, gradient norm and residual during descent, solved vs wrong\" loading=\"lazy\"></figure><p><strong>Correct solutions settle at low-energy stationary states.</strong>Energy, gradient norm and step size during descent on Sudoku-Extreme. Correct trajectories settle at low energy with small gradients, while wrong ones keep moving.</p></div></section>\n<section><div><h3>Test-Time Scaling</h3><p>Running more descent steps refines each answer further, and running more trajectories gives the energy more candidates to choose the lowest-energy one from.</p><figure><img src=\"https://energy-based-reasoners.github.io/static/images/sudoku_ttc_frontier_web.png\" alt=\"Sudoku-Extreme accuracy vs iterations with one sample (left), and vs number of samples (right)\" loading=\"lazy\"></figure><p>EBRs reach EqR's best accuracy with<strong>7×</strong>fewer iterations (left) and<strong>43×</strong>fewer samples (right).</p><p>GRAM and TRM from GRAM's paper; EqR from its released checkpoint. Mean &amp;plusmn; SD over three seeds.</p></div></section>\n<section><div><h3>Adaptive Stopping</h3><p>Each trajectory stops once its energy gradient falls below a threshold, so easy puzzles finish in a few steps and hard ones keep going.</p><figure><img src=\"https://energy-based-reasoners.github.io/static/images/sudoku_tau_flops_web.png\" alt=\"Sudoku-Extreme exact accuracy vs inference FLOPs per puzzle\" loading=\"lazy\"></figure><div><table><thead><tr><th>Method</th><th># Params</th><th>Sudoku-Extreme &amp;uarr;</th><th>Maze-Hard &amp;uarr;</th></tr></thead><tbody><tr><td>Single sample (%)</td></tr><tr><td>TRM</td><td>5–7M</td><td>87.4</td><td>85.3</td></tr><tr><td>EqR</td><td>5–7M</td><td>93.0</td><td>–</td></tr><tr><td>FPRM</td><td>7M</td><td>94.2</td><td>87.0</td></tr><tr><td>GRAM</td><td>10M</td><td>86.6</td><td>–</td></tr><tr><td>Looped flows</td><td>5–7M</td><td>97.9</td><td>86.7</td></tr><tr><td><strong>EBR</strong><span>Ours</span></td><td><strong>1.8M</strong></td><td><strong>99.4</strong></td><td><strong>87.4</strong></td></tr><tr><td>Multiple samples (%), number of samples<em>N</em>in parentheses</td></tr><tr><td>PTRM</td><td>5–7M</td><td>98.8<span>(100)</span></td><td>86.7<span>(100)</span></td></tr><tr><td>EqR</td><td>5–7M</td><td>99.8<span>(128)</span></td><td>–</td></tr><tr><td>GRAM</td><td>10M</td><td>96.1<span>(20)</span></td><td>–</td></tr><tr><td>Looped flows</td><td>5–7M</td><td>99.3<span>(5)</span></td><td>86.9<span>(5)</span></td></tr><tr><td><strong>EBR</strong><span>Ours</span></td><td><strong>1.8M</strong></td><td><strong>99.9</strong><span>(5)</span></td><td><strong>88.3</strong><span>(5)</span></td></tr></tbody></table></div></div><p>EBRs give the best single-sample accuracy among reasoning models. Within only 5 passes, they reach 99.9% and 88.3%, ahead of methods that draw up to 128. Stopping each trajectory once its energy gradient falls below a threshold keeps 99.9% accuracy with 10.9× fewer FLOPs than a fixed-depth EBR, allowing us to surpass EqR with 345× fewer FLOPs.</p></section>\n<section><div><h3>Multiple Solutions</h3><p>EBR acts like stochastic gradient descent and can capture many different solutions. Coverage captures the share of each input's distinct valid solutions that 20 samples find.</p><div><table><thead><tr><th>Method</th><th>N-Queens</th><th>Graph Coloring</th></tr><tr><th>8×8</th><th>10×10</th><th>8-vertex</th><th>10-vertex</th></tr></thead><tbody><tr><td>Single sample</td><td>Pass@1 (%) &amp;uarr;</td></tr></tbody></table></div></div></section>",
+            "text": "<!doctype html> Abstract\nLooping is a powerful inductive bias for reasoning. By repeatedly iterating a recurrent block, looped models can scale their effective depth and enable multi-step reasoning in latent space. However, existing looped models are not inherently guided by an explicit measure of progress, making it difficult to determine when to stop looping and how to improve upon the current state. To enable this, we introduce Energy-Based Reasoners ( EBRs ), which learn an energy function over latent reasoning states and formulate looped updates as gradient descent on this energy. The energy scores latent states, while its gradient guides refinement and provides a signal for stopping. To train EBRs effectively, we further introduce exploration-based training to discover additional modes and to better shape the energy landscape over a broader set of states. Across four algorithmic reasoning benchmarks, EBRs match or outperform prior recurrent reasoning models, achieving 99.9% accuracy on Sudoku-Extreme while using 345× less inference compute than the next-best model and maintaining comparable training compute. On all multi-solution benchmarks, EBRs achieve state-of-the-art coverage of distinct valid solutions while maintaining near-100% single-sample accuracy. These results suggest that energy-based models are a promising approach for strong reasoning performance.\nWhy Energy?\nExisting looped reasoners update their latent state without any explicit assessment of it. An EBR learns an energy function that guides refinement, stopping and selection.\nE θ ​ ( z ; x ) ∈ R Score. The energy rates the compatibility between the reasoning state z and the initial board x . Lower means better compatibility.\nz t + 1 ​ = Π M ​ ( z t ​ − α ∇ z ​ E θ ​ ( z t ​ ; x ) ) Refine. The gradient turns the score into an improvement direction.\n​ ∇ M ​ E θ ​ ( z ; x ) ​ < τ Stop. The state becomes stationary once the gradient is small, so the gradient acts as a stopping criterion.\nk ⋆ = ar g k min ​ E θ ​ ( z ( k ) ; x ) Select. Among multiple candidate solutions, we pick the one with the lowest energy.\nCorrect solutions settle at low-energy stationary states. Energy, gradient norm and step size during descent on Sudoku-Extreme. Correct trajectories settle at low energy with small gradients, while wrong ones keep moving.\nTest-Time Scaling\nRunning more descent steps refines each answer further, and running more trajectories gives the energy more candidates to choose the lowest-energy one from.\nEBRs reach EqR's best accuracy with 7× fewer iterations (left) and 43× fewer samples (right).\nGRAM and TRM from GRAM's paper; EqR from its released checkpoint. Mean &plusmn; SD over three seeds.\nAdaptive Stopping\nEach trajectory stops once its energy gradient falls below a threshold, so easy puzzles finish in a few steps and hard ones keep going.\nMethod\n# Params\nSudoku-Extreme &uarr;\nMaze-Hard &uarr;\nSingle sample (%)\nTRM\n5–7M\n87.4\n85.3\nEqR\n5–7M\n93.0\n–\nFPRM\n7M\n94.2\n87.0\nGRAM\n10M\n86.6\n–\nLooped flows\n5–7M\n97.9\n86.7\nEBR Ours\n1.8M\n99.4\n87.4\nMultiple samples (%), number of samples N in parentheses\nPTRM\n5–7M\n98.8 (100)\n86.7 (100)\nEqR\n5–7M\n99.8 (128)\n–\nGRAM\n10M\n96.1 (20)\n–\nLooped flows\n5–7M\n99.3 (5)\n86.9 (5)\nEBR Ours\n1.8M\n99.9 (5)\n88.3 (5)\nEBRs give the best single-sample accuracy among reasoning models. Within only 5 passes, they reach 99.9% and 88.3%, ahead of methods that draw up to 128. Stopping each trajectory once its energy gradient falls below a threshold keeps 99.9% accuracy with 10.9× fewer FLOPs than a fixed-depth EBR, allowing us to surpass EqR with 345× fewer FLOPs.\nMultiple Solutions\nEBR acts like stochastic gradient descent and can capture many different solutions. Coverage captures the share of each input's distinct valid solutions that 20 samples find.\nMethod\nN-Queens\nGraph Coloring\n8×8\n10×10\n8-vertex\n10-vertex\nSingle sample\nPass@1 (%) &uarr;",
+            "lead": "<!doctype html> Abstract\nLooping is a powerful inductive bias for reasoning. By repeatedly iterating a recurrent block, looped models can scale their effective depth and enable multi-step reasoning in latent space. However, existing looped models are not inherently guided by an explicit measure of progress, making it difficult to determine when to stop looping and how to improve upon the current state. To enable this, we introduce Energy-Based Reasoners ( ",
+            "chars": 4856,
+            "shown": 3999,
+            "truncated": true
+          },
+          "categories": [
+            "ai"
+          ],
+          "author": "energy-based-reasoners.github.io via xyproto",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "tools",
+          "metrics": {},
+          "quality": 6,
+          "score": 14.25,
+          "category": "tools",
+          "subcategory": "hands-on",
+          "practical": 1,
+          "slug": "d24d002ef466",
+          "action": 2,
+          "rank": 9.2,
+          "tags": [
+            "tutorial"
+          ]
+        },
+        {
+          "sourceId": "arxiv-cs",
+          "sourceName": "arXiv cs.AI/CL/LG",
+          "title": "StringQFT: A Multiuse Textbook Resource for AI-Assisted Theoretical Physics",
+          "url": "https://arxiv.org/abs/2611.23225v1",
+          "id": "http://arxiv.org/abs/2611.23225v1",
+          "published": "2026-11-17T18:58:40.000Z",
+          "summary": "We present StringQFT as a textbook collection for string constructions of quantum field theory and as infrastructure for AI-assisted theoretical physics. The collection comprises 18 volumes, 190 chapters and 3,795 pages, covering brane probes, brane webs, geometric engineering, F-theory constructions, wrapped M5-brane…",
+          "content": {
+            "html": "We present StringQFT as a textbook collection for string constructions of quantum field theory and as infrastructure for AI-assisted theoretical physics. The collection comprises 18 volumes, 190 chapters and 3,795 pages, covering brane probes, brane webs, geometric engineering, F-theory constructions, wrapped M5-branes and exact worldsheet constructions. Its open-book benchmark inventory contains 1,073 items, including 499 with automatic finite-answer checking. For retrieval-augmented generation, it provides 1,371 section records linked to textbook sources and PDF locations, together with a local lexical retriever. Training-data preparation is illustrated by 21 private, source-linked examples. For agents, it exposes 19 calculation tools with specified inputs and finite domains, connecting tool use to textbook derivations. We illustrate these uses through specific questions, retrieved passages and finite calculations. The textbook collection and accompanying resources are available at https://github.com/xingyang-yu/StringQFT.",
+            "text": "We present StringQFT as a textbook collection for string constructions of quantum field theory and as infrastructure for AI-assisted theoretical physics. The collection comprises 18 volumes, 190 chapters and 3,795 pages, covering brane probes, brane webs, geometric engineering, F-theory constructions, wrapped M5-branes and exact worldsheet constructions. Its open-book benchmark inventory contains 1,073 items, including 499 with automatic finite-answer checking. For retrieval-augmented generation, it provides 1,371 section records linked to textbook sources and PDF locations, together with a local lexical retriever. Training-data preparation is illustrated by 21 private, source-linked examples. For agents, it exposes 19 calculation tools with specified inputs and finite domains, connecting tool use to textbook derivations. We illustrate these uses through specific questions, retrieved passages and finite calculations. The textbook collection and accompanying resources are available at https://github.com/xingyang-yu/StringQFT.",
+            "lead": "We present StringQFT as a textbook collection for string constructions of quantum field theory and as infrastructure for AI-assisted theoretical physics. The collection comprises 18 volumes, 190 chapters and 3,795 pages, covering brane probes, brane webs, geometric engineering, F-theory constructions, wrapped M5-branes and exact worldsheet constructions. Its open-book benchmark inventory contains 1,073 items, including 499 with automatic finite-answer chec",
+            "chars": 1040,
+            "shown": 1040,
+            "truncated": false
+          },
+          "categories": [
+            "hep-th",
+            "cs.AI"
+          ],
+          "author": "Xingyang Yu",
+          "lang": "en",
+          "tier": 3,
+          "trustCategory": true,
+          "declaredCategory": "ideas",
+          "metrics": {},
+          "quality": 6,
+          "score": 11.8,
+          "category": "tools",
+          "subcategory": null,
+          "practical": 2,
+          "slug": "5d467ff9be23",
+          "action": 2,
+          "rank": 9.2,
+          "tags": [
+            "benchmark"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hardware",
+      "label": "AI 硬件",
+      "items": [
+        {
+          "sourceId": "lcz-llm",
+          "sourceName": "抡锤者 模型部署讨论",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "CHIA AN YANG",
+          "id": "3173",
+          "title": "抄作業成功 ! 雙卡 RX 7900 XTX 榨乾 Qwen3.8-Flash-Next 256K：Strata TP decode 130+ tok/s prefill 6020 最新調校指南與無 P2P 性能逆襲",
+          "url": "https://lcz.me/topic/3173",
+          "published": "2026-11-18T05:52:49.944Z",
+          "summary": "【分享】雙卡 RX 7900 XTX 榨乾 Qwen3.8-Flash-Next 256K：Strata TP 調校指南與無 P2P 性能逆襲 很多玩本地大模型的朋友都覺得 AMD 顯卡（RDNA3）在多卡張量並行（TP）上生態不如綠廠，尤其是在沒有 NVLink、主板又開不了 P2P DMA 直連的情況下，跨卡延遲往往會把性能吃光。 這次在伺服器上實測了兩張 RX 7900 XTX 24GB ，運行 Qwen3.8-Flash-Next (IQ3_S 量化 / 256K 超長上下文) 。歷經了跨 IIO Stack 走 Host 轉發、主卡風扇故障（0 RPM）導致 14 秒飆破 115°C 熱跳閘等各種地獄開局，最終透過 St…",
+          "metrics": {
+            "points": 1,
+            "comments": 7,
+            "views": 714
+          },
+          "excellent": true,
+          "content": {
+            "html": "<h3>【分享】雙卡 RX 7900 XTX 榨乾 Qwen3.8-Flash-Next 256K：Strata TP 調校指南與無 P2P 性能逆襲</h3>\n<p>很多玩本地大模型的朋友都覺得 AMD 顯卡（RDNA3）在多卡張量並行（TP）上生態不如綠廠，尤其是在沒有 NVLink、主板又開不了 P2P DMA 直連的情況下，跨卡延遲往往會把性能吃光。</p>\n<p>這次在伺服器上實測了兩張<strong>RX 7900 XTX 24GB</strong>，運行<strong>Qwen3.8-Flash-Next (IQ3_S 量化 / 256K 超長上下文)</strong>。歷經了跨 IIO Stack 走 Host 轉發、主卡風扇故障（0 RPM）導致 14 秒飆破 115°C 熱跳閘等各種地獄開局，最終透過 Strata 引擎參數重構與 Linux 系統層調優，成功將輸出速度拉到<strong>110 ~ 125 tok/s</strong>，輸入首字延遲縮短<strong>23%</strong>，同時把原本狂飆 300W 的主卡功耗壓制到 175W，低溫穩跑！</p>\n<p>把這套實測調優經驗整理成文，供同樣在折騰 AMD 雙卡跑大模型的朋友參考。</p>\n<hr><h3><img src=\"https://lcz.me/assets/plugins/nodebb-plugin-emoji/emoji/android/1f5a5.png?v=3c59dda5525\" alt=\"🖥\" loading=\"lazy\">️ 一、測試硬體規格與拓撲</h3>\n<p>這是一台 Intel 伺服器平台，雙卡分別插在不同的 PCIe 插槽上：</p>\n<table><thead><tr><th>組件</th><th>規格明細</th><th>備註說明</th></tr></thead><tbody><tr><td><strong>主機板</strong></td><td>技嘉 MU72-SU0 (Intel C621A 晶片組)</td><td>支援 PCIe 4.0</td></tr><tr><td><strong>處理器</strong></td><td>Intel Xeon Gold (38 核 / 76 執行緒)</td><td>核心數多、單核頻率約 2.4~3.0 GHz</td></tr><tr><td><strong>系統記憶體</strong></td><td>128GB DDR4 ECC Registered</td><td>四通道</td></tr><tr><td><strong>GPU 0 (主卡)</strong></td><td>AMD Radeon RX 7900 XTX 24GB</td><td>PCIe Gen4 x16（實測風扇故障 0 RPM）</td></tr><tr><td><strong>GPU 1 (副卡)</strong></td><td>AMD Radeon RX 7900 XTX 24GB</td><td>PCIe Gen4 x8（風扇正常運轉 ~900 RPM）</td></tr><tr><td><strong>跨卡拓撲</strong></td><td><strong>P2P Disabled (走 Host RAM 轉發)</strong></td><td>跨 IIO Stack，張量同步必須經過主板內存</td></tr></tbody></table>\n<blockquote><p><strong><img src=\"https://lcz.me/assets/plugins/nodebb-plugin-emoji/emoji/android/26a0.png?v=3c59dda5525\" alt=\"⚠\" loading=\"lazy\">️ 硬體痛點</strong>：</p><ol><li><strong>無 PCIe P2P 直連</strong>：兩張卡插在不同 CPU IIO Stack，跨卡通訊無法走 P2P Direct DMA，必須退回<code>Host RAM</code>（GPU0 ➔ CPU 內存 ➔ GPU1），這是最大的延遲瓶頸。</li><li><strong>主卡風扇罷工</strong>：主卡風扇讀值為 0 RPM，滿載時熱量極難排出。</li></ol></blockquote>\n<hr><h3><img src=\"https://lcz.me/assets/plugins/nodebb-plugin-emoji/emoji/android/1f4e6.png?v=3c59dda5525\" alt=\"📦\" loading=\"lazy\">二、運行模型與軟體堆疊</h3>\n<ul><li><strong>推理引擎</strong>：Strata 引擎 v0.1.49.1（ROCm 10.1.0 / HIPBLASLt 100401）</li><li><strong>目標模型</strong>：<code>Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S</code><ul><li><strong>參數量與架構</strong>：48 層 Mixture-of-Experts (MoE)，動態專家權重約 46.8 GiB</li></ul></li><li><strong>Context 長度</strong>：<strong>262,144 tokens (256K 超長上下文)</strong></li><li><strong>KV Cache</strong>：INT8 動態量化（常駐容量 32,768 tokens）</li><li><strong>投機解碼</strong>：Multi-Token Prediction (MTP) + 中文 60K Draft 詞表</li></ul>\n<hr><h3><img src=\"https://lcz.me/assets/plugins/nodebb-plugin-emoji/emoji/android/1f4a5.png?v=3c59dda5525\" alt=\"💥\" loading=\"lazy\">三、踩坑血淚史：死機斷電與待機烘烤</h3>\n<p>在還沒優化前，剛部署完官方預設配置就撞上了兩個大坑：</p>\n<h3>1. 128K 超長提示詞壓測，第 14 秒整機斷電</h3>\n<p>剛開始跑 128K（131,072 tokens）長文本基準測試時，雙卡瞬間滿載拉到<strong>301W (GPU0) + 292W (GPU1) = 593W</strong>。<br>結果運算到第 14 秒，主機無預警瞬間硬關機重開！</p>\n<ul><li><strong>排查定論</strong>：起初懷疑是電源不足跳閘，但實測 593W 瞬間負載時 12V 迴路毫無波動；調閱底層遙測日誌才發現，GPU0 風扇根本沒轉（0 RPM），300W 滿載下晶片結溫以每秒 +3°C 失控狂飆，14 秒直接撞上<strong>115°C 的 AMD 矽晶片硬體急停熔斷保護</strong>，整機強制斷電。</li></ul>\n<h3>2. 待機時顯卡竟然在 190W 乾燒？</h3>\n<p>停用請求後發現 GPU0 待機結溫依然高達 100°C+、功耗維持 190W。原因出在預設的<code>GPU_MAX_HW_QUEUES=8</code>會讓 AMD MES 硬體排程器持續佔滿 GPU 時間片不休眠，在無風扇狀態下等同於自燃。</p>\n<hr><h3><img src=\"https://lcz.me/assets/plugins/nodebb-plugin-emoji/emoji/android/26a1.png?v=3c59dda5525\" alt=\"⚡\" loading=\"lazy\">四、輸入（Prefill）速度優化：前後實測與改進手段</h3>\n<p>在跨卡無 P2P 的架構下，Prompt 輸入階段需要將大量的 Token 嵌入與 KV 快取在雙卡與 Host 記憶體之間分發。</p>\n<h3>1. 輸入速度（Prefill）優化前後數據對比</h3>\n<table><thead><tr><th>提示詞長度場景</th><th>優化前 (預設配置)</th><th>優化後 (滿血版本)</th><th>性能提升與改善幅度</th></tr></thead><tbody><tr><td><strong>短 Prompt (~100 tokens)</strong></td><td>133.8 tok/s (耗時 ~730ms)</td><td><strong>534.3 tok/s (耗時 183.4ms)</strong></td><td><strong>首字延遲縮短 75%（快近 3 倍）</strong></td></tr><tr><td><strong>中長 Prompt (1.7K tokens)</strong></td><td>1,238.9 tok/s (耗時 266.3ms)</td><td><strong>8,707 tok/s 等效吞吐 (耗時 204.2ms)</strong></td><td><strong>首字響應延遲下降 23.3%</strong></td></tr><tr><td><strong>長 Prompt (4K tokens)</strong></td><td>2,355.2 tok/s</td><td><strong>2,800+ tok/s</strong></td><td><strong>並行吞吐量持續攀升</strong></td></tr><tr><td><strong>歷史真實請求平均輸入速度</strong></td><td>~180.0 tok/s</td><td><strong>475.99 tok/s (峰值 1,202.2 tok/s)</strong></td><td>包含不同長度 Prompt 之綜合平均</td></tr><tr><td><strong>超長文本快取命中 (130K Prompt)</strong></td><td>首字需等待 3~5 秒</td><td><strong>首字僅需 1.2 秒</strong></td><td>94% 快取命中率，秒級首字吐出</td></tr></tbody></table>\n<h3>2. 輸入速度（Prefill）究竟做了哪些優化？</h3>\n<ul><li><strong>優化招式 1：全 76 執行緒 CPU 鎖定最高頻 (<code>performance</code>)</strong><br>原本 Linux 預設處於節能模式，當大批 Token 透過 PCIe 進入 Host 轉發時，CPU 需要數十毫秒由 1.2GHz 提速到 3.0GHz，造成嚴重的啟動抖動。將全部 76 執行緒強制鎖定<code>performance</code>後，PCIe DMA 中斷即時處理，徹底消滅了輸入等待。</li><li><strong>優化招式 2：啟用 Linux 透明大頁 (<code>echo always &gt; transparent_hugepage/enabled</code>)</strong><br>在預填大 Context 時，幾十 GB 的內存頻繁被顯卡與 CPU 映射。開啟大頁（2MB Pages）後，頁表查詢的 TLB miss（快取缺失率）暴降，大數據搬運效率顯著提高。</li><li><strong>優化招式 3：開啟非同步流水預取 (<code>STRATA_KV_PREFETCH: 1</code>)</strong><br>在 Prefill 計算當前 Layer 的同時，非同步流水線提前向 Host 申請下一層的 KV Cache 槽位，掩蓋了 PCIe 的傳輸等待時間。</li></ul>\n<hr><h3><img src=\"https://lcz.me/assets/plugins/nodebb-plugin-emoji/emoji/android/1f680.png?v=3c59dda5525\" alt=\"🚀\" loading=\"lazy\">五、輸出（Decode）速度優化：前後實測與改進手段</h3>\n<p>輸出解碼階段是逐個 Token 生成，極度考驗雙卡張量同步延遲、MoE 專家切換命中率與 MTP 投機解碼的準確率。</p>\n<h3>1. 輸出速度（Decode）優化前後數據對比</h3>\n<table><thead><tr><th>生成任務場景</th><th>優化前 (預設配置)</th><th>優化後 (滿血版本)</th><th>性能提升與改善幅度</th></tr></thead><tbody><tr><td><strong>日常中文對話 (150 tokens)</strong></td><td>89.2 ~ 91.4 tok/s</td><td><strong>100.70 tok/s</strong></td><td><strong>成功突破 100 關卡 (+10.2%)</strong></td></tr><tr><td><strong>中長文本生成 (200 tokens)</strong></td><td>92.9 tok/s</td><td><strong>96.1 ~ 102.5 tok/s</strong></td><td><strong>解碼穩定度顯著提高</strong></td></tr></tbody></table>",
+            "text": "【分享】雙卡 RX 7900 XTX 榨乾 Qwen3.8-Flash-Next 256K：Strata TP 調校指南與無 P2P 性能逆襲\n很多玩本地大模型的朋友都覺得 AMD 顯卡（RDNA3）在多卡張量並行（TP）上生態不如綠廠，尤其是在沒有 NVLink、主板又開不了 P2P DMA 直連的情況下，跨卡延遲往往會把性能吃光。\n這次在伺服器上實測了兩張 RX 7900 XTX 24GB ，運行 Qwen3.8-Flash-Next (IQ3_S 量化 / 256K 超長上下文) 。歷經了跨 IIO Stack 走 Host 轉發、主卡風扇故障（0 RPM）導致 14 秒飆破 115°C 熱跳閘等各種地獄開局，最終透過 Strata 引擎參數重構與 Linux 系統層調優，成功將輸出速度拉到 110 ~ 125 tok/s ，輸入首字延遲縮短 23% ，同時把原本狂飆 300W 的主卡功耗壓制到 175W，低溫穩跑！\n把這套實測調優經驗整理成文，供同樣在折騰 AMD 雙卡跑大模型的朋友參考。\n️ 一、測試硬體規格與拓撲\n這是一台 Intel 伺服器平台，雙卡分別插在不同的 PCIe 插槽上：\n組件\n規格明細\n備註說明\n主機板\n技嘉 MU72-SU0 (Intel C621A 晶片組)\n支援 PCIe 4.0\n處理器\nIntel Xeon Gold (38 核 / 76 執行緒)\n核心數多、單核頻率約 2.4~3.0 GHz\n系統記憶體\n128GB DDR4 ECC Registered\n四通道\nGPU 0 (主卡)\nAMD Radeon RX 7900 XTX 24GB\nPCIe Gen4 x16（實測風扇故障 0 RPM）\nGPU 1 (副卡)\nAMD Radeon RX 7900 XTX 24GB\nPCIe Gen4 x8（風扇正常運轉 ~900 RPM）\n跨卡拓撲\nP2P Disabled (走 Host RAM 轉發)\n跨 IIO Stack，張量同步必須經過主板內存\n️ 硬體痛點 ：\n無 PCIe P2P 直連 ：兩張卡插在不同 CPU IIO Stack，跨卡通訊無法走 P2P Direct DMA，必須退回 Host RAM （GPU0 ➔ CPU 內存 ➔ GPU1），這是最大的延遲瓶頸。\n主卡風扇罷工 ：主卡風扇讀值為 0 RPM，滿載時熱量極難排出。\n二、運行模型與軟體堆疊\n推理引擎 ：Strata 引擎 v0.1.49.1（ROCm 10.1.0 / HIPBLASLt 100401）\n目標模型 ： Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S 參數量與架構 ：48 層 Mixture-of-Experts (MoE)，動態專家權重約 46.8 GiB\nContext 長度 ： 262,144 tokens (256K 超長上下文)\nKV Cache ：INT8 動態量化（常駐容量 32,768 tokens）\n投機解碼 ：Multi-Token Prediction (MTP) + 中文 60K Draft 詞表\n三、踩坑血淚史：死機斷電與待機烘烤\n在還沒優化前，剛部署完官方預設配置就撞上了兩個大坑：\n1. 128K 超長提示詞壓測，第 14 秒整機斷電\n剛開始跑 128K（131,072 tokens）長文本基準測試時，雙卡瞬間滿載拉到 301W (GPU0) + 292W (GPU1) = 593W 。\n結果運算到第 14 秒，主機無預警瞬間硬關機重開！\n排查定論 ：起初懷疑是電源不足跳閘，但實測 593W 瞬間負載時 12V 迴路毫無波動；調閱底層遙測日誌才發現，GPU0 風扇根本沒轉（0 RPM），300W 滿載下晶片結溫以每秒 +3°C 失控狂飆，14 秒直接撞上 115°C 的 AMD 矽晶片硬體急停熔斷保護 ，整機強制斷電。\n2. 待機時顯卡竟然在 190W 乾燒？\n停用請求後發現 GPU0 待機結溫依然高達 100°C+、功耗維持 190W。原因出在預設的 GPU_MAX_HW_QUEUES=8 會讓 AMD MES 硬體排程器持續佔滿 GPU 時間片不休眠，在無風扇狀態下等同於自燃。\n四、輸入（Prefill）速度優化：前後實測與改進手段\n在跨卡無 P2P 的架構下，Prompt 輸入階段需要將大量的 Token 嵌入與 KV 快取在雙卡與 Host 記憶體之間分發。\n1. 輸入速度（Prefill）優化前後數據對比\n提示詞長度場景\n優化前 (預設配置)\n優化後 (滿血版本)\n性能提升與改善幅度\n短 Prompt (~100 tokens)\n133.8 tok/s (耗時 ~730ms)\n534.3 tok/s (耗時 183.4ms)\n首字延遲縮短 75%（快近 3 倍）\n中長 Prompt (1.7K tokens)\n1,238.9 tok/s (耗時 266.3ms)\n8,707 tok/s 等效吞吐 (耗時 204.2ms)\n首字響應延遲下降 23.3%\n長 Prompt (4K tokens)\n2,355.2 tok/s\n2,800+ tok/s\n並行吞吐量持續攀升\n歷史真實請求平均輸入速度\n~180.0 tok/s\n475.99 tok/s (峰值 1,202.2 tok/s)\n包含不同長度 Prompt 之綜合平均\n超長文本快取命中 (130K Prompt)\n首字需等待 3~5 秒\n首字僅需 1.2 秒\n94% 快取命中率，秒級首字吐出\n2. 輸入速度（Prefill）究竟做了哪些優化？\n優化招式 1：全 76 執行緒 CPU 鎖定最高頻 ( performance )\n原本 Linux 預設處於節能模式，當大批 Token 透過 PCIe 進入 Host 轉發時，CPU 需要數十毫秒由 1.2GHz 提速到 3.0GHz，造成嚴重的啟動抖動。將全部 76 執行緒強制鎖定 performance 後，PCIe DMA 中斷即時處理，徹底消滅了輸入等待。\n優化招式 2：啟用 Linux 透明大頁 ( echo always > transparent_hugepage/enabled )\n在預填大 Context 時，幾十 GB 的內存頻繁被顯卡與 CPU 映射。開啟大頁（2MB Pages）後，頁表查詢的 TLB miss（快取缺失率）暴降，大數據搬運效率顯著提高。\n優化招式 3：開啟非同步流水預取 ( STRATA_KV_PREFETCH: 1 )\n在 Prefill 計算當前 Layer 的同時，非同步流水線提前向 Host 申請下一層的 KV Cache 槽位，掩蓋了 PCIe 的傳輸等待時間。\n五、輸出（Decode）速度優化：前後實測與改進手段\n輸出解碼階段是逐個 Token 生成，極度考驗雙卡張量同步延遲、MoE 專家切換命中率與 MTP 投機解碼的準確率。\n1. 輸出速度（Decode）優化前後數據對比\n生成任務場景\n優化前 (預設配置)\n優化後 (滿血版本)\n性能提升與改善幅度\n日常中文對話 (150 tokens)\n89.2 ~ 91.4 tok/s\n100.70 tok/s\n成功突破 100 關卡 (+10.2%)\n中長文本生成 (200 tokens)\n92.9 tok/s\n96.1 ~ 102.5 tok/s\n解碼穩定度顯著提高",
+            "lead": "【分享】雙卡 RX 7900 XTX 榨乾 Qwen3.8-Flash-Next 256K：Strata TP 調校指南與無 P2P 性能逆襲\n很多玩本地大模型的朋友都覺得 AMD 顯卡（RDNA3）在多卡張量並行（TP）上生態不如綠廠，尤其是在沒有 NVLink、主板又開不了 P2P DMA 直連的情況下，跨卡延遲往往會把性能吃光。\n這次在伺服器上實測了兩張 RX 7900 XTX 24GB ，運行 Qwen3.8-Flash-Next (IQ3_S 量化 / 256K 超長上下文) 。歷經了跨 IIO Stack 走 Host 轉發、主卡風扇故障（0 RPM）導致 14 秒飆破 115°C 熱跳閘等各種地獄開局，最終透過 Strata 引擎參數重構與 Linux 系統層調優，成功將輸出速度拉到 110 ~ 125 tok/s ，輸入首字延遲縮短 23% ，同時把原本狂飆 300W 的主卡功耗壓制到 175W，低溫穩跑！\n把這套實測調優經驗整理成文，供同樣在折騰 AMD 雙卡跑大模型的朋友參考。",
+            "chars": 6442,
+            "shown": 3199,
+            "truncated": true
+          },
+          "quality": 12,
+          "score": 18.77,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 3,
+          "slug": "070712c23d5a",
+          "action": 10,
+          "rank": 28,
+          "tags": [
+            "hardware",
+            "local",
+            "benchmark",
+            "tutorial"
+          ]
+        },
+        {
+          "sourceId": "lcz-llm",
+          "sourceName": "抡锤者 模型部署讨论",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "Ge Fu",
+          "id": "3187",
+          "title": "32G内存不能打？本帖会让你惊掉下巴！",
+          "url": "https://lcz.me/topic/3187",
+          "published": "2026-11-18T17:04:34.728Z",
+          "summary": "两台机器 Strata 长上下文实测：7900 XTX + 256GB（IQ3_S）对比 RTX 3080 20GB + 32GB（TQ2_0 + gyro pack）。一个是 AMD GPU decode、一个是 NVIDIA GPU decode，内存差 8 倍。",
+          "metrics": {
+            "points": 0,
+            "comments": 4,
+            "views": 613
+          },
+          "excellent": false,
+          "content": {
+            "html": "<p>两台机器 Strata 长上下文实测：7900 XTX + 256GB（IQ3_S）对比 RTX 3080 20GB + 32GB（TQ2_0 + gyro pack）。一个是 AMD GPU decode、一个是 NVIDIA GPU decode，内存差 8 倍。</p>\n<h3>硬件 / 软件环境</h3>\n<table><thead><tr><th>项目</th><th>A：7900 XTX</th><th>B：RTX 3080</th></tr></thead><tbody><tr><td>CPU</td><td>双路 Intel Xeon E5-2696 v3 @ 2.30GHz，每颗18核，共36核72线程，Haswell AVX2</td><td>Intel Core Ultra 7 270K Plus，8P+16E共24核24线程（无超线程），最大睿频5.5GHz</td></tr><tr><td>GPU</td><td>AMD RX 7900 XTX，24GB，gfx1100</td><td>NVIDIA RTX 3080，20GB（魔改），sm_86</td></tr><tr><td>内存</td><td>256GB DDR3 ECC（8×32GB，1866 MT/s），系统识别约251GiB；专家常驻约46.84GiB page-locked</td><td>2×16GB DDR5 6000；常驻后约30GiB在用，贴着上限跑</td></tr><tr><td>模型存储</td><td>PCIe SSD 953.9GB</td><td>PCIe SSD 953.9GB</td></tr><tr><td>系统</td><td>Ubuntu 24.04.4 LTS，Linux 6.8.0-149</td><td>Ubuntu 24.04.4 LTS，Linux 6.8.0-149</td></tr><tr><td>GPU栈</td><td>ROCm（pip SDK），HSA_OVERRIDE_GFX_VERSION=11.0.0，hipBLASLt调优表 gfx1100-100200</td><td>CUDA 13，驱动595.99.02；引擎实测PCIe 25.4 GB/s</td></tr><tr><td>推理后端</td><td>Strata RDNA3 fork（自编译）</td><td>Strata 0.1.60 cuda13构建</td></tr><tr><td>GPU队列</td><td>GPU_MAX_HW_QUEUES=6</td><td>默认</td></tr></tbody></table>\n<h3>文件体积与速度总表</h3>\n<p>PP = prefill，TG = decode，速度单位均为 tokens/s；每格按<strong>PP / TG</strong>排列。GB按10⁹字节。</p>\n<table><thead><tr><th>配置</th><th>模型 GB</th><th>pack + MTP GB</th><th>合计 GB</th><th>4K PP/TG</th><th>16K PP/TG</th><th>32K PP/TG</th><th>64K PP/TG</th><th>128K PP/TG</th></tr></thead><tbody><tr><td>A：IQ3_S（GSQ-RCO）+ iq3_s pack，7900 XTX</td><td>83.62（2分片，含IQ4_NL PLE表28.80）</td><td>1.55 + 0.82</td><td>86.00</td><td>690 / 116.2</td><td>2268 / 112.6</td><td>2959 / 108.2</td><td>2480 / 115.5</td><td>2905 / 119.2</td></tr><tr><td>B：TQ2_0 + gyro-gyro-m pack，3080 20GB</td><td>91.97（含包内PLE表）</td><td>33.58 + 0.82</td><td>126.37</td><td>2011 / 98.9</td><td>2375 / 98.7</td><td>2478 / 96.4</td><td>2449 / 101.0</td><td>2355 / 87.3</td></tr></tbody></table>\n<p>两行速度均为<strong>冷启动新输入</strong>（prompt cache reused=0）口径，同档位可比。</p>\n<p>体积口径：模型 GB 为 GGUF 分片之和（含包内 N-gram/PLE 表）；pack 为 APR 包，MTP 为 rt 格式 draft。合计为磁盘文件之和，不等于 RAM 占用。A 机专家常驻 46.84GiB + GPU缓存 17.35GiB（9146 experts）；B 机专家常驻 23.26GiB page-locked + GPU缓存 1071 slots（1.30GiB），其余走文件层。</p>\n<p>测速口径：统一按 4K / 16K / 32K / 64K / 128K 五档、每档 3 次，全部取<strong>冷启动新输入</strong>（prompt cache reused=0）的引擎日志记录，temperature=0、输出 ≤256 tokens，按档位取中位数。A 机为刚才实跑的同语料基准（合成 CJK 填充语料，实际 prompt token 2,201 / 8,558 / 17,021 / 33,947 / 67,801）；B 机取自生产引擎日志中同口径的历史记录（prompt 落在各档 ±12% 内、输出 ≥200 tokens，n=6～29/档）。语料不完全相同，数字作整套配置参考。</p>\n<h3>解码与缓存</h3>\n<table><thead><tr><th>指标</th><th>A：7900 XTX</th><th>B：3080</th></tr></thead><tbody><tr><td>TG @4K（冷启动）</td><td>116.2</td><td>98.9</td></tr><tr><td>TG @128K（冷启动）</td><td>119.2</td><td>87.3</td></tr><tr><td>PP @4K（冷启动）</td><td>690</td><td>~2011</td></tr><tr><td>PP @128K（冷启动）</td><td>2905</td><td>2355</td></tr><tr><td>专家缓存 hit 中位</td><td>97%～98%（本次基准全程）</td><td>88%；高负载请求 93～95%</td></tr></tbody></table>\n<p>两台都是 MTP spec=4、spec-min-p 0.5。A 机 hit 常年 96%+，基本纯显存+RAM 推理，TG 全程 100+ 不随上下文衰减；B 机 RAM 只有 32GB，hit 低一档，长上下文时 PCIe 补传成为瓶颈，128K 档 TG 掉到 87。</p>\n<h3>启动参数</h3>\n<p>A（7900 XTX / IQ3_S）：</p>\n<pre><code>--serve \\\n--pack \"$PACK_DIR\" \\\n--native \"$GGUF_00001\" \\\n--ple-gguf \"$GGUF_00002\" \\\n--expert-profile \"$EXPERT_PROFILE\" \\\n--expert-cache auto \\\n--prefill auto:32768 \\\n--spec 4 \\\n--spec-min-p 0.5 \\\n--mtp \"$MTP_RT_DIR\" \\\n--mtp-window 4096 \\\n--max-context 262144 \\\n--ple-io direct \\\n--kv int8 \\\n--vram-reserve-mib 768 \\\n--kv-resident 32768 \\\n--pcie-frac 0 \\\n--pool-workers 24 \\\n--mtp-q4 all \\\n--vision \\\n--conversation-cache-mib 98304 \\\n--conversation-cache-slots 64 \\\n--conversation-cache-min-tokens 2000 \\\n--conversation-cache-min-free-mib 8192</code></pre>\n<p>A 机环境变量要点：<code>HSA_OVERRIDE_GFX_VERSION=11.0.0</code>、<code>GPU_MAX_HW_QUEUES=6</code>、<code>STRATA_HIPBLASLT_TUNING=gfx1100表</code>、RDNA kernel 开关一批（GR_RDNA / GDN / PF_FUSED 系列）、<code>STRATA_SH_STREAM=0</code>（实测开=掉15%）。</p>\n<p>B（3080 / TQ2_0）：</p>\n<pre><code>--serve \\\n--pack \"$PACK_DIR\" \\\n--native \"$MODEL_GGUF\" \\\n--ple-gguf \"$MODEL_GGUF\" \\\n--expert-profile \"$EXPERT_PROFILE\" \\\n--expert-cache auto \\\n--prefill auto \\\n--spec 4 \\\n--spec-min-p 0.5 \\\n--mtp \"$MTP_RT_DIR\" \\\n--max-context 262144 \\\n--kv int8 \\…</code></pre>",
+            "text": "两台机器 Strata 长上下文实测：7900 XTX + 256GB（IQ3_S）对比 RTX 3080 20GB + 32GB（TQ2_0 + gyro pack）。一个是 AMD GPU decode、一个是 NVIDIA GPU decode，内存差 8 倍。\n硬件 / 软件环境\n项目\nA：7900 XTX\nB：RTX 3080\nCPU\n双路 Intel Xeon E5-2696 v3 @ 2.30GHz，每颗18核，共36核72线程，Haswell AVX2\nIntel Core Ultra 7 270K Plus，8P+16E共24核24线程（无超线程），最大睿频5.5GHz\nGPU\nAMD RX 7900 XTX，24GB，gfx1100\nNVIDIA RTX 3080，20GB（魔改），sm_86\n内存\n256GB DDR3 ECC（8×32GB，1866 MT/s），系统识别约251GiB；专家常驻约46.84GiB page-locked\n2×16GB DDR5 6000；常驻后约30GiB在用，贴着上限跑\n模型存储\nPCIe SSD 953.9GB\nPCIe SSD 953.9GB\n系统\nUbuntu 24.04.4 LTS，Linux 6.8.0-149\nUbuntu 24.04.4 LTS，Linux 6.8.0-149\nGPU栈\nROCm（pip SDK），HSA_OVERRIDE_GFX_VERSION=11.0.0，hipBLASLt调优表 gfx1100-100200\nCUDA 13，驱动595.99.02；引擎实测PCIe 25.4 GB/s\n推理后端\nStrata RDNA3 fork（自编译）\nStrata 0.1.60 cuda13构建\nGPU队列\nGPU_MAX_HW_QUEUES=6\n默认\n文件体积与速度总表\nPP = prefill，TG = decode，速度单位均为 tokens/s；每格按 PP / TG 排列。GB按10⁹字节。\n配置\n模型 GB\npack + MTP GB\n合计 GB\n4K PP/TG\n16K PP/TG\n32K PP/TG\n64K PP/TG\n128K PP/TG\nA：IQ3_S（GSQ-RCO）+ iq3_s pack，7900 XTX\n83.62（2分片，含IQ4_NL PLE表28.80）\n1.55 + 0.82\n86.00\n690 / 116.2\n2268 / 112.6\n2959 / 108.2\n2480 / 115.5\n2905 / 119.2\nB：TQ2_0 + gyro-gyro-m pack，3080 20GB\n91.97（含包内PLE表）\n33.58 + 0.82\n126.37\n2011 / 98.9\n2375 / 98.7\n2478 / 96.4\n2449 / 101.0\n2355 / 87.3\n两行速度均为 冷启动新输入 （prompt cache reused=0）口径，同档位可比。\n体积口径：模型 GB 为 GGUF 分片之和（含包内 N-gram/PLE 表）；pack 为 APR 包，MTP 为 rt 格式 draft。合计为磁盘文件之和，不等于 RAM 占用。A 机专家常驻 46.84GiB + GPU缓存 17.35GiB（9146 experts）；B 机专家常驻 23.26GiB page-locked + GPU缓存 1071 slots（1.30GiB），其余走文件层。\n测速口径：统一按 4K / 16K / 32K / 64K / 128K 五档、每档 3 次，全部取 冷启动新输入 （prompt cache reused=0）的引擎日志记录，temperature=0、输出 ≤256 tokens，按档位取中位数。A 机为刚才实跑的同语料基准（合成 CJK 填充语料，实际 prompt token 2,201 / 8,558 / 17,021 / 33,947 / 67,801）；B 机取自生产引擎日志中同口径的历史记录（prompt 落在各档 ±12% 内、输出 ≥200 tokens，n=6～29/档）。语料不完全相同，数字作整套配置参考。\n解码与缓存\n指标\nA：7900 XTX\nB：3080\nTG @4K（冷启动）\n116.2\n98.9\nTG @128K（冷启动）\n119.2\n87.3\nPP @4K（冷启动）\n690\n~2011\nPP @128K（冷启动）\n2905\n2355\n专家缓存 hit 中位\n97%～98%（本次基准全程）\n88%；高负载请求 93～95%\n两台都是 MTP spec=4、spec-min-p 0.5。A 机 hit 常年 96%+，基本纯显存+RAM 推理，TG 全程 100+ 不随上下文衰减；B 机 RAM 只有 32GB，hit 低一档，长上下文时 PCIe 补传成为瓶颈，128K 档 TG 掉到 87。\n启动参数\nA（7900 XTX / IQ3_S）：\n--serve \\\n--pack \"$PACK_DIR\" \\\n--native \"$GGUF_00001\" \\\n--ple-gguf \"$GGUF_00002\" \\\n--expert-profile \"$EXPERT_PROFILE\" \\\n--expert-cache auto \\\n--prefill auto:32768 \\\n--spec 4 \\\n--spec-min-p 0.5 \\\n--mtp \"$MTP_RT_DIR\" \\\n--mtp-window 4096 \\\n--max-context 262144 \\\n--ple-io direct \\\n--kv int8 \\\n--vram-reserve-mib 768 \\\n--kv-resident 32768 \\\n--pcie-frac 0 \\\n--pool-workers 24 \\\n--mtp-q4 all \\\n--vision \\\n--conversation-cache-mib 98304 \\\n--conversation-cache-slots 64 \\\n--conversation-cache-min-tokens 2000 \\\n--conversation-cache-min-free-mib 8192\nA 机环境变量要点： HSA_OVERRIDE_GFX_VERSION=11.0.0 、 GPU_MAX_HW_QUEUES=6 、 STRATA_HIPBLASLT_TUNING=gfx1100表 、RDNA kernel 开关一批（GR_RDNA / GDN / PF_FUSED 系列）、 STRATA_SH_STREAM=0 （实测开=掉15%）。\nB（3080 / TQ2_0）：\n--serve \\\n--pack \"$PACK_DIR\" \\\n--native \"$MODEL_GGUF\" \\\n--ple-gguf \"$MODEL_GGUF\" \\\n--expert-profile \"$EXPERT_PROFILE\" \\\n--expert-cache auto \\\n--prefill auto \\\n--spec 4 \\\n--spec-min-p 0.5 \\\n--mtp \"$MTP_RT_DIR\" \\\n--max-context 262144 \\\n--kv int8 \\…",
+            "lead": "两台机器 Strata 长上下文实测：7900 XTX + 256GB（IQ3_S）对比 RTX 3080 20GB + 32GB（TQ2_0 + gyro pack）。一个是 AMD GPU decode、一个是 NVIDIA GPU decode，内存差 8 倍。",
+            "chars": 5786,
+            "shown": 3193,
+            "truncated": true
+          },
+          "quality": 9,
+          "score": 18.94,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 3,
+          "slug": "c682bad5bf03",
+          "action": 8,
+          "rank": 21.8,
+          "tags": [
+            "benchmark",
+            "local",
+            "lowspec",
+            "tutorial"
+          ]
+        },
+        {
+          "sourceId": "lcz-media",
+          "sourceName": "抡锤者 AI 音视频画图",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "apps",
+          "categories": [],
+          "author": "Kerin Jia",
+          "id": "3174",
+          "title": "Comfyui 多GPU CFG拆分技术小测试",
+          "url": "https://lcz.me/topic/3174",
+          "published": "2026-11-18T06:32:46.765Z",
+          "summary": "一、最近再次购入一张 RTX PRO 4500 32G，发现了Comfyui的多GPU CFG拆分技术，用MiniMax-H3做了一个小测试。 Comfyui官方说明： https://docs.comfy.org/zh/built-in-nodes/MultiGPU_WorkUnits 支持列表里并没有MiniMax-H3 二、配置说明： CPU：AMD 9950X 内存：128G DDR5 6000 C30 GPU：RTX PRO 4500 32G x 2 三、视频： CFG=1.0 https://youtu.be/OwjJQzd-lf0 此时只调用单张 RTX PRO 4500 32G 生成时间为：323.80秒 CFG=…",
+          "metrics": {
+            "points": 1,
+            "comments": 1,
+            "views": 68
+          },
+          "excellent": false,
+          "content": {
+            "html": "<p>一、最近再次购入一张 RTX PRO 4500 32G，发现了Comfyui的多GPU CFG拆分技术，用MiniMax-H3做了一个小测试。<br>Comfyui官方说明：<a href=\"https://docs.comfy.org/zh/built-in-nodes/MultiGPU_WorkUnits\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://docs.comfy.org/zh/built-in-nodes/MultiGPU_WorkUnits</a>支持列表里并没有MiniMax-H3</p>\n<p>二、配置说明：<br>CPU：AMD 9950X<br>内存：128G DDR5 6000 C30<br>GPU：RTX PRO 4500 32G x 2</p>\n<p>三、视频：<br>CFG=1.0<a href=\"https://youtu.be/OwjJQzd-lf0\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://youtu.be/OwjJQzd-lf0</a>此时只调用单张 RTX PRO 4500 32G 生成时间为：323.80秒<br>CFG=1.1<a href=\"https://youtu.be/MvB3l67qguI\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://youtu.be/MvB3l67qguI</a>此配置开始使用两张 RTX PRO 4500 32G 生成时间为：309.79秒<br>CFG=1.2<a href=\"https://youtu.be/JyC56ubzAYY\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://youtu.be/JyC56ubzAYY</a>两张 RTX PRO 4500 32G 生成时间为：317.56秒<br>CFG=1.3<a href=\"https://youtu.be/lElSC-sMTiU\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://youtu.be/lElSC-sMTiU</a>两张 RTX PRO 4500 32G 生成时间为：321.75秒<br>CFG=1.4<a href=\"https://youtu.be/ZBl-5nw6Lrg\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://youtu.be/ZBl-5nw6Lrg</a>两张 RTX PRO 4500 32G 生成时间为：322.54秒<br>CFG=1.5<a href=\"https://youtu.be/27-FVCt4HPA\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://youtu.be/27-FVCt4HPA</a>两张 RTX PRO 4500 32G 生成时间为：321.77秒<br>CFG=1.6<a href=\"https://youtu.be/qhjaeYQIPYw\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://youtu.be/qhjaeYQIPYw</a>两张 RTX PRO 4500 32G 生成时间为：321.51秒<br>CFG=1.7<a href=\"https://youtu.be/txw3YqEC3yg\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://youtu.be/txw3YqEC3yg</a>两张 RTX PRO 4500 32G 生成时间为：320.90秒<br>CFG=1.8<a href=\"https://youtu.be/Tjpu0hnKs5c\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://youtu.be/Tjpu0hnKs5c</a>两张 RTX PRO 4500 32G 生成时间为：322.28秒<br>CFG=1.9<a href=\"https://youtu.be/3lQJmiF8CQE\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://youtu.be/3lQJmiF8CQE</a>两张 RTX PRO 4500 32G 生成时间为：321.81秒<br>CFG=2.0<a href=\"https://youtu.be/SYAbXe_EgeM\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://youtu.be/SYAbXe_EgeM</a>两张 RTX PRO 4500 32G 生成时间为：322.36秒</p>\n<p>四、生成配置：<br>Windows11 26H2 + 驱动版本 621.24<br>Python version: 3.13.11+pytorch version: 2.11.0+cu130<br>ComfyUI v0.45.6 + comfy-kitchen attention<br>DiT 权重 10Eros_Max_SingularityV2_PikaFlex_1.00_int8HQ<br>文本编码器 qwen3vl_32b_heretic_minimax_h3_nvfp4<br>VAE minimax_h3_video_vae_int8_convrot + minimax_h3_audio_vae_fp32<br>LoRA H3-Licon-VBVR-I2V（运动强化）+Minimax H3真实电影质感V0.1<br>统一种子为：8888<br>工作流：<a href=\"https://upload.lcz.me/uploads/b3f15260-fdff-4af0-8f0f-eb603dd6e944.json\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">minimax_h3_r2v_Latent Upscaler example workflow3.json</a></p>\n<p>五、对比截图：</p>\n<p><img src=\"https://upload.lcz.me/uploads/fe95b071-b3e6-4b99-9314-cab2ec17f2d2.png\" alt=\"01.png\" loading=\"lazy\"><br><img src=\"https://upload.lcz.me/uploads/f6d84e7b-1511-427a-8f45-4ff19cb01ae2.png\" alt=\"12.png\" loading=\"lazy\"></p>\n<p>总结：通过对比发现。1、在使用双卡后，速度基本无提升。2、在使用双卡后，质量基本无提升。仅在CFG=2.0时可以看到更多细节。<br>希望有研究多GPU CFG拆分技术的大佬予以指正，谢谢。</p>",
+            "text": "一、最近再次购入一张 RTX PRO 4500 32G，发现了Comfyui的多GPU CFG拆分技术，用MiniMax-H3做了一个小测试。\nComfyui官方说明： https://docs.comfy.org/zh/built-in-nodes/MultiGPU_WorkUnits 支持列表里并没有MiniMax-H3\n二、配置说明：\nCPU：AMD 9950X\n内存：128G DDR5 6000 C30\nGPU：RTX PRO 4500 32G x 2\n三、视频：\nCFG=1.0 https://youtu.be/OwjJQzd-lf0 此时只调用单张 RTX PRO 4500 32G 生成时间为：323.80秒\nCFG=1.1 https://youtu.be/MvB3l67qguI 此配置开始使用两张 RTX PRO 4500 32G 生成时间为：309.79秒\nCFG=1.2 https://youtu.be/JyC56ubzAYY 两张 RTX PRO 4500 32G 生成时间为：317.56秒\nCFG=1.3 https://youtu.be/lElSC-sMTiU 两张 RTX PRO 4500 32G 生成时间为：321.75秒\nCFG=1.4 https://youtu.be/ZBl-5nw6Lrg 两张 RTX PRO 4500 32G 生成时间为：322.54秒\nCFG=1.5 https://youtu.be/27-FVCt4HPA 两张 RTX PRO 4500 32G 生成时间为：321.77秒\nCFG=1.6 https://youtu.be/qhjaeYQIPYw 两张 RTX PRO 4500 32G 生成时间为：321.51秒\nCFG=1.7 https://youtu.be/txw3YqEC3yg 两张 RTX PRO 4500 32G 生成时间为：320.90秒\nCFG=1.8 https://youtu.be/Tjpu0hnKs5c 两张 RTX PRO 4500 32G 生成时间为：322.28秒\nCFG=1.9 https://youtu.be/3lQJmiF8CQE 两张 RTX PRO 4500 32G 生成时间为：321.81秒\nCFG=2.0 https://youtu.be/SYAbXe_EgeM 两张 RTX PRO 4500 32G 生成时间为：322.36秒\n四、生成配置：\nWindows11 26H2 + 驱动版本 621.24\nPython version: 3.13.11+pytorch version: 2.11.0+cu130\nComfyUI v0.45.6 + comfy-kitchen attention\nDiT 权重 10Eros_Max_SingularityV2_PikaFlex_1.00_int8HQ\n文本编码器 qwen3vl_32b_heretic_minimax_h3_nvfp4\nVAE minimax_h3_video_vae_int8_convrot + minimax_h3_audio_vae_fp32\nLoRA H3-Licon-VBVR-I2V（运动强化）+Minimax H3真实电影质感V0.1\n统一种子为：8888\n工作流： minimax_h3_r2v_Latent Upscaler example workflow3.json\n五、对比截图：\n总结：通过对比发现。1、在使用双卡后，速度基本无提升。2、在使用双卡后，质量基本无提升。仅在CFG=2.0时可以看到更多细节。\n希望有研究多GPU CFG拆分技术的大佬予以指正，谢谢。",
+            "lead": "一、最近再次购入一张 RTX PRO 4500 32G，发现了Comfyui的多GPU CFG拆分技术，用MiniMax-H3做了一个小测试。\nComfyui官方说明： https://docs.comfy.org/zh/built-in-nodes/MultiGPU_WorkUnits 支持列表里并没有MiniMax-H3\n二、配置说明：\nCPU：AMD 9950X\n内存：128G DDR5 6000 C30\nGPU：RTX PRO 4500 32G x 2\n三、视频：\nCFG=1.0 https://youtu.be/OwjJQzd-lf0 此时只调用单张 RTX PRO 4500 32G 生成时间为：323.80秒\nCFG=1.1 https://youtu.be/MvB3l67qguI 此配置开始使用两张 RTX PRO 4500 32G 生成时间为：309.79秒\nCFG=1.2 https://youtu.be/JyC56ubzAYY 两张 RTX PRO 4500 32G 生成时间为：317.",
+            "chars": 1581,
+            "shown": 1581,
+            "truncated": false
+          },
+          "quality": 8,
+          "score": 16.2,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 1,
+          "slug": "a2bd59bb95d8",
+          "action": 7,
+          "rank": 19.2,
+          "tags": [
+            "benchmark",
+            "generate",
+            "hardware",
+            "lowspec"
+          ]
+        },
+        {
+          "sourceId": "lcz-llm",
+          "sourceName": "抡锤者 模型部署讨论",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "naniandemeng",
+          "id": "3183",
+          "title": "7900 XTX 一张卡跑 Qwen3.8flash ：prefill 3600 t/s 不衰减，decode 破 100,峰值 120t/s",
+          "url": "https://lcz.me/topic/3183",
+          "published": "2026-11-18T12:35:56.747Z",
+          "summary": "7900 XTX 一张卡跑 Qwen3.8flash ：prefill 3600 t/s 不衰减，decode 破 100,峰值 120t/s 数据取自两轮全冷扫参。峰值 prefill 3605.5，峰值 decode 101.7，196697 token 冷启动 57.49 秒。 环境 GPU：AMD RX 7900 XTX（gfx1100 / RDNA3），显存占用 23.8 GiB，99.2% CPU：Intel Xeon E5-2678 v3 @ 2.50 GHz（12C/24T，无 AVX-512） 内存：125.6 GiB，可用 27.3 GiB 系统：Ubuntu，内核 7.0.0-34-generic 引擎：Av…",
+          "metrics": {
+            "points": 0,
+            "comments": 1,
+            "views": 79
+          },
+          "excellent": false,
+          "content": {
+            "html": "<h3>7900 XTX 一张卡跑 Qwen3.8flash ：prefill 3600 t/s 不衰减，decode 破 100,峰值 120t/s</h3>\n<p>数据取自两轮全冷扫参。峰值 prefill 3605.5，峰值 decode 101.7，196697 token 冷启动 57.49 秒。</p>\n<h3>环境</h3>\n<ul><li>GPU：AMD RX 7900 XTX（gfx1100 / RDNA3），显存占用 23.8 GiB，99.2%</li><li>CPU：Intel Xeon E5-2678 v3 @ 2.50 GHz（12C/24T，无 AVX-512）</li><li>内存：125.6 GiB，可用 27.3 GiB</li><li>系统：Ubuntu，内核 7.0.0-34-generic</li><li>引擎：Avalon（llama.cpp 分支），commit 762a3dae</li><li>模型：Qwen3.8-Flash-Next，IQ3_KS 33 分片共 94 GB</li><li>MTP 草稿：zh65k 共享层 IQ3K + IQ4NL</li><li>视觉塔：CPU</li><li>关键参数：ctx 262144，KV q8_0，batch 32768，ubatch 32768，RAM cache 16384 MiB</li></ul>\n<h3>方法</h3>\n<ul><li>合成唯一文本，每档全冷重算，缓存命中率 0</li><li>两轮相隔 35 分钟，同一个 server 进程，不重启</li></ul>\n<h3>总表：两轮全冷扫参，同一进程</h3>\n<table><thead><tr><th>上下文</th><th>一轮 prefill</th><th>二轮 prefill</th><th>一轮 decode</th><th>接受率</th></tr></thead><tbody><tr><td>1.8k</td><td>-</td><td>608.7 (2.97s)</td><td>-</td><td>-</td></tr><tr><td>8k</td><td>2082.7</td><td>2618.8</td><td>100.0</td><td>97%</td></tr><tr><td>16k</td><td>3063.3</td><td>-</td><td>98.8</td><td>96%</td></tr><tr><td>32k</td><td>3605.5</td><td>3437.6 (9.54s)</td><td>101.7</td><td>93%</td></tr><tr><td>64k</td><td>3600.5</td><td>3529.9 (18.58s)</td><td>99.7</td><td>90%</td></tr><tr><td>96k</td><td>3461.9</td><td>3536.2 (27.81s)</td><td>88.1</td><td>88%</td></tr><tr><td>128k</td><td>3514.3</td><td>3479.9 (37.68s)</td><td>85.0</td><td>80%</td></tr><tr><td>161k</td><td>3477.3</td><td>-</td><td>86.6</td><td>85%</td></tr><tr><td>196k</td><td>-</td><td>3421.5 (57.49s)</td><td>-</td><td>-</td></tr></tbody></table>\n<p>单位都是 t/s。一轮 18:30 输出 256；二轮 19:05 输出 51。</p>\n<ul><li>二轮输出只有 51 token，短输出开销主导，解码不可比，所以解码与接受率只有一轮</li><li>真实 prompt token 一轮：7,732 / 15,621 / 31,376 / 63,907 / 96,432 / 128,992 / 161,520</li><li>真实 prompt token 二轮：1,805 / 7,765 / 32,797 / 65,577 / 98,357 / 131,137 / 196,697</li><li>同规模两轮差在 5% 内。196k 冷算 57.5 秒跑完，无卡死，无分配失败</li><li>真实流量长输出的解码：20k 以下 96 到 100，100k 到 132k 约 92.5，160k 以上约 84.4</li></ul>\n<h3>前缀复用</h3>\n<ul><li>warm 轮只评估 4 个新 token</li><li>整轮墙钟 2.3 到 2.8 s，与上下文长度无关</li><li>161k 上下文和 8k 上下文一样快</li></ul>\n<h3>结论</h3>\n<ol><li>32k 以上 prefill 基本持平，3420 到 3606，不随上下文衰减</li><li>约 2.9 s 的固定冷算开销，1.8k 档只有 609 t/s 就是被它拉低</li><li>瓶颈全在 prefill，解码在 100k 以上只是接受率下降</li></ol>\n<h3>别误读</h3>\n<ul><li>合成文本是上界。真实文本同进程口径：35k 是 2826.6，114k 是 2197.9</li><li>重启后第一条大 prompt 明显更慢，专家缓存未热</li><li>每档一个样本，不重复。251k 故意没测</li></ul>",
+            "text": "7900 XTX 一张卡跑 Qwen3.8flash ：prefill 3600 t/s 不衰减，decode 破 100,峰值 120t/s\n数据取自两轮全冷扫参。峰值 prefill 3605.5，峰值 decode 101.7，196697 token 冷启动 57.49 秒。\n环境\nGPU：AMD RX 7900 XTX（gfx1100 / RDNA3），显存占用 23.8 GiB，99.2%\nCPU：Intel Xeon E5-2678 v3 @ 2.50 GHz（12C/24T，无 AVX-512）\n内存：125.6 GiB，可用 27.3 GiB\n系统：Ubuntu，内核 7.0.0-34-generic\n引擎：Avalon（llama.cpp 分支），commit 762a3dae\n模型：Qwen3.8-Flash-Next，IQ3_KS 33 分片共 94 GB\nMTP 草稿：zh65k 共享层 IQ3K + IQ4NL\n视觉塔：CPU\n关键参数：ctx 262144，KV q8_0，batch 32768，ubatch 32768，RAM cache 16384 MiB\n方法\n合成唯一文本，每档全冷重算，缓存命中率 0\n两轮相隔 35 分钟，同一个 server 进程，不重启\n总表：两轮全冷扫参，同一进程\n上下文\n一轮 prefill\n二轮 prefill\n一轮 decode\n接受率\n1.8k\n-\n608.7 (2.97s)\n-\n-\n8k\n2082.7\n2618.8\n100.0\n97%\n16k\n3063.3\n-\n98.8\n96%\n32k\n3605.5\n3437.6 (9.54s)\n101.7\n93%\n64k\n3600.5\n3529.9 (18.58s)\n99.7\n90%\n96k\n3461.9\n3536.2 (27.81s)\n88.1\n88%\n128k\n3514.3\n3479.9 (37.68s)\n85.0\n80%\n161k\n3477.3\n-\n86.6\n85%\n196k\n-\n3421.5 (57.49s)\n-\n-\n单位都是 t/s。一轮 18:30 输出 256；二轮 19:05 输出 51。\n二轮输出只有 51 token，短输出开销主导，解码不可比，所以解码与接受率只有一轮\n真实 prompt token 一轮：7,732 / 15,621 / 31,376 / 63,907 / 96,432 / 128,992 / 161,520\n真实 prompt token 二轮：1,805 / 7,765 / 32,797 / 65,577 / 98,357 / 131,137 / 196,697\n同规模两轮差在 5% 内。196k 冷算 57.5 秒跑完，无卡死，无分配失败\n真实流量长输出的解码：20k 以下 96 到 100，100k 到 132k 约 92.5，160k 以上约 84.4\n前缀复用\nwarm 轮只评估 4 个新 token\n整轮墙钟 2.3 到 2.8 s，与上下文长度无关\n161k 上下文和 8k 上下文一样快\n结论\n32k 以上 prefill 基本持平，3420 到 3606，不随上下文衰减\n约 2.9 s 的固定冷算开销，1.8k 档只有 609 t/s 就是被它拉低\n瓶颈全在 prefill，解码在 100k 以上只是接受率下降\n别误读\n合成文本是上界。真实文本同进程口径：35k 是 2826.6，114k 是 2197.9\n重启后第一条大 prompt 明显更慢，专家缓存未热\n每档一个样本，不重复。251k 故意没测",
+            "lead": "7900 XTX 一张卡跑 Qwen3.8flash ：prefill 3600 t/s 不衰减，decode 破 100,峰值 120t/s\n数据取自两轮全冷扫参。峰值 prefill 3605.5，峰值 decode 101.7，196697 token 冷启动 57.49 秒。\n环境\nGPU：AMD RX 7900 XTX（gfx1100 / RDNA3），显存占用 23.8 GiB，99.2%\nCPU：Intel Xeon E5-2678 v3 @ 2.50 GHz（12C/24T，无 AVX-512）\n内存：125.6 GiB，可用 27.3 GiB\n系统：Ubuntu，内核 7.0.0-34-generic\n引擎：Avalon（llama.cpp 分支），commit 762a3dae\n模型：Qwen3.8-Flash-Next，IQ3_KS 33 分片共 94 GB\nMTP 草稿：zh65k 共享层 IQ3K + IQ4NL\n视觉塔：CPU\n关键参数：ctx 262144，KV q8_0，ba",
+            "chars": 1613,
+            "shown": 1613,
+            "truncated": false
+          },
+          "quality": 8,
+          "score": 17.37,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 2,
+          "slug": "1e9f8443e77b",
+          "action": 4,
+          "rank": 14.4,
+          "tags": [
+            "local",
+            "lowspec"
+          ]
+        },
+        {
+          "sourceId": "appinn",
+          "sourceName": "小众软件",
+          "title": "把 SSH 私钥保存到 Mac 安全芯片中，还能使用 Touch ID 授权",
+          "url": "https://www.appinn.com/mac-secure-enclave-ssh-key/",
+          "id": "https://www.appinn.com/mac-secure-enclave-ssh-key/",
+          "published": "2026-11-18T06:47:36.000Z",
+          "summary": "SSH Key 是远程连接 Linux 服务器、管理 NAS 等设备时常用的身份验证方式，可以不用输入密码登录服务器。很多安全规范都要求服务器取消密码登录，改为使用 SSH Key 登录，降低密码泄露、暴力破解和撞库带来的风险。 但 SSH 私钥本身就是一个普通的文件，它就放在那里（比如 ~/.ssh/ 下），如何没有设置密码，当前用户运行的程序都可以读取它，甚至直接拿走。 那么，有没有办法让 SSH 私钥无法被复制？ 现代的 Mac 和 Windows 电脑都可以利用安全硬件保护 SSH 私钥： Mac：Secure Enclave（安全隔区） 。将 SSH 私钥保存在 Mac 自带的安全硬件中，私钥无法导出，使用时还可以通过…",
+          "content": {
+            "html": "<p><strong>SSH Key</strong>是远程连接 Linux 服务器、管理 NAS 等设备时常用的身份验证方式，可以不用输入密码登录服务器。很多安全规范都要求服务器取消密码登录，改为使用<strong>SSH Key</strong>登录，降低密码泄露、暴力破解和撞库带来的风险。</p>\n<p>但 SSH 私钥本身就是一个普通的文件，它就放在那里（比如<code>~/.ssh/</code>下），如何没有设置密码，当前用户运行的程序都可以读取它，甚至直接拿走。</p>\n<p>那么，有没有办法让 SSH 私钥无法被复制？</p>\n<figure><img src=\"https://www.appinn.com/wp-content/uploads/2026/11/E5AE89E585A8E88AAFE78987E5AE88E68AA4-SSH-E7A781E992A5.jpg\" alt=\"把 SSH 私钥保存到 Mac 安全芯片中，还能使用 Touch ID 授权 11\" loading=\"lazy\"></figure>\n<p>现代的 Mac 和 Windows 电脑都可以利用安全硬件保护 SSH 私钥：</p>\n<ol><li><strong>Mac：Secure Enclave（安全隔区）</strong>。将 SSH 私钥保存在 Mac 自带的安全硬件中，私钥无法导出，使用时还可以通过 Touch ID 授权。</li><li><strong>Windows：TPM 2.0 安全芯片</strong>。借助第三方工具，在 TPM 中生成不可导出的 SSH 私钥，还可以配合 Windows Hello 进行身份验证。</li></ol>\n<p>这样，即使运行了各路 AI 撰写的不靠谱的程序，也无法读取私钥。</p>\n<h3>把 SSH 私钥锁进 Mac 安全芯片</h3>\n<p><strong>Secure Enclave</strong>是苹果设备中的独立安全硬件，负责保护指纹数据、加密密钥等敏感信息。</p>\n<p>利用这一功能，可以直接在 Secure Enclave 中生成 SSH 私钥，并且：</p>\n<ul><li><strong>私钥无法导出</strong>：即使有人复制了整个硬盘，也拿不到私钥。</li><li><strong>支持 Touch ID</strong>：连接服务器时，可以要求指纹验证。</li><li><strong>无需保存传统私钥文件</strong>：实际签名操作由安全硬件完成。</li></ul>\n<p>这意味着，即使 Mac 上的普通文件被恶意程序窃取，攻击者也无法直接复制这把 SSH 私钥，在其他电脑上使用。</p>\n<h3>如何使用？</h3>\n<p>开发者<a href=\"https://gatezh.com/posts/macos-secure-enclave-ssh-keys/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Gatezh</a>介绍了一种利用 macOS 自带工具创建 Secure Enclave SSH 密钥的方法。</p>\n<h3>首先，通过<code>sc_auth</code>创建密钥：</h3>\n<div><pre>sc_auth create-ctk-identity -l \"ssh-MacBook\" -k p-256-ne -t bio</pre></div>\n<p>其中，<code>p-256-ne</code>表示不可导出的 P-256 密钥，<code>bio</code>表示要求生物识别授权。</p>\n<figure><img src=\"https://www.appinn.com/wp-content/uploads/2026/11/screenshot-2026-11-18-at-2.21.06-PM402x.avif\" alt=\"把 SSH 私钥保存到 Mac 安全芯片中，还能使用 Touch ID 授权 12\" loading=\"lazy\"></figure>\n<h3>接下来，需要导出对应的 SSH 公钥</h3>\n<p>在合适的路径喜爱，比如 ~/.ssh/ 下，运行：</p>\n<div><pre>ssh-keygen -w /usr/lib/ssh-keychain.dylib -K -N \"\"</pre></div>\n<p>会得到<code>id_ecdsa_sk_rk_ssh-MacBook</code>与<code>id_ecdsa_sk_rk_ssh-MacBook.pub</code>两个文件（此时会要求输入 PIN 码，但因为我们使用 Touch ID，所以可以不设置，直接回车即可。）</p>\n<h3>将公钥添加到服务器的<code>~/.ssh/authorized_keys</code>中</h3>\n<p>登录服务器，将<code>id_ecdsa_sk_rk_ssh-MacBook.pub</code>文件内容保存到<code>~/.ssh/authorized_keys</code>中。</p>\n<h3>在 macOS 上登录</h3>\n<div><pre>ssh -o SecurityKeyProvider=/usr/lib/ssh-keychain.dylib -i ./id_ecdsa_sk_rk_ssh-MacBook root@192.168.1.2</pre></div>\n<p>这里带上<code>-o SecurityKeyProvider=/usr/lib/ssh-keychain.dylib</code>是为了调用安全硬件完成签名。</p>\n<p>此时，会要求验证指纹：</p>\n<figure><img src=\"https://www.appinn.com/wp-content/uploads/2026/11/screenshot-2026-11-18-at-2.32.58-PM402x.avif\" alt=\"把 SSH 私钥保存到 Mac 安全芯片中，还能使用 Touch ID 授权 13\" loading=\"lazy\"></figure>\n<p>然后登录成功。</p>\n<p>今后只要使用该私钥，都需要验证指纹。</p>\n<p>你的私钥安全的保存在加密硬件中。</p>\n<h3>配置 ~/.ssh/config</h3>\n<p>嫌命令行麻烦，可以配置<code>~/.ssh/confi</code>`文件：</p>\n<div><pre>Host appinn-server\nHostName 192.168.1.2\nUser root\nIdentityFile ~/.ssh/id_ecdsa_sk_rk_ssh-MacBook\nIdentitiesOnly yes\nSecurityKeyProvider /usr/lib/ssh-keychain.dylib</pre></div>\n<p>这样只需要<code>ssh appinn-server</code>，然后验证指纹，就登录成功了。</p>\n<h3>不想折腾命令？试试 Secretive</h3>\n<p><a href=\"https://github.com/maxgoedjen/secretive\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Secretive</a>是一款开源的 macOS SSH 密钥管理工具。</p>\n<p>它同样利用 Secure Enclave 保护 SSH 私钥，但提供了图形界面，可以更方便地创建、管理密钥，以及通过 Touch ID 授权 SSH 操作。</p>\n<figure><img src=\"https://www.appinn.com/wp-content/uploads/2026/11/app-dark.avif\" alt=\"把 SSH 私钥保存到 Mac 安全芯片中，还能使用 Touch ID 授权 14\" loading=\"lazy\"></figure>\n<h3>与 1Password SSH Agent 有什么区别？</h3>\n<p>如果已经在使用<strong>1Password SSH Agent</strong>，大可不必折腾。</p>\n<p>它们都能让 SSH 客户端验证 Touch ID 授权后，登录服务器。</p>\n<p>但两者有一个关键区别：</p>\n<figure><table><tbody><tr><th></th><th>Secure Enclave / Secretive</th><th>1Password SSH Agent</th></tr><tr><td>私钥位置</td><td>Mac 安全硬件</td><td>1Password 加密保险库</td></tr><tr><td>私钥能否导出</td><td>无法导出</td><td>可以导出</td></tr><tr><td>Touch ID 授权</td><td>支持</td><td>支持</td></tr><tr><td>跨设备同步</td><td>不支持</td><td>支持</td></tr><tr><td>更换电脑</td><td>需要重新配置密钥</td><td>可以继续使用原密钥</td></tr></tbody></table></figure>\n<h3>安全芯片中的私钥无法备份</h3>\n<p>注意，以上述方式保存在 Secure Enclave 中的私钥，不可导出、无法备份。</p>\n<p>包括 Time Machine、迁移助理以及 iCloud 钥匙串都不能备份或恢复。</p>\n<p>也就是说：<strong>如果 Mac 丢失、损坏或更换，原来的私钥无法恢复，无法使用。</strong></p>\n<p>如果你的服务器只有这一条登录途径，那么一旦出问题，就再也无法登录。</p>\n<p>青小蛙觉得，有必要再添加一个备用的登录方式。</p>\n<h3>Windows 的解决方案</h3>\n<p>在现代 Windows 11 设备上，可以使用<a href=\"https://github.com/godaddy/sshenc\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">sshenc</a>，将私钥保存在 TPM 2.0 安全芯片中，最终通过 Windows Hello 授权登录。</p>\n<p>感兴趣的同学可以试试，青小蛙表示没有 TPM 2.0…</p>\n<hr><p>原文：https://www.appinn.com/mac-secure-enclave-ssh-key/</p>\n<hr><h3>相关阅读</h3>\n<ul><li><a href=\"https://www.appinn.com/lizhi-guohuo-2603/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">国产软件正当红，126 款国货之光限时大促：Eagle、Xmind、白描 PDF 等</a></li><li><a href=\"https://www.appinn.com/lizhi-251111/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">数码荔枝双 11 软件大促开启，100+ 正版工具 5 折起</a></li><li><a href=\"https://www.appinn.com/ishellpro-3-0/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">受够了老旧的终端工具？试试 iShellPro 3.0，运维人的新选择</a></li><li><a href=\"https://www.appinn.com/terminal-tty-and-shell/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">终端（Terminal）、TTY 和 Shell，还有 SSH，一次搞懂，它们到底是什么？</a></li><li><a href=\"https://www.appinn.com/tailscale-ssh-security-vulnerabilities-tailworm/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Tailscale SSH 被曝安全漏洞：一台设备失守，可获得其他服务器 root 权限｜另外还有11项漏洞</a></li></ul>\n<hr><a href=\"http://www.appinn.com/copyright/?utm_source=feeds&amp;utm_medium=copyright&amp;utm_campaign=feeds\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">©</a>\n2021 青小蛙 for<a href=\"http://www.appinn.com/?utm_source=feeds&amp;utm_medium=appinn&amp;utm_campaign=feeds\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">小众软件</a>\n|<a href=\"http://www.appinn.com/join-us/?utm_source=feeds&amp;utm_medium=joinus&amp;utm_campaign=feeds\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">加入我们</a>\n|<a href=\"https://meta.appinn.net/c/faxian/?utm_source=feeds&amp;utm_medium=contribute&amp;utm_campaign=feeds\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">投稿</a>\n|<a href=\"http://www.appinn.com/feeds-subscribe/?utm_source=feeds&amp;utm_medium=feedsubscribe&amp;utm_campaign=feeds\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">订阅指南</a>\n<br>3659b075e72a5b7b1b87ea74aa7932ff<br><a href=\"https://www.appinn.com/mac-secure-enclave-ssh-key/#comments\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">点击这里留言、和原作者一起评论</a>\n<p><a href=\"https://www.appinn.com/mac-secure-enclave-ssh-key/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[ 点击前往获取链接 ]</a></p>\n<hr>",
+            "text": "SSH Key 是远程连接 Linux 服务器、管理 NAS 等设备时常用的身份验证方式，可以不用输入密码登录服务器。很多安全规范都要求服务器取消密码登录，改为使用 SSH Key 登录，降低密码泄露、暴力破解和撞库带来的风险。\n但 SSH 私钥本身就是一个普通的文件，它就放在那里（比如 ~/.ssh/ 下），如何没有设置密码，当前用户运行的程序都可以读取它，甚至直接拿走。\n那么，有没有办法让 SSH 私钥无法被复制？\n现代的 Mac 和 Windows 电脑都可以利用安全硬件保护 SSH 私钥：\nMac：Secure Enclave（安全隔区） 。将 SSH 私钥保存在 Mac 自带的安全硬件中，私钥无法导出，使用时还可以通过 Touch ID 授权。\nWindows：TPM 2.0 安全芯片 。借助第三方工具，在 TPM 中生成不可导出的 SSH 私钥，还可以配合 Windows Hello 进行身份验证。\n这样，即使运行了各路 AI 撰写的不靠谱的程序，也无法读取私钥。\n把 SSH 私钥锁进 Mac 安全芯片\nSecure Enclave 是苹果设备中的独立安全硬件，负责保护指纹数据、加密密钥等敏感信息。\n利用这一功能，可以直接在 Secure Enclave 中生成 SSH 私钥，并且：\n私钥无法导出 ：即使有人复制了整个硬盘，也拿不到私钥。\n支持 Touch ID ：连接服务器时，可以要求指纹验证。\n无需保存传统私钥文件 ：实际签名操作由安全硬件完成。\n这意味着，即使 Mac 上的普通文件被恶意程序窃取，攻击者也无法直接复制这把 SSH 私钥，在其他电脑上使用。\n如何使用？\n开发者 Gatezh 介绍了一种利用 macOS 自带工具创建 Secure Enclave SSH 密钥的方法。\n首先，通过 sc_auth 创建密钥：\nsc_auth create-ctk-identity -l \"ssh-MacBook\" -k p-256-ne -t bio\n其中， p-256-ne 表示不可导出的 P-256 密钥， bio 表示要求生物识别授权。\n接下来，需要导出对应的 SSH 公钥\n在合适的路径喜爱，比如 ~/.ssh/ 下，运行：\nssh-keygen -w /usr/lib/ssh-keychain.dylib -K -N \"\"\n会得到 id_ecdsa_sk_rk_ssh-MacBook 与 id_ecdsa_sk_rk_ssh-MacBook.pub 两个文件（此时会要求输入 PIN 码，但因为我们使用 Touch ID，所以可以不设置，直接回车即可。）\n将公钥添加到服务器的 ~/.ssh/authorized_keys 中\n登录服务器，将 id_ecdsa_sk_rk_ssh-MacBook.pub 文件内容保存到 ~/.ssh/authorized_keys 中。\n在 macOS 上登录\nssh -o SecurityKeyProvider=/usr/lib/ssh-keychain.dylib -i ./id_ecdsa_sk_rk_ssh-MacBook root@192.168.1.2\n这里带上 -o SecurityKeyProvider=/usr/lib/ssh-keychain.dylib 是为了调用安全硬件完成签名。\n此时，会要求验证指纹：\n然后登录成功。\n今后只要使用该私钥，都需要验证指纹。\n你的私钥安全的保存在加密硬件中。\n配置 ~/.ssh/config\n嫌命令行麻烦，可以配置 ~/.ssh/confi `文件：\nHost appinn-server\nHostName 192.168.1.2\nUser root\nIdentityFile ~/.ssh/id_ecdsa_sk_rk_ssh-MacBook\nIdentitiesOnly yes\nSecurityKeyProvider /usr/lib/ssh-keychain.dylib\n这样只需要 ssh appinn-server ，然后验证指纹，就登录成功了。\n不想折腾命令？试试 Secretive\nSecretive 是一款开源的 macOS SSH 密钥管理工具。\n它同样利用 Secure Enclave 保护 SSH 私钥，但提供了图形界面，可以更方便地创建、管理密钥，以及通过 Touch ID 授权 SSH 操作。\n与 1Password SSH Agent 有什么区别？\n如果已经在使用 1Password SSH Agent ，大可不必折腾。\n它们都能让 SSH 客户端验证 Touch ID 授权后，登录服务器。\n但两者有一个关键区别：\nSecure Enclave / Secretive\n1Password SSH Agent\n私钥位置\nMac 安全硬件\n1Password 加密保险库\n私钥能否导出\n无法导出\n可以导出\nTouch ID 授权\n支持\n支持\n跨设备同步\n不支持\n支持\n更换电脑\n需要重新配置密钥\n可以继续使用原密钥\n安全芯片中的私钥无法备份\n注意，以上述方式保存在 Secure Enclave 中的私钥，不可导出、无法备份。\n包括 Time Machine、迁移助理以及 iCloud 钥匙串都不能备份或恢复。\n也就是说： 如果 Mac 丢失、损坏或更换，原来的私钥无法恢复，无法使用。\n如果你的服务器只有这一条登录途径，那么一旦出问题，就再也无法登录。\n青小蛙觉得，有必要再添加一个备用的登录方式。\nWindows 的解决方案\n在现代 Windows 11 设备上，可以使用 sshenc ，将私钥保存在 TPM 2.0 安全芯片中，最终通过 Windows Hello 授权登录。\n感兴趣的同学可以试试，青小蛙表示没有 TPM 2.0…\n原文：https://www.appinn.com/mac-secure-enclave-ssh-key/\n相关阅读\n国产软件正当红，126 款国货之光限时大促：Eagle、Xmind、白描 PDF 等\n数码荔枝双 11 软件大促开启，100+ 正版工具 5 折起\n受够了老旧的终端工具？试试 iShellPro 3.0，运维人的新选择\n终端（Terminal）、TTY 和 Shell，还有 SSH，一次搞懂，它们到底是什么？\nTailscale SSH 被曝安全漏洞：一台设备失守，可获得其他服务器 root 权限｜另外还有11项漏洞\n©\n2021 青小蛙 for 小众软件\n| 加入我们\n| 投稿\n| 订阅指南\n3659b075e72a5b7b1b87ea74aa7932ff\n点击这里留言、和原作者一起评论\n[ 点击前往获取链接 ]",
+            "lead": "SSH Key 是远程连接 Linux 服务器、管理 NAS 等设备时常用的身份验证方式，可以不用输入密码登录服务器。很多安全规范都要求服务器取消密码登录，改为使用 SSH Key 登录，降低密码泄露、暴力破解和撞库带来的风险。\n但 SSH 私钥本身就是一个普通的文件，它就放在那里（比如 ~/.ssh/ 下），如何没有设置密码，当前用户运行的程序都可以读取它，甚至直接拿走。\n那么，有没有办法让 SSH 私钥无法被复制？\n现代的 Mac 和 Windows 电脑都可以利用安全硬件保护 SSH 私钥：\nMac：Secure Enclave（安全隔区） 。将 SSH 私钥保存在 Mac 自带的安全硬件中，私钥无法导出，使用时还可以通过 Touch ID 授权。\nWindows：TPM 2.0 安全芯片 。借助第三方工具，在 TPM 中生成不可导出的 SSH 私钥，还可以配合 Windows Hello 进行身份验证。\n这样，即使运行了各路 AI 撰写的不靠谱的程序，也无法读取私钥。",
+            "chars": 2889,
+            "shown": 2889,
+            "truncated": false
+          },
+          "categories": [
+            "macOS",
+            "SSH",
+            "指纹",
+            "私钥"
+          ],
+          "author": "青小蛙",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "tools",
+          "metrics": {},
+          "quality": 8,
+          "score": 14.79,
+          "category": "hardware",
+          "subcategory": "machine",
+          "practical": 3,
+          "slug": "421c5adf88dd",
+          "action": 4,
+          "rank": 14.4,
+          "tags": [
+            "tutorial",
+            "hardware",
+            "lowspec",
+            "privacy"
+          ]
+        },
+        {
+          "sourceId": "gh-releases",
+          "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "github-actions[bot]",
+          "id": "450305209",
+          "title": "llama.cpp b12521 发布",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12521",
+          "published": "2026-11-18T17:10:32.000Z",
+          "summary": "webgpu: (fix CI) allow the FA mask to be broadcast over the Q batch (#32535) allow the mask batch to be broadcast over the Q batch use Q_ne3 for blk_batch_count of get_alloc_size function Website: Attestations: macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x…",
+          "content": {
+            "html": "<p>&lt;details open&gt;</p>\n<p>webgpu: (fix CI) allow the FA mask to be broadcast over the Q batch (#32535)</p>\n<ul><li>allow the mask batch to be broadcast over the Q batch</li></ul>\n<ul><li>use Q_ne3 for blk_batch_count of get_alloc_size function</li></ul>\n<p>&lt;/details&gt;</p>\n<p><strong>Website:</strong></p>\n<ul><li>&lt;https://llama.app&gt;</li></ul>\n<p><strong>Attestations:</strong></p>\n<ul><li>&lt;https://github.com/ggml-org/llama.cpp/attestations/69252626&gt;</li></ul>\n<p><strong>macOS/iOS:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12521/llama-b12521-bin-macos-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">macOS Apple Silicon (arm64)</a></li><li>macOS Apple Silicon (arm64, KleidiAI enabled)<a href=\"https://github.com/ggml-org/llama.cpp/pull/23780\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">DISABLED</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12521/llama-b12521-bin-macos-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">macOS Intel (x64)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12521/llama-b12521-xcframework.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">iOS XCFramework</a></li></ul>\n<p><strong>Linux:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12521/llama-b12521-bin-ubuntu-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12521/llama-b12521-bin-ubuntu-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu arm64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12521/llama-b12521-bin-ubuntu-s390x.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu 24.04 s390x (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12521/llama-b12521-bin-ubuntu-26.04-s390x.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu 26.04 s390x (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12521/llama-b12521-bin-ubuntu-zdnn-s390x.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu 26.04 s390x (zDNN)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12521/llama-b12521-bin-ubuntu-vulkan-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12521/llama-b12521-bin-ubuntu-vulkan-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu arm64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12521/llama-b12521-bin-ubuntu-cuda-12.8-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (CUDA 12)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12521/cudart-llama-b12521-bin-ubuntu-cuda-12.8-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 12.8 libraries</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12521/llama-b12521-bin-ubuntu-cuda-13.5-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12521/cudart-llama-b12521-bin-ubuntu-cuda-13.5-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 libraries</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12521/llama-b12521-bin-ubuntu-cuda-13.5-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu arm64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12521/cudart-llama-b12521-bin-ubuntu-cuda-13.5-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 libraries</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12521/llama-b12521-bin-ubuntu-rocm-10.0-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (ROCm 10.0)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12521/llama-b12521-bin-ubuntu-openvino-2026.4.1-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (OpenVINO)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12521/llama-b12521-bin-ubuntu-sycl-fp32-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (SYCL FP32)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12521/llama-b12521-bin-ubuntu-sycl-fp16-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (SYCL FP16)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12521/llama-b12521-bin-linux-arm64-snapdragon.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Linux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/linux.md\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">setup guide</a></li></ul>\n<p><strong>Android:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12521/llama-b12521-bin-android-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Android arm64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12521/llama-b12521-bin-android-arm64-snapdragon.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Android arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/README.md\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">setup guide</a></li></ul>\n<p><strong>Windows:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12521/llama-b12521-bin-win-cpu-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12521/llama-b12521-bin-win-cpu-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12521/llama-b12521-bin-win-opencl-adreno-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (OpenCL Adreno)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12521/llama-b12521-bin-win-cuda-12.4-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (CUDA 12)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12521/cudart-llama-bin-win-cuda-12.4-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 12.4 DLLs</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12521/llama-b12521-bin-win-cuda-13.5-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12521/cudart-llama-bin-win-cuda-13.5-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 DLLs</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12521/llama-b12521-bin-win-cuda-13.5-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12521/cudart-llama-bin-win-cuda-13.5-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 DLLs</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12521/llama-b12521-bin-win-vulkan-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12521/llama-b12521-bin-win-vulkan-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12521/llama-b12521-bin-win-openvino-2026.4.1-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (OpenVINO)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12521/llama-b12521-bin-win-sycl-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (SYCL)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12521/llama-b12521-bin-win-rocm-10.0-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (ROCm 10.0)</a></li></ul>\n<p><strong>openEuler:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/pull/23705\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">DISABLED</a></li><li>openEuler x86 (310p)</li><li>openEuler x86 (910b, ACL Graph)</li><li>openEuler aarch64 (310p)</li><li>openEuler aarch64 (910b, ACL Graph)</li></ul>\n<p><strong>UI:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12521/llama-b12521-ui.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">UI</a></li></ul>",
+            "text": "<details open>\nwebgpu: (fix CI) allow the FA mask to be broadcast over the Q batch (#32535)\nallow the mask batch to be broadcast over the Q batch\nuse Q_ne3 for blk_batch_count of get_alloc_size function\n</details>\nWebsite:\n<https://llama.app>\nAttestations:\n<https://github.com/ggml-org/llama.cpp/attestations/69252626>\nmacOS/iOS:\nmacOS Apple Silicon (arm64)\nmacOS Apple Silicon (arm64, KleidiAI enabled) DISABLED\nmacOS Intel (x64)\niOS XCFramework\nLinux:\nUbuntu x64 (CPU)\nUbuntu arm64 (CPU)\nUbuntu 24.04 s390x (CPU)\nUbuntu 26.04 s390x (CPU)\nUbuntu 26.04 s390x (zDNN)\nUbuntu x64 (Vulkan)\nUbuntu arm64 (Vulkan)\nUbuntu x64 (CUDA 12) - CUDA 12.8 libraries\nUbuntu x64 (CUDA 13) - CUDA 13.5 libraries\nUbuntu arm64 (CUDA 13) - CUDA 13.5 libraries\nUbuntu x64 (ROCm 10.0)\nUbuntu x64 (OpenVINO)\nUbuntu x64 (SYCL FP32)\nUbuntu x64 (SYCL FP16)\nLinux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide\nAndroid:\nAndroid arm64 (CPU)\nAndroid arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide\nWindows:\nWindows x64 (CPU)\nWindows arm64 (CPU)\nWindows arm64 (OpenCL Adreno)\nWindows x64 (CUDA 12) - CUDA 12.4 DLLs\nWindows x64 (CUDA 13) - CUDA 13.5 DLLs\nWindows arm64 (CUDA 13) - CUDA 13.5 DLLs\nWindows x64 (Vulkan)\nWindows arm64 (Vulkan)\nWindows x64 (OpenVINO)\nWindows x64 (SYCL)\nWindows x64 (ROCm 10.0)\nopenEuler:\nDISABLED\nopenEuler x86 (310p)\nopenEuler x86 (910b, ACL Graph)\nopenEuler aarch64 (310p)\nopenEuler aarch64 (910b, ACL Graph)\nUI:\nUI",
+            "lead": "<details open>\nwebgpu: (fix CI) allow the FA mask to be broadcast over the Q batch (#32535)\nallow the mask batch to be broadcast over the Q batch\nuse Q_ne3 for blk_batch_count of get_alloc_size function\n</details>\nWebsite:\n<https://llama.app>\nAttestations:\n<https://github.com/ggml-org/llama.cpp/attestations/69252626>\nmacOS/iOS:\nmacOS Apple Silicon (arm64)\nmacOS Apple Silicon (arm64, KleidiAI enabled) DISABLED\nmacOS Intel (x64)\niOS XCFramework",
+            "chars": 1509,
+            "shown": 1509,
+            "truncated": false
+          },
+          "quality": 8,
+          "score": 21.85,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 2,
+          "slug": "b9654cbfdda3",
+          "action": 3,
+          "rank": 12.8,
+          "tags": [
+            "local",
+            "tutorial"
+          ]
+        },
+        {
+          "sourceId": "gh-releases",
+          "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "github-actions[bot]",
+          "id": "449683399",
+          "title": "llama.cpp b12502 发布",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12502",
+          "published": "2026-11-18T08:09:23.000Z",
+          "summary": "CUDA: use MMQ for MoE on V100 (#32504) Website: Attestations: macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubuntu 26.04 s390x (zDNN) Ubuntu x64…",
+          "content": {
+            "html": "<p>&lt;details open&gt;</p>\n<p>CUDA: use MMQ for MoE on V100 (#32504)</p>\n<p>&lt;/details&gt;</p>\n<p><strong>Website:</strong></p>\n<ul><li>&lt;https://llama.app&gt;</li></ul>\n<p><strong>Attestations:</strong></p>\n<ul><li>&lt;https://github.com/ggml-org/llama.cpp/attestations/69023761&gt;</li></ul>\n<p><strong>macOS/iOS:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12502/llama-b12502-bin-macos-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">macOS Apple Silicon (arm64)</a></li><li>macOS Apple Silicon (arm64, KleidiAI enabled)<a href=\"https://github.com/ggml-org/llama.cpp/pull/23780\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">DISABLED</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12502/llama-b12502-bin-macos-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">macOS Intel (x64)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12502/llama-b12502-xcframework.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">iOS XCFramework</a></li></ul>\n<p><strong>Linux:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12502/llama-b12502-bin-ubuntu-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12502/llama-b12502-bin-ubuntu-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu arm64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12502/llama-b12502-bin-ubuntu-s390x.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu 24.04 s390x (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12502/llama-b12502-bin-ubuntu-26.04-s390x.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu 26.04 s390x (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12502/llama-b12502-bin-ubuntu-zdnn-s390x.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu 26.04 s390x (zDNN)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12502/llama-b12502-bin-ubuntu-vulkan-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12502/llama-b12502-bin-ubuntu-vulkan-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu arm64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12502/llama-b12502-bin-ubuntu-cuda-12.8-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (CUDA 12)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12502/cudart-llama-b12502-bin-ubuntu-cuda-12.8-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 12.8 libraries</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12502/llama-b12502-bin-ubuntu-cuda-13.5-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12502/cudart-llama-b12502-bin-ubuntu-cuda-13.5-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 libraries</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12502/llama-b12502-bin-ubuntu-cuda-13.5-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu arm64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12502/cudart-llama-b12502-bin-ubuntu-cuda-13.5-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 libraries</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12502/llama-b12502-bin-ubuntu-rocm-10.0-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (ROCm 10.0)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12502/llama-b12502-bin-ubuntu-openvino-2026.4.1-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (OpenVINO)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12502/llama-b12502-bin-ubuntu-sycl-fp32-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (SYCL FP32)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12502/llama-b12502-bin-ubuntu-sycl-fp16-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (SYCL FP16)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12502/llama-b12502-bin-linux-arm64-snapdragon.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Linux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/linux.md\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">setup guide</a></li></ul>\n<p><strong>Android:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12502/llama-b12502-bin-android-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Android arm64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12502/llama-b12502-bin-android-arm64-snapdragon.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Android arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/README.md\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">setup guide</a></li></ul>\n<p><strong>Windows:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12502/llama-b12502-bin-win-cpu-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12502/llama-b12502-bin-win-cpu-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12502/llama-b12502-bin-win-opencl-adreno-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (OpenCL Adreno)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12502/llama-b12502-bin-win-cuda-12.4-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (CUDA 12)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12502/cudart-llama-bin-win-cuda-12.4-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 12.4 DLLs</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12502/llama-b12502-bin-win-cuda-13.5-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12502/cudart-llama-bin-win-cuda-13.5-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 DLLs</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12502/llama-b12502-bin-win-cuda-13.5-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12502/cudart-llama-bin-win-cuda-13.5-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 DLLs</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12502/llama-b12502-bin-win-vulkan-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12502/llama-b12502-bin-win-vulkan-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12502/llama-b12502-bin-win-openvino-2026.4.1-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (OpenVINO)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12502/llama-b12502-bin-win-sycl-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (SYCL)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12502/llama-b12502-bin-win-rocm-10.0-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (ROCm 10.0)</a></li></ul>\n<p><strong>openEuler:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/pull/23705\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">DISABLED</a></li><li>openEuler x86 (310p)</li><li>openEuler x86 (910b, ACL Graph)</li><li>openEuler aarch64 (310p)</li><li>openEuler aarch64 (910b, ACL Graph)</li></ul>\n<p><strong>UI:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12502/llama-b12502-ui.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">UI</a></li></ul>",
+            "text": "<details open>\nCUDA: use MMQ for MoE on V100 (#32504)\n</details>\nWebsite:\n<https://llama.app>\nAttestations:\n<https://github.com/ggml-org/llama.cpp/attestations/69023761>\nmacOS/iOS:\nmacOS Apple Silicon (arm64)\nmacOS Apple Silicon (arm64, KleidiAI enabled) DISABLED\nmacOS Intel (x64)\niOS XCFramework\nLinux:\nUbuntu x64 (CPU)\nUbuntu arm64 (CPU)\nUbuntu 24.04 s390x (CPU)\nUbuntu 26.04 s390x (CPU)\nUbuntu 26.04 s390x (zDNN)\nUbuntu x64 (Vulkan)\nUbuntu arm64 (Vulkan)\nUbuntu x64 (CUDA 12) - CUDA 12.8 libraries\nUbuntu x64 (CUDA 13) - CUDA 13.5 libraries\nUbuntu arm64 (CUDA 13) - CUDA 13.5 libraries\nUbuntu x64 (ROCm 10.0)\nUbuntu x64 (OpenVINO)\nUbuntu x64 (SYCL FP32)\nUbuntu x64 (SYCL FP16)\nLinux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide\nAndroid:\nAndroid arm64 (CPU)\nAndroid arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide\nWindows:\nWindows x64 (CPU)\nWindows arm64 (CPU)\nWindows arm64 (OpenCL Adreno)\nWindows x64 (CUDA 12) - CUDA 12.4 DLLs\nWindows x64 (CUDA 13) - CUDA 13.5 DLLs\nWindows arm64 (CUDA 13) - CUDA 13.5 DLLs\nWindows x64 (Vulkan)\nWindows arm64 (Vulkan)\nWindows x64 (OpenVINO)\nWindows x64 (SYCL)\nWindows x64 (ROCm 10.0)\nopenEuler:\nDISABLED\nopenEuler x86 (310p)\nopenEuler x86 (910b, ACL Graph)\nopenEuler aarch64 (310p)\nopenEuler aarch64 (910b, ACL Graph)\nUI:\nUI",
+            "lead": "<details open>\nCUDA: use MMQ for MoE on V100 (#32504)\n</details>\nWebsite:\n<https://llama.app>\nAttestations:\n<https://github.com/ggml-org/llama.cpp/attestations/69023761>\nmacOS/iOS:\nmacOS Apple Silicon (arm64)\nmacOS Apple Silicon (arm64, KleidiAI enabled) DISABLED\nmacOS Intel (x64)\niOS XCFramework\nLinux:\nUbuntu x64 (CPU)\nUbuntu arm64 (CPU)\nUbuntu 24.04 s390x (CPU)\nUbuntu 26.04 s390x (CPU)\nUbuntu 26.04 s390x (zDNN)\nUbuntu x64 (Vulkan)\nUbuntu arm64 (Vulkan)\nU",
+            "chars": 1356,
+            "shown": 1356,
+            "truncated": false
+          },
+          "quality": 8,
+          "score": 21.1,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 2,
+          "slug": "2433fc9da859",
+          "action": 3,
+          "rank": 12.8,
+          "tags": [
+            "local",
+            "tutorial"
+          ]
+        },
+        {
+          "sourceId": "hf-blog",
+          "sourceName": "Hugging Face Blog",
+          "title": "180B Parameters, 32GB of RAM: Pushing MoE Inference to the Limit with Transformers",
+          "url": "https://huggingface.co/blog/moe-expert-streaming",
+          "id": "https://huggingface.co/blog/moe-expert-streaming",
+          "published": "2026-11-18T00:00:00.000Z",
+          "summary": "Back to Articles 180B Parameters, 32GB of RAM: Pushing MoE Inference to the Limit with Transformers Published November 18, 2026 Update on GitHub Upvote 2 Tarek Ziadé tarekziade Streaming MoE experts directly from SSD gets within 6% of Strata on token generation. I've been trying to rely less on online models and run b…",
+          "content": {
+            "html": "<main><div><div><div><div><div><div></div></div></div></div></div></div><div><a href=\"https://huggingface.co/blog\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Back to Articles</a></div><h3><a href=\"https://huggingface.co/blog/moe-expert-streaming#180b-parameters-32gb-of-ram-pushing-moe-inference-to-the-limit-with-transformers\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><span></span></a><span>180B Parameters, 32GB of RAM: Pushing MoE Inference to the Limit with Transformers</span></h3><div><div><div><span>Published\nNovember 18, 2026</span></div></div></div><a href=\"https://github.com/huggingface/blog/blob/main/moe-expert-streaming.md\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Update on GitHub</a><div><div><div><a href=\"https://huggingface.co/login?next=%2Fblog%2Fmoe-expert-streaming\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div>Upvote<div>2</div></div></a></div></div></div><ul><li><a href=\"https://huggingface.co/badaoui\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://cdn-avatars.huggingface.co/v1/production/uploads/65baa31607366d903890bcf4/6M9WaawnvJ-2h5wSUic1I.jpeg\" alt=\"\" loading=\"lazy\"></a></li><li><a href=\"https://huggingface.co/pcuenq\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://cdn-avatars.huggingface.co/v1/production/uploads/1617264212503-603d25b75f9d390ab190b777.jpeg\" alt=\"\" loading=\"lazy\"></a></li><li></li></ul><div></div><div><div><div><div><div><span><span><a href=\"https://huggingface.co/tarekziade\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://cdn-avatars.huggingface.co/v1/production/uploads/657f3d21f4f72f2c4c51d2ca/EUpt1X9P3BSaLHehRDEd-.png\" alt=\"Tarek Ziadé's avatar\" loading=\"lazy\"></a></span></span><div><a href=\"https://huggingface.co/tarekziade\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><span>Tarek Ziadé</span><div><span><span><span>tarekziade</span></span></span><div><div></div></div></div></a></div></div></div></div></div></div><div></div><div><div><div><div><div><span></span><div></div></div></div></div></div></div><p><em>Streaming MoE experts directly from SSD gets within 6% of Strata on token generation.</em></p><p>I've been trying to rely less on online models and run bigger ones locally.\nAt home I have a PC with two RTX 4090s (let's call it<strong>Orthrus</strong>- the two-headed hound\nof Greek mythology), and for work I have a MacBook M5 with 32G of unified memory.</p><p>Orthrus runs on Windows 11, because my kids play games all the time. I had a\ndual boot with Ubuntu, but their games ended up taking most of the two\nterabytes of disk.</p><p>I am also a huge fan of RMD (rooms moving development): one hour in the kitchen\nsipping my coffee, two hours at my office desk, then the sofa. A fixed desktop\ntower is not for me.</p><p>My first experiment was to run<a href=\"https://huggingface.co/Qwen/Qwen3.8-27B\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Qwen 3.8 27B</a>with<a href=\"https://llama.app/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><code>llama.app</code></a>on Orthrus and use\nit from my laptop through<a href=\"https://pi.dev/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><code>pi</code></a>. That model does the coding tasks, an online\nmodel like Opus does the orchestration, and the second RTX runs a FIM model for\nauto-completion in Neovim.</p><p>When I talked about this on social networks, I got very strong feedback: use<a href=\"https://github.com/niko1221/strata\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Strata</a>with<a href=\"https://huggingface.co/Qwen/Qwen3.8-Flash-Next\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Qwen3.8-Flash-Next</a>.</p><h3><a href=\"https://huggingface.co/blog/moe-expert-streaming#what-is-strata\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><span></span></a><span>What is Strata?</span></h3><p>Strata is an inference engine for MoE models like Qwen. Only the hot experts\nstay in VRAM, the rest goes to RAM, or even to disk. Experts are 90%+ of a MoE\nmodel's weights, so a 180B model like this one can run on a GPU with much less\nmemory. Like my RTX 4090!</p><p>It works on a laptop too, and I stumbled on<a href=\"https://modelfit.io/blog/strata-qwen38-flash-next-mac/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">this blog post</a>doing\nexactly that: Qwen3.8-Flash-Next on a 32 GB Mac M4, faster than<a href=\"https://github.com/ggml-org/llama.cpp\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">llama.cpp</a>, at\n13.5 tok/s.</p><p>That's too slow for how I use coding agents, but it's an interesting itch to\nscratch. A whole range of MoE models don't fit in a MacBook's unified memory and\ncould run at a decent speed.</p><h3><a href=\"https://huggingface.co/blog/moe-expert-streaming#how-do-other-engines-offload\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><span></span></a><span>How do other engines offload?</span></h3><p>Before committing to Strata, I looked at what llama.cpp,<a href=\"https://github.com/vllm-project/vllm\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">vLLM</a>and<a href=\"https://github.com/huggingface/transformers\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Transformers</a>do when a MoE model doesn't fit. Three questions matter: where do the experts\nlive, where does the expert matmul run, and what moves on each token?</p><p><strong>llama.cpp</strong>maps the GGUF file with<code>mmap</code>and can keep the experts on the\nCPU (<code>--cpu-moe</code>,<code>--n-cpu-moe N</code>,<code>-ot \"exps=CPU\"</code>, or<code>--fit on</code>to pick for\nyou). Those experts are also<em>computed</em>on the CPU, so only the activations\ncross PCIe, never the weights. Great when the experts fit in RAM. When they\ndon't, the page cache thrashes. A GPU expert cache (<code>--moe-cache-mib</code>) just\nlanded, but it fragments the graph (2 splits per token become 50) and loses\n~10% even when everything fits.</p><p><strong>vLLM</strong>'s<code>--cpu-offload-gb N</code>puts N GB of weights in pinned RAM, and kernels\nread them in place over PCIe. For a MoE layer, that's only the routed experts,\nbut nothing is cached: a hot expert crosses PCIe again on every token, and\nthere's no disk tier. By default the offloaded weights include dense layers,\nread on every token;<code>--cpu-offload-params experts</code>keeps it to the experts. That fits vLLM's big\nbatches, which touch almost every expert anyway, less so one user on one GPU.</p><p><strong>Transformers</strong>offloads through<a href=\"https://github.com/huggingface/accelerate\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Accelerate</a>(<code>device_map=\"auto\"</code>,<code>offload_folder</code>), one<em>module</em>at a time: hooks copy its weights to the GPU\nbefore<code>forward</code>. For a MoE, that module is a layer's whole expert bank, so\nevery token copies every expert of every offloaded layer to use 8 or 10 of them.\nNo cache, no notion of routing. And on a Mac, CPU and GPU share the same memory,\nso \"offload to CPU\" frees nothing.</p><p>I ran all of them on<a href=\"https://huggingface.co/Qwen/Qwen3.6-35B-A3B\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Qwen3.6-35B-A3B</a>on one A10G (24 GB), with plenty of RAM,\nand Harry Mellor reran vLLM with better flags:</p><div><table><thead><tr><th>Engine</th><th>Decode (tok/s)</th></tr></thead><tbody><tr><td>Strata, Q8_0</td><td>82 - 88</td></tr><tr><td>llama.cpp, Q8_0,<code>--fit on</code></td><td>63 - 64</td></tr><tr><td>llama.cpp, BF16,<code>--fit on</code></td><td>35 - 36</td></tr><tr><td>vLLM, FP8,<code>--cpu-offload-gb 16 --cpu-offload-params experts</code></td><td>20.1</td></tr><tr><td>vLLM, FP8, same flags,<code>--enforce-eager</code></td><td>14.7</td></tr><tr><td>vLLM, FP8,<code>--cpu-offload-gb 16</code></td><td>9.7</td></tr><tr><td>vLLM, BF16,<code>--cpu-offload-gb 50 --cpu-offload-params experts</code></td><td>7.3</td></tr><tr><td>vLLM, BF16,<code>--cpu-offload-gb 50</code></td></tr></tbody></table></div></main>",
+            "text": "Back to Articles\n180B Parameters, 32GB of RAM: Pushing MoE Inference to the Limit with Transformers\nPublished\nNovember 18, 2026\nUpdate on GitHub Upvote 2\nTarek Ziadé tarekziade\nStreaming MoE experts directly from SSD gets within 6% of Strata on token generation.\nI've been trying to rely less on online models and run bigger ones locally.\nAt home I have a PC with two RTX 4090s (let's call it Orthrus - the two-headed hound\nof Greek mythology), and for work I have a MacBook M5 with 32G of unified memory.\nOrthrus runs on Windows 11, because my kids play games all the time. I had a\ndual boot with Ubuntu, but their games ended up taking most of the two\nterabytes of disk.\nI am also a huge fan of RMD (rooms moving development): one hour in the kitchen\nsipping my coffee, two hours at my office desk, then the sofa. A fixed desktop\ntower is not for me.\nMy first experiment was to run Qwen 3.8 27B with llama.app on Orthrus and use\nit from my laptop through pi . That model does the coding tasks, an online\nmodel like Opus does the orchestration, and the second RTX runs a FIM model for\nauto-completion in Neovim.\nWhen I talked about this on social networks, I got very strong feedback: use Strata with Qwen3.8-Flash-Next .\nWhat is Strata?\nStrata is an inference engine for MoE models like Qwen. Only the hot experts\nstay in VRAM, the rest goes to RAM, or even to disk. Experts are 90%+ of a MoE\nmodel's weights, so a 180B model like this one can run on a GPU with much less\nmemory. Like my RTX 4090!\nIt works on a laptop too, and I stumbled on this blog post doing\nexactly that: Qwen3.8-Flash-Next on a 32 GB Mac M4, faster than llama.cpp , at\n13.5 tok/s.\nThat's too slow for how I use coding agents, but it's an interesting itch to\nscratch. A whole range of MoE models don't fit in a MacBook's unified memory and\ncould run at a decent speed.\nHow do other engines offload?\nBefore committing to Strata, I looked at what llama.cpp, vLLM and Transformers do when a MoE model doesn't fit. Three questions matter: where do the experts\nlive, where does the expert matmul run, and what moves on each token?\nllama.cpp maps the GGUF file with mmap and can keep the experts on the\nCPU ( --cpu-moe , --n-cpu-moe N , -ot \"exps=CPU\" , or --fit on to pick for\nyou). Those experts are also computed on the CPU, so only the activations\ncross PCIe, never the weights. Great when the experts fit in RAM. When they\ndon't, the page cache thrashes. A GPU expert cache ( --moe-cache-mib ) just\nlanded, but it fragments the graph (2 splits per token become 50) and loses\n~10% even when everything fits.\nvLLM 's --cpu-offload-gb N puts N GB of weights in pinned RAM, and kernels\nread them in place over PCIe. For a MoE layer, that's only the routed experts,\nbut nothing is cached: a hot expert crosses PCIe again on every token, and\nthere's no disk tier. By default the offloaded weights include dense layers,\nread on every token; --cpu-offload-params experts keeps it to the experts. That fits vLLM's big\nbatches, which touch almost every expert anyway, less so one user on one GPU.\nTransformers offloads through Accelerate ( device_map=\"auto\" , offload_folder ), one module at a time: hooks copy its weights to the GPU\nbefore forward . For a MoE, that module is a layer's whole expert bank, so\nevery token copies every expert of every offloaded layer to use 8 or 10 of them.\nNo cache, no notion of routing. And on a Mac, CPU and GPU share the same memory,\nso \"offload to CPU\" frees nothing.\nI ran all of them on Qwen3.6-35B-A3B on one A10G (24 GB), with plenty of RAM,\nand Harry Mellor reran vLLM with better flags:\nEngine\nDecode (tok/s)\nStrata, Q8_0\n82 - 88\nllama.cpp, Q8_0, --fit on\n63 - 64\nllama.cpp, BF16, --fit on\n35 - 36\nvLLM, FP8, --cpu-offload-gb 16 --cpu-offload-params experts\n20.1\nvLLM, FP8, same flags, --enforce-eager\n14.7\nvLLM, FP8, --cpu-offload-gb 16\n9.7\nvLLM, BF16, --cpu-offload-gb 50 --cpu-offload-params experts\n7.3\nvLLM, BF16, --cpu-offload-gb 50",
+            "lead": "Back to Articles\n180B Parameters, 32GB of RAM: Pushing MoE Inference to the Limit with Transformers\nPublished\nNovember 18, 2026\nUpdate on GitHub Upvote 2\nTarek Ziadé tarekziade\nStreaming MoE experts directly from SSD gets within 6% of Strata on token generation.\nI've been trying to rely less on online models and run bigger ones locally.\nAt home I have a PC with two RTX 4090s (let's call it Orthrus - the two-headed hound\nof Greek mythology), and for work I ",
+            "chars": 12971,
+            "shown": 3999,
+            "truncated": true
+          },
+          "categories": [],
+          "author": "",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "oss",
+          "metrics": {},
+          "quality": 6,
+          "score": 17.62,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 1,
+          "slug": "af1852b4c46d",
+          "action": 1,
+          "rank": 7.6,
+          "tags": [
+            "lowspec"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "local",
+      "label": "本地开源",
+      "items": [
+        {
+          "sourceId": "arxiv-cs",
+          "sourceName": "arXiv cs.AI/CL/LG",
+          "title": "Structure--Residual Inductive Biases for Language Model Pretraining",
+          "url": "https://arxiv.org/abs/2611.23197v1",
+          "id": "http://arxiv.org/abs/2611.23197v1",
+          "published": "2026-11-17T18:38:27.000Z",
+          "summary": "Next-token prediction is relied upon to learn both predictive behavior and internal representations. We ask whether representation structure itself should be an explicit inductive bias. Motivated by the two-part coding view of Kolmogorov complexity, we study a structure--residual principle in which a representation se…",
+          "content": {
+            "html": "Next-token prediction is relied upon to learn both predictive behavior and internal representations. We ask whether representation structure itself should be an explicit inductive bias. Motivated by the two-part coding view of Kolmogorov complexity, we study a structure--residual principle in which a representation separates structure from realization detail. We instantiate this principle in two complementary ways. Boundary Bottleneck Concept (BBC) routes information from token segments through boundary carriers while preserving local autoregressive computation. Continuous Concept (CC) regularizes representation geometry and induces a spectral decomposition into low-frequency structure and high-frequency residual. We derive coding bounds for both views and show that multiplicity-corrected boundary attention becomes exact as the within-segment path energy vanishes. Empirically, BBC and CC exhibit strikingly different depth preferences: BBC works best in early layers, whereas CC is most effective in later layers. At 300M training tokens, combining BBC and CC improves NLL by 1.44\\% on GPT-2 Medium. These gains persist with training runs up to 20B tokens. Representation diagnostics show that BBC increases the relative predictive importance of boundary states, while CC reduces spectral residual energy. Together, these results suggest that structure--residual biases can improve language-model pretraining beyond next-token prediction. Code: https://github.com/haihuang-ml/structure-residual",
+            "text": "Next-token prediction is relied upon to learn both predictive behavior and internal representations. We ask whether representation structure itself should be an explicit inductive bias. Motivated by the two-part coding view of Kolmogorov complexity, we study a structure--residual principle in which a representation separates structure from realization detail. We instantiate this principle in two complementary ways. Boundary Bottleneck Concept (BBC) routes information from token segments through boundary carriers while preserving local autoregressive computation. Continuous Concept (CC) regularizes representation geometry and induces a spectral decomposition into low-frequency structure and high-frequency residual. We derive coding bounds for both views and show that multiplicity-corrected boundary attention becomes exact as the within-segment path energy vanishes. Empirically, BBC and CC exhibit strikingly different depth preferences: BBC works best in early layers, whereas CC is most effective in later layers. At 300M training tokens, combining BBC and CC improves NLL by 1.44\\% on GPT-2 Medium. These gains persist with training runs up to 20B tokens. Representation diagnostics show that BBC increases the relative predictive importance of boundary states, while CC reduces spectral residual energy. Together, these results suggest that structure--residual biases can improve language-model pretraining beyond next-token prediction. Code: https://github.com/haihuang-ml/structure-residual",
+            "lead": "Next-token prediction is relied upon to learn both predictive behavior and internal representations. We ask whether representation structure itself should be an explicit inductive bias. Motivated by the two-part coding view of Kolmogorov complexity, we study a structure--residual principle in which a representation separates structure from realization detail. We instantiate this principle in two complementary ways. Boundary Bottleneck Concept (BBC) routes ",
+            "chars": 1507,
+            "shown": 1507,
+            "truncated": false
+          },
+          "categories": [
+            "cs.CL",
+            "cs.AI"
+          ],
+          "author": "Hai Huang",
+          "lang": "en",
+          "tier": 3,
+          "trustCategory": true,
+          "declaredCategory": "ideas",
+          "metrics": {},
+          "quality": 6,
+          "score": 11.77,
+          "category": "local",
+          "subcategory": null,
+          "practical": 1,
+          "slug": "2338076bf285",
+          "action": 2,
+          "rank": 9.2,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "bench",
+      "label": "评测选型",
+      "items": [
+        {
+          "sourceId": "lcz-hardware",
+          "sourceName": "抡锤者 AI硬件",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "ivan lan",
+          "id": "3184",
+          "title": "【全网最详尽实测】M5 Ultra 512GB 对比 4 台 DGX Spark，DeepSeek V4.1 Flash 1017 全矩阵测试，附 1M 上下文补测",
+          "url": "https://lcz.me/topic/3184",
+          "published": "2026-11-18T12:53:49.181Z",
+          "summary": "前一帖 先发了初步结果。这次按 四台 DGX Spark 的 1017 详细测试帖 补跑完整矩阵：1K–512K，1／2／4／8 路，DSpark 开启和关闭各一套，共 72 格。另附 Studio DSpark OFF 的单路 1M 补测，独立于这张主矩阵。 先说结果： 单路短输入的首 token 更快；并发解码吞吐仍是 Spark TP4 占优。512K 八路时，Spark TP4 更早让最慢一路出首 token，Studio 更早完成整批。 三项指标各看各的，混在一起读会得出相反结论。展开数据在下面。",
+          "metrics": {
+            "points": 5,
+            "comments": 11,
+            "views": 701
+          },
+          "excellent": true,
+          "content": {
+            "html": "<p><img src=\"https://picgo-fuland.oss-cn-beijing.aliyuncs.com/images/m5u1017-01-cover.png\" alt=\"实测信息图总结\" loading=\"lazy\"></p>\n<p><a href=\"https://lcz.me/topic/3067\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">前一帖</a>先发了初步结果。这次按<a href=\"https://lcz.me/topic/2946\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">四台 DGX Spark 的 1017 详细测试帖</a>补跑完整矩阵：1K–512K，1／2／4／8 路，DSpark 开启和关闭各一套，共 72 格。另附 Studio DSpark OFF 的单路 1M 补测，独立于这张主矩阵。</p>\n<p>先说结果：<strong>单路短输入的首 token 更快；并发解码吞吐仍是 Spark TP4 占优。512K 八路时，Spark TP4 更早让最慢一路出首 token，Studio 更早完成整批。</strong>三项指标各看各的，混在一起读会得出相反结论。展开数据在下面。</p>\n<hr><h3>一、测试环境与口径</h3>\n<hr><h3>1. 开箱与实机记录</h3>\n<p><img src=\"https://picgo-fuland.oss-cn-beijing.aliyuncs.com/images/m5u1017-02-0.jpg\" alt=\"Mac Studio 开箱\" loading=\"lazy\"></p>\n<p><img src=\"https://picgo-fuland.oss-cn-beijing.aliyuncs.com/images/m5u1017-03-1.jpeg\" alt=\"关于本机：M5 Ultra，512 GB\" loading=\"lazy\"></p>\n<p><img src=\"https://picgo-fuland.oss-cn-beijing.aliyuncs.com/images/m5u1017-04-2.jpeg\" alt=\"家里的桌面环境\" loading=\"lazy\"></p>\n<p><img src=\"https://picgo-fuland.oss-cn-beijing.aliyuncs.com/images/m5u1017-05-3.jpeg\" alt=\"运行中的 macmon 状态\" loading=\"lazy\"></p>\n<h3>2. 运行配置与测量口径</h3>\n<table><thead><tr><th>项目</th><th>本次配置</th></tr></thead><tbody><tr><td>硬件</td><td>单台 Mac Studio，M5 Ultra，36 核 CPU／80 核 GPU，512 GB 统一内存，2 TB 内置 SSD</td></tr><tr><td>推理引擎</td><td>oMLX 0.8.0rc1</td></tr><tr><td>模型</td><td>DeepSeek V4.1 Flash 1017；Engram 为 4-bit affine，group size 32，scale／bias 为 BF16</td></tr><tr><td>解码</td><td>Studio DSpark ON／Studio DSpark OFF 各跑一套；<code>enable_thinking=false</code></td></tr><tr><td>测试工具</td><td>固定<code>llm-inference-bench 0.7.6</code></td></tr></tbody></table>\n<p>DSpark 是推测解码功能，先生成候选 token，再由目标模型验证。<code>Studio DSpark ON</code>和<code>Studio DSpark OFF</code>分别表示本机开启和关闭该功能；两套测试都关闭思考。<code>Spark TP4</code>表示四台 DGX Spark 采用四路张量并行，成绩引用自原帖，对方开启了 DSpark。</p>\n<p><strong>负载设置：</strong>每路实际输出 128 token，温度 0.6；填充文本带逐路唯一标记，正式矩阵的前缀缓存命中均为 0。1K–64K 每格三批，各指标独立取中位数；128K–512K 每格一批。合计 168 批、630 路请求。</p>\n<p><strong>统计公式与原帖对齐：</strong>pp 表示预填充，tg 表示解码。P、U 分别为每路实际输入和输出 token，W 为从发出请求到收到<code>[DONE]</code>的时长。</p>\n<ul><li>单流 pp、tg：分别对每路的<code>P / TTFT</code>、<code>U / (W − TTFT)</code>取均值。</li><li>聚合 pp：<code>ΣP / max(TTFT)</code>。</li><li>聚合 tg：<code>ΣU / (max(W) − max(TTFT))</code>。</li><li>表中的 TTFT 取最慢一路；墙钟是从第一路发出到最后一路结束的整批用时。</li></ul>\n<blockquote><p><strong>聚合解码吞吐的算法有局限，本次为对比而统一沿用。</strong><code>ΣU / (max(W) − max(TTFT))</code>的分子是整批输出，分母却只是尾窗，错峰生成时会高估吞吐，也受调度影响。为跟原帖逐档对照，Spark TP4 引用原报，Studio 用同一公式计算。<strong>统一口径不代表算法合理。</strong></p></blockquote>\n<p>pp 包含排队、传输和首 token 等开销，不是纯引擎预填充速率。对方数据采用原帖的<strong>1017 新权重列</strong>。两端引擎、Engram 精度和拓扑不同，这是整套部署对照，不能把差异全部算到硬件上。Studio 关闭思考；原帖服务默认思考 on · high，矩阵请求的开关未单独披露。</p>\n<h3>3. 内置 SSD</h3>\n<p>权重和约 123 GB 的 Engram 表放内置盘，运行时按需读取。内置 Apple AP2048Z 2TB 的 fio 3.43 实测顺序读<strong>13.1 GB/s</strong>，而 PCIe 4.0×4 的雷电 5 外置 SSD 理论带宽只有 64 Gbit/s，约 8 GB/s，实际还要扣协议开销。<strong>大模型加载和 Engram 查表这类用途，内置盘这笔钱值得花。以后要做 Streaming，直接上 4TB。</strong></p>\n<p><img src=\"https://picgo-fuland.oss-cn-beijing.aliyuncs.com/images/m5u1017-06-01-storage-rank.png\" alt=\"内置与外置 SSD 的 fio 排行\" loading=\"lazy\"></p>\n<table><thead><tr><th>fio 项目</th><th>内置 SSD</th><th>外置 USB4 SSD</th></tr></thead><tbody><tr><td>顺序读／写，QD32</td><td>13.1／12.7 GB/s</td><td>3.77／3.54 GB/s</td></tr><tr><td>4 KiB 随机读，QD1</td><td>17,200 IOPS，58 µs</td><td>14,300 IOPS，70 µs</td></tr><tr><td>4 KiB 随机读，QD32</td><td>185,000 IOPS</td><td>176,000 IOPS</td></tr><tr><td></td><td></td><td></td></tr></tbody></table>\n<h3>二、栈自检</h3>\n<table><thead><tr><th>检查项</th><th>结果</th></tr></thead><tbody><tr><td>输入与输出计数</td><td>1K 单路为 1,004 输入、128 输出</td></tr><tr><td>思考开关</td><td>正式协议批的 reasoning token 为 0；使用错误开关的先导批已剔除</td></tr><tr><td>前缀缓存</td><td>正式矩阵逐路命中均为 0 token</td></tr><tr><td>流完整性</td><td>630 路均生成 128 token，以<code>length</code>结束，收到 usage 和<code>[DONE]</code></td></tr></tbody></table>\n<h3>三、长上下文阶梯压测（并发 1）</h3>\n<p>图中比较 Studio DSpark ON、Studio DSpark OFF 和 Spark TP4。首 token 与总耗时采用对数纵轴。</p>\n<p><img src=\"https://picgo-fuland.oss-cn-beijing.aliyuncs.com/images/m5u1017-07-02-1lane.png\" alt=\"单路九档测试，比较首 token、整路用时、单流预填充与单流解码。时间轴为对数。\" loading=\"lazy\"></p>\n<p>下表每个对照格按<strong>Studio DSpark OFF / Spark TP4</strong>排列。Studio DSpark ON／Studio DSpark OFF 的差异在图中展示。</p>\n<table><thead><tr><th>上下文</th><th>实际输入</th><th>TTFT（秒）</th><th>单流解码（token/s）</th><th>总耗时（秒）</th></tr></thead><tbody><tr><td>1K</td><td>1,004</td><td>0.57 / 1.22</td><td>49.79 / 55.3</td><td>3.14 / 3.75</td></tr><tr><td>4K</td><td>3,800</td><td>1.12 / 1.84</td><td>50.27 / 71.5</td><td>3.68 / 3.63</td></tr><tr><td>8K</td><td>7,513</td><td>1.96 / 3.10</td><td>50.31 / 73.0</td><td>4.50 / 5.01</td></tr><tr><td>16K</td><td>14,955</td><td>3.67 / 4.39</td><td>50.24 / 83.7</td><td>6.22 / 5.99</td></tr><tr><td>32K</td><td>29,881</td><td>7.25 / 7.46</td><td>49.38 / 92.7</td><td>9.84 / 8.84</td></tr><tr><td>64K</td><td>61,913</td><td>14.96 / 15.30</td><td>48.99 / 102.6</td><td>17.57 / 16.52</td></tr><tr><td>128K</td><td>124,759</td><td>42.52 / 33.27</td><td>47.95 / 67.4</td><td>45.19 / 35.17</td></tr><tr><td>256K</td><td>250,485</td><td>76.21 / 73.30</td><td>46.92 / 75.5</td><td>78.94 / 74.99</td></tr><tr><td>512K</td><td>501,869</td><td>163.36 / 181.40</td><td>44.94 / 73.0</td><td>166.21 / 183.15</td></tr></tbody></table>\n<p>8K 单路，Studio 两档都约 2 秒出首 token。512K 单路，Studio DSpark OFF 为<strong>163.36 秒首 token、166.21 秒完成</strong>；Spark TP4 为 181.40／183.15 秒，但其单流解码更快，为 73.0 token/s，Studio DSpark OFF 为 44.94 token/s。</p>\n<h3>四、高并发 × 上下文扫描</h3>\n<p>图中每列分别为 2／4／8 路。三行依次是最慢首 token、整批耗时和单流 pp；同一行使用同一纵轴。</p>\n<p><img src=\"https://picgo-fuland.oss-cn-beijing.aliyuncs.com/images/m5u1017-08-03-multilane.png\" alt=\"并发 2、4、8 的最慢首 token、整批耗时和单流预填充。每行共用同一纵轴。时间轴为对数。\" loading=\"lazy\"></p>\n<p><strong>提交路数不等于实际解码重叠数。</strong>下图的点是各批最高峰值，竖线表示各批峰值的范围。</p>\n<p><img src=\"https://picgo-fuland.oss-cn-beijing.aliyuncs.com/images/m5u1017-09-04-actual-overlap.png\" alt=\"提交 2、4、8 路后的实际解码峰值。点表示各批最高值，竖线表示最低至最高的范围。\" loading=\"lazy\"></p>\n<p>512K 八路的 Studio DSpark ON／Studio DSpark OFF 实际解码峰值都是<strong>6 路</strong>。八个请求在约 16 ms 内提交，但首个请求约第 154 秒出 token，最慢一路要等到约第 1,214 秒。</p>\n<h3>五、汇总对照</h3>\n<p>四张趋势图均覆盖九个上下文档位和 1、2、4、8 路并发，同一指标的四个面板共用纵轴。虚线三角为 Studio DSpark ON，实线圆点为 Studio DSpark OFF，点…</p>",
+            "text": "前一帖 先发了初步结果。这次按 四台 DGX Spark 的 1017 详细测试帖 补跑完整矩阵：1K–512K，1／2／4／8 路，DSpark 开启和关闭各一套，共 72 格。另附 Studio DSpark OFF 的单路 1M 补测，独立于这张主矩阵。\n先说结果： 单路短输入的首 token 更快；并发解码吞吐仍是 Spark TP4 占优。512K 八路时，Spark TP4 更早让最慢一路出首 token，Studio 更早完成整批。 三项指标各看各的，混在一起读会得出相反结论。展开数据在下面。\n一、测试环境与口径\n1. 开箱与实机记录\n2. 运行配置与测量口径\n项目\n本次配置\n硬件\n单台 Mac Studio，M5 Ultra，36 核 CPU／80 核 GPU，512 GB 统一内存，2 TB 内置 SSD\n推理引擎\noMLX 0.8.0rc1\n模型\nDeepSeek V4.1 Flash 1017；Engram 为 4-bit affine，group size 32，scale／bias 为 BF16\n解码\nStudio DSpark ON／Studio DSpark OFF 各跑一套； enable_thinking=false\n测试工具\n固定 llm-inference-bench 0.7.6\nDSpark 是推测解码功能，先生成候选 token，再由目标模型验证。 Studio DSpark ON 和 Studio DSpark OFF 分别表示本机开启和关闭该功能；两套测试都关闭思考。 Spark TP4 表示四台 DGX Spark 采用四路张量并行，成绩引用自原帖，对方开启了 DSpark。\n负载设置： 每路实际输出 128 token，温度 0.6；填充文本带逐路唯一标记，正式矩阵的前缀缓存命中均为 0。1K–64K 每格三批，各指标独立取中位数；128K–512K 每格一批。合计 168 批、630 路请求。\n统计公式与原帖对齐： pp 表示预填充，tg 表示解码。P、U 分别为每路实际输入和输出 token，W 为从发出请求到收到 [DONE] 的时长。\n单流 pp、tg：分别对每路的 P / TTFT 、 U / (W − TTFT) 取均值。\n聚合 pp： ΣP / max(TTFT) 。\n聚合 tg： ΣU / (max(W) − max(TTFT)) 。\n表中的 TTFT 取最慢一路；墙钟是从第一路发出到最后一路结束的整批用时。\n聚合解码吞吐的算法有局限，本次为对比而统一沿用。 ΣU / (max(W) − max(TTFT)) 的分子是整批输出，分母却只是尾窗，错峰生成时会高估吞吐，也受调度影响。为跟原帖逐档对照，Spark TP4 引用原报，Studio 用同一公式计算。 统一口径不代表算法合理。\npp 包含排队、传输和首 token 等开销，不是纯引擎预填充速率。对方数据采用原帖的 1017 新权重列 。两端引擎、Engram 精度和拓扑不同，这是整套部署对照，不能把差异全部算到硬件上。Studio 关闭思考；原帖服务默认思考 on · high，矩阵请求的开关未单独披露。\n3. 内置 SSD\n权重和约 123 GB 的 Engram 表放内置盘，运行时按需读取。内置 Apple AP2048Z 2TB 的 fio 3.43 实测顺序读 13.1 GB/s ，而 PCIe 4.0×4 的雷电 5 外置 SSD 理论带宽只有 64 Gbit/s，约 8 GB/s，实际还要扣协议开销。 大模型加载和 Engram 查表这类用途，内置盘这笔钱值得花。以后要做 Streaming，直接上 4TB。\nfio 项目\n内置 SSD\n外置 USB4 SSD\n顺序读／写，QD32\n13.1／12.7 GB/s\n3.77／3.54 GB/s\n4 KiB 随机读，QD1\n17,200 IOPS，58 µs\n14,300 IOPS，70 µs\n4 KiB 随机读，QD32\n185,000 IOPS\n176,000 IOPS\n二、栈自检\n检查项\n结果\n输入与输出计数\n1K 单路为 1,004 输入、128 输出\n思考开关\n正式协议批的 reasoning token 为 0；使用错误开关的先导批已剔除\n前缀缓存\n正式矩阵逐路命中均为 0 token\n流完整性\n630 路均生成 128 token，以 length 结束，收到 usage 和 [DONE]\n三、长上下文阶梯压测（并发 1）\n图中比较 Studio DSpark ON、Studio DSpark OFF 和 Spark TP4。首 token 与总耗时采用对数纵轴。\n下表每个对照格按 Studio DSpark OFF / Spark TP4 排列。Studio DSpark ON／Studio DSpark OFF 的差异在图中展示。\n上下文\n实际输入\nTTFT（秒）\n单流解码（token/s）\n总耗时（秒）\n1K\n1,004\n0.57 / 1.22\n49.79 / 55.3\n3.14 / 3.75\n4K\n3,800\n1.12 / 1.84\n50.27 / 71.5\n3.68 / 3.63\n8K\n7,513\n1.96 / 3.10\n50.31 / 73.0\n4.50 / 5.01\n16K\n14,955\n3.67 / 4.39\n50.24 / 83.7\n6.22 / 5.99\n32K\n29,881\n7.25 / 7.46\n49.38 / 92.7\n9.84 / 8.84\n64K\n61,913\n14.96 / 15.30\n48.99 / 102.6\n17.57 / 16.52\n128K\n124,759\n42.52 / 33.27\n47.95 / 67.4\n45.19 / 35.17\n256K\n250,485\n76.21 / 73.30\n46.92 / 75.5\n78.94 / 74.99\n512K\n501,869\n163.36 / 181.40\n44.94 / 73.0\n166.21 / 183.15\n8K 单路，Studio 两档都约 2 秒出首 token。512K 单路，Studio DSpark OFF 为 163.36 秒首 token、166.21 秒完成 ；Spark TP4 为 181.40／183.15 秒，但其单流解码更快，为 73.0 token/s，Studio DSpark OFF 为 44.94 token/s。\n四、高并发 × 上下文扫描\n图中每列分别为 2／4／8 路。三行依次是最慢首 token、整批耗时和单流 pp；同一行使用同一纵轴。\n提交路数不等于实际解码重叠数。 下图的点是各批最高峰值，竖线表示各批峰值的范围。\n512K 八路的 Studio DSpark ON／Studio DSpark OFF 实际解码峰值都是 6 路 。八个请求在约 16 ms 内提交，但首个请求约第 154 秒出 token，最慢一路要等到约第 1,214 秒。\n五、汇总对照\n四张趋势图均覆盖九个上下文档位和 1、2、4、8 路并发，同一指标的四个面板共用纵轴。虚线三角为 Studio DSpark ON，实线圆点为 Studio DSpark OFF，点…",
+            "lead": "前一帖 先发了初步结果。这次按 四台 DGX Spark 的 1017 详细测试帖 补跑完整矩阵：1K–512K，1／2／4／8 路，DSpark 开启和关闭各一套，共 72 格。另附 Studio DSpark OFF 的单路 1M 补测，独立于这张主矩阵。\n先说结果： 单路短输入的首 token 更快；并发解码吞吐仍是 Spark TP4 占优。512K 八路时，Spark TP4 更早让最慢一路出首 token，Studio 更早完成整批。 三项指标各看各的，混在一起读会得出相反结论。展开数据在下面。",
+            "chars": 5997,
+            "shown": 3201,
+            "truncated": true
+          },
+          "quality": 15,
+          "score": 22.99,
+          "category": "bench",
+          "subcategory": "compare",
+          "practical": 4,
+          "slug": "a4f8881ba3c6",
+          "action": 5,
+          "rank": 23,
+          "tags": [
+            "benchmark",
+            "tutorial",
+            "local",
+            "lowspec"
+          ]
+        },
+        {
+          "sourceId": "arxiv-cs",
+          "sourceName": "arXiv cs.AI/CL/LG",
+          "title": "Spool: Low-Latency Streaming Inference for Hybrid Vision-Language Models",
+          "url": "https://arxiv.org/abs/2611.23228v1",
+          "id": "http://arxiv.org/abs/2611.23228v1",
+          "published": "2026-11-17T18:59:27.000Z",
+          "summary": "Applications such as visual accessibility agents and robotics require answering questions about recent video content promptly, over a bounded window of past frames (e.g., the last two minutes). Hybrid vision-language models (VLMs), which interleave attention with linear recurrent layers such as Gated DeltaNet (GDN), a…",
+          "content": {
+            "html": "Applications such as visual accessibility agents and robotics require answering questions about recent video content promptly, over a bounded window of past frames (e.g., the last two minutes). Hybrid vision-language models (VLMs), which interleave attention with linear recurrent layers such as Gated DeltaNet (GDN), are attractive for this setting, but maintaining a sliding window is expensive. The reason is that recurrent layers combine all past frames into a shared state, so expiring old frames normally requires re-running the entire window through the model. We observe that the recurrent update is affine in the state with input-dependent coefficients, so the effect of each frame can be captured as a transformation that composes associatively. We present Spool, a training-free framework that caches per-frame state transformations and composes them efficiently as the window advances, removing expired frames from each recurrent layer's state without replaying frames through the backbone. Removal is exact within each layer; as with key-value eviction in attention, expired frames can retain residual influence through the cached inputs computed by earlier layers. We design a dedicated data structure and GPU kernels to achieve low caching and composition overhead. Across five open-source hybrid VLMs and four video reasoning benchmarks, Spool achieves the lowest p95 time-to-first-token in all 20 model-benchmark tests, reducing it by a geometric mean of $6.6\\times$ over the faster of two recent vLLM baselines, while improving accuracy by 2.3 percentage points on average.",
+            "text": "Applications such as visual accessibility agents and robotics require answering questions about recent video content promptly, over a bounded window of past frames (e.g., the last two minutes). Hybrid vision-language models (VLMs), which interleave attention with linear recurrent layers such as Gated DeltaNet (GDN), are attractive for this setting, but maintaining a sliding window is expensive. The reason is that recurrent layers combine all past frames into a shared state, so expiring old frames normally requires re-running the entire window through the model. We observe that the recurrent update is affine in the state with input-dependent coefficients, so the effect of each frame can be captured as a transformation that composes associatively. We present Spool, a training-free framework that caches per-frame state transformations and composes them efficiently as the window advances, removing expired frames from each recurrent layer's state without replaying frames through the backbone. Removal is exact within each layer; as with key-value eviction in attention, expired frames can retain residual influence through the cached inputs computed by earlier layers. We design a dedicated data structure and GPU kernels to achieve low caching and composition overhead. Across five open-source hybrid VLMs and four video reasoning benchmarks, Spool achieves the lowest p95 time-to-first-token in all 20 model-benchmark tests, reducing it by a geometric mean of $6.6\\times$ over the faster of two recent vLLM baselines, while improving accuracy by 2.3 percentage points on average.",
+            "lead": "Applications such as visual accessibility agents and robotics require answering questions about recent video content promptly, over a bounded window of past frames (e.g., the last two minutes). Hybrid vision-language models (VLMs), which interleave attention with linear recurrent layers such as Gated DeltaNet (GDN), are attractive for this setting, but maintaining a sliding window is expensive. The reason is that recurrent layers combine all past frames in",
+            "chars": 1591,
+            "shown": 1591,
+            "truncated": false
+          },
+          "categories": [
+            "cs.CV",
+            "cs.LG"
+          ],
+          "author": "Rui Ning",
+          "lang": "en",
+          "tier": 3,
+          "trustCategory": true,
+          "declaredCategory": "ideas",
+          "metrics": {},
+          "quality": 6,
+          "score": 13,
+          "category": "bench",
+          "subcategory": "benchmark",
+          "practical": 2,
+          "slug": "43223e79a9bc",
+          "action": 2,
+          "rank": 9.2,
+          "tags": [
+            "free",
+            "benchmark"
+          ]
+        }
+      ]
+    }
+  ]
+}
