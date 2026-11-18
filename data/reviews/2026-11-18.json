@@ -1,8 +1,8 @@
 {
   "day": "2026-11-18",
-  "reviewedAt": "2026-11-17T19:19:41.415Z",
+  "reviewedAt": "2026-11-18T03:51:10.270Z",
   "reviewer": "cloudflare/@cf/meta/llama-3.1-70b-instruct",
-  "note": "cloudflare/@cf/meta/llama-3.1-70b-instruct → @cf/meta/llama-3.1-8b-instruct：复核 12 条，解析到 12 条判定",
+  "note": "cloudflare/@cf/meta/llama-3.1-70b-instruct：复核 12 条，解析到 12 条判定",
   "rules": {
     "minItems": 3,
     "minBodyChars": 120,
@@ -15,15 +15,13 @@
   },
   "passed": true,
   "reasons": [],
-  "total": 29,
+  "total": 50,
   "blocked": [
+    "da39a3ee5e6b",
     "57b44b7a2bc0",
-    "9072e7adfee6",
-    "728f678d5648",
-    "629586d91893",
-    "4d9d0ebe1f0a"
+    "552e087be148"
   ],
-  "survivors": 24,
+  "survivors": 47,
   "items": [
     {
       "slug": "a488aa5caffc",
@@ -46,7 +44,7 @@
       "warnings": [],
       "agent": {
         "verdict": "pass",
-        "reason": "提供了实测数据和步骤，描述了使用Radiance加速生成速度的实验结果。"
+        "reason": "提供了实验数据和对比结果。"
       },
       "blocked": []
     },
@@ -72,9 +70,35 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "介绍了一个agent技能，用于优化LLM服务器的推理速度，提供了具体的优化步骤和结果。"
+        "reason": "提供了具体的优化步骤和结果。"
       },
       "blocked": []
+    },
+    {
+      "slug": "da39a3ee5e6b",
+      "title": "派早报：国区 App Store 将 AIGC 合规设为上架必填、OpenAI 发布 GPT-6.2 Astra 等",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [
+        "tutorial",
+        "agent",
+        "free"
+      ],
+      "bodyChars": 8495,
+      "excerpt": "周三 18 派早报：国区 App Store 将 AIGC 合规设为上架必填、OpenAI 发布 GPT-6.2 Astra 等 你的年度游戏是什么？ 13 分钟阅读 早报速览 国区 App Store 将 AIGC 合规材料设为上架必填 6 OpenAI 发布 GPT-6.2 Astra 与 Sol 模型 1 iPhone Duo 测试 2D 人脸解锁功能 9 松下发布紧凑型电影摄影机 SHX1 0 影目发布 INMO Future 智能眼镜 1 Google Play 公布 2026 年度最佳应用、游戏与图书榜单 0 商汤开源 SenseNova Loop-9B 正式版 0 米哈游公布通用视觉语言动作基础模型 Gamer 1 Gemini 4 Argon 在第三方安全测试中失控 2 DeepSeek 对长对话实施限额 1 快手可灵上线图像创作模型 Kling Image 4.0 0 夏普发布 AQUOS sense11 1 TRMNL 推出 31.5 英寸全彩电子纸画框 Frame 0 看看就行的简讯 0 国区 App Store 将 AIGC 合规材料设为上架必填 11 月 16 日，有开发者反馈苹果在 App Store Connect 后台新增「人工智能生成或合成内容（AIGC）服务声明与备案信息」与「已完成安全评估的证明」2 项中国大陆分发必填项。此举将 2026 年…",
+      "quality": 8,
+      "practical": 5,
+      "sourceName": "少数派",
+      "domain": "sspai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "fail",
+        "reason": "新闻转述，没有提供实践性内容。"
+      },
+      "blocked": [
+        "模型复核不通过（新闻转述，没有提供实践性内容。）"
+      ]
     },
     {
       "slug": "57b44b7a2bc0",
@@ -97,11 +121,35 @@
       "warnings": [],
       "agent": {
         "verdict": "fail",
-        "reason": "新闻转述，没有提供实测数据或步骤，主要介绍了李沐加盟Aimotion公司。"
+        "reason": "新闻转述，没有提供实践性内容。"
       },
       "blocked": [
-        "模型复核不通过（新闻转述，没有提供实测数据或步骤，主要介绍了李沐加盟Aimotion公司。）"
+        "模型复核不通过（新闻转述，没有提供实践性内容。）"
       ]
+    },
+    {
+      "slug": "d87c6bdd57ff",
+      "title": "TypeTyrantScheme/Gemini-Config-Checker-",
+      "category": "apps",
+      "subcategory": null,
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 19516,
+      "excerpt": "<p align=\"center\"><img src=\"https://github.com/MatinSenPai/Gemini-Config-Checker/raw/main/assets/banner.png\" alt=\"Gemini/Check\" width=\"100%\"></p> <p align=\"center\"> <b>English</b> · <a href=\"README.fa.md\">فارسی</a> </p> <p align=\"center\"> <a href=\"https://www.dropbox.com/scl/fi/l80rdcm1o9gnqcpdsw1gi/GeminiConfigChecker.rar?rlkey=dv7oxsttd2j8kvr5zu7uyx1tm&st=l2vaozdz&dl=1\"> <img alt=\"Download the Gemini app\" src=\"https://img.shields.io/badge/Download-%20Gemeni%20app-0969DA?style=for-the-badge&logo=github&logoColor=white\"> </a> </p> Gemini Config Checker Find proxy configs that actually get you…",
+      "quality": 10,
+      "practical": 2,
+      "sourceName": "GitHub 新晋 AI 项目",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "提供了一个可下载的配置检查工具。"
+      },
+      "blocked": []
     },
     {
       "slug": "9072e7adfee6",
@@ -122,12 +170,10 @@
         "标题未翻译"
       ],
       "agent": {
-        "verdict": "fail",
-        "reason": "没有提供实测数据或步骤，主要讨论了VLM模型的规划机制。"
+        "verdict": "pass",
+        "reason": "提供了模型工作原理的详细解释。"
       },
-      "blocked": [
-        "模型复核不通过（没有提供实测数据或步骤，主要讨论了VLM模型的规划机制。）"
-      ]
+      "blocked": []
     },
     {
       "slug": "728f678d5648",
@@ -148,12 +194,10 @@
         "标题未翻译"
       ],
       "agent": {
-        "verdict": "fail",
-        "reason": "没有提供实测数据或步骤，主要介绍了Llama UI设计系统的更新。"
+        "verdict": "pass",
+        "reason": "包含具体的项目设计和实施细节。"
       },
-      "blocked": [
-        "模型复核不通过（没有提供实测数据或步骤，主要介绍了Llama UI设计系统的更新。）"
-      ]
+      "blocked": []
     },
     {
       "slug": "5d0473fa4af1",
@@ -175,9 +219,35 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "介绍了ScenarioForge工具，用于生成和验证网络安全场景，提供了具体的生成和执行步骤。"
+        "reason": "提供了详细的研究成果和实验证据。"
       },
       "blocked": []
+    },
+    {
+      "slug": "552e087be148",
+      "title": "Show HN: An open virtual office to cowork with humans while your agents work",
+      "category": "apps",
+      "subcategory": "office",
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 527,
+      "excerpt": "Hi everyone, I've spent the past several months working alone with AI, and it started getting to me a little. The machines are great, but I miss having some more people around to bounce ideas off. So... I made an open, 24/7 virtual coworking space to fill that gap. It's an experiment and a spin-off from my another project. It's free, nothing is scheduled, you can just pop in whenever you have a moment. Curious how this can play out! Comments URL: https://news.ycombinator.com/item?id=50531481 Points: 14 # Comments: 6",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "Show HN (AI)",
+      "domain": "flat.social",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "内容主要是个人感受和实验宣传，而不是实践性内容。"
+      },
+      "blocked": [
+        "模型复核不通过（内容主要是个人感受和实验宣传，而不是实践性内容。）"
+      ]
     },
     {
       "slug": "ea100c114ecf",
@@ -200,7 +270,7 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "内容有实测数据或有复现步骤"
+        "reason": "描述了一个具体的研究方法和实验结果。"
       },
       "blocked": []
     },
@@ -223,8 +293,51 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "内容有实测数据或有复现步骤"
+        "reason": "提供了详细的技术方法和实验数据。"
       },
+      "blocked": []
+    },
+    {
+      "slug": "15f5d7202b25",
+      "title": "KVUse: Reusable-KV User Memory for Efficient LLM Recommenders",
+      "category": "apps",
+      "subcategory": "inference",
+      "tags": [],
+      "bodyChars": 1654,
+      "excerpt": "Memory-augmented recommenders built on large language models (LLMs) maintain a natural-language profile of each user. These profiles are updated by a user profile update path that revises the profile as new interactions arrive and are consumed by downstream task paths like ranking. Because these user profiles are stored as text in the user memory, every ranking LLM call that consumes them must splice them in the prompt and calculate the KV cache of them during the prefill phase. Given these ranking LLM calls are prefill heavy (long prompt but short decoded output) and repeatedly called, these…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv 检索（推理引擎与量化）",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "描述了一个具体的技术方案和优化方法。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "8ca45cb01458",
+      "title": "VisHead-Spec: Head-Routed Visual Attention for Multimodal Speculative Decoding",
+      "category": "apps",
+      "subcategory": "inference",
+      "tags": [],
+      "bodyChars": 1680,
+      "excerpt": "Speculative decoding accelerates vision-language models(VLMs) while preserving the target model's outputs, but its speedup diminishes under high concurrency serving as the system becomes more compute bounded as the batch size increases. This problem is pronounced for multimodal speculative decoding as the long range of the image tokens in the prompt can significantly increase the computational cost during draft token prediction. The block-diffusion drafters (e.g. DFlash, DSpark) can effectively speed up the draft model efficiency by predicting multiple draft tokens in one forward pass, but th…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv 检索（推理引擎与量化）",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": null,
       "blocked": []
     },
     {
@@ -245,10 +358,27 @@
       "warnings": [
         "标题未翻译"
       ],
-      "agent": {
-        "verdict": "pass",
-        "reason": "内容有实测数据或有复现步骤"
-      },
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "c8c8faf99ec5",
+      "title": "Show HN: Win98 PE Interpreter in WebAssembly – StarCraft and Diablo on Phones",
+      "category": "apps",
+      "subcategory": null,
+      "tags": [],
+      "bodyChars": 136,
+      "excerpt": "Article URL: https://wine-assembly.berrry.app/ Comments URL: https://news.ycombinator.com/item?id=50526380 Points: 21 # Comments: 5",
+      "quality": 7,
+      "practical": 1,
+      "sourceName": "Show HN (AI)",
+      "domain": "wine-assembly.berrry.app",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": null,
       "blocked": []
     },
     {
@@ -270,13 +400,49 @@
       "domain": "qbitai.com",
       "hard": [],
       "warnings": [],
-      "agent": {
-        "verdict": "fail",
-        "reason": "内容只有新闻转述，没有数据或步骤"
-      },
-      "blocked": [
-        "模型复核不通过（内容只有新闻转述，没有数据或步骤）"
-      ]
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "acdaad578a36",
+      "title": "External sandboxes for coding agents",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "agent"
+      ],
+      "bodyChars": 1897,
+      "excerpt": "External sandboxes for coding agents I've been exploring new ways to sandbox code that is executed by agents, with a focus on making it safer to try out local models without worrying that a mistake or prompt injection attack might cause them to take damaging actions on a machine. I worked on this project with Prime Radiant , the AI research lab behind Superpowers and other projects . My post on the Prime Radiant blog introduces the external sandbox pattern, where code executed by the agent runs inside a dedicated sandbox while the agent itself lives outside of that sandbox. To demonstrate thi…",
+      "quality": 9,
+      "practical": 2,
+      "sourceName": "Simon Willison",
+      "domain": "simonwillison.net",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "e7ca85eebdf1",
+      "title": "土豆姐https://x.com/poteto 最近很火，分享一些我对于土豆姐言论的思考",
+      "category": "tools",
+      "subcategory": "workflow",
+      "tags": [
+        "agent",
+        "tutorial"
+      ],
+      "bodyChars": 779,
+      "excerpt": "先简单介绍一下土豆姐， https://x.com/poteto https://www.youtube.com/watch?v=O_zcc6Xl12g&feature=youtu.be 前cursor的核心开发者，目前在grok。 土豆姐的爆火不言而喻，一定有grok、x、马斯克的商业策划营销在其中（包括土豆姐本人的形象在2023年后也有本质的蜕变，详见： https://x.com/kylewmi/status/2121945182082040132 ）。但土豆姐本身分享的知识还是很值得玩味的。核心一句话就是， AI时代，我们应该尽可能的通过可量化、自动化手段来审核AI产出。（从而烧更多的token，让马斯克赚更多钱） 1、不要用正常的人类验收思路。 土豆姐讲了一个实例，她通过定制一个编译器，来审核AI生成的react代码是否符合她的设计规范。不符合是不能编译（严格说是转译）通过的。这个思路就非常的值得借鉴。既，生产力无限的前提下，是不是有逻辑链条更短，更简单粗暴的路径来验证产出呢？ 2、在AI生产的过程中，我们应该用管理学的视角来解决问题。 把AI看成是手下的员工，想象一下公司是如何管理职员的权限，以至于员工不会捅出无法弥补的篓子的。是不是应该根据当前项目的需求，因地制宜的禁用Agent的一些tool，以及bash、目录的访问权。是不是尽量的把能够用到的信息都集中到统一的目…",
+      "quality": 8,
+      "practical": 4,
+      "sourceName": "抡锤者 Agent 工具",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
     },
     {
       "slug": "5f519cfb8b4e",
@@ -297,10 +463,7 @@
       "warnings": [
         "标题未翻译"
       ],
-      "agent": {
-        "verdict": "pass",
-        "reason": "内容有实测数据或有复现步骤"
-      },
+      "agent": null,
       "blocked": []
     },
     {
@@ -321,13 +484,31 @@
       "warnings": [
         "标题未翻译"
       ],
-      "agent": {
-        "verdict": "fail",
-        "reason": "内容只有新闻转述，没有数据或步骤"
-      },
-      "blocked": [
-        "模型复核不通过（内容只有新闻转述，没有数据或步骤）"
-      ]
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "d44566091825",
+      "title": "Show HN: Coral – Open-source gateway where agents write their own tools",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "agent",
+        "free",
+        "privacy"
+      ],
+      "bodyChars": 2459,
+      "excerpt": "Hi HN, I'm James, one of the co-founders of Coral. Coral is an open-source, self-hosted gateway that sits between your agents and the systems they work on. Agents call tools by writing short TypeScript programs that they can save as custom tools to reuse. You can publish custom tools for groups of agents, so your team’s library of tools adapts to your unique systems, data and use cases. Custom tools help agent performance and give more precise units of permission control. Here’s a short demo: https://www.youtube.com/watch?v=p0PKOlHLyVI We started on this while building an AI SRE. To investiga…",
+      "quality": 9,
+      "practical": 2,
+      "sourceName": "Show HN (AI)",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
     },
     {
       "slug": "5ab3ec093f2b",
@@ -346,6 +527,25 @@
         "没有命中任何标签",
         "标题未翻译"
       ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "5fecf808486b",
+      "title": "挑戰QFN3.8系列 : 3D玻璃沙漏",
+      "category": "tools",
+      "subcategory": "prompt",
+      "tags": [
+        "agent"
+      ],
+      "bodyChars": 555,
+      "excerpt": "Model : Qwen3.8-Flash-Next-NVFP4 Agent Harness框架 : DSH Output token : 205K (總輸出tokens) 修改指令次數 : 2次 修改指令1 : \"你上網研究一下 沙漏如何製作 優化你的沙子和玻璃空間的比例 和流動的方式\" (調整原因: 上下擠滿沙子 中間只有稀少的流動變化不自然, 看不出沙漏感) 修改指令2 : \"good job, but you make it upside down physically speaking.\" (調整原因: 沙子往上流) 創作3D玻璃沙漏 難度有點高 無法一次one shot成功 花費了兩次修改命令才有這產出品質, 對於LLM主要的挑戰在於能否主動把沙子流動的方式 調整成符合物理現象 HTML原始檔案供參考(打開後請用滑鼠點擊啟動沙漏) : glass-hourglass.html 以下是 Prompt命令 大家可以試試你的LLM + Agent能做出怎樣的作品 : 編程實現一個3D玻璃沙漏，最終成品是一個獨立的HTML文件，要求展現玻璃光澤，沙漏的漏沙時間是精準的一分鐘，網頁的右上角，要在沙漏開始漏沙的時候，顯示1分鐘倒計時，鼠標點擊沙漏，則沙漏反轉重置。",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "抡锤者 模型部署讨论",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
       "agent": null,
       "blocked": []
     },
@@ -498,6 +698,50 @@
       "blocked": []
     },
     {
+      "slug": "640fc8702294",
+      "title": "llama.cpp b12494 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1696,
+      "excerpt": "<details open> mtmd: add kokoro tts support (#32413) jinja: impl scope-chain key lookup add test for call_statement lambda chat: add tts_dict for kokoro G2P template more testing value_float_t range check no json-in-meta, add llama_model_meta_arr_str/_n mtmd: add kokoro tts support detailed guide about G2P and text norm port refine G2P clean up migrate batch api nits </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/68927307> macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) i…",
+      "quality": 9,
+      "practical": 4,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "9a7cc1dd44ff",
+      "title": "📡 AI日报 11/18 | 寒武纪适配商汤Loop-9B、OpenAI推进AMD合作、谷歌Tasks免费",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "lowspec",
+        "agent",
+        "free"
+      ],
+      "bodyChars": 822,
+      "excerpt": "AI日报 11/18 今日 4 条，均为 2026-11-18（Asia/Shanghai）当天发布：国产芯片适配、OpenAI 算力多元化、谷歌 Agent 免费、AI 投行融资。 1. 寒武纪 Day 0 适配商汤 SenseNova Loop-9B 商汤发布 SenseNova Loop-9B，用 Loop 结构把 32 个物理解码层扩展为 56 次层计算；4bit 量化权重约 4.9GB，显存需求低至 10GB 内。 寒武纪基于 vllm_mlu 完成 Day 0 适配，围绕 Loop 循环层展开、MLU 算子替换与 mHC 路由优化，打通 MLU 平台推理链路。 来源： IT之家 2. OpenAI 推进与 AMD 合作，首个 neocloud 落地 OpenAI 公布 AMD 6GW 算力协议的首家 neocloud 合作方 TensorWave，将在美国多个数据中心提供 457MW 容量，约占协议总容量 7.6%。 同时 OpenAI 还在自研 “Jalapeño” 芯片并计划采购 Google TPU，以降低对英伟达的依赖。 来源： Fortune 3. 谷歌把 Spark AI Agent 改名 Tasks 并免费开放 Google 将 Spark AI 助手重塑为 “Tasks”，向所有 Gemini 用户免费开放。 美国用户还将获得让 Gemini 代打电话…",
+      "quality": 7,
+      "practical": 2,
+      "sourceName": "抡锤者 资讯",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
       "slug": "abd35af696ac",
       "title": "llama.cpp b12478 发布",
       "category": "hardware",
@@ -510,6 +754,28 @@
       "excerpt": "<details open> chat: add tts_dict for kokoro G2P template (#32397) chat: add tts_dict for kokoro G2P template more testing value_float_t range check no json-in-meta, add llama_model_meta_arr_str/_n </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/68737129> macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubuntu 26.04 s390x (zDNN) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulk…",
       "quality": 8,
       "practical": 4,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "8972b0fbe5f3",
+      "title": "llama.cpp b12496 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1534,
+      "excerpt": "<details open> ggml-cuda: hip: Tune stream_k algo and mmq configs to use stream_k on AMD GCN (#30022) ggml-cuda: hip: enable stream_k on GCN ggml-cuda: Test on CDNA done no improvement, remove TODO ggml-cuda: HIP: GCN cleanup </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/68945910> macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubuntu 26.04 s390x (zDNN) Ubuntu x64…",
+      "quality": 8,
+      "practical": 2,
       "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
       "domain": "github.com",
       "hard": [],
@@ -533,6 +799,49 @@
       "quality": 8,
       "practical": 2,
       "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "ff500617b419",
+      "title": "llama.cpp b12493 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1809,
+      "excerpt": "<details open> cuda: use the implicit GEMM conv2d path for F32 kernels (#32482) The fast CONV_2D path (implicit GEMM with MMA, or cuBLAS for pointwise convolutions) required an F16 kernel. F32 kernels fell back to the naive direct convolution, which is much slower than im2col + mul_mat on large channel counts. Convert F32 kernels to F16 in a pool buffer, as is already done for the input, and take the same path with F32 accumulation. The Metal implicit GEMM kernel already stages both operands as F16. </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/a…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "3570071681b2",
+      "title": "Show HN: Open-source, real-time object tracking for live video feeds",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 1279,
+      "excerpt": "I type \"forklift\" on a live warehouse camera, and tamserve finds and tracks both forklifts, including the one driving in. Then I add \"person\" without stopping it. tamserve runs Meta's SAM 3 on live camera feeds. SAM 3's own tracker handles one recorded video at a time, runs at about 8 fps, and runs out of memory on long videos. tamserve uses SAM 3 to find objects every few frames and a lightweight tracker (EdgeTAM) to follow them in between, with one copy of each model shared across all your cameras. *On one RTX 4090:* * *Any object you name:* 4x faster than SAM 3's tracker, at 92% of its acc…",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "Show HN (AI)",
       "domain": "github.com",
       "hard": [],
       "warnings": [
@@ -627,6 +936,49 @@
       "blocked": []
     },
     {
+      "slug": "d64678a1204e",
+      "title": "Show HN: Agav – an open-source terminal agent designed to waste fewer tokens",
+      "category": "local",
+      "subcategory": null,
+      "tags": [
+        "agent",
+        "free"
+      ],
+      "bodyChars": 136,
+      "excerpt": "Article URL: https://github.com/prapaa-ai/agav Comments URL: https://news.ycombinator.com/item?id=50531644 Points: 26 # Comments: 8",
+      "quality": 7,
+      "practical": 1,
+      "sourceName": "Show HN (AI)",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "bafd1a604b15",
+      "title": "Show HN: OpenTodo – a self-hosted, local-first task manager in one Go binary",
+      "category": "local",
+      "subcategory": "selfhost",
+      "tags": [
+        "privacy"
+      ],
+      "bodyChars": 143,
+      "excerpt": "Article URL: https://github.com/OpenTodoApp/OpenTodo Comments URL: https://news.ycombinator.com/item?id=50517352 Points: 20 # Comments: 20",
+      "quality": 7,
+      "practical": 2,
+      "sourceName": "Show HN (AI)",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
       "slug": "df058a366be1",
       "title": "Maintainers don’t need more AI bug reports. They need fixes.",
       "category": "local",
@@ -645,6 +997,91 @@
       "warnings": [
         "标题未翻译"
       ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "cbfe42b5899c",
+      "title": "M5 Ultra 512G VS 4 DGX Spark，LLM & Comfyui对比，英伟达能力更强但论坛网友更偏爱苹果方案～",
+      "category": "bench",
+      "subcategory": "compare",
+      "tags": [
+        "benchmark",
+        "generate",
+        "free",
+        "local"
+      ],
+      "bodyChars": 2973,
+      "excerpt": "白居易在《琵琶行》中怎么说的？千呼万唤始出来，犹抱琵琶半遮面。我们论坛的大神 @ ivan-lan ，也是新来的哥们，土豪一个。他就买了一个M5 Ultra 512G，说要挑战我们论坛大神的DGX Spark，四台1V4看看效果如何。跑的版本是DeepSeek V4.1 Flash 1017。 然后我们看一下挑战的帖子。我们论坛的 @ benton-yi 老兄发过两个帖子，编号是2946，大家可以找一下，原始的母帖地址也在这里，点一下就可以去看。他是4个DGX Spark，没有使用交换机，使用的是环形拓扑，就一个简单的拓扑结构。跑的推理框架叫SparkRing，是vLLM的一个分支，上面好像自带一个Benchmark，跑的就是DeepSeek V4.1 Flash。他之前跑的是老版本，最近发的帖子是8天前发的，跑的是1017版本，也是最新版本。 然后他当时测试的结果，我们简单总结一下，就是相当牛逼。他当时好像跑了10路、512K上下文，是可以扛住的。10路有点极限了，可能会有点掉速，那么8路是非常从容的，上下文可以拉满，而且它的吞吐、延迟、Prefill速度都相当牛逼。你看上下文从最短到512K，它都发出了明确的数据，无论是Prefill还是Decode，体验都相当不错，大家可以参考一下。讲实话，这个4台DGX Spark的方案做好了，体验跟官方在线API的差距基本微乎其微，可以…",
+      "quality": 10,
+      "practical": 1,
+      "sourceName": "抡锤者 AI硬件",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "40cb34661bfc",
+      "title": "MiniMax-H3 参赛片：注意力改 BF16 + 去掉 turbo 加速 LoRA 的详细测试 （原始数据展示）",
+      "category": "bench",
+      "subcategory": "benchmark",
+      "tags": [
+        "lowspec",
+        "benchmark"
+      ],
+      "bodyChars": 10862,
+      "excerpt": "MiniMax-H3 参赛片：注意力改 BF16 + 去掉 turbo 加速 LoRA 的详细测试 日期 ：2026-11-17 机器 ：magic629-AI（2× Radeon AI PRO R9700 32G，ROCm 7.14，TP2） 服务 ： radiance-h3fullref （radiance 1.17.0 分支 radiance-h3-fullref ，端口 8001） 规格 ：1344×768 / 294 帧 / 24 fps / 12.25 s / seed 145 / 统一 prompt + 6 张参考图（剑心、志志雄） 测试矩阵 ：3D CGI 与 2D 动画两条片 × 4 / 8 / 20 / 50 步 = 8 条，另加 1 条 int8 对照 0. 结论速览 问题 实测答案 注意力改 BF16 后画质变了吗？ 基本没变 。同 seed 同 prompt 的严格 A/B：相对锐度 −3.1%、高频能量比 −0.3%、静止区抖动 +0.1%、宽窗对齐抖动 −3.4%，全部在噪声量级。 那代价是什么？ 每个去噪步慢 38% （4 步档 47.4→65.6 s/步，20 步档 56.6→78.2 s/步）。而且这还是在\"顺手省掉了 LoRA 显存槽\"之后测出来的，纯注意力开销只会更大。 去掉 turbo LoRA 后 4 步还能用吗？ 不能 。4 步出片是…",
+      "quality": 11,
+      "practical": 3,
+      "sourceName": "抡锤者 AI 音视频画图",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "2a139dc941fa",
+      "title": "GPT‑6.2 Astra and GPT‑6.2 Sol",
+      "category": "bench",
+      "subcategory": "compare",
+      "tags": [
+        "benchmark",
+        "agent"
+      ],
+      "bodyChars": 3166,
+      "excerpt": "GPT‑6.2 Astra and GPT‑6.2 Sol OpenAI: We’re introducing GPT‑6.2 Astra, our new frontier model for your hardest projects, and GPT‑6.2 Sol, our efficient, versatile model for everyday work. They're available in the API as gpt-6.2-astra and gpt-6.2-sol . I shipped LLM 0.38 with support for the new models. 6.2 Astra is 80% of the price of 6 Astra - $8/MTok input and $40/MTok output, the same price as Claude Fable 5.2 (which was also 80% of its predecessor). 6 Astra and Fable 5 were both $10/$50. The cached price is an even bigger discount - $0.40/million compared to $1/million for the older model…",
+      "quality": 9,
+      "practical": 1,
+      "sourceName": "Simon Willison",
+      "domain": "simonwillison.net",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "aa2e41993dc6",
+      "title": "GPT-6.2 Astra和Sol王炸双发！3D又危了",
+      "category": "bench",
+      "subcategory": "benchmark",
+      "tags": [
+        "agent",
+        "benchmark",
+        "money"
+      ],
+      "bodyChars": 4273,
+      "excerpt": "<!DOCTYPE html> < img id=\"wx_img\" src=\"https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png\" width=\"400\" height=\"400\"> GPT-6.2 Astra和Sol王炸双发！3D又危了 梦瑶 2026-11-18 08:49:14 来源： 量子位 Sol逼近旗舰性能 梦瑶 发自 凹非寺 量子位 | 公众号 QbitAI OpenAI，你是真会玩王炸双发啊。 GPT-6.2 Astra 和 GPT-6.2 Sol ，这次一起等来了！！！（欢呼.jpg） 不得不说，Astra各方面性能，这回一起卷起来了—— 复杂Agent能力升级： Astra专业任务评测比前代提升5.2个百分点，任务成本降至三分之一以下。 科研能力刷新纪录： 相关评测提升9个百分点，OpenAI直接称其为全球最强科学家模型。 编程能力再升级： 在FrontierCode 2.0评测中拿下44.2%，较前代提升1.4个百分点。 3D生成登顶榜单： 在Artificial Analysis的AA-3D评测中以1318 Elo拿下第一，超过Fable 5.2的1271分。 模型到底多能打，我们直接上才艺展示~ 来看这个， Astra化身网页设计师，从布局到配图一手包办，还能为不同网站量身打造…",
+      "quality": 9,
+      "practical": 1,
+      "sourceName": "量子位",
+      "domain": "qbitai.com",
+      "hard": [],
+      "warnings": [],
       "agent": null,
       "blocked": []
     },
