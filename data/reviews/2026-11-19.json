@@ -1,0 +1,473 @@
+{
+  "day": "2026-11-19",
+  "reviewedAt": "2026-11-18T18:59:44.106Z",
+  "reviewer": "cloudflare/@cf/meta/llama-3.1-70b-instruct",
+  "note": "cloudflare/@cf/meta/llama-3.1-70b-instruct：复核 12 条，解析到 12 条判定",
+  "rules": {
+    "minItems": 3,
+    "minBodyChars": 120,
+    "minSummaryChars": 40,
+    "maxTags": 4,
+    "agentMaxItems": 12,
+    "agentBatch": 6,
+    "agentChars": 900,
+    "agentExcerptChars": 600
+  },
+  "passed": true,
+  "reasons": [],
+  "total": 19,
+  "blocked": [
+    "93694eb40f40",
+    "89a971f81f22"
+  ],
+  "survivors": 17,
+  "items": [
+    {
+      "slug": "93694eb40f40",
+      "title": "全球首个医疗健康AI独立评测与分析平台InclusionMed正式上线",
+      "category": "apps",
+      "subcategory": "knowledge",
+      "tags": [
+        "local",
+        "benchmark",
+        "tutorial",
+        "agent"
+      ],
+      "bodyChars": 1784,
+      "excerpt": "<!DOCTYPE html> < img id=\"wx_img\" src=\"https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png\" width=\"400\" height=\"400\"> 全球首个医疗健康AI独立评测与分析平台InclusionMed正式上线 量子位的朋友们 2026-11-18 15:24:50 来源： 量子位 近日，全球首个医疗健康 AI 独立评测与分析平台InclusionMed 正式上线 近日，全球首个医疗健康 AI 独立评测与分析平台InclusionMed 正式上线，并同步推出医疗 AI 评测图谱 InclusionMed Atlas 和首期医疗 AI 评测指数 InclusionMed Index，旨在为医疗健康 AI 提供更加系统的评估依据。该平台由来自斯坦福大学、哈佛大学、北京协和医学院、蚂蚁集团、InclusionMed.AI等29家机构的研究人员共同建设，被视作医疗健康领域的Artificial Analysis（AA），填补了全球医疗健康 AI 综合测评的空白。 一个在健康问答中表现出色的 AI，能否同样做好复杂的专业医疗任务？如何识别疑难病例中的关键线索、在电子病历系统中准确完成操作、处理医学研究与医疗运营中的多步骤任务？每一种场景，都对模型提出了不同要求。针对具体…",
+      "quality": 11,
+      "practical": 1,
+      "sourceName": "量子位",
+      "domain": "qbitai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "fail",
+        "reason": "内容主要是新闻转述，没有数据或步骤。"
+      },
+      "blocked": [
+        "模型复核不通过（内容主要是新闻转述，没有数据或步骤。）"
+      ]
+    },
+    {
+      "slug": "e6e9c4fd83ef",
+      "title": "低清视频怎么变清晰？AI视频超分与4K画质提升实测",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [
+        "benchmark",
+        "generate",
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 4543,
+      "excerpt": "以前用手机拍摄的家庭录像、分辨率只有 480P 或 720P 的老视频、从网上下载的压缩视频，以及 AI 生成的短片，常常存在 画面模糊 、 细节不足 或 噪点较多 的问题。直接将这些视频放大到1080P或4K，虽然分辨率提高了，但原本缺失的细节并不会自动恢复，有时画面反而会显得更加模糊。 有没有办法在放大视频的同时改善画面质量？ 这就涉及到 AI 视频超分辨率（AI Video Super Resolution） 。与普通放大不同，AI超分可以通过模型分析画面内容，尝试重建纹理、改善边缘和减少噪点，让低分辨率视频获得更好的观看效果。 如果你也有低清视频需要处理，可以试试 Aiarty Video Enhancer 。它是一款支持 Windows 和 macOS 的 AI 视频增强工具，集成了视频超分、去模糊、降噪和细节恢复等功能，支持将视频增强并输出为1080P、2K、4K等分辨率。目前官网还提供限时优惠，感兴趣的话可以 查看Aiarty Video Enhancer黑五折扣信息 。 一、视频超分是什么？普通放大为什么不能让视频变清晰？ 假设你有一段720P视频，想把它放到 4K 电视上播放。 普通视频放大（Upscaling）主要是通过插值算法增加像素数量，把原来的画面拉伸到更大的尺寸。它能改变视频分辨率，却无法真正找回原始视频中已经丢失的细节。 AI 视频超分则多做了一步：…",
+      "quality": 10,
+      "practical": 3,
+      "sourceName": "小众软件",
+      "domain": "appinn.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "文章提供了AI视频超分辨率的技术细节和实测结果。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "89a971f81f22",
+      "title": "Gemini新模型Neon箭在弦上，网友：遍历元素周期表？",
+      "category": "apps",
+      "subcategory": "office",
+      "tags": [
+        "agent",
+        "benchmark",
+        "free",
+        "money"
+      ],
+      "bodyChars": 3178,
+      "excerpt": "<!DOCTYPE html> < img id=\"wx_img\" src=\"https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png\" width=\"400\" height=\"400\"> Gemini新模型Neon箭在弦上，网友：遍历元素周期表？ 程浅 2026-11-18 17:41:55 来源： 量子位 氖人寻味！ 程浅 发自 凹非寺 量子位 | 公众号QbitAI 我真没想到，有天我竟会嫌Google模型发的太多了…… 最新消息，有开发者发现，Gemini网页应用代码中又出现了一个新模型标识：gemini-4-neon Neon，氖，是元素周期表第10号元素。 刚一曝光，大家又开始吐槽了，这也毫无顺序啊！怎么Hydrogen发完之后就直接跳到Neon了呢？ 说好的，氢氦锂铍硼，碳氮氧氟氖呢？ 说到元素周期表，有人直接搬出了给谷歌Gemini设计的新界面。 「我帮Google想了一个天才般的解决方案……Google免费拿去用。」 谁敢相信，多年后重温初中化学知识，竟然是在这儿……那个啥，发到钙就先别发了，再往下我就不会背了。 Gemini 4 Neon又是什么杯？ 据模型追踪账号AI Tracker Bot显示，Gemini网页应用代码中新出现了gemini-4-neon，且与此前的gemini-4-a…",
+      "quality": 9,
+      "practical": 3,
+      "sourceName": "量子位",
+      "domain": "qbitai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "fail",
+        "reason": "内容主要是新闻转述，没有数据或步骤。"
+      },
+      "blocked": [
+        "模型复核不通过（内容主要是新闻转述，没有数据或步骤。）"
+      ]
+    },
+    {
+      "slug": "fc48be213e6f",
+      "title": "WyrmClimberManacle/Gemini-Config-Checker-",
+      "category": "apps",
+      "subcategory": null,
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 19516,
+      "excerpt": "<p align=\"center\"><img src=\"https://github.com/MatinSenPai/Gemini-Config-Checker/raw/main/assets/banner.png\" alt=\"Gemini/Check\" width=\"100%\"></p> <p align=\"center\"> <b>English</b> · <a href=\"README.fa.md\">فارسی</a> </p> <p align=\"center\"> <a href=\"https://www.dropbox.com/scl/fi/l80rdcm1o9gnqcpdsw1gi/GeminiConfigChecker.rar?rlkey=dv7oxsttd2j8kvr5zu7uyx1tm&st=l2vaozdz&dl=1\"> <img alt=\"Download the Gemini app\" src=\"https://img.shields.io/badge/Download-%20Gemeni%20app-0969DA?style=for-the-badge&logo=github&logoColor=white\"> </a> </p> Gemini Config Checker Find proxy configs that actually get you…",
+      "quality": 10,
+      "practical": 2,
+      "sourceName": "GitHub 新晋 AI 项目",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "文章提供了Gemini配置检查工具的介绍和下载链接。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "19ccc568e7a4",
+      "title": "What Does a Bias Head Measure? Non-Identifiability in Head-Level Bias Attribution",
+      "category": "apps",
+      "subcategory": "knowledge",
+      "tags": [],
+      "bodyChars": 1393,
+      "excerpt": "Methods that localise social bias in large language models to individual attention heads and remove it by ablation are validated by their effect on a fairness metric, never by evidence that the statistic selecting the heads measures bias. We audit this on Qwen-2.5-7B-Instruct and Llama-3.1-8B-Instruct. The head map correlates at $ρ= -0.950$ and $-0.768$ with a label-blind response-length map, apparently identifying a surface confound. An intervention that breaks the length-label coupling rejects this reading: with the prompt held fixed, response length explains 1% of the statistic's variance.…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "文章提供了关于偏差头的测量和非识别性的研究。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "dae8da621ba4",
+      "title": "Agent Trust Infrastructure (ATI): A Federated Identity, Trust, Attestation, and Accountability Architecture for Cross-Organization Autonomous AI Agents",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "agent"
+      ],
+      "bodyChars": 1881,
+      "excerpt": "AI agents increasingly collaborate across organizational boundaries, invoking tools and interacting with agents operated by independent entities. Although existing agent frameworks support planning and coordination, they lack a common mechanism for verifying cross-organizational agent identity, execution integrity, and authorization. We propose the Agent Trust Infrastructure (ATI), a framework-independent security architecture built on Public Key Infrastructure (PKI), Zero Trust Architecture (ZTA), and remote attestation. ATI establishes federated trust through peer organizational certificate…",
+      "quality": 7,
+      "practical": 2,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "文章提供了关于代理信任基础设施的架构和设计。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "d24d002ef466",
+      "title": "Energy-Based Reasoners: Your Recurrent Reasoner Should Be an Energy-Based Model",
+      "category": "tools",
+      "subcategory": "hands-on",
+      "tags": [
+        "tutorial"
+      ],
+      "bodyChars": 4856,
+      "excerpt": "<!doctype html> Abstract Looping is a powerful inductive bias for reasoning. By repeatedly iterating a recurrent block, looped models can scale their effective depth and enable multi-step reasoning in latent space. However, existing looped models are not inherently guided by an explicit measure of progress, making it difficult to determine when to stop looping and how to improve upon the current state. To enable this, we introduce Energy-Based Reasoners ( EBRs ), which learn an energy function over latent reasoning states and formulate looped updates as gradient descent on this energy. The en…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "Lobsters AI",
+      "domain": "energy-based-reasoners.github.io",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "提供了一个学习 energy function 和循环更新的模型"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "5d467ff9be23",
+      "title": "StringQFT: A Multiuse Textbook Resource for AI-Assisted Theoretical Physics",
+      "category": "tools",
+      "subcategory": null,
+      "tags": [
+        "benchmark"
+      ],
+      "bodyChars": 1040,
+      "excerpt": "We present StringQFT as a textbook collection for string constructions of quantum field theory and as infrastructure for AI-assisted theoretical physics. The collection comprises 18 volumes, 190 chapters and 3,795 pages, covering brane probes, brane webs, geometric engineering, F-theory constructions, wrapped M5-branes and exact worldsheet constructions. Its open-book benchmark inventory contains 1,073 items, including 499 with automatic finite-answer checking. For retrieval-augmented generation, it provides 1,371 section records linked to textbook sources and PDF locations, together with a l…",
+      "quality": 6,
+      "practical": 2,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "提供了一个用于 AI 助力理论物理的资源集合"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "070712c23d5a",
+      "title": "抄作業成功 ! 雙卡 RX 7900 XTX 榨乾 Qwen3.8-Flash-Next 256K：Strata TP decode 130+ tok/s prefill 6020 最新調校指南與無 P2P 性能逆襲",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "hardware",
+        "local",
+        "benchmark",
+        "tutorial"
+      ],
+      "bodyChars": 6442,
+      "excerpt": "【分享】雙卡 RX 7900 XTX 榨乾 Qwen3.8-Flash-Next 256K：Strata TP 調校指南與無 P2P 性能逆襲 很多玩本地大模型的朋友都覺得 AMD 顯卡（RDNA3）在多卡張量並行（TP）上生態不如綠廠，尤其是在沒有 NVLink、主板又開不了 P2P DMA 直連的情況下，跨卡延遲往往會把性能吃光。 這次在伺服器上實測了兩張 RX 7900 XTX 24GB ，運行 Qwen3.8-Flash-Next (IQ3_S 量化 / 256K 超長上下文) 。歷經了跨 IIO Stack 走 Host 轉發、主卡風扇故障（0 RPM）導致 14 秒飆破 115°C 熱跳閘等各種地獄開局，最終透過 Strata 引擎參數重構與 Linux 系統層調優，成功將輸出速度拉到 110 ~ 125 tok/s ，輸入首字延遲縮短 23% ，同時把原本狂飆 300W 的主卡功耗壓制到 175W，低溫穩跑！ 把這套實測調優經驗整理成文，供同樣在折騰 AMD 雙卡跑大模型的朋友參考。 ️ 一、測試硬體規格與拓撲 這是一台 Intel 伺服器平台，雙卡分別插在不同的 PCIe 插槽上： 組件 規格明細 備註說明 主機板 技嘉 MU72-SU0 (Intel C621A 晶片組) 支援 PCIe 4.0 處理器 Intel Xeon Gold (38 核 / 76 執行…",
+      "quality": 12,
+      "practical": 3,
+      "sourceName": "抡锤者 模型部署讨论",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "提供了双卡 RX 7900 XTX 运行 Qwen3.8-Flash-Next 的调优指南"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "c682bad5bf03",
+      "title": "32G内存不能打？本帖会让你惊掉下巴！",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "benchmark",
+        "local",
+        "lowspec",
+        "tutorial"
+      ],
+      "bodyChars": 5786,
+      "excerpt": "两台机器 Strata 长上下文实测：7900 XTX + 256GB（IQ3_S）对比 RTX 3080 20GB + 32GB（TQ2_0 + gyro pack）。一个是 AMD GPU decode、一个是 NVIDIA GPU decode，内存差 8 倍。 硬件 / 软件环境 项目 A：7900 XTX B：RTX 3080 CPU 双路 Intel Xeon E5-2696 v3 @ 2.30GHz，每颗18核，共36核72线程，Haswell AVX2 Intel Core Ultra 7 270K Plus，8P+16E共24核24线程（无超线程），最大睿频5.5GHz GPU AMD RX 7900 XTX，24GB，gfx1100 NVIDIA RTX 3080，20GB（魔改），sm_86 内存 256GB DDR3 ECC（8×32GB，1866 MT/s），系统识别约251GiB；专家常驻约46.84GiB page-locked 2×16GB DDR5 6000；常驻后约30GiB在用，贴着上限跑 模型存储 PCIe SSD 953.9GB PCIe SSD 953.9GB 系统 Ubuntu 24.04.4 LTS，Linux 6.8.0-149 Ubuntu 24.04.4 LTS，Linux 6.8.0-149 GPU栈 ROCm（pip SD…",
+      "quality": 9,
+      "practical": 3,
+      "sourceName": "抡锤者 模型部署讨论",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "提供了两台机器 Strata 长上下文实测结果"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "a2bd59bb95d8",
+      "title": "Comfyui 多GPU CFG拆分技术小测试",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "benchmark",
+        "generate",
+        "hardware",
+        "lowspec"
+      ],
+      "bodyChars": 1581,
+      "excerpt": "一、最近再次购入一张 RTX PRO 4500 32G，发现了Comfyui的多GPU CFG拆分技术，用MiniMax-H3做了一个小测试。 Comfyui官方说明： https://docs.comfy.org/zh/built-in-nodes/MultiGPU_WorkUnits 支持列表里并没有MiniMax-H3 二、配置说明： CPU：AMD 9950X 内存：128G DDR5 6000 C30 GPU：RTX PRO 4500 32G x 2 三、视频： CFG=1.0 https://youtu.be/OwjJQzd-lf0 此时只调用单张 RTX PRO 4500 32G 生成时间为：323.80秒 CFG=1.1 https://youtu.be/MvB3l67qguI 此配置开始使用两张 RTX PRO 4500 32G 生成时间为：309.79秒 CFG=1.2 https://youtu.be/JyC56ubzAYY 两张 RTX PRO 4500 32G 生成时间为：317.56秒 CFG=1.3 https://youtu.be/lElSC-sMTiU 两张 RTX PRO 4500 32G 生成时间为：321.75秒 CFG=1.4 https://youtu.be/ZBl-5nw6Lrg 两张 RTX PRO 4500 32G 生成时间为：3…",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "抡锤者 AI 音视频画图",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "提供了 Comfyui 多 GPU CFG 拆分技术的小测试"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "1e9f8443e77b",
+      "title": "7900 XTX 一张卡跑 Qwen3.8flash ：prefill 3600 t/s 不衰减，decode 破 100,峰值 120t/s",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "lowspec"
+      ],
+      "bodyChars": 1613,
+      "excerpt": "7900 XTX 一张卡跑 Qwen3.8flash ：prefill 3600 t/s 不衰减，decode 破 100,峰值 120t/s 数据取自两轮全冷扫参。峰值 prefill 3605.5，峰值 decode 101.7，196697 token 冷启动 57.49 秒。 环境 GPU：AMD RX 7900 XTX（gfx1100 / RDNA3），显存占用 23.8 GiB，99.2% CPU：Intel Xeon E5-2678 v3 @ 2.50 GHz（12C/24T，无 AVX-512） 内存：125.6 GiB，可用 27.3 GiB 系统：Ubuntu，内核 7.0.0-34-generic 引擎：Avalon（llama.cpp 分支），commit 762a3dae 模型：Qwen3.8-Flash-Next，IQ3_KS 33 分片共 94 GB MTP 草稿：zh65k 共享层 IQ3K + IQ4NL 视觉塔：CPU 关键参数：ctx 262144，KV q8_0，batch 32768，ubatch 32768，RAM cache 16384 MiB 方法 合成唯一文本，每档全冷重算，缓存命中率 0 两轮相隔 35 分钟，同一个 server 进程，不重启 总表：两轮全冷扫参，同一进程 上下文 一轮 prefill 二轮 prefill 一…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "抡锤者 模型部署讨论",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "提供了 7900 XTX 一张卡跑 Qwen3.8flash 的结果"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "421c5adf88dd",
+      "title": "把 SSH 私钥保存到 Mac 安全芯片中，还能使用 Touch ID 授权",
+      "category": "hardware",
+      "subcategory": "machine",
+      "tags": [
+        "tutorial",
+        "hardware",
+        "lowspec",
+        "privacy"
+      ],
+      "bodyChars": 2889,
+      "excerpt": "SSH Key 是远程连接 Linux 服务器、管理 NAS 等设备时常用的身份验证方式，可以不用输入密码登录服务器。很多安全规范都要求服务器取消密码登录，改为使用 SSH Key 登录，降低密码泄露、暴力破解和撞库带来的风险。 但 SSH 私钥本身就是一个普通的文件，它就放在那里（比如 ~/.ssh/ 下），如何没有设置密码，当前用户运行的程序都可以读取它，甚至直接拿走。 那么，有没有办法让 SSH 私钥无法被复制？ 现代的 Mac 和 Windows 电脑都可以利用安全硬件保护 SSH 私钥： Mac：Secure Enclave（安全隔区） 。将 SSH 私钥保存在 Mac 自带的安全硬件中，私钥无法导出，使用时还可以通过 Touch ID 授权。 Windows：TPM 2.0 安全芯片 。借助第三方工具，在 TPM 中生成不可导出的 SSH 私钥，还可以配合 Windows Hello 进行身份验证。 这样，即使运行了各路 AI 撰写的不靠谱的程序，也无法读取私钥。 把 SSH 私钥锁进 Mac 安全芯片 Secure Enclave 是苹果设备中的独立安全硬件，负责保护指纹数据、加密密钥等敏感信息。 利用这一功能，可以直接在 Secure Enclave 中生成 SSH 私钥，并且： 私钥无法导出 ：即使有人复制了整个硬盘，也拿不到私钥。 支持 Touch ID ：连…",
+      "quality": 8,
+      "practical": 3,
+      "sourceName": "小众软件",
+      "domain": "appinn.com",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "b9654cbfdda3",
+      "title": "llama.cpp b12521 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1509,
+      "excerpt": "<details open> webgpu: (fix CI) allow the FA mask to be broadcast over the Q batch (#32535) allow the mask batch to be broadcast over the Q batch use Q_ne3 for blk_batch_count of get_alloc_size function </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/69252626> macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubuntu 26.04 s390x (zDNN) Ubuntu x64 (Vulkan) Ubuntu arm64…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "2433fc9da859",
+      "title": "llama.cpp b12502 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1356,
+      "excerpt": "<details open> CUDA: use MMQ for MoE on V100 (#32504) </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/69023761> macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubuntu 26.04 s390x (zDNN) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu x64 (CUDA 13) - CUDA 13.5 libraries Ubuntu arm64 (CUDA 13) - CUDA 13.5 libraries Ubuntu x6…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "af1852b4c46d",
+      "title": "180B Parameters, 32GB of RAM: Pushing MoE Inference to the Limit with Transformers",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "lowspec"
+      ],
+      "bodyChars": 12971,
+      "excerpt": "Back to Articles 180B Parameters, 32GB of RAM: Pushing MoE Inference to the Limit with Transformers Published November 18, 2026 Update on GitHub Upvote 2 Tarek Ziadé tarekziade Streaming MoE experts directly from SSD gets within 6% of Strata on token generation. I've been trying to rely less on online models and run bigger ones locally. At home I have a PC with two RTX 4090s (let's call it Orthrus - the two-headed hound of Greek mythology), and for work I have a MacBook M5 with 32G of unified memory. Orthrus runs on Windows 11, because my kids play games all the time. I had a dual boot with U…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "Hugging Face Blog",
+      "domain": "huggingface.co",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "2338076bf285",
+      "title": "Structure--Residual Inductive Biases for Language Model Pretraining",
+      "category": "local",
+      "subcategory": null,
+      "tags": [],
+      "bodyChars": 1507,
+      "excerpt": "Next-token prediction is relied upon to learn both predictive behavior and internal representations. We ask whether representation structure itself should be an explicit inductive bias. Motivated by the two-part coding view of Kolmogorov complexity, we study a structure--residual principle in which a representation separates structure from realization detail. We instantiate this principle in two complementary ways. Boundary Bottleneck Concept (BBC) routes information from token segments through boundary carriers while preserving local autoregressive computation. Continuous Concept (CC) regula…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "a4f8881ba3c6",
+      "title": "【全网最详尽实测】M5 Ultra 512GB 对比 4 台 DGX Spark，DeepSeek V4.1 Flash 1017 全矩阵测试，附 1M 上下文补测",
+      "category": "bench",
+      "subcategory": "compare",
+      "tags": [
+        "benchmark",
+        "tutorial",
+        "local",
+        "lowspec"
+      ],
+      "bodyChars": 5997,
+      "excerpt": "前一帖 先发了初步结果。这次按 四台 DGX Spark 的 1017 详细测试帖 补跑完整矩阵：1K–512K，1／2／4／8 路，DSpark 开启和关闭各一套，共 72 格。另附 Studio DSpark OFF 的单路 1M 补测，独立于这张主矩阵。 先说结果： 单路短输入的首 token 更快；并发解码吞吐仍是 Spark TP4 占优。512K 八路时，Spark TP4 更早让最慢一路出首 token，Studio 更早完成整批。 三项指标各看各的，混在一起读会得出相反结论。展开数据在下面。 一、测试环境与口径 1. 开箱与实机记录 2. 运行配置与测量口径 项目 本次配置 硬件 单台 Mac Studio，M5 Ultra，36 核 CPU／80 核 GPU，512 GB 统一内存，2 TB 内置 SSD 推理引擎 oMLX 0.8.0rc1 模型 DeepSeek V4.1 Flash 1017；Engram 为 4-bit affine，group size 32，scale／bias 为 BF16 解码 Studio DSpark ON／Studio DSpark OFF 各跑一套； enable_thinking=false 测试工具 固定 llm-inference-bench 0.7.6 DSpark 是推测解码功能，先生成候选 token，再由目标…",
+      "quality": 15,
+      "practical": 4,
+      "sourceName": "抡锤者 AI硬件",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "43223e79a9bc",
+      "title": "Spool: Low-Latency Streaming Inference for Hybrid Vision-Language Models",
+      "category": "bench",
+      "subcategory": "benchmark",
+      "tags": [
+        "free",
+        "benchmark"
+      ],
+      "bodyChars": 1591,
+      "excerpt": "Applications such as visual accessibility agents and robotics require answering questions about recent video content promptly, over a bounded window of past frames (e.g., the last two minutes). Hybrid vision-language models (VLMs), which interleave attention with linear recurrent layers such as Gated DeltaNet (GDN), are attractive for this setting, but maintaining a sliding window is expensive. The reason is that recurrent layers combine all past frames into a shared state, so expiring old frames normally requires re-running the entire window through the model. We observe that the recurrent u…",
+      "quality": 6,
+      "practical": 2,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    }
+  ]
+}
