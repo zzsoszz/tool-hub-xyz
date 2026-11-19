@@ -1,7 +1,7 @@
 {
   "id": "model-pricing",
   "kind": "openrouter-pricing",
-  "collectedAt": "2026-11-19T03:48:49.128Z",
+  "collectedAt": "2026-11-19T19:07:47.987Z",
   "upstream": {
     "label": "OpenRouter 模型目录 API",
     "url": "https://openrouter.ai/models"
@@ -19,16 +19,6 @@
           "completionPerMillion": 0,
           "free": true,
           "created": 1794591958
-        },
-        {
-          "name": "Thinking Machines: Inkling 2 Small (free)",
-          "id": "thinkingmachines/inkling-2-small:free",
-          "url": "https://openrouter.ai/thinkingmachines/inkling-2-small:free",
-          "context": 1048576,
-          "promptPerMillion": 0,
-          "completionPerMillion": 0,
-          "free": true,
-          "created": 1794261847
         },
         {
           "name": "Particle AI: Particle-1 (free)",
@@ -131,16 +121,6 @@
           "created": 1781723748
         },
         {
-          "name": "Z.ai: GLM 5.2",
-          "id": "z-ai/glm-5.2",
-          "url": "https://openrouter.ai/z-ai/glm-5.2",
-          "context": 1048576,
-          "promptPerMillion": 0.007,
-          "completionPerMillion": 6.8,
-          "free": false,
-          "created": 1781631930
-        },
-        {
           "name": "inclusionAI: Ling 3.0 Tiny",
           "id": "inclusionai/ling-3.0-tiny",
           "url": "https://openrouter.ai/inclusionai/ling-3.0-tiny",
@@ -241,16 +221,6 @@
           "created": 1794838706
         },
         {
-          "name": "DeepSeek: DeepSeek Flash Latest",
-          "id": "~deepseek/deepseek-flash-latest",
-          "url": "https://openrouter.ai/~deepseek/deepseek-flash-latest",
-          "context": 1048576,
-          "promptPerMillion": 0.035,
-          "completionPerMillion": 0.15,
-          "free": false,
-          "created": 1789399150
-        },
-        {
           "name": "Amazon: Nova Micro 1.0",
           "id": "amazon/nova-micro-v1",
           "url": "https://openrouter.ai/amazon/nova-micro-v1",
@@ -269,6 +239,16 @@
           "completionPerMillion": 0.15,
           "free": false,
           "created": 1792225624
+        },
+        {
+          "name": "DeepSeek: DeepSeek Flash Latest",
+          "id": "~deepseek/deepseek-flash-latest",
+          "url": "https://openrouter.ai/~deepseek/deepseek-flash-latest",
+          "context": 1048576,
+          "promptPerMillion": 0.036,
+          "completionPerMillion": 0.5,
+          "free": false,
+          "created": 1789399150
         },
         {
           "name": "Cohere: Command R7B (12-2024)",
@@ -295,20 +275,10 @@
           "id": "~deepseek/deepseek-v4-flash-latest",
           "url": "https://openrouter.ai/~deepseek/deepseek-v4-flash-latest",
           "context": 1048576,
-          "promptPerMillion": 0.047,
-          "completionPerMillion": 0.3,
+          "promptPerMillion": 0.04664,
+          "completionPerMillion": 0.13992,
           "free": false,
           "created": 1785606009
-        },
-        {
-          "name": "DeepSeek: DeepSeek V4 Flash 0731",
-          "id": "deepseek/deepseek-v4-flash-0731",
-          "url": "https://openrouter.ai/deepseek/deepseek-v4-flash-0731",
-          "context": 1048576,
-          "promptPerMillion": 0.047,
-          "completionPerMillion": 0.3,
-          "free": false,
-          "created": 1785478908
         },
         {
           "name": "DeepSeek: DeepSeek V4 Flash 0731 (batch)",
@@ -371,6 +341,16 @@
           "created": 1789176933
         },
         {
+          "name": "DeepSeek: DeepSeek V4.1 Flash",
+          "id": "deepseek/deepseek-v4.1-flash",
+          "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash",
+          "context": 1048576,
+          "promptPerMillion": 0.050699999999999995,
+          "completionPerMillion": 0.20279999999999998,
+          "free": false,
+          "created": 1789021285
+        },
+        {
           "name": "Meta: Llama 3.2 3B Instruct",
           "id": "meta-llama/llama-3.2-3b-instruct",
           "url": "https://openrouter.ai/meta-llama/llama-3.2-3b-instruct",
@@ -409,20 +389,40 @@
           "completionPerMillion": 0.24,
           "free": false,
           "created": 1765731275
+        },
+        {
+          "name": "IBM: Granite 4.2 8B",
+          "id": "ibm-granite/granite-4.2-8b",
+          "url": "https://openrouter.ai/ibm-granite/granite-4.2-8b",
+          "context": 131072,
+          "promptPerMillion": 0.06,
+          "completionPerMillion": 0.15,
+          "free": false,
+          "created": 1788206780
+        },
+        {
+          "name": "Z.ai: GLM 4.7 Flash",
+          "id": "z-ai/glm-4.7-flash",
+          "url": "https://openrouter.ai/z-ai/glm-4.7-flash",
+          "context": 200000,
+          "promptPerMillion": 0.060500000000000005,
+          "completionPerMillion": 0.39999999999999997,
+          "free": false,
+          "created": 1768833913
         }
       ]
     }
   },
   "stats": {
     "models": 40,
-    "free": 12
+    "free": 11
   },
   "files": [
     {
       "path": "https://openrouter.ai/api/v1/models",
       "url": "https://openrouter.ai/api/v1/models",
-      "sha256": "38073e6b24939a93d9f086d7b700b499a685ee8e6ee8832c08b5d8a20453cd98",
-      "bytes": 929937
+      "sha256": "1ccfe729762dbbc6b9e466a2a0057d22db0f8f534259d386a427fb390199ca94",
+      "bytes": 928219
     }
   ]
 }
