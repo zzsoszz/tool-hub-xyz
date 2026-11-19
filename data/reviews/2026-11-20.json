@@ -1,0 +1,633 @@
+{
+  "day": "2026-11-20",
+  "reviewedAt": "2026-11-19T19:08:20.793Z",
+  "reviewer": "cloudflare/@cf/meta/llama-3.1-70b-instruct",
+  "note": "cloudflare/@cf/meta/llama-3.1-70b-instruct：复核 12 条，解析到 12 条判定",
+  "rules": {
+    "minItems": 3,
+    "minBodyChars": 120,
+    "minSummaryChars": 40,
+    "maxTags": 4,
+    "agentMaxItems": 12,
+    "agentBatch": 6,
+    "agentChars": 900,
+    "agentExcerptChars": 600
+  },
+  "passed": true,
+  "reasons": [],
+  "total": 26,
+  "blocked": [
+    "0517620a1997",
+    "f248cfb91a30",
+    "820735b9c3e2",
+    "4c32419150c4"
+  ],
+  "survivors": 22,
+  "items": [
+    {
+      "slug": "568d967dd2d6",
+      "title": "双卡5080非常强, QFN nvfp4, prefill 8000+, 单路decode 300+, 双路decode 500+",
+      "category": "apps",
+      "subcategory": "inference",
+      "tags": [
+        "hardware",
+        "generate",
+        "lowspec",
+        "local"
+      ],
+      "bodyChars": 6882,
+      "excerpt": "在社区学习很多，回报社区，分享一组自测的数据，标题要猛，哈哈 硬件 CPU: 9700x 内存: DDR5 96G 主板: B850 显卡: ASUS 5080 oc * 2 存储: NVME 2T PCIE 4.0 驱动 610.43 + P2P 双PCIE 5.0 * 8 : 打开p2p后，带宽 28Gbps左右，simpleP2P测试pass，nccl all reduce印象也是28G，跟带宽差不多。 软件和测试方法 Vllm , Slang, Strata标准版，Strata nvfp4分支，basalt, ninfer tp2分支，comfyui 都测了。 测试方法使用论坛大佬的 两个脚本，测试结果数据直接出自两个脚本，实际上Strata或者basalt页面的数据更快乐。 测试结果 大模型性能 Model tg平均 tg max tg 并发2 pp 4k pp 16k pp 32k pp 64k pp 128k 1个5080 Strata QFN UDQ4 60 65 115 1283 2327 2523 2628 2536 2个5080 Strata nvfp4 QFN nvfp4 gptq 90 95 176 1428 3434 4677 5109 5388 1个5080 basalt QFN nvfp4 dq6 99 122 162 1925 3587 5270…",
+      "quality": 8,
+      "practical": 3,
+      "sourceName": "抡锤者 模型部署讨论",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "有实测数据和硬件配置详细说明。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "0517620a1997",
+      "title": "Gemini on Mac can now use your computer",
+      "category": "apps",
+      "subcategory": "agents",
+      "tags": [
+        "lowspec"
+      ],
+      "bodyChars": 691,
+      "excerpt": "Google's Gemini app for macOS now has computer use, meaning it can help you \"get multi-step tasks done across your local files, desktop apps, and the web,\" the company says . Google suggests the feature might be useful for things like speeding up workflows, filling in forms, making presentations, and listing items for sale. Users will be able to decide which of your apps Gemini can access, and be able to follow along as Gemini works because it has its own background window that shows a live preview in your chat, Google says. The feature is rolling out now in English for users in the US. Gemin…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "The Verge",
+      "domain": "theverge.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "只是新闻报道，没有提供任何实测数据或步骤。"
+      },
+      "blocked": [
+        "模型复核不通过（只是新闻报道，没有提供任何实测数据或步骤。）"
+      ]
+    },
+    {
+      "slug": "f248cfb91a30",
+      "title": "Pete warden on local AI, open models, voice interfaces, the future of hardware",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [],
+      "bodyChars": 158,
+      "excerpt": "Article URL: https://thedataexchange.media/pete-warden-moonshine/ Comments URL: https://news.ycombinator.com/item?id=50561508 Points: 151 # Comments: 136",
+      "quality": 9,
+      "practical": 1,
+      "sourceName": "Hacker News (AI)",
+      "domain": "thedataexchange.media",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "只是链接分享，没有提供任何实测数据或步骤。"
+      },
+      "blocked": [
+        "模型复核不通过（只是链接分享，没有提供任何实测数据或步骤。）"
+      ]
+    },
+    {
+      "slug": "9b3f0a93dec8",
+      "title": "Show HN: ExitPath – Open-source ways out of Slack, Notion and Microsoft 365",
+      "category": "apps",
+      "subcategory": null,
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 139,
+      "excerpt": "Article URL: https://exitpath-ruddy.vercel.app/ Comments URL: https://news.ycombinator.com/item?id=50547980 Points: 245 # Comments: 91",
+      "quality": 9,
+      "practical": 2,
+      "sourceName": "Show HN (AI)",
+      "domain": "exitpath-ruddy.vercel.app",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "是一个开源项目，提供了使用方法和代码。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "45aa733917a6",
+      "title": "Show HN: An API for word timestamps from speech, 75% within 20ms",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [
+        "generate"
+      ],
+      "bodyChars": 2220,
+      "excerpt": "Hey HN, we're Yarn (W24) and we make a video editing app for startups, and we built Quebec ( https://quebec.yarn.so ), an API that gives you accurate word timestamps from speech. We needed it because cutting a word even 50ms off from its true timing can ruin talking head footage (examples in the write up). Accurate word timestamps usually come from a forced aligner, which takes the speech audio and a transcript and works out exactly when each word starts and ends. We weren't satisfied with the accuracy of Montreal Forced Aligner (MFA) or new models like ElevenLabs Cue ( https://elevenlabs.io/…",
+      "quality": 9,
+      "practical": 1,
+      "sourceName": "HN 检索（本地推理生态）",
+      "domain": "quebec.yarn.so",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "提供了API的使用方法和准确性测试数据。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "299091838daf",
+      "title": "Show HN: AgentMall – Let your AI agent buy groceries",
+      "category": "apps",
+      "subcategory": "agents",
+      "tags": [
+        "agent",
+        "free"
+      ],
+      "bodyChars": 875,
+      "excerpt": "Hey HN, we’re Nel and Kosi. We noticed personal agents like Instinct, Muse were terrible at buying stuff. Most of the time the checkout would fail. So we built reliable automations for agents to checkout at 9 leading grocery merchants. We grapple with anti bot, logins, OTP codes, and changing checkout structures. Loved revisiting this stuff given our backgrounds sneaker-botting and building computer use models. Honestly full circle haha. It currently works on these sites with ~70% checkout success rate: - Walmart - Albertsons - Ocado - Wegmans - FreshDirect - Best Buy - Instacart Our goal is…",
+      "quality": 7,
+      "practical": 1,
+      "sourceName": "Show HN (AI)",
+      "domain": "getagentmall.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "提供了自动化脚本的使用方法和成功率数据。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "d68808907450",
+      "title": "Launch HN: Onlook (YC W25) – An open-source developer tool for designers",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [
+        "agent",
+        "free"
+      ],
+      "bodyChars": 5716,
+      "excerpt": "Hey HN, I'm Daniel, founder of Onlook ( https://github.com/onlook-dev/onlook and onlook.com). Onlook is a desktop app that puts a canvas on top of your real codebase, letting you design directly in code with the agent you already use. Over 25,000 designers and developers have supported the project, 100+ have contributed, and it's been the #1 trending repo in the world twice. We just rebuilt the entire product as an agentic design tool, and open-sourced it to the community. Here’s a demo video: ( https://youtu.be/BogcYWf4siM ) If you're an engineer, traditional engineering tools are largely bu…",
+      "quality": 6,
+      "practical": 3,
+      "sourceName": "Hacker News Search",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容包含实践性内容，有具体的项目和功能介绍。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "073b71c2686c",
+      "title": "rvion/CushyStudio",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "tutorial",
+        "generate"
+      ],
+      "bodyChars": 4243,
+      "excerpt": "<div align=\"center\"> 🛋️ CushyStudio _The Generative AI Platform for everyone_ <img height=\"21\" alt=\"Maturity\" src=\"https://img.shields.io/badge/status-BETA-yellow\" /> <img height=\"21\" alt=\"Build Status\" src=\"https://img.shields.io/badge/build-passing-%20brightgreen\" /> <img height=\"21\" alt=\"Activity\" src=\"https://img.shields.io/github/commit-activity/y/rvion/cushystudio\" /> <!-- <img height=\"21\" alt=\"Sponsors\" src=\"https://img.shields.io/github/sponsors/rvion\" /> --> <!-- <br /> --> <a href=\"https://discord.gg/GfAN6hF2ad\"> <img height=\"21\" alt=\"Join our Discord\" src=\"https://dcbadge.vercel.a…",
+      "quality": 10,
+      "practical": 2,
+      "sourceName": "GitHub 检索（生态项目更新）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容包含实践性内容，有具体的项目和功能介绍。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "820735b9c3e2",
+      "title": "PHP 8.6 发布，同时紧急修复其他版本严重安全漏洞",
+      "category": "tools",
+      "subcategory": "interface",
+      "tags": [
+        "tutorial",
+        "local",
+        "free",
+        "money"
+      ],
+      "bodyChars": 1169,
+      "excerpt": "11 月 19 日， PHP 8.6 正式发布 ，带来多项新功能。与此同时，PHP 官方为仍受支持的 8.2、8.3、8.4、8.5 分支发布了安全更新，修复包括 CRITICAL（严重）级别在内的安全漏洞。 PHP 8.6 更新了什么？ 部分函数应用 ：提前固定函数的部分参数，返回一个接收剩余参数的闭包。 Duration 类 ：表示与时区无关的时间间隔，支持纳秒精度，可用于超时设置、性能计时等场景。 Polling API ：提供可扩展的 I/O 多路复用能力，供事件循环库使用。 clamp() 函数 ：将一个值限制在指定范围内。 其他改进 ：新增 SortDirection 枚举，支持只读属性默认值，并调整部分 Session 安全默认设置。 其他版本紧急修复严重安全漏洞 11 月 18 日，PHP 官方提前发出安全预警，表示即将修复多个安全漏洞，最高严重程度达到 CRITICAL 。官方同时说明，达到该等级的问题需要非默认配置或不常见的部署环境才能触发。 (最近两次 PHP 都是采取先预告，再更新的方式，搞得人很紧张） 11 月 19 日，以下安全更新已正式发布，四个版本均被官方标记为安全版本： PHP 分支 安全修复版本 PHP 8.2 8.2.36 PHP 8.3 8.3.37 PHP 8.4 8.4.28 PHP 8.5 8.5.13 对于 WordPress 等…",
+      "quality": 8,
+      "practical": 4,
+      "sourceName": "小众软件",
+      "domain": "appinn.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "fail",
+        "reason": "内容主要是新闻转述，没有实践性内容。"
+      },
+      "blocked": [
+        "模型复核不通过（内容主要是新闻转述，没有实践性内容。）"
+      ]
+    },
+    {
+      "slug": "4c32419150c4",
+      "title": "[AINews] Gemini 4 Neon: GDM's Opus/Sol Contender",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "tutorial",
+        "agent"
+      ],
+      "bodyChars": 8942,
+      "excerpt": "Google DeepMind shipped Gemini 4 Neon , its fourth Gemini 4 model in about seven weeks. If you’re confused about the naming, you’re not alone; the 1.5 month old Argon is now retired , the old Pro and Flash from Gemini 1-3 are dead, and if you’re thinking the names are based on atomic weights, Neon (10), the midtier model is faster/cheaper than Carbon (6). This is a helpful guide to the current leading models and sizes: Because of how distillation, RL, and benchmarking works, Neon technically outperforms Carbon by some measures despite being a smaller model… Also today, Anthropic priced its IP…",
+      "quality": 9,
+      "practical": 2,
+      "sourceName": "Latent Space",
+      "domain": "latent.space",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "内容主要是新闻转述，没有实践性内容。"
+      },
+      "blocked": [
+        "模型复核不通过（内容主要是新闻转述，没有实践性内容。）"
+      ]
+    },
+    {
+      "slug": "d4dd9f4b078c",
+      "title": "Show HN: Take Voyager 1 apart, down to a single memory chip",
+      "category": "tools",
+      "subcategory": "hands-on",
+      "tags": [
+        "tutorial"
+      ],
+      "bodyChars": 549,
+      "excerpt": "Voyager 1 reached one light-day from Earth today. On the site you can: - see where both Voyagers are right now - open a nuclear battery to its 24 plutonium spheres - go into the data computer, down to a single memory chip - see how the Golden Record's cover explains how to play it - watch how Voyager 1 was fixed by radio - see which dish on Earth is listening to them, live I also made a 4-minute film from it: https://www.youtube.com/watch?v=kpzsRo-c1_A Comments URL: https://news.ycombinator.com/item?id=50548161 Points: 231 # Comments: 57",
+      "quality": 11,
+      "practical": 1,
+      "sourceName": "Show HN (AI)",
+      "domain": "rshekhar.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容包含实践性内容，有具体的项目和功能介绍。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "b855d088da41",
+      "title": "Show HN: Foolscap – a writing app that reads your book and never writes for you",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "agent",
+        "free"
+      ],
+      "bodyChars": 1314,
+      "excerpt": "People are scared of their ability to write and think atrophying, so I wondered: what if I built something that enhanced human creativity instead of destroying it by doing the thinking and writing for people? Foolscap is the result, or at least the first version of that idea that's fleshed out enough to share here. It reads as you write and picks out the structure: characters, ideas, threads, what's left hanging. You can respond to what it picks out, so there's a dialectic between the system and you as the writer. There's also an agent on the side, plugged into the same system, so you can ask…",
+      "quality": 9,
+      "practical": 3,
+      "sourceName": "Show HN (AI)",
+      "domain": "foolscap.works",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容包含实践性内容，有具体的项目和功能介绍。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "57728669e048",
+      "title": "Introducing Tool Retrieval in the Gemini API",
+      "category": "tools",
+      "subcategory": "interface",
+      "tags": [],
+      "bodyChars": 124,
+      "excerpt": "Give your agents access to hundreds of tools while using fewer tokens with Tool Retrieval, now in preview in the Gemini API.",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "Google AI Blog",
+      "domain": "blog.google",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "3f8c241891c9",
+      "title": "I built a tool that finds the fastest way to serve an LLM on your GPU",
+      "category": "tools",
+      "subcategory": "interface",
+      "tags": [
+        "local",
+        "benchmark",
+        "tutorial"
+      ],
+      "bodyChars": 8698,
+      "excerpt": "rigtune This used to be called PolyServe. I renamed it because a 2025 paper already uses that name. Old profiles, results and settings still work ( details ). I got tired of guessing serving flags. Every guide says something different, and what's fastest on one GPU is often slower on another. So I built a tool that just measures. rigtune tries engines, weight precisions, KV-cache types and speculative decoding on your card, with your prompts, and then serves whatever won behind an OpenAI-compatible API. In November 2026 I tested it against everything I could find: stock vLLM and SGLang, vLLM'…",
+      "quality": 6,
+      "practical": 2,
+      "sourceName": "Hacker News Search",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "c0283a68222c",
+      "title": "Atomic MathReasoner: Instance-Level Composition of Atomic Reasoning Skills for Mathematical LLMs",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "benchmark",
+        "tutorial",
+        "free"
+      ],
+      "bodyChars": 1712,
+      "excerpt": "Most existing approaches enhance mathematical reasoning in large language models (LLMs) as a monolithic capability, despite the fact that different mathematical problems require different reasoning skills. Recent work has explored a more fine-grained perspective by decomposing mathematical reasoning into atomic skills and developing specialized modules for individual capabilities. However, how to effectively utilize these atomic abilities remains underexplored. To address this challenge, we propose Atomic MathReasoner (AMR), an instance-level framework for composing atomic reasoning skills. A…",
+      "quality": 6,
+      "practical": 2,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "bedb4799235e",
+      "title": "Local AI Agents in Power Electronics Simulation: Deployment, Measurements and Costs",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "agent"
+      ],
+      "bodyChars": 1591,
+      "excerpt": "Agentic artificial intelligence (AI) is emerging in power electronics, where it drives the simulation loop that engineers used to close largely by hand. In this loop, a converter design, or a study of the network it connects to, is built, run, measured and revised until it satisfies its specification. Such an agent can be served from a cloud API or from an inference device on the premises. For organizations whose designs, customer data or export-controlled material cannot leave the site, and whose simulators are licensed there, local deployment is the natural choice. In such a deployment, the…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "9a04c15c47ac",
+      "title": "【实测】3080-20G 单卡 vs 双卡：启动耗时、1/2/4 槽吞吐（Strata + Qwen3.8-Flash-Next 125B IQ3_S）",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "hardware",
+        "benchmark",
+        "local",
+        "lowspec"
+      ],
+      "bodyChars": 3774,
+      "excerpt": "【实测】3080-20G 单卡 vs 双卡：启动耗时、1/2/4 槽吞吐（Strata + Qwen3.8-Flash-Next 125B IQ3_S） 结论：一张 3080-20G 已经可以当个人 AI 工作站使用，单流 80 t/s（约合每分钟 8000 汉字）；加装第二张卡对单流体验只提升 40%，主要价值是支撑多客户端并发（4 槽合计 187 t/s 对 103 t/s）。真正决定速度的是专家缓存命中率，而不是算力——单卡 86–88%，双卡 98–99%。 1. 测试环境 1.1 硬件（实测） 项目 实测值 来源 主板 aigo X99L D3 dmidecode CPU Intel Xeon E5-2696 v4，22C/44T，2.20 GHz（睿频 3.70），L3 55 MiB lscpu 内存 4 × 32 GB DDR3-1866 ECC REG（Hynix HMT84GL7AMR4C-RD），共 128 GB，可用 125 GiB dmidecode / free GPU 2 × NVIDIA RTX 3080 20 GB（GA102，20,480 MiB，sm_86），PCIe 3.0 ×16，功耗上限锁 250 W nvidia-smi 显卡驱动 595.99.02 nvidia-smi 系统盘 INTEL SSDPEKNW512G8，NVMe，476…",
+      "quality": 8,
+      "practical": 5,
+      "sourceName": "抡锤者 模型部署讨论",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "a4b69114cc86",
+      "title": "【ComfyUI】显卡推荐",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "generate",
+        "lowspec",
+        "benchmark",
+        "tutorial"
+      ],
+      "bodyChars": 175,
+      "excerpt": "各位前辈们好， 我近期打算更换显卡，当前配置为Intel 265k+48G+5060ti 我主要玩Comfyui 生视频，有推荐的显卡嘛？我本人在纠结上R9700还是5080，纠结点在于9700显存大纸面算力接近5070ti，5080带宽大生态好（生态的话如果搞搞就能提升A卡的生成速度的话，也可以忽略），但是显存小。各位前辈们有什么建议嘛？",
+      "quality": 6,
+      "practical": 2,
+      "sourceName": "抡锤者 AI硬件",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "8e53e97e02e6",
+      "title": "llama.cpp b12548 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1373,
+      "excerpt": "<details open> metal : fix the second argument of NSMakeRange (#32602) </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/69767057> macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubuntu 26.04 s390x (zDNN) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu x64 (CUDA 13) - CUDA 13.5 libraries Ubuntu arm64 (CUDA 13) - CUDA 13.5 li…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "ba7e6de03e29",
+      "title": "llama.cpp b12547 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1444,
+      "excerpt": "<details open> webgpu: add POOL_2D support (#32250) Shader, pipeline, and launcher Update docs and add newline to wgsl Formatting fixes </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/69756852> macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubuntu 26.04 s390x (zDNN) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu x64 (CUD…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "ed1506013716",
+      "title": "Show HN: Type Fighter 2",
+      "category": "local",
+      "subcategory": null,
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 268,
+      "excerpt": "Type Fighter II is an arcade inspired game for people learning to touch type. Free, no account, and progress stays local. You can try on mobile, best with a physical keyboard. Comments URL: https://news.ycombinator.com/item?id=50544821 Points: 138 # Comments: 64",
+      "quality": 10,
+      "practical": 2,
+      "sourceName": "Show HN (AI)",
+      "domain": "typefighter2.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "7f501ded67f7",
+      "title": "谷歌Gemini 4 Hydrogen测试：智商在线，工作迅速效率高，美国版闭源DeepSeek Flash？搭配Antigravity效率不错！",
+      "category": "bench",
+      "subcategory": "cost",
+      "tags": [
+        "agent",
+        "generate",
+        "benchmark",
+        "money"
+      ],
+      "bodyChars": 2918,
+      "excerpt": "回到了熟悉的Gemini界面。其实大家可以看一看啊，我应该说是Gemini的重度用户。从我搞AI自动工作流开始，Gemini就一直担当主力。但是后来这个模型做得确实太拉了，我都很长时间没用了。呃，不过最近我又订阅它了。坊间一直传闻说它现在又站起来了、又行了，是吧？很多人跟我讲它的20倍订阅计划怎么怎么牛逼。我呢就不会再去搞什么高等级版本了，我这个Pro订阅就够了，那些顶级的Ultra计划我就不碰了。 因为讲实话，我现在主力工作都是用Codex，还有DeepSeek Harness，其实最主要就是用DeepSeek来完成了。我已经工作得非常惬意了，而且成本也不高，我也不想再这么折腾了。这个Pro计划20美金一个月，我就当给谷歌做慈善了，讲实话。它毕竟还附带云盘什么的，反正现在有点价值，我还是继续订阅吧。但是我测试之后，发现谷歌确实进步了。今天我们视频讲的就是Hydrogen，氢气，我C，这个真的太拗口了，我们讲这个计划。它还有比较均衡的，比如Lithium，我可以说90%的美国人可能不知道这个元素是什么；还有更高级的Carbon，这个可能需要更高等级的订阅计划才能解锁，暂时我们用不上。但是我们明天可以测一下它的Neon计划。本期视频我们就讲它最入门的Hydrogen，氢气。 那么老三样，就是生成一个网页，表达中国传统八卦文化。讲实话，它做得相当不错，而且生成速度也非常快。我们看一看…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "抡锤者 模型部署讨论",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "34ce054ce729",
+      "title": "Agentic Harness Engineering Beta: Requirement-Centered Evolution of Agent Harnesses",
+      "category": "bench",
+      "subcategory": "benchmark",
+      "tags": [
+        "agent",
+        "benchmark",
+        "tutorial"
+      ],
+      "bodyChars": 1745,
+      "excerpt": "Real-world harness engineering is driven by explicit and implicit user requirements, which guide development and validation. However, existing harness evolution methods often overlook implicit requirements and interaction needs, while using a single evolution agent to modify the harness and benchmark scores to select changes. This process often produces narrow patches and leads to benchmark-specific local optima. We introduce Agentic Harness Engineering Beta (AHE-Beta), a requirement-centered loop that brings real-world engineering practices into harness evolution. The loop consists of three…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "f970ac2f4df1",
+      "title": "GTA6刷屏！零AI纯手搓的3A大作玩一个少一个了",
+      "category": "bench",
+      "subcategory": "benchmark",
+      "tags": [
+        "benchmark",
+        "generate"
+      ],
+      "bodyChars": 4559,
+      "excerpt": "<!DOCTYPE html> < img id=\"wx_img\" src=\"https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png\" width=\"400\" height=\"400\"> GTA6刷屏！零AI纯手搓的3A大作玩一个少一个了 鹭羽 2026-11-19 16:18:30 来源： 量子位 媒体均分登顶历史第一，细节多到爆炸 鹭羽 发自 凹非寺 量子位 | 公众号 QbitAI 回来了，都回来了！ 熟悉的迈阿密，熟悉的街景，还是那个都市味儿～ R星 诚不欺我。 苦等13年， GTA6 终于正式发售，媒体评测一水儿的好评如潮。 146家媒体共同给出Metacritic 均分99分 ，追平《塞尔达传说：时之笛》的历史最高分。 OpenCritic同样荣登榜首，IGN和GameSpot更是满分10分拿下。 开售前一天的TGA 2026提名中，GTA6毫无悬念摘得最大赢家—— 8项提名 领跑单部游戏榜单，年度游戏、最佳游戏指导、最佳叙事等一个不落。 这节奏，怕是要封神 「史一作」 ？ 而且！最难得的是，GTA6几乎是3A时代的集大成之作： 纯手搓 ，生成式AI零参与。 首轮玩家反馈看下来，也比较积极： 画面、细节和自由探索依旧超模，部分任务与操作仍延续着老玩家熟悉的配方。 更有甚者，直接夸它为 GOTD…",
+      "quality": 10,
+      "practical": 1,
+      "sourceName": "量子位",
+      "domain": "qbitai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "fd1897fc7619",
+      "title": "llm-gemini 0.38",
+      "category": "bench",
+      "subcategory": "cost",
+      "tags": [],
+      "bodyChars": 1609,
+      "excerpt": "Release: llm-gemini 0.38 Today Google introduced Gemini 4 Neon . I wrote recently about how confusing the pricing for the Gemini 4 series was - Neon has somehow made this even worse. Previously the Gemini 4 lineup was Hydrogen, Argon, and Carbon - where Argon and Carbon were the same price , and Hydrogen was 3/4 of that price now but will be 1/4 of that price when the other two double an 1st December once their initial discount pricing expires. The Neon announcement pretends that Argon doesn't exist. Here's their new image explaining the model line-up: So the lineup now, from most to least ex…",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "Simon Willison",
+      "domain": "simonwillison.net",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "3976c6528b0a",
+      "title": "On Evaluating User Simulators for Interactive Agents",
+      "category": "bench",
+      "subcategory": "benchmark",
+      "tags": [
+        "benchmark",
+        "tutorial"
+      ],
+      "bodyChars": 1786,
+      "excerpt": "User simulators offer a scalable way to evaluate interactive agents, but how to assess their quality remains underexplored. In particular, it is unclear whether existing user simulator evaluation frameworks reliably detect meaningful failures in simulated user behavior. This uncertainty makes it difficult to interpret simulator evaluation. To understand what a high benchmark score tells us about simulator quality, we (meta-)evaluate the metrics themselves. To instantiate this meta-evaluation, we deliberately perturb simulated replays to induce failures such as altered goals, omitted constrain…",
+      "quality": 7,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    }
+  ]
+}
