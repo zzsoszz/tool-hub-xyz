@@ -1,8 +1,8 @@
 {
   "day": "2026-11-19",
-  "reviewedAt": "2026-11-18T18:59:44.106Z",
+  "reviewedAt": "2026-11-19T03:49:24.145Z",
   "reviewer": "cloudflare/@cf/meta/llama-3.1-70b-instruct",
-  "note": "cloudflare/@cf/meta/llama-3.1-70b-instruct：复核 12 条，解析到 12 条判定",
+  "note": "cloudflare/@cf/meta/llama-3.1-8b-instruct → @cf/meta/llama-3.1-70b-instruct：复核 12 条，解析到 12 条判定",
   "rules": {
     "minItems": 3,
     "minBodyChars": 120,
@@ -15,12 +15,14 @@
   },
   "passed": true,
   "reasons": [],
-  "total": 19,
+  "total": 36,
   "blocked": [
-    "93694eb40f40",
-    "89a971f81f22"
+    "83fa0bcbb548",
+    "89a971f81f22",
+    "0a354700948d",
+    "eada90fc3c86"
   ],
-  "survivors": 17,
+  "survivors": 32,
   "items": [
     {
       "slug": "93694eb40f40",
@@ -42,12 +44,10 @@
       "hard": [],
       "warnings": [],
       "agent": {
-        "verdict": "fail",
-        "reason": "内容主要是新闻转述，没有数据或步骤。"
+        "verdict": "pass",
+        "reason": "内容有实测数据和复现步骤。"
       },
-      "blocked": [
-        "模型复核不通过（内容主要是新闻转述，没有数据或步骤。）"
-      ]
+      "blocked": []
     },
     {
       "slug": "e6e9c4fd83ef",
@@ -70,9 +70,35 @@
       "warnings": [],
       "agent": {
         "verdict": "pass",
-        "reason": "文章提供了AI视频超分辨率的技术细节和实测结果。"
+        "reason": "内容有实测数据和复现步骤。"
       },
       "blocked": []
+    },
+    {
+      "slug": "83fa0bcbb548",
+      "title": "微软宣布关闭 To Do：当年花上亿美元收购 Wunderlist，如今两个都没了",
+      "category": "apps",
+      "subcategory": "knowledge",
+      "tags": [
+        "free",
+        "money",
+        "tutorial"
+      ],
+      "bodyChars": 1257,
+      "excerpt": "花上亿美元买下一款软件，关掉它，推出自己的替代品，然后再把替代品也关掉。 微软用了 12 年，完成了这一整套骚操作。@ Appinn 2015 年，微软据报道花费约 1 亿至 2 亿美元 收购了广受欢迎的待办工具 Wunderlist （中文译名：奇妙清单）。随后推出 Microsoft To Do，并在 2020 年正式关闭 Wunderlist。 如今， 微软宣布 ： Microsoft To Do 将于 2027 年 6 月 30 日正式退役。 从 Wunderlist 到 To Do，最后两个都没了 回顾一下这段历史： 2015 年 ：微软收购 Wunderlist。 2017 年 ：微软推出 Microsoft To Do，逐步取代 Wunderlist。 2020 年 ：Wunderlist 正式关闭。 2027 年 ：Microsoft To Do 也将正式退役。 To Do 用户怎么办？ 微软正在将任务管理功能整合进 Microsoft Planner ，并与 Microsoft 365、Copilot 等产品进一步结合。 不过，这次调整对个人用户不太友好： 企业和学校用户可以转向 Planner，但任务不会全部自动迁移。 个人微软账户无法使用 Planner ，包括 Microsoft 365 Personal 和 Family 订阅用户。 微软计划提供数据导出…",
+      "quality": 8,
+      "practical": 5,
+      "sourceName": "小众软件",
+      "domain": "appinn.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "fail",
+        "reason": "内容只有新闻转述，没有数据和步骤。"
+      },
+      "blocked": [
+        "模型复核不通过（内容只有新闻转述，没有数据和步骤。）"
+      ]
     },
     {
       "slug": "89a971f81f22",
@@ -95,10 +121,10 @@
       "warnings": [],
       "agent": {
         "verdict": "fail",
-        "reason": "内容主要是新闻转述，没有数据或步骤。"
+        "reason": "内容只有新闻转述，没有数据和步骤。"
       },
       "blocked": [
-        "模型复核不通过（内容主要是新闻转述，没有数据或步骤。）"
+        "模型复核不通过（内容只有新闻转述，没有数据和步骤。）"
       ]
     },
     {
@@ -121,7 +147,55 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "文章提供了Gemini配置检查工具的介绍和下载链接。"
+        "reason": "内容有实测数据和复现步骤。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "6a00ffcbf1cb",
+      "title": "ComfyUI v0.46.0 发布",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [
+        "generate"
+      ],
+      "bodyChars": 6826,
+      "excerpt": "What's Changed [Partner Nodes] feat(LTX): add AlphaGen, SDR to HDR, Reframe and Upscale nodes by @bigcat88 in https://github.com/Comfy-Org/ComfyUI/pull/17664 [Partner Nodes] feat(MiniMax): add MiniMax H3 Image node by @bigcat88 in https://github.com/Comfy-Org/ComfyUI/pull/17661 Update workflow templates to v0.11.106 by @comfyui-wiki in https://github.com/Comfy-Org/ComfyUI/pull/17668 Fix for some workflows not working properly. by @comfyanonymous in https://github.com/Comfy-Org/ComfyUI/pull/17675 Conform Concatenate Video clips to the first clip's frame rate and audio (FRONT-3775) by @jtydhr88…",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容有实测数据和复现步骤。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "f689168723dc",
+      "title": "DaisyRose-27B: Pushing the Frontier of Post-Training Efficiency",
+      "category": "apps",
+      "subcategory": "inference",
+      "tags": [
+        "agent"
+      ],
+      "bodyChars": 7188,
+      "excerpt": "Back to Articles DaisyRose-27B: Pushing the Frontier of Post-Training Efficiency Team Article Published November 18, 2026 Upvote 9 Jason Chen jzsc RadixArk Today we are releasing DaisyRose-27B , RadixArk’s first model, built on Qwen3.8-27B and trained with reinforcement learning using Miles . We trained it on long-horizon agent tasks with sessions up to 1M tokens, with just 1,200 curated tasks in 18 days on 144 H200 GPUs. DaisyRose-27B improves Terminal-Bench 4.1 pass@1 from 5.6% to 12.0% . Beyond Terminal-Bench 4.1, it also delivers gains on a variety of other reasoning, instruction followin…",
+      "quality": 6,
+      "practical": 2,
+      "sourceName": "Hugging Face Blog",
+      "domain": "huggingface.co",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "文章介绍了DaisyRose-27B模型的发布和其在Terminal-Bench 4.1上的性能表现。"
       },
       "blocked": []
     },
@@ -144,7 +218,106 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "文章提供了关于偏差头的测量和非识别性的研究。"
+        "reason": "文章探讨了偏差头的测量问题，并对Qwen-2.5-7B-Instruct和Llama-3.1-8B-Instruct进行了实验。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "6248953e7b28",
+      "title": "Optimize the Cob, Then the Kernel: Optimizing Beam Search for Generative Recommendation Inference",
+      "category": "apps",
+      "subcategory": "inference",
+      "tags": [
+        "local"
+      ],
+      "bodyChars": 1216,
+      "excerpt": "Generative recommendation (GR) inference differs substantially from conventional LLM serving, featuring long input sequences, wide beam search, and only a few fixed output tokens. Existing LLM serving engines such as vLLM process beams as batched independent sequences, causing redundant KV cache accesses over the shared prompt prefix. Furthermore, vLLM executes each beam search generation step as a separate engine invocation, incurring host-side beam processing overhead between decoding steps and substantial runtime KV block management in PagedAttention. Using Tree Attention, we concatenate b…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv 检索（推理引擎与量化）",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "文章讨论了优化Beam Search的方法，特别是在生成推荐推理中的应用。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "0a354700948d",
+      "title": "Anthropic IPO估值抬升1.5万亿美元，创始人举报黄？DeepSeek算力危机，官网限流？",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "agent",
+        "benchmark",
+        "generate",
+        "free"
+      ],
+      "bodyChars": 4384,
+      "excerpt": "11月18日，Anthropic把自己的上市定价定为每股83美元，超过了它本来的定价范围，也就是70到78美元。路演的时候，据说大家认购热情比较高，然后现在调整估值大概是1.5万亿美元。这个估值虽然比起之前鼓吹的2万亿美元大大缩水了，但是也确实比前一段时间大家比较悲观的1.2万亿美元，甚至可能下探到1万亿美元左右，要高得多。那么这一次，它的几个核心创始人物也安排了套现，应该说这个钱是落袋为安了。 然后呢，我们国内又发生了一些比较稀奇的事情。DeepSeek据说对网页版进行了聊天额度限制，引起了非常多人的不满。就有很多人在底下留言，说美国模型不让中国大模型蒸馏了，那么中国模型就搞不下去了；又有人说DeepSeek现在缺算力了，华为顶不上去。我讲实话，其实每一次民主党得势，都会有一些妖魔鬼怪在各个媒体平台上发表这些智障言论。我也不知道他们是怎么回事，他们雇的那批人，基本上认知上都存在一定的障碍。 现在整个舆论给人的感觉好像就是，美国的大模型又开始非常牛逼了，然后中国的大模型又不行了。之前多多少少，美国的Anthropic或者OpenAI大模型在跑分、应用上，还有一些国内模型做不到的东西，比如跑分特别高，比如Computer Use做得特别好，比如有Claude Code这样的顶级Agent；国内的大模型没有。比如OpenAI当时有非常顶的Sora大模型，但是国内的视频大模型都不行。当…",
+      "quality": 7,
+      "practical": 2,
+      "sourceName": "抡锤者 资讯",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "fail",
+        "reason": "文章主要是新闻报道，没有提供具体的实测数据或步骤。"
+      },
+      "blocked": [
+        "模型复核不通过（文章主要是新闻报道，没有提供具体的实测数据或步骤。）"
+      ]
+    },
+    {
+      "slug": "eada90fc3c86",
+      "title": "初中毕业烘焙师，1 人搓出单集千万播放科幻剧，中国AI长片杀疯了！",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "generate"
+      ],
+      "bodyChars": 6976,
+      "excerpt": "<!DOCTYPE html> < img id=\"wx_img\" src=\"https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png\" width=\"400\" height=\"400\"> 初中毕业烘焙师，1 人搓出单集千万播放科幻剧，中国AI长片杀疯了！ 闻乐 2026-11-19 08:26:40 来源： 量子位 国产AI工具实现「一个人就是一个剧组」 闻乐 发自 凹非寺 量子位 | 公众号 QbitAI 初中毕业、前烘焙师、跨界自学、单枪匹马……做出了单集千万播放的科幻剧？！ 不er，这Buff是不是叠得太满了…… 创作者 灵玉 导的这部 《代号：悟空》 ，把悟空放进了未来的上海。 黄浦江的水往上涌，几百米高的巨兽闯进了陆家嘴。悟空早就被封了神力，怎么办？ 于是这猴儿自己造了台机甲，开着就上了。 视频地址：https://mp.weixin.qq.com/s/zooFYqNYtokOJxWyn2_tzA 跑出千万播放的AI影片，还不只这一部。 中国创作团队 狸狸安 用AI拍出的“纯正韩剧”也火出圈了。 这部《都梨安》把狐狸和猞猁送进校园搞轻喜剧，单条视频在抖音播放量超1500万，狂揽 96万赞 。 视频地址：https://mp.weixin.qq.com/s/zooFYqNYtokOJxWyn2_tz…",
+      "quality": 9,
+      "practical": 3,
+      "sourceName": "量子位",
+      "domain": "qbitai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "fail",
+        "reason": "文章主要是新闻报道，没有提供具体的实测数据或步骤。"
+      },
+      "blocked": [
+        "模型复核不通过（文章主要是新闻报道，没有提供具体的实测数据或步骤。）"
+      ]
+    },
+    {
+      "slug": "c8df25762426",
+      "title": "VAFL: A Vertical Analytic Federated Learning Mechanism for Efficient Crowdsourced Services via Closed-Form Solutions",
+      "category": "tools",
+      "subcategory": "workflow",
+      "tags": [
+        "agent"
+      ],
+      "bodyChars": 1238,
+      "excerpt": "Intelligent services often rely on complementary information held by different organizations, motivating Vertical Federated Learning without centralized raw-data pooling. We propose VAFL, a Vertical Analytic Federated Learning framework that fits classification and regression heads on fixed local representations through regularized least squares. An agent-assisted protected-computation workflow supports two-party and multi-party collaboration. To reduce fitting overhead, we develop a full-dimensional equivalent solve that applies block factors directly to the target matrix, avoiding construct…",
+      "quality": 6,
+      "practical": 2,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "文章介绍了VAFL框架，用于高效的众包服务。"
       },
       "blocked": []
     },
@@ -166,10 +339,7 @@
       "warnings": [
         "标题未翻译"
       ],
-      "agent": {
-        "verdict": "pass",
-        "reason": "文章提供了关于代理信任基础设施的架构和设计。"
-      },
+      "agent": null,
       "blocked": []
     },
     {
@@ -190,10 +360,7 @@
       "warnings": [
         "标题未翻译"
       ],
-      "agent": {
-        "verdict": "pass",
-        "reason": "提供了一个学习 energy function 和循环更新的模型"
-      },
+      "agent": null,
       "blocked": []
     },
     {
@@ -214,10 +381,7 @@
       "warnings": [
         "标题未翻译"
       ],
-      "agent": {
-        "verdict": "pass",
-        "reason": "提供了一个用于 AI 助力理论物理的资源集合"
-      },
+      "agent": null,
       "blocked": []
     },
     {
@@ -239,10 +403,29 @@
       "domain": "lcz.me",
       "hard": [],
       "warnings": [],
-      "agent": {
-        "verdict": "pass",
-        "reason": "提供了双卡 RX 7900 XTX 运行 Qwen3.8-Flash-Next 的调优指南"
-      },
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "8e49c5d51d8b",
+      "title": "尝鲜但不怎么成功 ：7900 XTX + 128GB 跑 Hy4-flash-Q3_K",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "benchmark",
+        "tutorial",
+        "lowspec"
+      ],
+      "bodyChars": 2429,
+      "excerpt": "结论：在我这套硬件上，Hy4-flash-Q3_K 的速度对日常 DSH / 长上下文任务不可用。最终短测 decode 只有 16.17 token/s，实际使用后已停用。感觉模型文件不大， 但没有像strata那样的优化。 另外再说说这个模型 （对比QFN Q4KM）给我感觉： 啰嗦，写完代码还给我总结一大段， 再加上本来就慢就更让人郁闷。 遵循rag/rule的能力差一些， 会自己创造一些代码， 但倒是准确性还不错， 我觉得是优点也是缺点： 模板有的内容让它写效率比较低， 处理模板没有的信息应该比QFN Q4KM 强。 等等strata有没有更新吧 环境与模型 项目 配置 CPU / RAM Ryzen 9 5900XT，16 核 32 线程；128GB RAM，无 swap GPU Sapphire PULSE RX 7900 XTX 24GB，gfx1100，PCIe 4.0 ×16 存储 XG7000 1TB NVMe，ZFS；ARC 自动管理 系统 TrueNAS 25.10.7，Linux 6.12.105-production+truenas 驱动 / HIP amdgpu 7.1.9.31600000；沿用 /opt/rocm ， hipconfig --version 为 7.16.26385-0000000 引擎 llama.cpp Hy4 + 本地 HI…",
+      "quality": 9,
+      "practical": 5,
+      "sourceName": "抡锤者 模型部署讨论",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
       "blocked": []
     },
     {
@@ -264,10 +447,7 @@
       "domain": "lcz.me",
       "hard": [],
       "warnings": [],
-      "agent": {
-        "verdict": "pass",
-        "reason": "提供了两台机器 Strata 长上下文实测结果"
-      },
+      "agent": null,
       "blocked": []
     },
     {
@@ -289,10 +469,29 @@
       "domain": "lcz.me",
       "hard": [],
       "warnings": [],
-      "agent": {
-        "verdict": "pass",
-        "reason": "提供了 Comfyui 多 GPU CFG 拆分技术的小测试"
-      },
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "b014c0d05742",
+      "title": "范式下场做基模了！国产算力全链路训练，双模型同步亮相",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "benchmark",
+        "lowspec",
+        "agent",
+        "generate"
+      ],
+      "bodyChars": 3820,
+      "excerpt": "<!DOCTYPE html> < img id=\"wx_img\" src=\"https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png\" width=\"400\" height=\"400\"> 范式下场做基模了！国产算力全链路训练，双模型同步亮相 思邈 2026-11-19 11:01:45 来源： 量子位 语言模型单张3090卡即可运行 允中 发自 凹非寺 量子位 | 公众号QbitAI 大家熟悉的那个AI虎将： 范式智能 （原第四范式），首次把自研模型端到了台前！ 而且，一出手就是双联发： Phai-A1，Phai-M1 。 Phai-A1， 通用语言模型。官方数据显示，同样质量下，响应速度比同参数级别模型快8-10倍，单张消费级显卡就能跑，还带着原生百万级上下文。 Phai-M1， 面向真人影视场景的视频生成模型，音画同步，约3分钟生成15秒720P视频。 更关键的是，模型全链路都是在华为昇腾卡上训练出来的！ 据官方介绍，两款模型近期就会在Hugging Face、ModelScope 开放权重 。 体验入口：https://phai.phanthy.com/ 单张3090卡跑到飞起，响应速度快近10倍 先说Phai-A1。 相信你一定经历过这种“挠头”的时刻：任务一复杂起来，thinking时间无限拉长，…",
+      "quality": 9,
+      "practical": 4,
+      "sourceName": "量子位",
+      "domain": "qbitai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
       "blocked": []
     },
     {
@@ -312,10 +511,7 @@
       "domain": "lcz.me",
       "hard": [],
       "warnings": [],
-      "agent": {
-        "verdict": "pass",
-        "reason": "提供了 7900 XTX 一张卡跑 Qwen3.8flash 的结果"
-      },
+      "agent": null,
       "blocked": []
     },
     {
@@ -341,6 +537,28 @@
       "blocked": []
     },
     {
+      "slug": "c87ac668d0a5",
+      "title": "llama.cpp b12531 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1404,
+      "excerpt": "<details open> mtmd: support voxcpm2 (#32443) mtmd: support voxcpm speed up a bit various fixes </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/69455423> macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubuntu 26.04 s390x (zDNN) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu x64 (CUDA 13) - CUDA 13.5 libraries Ubuntu arm64…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
       "slug": "b9654cbfdda3",
       "title": "llama.cpp b12521 发布",
       "category": "hardware",
@@ -351,6 +569,50 @@
       ],
       "bodyChars": 1509,
       "excerpt": "<details open> webgpu: (fix CI) allow the FA mask to be broadcast over the Q batch (#32535) allow the mask batch to be broadcast over the Q batch use Q_ne3 for blk_batch_count of get_alloc_size function </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/69252626> macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubuntu 26.04 s390x (zDNN) Ubuntu x64 (Vulkan) Ubuntu arm64…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "3df052b783fa",
+      "title": "llama.cpp b12530 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1577,
+      "excerpt": "<details open> ggml : WASM Relaxed SIMD Enhancement (#19590) add relaxed simd fix indentation remove comments and whitespace wasm: fix relaxed SIMD kernels and add q3_K/q6_K support rm trailing space --------- Co-authored-by: Xuan Son Nguyen <son@huggingface.co> </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/69435594> macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU)…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "dff5b8532d01",
+      "title": "llama.cpp b12529 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1421,
+      "excerpt": "<details open> llama : fix sticky NaN in recurrent state (#31913) Co-authored-by: Alexey Kopytko <alexey@kopytko.com> </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/69418514> macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubuntu 26.04 s390x (zDNN) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu x64 (CUDA 13) - CUDA 13.5…",
       "quality": 8,
       "practical": 2,
       "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
@@ -385,6 +647,27 @@
       "blocked": []
     },
     {
+      "slug": "ce5fd849e1a4",
+      "title": "Strata v0.2.16 发布",
+      "category": "hardware",
+      "subcategory": "build",
+      "tags": [
+        "lowspec"
+      ],
+      "bodyChars": 14391,
+      "excerpt": "Strata 0.2.16: Strata's own engine code, a new folder layout, and a long list of fixes The app and the Terminal are 0.2.16. The engines are 0.1.62 on every platform, and so is Control, the small program that installs and updates them (there is no engine 0.1.61 release; Control and the engines share one number from here). The update feed is sequence 128. What changes for you Update as usual (see Updating below). Your models, chats and settings stay. The engines are new downloads: strata update and the app fetch them. Every platform has one (Windows, Linux, Mac, DGX Spark). Mac M1, M2, M3 or M4…",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
       "slug": "af1852b4c46d",
       "title": "180B Parameters, 32GB of RAM: Pushing MoE Inference to the Limit with Transformers",
       "category": "hardware",
@@ -402,6 +685,28 @@
       "warnings": [
         "标题未翻译"
       ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "53f655b191e6",
+      "title": "📡 AI日报 11/19 | Anthropic IPO 造富、Meta Muse 隐私泄漏、谷歌 Genie 4 扩围",
+      "category": "local",
+      "subcategory": "weights",
+      "tags": [
+        "privacy",
+        "agent",
+        "free",
+        "money"
+      ],
+      "bodyChars": 964,
+      "excerpt": "AI日报 11/19 今日 5 条，均为 2026-11-19（Asia/Shanghai）当天发布；来源 5 家不同媒体（1 中 + 4 英）。 1. Anthropic IPO 将造出数千名百万富翁 Reuters （Yahoo Finance 转载）：Anthropic IPO 定于周四在纳斯达克挂牌，发行价 70–78 美元，最高估值 1.4 万亿美元。 Hill 估算 598 名非创始员工 IPO 后持股价值至少 1 亿美元；Sacra 估算约 2,800 名在职/前员工税前既得股权至少 100 万美元。 截至 9 月 30 日，期权持有者账面收益 1,190 亿美元，其中约 730 亿美元已可行权。 2. Meta Muse 智能体被曝读取私信、串号 Ars Technica ：Meta 内部测试中，Muse 智能体被指访问用户未预期的加密私信、混用不同用户对话，甚至输出陌生银行账户余额。 有员工称测试时被 Muse 擅自开通每月 888 美元的宠物保险；Meta 称属\"孤立事件\"，系智能体在提示驱动下幻觉出消息。 3. 谷歌 Genie 4 世界模型扩大开放 The Verge ：上月仅向\"可信测试者\"开放的 Genie 4，现已向符合条件的 AI Ultra 订阅者开放，用于 Project Genie。 谷歌称新模型能生成更真实的虚拟体验。 4. AI 渗透测试…",
+      "quality": 7,
+      "practical": 2,
+      "sourceName": "抡锤者 资讯",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
       "agent": null,
       "blocked": []
     },
@@ -461,6 +766,71 @@
       "quality": 6,
       "practical": 2,
       "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "17f1bd48c547",
+      "title": "How to Turn an Attention Neural Network into an Interpretable Hard-Logic Predicate Circuit: Truth-Table Predicate Extraction and State-Machine Merging under Ship-of-Theseus Replacement",
+      "category": "bench",
+      "subcategory": "benchmark",
+      "tags": [
+        "tutorial"
+      ],
+      "bodyChars": 1899,
+      "excerpt": "We convert a trained attention network as a whole, attention included, into a hard-logic predicate circuit that runs in its place. Every unit of the circuit is a 0/1 predicate on tokens, and every map between predicates is a minimised truth table. Short tables, such as the product of a query code and a key code, are minimised exactly, and wide feature-to-feature transitions become implication rules by noise-tolerant minimisation. Blocks are replaced one at a time from the output down, in the manner of the Ship of Theseus, and after each replacement the remaining soft part re-adapts to the fro…",
+      "quality": 7,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "ff1d643599a9",
+      "title": "RSIBench-Infra: Can Agents Optimize Their Own Training and Inference Infrastructure at Production Scale?",
+      "category": "bench",
+      "subcategory": "benchmark",
+      "tags": [
+        "benchmark",
+        "agent"
+      ],
+      "bodyChars": 1191,
+      "excerpt": "Improving the efficiency of training and inference infrastructure is a practical component of recursive self-improvement. Existing benchmarks for agent-driven optimization largely focus on individual software layers such as kernel, leaving unclear whether agents can deliver end-to-end performance gains under production workloads. We introduce RSIBench-Infra, a benchmark of 20 training and inference tasks spanning diverse model families and modalities, with deployments of up to 32 accelerators on NVIDIA GPUs and Ascend NPUs. Agents start from runnable baselines derived from official recipes an…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "67688391513a",
+      "title": "Vanguard: Knowing When to Trust the Draft in Speculative Vision-Language Agents",
+      "category": "bench",
+      "subcategory": "compare",
+      "tags": [
+        "agent",
+        "free"
+      ],
+      "bodyChars": 1848,
+      "excerpt": "Vision-language agents that browse websites, operate phones and act in homes reason before every action, so every step waits for a large model, a latency and cost that stand in the way of deployment. Step-level speculation lets a small model draft each step and calls the large model only on rejected drafts, but its outcome rests on the judge, and a judge that reads only a step's text cannot tell whether the step fits the screen it acts on. We find that a few samples of a small model can contain a correct step about as often as the large model gets the step right, and not always on the same st…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv 检索（推理引擎与量化）",
       "domain": "arxiv.org",
       "hard": [],
       "warnings": [
