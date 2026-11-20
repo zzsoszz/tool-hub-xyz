@@ -1,0 +1,506 @@
+{
+  "day": "2026-11-21",
+  "reviewedAt": "2026-11-20T18:44:58.216Z",
+  "reviewer": "cloudflare/@cf/meta/llama-3.1-70b-instruct",
+  "note": "cloudflare/@cf/meta/llama-3.1-70b-instruct：复核 12 条，解析到 12 条判定",
+  "rules": {
+    "minItems": 3,
+    "minBodyChars": 120,
+    "minSummaryChars": 40,
+    "maxTags": 4,
+    "agentMaxItems": 12,
+    "agentBatch": 6,
+    "agentChars": 900,
+    "agentExcerptChars": 600
+  },
+  "passed": true,
+  "reasons": [],
+  "total": 20,
+  "blocked": [
+    "61d0fdd123c8",
+    "9b68c26f5138",
+    "c607b3bea328",
+    "804442f21505"
+  ],
+  "survivors": 16,
+  "items": [
+    {
+      "slug": "40bbf96bd480",
+      "title": "Alfred 6 正式发布：在快速启动中运行自己的「小程序」",
+      "category": "apps",
+      "subcategory": "office",
+      "tags": [
+        "benchmark",
+        "lowspec",
+        "tutorial",
+        "agent"
+      ],
+      "bodyChars": 1965,
+      "excerpt": "Mac 上的老牌效率工具 Alfred 6 正式发布 了。 这次除了搜索历史、剪贴板和界面更新，Alfred 还新增了 Alfred UI Toolkit ：工作流可以显示自己的操作窗口，在里面放输入框、按钮、表格和预览内容，也能调用 AI 模型，堪称在快速启动中运行自己写的 小程序 。 Alfred UI：让工作流变成小程序 过去，许多 Alfred 工作流通过关键词和搜索结果列表与用户交互。Alfred UI 扩展了这部分能力，开发者可以用 JSON 定义窗口里的控件和布局，显示文字、图片、Markdown、进度条，甚至网页。 比如，安装后输入 tryaui ，就能 编辑 JSON，并实时预览生成的界面 ；停止输入后，预览自动更新。 它允许开发者自定义工作流的操作界面和布局，按照官方的技术说明，这些界面会转换成 macOS 原生 AppKit 控件。 青小蛙觉得，mememem 竞争激烈，快速启动工具也不得不拼一下 UI 了。 这个 Launchpad 复刻了曾经的原生启动台，看起来还蛮有意思的： 也就是说，你也能自己写出这样的「小程序」了。 比如计时器： 比如在桌面端测试移动网页效果： 其他更新 Alfred 6 还带来了不少日常功能改进： 搜索历史 ：通过方向键 ↑ 找回之前输入的内容，或使用 ! 搜索历史记录。默认关闭，需要手动启用。 联系人搜索加速 ：重写搜索机制，支…",
+      "quality": 8,
+      "practical": 6,
+      "sourceName": "小众软件",
+      "domain": "appinn.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "条目包含实践性内容，介绍了Alfred 6的新功能和使用方法。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "c8150d687d73",
+      "title": "Show HN: Fast deterministic natural language search for OpenStreetMap data",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [
+        "tutorial"
+      ],
+      "bodyChars": 1600,
+      "excerpt": "I want to show you HippoMaps. It is a fully featured map and navigation app built on OpenStreetMap with a custom Overpass API engine for really fast search of POIs, areas and ways. My aim with HippoMaps is to get to a level where I don't need Google Maps anymore. The biggest hurdle IMHO with OSM based apps is the lack of nice and fast search (where GMaps excels at). To get there I started working on a deterministic (as in no LLMs used) parser of queries that translates them to the Overpass QL. Search queries are split into tokens and the algorithm tries to guess \"what\" you want to search and…",
+      "quality": 9,
+      "practical": 2,
+      "sourceName": "Show HN (AI)",
+      "domain": "hippomaps.ch",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "条目包含实践性内容，介绍了HippoMaps的搜索功能和使用方法。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "61d0fdd123c8",
+      "title": "[AINews] Anthropic successfully completes largest IPO in history, valued at $1.5T",
+      "category": "apps",
+      "subcategory": "knowledge",
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 47840,
+      "excerpt": "As we previewed on our Know Before You IPO pod , Anthropic set its IPO price at $83 and today $ANT closed at $97.17, up 17% from the offering price ( drifting -5% to $92.60 after the close) . The $81.3B offering overtook SpaceX's June IPO as the largest in history. Dario and Daniela ( Dario’s remarks , Founders’ letter ) used the occasion to say Anthropic would pace training and deployment based on whether it could keep its systems safe and under human control. Their Class F shares carry 50.1% of voting power on most shareholder matters. Expect the lockup expiries to weigh on the stock price…",
+      "quality": 9,
+      "practical": 1,
+      "sourceName": "Latent Space",
+      "domain": "latent.space",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "条目只包含新闻报道，没有实践性内容。"
+      },
+      "blocked": [
+        "模型复核不通过（条目只包含新闻报道，没有实践性内容。）"
+      ]
+    },
+    {
+      "slug": "6ab768515373",
+      "title": "群晖 NAS 再曝两个严重漏洞：最高 9.8 分，可远程读写文件，官方紧急修复中｜Synology-SA-26:21",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [
+        "local",
+        "generate",
+        "hardware"
+      ],
+      "bodyChars": 2499,
+      "excerpt": "群晖 NAS 用户注意，又有两个安全漏洞需要处理了。 2026 年 11 月 19 日，群晖（Synology）连续发布两份安全公告 Synology-SA-26:21 ，涉及 DSM 与 BeeStation OS 的 OAuth API 和 NGINX HTTP/2。其中 OAuth API 漏洞的 CVSS 评分高达 9.8 分（满分 10 分） ，攻击者无需登录，就可能远程读取、修改 NAS 文件，或导致服务不可用。另一个则是 Nginx 爆出的严重漏洞 ，可能让 Web 服务崩溃，并在特定条件下远程执行代码。@Appinn 截至 2026 年 11 月 20 日核对时，两份英文公告仍显示 Ongoing（处理中）。 群晖列出了部分 DSM 分支的修复目标和计划日期，但这不等于补丁已经开放下载。 1. CVE-2026-120382：可远程读写 NAS 文件 CVSS 3.1 评分： 9.8 / 10 影响组件：DSM OAuth API 官方公告： Synology-SA-26:21 OAuth 是一套授权机制，让应用在获得授权后访问其他服务。这次的问题出在群晖 OAuth API 对命令参数分隔符的处理上。 根据官方公告，远程攻击者可能利用它读取或写入任意文件，也可能发起拒绝服务攻击，让服务无法正常使用。CVSS 向量标明无需已有权限、无需用户交互，也就是说，利用漏洞…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "小众软件",
+      "domain": "appinn.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "条目包含实践性内容，介绍了群晖NAS的安全漏洞和修复方法。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "9b68c26f5138",
+      "title": "Realized versus Population Reliability: Anytime-Valid Self-Consistency Certification under Correlated Reasoning",
+      "category": "apps",
+      "subcategory": "life",
+      "tags": [],
+      "bodyChars": 1854,
+      "excerpt": "Self-consistency certification treats repeated sampling from a language model as sequential evidence accumulation and stops when an anytime-valid e-process crosses a threshold, guaranteeing finite-sample Type I error control by Ville's inequality. Prior constructions assume sampled rollouts are conditionally independent. We show this assumption fails in practice: reasoning streams are positively correlated through shared reasoning prefixes or across-prompt heterogeneity, changing not merely certificate efficiency but the hypothesis certified. Modeling dependence via a per-unit latent state (t…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "条目只包含理论性内容，没有实践性内容。"
+      },
+      "blocked": [
+        "模型复核不通过（条目只包含理论性内容，没有实践性内容。）"
+      ]
+    },
+    {
+      "slug": "591eea66bdb7",
+      "title": "iamajmeena/neonclipping",
+      "category": "tools",
+      "subcategory": "hands-on",
+      "tags": [
+        "agent",
+        "free",
+        "tutorial",
+        "generate"
+      ],
+      "bodyChars": 18672,
+      "excerpt": "NeonClipping Paste a link. Get captioned 9:16 clips in about two minutes. Free, local, open-source. NeonClipping turns long YouTube / Twitch / Kick videos (or your own MP4) into vertical, captioned clips with a title and hook for each. Everything runs on your machine: no account, no subscription, no upload. ![Star on GitHub ](https://github.com/iamajmeena/neonclipping) ![Instagram ](https://www.instagram.com/iamajmeena/) 🌐 Website with one-click Windows setup: <https://iamajmeena.github.io/neonclipping/> Made by Ajay K Meena (Director, DOP, colorist, DaVinci Resolve educator, Jaipur). If Neo…",
+      "quality": 10,
+      "practical": 5,
+      "sourceName": "GitHub 新晋 AI 项目",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "条目包含实践性内容，介绍了NeonClipping的使用方法和功能。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "c607b3bea328",
+      "title": "新浪新闻·2026探索大会在京举行 虚实交融共探智能时代共生新图景",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "agent",
+        "free",
+        "hardware"
+      ],
+      "bodyChars": 3645,
+      "excerpt": "<!DOCTYPE html> < img id=\"wx_img\" src=\"https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png\" width=\"400\" height=\"400\"> 新浪新闻·2026探索大会在京举行 虚实交融共探智能时代共生新图景 量子位的朋友们 2026-11-20 14:16:06 来源： 量子位 11月19日，由微博与新浪新闻联合主办的“新浪新闻·2026探索大会”在北京举办。 11月19日，由微博与新浪新闻联合主办的“新浪新闻·2026探索大会”在北京举办。本次大会以“智越虚实 万物共生”为主题，汇聚产业领袖、学术专家、跨界嘉宾、人工智能领域前沿探索者，围绕智能经济新周期、智能体规模落地、具身智能产业化等议题展开深度研讨，为AI时代的产业跃迁与普惠发展提供前瞻思考。大会同期，2026新浪新闻“探索之心35”评选结果揭晓，致敬AI浪潮中的先锋实践者。 聚焦智能经济新周期，共议产业大变局 当前，人工智能不再局限于屏幕内的对话工具，而是逐步进化为具备自主认知能力的智能体，并加速走出实验室、走向实体产业。微博COO、新浪移动CEO、微博技术委员会主席王巍在大会致辞中谈到：“从数据要素的价值重估，到人机协作带来的产业分工重组，智能技术早已超越效率工具的定位，正在成为驱动整体经济发展的全…",
+      "quality": 9,
+      "practical": 2,
+      "sourceName": "量子位",
+      "domain": "qbitai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "fail",
+        "reason": "内容为新闻转述，没有实测数据或步骤。"
+      },
+      "blocked": [
+        "模型复核不通过（内容为新闻转述，没有实测数据或步骤。）"
+      ]
+    },
+    {
+      "slug": "804442f21505",
+      "title": "The most misunderstood graph in AI just got a major update",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "tutorial"
+      ],
+      "bodyChars": 7799,
+      "excerpt": "A new report from the AI evaluation nonprofit METR finds that some AI capabilities are continuing to improve along an exponential trajectory—but it also indicates that models aren’t quite as good at tasks that require judgment as they are at coding. The report is an update to the organization’s time horizon plot, which was widely shared— and widely misinterpreted , due to the complexity of the measures it used. METR evaluated models by having them attempt a large suite of tasks, each of which had also been completed by humans. Each task’s difficulty was scored by how long it took the human te…",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "MIT Tech Review",
+      "domain": "technologyreview.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "内容为新闻转述，没有实测数据或步骤。"
+      },
+      "blocked": [
+        "模型复核不通过（内容为新闻转述，没有实测数据或步骤。）"
+      ]
+    },
+    {
+      "slug": "72c409708528",
+      "title": "Replication of Agentic Security Events: Audit and Investigation (ROGUE-AI)",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "agent"
+      ],
+      "bodyChars": 1836,
+      "excerpt": "Agents based on large language models (LLMs) can now delete files and send payments on behalf of their users. News media reports routinely describe failures of these agents (e.g., Replit's coding agent deleting a production database), but a report often only says what went wrong and rarely (in)validates the incident or finds its root cause. Incident catalogs collect these reports, and benchmarks record whether agents fail, but neither replicates an incident nor tests the cause its report might identify. In this paper, we present ROGUE-AI (Replication of Agentic Security Events: Audit and Inve…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容为学术研究，提供了复现步骤。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "c681a9f6a3b9",
+      "title": "拿劍心大賽題目測試MacBook Pro M5 Max 128 GB跑comfyui工作流跑PyTorch 2.16.0（Metal）給大家打臉",
+      "category": "hardware",
+      "subcategory": "machine",
+      "tags": [
+        "local",
+        "lowspec",
+        "tutorial",
+        "agent"
+      ],
+      "bodyChars": 1110,
+      "excerpt": "[MiniMax H3 R2V 實測] MacBook Pro M5 Max 128GB｜Pika 6 步直出 vs. SelfLift 雙階段對照 在同一台 MacBook Pro M5 Max 128GB 上，使用相同的 MiniMax H3 Reference to Video (R2V) 模型配置跑了兩組全地端生成對照。僅替換採樣策略（冷啟動直出 vs. SelfLift 高低解析度雙階段生成）。 對照組 A（Pika 6 步直出，無 SelfLift） ： 3D CGI / Anime｜MiniMax H3 R2V · M5 Max 本地生成 對照組 B（Pika 6 步 + SelfLift 雙階段） ： 3D CGI / Anime｜MiniMax H3 R2V + SelfLift · M5 Max 本地生成 本次配置 項目 本次配置 硬體 MacBook Pro M5 Max，128 GB 統一記憶體 工作模式 Reference to Video (R2V)，參考主體影片延伸生成 技術流程 MiniMax H3 文字 / 視覺理解 Qwen3VL 32B H3 Ultra Uncensored 基模 / 編排 Cobijada H3 Hybrid Uncensored / MiniMax H3 Director VAE MiniMax H3 Video VAE…",
+      "quality": 10,
+      "practical": 2,
+      "sourceName": "抡锤者 AI 音视频画图",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容为实测报告，提供了详细的配置和结果。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "4c36c2ac3e2e",
+      "title": "Strata v0.2.17 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "lowspec",
+        "benchmark",
+        "free"
+      ],
+      "bodyChars": 33232,
+      "excerpt": "Strata 0.2.17 The app and the Terminal are 0.2.17. The engines are 0.1.63 on every platform, and so is Control, the small program that installs and updates them. The update feed is sequence 129. What changes for you Update as usual (see Updating below). Your models, chats and settings stay. The engines are new downloads: strata update and the app fetch them. Every platform has one (Windows, Linux, Mac, DGX Spark). The route tail skip is off by default. It was on by default on NVIDIA and on Radeon RX 9000 cards, and answers differed slightly from a run without it. If you want it, turn it on (b…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容为软件更新说明，提供了详细的更新信息。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "6062609c397d",
+      "title": "llama.cpp b12588 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1384,
+      "excerpt": "<details open> gemma4: Optimized prompt processing for multi-seq queries (#32342) </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/70231749> macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubuntu 26.04 s390x (zDNN) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu x64 (CUDA 13) - CUDA 13.5 libraries Ubuntu arm64 (CUDA 13) - C…",
+      "quality": 8,
+      "practical": 3,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容为软件更新说明，提供了详细的更新信息。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "67d3944b0b54",
+      "title": "llama.cpp b12584 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1784,
+      "excerpt": "<details open> tts : forward -t to the mtmd context (#32664) llama-tts built the mtmd context from mtmd_context_params_default(), which hardcodes 4 threads, and never copied n_threads over, so -t never reach the mtmd side. Copy params.cpuparams.n_threads into mtmd_params.n_threads, as mtmd-cli and the server do; with no -t this now follows the resolved default. Verified: -t 1 now runs single-threaded, -t 4 is unchanged, and the produced WAV is identical. Assisted-by: Claude </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/70212340> macO…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "45857d55fa06",
+      "title": "llama.cpp b12589 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1396,
+      "excerpt": "<details open> vulkan: add support for COL2IM_1D misalign bytes and split workgroups (#32673) </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/70255791> macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubuntu 26.04 s390x (zDNN) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu x64 (CUDA 13) - CUDA 13.5 libraries Ubuntu arm64 (…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "f87552a1314e",
+      "title": "苹果/AMD/Nvidia/Intel顶级硬件决战AI视频大赛，Minimax H3工作流比拼，性价比最高的竟是5070Ti？N卡生态红利尽显！",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "lowspec",
+        "benchmark",
+        "agent",
+        "generate"
+      ],
+      "bodyChars": 3518,
+      "excerpt": "论坛的 MiniMax H3 视频生成大赛已经结束了啊，那么参赛的各种硬件我让 AI 初步统计了一下，里面有这个什么 4090 48G，有 5090、5090D、RTX Pro 5000、6000、5070 Ti、5080、4080 等等，包括 AMD 的 R9700 XTX，或者说英特尔的 B70，也有什么苹果的小主机，3090、3080 这些都有。那么可以说是明星云集。论坛呢是把积分给大家已经统一发放了，就说你只要通过了初审，积分都有。大家看一下有没有被漏掉的啊，如果有漏掉的，你们就在编号为 3217 的这个帖子底下回复我，我让小特再去给你们补分。 然后本次评比的规则就是说，不仅仅看生成速度，也要看生成质量。评委们会提名自己认为前三的作品，然后第一名是 3 分，第二名是 2 分，第三名是 1 分。我也会给出我的评分，如果积分相同，我选了谁，谁就获胜。我们本期就先做一个初步的总结。速度方面，目前跑得最快的是 4090 48G。我必须说，每个人跑的工作流是不同的，这些都是合格产品。合格产品里面并不是说你跑得最快，质量就是最好，你就一定夺冠，肯定不是的。他为什么快呢？他用的是 Pika 6 步，注意力机制用的是 Sage Attention，加上 SOL Attention。我觉得每个人用的技术栈不同，我们不能说 4090 比 5090 生成得更快，它就更牛逼。 实际上编号 320…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "抡锤者 AI硬件",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "86e274a2ffaf",
+      "title": "PGX: Physically Grounded Execution for Long-Horizon Humanoid Loco-Manipulation",
+      "category": "local",
+      "subcategory": null,
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 1443,
+      "excerpt": "Robotic vision-language-action (VLA) models can execute diverse individual manipulation skills, yet they still struggle with long-horizon loco-manipulation tasks, where temporal structure, skills, and precision are tightly coupled within a monolithic model. We propose Physically Grounded Execution (PGX), a framework that offloads temporal and precision control to two classical training-free components, allowing the VLA to focus on stage-specific skill dynamics. PGX decomposes long-horizon loco-manipulation into three layers: (i) a predicate-based state machine governs task progression, using…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "d89ad99c15b4",
+      "title": "昇腾算力训出了双榜SOTA的具身世界模型，华为云这次想把整套底座开放出来",
+      "category": "bench",
+      "subcategory": "benchmark",
+      "tags": [
+        "benchmark",
+        "local",
+        "tutorial",
+        "generate"
+      ],
+      "bodyChars": 6494,
+      "excerpt": "<!DOCTYPE html> < img id=\"wx_img\" src=\"https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png\" width=\"400\" height=\"400\"> 昇腾算力训出了双榜SOTA的具身世界模型，华为云这次想把整套底座开放出来 田, 晏林 2026-11-20 16:04:58 来源： 量子位 国产算力的成熟，把具身竞争维度从「芯片有多强」，拉入了一个比拼训练效率、数据规模、部署成本和场景落地速度的多维战场。 田晏林 发自 凹非寺 量子位 | 公众号 QbitAI 华为云要开源具身世界模型了，一开就是双榜第一！ 关键是，这个模型用的还是国产昇腾算力。 11月16日，华为云发布了 昇腾原生具身世界模型CloudRobo-WM1.2 。 在RoboTwin 2.0和LIBERO-Pro 2.0两项具身智能评测中，它的平均成功率都排第一。 华为云计划在11月30日，开放该模型权重、推理代码和后训练代码。 好么，连后训练代码都直接开源放出，华为这一步确实够猛。 别家机器人团队想教这个模型干个新活儿，不用从零搭训练链路，拿到现成代码，接上自家数据就能直接上手调试验证！ 而且这次，华为云没有停留在「把模型迁移到昇腾芯片上跑通」这一步，而是 从模型架构、训练框架到核心算子、推理部署，围绕…",
+      "quality": 10,
+      "practical": 4,
+      "sourceName": "量子位",
+      "domain": "qbitai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "4cf0ed6d7535",
+      "title": "双系统决策+双层自进化，Agnes让Agent效率最高提速14倍，成本骤降至1/27！",
+      "category": "bench",
+      "subcategory": "benchmark",
+      "tags": [
+        "agent",
+        "local",
+        "benchmark",
+        "generate"
+      ],
+      "bodyChars": 6294,
+      "excerpt": "<!DOCTYPE html> < img id=\"wx_img\" src=\"https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png\" width=\"400\" height=\"400\"> 双系统决策+双层自进化，Agnes让Agent效率最高提速14倍，成本骤降至1/27！ 一水 2026-11-20 13:24:11 来源： 量子位 已开源Agnes Harness 一水 发自 凹非寺 量子位 | 公众号QbitAI 过去做一套企业软件，开发可能要花90块，给每家客户适配只要10块。软件做一次、卖给很多家，前面那90块就能被一点点摊薄。这是传统软件公司的生意逻辑。 AI把这个公式改了。现在开发只要1块，适配还是10块。 谁懂，独立FDE （前沿部署工程师） 、斯坦福在读博士Zaniel此前跟量子位交流时算的这笔账，几乎把今天Agent落地最扎心的现实说透了。 开发成本从90块跳水到1块，最难啃的那10块，却还杵在原地纹丝不动。 为啥？ 因为企业适配这事儿，归根结底就是让AI把每个客户的业务流程、工具系统和现场设备重新认一遍。 偏偏现在不少Agent，本质上还是被关在浏览器和终端里的「赛博临时工」。 写代码时天花乱坠，Benchmark分数一个赛一个漂亮。 可真让它走出屏幕，去指挥车间里的传送带、读取工业称…",
+      "quality": 9,
+      "practical": 4,
+      "sourceName": "量子位",
+      "domain": "qbitai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "ff3cf428273c",
+      "title": "AgentRoboCritic: Understanding the Capability of Frontier Agents on Direct Robot Control",
+      "category": "bench",
+      "subcategory": "benchmark",
+      "tags": [
+        "benchmark",
+        "agent",
+        "free"
+      ],
+      "bodyChars": 1431,
+      "excerpt": "Frontier multimodal language agents such as GPT-6 Astra have demonstrated strong capabilities in controlling robots directly via low-level numerical actions without high-level primitives. However, existing benchmarks report only episode-level success rates, which show neither how these agents succeed nor where they fail. In this paper, we present a systematic action-level analysis of frontier agents on direct robot control across 12 manipulation benchmarks. We introduce AgentRoboCritic, an intent-grounded critique framework in which the policy agent states a local intent alongside each action…",
+      "quality": 7,
+      "practical": 2,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "c84d6703d2a7",
+      "title": "Text-Aware, Vision-Blind: How Multimodal Image Editing Systems Handle Unsafe Inputs",
+      "category": "bench",
+      "subcategory": "benchmark",
+      "tags": [
+        "benchmark"
+      ],
+      "bodyChars": 1399,
+      "excerpt": "Multimodal image generation systems have made rapid progress and increasingly emphasize content safety. However, their safety mechanisms tend to rely on a single modality and lack joint consideration of both visual content and text prompts, particularly in instruction-guided image editing, where the uploaded image may itself carry risk. We thus introduce EditSafetyBench, a benchmark that measures system-level safety awareness of advanced image editing systems, containing 5,940 image-instruction pairs, covering safe and unsafe images across 11 risk categories and three edit intents. We then pr…",
+      "quality": 7,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    }
+  ]
+}
