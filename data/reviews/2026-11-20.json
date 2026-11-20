@@ -1,6 +1,6 @@
 {
   "day": "2026-11-20",
-  "reviewedAt": "2026-11-19T19:08:20.793Z",
+  "reviewedAt": "2026-11-20T03:43:23.434Z",
   "reviewer": "cloudflare/@cf/meta/llama-3.1-70b-instruct",
   "note": "cloudflare/@cf/meta/llama-3.1-70b-instruct：复核 12 条，解析到 12 条判定",
   "rules": {
@@ -15,14 +15,13 @@
   },
   "passed": true,
   "reasons": [],
-  "total": 26,
+  "total": 43,
   "blocked": [
-    "0517620a1997",
-    "f248cfb91a30",
-    "820735b9c3e2",
-    "4c32419150c4"
+    "4e9c4cea0f15",
+    "f32d5bea8abf",
+    "0517620a1997"
   ],
-  "survivors": 22,
+  "survivors": 40,
   "items": [
     {
       "slug": "568d967dd2d6",
@@ -45,9 +44,87 @@
       "warnings": [],
       "agent": {
         "verdict": "pass",
-        "reason": "有实测数据和硬件配置详细说明。"
+        "reason": "包含实测数据和硬件配置信息。"
       },
       "blocked": []
+    },
+    {
+      "slug": "26f72c285563",
+      "title": "分享几个ComfyUI插件：模型目录树、模型信息卡、提示词库",
+      "category": "apps",
+      "subcategory": "video",
+      "tags": [
+        "tutorial",
+        "agent",
+        "generate"
+      ],
+      "bodyChars": 349,
+      "excerpt": "一、ComfyUI_zd_model_tree 按目录选择模型，不用在一长串的模型里面去找。本来rgthree-comfy-settings里面是有的，但是他一直不支持Nodes 2.0就让AI写了一个。 二、ComfyUI_zd_model_info 模型信息卡，做它的理由同上。 三、提示词载入 可以把你写的或者收集来的提示词写成txt文件，每次加载一行，配合运行次数的设置可以批量跑图。 四、github地址 https://github.com/tzd3005/ComfyUI_zd_tools 有用请帮点个 ，感谢！ 五，ComfyUI_zd_dwpose DWPose 骨架检测，就是单纯不想装一堆ControlNet节点单独提出来的。",
+      "quality": 8,
+      "practical": 3,
+      "sourceName": "抡锤者 AI 音视频画图",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "包含具体的插件介绍和使用方法。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "4e9c4cea0f15",
+      "title": "📡 AI日报 11/20 | 谷歌“镜像互联网”训智能体、Gemini 操控 Mac、Meta Muse Charm 定价 300 美元",
+      "category": "apps",
+      "subcategory": "agents",
+      "tags": [
+        "local",
+        "lowspec",
+        "agent",
+        "generate"
+      ],
+      "bodyChars": 1004,
+      "excerpt": "AI 日报 · 2026-11-20 1. 谷歌建“镜像互联网”训练 Chrome AI 智能体 Google Chrome 团队首次披露内部隔离沙盒 Mirror Dimension ：一个完全自建、含社交媒体/购物/银行等仿真站点的平行互联网，用于训练网页浏览智能体，并在其中注入隐藏提示词攻击来测试防御。团队称智能体已开始形成“判断力”，后续将开放给 Google 内部更多团队。 来源：Wired（2026-11-20 01:00 CST） 2. Gemini 可在 Mac 上代你操作电脑 Google 为 macOS 版 Gemini 加入 computer use：AI 可跨本地文件、原生应用和网页完成多步任务，操作在聊天窗口中实时预览，用户可暂停、停止或逐项批准。目前仅限美国英文，需订阅 AI Plus / Pro / Ultra。 来源：TechCrunch（2026-11-20 02:09 CST） 3. Meta Muse Charm 或定价 300 美元 The Information 称 Meta 计划把带屏 AI 小设备 Muse Charm 定价 300 美元，附 12 个月 Verizon 5G 流量，目标 12 月节假日上市；设备带指纹传感器，可不解锁手机直接与 Muse 智能体语音对话。Meta 回应“很快公布更多细节”。 来源：The Verge（…",
+      "quality": 7,
+      "practical": 3,
+      "sourceName": "抡锤者 资讯",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "fail",
+        "reason": "仅为新闻转述，没有实测数据或步骤。"
+      },
+      "blocked": [
+        "模型复核不通过（仅为新闻转述，没有实测数据或步骤。）"
+      ]
+    },
+    {
+      "slug": "f32d5bea8abf",
+      "title": "Token fraud is here and it’s BAD (YouTube)",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [
+        "agent",
+        "free"
+      ],
+      "bodyChars": 1307,
+      "excerpt": "Token fraud is here and it’s BAD (YouTube) Claire Vo runs ChatPRD , an AI platform that helps product managers \"turn an idea into a spec\". The product has been live since the GPT-4 era, and Claire has been building it in public for much of that time. In this YouTube video (see also the accompanying Twitter post ) Claire describes the flood of token fraud she has seen from groups abusing the product's free trial, sometimes just to get free AI usage but often to resell tokens or run other commercial enterprises on top of the ChatPRD agent. I am funding a international Roblox and Fortnite map st…",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "Simon Willison",
+      "domain": "simonwillison.net",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "仅为新闻转述，没有实测数据或步骤。"
+      },
+      "blocked": [
+        "模型复核不通过（仅为新闻转述，没有实测数据或步骤。）"
+      ]
     },
     {
       "slug": "0517620a1997",
@@ -69,11 +146,36 @@
       ],
       "agent": {
         "verdict": "fail",
-        "reason": "只是新闻报道，没有提供任何实测数据或步骤。"
+        "reason": "仅为新闻转述，没有实测数据或步骤。"
       },
       "blocked": [
-        "模型复核不通过（只是新闻报道，没有提供任何实测数据或步骤。）"
+        "模型复核不通过（仅为新闻转述，没有实测数据或步骤。）"
       ]
+    },
+    {
+      "slug": "2b77dfda0d6b",
+      "title": "FrontierReplay: Split-Free Exact Prefix Caching for Hybrid Language Models",
+      "category": "apps",
+      "subcategory": "knowledge",
+      "tags": [
+        "agent",
+        "free"
+      ],
+      "bodyChars": 1668,
+      "excerpt": "Hybrid language models combine self-attention with recurrent layers whose in-place state updates restrict prefix reuse to exact saved positions. Saving states on a coarse grid wastes reusable prefixes, whereas existing fine-grained exact caches must cut the prefill forward pass at each mid-prompt checkpoint, adding scheduler steps that outweigh the reuse gains under load. We observe that across multi-turn chat, agent loops, document question answering, and tree search, prefix reuse almost always ends at structural boundaries predictable in advance, such as turn ends and known branch points. W…",
+      "quality": 6,
+      "practical": 2,
+      "sourceName": "arXiv 检索（推理引擎与量化）",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "包含具体的技术论文和研究成果。"
+      },
+      "blocked": []
     },
     {
       "slug": "f248cfb91a30",
@@ -93,12 +195,10 @@
         "标题未翻译"
       ],
       "agent": {
-        "verdict": "fail",
-        "reason": "只是链接分享，没有提供任何实测数据或步骤。"
+        "verdict": "pass",
+        "reason": "没有数据或步骤，但不是新闻转述。"
       },
-      "blocked": [
-        "模型复核不通过（只是链接分享，没有提供任何实测数据或步骤。）"
-      ]
+      "blocked": []
     },
     {
       "slug": "9b3f0a93dec8",
@@ -120,7 +220,7 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "是一个开源项目，提供了使用方法和代码。"
+        "reason": "没有数据或步骤，但不是新闻转述。"
       },
       "blocked": []
     },
@@ -144,7 +244,31 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "提供了API的使用方法和准确性测试数据。"
+        "reason": "有实测数据和复现步骤。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "49eb894bf9c9",
+      "title": "Why Do LLMs Help with Scientific Misconduct Requests and What to Do About It?: Increasing the Trustworthiness of AI for Science",
+      "category": "apps",
+      "subcategory": "agents",
+      "tags": [
+        "benchmark"
+      ],
+      "bodyChars": 1656,
+      "excerpt": "Large language models (LLMs) support scientific research, but some of that assistance can also undermine research integrity. Existing safety evaluations in science often measure whether models refuse misconduct requests, but rarely explain whether they even recognize the problem or why they comply. We investigate this gap across 8 LLMs using SciIntBench, an existing benchmark of 1,350 prompts about scientific research integrity. We examine the reasons behind compliance in four steps. First, when asked directly whether fulfilling a request would involve misconduct, models overwhelmingly identi…",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "有数据和分析。"
       },
       "blocked": []
     },
@@ -169,7 +293,7 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "提供了自动化脚本的使用方法和成功率数据。"
+        "reason": "有实测数据和复现步骤。"
       },
       "blocked": []
     },
@@ -194,8 +318,51 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "内容包含实践性内容，有具体的项目和功能介绍。"
+        "reason": "有实测数据和复现步骤，以及开源工具。"
       },
+      "blocked": []
+    },
+    {
+      "slug": "8dc81365df6b",
+      "title": "Rebuilding my local voice assistant pipeline",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [
+        "privacy"
+      ],
+      "bodyChars": 11563,
+      "excerpt": "Rebuilding my voice assistant pipeline https://blog.platypush.tech/article/Rewriting-my-voice-assistant-pipeline 📝 Swapping openwakeword for microwakeword and making voice detection smarter Fabio Manganiello Nov 19, 2026 #platypush #voice #voiceassistant #microwakeword #openai Wake word detection: a new assistant.microwakeword plugin Speech-to-text: assistant.openai, with a much better ear Responses and context: the openai plugin Text-to-speech: tts.openai The full configuration What changed on the code side Caveats I wrote an article a couple of months ago describing how I rebuilt my old vo…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "Lobsters AI",
+      "domain": "blog.platypush.tech",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "db7fe6a01adb",
+      "title": "具身机器人进入真机时代，华为云CloudRobo开始组队发力了",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "local",
+        "tutorial",
+        "agent",
+        "generate"
+      ],
+      "bodyChars": 5947,
+      "excerpt": "<!DOCTYPE html> < img id=\"wx_img\" src=\"https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png\" width=\"400\" height=\"400\"> 具身机器人进入真机时代，华为云CloudRobo开始组队发力了 田, 晏林 2026-11-20 09:07:38 来源： 量子位 一批卡可以轮流服务多家公司，一次适配也能让更多团队受益。算力不必家家从头买，工程上的坑也不用家家重新踩。 田晏林 发自 凹非寺 量子位 | 公众号 QbitAI 机器人在实验室里把活儿干成了，到了工厂，还能天天这么干吗？换台机器人，之前练出来的本事又能剩下多少？ 光把模型训得聪明还不够，背后的算力、仿真、真机适配，都得跟上。 11月16日，华为云发布了 昇腾原生具身世界模型CloudRobo-WM1.2 。 从仿真训练到适配不同机器人，这个模型背后，牵出的是一整套具身智能工程难题。 两天后，华为云在上海办了场 「行业AI梦工厂·具身智能高层论坛」 ，把这些隐秘的幕后工程，搬到了台前。 从面向Agentic计算的算力基础设施，到一站式具身智能开发平台CloudRobo，再到机器人自适应智能、高空带电作业等产业实践，机器人从实验室走向真实现场，要过哪些关，这场论坛基本聊了个遍。 现场还签了份备忘录…",
+      "quality": 9,
+      "practical": 5,
+      "sourceName": "量子位",
+      "domain": "qbitai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
       "blocked": []
     },
     {
@@ -217,10 +384,7 @@
       "warnings": [
         "标题未翻译"
       ],
-      "agent": {
-        "verdict": "pass",
-        "reason": "内容包含实践性内容，有具体的项目和功能介绍。"
-      },
+      "agent": null,
       "blocked": []
     },
     {
@@ -242,13 +406,30 @@
       "domain": "appinn.com",
       "hard": [],
       "warnings": [],
-      "agent": {
-        "verdict": "fail",
-        "reason": "内容主要是新闻转述，没有实践性内容。"
-      },
-      "blocked": [
-        "模型复核不通过（内容主要是新闻转述，没有实践性内容。）"
-      ]
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "41a38e3d696b",
+      "title": "bookwjitchieni1986/blender-ai-mcp-addon",
+      "category": "tools",
+      "subcategory": "interface",
+      "tags": [
+        "local",
+        "agent"
+      ],
+      "bodyChars": 6642,
+      "excerpt": "mcp-for-blender-pro Your Blender scene. Your AI models. One creative workspace. **An AI assistant for Blender that can inspect your scene, build objects, edit materials, find assets and carry out multi-step workflows—with a visual chat workspace and a built-in Model Context Protocol (MCP) server.** ! Blender 4.2+ ! Release 1.0.0 ! Windows x64 ! MIT Download · [Getting started](docs/QUICKSTART.md) · [Connections and agents](docs/CONNECTIONS.md) ![AI chat workspace with a live Blender scene preview](docs/images/studio.png) Turn a creative brief into scene operations Start with an idea. Ask the…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 新晋 AI 项目",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
     },
     {
       "slug": "4c32419150c4",
@@ -269,13 +450,8 @@
       "warnings": [
         "标题未翻译"
       ],
-      "agent": {
-        "verdict": "fail",
-        "reason": "内容主要是新闻转述，没有实践性内容。"
-      },
-      "blocked": [
-        "模型复核不通过（内容主要是新闻转述，没有实践性内容。）"
-      ]
+      "agent": null,
+      "blocked": []
     },
     {
       "slug": "d4dd9f4b078c",
@@ -295,10 +471,7 @@
       "warnings": [
         "标题未翻译"
       ],
-      "agent": {
-        "verdict": "pass",
-        "reason": "内容包含实践性内容，有具体的项目和功能介绍。"
-      },
+      "agent": null,
       "blocked": []
     },
     {
@@ -320,10 +493,7 @@
       "warnings": [
         "标题未翻译"
       ],
-      "agent": {
-        "verdict": "pass",
-        "reason": "内容包含实践性内容，有具体的项目和功能介绍。"
-      },
+      "agent": null,
       "blocked": []
     },
     {
@@ -414,6 +584,49 @@
       "blocked": []
     },
     {
+      "slug": "3d53254262d9",
+      "title": "ActMem: From Latent Memory Reasoning to Grounded Robotic Action",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "tutorial"
+      ],
+      "bodyChars": 1701,
+      "excerpt": "Vision-Language-Action (VLA) models have shown promising results in real-world long-horizon manipulation, where memory plays a crucial role. However, existing memory-augmented VLAs either retrieve past observations without reasoning about what they imply, or reason over the full history in a shared context where it crowds out current perception. Cognitive science treats them as distinct systems: memory reconstructs past experience to decide what to do, while perception guides how to act. We therefore propose ActMem, an in-context memory framework that decouples memory reasoning from perceptua…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "913bb4d03721",
+      "title": "我目前使用M5max＋comfyui流生成長視頻，全地端使用hermes agent +qwen3.8 flash next 叫他參考別人影片製作的，來給大家打臉",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "lowspec",
+        "tutorial",
+        "agent",
+        "generate"
+      ],
+      "bodyChars": 1769,
+      "excerpt": "夜街刀鋒 | Mac Studio M5 Max 128GB｜MiniMax H3 Hybrid int8 + Pika Flex fl2va 六步 用三张自制参考图（两位辣妹角色定型照 + 一张夜晚台湾老街场景）与统一提示词，在一台 Mac book Pro 本地跑了两条。提示词只替换风格选项（写实 vs 3D CGI）。 项目 本次配置 硬件 Apple M5 Max，128 GiB 统一内存 系统 macOS 27.2.1，ComfyUI 0.46.0（master），Python 3.13.12，PyTorch 2.16.0（Metal） 基模 Cobijada H3 Hybrid Uncensored pruned， int8_convrot_pruned ，weight_dtype=default 文本编码器 qwen3vl_32b_h3_ultra_uncensored_heretic int8_convrot ，type=minimax VAE Video：minimax_h3_video_vae_fp16 ／ Audio：minimax_h3_audio_vae_fp32 LoRA 与加速 pika_h3_flex_fl2va_v1_bf16，strength 1.0；ManualSigmas 六步重新加噪 1.0, 0.972973, 0.923077, 0.…",
+      "quality": 7,
+      "practical": 4,
+      "sourceName": "抡锤者 AI 音视频画图",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
       "slug": "9a04c15c47ac",
       "title": "【实测】3080-20G 单卡 vs 双卡：启动耗时、1/2/4 槽吞吐（Strata + Qwen3.8-Flash-Next 125B IQ3_S）",
       "category": "hardware",
@@ -432,6 +645,51 @@
       "domain": "lcz.me",
       "hard": [],
       "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "422fd5bfa7b8",
+      "title": "【折腾记录】双卡 3080 20G 跑 SGLang + Qwen3.8-27B：从「只有 8 路并发」到 22 路 666 t/s",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "hardware",
+        "benchmark",
+        "lowspec",
+        "agent"
+      ],
+      "bodyChars": 9488,
+      "excerpt": "结论先说：最终跑成 22 路并发 603–666 tok/s、8 路 318、单流 56。中间踩了 9 个坑，最费时间的是三个——prefill CUDA graph 让服务卡在 0% 利用率十分钟、真正的并发闸门不是 max-running-requests 而是 mamba 槽位数 K、以及客户端声明的上下文长度比服务端大把 agent 卡死。这篇文章按我踩的顺序写，每一步都附上判据和命令行，别人照着重走能省一天。 硬件就是上个帖子那台：aigo X99L D3 / Xeon E5-2696 v4 22C44T / 128G DDR3-1866 / 2×RTX 3080 20G（PCIe 3.0 ×16，功耗锁 250W）/ Ubuntu 24.04.4 / 驱动 595.99.02 / CUDA 13.2。 1. 为什么要折腾 SGLang 原来跑的是 Strata + 125B（就是上一篇的主角），它的 parallel 只有 4 槽，4 路合计 145–187 tok/s 就顶住了。 一个人写东西够用，一到多人同时用就排队 。 SGLang 的天赋不一样：它对 dense 模型能做连续批处理，27B 的 W4A16 权重 21G 能整份塞进 40G 显存（不像 125B 要专家驻留内存），所以并发上限高得多。目标定得很清楚： 单人 50 t/s 别掉，多路要能顶到 20…",
+      "quality": 11,
+      "practical": 4,
+      "sourceName": "抡锤者 模型部署讨论",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "1f25ebf9a557",
+      "title": "llama.cpp b12555 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial",
+        "agent"
+      ],
+      "bodyChars": 2107,
+      "excerpt": "<details open> opencl: support dp4a for KQ mm in decomposed FA (#32577) opencl: support int8 KQ for DK = 512 Co-authored-by: Shaofei Qi <shaoqi@qti.qualcomm.com> Co-authored-by: Hongqiang Wang <wangh@qti.qualcomm.com> Assisted-by: Codex opencl: allow query chunk up to 96 for int8 KQ Co-authored-by: Shaofei Qi <shaoqi@qti.qualcomm.com> Co-authored-by: Hongqiang Wang <wangh@qti.qualcomm.com> Assisted-by: Codex opencl: extend build_program_from_source to allow non-fatal failure Assisted-by: Codex opencl: add int8 KQ for decomposed FA with DK <= 256 Co-authored-by: Shaofei Qi <shaoqi@qti.qualcomm…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
       "agent": null,
       "blocked": []
     },
@@ -502,6 +760,50 @@
       "blocked": []
     },
     {
+      "slug": "fe0b7db16493",
+      "title": "llama.cpp b12556 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1799,
+      "excerpt": "<details open> model : hrm : do not compute slot count as uint32_t (#32601) load_arch_hparams multiplies n_hrm_layers_per_stack, n_hrm_h_cycles and (n_hrm_l_cycles + 1) into a uint32_t, then asserts the product equals block_count. Any factors whose true product is block_count + k*2^32 still pass the assert; 1073741825 * 2 * 2 = 2^32 + 4 compares equal to block_count = 4. load_arch_tensors iterates the same three values in int and writes past the end of the block_count-sized layers vector. </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "8ec414bff6d6",
+      "title": "llama.cpp b12554 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1601,
+      "excerpt": "<details open> ggml : add BF16 support to ROPE and SET_ROWS (CPU, CUDA) (#32387) ggml : add BF16 support to ROPE and SET_ROWS (CPU, CUDA) cuda : SET_ROWS from BF16 into quantized types and F8_E4M3 cuda : fuse BF16 rope into a BF16 cache tests : trim the BF16 rope cases to one per code path </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/69881950> macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (C…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
       "slug": "ed1506013716",
       "title": "Show HN: Type Fighter 2",
       "category": "local",
@@ -519,6 +821,28 @@
       "warnings": [
         "标题未翻译"
       ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "da39a3ee5e6b",
+      "title": "派早报：Google 推出 Gemini 4 Neon 模型，网易 UU 远程将于 12 月推出付费会员等",
+      "category": "money",
+      "subcategory": "product",
+      "tags": [
+        "money",
+        "agent",
+        "generate",
+        "free"
+      ],
+      "bodyChars": 6084,
+      "excerpt": "周五 20 派早报：Google 推出 Gemini 4 Neon 模型，网易 UU 远程将于 12 月推出付费会员等 08:34 10 分钟阅读 早报速览 Google 推出 Gemini 4 Neon 模型 0 网易 UU 远程将于 12 月推出付费会员 7 Google Play 将强制要求应用适配折叠屏 5 AMD 推出 Instinct MI450X AI 加速器 1 Nginx 被曝 5 个远程代码执行漏洞 0 微软宣布 Microsoft To Do 将于明年 6 月全面停用 16 微星 EdgeMesa N AI+ 迷你主机正式上市 1 看看就行的其他消息 0 Google 推出 Gemini 4 Neon 模型 11 月 18 日，Google 在官方博客发布 Gemini 4 Neon AI 模型，主要面向软件开发、企业数据分析及科学研究等复杂任务。新模型支持 100 万 token 上下文窗口，可综合处理电子表格、PDF、图表、音频和视频等多种格式的数据，并生成结构化结果。 在编程方面，Gemini 4 Neon 针对长时间运行的智能体任务进行了优化，可执行跨文件调试、代码重构及复杂项目开发。在 Google Antigravity 开发工具中，Neon 还能够担任任务协调者，负责规划任务并调度多个 Gemini 4 Hydrogen 子智能体并行执行，以提…",
+      "quality": 8,
+      "practical": 4,
+      "sourceName": "少数派",
+      "domain": "sspai.com",
+      "hard": [],
+      "warnings": [],
       "agent": null,
       "blocked": []
     },
@@ -619,6 +943,48 @@
       "bodyChars": 1786,
       "excerpt": "User simulators offer a scalable way to evaluate interactive agents, but how to assess their quality remains underexplored. In particular, it is unclear whether existing user simulator evaluation frameworks reliably detect meaningful failures in simulated user behavior. This uncertainty makes it difficult to interpret simulator evaluation. To understand what a high benchmark score tells us about simulator quality, we (meta-)evaluate the metrics themselves. To instantiate this meta-evaluation, we deliberately perturb simulated replays to induce failures such as altered goals, omitted constrain…",
       "quality": 7,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "4f9fdcb3c9a2",
+      "title": "Demonstration-Free Skill Composition for Navigation and Manipulation",
+      "category": "bench",
+      "subcategory": "benchmark",
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 1140,
+      "excerpt": "Hierarchical reinforcement learning enables sequential tasks to be represented as compositions of separately trained skills. This paper evaluates demonstration-free hierarchical pipelines for MiniGrid navigation and robotic manipulation, comparing their training requirements and task performance with flat reinforcement learning baselines. The evaluation concerns complete pipelines with task-specific observation, reward and control structures. In navigation, two parameterised skills are reused across unseen FourRooms layouts under manually specified high-level plans. In manipulation, reaching,…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "301d3057077c",
+      "title": "LoongForge-Embodied: A Unified Framework for Training Heterogeneous Embodied Models",
+      "category": "bench",
+      "subcategory": "benchmark",
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 1455,
+      "excerpt": "Training Vision-Language-Action (VLA) models and World-Action Models (WAMs) is computationally expensive, while their heterogeneous architectures and fragmented training stacks make system optimizations difficult to reuse across models. To address these challenges, we present LoongForge-Embodied, a native-PyTorch framework that unifies and accelerates the training of heterogeneous embodied models. At its core, LoongForge-Embodied introduces a common abstraction layer that decouples model-specific implementations from shared training infrastructure, enabling cross-model reuse without constrain…",
+      "quality": 6,
       "practical": 1,
       "sourceName": "arXiv cs.AI/CL/LG",
       "domain": "arxiv.org",
