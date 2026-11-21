@@ -1,7 +1,7 @@
 {
   "id": "model-pricing",
   "kind": "openrouter-pricing",
-  "collectedAt": "2026-11-20T18:44:20.622Z",
+  "collectedAt": "2026-11-21T03:26:14.502Z",
   "upstream": {
     "label": "OpenRouter 模型目录 API",
     "url": "https://openrouter.ai/models"
@@ -125,8 +125,8 @@
           "id": "openai/gpt-oss-20b",
           "url": "https://openrouter.ai/openai/gpt-oss-20b",
           "context": 131072,
-          "promptPerMillion": 0.018,
-          "completionPerMillion": 0.09,
+          "promptPerMillion": 0.017,
+          "completionPerMillion": 0.08499999999999999,
           "free": false,
           "created": 1754414229
         },
@@ -351,6 +351,16 @@
           "created": 1789176933
         },
         {
+          "name": "DeepSeek: DeepSeek V4.1 Flash",
+          "id": "deepseek/deepseek-v4.1-flash",
+          "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash",
+          "context": 1048576,
+          "promptPerMillion": 0.050699999999999995,
+          "completionPerMillion": 0.20279999999999998,
+          "free": false,
+          "created": 1789021285
+        },
+        {
           "name": "inclusionAI: Ling 3.1 Flash",
           "id": "inclusionai/ling-3.1-flash",
           "url": "https://openrouter.ai/inclusionai/ling-3.1-flash",
@@ -399,16 +409,6 @@
           "completionPerMillion": 0.39999999999999997,
           "free": false,
           "created": 1768833913
-        },
-        {
-          "name": "Z.ai: GLM Latest",
-          "id": "~z-ai/glm-latest",
-          "url": "https://openrouter.ai/~z-ai/glm-latest",
-          "context": 1048576,
-          "promptPerMillion": 0.0699,
-          "completionPerMillion": 1.4,
-          "free": false,
-          "created": 1787151053
         }
       ]
     }
@@ -421,8 +421,8 @@
     {
       "path": "https://openrouter.ai/api/v1/models",
       "url": "https://openrouter.ai/api/v1/models",
-      "sha256": "58247531719728e3b0b7fd0393abd985c01f2129a9c6a5f343e102527a36100d",
-      "bytes": 926547
+      "sha256": "5a53bf36da3519da22b629398b2d2c96d0265ca43e695fa29645a4bf51999e07",
+      "bytes": 928223
     }
   ]
 }
