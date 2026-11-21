@@ -819,6 +819,7 @@ main {
   line-height: 1.9;
   font-family: var(--serif);
   color: var(--ink);
+  word-break: break-word;
 }
 
 .article p {

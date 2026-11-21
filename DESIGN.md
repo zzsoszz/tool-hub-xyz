@@ -184,6 +184,7 @@ components:
 
 - 字号只取 `--fs-*`，不在规则里写死 `px`：`npm run design:check` 会把字面字号当偏离 ramp 报出来。
 - 正文行长 ≤ 74ch；衬线正文行高 1.9，无衬线 1.75–1.85。
+- 正文里的不可断长串必须折进阅读列：`.article` 带 `word-break: break-word`。上游正文里留着原文 markdown 链接与长 URL（一条 400 字符的串就有 4 处），不断行会把 663px 的列撑到 1256px，整页变成横向可滚。
 - 大纲不跳级：页面是 `h1 > h2 > h3`，正文里孤立的深层标题按连续同级一段一起上提到 `h3`（见 `nestArticleHeadings`）。
 - 不用全大写眉标。
 

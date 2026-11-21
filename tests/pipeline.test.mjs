@@ -120,6 +120,15 @@ test('copiesPublicAssetsAndSitemapCoversSections', async () => {
   assert.match(archive, /归档/);
 });
 
+// 上游正文里留着原文的 markdown 链接和长 URL（400 字符不断行的串线上有 4 处）。
+// .article 不折行时 663px 的阅读列被撑到 1256px，整页变成横向可滚：461 个条目页里 40 个中招。
+test('articleBodiesWrapUnbreakableTokens', async () => {
+  const css = await readDist('styles.css');
+  const rule = /\.article \{([^}]*)\}/.exec(css);
+  assert.ok(rule, 'styles.css 里应有 .article 规则');
+  assert.match(rule[1], /(word-break|overflow-wrap):\s*(break-word|break-all|anywhere)/, '.article 应折行不可断的长串');
+});
+
 test('rerunningCollectCarriesOverTheSameDayDigest', () => {
   const first = run(['src/collect.mjs', '--offline', `--out=${DATA_DIR}`, `--now=${FIXED_NOW}`]);
   const second = run(['src/collect.mjs', '--offline', `--out=${DATA_DIR}`, `--now=${FIXED_NOW}`]);
