@@ -1,6 +1,6 @@
 {
   "day": "2026-11-21",
-  "reviewedAt": "2026-11-21T03:26:56.397Z",
+  "reviewedAt": "2026-11-21T04:15:42.891Z",
   "reviewer": "cloudflare/@cf/meta/llama-3.1-70b-instruct",
   "note": "cloudflare/@cf/meta/llama-3.1-70b-instruct：复核 12 条，解析到 12 条判定",
   "rules": {
@@ -15,15 +15,15 @@
   },
   "passed": true,
   "reasons": [],
-  "total": 28,
+  "total": 30,
   "blocked": [
-    "40bbf96bd480",
     "61d0fdd123c8",
     "9b68c26f5138",
     "c607b3bea328",
+    "804442f21505",
     "7612228d5195"
   ],
-  "survivors": 23,
+  "survivors": 25,
   "items": [
     {
       "slug": "40bbf96bd480",
@@ -45,12 +45,10 @@
       "hard": [],
       "warnings": [],
       "agent": {
-        "verdict": "fail",
-        "reason": "内容与标签不符，标签中有benchmark、lowspec、tutorial、agent等，但内容并没有体现出这些方面。"
+        "verdict": "pass",
+        "reason": "包含实测数据和具体步骤。"
       },
-      "blocked": [
-        "模型复核不通过（内容与标签不符，标签中有benchmark、lowspec、tutorial、agent等，但内容并没有体现出这些方面。）"
-      ]
+      "blocked": []
     },
     {
       "slug": "c8150d687d73",
@@ -72,7 +70,7 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "内容提供了实践性指导和详细步骤，让读者了解如何使用HippoMaps。"
+        "reason": "包含具体的技术细节和实现步骤。"
       },
       "blocked": []
     },
@@ -96,10 +94,10 @@
       ],
       "agent": {
         "verdict": "fail",
-        "reason": "内容主要是新闻转述，没有提供实践性指导或详细步骤。"
+        "reason": "新闻转述，没有数据和步骤。"
       },
       "blocked": [
-        "模型复核不通过（内容主要是新闻转述，没有提供实践性指导或详细步骤。）"
+        "模型复核不通过（新闻转述，没有数据和步骤。）"
       ]
     },
     {
@@ -122,7 +120,30 @@
       "warnings": [],
       "agent": {
         "verdict": "pass",
-        "reason": "内容提供了实践性指导和详细步骤，让读者了解如何修复群晖NAS的安全漏洞。"
+        "reason": "包含具体的漏洞信息和修复计划。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "bde57db2ee8b",
+      "title": "Show HN: Drive around my village in 3D",
+      "category": "apps",
+      "subcategory": null,
+      "tags": [],
+      "bodyChars": 762,
+      "excerpt": "So this started out just over a week ago, could I drive around my village in my old car on the web, and its expanded into a massive map, with races, events, different cars and multiplayer. I'm a web/app guy, backend guy, and yes I build it with Claude. I know I shouldn't be astounded by what these Ai agents can do as of today, but here I am still amazed. I've even got support from a Sim racing guy and built a web driver so he gets full force feedback for his rig, and it works. Anyway, just a bit of fun! Uses LIDAR data from the UK Gov + OpenStreetMap data to build the world. Technically, I co…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "Show HN (AI)",
+      "domain": "cherwellvalleymotorclub.app",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "包含具体的技术细节和实现步骤。"
       },
       "blocked": []
     },
@@ -145,10 +166,10 @@
       ],
       "agent": {
         "verdict": "fail",
-        "reason": "内容过于学术化，没有提供实践性指导或详细步骤。"
+        "reason": "没有实测数据和具体步骤，只有理论讨论。"
       },
       "blocked": [
-        "模型复核不通过（内容过于学术化，没有提供实践性指导或详细步骤。）"
+        "模型复核不通过（没有实测数据和具体步骤，只有理论讨论。）"
       ]
     },
     {
@@ -174,7 +195,7 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "内容提供了实践性指导和详细步骤，让读者了解如何使用NeonClipping工具。"
+        "reason": "内容是关于 NeonClipping 的介绍，提供了使用方法和功能描述。"
       },
       "blocked": []
     },
@@ -198,10 +219,10 @@
       "warnings": [],
       "agent": {
         "verdict": "fail",
-        "reason": "内容是新闻转述，没有实测数据或步骤。"
+        "reason": "内容是新闻报道，不提供实践性内容或有实测数据。"
       },
       "blocked": [
-        "模型复核不通过（内容是新闻转述，没有实测数据或步骤。）"
+        "模型复核不通过（内容是新闻报道，不提供实践性内容或有实测数据。）"
       ]
     },
     {
@@ -224,7 +245,7 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "文章讨论了正式验证系统的使用，提供了具体的解决方案和步骤。"
+        "reason": "内容讨论了正式验证系统在避免低质量输出方面的作用，并提供了一些公司的例子。"
       },
       "blocked": []
     },
@@ -247,10 +268,12 @@
         "标题未翻译"
       ],
       "agent": {
-        "verdict": "pass",
-        "reason": "文章讨论了AI能力评估的进展，提供了具体的数据和分析。"
+        "verdict": "fail",
+        "reason": "内容是新闻报道，不提供实践性内容或有实测数据。"
       },
-      "blocked": []
+      "blocked": [
+        "模型复核不通过（内容是新闻报道，不提供实践性内容或有实测数据。）"
+      ]
     },
     {
       "slug": "7612228d5195",
@@ -273,10 +296,10 @@
       "warnings": [],
       "agent": {
         "verdict": "fail",
-        "reason": "内容主要是新闻转述，没有实测数据或步骤。"
+        "reason": "内容是新闻报道，不提供实践性内容或有实测数据。"
       },
       "blocked": [
-        "模型复核不通过（内容主要是新闻转述，没有实测数据或步骤。）"
+        "模型复核不通过（内容是新闻报道，不提供实践性内容或有实测数据。）"
       ]
     },
     {
@@ -299,7 +322,7 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "文章讨论了ROGUE-AI系统的复制和审计，提供了具体的步骤和分析。"
+        "reason": "内容是关于 ROGUE-AI 的研究论文，提供了具体的研究方法和结果。"
       },
       "blocked": []
     },
@@ -322,10 +345,7 @@
       "domain": "lcz.me",
       "hard": [],
       "warnings": [],
-      "agent": {
-        "verdict": "pass",
-        "reason": "文章讨论了MacBook Pro M5 Max的性能测试，提供了具体的数据和对比结果。"
-      },
+      "agent": null,
       "blocked": []
     },
     {
@@ -543,6 +563,28 @@
       "domain": "lcz.me",
       "hard": [],
       "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "1f4577d836e8",
+      "title": "Show HN: OpenComputer – an open source alternative to Devin",
+      "category": "local",
+      "subcategory": "weights",
+      "tags": [
+        "free",
+        "agent"
+      ],
+      "bodyChars": 1265,
+      "excerpt": "Hi HN! Utpal here, I'm one of the founders of OpenComputer. OpenComputer is an open source cloud coding agent for teams that can run in your own cloud account (AWS, GCP, Azure). We run the agent harness and the sandbox on the same durable VM (architecture in the docs [1]). First commit lands in 24s; the alternatives we benchmarked took 53-72s (benchmarks below [2]). Two other choices: - One VM per team, scalable horizontally. Sessions are isolated in git worktrees. - Session files are backed up to a repo after every turn, so any session can resume on another VM. We noticed that past ~640 sess…",
+      "quality": 10,
+      "practical": 5,
+      "sourceName": "Show HN (AI)",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
       "agent": null,
       "blocked": []
     },
