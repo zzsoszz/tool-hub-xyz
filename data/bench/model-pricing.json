@@ -1,7 +1,7 @@
 {
   "id": "model-pricing",
   "kind": "openrouter-pricing",
-  "collectedAt": "2026-11-21T04:56:44.166Z",
+  "collectedAt": "2026-11-21T16:12:51.062Z",
   "upstream": {
     "label": "OpenRouter 模型目录 API",
     "url": "https://openrouter.ai/models"
@@ -275,8 +275,8 @@
           "id": "deepseek/deepseek-v4.1-flash",
           "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash",
           "context": 1048576,
-          "promptPerMillion": 0.049999999999999996,
-          "completionPerMillion": 0.7999999999999999,
+          "promptPerMillion": 0.049800000000000004,
+          "completionPerMillion": 0.19920000000000002,
           "free": false,
           "created": 1789021285
         },
@@ -421,8 +421,8 @@
     {
       "path": "https://openrouter.ai/api/v1/models",
       "url": "https://openrouter.ai/api/v1/models",
-      "sha256": "6e24813df6e7e54c65adb8d183d201aa92cf6d7c011707da17e6b35130103d94",
-      "bytes": 925131
+      "sha256": "7c4d2fde24a8bdf6d08c29be376e658542f58f9afc6385be0056c956f5b5ea07",
+      "bytes": 925121
     }
   ]
 }

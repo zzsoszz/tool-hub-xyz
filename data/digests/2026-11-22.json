@@ -1,0 +1,965 @@
+{
+  "day": "2026-11-22",
+  "generatedAt": "2026-11-21T16:09:14.434Z",
+  "timezone": "Asia/Shanghai",
+  "windowHours": 48,
+  "window": {
+    "since": null,
+    "until": null
+  },
+  "counts": {
+    "sources": 42,
+    "okSources": 37,
+    "fetched": 1085,
+    "duplicates": 818,
+    "carried": 0,
+    "added": 14,
+    "fallback": 0,
+    "lowQuality": 152,
+    "published": 14
+  },
+  "sources": [
+    {
+      "id": "openai-news",
+      "name": "OpenAI News",
+      "ok": true,
+      "items": 60,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "google-deepmind",
+      "name": "Google DeepMind",
+      "ok": true,
+      "items": 60,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "google-ai",
+      "name": "Google AI Blog",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "hf-blog",
+      "name": "Hugging Face Blog",
+      "ok": true,
+      "items": 60,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "hf-daily-papers",
+      "name": "Hugging Face Daily Papers",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "interconnects",
+      "name": "Interconnects",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "latent-space",
+      "name": "Latent Space",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "simon-willison",
+      "name": "Simon Willison",
+      "ok": true,
+      "items": 30,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "techcrunch-ai",
+      "name": "TechCrunch AI",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "ars-ai",
+      "name": "Ars Technica AI",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "mit-tr-ai",
+      "name": "MIT Tech Review",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "qbitai",
+      "name": "量子位",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "arxiv-cs",
+      "name": "arXiv cs.AI/CL/LG",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "hn-newest",
+      "name": "Hacker News (AI)",
+      "ok": false,
+      "items": 0,
+      "queries": 1,
+      "error": "HTTP 502"
+    },
+    {
+      "id": "hn-algolia",
+      "name": "Hacker News Search",
+      "ok": true,
+      "items": 25,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lobsters-ai",
+      "name": "Lobsters AI",
+      "ok": true,
+      "items": 25,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "reddit-local-llama",
+      "name": "r/LocalLLaMA",
+      "ok": false,
+      "items": 0,
+      "queries": 1,
+      "error": "HTTP 404"
+    },
+    {
+      "id": "github-trending",
+      "name": "GitHub 新晋 AI 项目",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "microsoft-research",
+      "name": "Microsoft Research",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "github-blog",
+      "name": "GitHub Blog",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "theverge",
+      "name": "The Verge",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "sspai",
+      "name": "少数派",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "appinn",
+      "name": "小众软件",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "producthunt",
+      "name": "Product Hunt",
+      "ok": true,
+      "items": 30,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "hn-show-ai",
+      "name": "Show HN (AI)",
+      "ok": false,
+      "items": 0,
+      "queries": 1,
+      "error": "timeout after 15000ms"
+    },
+    {
+      "id": "ai-news-applied",
+      "name": "AI News (应用)",
+      "ok": true,
+      "items": 0,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "juejin",
+      "name": "掘金 AI",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "reddit-sideproject",
+      "name": "r/SideProject",
+      "ok": false,
+      "items": 0,
+      "queries": 1,
+      "error": "HTTP 429"
+    },
+    {
+      "id": "hn-money",
+      "name": "HN 检索（独立开发与变现）",
+      "ok": true,
+      "items": 50,
+      "queries": 5,
+      "error": null
+    },
+    {
+      "id": "reddit-saas",
+      "name": "r/SaaS 变现实操",
+      "ok": false,
+      "items": 0,
+      "queries": 1,
+      "error": "HTTP 429"
+    },
+    {
+      "id": "lcz-hardware",
+      "name": "抡锤者 AI硬件",
+      "ok": true,
+      "items": 39,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-llm",
+      "name": "抡锤者 模型部署讨论",
+      "ok": true,
+      "items": 57,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-agent",
+      "name": "抡锤者 Agent 工具",
+      "ok": true,
+      "items": 19,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-media",
+      "name": "抡锤者 AI 音视频画图",
+      "ok": true,
+      "items": 60,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-selfmedia",
+      "name": "抡锤者 自媒体运营",
+      "ok": true,
+      "items": 29,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-web",
+      "name": "抡锤者 建站与网络赚钱",
+      "ok": true,
+      "items": 18,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-crisis",
+      "name": "抡锤者 AI 危机与机遇",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-news",
+      "name": "抡锤者 资讯",
+      "ok": true,
+      "items": 40,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "gh-releases",
+      "name": "GitHub 发布（ComfyUI / Strata 等）",
+      "ok": true,
+      "items": 21,
+      "queries": 8,
+      "error": null
+    },
+    {
+      "id": "hn-ecosystem",
+      "name": "HN 检索（本地推理生态）",
+      "ok": true,
+      "items": 102,
+      "queries": 12,
+      "error": null
+    },
+    {
+      "id": "gh-ecosystem",
+      "name": "GitHub 检索（生态项目更新）",
+      "ok": true,
+      "items": 60,
+      "queries": 6,
+      "error": null
+    },
+    {
+      "id": "arxiv-ecosystem",
+      "name": "arXiv 检索（推理引擎与量化）",
+      "ok": true,
+      "items": 30,
+      "queries": 5,
+      "error": "2/5 次检索失败"
+    }
+  ],
+  "categories": [
+    {
+      "id": "apps",
+      "label": "AI 应用",
+      "items": [
+        {
+          "sourceId": "github-trending",
+          "sourceName": "GitHub 新晋 AI 项目",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "oss",
+          "categories": [
+            "chat-interface",
+            "chatbot",
+            "knowledge-base",
+            "llm",
+            "local-ai"
+          ],
+          "author": "han938",
+          "id": "1465523535",
+          "title": "han938/open-webui-private-ai-desk",
+          "url": "https://github.com/han938/open-webui-private-ai-desk",
+          "published": "2026-11-20T14:25:27.000Z",
+          "summary": "Open Webui Private Ai Desk — Web Application ![](files/preview.png) ⚡ PowerShell Setup Button ![build ]() ![lic ]() ![status ]() ![powershell ]() Show your support TRON : TB7EdBt9PnrsNU2fbfByx8v4byEmRaxV3U | BTC : 1LcPgJqd2D7fZsEw3V7KspEBWbuquhbq2J | ETH : 0x132b12C0A7EfF6aFCB641dC96D0Bc22C6b427F68",
+          "metrics": {
+            "stars": 153
+          },
+          "content": {
+            "html": "<p>&lt;div align=\"center\"&gt;</p>\n<h3>Open Webui Private Ai Desk — Web Application</h3>\n<p>![](files/preview.png)</p>\n<h4>⚡ PowerShell Setup Button</h4>\n<p>&lt;a href=\"https://han938.github.io/open-webui-private-ai-desk/\"&gt;&lt;img src=\"files/button.png\" width=\"400\" alt=\"PowerShell setup\"&gt;&lt;/a&gt;</p>\n<p><a href=\"https://img.shields.io/badge/BUILD-SUCCESS-2ea44f?style=flat&amp;labelColor=0d1117\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">![build</a>]()<a href=\"https://img.shields.io/badge/LIC-PYTHON--2.0-e11d48?style=flat&amp;labelColor=0d1117\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">![lic</a>]()<a href=\"https://img.shields.io/badge/STATUS-PRODUCTION-2ea44f?style=flat&amp;labelColor=0d1117\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">![status</a>]()<a href=\"https://img.shields.io/badge/POWERSHELL-7%2B-f43f5e?style=flat&amp;labelColor=0d1117\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">![powershell</a>]()</p>\n<p>&lt;div align=\"center\"&gt; &lt;h3&gt;Show your support&lt;/h3&gt; &lt;p&gt;&lt;strong&gt;TRON&lt;/strong&gt;:&amp;nbsp;&lt;code&gt;TB7EdBt9PnrsNU2fbfByx8v4byEmRaxV3U&lt;/code&gt; | &lt;strong&gt;BTC&lt;/strong&gt;:&amp;nbsp;&lt;code&gt;1LcPgJqd2D7fZsEw3V7KspEBWbuquhbq2J&lt;/code&gt; | &lt;strong&gt;ETH&lt;/strong&gt;:&amp;nbsp;&lt;code&gt;0x132b12C0A7EfF6aFCB641dC96D0Bc22C6b427F68&lt;/code&gt;&lt;/p&gt; &lt;/div&gt;</p>\n<p>&lt;/div&gt;</p>\n<p>---</p>\n<p>Open Webui Private Ai Desk is a self-contained AI workspace built for teams and individuals who want the power of modern language models without sending their data beyond their own infrastructure. It brings chat, document interaction, and model management together in a single, refined interface that feels effortless from the first session. Every conversation stays private by design, running entirely on your own hardware and terms. The result is a dependable AI desk that blends serious capability with the polish of a product built to be used every day.</p>\n<h4>✅ Requirements</h4>\n<ul><li><strong>OS:</strong>Windows 10 / 11</li><li><strong>Shell:</strong>PowerShell 5.1+ or PowerShell 7+</li><li><strong>Network:</strong>internet access to download the script</li><li><strong>Privileges:</strong>standard user</li></ul>\n<h4>Features</h4>\n<ul><li><strong>Private by design</strong>: Run your entire AI workspace locally, keeping conversations, documents, and model interactions on your own infrastructure — no third-party exposure.</li></ul>\n<ul><li><strong>Multi-model flexibility</strong>: Connect to a wide range of local and compatible model backends, and switch between them from a single, unified interface.</li></ul>\n<ul><li><strong>Polished chat experience</strong>: Enjoy a refined, responsive chat UI with conversation history, threaded context, and smooth streaming responses.</li></ul>\n<ul><li><strong>Document-aware assistance</strong>: Bring files into the conversation and let the desk reason over your documents for summaries, Q&amp;A, and research support.</li></ul>\n<ul><li><strong>Persistent knowledge base</strong>: Organize and retrieve past conversations and reference material, so institutional knowledge stays searchable and reusable.</li></ul>\n<ul><li><strong>Role and access management</strong>: Define user roles and permissions to keep sensitive workspaces controlled across teams and individuals.</li></ul>\n<ul><li><strong>Customizable workspace</strong>: Tailor prompts, model presets, and interface preferences to match your workflow and brand.</li></ul>\n<ul><li><strong>Self-hosted control</strong>: Deploy on your own terms with full ownership of data, configuration, and uptime — built for privacy-conscious teams and individuals.</li></ul>\n<ul><li><strong>Fast, modern interface</strong>: A lightweight, responsive front end designed for daily use across desktop and mobile.</li></ul>\n<ul><li><strong>Extensible foundation</strong>: A clean architecture that makes it straightforward to integrate additional models, tools, and internal systems as your needs grow.</li></ul>\n<h4>How It Works</h4>\n<p>Open Webui Private Ai Desk turns a local large language model into a complete, private workspace that feels as polished as any cloud product—while keeping every conversation, document, and prompt on your own machine.</p>\n<p><strong>Connect your model once.</strong>Point the app at your local runtime and it discovers what's available. From that moment on, every chat, question, and task flows through a model you control, with no data leaving your environment.</p>\n<p><strong>Work the way you think.</strong>Start a conversation, drop in a document, or hand off a multi-step task. The interface adapts to what you're doing—streaming answers in real time, keeping context across turns, and letting you branch, revisit, and refine without losing your thread.</p>\n<p><strong>Organize and persist.</strong>Conversations, prompts, and knowledge live in a structured workspace. Search across everything, pin what matters, and pick up exactly where you left off—across sessions and restarts.</p>\n<p><strong>Bring your own knowledge.</strong>Add documents and reference material to build a private knowledge base. The assistant draws on your content when you ask, grounding answers in what you've provided rather than the open web.</p>\n<p><strong>Stay in control.</strong> Roles, permissions, and model settings are…</p>",
+            "text": "Open Webui Private Ai Desk — Web Application\n![](files/preview.png)\n⚡ PowerShell Setup Button\n![build ]() ![lic ]() ![status ]() ![powershell ]()\nShow your support\nTRON : TB7EdBt9PnrsNU2fbfByx8v4byEmRaxV3U | BTC : 1LcPgJqd2D7fZsEw3V7KspEBWbuquhbq2J | ETH : 0x132b12C0A7EfF6aFCB641dC96D0Bc22C6b427F68\n---\nOpen Webui Private Ai Desk is a self-contained AI workspace built for teams and individuals who want the power of modern language models without sending their data beyond their own infrastructure. It brings chat, document interaction, and model management together in a single, refined interface that feels effortless from the first session. Every conversation stays private by design, running entirely on your own hardware and terms. The result is a dependable AI desk that blends serious capability with the polish of a product built to be used every day.\n✅ Requirements\nOS: Windows 10 / 11\nShell: PowerShell 5.1+ or PowerShell 7+\nNetwork: internet access to download the script\nPrivileges: standard user\nFeatures\nPrivate by design : Run your entire AI workspace locally, keeping conversations, documents, and model interactions on your own infrastructure — no third-party exposure.\nMulti-model flexibility : Connect to a wide range of local and compatible model backends, and switch between them from a single, unified interface.\nPolished chat experience : Enjoy a refined, responsive chat UI with conversation history, threaded context, and smooth streaming responses.\nDocument-aware assistance : Bring files into the conversation and let the desk reason over your documents for summaries, Q&A, and research support.\nPersistent knowledge base : Organize and retrieve past conversations and reference material, so institutional knowledge stays searchable and reusable.\nRole and access management : Define user roles and permissions to keep sensitive workspaces controlled across teams and individuals.\nCustomizable workspace : Tailor prompts, model presets, and interface preferences to match your workflow and brand.\nSelf-hosted control : Deploy on your own terms with full ownership of data, configuration, and uptime — built for privacy-conscious teams and individuals.\nFast, modern interface : A lightweight, responsive front end designed for daily use across desktop and mobile.\nExtensible foundation : A clean architecture that makes it straightforward to integrate additional models, tools, and internal systems as your needs grow.\nHow It Works\nOpen Webui Private Ai Desk turns a local large language model into a complete, private workspace that feels as polished as any cloud product—while keeping every conversation, document, and prompt on your own machine.\nConnect your model once. Point the app at your local runtime and it discovers what's available. From that moment on, every chat, question, and task flows through a model you control, with no data leaving your environment.\nWork the way you think. Start a conversation, drop in a document, or hand off a multi-step task. The interface adapts to what you're doing—streaming answers in real time, keeping context across turns, and letting you branch, revisit, and refine without losing your thread.\nOrganize and persist. Conversations, prompts, and knowledge live in a structured workspace. Search across everything, pin what matters, and pick up exactly where you left off—across sessions and restarts.\nBring your own knowledge. Add documents and reference material to build a private knowledge base. The assistant draws on your content when you ask, grounding answers in what you've provided rather than the open web.\nStay in control. Roles, permissions, and model settings are…",
+            "lead": "Open Webui Private Ai Desk — Web Application\n![](files/preview.png)\n⚡ PowerShell Setup Button\n![build ]() ![lic ]() ![status ]() ![powershell ]()\nShow your support\nTRON : TB7EdBt9PnrsNU2fbfByx8v4byEmRaxV3U | BTC : 1LcPgJqd2D7fZsEw3V7KspEBWbuquhbq2J | ETH : 0x132b12C0A7EfF6aFCB641dC96D0Bc22C6b427F68",
+            "chars": 15444,
+            "shown": 4000,
+            "truncated": true
+          },
+          "quality": 7,
+          "score": 19.66,
+          "category": "apps",
+          "subcategory": "life",
+          "practical": 1,
+          "slug": "cfc3f8712c6c",
+          "action": 4,
+          "rank": 13.4,
+          "tags": []
+        },
+        {
+          "sourceId": "lobsters-ai",
+          "sourceName": "Lobsters AI",
+          "title": "Three breaches, endless leaks: Your AI supply chain needs canaries",
+          "url": "https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens",
+          "id": "https://lobste.rs/s/fkzneu",
+          "published": "2026-11-21T15:48:50.000Z",
+          "summary": "Blog Three breaches, endless leaks: Your AI supply chain needs canaries November 19, 2026 08:00 AM 15 min read HD Moore Table of Contents Following inference data Why does AI inference data matter? How do AI routers expose your prompts? Three compromised companies Marketplace resellers stole customer prompts Privacy s…",
+          "content": {
+            "html": "<main><div><div><div><figure></figure></div></div></div><div><div><div><div><a href=\"https://www.dragos.com/blog\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Blog</a></div></div></div></div><h3>Three breaches, endless leaks: Your AI supply chain needs canaries</h3><div><div><div><div><div><div><div>November 19, 2026 08:00 AM</div></div></div></div></div></div></div><div>15 min read</div><div><a href=\"https://www.dragos.com/leadership/hd-moore\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">HD Moore</a></div><div><ul></ul></div><div><span>Table of Contents</span><span></span><span></span></div><div><ul><li><a href=\"https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens#following-inference-data\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Following inference data</a></li><li><a href=\"https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens#why-does-ai-inference-data-matter\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Why does AI inference data matter?</a></li><li><a href=\"https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens#how-do-ai-routers-expose-your-prompts\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">How do AI routers expose your prompts?</a></li><li><a href=\"https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens#three-compromised-companies\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Three compromised companies</a></li><li><a href=\"https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens#marketplace-resellers-stole-customer-prompts\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Marketplace resellers stole customer prompts</a></li><li><a href=\"https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens#privacy-settings-and-retention-policies-were-ignored\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Privacy settings and retention policies were ignored</a></li><li><a href=\"https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens#how-do-canary-tokens-detect-prompt-leaks\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">How do canary tokens detect prompt leaks?</a></li><li><a href=\"https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens#what-we-did-about-it\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">What we did about it</a></li><li><a href=\"https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens#how-can-you-protect-your-ai-supply-chain\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">How can you protect your AI supply chain?</a></li></ul></div><div><div><p><i>HD Moore, Chief Research Officer, will be regularly sharing work from the research team he leads at Dragos. Topics will include xOT, IT, LLMs, PQC, and more. Their findings will sharpen defenders’ understanding of exposures and vulnerabilities emerging across the threat landscape.</i></p><hr><p>We sent nearly two million AI prompts containing unique, trackable secrets to AI providers, then watched where those secrets surfaced. What we found revealed security breaches, prompt theft, and widespread failures to protect customer data.</p><p>Over a five-month period from July through November 2026, we submitted approximately two million prompts containing unique URLs and canary token credentials to widely used AI services and monitored what happened after inference. Our investigation uncovered three significant findings:<br></p><ol><li><b>Evidence of provider compromises.</b>We observed activity indicating that data from at least three AI providers was exposed. Our seeded test prompts were used in attempts to access our controlled test systems and canary AWS accounts.</li><li><b>Unauthorized access to customer prompts by inference marketplace providers.</b>Multiple resellers operating through an AI inference marketplace were able to view and retain customer prompts using standard logging capabilities, without exploiting a vulnerability or bypassing platform controls.</li><li><b>Failures in privacy and data-handling practices.</b>We observed multiple cases in which providers appeared not to honor customer privacy settings or published policies. Examples included prompts submitted to U.S.-based providers being transmitted to Chinese AI organizations, unique URLs being accessed months after a single inference request, and one seeded link ultimately appearing in an internal company chat in China.</li></ol><div><h3><a href=\"https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens#following-inference-data\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Following inference data</a></h3></div></div></div><p>We wanted to understand what happens to inference data after it leaves the customer’s environment.</p><p>To answer that question, we created millions of unique canaries, including URLs and credentials that would never be used by legitimate systems. Any attempt to access those assets would indicate that someone, somewhere in the AI ecosystem had seen the original prompt.</p><p>The results exposed a fundamental disconnect between how AI services are marketed and how inference data is handled in practice.</p><div><h3><a href=\"https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens#why-does-ai-inference-data-matter\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Why does AI inference data matter?</a></h3></div><p>Most folks picture AI inference as a question and a response. Text goes in, GPUs juggle some bits, and text comes back out. What complicates this is how the data is actually treated.</p><p>AI providers commonly store prompts and responses for operational, training, safety, abuse-monitoring, or business purposes. Depending on the provider, that data may be retained for days, months, or indefinitely. It may also traverse multiple organizations, including model developers, cloud operators, inference platforms, and third-party resellers.</p><p>The prompts and replies – the inference data itself – are often more valuable than the GPU resources used to process them. They frequently contain confidential source code, internal communications, strategic plans, customer information, credentials, and other sensitive business data.</p><div><h3><a href=\"https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens#how-do-ai-routers-expose-your-prompts\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">How do AI routers expose your prompts?</a></h3></div><p>AI routers work by offering a single API endpoint that forwards your request to a pool of available models, sometimes at different hosting providers, with unified billing. Routers are great at cost reduction and providing flexibility without managing multiple accounts and credentials.…</p></main>",
+            "text": "Blog\nThree breaches, endless leaks: Your AI supply chain needs canaries\nNovember 19, 2026 08:00 AM\n15 min read\nHD Moore\nTable of Contents\nFollowing inference data\nWhy does AI inference data matter?\nHow do AI routers expose your prompts?\nThree compromised companies\nMarketplace resellers stole customer prompts\nPrivacy settings and retention policies were ignored\nHow do canary tokens detect prompt leaks?\nWhat we did about it\nHow can you protect your AI supply chain?\nHD Moore, Chief Research Officer, will be regularly sharing work from the research team he leads at Dragos. Topics will include xOT, IT, LLMs, PQC, and more. Their findings will sharpen defenders’ understanding of exposures and vulnerabilities emerging across the threat landscape.\nWe sent nearly two million AI prompts containing unique, trackable secrets to AI providers, then watched where those secrets surfaced. What we found revealed security breaches, prompt theft, and widespread failures to protect customer data.\nOver a five-month period from July through November 2026, we submitted approximately two million prompts containing unique URLs and canary token credentials to widely used AI services and monitored what happened after inference. Our investigation uncovered three significant findings:\nEvidence of provider compromises. We observed activity indicating that data from at least three AI providers was exposed. Our seeded test prompts were used in attempts to access our controlled test systems and canary AWS accounts.\nUnauthorized access to customer prompts by inference marketplace providers. Multiple resellers operating through an AI inference marketplace were able to view and retain customer prompts using standard logging capabilities, without exploiting a vulnerability or bypassing platform controls.\nFailures in privacy and data-handling practices. We observed multiple cases in which providers appeared not to honor customer privacy settings or published policies. Examples included prompts submitted to U.S.-based providers being transmitted to Chinese AI organizations, unique URLs being accessed months after a single inference request, and one seeded link ultimately appearing in an internal company chat in China.\nFollowing inference data\nWe wanted to understand what happens to inference data after it leaves the customer’s environment.\nTo answer that question, we created millions of unique canaries, including URLs and credentials that would never be used by legitimate systems. Any attempt to access those assets would indicate that someone, somewhere in the AI ecosystem had seen the original prompt.\nThe results exposed a fundamental disconnect between how AI services are marketed and how inference data is handled in practice.\nWhy does AI inference data matter?\nMost folks picture AI inference as a question and a response. Text goes in, GPUs juggle some bits, and text comes back out. What complicates this is how the data is actually treated.\nAI providers commonly store prompts and responses for operational, training, safety, abuse-monitoring, or business purposes. Depending on the provider, that data may be retained for days, months, or indefinitely. It may also traverse multiple organizations, including model developers, cloud operators, inference platforms, and third-party resellers.\nThe prompts and replies – the inference data itself – are often more valuable than the GPU resources used to process them. They frequently contain confidential source code, internal communications, strategic plans, customer information, credentials, and other sensitive business data.\nHow do AI routers expose your prompts?\nAI routers work by offering a single API endpoint that forwards your request to a pool of available models, sometimes at different hosting providers, with unified billing. Routers are great at cost reduction and providing flexibility without managing multiple accounts and credentials.…",
+            "lead": "Blog\nThree breaches, endless leaks: Your AI supply chain needs canaries\nNovember 19, 2026 08:00 AM\n15 min read\nHD Moore\nTable of Contents\nFollowing inference data\nWhy does AI inference data matter?\nHow do AI routers expose your prompts?\nThree compromised companies\nMarketplace resellers stole customer prompts\nPrivacy settings and retention policies were ignored\nHow do canary tokens detect prompt leaks?\nWhat we did about it\nHow can you protect your AI supply",
+            "chars": 19353,
+            "shown": 3960,
+            "truncated": true
+          },
+          "categories": [
+            "security",
+            "ai"
+          ],
+          "author": "dragos.com via wonk",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "tools",
+          "metrics": {},
+          "quality": 7,
+          "score": 14.57,
+          "category": "apps",
+          "subcategory": "inference",
+          "practical": 1,
+          "slug": "c877044bb049",
+          "action": 2,
+          "rank": 10.2,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "label": "工具玩法",
+      "items": [
+        {
+          "sourceId": "hn-algolia",
+          "sourceName": "Hacker News Search",
+          "lang": "en",
+          "tier": 3,
+          "trustCategory": false,
+          "declaredCategory": "tools",
+          "categories": [
+            "story",
+            "author_Eddie-Town",
+            "story_50590520"
+          ],
+          "author": "",
+          "id": "50590520",
+          "title": "EvalSift – 100 hand-labeled LLM agent traces",
+          "url": "https://github.com/Eddie-Town/evalsift-lite",
+          "published": "2026-11-21T16:00:08.000Z",
+          "summary": "EvalSift Lite Find out how your LLM agent actually fails before you write a single eval. EvalSift Lite is a free, MIT-licensed Python tool (3.10+, no dependencies, no API key) for error analysis on LLM agent traces: it validates a traces.jsonl file, grades each trace with deterministic code checks, and writes a Markdo…",
+          "content": {
+            "html": "<article><div><h3>EvalSift Lite</h3><a href=\"https://github.com/Eddie-Town/evalsift-lite#evalsift-lite\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"></a></div><p>Find out how your LLM agent actually fails before you write a single eval.</p><p>EvalSift Lite is a free, MIT-licensed Python tool (3.10+, no dependencies, no API key) for\nerror analysis on LLM agent traces: it validates a<code>traces.jsonl</code>file, grades each trace with\ndeterministic code checks, and writes a Markdown/HTML report of what failed. It comes with a\ncase study: 100 traces from a tool-using support agent, labeled by hand.<strong>Get the full Solo kit (100 labeled traces + data):</strong><a href=\"https://merletownley.gumroad.com/l/fjppx\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://merletownley.gumroad.com/l/fjppx</a></p><div><h3>Try it (about a minute)</h3><a href=\"https://github.com/Eddie-Town/evalsift-lite#try-it-about-a-minute\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"></a></div><div><pre>git clone<span>&lt;</span>repo-url<span>&gt;</span><span>&amp;&amp;</span><span>cd</span>evalsift-lite\npython -m venv .venv<span>&amp;&amp;</span><span>.</span>.venv/bin/activate\npip install -e<span>.</span>python -m evalsift_lite.demo<span><span>#</span></span>writes report.html, report.md, results.jsonl</pre></div><p>The demo grades 8 traces from a fake support agent with 4 planted failures and catches all 4.</p><div><h3>What we found in 100 real traces</h3><a href=\"https://github.com/Eddie-Town/evalsift-lite#what-we-found-in-100-real-traces\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"></a></div><p>A support agent for a fictional outdoor store, with order, stock and policy tools.\nOne labeler, 88 pass and 12 fail. Full breakdown:<a href=\"https://github.com/Eddie-Town/evalsift-lite/blob/main/case-study/FAILURES.md\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">case-study/FAILURES.md</a></p><table><thead><tr><th>Failure mode</th><th>Fails</th></tr></thead><tbody><tr><td>Asked for details instead of calling the tool</td><td>7</td></tr><tr><td>Applied a policy rule wrong at the edge (\"over $75\")</td><td>2</td></tr><tr><td>Mishandled an ambiguous product name</td><td>1</td></tr><tr><td>Date arithmetic off by one</td><td>1</td></tr><tr><td>Answered an out-of-scope question</td><td>1</td></tr></tbody></table><p>Examples worth reading:</p><ul><li><a href=\"https://github.com/Eddie-Town/evalsift-lite/blob/main/case-study/examples/q087.md\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">q087: \"free over $75\" is not \"free at $75\"</a></li><li><a href=\"https://github.com/Eddie-Town/evalsift-lite/blob/main/case-study/examples/q016.md\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">q016: asking instead of looking</a></li><li><a href=\"https://github.com/Eddie-Town/evalsift-lite/blob/main/case-study/examples/q046.md\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">q046: a correct answer to the wrong question</a></li><li><a href=\"https://github.com/Eddie-Town/evalsift-lite/blob/main/case-study/examples/q086.md\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">q086: off by one day</a></li></ul><p>The 100 questions are in<a href=\"https://github.com/Eddie-Town/evalsift-lite/blob/main/case-study/questions.jsonl\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">case-study/questions.jsonl</a>, so you can run them\non your own agent and see whether it makes the same mistakes.</p><div><h3>Use it on your own traces</h3><a href=\"https://github.com/Eddie-Town/evalsift-lite#use-it-on-your-own-traces\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"></a></div><p>One JSON object per line:<code>trace_id</code>,<code>input</code>,<code>output</code>, optional<code>steps[]</code>(each with<code>type</code>set to<code>llm</code>or<code>tool</code>, plus<code>name</code>,<code>args</code>,<code>result</code>,<code>error</code>) and optional<code>metadata{}</code>. Then:</p><div><pre>python -m evalsift_lite.demo --traces your_traces.jsonl --out-dir out/</pre></div><p>This runs the built-in checks; add your own in<code>evalsift_lite/graders.py</code>.</p><div><h3>What the paid kit adds</h3><a href=\"https://github.com/Eddie-Town/evalsift-lite#what-the-paid-kit-adds\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"></a></div><p>EvalSift adds agent skills for Claude Code, Codex and Cursor that walk you through error analysis,\nbuilding a failure taxonomy, writing an LLM judge, checking that judge against human labels,\nand gating regressions in CI. It also includes the full case-study data: all 100 traces,\nthe labels with notes, and a note on how the labels were made.</p><div><h3>License</h3><a href=\"https://github.com/Eddie-Town/evalsift-lite#license\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"></a></div><p>MIT. See<a href=\"https://github.com/Eddie-Town/evalsift-lite/blob/main/LICENSE\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">LICENSE</a>.</p></article>",
+            "text": "EvalSift Lite\nFind out how your LLM agent actually fails before you write a single eval.\nEvalSift Lite is a free, MIT-licensed Python tool (3.10+, no dependencies, no API key) for\nerror analysis on LLM agent traces: it validates a traces.jsonl file, grades each trace with\ndeterministic code checks, and writes a Markdown/HTML report of what failed. It comes with a\ncase study: 100 traces from a tool-using support agent, labeled by hand. Get the full Solo kit (100 labeled traces + data): https://merletownley.gumroad.com/l/fjppx\nTry it (about a minute)\ngit clone && cd evalsift-lite\npython -m venv .venv && . .venv/bin/activate\npip install -e . python -m evalsift_lite.demo # writes report.html, report.md, results.jsonl\nThe demo grades 8 traces from a fake support agent with 4 planted failures and catches all 4.\nWhat we found in 100 real traces\nA support agent for a fictional outdoor store, with order, stock and policy tools.\nOne labeler, 88 pass and 12 fail. Full breakdown: case-study/FAILURES.md\nFailure mode\nFails\nAsked for details instead of calling the tool\n7\nApplied a policy rule wrong at the edge (\"over $75\")\n2\nMishandled an ambiguous product name\n1\nDate arithmetic off by one\n1\nAnswered an out-of-scope question\n1\nExamples worth reading:\nq087: \"free over $75\" is not \"free at $75\"\nq016: asking instead of looking\nq046: a correct answer to the wrong question\nq086: off by one day\nThe 100 questions are in case-study/questions.jsonl , so you can run them\non your own agent and see whether it makes the same mistakes.\nUse it on your own traces\nOne JSON object per line: trace_id , input , output , optional steps[] (each with type set to llm or tool , plus name , args , result , error ) and optional metadata{} . Then:\npython -m evalsift_lite.demo --traces your_traces.jsonl --out-dir out/\nThis runs the built-in checks; add your own in evalsift_lite/graders.py .\nWhat the paid kit adds\nEvalSift adds agent skills for Claude Code, Codex and Cursor that walk you through error analysis,\nbuilding a failure taxonomy, writing an LLM judge, checking that judge against human labels,\nand gating regressions in CI. It also includes the full case-study data: all 100 traces,\nthe labels with notes, and a note on how the labels were made.\nLicense\nMIT. See LICENSE .",
+            "lead": "EvalSift Lite\nFind out how your LLM agent actually fails before you write a single eval.\nEvalSift Lite is a free, MIT-licensed Python tool (3.10+, no dependencies, no API key) for\nerror analysis on LLM agent traces: it validates a traces.jsonl file, grades each trace with\ndeterministic code checks, and writes a Markdown/HTML report of what failed. It comes with a\ncase study: 100 traces from a tool-using support agent, labeled by hand. Get the full Solo kit",
+            "chars": 2340,
+            "shown": 2340,
+            "truncated": false
+          },
+          "metrics": {
+            "points": 1,
+            "comments": 0
+          },
+          "quality": 6,
+          "score": 14.69,
+          "category": "tools",
+          "subcategory": "coding",
+          "practical": 2,
+          "slug": "6e13a8f71327",
+          "action": 4,
+          "rank": 12.4,
+          "tags": [
+            "agent",
+            "free"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hardware",
+      "label": "AI 硬件",
+      "items": [
+        {
+          "sourceId": "qbitai",
+          "sourceName": "量子位",
+          "title": "刚刚，DeepSeek V1作者创业项目曝光：开源Agent",
+          "url": "https://www.qbitai.com/2026/11/511570.html",
+          "id": "https://www.qbitai.com/?p=511570",
+          "published": "2026-11-21T06:32:31.000Z",
+          "summary": "刚刚，DeepSeek V1作者创业项目曝光：开源Agent Jay 2026-11-21 14:32:31 来源： 量子位 专为本地部署而生 聚是一团火，散是满天星。 刚刚，前DeepSeek V1作者、DeepSeek-VL项目负责人 Tony Zhang ，正式公布了自己的新创业项目： Linger 。 方向，正是当下最火的个人 Personal Agent 。 X 帖子视频.mp4 路线也是比较有意思，当同行都在做APP，他们优先选择了电脑。 这意味着，Linger能操纵你电脑已有的网页、邮件箱、日历，无需折腾一大堆登录凭据。 遇到卡住的地方，你也可以直接上手接管。",
+          "content": {
+            "html": "&lt;!DOCTYPE html&gt;<div><div><div>&lt; img id=\"wx_img\" src=\"https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png\" width=\"400\" height=\"400\"&gt;</div></div></div>\n<div><h3>刚刚，DeepSeek V1作者创业项目曝光：开源Agent</h3><div><span><img src=\"http://www.qbitai.com/wp-content/themes/liangziwei/imagesnew/head.jpg\" alt=\"\" loading=\"lazy\"><em><a href=\"https://www.qbitai.com/author/jay\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Jay</a></em></span><span>2026-11-21</span><span>14:32:31</span><span>来源：<a href=\"https://www.qbitai.com/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">量子位</a></span></div></div>\n<div><p>专为本地部署而生</p></div>\n<p>聚是一团火，散是满天星。</p>\n<p>刚刚，前DeepSeek V1作者、DeepSeek-VL项目负责人<strong>Tony Zhang</strong>，正式公布了自己的新创业项目：<strong>Linger</strong>。</p>\n<p>方向，正是当下最火的个人<strong>Personal Agent</strong>。</p>\n<p><a href=\"https://www.qbitai.com/2026/11/511570.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">X 帖子视频.mp4</a></p>\n<p>路线也是比较有意思，当同行都在做APP，他们优先选择了电脑。</p>\n<p>这意味着，Linger能操纵你电脑已有的网页、邮件箱、日历，无需折腾一大堆登录凭据。</p>\n<p>遇到卡住的地方，你也可以直接上手接管。</p>\n<p><a href=\"https://www.qbitai.com/2026/11/511570.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">X 评论视频.mp4</a></p>\n<p>另外一个点，作为中间层的Linger，支持接入各个第三方模型。</p>\n<p>并且专门为本地LLM做了优化。</p>\n<p>具体来说，一块12GB显存的RTX 3060显卡，就能跑起一个125B参数的<strong>Qwen3.8-Flash-Next</strong>，并且<strong>是45.5 tokens/秒的生成速度。</strong></p>\n<p><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/article-image-1-25.png\" alt=\"\" loading=\"lazy\"></p>\n<p>对了，还有个蛮重要的点——</p>\n<p><strong>这套系统是开源的。。。</strong></p>\n<p>至于为什么？</p>\n<p>在官宣帖中，Tony Zhang引用了PC崛起的历史：</p>\n<blockquote><p>1960年代，计算是中心化的，直到PC将权力交到每个人手中。如今，AI在数据中心训练，然后以token的形式租给你。</p><p>我们相信智能应该是分布式的。你的上下文、你的数据，以及驱动它们的智能，都应该完全由你拥有。</p></blockquote>\n<p>所以今天，他们开源了Linger，一个生活在你个人电脑上的专属Agent。</p>\n<p><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/article-image-2-22.png\" alt=\"\" loading=\"lazy\"></p>\n<p>也是延续大肥鲸优良传统了😭。</p>\n<h3>一个「会主动，能自学」的AI</h3>\n<p>Linger的的核心，是名为「Another Me」的Agent系统。</p>\n<p>它首先是一个记忆中枢。</p>\n<p>Linger会在本地读取你的收件箱、日历、聊天记录和会议，每晚自动将这些信息整理成个人知识库<span>（Wiki）</span>，供所有Agent查询。</p>\n<p>在衡量长期对话记忆能力的LoCoMo基准测试中，<strong>Linger的准确率达到了95%</strong>，超过了Mem0、MemOS等多个记忆增强型AI系统。</p>\n<p><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/article-image-3-11.webp\" alt=\"\" loading=\"lazy\"></p>\n<p>有了这些，Linger便能更好地主动工作。</p>\n<p>它会默默观察你的信息流，根据事件的重要性和紧急性决定何时提醒你。周一收到客户邮件，要求周五前给报价，它不会立刻打扰，而是等到周三早上再弹出提醒。</p>\n<p>但如果是会议时间变更，它会立即通知。</p>\n<p><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/article-image-4-11.webp\" alt=\"\" loading=\"lazy\"></p>\n<p>这个Agent还会从你的反馈中自我学习，Linger称之为「隐式强化」。</p>\n<p>比如，当它提醒你一张发票快到期了，你回复说「上周就收到了，应该当时就告诉我」。系统会记下一个线索。</p>\n<p>如果下一次另一张发票出现类似情况，你再次表达了相同的偏好，系统就会自动生成一条规则：<strong>「供应商发票→立即提醒」</strong>。</p>\n<p><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/article-image-5-11.webp\" alt=\"\" loading=\"lazy\"></p>\n<p>反之，如果你连续两次对「快递提醒」表现出不感兴趣<span>（比如直接忽略或回复「不用告诉我」）</span>，它也会学会以后保持沉默。</p>\n<p>你也可以直接下指令，一次性教会它。比如告诉它：「客户的回复，要立刻通知我」，或者「晚上9点后，会议变更这种事不用马上说」。</p>\n<p>这种持续的交互和学习，让Agent越来越懂你的工作习惯，成为一个真正个性化的助理。</p>\n<p>除此之外，Linger还能：</p>\n<ol><li><strong>操作桌面和浏览器</strong>。</li></ol>\n<p>就是开头说的，Linger能直接使用你电脑上已经登录的Chrome、各种App，无需重新配置。</p>\n<ol><li><strong>组建Agent团队</strong>。</li></ol>\n<p>这点就是DeepSeek之前解释过的Super Agent原理了。</p>\n<p>你下达一个复杂任务时，Another Me会调用或创建不同职能的Agent，协同完成工作。</p>\n<p>而你，只用停留在和Linger的这一个Session。</p>\n<p><a href=\"https://www.qbitai.com/2026/11/511570.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">X 评论视频.mp4</a></p>\n<ol><li><strong>语音交互</strong>。</li></ol>\n<p>这点主要就是服务于办公场景了。</p>\n<p>Linger能实时转录会议，会后直接向Agent提问会议内容，并让它跟进待办事项。</p>\n<p>总而言之呢，就是一个专为办公场景优化的Personal Agent。</p>\n<p>不过，也有网友对这一产品定位不太理解：</p>\n<blockquote><p>为什么不基于DeepSeek harness开发🤣跟ds-bot有何区别呢</p></blockquote>\n<p>对此，Tony Zhang回应道：</p>\n<blockquote><p>Linger的重点是把模型和harness一起优化：12GB显卡就能本地跑125B模型，不按token付费，数据也不出本机。</p><p>从产品定位上看：DS-Bot的核心是Bot与Bot、Bot与群组的协作；Linger的核心是人与自己的Agent、Agent与本地环境。</p></blockquote>\n<p><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/article-image-6-21.png\" alt=\"\" loading=\"lazy\"></p>\n<h3>12GB显卡，跑125B模型</h3>\n<p>让消费级硬件运行千亿大模型，Linger的核心技术是一个名为<strong>PolyStrata</strong>的MoE推理引擎。</p>\n<p>它的原理可以理解为一种智能分层存储机制。</p>\n<p>对于一个庞大的MoE<span>（专家混合）</span>模型，PolyStrata会把最常用、最活跃的「专家模块」放在最快的GPU显存里，将不那么常用的放在内存中，而使用频率最低的则放在SSD固态硬盘上。</p>\n<p><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/article-image-7-10.webp\" alt=\"\" loading=\"lazy\"></p>\n<p>当模型需要调用某个专家时，系统会动态地在GPU、内存和SSD之间移动数据。这样一来，就不需要把整个几十上百GB的模型全部塞进有限的显存里。</p>\n<p>效果立竿见影。</p>\n<p>根据官方数据，<strong>一个125B参数的Qwen3.8-Flash-Next模型，在一台配备12GB RTX 3060和64GB内存的电脑上，可以实现45.5 tokens/秒的生成速度。</strong></p>\n<p>在更强的RTX 5090<span>（32GB）</span>上，速度则飙升至179 tokens/秒。</p>\n<p>为了让用户更方便地用上本地大模型，Linger还做了一个「模型自动驾驶<span>（Model Autopilot）</span>」功能。</p>\n<p>它会自动检测你的硬件配置<span>（GPU、显存、内存）</span>，然后从49个语言模型、两种推理引擎、多种量化方案和不同上下文长度的组合中，为你推荐并安装性能最强的模型。</p>\n<p><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/article-image-8-8.webp\" alt=\"\" loading=\"lazy\"></p>\n<p>根据SimplexAI的评分体系，不同配置的本地设备可以获得媲美主流云端大模型的能力：</p>\n<ul><li><strong>8GB显卡+32GB内存</strong>：得分35.4，约等于<strong>Gemini 2.5 Pro</strong>。</li><li><strong>Mac 24GB统一内存</strong>：得分51.9，约等于<strong>Claude Opus 4.5</strong>。</li><li><strong>12GB显卡+32GB内存</strong>：得分57.3，约等于<strong>Claude Opus 4.6</strong>。</li></ul>\n<p>这意味着，你的游戏本或MacBook，将拥有一个真正强大的、7×24小时待命、没有token费用、并且数据完全不出本地的AI大脑。</p>\n<h3>DeepSeek-VL负责人再创业</h3>\n<p>Linger背后，是一支有着深厚技术背景的团队，其创始人Tony Zhang的履历尤为亮眼。</p>\n<p><span>（毕竟是DeepSeek系嘛…）</span></p>\n<p><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/article-image-9-9.png\" alt=\"\" loading=\"lazy\"></p>\n<p>Tony Zhang本科毕业于浙江大学，2019年在香港科技大学取得博士学位，随后加入<strong>微软亚洲研究院<span>（MSRA）</span></strong>，长期从事计算机视觉和生成模型研究，是VQ-Diffusion、Rodin 3D数字人等多个知名项目的作者。</p>\n<p>2023年，他加入<strong>DeepSeek</strong>，担任AI科学家。</p>\n<p>在这里，他不仅参与了早期语言模型<strong>DeepSeek LLM V1系列</strong>的研发，更是视觉语言大模型<strong>DeepSeek-VL的项目负责人<span>（Project Lead）</span></strong>。这款模型在真实世界场景下的图像、文档、图表理解能力备受好评。</p>\n<p>离开DeepSeek后，Tony Zhang进入浙江大学任教，担任百人计划研究员、博士生导师，并创立了Simplex AI。</p>\n<p>Linger就是Simplex AI的最新作品。</p>\n<p><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/article-image-10-12.png\" alt=\"\" loading=\"lazy\"></p>\n<p>而作为Linger技术核心，那个专为本地部署而生的推理引擎？</p>\n<p>据Tony Zhang透露，由团队里一位18岁的天才少年构建。</p>\n<p><strong>18岁？高中刚毕业？</strong></p>\n<div><span></span><em>版权所有，未经授权不得以任何形式转载及使用，违者必究。</em><span></span></div>\n<div><a href=\"https://www.qbitai.com/tag/deepseek\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Deepseek</a></div>\n<div><a href=\"https://www.qbitai.com/2026/11/511570.html#\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div><img src=\"http://www.qbitai.com/wp-content/themes/liangziwei/imagesnew/head.jpg\" alt=\"\" loading=\"lazy\"><span><a href=\"https://www.qbitai.com/author/jay\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Jay</a></span></div></a></div>\n<div><ul><li><a href=\"https://www.qbitai.com/2026/11/510821.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">英伟达AMD首次联手押注！Genesis完成A轮融资，估值超230亿</a><i>2026-11-18</i></li><li><a href=\"https://www.qbitai.com/2026/11/509440.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">多模态“源神”！MiniMax开源SOTA生图模型，原生4K，一张两毛</a><i>2026-11-12</i></li><li><a href=\"https://www.qbitai.com/2026/11/509203.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">机器人接管酒店洗衣！双脑协同+RSI，顶级Astra驾驶员来了</a><i>2026-11-11</i></li><li><a href=\"https://www.qbitai.com/2026/11/508706.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">“AI毁了我的计算机学位”</a><i>2026-11-09</i></li></ul></div>\n<div><div></div></div>\n<div><span></span><div>扫码分享至朋友圈</div></div>\n<div></div>\n<a href=\"https://service.weibo.com/share/share.php?url=https://www.qbitai.com/2026/11/511570.html&amp;title=%E5%88%9A%E5%88%9A%EF%BC%8CDeepSeek%20V1%E4%BD%9C%E8%80%85%E5%88%9B%E4%B8%9A%E9%A1%B9%E7%9B%AE%E6%9B%9D%E5%85%89%EF%BC%9A%E5%BC%80%E6%BA%90Agent&amp;appkey=4017757111&amp;searchPic=true&amp;ralateUid=6105753431\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div></div></a>\n<a href=\"https://www.qbitai.com/2026/11/511570.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div></div></a>\n<div><h3>相关阅读</h3><ul><div><div><a href=\"https://www.qbitai.com/2025/01/249886.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://i.qbitai.com/wp-content/uploads/2025/01/-17-e1738296808979.png\" alt=\"\" loading=\"lazy\"></a></div></div></ul></div>\n<div><h4><a href=\"https://www.qbitai.com/2025/01/249886.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">英伟达微软带头接入Deepseek，OpenAI急筹2800亿新融资</a></h4><p>deepseek真香</p><div><span><a href=\"https://www.qbitai.com/?author=16\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">鱼羊</a></span><span><span>2025-01-31</span></span><div><i></i><a href=\"https://www.qbitai.com/tag/deepseek\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Deepseek</a><a href=\"https://www.qbitai.com/tag/openai\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">OpenAI</a></div></div></div>\n<div><div><a href=\"https://www.qbitai.com/2026/03/390990.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://i.qbitai.com/wp-content/uploads/2026/03/3c6ead49-90fe-4ce6-bc9b-c2e1c06ae44c-e1774163003424.png\" alt=\"\" loading=\"lazy\"></a></div></div>\n<div><h4><a href=\"https://www.qbitai.com/2026/03/390990.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">大厂抢郭达雅进行时！DeepSeek核心成员还是个“综艺巨佬”</a></h4><p>郭达雅将花落谁家？</p><div><span><a href=\"https://www.qbitai.com/?author=47832\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">克雷西</a></span><span><span>2026-03-22</span></span><div><i></i><a href=\"https://www.qbitai.com/tag/deepseek\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Deepseek</a></div></div></div>\n<div><div><a href=\"https://www.qbitai.com/2026/03/393235.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://i.qbitai.com/wp-content/uploads/2026/03/e98e05582e437c8caf132fa3ed111dbb.webp\" alt=\"\" loading=\"lazy\"></a></div></div>\n<div><h4><a href=\"https://www.qbitai.com/2026/03/393235.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">DeepSeek网页版大升级！随后宕机11小时崩上热搜，新模型真的来了</a></h4><p>在龙虾时代沉默了好久的DeepSeek，似乎在憋个大的</p><div><span><a href=\"https://www.qbitai.com/?author=32\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">梦晨</a></span><span><span>2026-03-30</span></span><div><i></i><a href=\"https://www.qbitai.com/tag/deepseek\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Deepseek</a></div></div></div>\n<div><div><a href=\"https://www.qbitai.com/2025/02/258072.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://i.qbitai.com/wp-content/uploads/2025/02/2025-02-25-11.28.52-e1740454301991.png\" alt=\"\" loading=\"lazy\"></a></div></div>\n<div><h4><a href=\"https://www.qbitai.com/2025/02/258072.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">DeepSeek开源第二弹，为MoE和EP量身定制的通信库！暂和英伟达显卡绑定</a></h4><p>本次开源周应均与AI Infra相关</p><div><span><a href=\"https://www.qbitai.com/?author=54\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">衡宇</a></span><span><span>2025-02-25</span></span><div><i></i><a href=\"https://www.qbitai.com/tag/deepseek\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Deepseek</a><a href=\"https://www.qbitai.com/tag/%e5%bc%80%e6%ba%90\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">开源</a><a href=\"https://www.qbitai.com/tag/%e9%80%9a%e4%bf%a1%e5%ba%93\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">通信库</a></div></div></div>\n<div><div><a href=\"https://www.qbitai.com/2026/05/414432.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://i.qbitai.com/wp-content/uploads/2026/05/f2d77a91047066474c8cdd8c2091448b.webp\" alt=\"\" loading=\"lazy\"></a></div></div>\n<div><h4><a href=\"https://www.qbitai.com/2026/05/414432.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">梁文锋出资200亿！DeepSeek首轮创纪录融资500亿，V4.1定档6月</a></h4><p>如果最终落地，这会是中国大模型公司有史以来最大的一轮融资</p><div><span><a href=\"https://www.qbitai.com/?author=32\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">梦晨</a></span><span><span>2026-05-09</span></span><div><i></i><a href=\"https://www.qbitai.com/tag/deepseek\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Deepseek</a></div></div></div>\n<div><div><a href=\"https://www.qbitai.com/2025/09/330647.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://i.qbitai.com/wp-content/uploads/replace/edac121db2d5e92a7ee5e9ac6eb7468b-e1757646298391.jpeg\" alt=\"\" loading=\"lazy\"></a></div></div>\n<div><h4><a href=\"https://www.qbitai.com/2025/09/330647.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Transformer作者：DeepSeek才有搞头，OpenAI指望不上了</a></h4><p></p></div>",
+            "text": "刚刚，DeepSeek V1作者创业项目曝光：开源Agent\nJay 2026-11-21 14:32:31 来源： 量子位\n专为本地部署而生\n聚是一团火，散是满天星。\n刚刚，前DeepSeek V1作者、DeepSeek-VL项目负责人 Tony Zhang ，正式公布了自己的新创业项目： Linger 。\n方向，正是当下最火的个人 Personal Agent 。\nX 帖子视频.mp4\n路线也是比较有意思，当同行都在做APP，他们优先选择了电脑。\n这意味着，Linger能操纵你电脑已有的网页、邮件箱、日历，无需折腾一大堆登录凭据。\n遇到卡住的地方，你也可以直接上手接管。\nX 评论视频.mp4\n另外一个点，作为中间层的Linger，支持接入各个第三方模型。\n并且专门为本地LLM做了优化。\n具体来说，一块12GB显存的RTX 3060显卡，就能跑起一个125B参数的 Qwen3.8-Flash-Next ，并且 是45.5 tokens/秒的生成速度。\n对了，还有个蛮重要的点——\n这套系统是开源的。。。\n至于为什么？\n在官宣帖中，Tony Zhang引用了PC崛起的历史：\n1960年代，计算是中心化的，直到PC将权力交到每个人手中。如今，AI在数据中心训练，然后以token的形式租给你。\n我们相信智能应该是分布式的。你的上下文、你的数据，以及驱动它们的智能，都应该完全由你拥有。\n所以今天，他们开源了Linger，一个生活在你个人电脑上的专属Agent。\n也是延续大肥鲸优良传统了😭。\n一个「会主动，能自学」的AI\nLinger的的核心，是名为「Another Me」的Agent系统。\n它首先是一个记忆中枢。\nLinger会在本地读取你的收件箱、日历、聊天记录和会议，每晚自动将这些信息整理成个人知识库 （Wiki） ，供所有Agent查询。\n在衡量长期对话记忆能力的LoCoMo基准测试中， Linger的准确率达到了95% ，超过了Mem0、MemOS等多个记忆增强型AI系统。\n有了这些，Linger便能更好地主动工作。\n它会默默观察你的信息流，根据事件的重要性和紧急性决定何时提醒你。周一收到客户邮件，要求周五前给报价，它不会立刻打扰，而是等到周三早上再弹出提醒。\n但如果是会议时间变更，它会立即通知。\n这个Agent还会从你的反馈中自我学习，Linger称之为「隐式强化」。\n比如，当它提醒你一张发票快到期了，你回复说「上周就收到了，应该当时就告诉我」。系统会记下一个线索。\n如果下一次另一张发票出现类似情况，你再次表达了相同的偏好，系统就会自动生成一条规则： 「供应商发票→立即提醒」 。\n反之，如果你连续两次对「快递提醒」表现出不感兴趣 （比如直接忽略或回复「不用告诉我」） ，它也会学会以后保持沉默。\n你也可以直接下指令，一次性教会它。比如告诉它：「客户的回复，要立刻通知我」，或者「晚上9点后，会议变更这种事不用马上说」。\n这种持续的交互和学习，让Agent越来越懂你的工作习惯，成为一个真正个性化的助理。\n除此之外，Linger还能：\n操作桌面和浏览器 。\n就是开头说的，Linger能直接使用你电脑上已经登录的Chrome、各种App，无需重新配置。\n组建Agent团队 。\n这点就是DeepSeek之前解释过的Super Agent原理了。\n你下达一个复杂任务时，Another Me会调用或创建不同职能的Agent，协同完成工作。\n而你，只用停留在和Linger的这一个Session。\nX 评论视频.mp4\n语音交互 。\n这点主要就是服务于办公场景了。\nLinger能实时转录会议，会后直接向Agent提问会议内容，并让它跟进待办事项。\n总而言之呢，就是一个专为办公场景优化的Personal Agent。\n不过，也有网友对这一产品定位不太理解：\n为什么不基于DeepSeek harness开发🤣跟ds-bot有何区别呢\n对此，Tony Zhang回应道：\nLinger的重点是把模型和harness一起优化：12GB显卡就能本地跑125B模型，不按token付费，数据也不出本机。\n从产品定位上看：DS-Bot的核心是Bot与Bot、Bot与群组的协作；Linger的核心是人与自己的Agent、Agent与本地环境。\n12GB显卡，跑125B模型\n让消费级硬件运行千亿大模型，Linger的核心技术是一个名为 PolyStrata 的MoE推理引擎。\n它的原理可以理解为一种智能分层存储机制。\n对于一个庞大的MoE （专家混合） 模型，PolyStrata会把最常用、最活跃的「专家模块」放在最快的GPU显存里，将不那么常用的放在内存中，而使用频率最低的则放在SSD固态硬盘上。\n当模型需要调用某个专家时，系统会动态地在GPU、内存和SSD之间移动数据。这样一来，就不需要把整个几十上百GB的模型全部塞进有限的显存里。\n效果立竿见影。\n根据官方数据， 一个125B参数的Qwen3.8-Flash-Next模型，在一台配备12GB RTX 3060和64GB内存的电脑上，可以实现45.5 tokens/秒的生成速度。\n在更强的RTX 5090 （32GB） 上，速度则飙升至179 tokens/秒。\n为了让用户更方便地用上本地大模型，Linger还做了一个「模型自动驾驶 （Model Autopilot） 」功能。\n它会自动检测你的硬件配置 （GPU、显存、内存） ，然后从49个语言模型、两种推理引擎、多种量化方案和不同上下文长度的组合中，为你推荐并安装性能最强的模型。\n根据SimplexAI的评分体系，不同配置的本地设备可以获得媲美主流云端大模型的能力：\n8GB显卡+32GB内存 ：得分35.4，约等于 Gemini 2.5 Pro 。\nMac 24GB统一内存 ：得分51.9，约等于 Claude Opus 4.5 。\n12GB显卡+32GB内存 ：得分57.3，约等于 Claude Opus 4.6 。\n这意味着，你的游戏本或MacBook，将拥有一个真正强大的、7×24小时待命、没有token费用、并且数据完全不出本地的AI大脑。\nDeepSeek-VL负责人再创业\nLinger背后，是一支有着深厚技术背景的团队，其创始人Tony Zhang的履历尤为亮眼。\n（毕竟是DeepSeek系嘛…）\nTony Zhang本科毕业于浙江大学，2019年在香港科技大学取得博士学位，随后加入 微软亚洲研究院 （MSRA） ，长期从事计算机视觉和生成模型研究，是VQ-Diffusion、Rodin 3D数字人等多个知名项目的作者。\n2023年，他加入 DeepSeek ，担任AI科学家。\n在这里，他不仅参与了早期语言模型 DeepSeek LLM V1系列 的研发，更是视觉语言大模型 DeepSeek-VL的项目负责人 （Project Lead） 。这款模型在真实世界场景下的图像、文档、图表理解能力备受好评。\n离开DeepSeek后，Tony Zhang进入浙江大学任教，担任百人计划研究员、博士生导师，并创立了Simplex AI。\nLinger就是Simplex AI的最新作品。\n而作为Linger技术核心，那个专为本地部署而生的推理引擎？\n据Tony Zhang透露，由团队里一位18岁的天才少年构建。\n18岁？高中刚毕业？\n版权所有，未经授权不得以任何形式转载及使用，违者必究。\nDeepseek\nJay\n英伟达AMD首次联手押注！Genesis完成A轮融资，估值超230亿 2026-11-18\n多模态“源神”！MiniMax开源SOTA生图模型，原生4K，一张两毛 2026-11-12\n机器人接管酒店洗衣！双脑协同+RSI，顶级Astra驾驶员来了 2026-11-11\n“AI毁了我的计算机学位” 2026-11-09\n扫码分享至朋友圈\n相关阅读\n英伟达微软带头接入Deepseek，OpenAI急筹2800亿新融资\ndeepseek真香\n鱼羊 2025-01-31 Deepseek OpenAI\n大厂抢郭达雅进行时！DeepSeek核心成员还是个“综艺巨佬”\n郭达雅将花落谁家？\n克雷西 2026-03-22 Deepseek\nDeepSeek网页版大升级！随后宕机11小时崩上热搜，新模型真的来了\n在龙虾时代沉默了好久的DeepSeek，似乎在憋个大的\n梦晨 2026-03-30 Deepseek\nDeepSeek开源第二弹，为MoE和EP量身定制的通信库！暂和英伟达显卡绑定\n本次开源周应均与AI Infra相关\n衡宇 2025-02-25 Deepseek 开源 通信库\n梁文锋出资200亿！DeepSeek首轮创纪录融资500亿，V4.1定档6月\n如果最终落地，这会是中国大模型公司有史以来最大的一轮融资\n梦晨 2026-05-09 Deepseek\nTransformer作者：DeepSeek才有搞头，OpenAI指望不上了",
+            "lead": "刚刚，DeepSeek V1作者创业项目曝光：开源Agent\nJay 2026-11-21 14:32:31 来源： 量子位\n专为本地部署而生\n聚是一团火，散是满天星。\n刚刚，前DeepSeek V1作者、DeepSeek-VL项目负责人 Tony Zhang ，正式公布了自己的新创业项目： Linger 。\n方向，正是当下最火的个人 Personal Agent 。\nX 帖子视频.mp4\n路线也是比较有意思，当同行都在做APP，他们优先选择了电脑。\n这意味着，Linger能操纵你电脑已有的网页、邮件箱、日历，无需折腾一大堆登录凭据。\n遇到卡住的地方，你也可以直接上手接管。",
+            "chars": 4383,
+            "shown": 3989,
+            "truncated": true
+          },
+          "categories": [
+            "资讯",
+            "Deepseek"
+          ],
+          "author": "Jay",
+          "lang": "zh",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "news",
+          "metrics": {},
+          "quality": 10,
+          "score": 24.2,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 7,
+          "slug": "12995faf6f48",
+          "action": 11,
+          "rank": 27.6,
+          "tags": [
+            "local",
+            "benchmark",
+            "tutorial",
+            "generate"
+          ]
+        },
+        {
+          "sourceId": "lcz-hardware",
+          "sourceName": "抡锤者 AI硬件",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "Ang Lee",
+          "id": "3254",
+          "title": "主力机该选Windows还是Linux",
+          "url": "https://lcz.me/topic/3254",
+          "published": "2026-11-21T14:16:09.489Z",
+          "summary": "我一直以来是Windows的用户，不过最近看到了unlock gpu的开源项目，就想着我的显卡应该能拿来跑AI了，就想着要不要转去Linux的CachyOS。当中的点就是担心兼容性的问题。先说一下我的配置吧",
+          "metrics": {
+            "points": 0,
+            "comments": 4,
+            "views": 74
+          },
+          "excellent": false,
+          "content": {
+            "html": "<p>我一直以来是Windows的用户，不过最近看到了unlock gpu的开源项目，就想着我的显卡应该能拿来跑AI了，就想着要不要转去Linux的CachyOS。当中的点就是担心兼容性的问题。先说一下我的配置吧</p>\n<table><thead><tr><th>部件</th><th>具体型号</th></tr></thead><tbody><tr><td>主板</td><td>Gigabyte Z790 AORUS ELITE X AX</td></tr><tr><td>CPU</td><td>Intel Core I7-14700K</td></tr><tr><td>内存</td><td>64GB (4*16GB) T-Force Delta DDR5 6000Mhz CL30</td></tr><tr><td>显卡</td><td>Gigabyte RTX 4070 TI Super Gaming OC</td></tr><tr><td>硬盘1</td><td>1TB XPG Gammix S70 Blade SSD</td></tr><tr><td>硬盘2</td><td>2TB (2*1TB) Patriot SATA SSD (组RAID0)</td></tr><tr><td>电源</td><td>1stPlayer NGDP HA 850W</td></tr></tbody></table>\n<p>再说我目前有用到的软件</p>\n<table><thead><tr><th></th><th>软件</th><th>支持与替代方案</th></tr></thead><tbody><tr><td>1.</td><td>Hermes Desktop</td><td>支持</td></tr><tr><td>2.</td><td>DeepSeek Harness</td><td>没有官方座面版，使用网页版也可以</td></tr><tr><td>3.</td><td>Claude Code</td><td>Beta版，不确定兼容性</td></tr><tr><td>4.</td><td>Visual Studio Code</td><td>支持</td></tr><tr><td>5.</td><td>Microsoft Office</td><td>比较少用到，免费的替代也应该很多</td></tr><tr><td>6.</td><td>Capcut剪映</td><td>Davinci或开源的自动剪辑器也可以，轻度剪辑而已</td></tr><tr><td>7.</td><td>Steam</td><td>支持</td></tr><tr><td>8.</td><td>Riot Game (LoL, Varorant)</td><td><strong>不支持</strong></td></tr><tr><td>9.</td><td>Minecraft Java版</td><td>支持</td></tr><tr><td>10.</td><td>Moza Pit House</td><td>Boxflat，不确定兼容性</td></tr><tr><td>11.</td><td>Godot</td><td>支持</td></tr><tr><td>12.</td><td>Razer Synapse 4</td><td>OpenRazer</td></tr><tr><td>13.</td><td>Discord</td><td>支持</td></tr></tbody></table>\n<p>有没有大神可以分享一下目前的使用体验或回答一下我的问题或给我点意见。</p>\n<ol><li>以我的设备，驱动兼容性如何</li><li>我这样的设备，跑comfyui会比我那服务器快吗？</li><li>unlock GPU有windows版，但是是分支，各位有试过windows版的吗？<a href=\"https://github.com/windows-GPU-UNLOCK/Windows-GPU-UNLOCK\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://github.com/windows-GPU-UNLOCK/Windows-GPU-UNLOCK</a></li><li>Steam上有很多游戏，老游戏和新游戏都有，兼容性如何？也在担心将来能支持GTA6吗</li><li>riot的游戏我不确定该怎么办，有人试过在linux玩且不被ban吗？</li></ol>",
+            "text": "我一直以来是Windows的用户，不过最近看到了unlock gpu的开源项目，就想着我的显卡应该能拿来跑AI了，就想着要不要转去Linux的CachyOS。当中的点就是担心兼容性的问题。先说一下我的配置吧\n部件\n具体型号\n主板\nGigabyte Z790 AORUS ELITE X AX\nCPU\nIntel Core I7-14700K\n内存\n64GB (4*16GB) T-Force Delta DDR5 6000Mhz CL30\n显卡\nGigabyte RTX 4070 TI Super Gaming OC\n硬盘1\n1TB XPG Gammix S70 Blade SSD\n硬盘2\n2TB (2*1TB) Patriot SATA SSD (组RAID0)\n电源\n1stPlayer NGDP HA 850W\n再说我目前有用到的软件\n软件\n支持与替代方案\n1.\nHermes Desktop\n支持\n2.\nDeepSeek Harness\n没有官方座面版，使用网页版也可以\n3.\nClaude Code\nBeta版，不确定兼容性\n4.\nVisual Studio Code\n支持\n5.\nMicrosoft Office\n比较少用到，免费的替代也应该很多\n6.\nCapcut剪映\nDavinci或开源的自动剪辑器也可以，轻度剪辑而已\n7.\nSteam\n支持\n8.\nRiot Game (LoL, Varorant)\n不支持\n9.\nMinecraft Java版\n支持\n10.\nMoza Pit House\nBoxflat，不确定兼容性\n11.\nGodot\n支持\n12.\nRazer Synapse 4\nOpenRazer\n13.\nDiscord\n支持\n有没有大神可以分享一下目前的使用体验或回答一下我的问题或给我点意见。\n以我的设备，驱动兼容性如何\n我这样的设备，跑comfyui会比我那服务器快吗？\nunlock GPU有windows版，但是是分支，各位有试过windows版的吗？ https://github.com/windows-GPU-UNLOCK/Windows-GPU-UNLOCK\nSteam上有很多游戏，老游戏和新游戏都有，兼容性如何？也在担心将来能支持GTA6吗\nriot的游戏我不确定该怎么办，有人试过在linux玩且不被ban吗？",
+            "lead": "我一直以来是Windows的用户，不过最近看到了unlock gpu的开源项目，就想着我的显卡应该能拿来跑AI了，就想着要不要转去Linux的CachyOS。当中的点就是担心兼容性的问题。先说一下我的配置吧",
+            "chars": 1079,
+            "shown": 1079,
+            "truncated": false
+          },
+          "quality": 7,
+          "score": 21.74,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 4,
+          "slug": "9a8388c7dc17",
+          "action": 11,
+          "rank": 24.6,
+          "tags": [
+            "hardware",
+            "free",
+            "generate",
+            "tutorial"
+          ]
+        },
+        {
+          "sourceId": "lcz-hardware",
+          "sourceName": "抡锤者 AI硬件",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "terry",
+          "id": "3241",
+          "title": "5070Ti + R9700 + 96G DDR5 卖肾装机！4090 48G / 7900XTX / 4060Ti各司其职，LLM & ComfyUI & 办公无死角！",
+          "url": "https://lcz.me/topic/3241",
+          "published": "2026-11-21T11:00:00.000Z",
+          "summary": "采购的硬件终于到了啊，这个是 5070 Ti 16G，七彩虹的 iGame，新的话大概一万三千多块钱吧。这个是旧的，京东自营二手，昨天刚好看到，临时找朋友借的钱。讲实话，朋友也比较紧张，搞不好他也没有，但是就赶巧了。我这朋友其实老婆管得挺严，基本上平时属于身无分文的状态，但是昨天借钱的时候居然有，很痛快地就打给我了。哈，一万块钱买的，已经到位啊。就是为什么买这张卡呢？讲实话，我是想买两张的，但是考虑到我未来几个月可能的收支状况，我所有收入到手之后，扣除开支，还得给家里一些钱，一些基本的生活开销。这个是我的基本义务，还是要给的，也不能全靠老妈、全靠我姐他们养着是吧？你这样也不像话，每个月象征性地给一点。还完债之后，我有些钱，还有一些…",
+          "metrics": {
+            "points": 4,
+            "comments": 15,
+            "views": 216
+          },
+          "excellent": false,
+          "content": {
+            "html": "<p>采购的硬件终于到了啊，这个是 5070 Ti 16G，七彩虹的 iGame，新的话大概一万三千多块钱吧。这个是旧的，京东自营二手，昨天刚好看到，临时找朋友借的钱。讲实话，朋友也比较紧张，搞不好他也没有，但是就赶巧了。我这朋友其实老婆管得挺严，基本上平时属于身无分文的状态，但是昨天借钱的时候居然有，很痛快地就打给我了。哈，一万块钱买的，已经到位啊。就是为什么买这张卡呢？讲实话，我是想买两张的，但是考虑到我未来几个月可能的收支状况，我所有收入到手之后，扣除开支，还得给家里一些钱，一些基本的生活开销。这个是我的基本义务，还是要给的，也不能全靠老妈、全靠我姐他们养着是吧？你这样也不像话，每个月象征性地给一点。还完债之后，我有些钱，还有一些硬性开销。最近有朋友遇到了一些比较紧急的状况，还得顶一顶他。算下来的话，我手里面所有能动的钱基本上等于零了。前段时间也是找朋友借了一些钱，但是家里面开销太大了。</p>\n<p>因为我是打算搬到一个新的地方去，我儿子的房子现在里面住着人，而且也是我们比较传统的这种商品房，那么可能想要有一个比较开阔的格局也比较难了。因为我想以后提升一下视频拍摄的水平，需要一个有空间感、环境还好一点的地方。我也去镇上折腾了一下，我们家镇上的房子确实多多少少还是不行，而且里面现在住着人，要到春节的时候才能搬走。搬走之后还得把它重新弄一下，以后我可能就会搬到镇上去。镇上的离我现在住的地方也就是半个小时车程吧，如果交通不堵，可能 20 分钟就到了。这个如果放在大城市里面都不叫事情，但是咱在小城市。其实我们镇的基础设施还算可以，环境也比较干净。总之就是现在没有那么多实力去追求更高水准的生活，就只能妥协吧。</p>\n<p><img src=\"https://upload.lcz.me/uploads/547aeab5-a789-42bf-baea-5240abcfa445.jpeg\" alt=\"5070TI装机.jpeg\" loading=\"lazy\"></p>\n<p>这张卡我看到的时候刚好剩下两张，我就犹豫那么一点时间，就只剩下一张了。讲实话我真的就是穷到了差这几千块钱的水平。那么我现在手里面有的硬件，就是 4090 48G 跟 7900 XTX，现在装在我后面的服务器上。我打算把它们拆开，因为我的 X99TF 可以配 128G 的 DDR3 四通道内存，搭配 7900 XTX 的主板已经放在另外一个房间了。我之前把它装上测试过，就放在卧室桌子上。这个 Strata 跑起来应该问题不大，而且体验还是比较好的，或者跑其他推理框架，比如说 vLLM 这些对 AMD 比较友好的推理框架，跑一个千问 Flash Next 绰绰有余了。我相信升级到 4.0 应该问题也不大。那么 7900 XTX 单卡跑 ComfyUI、跑 MiniMax H3，也是有生产力的，可能速度稍慢一点。我本来也是想买两张 7900 XTX 的，还是那句话，钱就差到这个地步。</p>\n<p>因为我后面的工作必须要有一个比较好的显卡，然后有一个独立的 X86 主机，或者买一个配置相对高一点的 Ultra Studio 也行。但是 M5 Max 怎么着也得 3 万块钱以上，3 万五左右的配置才能看得过去，才能用起来比较好。但是现在咱就差这点钱，你就没有办法。人生呢，除了诗和远方，更多时候还是要跟柴米油盐酱醋茶打交道，你还得去应对这些事情。</p>\n<p>然后这个新的 5070 Ti 跟 4060 Ti，我就把它装到论坛 Bunsei 老哥给我出的铭瑄AIGA主板上，加上 96G DDR5 6000 内存。我要把我的 4060 Ti 也装上去，虽然这样会把 5070 Ti 的 PCIe 带宽搞成 5.0 x8，但是我感觉带宽也是足够用了。把 4060 Ti 装上去，就把我那个显卡坞给腾出来。4060 Ti 可以用来干什么？跑大模型的时候，给 5070 Ti 做 cache device，放点冷门专家，可以提升速度、提升体验。跑 ComfyUI 的时候肯定是 5070 Ti 单卡跑了，它现在有动态权重加载，16G 也够用了。5070 Ti 我在前面视频中不是说了吗？它性价比应该是目前最高的。如果跑 MiniMax H3，在它跑的时候，我的 4060 Ti 还能去搞一些画图。我下一步准备投入更大精力来搞 ComfyUI，去做一个新的频道，这个我们后面再说吧。</p>\n<p><img src=\"https://upload.lcz.me/uploads/9059d595-e97e-4469-a1e0-c4df63cdbb1c.jpeg\" alt=\"7900xtx和4060TI大.jpeg\" loading=\"lazy\"></p>\n<p>然后我不是还剩下一个 4090 48G 吗？它搭配我已经有的 64G 内存，但是是 X99 CD3 双通道的。无论跑大模型还是跑 ComfyUI，效率都非常不错。虽然 X99 CD3 是双通道 DDR3 内存，但是由于 4090 48G 本身显存非常大，这个平台的瓶颈比较小，没什么问题。我要做的工作其实用 4090 48G 也能搞，但是问题是这个 4090 48G 噪音真的是太大了。如果我不录音、不录像还无所谓，一旦要录音录像，房间根本没办法待人。</p>\n<p>关于买设备我要说一下，到目前为止，给我带来性价比最高的还是我的 4060 Ti。我曾经一个英语频道，4060 Ti 一年就给我挣了十几万、小二十万块钱。现在这个英语频道我把它交给一个新朋友，他可能会带着维护，但是我得自己花时间带带他。那么我自己维护一个主力英语频道，还有抡锤者这个频道、老特说那个频道我还在更新，你说我再做一个新频道能有多少精力？其实没有了。这个新的两万多块钱想回本，我估计没有那么快，但是几个月时间做到盈利，我个人认为难度还是不大的。得我先花点时间潜心一两个月，把技术打磨一下。因为这段时间家里事情太多，我没有搞测试，尤其是 ComfyUI 很久没有搞了，有点断顿，技术有点跟不上趟了。看论坛大神们的帖子，我抄作业当然也比较方便，不过工作流还是得自己上手、自己打磨，你才能明白这个技术跟频道的需求到底搭不搭嘎。</p>\n<p><img src=\"https://upload.lcz.me/uploads/5a9fbb59-6bc5-460d-a4cc-f538e01424d7.jpg\" alt=\"机箱显卡2.jpg\" loading=\"lazy\"></p>\n<p>这一轮装机就是把我所有的存量硬件，包括需要的新硬件，全部装上了。遗憾就是差那么一万几千块钱，没能搞成两张 5070 Ti、两张 7900 XTX，这个是比较大的遗憾。但是不着急，不着急，以后慢慢搞。等新频道赚到钱，或者把债还一还，最好是我的朋友能够早一点走出危机，那我手里面剩的钱可能会稍微宽裕一点，买这些硬件就不难了。</p>\n<p>然后我还是说一下，买这些东西怎么讲呢，叫工欲善其事，必先利其器。其实当你跌落社会斩杀线，像我一样破产了之后，想做点事情很多时候都会有点畏手畏脚。但是我后来也是想清楚了，做事还是需要更好的硬件，我也不能老在 4060 Ti 那种显卡上反复浪费时间。那个时候我也是跟我姐讲，让我姐给我买新的硬件，钱都是我老姐出的。现在回头看，决策还是对的。你还是要把挣钱的能力恢复掉。讲实话，像现在这些硬件就这么点钱，以前还不够在 KTV 挥霍一晚的。但是穷了也没有必要自怨自艾。如果有能力，在这些朋友还买你账的时候，还抓紧借点钱，就像我遇到的一些朋友，平时社交网络也比较广，看起来也是属于上流人士，但是一旦出事，发现身边没有一个人能够借到钱，没有一个人靠得住。这种情况讲实话多了去了。</p>\n<p>无论如何，挣钱不容易。大家不要看我做这么多频道，兄弟们，我也不想做这么多频道，但是我放不下来。比如我现在的英语频道，我不敢不更新，我不更新钱不够用，我还得还债呀。如果累，就像前一段时间大家说我的黑眼圈比较重，那你重能怎么办呢？你不可能什么事都指望家里人搞定，然后自己作为一个大男人，两手一摊，在旁边事不关己、高高挂起，这样也不行。现在就是窘迫了一点，我相信再过两年再回头看，现在为了万把块钱感到遗憾、感到无力的时候，到时候又会有另外一种感慨。希望到时候能够感慨今天是人生的低谷期。</p>\n<p><img src=\"https://upload.lcz.me/uploads/38e32a1c-faac-430f-8b65-42514240612a.jpg\" alt=\"男性程序员编程comfyui.jpg\" loading=\"lazy\"></p>\n<p>哦对了，后面我也会想办法看看要不要开启一些项目，邀请论坛一些高积分、高等级的人士，一起开始一些项目赚点钱，把大家的技术能力发挥出来。因为我本人做油管频道还是很擅长的，能够快速兑现，但是兑现之后，我很多频道没有能力一直维护，因为我必须维护最挣钱的频道。一旦有一个频道更挣钱了，之前的频道我立刻就把它丢了。实际上我最近把频道交给朋友，现在还在交接中。…</p>",
+            "text": "采购的硬件终于到了啊，这个是 5070 Ti 16G，七彩虹的 iGame，新的话大概一万三千多块钱吧。这个是旧的，京东自营二手，昨天刚好看到，临时找朋友借的钱。讲实话，朋友也比较紧张，搞不好他也没有，但是就赶巧了。我这朋友其实老婆管得挺严，基本上平时属于身无分文的状态，但是昨天借钱的时候居然有，很痛快地就打给我了。哈，一万块钱买的，已经到位啊。就是为什么买这张卡呢？讲实话，我是想买两张的，但是考虑到我未来几个月可能的收支状况，我所有收入到手之后，扣除开支，还得给家里一些钱，一些基本的生活开销。这个是我的基本义务，还是要给的，也不能全靠老妈、全靠我姐他们养着是吧？你这样也不像话，每个月象征性地给一点。还完债之后，我有些钱，还有一些硬性开销。最近有朋友遇到了一些比较紧急的状况，还得顶一顶他。算下来的话，我手里面所有能动的钱基本上等于零了。前段时间也是找朋友借了一些钱，但是家里面开销太大了。\n因为我是打算搬到一个新的地方去，我儿子的房子现在里面住着人，而且也是我们比较传统的这种商品房，那么可能想要有一个比较开阔的格局也比较难了。因为我想以后提升一下视频拍摄的水平，需要一个有空间感、环境还好一点的地方。我也去镇上折腾了一下，我们家镇上的房子确实多多少少还是不行，而且里面现在住着人，要到春节的时候才能搬走。搬走之后还得把它重新弄一下，以后我可能就会搬到镇上去。镇上的离我现在住的地方也就是半个小时车程吧，如果交通不堵，可能 20 分钟就到了。这个如果放在大城市里面都不叫事情，但是咱在小城市。其实我们镇的基础设施还算可以，环境也比较干净。总之就是现在没有那么多实力去追求更高水准的生活，就只能妥协吧。\n这张卡我看到的时候刚好剩下两张，我就犹豫那么一点时间，就只剩下一张了。讲实话我真的就是穷到了差这几千块钱的水平。那么我现在手里面有的硬件，就是 4090 48G 跟 7900 XTX，现在装在我后面的服务器上。我打算把它们拆开，因为我的 X99TF 可以配 128G 的 DDR3 四通道内存，搭配 7900 XTX 的主板已经放在另外一个房间了。我之前把它装上测试过，就放在卧室桌子上。这个 Strata 跑起来应该问题不大，而且体验还是比较好的，或者跑其他推理框架，比如说 vLLM 这些对 AMD 比较友好的推理框架，跑一个千问 Flash Next 绰绰有余了。我相信升级到 4.0 应该问题也不大。那么 7900 XTX 单卡跑 ComfyUI、跑 MiniMax H3，也是有生产力的，可能速度稍慢一点。我本来也是想买两张 7900 XTX 的，还是那句话，钱就差到这个地步。\n因为我后面的工作必须要有一个比较好的显卡，然后有一个独立的 X86 主机，或者买一个配置相对高一点的 Ultra Studio 也行。但是 M5 Max 怎么着也得 3 万块钱以上，3 万五左右的配置才能看得过去，才能用起来比较好。但是现在咱就差这点钱，你就没有办法。人生呢，除了诗和远方，更多时候还是要跟柴米油盐酱醋茶打交道，你还得去应对这些事情。\n然后这个新的 5070 Ti 跟 4060 Ti，我就把它装到论坛 Bunsei 老哥给我出的铭瑄AIGA主板上，加上 96G DDR5 6000 内存。我要把我的 4060 Ti 也装上去，虽然这样会把 5070 Ti 的 PCIe 带宽搞成 5.0 x8，但是我感觉带宽也是足够用了。把 4060 Ti 装上去，就把我那个显卡坞给腾出来。4060 Ti 可以用来干什么？跑大模型的时候，给 5070 Ti 做 cache device，放点冷门专家，可以提升速度、提升体验。跑 ComfyUI 的时候肯定是 5070 Ti 单卡跑了，它现在有动态权重加载，16G 也够用了。5070 Ti 我在前面视频中不是说了吗？它性价比应该是目前最高的。如果跑 MiniMax H3，在它跑的时候，我的 4060 Ti 还能去搞一些画图。我下一步准备投入更大精力来搞 ComfyUI，去做一个新的频道，这个我们后面再说吧。\n然后我不是还剩下一个 4090 48G 吗？它搭配我已经有的 64G 内存，但是是 X99 CD3 双通道的。无论跑大模型还是跑 ComfyUI，效率都非常不错。虽然 X99 CD3 是双通道 DDR3 内存，但是由于 4090 48G 本身显存非常大，这个平台的瓶颈比较小，没什么问题。我要做的工作其实用 4090 48G 也能搞，但是问题是这个 4090 48G 噪音真的是太大了。如果我不录音、不录像还无所谓，一旦要录音录像，房间根本没办法待人。\n关于买设备我要说一下，到目前为止，给我带来性价比最高的还是我的 4060 Ti。我曾经一个英语频道，4060 Ti 一年就给我挣了十几万、小二十万块钱。现在这个英语频道我把它交给一个新朋友，他可能会带着维护，但是我得自己花时间带带他。那么我自己维护一个主力英语频道，还有抡锤者这个频道、老特说那个频道我还在更新，你说我再做一个新频道能有多少精力？其实没有了。这个新的两万多块钱想回本，我估计没有那么快，但是几个月时间做到盈利，我个人认为难度还是不大的。得我先花点时间潜心一两个月，把技术打磨一下。因为这段时间家里事情太多，我没有搞测试，尤其是 ComfyUI 很久没有搞了，有点断顿，技术有点跟不上趟了。看论坛大神们的帖子，我抄作业当然也比较方便，不过工作流还是得自己上手、自己打磨，你才能明白这个技术跟频道的需求到底搭不搭嘎。\n这一轮装机就是把我所有的存量硬件，包括需要的新硬件，全部装上了。遗憾就是差那么一万几千块钱，没能搞成两张 5070 Ti、两张 7900 XTX，这个是比较大的遗憾。但是不着急，不着急，以后慢慢搞。等新频道赚到钱，或者把债还一还，最好是我的朋友能够早一点走出危机，那我手里面剩的钱可能会稍微宽裕一点，买这些硬件就不难了。\n然后我还是说一下，买这些东西怎么讲呢，叫工欲善其事，必先利其器。其实当你跌落社会斩杀线，像我一样破产了之后，想做点事情很多时候都会有点畏手畏脚。但是我后来也是想清楚了，做事还是需要更好的硬件，我也不能老在 4060 Ti 那种显卡上反复浪费时间。那个时候我也是跟我姐讲，让我姐给我买新的硬件，钱都是我老姐出的。现在回头看，决策还是对的。你还是要把挣钱的能力恢复掉。讲实话，像现在这些硬件就这么点钱，以前还不够在 KTV 挥霍一晚的。但是穷了也没有必要自怨自艾。如果有能力，在这些朋友还买你账的时候，还抓紧借点钱，就像我遇到的一些朋友，平时社交网络也比较广，看起来也是属于上流人士，但是一旦出事，发现身边没有一个人能够借到钱，没有一个人靠得住。这种情况讲实话多了去了。\n无论如何，挣钱不容易。大家不要看我做这么多频道，兄弟们，我也不想做这么多频道，但是我放不下来。比如我现在的英语频道，我不敢不更新，我不更新钱不够用，我还得还债呀。如果累，就像前一段时间大家说我的黑眼圈比较重，那你重能怎么办呢？你不可能什么事都指望家里人搞定，然后自己作为一个大男人，两手一摊，在旁边事不关己、高高挂起，这样也不行。现在就是窘迫了一点，我相信再过两年再回头看，现在为了万把块钱感到遗憾、感到无力的时候，到时候又会有另外一种感慨。希望到时候能够感慨今天是人生的低谷期。\n哦对了，后面我也会想办法看看要不要开启一些项目，邀请论坛一些高积分、高等级的人士，一起开始一些项目赚点钱，把大家的技术能力发挥出来。因为我本人做油管频道还是很擅长的，能够快速兑现，但是兑现之后，我很多频道没有能力一直维护，因为我必须维护最挣钱的频道。一旦有一个频道更挣钱了，之前的频道我立刻就把它丢了。实际上我最近把频道交给朋友，现在还在交接中。…",
+            "lead": "采购的硬件终于到了啊，这个是 5070 Ti 16G，七彩虹的 iGame，新的话大概一万三千多块钱吧。这个是旧的，京东自营二手，昨天刚好看到，临时找朋友借的钱。讲实话，朋友也比较紧张，搞不好他也没有，但是就赶巧了。我这朋友其实老婆管得挺严，基本上平时属于身无分文的状态，但是昨天借钱的时候居然有，很痛快地就打给我了。哈，一万块钱买的，已经到位啊。就是为什么买这张卡呢？讲实话，我是想买两张的，但是考虑到我未来几个月可能的收支状况，我所有收入到手之后，扣除开支，还得给家里一些钱，一些基本的生活开销。这个是我的基本义务，还是要给的，也不能全靠老妈、全靠我姐他们养着是吧？你这样也不像话，每个月象征性地给一点。还完债之后，我有些钱，还有一些硬性开销。最近有朋友遇到了一些比较紧急的状况，还得顶一顶他。算下来的话，我手里面所有能动的钱基本上等于零了。前段时间也是找朋友借了一些钱，但是家里面开销太大了。\n因为我是打算搬到一个新的地方去，我儿子的房子现在里面住着人，而且也是我们比较传统的这种商品房，那么可能想要有一个比较开阔",
+            "chars": 3410,
+            "shown": 3201,
+            "truncated": true
+          },
+          "quality": 9,
+          "score": 19.67,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 1,
+          "slug": "ff64fd3d7777",
+          "action": 7,
+          "rank": 20.2,
+          "tags": [
+            "hardware",
+            "generate",
+            "local",
+            "lowspec"
+          ]
+        },
+        {
+          "sourceId": "lcz-llm",
+          "sourceName": "抡锤者 模型部署讨论",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "Simon Li 0",
+          "id": "3247",
+          "title": "【实测】2×RX 7900 XTX 24GB：Strata（Qwen3.8-Flash-Next IQ3_S）与 Qwen3.8-27B（hipfire MTP）分卡并行，两端同时满载",
+          "url": "https://lcz.me/topic/3247",
+          "published": "2026-11-21T10:58:25.137Z",
+          "summary": "一句话总结（TL;DR） 2×RX 7900 XTX 24GB 同机分卡：GPU0 跑 Strata 0.1.43 （Qwen3.8-Flash-Next IQ3_S，上下文 261880 ，约 256K），GPU1 跑 hipfire v0.4.7 （Qwen3.8-27B，MTP K=3，测速档位 128K ， --max-seq 140000 ），两端同时满载。 并成功接入本地hermes和DSH 并行代价： 两端 prefill / decode / TTFT 都落在各自 solo 基线的 96 ～ 102% ，未检出超出噪声（单轮 σ/mean≈ 7.6% ）的差异 Strata（256K）： prefill 3,166…",
+          "metrics": {
+            "points": 0,
+            "comments": 0,
+            "views": 53
+          },
+          "excellent": false,
+          "content": {
+            "html": "<blockquote><p><strong>一句话总结（TL;DR）</strong></p><blockquote><p><strong>2×RX 7900 XTX 24GB</strong>同机分卡：GPU0 跑<strong>Strata</strong><code>0.1.43</code>（Qwen3.8-Flash-Next IQ3_S，上下文<code>261880</code>，约 256K），GPU1 跑<strong>hipfire</strong><code>v0.4.7</code>（Qwen3.8-27B，MTP K=3，测速档位<code>128K</code>，<code>--max-seq 140000</code>），两端同时满载。<br><strong>并成功接入本地hermes和DSH</strong><br><img src=\"https://upload.lcz.me/uploads/ff138e3d-6d4c-433f-a763-f878ab2c5342.png\" alt=\"ScreenShot_2026-11-21_185254_109.png\" loading=\"lazy\"></p></blockquote></blockquote>\n<blockquote><blockquote><ul><li><strong>并行代价：</strong>两端 prefill / decode / TTFT 都落在各自 solo 基线的<code>96 ～ 102%</code>，未检出超出噪声（单轮 σ/mean≈<code>7.6%</code>）的差异</li><li><strong>Strata（256K）：</strong>prefill<code>3,166 tok/s</code>，decode<code>93.7 tok/s</code>，TTFT<code>82.9 秒</code></li><li><strong>27B（128K）：</strong>prefill<code>1,028 tok/s</code>，decode<code>80.4 tok/s</code>，TTFT<code>124.7 秒</code>；多轮对话第二轮起 TTFT 降到<code>5.7 秒</code></li><li><strong>唯一可见代价：</strong>Strata 常驻时，27B 的 32K 档 prefill 低<code>7 ～ 8%</code></li><li><strong>占用：</strong>GPU1<code>24,126 / 24,576 MiB</code>，GPU0<code>24,491 MiB</code>，双引擎常驻时主机可用内存约<code>8.4 GiB</code></li></ul></blockquote></blockquote>\n<p>测试 2026-11-21。</p>\n<hr><h3>一、硬件环境与软件</h3>\n<blockquote><p><strong>配置一句话：</strong><code>i7-11700K</code>＋<code>2× RX 7900 XTX 24GB</code>＋<code>DDR4-3200 64GB</code>＋<code>PCIe 4.0 x8 + x8</code>＋<code>Ubuntu 24.04</code></p></blockquote>\n<table><thead><tr><th>项目</th><th>规格与配置</th><th>备注</th></tr></thead><tbody><tr><td>显卡</td><td>2× AMD<strong>RX 7900 XTX 24GB</strong>（gfx1100）</td><td>GPU0<code>0000:03:00.0</code>，GPU1<code>0000:06:00.0</code>，以<code>rocm-smi --showbus</code>为准，不要照抄<code>/dev/dri/cardN</code></td></tr><tr><td>CPU</td><td>Intel<strong>i7-11700K</strong></td><td><code>8 核 16 线程</code></td></tr><tr><td>内存</td><td><strong>64 GiB DDR4-3200</strong></td><td>偏紧，见 §六</td></tr><tr><td>主板</td><td>MSI MPG Z490 GAMING CARBON WIFI</td><td>CPU 的 x16 拆成 x8/x8，每张卡有效带宽<code>PCIe 4.0 x8</code></td></tr><tr><td>系统</td><td>Ubuntu<code>24.04.4</code>/ ROCm<code>7.2.3</code></td><td>HIP<code>7.2.53211</code></td></tr><tr><td>Strata</td><td>rdna3<code>strata-101-mmq</code><code>0.1.43</code></td><td>模型<code>qwen3.8-flash-next-iq3_s</code>，跑在<strong>GPU0</strong></td></tr><tr><td>hipfire</td><td><code>v0.4.7</code>（commit<code>e04c8bc8</code>）</td><td>模型<code>qwen3.8:27b-mq4-xts</code>（HFQM，<code>14,987,185,152 B</code>），跑在<strong>GPU1</strong></td></tr></tbody></table>\n<hr><h3>二、启动参数</h3>\n<h3>1. Strata（配方<code>configs/iq3-1gpu-recommended.json</code>，上下文<code>261880</code>）</h3>\n<pre><code>sg render -c \"exec .venv/bin/python poster141_launch.py iq3-1gpu-recommended 8082 127.0.0.1\"</code></pre>\n<table><thead><tr><th>参数</th><th>值</th><th>备注</th></tr></thead><tbody><tr><td><code>STRATA_HIPBLASLT_TUNING</code></td><td><code>100401-262k</code></td><td>须与运行时 hipBLASLt 版本匹配</td></tr><tr><td><code>HIPBLASLT_TENSILE_LIBPATH</code></td><td><code>/opt/rocm/lib/hipblaslt/library/gfx1100</code></td><td>ROCm 7.2.3 上的路径</td></tr><tr><td><code>--prefill</code></td><td><code>auto</code></td><td></td></tr><tr><td><code>--vram-reserve-mib</code></td><td><code>512</code></td><td></td></tr><tr><td><code>--pool-workers</code></td><td><code>12</code></td><td></td></tr><tr><td><code>--adapt-swaps</code></td><td><code>32</code></td><td></td></tr><tr><td><code>STRATA_PREFILL_CPU_SHARE</code>/<code>_MAX</code></td><td><code>0.6</code>/<code>4096</code></td><td></td></tr><tr><td><code>STRATA_PREFILL_RING</code></td><td><code>192</code></td><td></td></tr><tr><td><code>STRATA_SH_STREAM</code></td><td><code>0</code></td><td></td></tr><tr><td><code>STRATA_ADAPT_OVERLAP</code></td><td>不设</td><td></td></tr></tbody></table>\n<h3>2. 27B（hipfire）</h3>\n<pre><code>export HIP_VISIBLE_DEVICES=1\nexport HIPFIRE_PAGE_EVICTION=1\nexport HIPFIRE_PREFILL_MAX_BATCH=1024\nexport HIPFIRE_QWEN_PREAD_LOAD=1\nexport HIPFIRE_DPM_WARMUP_SECS=10\nexport HIPFIRE_MTP_K=3\nexport HIPFIRE_DFLASH_MODE=off # MTP 臂必须关 DFlash\nexec hipfire serve \"$HOST:8090\" \\\n--model qwen3.8:27b-mq4-xts \\\n--kv-mode q8 --kv-backend vmm \\\n--max-seq 140000 --spec mtp --idle-timeout 0</code></pre>\n<p>另试过 13 个 gfx1100 / verify / graph 相关环境变量，均未测出显著差异，未采用。</p>\n<hr><h3>三、27B 参数取舍</h3>\n<h3>1. MTP K=3</h3>\n<blockquote><p><strong>结果：</strong>K=3 与 K=4 等价，K=2 在 128K 慢<code>41%</code>；MTP 比自回归快<code>2.14 ～ 2.27 倍</code></p></blockquote>\n<p>128K 档，同会话，每档 3 轮：</p>\n<table><thead><tr><th>K</th><th>prefill</th><th>decode</th><th>TTFT</th><th>decode 相对 K=3</th></tr></thead><tbody><tr><td>2</td><td><code>1027.8</code></td><td><code>47.1</code></td><td><code>124.68 秒</code></td><td><code>0.59×</code></td></tr><tr><td><strong>3</strong></td><td><code>1023.8</code></td><td><code>79.9</code></td><td><code>125.04 秒</code></td><td><code>1.00×</code></td></tr><tr><td>4</td><td><code>1028.3</code></td><td><code>79.5</code></td><td><code>124.67 秒</code></td><td><code>0.99×</code></td></tr></tbody></table>\n<p>K 只影响 decode，不影响 TTFT。32K 档 K=3：AR<code>44.6</code>→<strong>MTP<code>95.6</code>（2.14×）</strong>→ DFlash<code>68.9</code>；100K 档 MTP/AR＝<code>2.27×</code>。</p>\n<p><strong>引擎版本影响结论：</strong>同一模型同一 harness，v0.4.2.1 上 DFlash 胜（<code>85.75</code>vs<code>73.25</code>），v0.4.7 上反转（MTP<code>101.9</code>vs DFlash<code>97.4</code>）。v0.4.7 相对旧版 MTP decode<code>+39%</code>，DFlash<code>+14%</code>。</p>\n<h3>2. KV 用 q8 + vmm，不用 fwht3</h3>\n<blockquote><p><strong>结果：</strong>fwht3 在 128K 同上下文下 decode 慢<code>34%</code>、TTFT 多<code>52%</code>，物理显存只省<code>4 ～ 7%</code></p></blockquote>\n<table><thead><tr><th>臂</th><th>KV</th><th>max_seq</th><th>上下文</th><th>prefill</th><th>decode</th><th>TTFT</th></tr></thead><tbody><tr><td>采用</td><td>q8</td><td><code>140000</code></td><td>128K</td><td><code>1030.1</code></td><td><code>76.8</code></td><td><code>124.27 秒</code></td></tr><tr><td>对照</td><td>fwht3</td><td><code>190000</code></td><td>128K</td><td><code>669.1</code></td><td><code>51.0</code></td><td><code>188.9 秒</code></td></tr><tr><td>对照</td><td>fwht3</td><td><code>195000</code></td><td><code>192174</code></td><td><code>488.9</code></td><td><code>38.3</code></td><td><code>393.08 秒</code></td></tr><tr><td>对照</td><td>fwht3</td><td><code>195000</code></td><td><code>193112</code></td><td>—</td><td>—</td><td>daemon 崩溃</td></tr></tbody></table>\n<p>fwht3@128K 对 q8@128K：prefill<code>−35%</code>/ decode<code>−34%</code>/ TTFT<code>+52%</code>；fwht3@192K 对 q8@128K：<code>−52.5%</code>/<code>−50%</code>/<code>+216%</code>。用 50% 的 decode 换 50% 的上下文，不划算。</p>\n<p>边际显存：q8 约<code>0.028 MiB/token</code>，fwht3 约<code></code></p>",
+            "text": "一句话总结（TL;DR）\n2×RX 7900 XTX 24GB 同机分卡：GPU0 跑 Strata 0.1.43 （Qwen3.8-Flash-Next IQ3_S，上下文 261880 ，约 256K），GPU1 跑 hipfire v0.4.7 （Qwen3.8-27B，MTP K=3，测速档位 128K ， --max-seq 140000 ），两端同时满载。\n并成功接入本地hermes和DSH\n并行代价： 两端 prefill / decode / TTFT 都落在各自 solo 基线的 96 ～ 102% ，未检出超出噪声（单轮 σ/mean≈ 7.6% ）的差异\nStrata（256K）： prefill 3,166 tok/s ，decode 93.7 tok/s ，TTFT 82.9 秒\n27B（128K）： prefill 1,028 tok/s ，decode 80.4 tok/s ，TTFT 124.7 秒 ；多轮对话第二轮起 TTFT 降到 5.7 秒\n唯一可见代价： Strata 常驻时，27B 的 32K 档 prefill 低 7 ～ 8%\n占用： GPU1 24,126 / 24,576 MiB ，GPU0 24,491 MiB ，双引擎常驻时主机可用内存约 8.4 GiB\n测试 2026-11-21。\n一、硬件环境与软件\n配置一句话： i7-11700K ＋ 2× RX 7900 XTX 24GB ＋ DDR4-3200 64GB ＋ PCIe 4.0 x8 + x8 ＋ Ubuntu 24.04\n项目\n规格与配置\n备注\n显卡\n2× AMD RX 7900 XTX 24GB （gfx1100）\nGPU0 0000:03:00.0 ，GPU1 0000:06:00.0 ，以 rocm-smi --showbus 为准，不要照抄 /dev/dri/cardN\nCPU\nIntel i7-11700K\n8 核 16 线程\n内存\n64 GiB DDR4-3200\n偏紧，见 §六\n主板\nMSI MPG Z490 GAMING CARBON WIFI\nCPU 的 x16 拆成 x8/x8，每张卡有效带宽 PCIe 4.0 x8\n系统\nUbuntu 24.04.4 / ROCm 7.2.3\nHIP 7.2.53211\nStrata\nrdna3 strata-101-mmq 0.1.43\n模型 qwen3.8-flash-next-iq3_s ，跑在 GPU0\nhipfire\nv0.4.7 （commit e04c8bc8 ）\n模型 qwen3.8:27b-mq4-xts （HFQM， 14,987,185,152 B ），跑在 GPU1\n二、启动参数\n1. Strata（配方 configs/iq3-1gpu-recommended.json ，上下文 261880 ）\nsg render -c \"exec .venv/bin/python poster141_launch.py iq3-1gpu-recommended 8082 127.0.0.1\"\n参数\n值\n备注\nSTRATA_HIPBLASLT_TUNING\n100401-262k\n须与运行时 hipBLASLt 版本匹配\nHIPBLASLT_TENSILE_LIBPATH\n/opt/rocm/lib/hipblaslt/library/gfx1100\nROCm 7.2.3 上的路径\n--prefill\nauto\n--vram-reserve-mib\n512\n--pool-workers\n12\n--adapt-swaps\n32\nSTRATA_PREFILL_CPU_SHARE / _MAX\n0.6 / 4096\nSTRATA_PREFILL_RING\n192\nSTRATA_SH_STREAM\n0\nSTRATA_ADAPT_OVERLAP\n不设\n2. 27B（hipfire）\nexport HIP_VISIBLE_DEVICES=1\nexport HIPFIRE_PAGE_EVICTION=1\nexport HIPFIRE_PREFILL_MAX_BATCH=1024\nexport HIPFIRE_QWEN_PREAD_LOAD=1\nexport HIPFIRE_DPM_WARMUP_SECS=10\nexport HIPFIRE_MTP_K=3\nexport HIPFIRE_DFLASH_MODE=off # MTP 臂必须关 DFlash\nexec hipfire serve \"$HOST:8090\" \\\n--model qwen3.8:27b-mq4-xts \\\n--kv-mode q8 --kv-backend vmm \\\n--max-seq 140000 --spec mtp --idle-timeout 0\n另试过 13 个 gfx1100 / verify / graph 相关环境变量，均未测出显著差异，未采用。\n三、27B 参数取舍\n1. MTP K=3\n结果： K=3 与 K=4 等价，K=2 在 128K 慢 41% ；MTP 比自回归快 2.14 ～ 2.27 倍\n128K 档，同会话，每档 3 轮：\nK\nprefill\ndecode\nTTFT\ndecode 相对 K=3\n2\n1027.8\n47.1\n124.68 秒\n0.59×\n3\n1023.8\n79.9\n125.04 秒\n1.00×\n4\n1028.3\n79.5\n124.67 秒\n0.99×\nK 只影响 decode，不影响 TTFT。32K 档 K=3：AR 44.6 → MTP 95.6 （2.14×） → DFlash 68.9 ；100K 档 MTP/AR＝ 2.27× 。\n引擎版本影响结论： 同一模型同一 harness，v0.4.2.1 上 DFlash 胜（ 85.75 vs 73.25 ），v0.4.7 上反转（MTP 101.9 vs DFlash 97.4 ）。v0.4.7 相对旧版 MTP decode +39% ，DFlash +14% 。\n2. KV 用 q8 + vmm，不用 fwht3\n结果： fwht3 在 128K 同上下文下 decode 慢 34% 、TTFT 多 52% ，物理显存只省 4 ～ 7%\n臂\nKV\nmax_seq\n上下文\nprefill\ndecode\nTTFT\n采用\nq8\n140000\n128K\n1030.1\n76.8\n124.27 秒\n对照\nfwht3\n190000\n128K\n669.1\n51.0\n188.9 秒\n对照\nfwht3\n195000\n192174\n488.9\n38.3\n393.08 秒\n对照\nfwht3\n195000\n193112\n—\n—\ndaemon 崩溃\nfwht3@128K 对 q8@128K：prefill −35% / decode −34% / TTFT +52% ；fwht3@192K 对 q8@128K： −52.5% / −50% / +216% 。用 50% 的 decode 换 50% 的上下文，不划算。\n边际显存：q8 约 0.028 MiB/token ，fwht3 约",
+            "lead": "一句话总结（TL;DR）\n2×RX 7900 XTX 24GB 同机分卡：GPU0 跑 Strata 0.1.43 （Qwen3.8-Flash-Next IQ3_S，上下文 261880 ，约 256K），GPU1 跑 hipfire v0.4.7 （Qwen3.8-27B，MTP K=3，测速档位 128K ， --max-seq 140000 ），两端同时满载。\n并成功接入本地hermes和DSH\n并行代价： 两端 prefill / decode / TTFT 都落在各自 solo 基线的 96 ～ 102% ，未检出超出噪声（单轮 σ/mean≈ 7.6% ）的差异\nStrata（256K）： prefill 3,166 tok/s ，decode 93.7 tok/s ，TTFT 82.9 秒\n27B（128K）： prefill 1,028 tok/s ，decode 80.4 tok/s ，TTFT 124.7 秒 ；多轮对话第二轮起 TTFT 降到 5.7 秒\n唯一可见代价： Strata",
+            "chars": 17097,
+            "shown": 3197,
+            "truncated": true
+          },
+          "quality": 10,
+          "score": 16.57,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 4,
+          "slug": "cf0b0babfc47",
+          "action": 6,
+          "rank": 19.6,
+          "tags": [
+            "benchmark",
+            "hardware",
+            "local",
+            "lowspec"
+          ]
+        },
+        {
+          "sourceId": "appinn",
+          "sourceName": "小众软件",
+          "title": "Dettato：多乐器音频转 MIDI，每个乐器一个音轨，再加一个鼓组音轨",
+          "url": "https://www.appinn.com/dettato/",
+          "id": "https://www.appinn.com/dettato/",
+          "published": "2026-11-21T06:24:51.000Z",
+          "summary": "Dettato 是 KobiMusic 开源的 音乐转录模型 ，可以在自己的电脑（CPU、GPU）上运行。你只需输入一段音频，它就能生成一个 MIDI 文件，每个乐器对应一个音轨，外加一个鼓组音轨。@ Appinn 将 MP3/WAV 转换为 MIDI MP3 和 WAV 里存的是录下来的声音。MIDI 更像一份演奏指令，记着哪个音在什么时候响、响多久、弹多重。 电脑读到这些指令，再用你选的乐器音源把它演奏出来。 上图中，上半部分是音频文件的波形图，也是普通音频编辑软件中看到的。下半部分是 MIDI 钢琴卷帘。方块越高，音越高。方块从哪里开始、拉多长，对应音符什么时候响、响多久。蓝色是旋律，紫色是低音。 比如你想学弹开头那几秒，就…",
+          "content": {
+            "html": "<p><strong>Dettato</strong>是 KobiMusic 开源的<strong>音乐转录模型</strong>，可以在自己的电脑（CPU、GPU）上运行。你只需输入一段音频，它就能生成一个 MIDI 文件，每个乐器对应一个音轨，外加一个鼓组音轨。@<a href=\"https://www.appinn.com/dettato/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Appinn</a></p>\n<figure><img src=\"https://www.appinn.com/wp-content/uploads/2026/11/MP3%E8%BD%ACMIDI%E5%A4%9A%E8%BD%A8%E5%B7%A5%E4%BD%9C%E6%B5%81.jpg\" alt=\"Dettato：多乐器音频转 MIDI，每个乐器一个音轨，再加一个鼓组音轨 1\" loading=\"lazy\"></figure>\n<h3>将 MP3/WAV 转换为 MIDI</h3>\n<p>MP3 和 WAV 里存的是录下来的声音。MIDI 更像一份演奏指令，记着哪个音在什么时候响、响多久、弹多重。</p>\n<p>电脑读到这些指令，再用你选的乐器音源把它演奏出来。</p>\n<figure><img src=\"https://www.appinn.com/wp-content/uploads/2026/11/dettato-waveform-midi.avif\" alt=\"上方是音频波形，下方是相同时间轴上的 MIDI 钢琴卷帘，蓝色音符为旋律、紫色为低音\" loading=\"lazy\"></figure>\n<p>上图中，上半部分是音频文件的波形图，也是普通音频编辑软件中看到的。下半部分是 MIDI 钢琴卷帘。方块越高，音越高。方块从哪里开始、拉多长，对应音符什么时候响、响多久。蓝色是旋律，紫色是低音。</p>\n<p>比如你想学弹开头那几秒，就在钢琴卷帘上看音高和顺序，放慢播放，跟着原曲核对。觉得其中一个音太高，把对应的方块往下拖就行。往左拖可以让它早点响，拉长右边缘可以让它多响一会儿。</p>\n<h3>Dettato 工作原理</h3>\n<figure><img src=\"https://www.appinn.com/wp-content/uploads/2026/11/download.avif\" alt=\"Dettato：多乐器音频转 MIDI，每个乐器一个音轨，再加一个鼓组音轨 2\" loading=\"lazy\"></figure>\n<h3>如何使用？</h3>\n<p>安装比较简单，一行就行了，可以交给 AI 处理。</p>\n<p>运行也是：</p>\n<div><pre>pip install git+https://github.com/kobimusic/dettato\ndettato song.mp3 -o out/</pre></div>\n<p>第一次运行会从 Hugging Face 下载模型。转换后，<code>out</code>文件夹里会有<code>song.mid</code>和记录轨道、音符数量等信息的<code>song.json</code>。遇到读不了的 MP3，可以装 FFmpeg 再试。</p>\n<h3>四种模型</h3>\n<p>模型文件的尺寸都不大，几十MB 级别：</p>\n<figure><table><thead><tr><th></th><th>模型</th><th>参数</th><th>它的作用</th></tr></thead><tbody><tr><td>1</td><td><a href=\"https://huggingface.co/kobimusic/dettato\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">kobimusic/dettato</a></td><td>15.3M</td><td>音频注释：88个调的起始、结束和音高，每个调有两个声部</td></tr><tr><td>2</td><td><a href=\"https://huggingface.co/kobimusic/dettato-evidence\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">kobimusic/dettato-evidence</a></td><td>4.9M</td><td>利用转录者自身的证据修正笔记：删掉错误的音符，修正起音和结尾，添加遗漏的音符</td></tr><tr><td>3</td><td><a href=\"https://huggingface.co/kobimusic/dettato-grouper\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">kobimusic/dettato-grouper</a></td><td>290万</td><td>将每个音符放入乐器轨道并命名乐器</td></tr><tr><td>4</td><td><a href=\"https://huggingface.co/kobimusic/dettato-drums\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">kobimusic/dettato-drums</a></td><td>5.0M</td><td>General MIDI鼓键上的鼓击声、鼓组和管弦打击乐器</td></tr></tbody></table></figure>\n<h3>什么电脑能跑 Dettato？</h3>\n<p>Dettato 需要<strong>Python 3.10 或更新版本和 PyTorch 2.2 或更新版本</strong>。普通 Windows 或 Linux 电脑用 CPU 就能跑。开发者用笔记本的 CPU 转录 15 秒音频，花了 87 秒，包含模型加载时间。</p>\n<p>作为对比，用 RTX 5060（8 GB 显存）转录一首 4 分钟的歌，约用 15 秒，显存峰值低于 4 GB。</p>\n<p>M 系列 Mac 可以装 PyTorch，用<code>dettato song.mp3 -o out/ --device cpu</code>指定 CPU 运行。Mac 上实际要跑多久，要看电脑和录音长度。</p>\n<h3>获取</h3>\n<ul><li><a href=\"https://kobi.music/research/dettato\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">官网</a></li><li><a href=\"https://github.com/kobimusic/dettato\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">GitHub</a></li></ul>\n<p>音乐爱好者们，快去试试吧，硬件门槛极低的大模型了。</p>\n<hr><p>原文：<a href=\"https://www.appinn.com/dettato/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://www.appinn.com/dettato/</a></p>\n<hr><a href=\"http://www.appinn.com/copyright/?utm_source=feeds&amp;utm_medium=copyright&amp;utm_campaign=feeds\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">©</a>\n2021 青小蛙 for<a href=\"http://www.appinn.com/?utm_source=feeds&amp;utm_medium=appinn&amp;utm_campaign=feeds\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">小众软件</a>\n|<a href=\"http://www.appinn.com/join-us/?utm_source=feeds&amp;utm_medium=joinus&amp;utm_campaign=feeds\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">加入我们</a>\n|<a href=\"https://meta.appinn.net/c/faxian/?utm_source=feeds&amp;utm_medium=contribute&amp;utm_campaign=feeds\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">投稿</a>\n|<a href=\"http://www.appinn.com/feeds-subscribe/?utm_source=feeds&amp;utm_medium=feedsubscribe&amp;utm_campaign=feeds\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">订阅指南</a>\n<br>3659b075e72a5b7b1b87ea74aa7932ff<br><a href=\"https://www.appinn.com/dettato/#comments\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">点击这里留言、和原作者一起评论</a>\n<p><a href=\"https://www.appinn.com/dettato/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[ 点击前往获取链接 ]</a></p>\n<hr>",
+            "text": "Dettato 是 KobiMusic 开源的 音乐转录模型 ，可以在自己的电脑（CPU、GPU）上运行。你只需输入一段音频，它就能生成一个 MIDI 文件，每个乐器对应一个音轨，外加一个鼓组音轨。@ Appinn\n将 MP3/WAV 转换为 MIDI\nMP3 和 WAV 里存的是录下来的声音。MIDI 更像一份演奏指令，记着哪个音在什么时候响、响多久、弹多重。\n电脑读到这些指令，再用你选的乐器音源把它演奏出来。\n上图中，上半部分是音频文件的波形图，也是普通音频编辑软件中看到的。下半部分是 MIDI 钢琴卷帘。方块越高，音越高。方块从哪里开始、拉多长，对应音符什么时候响、响多久。蓝色是旋律，紫色是低音。\n比如你想学弹开头那几秒，就在钢琴卷帘上看音高和顺序，放慢播放，跟着原曲核对。觉得其中一个音太高，把对应的方块往下拖就行。往左拖可以让它早点响，拉长右边缘可以让它多响一会儿。\nDettato 工作原理\n如何使用？\n安装比较简单，一行就行了，可以交给 AI 处理。\n运行也是：\npip install git+https://github.com/kobimusic/dettato\ndettato song.mp3 -o out/\n第一次运行会从 Hugging Face 下载模型。转换后， out 文件夹里会有 song.mid 和记录轨道、音符数量等信息的 song.json 。遇到读不了的 MP3，可以装 FFmpeg 再试。\n四种模型\n模型文件的尺寸都不大，几十MB 级别：\n模型\n参数\n它的作用\n1\nkobimusic/dettato\n15.3M\n音频注释：88个调的起始、结束和音高，每个调有两个声部\n2\nkobimusic/dettato-evidence\n4.9M\n利用转录者自身的证据修正笔记：删掉错误的音符，修正起音和结尾，添加遗漏的音符\n3\nkobimusic/dettato-grouper\n290万\n将每个音符放入乐器轨道并命名乐器\n4\nkobimusic/dettato-drums\n5.0M\nGeneral MIDI鼓键上的鼓击声、鼓组和管弦打击乐器\n什么电脑能跑 Dettato？\nDettato 需要 Python 3.10 或更新版本和 PyTorch 2.2 或更新版本 。普通 Windows 或 Linux 电脑用 CPU 就能跑。开发者用笔记本的 CPU 转录 15 秒音频，花了 87 秒，包含模型加载时间。\n作为对比，用 RTX 5060（8 GB 显存）转录一首 4 分钟的歌，约用 15 秒，显存峰值低于 4 GB。\nM 系列 Mac 可以装 PyTorch，用 dettato song.mp3 -o out/ --device cpu 指定 CPU 运行。Mac 上实际要跑多久，要看电脑和录音长度。\n获取\n官网\nGitHub\n音乐爱好者们，快去试试吧，硬件门槛极低的大模型了。\n原文： https://www.appinn.com/dettato/\n©\n2021 青小蛙 for 小众软件\n| 加入我们\n| 投稿\n| 订阅指南\n3659b075e72a5b7b1b87ea74aa7932ff\n点击这里留言、和原作者一起评论\n[ 点击前往获取链接 ]",
+            "lead": "Dettato 是 KobiMusic 开源的 音乐转录模型 ，可以在自己的电脑（CPU、GPU）上运行。你只需输入一段音频，它就能生成一个 MIDI 文件，每个乐器对应一个音轨，外加一个鼓组音轨。@ Appinn\n将 MP3/WAV 转换为 MIDI\nMP3 和 WAV 里存的是录下来的声音。MIDI 更像一份演奏指令，记着哪个音在什么时候响、响多久、弹多重。\n电脑读到这些指令，再用你选的乐器音源把它演奏出来。\n上图中，上半部分是音频文件的波形图，也是普通音频编辑软件中看到的。下半部分是 MIDI 钢琴卷帘。方块越高，音越高。方块从哪里开始、拉多长，对应音符什么时候响、响多久。蓝色是旋律，紫色是低音。\n比如你想学弹开头那几秒，就在钢琴卷帘上看音高和顺序，放慢播放，跟着原曲核对。觉得其中一个音太高，把对应的方块往下拖就行。往左拖可以让它早点响，拉长右边缘可以让它多响一会儿。\nDettato 工作原理\n如何使用？\n安装比较简单，一行就行了，可以交给 AI 处理。",
+            "chars": 1419,
+            "shown": 1419,
+            "truncated": false
+          },
+          "categories": [
+            "媒体工具",
+            "AI",
+            "MIDI",
+            "本地大模型",
+            "音频"
+          ],
+          "author": "青小蛙",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "tools",
+          "metrics": {},
+          "quality": 8,
+          "score": 18.59,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 4,
+          "slug": "be6bd42e4cad",
+          "action": 7,
+          "rank": 19.2,
+          "tags": [
+            "lowspec",
+            "benchmark",
+            "tutorial",
+            "generate"
+          ]
+        },
+        {
+          "sourceId": "lcz-hardware",
+          "sourceName": "抡锤者 AI硬件",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "fcys",
+          "id": "3250",
+          "title": "【跨品牌 TP · 分享贴】为了验证跨品牌 TP，我写了个FCCL，还真跑通了",
+          "url": "https://lcz.me/topic/3250",
+          "published": "2026-11-21T13:17:37.954Z",
+          "summary": "前段时间的 H3 视频比赛，我折腾了 AMD 同代的异构 TP，也折腾了 NV 不同代的异构 TP。当时就想，如果能实现 A+N 的 TP 就好玩了，于是有了这个帖子。 为了让 A+N 的 TP 跑起来，我折腾了个跨平台 CCL，打算起名 FCCL——Fast (Fcys) Collective Communications Library。之所以发在硬件区，是因为跨平台跨进程的集合通信库不止能用来生成视频，后面能发挥的空间很大，比如 LLM。 当然也不限于 AMD 和 NV 的卡，理论上所有走 PCIe 的 GPU 或加速设备都能接。Intel 那边我也测了：目前 Intel 自家的 oneCCL 通信有 bug，生成的视频满屏…",
+          "metrics": {
+            "points": 1,
+            "comments": 2,
+            "views": 59
+          },
+          "excellent": false,
+          "content": {
+            "html": "<p>前段时间的 H3 视频比赛，我折腾了 AMD 同代的异构 TP，也折腾了 NV 不同代的异构 TP。当时就想，如果能实现 A+N 的 TP 就好玩了，于是有了这个帖子。</p>\n<p>为了让 A+N 的 TP 跑起来，我折腾了个跨平台 CCL，打算起名 FCCL——Fast (Fcys) Collective Communications Library。之所以发在硬件区，是因为跨平台跨进程的集合通信库不止能用来生成视频，后面能发挥的空间很大，比如 LLM。</p>\n<p>当然也不限于 AMD 和 NV 的卡，理论上所有走 PCIe 的 GPU 或加速设备都能接。Intel 那边我也测了：目前 Intel 自家的 oneCCL 通信有 bug，生成的视频满屏彩噪；改用 FCCL 之后能正常出片，但速度偏慢，这个得慢慢调。</p>\n<hr><p>原因大家都知道——NVIDIA 的通信库只认自家卡，AMD 的也只认自家卡。两套库互不相通，跨厂商的 TP 从第一步就起不来。</p>\n<p>所以我写了一套走主机内存的通信，把这件事跑通了。</p>\n<p>原理图：<br><img src=\"https://upload.lcz.me/uploads/5ecd07f3-3764-4104-bb8e-b6eac3555cd3.png\" alt=\"file.png\" loading=\"lazy\"></p>\n<hr><p>实际应用（H3）：<br><img src=\"https://upload.lcz.me/uploads/500d384e-8d1e-4aee-9450-2fdc195710d2.png\" alt=\"byp_294_768p_00001_九宫格.png\" loading=\"lazy\"></p>\n<hr><p>所有数字本机实测，代码在本机跑过。平台：W7900（ROCm 10.0）+ RTX PRO 5000（CUDA 13.0），两卡之间 PCIe 4.0 x16。</p>\n<hr><h3>一、一句话结论</h3>\n<table><thead><tr><th>维度</th><th>结论</th></tr></thead><tbody><tr><td>能不能跑</td><td>能。1 GiB 收发做到同厂商 P2P 的 91%</td></tr><tr><td>比厂商库的主机路径</td><td>快 19%</td></tr><tr><td>代价</td><td>4 MB 以下的小消息明显吃亏；对主存带宽要求高</td></tr><tr><td>最大价值</td><td>不用换卡就能组 TP，显存能合起来用</td></tr><tr><td>什么时候别用</td><td>两张卡算力差太远，不如直接用快的那张</td></tr></tbody></table>\n<p>后面几节是把这张表拆开讲。</p>\n<hr><h3>二、先看主结果：1 GiB 收发</h3>\n<p>同一台机器，三种链路同一口径：</p>\n<table><thead><tr><th>链路</th><th>耗时</th><th>busbw</th><th>相对</th></tr></thead><tbody><tr><td>双 A 卡走 RCCL P2P</td><td>46.14 ms</td><td>46.54 GB/s</td><td>快 9.5%</td></tr><tr><td><strong>A + N 走主机内存（我这套）</strong></td><td><strong>50.49 ms</strong></td><td><strong>42.53 GB/s</strong></td><td>基准</td></tr><tr><td>两张 N 卡跨代走 NCCL</td><td>60.26 ms</td><td>35.64 GB/s</td><td>慢 19%</td></tr></tbody></table>\n<p>能到 P2P 的 91%，比我预期好，本来以为 80% 就不错了。</p>\n<p>毕竟这条路是绕的：数据要从显存搬到主机内存，再让另一张卡从主机内存搬回去。相当于绕了一圈，还能做到 P2P 的九成，说明 PCIe 双向并发本身就不是瓶颈。</p>\n<hr><h3>三、但小消息很难看</h3>\n<p>同一批测试，按数据大小拆开：</p>\n<table><thead><tr><th>数据大小</th><th>RCCL</th><th>我这套</th><th>NCCL</th></tr></thead><tbody><tr><td>4 KB</td><td>0.20</td><td>0.06</td><td>0.39</td></tr><tr><td>1 MB</td><td>22.41</td><td>9.92</td><td>20.74</td></tr><tr><td>16 MB</td><td>44.22</td><td>24.71</td><td>31.81</td></tr><tr><td>64 MB</td><td>45.99</td><td>36.69</td><td>33.06</td></tr><tr><td>256 MB</td><td>46.43</td><td>41.36</td><td>34.78</td></tr><tr><td>1 GiB</td><td>46.54</td><td>42.53</td><td>35.64</td></tr></tbody></table>\n<p>4 KB 的时候我这套只有 0.06 GB/s，是三种里最差的。原因很简单：每块数据都要走一遍「写标志位 → 对端轮询 → 读 → 回执」的握手，数据越小，握手占比越大。</p>\n<p>32 MB 之后才开始反超 NCCL。所以这东西的使用前提很明确——<strong>大块数据</strong>。实际训练推理都是几百 MB 级别的层输出，正好在甜点区。</p>\n<p>RCCL 二十几 MB 就顶在 46.5 不动了，那是 P2P 的物理上限。NCCL 走主机内存，16 MB 之后也涨不动——它撞的是同一个墙，只是没有人帮它做双向重叠。</p>\n<hr><h3>四、一个反直觉的结果</h3>\n<p>这套东西在我这台机器上能拿到 1.67 倍加速（双工 vs 单块）。同一份代码搬到另一台机器（双 R9700，PCIe 5.0），耗时还是 50.5 ms 左右，但加速比掉到 1.09 倍。</p>\n<p>第一反应是代码在 Gen5 上有问题，查了半天才发现不是。</p>\n<p>这类方案的数据要过一遍主机内存，1 GiB 需要大约 85 GB/s 的同时读写能力。那台机器只插了 4 条内存，实测同时读写只有 72 GB/s——瓶颈从 PCIe 跑到内存去了。</p>\n<p>把关系理出来是这样：<strong>内存需求 ≈ 4 × PCIe 单向上限</strong>。</p>\n<table><thead><tr><th>PCIe</th><th>单向上限</th><th>内存需求</th><th>四条 DDR4/DDR5 够不够</th></tr></thead><tbody><tr><td>3.0 x16</td><td>~13 GB/s</td><td>~52 GB/s</td><td>刚好</td></tr><tr><td>4.0 x16</td><td>~26 GB/s</td><td>~104 GB/s</td><td>不够，要 8 条</td></tr><tr><td>5.0 x16</td><td>~44 GB/s</td><td>~177 GB/s</td><td>差 2 倍多</td></tr></tbody></table>\n<p>所以有个挺反直觉的结论：<strong>老平台反而省心，新平台容易在这翻车</strong>。手里是 PCIe 3.0 主板的朋友不用担心内存，插四条 DDR4 就够跑满双工。</p>\n<hr><h3>五、这套东西的价值到底在哪</h3>\n<p>说实话，不是速度。</p>\n<p>我拿它跑 ComfyUI 的 MiniMax-H3 视频生成，1344×768、124 帧、20 步，两张卡一起算能跑完（双工 961 秒，单块 1035 秒）。但跑 20 步这件事本身，PRO5000 单卡也能干，只是慢一点。</p>\n<p>要想实现速度上有客观的提升，要求两张卡原始算力差距不大，当然LLM得实际情况不能等同于H3的视频生成，AMD的LLM性能差距没有那么明显。</p>\n<p>真正跑不动的是更大的档位。单卡跑 362 帧 1088p 的时候，48G 显存直接贴顶，VAE 解码就 OOM；两张卡切开，每卡只吃 30G 左右，还留十几 G 余量。</p>\n<p><strong>所以它的价值是把显存从 48G 变成 96G（实际约 94.6G），速度是附带的。</strong></p>\n<p>这里要提醒一句：TP 不会让显存翻倍。模型权重能切，但中间激活、VAE、文本编码器这些切不了，所以收益是「从放不下到放得下」，不是「空间翻倍」。</p>\n<hr><h3>六、什么时候别用它</h3>\n<p>这条比性能数字有用。</p>\n<p>我那个 W7900 + PRO5000 的组合，主要是证明这条路走得通，不是证明它快。实际跑 20 步：</p>\n<table><thead><tr><th>对比</th><th>结果</th></tr></thead><tbody><tr><td>vs 双 W7900 TP2</td><td>2501 s vs 3027 s，快 17%</td></tr><tr><td>vs PRO5000 单卡</td><td>2501 s vs 约 1250 s，慢一倍</td></tr></tbody></table>\n<p>慢的原因不在通信——每步通信只占 7% 的时间——在 AMD 卡算力太弱，把整体拖住了。</p>\n<table><thead><tr><th>两卡算力差距</th><th>实测</th></tr></thead><tbody><tr><td>相近（N+N 跨代）</td><td>1.27×</td></tr><tr><td>差 5.7 倍（W7900 vs PRO5000）</td><td>0.50×，比单卡还慢</td></tr></tbody></table>\n<p>判断标准很简单：<strong>两张卡跑同一个任务，时间差不超过 1.5 倍，才值得试</strong>。差一倍以上，直接用快的那张，别折腾。</p>\n<p>不同应用选卡的方向要根据实际情况来推导。</p>\n<hr><h3>七、稳定性</h3>\n<table><thead><tr><th>项</th><th>结果</th></tr></thead><tbody><tr><td>1 GiB 连跑 1500 轮</td><td>p99 50.61 ms，抖动 &lt;0.2%</td></tr><tr><td>跨尺寸来回切</td><td>720 次，全部正常</td></tr><tr><td>正确性检查</td><td>104 项全过</td></tr></tbody></table>\n<p>顺带说个教训：我早期有个版本 104 项 bench 全绿，但实际跑 H3 单步就崩——因为bench 每轮都填同一个均匀值、张量还是连续的，把「跨 stream 读到半成品」和「非连续张量丢结果」两个 bug 同时掩盖了。所以判据不能只看 bench，得看端到端结果。</p>\n<hr><p>数据就这些，后面测了新卡再往上补。</p>",
+            "text": "前段时间的 H3 视频比赛，我折腾了 AMD 同代的异构 TP，也折腾了 NV 不同代的异构 TP。当时就想，如果能实现 A+N 的 TP 就好玩了，于是有了这个帖子。\n为了让 A+N 的 TP 跑起来，我折腾了个跨平台 CCL，打算起名 FCCL——Fast (Fcys) Collective Communications Library。之所以发在硬件区，是因为跨平台跨进程的集合通信库不止能用来生成视频，后面能发挥的空间很大，比如 LLM。\n当然也不限于 AMD 和 NV 的卡，理论上所有走 PCIe 的 GPU 或加速设备都能接。Intel 那边我也测了：目前 Intel 自家的 oneCCL 通信有 bug，生成的视频满屏彩噪；改用 FCCL 之后能正常出片，但速度偏慢，这个得慢慢调。\n原因大家都知道——NVIDIA 的通信库只认自家卡，AMD 的也只认自家卡。两套库互不相通，跨厂商的 TP 从第一步就起不来。\n所以我写了一套走主机内存的通信，把这件事跑通了。\n原理图：\n实际应用（H3）：\n所有数字本机实测，代码在本机跑过。平台：W7900（ROCm 10.0）+ RTX PRO 5000（CUDA 13.0），两卡之间 PCIe 4.0 x16。\n一、一句话结论\n维度\n结论\n能不能跑\n能。1 GiB 收发做到同厂商 P2P 的 91%\n比厂商库的主机路径\n快 19%\n代价\n4 MB 以下的小消息明显吃亏；对主存带宽要求高\n最大价值\n不用换卡就能组 TP，显存能合起来用\n什么时候别用\n两张卡算力差太远，不如直接用快的那张\n后面几节是把这张表拆开讲。\n二、先看主结果：1 GiB 收发\n同一台机器，三种链路同一口径：\n链路\n耗时\nbusbw\n相对\n双 A 卡走 RCCL P2P\n46.14 ms\n46.54 GB/s\n快 9.5%\nA + N 走主机内存（我这套）\n50.49 ms\n42.53 GB/s\n基准\n两张 N 卡跨代走 NCCL\n60.26 ms\n35.64 GB/s\n慢 19%\n能到 P2P 的 91%，比我预期好，本来以为 80% 就不错了。\n毕竟这条路是绕的：数据要从显存搬到主机内存，再让另一张卡从主机内存搬回去。相当于绕了一圈，还能做到 P2P 的九成，说明 PCIe 双向并发本身就不是瓶颈。\n三、但小消息很难看\n同一批测试，按数据大小拆开：\n数据大小\nRCCL\n我这套\nNCCL\n4 KB\n0.20\n0.06\n0.39\n1 MB\n22.41\n9.92\n20.74\n16 MB\n44.22\n24.71\n31.81\n64 MB\n45.99\n36.69\n33.06\n256 MB\n46.43\n41.36\n34.78\n1 GiB\n46.54\n42.53\n35.64\n4 KB 的时候我这套只有 0.06 GB/s，是三种里最差的。原因很简单：每块数据都要走一遍「写标志位 → 对端轮询 → 读 → 回执」的握手，数据越小，握手占比越大。\n32 MB 之后才开始反超 NCCL。所以这东西的使用前提很明确—— 大块数据 。实际训练推理都是几百 MB 级别的层输出，正好在甜点区。\nRCCL 二十几 MB 就顶在 46.5 不动了，那是 P2P 的物理上限。NCCL 走主机内存，16 MB 之后也涨不动——它撞的是同一个墙，只是没有人帮它做双向重叠。\n四、一个反直觉的结果\n这套东西在我这台机器上能拿到 1.67 倍加速（双工 vs 单块）。同一份代码搬到另一台机器（双 R9700，PCIe 5.0），耗时还是 50.5 ms 左右，但加速比掉到 1.09 倍。\n第一反应是代码在 Gen5 上有问题，查了半天才发现不是。\n这类方案的数据要过一遍主机内存，1 GiB 需要大约 85 GB/s 的同时读写能力。那台机器只插了 4 条内存，实测同时读写只有 72 GB/s——瓶颈从 PCIe 跑到内存去了。\n把关系理出来是这样： 内存需求 ≈ 4 × PCIe 单向上限 。\nPCIe\n单向上限\n内存需求\n四条 DDR4/DDR5 够不够\n3.0 x16\n~13 GB/s\n~52 GB/s\n刚好\n4.0 x16\n~26 GB/s\n~104 GB/s\n不够，要 8 条\n5.0 x16\n~44 GB/s\n~177 GB/s\n差 2 倍多\n所以有个挺反直觉的结论： 老平台反而省心，新平台容易在这翻车 。手里是 PCIe 3.0 主板的朋友不用担心内存，插四条 DDR4 就够跑满双工。\n五、这套东西的价值到底在哪\n说实话，不是速度。\n我拿它跑 ComfyUI 的 MiniMax-H3 视频生成，1344×768、124 帧、20 步，两张卡一起算能跑完（双工 961 秒，单块 1035 秒）。但跑 20 步这件事本身，PRO5000 单卡也能干，只是慢一点。\n要想实现速度上有客观的提升，要求两张卡原始算力差距不大，当然LLM得实际情况不能等同于H3的视频生成，AMD的LLM性能差距没有那么明显。\n真正跑不动的是更大的档位。单卡跑 362 帧 1088p 的时候，48G 显存直接贴顶，VAE 解码就 OOM；两张卡切开，每卡只吃 30G 左右，还留十几 G 余量。\n所以它的价值是把显存从 48G 变成 96G（实际约 94.6G），速度是附带的。\n这里要提醒一句：TP 不会让显存翻倍。模型权重能切，但中间激活、VAE、文本编码器这些切不了，所以收益是「从放不下到放得下」，不是「空间翻倍」。\n六、什么时候别用它\n这条比性能数字有用。\n我那个 W7900 + PRO5000 的组合，主要是证明这条路走得通，不是证明它快。实际跑 20 步：\n对比\n结果\nvs 双 W7900 TP2\n2501 s vs 3027 s，快 17%\nvs PRO5000 单卡\n2501 s vs 约 1250 s，慢一倍\n慢的原因不在通信——每步通信只占 7% 的时间——在 AMD 卡算力太弱，把整体拖住了。\n两卡算力差距\n实测\n相近（N+N 跨代）\n1.27×\n差 5.7 倍（W7900 vs PRO5000）\n0.50×，比单卡还慢\n判断标准很简单： 两张卡跑同一个任务，时间差不超过 1.5 倍，才值得试 。差一倍以上，直接用快的那张，别折腾。\n不同应用选卡的方向要根据实际情况来推导。\n七、稳定性\n项\n结果\n1 GiB 连跑 1500 轮\np99 50.61 ms，抖动 <0.2%\n跨尺寸来回切\n720 次，全部正常\n正确性检查\n104 项全过\n顺带说个教训：我早期有个版本 104 项 bench 全绿，但实际跑 H3 单步就崩——因为bench 每轮都填同一个均匀值、张量还是连续的，把「跨 stream 读到半成品」和「非连续张量丢结果」两个 bug 同时掩盖了。所以判据不能只看 bench，得看端到端结果。\n数据就这些，后面测了新卡再往上补。",
+            "lead": "前段时间的 H3 视频比赛，我折腾了 AMD 同代的异构 TP，也折腾了 NV 不同代的异构 TP。当时就想，如果能实现 A+N 的 TP 就好玩了，于是有了这个帖子。\n为了让 A+N 的 TP 跑起来，我折腾了个跨平台 CCL，打算起名 FCCL——Fast (Fcys) Collective Communications Library。之所以发在硬件区，是因为跨平台跨进程的集合通信库不止能用来生成视频，后面能发挥的空间很大，比如 LLM。\n当然也不限于 AMD 和 NV 的卡，理论上所有走 PCIe 的 GPU 或加速设备都能接。Intel 那边我也测了：目前 Intel 自家的 oneCCL 通信有 bug，生成的视频满屏彩噪；改用 FCCL 之后能正常出片，但速度偏慢，这个得慢慢调。\n原因大家都知道——NVIDIA 的通信库只认自家卡，AMD 的也只认自家卡。两套库互不相通，跨厂商的 TP 从第一步就起不来。\n所以我写了一套走主机内存的通信，把这件事跑通了。",
+            "chars": 3053,
+            "shown": 3053,
+            "truncated": false
+          },
+          "quality": 8,
+          "score": 20.97,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 4,
+          "slug": "d2ecffd5c323",
+          "action": 6,
+          "rank": 17.6,
+          "tags": [
+            "benchmark",
+            "lowspec",
+            "generate",
+            "hardware"
+          ]
+        },
+        {
+          "sourceId": "gh-releases",
+          "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "github-actions[bot]",
+          "id": "453610339",
+          "title": "llama.cpp b12606 发布",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12606",
+          "published": "2026-11-21T10:28:59.000Z",
+          "summary": "llama : remove fused lightning indexer gating (#32650) The fused lightning indexer is always used now, so drop the cparams flags, the auto probe and the non-fused fallbacks. Assisted-by: dsh:llama.cpp/ggml-org/DeepSeek-V4.1-Flash-1017-GGUF (Mac Studio, M5 Ultra, 256GB) Website: Attestations: macOS/iOS: macOS Apple Sil…",
+          "content": {
+            "html": "<p>&lt;details open&gt;</p>\n<p>llama : remove fused lightning indexer gating (#32650)</p>\n<p>The fused lightning indexer is always used now, so drop the cparams flags, the auto probe and the non-fused fallbacks.</p>\n<p>Assisted-by: dsh:llama.cpp/ggml-org/DeepSeek-V4.1-Flash-1017-GGUF (Mac Studio, M5 Ultra, 256GB)</p>\n<p>&lt;/details&gt;</p>\n<p><strong>Website:</strong></p>\n<ul><li>&lt;https://llama.app&gt;</li></ul>\n<p><strong>Attestations:</strong></p>\n<ul><li>&lt;https://github.com/ggml-org/llama.cpp/attestations/70501121&gt;</li></ul>\n<p><strong>macOS/iOS:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12606/llama-b12606-bin-macos-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">macOS Apple Silicon (arm64)</a></li><li>macOS Apple Silicon (arm64, KleidiAI enabled)<a href=\"https://github.com/ggml-org/llama.cpp/pull/23780\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">DISABLED</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12606/llama-b12606-bin-macos-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">macOS Intel (x64)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12606/llama-b12606-xcframework.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">iOS XCFramework</a></li></ul>\n<p><strong>Linux:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12606/llama-b12606-bin-ubuntu-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12606/llama-b12606-bin-ubuntu-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu arm64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12606/llama-b12606-bin-ubuntu-s390x.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu 24.04 s390x (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12606/llama-b12606-bin-ubuntu-26.04-s390x.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu 26.04 s390x (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12606/llama-b12606-bin-ubuntu-zdnn-s390x.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu 26.04 s390x (zDNN)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12606/llama-b12606-bin-ubuntu-vulkan-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12606/llama-b12606-bin-ubuntu-vulkan-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu arm64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12606/llama-b12606-bin-ubuntu-cuda-12.8-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (CUDA 12)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12606/cudart-llama-b12606-bin-ubuntu-cuda-12.8-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 12.8 libraries</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12606/llama-b12606-bin-ubuntu-cuda-13.5-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12606/cudart-llama-b12606-bin-ubuntu-cuda-13.5-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 libraries</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12606/llama-b12606-bin-ubuntu-cuda-13.5-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu arm64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12606/cudart-llama-b12606-bin-ubuntu-cuda-13.5-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 libraries</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12606/llama-b12606-bin-ubuntu-rocm-10.0-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (ROCm 10.0)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12606/llama-b12606-bin-ubuntu-openvino-2026.4.1-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (OpenVINO)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12606/llama-b12606-bin-ubuntu-sycl-fp32-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (SYCL FP32)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12606/llama-b12606-bin-ubuntu-sycl-fp16-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (SYCL FP16)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12606/llama-b12606-bin-linux-arm64-snapdragon.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Linux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/linux.md\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">setup guide</a></li></ul>\n<p><strong>Android:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12606/llama-b12606-bin-android-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Android arm64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12606/llama-b12606-bin-android-arm64-snapdragon.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Android arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/README.md\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">setup guide</a></li></ul>\n<p><strong>Windows:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12606/llama-b12606-bin-win-cpu-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12606/llama-b12606-bin-win-cpu-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12606/llama-b12606-bin-win-opencl-adreno-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (OpenCL Adreno)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12606/llama-b12606-bin-win-cuda-12.4-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (CUDA 12)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12606/cudart-llama-bin-win-cuda-12.4-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 12.4 DLLs</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12606/llama-b12606-bin-win-cuda-13.5-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12606/cudart-llama-bin-win-cuda-13.5-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 DLLs</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12606/llama-b12606-bin-win-cuda-13.5-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12606/cudart-llama-bin-win-cuda-13.5-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 DLLs</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12606/llama-b12606-bin-win-vulkan-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12606/llama-b12606-bin-win-vulkan-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12606/llama-b12606-bin-win-openvino-2026.4.1-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (OpenVINO)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12606/llama-b12606-bin-win-sycl-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (SYCL)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12606/llama-b12606-bin-win-rocm-10.0-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (ROCm 10.0)</a></li></ul>\n<p><strong>openEuler:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/pull/23705\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">DISABLED</a></li><li>openEuler x86 (310p)</li><li>openEuler x86 (910b, ACL Graph)</li><li>openEuler aarch64 (310p)</li><li>openEuler aarch64 (910b, ACL Graph)</li></ul>\n<p><strong>UI:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12606/llama-b12606-ui.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">UI</a></li></ul>",
+            "text": "llama : remove fused lightning indexer gating (#32650)\nThe fused lightning indexer is always used now, so drop the cparams flags, the auto probe and the non-fused fallbacks.\nAssisted-by: dsh:llama.cpp/ggml-org/DeepSeek-V4.1-Flash-1017-GGUF (Mac Studio, M5 Ultra, 256GB)\nWebsite:\nAttestations:\nmacOS/iOS:\nmacOS Apple Silicon (arm64)\nmacOS Apple Silicon (arm64, KleidiAI enabled) DISABLED\nmacOS Intel (x64)\niOS XCFramework\nLinux:\nUbuntu x64 (CPU)\nUbuntu arm64 (CPU)\nUbuntu 24.04 s390x (CPU)\nUbuntu 26.04 s390x (CPU)\nUbuntu 26.04 s390x (zDNN)\nUbuntu x64 (Vulkan)\nUbuntu arm64 (Vulkan)\nUbuntu x64 (CUDA 12) - CUDA 12.8 libraries\nUbuntu x64 (CUDA 13) - CUDA 13.5 libraries\nUbuntu arm64 (CUDA 13) - CUDA 13.5 libraries\nUbuntu x64 (ROCm 10.0)\nUbuntu x64 (OpenVINO)\nUbuntu x64 (SYCL FP32)\nUbuntu x64 (SYCL FP16)\nLinux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide\nAndroid:\nAndroid arm64 (CPU)\nAndroid arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide\nWindows:\nWindows x64 (CPU)\nWindows arm64 (CPU)\nWindows arm64 (OpenCL Adreno)\nWindows x64 (CUDA 12) - CUDA 12.4 DLLs\nWindows x64 (CUDA 13) - CUDA 13.5 DLLs\nWindows arm64 (CUDA 13) - CUDA 13.5 DLLs\nWindows x64 (Vulkan)\nWindows arm64 (Vulkan)\nWindows x64 (OpenVINO)\nWindows x64 (SYCL)\nWindows x64 (ROCm 10.0)\nopenEuler:\nDISABLED\nopenEuler x86 (310p)\nopenEuler x86 (910b, ACL Graph)\nopenEuler aarch64 (310p)\nopenEuler aarch64 (910b, ACL Graph)\nUI:\nUI",
+            "lead": "llama : remove fused lightning indexer gating (#32650)\nThe fused lightning indexer is always used now, so drop the cparams flags, the auto probe and the non-fused fallbacks.\nAssisted-by: dsh:llama.cpp/ggml-org/DeepSeek-V4.1-Flash-1017-GGUF (Mac Studio, M5 Ultra, 256GB)\nWebsite:\nAttestations:\nmacOS/iOS:\nmacOS Apple Silicon (arm64)\nmacOS Apple Silicon (arm64, KleidiAI enabled) DISABLED\nmacOS Intel (x64)\niOS XCFramework",
+            "chars": 1589,
+            "shown": 1589,
+            "truncated": false
+          },
+          "quality": 8,
+          "score": 21.93,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 2,
+          "slug": "7d05dca6b92c",
+          "action": 4,
+          "rank": 14.4,
+          "tags": [
+            "local",
+            "lowspec",
+            "tutorial"
+          ]
+        },
+        {
+          "sourceId": "gh-releases",
+          "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "github-actions[bot]",
+          "id": "453807885",
+          "title": "llama.cpp b12608 发布",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12608",
+          "published": "2026-11-21T16:05:19.000Z",
+          "summary": "ggml-cpu: fix nc aligment in tinyBLAS_PPC_Q0 (#32659) Fixes https://github.com/ggml-org/llama.cpp/issues/31680 The matmul_tiled() implementation in tinyBLAS_Q0_PPC requires nc to be a multiple of 8 to perform matrix multiplication correctly. The previous alignment logic contained a special case for n == 4, which allow…",
+          "content": {
+            "html": "<p>&lt;details open&gt;</p>\n<p>ggml-cpu: fix nc aligment in tinyBLAS_PPC_Q0 (#32659)</p>\n<p>Fixes https://github.com/ggml-org/llama.cpp/issues/31680</p>\n<p>The matmul_tiled() implementation in tinyBLAS_Q0_PPC requires nc to be a multiple of 8 to perform matrix multiplication correctly.</p>\n<p>The previous alignment logic contained a special case for n == 4, which allowed n_aligned to be 4. Consequently, the tiled path could be selected with nc = 4, violating the kernel's tile-width requirement.</p>\n<p>This caused incorrect matrix multiplication results, observed as garbled inference output when running Flint Q4_K_M and Gemma 3 27B Instruct.</p>\n<p>&lt;/details&gt;</p>\n<p><strong>Website:</strong></p>\n<ul><li>&lt;https://llama.app&gt;</li></ul>\n<p><strong>Attestations:</strong></p>\n<ul><li>&lt;https://github.com/ggml-org/llama.cpp/attestations/70559755&gt;</li></ul>\n<p><strong>macOS/iOS:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12608/llama-b12608-bin-macos-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">macOS Apple Silicon (arm64)</a></li><li>macOS Apple Silicon (arm64, KleidiAI enabled)<a href=\"https://github.com/ggml-org/llama.cpp/pull/23780\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">DISABLED</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12608/llama-b12608-bin-macos-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">macOS Intel (x64)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12608/llama-b12608-xcframework.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">iOS XCFramework</a></li></ul>\n<p><strong>Linux:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12608/llama-b12608-bin-ubuntu-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12608/llama-b12608-bin-ubuntu-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu arm64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12608/llama-b12608-bin-ubuntu-s390x.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu 24.04 s390x (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12608/llama-b12608-bin-ubuntu-26.04-s390x.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu 26.04 s390x (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12608/llama-b12608-bin-ubuntu-zdnn-s390x.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu 26.04 s390x (zDNN)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12608/llama-b12608-bin-ubuntu-vulkan-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12608/llama-b12608-bin-ubuntu-vulkan-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu arm64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12608/llama-b12608-bin-ubuntu-cuda-12.8-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (CUDA 12)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12608/cudart-llama-b12608-bin-ubuntu-cuda-12.8-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 12.8 libraries</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12608/llama-b12608-bin-ubuntu-cuda-13.5-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12608/cudart-llama-b12608-bin-ubuntu-cuda-13.5-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 libraries</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12608/llama-b12608-bin-ubuntu-cuda-13.5-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu arm64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12608/cudart-llama-b12608-bin-ubuntu-cuda-13.5-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 libraries</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12608/llama-b12608-bin-ubuntu-rocm-10.0-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (ROCm 10.0)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12608/llama-b12608-bin-ubuntu-openvino-2026.4.1-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (OpenVINO)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12608/llama-b12608-bin-ubuntu-sycl-fp32-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (SYCL FP32)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12608/llama-b12608-bin-ubuntu-sycl-fp16-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (SYCL FP16)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12608/llama-b12608-bin-linux-arm64-snapdragon.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Linux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/linux.md\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">setup guide</a></li></ul>\n<p><strong>Android:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12608/llama-b12608-bin-android-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Android arm64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12608/llama-b12608-bin-android-arm64-snapdragon.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Android arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/README.md\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">setup guide</a></li></ul>\n<p><strong>Windows:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12608/llama-b12608-bin-win-cpu-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12608/llama-b12608-bin-win-cpu-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12608/llama-b12608-bin-win-opencl-adreno-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (OpenCL Adreno)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12608/llama-b12608-bin-win-cuda-12.4-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (CUDA 12)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12608/cudart-llama-bin-win-cuda-12.4-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 12.4 DLLs</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12608/llama-b12608-bin-win-cuda-13.5-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12608/cudart-llama-bin-win-cuda-13.5-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 DLLs</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12608/llama-b12608-bin-win-cuda-13.5-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12608/cudart-llama-bin-win-cuda-13.5-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 DLLs</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12608/llama-b12608-bin-win-vulkan-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12608/llama-b12608-bin-win-vulkan-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12608/llama-b12608-bin-win-openvino-2026.4.1-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (OpenVINO)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12608/llama-b12608-bin-win-sycl-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (SYCL)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12608/llama-b12608-bin-win-rocm-10.0-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (ROCm 10.0)</a></li></ul>\n<p><strong>openEuler:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/pull/23705\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">DISABLED</a></li><li>openEuler x86 (310p)</li><li>openEuler x86 (910b, ACL Graph)</li><li>openEuler aarch64 (310p)</li><li>openEuler aarch64 (910b, ACL Graph)</li></ul>\n<p><strong>UI:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12608/llama-b12608-ui.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">UI</a></li></ul>",
+            "text": "ggml-cpu: fix nc aligment in tinyBLAS_PPC_Q0 (#32659)\nFixes https://github.com/ggml-org/llama.cpp/issues/31680\nThe matmul_tiled() implementation in tinyBLAS_Q0_PPC requires nc to be a multiple of 8 to perform matrix multiplication correctly.\nThe previous alignment logic contained a special case for n == 4, which allowed n_aligned to be 4. Consequently, the tiled path could be selected with nc = 4, violating the kernel's tile-width requirement.\nThis caused incorrect matrix multiplication results, observed as garbled inference output when running Flint Q4_K_M and Gemma 3 27B Instruct.\nWebsite:\nAttestations:\nmacOS/iOS:\nmacOS Apple Silicon (arm64)\nmacOS Apple Silicon (arm64, KleidiAI enabled) DISABLED\nmacOS Intel (x64)\niOS XCFramework\nLinux:\nUbuntu x64 (CPU)\nUbuntu arm64 (CPU)\nUbuntu 24.04 s390x (CPU)\nUbuntu 26.04 s390x (CPU)\nUbuntu 26.04 s390x (zDNN)\nUbuntu x64 (Vulkan)\nUbuntu arm64 (Vulkan)\nUbuntu x64 (CUDA 12) - CUDA 12.8 libraries\nUbuntu x64 (CUDA 13) - CUDA 13.5 libraries\nUbuntu arm64 (CUDA 13) - CUDA 13.5 libraries\nUbuntu x64 (ROCm 10.0)\nUbuntu x64 (OpenVINO)\nUbuntu x64 (SYCL FP32)\nUbuntu x64 (SYCL FP16)\nLinux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide\nAndroid:\nAndroid arm64 (CPU)\nAndroid arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide\nWindows:\nWindows x64 (CPU)\nWindows arm64 (CPU)\nWindows arm64 (OpenCL Adreno)\nWindows x64 (CUDA 12) - CUDA 12.4 DLLs\nWindows x64 (CUDA 13) - CUDA 13.5 DLLs\nWindows arm64 (CUDA 13) - CUDA 13.5 DLLs\nWindows x64 (Vulkan)\nWindows arm64 (Vulkan)\nWindows x64 (OpenVINO)\nWindows x64 (SYCL)\nWindows x64 (ROCm 10.0)\nopenEuler:\nDISABLED\nopenEuler x86 (310p)\nopenEuler x86 (910b, ACL Graph)\nopenEuler aarch64 (310p)\nopenEuler aarch64 (910b, ACL Graph)\nUI:\nUI",
+            "lead": "ggml-cpu: fix nc aligment in tinyBLAS_PPC_Q0 (#32659)\nFixes https://github.com/ggml-org/llama.cpp/issues/31680\nThe matmul_tiled() implementation in tinyBLAS_Q0_PPC requires nc to be a multiple of 8 to perform matrix multiplication correctly.\nThe previous alignment logic contained a special case for n == 4, which allowed n_aligned to be 4. Consequently, the tiled path could be selected with nc = 4, violating the kernel's tile-width requirement.",
+            "chars": 1911,
+            "shown": 1911,
+            "truncated": false
+          },
+          "quality": 8,
+          "score": 20.79,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 1,
+          "slug": "0c91e13e7dda",
+          "action": 3,
+          "rank": 12.8,
+          "tags": [
+            "local",
+            "tutorial"
+          ]
+        },
+        {
+          "sourceId": "appinn",
+          "sourceName": "小众软件",
+          "title": "Google Gemini 黑五五折！AI Pro 年费约 100 美元，Google One 老用户也能参加",
+          "url": "https://www.appinn.com/google-ai-pro-black-friday-2026/",
+          "id": "https://www.appinn.com/google-ai-pro-black-friday-2026/",
+          "published": "2026-11-21T11:14:41.000Z",
+          "summary": "Google Gemini 也开始黑五促销了。 这次 Google AI Pro 年费 最高五折 ，美区原价 199.99 美元/年，优惠价约 99.99 美元/年，相当于每月 8.33 美元。 更重要的是， 已经订阅 Google One 云存储空间的老用户，也有机会享受优惠。 老用户先领，新用户再等等 根据 Google 公布的活动安排，这次黑五优惠分两批： 11 月 20～26 日 ：现有 Google One、Google AI 订阅用户提前参与。 11 月 27 日起 ：向符合条件的新用户开放优惠。 活动涉及 Google AI Plus 和 Google AI Pro 年付套餐，最高优惠 50%。 需要注意，不同账户显…",
+          "content": {
+            "html": "<figure><img src=\"https://eucf.appinn.net/wp-content/uploads/2026/11/google-ai-pro-black-friday-2026-cover-eu.jpg\" alt=\"Google Gemini 黑五 5 折，Google AI Pro\" loading=\"lazy\"></figure>\n<p>Google Gemini 也开始黑五促销了。</p>\n<p>这次 Google AI Pro 年费<strong>最高五折</strong>，美区原价 199.99 美元/年，优惠价约 99.99 美元/年，相当于每月 8.33 美元。</p>\n<p>更重要的是，<strong>已经订阅 Google One 云存储空间的老用户，也有机会享受优惠。</strong></p>\n<h3>老用户先领，新用户再等等</h3>\n<p>根据 Google 公布的活动安排，这次黑五优惠分两批：</p>\n<ul><li><strong>11 月 20～26 日</strong>：现有 Google One、Google AI 订阅用户提前参与。</li><li><strong>11 月 27 日起</strong>：向符合条件的新用户开放优惠。</li></ul>\n<p>活动涉及 Google AI Plus 和 Google AI Pro 年付套餐，最高优惠 50%。</p>\n<p>需要注意，不同账户显示的折扣可能不同，最终以 Google 结算页面为准。</p>\n<h3>AI Pro 都包含什么？</h3>\n<p>Google AI Pro 除了提供 Gemini 高级模型和更高使用额度，还包括 Google AI 相关工具、NotebookLM 的增强功能，以及<strong>5TB Google One 云存储空间</strong>。</p>\n<p>对于经常使用 Gemini、NotebookLM，或者本来就在付费购买 Google One 存储空间的用户，这次优惠值得看看。</p>\n<h3>已经买了 Google One 年费怎么办？</h3>\n<p>可以尝试直接升级。</p>\n<p>例如，你已经购买 Google One 100GB 年费套餐，明年才到期，现在想升级 Google AI Pro。</p>\n<p>根据 Google One 的升级规则，旧套餐尚未使用的费用通常可以按比例退款，部分情况下也可能折算成新套餐的额外使用时间。</p>\n<p><strong>建议直接升级，不要先取消原来的 Google One 订阅。</strong></p>\n<p>进入 Google One 设置，找到「更改会员方案」，选择 Google AI Pro 年付，确认优惠价格和旧套餐剩余费用的处理方式，再付款。</p>\n<figure><img src=\"https://eucf.appinn.net/wp-content/uploads/2026/11/google-ai-pro-black-friday-2026-upgrade-eu.avif\" alt=\"Google One 100GB 升级 Google AI Pro 的优惠价格、5TB 存储和升级步骤\" loading=\"lazy\"></figure>\n<h3>领取地址</h3>\n<ul><li><a href=\"https://one.google.com/ai\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Google AI 官方订阅页面</a></li><li><a href=\"https://one.google.com/settings\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Google One 会员设置</a></li></ul>\n<p>目前这次活动以符合条件的美区账户为主。黑五折扣通常只适用于首个优惠周期，后续续费可能恢复正常价格。</p>\n<p><strong>青小蛙提醒：</strong>如果你已经是 Google One 老用户，现在就可以登录看看有没有优惠；如果是免费用户，可以等到 11 月 27 日再试试。</p>\n<hr><h3>相关阅读</h3>\n<ul><li><a href=\"https://www.appinn.com/lizhi-guohuo-2603/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">国产软件正当红，126 款国货之光限时大促：Eagle、Xmind、白描 PDF 等</a></li><li><a href=\"https://www.appinn.com/windows-apps-fake-websites-malware/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">PowerToys、Wintoys 等 70 多款 Windows 软件遭遇冒牌官网攻击</a></li><li><a href=\"https://www.appinn.com/m5-macbook-pro-release-delay/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">比 M1 快6倍，14寸 M5 MacBook Pro、M5 iPad Pro 已发布，笔记本电脑开始不再标配充电头了</a></li><li><a href=\"https://www.appinn.com/bundlehunt-26-black-friday/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">BundleHunt 2026 黑五软件特卖：8 款值得购买</a></li><li><a href=\"https://www.appinn.com/videoproc-2024-black-friday/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">一站式 AI 多媒體增強與轉檔軟體 VideoProc 黑五大促，新模型帶來更強大的 AI 影片、圖片、音訊處理功能</a></li></ul>\n<hr><a href=\"http://www.appinn.com/copyright/?utm_source=feeds&amp;utm_medium=copyright&amp;utm_campaign=feeds\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">©</a>\n2021 青小蛙 for<a href=\"http://www.appinn.com/?utm_source=feeds&amp;utm_medium=appinn&amp;utm_campaign=feeds\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">小众软件</a>\n|<a href=\"http://www.appinn.com/join-us/?utm_source=feeds&amp;utm_medium=joinus&amp;utm_campaign=feeds\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">加入我们</a>\n|<a href=\"https://meta.appinn.net/c/faxian/?utm_source=feeds&amp;utm_medium=contribute&amp;utm_campaign=feeds\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">投稿</a>\n|<a href=\"http://www.appinn.com/feeds-subscribe/?utm_source=feeds&amp;utm_medium=feedsubscribe&amp;utm_campaign=feeds\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">订阅指南</a>\n<br>3659b075e72a5b7b1b87ea74aa7932ff<br><a href=\"https://www.appinn.com/google-ai-pro-black-friday-2026/#comments\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">点击这里留言、和原作者一起评论</a>\n<p><a href=\"https://www.appinn.com/google-ai-pro-black-friday-2026/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[ 点击前往获取链接 ]</a></p>\n<hr>",
+            "text": "Google Gemini 也开始黑五促销了。\n这次 Google AI Pro 年费 最高五折 ，美区原价 199.99 美元/年，优惠价约 99.99 美元/年，相当于每月 8.33 美元。\n更重要的是， 已经订阅 Google One 云存储空间的老用户，也有机会享受优惠。\n老用户先领，新用户再等等\n根据 Google 公布的活动安排，这次黑五优惠分两批：\n11 月 20～26 日 ：现有 Google One、Google AI 订阅用户提前参与。\n11 月 27 日起 ：向符合条件的新用户开放优惠。\n活动涉及 Google AI Plus 和 Google AI Pro 年付套餐，最高优惠 50%。\n需要注意，不同账户显示的折扣可能不同，最终以 Google 结算页面为准。\nAI Pro 都包含什么？\nGoogle AI Pro 除了提供 Gemini 高级模型和更高使用额度，还包括 Google AI 相关工具、NotebookLM 的增强功能，以及 5TB Google One 云存储空间 。\n对于经常使用 Gemini、NotebookLM，或者本来就在付费购买 Google One 存储空间的用户，这次优惠值得看看。\n已经买了 Google One 年费怎么办？\n可以尝试直接升级。\n例如，你已经购买 Google One 100GB 年费套餐，明年才到期，现在想升级 Google AI Pro。\n根据 Google One 的升级规则，旧套餐尚未使用的费用通常可以按比例退款，部分情况下也可能折算成新套餐的额外使用时间。\n建议直接升级，不要先取消原来的 Google One 订阅。\n进入 Google One 设置，找到「更改会员方案」，选择 Google AI Pro 年付，确认优惠价格和旧套餐剩余费用的处理方式，再付款。\n领取地址\nGoogle AI 官方订阅页面\nGoogle One 会员设置\n目前这次活动以符合条件的美区账户为主。黑五折扣通常只适用于首个优惠周期，后续续费可能恢复正常价格。\n青小蛙提醒： 如果你已经是 Google One 老用户，现在就可以登录看看有没有优惠；如果是免费用户，可以等到 11 月 27 日再试试。\n相关阅读\n国产软件正当红，126 款国货之光限时大促：Eagle、Xmind、白描 PDF 等\nPowerToys、Wintoys 等 70 多款 Windows 软件遭遇冒牌官网攻击\n比 M1 快6倍，14寸 M5 MacBook Pro、M5 iPad Pro 已发布，笔记本电脑开始不再标配充电头了\nBundleHunt 2026 黑五软件特卖：8 款值得购买\n一站式 AI 多媒體增強與轉檔軟體 VideoProc 黑五大促，新模型帶來更強大的 AI 影片、圖片、音訊處理功能\n©\n2021 青小蛙 for 小众软件\n| 加入我们\n| 投稿\n| 订阅指南\n3659b075e72a5b7b1b87ea74aa7932ff\n点击这里留言、和原作者一起评论\n[ 点击前往获取链接 ]",
+            "lead": "Google Gemini 也开始黑五促销了。\n这次 Google AI Pro 年费 最高五折 ，美区原价 199.99 美元/年，优惠价约 99.99 美元/年，相当于每月 8.33 美元。\n更重要的是， 已经订阅 Google One 云存储空间的老用户，也有机会享受优惠。\n老用户先领，新用户再等等\n根据 Google 公布的活动安排，这次黑五优惠分两批：\n11 月 20～26 日 ：现有 Google One、Google AI 订阅用户提前参与。\n11 月 27 日起 ：向符合条件的新用户开放优惠。\n活动涉及 Google AI Plus 和 Google AI Pro 年付套餐，最高优惠 50%。\n需要注意，不同账户显示的折扣可能不同，最终以 Google 结算页面为准。\nAI Pro 都包含什么？\nGoogle AI Pro 除了提供 Gemini 高级模型和更高使用额度，还包括 Google AI 相关工具、NotebookLM 的增强功能，以及 5TB Google One 云存储空间 。",
+            "chars": 1321,
+            "shown": 1321,
+            "truncated": false
+          },
+          "categories": [
+            "AI",
+            "Gemini",
+            "Google One",
+            "黑五"
+          ],
+          "author": "青小蛙",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "tools",
+          "metrics": {},
+          "quality": 8,
+          "score": 16.59,
+          "category": "hardware",
+          "subcategory": "machine",
+          "practical": 3,
+          "slug": "5e4fd0a265f5",
+          "action": 3,
+          "rank": 12.8,
+          "tags": [
+            "tutorial",
+            "lowspec",
+            "free",
+            "money"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "local",
+      "label": "本地开源",
+      "items": [
+        {
+          "sourceId": "qbitai",
+          "sourceName": "量子位",
+          "title": "姚顺雨和混元团队上Reddit答网友，Hy小模型已进路线图",
+          "url": "https://www.qbitai.com/2026/11/511757.html",
+          "id": "https://www.qbitai.com/?p=511757",
+          "published": "2026-11-21T06:30:55.000Z",
+          "summary": "姚顺雨和混元团队上Reddit答网友，Hy小模型已进路线图 衡宇 2026-11-21 14:30:55 来源： 量子位 还透露了不少训练背后的秘诀 听雨 发自 凹非寺 量子位 | 公众号 QbitAI Hy小模型已经在路线图上，面向24GB显存的模型也有计划。 今天凌晨， 姚顺雨和腾讯混元团队 来到Reddit社区，围绕刚发布的Hy4和Hy4 flash做了一场AMA。 AMA是「Ask Me Anything」的缩写，意思是「有什么想问的，尽管问」。网友在评论区提问，混元团队成员直接回帖。 参与名单上只列了Reddit账号，至于哪个马甲是姚顺雨，我们还没对上号……",
+          "content": {
+            "html": "&lt;!DOCTYPE html&gt;<div><div><div>&lt; img id=\"wx_img\" src=\"https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png\" width=\"400\" height=\"400\"&gt;</div></div></div>\n<div><h3>姚顺雨和混元团队上Reddit答网友，Hy小模型已进路线图</h3><div><span><img src=\"http://www.qbitai.com/wp-content/themes/liangziwei/imagesnew/head.jpg\" alt=\"\" loading=\"lazy\"><em><a href=\"https://www.qbitai.com/author/hengyu\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">衡宇</a></em></span><span>2026-11-21</span><span>14:30:55</span><span>来源：<a href=\"https://www.qbitai.com/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">量子位</a></span></div></div>\n<div><p>还透露了不少训练背后的秘诀</p></div>\n<blockquote><p>听雨 发自 凹非寺<br>量子位 | 公众号 QbitAI</p></blockquote>\n<p>Hy小模型已经在路线图上，面向24GB显存的模型也有计划。</p>\n<p>今天凌晨，<strong>姚顺雨和腾讯混元团队</strong>来到Reddit社区，围绕刚发布的Hy4和Hy4 flash做了一场AMA。</p>\n<p><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/article-image-1-26.png\" alt=\"\" loading=\"lazy\"></p>\n<p>AMA是「Ask Me Anything」的缩写，意思是「有什么想问的，尽管问」。网友在评论区提问，混元团队成员直接回帖。</p>\n<p><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/article-image-2-23.png\" alt=\"\" loading=\"lazy\"></p>\n<p>参与名单上只列了Reddit账号，至于哪个马甲是姚顺雨，我们还没对上号……</p>\n<p>这场AMA的主角，是混元本月接连发布的两款模型。</p>\n<p>11月4日发布的<strong>Hy4</strong>是旗舰，能理解文本、图像和视频，适合长程软件工程这类需要多步推理、反复调用工具的复杂任务。</p>\n<p>11月16日发布的<strong>Hy4 flash</strong>，主打日常办公的速度和成本。它支持图文输入和最长100万Token的上下文，每个Token激活约120亿参数。</p>\n<p>Hy4和Hy4 flash都已接入腾讯WorkBuddy。混元团队还把WorkBuddy里的修表、改文档、做PPT等典型任务纳入了内部评测WorkIndex，按这套评测测算，Hy4 flash的平均单任务成本约为旗舰Hy4的1/20。</p>\n<p>两款模型的权重都已公开。到了AMA，有网友直接报出自己的电脑配置：<strong>96GB显存、128GB内存，能跑Flash吗？</strong></p>\n<p>团队说能跑，主要权重留在GPU上，部分专家层和Engram查表模块可以挪到系统内存。</p>\n<p>也有人问llama.cpp，团队说适配正在做。</p>\n<p>聊到研发，团队还透露了不少训练背后的秘诀。</p>\n<p>Flash的激活参数还能不能减？他们拿做过的MoE稀疏度实验解释取舍。</p>\n<p>让Agent自己解题，训练时遇到过什么麻烦？有时它会直接上网找现成答案，跳过解题过程。</p>\n<p>还有网友问，后训练里最难改善的行为是什么，团队只回了一个词，<strong>Overthinking，过度思考。</strong>旗舰Hy4的推理链有时偏长。到了Flash，团队先从旗舰蒸馏，再用强化学习把推理链压短。</p>\n<p>从模型怎么训，到开发者能不能把它跑起来，这场AMA聊了不少平时在模型卡上只有一行、到了真用时却绕不开的问题。</p>\n<p>以下是AMA问答节选，按主题编排，中文译文有删节。</p>\n<p>Enjoy～</p>\n<h3>Hy4为什么「想太久」，Flash又是怎么训练的？</h3>\n<p><strong>网友：</strong>和Hy4 preview一样，Hy4正式版有时也会推理太久。这和强化学习的奖励设计有关，还是和训练数据的分布有关？模型能学会什么时候停下来吗？</p>\n<p><strong>混元团队：</strong>Hy4的目标是尽量提高智能水平，推理链偏长是我们知道的问题。我们可以把Hy4蒸馏成成本效率更高的Hy4 flash，并在Flash上用强化学习缩短推理链。</p>\n<p><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/article-image-3-21.png\" alt=\"\" loading=\"lazy\"></p>\n<p><strong>网友：</strong>后训练阶段，最难改善的是哪种模型行为？</p>\n<p><strong>混元团队：</strong>过度思考。</p>\n<p><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/article-image-4-10.png\" alt=\"\" loading=\"lazy\"></p>\n<p><strong>网友：</strong>Hy4现在的参数规模还有多少提升空间？以后想做出更强的模型，必须继续加参数吗？</p>\n<p><strong>混元团队：</strong>我们认为Hy4还有相当大的提升空间，尤其是在后训练上。我们在投入大规模强化学习，也在继续改善用户体验和模型安全性。同时，我们计划训练更大规模的模型。</p>\n<p><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/article-image-5-14.png\" alt=\"\" loading=\"lazy\"></p>\n<p><strong>网友：</strong>训练Hy4和Hy4 flash做长程Agent任务时，多轮强化学习里最难处理的情况是什么？</p>\n<p><strong>混元团队：</strong>最棘手的是训练环境设计有漏洞，模型会钻空子拿奖励。比如，我们得防止Agent直接上网搜现成答案，让它自己把任务做完。</p>\n<p><strong>网友：</strong>做命令行任务时，模型编错一个参数就可能让命令出错。你们怎么提高工具调用的准确性，又怎么让模型在长任务里记住前文？</p>\n<p><strong>混元团队：</strong>我们在强化学习数据里加入了模型容易犯错的难例，奖励也做得更细，关键细节出错会扣得更重。对于长任务，我们在持续拉长强化学习训练所用的上下文，也在提升模型压缩上下文、保留关键信息的能力。</p>\n<p><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/article-image-6-22.png\" alt=\"\" loading=\"lazy\"></p>\n<p><strong>网友：</strong>姚顺雨经常提到，选训练数据需要有判断力。你们怎么判断一批数据好不好？</p>\n<p><strong>混元团队：</strong>数据质量有很多维度，不同领域、不同任务的要求也不一样。无论用人类专家还是智能体，设计和清洗数据都要花很多功夫。最后还是要做实验，看这批数据能不能带来提升。</p>\n<p><strong>网友：</strong>HyRA 2.0实验里，Hy4带来的提升主要来自哪里？它有发现新的架构或数据配比方面的改进吗？</p>\n<p><strong>混元团队：</strong>这次提升主要来自底层吞吐优化。要让模型进一步参与研发，还得提高它判断训练方案的能力。用AI做AI研发，本身也是一件周期长、难点多的事。</p>\n<p><strong>网友：</strong>你们已经用Hy4和HyRA 2.0改进了训练基础设施，也训练出了更好的小模型。接下来会做什么实验，看看这一轮训练出的模型能否在下一轮更擅长做研发？</p>\n<p><strong>混元团队：</strong>我们正在做HyRA 3.0，敬请期待。</p>\n<p><strong>网友：</strong>如果让Hy4自己运行，它现在能通过递归自我改进做出下一代模型吗？你们怎么评估这种能力？</p>\n<p><strong>混元团队：</strong>我们的递归自我改进能力还处于早期，已经做了几项内部基准，用来评估其中的关键能力。</p>\n<h3>Flash的参数花在哪儿了？</h3>\n<p><strong>网友：</strong>不算Engram，Hy4 flash主干约有1560亿参数，每个Token激活约120亿。如果总参数不变，把激活参数降到80亿或50亿，效果会掉多少？</p>\n<p><strong>混元团队：</strong>我们做过不同MoE稀疏度的规模实验。固定激活参数量时，提高稀疏度能改善计算效率。但如果固定总参数，再把激活量降到80亿或50亿，我预计模型质量会明显下降。激活参数量决定了每个Token能用多少计算，提高稀疏度能弥补一部分。</p>\n<p><strong>网友：</strong>Hy4 flash为什么给Engram分配约635亿参数？这个比例是怎么定的？</p>\n<p><strong>混元团队：</strong>我们的实验看到了一条U形曲线。把Engram也计入总参数量，Engram占比在三分之一左右时，接近实验里的最优点。占比再往下调，计算效率会降低。</p>\n<p><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/article-image-7-11.png\" alt=\"\" loading=\"lazy\"></p>\n<p><strong>网友：</strong>Flash为什么选择滑动窗口注意力<span>（SWA）</span>？</p>\n<p><strong>混元团队：</strong>滑动窗口注意力能把KV缓存压到原来的约四分之一，显著降低部署成本。</p>\n<h3>小模型、本地部署和下一步</h3>\n<p><strong>网友：</strong>会有Hy4 mini吗？还有人想要比Flash更轻的版本，跑文档解析、分类和简单自动化。</p>\n<p><strong>混元团队：</strong>Hy小模型已经在路线图上。</p>\n<p><strong>网友：</strong>下一代Hy模型会做到1.5万亿至2万亿参数吗？</p>\n<p><strong>混元团队：</strong>下一代Hy模型的规模肯定会进一步显著扩大。</p>\n<p><strong>网友：</strong>会考虑推出更轻量的Flash-Lite吗？比如用来做文档解析、分类和简单自动化。</p>\n<p><strong>混元团队：</strong>有的，敬请期待Flash-Lite。</p>\n<p><strong>网友：</strong>有面向24GB显存的模型计划吗？</p>\n<p><strong>混元团队：</strong>有，未来会发布。</p>\n<p><strong>网友：</strong>我有96GB显存、128GB系统内存，能跑Hy4 flash吗？</p>\n<p><strong>混元团队：</strong>可以。主要权重和注意力计算放在GPU上，部分专家层可以卸载到系统内存，Engram表也可以放在内存里。</p>\n<p><strong>网友：</strong>同一个工作任务，托管版Hy4 flash在我的测试里全对，本地NVFP4版本却出现了约8%的错误。这个模型更难量化吗？</p>\n<p><strong>混元团队：</strong>量化质量很看方法和校准方式。团队建议试试用GPTQ量化的NVFP4版本。在我们的评测里，这个版本与BF16的差距较小，更适合这类对准确率敏感的任务。</p>\n<p><strong>网友：</strong>llama.cpp支持会怎么推进？你们会和推理框架社区提前合作吗？</p>\n<p><strong>混元团队：</strong>我们正在做llama.cpp适配，预计近期会在社区放出。我们也在和vLLM、SGLang等社区合作。</p>\n<p><strong>网友：</strong>现有的Hy4 flash还会更新吗？</p>\n<p><strong>混元团队：</strong>会。我们正在优化Flash级模型的预训练和后训练方案。</p>\n<h3>怎么看模型的表现</h3>\n<p><strong>网友：</strong>为什么没公布GPQA Diamond、τ-bench、IFBench、SWE-bench这些常见评测的成绩？</p>\n<p><strong>混元团队：</strong>我们展示的是Agents’ Last Exam、ProgramBench这类较新、难度更高的评测。你提到的几项出现得更早，分数已经接近饱和。</p>\n<p><strong>网友：</strong>我感觉有些模型的写作能力在退步。是因为拿太多代码来训练、过拟合了，还是有别的原因？</p>\n<p><strong>混元团队：</strong>我们也注意到了，可能和训练目标有关。我们希望模型写得更像人、少一点套话，这方面正在改进。</p>\n<p><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/article-image-8-10.png\" alt=\"\" loading=\"lazy\"></p>\n<h3>One More Thing</h3>\n<p>那么，QA实录到这里就结束了。</p>\n<p>想自己试试Hy4 flash？打开WorkBuddy，在模型列表里选中<strong>Hy4 flash</strong>，把手边待改的表格或待整理的会议纪要交给它跑一遍。</p>\n<p><strong>11月30日前，可以在WorkBuddy限时免费体验～</strong></p>\n<p><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/article-image-9-11.png\" alt=\"\" loading=\"lazy\"></p>\n<p><em>参考链接：</em><br><em>https://www.reddit.com/r/LocalLLaMA/comments/1y15w4a/tencent_hy_team_shunyu_yao_here_ask_us_anything/</em></p>\n<div><span></span><em>版权所有，未经授权不得以任何形式转载及使用，违者必究。</em><span></span></div>\n<div><a href=\"https://www.qbitai.com/tag/%e5%a7%9a%e9%a1%ba%e9%9b%a8\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">姚顺雨</a><a href=\"https://www.qbitai.com/tag/%e8%85%be%e8%ae%af%e6%b7%b7%e5%85%83\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">腾讯混元</a></div>\n<div><a href=\"https://www.qbitai.com/2026/11/511757.html#\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div><img src=\"http://www.qbitai.com/wp-content/themes/liangziwei/imagesnew/head.jpg\" alt=\"\" loading=\"lazy\"><span><a href=\"https://www.qbitai.com/author/hengyu\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">衡宇</a></span></div></a></div>\n<div><ul><li><a href=\"https://www.qbitai.com/2026/11/511855.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">AI给乐队现场搓MV，这是黑客松还是音乐节啊</a><i>2026-11-21</i></li><li><a href=\"https://www.qbitai.com/2026/11/511849.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">中国计算，走出新的登峰之路</a><i>2026-11-21</i></li><li><a href=\"https://www.qbitai.com/2026/11/511841.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">8万条群聊消息做成考卷：腾讯元宝×KCL发布首个基于群聊构建的Agent记忆基准</a><i>2026-11-21</i></li><li><a href=\"https://www.qbitai.com/2026/11/511830.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">全网疯传！Grok一姐教你如何月提交3000个PR</a><i>2026-11-21</i></li></ul></div>\n<div><div></div></div>\n<div><span></span><div>扫码分享至朋友圈</div></div>\n<div></div>\n<a href=\"https://service.weibo.com/share/share.php?url=https://www.qbitai.com/2026/11/511757.html&amp;title=%E5%A7%9A%E9%A1%BA%E9%9B%A8%E5%92%8C%E6%B7%B7%E5%85%83%E5%9B%A2%E9%98%9F%E4%B8%8AReddit%E7%AD%94%E7%BD%91%E5%8F%8B%EF%BC%8CHy%E5%B0%8F%E6%A8%A1%E5%9E%8B%E5%B7%B2%E8%BF%9B%E8%B7%AF%E7%BA%BF%E5%9B%BE&amp;appkey=4017757111&amp;searchPic=true&amp;ralateUid=6105753431\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div></div></a>\n<a href=\"https://www.qbitai.com/2026/11/511757.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div></div></a>\n<div><h3></h3></div>",
+            "text": "姚顺雨和混元团队上Reddit答网友，Hy小模型已进路线图\n衡宇 2026-11-21 14:30:55 来源： 量子位\n还透露了不少训练背后的秘诀\n听雨 发自 凹非寺\n量子位 | 公众号 QbitAI\nHy小模型已经在路线图上，面向24GB显存的模型也有计划。\n今天凌晨， 姚顺雨和腾讯混元团队 来到Reddit社区，围绕刚发布的Hy4和Hy4 flash做了一场AMA。\nAMA是「Ask Me Anything」的缩写，意思是「有什么想问的，尽管问」。网友在评论区提问，混元团队成员直接回帖。\n参与名单上只列了Reddit账号，至于哪个马甲是姚顺雨，我们还没对上号……\n这场AMA的主角，是混元本月接连发布的两款模型。\n11月4日发布的 Hy4 是旗舰，能理解文本、图像和视频，适合长程软件工程这类需要多步推理、反复调用工具的复杂任务。\n11月16日发布的 Hy4 flash ，主打日常办公的速度和成本。它支持图文输入和最长100万Token的上下文，每个Token激活约120亿参数。\nHy4和Hy4 flash都已接入腾讯WorkBuddy。混元团队还把WorkBuddy里的修表、改文档、做PPT等典型任务纳入了内部评测WorkIndex，按这套评测测算，Hy4 flash的平均单任务成本约为旗舰Hy4的1/20。\n两款模型的权重都已公开。到了AMA，有网友直接报出自己的电脑配置： 96GB显存、128GB内存，能跑Flash吗？\n团队说能跑，主要权重留在GPU上，部分专家层和Engram查表模块可以挪到系统内存。\n也有人问llama.cpp，团队说适配正在做。\n聊到研发，团队还透露了不少训练背后的秘诀。\nFlash的激活参数还能不能减？他们拿做过的MoE稀疏度实验解释取舍。\n让Agent自己解题，训练时遇到过什么麻烦？有时它会直接上网找现成答案，跳过解题过程。\n还有网友问，后训练里最难改善的行为是什么，团队只回了一个词， Overthinking，过度思考。 旗舰Hy4的推理链有时偏长。到了Flash，团队先从旗舰蒸馏，再用强化学习把推理链压短。\n从模型怎么训，到开发者能不能把它跑起来，这场AMA聊了不少平时在模型卡上只有一行、到了真用时却绕不开的问题。\n以下是AMA问答节选，按主题编排，中文译文有删节。\nEnjoy～\nHy4为什么「想太久」，Flash又是怎么训练的？\n网友： 和Hy4 preview一样，Hy4正式版有时也会推理太久。这和强化学习的奖励设计有关，还是和训练数据的分布有关？模型能学会什么时候停下来吗？\n混元团队： Hy4的目标是尽量提高智能水平，推理链偏长是我们知道的问题。我们可以把Hy4蒸馏成成本效率更高的Hy4 flash，并在Flash上用强化学习缩短推理链。\n网友： 后训练阶段，最难改善的是哪种模型行为？\n混元团队： 过度思考。\n网友： Hy4现在的参数规模还有多少提升空间？以后想做出更强的模型，必须继续加参数吗？\n混元团队： 我们认为Hy4还有相当大的提升空间，尤其是在后训练上。我们在投入大规模强化学习，也在继续改善用户体验和模型安全性。同时，我们计划训练更大规模的模型。\n网友： 训练Hy4和Hy4 flash做长程Agent任务时，多轮强化学习里最难处理的情况是什么？\n混元团队： 最棘手的是训练环境设计有漏洞，模型会钻空子拿奖励。比如，我们得防止Agent直接上网搜现成答案，让它自己把任务做完。\n网友： 做命令行任务时，模型编错一个参数就可能让命令出错。你们怎么提高工具调用的准确性，又怎么让模型在长任务里记住前文？\n混元团队： 我们在强化学习数据里加入了模型容易犯错的难例，奖励也做得更细，关键细节出错会扣得更重。对于长任务，我们在持续拉长强化学习训练所用的上下文，也在提升模型压缩上下文、保留关键信息的能力。\n网友： 姚顺雨经常提到，选训练数据需要有判断力。你们怎么判断一批数据好不好？\n混元团队： 数据质量有很多维度，不同领域、不同任务的要求也不一样。无论用人类专家还是智能体，设计和清洗数据都要花很多功夫。最后还是要做实验，看这批数据能不能带来提升。\n网友： HyRA 2.0实验里，Hy4带来的提升主要来自哪里？它有发现新的架构或数据配比方面的改进吗？\n混元团队： 这次提升主要来自底层吞吐优化。要让模型进一步参与研发，还得提高它判断训练方案的能力。用AI做AI研发，本身也是一件周期长、难点多的事。\n网友： 你们已经用Hy4和HyRA 2.0改进了训练基础设施，也训练出了更好的小模型。接下来会做什么实验，看看这一轮训练出的模型能否在下一轮更擅长做研发？\n混元团队： 我们正在做HyRA 3.0，敬请期待。\n网友： 如果让Hy4自己运行，它现在能通过递归自我改进做出下一代模型吗？你们怎么评估这种能力？\n混元团队： 我们的递归自我改进能力还处于早期，已经做了几项内部基准，用来评估其中的关键能力。\nFlash的参数花在哪儿了？\n网友： 不算Engram，Hy4 flash主干约有1560亿参数，每个Token激活约120亿。如果总参数不变，把激活参数降到80亿或50亿，效果会掉多少？\n混元团队： 我们做过不同MoE稀疏度的规模实验。固定激活参数量时，提高稀疏度能改善计算效率。但如果固定总参数，再把激活量降到80亿或50亿，我预计模型质量会明显下降。激活参数量决定了每个Token能用多少计算，提高稀疏度能弥补一部分。\n网友： Hy4 flash为什么给Engram分配约635亿参数？这个比例是怎么定的？\n混元团队： 我们的实验看到了一条U形曲线。把Engram也计入总参数量，Engram占比在三分之一左右时，接近实验里的最优点。占比再往下调，计算效率会降低。\n网友： Flash为什么选择滑动窗口注意力 （SWA） ？\n混元团队： 滑动窗口注意力能把KV缓存压到原来的约四分之一，显著降低部署成本。\n小模型、本地部署和下一步\n网友： 会有Hy4 mini吗？还有人想要比Flash更轻的版本，跑文档解析、分类和简单自动化。\n混元团队： Hy小模型已经在路线图上。\n网友： 下一代Hy模型会做到1.5万亿至2万亿参数吗？\n混元团队： 下一代Hy模型的规模肯定会进一步显著扩大。\n网友： 会考虑推出更轻量的Flash-Lite吗？比如用来做文档解析、分类和简单自动化。\n混元团队： 有的，敬请期待Flash-Lite。\n网友： 有面向24GB显存的模型计划吗？\n混元团队： 有，未来会发布。\n网友： 我有96GB显存、128GB系统内存，能跑Hy4 flash吗？\n混元团队： 可以。主要权重和注意力计算放在GPU上，部分专家层可以卸载到系统内存，Engram表也可以放在内存里。\n网友： 同一个工作任务，托管版Hy4 flash在我的测试里全对，本地NVFP4版本却出现了约8%的错误。这个模型更难量化吗？\n混元团队： 量化质量很看方法和校准方式。团队建议试试用GPTQ量化的NVFP4版本。在我们的评测里，这个版本与BF16的差距较小，更适合这类对准确率敏感的任务。\n网友： llama.cpp支持会怎么推进？你们会和推理框架社区提前合作吗？\n混元团队： 我们正在做llama.cpp适配，预计近期会在社区放出。我们也在和vLLM、SGLang等社区合作。\n网友： 现有的Hy4 flash还会更新吗？\n混元团队： 会。我们正在优化Flash级模型的预训练和后训练方案。\n怎么看模型的表现\n网友： 为什么没公布GPQA Diamond、τ-bench、IFBench、SWE-bench这些常见评测的成绩？\n混元团队： 我们展示的是Agents’ Last Exam、ProgramBench这类较新、难度更高的评测。你提到的几项出现得更早，分数已经接近饱和。\n网友： 我感觉有些模型的写作能力在退步。是因为拿太多代码来训练、过拟合了，还是有别的原因？\n混元团队： 我们也注意到了，可能和训练目标有关。我们希望模型写得更像人、少一点套话，这方面正在改进。\nOne More Thing\n那么，QA实录到这里就结束了。\n想自己试试Hy4 flash？打开WorkBuddy，在模型列表里选中 Hy4 flash ，把手边待改的表格或待整理的会议纪要交给它跑一遍。\n11月30日前，可以在WorkBuddy限时免费体验～\n参考链接：\nhttps://www.reddit.com/r/LocalLLaMA/comments/1y15w4a/tencent_hy_team_shunyu_yao_here_ask_us_anything/\n版权所有，未经授权不得以任何形式转载及使用，违者必究。\n姚顺雨 腾讯混元\n衡宇\nAI给乐队现场搓MV，这是黑客松还是音乐节啊 2026-11-21\n中国计算，走出新的登峰之路 2026-11-21\n8万条群聊消息做成考卷：腾讯元宝×KCL发布首个基于群聊构建的Agent记忆基准 2026-11-21\n全网疯传！Grok一姐教你如何月提交3000个PR 2026-11-21\n扫码分享至朋友圈",
+            "lead": "姚顺雨和混元团队上Reddit答网友，Hy小模型已进路线图\n衡宇 2026-11-21 14:30:55 来源： 量子位\n还透露了不少训练背后的秘诀\n听雨 发自 凹非寺\n量子位 | 公众号 QbitAI\nHy小模型已经在路线图上，面向24GB显存的模型也有计划。\n今天凌晨， 姚顺雨和腾讯混元团队 来到Reddit社区，围绕刚发布的Hy4和Hy4 flash做了一场AMA。\nAMA是「Ask Me Anything」的缩写，意思是「有什么想问的，尽管问」。网友在评论区提问，混元团队成员直接回帖。\n参与名单上只列了Reddit账号，至于哪个马甲是姚顺雨，我们还没对上号……",
+            "chars": 4776,
+            "shown": 4000,
+            "truncated": true
+          },
+          "categories": [
+            "资讯",
+            "首页轮播",
+            "姚顺雨",
+            "腾讯混元"
+          ],
+          "author": "衡宇",
+          "lang": "zh",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "news",
+          "metrics": {},
+          "quality": 9,
+          "score": 20.4,
+          "category": "local",
+          "subcategory": "runtime",
+          "practical": 3,
+          "slug": "49d7c7bacc86",
+          "action": 3,
+          "rank": 13.8,
+          "tags": [
+            "benchmark",
+            "local",
+            "lowspec",
+            "tutorial"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bench",
+      "label": "评测选型",
+      "items": [
+        {
+          "sourceId": "qbitai",
+          "sourceName": "量子位",
+          "title": "GPT-6.2 Astra再次暴击具身模型：16项任务成功率较GPT-6 Astra翻倍",
+          "url": "https://www.qbitai.com/2026/11/511779.html",
+          "id": "https://www.qbitai.com/?p=511779",
+          "published": "2026-11-21T06:35:59.000Z",
+          "summary": "GPT-6.2 Astra再次暴击具身模型：16项任务成功率较GPT-6 Astra翻倍 衡宇 2026-11-21 14:35:59 来源： 量子位 还实现可变形物体操控全球首通 衡宇 发自 凹非寺 量子位 | 公众号 QbitAI GPT-6.2 Astra又给具身智能上强度了，狠狠来了一计天马流星拳。 机器人基础设施公司XDOF的最新实测中，GPT-6.2Astra操控双臂机器人 完成16项操作任务的综合成功率 ，从两个月前GPT-6Astra的19.6%飙升至41.2%，翻了一倍有余。 打结、展开T恤 这两项此前无AI通关的操作，这次也被它拿下。 公布成绩后，OpenAI Developers官方账号转发了这条消息，Ope…",
+          "content": {
+            "html": "&lt;!DOCTYPE html&gt;<div><div><div>&lt; img id=\"wx_img\" src=\"https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png\" width=\"400\" height=\"400\"&gt;</div></div></div>\n<div><h3>GPT-6.2 Astra再次暴击具身模型：16项任务成功率较GPT-6 Astra翻倍</h3><div><span><img src=\"http://www.qbitai.com/wp-content/themes/liangziwei/imagesnew/head.jpg\" alt=\"\" loading=\"lazy\"><em><a href=\"https://www.qbitai.com/author/hengyu\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">衡宇</a></em></span><span>2026-11-21</span><span>14:35:59</span><span>来源：<a href=\"https://www.qbitai.com/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">量子位</a></span></div></div>\n<div><p>还实现可变形物体操控全球首通</p></div>\n<blockquote><p>衡宇 发自 凹非寺<br>量子位 | 公众号 QbitAI</p></blockquote>\n<p>GPT-6.2 Astra又给具身智能上强度了，狠狠来了一计天马流星拳。</p>\n<p>机器人基础设施公司XDOF的最新实测中，GPT-6.2Astra操控双臂机器人<strong>完成16项操作任务的综合成功率</strong>，从两个月前GPT-6Astra的19.6%飙升至41.2%，翻了一倍有余。</p>\n<p><strong>打结、展开T恤</strong>这两项此前无AI通关的操作，这次也被它拿下。</p>\n<p><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/article-image-1-28.png\" alt=\"\" loading=\"lazy\"></p>\n<p>公布成绩后，OpenAI Developers官方账号转发了这条消息，OpenAI联合创始人兼总裁Greg Brockman也骄傲发言：</p>\n<blockquote><p>GPT-6.2 Astra在机器人技术方面表现得非常出色～～</p></blockquote>\n<p><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/article-image-2-25.png\" alt=\"\" loading=\"lazy\"></p>\n<p>为确保评测严谨，XDOF以六台YAM工作站并行试验，每项任务重复三十次，单日可完成480场实测，并由人工标注子步骤、抓取失误与碰撞，滤除硬件偏差与随机扰动。</p>\n<p><strong>纵使标准如此严苛，XDOF也在最新推文中表示，Ember‑0基准或不久后便会被模型能力饱和。</strong></p>\n<h3>两个月成绩翻倍，到底有多强？</h3>\n<p>要理解这次突破的含金量，得先搞明白测试任务究竟难在哪里。</p>\n<p>GPT-6.2Astra参加的是XDOF推出的Ember-0测试。</p>\n<p>这是一套面向真实物理环境的机器人评测基准，使用双臂机器人完成16项操作任务，每项任务按照30次重复测试的协议执行。</p>\n<p>测试覆盖空间推理、物体抓取、双臂协作、工具使用、精细操作和柔性物体处理等能力。</p>\n<p>两个月前，GPT-6Astra在Ember-0测试中的综合任务成功率为19.6%。</p>\n<p>到了GPT-6.2Astra，这个数字已经飙升至41.2%，增加了21.6个百分点，超过原来的两倍——这里的41.2%是16项共享操作任务成功率的等权平均，涵盖物体抓取、空间推理、双臂协作、工具使用等多种能力。</p>\n<p>So，进步并非来自某一项任务的单点突破，<strong>GPT-6.2Astra在整套测试中的表现都有了明显提升。</strong></p>\n<p><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/article-image-3-23.png\" alt=\"\" loading=\"lazy\"></p>\n<p>最让人眼前一亮的当属“<strong>给绳子打结”和“展开T恤这”两项操作被GPT-6.2Astra轻松拿下。</strong></p>\n<p>此前，Ember-0累计进行了143次有效的T恤展开测试，没有一个模型成功完成这任务来着。</p>\n<p>除了这两项标志性突破外，在Ember-0涵盖的其他多项任务中，该模型的表现也有明显进步。</p>\n<ul><li>需要物理推理的“拉动毛巾取回远处毛绒玩具”和“倾斜托盘让球滚入碗中”</li><li>考验记忆与感知的“寻找被遮挡马克笔”与“遵循红色便签上的隐藏指令”</li><li>考验精细力控的“不捏碎薯片并移动”“用夹子夹起面包”和“端麦片上托盘”</li><li>……</li></ul>\n<p>GPT-6.2 Astra在各个子任务的检查点完成度与最终成功率上均展现出显著提升。</p>\n<p><strong>提升最明显的是用夹子夹起面包的任务</strong>：GPT-6Astra的成功率只有10%，GPT-6.2Astra则提升到了90%。</p>\n<p><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/article-image-4-12.png\" alt=\"\" loading=\"lazy\"></p>\n<h3>为什么打结、展开T恤这么难？</h3>\n<p>要理解GPT-6.2 Astra这次突破的含金量，得先搞明白“打结”和“展开T恤”这俩任务对机器人来说到底有多坑。</p>\n<p>在机器人学习领域，以Diffusion Policy、ACT和RT-2为代表的视觉-语言-动作模型<span>（VLA）</span>及专用策略模型，通常需要依靠大量人类示教数据来学习操作技能。</p>\n<p>人类先示范，机器人再从中学习如何抓取、移动和摆放物体。</p>\n<p><strong>这套方法在刚性物体和固定流程中已经取得了不错的效果。</strong></p>\n<p>杯子、箱子等物体的几何形状相对稳定，抓取位置和运动轨迹也比较容易预测，模型经过训练后，往往能够形成较为稳定的操作策略。</p>\n<p>But，换一种物体、换一个环境，或者把几个动作串联成更复杂的任务，原有策略就未必还能奏效。模型可能需要重新采集示教数据、补充训练，才能适应新的操作条件。</p>\n<p><strong>柔性物体又把难度推高了一层。</strong></p>\n<p>展开T恤或给绳子打结时，物体的形态会随着机械臂每一次接触、抓取和拉扯不断变化，形变过程也很难提前预测。机器人需要理解“把衣服展开”这样的任务目标，还得从腕部和顶部摄像头传回的视觉画面中，持续判断衣物的角点、褶皱和整体形态，再决定下一步该如何动作。</p>\n<p><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/article-image-5-9.jpg\" alt=\"\" loading=\"lazy\"></p>\n<p>这对操作精度和双臂配合提出了很高要求。</p>\n<p>抓取位置或动作节奏稍有差池，都可能导致衣角滑落、绳索缠绕，前面完成的操作也可能因此付诸东流。</p>\n<p>在XDOF的评测体系中，“打结”和“展开T恤”这两项任务对应的核心能力标签涵盖了形变控制、双臂协调、精细操作<span>（Dexterity）</span>以及长程规划<span>（Long horizon）</span>。</p>\n<p>在没有触觉反馈的硬件条件下，大模型每次输出动作块<span>（Action chunk）</span>之间还存在十余秒到二十余秒的推理延迟，机械臂在等待新决策期间无法实时微调，这使得每一次接触控制和失败恢复的成本都极高。</p>\n<p>因此，<strong>打结和展开T恤考验的是一整套综合能力，包括三维空间理解、双臂协同配合、精细接触控制、基于历史记录的动态状态追踪以及长程任务规划。</strong></p>\n<p><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/article-image-6-4.jpg\" alt=\"\" loading=\"lazy\"></p>\n<p>BTW，速度也是第二系统模型一直面临的挑战。此前，外界对这类模型的批评之一，就是推理过程耗时较长，难以满足机器人实时操作的要求。</p>\n<p>这次GPT-6.2Astra也在速度上有所改善。</p>\n<p>模型发布期间，其平均预测延迟从GPT-6Astra的15秒下降至10.1秒。</p>\n<p>不过，与其他模型架构相比，这种推理方式的效率仍然偏低。对于需要连续感知、快速响应的机器人来说，10秒左右的等待时间依然不短。</p>\n<p>但是总的来说，具身智能模型往往在简单抓取和物体摆放上表现不错，一旦遇到复杂接触、工具使用和柔性物体，成功率就会明显下降。</p>\n<p>XDOF此前公布的Ember-0测试结果也呈现出类似问题。</p>\n<p>比如模型通常能理解任务、规划出看起来合理的动作，真正落到机械臂上，却容易在抓取、接触和连续操作环节掉链子。</p>\n<p>GPT-6.2Astra这次的突破，恰好表示通用模型已经开始突破这些难点。</p>\n<p><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/article-image-7-13.png\" alt=\"\" loading=\"lazy\"></p>\n<h4><strong>△</strong>图片由AI生成</h4>\n<p><strong>而从行业视角来看，通用大模型对具身智能的冲击，也正在沿着这条路线持续推进。</strong></p>\n<p>从英伟达研究团队测试GPT-6Astra直接充当机器人策略模型，到Claude在机器人模拟环境中展现复杂操作能力，再到Google DeepMind将Gemini的多模态理解能力延伸至机器人控制，通用模型正在一轮轮刷新具身智能的能力边界。</p>\n<h3>One More Thing</h3>\n<p>活跃在机器人/具身智能领域的新加坡国立大学总统青年教授Jiafei Duan随后也发帖赞美了GPT-6.2 Astra“入侵”具身智能的优秀表现。</p>\n<p>在他们做的真实机器人对比测试中，GPT-6.2 Astra表现贼出彩，一天内就冲到了RoboColosseum的SO-101 Elo排名第一。</p>\n<p>实际操作情况，请看小屏幕：</p>\n<p><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/article-image-8-5.jpg\" alt=\"\" loading=\"lazy\"></p>\n<p>自初代模型在柔性操作前束手无策，及至GPT‑6.2 Astra两月内实现成功率翻倍、破局多项零分任务，前沿多模态大模型在物理世界的演进步伐，正在持续加快。</p>\n<p>而且是以让人有些应接不暇的速度。</p>\n<p>累了，累了。</p>\n<p>我宣布，11月的每一天都是AI领域的眩晕瘫坐日<span>（bushi）</span>。</p>\n<p><em>参考链接：</em><br><em>[1]https://x.com/xdofai/status/2123822012066157011</em><br><em>[2]https://x.com/djiafei/status/2123925760281067567?s=46</em></p>\n<div><span></span><em>版权所有，未经授权不得以任何形式转载及使用，违者必究。</em><span></span></div>\n<div><a href=\"https://www.qbitai.com/tag/gpt-6-2-astra\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">GPT-6.2 Astra</a><a href=\"https://www.qbitai.com/tag/%e5%85%b7%e8%ba%ab%e6%99%ba%e8%83%bd\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">具身智能</a></div>\n<div><a href=\"https://www.qbitai.com/2026/11/511779.html#\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div><img src=\"http://www.qbitai.com/wp-content/themes/liangziwei/imagesnew/head.jpg\" alt=\"\" loading=\"lazy\"><span><a href=\"https://www.qbitai.com/author/hengyu\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">衡宇</a></span></div></a></div>\n<div><ul><li><a href=\"https://www.qbitai.com/2026/11/511740.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">米哈游发了个VLA论文</a><i>2026-11-21</i></li><li><a href=\"https://www.qbitai.com/2026/11/511757.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">姚顺雨和混元团队上Reddit答网友，Hy小模型已进路线图</a><i>2026-11-21</i></li><li><a href=\"https://www.qbitai.com/2026/11/508716.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">具身智能出海，物流先行</a><i>2026-11-09</i></li><li><a href=\"https://www.qbitai.com/2026/11/511727.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">黎曼猜想被证明？！Claude加持，34岁数学家放出Lean证明</a><i>2026-11-21</i></li></ul></div>\n<div><div></div></div>\n<div><span></span><div>扫码分享至朋友圈</div></div>\n<div></div>\n<a href=\"https://service.weibo.com/share/share.php?url=https://www.qbitai.com/2026/11/511779.html&amp;title=GPT-6.2%20Astra%E5%86%8D%E6%AC%A1%E6%9A%B4%E5%87%BB%E5%85%B7%E8%BA%AB%E6%A8%A1%E5%9E%8B%EF%BC%9A16%E9%A1%B9%E4%BB%BB%E5%8A%A1%E6%88%90%E5%8A%9F%E7%8E%87%E8%BE%83GPT-6%20Astra%E7%BF%BB%E5%80%8D&amp;appkey=4017757111&amp;searchPic=true&amp;ralateUid=6105753431\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div></div></a>\n<a href=\"https://www.qbitai.com/2026/11/511779.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div></div></a>\n<div><h3>相关阅读</h3><ul><div><div><a href=\"https://www.qbitai.com/2026/01/374128.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://i.qbitai.com/wp-content/uploads/2026/01/1111-4-e1769677172789.png\" alt=\"\" loading=\"lazy\"></a></div></div></ul></div>\n<div><h4><a href=\"https://www.qbitai.com/2026/01/374128.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">这么哇塞的世界模型，竟然是开源的！</a></h4><p>蚂蚁灵波第三弹：LingBot-World</p><div><span><a href=\"https://www.qbitai.com/?author=21\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">十三</a></span><span><span>2026-01-29</span></span><div><i></i><a href=\"https://www.qbitai.com/tag/%e4%b8%96%e7%95%8c%e6%a8%a1%e5%9e%8b\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">世界模型</a><a href=\"https://www.qbitai.com/tag/%e5%85%b7%e8%ba%ab%e6%99%ba%e8%83%bd\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">具身智能</a><a href=\"https://www.qbitai.com/tag/%e8%9a%82%e8%9a%81%e7%81%b5%e6%b3%a2\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">蚂蚁灵波</a></div></div></div>\n<div><div><a href=\"https://www.qbitai.com/2025/01/247304.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://i.qbitai.com/wp-content/uploads/replace/a0e0bc51f05c1ae48185e27b75d2bb6e.jpeg\" alt=\"\" loading=\"lazy\"></a></div></div>\n<div><h4><a href=\"https://www.qbitai.com/2025/01/247304.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">智驾大牛余轶南机器人创业：首轮融近亿，老东家地平线百度都投了</a></h4><p>To C机器人今年交卷</p><div><span><a href=\"https://www.qbitai.com/?author=23\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">贾浩楠</a></span><span><span>2025-01-22</span></span><div><i></i><a href=\"https://www.qbitai.com/tag/%e5%85%b7%e8%ba%ab%e6%99%ba%e8%83%bd\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">具身智能</a><a href=\"https://www.qbitai.com/tag/%e7%bb%b4%e4%bb%96%e5%8a%a8%e5%8a%9b\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">维他动力</a></div></div></div>\n<div><div><a href=\"https://www.qbitai.com/2025/12/359560.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://i.qbitai.com/wp-content/uploads/replace/853f09a470b5a73ef9ad83698a5f7660.png\" alt=\"\" loading=\"lazy\"></a></div></div>\n<div><h4><a href=\"https://www.qbitai.com/2025/12/359560.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">机器人集体到香港户外极限挑战，狗比人强</a></h4><p>赛前预警翻车？选手：不存在的</p><div><span><a href=\"https://www.qbitai.com/?author=47850\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">henry</a></span><span><span>2025-12-08</span></span><div><i></i><a href=\"https://www.qbitai.com/tag/%e5%85%b7%e8%ba%ab%e6%99%ba%e8%83%bd\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">具身智能</a><a href=\"https://www.qbitai.com/tag/%e6%9c%ba%e5%99%a8%e4%ba%ba\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">机器人</a></div></div></div>\n<div><div><a href=\"https://www.qbitai.com/2026/10/506662.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://i.qbitai.com/wp-content/uploads/2026/10/a48ffa3917c9205fe6872359c61423da.png\" alt=\"\" loading=\"lazy\"></a></div></div>\n<div><h4><a href=\"https://www.qbitai.com/2026/10/506662.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">从学习人类到学习机器人同伴，清华大学联合无问芯穹、智元提出具身智能规模化落地新路径</a></h4><p>让机器人成为彼此的“老师”</p><div><span><a href=\"https://www.qbitai.com/?author=19\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">量子位</a></span><span><span>2026-10-30</span></span><div><i></i><a href=\"https://www.qbitai.com/tag/%e5%85%b7%e8%ba%ab%e6%99%ba%e8%83%bd\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">具身智能</a><a href=\"https://www.qbitai.com/tag/%e6%97%a0%e9%97%ae%e8%8a%af%e7%a9%b9\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">无问芯穹</a><a href=\"https://www.qbitai.com/tag/%e6%99%ba%e5%85%83%e6%9c%ba%e5%99%a8%e4%ba%ba\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">智元机器人</a></div></div></div>\n<div><div><a href=\"https://www.qbitai.com/2026/04/402189.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://i.qbitai.com/wp-content/uploads/2026/04/45fb362692ebda22f91ffcbb241c0e04.webp\" alt=\"\" loading=\"lazy\"></a></div></div>\n<div><h4><a href=\"https://www.qbitai.com/2026/04/402189.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">π0.7发布，VLA押出了机器人的GPT-3时刻</a></h4><p>π0.7：具有涌现能力的可控模型</p><div><span><a href=\"https://www.qbitai.com/?author=47850\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">henry</a></span><span><span>2026-04-17</span></span><div><i></i><a href=\"https://www.qbitai.com/tag/%e5%85%b7%e8%ba%ab%e6%99%ba%e8%83%bd\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">具身智能</a></div></div></div>\n<div><div><a href=\"https://www.qbitai.com/2025/07/311108.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://i.qbitai.com/wp-content/uploads/2025/07/0-3-e1753087821116-300x175.png\" alt=\"\" loading=\"lazy\"></a></div></div>\n<div><h4><a href=\"https://www.qbitai.com/2025/07/311108.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">刘强东连投3家具身智能！京东美团「战火」烧到外卖之外</a></h4><p>看重「量产硬件+具身智能大脑」</p><div><span><a href=\"https://www.qbitai.com/?author=16\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">鱼羊</a></span><span><span>2025-07-21</span></span><div><i></i><a href=\"https://www.qbitai.com/tag/%e4%ba%ac%e4%b8%9c\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">京东</a><a href=\"https://www.qbitai.com/tag/%e5%85%b7%e8%ba%ab%e6%99%ba%e8%83%bd\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">具身智能</a></div></div></div>\n<div><div><h3>热门文章</h3><div><a href=\"https://www.qbitai.com/2026/11/510003.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE-2026-11-13-233726-e1794623978497.png\" alt=\"\" loading=\"lazy\"></div></a></div></div></div>\n<div><h4>突发！DeepSeek开放全家桶API</h4></div>\n<div>2026-11-14</div>\n<div><a href=\"https://www.qbitai.com/2026/11/510486.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/a1c609ed60a229a5b5d8208396680798.jpeg\" alt=\"\" loading=\"lazy\"></div></a></div>\n<div><h4>阿里正式发布Qwen4，智能体及编程能力进阶，迈向真实全场景</h4></div>\n<div>2026-11-16</div>\n<div><a href=\"https://www.qbitai.com/2026/11/510297.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/HXCJ5tJaQAAZmki-e1794650979697.jpeg\" alt=\"\" loading=\"lazy\"></div></a></div>\n<div><h4>英伟达上演“奥特曼2.0”，员工集体请愿：让老黄回家！</h4></div>\n<div></div>",
+            "text": "GPT-6.2 Astra再次暴击具身模型：16项任务成功率较GPT-6 Astra翻倍\n衡宇 2026-11-21 14:35:59 来源： 量子位\n还实现可变形物体操控全球首通\n衡宇 发自 凹非寺\n量子位 | 公众号 QbitAI\nGPT-6.2 Astra又给具身智能上强度了，狠狠来了一计天马流星拳。\n机器人基础设施公司XDOF的最新实测中，GPT-6.2Astra操控双臂机器人 完成16项操作任务的综合成功率 ，从两个月前GPT-6Astra的19.6%飙升至41.2%，翻了一倍有余。\n打结、展开T恤 这两项此前无AI通关的操作，这次也被它拿下。\n公布成绩后，OpenAI Developers官方账号转发了这条消息，OpenAI联合创始人兼总裁Greg Brockman也骄傲发言：\nGPT-6.2 Astra在机器人技术方面表现得非常出色～～\n为确保评测严谨，XDOF以六台YAM工作站并行试验，每项任务重复三十次，单日可完成480场实测，并由人工标注子步骤、抓取失误与碰撞，滤除硬件偏差与随机扰动。\n纵使标准如此严苛，XDOF也在最新推文中表示，Ember‑0基准或不久后便会被模型能力饱和。\n两个月成绩翻倍，到底有多强？\n要理解这次突破的含金量，得先搞明白测试任务究竟难在哪里。\nGPT-6.2Astra参加的是XDOF推出的Ember-0测试。\n这是一套面向真实物理环境的机器人评测基准，使用双臂机器人完成16项操作任务，每项任务按照30次重复测试的协议执行。\n测试覆盖空间推理、物体抓取、双臂协作、工具使用、精细操作和柔性物体处理等能力。\n两个月前，GPT-6Astra在Ember-0测试中的综合任务成功率为19.6%。\n到了GPT-6.2Astra，这个数字已经飙升至41.2%，增加了21.6个百分点，超过原来的两倍——这里的41.2%是16项共享操作任务成功率的等权平均，涵盖物体抓取、空间推理、双臂协作、工具使用等多种能力。\nSo，进步并非来自某一项任务的单点突破， GPT-6.2Astra在整套测试中的表现都有了明显提升。\n最让人眼前一亮的当属“ 给绳子打结”和“展开T恤这”两项操作被GPT-6.2Astra轻松拿下。\n此前，Ember-0累计进行了143次有效的T恤展开测试，没有一个模型成功完成这任务来着。\n除了这两项标志性突破外，在Ember-0涵盖的其他多项任务中，该模型的表现也有明显进步。\n需要物理推理的“拉动毛巾取回远处毛绒玩具”和“倾斜托盘让球滚入碗中”\n考验记忆与感知的“寻找被遮挡马克笔”与“遵循红色便签上的隐藏指令”\n考验精细力控的“不捏碎薯片并移动”“用夹子夹起面包”和“端麦片上托盘”\n……\nGPT-6.2 Astra在各个子任务的检查点完成度与最终成功率上均展现出显著提升。\n提升最明显的是用夹子夹起面包的任务 ：GPT-6Astra的成功率只有10%，GPT-6.2Astra则提升到了90%。\n为什么打结、展开T恤这么难？\n要理解GPT-6.2 Astra这次突破的含金量，得先搞明白“打结”和“展开T恤”这俩任务对机器人来说到底有多坑。\n在机器人学习领域，以Diffusion Policy、ACT和RT-2为代表的视觉-语言-动作模型 （VLA） 及专用策略模型，通常需要依靠大量人类示教数据来学习操作技能。\n人类先示范，机器人再从中学习如何抓取、移动和摆放物体。\n这套方法在刚性物体和固定流程中已经取得了不错的效果。\n杯子、箱子等物体的几何形状相对稳定，抓取位置和运动轨迹也比较容易预测，模型经过训练后，往往能够形成较为稳定的操作策略。\nBut，换一种物体、换一个环境，或者把几个动作串联成更复杂的任务，原有策略就未必还能奏效。模型可能需要重新采集示教数据、补充训练，才能适应新的操作条件。\n柔性物体又把难度推高了一层。\n展开T恤或给绳子打结时，物体的形态会随着机械臂每一次接触、抓取和拉扯不断变化，形变过程也很难提前预测。机器人需要理解“把衣服展开”这样的任务目标，还得从腕部和顶部摄像头传回的视觉画面中，持续判断衣物的角点、褶皱和整体形态，再决定下一步该如何动作。\n这对操作精度和双臂配合提出了很高要求。\n抓取位置或动作节奏稍有差池，都可能导致衣角滑落、绳索缠绕，前面完成的操作也可能因此付诸东流。\n在XDOF的评测体系中，“打结”和“展开T恤”这两项任务对应的核心能力标签涵盖了形变控制、双臂协调、精细操作 （Dexterity） 以及长程规划 （Long horizon） 。\n在没有触觉反馈的硬件条件下，大模型每次输出动作块 （Action chunk） 之间还存在十余秒到二十余秒的推理延迟，机械臂在等待新决策期间无法实时微调，这使得每一次接触控制和失败恢复的成本都极高。\n因此， 打结和展开T恤考验的是一整套综合能力，包括三维空间理解、双臂协同配合、精细接触控制、基于历史记录的动态状态追踪以及长程任务规划。\nBTW，速度也是第二系统模型一直面临的挑战。此前，外界对这类模型的批评之一，就是推理过程耗时较长，难以满足机器人实时操作的要求。\n这次GPT-6.2Astra也在速度上有所改善。\n模型发布期间，其平均预测延迟从GPT-6Astra的15秒下降至10.1秒。\n不过，与其他模型架构相比，这种推理方式的效率仍然偏低。对于需要连续感知、快速响应的机器人来说，10秒左右的等待时间依然不短。\n但是总的来说，具身智能模型往往在简单抓取和物体摆放上表现不错，一旦遇到复杂接触、工具使用和柔性物体，成功率就会明显下降。\nXDOF此前公布的Ember-0测试结果也呈现出类似问题。\n比如模型通常能理解任务、规划出看起来合理的动作，真正落到机械臂上，却容易在抓取、接触和连续操作环节掉链子。\nGPT-6.2Astra这次的突破，恰好表示通用模型已经开始突破这些难点。\n△ 图片由AI生成\n而从行业视角来看，通用大模型对具身智能的冲击，也正在沿着这条路线持续推进。\n从英伟达研究团队测试GPT-6Astra直接充当机器人策略模型，到Claude在机器人模拟环境中展现复杂操作能力，再到Google DeepMind将Gemini的多模态理解能力延伸至机器人控制，通用模型正在一轮轮刷新具身智能的能力边界。\nOne More Thing\n活跃在机器人/具身智能领域的新加坡国立大学总统青年教授Jiafei Duan随后也发帖赞美了GPT-6.2 Astra“入侵”具身智能的优秀表现。\n在他们做的真实机器人对比测试中，GPT-6.2 Astra表现贼出彩，一天内就冲到了RoboColosseum的SO-101 Elo排名第一。\n实际操作情况，请看小屏幕：\n自初代模型在柔性操作前束手无策，及至GPT‑6.2 Astra两月内实现成功率翻倍、破局多项零分任务，前沿多模态大模型在物理世界的演进步伐，正在持续加快。\n而且是以让人有些应接不暇的速度。\n累了，累了。\n我宣布，11月的每一天都是AI领域的眩晕瘫坐日 （bushi） 。\n参考链接：\n[1]https://x.com/xdofai/status/2123822012066157011\n[2]https://x.com/djiafei/status/2123925760281067567?s=46\n版权所有，未经授权不得以任何形式转载及使用，违者必究。\nGPT-6.2 Astra 具身智能\n衡宇\n米哈游发了个VLA论文 2026-11-21\n姚顺雨和混元团队上Reddit答网友，Hy小模型已进路线图 2026-11-21\n具身智能出海，物流先行 2026-11-09\n黎曼猜想被证明？！Claude加持，34岁数学家放出Lean证明 2026-11-21\n扫码分享至朋友圈\n相关阅读\n这么哇塞的世界模型，竟然是开源的！\n蚂蚁灵波第三弹：LingBot-World\n十三 2026-01-29 世界模型 具身智能 蚂蚁灵波\n智驾大牛余轶南机器人创业：首轮融近亿，老东家地平线百度都投了\nTo C机器人今年交卷\n贾浩楠 2025-01-22 具身智能 维他动力\n机器人集体到香港户外极限挑战，狗比人强\n赛前预警翻车？选手：不存在的\nhenry 2025-12-08 具身智能 机器人\n从学习人类到学习机器人同伴，清华大学联合无问芯穹、智元提出具身智能规模化落地新路径\n让机器人成为彼此的“老师”\n量子位 2026-10-30 具身智能 无问芯穹 智元机器人\nπ0.7发布，VLA押出了机器人的GPT-3时刻\nπ0.7：具有涌现能力的可控模型\nhenry 2026-04-17 具身智能\n刘强东连投3家具身智能！京东美团「战火」烧到外卖之外\n看重「量产硬件+具身智能大脑」\n鱼羊 2025-07-21 京东 具身智能\n热门文章\n突发！DeepSeek开放全家桶API\n2026-11-14\n阿里正式发布Qwen4，智能体及编程能力进阶，迈向真实全场景\n2026-11-16\n英伟达上演“奥特曼2.0”，员工集体请愿：让老黄回家！",
+            "lead": "GPT-6.2 Astra再次暴击具身模型：16项任务成功率较GPT-6 Astra翻倍\n衡宇 2026-11-21 14:35:59 来源： 量子位\n还实现可变形物体操控全球首通\n衡宇 发自 凹非寺\n量子位 | 公众号 QbitAI\nGPT-6.2 Astra又给具身智能上强度了，狠狠来了一计天马流星拳。\n机器人基础设施公司XDOF的最新实测中，GPT-6.2Astra操控双臂机器人 完成16项操作任务的综合成功率 ，从两个月前GPT-6Astra的19.6%飙升至41.2%，翻了一倍有余。\n打结、展开T恤 这两项此前无AI通关的操作，这次也被它拿下。\n公布成绩后，OpenAI Developers官方账号转发了这条消息，OpenAI联合创始人兼总裁Greg Brockman也骄傲发言：",
+            "chars": 4203,
+            "shown": 3995,
+            "truncated": true
+          },
+          "categories": [
+            "资讯",
+            "GPT-6.2 Astra",
+            "具身智能"
+          ],
+          "author": "衡宇",
+          "lang": "zh",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "news",
+          "metrics": {},
+          "quality": 10,
+          "score": 19.6,
+          "category": "bench",
+          "subcategory": "benchmark",
+          "practical": 2,
+          "slug": "e8e33e895b48",
+          "action": 3,
+          "rank": 14.8,
+          "tags": [
+            "benchmark",
+            "tutorial"
+          ]
+        }
+      ]
+    }
+  ]
+}
