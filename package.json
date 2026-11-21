@@ -17,6 +17,8 @@
     "test": "node --test",
     "lint": "node scripts/lint.mjs",
     "bench": "node src/bench.mjs",
-    "images": "node scripts/fetch-images.mjs"
+    "images": "node scripts/fetch-images.mjs",
+    "design:check": "npx --yes impeccable@4.10.0 detect public",
+    "design:site": "npx --yes impeccable@4.10.0 detect dist"
   }
 }

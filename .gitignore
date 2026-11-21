@@ -15,5 +15,35 @@ credentials.local.md
 .tmp-test/
 .tmp-*/
 .ci/
+# impeccable-integrations-start
+# Impeccable 的 GitHub Copilot 侧集成文件（.github/skills 是 2.4MB 的技能副本）。
+# 本站的闸门跑在 CI 的 `impeccable detect` 上，Codex 用的是 .agents/skills，这两份都不提交。
+.github/agents/
+.github/hooks/
+.github/skills/
+# impeccable-integrations-end
+# impeccable-ignore-start
+# Ephemeral output, runtime state, and per-dev overrides.
+# The **/ prefix covers .impeccable at the repo root or in a nested workspace.
+# Shared artifacts stay tracked: config.json, live/config.json,
+# design.json, surfaces/*.md, critique/ignore.md.
+**/.impeccable/config.local.json
+**/.impeccable/hook.cache.json
+**/.impeccable/hook.pending.json
+**/.impeccable/*.png
+**/.impeccable/review/
+**/.impeccable/questions/
+**/.impeccable/live/server.json
+**/.impeccable/live/sessions/
+**/.impeccable/live/previews/
+**/.impeccable/live/annotations/
+**/.impeccable/live/cache/
+**/.impeccable/live/manual-edit-apply-transaction.json
+**/.impeccable/live/manual-edit-events.jsonl
+**/.impeccable/live/manual-edit-evidence/
+**/.impeccable/live/pending-manual-edits.json
+**/.impeccable/live/deferred-svelte-component-accepts.json
+**/.impeccable/live/*.png
+# impeccable-ignore-end
 # 正文配图的本地副本：每天新增、过期即删，提交进仓库只会让历史一直变大。
 data/images/

@@ -61,10 +61,23 @@ npm run lint       # syntax, indentation, trailing whitespace, secret scan
 ## Visual & Styling Rules
 
 - The design tokens (color, type scale, layout) live in `public/styles.css` `:root` and are
-  documented in `docs/DESIGN.md`. Change a page by editing the tokens, not by hand-picking a
+  documented in `DESIGN.md`. Change a page by editing the tokens, not by hand-picking a
   colour in one rule.
+- `PRODUCT.md` (product truth) and `DESIGN.md` (visual system, with the token frontmatter) are
+  the context files Impeccable reads; keep them current in the same commit that changes the site.
+- `npm run design:check` runs the Impeccable detector (62 deterministic rules) over `public/` and
+  must pass before a UI change is requested for review; CI runs it in the same gate.
+  `npm run design:site` scans the built `dist/`, where copy quoted from upstream sources is allowed
+  to keep its own wording — fix findings in our own templates and stylesheet, not in quoted bodies.
+  The gate over `public/` reads only the regex rules (`.css` / `.js`); element rules such as
+  low-contrast, tiny-text and heading hierarchy need a real build, so run `npm run design:site`
+  after `npm run build` — CI's offline sample has no items and is not a substitute.
 - Green (`--pine`) means structure, amber (`--signal`) means actionable. Those two colours keep
   their meaning everywhere.
+- Type sizes come from the eleven-step ramp `--fs-label … --fs-funnel` in `:root`; a literal `px`
+  in a `font-size` rule is off-ramp drift and `npm run design:check` reports it. Keep the roles in
+  `DESIGN.md`, the values in `:root`, and write type as longhand (`font-size` / `line-height` /
+  `font-family`) — the detector cannot read a size hidden inside a `font:` shorthand.
 - Copy stays plain and active: link text carries no `→`/`↗`, secondary metadata is a sentence,
   not `A · B · C`.
 - Motion is capped at the homepage funnel count-up (`public/funnel.js`); anything new must

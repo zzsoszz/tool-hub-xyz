@@ -51,7 +51,7 @@ GitHub Actions（每日 06:30 / 18:30 CST）── 采集 → 质量审查 → �
 - `tests/` 单元与端到端测试，`tests/fixtures/` 为离线样例
 - `scripts/` 运维脚本：`serve.mjs`（本地预览）、`reclassify.mjs`（按现行配置重打历史分类）、`fetch-hidden.mjs`（从 D1 拉回管理员下架记录）、`lint.mjs`
 - `scripts/backfill.mjs` 按天回填最近 N 天日报（`--days=7`、`--reseed-seen`）
-- `docs/DEPLOY.md` 部署手册；`docs/DESIGN.md` 视觉规范（配色/字体/版式 token 与写作约定）
+- `docs/DEPLOY.md` 部署手册；`DESIGN.md` 视觉规范（配色/字体/版式 token 与写作约定）；`PRODUCT.md` 产品事实
 
 ## 常用命令
 
@@ -66,6 +66,8 @@ npm run review       # 发布前质量审查（硬规则 + 独立模型），报
 npm run dev          # digest 后在 0.0.0.0:8088 起本地预览（含局域网地址）
 npm test             # 单元测试 + 离线端到端流水线，纯离线
 npm run lint         # 语法、缩进、行尾空白与密钥扫描
+npm run design:check # Impeccable 设计闸门（62 条确定性规则）扫 public/，CI 同一条闸门
+                     # npm run design:site 扫构建产物 dist/；上游原文的措辞不归本站改
 ```
 
 无第三方依赖，因此不需要 `npm install`。

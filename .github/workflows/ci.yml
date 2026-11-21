@@ -25,3 +25,8 @@ jobs:
         run: |
           node src/collect.mjs --offline --out=.ci/data
           DATA_DIR=.ci/data DIST_DIR=.ci/dist node src/build.mjs
+
+      # 全站样式只有 public/styles.css 一份，设计规则在这里最容易破例。
+      # dist/ 里引用上游正文的措辞不归本站改，所以闸门只扫本站资产。
+      - name: 设计质量闸门（Impeccable 62 条确定性规则）
+        run: npx --yes impeccable@4.10.0 detect --github public
