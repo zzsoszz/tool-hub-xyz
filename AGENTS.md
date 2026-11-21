@@ -72,12 +72,23 @@ npm run lint       # syntax, indentation, trailing whitespace, secret scan
   The gate over `public/` reads only the regex rules (`.css` / `.js`); element rules such as
   low-contrast, tiny-text and heading hierarchy need a real build, so run `npm run design:site`
   after `npm run build` — CI's offline sample has no items and is not a substitute.
-- Green (`--pine`) means structure, amber (`--signal`) means actionable. Those two colours keep
-  their meaning everywhere.
+- Blue (`--column` / `--struct`, 榜蓝) means structure and columns, red (`--rank` / `--mark`, 朱红)
+  means rank, thresholds and actionable. Those two colours keep their meaning everywhere.
+- One surface: every page is paper. The only dark face is the masthead band, which takes the
+  `ink-*` group. Components read only the semantic aliases (`--struct*` / `--mark*` / `--ground*`),
+  so a page never re-values the tokens locally — change a page by changing the aliases.
+- Text sits on the deep variant of a colour (`--struct` / `--mark`); the bright variant
+  (`--column` / `--rank`) is for lines, numerals and the gate tick in `.track` only.
 - Type sizes come from the eleven-step ramp `--fs-label … --fs-funnel` in `:root`; a literal `px`
   in a `font-size` rule is off-ramp drift and `npm run design:check` reports it. Keep the roles in
   `DESIGN.md`, the values in `:root`, and write type as longhand (`font-size` / `line-height` /
   `font-family`) — the detector cannot read a size hidden inside a `font:` shorthand.
+- Latin words and numerals use the self-hosted variable font Archivo (`public/fonts/`, two
+  `@font-face` rules split by `unicode-range`); Chinese has no self-hostable display face, so it
+  falls back to the system serif. Any new literal in `:root` belongs in `DESIGN.md` `colors` too.
+- The board's column rule is drawn by `.roll::after`, not by a border on `.rail`:
+  `npm run design:site` reports children flush against a bordered wrapper. A list thumbnail lives
+  inside the body cell (see Article Image Archiving) and never claims a column of the six-column grid.
 - Copy stays plain and active: link text carries no `→`/`↗`, secondary metadata is a sentence,
   not `A · B · C`.
 - Motion is capped at the homepage funnel count-up (`public/funnel.js`); anything new must
@@ -98,8 +109,9 @@ npm run lint       # syntax, indentation, trailing whitespace, secret scan
 - Conclusions state the measurement condition (same machine, same prompts, same engine) and
   never extrapolate across machines; caveats about upstream draft protocols stay on the page.
 - Images zoom through `public/lightbox.js`: every `main img` opens the centred overlay, and the
-  click cancels the wrapping link — a list thumbnail zooms instead of navigating, because
-  navigation stays on the title link plus the overlay's own 进入这篇文章 link.
+  click cancels the wrapping link — a thumbnail inside a link zooms instead of navigating, because
+  navigation stays on the title link plus the overlay's own 进入这篇文章 link. A list thumbnail is a
+  plain `figure.story-thumb`, so it zooms and never becomes a second link to the same item.
 - Zoom is a single level (`1` means fit) shared by buttons, wheel, `+`/`-`/`0`, double-click and
   drag-to-pan, clamped to 40%–600% so an image can never vanish; it is a transform, not a relayout.
 - Bench tables filter through `public/bench.js`: the box is server-rendered inside `.bench-data`,
@@ -149,6 +161,7 @@ npm run lint       # syntax, indentation, trailing whitespace, secret scan
 
 - `saveImages` runs after the day's items are selected and before the digest is written; `content.html` keeps the original URL and `localizeItems` rewires `<img src>` to `/images/...` only for copies that exist on disk — a build never fetches and never leaves a broken image.
 - `data/images/` is never committed (a day of copies plus retention churn would bloat git history), so CI runs `node scripts/fetch-images.mjs --days=2` before the build to refill it.
+- List thumbnails come from `itemIllustration(item, { archivedOnly: true })` in `src/lib/items.mjs`: the first real `<img>` in the body (logo / icon / avatar / badge / emoji never count) **and only when the copy is archived** — a `/images/...` path. A hotlink renders no `figure`: a browser sends this site's own referer, so hotlink-guarded hosts refuse it and dead upstreams leave a hole in the ledger. Item bodies keep the old rule (local copy, upstream URL otherwise). A row with no illustration renders no `figure` at all, so the six-column ledger never grows an empty slot; `public/thumbs.js` still removes a `figure.story-thumb` whose copy went missing after the build.
 - A copy is named `<slug>-<sha256(url)[0:16]>.<ext>` and shared by every item that references the same URL; the slug keeps the upstream filename so `itemImage()`'s icon filter still works on the local path.
 - Magic bytes are checked before writing (a 404 page served as `image/png` never lands), and SVG is refused outright because a same-origin SVG can carry script.
 

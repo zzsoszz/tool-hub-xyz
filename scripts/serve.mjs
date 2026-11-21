@@ -43,8 +43,10 @@ const server = createServer(async (request, response) => {
   const target = await resolveFile(request.url ?? '/');
   const body = target ? await readFile(target).catch(() => null) : null;
   if (!body) {
+    // 线上由 Cloudflare Pages 用 dist/404.html 兜底，本地必须给同一张页面，否则 404 在开发时根本看不见。
+    const fallback = await readFile(join(DIST, '404.html')).catch(() => null);
     response.writeHead(404, { 'content-type': 'text/html; charset=utf-8' });
-    response.end('<!doctype html><meta charset="utf-8"><title>404</title><p>页面不存在。</p><p><a href="/">返回今日日报</a></p>');
+    response.end(fallback ?? '<!doctype html><meta charset="utf-8"><title>404</title><p>页面不存在。</p>');
     return;
   }
   response.writeHead(200, { 'content-type': TYPES[extname(target)] ?? 'application/octet-stream' });

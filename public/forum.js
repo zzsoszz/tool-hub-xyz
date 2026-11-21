@@ -162,14 +162,19 @@
     });
   }
 
+  // 失败状态给下一步：这一页刷新就能重试，不让读者自己猜该做什么。
+  function unavailable(list, error) {
+    list.textContent = '';
+    list.append(el('p', 'empty', `讨论暂时不可用：${error.message}。刷新这一页即可重试。`));
+  }
+
   async function loadItemComments(section) {
     const list = section.querySelector('[data-comment-list]');
     try {
       const payload = await api(`/api/comments/${section.dataset.item}`);
       renderComments(list, payload.comments ?? []);
     } catch (error) {
-      list.textContent = '';
-      list.append(el('p', 'empty', `讨论暂时不可用：${error.message}`));
+      unavailable(list, error);
     }
   }
 
@@ -181,8 +186,7 @@
       const payload = await api('/api/comments?limit=30');
       renderComments(list, payload.comments ?? []);
     } catch (error) {
-      list.textContent = '';
-      list.append(el('p', 'empty', `讨论暂时不可用：${error.message}`));
+      unavailable(list, error);
     }
   }
 

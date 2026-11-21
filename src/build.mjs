@@ -7,6 +7,7 @@ import {
   renderDiscussPage,
   renderItemPage,
   renderLlms,
+  renderNotFoundPage,
   renderRss,
   renderSearchPage,
   renderTagPage,
@@ -16,6 +17,7 @@ import {
   renderBenchIndexPage,
   renderTagsIndex,
 } from './lib/render.mjs';
+import { LIST_PAGE_SIZE } from './lib/render.mjs';
 import { datasetChartSvg } from './lib/bench.mjs';
 import { localizeItems, readManifest } from './lib/images.mjs';
 import {
@@ -26,9 +28,10 @@ import {
   itemsForSubsection,
   itemsIndex,
   itemSlug,
+  stampIssues,
   subsectionsFor,
 } from './lib/items.mjs';
-import { monthsFor, sortEntries } from './lib/listview.mjs';
+import { sortEntries } from './lib/listview.mjs';
 import { digestToMarkdown } from './lib/markdown.mjs';
 
 const ROOT = path.resolve(import.meta.dirname, '..');
@@ -107,6 +110,7 @@ async function main() {
   const filterConfig = await loadJson(path.join(ROOT, 'config/filters.json'), {});
   const tagConfig = filterConfig.tags ?? [];
   const tagLabels = Object.fromEntries(tagConfig.map((tag) => [tag.id, tag.label]));
+  const actionWeight = Number(filterConfig.quality?.actionWeight ?? 1.6);
   const subcategories = filterConfig.subcategories ?? [];
   const subLabels = new Map(subcategories.map((sub) => [`${sub.parent}/${sub.id}`, sub.label]));
   const digests = await loadDigests(path.join(dataDir, 'digests'));
@@ -130,6 +134,8 @@ async function main() {
       hiddenCount += removed;
     }
   }
+  // 期号、名次序号与「第几次上榜」在剔除下架条目之后才算，榜上的编号才和页面一致。
+  stampIssues(digests);
   await rm(distDir, { recursive: true, force: true });
 
   // 正文配图换成本地副本：data/images 里有才换，没有就保留原来的外链。
@@ -152,7 +158,21 @@ async function main() {
   const recentCutoff = new Date(Date.now() - lookbackDays * 86_400_000);
   const recentItems = allItems.filter((item) => new Date(item.published ?? `${item.day}T00:00:00Z`) >= recentCutoff);
   const navSections = sections.filter((section) => section.id !== 'discuss' && section.id !== 'archive');
-  const common = { sections, siteUrl: base, repoUrl: repo, days, tagLabels };
+  const common = { sections, siteUrl: base, repoUrl: repo, days, digests, tagLabels, actionWeight };
+
+  let listExtraPages = 0;
+  // 查找型列表按页切开：第 1 页沿用原来的文件，之后每页写在同一目录的 p/N.html，
+  // 这样每一页都放得下、也看得到真实收尾，翻页链接对读者和爬虫都成立。
+  async function writeListPages(distFile, urlBase, itemCount, render) {
+    const pageCount = Math.max(1, Math.ceil(itemCount / LIST_PAGE_SIZE));
+    for (let pageNumber = 1; pageNumber <= pageCount; pageNumber += 1) {
+      const url = pageNumber === 1 ? urlBase : `${urlBase}/p/${pageNumber}`;
+      const target = pageNumber === 1 ? distFile : path.join(distDir, ...urlBase.split('/').filter(Boolean), 'p', `${pageNumber}.html`);
+      if (pageNumber > 1) listExtraPages += 1;
+      await write(target, render({ pageNumber, path: url }));
+    }
+    return pageCount;
+  }
 
   await write(path.join(distDir, 'index.html'), renderDigestPage(latest, { ...common, sectionId: 'latest', limit: homeLimit }));
   for (const digest of digests) {
@@ -174,17 +194,15 @@ async function main() {
       .map((sub) => ({ ...sub, count: sub.items.length }))
       .sort((a, b) => b.count - a.count);
     const view = { ...section, subsections: subs.map(({ id, label, count }) => ({ id, label, count })) };
-    await write(
-      path.join(distDir, 's', `${section.id}.html`),
-      renderSectionPage({ ...common, section: view, items, lookbackDays, months: monthsFor(items) }),
-    );
+    await writeListPages(path.join(distDir, 's', `${section.id}.html`), `/s/${section.id}`, items.length, (pager) => (
+      renderSectionPage({ ...common, section: view, items, lookbackDays, ...pager })
+    ));
     sectionCount += 1;
     sectionUrls.push(`${base}/s/${section.id}`);
     for (const sub of subs) {
-      await write(
-        path.join(distDir, 's', section.id, `${sub.id}.html`),
-        renderSubsectionPage({ ...common, section: view, sub, items: sub.items, lookbackDays, months: monthsFor(sub.items) }),
-      );
+      await writeListPages(path.join(distDir, 's', section.id, `${sub.id}.html`), `/s/${section.id}/${sub.id}`, sub.items.length, (pager) => (
+        renderSubsectionPage({ ...common, section: view, sub, items: sub.items, lookbackDays, ...pager })
+      ));
       subUrls.push(`${base}/s/${section.id}/${sub.id}`);
     }
   }
@@ -210,10 +228,9 @@ async function main() {
   let tagPageCount = 0;
   const tagUrls = [];
   for (const { tag, items } of tagItems) {
-    await write(
-      path.join(distDir, 't', `${tag.id}.html`),
-      renderTagPage({ ...common, tag, items, tags: tagConfig, lookbackDays, months: monthsFor(items) }),
-    );
+    await writeListPages(path.join(distDir, 't', `${tag.id}.html`), `/t/${tag.id}`, items.length, (pager) => (
+      renderTagPage({ ...common, tag, items, tags: tagConfig, lookbackDays, ...pager })
+    ));
     tagPageCount += 1;
     if (items.length) tagUrls.push(`${base}/t/${tag.id}`);
   }
@@ -221,6 +238,7 @@ async function main() {
     path.join(distDir, 'about.html'),
     renderAboutPage({ ...common, sources: latest.sources ?? [] }),
   );
+  await write(path.join(distDir, '404.html'), renderNotFoundPage(common));
   const periods = archivePeriods(allItems);
   // 评测数据页：数字来自 data/bench/*.json（npm run bench 采集），中文表头与结论来自 config/bench.json。
   const benchConfig = await loadJson(path.join(ROOT, 'config', 'bench.json'), { datasets: [] });
@@ -247,7 +265,6 @@ async function main() {
   }
   const years = archiveYears(periods);
   const monthLabel = (period) => `${period.year} 年 ${Number(period.month)} 月`;
-  const archiveMonths = monthsFor(allItems);
   const monthChips = periods.map((period) => ({ label: monthLabel(period), href: `/archive/${period.key}`, count: period.items.length }));
   const yearChips = years.map((entry) => ({ label: `${entry.year} 年`, href: `/archive/${entry.year}`, count: entry.count }));
   const chipsFor = (period) => ({
@@ -255,39 +272,36 @@ async function main() {
     yearChips: yearChips.map((chip) => ({ ...chip, active: period ? chip.href === `/archive/${period.year}` : chip.href === `/archive/${years[0]?.year}` })),
   });
   const archiveUrls = [];
-  await write(
-    path.join(distDir, 'archive.html'),
-    renderArchive({
+  async function writeArchivePages(distFile, urlBase, props) {
+    await writeListPages(distFile, urlBase, props.current?.items?.length ?? 0, (pager) => renderArchive({ ...props, ...pager }));
+  }
+  await writeArchivePages(path.join(distDir, 'archive.html'), '/archive', {
+    ...common,
+    digests,
+    monthChips: monthChips.map((chip) => ({ ...chip, active: false })),
+    yearChips: yearChips.map((chip) => ({ ...chip, active: false })),
+    // 归档首页放按质量评分排好序的第一页；整月条目走下面的年 / 月入口。
+    current: { label: '全部归档条目', items: sortEntries(allItems, 'quality') },
+  });
+  for (const period of periods) {
+    await writeArchivePages(path.join(distDir, 'archive', `${period.key}.html`), `/archive/${period.key}`, {
       ...common,
       digests,
-      monthChips: monthChips.map((chip) => ({ ...chip, active: false })),
-      yearChips: yearChips.map((chip) => ({ ...chip, active: false })),
-      // 归档首页放全部条目：年/月筛选才有可筛的池，排序默认按质量评分。
-      current: { label: '全部归档条目', items: sortEntries(allItems, 'quality') },
-      months: archiveMonths,
-    }),
-  );
-  for (const period of periods) {
-    await write(
-      path.join(distDir, 'archive', `${period.key}.html`),
-      renderArchive({ ...common, digests, ...chipsFor(period), current: { label: monthLabel(period), items: period.items } }),
-    );
+      ...chipsFor(period),
+      current: { label: monthLabel(period), items: period.items },
+    });
     archiveUrls.push(`${base}/archive/${period.key}`);
   }
   for (const year of years) {
     const items = sortEntries(year.periods.flatMap((period) => period.items), 'quality');
-    await write(
-      path.join(distDir, 'archive', `${year.year}.html`),
-      renderArchive({
-        ...common,
-        digests,
-        monthChips: monthChips.map((chip) => ({ ...chip, active: false })),
-        yearChips: yearChips.map((chip) => ({ ...chip, active: chip.href === `/archive/${year.year}` })),
-        current: { label: `${year.year} 年`, items },
-        months: monthsFor(items),
-        year: year.year,
-      }),
-    );
+    await writeArchivePages(path.join(distDir, 'archive', `${year.year}.html`), `/archive/${year.year}`, {
+      ...common,
+      digests,
+      monthChips: monthChips.map((chip) => ({ ...chip, active: false })),
+      yearChips: yearChips.map((chip) => ({ ...chip, active: chip.href === `/archive/${year.year}` })),
+      current: { label: `${year.year} 年`, items },
+      year: year.year,
+    });
     archiveUrls.push(`${base}/archive/${year.year}`);
   }
   await write(path.join(distDir, 'feed.xml'), renderRss(latest, { siteUrl: base }));
@@ -319,11 +333,11 @@ async function main() {
   // 浏览器端脚本要 import 同一份排序/筛选规则，所以把这个共享模块也发一份到站点里。
   await cp(path.join(ROOT, 'src', 'lib', 'listview.mjs'), path.join(distDir, 'listview.mjs'));
 
-  const pageCount = 1 + days.length + sectionCount + subUrls.length + itemCount + tagPageCount + 5 + benchUrls.length;
+  const pageCount = 1 + listExtraPages + days.length + sectionCount + subUrls.length + itemCount + tagPageCount + 5 + benchUrls.length;
   const hiddenNote = hiddenCount ? ` · 剔除下架 ${hiddenCount} 条` : '';
   const benchNote = benchEntries.length ? ` / ${benchEntries.length} 评测数据页` : '';
   const imageNote = images.files.size ? ` · 配图本地 ${images.localized} 张 / 外链 ${images.remote} 张` : '';
-  console.log(`build: dist ready (${digests.length} digests, ${pageCount} html + ${days.length} markdown: ${days.length} 日报 / ${sectionCount} 栏目 / ${subUrls.length} 子类 / ${tagPageCount} 标签 / ${itemCount} 条目 / 5 固定页${benchNote}${imageNote}, latest ${latest.day}${hiddenNote})`);
+  console.log(`build: dist ready (${digests.length} digests, ${pageCount} html + ${days.length} markdown: ${days.length} 日报 / ${sectionCount} 栏目 / ${subUrls.length} 子类 / ${tagPageCount} 标签 / ${itemCount} 条目 / 5 固定页 / ${listExtraPages} 列表分页${benchNote}${imageNote}, latest ${latest.day}${hiddenNote})`);
 }
 
 await main();

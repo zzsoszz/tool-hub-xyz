@@ -1,7 +1,8 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { escapeHtml, nestArticleHeadings, renderAboutPage, renderArchive, renderBenchDatasetPage, renderBenchIndexPage, renderDiscussPage, renderDigestPage, renderItemPage, renderLlms, renderRss, renderSearchPage, renderSectionPage } from '../../src/lib/render.mjs';
+import { displaySummary, escapeHtml, nestArticleHeadings, renderAboutPage, renderArchive, renderBenchDatasetPage, renderBenchIndexPage, renderDiscussPage, renderDigestPage, renderItemPage, renderLlms, renderNotFoundPage, renderRss, renderSearchPage, renderSectionPage } from '../../src/lib/render.mjs';
 import { itemSlug } from '../../src/lib/items.mjs';
+import { stampIssues } from '../../src/lib/items.mjs';
 
 const sections = [
   { id: 'latest', label: '最新', href: '/' },
@@ -72,11 +73,12 @@ test('rendersMenuWithEverySection', () => {
 
 test('listsStoriesFlatWithRankChineseTitleAndOriginalLink', () => {
   const html = renderDigestPage(digest(), options);
-  assert.ok(html.includes('<span class="rank">1</span>'));
+  assert.ok(html.includes('<span class="rank">01</span>'));
   assert.ok(html.includes('<a href="/item/'));
   assert.ok(html.includes('<p class="story-original">English paper title</p>'));
   assert.ok(html.includes('<a class="original-link" href="https://example.com/b" target="_blank" rel="noopener noreferrer">原文</a>'));
-  assert.ok(html.includes('留下 2 条'));
+  assert.ok(html.includes('<span>本期上榜</span>'));
+  assert.ok(!html.includes('留下 2 条'), '漏斗数字只在账条里写一次，散文不再复述');
 });
 
 test('opensTheHomepageWithTheFunnelNumbers', () => {
@@ -133,14 +135,17 @@ test('rendersSectionDiscussAndSearchPages', () => {
 });
 
 test('listControlsOfferMonthYearSelectorsAndQualityFirstSort', () => {
-  const months = [
-    { key: '2026-11', year: '2026', month: '11', count: 5 },
-    { key: '2025-12', year: '2025', month: '12', count: 2 },
+  const items = [
+    item(),
+    item({ id: 'https://example.com/dec-1', url: 'https://example.com/dec-1', published: '2025-12-20T00:00:00.000Z' }),
+    item({ id: 'https://example.com/dec-2', url: 'https://example.com/dec-2', published: '2025-12-05T00:00:00.000Z' }),
   ];
-  const section = renderSectionPage({ ...options, section: sections[1], items: [item()], lookbackDays: 90, months });
+  // 月份计数按这一页真正能筛到的条目算，不写整站的池子。
+  const section = renderSectionPage({ ...options, section: sections[1], items, lookbackDays: 90 });
   assert.ok(section.includes('<form class="filters" method="get">'));
   assert.ok(section.includes('<optgroup label="2026 年">'));
   assert.ok(section.includes('<option value="2025-12">12 月（2）</option>'));
+  assert.ok(section.includes('<option value="2026-11">11 月（1）</option>'));
   assert.ok(section.includes('<option value="2025" >2025 年</option>') || section.includes('<option value="2025">2025 年</option>'));
   assert.ok(section.includes('<option value="quality" selected>质量评分</option>'));
   assert.ok(section.includes('data-filter-count'));
@@ -155,6 +160,42 @@ test('storyRowsCarryMonthAndQualityForClientFiltering', () => {
   assert.ok(html.includes('data-score="7"'));
 });
 
+test('storyRowsShowAThumbnailWhenTheItemHasAnIllustration', () => {
+  const entry = item({ content: { html: '<p><img src="/images/arxiv-cover.png" alt="一张评测截图" loading="lazy"></p>' } });
+  const board = renderDigestPage(digest({ categories: [{ id: 'apps', label: 'AI 应用', items: [entry] }] }), options);
+  assert.ok(board.includes('<figure class="story-thumb"><img src="/images/arxiv-cover.png" alt="一张评测截图" loading="lazy"></figure>'));
+  const lookup = renderSectionPage({ ...options, section: sections[1], items: [entry], lookbackDays: 7 });
+  assert.ok(lookup.includes('<figure class="story-thumb"><img src="/images/arxiv-cover.png" alt="一张评测截图" loading="lazy"></figure>'));
+});
+
+test('storyRowsLeaveOutTheThumbnailWhenTheItemHasNoIllustration', () => {
+  const entry = item({ content: { html: '<p><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/2705.png" alt="✅" loading="lazy"></p>' } });
+  const board = renderDigestPage(digest({ categories: [{ id: 'apps', label: 'AI 应用', items: [entry] }] }), options);
+  assert.equal(board.includes('story-thumb'), false);
+  assert.equal(renderSectionPage({ ...options, section: sections[1], items: [entry], lookbackDays: 7 }).includes('story-thumb'), false);
+});
+
+test('thumbnailAltFallsBackToTheTitleWhenUpstreamAltIsJustAFileName', () => {
+  const entry = item({ content: { html: '<p><img src="/images/cover.jpeg" alt="cover.jpeg" loading="lazy"></p>' } });
+  const html = renderDigestPage(digest({ categories: [{ id: 'apps', label: 'AI 应用', items: [entry] }] }), options);
+  assert.ok(html.includes('<figure class="story-thumb"><img src="/images/cover.jpeg" alt="论文中文标题" loading="lazy"></figure>'));
+});
+
+test('storyRowsLeaveOutTheThumbnailWhenTheIllustrationIsNotArchived', () => {
+  const entry = item({ content: { html: '<p><img src="https://lcz.me/uploads/bench.png" alt="跑分截图"></p>' } });
+  const board = renderDigestPage(digest({ categories: [{ id: 'apps', label: 'AI 应用', items: [entry] }] }), options);
+  assert.equal(board.includes('story-thumb'), false, '没有本地副本的配图不进列表');
+  assert.equal(renderSectionPage({ ...options, section: sections[1], items: [entry], lookbackDays: 7 }).includes('story-thumb'), false);
+});
+
+test('listPagesLoadTheScriptThatDropsFailedThumbnails', () => {
+  const board = renderDigestPage(digest(), options);
+  const lookup = renderSectionPage({ ...options, section: sections[1], items: [item()], lookbackDays: 7 });
+  assert.ok(board.includes('src="/thumbs.js"'));
+  assert.ok(lookup.includes('src="/thumbs.js"'));
+  assert.equal(renderItemPage({ item: item(), ...options, sections }).includes('src="/thumbs.js"'), false);
+});
+
 test('rendersAboutAndArchive', () => {
   const about = renderAboutPage({ ...options, sources: digest().sources });
   assert.ok(about.includes('OpenAI News'));
@@ -164,17 +205,27 @@ test('rendersAboutAndArchive', () => {
 });
 
 test('archivePageOffersPeriodFiltersAndMarkdownDownloads', () => {
-  const months = [
-    { key: '2026-11', year: '2026', month: '11', count: 3 },
-    { key: '2025-12', year: '2025', month: '12', count: 1 },
-  ];
   const archive = renderArchive({
     ...options,
     digests: [digest(), digest({ day: '2025-12-30' })],
-    months,
-    current: { label: '全部归档条目', items: [item()] },
+    monthChips: [
+      { label: '11 月', href: '/archive/2026-11', count: 1, active: true },
+      { label: '12 月', href: '/archive/2025-12', count: 1, active: false },
+    ],
+    yearChips: [
+      { label: '2026 年', href: '/archive/2026', count: 1, active: true },
+      { label: '2025 年', href: '/archive/2025', count: 1, active: false },
+    ],
+    current: {
+      label: '全部归档条目',
+      items: [item({ id: 'https://example.com/old', url: 'https://example.com/old', published: '2025-12-30T00:00:00.000Z' }), item()],
+    },
+    pageNumber: 1,
+    pageSize: 1,
   });
   assert.ok(archive.includes('<option value="2025-12">12 月（1）</option>'));
+  assert.ok(archive.includes('整月条目走上面的年 / 月入口'));
+  assert.ok(archive.includes('第 1 / 2 页'));
   assert.ok(archive.includes('<option value="quality" selected>质量评分</option>'));
   assert.ok(archive.includes('href="/markdown/2025-12-30.md"'));
 });
@@ -182,6 +233,52 @@ test('archivePageOffersPeriodFiltersAndMarkdownDownloads', () => {
 test('dayPageLinksToThatDaysMarkdown', () => {
   const html = renderDigestPage(digest(), options);
   assert.ok(html.includes('href="/markdown/2026-11-09.md"'));
+});
+
+test('archiveEntryListingPaginatesAndLinksItsNeighbours', () => {
+  const items = Array.from({ length: 7 }, (unused, index) => item({ id: `https://example.com/p${index}`, url: `https://example.com/p${index}` }));
+  const first = renderArchive({ ...options, digests: [digest()], current: { label: '全部归档条目', items } });
+  assert.ok(!first.includes('class="pager"'), '一页放得下就不该有翻页条');
+  assert.ok(first.includes('<h2>全部归档条目</h2>'));
+  const second = renderArchive({ ...options, digests: [digest()], current: { label: '全部归档条目', items }, pageNumber: 2, pageSize: 3, path: '/archive/p/2' });
+  assert.ok(second.includes('class="pager"'));
+  assert.ok(second.includes('href="/archive/p/3"'));
+  assert.ok(second.includes('第 2 页 / 共 3 页，每页 3 条'));
+  assert.ok(second.includes('第 2 / 3 页'));
+  assert.ok(second.includes('rel="canonical" href="https://tool-hub.xyz/archive/p/2"'));
+  assert.ok(second.includes('本页 <span data-filter-count>'));
+  const last = renderArchive({ ...options, digests: [digest()], current: { label: '全部归档条目', items }, pageNumber: 3, pageSize: 3, path: '/archive/p/3' });
+  assert.ok(last.includes('href="/archive/p/2"'));
+  assert.ok(!last.includes('下一页'), '最后一页不再给下一页链接');
+});
+
+test('lookupListsPaginateTheirOwnPagesAndShortenListSummaries', () => {
+  const longSummary = '低'.repeat(200);
+  const items = Array.from({ length: 31 }, (unused, index) => item({
+    id: `https://example.com/s${index}`,
+    url: `https://example.com/s${index}`,
+    title: `Local inference note number ${index}`,
+    zhSummary: longSummary,
+  }));
+  const page = (overrides) => renderSectionPage({
+    ...options,
+    section: { id: 'apps', label: 'AI 应用' },
+    items,
+    days: options.days,
+    lookbackDays: 30,
+    ...overrides,
+  });
+  const first = page();
+  assert.equal((first.match(/<li[^>]* class="story"/g) ?? []).length, 30, '栏目页一页最多放 LIST_PAGE_SIZE 条');
+  assert.ok(first.includes('第 1 / 2 页'), '栏目页要说清自己在第几页');
+  assert.ok(first.includes('href="/s/apps/p/2"'));
+  assert.ok(first.includes('rel="canonical" href="https://tool-hub.xyz/s/apps"'));
+  const summary = first.match(/<p class="story-summary">([^<]*)</)[1];
+  assert.ok(summary.length <= 150 && summary.endsWith('\u2026'), '列表层的摘要按扫读长度截短，全文留给条目页');
+  const second = page({ pageNumber: 2, path: '/s/apps/p/2' });
+  assert.ok(second.includes('href="/s/apps"'), '第二页要能回到第一页');
+  assert.ok(!second.includes('下一页'), '最后一页不再给下一页链接');
+  assert.ok(second.includes('rel="canonical" href="https://tool-hub.xyz/s/apps/p/2"'));
 });
 
 test('rendersRssWithItemLinksAndOriginalUrl', () => {
@@ -214,19 +311,22 @@ test('escapesHtmlHelperCoversQuotesAndAmpersands', () => {
 
 test('homepageKeepsOnlyTheTopStoriesAndLinksToTheFullDay', () => {
   const html = renderDigestPage(digest(), { ...options, limit: 1 });
-  assert.ok(html.includes('<span class="rank">1</span>'));
-  assert.ok(!html.includes('<span class="rank">2</span>'));
+  assert.ok(html.includes('<span class="rank">01</span>'));
+  assert.ok(!html.includes('<span class="rank">02</span>'));
   assert.ok(html.includes('<p class="lede-more">'));
   assert.ok(html.includes('<a href="/day/2026-11-09">查看全部 2 条</a>'));
   assert.equal(renderDigestPage(digest(), options).includes('lede-more'), false);
 });
 
-test('rendersStoryThumbnailFromArticleImages', () => {
-  const entry = item({ content: { html: '<p><img src="https://lcz.me/uploads/bench.png" alt="跑分截图"></p><p>正文</p>', text: '正文', chars: 200, shown: 200, lead: '正文', truncated: false } });
-  const html = renderDigestPage(digest({ categories: [{ id: 'apps', label: 'AI 应用', items: [entry] }] }), { ...options, limit: 10 });
-  assert.ok(html.includes('<img class="story-thumb" src="https://lcz.me/uploads/bench.png" alt="" loading="lazy">'));
-  const plain = item({ content: { html: '<p><img src="https://lcz.me/avatar/9.png" alt="头像">正文足够长的一段说明文字</p>', text: '正文足够长的一段说明文字', chars: 200, shown: 200, lead: '正文', truncated: false } });
-  assert.ok(!renderDigestPage(digest({ categories: [{ id: 'apps', label: 'AI 应用', items: [plain] }] }), options).includes('story-thumb'));
+test('listsShowAThumbnailAndTheItemPageKeepsTheBodyImages', () => {
+  const archived = item({ content: { html: '<p><img src="/images/uploads-bench.png" alt="跑分截图"></p><p>正文</p>', text: '正文', chars: 200, shown: 200, lead: '正文', truncated: false } });
+  const list = renderDigestPage(digest({ categories: [{ id: 'apps', label: 'AI 应用', items: [archived] }] }), { ...options, limit: 10 });
+  assert.ok(list.includes('<figure class="story-thumb"><img src="/images/uploads-bench.png" alt="跑分截图" loading="lazy"></figure>'), '榜上的行有配图');
+  const hotlinked = item({ content: { html: '<p><img src="https://lcz.me/uploads/bench.png" alt="跑分截图"></p><p>正文</p>', text: '正文', chars: 200, shown: 200, lead: '正文', truncated: false } });
+  const remoteList = renderDigestPage(digest({ categories: [{ id: 'apps', label: 'AI 应用', items: [hotlinked] }] }), { ...options, limit: 10 });
+  assert.equal(remoteList.includes('story-thumb'), false, '只有外链时列表不配图');
+  const page = renderItemPage({ ...options, item: hotlinked, related: [] });
+  assert.ok(page.includes('<img src="https://lcz.me/uploads/bench.png" alt="跑分截图">'), '条目页仍保留正文配图');
 });
 
 test('wrapsItemPageTablesForHorizontalScrolling', () => {
@@ -400,4 +500,88 @@ test('listsAboutSectionsAsLinks', () => {
   const about = renderAboutPage({ ...options, sources: digest().sources });
   assert.ok(about.includes('<li><a href="/s/apps">AI 应用</a></li>'), about);
   assert.ok(!about.includes(' — '), about);
+});
+
+// 期号页是「一张榜」：左侧栏目与期号轨，右侧六列，行上没有摘要也没有缩略图。
+test('opensTheSheetWithARailOfColumnsAndIssuesBesideTheBoard', () => {
+  const previous = digest({ day: '2026-11-08' });
+  const current = digest();
+  stampIssues([current, previous]);
+  const html = renderDigestPage(current, { ...options, digests: [current, previous] });
+  assert.ok(html.includes('<span class="issue-no">第 2 期</span>'), html);
+  assert.ok(html.includes('<div class="rail">'), html);
+  assert.ok(html.includes('<span class="column-item"><a class="active" href="/">最新</a><em>2</em></span>'), html);
+  assert.ok(html.includes('<nav class="rail-links">'), html);
+  assert.ok(html.includes('<a href="/discuss">讨论区</a>'), html);
+  assert.ok(html.includes('<a href="/archive">归档与落选账</a>'), html);
+  assert.ok(!html.includes('href="/s/discuss"'), '讨论区不是栏目，走其他入口');
+  assert.ok(html.includes('<nav class="issue-rail">'), html);
+  assert.ok(html.includes('<a href="/day/2026-11-08"><span>第 1 期</span>'), html);
+  assert.ok(html.includes('<div class="head">'), html);
+  assert.ok(html.includes('<li id="rank-1" class="story"'), html);
+  assert.ok(!html.includes('story-summary'), '榜上的行不写摘要');
+});
+
+test('marksAnItemNewOrCarriedByHowManyIssuesItHasBeenOn', () => {
+  const previous = digest({ day: '2026-11-08' });
+  const current = digest();
+  stampIssues([current, previous]);
+  assert.ok(renderDigestPage(previous, { ...options, digests: [current, previous] }).includes('<span class="origin">新收</span>'));
+  assert.ok(renderDigestPage(current, { ...options, digests: [current, previous] }).includes('<span class="origin is-carried">第 2 次上榜</span>'));
+});
+
+test('notesARunOfConsecutiveItemsFromOneSourceAtTheFootOfTheBoard', () => {
+  const same = [1, 2, 3].map((index) => item({
+    id: `https://example.com/same-${index}`,
+    url: `https://example.com/same-${index}`,
+    title: `同源连发 ${index}`,
+    zhTitle: `同源连发 ${index}`,
+    sourceName: '量子位',
+    quality: 12 - index,
+    rank: 30 - index,
+  }));
+  const html = renderDigestPage(digest({ categories: [{ id: 'apps', label: 'AI 应用', items: same }] }), options);
+  assert.ok(html.includes('<p class="board-note">第 01–03 名来自 量子位 的连续发布'), html);
+});
+
+test('clipsListSummariesAtSentenceBoundaries', () => {
+  const zhSummary = '第一段说明它能做什么，而且不需要好配置。第二段讲安装步骤与耗时。第三段还剩半句没有说完';
+  assert.equal(displaySummary({ zhSummary }, 24), '第一段说明它能做什么，而且不需要好配置。');
+  assert.equal(displaySummary({ zhSummary }, 14), '第一段说明它能做什么，…');
+  assert.equal(displaySummary({ zhSummary }, 16), '第一段说明它能做什么，而且不需要…');
+  assert.ok(!displaySummary({ zhSummary }, 14).includes('……'));
+});
+
+test('keepsMoreThanASingleSentenceWhenTheFirstOneIsShort', () => {
+  const zhSummary = '短句。后面还有很长的内容一直到超出预算为止还在继续写下去。';
+  assert.equal(displaySummary({ zhSummary }, 20), '短句。后面还有很长的内容一直到超出预算为…');
+});
+
+test('closesTheBoardWithHowManyEntriesAreNewThisIssue', () => {
+  const entries = [
+    item({ score: 20, isNew: true, issueCount: 1 }),
+    item({ id: 'https://example.com/carry', url: 'https://example.com/carry', isNew: false, issueCount: 4 }),
+  ];
+  const html = renderDigestPage(digest({ categories: [{ id: 'apps', label: 'AI 应用', items: entries }] }), options);
+  assert.ok(html.includes('<p class="board-note">这一期的名次里有 1 条是第一次上榜，最长的一条已经连续在榜 4 天。</p>'), html);
+});
+
+test('saysPlainlyWhenEveryEntryOnTheBoardIsNew', () => {
+  const entries = [item({ score: 20, isNew: true }), item({ id: 'https://example.com/carry', url: 'https://example.com/carry', isNew: true })];
+  const html = renderDigestPage(digest({ categories: [{ id: 'apps', label: 'AI 应用', items: entries }] }), options);
+  assert.ok(html.includes('<p class="board-note">这一期的 2 条名次全部是第一次上榜。</p>'), html);
+});
+
+test('keepsBoardTenureOutOfTheCopyWhenNothingCarriedOver', () => {
+  const entries = [item({ score: 20, isNew: true, issueCount: 1 }), item({ id: 'https://example.com/carry', url: 'https://example.com/carry', isNew: true, issueCount: 1 })];
+  const html = renderDigestPage(digest({ categories: [{ id: 'apps', label: 'AI 应用', items: entries }] }), options);
+  assert.ok(!html.includes('连续在榜'), '全是新上榜时不写驻留天数');
+});
+
+test('rendersTheNotFoundPageInTheSameShellAsTheRestOfTheSite', () => {
+  const html = renderNotFoundPage({ siteUrl: 'https://tool-hub.xyz', sections });
+  assert.ok(html.includes('<h1>这一页不存在</h1>'), html);
+  assert.ok(html.includes('<header class="masthead">'), '404 用同一张报头');
+  assert.ok(html.includes('<a href="/archive">归档</a>'));
+  assert.ok(!html.includes('class="head"'), '404 不画榜，所以不会有孤立表头');
 });

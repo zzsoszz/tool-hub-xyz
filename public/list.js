@@ -48,6 +48,11 @@ if (!form || !list || !rows.length) {
       row.hidden = !visibleSlugs.has(entry.slug);
       list.append(row);
     }
+    // 重排之后名次跟着位置走，榜号不能还写着服务端那一期的顺序
+    for (const [index, entry] of visible.entries()) {
+      const rank = rowsBySlug.get(entry.slug)?.querySelector('.rank');
+      if (rank) rank.textContent = String(index + 1).padStart(2, '0');
+    }
     if (countNode) countNode.textContent = String(visible.length);
     if (hintNode) hintNode.textContent = sortModes[mode].hint;
     if (visible.length) emptyNote.remove();

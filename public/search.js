@@ -98,7 +98,7 @@
 
   function hitNode(hit, terms, tagLabels) {
     const { item } = hit;
-    const row = el('li', 'story');
+    const row = el('li', 'story is-flat');
     const body = el('div', 'story-body');
     const heading = el('h2', 'story-title');
     const link = el('a', '', item.title ?? item.originalTitle ?? '未命名条目');

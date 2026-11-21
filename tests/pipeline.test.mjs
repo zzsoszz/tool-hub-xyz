@@ -49,7 +49,9 @@ test('buildsMenuSectionItemAndForumPages', async () => {
   run(['src/build.mjs'], { DATA_DIR, DIST_DIR });
   const index = await readDist('index.html');
   assert.match(index, /AI 日报/);
-  assert.match(index, /<nav class="menu">/);
+  assert.match(index, /<div class="rail">/);
+  assert.match(index, /<nav class="columns">/);
+  assert.match(index, /<nav class="issue-rail">/);
   assert.match(index, /href="\/s\/apps"/);
   assert.match(index, /量子位|OpenAI News|TechCrunch AI|arXiv|抡锤者|Hugging Face/);
   assert.match(index, /class="original-link"/);
@@ -62,6 +64,9 @@ test('buildsMenuSectionItemAndForumPages', async () => {
   assert.match(search, /<script src="\/search\.js" defer><\/script>/);
   const about = await readDist('about.html');
   assert.match(about, /关于本站/);
+  const notFound = await readDist('404.html');
+  assert.match(notFound, /这一页不存在/);
+  assert.match(notFound, /<header class="masthead">/);
   const section = await readDist('s/apps.html');
   assert.match(section, /AI 应用/);
   const tags = await readDist('tags.html');
@@ -118,6 +123,10 @@ test('copiesPublicAssetsAndSitemapCoversSections', async () => {
   assert.match(sitemap, /\/item\/[0-9a-f]{12}/);
   const archive = await readDist('archive.html');
   assert.match(archive, /归档/);
+  // 查找型列表必须收得住：一页最多 LIST_PAGE_SIZE 条，剩下的走 /p/N，页面才有真实收尾。
+  assert.ok((archive.match(/<li[^>]* class="story"/g) ?? []).length <= 30, '归档首页一页放得下');
+  const section = await readDist('s/hardware.html');
+  assert.ok((section.match(/<li[^>]* class="story"/g) ?? []).length <= 30, '栏目首页一页放得下');
 });
 
 // 上游正文里留着原文的 markdown 链接和长 URL（400 字符不断行的串线上有 4 处）。
@@ -128,6 +137,22 @@ test('articleBodiesWrapUnbreakableTokens', async () => {
   assert.ok(rule, 'styles.css 里应有 .article 规则');
   assert.match(rule[1], /(word-break|overflow-wrap):\s*(break-word|break-all|anywhere)/, '.article 应折行不可断的长串');
 });
+
+// 摘要里一条 188 字符不断行的 URL 撑破 150px 的榜身栏位，390 宽的归档页被顶到 834px。
+test('storySummariesWrapUnbreakableTokens', async () => {
+  const css = await readDist('styles.css');
+  for (const selector of ['.story-summary', '.story-original', '.cell.src']) {
+    const body = cssRuleBody(css, selector);
+    assert.ok(body, `styles.css 里应有 ${selector} 规则`);
+    assert.match(body, /overflow-wrap: anywhere/, `${selector} 应折行不可断的长串`);
+  }
+});
+
+function cssRuleBody(css, selector) {
+  const start = css.indexOf(`${selector} {`);
+  if (start === -1) return null;
+  return css.slice(start, css.indexOf('}', start));
+}
 
 test('rerunningCollectCarriesOverTheSameDayDigest', () => {
   const first = run(['src/collect.mjs', '--offline', `--out=${DATA_DIR}`, `--now=${FIXED_NOW}`]);

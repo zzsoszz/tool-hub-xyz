@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { archivePeriods, archiveYears, itemsForSection, itemsForSubsection, itemsIndex } from '../../src/lib/items.mjs';
+import { archivePeriods, archiveYears, itemIllustration, itemImage, itemsForSection, itemsForSubsection, itemsIndex, stampIssues } from '../../src/lib/items.mjs';
 
 const base = {
   published: '2026-11-08T00:00:00Z',
@@ -49,4 +49,54 @@ test('itemsIndexCarriesSummaryAndBodyTextForSearch', () => {
   assert.equal(index.a1.originalTitle, 'Local model checklist');
   assert.match(index.a1.summary, /ollama/);
   assert.match(index.a1.text, /量化/);
+});
+
+// 期号轨与「第 N 次上榜」是构建期从已发布日报的序列里算出来的，采集数据里没有这两个字段。
+function period(day, ranks) {
+  return {
+    day,
+    categories: [{
+      id: 'apps',
+      label: 'AI 应用',
+      items: ranks.map(([slug, rank]) => ({ ...base, slug, day, category: 'apps', rank, quality: rank })),
+    }],
+  };
+}
+
+test('stampIssuesNumbersTheOldestDayFirstAndMarksRepeatedItems', () => {
+  const yesterday = period('2026-11-08', [['a1', 20], ['a2', 19]]);
+  const today = period('2026-11-09', [['a2', 20], ['a1', 19]]);
+  assert.equal(stampIssues([today, yesterday]), 2);
+  assert.deepEqual([yesterday.issue, today.issue], [1, 2]);
+  const [first, second] = today.categories[0].items;
+  assert.equal(first.slug, 'a2');
+  assert.deepEqual([first.position, first.issue, first.firstSeenIssue, first.issueCount, first.isNew], [1, 2, 1, 2, false]);
+  const [earliest] = yesterday.categories[0].items;
+  assert.deepEqual([earliest.position, earliest.issue, earliest.issueCount, earliest.isNew], [1, 1, 1, true]);
+});
+
+test('itemIllustrationReportsTheFirstRealImageWithItsAlt', () => {
+  const item = { content: { html: '<p><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/2705.png" alt="✅"></p><p><img src="/images/upload-cover.png" alt="一张评测截图" loading="lazy"></p>' } };
+  assert.deepEqual(itemIllustration(item), { src: '/images/upload-cover.png', alt: '一张评测截图', hasAlt: true });
+  assert.equal(itemImage(item), '/images/upload-cover.png');
+});
+
+test('itemIllustrationFlagsAltThatIsOnlyAFileName', () => {
+  const item = { content: { html: '<img src="https://cdn.test/cover.jpeg" alt="cover.jpeg">' } };
+  assert.deepEqual(itemIllustration(item), { src: 'https://cdn.test/cover.jpeg', alt: 'cover.jpeg', hasAlt: false });
+  assert.equal(itemIllustration({ content: { html: '<img src="https://cdn.test/a.png" alt="">' } }).hasAlt, false);
+});
+
+test('itemIllustrationIgnoresImagesThatAreNotIllustrations', () => {
+  assert.equal(itemIllustration({ content: { html: '<img src="https://lcz.me/assets/avatar/1.png" alt="作者头像">' } }), null);
+  assert.equal(itemImage({ content: { html: '<img src="/uploads/site-logo.svg" alt="站点标志">' } }), null);
+});
+
+test('itemIllustrationArchivedOnlySkipsHotlinkedImages', () => {
+  const item = { content: { html: '<img src="https://lcz.me/uploads/bench.png" alt="跑分截图">' } };
+  assert.deepEqual(itemIllustration(item, { archivedOnly: true }), null);
+  assert.deepEqual(
+    itemIllustration({ content: { html: '<img src="/images/uploads-bench.png" alt="跑分截图">' } }, { archivedOnly: true }),
+    { src: '/images/uploads-bench.png', alt: '跑分截图', hasAlt: true },
+  );
 });

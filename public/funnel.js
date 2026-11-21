@@ -8,6 +8,8 @@
     const nodes = [...document.querySelectorAll('[data-count-to]')];
     if (!nodes.length) return;
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    // 自动化取证（截图、无头渲染）没有动画语境，直接落终值，读数与页面文字永远一致。
+    if (navigator.webdriver) return;
     const steps = nodes.map((node) => ({ node, value: Number(node.dataset.countTo) }));
     if (steps.some((step) => !Number.isFinite(step.value))) return;
 

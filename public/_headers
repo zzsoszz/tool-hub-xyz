@@ -16,6 +16,10 @@
 /listview.mjs
   Content-Type: text/javascript; charset=utf-8
   Cache-Control: public, max-age=0, must-revalidate
+/fonts/archivo-latin.woff2
+  Cache-Control: public, max-age=0, must-revalidate
+/fonts/archivo-latin-ext.woff2
+  Cache-Control: public, max-age=0, must-revalidate
 /day/*
   Cache-Control: public, max-age=300
 /*

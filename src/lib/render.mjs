@@ -1,6 +1,6 @@
-import { timeAgo } from './normalize.mjs';
-import { domainOf, itemImage, itemSlug, rankCompare } from './items.mjs';
-import { monthKey, sortMode, sortModes } from './listview.mjs';
+import { stripHtml, timeAgo } from './normalize.mjs';
+import { domainOf, itemIllustration, itemSlug, rankCompare } from './items.mjs';
+import { monthKey, monthsFor, sortMode, sortModes } from './listview.mjs';
 import { repairArticle } from './content.mjs';
 import { datasetChartItems, formatNumber, formatPrice, readmeUrl } from './bench.mjs';
 
@@ -26,8 +26,50 @@ export function displayTitle(item) {
   return item.zhTitle || item.title;
 }
 
-export function displaySummary(item) {
-  return item.zhSummary || item.summary || '';
+export function displaySummary(item, maxLength = 0) {
+  const text = stripHtml(item.zhSummary || item.summary || '');
+  if (!maxLength || text.length <= maxLength) return text;
+  return clipAtSentence(text, maxLength);
+}
+
+// 列表摘要截短要停在句读上：拦腰断开的句子在榜里读起来像坏数据；窄屏还会被 CSS 再夹一次，
+// 出现两个省略号。整句收在句号上不再补省略号，从句收在逗号上补一个，实在没有句读才截断。
+function clipAtSentence(text, maxLength) {
+  const head = text.slice(0, maxLength);
+  const sentence = Math.max(...[...'\u3002\uff01\uff1f.!?'].map((mark) => head.lastIndexOf(mark)));
+  if (sentence >= Math.floor(maxLength * 0.55)) return head.slice(0, sentence + 1);
+  const clause = Math.max(...[...'\uff0c\u3001,;:\uff1a'].map((mark) => head.lastIndexOf(mark)));
+  if (clause >= Math.floor(maxLength * 0.7)) return `${head.slice(0, clause + 1)}\u2026`;
+  return `${head.trimEnd()}\u2026`;
+}
+
+// 查找型列表（栏目 / 子类 / 标签 / 归档）一页 30 条：窄屏也看得到这一页的收尾，
+// 剩下的条目走 /p/N，翻页链接对读者和爬虫都成立。
+export const LIST_PAGE_SIZE = 30;
+// 列表层的摘要只用来扫读（窄屏 6 行左右），全文在条目页里给。
+// 窄屏把摘要夹到三行（public/styles.css 的 .story-summary），所以这里的长度只决定
+// 宽屏那一侧最多写多少字。
+export const LOOKUP_SUMMARY_CHARS = 110;
+export const ARCHIVE_SUMMARY_CHARS = 96;
+
+export function paginateItems(items, pageNumber = 1, pageSize = LIST_PAGE_SIZE) {
+  const pageCount = Math.max(1, Math.ceil(items.length / pageSize));
+  const current = Math.min(Math.max(1, Number(pageNumber) || 1), pageCount);
+  return { entries: items.slice((current - 1) * pageSize, current * pageSize), pageCount, pageNumber: current };
+}
+
+export function pageHref(base, target) {
+  const root = String(base).replace(/\/p\/\d+$/, '');
+  return Number(target) === 1 ? root : `${root}/p/${Number(target)}`;
+}
+
+export function pagerNav({ pageCount, pageNumber, pageSize, path }) {
+  if (pageCount <= 1) return '';
+  const prev = pageNumber > 1 ? `    <a class="pager-prev" href="${escapeHtml(pageHref(path, pageNumber - 1))}">上一页</a>\n` : '';
+  const next = pageNumber < pageCount ? `    <a class="pager-next" href="${escapeHtml(pageHref(path, pageNumber + 1))}">下一页</a>\n` : '';
+  return `  <nav class="pager">
+${prev}    <span class="pager-note">第 ${pageNumber} 页 / 共 ${pageCount} 页，每页 ${pageSize} 条</span>
+${next}  </nav>`;
 }
 
 function metricsLabel(item) {
@@ -49,7 +91,8 @@ export function menuFor(sections, activeId) {
   return `  <nav class="menu">${links.join('')}</nav>`;
 }
 
-function page({ title, description, canonical, siteUrl, repoUrl = 'https://github.com/zzsoszz/tool-hub-xyz', menu = '', body, scripts = [] }) {
+// 全站一套骨白纸面：只有报头那条带是墨底，期号页与阅读页在这点上没有分别。
+function page({ title, description, canonical, siteUrl, repoUrl = 'https://github.com/zzsoszz/tool-hub-xyz', menu = '', body, scripts = [], masthead = '' }) {
   const tags = [...scripts, '/lightbox.js', '/search.js', { src: '/admin.js', type: 'module' }].map((entry) => {
     const { src, type } = typeof entry === 'string' ? { src: entry } : entry;
     return `<script${type ? ` type="${escapeHtml(type)}"` : ''} src="${escapeHtml(src)}" defer></script>`;
@@ -69,7 +112,7 @@ function page({ title, description, canonical, siteUrl, repoUrl = 'https://githu
 <body>
 <header class="masthead">
   <a class="wordmark" href="/"><span>AI 折腾日报</span><span class="domain">tool-hub.xyz</span></a>
-  <p class="masthead-note">每天 06:30 与 18:30 更新<a href="/about">关于本站</a><a href="/search">搜索全部文章</a></p>
+${masthead || '  <p class="masthead-note">每天 06:30 与 18:30 更新<a href="/about">关于与口径</a><a href="/search">搜索全部文章</a></p>'}
 </header>
 ${menu}
 <main>
@@ -104,10 +147,10 @@ function metersFor(item) {
   const practical = Math.min(Number(item.practical ?? 0), PRACTICAL_MAX);
   const parts = [];
   if (depth >= DEPTH_GATE) {
-    parts.push(`<span class="meter depth" title="内容质量 ${depth} / ${DEPTH_MAX}，闸门 ${DEPTH_GATE}"><b>${depth}</b><span class="track" style="--fill:${depth};--max:${DEPTH_MAX};--gate-at:${DEPTH_GATE}"><i></i></span></span>`);
+    parts.push(`<span class="meter depth" title="内容质量 ${depth} / ${DEPTH_MAX}，闸门 ${DEPTH_GATE}"><b>${depth}</b><em>/${DEPTH_MAX}</em><span class="track" style="--fill:${depth};--max:${DEPTH_MAX};--gate-at:${DEPTH_GATE}"><i></i></span></span>`);
   }
   if (practical >= PRACTICAL_GATE) {
-    parts.push(`<span class="meter practical" title="实用度 ${practical} / ${PRACTICAL_MAX}"><b>${practical}</b><span class="track" style="--fill:${practical};--max:${PRACTICAL_MAX};--gate-at:${PRACTICAL_GATE}"><i></i></span></span>`);
+    parts.push(`<span class="meter practical" title="实用度 ${practical} / ${PRACTICAL_MAX}"><b>${practical}</b><em>/${PRACTICAL_MAX}</em><span class="track" style="--fill:${practical};--max:${PRACTICAL_MAX};--gate-at:${PRACTICAL_GATE}"><i></i></span></span>`);
   }
   return parts.length ? `<span class="meters">${parts.join('')}</span>` : '';
 }
@@ -120,7 +163,7 @@ function subChip(item) {
 
 function storyTagsFor(item) {
   const chips = `${subChip(item)}${tagChips(item, { limit: 3, labels: item.tagLabels })}`;
-  return chips ? `<p class="story-tags">${chips}</p>` : '';
+  return chips ? `<span class="story-tags">${chips}</span>` : '';
 }
 
 // 宽表格在小屏上横向滚动，避免把正文挤成一列。
@@ -165,7 +208,7 @@ export function nestArticleHeadings(html) {
 }
 
 // 年月筛选与排序在浏览器里完成：控件状态写进 URL，链接可直接分享，静态站不必为每种组合各生成一页。
-export function listControls({ months = [], month = '', year = '', sort = 'quality' } = {}) {
+export function listControls({ months = [], month = '', year = '', sort = 'quality', paginated = false, periodEntry = false } = {}) {
   const years = [...new Set(months.map((entry) => entry.year))];
   const monthField = months.length
     ? `      <label class="filter-field"><span>月份</span>
@@ -193,44 +236,85 @@ ${Object.entries(sortModes).map(([key, meta]) => `          <option value="${key
       </label>`;
   return `  <form class="filters" method="get">
 ${[yearField, monthField, sortField].filter(Boolean).join('\n')}
-    <p class="filter-note"><span data-filter-count>0</span> 条 · <span data-sort-hint>${escapeHtml(sortModes[mode].hint)}</span></p>
+    <p class="filter-note">${paginated ? '本页 ' : ''}<span data-filter-count>0</span> 条 · <span data-sort-hint>${escapeHtml(sortModes[mode].hint)}</span>${paginated ? (periodEntry ? '；月份与排序只作用于本页，整月条目走上面的年 / 月入口。' : '；月份与排序只作用于这一页的条目。') : ''}</p>
   </form>`;
 }
 
-export function storyRow(item, { rank, showDay = false }) {
+function rankLabel(rank) {
+  return String(Number(rank) || 0).padStart(2, '0');
+}
+
+// 栏目名取自日报自己的分组标签，榜上每一行都能看出这条归在哪个栏目。
+function categoryLabelsFor(sections) {
+  const labels = new Map();
+  for (const section of sections ?? []) {
+    for (const category of section.categories ?? []) {
+      if (!labels.has(category)) labels.set(category, section.navLabel ?? section.label);
+    }
+  }
+  return labels;
+}
+
+// 同一篇内容第二次上榜就标「第 N 次」，读者能看出它是延续还是今天新收的。
+function markFor(item) {
+  const count = Number(item.issueCount ?? 0);
+  if (count > 1) return `<span class="origin is-carried">第 ${count} 次上榜</span>`;
+  if (count === 1) return '<span class="origin">新收</span>';
+  return '';
+}
+
+function whenCell(item, showDay) {
+  const stamp = String(item.published ?? '');
+  const day = /^\d{4}-\d{2}-\d{2}/.test(stamp) ? stamp.slice(5, 10) : String(item.day ?? '');
+  const when = item.published
+    ? `<time datetime="${escapeHtml(stamp)}">${escapeHtml(day)}</time>`
+    : `<span>${escapeHtml(day)}</span>`;
+  const issue = showDay && item.issue ? `<em>期 ${escapeHtml(String(item.issue))}</em>` : '';
+  return `<span class="cell when">${when}${issue}</span>`;
+}
+
+// 列表配图：正文里确实有一张像样的图才开这个位置，没有图就不留空位。
+// 上游 alt 只是文件名时退回标题，这样读屏和放大浮层都说得出这张图是什么。
+function storyThumb(item) {
+  const image = itemIllustration(item, { archivedOnly: true });
+  if (!image) return '';
+  const alt = image.hasAlt ? image.alt : displayTitle(item);
+  return `        <figure class="story-thumb"><img src="${escapeHtml(image.src)}" alt="${escapeHtml(alt)}" loading="lazy"></figure>\n`;
+}
+
+export function storyRow(item, { rank, showDay = false, summary = false, summaryChars = 0, sections = [], anchor = false, thumb = false } = {}) {
   const title = displayTitle(item);
   const original = item.zhTitle && item.zhTitle !== item.title ? item.title : '';
-  const summary = displaySummary(item);
-  const published = item.published ? new Date(item.published) : null;
+  const summaryText = displaySummary(item, summaryChars);
   const metrics = metricsLabel(item);
-  const rankCell = rank ? `<span class="rank">${rank}</span>` : '';
-  const dayChip = showDay ? `<span class="chip day">${escapeHtml(item.day ?? '')}</span>` : '';
-  const image = itemImage(item);
-  const thumb = image ? `<a class="story-thumb-link" href="/item/${escapeHtml(item.slug)}" tabindex="-1" aria-hidden="true"><img class="story-thumb" src="${escapeHtml(image)}" alt="" loading="lazy"></a>` : '';
-  return `    <li class="story${item.lead ? ' is-lead' : ''}" data-slug="${escapeHtml(item.slug)}" data-month="${escapeHtml(monthKey(item))}" data-rank="${escapeHtml(String(Number(item.rank ?? 0)))}" data-quality="${escapeHtml(String(Number(item.quality ?? 0)))}" data-score="${escapeHtml(String(Number(item.score ?? 0)))}" data-published="${escapeHtml(item.published ?? item.day ?? '')}">
-${rankCell}${thumb}      <div class="story-body">
+  const rankCell = rank ? `<span class="rank">${rankLabel(rank)}</span>` : '';
+  const category = categoryLabelsFor(sections).get(item.category) ?? item.category ?? '';
+  return `    <li${anchor ? ' id="rank-1"' : ''} class="story" data-slug="${escapeHtml(item.slug)}" data-month="${escapeHtml(monthKey(item))}" data-rank="${escapeHtml(String(Number(item.rank ?? 0)))}" data-quality="${escapeHtml(String(Number(item.quality ?? 0)))}" data-score="${escapeHtml(String(Number(item.score ?? 0)))}" data-published="${escapeHtml(item.published ?? item.day ?? '')}">
+${rankCell}      <div class="story-body">
         <h2 class="story-title"><a href="/item/${escapeHtml(item.slug)}">${escapeHtml(title)}</a></h2>
-        ${storyTagsFor(item)}
         ${original ? `<p class="story-original">${escapeHtml(original)}</p>` : ''}
-        ${summary ? `<p class="story-summary">${escapeHtml(summary)}</p>` : ''}
+        ${summary && summaryText ? `<p class="story-summary">${escapeHtml(summaryText)}</p>` : ''}
         <p class="subtext">
+          ${markFor(item)}
           <button class="vote" type="button" data-vote="${escapeHtml(item.slug)}" title="顶一下">顶</button>
           <span class="score" data-score>0</span>
-          <span class="source">${escapeHtml(item.sourceName)}</span>${dayChip}
-          ${published ? `<time datetime="${escapeHtml(item.published)}">${escapeHtml(timeAgo(published, new Date()))}</time>` : '<time>时间未知</time>'}
           <a class="discuss-link" href="/item/${escapeHtml(item.slug)}#comments"><span data-count>评论</span></a>
           <a class="original-link" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">原文</a>
+          ${storyTagsFor(item)}
           ${metrics ? `<span class="metrics">${escapeHtml(metrics)}</span>` : ''}
-          ${metersFor(item)}
         </p>
-      </div>
+${thumb ? storyThumb(item) : ''}      </div>
+      <span class="cell cat">${escapeHtml(category)}</span>
+      <span class="cell src">${escapeHtml(item.sourceName ?? '')}</span>
+      <span class="cell measure">${metersFor(item)}</span>
+${whenCell(item, showDay)}
     </li>`;
 }
 
-export function storyList(items, { showDay = false, lead = false, tagLabels = {} } = {}) {
+export function storyList(items, { showDay = false, summary = false, summaryChars = 0, tagLabels = {}, sections = [], thumb = false } = {}) {
   const rows = items.map((item, index) => storyRow(
-    { ...item, lead: lead && index === 0, tagLabels },
-    { rank: index + 1, showDay },
+    { ...item, tagLabels },
+    { rank: index + 1, showDay, summary, summaryChars, sections, anchor: index === 0, thumb },
   ));
   return `  <ol class="stories">
 ${rows.join('\n')}
@@ -259,64 +343,168 @@ function gateHero(digest) {
   const counts = digest.counts ?? {};
   const failed = (digest.sources ?? []).filter((source) => !source.ok);
   const clock = localClock(digest.generatedAt, digest.timezone);
-  const dropped = [];
-  if (Number(counts.duplicates ?? 0)) dropped.push(`${groupDigits(counts.duplicates)} 条重复`);
-  if (Number(counts.lowQuality ?? 0)) dropped.push(`${groupDigits(counts.lowQuality)} 条没过质量闸门`);
-  const note = [
-    `${counts.okSources ?? 0} 个信息源共抓到 ${groupDigits(counts.fetched)} 条，去掉${dropped.length ? ` ${dropped.join('、')}` : '掉重复的'}，留下 ${groupDigits(counts.published)} 条。`,
-    `本期为${clock.shift}，${clock.clock} 生成。`,
-    failed.length ? `<span class="failed">${failed.length} 个源本次抓取失败</span>，缺的内容沿用上一版。` : '',
-  ].filter(Boolean).join(' ');
+  const cells = [
+    { value: counts.fetched, label: '抓到', countTo: true },
+    { value: counts.duplicates, label: '重复' },
+    { value: counts.lowQuality, label: '闸门挡掉' },
+    { value: counts.carried, label: '延续' },
+    { value: counts.added, label: '新收' },
+    { value: counts.published, label: '本期上榜', countTo: true, out: true },
+  ];
+  const ledger = cells
+    .filter((cell) => cell.out || Number(cell.value ?? 0) > 0)
+    .map((cell) => {
+      const countTo = cell.countTo ? ` data-count-to="${escapeHtml(String(Number(cell.value ?? 0)))}"` : '';
+  return `        <div class="ledger-cell${cell.out ? ' is-out' : ''}"><b${countTo}>${groupDigits(cell.value)}</b><span>${escapeHtml(cell.label)}</span></div>`;
+    })
+    .join('\n');
+  // 数字只写在 .ledger 里一次；账条下面只剩一行散文，写班次、生成时刻与逐源成败，不再另起一段。
+  const shift = `本期为${escapeHtml(clock.shift)}，${escapeHtml(clock.clock)} 生成。`;
+  const sources = failed.length
+    ? `<span class="failed">${failed.length} 个源本次抓取失败</span>：${failed.map((source) => `<span class="fail">${escapeHtml(source.name)} ${escapeHtml(source.error ?? '')}</span>`).join(' ')}。缺的内容沿用上一版，逐源成败写在归档里。`
+    : '全部在册源都抓到了内容。';
   return `  <section class="gate">
-    <h1 class="gate-date"><time datetime="${escapeHtml(digest.day)}">${escapeHtml(zhLabel(digest))}</time><span class="shift">${escapeHtml(clock.shift)}</span></h1>
-    <p class="gate-flow">
-      <span class="gate-step"><b data-count-to="${escapeHtml(String(counts.fetched ?? 0))}">${groupDigits(counts.fetched)}</b><span>抓下来</span></span>
-      <span class="gate-arrow" aria-hidden="true">&rarr;</span>
-      <span class="gate-step is-out"><b data-count-to="${escapeHtml(String(counts.published ?? 0))}">${groupDigits(counts.published)}</b><span>今天入选</span></span>
-    </p>
-    <p class="gate-note">${note}</p>
-    <p class="gate-why">排序看内容质量，不看热度：<strong>有实测数据、有对比或原理解释、能照着做</strong>的排前面。标题已译成中文，事实请回<strong>原文</strong>核对。</p>
+    <div class="ledger">
+${ledger}
+    </div>
+    <p class="gate-account">${shift}${sources}</p>
   </section>`;
 }
 
-function digestBody(digest, { days, limit = 0, tagLabels = {} }) {
+// 同源连发不合并：连续三条以上来自同一个源，就在榜尾说明为什么名次被同一家占掉。
+function boardFootnote(items) {
+  let best = null;
+  let index = 0;
+  while (index < items.length) {
+    let end = index;
+    while (end + 1 < items.length && items[end + 1].sourceName === items[index].sourceName) end += 1;
+    const length = end - index + 1;
+    if (length >= 3 && (!best || length > best.length)) {
+      best = { from: index + 1, to: end + 1, length, source: items[index].sourceName ?? '' };
+    }
+    index = end + 1;
+  }
+  if (!best) return '';
+  return `<p class="board-note">第 ${rankLabel(best.from)}–${rankLabel(best.to)} 名来自 ${escapeHtml(best.source)} 的连续发布：同源连发不合并，各自占一个名次。</p>`;
+}
+
+// 榜的时间性：名次每天重排，页面只写当下的排序结果读不出变化，所以榜尾补一行本期有多少条是第一次上榜。
+// 两个数字都来自 src/lib/items.mjs 的 isNew / issueCount，模板不自己算名次。
+// 标记不写在行上：19 期里每一条的 isNew 都是 true（条目一天进出、不跨期驻留），每行都挂标记等于没写。
+function boardFreshNote(items) {
+  const fresh = items.filter((entry) => entry.isNew).length;
+  if (!fresh || !items.length) return '';
+  const longest = items.reduce((best, entry) => Math.max(best, Number(entry.issueCount ?? 1)), 0);
+  const tenure = longest >= 2 ? `，最长的一条已经连续在榜 ${longest} 天` : '';
+  const lead = fresh === items.length
+    ? `这一期的 ${items.length} 条名次全部是第一次上榜`
+    : `这一期的名次里有 ${fresh} 条是第一次上榜`;
+  return `<p class="board-note">${lead}${tenure}。</p>\n`;
+}
+
+function railFor({ sections = [], digest, digests = [], items = [], activeId }) {
+  const columns = (sections ?? [])
+    .filter((section) => section.id !== 'discuss' && section.id !== 'archive' && section.id !== 'tags')
+    .map((section) => {
+      const categories = section.categories ?? [];
+      const facets = section.tags ?? [];
+      const count = section.id === 'latest'
+        ? items.length
+        : items.filter((item) => categories.includes(item.category) || facets.some((tag) => (item.tags ?? []).includes(tag))).length;
+      const href = section.href ?? `/s/${section.id}`;
+      const active = section.id === activeId ? ' class="active"' : '';
+      return `        <span class="column-item${count ? '' : ' is-empty'}"><a${active} href="${escapeHtml(href)}">${escapeHtml(section.navLabel ?? section.label)}</a><em>${count}</em></span>`;
+    });
+  const empty = (sections ?? [])
+    .filter((section) => section.id !== 'latest' && section.id !== 'discuss' && section.id !== 'archive' && section.id !== 'tags')
+    .filter((section) => !items.some((item) => (section.categories ?? []).includes(item.category) || (section.tags ?? []).some((tag) => (item.tags ?? []).includes(tag))))
+    .map((section) => section.label);
+  const issues = (digests.length ? digests : [digest]).slice(0, 8).map((entry) => {
+    const isCurrent = entry.day === digest.day;
+    const href = isCurrent && entry.day === digests[0]?.day ? '/' : `/day/${escapeHtml(entry.day)}`;
+    const active = isCurrent ? ' class="active"' : '';
+    return `        <a${active} href="${href}"><span>第 ${entry.issue ?? 0} 期</span><time datetime="${escapeHtml(entry.day)}">${escapeHtml(entry.day.slice(5))}</time><em>${entry.counts?.published ?? 0} 条</em></a>`;
+  });
+  return `    <div class="rail">
+      <h2>栏目</h2>
+      <nav class="columns">
+${columns.join('\n')}
+      </nav>
+${empty.length ? `      <p class="rail-note">${empty.map((label) => escapeHtml(label)).join('、')}本期没有新内容。</p>\n` : ''}      <p class="rail-note"><a href="/markdown/${escapeHtml(digest.day)}.md">下载本期 Markdown</a>（含标题、摘要与正文摘录）</p>
+      <h2>期号</h2>
+      <nav class="issue-rail">
+${issues.join('\n')}
+      </nav>
+      <h2>其他入口</h2>
+      <nav class="rail-links">
+        <a href="/archive">归档与落选账</a>
+        <a href="/discuss">讨论区</a>
+        <a href="/search">搜索全部文章</a>
+        <a href="/tags">标签</a>
+        <a href="/about">关于与口径</a>
+      </nav>
+    </div>`;
+}
+
+function digestBody(digest, { sections, digests, activeId, limit = 0, tagLabels = {}, actionWeight = 1.6 }) {
   const items = (digest.categories ?? []).flatMap((group) => group.items.map((entry) => ({ ...entry, day: digest.day })));
   items.sort(rankCompare);
   const shown = limit > 0 ? items.slice(0, limit) : items;
   const more = shown.length < items.length
-    ? `  <p class="lede-more">首页只留质量最高的 ${shown.length} 条，<a href="/day/${escapeHtml(digest.day)}">查看全部 ${items.length} 条</a></p>\n`
+    ? `      <p class="lede-more">这一页只留本期名次前十，<a href="/day/${escapeHtml(digest.day)}">查看全部 ${items.length} 条</a></p>\n`
     : '';
+  const footnote = boardFootnote(shown);
   return `${gateHero(digest)}
-${storyList(shown, { showDay: false, lead: true, tagLabels })}
-${more}  <section class="daynav">
-    <h2>按日期</h2>
-    <nav class="day-chips">${days.map((day) => `<a href="/day/${escapeHtml(day)}" class="${day === digest.day ? 'active' : ''}">${escapeHtml(day)}</a>`).join('')}</nav>
-    <p class="daynav-note"><a href="/markdown/${escapeHtml(digest.day)}.md">下载当日 Markdown</a>（${escapeHtml(digest.day)}.md，含标题、摘要与正文摘录）</p>
-  </section>`;
+  <div class="roll">
+${railFor({ sections, digest, digests, items, activeId })}
+    <section class="board">
+      <h2>本期名次</h2>
+      <p class="board-thesis">名次 = 质量分 + 可行动度 × ${actionWeight}，闸门判定不是热度：门槛 ${DEPTH_GATE}/${DEPTH_MAX} 与 ${PRACTICAL_GATE}/${PRACTICAL_MAX}，口径写在<a href="/about">关于本页</a>。</p>
+      <div class="head">
+        <span>名次</span><span>标题</span><span>栏目</span><span>来源</span><span>深度与实用</span><span>发布</span>
+      </div>
+${storyList(shown, { showDay: false, summary: false, tagLabels, sections, thumb: true })}
+${boardFreshNote(shown)}${footnote ? `${footnote}\n` : ''}${more}    </section>
+  </div>`;
 }
 
-export function renderDigestPage(digest, { sections = [], days = [], siteUrl = '', repoUrl, sectionId = 'latest', limit = 0, tagLabels = {} } = {}) {
+function mastheadFor(digest) {
+  const clock = localClock(digest.generatedAt, digest.timezone);
+  const total = digest.sources?.length ?? 0;
+  const ok = (digest.sources ?? []).filter((source) => source.ok).length;
+  const meta = [
+    `${escapeHtml(zhLabel(digest))} · ${escapeHtml(clock.shift)} ${escapeHtml(clock.clock)} 生成`,
+    digest.windowHours ? `窗口 ${escapeHtml(String(digest.windowHours))} 小时，${total} 个源里 ${ok} 个抓到内容` : '',
+  ].filter(Boolean);
+  return `  <h1 class="issue"><span class="issue-no">第 ${digest.issue ?? 0} 期</span><span class="issue-meta">${meta.join('<br>')}</span></h1>`;
+}
+
+export function renderDigestPage(digest, { sections = [], days = [], digests = [], siteUrl = '', repoUrl, sectionId = 'latest', limit = 0, tagLabels = {}, actionWeight = 1.6 } = {}) {
   return page({
     title: `${zhLabel(digest)} AI 日报 · tool-hub.xyz`,
     description: `${zhLabel(digest)} AI 前沿资讯，共 ${digest.counts?.published ?? 0} 条，已翻译成中文并附原文链接。`,
     canonical: digest.day === days[0] ? `${siteUrl}/` : `${siteUrl}/day/${digest.day}`,
     siteUrl,
     repoUrl,
-    menu: menuFor(sections, sectionId),
-    body: digestBody(digest, { days, limit, tagLabels }),
-    scripts: ['/forum.js', '/funnel.js'],
+    masthead: mastheadFor(digest),
+    body: digestBody(digest, { sections, digests, activeId: sectionId, limit, tagLabels, actionWeight }),
+    scripts: ['/forum.js', '/funnel.js', '/thumbs.js'],
   });
 }
 
-export function renderSectionPage({ section, items, days, siteUrl, repoUrl, sections, lookbackDays, tagLabels = {}, months = [], month = '', year = '', sort = 'quality' }) {
+export function renderSectionPage({ section, items, days, siteUrl, repoUrl, sections, lookbackDays, tagLabels = {}, month = '', year = '', sort = 'quality', pageNumber = 1, pageSize = LIST_PAGE_SIZE, path = '' }) {
   const subnav = section.subsections ?? [];
+  const basePath = path || `/s/${section.id}`;
+  const { entries, pageCount, pageNumber: currentPage } = paginateItems(items, pageNumber, pageSize);
+  const pager = pagerNav({ pageCount, pageNumber: currentPage, pageSize, path: basePath });
   const body = `  <section class="lede">
     <h1>${escapeHtml(section.label)}</h1>
-    <p class="lede-meta">最近 ${lookbackDays} 天，共 ${items.length} 条</p>
+    <p class="lede-meta">最近 ${lookbackDays} 天，共 ${items.length} 条${pageCount > 1 ? `，本页第 ${currentPage} / ${pageCount} 页` : ''}</p>
     ${subnav.length ? `<nav class="subnav">${subnav.map((sub) => `<a href="/s/${escapeHtml(section.id)}/${escapeHtml(sub.id)}">${escapeHtml(sub.label)}<span>${sub.count}</span></a>`).join('')}</nav>` : ''}
   </section>
-${listControls({ months, month, year, sort })}
-${items.length ? storyList(items, { showDay: true, lead: true, tagLabels }) : '  <p class="empty">这一栏最近没有新内容，换个栏目看看。</p>'}
+${listControls({ months: monthsFor(entries), month, year, sort, paginated: pageCount > 1 })}
+${entries.length ? storyList(entries, { showDay: true, summary: true, summaryChars: LOOKUP_SUMMARY_CHARS, tagLabels, sections, thumb: true }) : '  <p class="empty">这一栏最近没有新内容，换个栏目看看。</p>'}
+${pager}${pager ? '\n' : ''}
   <section class="daynav">
     <h2>按日期</h2>
     <nav class="day-chips">${days.map((day) => `<a href="/day/${escapeHtml(day)}">${escapeHtml(day)}</a>`).join('')}</nav>
@@ -324,34 +512,38 @@ ${items.length ? storyList(items, { showDay: true, lead: true, tagLabels }) : ' 
   return page({
     title: `${section.label} · tool-hub.xyz`,
     description: `${section.label}：面向普通用户与自由职业者的 AI 资讯。`,
-    canonical: `${siteUrl}/s/${section.id}`,
+    canonical: `${siteUrl}${basePath}`,
     siteUrl,
     repoUrl,
     menu: menuFor(sections, section.id),
     body,
-    scripts: ['/forum.js', { src: '/list.js', type: 'module' }],
+    scripts: ['/forum.js', '/thumbs.js', { src: '/list.js', type: 'module' }],
   });
 }
 
-export function renderSubsectionPage({ section, sub, items, days, siteUrl, repoUrl, sections, lookbackDays, tagLabels = {}, months = [], month = '', year = '', sort = 'quality' }) {
+export function renderSubsectionPage({ section, sub, items, days, siteUrl, repoUrl, sections, lookbackDays, tagLabels = {}, month = '', year = '', sort = 'quality', pageNumber = 1, pageSize = LIST_PAGE_SIZE, path = '' }) {
   const subnav = section.subsections ?? [];
   const heading = `${section.label} · ${sub.label}`;
+  const basePath = path || `/s/${section.id}/${sub.id}`;
+  const { entries, pageCount, pageNumber: currentPage } = paginateItems(items, pageNumber, pageSize);
+  const pager = pagerNav({ pageCount, pageNumber: currentPage, pageSize, path: basePath });
   const body = `  <section class="lede">
     <h1><a href="/s/${escapeHtml(section.id)}">${escapeHtml(section.label)}</a> · ${escapeHtml(sub.label)}</h1>
-    <p class="lede-meta">最近 ${lookbackDays} 天，共 ${items.length} 条</p>
+    <p class="lede-meta">最近 ${lookbackDays} 天，共 ${items.length} 条${pageCount > 1 ? `，本页第 ${currentPage} / ${pageCount} 页` : ''}</p>
     ${subnav.length ? `<nav class="subnav">${subnav.map((entry) => `<a${entry.id === sub.id ? ' class="active"' : ''} href="/s/${escapeHtml(section.id)}/${escapeHtml(entry.id)}">${escapeHtml(entry.label)}<span>${entry.count}</span></a>`).join('')}</nav>` : ''}
   </section>
-${listControls({ months, month, year, sort })}
-${items.length ? storyList(items, { showDay: true, lead: true, tagLabels }) : '  <p class="empty">这个子类最近没有新内容。</p>'}`;
+${listControls({ months: monthsFor(entries), month, year, sort, paginated: pageCount > 1 })}
+${entries.length ? storyList(entries, { showDay: true, summary: true, summaryChars: LOOKUP_SUMMARY_CHARS, tagLabels, sections, thumb: true }) : '  <p class="empty">这个子类最近没有新内容。</p>'}
+${pager}${pager ? '\n' : ''}`;
   return page({
     title: `${heading} · tool-hub.xyz`,
     description: `${heading}：${section.label}里的细分内容。`,
-    canonical: `${siteUrl}/s/${section.id}/${sub.id}`,
+    canonical: `${siteUrl}${basePath}`,
     siteUrl,
     repoUrl,
     menu: menuFor(sections, section.id),
     body,
-    scripts: ['/forum.js', { src: '/list.js', type: 'module' }],
+    scripts: ['/forum.js', '/thumbs.js', { src: '/list.js', type: 'module' }],
   });
 }
 
@@ -366,6 +558,10 @@ export function renderItemPage({ item, siteUrl, repoUrl, sections, related = [],
     ? item.content.truncated
       ? `原文约 ${item.content.chars} 字，这里保留前 ${item.content.shown} 字，完整表格与数据请`
       : `原文约 ${item.content.chars} 字，`
+    : '';
+  const category = categoryLabelsFor(sections).get(item.category) ?? item.category ?? '';
+  const rankLine = item.position
+    ? `    <p class="item-rank"><span class="rank">${rankLabel(item.position)}</span><span>第 ${item.issue ?? 0} 期第 ${rankLabel(item.position)} 名，栏目 ${escapeHtml(category)}，${Number(item.issueCount ?? 0) > 1 ? `第 ${item.issueCount} 次上榜` : '首次上榜'}。</span></p>`
     : '';
   const article = item.content?.html
     ? `      <section class="item-body">
@@ -383,6 +579,7 @@ export function renderItemPage({ item, siteUrl, repoUrl, sections, related = [],
     : '';
   const body = `  <article class="item">
     <h1>${escapeHtml(title)}</h1>
+${rankLine}
     ${original ? `<p class="item-original">${escapeHtml(original)}</p>` : ''}
     <p class="subtext">
       <button class="vote" type="button" data-vote="${escapeHtml(item.slug)}" title="顶一下">顶</button>
@@ -506,43 +703,65 @@ ${sourceRows}
   });
 }
 
-export function renderArchive({ digests, days, siteUrl, repoUrl, sections, yearChips = [], monthChips = [], current = null, tagLabels = {}, months = [], month = '', year = '', sort = 'quality' }) {
-  const rows = digests.map((digest) => `      <li><a href="/day/${escapeHtml(digest.day)}">${escapeHtml(digest.day)}</a><span>${digest.counts?.published ?? 0} 条</span><a class="md-link" href="/markdown/${escapeHtml(digest.day)}.md">Markdown</a></li>`);
+// 404 也长这张脸：栏目、期号、条目编号都是上一版日报里的地址，写错或下架就落到这里，
+// 所以给它报头、菜单和页脚，把回去的路写清楚，而不是一行裸文本。
+export function renderNotFoundPage({ siteUrl, repoUrl, sections }) {
+  const body = `  <section class="lede">
+    <h1>这一页不存在</h1>
+    <p class="lede-meta">栏目、期号和条目编号都来自上一版日报，地址写错或内容下架时会落到这里。</p>
+  </section>
+  <p class="lede-hint">回到<a href="/">今日日报</a>看本期名次，从<a href="/archive">归档</a>按日期翻，或者<a href="/search">搜索全部文章</a>。</p>`;
+  return page({
+    title: '页面不存在 · tool-hub.xyz',
+    description: '这一页不存在：回到今日日报、归档或搜索。',
+    canonical: `${siteUrl}/404`,
+    siteUrl,
+    repoUrl,
+    menu: menuFor(sections, null),
+    body,
+  });
+}
+
+export function renderArchive({ digests, days, siteUrl, repoUrl, sections, yearChips = [], monthChips = [], current = null, tagLabels = {}, month = '', year = '', sort = 'quality', pageNumber = 1, pageSize = LIST_PAGE_SIZE, path = '/archive' }) {
+  const rows = digests.map((digest) => {
+    const counts = digest.counts ?? {};
+    const account = `${counts.sources ?? 0} 个源里 ${counts.okSources ?? 0} 个抓到内容，共 ${groupDigits(counts.fetched)} 条，闸门挡掉 ${groupDigits(counts.lowQuality)} 条`;
+    return `      <li><span class="issue-no">第 ${digest.issue ?? 0} 期</span><a href="/day/${escapeHtml(digest.day)}">${escapeHtml(digest.day)}</a><span class="issue-count">${counts.published ?? 0} 条</span><span class="issue-account">${account}。</span><a class="md-link" href="/markdown/${escapeHtml(digest.day)}.md">Markdown</a></li>`;
+  });
   const chipLinks = (list) => list.map((chip) => `<a${chip.active ? ' class="active"' : ''} href="${escapeHtml(chip.href)}">${escapeHtml(chip.label)}<span>${chip.count}</span></a>`).join('');
   const total = monthChips.reduce((sum, chip) => sum + chip.count, 0);
-  const listing = current?.items?.length
+  const { entries, pageCount, pageNumber: currentPage } = paginateItems(current?.items ?? [], pageNumber, pageSize);
+  const listing = entries.length
     ? `  <section class="category">
-    <h2>${escapeHtml(current.label)}：<span class="sort-note">按质量评分从高到低</span></h2>
-${storyList(current.items, { showDay: true, tagLabels })}
+    <h2>${escapeHtml(current.label)}${pageCount > 1 ? ` <span class="sort-note">第 ${currentPage} / ${pageCount} 页</span>` : ''}</h2>
+${storyList(entries, { showDay: true, summary: true, summaryChars: ARCHIVE_SUMMARY_CHARS, tagLabels, sections, thumb: true })}
   </section>`
     : '  <p class="empty">这段时间还没有条目。</p>';
+  const pager = pagerNav({ pageCount, pageNumber: currentPage, pageSize, path });
   const body = `  <section class="lede">
     <h1>归档</h1>
-    <p class="lede-meta">共 ${days.length} 天、${total} 条条目；选定年月后按质量评分排序</p>
-    ${yearChips.length ? `<nav class="subnav">${chipLinks(yearChips)}</nav>` : ''}
-    ${monthChips.length ? `<nav class="subnav">${chipLinks(monthChips)}</nav>` : ''}
+    <p class="lede-meta">共 ${days.length} 期、${total} 条条目；年月入口是整月页面，排序只作用于本页</p>
+    ${yearChips.length || monthChips.length ? `<nav class="subnav">${chipLinks(yearChips)}${chipLinks(monthChips)}</nav>` : ''}
   </section>
-${listControls({ months, month, year, sort })}
+${listControls({ months: monthsFor(entries), month, year, sort, paginated: pageCount > 1, periodEntry: monthChips.length > 0 || yearChips.length > 0 })}
 ${listing}
-  <section class="daynav">
-    <h2>按日期</h2>
-    <nav class="day-chips">${days.map((day) => `<a href="/day/${escapeHtml(day)}">${escapeHtml(day)}</a>`).join('')}</nav>
-    <p class="daynav-note"><a href="/llms.txt">全站索引 llms.txt</a> · 每天一份 Markdown 在 <code>/markdown/日期.md</code></p>
-  </section>
+${pager}${pager ? '\n' : ''}
   <section class="category">
+    <h2>期号</h2>
     <ul class="archive">
 ${rows.join('\n')}
     </ul>
+    <p class="daynav-note">每期一份 Markdown 在 <code>/markdown/日期.md</code>，全站索引见 <a href="/llms.txt">llms.txt</a>。</p>
   </section>`;
   return page({
     title: '归档 · tool-hub.xyz',
     description: 'AI 资讯日报归档',
-    canonical: `${siteUrl}/archive`,
+    canonical: `${siteUrl}${path}`,
     siteUrl,
     repoUrl,
     menu: menuFor(sections, 'archive'),
     body,
-    scripts: [{ src: '/list.js', type: 'module' }],
+    scripts: ['/forum.js', '/thumbs.js', { src: '/list.js', type: 'module' }],
   });
 }
 
@@ -587,24 +806,28 @@ function tagNav(tags, activeId) {
   return `  <nav class="tag-nav">${(tags ?? []).map((tag) => `<a class="${tag.id === activeId ? 'active' : ''}" href="/t/${escapeHtml(tag.id)}">${escapeHtml(tag.label)}</a>`).join('')}</nav>`;
 }
 
-export function renderTagPage({ tag, items, tags = [], lookbackDays = 7, siteUrl, repoUrl, sections, months = [], month = '', year = '', sort = 'quality' }) {
+export function renderTagPage({ tag, items, tags = [], lookbackDays = 7, siteUrl, repoUrl, sections, month = '', year = '', sort = 'quality', pageNumber = 1, pageSize = LIST_PAGE_SIZE, path = '' }) {
   const tagLabels = Object.fromEntries(tags.map((entry) => [entry.id, entry.label]));
+  const basePath = path || `/t/${tag.id}`;
+  const { entries, pageCount, pageNumber: currentPage } = paginateItems(items, pageNumber, pageSize);
+  const pager = pagerNav({ pageCount, pageNumber: currentPage, pageSize, path: basePath });
   const body = `  <section class="lede">
     <h1>标签：${escapeHtml(tag.label)}</h1>
-    <p class="lede-meta">最近 ${lookbackDays} 天，共 ${items.length} 条</p>
+    <p class="lede-meta">最近 ${lookbackDays} 天，共 ${items.length} 条${pageCount > 1 ? `，本页第 ${currentPage} / ${pageCount} 页` : ''}</p>
   </section>
 ${tagNav(tags, tag.id)}
-${listControls({ months, month, year, sort })}
-${items.length ? storyList(items, { showDay: true, lead: true, tagLabels }) : '  <p class="empty">这个标签最近没有条目。</p>'}`;
+${listControls({ months: monthsFor(entries), month, year, sort, paginated: pageCount > 1 })}
+${entries.length ? storyList(entries, { showDay: true, summary: true, summaryChars: LOOKUP_SUMMARY_CHARS, tagLabels, sections, thumb: true }) : '  <p class="empty">这个标签最近没有条目。</p>'}
+${pager}${pager ? '\n' : ''}`;
   return page({
     title: `${tag.label} · 标签 · tool-hub.xyz`,
     description: `${tag.label}：可实操、可复现的 AI 条目合集。`,
-    canonical: `${siteUrl}/t/${tag.id}`,
+    canonical: `${siteUrl}${basePath}`,
     siteUrl,
     repoUrl,
     menu: menuFor(sections, 'tags'),
     body,
-    scripts: ['/forum.js', { src: '/list.js', type: 'module' }],
+    scripts: ['/forum.js', '/thumbs.js', { src: '/list.js', type: 'module' }],
   });
 }
 
@@ -873,11 +1096,11 @@ export function renderBenchIndexPage({ benchConfig, benchData = [], sections, si
   const index = benchConfig.index ?? {};
   const cards = benchData.map(({ dataset, data }) => {
     const stats = benchStats(dataset, data).filter(Boolean);
-    return `      <li class="bench-card">
+    return `      <li class="bench-group">
         <h2><a href="/bench/${escapeHtml(dataset.id)}">${escapeHtml(dataset.label)}</a></h2>
         <p>${escapeHtml(dataset.summary ?? '')}</p>
-        <p class="bench-card-meta">${escapeHtml(stats.join(' · '))}</p>
-        <p class="bench-card-meta">采集 ${escapeHtml(data.collectedAt ?? '')}（UTC）· ${externalLink(dataset.upstream?.label ?? '上游来源', dataset.upstream?.url)}</p>
+        <p class="bench-group-meta">${escapeHtml(stats.join(' · '))}</p>
+        <p class="bench-group-meta">采集 ${escapeHtml(data.collectedAt ?? '')}（UTC）· ${externalLink(dataset.upstream?.label ?? '上游来源', dataset.upstream?.url)}</p>
       </li>`;
   });
   const sources = (index.otherSources ?? []).map((source) => `          <tr>
@@ -892,8 +1115,8 @@ export function renderBenchIndexPage({ benchConfig, benchData = [], sections, si
     <p class="lede-meta">${escapeHtml(index.meta ?? '')}</p>
     <p class="lede-hint">${escapeHtml(index.lede ?? '')}</p>
   </section>
-  <section class="bench-cards">
-    <ul class="bench-card-list">
+  <section class="bench-groups">
+    <ul class="bench-group-list">
 ${cards.join('\n')}
     </ul>
   </section>
