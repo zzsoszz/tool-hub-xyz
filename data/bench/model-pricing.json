@@ -1,7 +1,7 @@
 {
   "id": "model-pricing",
   "kind": "openrouter-pricing",
-  "collectedAt": "2026-11-21T03:26:14.502Z",
+  "collectedAt": "2026-11-21T04:15:12.410Z",
   "upstream": {
     "label": "OpenRouter 模型目录 API",
     "url": "https://openrouter.ai/models"
@@ -79,16 +79,6 @@
           "completionPerMillion": 0,
           "free": true,
           "created": 1780551208
-        },
-        {
-          "name": "Dots Studio: Dots3-Note Preview (free)",
-          "id": "dots-studio/dots-3-note-preview:free",
-          "url": "https://openrouter.ai/dots-studio/dots-3-note-preview:free",
-          "context": 512000,
-          "promptPerMillion": 0,
-          "completionPerMillion": 0,
-          "free": true,
-          "created": 1786680361
         },
         {
           "name": "LiquidAI: LFM3-1.7B (free)",
@@ -409,20 +399,30 @@
           "completionPerMillion": 0.39999999999999997,
           "free": false,
           "created": 1768833913
+        },
+        {
+          "name": "Z.ai: GLM Latest",
+          "id": "~z-ai/glm-latest",
+          "url": "https://openrouter.ai/~z-ai/glm-latest",
+          "context": 1048576,
+          "promptPerMillion": 0.0699,
+          "completionPerMillion": 1.4,
+          "free": false,
+          "created": 1787151053
         }
       ]
     }
   },
   "stats": {
     "models": 40,
-    "free": 10
+    "free": 9
   },
   "files": [
     {
       "path": "https://openrouter.ai/api/v1/models",
       "url": "https://openrouter.ai/api/v1/models",
-      "sha256": "5a53bf36da3519da22b629398b2d2c96d0265ca43e695fa29645a4bf51999e07",
-      "bytes": 928223
+      "sha256": "300bcd684f5fb1b35e6966b15665a3616062fa36be6a9c31178f3cec23803a27",
+      "bytes": 925139
     }
   ]
 }
