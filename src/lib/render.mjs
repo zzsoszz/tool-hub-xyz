@@ -130,6 +130,40 @@ function decorateTables(html) {
     .replace(/<\/table>/g, '</table></div>');
 }
 
+// 正文标题挂在条目页的 <h2> 之下。上游的一二级标题在抓取时通常已经丢掉，剩下的正文常从 h4 起头，
+// 直接渲染就是 h2 跳 h4。这里按连续同级的一段一起上提：并列的小节仍然并列，只保证大纲是 h1 > h2 > h3。
+export function nestArticleHeadings(html) {
+  const text = String(html ?? '');
+  const opened = [...text.matchAll(/<h([1-6])(?=[\s/>])/g)].map((match) => Number(match[1]));
+  if (!opened.length) return text;
+  const levels = [];
+  let parent = 2;
+  let index = 0;
+  while (index < opened.length) {
+    const level = opened[index];
+    let runEnd = index;
+    while (runEnd < opened.length && opened[runEnd] === level) runEnd += 1;
+    const nested = Math.max(3, Math.min(6, Math.min(level, parent + 1)));
+    while (index < runEnd) {
+      levels.push(nested);
+      index += 1;
+    }
+    parent = nested;
+  }
+  const stack = [];
+  let cursor = 0;
+  return text.replace(/<(\/?)h([1-6])(?=[\s/>])/g, (all, slash) => {
+    if (slash) {
+      const closed = stack.pop();
+      return closed ? `</h${closed}` : all;
+    }
+    const nested = levels[cursor];
+    cursor += 1;
+    stack.push(nested);
+    return `<h${nested}`;
+  });
+}
+
 // 年月筛选与排序在浏览器里完成：控件状态写进 URL，链接可直接分享，静态站不必为每种组合各生成一页。
 export function listControls({ months = [], month = '', year = '', sort = 'quality' } = {}) {
   const years = [...new Set(months.map((entry) => entry.year))];
@@ -336,7 +370,7 @@ export function renderItemPage({ item, siteUrl, repoUrl, sections, related = [],
   const article = item.content?.html
     ? `      <section class="item-body">
         <h2>${item.lang === 'zh' ? '原文正文' : '原文正文（未翻译）'}</h2>
-        <div class="article">${decorateTables(repairArticle(item.content.html))}</div>
+        <div class="article">${decorateTables(nestArticleHeadings(repairArticle(item.content.html)))}</div>
         <p class="article-note">${note}<a href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">读原文</a></p>
       </section>`
     : `${summary ? `      <div class="item-summary"><p>${escapeHtml(summary)}</p></div>` : ''}`;
@@ -455,7 +489,7 @@ export function renderAboutPage({ siteUrl, repoUrl, sections, sources = [] }) {
     <p>每天 06:30 与 18:30（北京时间）自动抓取 ${sources.length} 个信息源，去重、按实用度排序，并用机器翻译把标题和摘要译成中文。<strong>每条都保留原文链接</strong>，译文仅供参考，涉及事实请回到原文核对。</p>
     <p>评论区无需登录：留个昵称或直接匿名发言，聊踩坑、免费替代、低配跑法、接单思路。</p>
     <h2>栏目</h2>
-    <ul>${(sections ?? []).map((section) => `<li>${escapeHtml(section.label)} — ${section.href ?? `/s/${section.id}`}</li>`).join('\n')}</ul>
+    <ul>${(sections ?? []).map((section) => `<li><a href="${escapeHtml(section.href ?? `/s/${section.id}`)}">${escapeHtml(section.label)}</a></li>`).join('\n')}</ul>
     <h2>信息源</h2>
     <ul class="sources">
 ${sourceRows}
@@ -787,7 +821,7 @@ function benchMethod(method, commit) {
   const citations = (method.citations ?? []).map((citation) => `          <li>${sourceRef(citation, commit)}</li>`).join('\n');
   const commands = (method.commands ?? []).length
     ? `      <div class="bench-commands">
-        <h4>命令</h4>
+        <h3>命令</h3>
         <pre><code>${escapeHtml(method.commands.join('\n'))}</code></pre>
         <p class="bench-commands-note">每条都能直接复制执行；带 npm run bench 的那条是本站重新采集并重算表格。</p>
       </div>`

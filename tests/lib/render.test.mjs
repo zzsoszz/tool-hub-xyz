@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { escapeHtml, renderAboutPage, renderArchive, renderBenchDatasetPage, renderBenchIndexPage, renderDiscussPage, renderDigestPage, renderItemPage, renderLlms, renderRss, renderSearchPage, renderSectionPage } from '../../src/lib/render.mjs';
+import { escapeHtml, nestArticleHeadings, renderAboutPage, renderArchive, renderBenchDatasetPage, renderBenchIndexPage, renderDiscussPage, renderDigestPage, renderItemPage, renderLlms, renderRss, renderSearchPage, renderSectionPage } from '../../src/lib/render.mjs';
 import { itemSlug } from '../../src/lib/items.mjs';
 
 const sections = [
@@ -362,4 +362,42 @@ test('hidesTheBenchSearchBoxWhenThereIsNoTableToFilter', () => {
   const empty = { ...benchData, tables: { output: { rows: [] }, prompt: { rows: [] }, others: { rows: [] } } };
   const html = renderBenchDatasetPage({ ...benchOptions, benchConfig, dataset: benchConfig.datasets[0], data: empty });
   assert.ok(!html.includes('data-bench-search'));
+});
+
+function headingLevels(html) {
+  return [...String(html).matchAll(/<h([1-6])[\s/>]/g)].map((match) => Number(match[1]));
+}
+
+test('liftsOrphanArticleHeadingsToLevelThree', () => {
+  assert.deepEqual(headingLevels(nestArticleHeadings('<h4>What is it?</h4><p>body</p>')), [3]);
+  assert.deepEqual(headingLevels(nestArticleHeadings('<h2>引言</h2><p>body</p>')), [3]);
+});
+
+test('keepsSiblingArticleHeadingsAtOneLevelAndNestsDeeperOnes', () => {
+  const nested = nestArticleHeadings('<h4>一、视频预览</h4><h4>二、配置</h4><h3>来源</h3><h4>细节</h4>');
+  assert.deepEqual(headingLevels(nested), [3, 3, 3, 4]);
+  assert.ok(nested.includes('<h3>一、视频预览</h3>'), nested);
+  assert.ok(nested.includes('<h4>细节</h4>'), nested);
+  const alreadyNested = '<h3>安装</h3><h4>依赖</h4><h5>版本</h5>';
+  assert.equal(nestArticleHeadings(alreadyNested), alreadyNested);
+});
+
+test('rendersItemArticleHeadingsBelowTheSectionHeading', () => {
+  const entry = item({ content: { html: '<h4>本次配置</h4><p>双卡提升 18.8%。</p>', text: '本次配置', chars: 12, shown: 12, truncated: false } });
+  const html = renderItemPage({ ...options, item: entry, related: [] });
+  assert.ok(html.includes('<div class="article"><h3>本次配置</h3>'), html);
+  assert.ok(!html.includes('<h4>本次配置</h4>'), html);
+});
+
+test('rendersBenchCommandsAsALevelThreeHeading', () => {
+  const html = renderBenchDatasetPage({ ...benchOptions, benchConfig, dataset: benchConfig.datasets[0], data: benchData });
+  assert.ok(html.includes('<div class="bench-commands">'), html);
+  assert.ok(html.includes('<h3>命令</h3>'), html);
+  assert.ok(!html.includes('<h4>命令</h4>'), html);
+});
+
+test('listsAboutSectionsAsLinks', () => {
+  const about = renderAboutPage({ ...options, sources: digest().sources });
+  assert.ok(about.includes('<li><a href="/s/apps">AI 应用</a></li>'), about);
+  assert.ok(!about.includes(' — '), about);
 });
