@@ -10,11 +10,19 @@ const TRACKING_PARAMS = [
 export function stripHtml(value) {
   let text = String(value ?? '')
     .replace(/<(script|style)[\s\S]*?<\/\1>/gi, ' ')
+    .replace(/<!--[\s\S]*?-->/g, ' ')
     .replace(/<br\s*\/?>/gi, '\n')
     .replace(/<\/(p|div|li|tr|h[1-6])>/gi, '\n')
     .replace(/<[^>]{0,400}>/g, ' ')
     .replace(/&lt;[^<]{0,200}&gt;/g, ' ');
   text = decodeEntities(text);
+  // 摘要按字数截断时会留下半个标签（存量摘要里就有）：最后一个 '<' 没有闭合就丢掉。
+  // 只有紧跟标签名且带属性的才算标签，正文里的 "a < b" 与 "x < y" 不受影响。
+  const open = text.lastIndexOf('<');
+  if (open > text.lastIndexOf('>')) {
+    const tail = text.slice(open);
+    if (/^<!--/.test(tail) || /^<\/?[a-zA-Z][^<>]*=/.test(tail)) text = text.slice(0, open);
+  }
   return collapseWhitespace(text);
 }
 

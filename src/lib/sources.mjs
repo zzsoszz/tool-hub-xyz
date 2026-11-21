@@ -1,5 +1,5 @@
 import { fetchUrl } from './http.mjs';
-import { cleanText, dayKey, parseDate } from './normalize.mjs';
+import { cleanText, dayKey, parseDate, summarize } from './normalize.mjs';
 import { parseFeed } from './parse.mjs';
 import { parseJsonFeed } from './adapters.mjs';
 import { extractArticleBody, markdownToHtml, sanitizeArticle } from './content.mjs';
@@ -150,7 +150,7 @@ export async function fetchMissingBodies(items, source, options = {}) {
     if (!article) continue;
     item.content = article;
     // 正文拿到了不一定导读就更好：只有更长的开头才值得盖掉 feed 原来的摘要。
-    const lead = cleanText(article.lead, 320);
+    const lead = summarize(article.lead, 320);
     if (lead.length > String(item.summary ?? '').length) item.summary = lead;
   }
   return items;
@@ -192,7 +192,7 @@ export async function enrichForumTopics(items, source, options = {}) {
       const content = sanitizeArticle(mainPost?.content ?? '', { baseUrl: item.url });
       if (content) {
         item.content = content;
-        item.summary = cleanText(content.lead, 320);
+        item.summary = summarize(content.lead, 320);
       }
       if (payload.title) item.title = cleanText(payload.title, 220);
       item.metrics = {

@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { dayKey, normalizeUrl, parseDate, timeAgo, titleKey, urlKey } from '../../src/lib/normalize.mjs';
+import { dayKey, normalizeUrl, parseDate, stripHtml, summarize, timeAgo, titleKey, urlKey } from '../../src/lib/normalize.mjs';
 
 test('parsesRfc822DatesWithTimezoneOffset', () => {
   const date = parseDate('Tue, 04 Nov 2026 09:30:00 +0800');
@@ -44,4 +44,22 @@ test('labelsRelativeTimeInChinese', () => {
   assert.equal(timeAgo(new Date('2026-11-09T07:30:00Z'), now), '30 分钟前');
   assert.equal(timeAgo(new Date('2026-11-09T04:00:00Z'), now), '4 小时前');
   assert.equal(timeAgo(new Date('2026-11-01T08:00:00Z'), now), '8 天前');
+});
+
+test('stripsPairedTagsAndCommentsFromText', () => {
+  assert.equal(stripHtml('<div align="center"> <a href="https://example.com/watch"><img src="https://example.com/t.jpg" width="640">正文开始。</div>'), '正文开始。');
+  assert.equal(stripHtml('\x3C!-- SPDX-FileCopyrightText: 保留声明。 -->真正的开头'), '真正的开头');
+});
+
+test('dropsAnUnterminatedTagLeftByTruncation', () => {
+  assert.equal(stripHtml('开头。<img src="https://example.com/a/very/long/path/thumb.jpg" width="640" alt="Watch the video: 标题, 一段…'), '开头。');
+  assert.equal(stripHtml('\x3C!-- SPDX-FileCopyrightText: 版权与许可声明一路写到这里被截断'), '');
+  assert.equal(stripHtml('如果 a < b 且 c="d" 就停止'), '如果 a < b 且 c="d" 就停止');
+});
+
+test('summarizeTruncatesAfterStrippingMarkup', () => {
+  const text = summarize('<p>正文</p>'.repeat(60), 40);
+  assert.ok(text.length <= 40);
+  assert.ok(text.endsWith('\u2026'));
+  assert.ok(!text.includes('<'));
 });

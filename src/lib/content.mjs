@@ -1,5 +1,5 @@
 import { decodeEntities } from './xml.mjs';
-import { absoluteUrl, collapseWhitespace } from './normalize.mjs';
+import { absoluteUrl, collapseWhitespace, stripHtml } from './normalize.mjs';
 
 const VOID_TAGS = new Set(['br', 'hr', 'img']);
 const DROP_TAGS = new Set([
@@ -297,8 +297,9 @@ export function sanitizeArticle(raw, { baseUrl = '', maxChars = 3200, minChars =
 
   return {
     html: kept.join('\n'),
-    text: collapseWhitespace(keptText.join('\n')).slice(0, 6000),
-    lead: collapseWhitespace(leadParts.join('\n')).slice(0, 460) || collapseWhitespace(segmentText(segments[0])).slice(0, 460),
+    // 有些源（量子位这类）把整页源码当正文发过来：正文与导读是纯文本层，残留的标签必须在这里就刮掉。
+    text: stripHtml(keptText.join('\n')).slice(0, 6000),
+    lead: stripHtml(leadParts.join('\n')).slice(0, 460) || stripHtml(segmentText(segments[0])).slice(0, 460),
     chars: totalChars,
     shown: used,
     truncated,
