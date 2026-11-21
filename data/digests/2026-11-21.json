@@ -1,6 +1,6 @@
 {
   "day": "2026-11-21",
-  "generatedAt": "2026-11-21T04:13:08.414Z",
+  "generatedAt": "2026-11-21T04:53:25.443Z",
   "timezone": "Asia/Shanghai",
   "windowHours": 48,
   "window": {
@@ -10,13 +10,13 @@
   "counts": {
     "sources": 42,
     "okSources": 39,
-    "fetched": 1106,
-    "duplicates": 889,
-    "carried": 26,
-    "added": 2,
+    "fetched": 1096,
+    "duplicates": 877,
+    "carried": 27,
+    "added": 1,
     "fallback": 0,
-    "lowQuality": 91,
-    "published": 30
+    "lowQuality": 89,
+    "published": 31
   },
   "sources": [
     {
@@ -351,9 +351,9 @@
       "id": "arxiv-ecosystem",
       "name": "arXiv 检索（推理引擎与量化）",
       "ok": true,
-      "items": 50,
+      "items": 40,
       "queries": 5,
-      "error": null
+      "error": "1/5 次检索失败"
     }
   ],
   "categories": [
@@ -1106,6 +1106,41 @@
           "subcategory": "gpu",
           "practical": 2,
           "slug": "67d3944b0b54",
+          "action": 3,
+          "rank": 12.8,
+          "tags": [
+            "local",
+            "tutorial"
+          ]
+        },
+        {
+          "sourceId": "gh-releases",
+          "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "github-actions[bot]",
+          "id": "453438018",
+          "title": "llama.cpp b12602 发布",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12602",
+          "published": "2026-11-21T04:28:53.000Z",
+          "summary": "sycl: Improve Grouped XMX GEMM by avoiding SLM staging (#31428) Website: Attestations: macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubuntu 26.0…",
+          "content": {
+            "html": "<p>&lt;details open&gt;</p>\n<p>sycl: Improve Grouped XMX GEMM by avoiding SLM staging (#31428)</p>\n<p>&lt;/details&gt;</p>\n<p><strong>Website:</strong></p>\n<ul><li>&lt;https://llama.app&gt;</li></ul>\n<p><strong>Attestations:</strong></p>\n<ul><li>&lt;https://github.com/ggml-org/llama.cpp/attestations/70439764&gt;</li></ul>\n<p><strong>macOS/iOS:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12602/llama-b12602-bin-macos-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">macOS Apple Silicon (arm64)</a></li><li>macOS Apple Silicon (arm64, KleidiAI enabled)<a href=\"https://github.com/ggml-org/llama.cpp/pull/23780\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">DISABLED</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12602/llama-b12602-bin-macos-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">macOS Intel (x64)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12602/llama-b12602-xcframework.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">iOS XCFramework</a></li></ul>\n<p><strong>Linux:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12602/llama-b12602-bin-ubuntu-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12602/llama-b12602-bin-ubuntu-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu arm64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12602/llama-b12602-bin-ubuntu-s390x.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu 24.04 s390x (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12602/llama-b12602-bin-ubuntu-26.04-s390x.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu 26.04 s390x (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12602/llama-b12602-bin-ubuntu-zdnn-s390x.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu 26.04 s390x (zDNN)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12602/llama-b12602-bin-ubuntu-vulkan-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12602/llama-b12602-bin-ubuntu-vulkan-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu arm64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12602/llama-b12602-bin-ubuntu-cuda-12.8-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (CUDA 12)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12602/cudart-llama-b12602-bin-ubuntu-cuda-12.8-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 12.8 libraries</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12602/llama-b12602-bin-ubuntu-cuda-13.5-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12602/cudart-llama-b12602-bin-ubuntu-cuda-13.5-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 libraries</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12602/llama-b12602-bin-ubuntu-cuda-13.5-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu arm64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12602/cudart-llama-b12602-bin-ubuntu-cuda-13.5-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 libraries</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12602/llama-b12602-bin-ubuntu-rocm-10.0-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (ROCm 10.0)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12602/llama-b12602-bin-ubuntu-openvino-2026.4.1-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (OpenVINO)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12602/llama-b12602-bin-ubuntu-sycl-fp32-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (SYCL FP32)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12602/llama-b12602-bin-ubuntu-sycl-fp16-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (SYCL FP16)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12602/llama-b12602-bin-linux-arm64-snapdragon.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Linux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/linux.md\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">setup guide</a></li></ul>\n<p><strong>Android:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12602/llama-b12602-bin-android-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Android arm64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12602/llama-b12602-bin-android-arm64-snapdragon.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Android arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/README.md\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">setup guide</a></li></ul>\n<p><strong>Windows:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12602/llama-b12602-bin-win-cpu-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12602/llama-b12602-bin-win-cpu-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12602/llama-b12602-bin-win-opencl-adreno-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (OpenCL Adreno)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12602/llama-b12602-bin-win-cuda-12.4-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (CUDA 12)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12602/cudart-llama-bin-win-cuda-12.4-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 12.4 DLLs</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12602/llama-b12602-bin-win-cuda-13.5-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12602/cudart-llama-bin-win-cuda-13.5-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 DLLs</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12602/llama-b12602-bin-win-cuda-13.5-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12602/cudart-llama-bin-win-cuda-13.5-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 DLLs</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12602/llama-b12602-bin-win-vulkan-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12602/llama-b12602-bin-win-vulkan-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12602/llama-b12602-bin-win-openvino-2026.4.1-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (OpenVINO)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12602/llama-b12602-bin-win-sycl-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (SYCL)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12602/llama-b12602-bin-win-rocm-10.0-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (ROCm 10.0)</a></li></ul>\n<p><strong>openEuler:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/pull/23705\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">DISABLED</a></li><li>openEuler x86 (310p)</li><li>openEuler x86 (910b, ACL Graph)</li><li>openEuler aarch64 (310p)</li><li>openEuler aarch64 (910b, ACL Graph)</li></ul>\n<p><strong>UI:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12602/llama-b12602-ui.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">UI</a></li></ul>",
+            "text": "<details open>\nsycl: Improve Grouped XMX GEMM by avoiding SLM staging (#31428)\n</details>\nWebsite:\n<https://llama.app>\nAttestations:\n<https://github.com/ggml-org/llama.cpp/attestations/70439764>\nmacOS/iOS:\nmacOS Apple Silicon (arm64)\nmacOS Apple Silicon (arm64, KleidiAI enabled) DISABLED\nmacOS Intel (x64)\niOS XCFramework\nLinux:\nUbuntu x64 (CPU)\nUbuntu arm64 (CPU)\nUbuntu 24.04 s390x (CPU)\nUbuntu 26.04 s390x (CPU)\nUbuntu 26.04 s390x (zDNN)\nUbuntu x64 (Vulkan)\nUbuntu arm64 (Vulkan)\nUbuntu x64 (CUDA 12) - CUDA 12.8 libraries\nUbuntu x64 (CUDA 13) - CUDA 13.5 libraries\nUbuntu arm64 (CUDA 13) - CUDA 13.5 libraries\nUbuntu x64 (ROCm 10.0)\nUbuntu x64 (OpenVINO)\nUbuntu x64 (SYCL FP32)\nUbuntu x64 (SYCL FP16)\nLinux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide\nAndroid:\nAndroid arm64 (CPU)\nAndroid arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide\nWindows:\nWindows x64 (CPU)\nWindows arm64 (CPU)\nWindows arm64 (OpenCL Adreno)\nWindows x64 (CUDA 12) - CUDA 12.4 DLLs\nWindows x64 (CUDA 13) - CUDA 13.5 DLLs\nWindows arm64 (CUDA 13) - CUDA 13.5 DLLs\nWindows x64 (Vulkan)\nWindows arm64 (Vulkan)\nWindows x64 (OpenVINO)\nWindows x64 (SYCL)\nWindows x64 (ROCm 10.0)\nopenEuler:\nDISABLED\nopenEuler x86 (310p)\nopenEuler x86 (910b, ACL Graph)\nopenEuler aarch64 (310p)\nopenEuler aarch64 (910b, ACL Graph)\nUI:\nUI",
+            "lead": "<details open>\nsycl: Improve Grouped XMX GEMM by avoiding SLM staging (#31428)\n</details>\nWebsite:\n<https://llama.app>\nAttestations:\n<https://github.com/ggml-org/llama.cpp/attestations/70439764>\nmacOS/iOS:\nmacOS Apple Silicon (arm64)\nmacOS Apple Silicon (arm64, KleidiAI enabled) DISABLED\nmacOS Intel (x64)\niOS XCFramework\nLinux:\nUbuntu x64 (CPU)\nUbuntu arm64 (CPU)\nUbuntu 24.04 s390x (CPU)\nUbuntu 26.04 s390x (CPU)\nUbuntu 26.04 s390x (zDNN)\nUbuntu x64 (Vulkan",
+            "chars": 1381,
+            "shown": 1381,
+            "truncated": false
+          },
+          "quality": 8,
+          "score": 21.97,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 2,
+          "slug": "e56bfe82da88",
           "action": 3,
           "rank": 12.8,
           "tags": [

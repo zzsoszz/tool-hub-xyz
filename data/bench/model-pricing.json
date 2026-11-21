@@ -1,7 +1,7 @@
 {
   "id": "model-pricing",
   "kind": "openrouter-pricing",
-  "collectedAt": "2026-11-21T04:15:12.410Z",
+  "collectedAt": "2026-11-21T04:56:44.166Z",
   "upstream": {
     "label": "OpenRouter 模型目录 API",
     "url": "https://openrouter.ai/models"
@@ -271,6 +271,16 @@
           "created": 1785478908
         },
         {
+          "name": "DeepSeek: DeepSeek V4.1 Flash",
+          "id": "deepseek/deepseek-v4.1-flash",
+          "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash",
+          "context": 1048576,
+          "promptPerMillion": 0.049999999999999996,
+          "completionPerMillion": 0.7999999999999999,
+          "free": false,
+          "created": 1789021285
+        },
+        {
           "name": "DeepSeek: DeepSeek V4.1 Flash (batch)",
           "id": "deepseek/deepseek-v4.1-flash:batch",
           "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash:batch",
@@ -339,16 +349,6 @@
           "completionPerMillion": 0.22999999999999998,
           "free": false,
           "created": 1789176933
-        },
-        {
-          "name": "DeepSeek: DeepSeek V4.1 Flash",
-          "id": "deepseek/deepseek-v4.1-flash",
-          "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash",
-          "context": 1048576,
-          "promptPerMillion": 0.050699999999999995,
-          "completionPerMillion": 0.20279999999999998,
-          "free": false,
-          "created": 1789021285
         },
         {
           "name": "inclusionAI: Ling 3.1 Flash",
@@ -421,8 +421,8 @@
     {
       "path": "https://openrouter.ai/api/v1/models",
       "url": "https://openrouter.ai/api/v1/models",
-      "sha256": "300bcd684f5fb1b35e6966b15665a3616062fa36be6a9c31178f3cec23803a27",
-      "bytes": 925139
+      "sha256": "6e24813df6e7e54c65adb8d183d201aa92cf6d7c011707da17e6b35130103d94",
+      "bytes": 925131
     }
   ]
 }
