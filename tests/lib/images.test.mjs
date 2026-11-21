@@ -1,9 +1,9 @@
 import assert from 'node:assert/strict';
-import { mkdtemp, readFile, rm, stat, unlink } from 'node:fs/promises';
+import { mkdir, mkdtemp, readFile, rm, stat, unlink, writeFile } from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
 import test from 'node:test';
-import { IMAGE_PREFIX, imageKey, imageUrls, localizeItems, pruneImages, readManifest, saveImages } from '../../src/lib/images.mjs';
+import { IMAGE_PREFIX, imageKey, imageUrls, localizeItems, pruneImages, publishedImageKeys, readManifest, referencedImageKeys, saveImages } from '../../src/lib/images.mjs';
 import { itemImage } from '../../src/lib/items.mjs';
 
 const PNG = new Uint8Array([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a, 0x01, 0x02, 0x03]);
@@ -198,4 +198,47 @@ test('prunesCopiesPastTheRetentionWindow', async (t) => {
   assert.ok(manifest.images[imageKey(fresh)]);
   assert.ok(!manifest.images[imageKey(stale)]);
   await assert.rejects(stat(path.join(dir, staleFile)));
+});
+
+test('prunesOnlyCopiesNoPublishedDigestStillQuotes', async (t) => {
+  const dir = await workspace(t);
+  const quoted = 'https://cdn.test/quoted.png';
+  const orphan = 'https://cdn.test/orphan.png';
+  const body = (url) => `<img src="${url}" alt="" loading="lazy">`;
+  const { impl } = fetcher({
+    [quoted]: { contentType: 'image/png', bytes: PNG },
+    [orphan]: { contentType: 'image/png', bytes: PNG },
+  });
+  const items = [orphan, quoted].map((url) => article(url, body(url)));
+  const outcome = await saveImages(items, { imagesDir: dir, fetchImpl: impl });
+  const orphanFile = entryOf(outcome.manifest, orphan).file;
+  for (const url of [quoted, orphan]) outcome.manifest.images[imageKey(url)].savedAt = '2020-01-01T00:00:00.000Z';
+
+  const removed = await pruneImages(dir, outcome.manifest, {
+    retentionDays: 30,
+    now: new Date('2020-02-01T00:00:00Z'),
+    keepKeys: referencedImageKeys([article(quoted, body(quoted))]),
+  });
+  const manifest = await readManifest(dir);
+
+  assert.equal(removed, 1);
+  assert.ok(manifest.images[imageKey(quoted)]);
+  assert.ok(!manifest.images[imageKey(orphan)]);
+  await assert.rejects(stat(path.join(dir, orphanFile)));
+});
+
+test('publishedImageKeysCoversEveryDigestOnDisk', async (t) => {
+  const dir = await workspace(t);
+  const digestDir = path.join(dir, 'digests');
+  await mkdir(digestDir);
+  const urls = ['https://cdn.test/a.png', 'https://cdn.test/b.png'];
+  const days = ['2026-11-20.json', '2026-11-21.json'];
+  for (const [index, name] of days.entries()) {
+    const digest = { categories: [{ items: [{ slug: `item-${index}`, content: { html: `<img src="${urls[index]}" alt="">` } }] }] };
+    await writeFile(path.join(digestDir, name), JSON.stringify(digest));
+  }
+
+  const keys = await publishedImageKeys(digestDir);
+
+  assert.deepEqual([...keys].sort(), urls.map(imageKey).sort());
 });

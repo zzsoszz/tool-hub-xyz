@@ -113,11 +113,18 @@ jobs:
             echo "审查记录无变化，跳过提交"
           fi
 
-      # 正文配图落在 data/images（不提交），采集环节的副本不一定跟着 artifact 传过来：
-      # 构建前按最近两天补一遍，已在盘上的直接复用，抓不到就照旧热链原图。
+      # 正文配图落在 data/images（不提交，也不跟着 artifact 传过来）：列表缩略图只认站内副本，
+      # 所以构建前一次就要覆盖全部日报，只补最近两天会让老页面的配图全部消失。
+      - name: 缓存已抓到的配图副本
+        uses: actions/cache@v4
+        with:
+          path: data/images
+          key: images-v1-${{ github.run_id }}
+          restore-keys: images-v1-
+
       - name: 补齐正文配图
         continue-on-error: true
-        run: node scripts/fetch-images.mjs --days=2
+        run: node scripts/fetch-images.mjs --limit=900
 
       - name: 生成静态站点
         run: node src/build.mjs

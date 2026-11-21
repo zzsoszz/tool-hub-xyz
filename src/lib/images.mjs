@@ -172,11 +172,41 @@ export async function saveImages(items, { imagesDir, manifest = null, fetchImpl 
   return { manifest: store, ...stats };
 }
 
-// 存图有期限：过期副本删掉，对应条目退回热链原图。不删的话仓库只会一直涨。
-export async function pruneImages(imagesDir, manifest, { retentionDays = 60, now = new Date() } = {}) {
+// 已发布日报仍在引用的配图键。列表缩略图只认站内副本，所以「某天还在页面上」等于「它的副本必须还在盘上」。
+export function referencedImageKeys(items) {
+  const keys = new Set();
+  for (const item of items ?? []) {
+    for (const url of imageUrls(item?.content?.html)) keys.add(imageKey(url));
+  }
+  return keys;
+}
+
+// 把 data/digests 里每一期都读一遍：留存期只准删没人引用的孤儿副本，不准删还挂在页面上的图。
+export async function publishedImageKeys(digestDir) {
+  const names = await readdir(digestDir).catch(() => []);
+  const keys = new Set();
+  for (const name of names.filter((entry) => entry.endsWith('.json'))) {
+    const raw = await readFile(path.join(digestDir, name), 'utf8').catch(() => null);
+    if (!raw) continue;
+    let digest;
+    try {
+      digest = JSON.parse(raw);
+    } catch {
+      continue;
+    }
+    for (const group of digest.categories ?? []) {
+      for (const key of referencedImageKeys(group.items ?? [])) keys.add(key);
+    }
+  }
+  return keys;
+}
+
+// 存图有期限：过期且没有任何已发布日报引用的副本才删掉，对应条目退回热链原图。不删的话仓库只会一直涨。
+export async function pruneImages(imagesDir, manifest, { retentionDays = 60, now = new Date(), keepKeys = null } = {}) {
   const cutoff = new Date(now.getTime() - retentionDays * 86_400_000).toISOString();
   let removed = 0;
   for (const [key, entry] of Object.entries(manifest?.images ?? {})) {
+    if (keepKeys?.has(key)) continue;
     if (String(entry?.savedAt ?? '') >= cutoff) continue;
     await unlink(path.join(imagesDir, entry.file)).catch(() => null);
     delete manifest.images[key];

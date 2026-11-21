@@ -160,13 +160,14 @@ npm run lint       # syntax, indentation, trailing whitespace, secret scan
 ## Article Image Archiving
 
 - `saveImages` runs after the day's items are selected and before the digest is written; `content.html` keeps the original URL and `localizeItems` rewires `<img src>` to `/images/...` only for copies that exist on disk — a build never fetches and never leaves a broken image.
-- `data/images/` is never committed (a day of copies plus retention churn would bloat git history), so CI runs `node scripts/fetch-images.mjs --days=2` before the build to refill it.
+- `data/images/` is never committed (a day of copies plus retention churn would bloat git history), so CI refills it before the build — `node scripts/fetch-images.mjs --limit=900` with no `--days`, i.e. **every published digest**, because a thumbnail only exists when its copy is archived: refilling two days would leave every older page thumb-less. `data/images` is cached between runs so a refill is a top-up, not a re-download.
 - List thumbnails come from `itemIllustration(item, { archivedOnly: true })` in `src/lib/items.mjs`: the first real `<img>` in the body (logo / icon / avatar / badge / emoji never count) **and only when the copy is archived** — a `/images/...` path. A hotlink renders no `figure`: a browser sends this site's own referer, so hotlink-guarded hosts refuse it and dead upstreams leave a hole in the ledger. Item bodies keep the old rule (local copy, upstream URL otherwise). A row with no illustration renders no `figure` at all, so the six-column ledger never grows an empty slot; `public/thumbs.js` still removes a `figure.story-thumb` whose copy went missing after the build.
 - A copy is named `<slug>-<sha256(url)[0:16]>.<ext>` and shared by every item that references the same URL; the slug keeps the upstream filename so `itemImage()`'s icon filter still works on the local path.
 - Magic bytes are checked before writing (a 404 page served as `image/png` never lands), and SVG is refused outright because a same-origin SVG can carry script.
 
   Fetching a copy sends `referer: <item.url>`: image hosts guard against hotlinking, so a bot request that does not say which page embeds the image is refused (`i.qbitai.com` answers 403 without it).
 - The budget is `config/sources.json.images` — `maxBytesPerImage` / `maxImagesPerItem` / `maxImagesPerRun` — and over-budget images simply wait for the next run; `retentionDays` is enforced by `pruneImages` at the end of collection.
+- `retentionDays` reaps **orphans only**: callers pass `keepKeys` from `publishedImageKeys(data/digests)` plus the day's own items, so a copy a published digest still quotes is never deleted by age. Deleting referenced copies would silently strip thumbnails from live pages.
 
 ## Asset Caching
 

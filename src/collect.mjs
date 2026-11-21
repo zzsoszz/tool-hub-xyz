@@ -5,7 +5,7 @@ import { filterNewItems, itemKeys, normalizeSeen, pruneSeen, serializeSeen } fro
 import { dayKey } from './lib/normalize.mjs';
 import { repairArticle } from './lib/content.mjs';
 import { perSourceCap, selectByCategoryQuota } from './lib/select.mjs';
-import { pruneImages, saveImages } from './lib/images.mjs';
+import { pruneImages, publishedImageKeys, referencedImageKeys, saveImages } from './lib/images.mjs';
 import { fetchAllSources, parseSourceBody } from './lib/sources.mjs';
 import { itemSlug, rankCompare } from './lib/items.mjs';
 import { digestToMarkdown } from './lib/markdown.mjs';
@@ -304,9 +304,12 @@ async function main() {
       limits: config.images ?? {},
       log: (message) => console.warn(`[images] ${message}`),
     });
+    const keepKeys = await publishedImageKeys(digestDir);
+    for (const key of referencedImageKeys(selected)) keepKeys.add(key);
     const dropped = await pruneImages(imagesDir, images.manifest, {
       retentionDays: Number(config.images?.retentionDays ?? 30),
       now,
+      keepKeys,
     });
     imageNote = `  配图: 存下=${images.saved} 复用=${images.cached} 存不下=${images.failed} 超预算=${images.skipped} 过期删=${dropped}（${images.bytes} 字节）`;
   }
