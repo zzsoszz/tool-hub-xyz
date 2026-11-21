@@ -1,0 +1,372 @@
+{
+  "day": "2026-11-22",
+  "reviewedAt": "2026-11-21T16:13:21.603Z",
+  "reviewer": "cloudflare/@cf/meta/llama-3.1-70b-instruct",
+  "note": "cloudflare/@cf/meta/llama-3.1-70b-instruct：复核 12 条，解析到 12 条判定",
+  "rules": {
+    "minItems": 3,
+    "minBodyChars": 120,
+    "minSummaryChars": 40,
+    "maxTags": 4,
+    "agentMaxItems": 12,
+    "agentBatch": 6,
+    "agentChars": 900,
+    "agentExcerptChars": 600
+  },
+  "passed": true,
+  "reasons": [],
+  "total": 14,
+  "blocked": [
+    "c877044bb049",
+    "12995faf6f48",
+    "5e4fd0a265f5"
+  ],
+  "survivors": 11,
+  "items": [
+    {
+      "slug": "cfc3f8712c6c",
+      "title": "han938/open-webui-private-ai-desk",
+      "category": "apps",
+      "subcategory": "life",
+      "tags": [],
+      "bodyChars": 15444,
+      "excerpt": "Open Webui Private Ai Desk — Web Application ![](files/preview.png) ⚡ PowerShell Setup Button ![build ]() ![lic ]() ![status ]() ![powershell ]() Show your support TRON : TB7EdBt9PnrsNU2fbfByx8v4byEmRaxV3U | BTC : 1LcPgJqd2D7fZsEw3V7KspEBWbuquhbq2J | ETH : 0x132b12C0A7EfF6aFCB641dC96D0Bc22C6b427F68 --- Open Webui Private Ai Desk is a self-contained AI workspace built for teams and individuals who want the power of modern language models without sending their data beyond their own infrastructure. It brings chat, document interaction, and model management together in a single, refined interface…",
+      "quality": 7,
+      "practical": 1,
+      "sourceName": "GitHub 新晋 AI 项目",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "有实测数据。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "c877044bb049",
+      "title": "Three breaches, endless leaks: Your AI supply chain needs canaries",
+      "category": "apps",
+      "subcategory": "inference",
+      "tags": [],
+      "bodyChars": 19353,
+      "excerpt": "Blog Three breaches, endless leaks: Your AI supply chain needs canaries November 19, 2026 08:00 AM 15 min read HD Moore Table of Contents Following inference data Why does AI inference data matter? How do AI routers expose your prompts? Three compromised companies Marketplace resellers stole customer prompts Privacy settings and retention policies were ignored How do canary tokens detect prompt leaks? What we did about it How can you protect your AI supply chain? HD Moore, Chief Research Officer, will be regularly sharing work from the research team he leads at Dragos. Topics will include xOT…",
+      "quality": 7,
+      "practical": 1,
+      "sourceName": "Lobsters AI",
+      "domain": "dragos.com",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "只有新闻转述，没有数据或步骤。"
+      },
+      "blocked": [
+        "模型复核不通过（只有新闻转述，没有数据或步骤。）"
+      ]
+    },
+    {
+      "slug": "6e13a8f71327",
+      "title": "EvalSift – 100 hand-labeled LLM agent traces",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "agent",
+        "free"
+      ],
+      "bodyChars": 2340,
+      "excerpt": "EvalSift Lite Find out how your LLM agent actually fails before you write a single eval. EvalSift Lite is a free, MIT-licensed Python tool (3.10+, no dependencies, no API key) for error analysis on LLM agent traces: it validates a traces.jsonl file, grades each trace with deterministic code checks, and writes a Markdown/HTML report of what failed. It comes with a case study: 100 traces from a tool-using support agent, labeled by hand. Get the full Solo kit (100 labeled traces + data): https://merletownley.gumroad.com/l/fjppx Try it (about a minute) git clone && cd evalsift-lite python -m venv…",
+      "quality": 6,
+      "practical": 2,
+      "sourceName": "Hacker News Search",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "有复现步骤。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "12995faf6f48",
+      "title": "刚刚，DeepSeek V1作者创业项目曝光：开源Agent",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "benchmark",
+        "tutorial",
+        "generate"
+      ],
+      "bodyChars": 4383,
+      "excerpt": "刚刚，DeepSeek V1作者创业项目曝光：开源Agent Jay 2026-11-21 14:32:31 来源： 量子位 专为本地部署而生 聚是一团火，散是满天星。 刚刚，前DeepSeek V1作者、DeepSeek-VL项目负责人 Tony Zhang ，正式公布了自己的新创业项目： Linger 。 方向，正是当下最火的个人 Personal Agent 。 X 帖子视频.mp4 路线也是比较有意思，当同行都在做APP，他们优先选择了电脑。 这意味着，Linger能操纵你电脑已有的网页、邮件箱、日历，无需折腾一大堆登录凭据。 遇到卡住的地方，你也可以直接上手接管。 X 评论视频.mp4 另外一个点，作为中间层的Linger，支持接入各个第三方模型。 并且专门为本地LLM做了优化。 具体来说，一块12GB显存的RTX 3060显卡，就能跑起一个125B参数的 Qwen3.8-Flash-Next ，并且 是45.5 tokens/秒的生成速度。 对了，还有个蛮重要的点—— 这套系统是开源的。。。 至于为什么？ 在官宣帖中，Tony Zhang引用了PC崛起的历史： 1960年代，计算是中心化的，直到PC将权力交到每个人手中。如今，AI在数据中心训练，然后以token的形式租给你。 我们相信智能应该是分布式的。你的上下文、你的数据，以及驱动它们的智能，都应该完全由你拥有。…",
+      "quality": 10,
+      "practical": 7,
+      "sourceName": "量子位",
+      "domain": "qbitai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "fail",
+        "reason": "只有新闻转述，没有数据或步骤。"
+      },
+      "blocked": [
+        "模型复核不通过（只有新闻转述，没有数据或步骤。）"
+      ]
+    },
+    {
+      "slug": "9a8388c7dc17",
+      "title": "主力机该选Windows还是Linux",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "hardware",
+        "free",
+        "generate",
+        "tutorial"
+      ],
+      "bodyChars": 1079,
+      "excerpt": "我一直以来是Windows的用户，不过最近看到了unlock gpu的开源项目，就想着我的显卡应该能拿来跑AI了，就想着要不要转去Linux的CachyOS。当中的点就是担心兼容性的问题。先说一下我的配置吧 部件 具体型号 主板 Gigabyte Z790 AORUS ELITE X AX CPU Intel Core I7-14700K 内存 64GB (4*16GB) T-Force Delta DDR5 6000Mhz CL30 显卡 Gigabyte RTX 4070 TI Super Gaming OC 硬盘1 1TB XPG Gammix S70 Blade SSD 硬盘2 2TB (2*1TB) Patriot SATA SSD (组RAID0) 电源 1stPlayer NGDP HA 850W 再说我目前有用到的软件 软件 支持与替代方案 1. Hermes Desktop 支持 2. DeepSeek Harness 没有官方座面版，使用网页版也可以 3. Claude Code Beta版，不确定兼容性 4. Visual Studio Code 支持 5. Microsoft Office 比较少用到，免费的替代也应该很多 6. Capcut剪映 Davinci或开源的自动剪辑器也可以，轻度剪辑而已 7. Steam 支持 8. Riot Game (Lo…",
+      "quality": 7,
+      "practical": 4,
+      "sourceName": "抡锤者 AI硬件",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "有实践性内容。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "ff64fd3d7777",
+      "title": "5070Ti + R9700 + 96G DDR5 卖肾装机！4090 48G / 7900XTX / 4060Ti各司其职，LLM & ComfyUI & 办公无死角！",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "hardware",
+        "generate",
+        "local",
+        "lowspec"
+      ],
+      "bodyChars": 3410,
+      "excerpt": "采购的硬件终于到了啊，这个是 5070 Ti 16G，七彩虹的 iGame，新的话大概一万三千多块钱吧。这个是旧的，京东自营二手，昨天刚好看到，临时找朋友借的钱。讲实话，朋友也比较紧张，搞不好他也没有，但是就赶巧了。我这朋友其实老婆管得挺严，基本上平时属于身无分文的状态，但是昨天借钱的时候居然有，很痛快地就打给我了。哈，一万块钱买的，已经到位啊。就是为什么买这张卡呢？讲实话，我是想买两张的，但是考虑到我未来几个月可能的收支状况，我所有收入到手之后，扣除开支，还得给家里一些钱，一些基本的生活开销。这个是我的基本义务，还是要给的，也不能全靠老妈、全靠我姐他们养着是吧？你这样也不像话，每个月象征性地给一点。还完债之后，我有些钱，还有一些硬性开销。最近有朋友遇到了一些比较紧急的状况，还得顶一顶他。算下来的话，我手里面所有能动的钱基本上等于零了。前段时间也是找朋友借了一些钱，但是家里面开销太大了。 因为我是打算搬到一个新的地方去，我儿子的房子现在里面住着人，而且也是我们比较传统的这种商品房，那么可能想要有一个比较开阔的格局也比较难了。因为我想以后提升一下视频拍摄的水平，需要一个有空间感、环境还好一点的地方。我也去镇上折腾了一下，我们家镇上的房子确实多多少少还是不行，而且里面现在住着人，要到春节的时候才能搬走。搬走之后还得把它重新弄一下，以后我可能就会搬到镇上去。镇上的离我现在住的地方也就是…",
+      "quality": 9,
+      "practical": 1,
+      "sourceName": "抡锤者 AI硬件",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "有实践性内容。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "cf0b0babfc47",
+      "title": "【实测】2×RX 7900 XTX 24GB：Strata（Qwen3.8-Flash-Next IQ3_S）与 Qwen3.8-27B（hipfire MTP）分卡并行，两端同时满载",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "benchmark",
+        "hardware",
+        "local",
+        "lowspec"
+      ],
+      "bodyChars": 17097,
+      "excerpt": "一句话总结（TL;DR） 2×RX 7900 XTX 24GB 同机分卡：GPU0 跑 Strata 0.1.43 （Qwen3.8-Flash-Next IQ3_S，上下文 261880 ，约 256K），GPU1 跑 hipfire v0.4.7 （Qwen3.8-27B，MTP K=3，测速档位 128K ， --max-seq 140000 ），两端同时满载。 并成功接入本地hermes和DSH 并行代价： 两端 prefill / decode / TTFT 都落在各自 solo 基线的 96 ～ 102% ，未检出超出噪声（单轮 σ/mean≈ 7.6% ）的差异 Strata（256K）： prefill 3,166 tok/s ，decode 93.7 tok/s ，TTFT 82.9 秒 27B（128K）： prefill 1,028 tok/s ，decode 80.4 tok/s ，TTFT 124.7 秒 ；多轮对话第二轮起 TTFT 降到 5.7 秒 唯一可见代价： Strata 常驻时，27B 的 32K 档 prefill 低 7 ～ 8% 占用： GPU1 24,126 / 24,576 MiB ，GPU0 24,491 MiB ，双引擎常驻时主机可用内存约 8.4 GiB 测试 2026-11-21。 一、硬件环境与软件 配置一句话： i7-1…",
+      "quality": 10,
+      "practical": 4,
+      "sourceName": "抡锤者 模型部署讨论",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "有实测数据。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "be6bd42e4cad",
+      "title": "Dettato：多乐器音频转 MIDI，每个乐器一个音轨，再加一个鼓组音轨",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "lowspec",
+        "benchmark",
+        "tutorial",
+        "generate"
+      ],
+      "bodyChars": 1419,
+      "excerpt": "Dettato 是 KobiMusic 开源的 音乐转录模型 ，可以在自己的电脑（CPU、GPU）上运行。你只需输入一段音频，它就能生成一个 MIDI 文件，每个乐器对应一个音轨，外加一个鼓组音轨。@ Appinn 将 MP3/WAV 转换为 MIDI MP3 和 WAV 里存的是录下来的声音。MIDI 更像一份演奏指令，记着哪个音在什么时候响、响多久、弹多重。 电脑读到这些指令，再用你选的乐器音源把它演奏出来。 上图中，上半部分是音频文件的波形图，也是普通音频编辑软件中看到的。下半部分是 MIDI 钢琴卷帘。方块越高，音越高。方块从哪里开始、拉多长，对应音符什么时候响、响多久。蓝色是旋律，紫色是低音。 比如你想学弹开头那几秒，就在钢琴卷帘上看音高和顺序，放慢播放，跟着原曲核对。觉得其中一个音太高，把对应的方块往下拖就行。往左拖可以让它早点响，拉长右边缘可以让它多响一会儿。 Dettato 工作原理 如何使用？ 安装比较简单，一行就行了，可以交给 AI 处理。 运行也是： pip install git+https://github.com/kobimusic/dettato dettato song.mp3 -o out/ 第一次运行会从 Hugging Face 下载模型。转换后， out 文件夹里会有 song.mid 和记录轨道、音符数量等信息的 song.json 。遇…",
+      "quality": 8,
+      "practical": 4,
+      "sourceName": "小众软件",
+      "domain": "appinn.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "有复现步骤。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "d2ecffd5c323",
+      "title": "【跨品牌 TP · 分享贴】为了验证跨品牌 TP，我写了个FCCL，还真跑通了",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "benchmark",
+        "lowspec",
+        "generate",
+        "hardware"
+      ],
+      "bodyChars": 3053,
+      "excerpt": "前段时间的 H3 视频比赛，我折腾了 AMD 同代的异构 TP，也折腾了 NV 不同代的异构 TP。当时就想，如果能实现 A+N 的 TP 就好玩了，于是有了这个帖子。 为了让 A+N 的 TP 跑起来，我折腾了个跨平台 CCL，打算起名 FCCL——Fast (Fcys) Collective Communications Library。之所以发在硬件区，是因为跨平台跨进程的集合通信库不止能用来生成视频，后面能发挥的空间很大，比如 LLM。 当然也不限于 AMD 和 NV 的卡，理论上所有走 PCIe 的 GPU 或加速设备都能接。Intel 那边我也测了：目前 Intel 自家的 oneCCL 通信有 bug，生成的视频满屏彩噪；改用 FCCL 之后能正常出片，但速度偏慢，这个得慢慢调。 原因大家都知道——NVIDIA 的通信库只认自家卡，AMD 的也只认自家卡。两套库互不相通，跨厂商的 TP 从第一步就起不来。 所以我写了一套走主机内存的通信，把这件事跑通了。 原理图： 实际应用（H3）： 所有数字本机实测，代码在本机跑过。平台：W7900（ROCm 10.0）+ RTX PRO 5000（CUDA 13.0），两卡之间 PCIe 4.0 x16。 一、一句话结论 维度 结论 能不能跑 能。1 GiB 收发做到同厂商 P2P 的 91% 比厂商库的主机路径 快 19% 代…",
+      "quality": 8,
+      "practical": 4,
+      "sourceName": "抡锤者 AI硬件",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "有实测数据。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "7d05dca6b92c",
+      "title": "llama.cpp b12606 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "lowspec",
+        "tutorial"
+      ],
+      "bodyChars": 1589,
+      "excerpt": "llama : remove fused lightning indexer gating (#32650) The fused lightning indexer is always used now, so drop the cparams flags, the auto probe and the non-fused fallbacks. Assisted-by: dsh:llama.cpp/ggml-org/DeepSeek-V4.1-Flash-1017-GGUF (Mac Studio, M5 Ultra, 256GB) Website: Attestations: macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubuntu 26.04 s390x (zDNN) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "有复现步骤。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "0c91e13e7dda",
+      "title": "llama.cpp b12608 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1911,
+      "excerpt": "ggml-cpu: fix nc aligment in tinyBLAS_PPC_Q0 (#32659) Fixes https://github.com/ggml-org/llama.cpp/issues/31680 The matmul_tiled() implementation in tinyBLAS_Q0_PPC requires nc to be a multiple of 8 to perform matrix multiplication correctly. The previous alignment logic contained a special case for n == 4, which allowed n_aligned to be 4. Consequently, the tiled path could be selected with nc = 4, violating the kernel's tile-width requirement. This caused incorrect matrix multiplication results, observed as garbled inference output when running Flint Q4_K_M and Gemma 3 27B Instruct. Website:…",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "有复现步骤。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "5e4fd0a265f5",
+      "title": "Google Gemini 黑五五折！AI Pro 年费约 100 美元，Google One 老用户也能参加",
+      "category": "hardware",
+      "subcategory": "machine",
+      "tags": [
+        "tutorial",
+        "lowspec",
+        "free",
+        "money"
+      ],
+      "bodyChars": 1321,
+      "excerpt": "Google Gemini 也开始黑五促销了。 这次 Google AI Pro 年费 最高五折 ，美区原价 199.99 美元/年，优惠价约 99.99 美元/年，相当于每月 8.33 美元。 更重要的是， 已经订阅 Google One 云存储空间的老用户，也有机会享受优惠。 老用户先领，新用户再等等 根据 Google 公布的活动安排，这次黑五优惠分两批： 11 月 20～26 日 ：现有 Google One、Google AI 订阅用户提前参与。 11 月 27 日起 ：向符合条件的新用户开放优惠。 活动涉及 Google AI Plus 和 Google AI Pro 年付套餐，最高优惠 50%。 需要注意，不同账户显示的折扣可能不同，最终以 Google 结算页面为准。 AI Pro 都包含什么？ Google AI Pro 除了提供 Gemini 高级模型和更高使用额度，还包括 Google AI 相关工具、NotebookLM 的增强功能，以及 5TB Google One 云存储空间 。 对于经常使用 Gemini、NotebookLM，或者本来就在付费购买 Google One 存储空间的用户，这次优惠值得看看。 已经买了 Google One 年费怎么办？ 可以尝试直接升级。 例如，你已经购买 Google One 100GB 年费套餐，明年才到期，现在想…",
+      "quality": 8,
+      "practical": 3,
+      "sourceName": "小众软件",
+      "domain": "appinn.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "fail",
+        "reason": "只有新闻转述。"
+      },
+      "blocked": [
+        "模型复核不通过（只有新闻转述。）"
+      ]
+    },
+    {
+      "slug": "49d7c7bacc86",
+      "title": "姚顺雨和混元团队上Reddit答网友，Hy小模型已进路线图",
+      "category": "local",
+      "subcategory": "runtime",
+      "tags": [
+        "benchmark",
+        "local",
+        "lowspec",
+        "tutorial"
+      ],
+      "bodyChars": 4776,
+      "excerpt": "姚顺雨和混元团队上Reddit答网友，Hy小模型已进路线图 衡宇 2026-11-21 14:30:55 来源： 量子位 还透露了不少训练背后的秘诀 听雨 发自 凹非寺 量子位 | 公众号 QbitAI Hy小模型已经在路线图上，面向24GB显存的模型也有计划。 今天凌晨， 姚顺雨和腾讯混元团队 来到Reddit社区，围绕刚发布的Hy4和Hy4 flash做了一场AMA。 AMA是「Ask Me Anything」的缩写，意思是「有什么想问的，尽管问」。网友在评论区提问，混元团队成员直接回帖。 参与名单上只列了Reddit账号，至于哪个马甲是姚顺雨，我们还没对上号…… 这场AMA的主角，是混元本月接连发布的两款模型。 11月4日发布的 Hy4 是旗舰，能理解文本、图像和视频，适合长程软件工程这类需要多步推理、反复调用工具的复杂任务。 11月16日发布的 Hy4 flash ，主打日常办公的速度和成本。它支持图文输入和最长100万Token的上下文，每个Token激活约120亿参数。 Hy4和Hy4 flash都已接入腾讯WorkBuddy。混元团队还把WorkBuddy里的修表、改文档、做PPT等典型任务纳入了内部评测WorkIndex，按这套评测测算，Hy4 flash的平均单任务成本约为旗舰Hy4的1/20。 两款模型的权重都已公开。到了AMA，有网友直接报出自己的电脑配置：…",
+      "quality": 9,
+      "practical": 3,
+      "sourceName": "量子位",
+      "domain": "qbitai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "e8e33e895b48",
+      "title": "GPT-6.2 Astra再次暴击具身模型：16项任务成功率较GPT-6 Astra翻倍",
+      "category": "bench",
+      "subcategory": "benchmark",
+      "tags": [
+        "benchmark",
+        "tutorial"
+      ],
+      "bodyChars": 4203,
+      "excerpt": "GPT-6.2 Astra再次暴击具身模型：16项任务成功率较GPT-6 Astra翻倍 衡宇 2026-11-21 14:35:59 来源： 量子位 还实现可变形物体操控全球首通 衡宇 发自 凹非寺 量子位 | 公众号 QbitAI GPT-6.2 Astra又给具身智能上强度了，狠狠来了一计天马流星拳。 机器人基础设施公司XDOF的最新实测中，GPT-6.2Astra操控双臂机器人 完成16项操作任务的综合成功率 ，从两个月前GPT-6Astra的19.6%飙升至41.2%，翻了一倍有余。 打结、展开T恤 这两项此前无AI通关的操作，这次也被它拿下。 公布成绩后，OpenAI Developers官方账号转发了这条消息，OpenAI联合创始人兼总裁Greg Brockman也骄傲发言： GPT-6.2 Astra在机器人技术方面表现得非常出色～～ 为确保评测严谨，XDOF以六台YAM工作站并行试验，每项任务重复三十次，单日可完成480场实测，并由人工标注子步骤、抓取失误与碰撞，滤除硬件偏差与随机扰动。 纵使标准如此严苛，XDOF也在最新推文中表示，Ember‑0基准或不久后便会被模型能力饱和。 两个月成绩翻倍，到底有多强？ 要理解这次突破的含金量，得先搞明白测试任务究竟难在哪里。 GPT-6.2Astra参加的是XDOF推出的Ember-0测试。 这是一套面向真实物理环境的机…",
+      "quality": 10,
+      "practical": 2,
+      "sourceName": "量子位",
+      "domain": "qbitai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    }
+  ]
+}
