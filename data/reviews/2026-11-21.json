@@ -1,6 +1,6 @@
 {
   "day": "2026-11-21",
-  "reviewedAt": "2026-11-20T18:44:58.216Z",
+  "reviewedAt": "2026-11-21T03:26:56.397Z",
   "reviewer": "cloudflare/@cf/meta/llama-3.1-70b-instruct",
   "note": "cloudflare/@cf/meta/llama-3.1-70b-instruct：复核 12 条，解析到 12 条判定",
   "rules": {
@@ -15,14 +15,15 @@
   },
   "passed": true,
   "reasons": [],
-  "total": 20,
+  "total": 28,
   "blocked": [
+    "40bbf96bd480",
     "61d0fdd123c8",
     "9b68c26f5138",
     "c607b3bea328",
-    "804442f21505"
+    "7612228d5195"
   ],
-  "survivors": 16,
+  "survivors": 23,
   "items": [
     {
       "slug": "40bbf96bd480",
@@ -44,10 +45,12 @@
       "hard": [],
       "warnings": [],
       "agent": {
-        "verdict": "pass",
-        "reason": "条目包含实践性内容，介绍了Alfred 6的新功能和使用方法。"
+        "verdict": "fail",
+        "reason": "内容与标签不符，标签中有benchmark、lowspec、tutorial、agent等，但内容并没有体现出这些方面。"
       },
-      "blocked": []
+      "blocked": [
+        "模型复核不通过（内容与标签不符，标签中有benchmark、lowspec、tutorial、agent等，但内容并没有体现出这些方面。）"
+      ]
     },
     {
       "slug": "c8150d687d73",
@@ -69,7 +72,7 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "条目包含实践性内容，介绍了HippoMaps的搜索功能和使用方法。"
+        "reason": "内容提供了实践性指导和详细步骤，让读者了解如何使用HippoMaps。"
       },
       "blocked": []
     },
@@ -93,10 +96,10 @@
       ],
       "agent": {
         "verdict": "fail",
-        "reason": "条目只包含新闻报道，没有实践性内容。"
+        "reason": "内容主要是新闻转述，没有提供实践性指导或详细步骤。"
       },
       "blocked": [
-        "模型复核不通过（条目只包含新闻报道，没有实践性内容。）"
+        "模型复核不通过（内容主要是新闻转述，没有提供实践性指导或详细步骤。）"
       ]
     },
     {
@@ -119,7 +122,7 @@
       "warnings": [],
       "agent": {
         "verdict": "pass",
-        "reason": "条目包含实践性内容，介绍了群晖NAS的安全漏洞和修复方法。"
+        "reason": "内容提供了实践性指导和详细步骤，让读者了解如何修复群晖NAS的安全漏洞。"
       },
       "blocked": []
     },
@@ -142,10 +145,10 @@
       ],
       "agent": {
         "verdict": "fail",
-        "reason": "条目只包含理论性内容，没有实践性内容。"
+        "reason": "内容过于学术化，没有提供实践性指导或详细步骤。"
       },
       "blocked": [
-        "模型复核不通过（条目只包含理论性内容，没有实践性内容。）"
+        "模型复核不通过（内容过于学术化，没有提供实践性指导或详细步骤。）"
       ]
     },
     {
@@ -171,7 +174,7 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "条目包含实践性内容，介绍了NeonClipping的使用方法和功能。"
+        "reason": "内容提供了实践性指导和详细步骤，让读者了解如何使用NeonClipping工具。"
       },
       "blocked": []
     },
@@ -195,11 +198,35 @@
       "warnings": [],
       "agent": {
         "verdict": "fail",
-        "reason": "内容为新闻转述，没有实测数据或步骤。"
+        "reason": "内容是新闻转述，没有实测数据或步骤。"
       },
       "blocked": [
-        "模型复核不通过（内容为新闻转述，没有实测数据或步骤。）"
+        "模型复核不通过（内容是新闻转述，没有实测数据或步骤。）"
       ]
+    },
+    {
+      "slug": "eac950e016dd",
+      "title": "The War Against Slop and an Emerging Weapon to Fight it: Formal Verification",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "tutorial"
+      ],
+      "bodyChars": 7858,
+      "excerpt": "The word of the year in the AI industry over 2026 has been “slop” — meaning low-quality output from a large language model. And with so much code being AI-generated now, avoiding slop has become a daily concern for software engineers. So how to do that? One way is to use formal verification systems , which use mathematical proofs and logic to verify the correctness of software or hardware. With AI’s growing prowess at solving math problems , there’s now a number of AI companies offering formal verification systems. They include Harmonic , Theorem , Axiom Math , and a new entrant called &Truth…",
+      "quality": 10,
+      "practical": 1,
+      "sourceName": "Latent Space",
+      "domain": "latent.space",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "文章讨论了正式验证系统的使用，提供了具体的解决方案和步骤。"
+      },
+      "blocked": []
     },
     {
       "slug": "804442f21505",
@@ -220,11 +247,36 @@
         "标题未翻译"
       ],
       "agent": {
+        "verdict": "pass",
+        "reason": "文章讨论了AI能力评估的进展，提供了具体的数据和分析。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "7612228d5195",
+      "title": "📡 AI日报 11/21 | 黎曼猜想起争议、AI供应链泄密、华为AI手机售罄",
+      "category": "tools",
+      "subcategory": "interface",
+      "tags": [
+        "agent",
+        "lowspec",
+        "generate",
+        "money"
+      ],
+      "bodyChars": 1016,
+      "excerpt": "AI 日报 · 2026-11-21 1. AI 宣称给出黎曼猜想证明，人类数学家同步拿出另一份解 Anthropic 数学家 Levent Alpöge 称在 Claude 辅助下得到可被 Lean 编译验证的黎曼猜想证明；同一周另有数学家给出独立的人类解。学界仍在用 Lean 复核， 尚未定论 。 来源：TechCrunch（2026-11-21 03:32 CST） 2. 200 万条“金丝雀”提示词，揭出 AI 供应链泄密 安全公司 Dragos 首席研究官 HD Moore 向 AI 路由与转售链路投放 200 万条含唯一可追踪假密钥的提示词，发现提示词被盗、凭据泄漏，3 家托管商被攻破并复用数百个 AWS 密钥。提示词虽加密传输，但每一跳都被解密读取，是泄漏主因。 来源：Ars Technica（2026-11-21 04:59 CST） 3. Anthropic 报告：持续学习这道 AGI 大坎已被跨过 36氪 梳理 Anthropic《The components of agent memory》实验：只给模型一个可自由读写的记忆文件夹，Claude Opus 4.7 在 CL-Bench 上把平均奖励从 0.383 拉到 0.700，Opus 5.5 从 0.655 拉到 0.838；模型开始自发区分“已验证结论”与“未验证猜想”。 来源：36氪（2026-11…",
+      "quality": 7,
+      "practical": 1,
+      "sourceName": "抡锤者 资讯",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
         "verdict": "fail",
-        "reason": "内容为新闻转述，没有实测数据或步骤。"
+        "reason": "内容主要是新闻转述，没有实测数据或步骤。"
       },
       "blocked": [
-        "模型复核不通过（内容为新闻转述，没有实测数据或步骤。）"
+        "模型复核不通过（内容主要是新闻转述，没有实测数据或步骤。）"
       ]
     },
     {
@@ -247,7 +299,7 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "内容为学术研究，提供了复现步骤。"
+        "reason": "文章讨论了ROGUE-AI系统的复制和审计，提供了具体的步骤和分析。"
       },
       "blocked": []
     },
@@ -272,8 +324,29 @@
       "warnings": [],
       "agent": {
         "verdict": "pass",
-        "reason": "内容为实测报告，提供了详细的配置和结果。"
+        "reason": "文章讨论了MacBook Pro M5 Max的性能测试，提供了具体的数据和对比结果。"
       },
+      "blocked": []
+    },
+    {
+      "slug": "1552e66746ec",
+      "title": "M5 Ultra 256g 残血版跑 GLM 5.3 Flash",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "benchmark",
+        "local",
+        "lowspec"
+      ],
+      "bodyChars": 1346,
+      "excerpt": "等了快两个多月，终于收到M5 Ultra 256g 残血版，折腾跑了一下GLM 5.3 Flash，我不是搞IT的，发第一个测试，希望大佬们看还有没有优化空间 GLM-5.3-Flash 完整测试报告 测试机型：Mac Studio M5 Ultra（30 核 CPU / 64 核 GPU），256 GB 统一内存，macOS 27.2.1 一、模型与部署 模型 • 内容: ddalcu/GLM-5.3-Flash-MLX-Serve-iQ-MLX-5.1bpw 架构 • 内容: glm5_next / Glm5NextForConditionalGeneration 参数 • 内容: 320B 总量 / 18B 激活（MoE，288 专家 top-8 + 1 共享） 量化 • 内容: 混合精度：主干 8-bit，专家 5–6-bit，平均 5.1 bpw 磁盘 • 内容: 188.6 GB（36 个分片） 推理框架 • 内容: mlx-serve（ddalcu 自研引擎，非官方 mlx-lm） 上下文 • 内容: 131,072（128K） 加载耗时 • 内容: 42 秒（磁盘 → 内存） Decode（生成速度，不思考模式） 23,094 tokens • Decode: 105.8 tok/s • 备注: 峰值，MTP 全命中 57,716 tokens • Decode:…",
+      "quality": 7,
+      "practical": 2,
+      "sourceName": "抡锤者 AI硬件",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
       "blocked": []
     },
     {
@@ -296,10 +369,29 @@
       "warnings": [
         "标题未翻译"
       ],
-      "agent": {
-        "verdict": "pass",
-        "reason": "内容为软件更新说明，提供了详细的更新信息。"
-      },
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "4436e941ff9f",
+      "title": "llama.cpp b12597 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1767,
+      "excerpt": "<details open> convert: qwen3-asr: put \"language ...\" output into thinking block (#32571) convert: qwen3-asr: put \"language ...\" output into thinking block convert: qwen3-asr: read the chat template from models/templates The converter embedded its own copy of Qwen3-ASR.jinja. Read the bundled file instead, as the Kimi-K3 and Kokoro converters do, so the GGUF and test-chat share a single template. --------- Co-authored-by: Pascal <admin@serveurperso.com> </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/70366628> macOS/iOS: macOS Apple Si…",
+      "quality": 8,
+      "practical": 5,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
       "blocked": []
     },
     {
@@ -321,10 +413,27 @@
       "warnings": [
         "标题未翻译"
       ],
-      "agent": {
-        "verdict": "pass",
-        "reason": "内容为软件更新说明，提供了详细的更新信息。"
-      },
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "1cef2967275a",
+      "title": "求助各位大神：双卡PRO6000 + 256GB内存 求一个合适的模型",
+      "category": "hardware",
+      "subcategory": "machine",
+      "tags": [
+        "local",
+        "hardware"
+      ],
+      "bodyChars": 167,
+      "excerpt": "由于项目保密，所以需要部署一个本地大模型，主要用于写代码；但是实验室里只有三张PRO6000（工作站版本，不支持nvlink），四张5880；服务器机箱上也插不了太多，只能插四张GPU。 我试了单卡跑Qwen3.8 27B，一个是感觉写代码太慢了，另一个感觉没用上足够多的设备，亏得慌 想问问各位大佬有什么合适的方案推荐吗？",
+      "quality": 7,
+      "practical": 2,
+      "sourceName": "抡锤者 模型部署讨论",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
       "blocked": []
     },
     {
@@ -372,6 +481,50 @@
       "blocked": []
     },
     {
+      "slug": "3757ad9d820c",
+      "title": "llama.cpp b12600 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1607,
+      "excerpt": "<details open> model : Inkling 2 Mini (#32694) Conversion Separate model_type Add gate_rank to allow building from metadata while testing Base model Loop graph Support the new is_varloop attribute Adopt naming scheme from https://github.com/ggml-org/llama.cpp/pull/32588 Rename to varying </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/70375093> macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "48ff7c73fdbf",
+      "title": "llama.cpp b12599 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1709,
+      "excerpt": "<details open> hip: add RDNA1 MMVQ parameter table (1 warp per block for ncols=1) (#32389) hip: add RDNA1 MMVQ parameter table (1 warp per block for ncols=1) hip: write the RDNA1 MMVQ values explicitly instead of recursing into the generic table hip: list the RDNA1 MMVQ table before RDNA2 in the enum Update ggml/src/ggml-cuda/mmvq.cu --------- Co-authored-by: Johannes Gäßler <johannesg@5d6.de> </details> Website: <https://llama.app> Attestations: <https://github.com/ggml-org/llama.cpp/attestations/70370539> macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) D…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
       "slug": "f87552a1314e",
       "title": "苹果/AMD/Nvidia/Intel顶级硬件决战AI视频大赛，Minimax H3工作流比拼，性价比最高的竟是5070Ti？N卡生态红利尽显！",
       "category": "hardware",
@@ -390,6 +543,27 @@
       "domain": "lcz.me",
       "hard": [],
       "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "80d31a6dee29",
+      "title": "Welcome Inkling 2 Mini, Cutting-edge Performance for your Local Setup",
+      "category": "local",
+      "subcategory": "runtime",
+      "tags": [
+        "local"
+      ],
+      "bodyChars": 21311,
+      "excerpt": "Back to Articles Welcome Inkling 2 Mini, Cutting-edge Performance for your Local Setup Published November 20, 2026 Update on GitHub Upvote 23 merve merve Pedro Cuenca pcuenq Aritra Roy Gosthipaty ariG23498 Guarin Flück guarin TLDR; Inkling 2 Mini is a new looped transformer model. It’s a multimodal Mixture-of-Experts with ~26B physical total and 3B active parameters per token. It uses a neat trick to increase capacity: some layers are visited in a loop that repeats three times, which makes it work like it had more parameters. It supports a 1M-token context size, accepts images and text inputs…",
+      "quality": 6,
+      "practical": 2,
+      "sourceName": "Hugging Face Blog",
+      "domain": "huggingface.co",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
       "agent": null,
       "blocked": []
     },
