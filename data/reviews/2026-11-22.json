@@ -1,6 +1,6 @@
 {
   "day": "2026-11-22",
-  "reviewedAt": "2026-11-21T16:13:21.603Z",
+  "reviewedAt": "2026-11-21T17:45:03.932Z",
   "reviewer": "cloudflare/@cf/meta/llama-3.1-70b-instruct",
   "note": "cloudflare/@cf/meta/llama-3.1-70b-instruct：复核 12 条，解析到 12 条判定",
   "rules": {
@@ -15,11 +15,14 @@
   },
   "passed": true,
   "reasons": [],
-  "total": 14,
+  "total": 17,
   "blocked": [
+    "cfc3f8712c6c",
     "c877044bb049",
     "12995faf6f48",
-    "5e4fd0a265f5"
+    "ff64fd3d7777",
+    "7d05dca6b92c",
+    "0c91e13e7dda"
   ],
   "survivors": 11,
   "items": [
@@ -41,8 +44,32 @@
         "标题未翻译"
       ],
       "agent": {
+        "verdict": "fail",
+        "reason": "无实践性内容，仅转述新闻。"
+      },
+      "blocked": [
+        "模型复核不通过（无实践性内容，仅转述新闻。）"
+      ]
+    },
+    {
+      "slug": "a5567f5ace5a",
+      "title": "RTX50系 Blackwell 未來福利區 - Basalt + Inkling 2 Mini + 5090 => Prefill 14100 tok/s",
+      "category": "apps",
+      "subcategory": "inference",
+      "tags": [
+        "benchmark"
+      ],
+      "bodyChars": 388,
+      "excerpt": "亦可參考此帖 小模型的新选择？ Inkling-2-Mini 引擎功能還不完全 先觀望 Basalt by jesdga95 - Local inference engine optimized for NVIDIA Blackwell https://github.com/jesdga95/basalt DSpark 規劃中 支援原生影像（Native Image） 工具呼叫（Tool Calls）與推理運算（Reasoning Effort） 單張 5090 即可支援 100 萬（1M）Context；當長對話需要更多空間時，才會將「冷門專家」（Cold Experts）移至 RAM。在 131K 與 400K 的「大海撈針」（Needle）測試中均已通過。 亦支援 16GB 顯卡；在 5060 Ti 上運行速度約為 60 tok/s。",
+      "quality": 8,
+      "practical": 3,
+      "sourceName": "抡锤者 模型部署讨论",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
         "verdict": "pass",
-        "reason": "有实测数据。"
+        "reason": "包含实测数据和复现步骤。"
       },
       "blocked": []
     },
@@ -65,10 +92,10 @@
       ],
       "agent": {
         "verdict": "fail",
-        "reason": "只有新闻转述，没有数据或步骤。"
+        "reason": "无实践性内容，仅转述新闻。"
       },
       "blocked": [
-        "模型复核不通过（只有新闻转述，没有数据或步骤。）"
+        "模型复核不通过（无实践性内容，仅转述新闻。）"
       ]
     },
     {
@@ -92,7 +119,7 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "有复现步骤。"
+        "reason": "包含实践性内容，有复现步骤和具体工具。"
       },
       "blocked": []
     },
@@ -117,10 +144,10 @@
       "warnings": [],
       "agent": {
         "verdict": "fail",
-        "reason": "只有新闻转述，没有数据或步骤。"
+        "reason": "无实践性内容，仅转述新闻。"
       },
       "blocked": [
-        "模型复核不通过（只有新闻转述，没有数据或步骤。）"
+        "模型复核不通过（无实践性内容，仅转述新闻。）"
       ]
     },
     {
@@ -144,7 +171,7 @@
       "warnings": [],
       "agent": {
         "verdict": "pass",
-        "reason": "有实践性内容。"
+        "reason": "包含实践性内容，有具体配置和软件使用。"
       },
       "blocked": []
     },
@@ -168,10 +195,12 @@
       "hard": [],
       "warnings": [],
       "agent": {
-        "verdict": "pass",
-        "reason": "有实践性内容。"
+        "verdict": "fail",
+        "reason": "无实测数据或步骤。"
       },
-      "blocked": []
+      "blocked": [
+        "模型复核不通过（无实测数据或步骤。）"
+      ]
     },
     {
       "slug": "cf0b0babfc47",
@@ -194,7 +223,7 @@
       "warnings": [],
       "agent": {
         "verdict": "pass",
-        "reason": "有实测数据。"
+        "reason": "。"
       },
       "blocked": []
     },
@@ -219,7 +248,7 @@
       "warnings": [],
       "agent": {
         "verdict": "pass",
-        "reason": "有复现步骤。"
+        "reason": "。"
       },
       "blocked": []
     },
@@ -244,7 +273,7 @@
       "warnings": [],
       "agent": {
         "verdict": "pass",
-        "reason": "有实测数据。"
+        "reason": "。"
       },
       "blocked": []
     },
@@ -269,10 +298,12 @@
         "标题未翻译"
       ],
       "agent": {
-        "verdict": "pass",
-        "reason": "有复现步骤。"
+        "verdict": "fail",
+        "reason": "无实测数据或步骤。"
       },
-      "blocked": []
+      "blocked": [
+        "模型复核不通过（无实测数据或步骤。）"
+      ]
     },
     {
       "slug": "0c91e13e7dda",
@@ -294,10 +325,12 @@
         "标题未翻译"
       ],
       "agent": {
-        "verdict": "pass",
-        "reason": "有复现步骤。"
+        "verdict": "fail",
+        "reason": "无实测数据或步骤。"
       },
-      "blocked": []
+      "blocked": [
+        "模型复核不通过（无实测数据或步骤。）"
+      ]
     },
     {
       "slug": "5e4fd0a265f5",
@@ -318,13 +351,49 @@
       "domain": "appinn.com",
       "hard": [],
       "warnings": [],
-      "agent": {
-        "verdict": "fail",
-        "reason": "只有新闻转述。"
-      },
-      "blocked": [
-        "模型复核不通过（只有新闻转述。）"
-      ]
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "579b9ab1f1bf",
+      "title": "Strata v0.2.18 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [],
+      "bodyChars": 7054,
+      "excerpt": "Strata 0.2.18 The app and the Terminal are 0.2.18. The engines ( strata-engine and the new strata-hy4 shape engine) are 0.1.64 on every platform, and so is Control, the program that installs and updates them. The update feeds are sequence 130 (shared) and 126 ( linux-aarch64 ). What changes for you Native Tencent Hy4-Flash support ( strata-hy4 0.1.64). Run Tencent's 220B-parameter (12B active, 64B Engram lookup, up to 1M context, text + vision) Hy4-Flash locally across Windows, Linux, macOS Apple Silicon, and DGX Spark ( linux-aarch64 ). Three Strata Quantization packs ( strata-engine/Hy4-Fla…",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "a3605671bfab",
+      "title": "di-sukharev/opencommit",
+      "category": "local",
+      "subcategory": "runtime",
+      "tags": [
+        "local"
+      ],
+      "bodyChars": 23416,
+      "excerpt": "OpenCommit Author Auto-generate meaningful commits in a second Killing lame commits with AI 🤯🔫 🪩 Winner of GitHub 2023 hackathon 🪩 --- All the commits in this repo are authored by OpenCommit — look at the commits to see how OpenCommit works. Emojis and long commit descriptions are configurable, basically everything is. Setup OpenCommit as a CLI tool You can use OpenCommit by simply running it via the CLI like this oco . 2 seconds and your staged changes are committed with a meaningful message. Install OpenCommit globally to use in any repository: npm install -g opencommit Get your API key…",
+      "quality": 8,
+      "practical": 3,
+      "sourceName": "GitHub 检索（生态项目更新）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
     },
     {
       "slug": "49d7c7bacc86",
