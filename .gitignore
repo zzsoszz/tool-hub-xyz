@@ -45,5 +45,8 @@ credentials.local.md
 **/.impeccable/live/deferred-svelte-component-accepts.json
 **/.impeccable/live/*.png
 # impeccable-ignore-end
+# Codex 侧的取证脚本与 sidecar：脚本写死了本机预览端口，design.json 这类 sidecar 由 DESIGN.md 再生，
+# 过期比缺失更糟，整目录不提交。
+.impeccable/
 # 正文配图的本地副本：每天新增、过期即删，提交进仓库只会让历史一直变大。
 data/images/
