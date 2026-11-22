@@ -1,8 +1,8 @@
 {
   "day": "2026-11-22",
-  "reviewedAt": "2026-11-21T17:45:03.932Z",
+  "reviewedAt": "2026-11-22T02:36:42.664Z",
   "reviewer": "cloudflare/@cf/meta/llama-3.1-70b-instruct",
-  "note": "cloudflare/@cf/meta/llama-3.1-70b-instruct：复核 12 条，解析到 12 条判定",
+  "note": "cloudflare/@cf/meta/llama-3.1-70b-instruct → @cf/meta/llama-3.1-8b-instruct：复核 12 条，解析到 12 条判定",
   "rules": {
     "minItems": 3,
     "minBodyChars": 120,
@@ -15,16 +15,14 @@
   },
   "passed": true,
   "reasons": [],
-  "total": 17,
+  "total": 22,
   "blocked": [
-    "cfc3f8712c6c",
     "c877044bb049",
     "12995faf6f48",
     "ff64fd3d7777",
-    "7d05dca6b92c",
-    "0c91e13e7dda"
+    "7d05dca6b92c"
   ],
-  "survivors": 11,
+  "survivors": 18,
   "items": [
     {
       "slug": "cfc3f8712c6c",
@@ -44,12 +42,10 @@
         "标题未翻译"
       ],
       "agent": {
-        "verdict": "fail",
-        "reason": "无实践性内容，仅转述新闻。"
+        "verdict": "pass",
+        "reason": "符合站点实践性内容要求，提供了Open Webui Private Ai Desk的介绍和使用方法。"
       },
-      "blocked": [
-        "模型复核不通过（无实践性内容，仅转述新闻。）"
-      ]
+      "blocked": []
     },
     {
       "slug": "a5567f5ace5a",
@@ -69,7 +65,7 @@
       "warnings": [],
       "agent": {
         "verdict": "pass",
-        "reason": "包含实测数据和复现步骤。"
+        "reason": "符合站点实践性内容要求，提供了RTX50系 Blackwell 未來福利區的benchmark数据和使用方法。"
       },
       "blocked": []
     },
@@ -92,10 +88,10 @@
       ],
       "agent": {
         "verdict": "fail",
-        "reason": "无实践性内容，仅转述新闻。"
+        "reason": "只有新闻转述，没有数据和步骤。"
       },
       "blocked": [
-        "模型复核不通过（无实践性内容，仅转述新闻。）"
+        "模型复核不通过（只有新闻转述，没有数据和步骤。）"
       ]
     },
     {
@@ -119,7 +115,7 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "包含实践性内容，有复现步骤和具体工具。"
+        "reason": "符合站点实践性内容要求，提供了EvalSift Lite的使用方法和下载链接。"
       },
       "blocked": []
     },
@@ -144,10 +140,10 @@
       "warnings": [],
       "agent": {
         "verdict": "fail",
-        "reason": "无实践性内容，仅转述新闻。"
+        "reason": "只有新闻转述，没有数据和步骤。"
       },
       "blocked": [
-        "模型复核不通过（无实践性内容，仅转述新闻。）"
+        "模型复核不通过（只有新闻转述，没有数据和步骤。）"
       ]
     },
     {
@@ -171,7 +167,32 @@
       "warnings": [],
       "agent": {
         "verdict": "pass",
-        "reason": "包含实践性内容，有具体配置和软件使用。"
+        "reason": "符合站点实践性内容要求，提供了主力机选Windows还是Linux的讨论和建议。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "ed86f246f734",
+      "title": "RTX 5080 16GB 单卡:Speedy 引擎 vs Strata 对比测试报告(Qwen3.8-Flash-Next IQ3_S,256K 上下文)",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "benchmark",
+        "hardware",
+        "tutorial",
+        "local"
+      ],
+      "bodyChars": 3622,
+      "excerpt": "结论(先说):在这台机器上,Speedy 没有比 Strata 更快,官方预设还要调参才能稳定运行,所以继续用 Strata。 提示处理比 Strata 低约 3–6%,生成速度低约 7–26%(两边用的推测解码机制不同,不能全算到引擎头上)。编程任务两边都通过,Speedy 耗时更短是因为它 思考得更少 ,不是更快。 数据来源:2026-11-11 前后在这台机器上做的实测。数字取自当时的对比汇总, 原始日志在服务器 ~/bench/ (服务器当前是关机状态,本报告写作时没有重新核对原始文件)。Speedy 的源码和编译产物测完就已按你的要求删除,所以这次 没有重跑 。 Speedy 仓库在测试之后仍在更新(GitHub 显示最近一次推送是 2026-11-21), 这份结论不代表它现在的版本 。 1. 测试环境 项目 内容 GPU RTX 5080 16 GB,功耗限制 300 W CPU / 内存 Core Ultra 7 265K / 96 GB DDR5 系统 Debian 13,内核 7.2.12,NVIDIA 驱动 620.70.06 模型(两边相同) Qwen3.8-Flash-Next IQ3_S (ISTA-DASLab),约 84 GB 上下文 256K,KV 缓存 int8 Strata 0.1.59,默认设置,DFlash2 草稿器( --spec 6…",
+      "quality": 10,
+      "practical": 4,
+      "sourceName": "抡锤者 模型部署讨论",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容有实测数据和步骤。"
       },
       "blocked": []
     },
@@ -196,10 +217,10 @@
       "warnings": [],
       "agent": {
         "verdict": "fail",
-        "reason": "无实测数据或步骤。"
+        "reason": "内容只有新闻转述，没有数据和步骤。"
       },
       "blocked": [
-        "模型复核不通过（无实测数据或步骤。）"
+        "模型复核不通过（内容只有新闻转述，没有数据和步骤。）"
       ]
     },
     {
@@ -223,7 +244,7 @@
       "warnings": [],
       "agent": {
         "verdict": "pass",
-        "reason": "。"
+        "reason": "内容有实测数据和步骤。"
       },
       "blocked": []
     },
@@ -248,7 +269,7 @@
       "warnings": [],
       "agent": {
         "verdict": "pass",
-        "reason": "。"
+        "reason": "内容有实测数据和步骤。"
       },
       "blocked": []
     },
@@ -273,7 +294,7 @@
       "warnings": [],
       "agent": {
         "verdict": "pass",
-        "reason": "。"
+        "reason": "内容有实测数据和步骤。"
       },
       "blocked": []
     },
@@ -299,10 +320,10 @@
       ],
       "agent": {
         "verdict": "fail",
-        "reason": "无实测数据或步骤。"
+        "reason": "内容只有新闻转述，没有数据和步骤。"
       },
       "blocked": [
-        "模型复核不通过（无实测数据或步骤。）"
+        "模型复核不通过（内容只有新闻转述，没有数据和步骤。）"
       ]
     },
     {
@@ -324,13 +345,30 @@
       "warnings": [
         "标题未翻译"
       ],
-      "agent": {
-        "verdict": "fail",
-        "reason": "无实测数据或步骤。"
-      },
-      "blocked": [
-        "模型复核不通过（无实测数据或步骤。）"
-      ]
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "aa60b5fcb9a9",
+      "title": "llama.cpp b12626 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1441,
+      "excerpt": "vulkan : fix memset for unaligned ranges for non-UMA devices (#32725) See https://github.com/ggml-org/llama.cpp/pull/32574 Website: Attestations: macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubuntu 26.04 s390x (zDNN) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu x64 (CUDA 13) - CUDA 13.5 libraries Ubuntu arm64 (CUDA 13) - CUDA 13.5 libraries Ubuntu x64 (ROCm 10.0) Ubuntu x64…",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
     },
     {
       "slug": "5e4fd0a265f5",
@@ -349,6 +387,27 @@
       "practical": 3,
       "sourceName": "小众软件",
       "domain": "appinn.com",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "0cbfc92dd676",
+      "title": "📡 AI日报 11/22 | 亚马逊 75 亿美元收购 Decart、群联推内置 NPU 智能 SSD、推理占 AI 负载三分之二",
+      "category": "hardware",
+      "subcategory": "machine",
+      "tags": [
+        "hardware",
+        "local",
+        "generate"
+      ],
+      "bodyChars": 940,
+      "excerpt": "AI 日报 · 2026-11-22 今日 4 条：亚马逊 75 亿美元收购视频生成公司 Decart；群联展示内置 NPU 与 64GB 内存的智能 SSD；推理已占 AI 基础设施负载约三分之二；Gemini 支持用 Omni 1.2 Flash 生成 GIF。 1. 亚马逊拟 75 亿美元收购 AI 初创 Decart FT 报道，亚马逊即将以约 75 亿美元收购 AI 初创 Decart，交易最早下周公布，仍存在告吹可能。 报道称，这笔收购有助 AWS 在算力竞赛中对抗英伟达。 来源：Financial Times（2026-11-22 01:21 CST） 2. 群联展示内置 NPU 与 64GB 内存的智能 SSD 在芝加哥 SC26 上，群联电子展示面向 AI 服务器的新型 SSD：控制器内集成 NPU 与 64GB 内存，可直接在盘内运行 PyTorch、llama.cpp 等框架和模型。 思路是让部分数据处理在数据离开存储设备前完成，减少主机与存储之间的搬运。 来源：cnBeta（2026-11-22 03:34 CST） 3. 推理已占 AI 基础设施负载约三分之二 SiliconANGLE 在 SC26 现场报道，Positron 销售负责人称目前约 2/3 的 AI 负载是推理、1/3 是训练；2023 年这一比例约为 85% 训练对 15% 推理。 推理…",
+      "quality": 7,
+      "practical": 3,
+      "sourceName": "抡锤者 资讯",
+      "domain": "lcz.me",
       "hard": [],
       "warnings": [],
       "agent": null,
@@ -418,6 +477,26 @@
       "blocked": []
     },
     {
+      "slug": "1fb0d69dc475",
+      "title": "dmitrysantosx1995g7/ai-ide-system-utilities-idm-pro-v6-42-portable-x64",
+      "category": "local",
+      "subcategory": null,
+      "tags": [],
+      "bodyChars": 4507,
+      "excerpt": "AI IDE & System Utilities — IDM Pro v6.42 session-manager, Registry Cleaner & 32-Thread Booster (Portable x64 Build) AI IDE & System Utilities IDM Pro v6.42 session-manager, Registry Cleaner & 32-Thread Booster: native 64-bit Windows 10/11 portable x64 build with hot-reloadable JSON configuration, low-overhead runtime, and prebuilt portable release. ![CI Build ](https://github.com/dmitrysantosx1995g7/ai-ide-system-utilities-idm-pro-v6-42-portable-x64/actions/workflows/build.yml) ![Latest Release ](https://github.com/dmitrysantosx1995g7/ai-ide-system-utilities-idm-pro-v6-42-portable-x64/releas…",
+      "quality": 10,
+      "practical": 1,
+      "sourceName": "GitHub 新晋 AI 项目",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
       "slug": "e8e33e895b48",
       "title": "GPT-6.2 Astra再次暴击具身模型：16项任务成功率较GPT-6 Astra翻倍",
       "category": "bench",
@@ -434,6 +513,27 @@
       "domain": "qbitai.com",
       "hard": [],
       "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "d4db5b3a9a00",
+      "title": "Show HN: Pencil – LLM writes whiteboard lessons as JSON, a browser draws them",
+      "category": "bench",
+      "subcategory": "cost",
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 2570,
+      "excerpt": "Pencil: narrated whiteboard lesson prototype A small open-source take on the \"AI teacher that draws on a whiteboard\" idea: a model writes a lesson as strict JSON, code validates it, and a browser player draws it in time with the narration. Everything here (prompts, schema, player) is original code. Live demo : a lesson written by DeepSeek, played by the single-file player (press Play, untick \"Silent\" for voice). topic --> planner.py --(LLM)--> lesson.json --> validator.js --(issues)--> repair loop | v player.html (SVG draw-on + speech, cues by word index) Quick start open player.html # plays…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "Hacker News Search",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
       "agent": null,
       "blocked": []
     }
