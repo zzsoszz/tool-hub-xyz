@@ -1,7 +1,7 @@
 {
   "id": "model-pricing",
   "kind": "openrouter-pricing",
-  "collectedAt": "2026-11-22T02:36:05.368Z",
+  "collectedAt": "2026-11-22T17:59:15.566Z",
   "upstream": {
     "label": "OpenRouter 模型目录 API",
     "url": "https://openrouter.ai/models"
@@ -109,16 +109,6 @@
           "completionPerMillion": 0.045,
           "free": false,
           "created": 1786034890
-        },
-        {
-          "name": "OpenAI: gpt-oss-20b",
-          "id": "openai/gpt-oss-20b",
-          "url": "https://openrouter.ai/openai/gpt-oss-20b",
-          "context": 131072,
-          "promptPerMillion": 0.017,
-          "completionPerMillion": 0.08499999999999999,
-          "free": false,
-          "created": 1754414229
         },
         {
           "name": "Meta: Llama 3.1 8B Instruct",
@@ -409,6 +399,16 @@
           "completionPerMillion": 1.4,
           "free": false,
           "created": 1787151053
+        },
+        {
+          "name": "Z.ai: GLM 5.3",
+          "id": "z-ai/glm-5.3",
+          "url": "https://openrouter.ai/z-ai/glm-5.3",
+          "context": 1048576,
+          "promptPerMillion": 0.0699,
+          "completionPerMillion": 1.4,
+          "free": false,
+          "created": 1787086655
         }
       ]
     }
@@ -421,8 +421,8 @@
     {
       "path": "https://openrouter.ai/api/v1/models",
       "url": "https://openrouter.ai/api/v1/models",
-      "sha256": "88b49666d52a2c84366a0db0d3603f45fa2b5561d52679adc724b6dccf6d4def",
-      "bytes": 925513
+      "sha256": "0491d8cac0760e4eed6a2e3bf0607831925e9e2411c63b90b9105c2058958cd9",
+      "bytes": 925525
     }
   ]
 }
