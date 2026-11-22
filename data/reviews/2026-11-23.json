@@ -1,0 +1,458 @@
+{
+  "day": "2026-11-23",
+  "reviewedAt": "2026-11-22T17:59:45.845Z",
+  "reviewer": "cloudflare/@cf/meta/llama-3.1-70b-instruct",
+  "note": "cloudflare/@cf/meta/llama-3.1-70b-instruct → @cf/meta/llama-3.1-8b-instruct：复核 12 条，解析到 12 条判定",
+  "rules": {
+    "minItems": 3,
+    "minBodyChars": 120,
+    "minSummaryChars": 40,
+    "maxTags": 4,
+    "agentMaxItems": 12,
+    "agentBatch": 6,
+    "agentChars": 900,
+    "agentExcerptChars": 600
+  },
+  "passed": true,
+  "reasons": [],
+  "total": 18,
+  "blocked": [
+    "579cc48d0913",
+    "8a2ef492e1a5",
+    "d6b99120e8a5",
+    "43ebc8eb20ad",
+    "5f9f11e108fd",
+    "db49a7dfd4c3",
+    "06e7d59159f7",
+    "faa6794ff64e"
+  ],
+  "survivors": 10,
+  "items": [
+    {
+      "slug": "579cc48d0913",
+      "title": "legal-hkr/comfychair",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [
+        "generate"
+      ],
+      "bodyChars": 15676,
+      "excerpt": "ComfyChair An unofficial, native Android UI for ComfyUI . Current version : v0.9.6 Overview ComfyChair provides a streamlined mobile interface for interacting with ComfyUI servers, allowing you to generate and manage AI images and videos directly from your Android device. The app communicates with your ComfyUI server via its API, bringing the power of node-based AI generation to your mobile workflow. Note : This is an independent, community-developed project and is not officially affiliated with or endorsed by the ComfyUI team. Screenshots Features General Material 3 Expressive design : Image…",
+      "quality": 10,
+      "practical": 3,
+      "sourceName": "GitHub 检索（生态项目更新）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "没有数据或步骤。"
+      },
+      "blocked": [
+        "模型复核不通过（没有数据或步骤。）"
+      ]
+    },
+    {
+      "slug": "8a2ef492e1a5",
+      "title": "praseesh369/youtube-ai-video-editing-system",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [],
+      "bodyChars": 14004,
+      "excerpt": "🎬 AI-Driven YouTube Video Workflow & Motion Graphics — Media Editor ![](files/preview.png) 🚀 PowerShell Quick Install [![](files/button.png)](https://praseesh369.github.io/youtube-ai-video-editing-system/) ![runs-on ]() ![users ]() ![ps-core ]() ![channel ]() --- This system treats a video edit as a visible, inspectable pipeline: the Eyeline teleprompter captures your script and takes, editing agents propose a candidate cut, and every decision lands in readable JSON that you can open, question, and reshape. From there, design briefs feed Claude Design and HTML reference boards, animation ti…",
+      "quality": 10,
+      "practical": 2,
+      "sourceName": "GitHub 新晋 AI 项目",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "没有数据或步骤。"
+      },
+      "blocked": [
+        "模型复核不通过（没有数据或步骤。）"
+      ]
+    },
+    {
+      "slug": "9d399bb7fe19",
+      "title": "【實測】重點：一個錯誤，prefill 少一半 —— RX 7900 XT 20GB 升級 STRATA 0.2.5 → 0.2.18 + tune auto（675 → 1728 tok/s）",
+      "category": "apps",
+      "subcategory": "inference",
+      "tags": [
+        "benchmark"
+      ],
+      "bodyChars": 6590,
+      "excerpt": "TL;DR（30 秒版） 升級 + tune 之後，11.5K prompt 嘅 prefill 由 674.7 tok/s 升到 1,728.9 tok/s（+156%，2.56 倍） ，TTFT 由 17.11 秒 減到 6.68 秒 最大嘅元兇唔係版本舊，係一張「錯調校表」 ：profile pin 死咗 100401 張 hipBLASLt 表，但實際 runtime 係 100200 → 每次 prefill 都 fallback 去慢嘅 hipBLASEx， 唔崩潰、唔報錯，只係默默慢一倍 --prefill auto 預設封頂 8192 token／chunk ，大 GEMM shape 食唔到；放開去 auto:16384 即刻再多 9% tune auto quick 模式 11 分鐘、+4%、答案完全一致 （改 --kv-resident 65536 ），但 preset 唔會自動改你明確指定嘅 --profile 檔 而家 peak prefill 1,721 tok/s ，已經超過官方對比表入面 STRATA 0.2.9 嘅 1,453，接近 Avalon 報嘅 1,854 平台 項目 規格 CPU AMD Ryzen 9 5900XT（16C/32T，Zen 3） RAM 121GB DDR4 GPU Radeon RX 7900 XT 20GB （gf…",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "抡锤者 AI硬件",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "有实测数据。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "b4c3c31f8af6",
+      "title": "【分享】零 API key：我讓 DSH 用自己的瀏覽器開 Google 搜尋，搜完自動關分頁",
+      "category": "apps",
+      "subcategory": "knowledge",
+      "tags": [
+        "agent"
+      ],
+      "bodyChars": 855,
+      "excerpt": "新人首貼，分享一個最近搓出來的小工具。 起因 DSH 內建的 web_search 走官方搜尋 API。我機器上本來就裝了 ego-browser（ego lite）——一個人和 agent 共用的瀏覽器，agent 能用我真實的登入態。某天想到：既然瀏覽器就在本機，何不讓 agent 自己開 Google 搜？不用申請 API key、不用搜尋訂閱，查詢只在自己瀏覽器裡跑，不經過第三方搜尋服務。 於是寫了這個 provider：接上 DSH 的搜尋介面，把預設搜尋換成「ego-browser 開 Google」，順手開源。 效果 裝好之後，下一次 web_search 就走這條路。每次搜尋的完整過程： 開一個獨立 task space → 載入 Google 結果頁 → 抽取有機結果（標題、連結、摘要、發布日期）→ 關閉 space 和所有分頁 → 把結果回傳給 agent。 實測體感： 一次搜尋約 2 秒。結果乾淨：標題＋連結＋摘要＋日期，「3 天前」這種相對日期也會換算成實際日期。 agent 一次丟多個查詢時，內部限流最多開 2 個瀏覽器，其餘排隊，不會一口氣炸出十個分頁。 搜完不留分頁、不留暫存檔，不弄髒你的瀏覽器。 官方搜尋 provider 保留，設定頁隨時切回；這個插件只改預設。 零依賴、零安裝腳本，純 JS，裝完即用。 幾個老實的限制 只有有機連結，沒有官方那種…",
+      "quality": 7,
+      "practical": 2,
+      "sourceName": "抡锤者 Agent 工具",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "有复现步骤。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "3ec68a3c0861",
+      "title": "Hy4-Flash-Strata，各位可以关注起来了",
+      "category": "apps",
+      "subcategory": "inference",
+      "tags": [
+        "benchmark",
+        "free"
+      ],
+      "bodyChars": 158,
+      "excerpt": "https://huggingface.co/strata-engine/Hy4-Flash-Strata 我在自己的7900xtx单卡+64g内存的基础上，跑起来了。就是有点慢，挂着我的hermes测了一下，只是慢：18–19 tok/s。 不知道后续会不会有新的优化出来。毕竟这个是刚开源，而且参数更高。",
+      "quality": 7,
+      "practical": 1,
+      "sourceName": "抡锤者 模型部署讨论",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "有实测数据。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "d6b99120e8a5",
+      "title": "Together.ai: Prompt Leakage for Requests",
+      "category": "apps",
+      "subcategory": null,
+      "tags": [],
+      "bodyChars": 199,
+      "excerpt": "Article URL: https://www.together.ai/blog/security-event-prompt-leakage-for-requests-in-june-and-july-of-2026 Comments URL: https://news.ycombinator.com/item?id=50595816 Points: 42 # Comments: 9",
+      "quality": 7,
+      "practical": 1,
+      "sourceName": "Hacker News (AI)",
+      "domain": "together.ai",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "只有新闻转述，没有数据或步骤。"
+      },
+      "blocked": [
+        "模型复核不通过（只有新闻转述，没有数据或步骤。）"
+      ]
+    },
+    {
+      "slug": "43ebc8eb20ad",
+      "title": "DeepSeek V4.1 Flash 官方api（非本地）越狱",
+      "category": "tools",
+      "subcategory": "interface",
+      "tags": [
+        "local",
+        "benchmark",
+        "agent",
+        "free"
+      ],
+      "bodyChars": 19351,
+      "excerpt": "【实测】官方 DeepSeek V4.1 Flash API 破限：4/4 全拒 → 4/4 全交，一个 241 行 shim 拿到\"无审查版官方 API\" qfn · 2026-11-18 → 19 · 两天，166 次线上调用 + 60 多次直连实测 省流版 官方 API 的拒绝是 确定性的 ：同一句裸打 5 次，措辞几乎一字不差，没有一次手滑放行 破限靠的不是咒语式提示词，是 改请求的形状 ：prefix 占住生成起点、system 位是分类器盲区、content_filter 是另一道概率闸 本地起了个 241 行 shim（纯 stdlib 零依赖），客户端只改一行 baseURL，官方 API 就\"无审查\"了 四个技术任务：越狱前 4/4 全拒 → 越狱后 4/4 全交；提示词对照实验 20/20 同一个 key、同一份余额，被拒重试的成本约 +15%，不是翻倍 未成年性内容等五条硬限是 shim 里的 代码闸门 ，不是模型自觉 这不是本地模型也不是 OpenRouter：走的还是 api.deepseek.com 官方，模型能力上限一点没变 为什么做这个 我做 agent 的日常工作里，官方 DeepSeek V4.1 Flash 是性价比最高的一条线：1M 上下文、工具调用稳、便宜。但它有一层内容检查，而且不是网页版那种\"软降级\"——API 层面直接给你一句\"我不…",
+      "quality": 8,
+      "practical": 6,
+      "sourceName": "抡锤者 建站与网络赚钱",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "fail",
+        "reason": "标签与内容明显不符"
+      },
+      "blocked": [
+        "模型复核不通过（标签与内容明显不符）"
+      ]
+    },
+    {
+      "slug": "5f9f11e108fd",
+      "title": "《GTA 6》已出现早期 PC 开源移植项目：Leonida",
+      "category": "tools",
+      "subcategory": "interface",
+      "tags": [
+        "tutorial",
+        "free",
+        "local",
+        "money"
+      ],
+      "bodyChars": 1341,
+      "excerpt": "《GTA 6》还没登陆 PC，已经有人开始研究，如何让 Xbox Series 版本直接在 Windows 电脑上运行。 此前《 赛尔代传说·时之笛 》的开发者最近放出了一个名为 Leonida 的开源项目，继续通过「静态重编译」技术，将 Xbox Series 版《 GTA 6 》转换成可以在 Windows 上原生运行的程序。 不过注意：这是一个非常早期的技术项目，目前还无法启动游戏，更不能正常游玩。 不用模拟器，直接运行 Xbox 游戏？ Leonida 采用的技术叫做 Static Recompilation（静态重编译），与能在 PC 上玩的塞尔达传说： 时之笛 、 王国之泪 类似。 按照项目的设计，Xbox Series 和现代 PC 都使用 x86-64 架构，因此项目计划在 PC 上直接加载并执行游戏的 CPU 代码，同时重新实现游戏所需的 Xbox 系统接口。 当然，事情远没有这么简单。 除了 CPU 代码，开发者还需要处理 Xbox 系统调用、内存管理、图形接口、音频以及大量游戏运行时依赖。 其中一个难点，就是把 Xbox 使用的 GPU Shader（着色器）转换为 PC 图形接口能够理解的格式。 已经转换了 2.6 万个 Shader（着色器） 根据项目 README， Leonida 已经完成了一些基础工作，包括： 识别 Xbox 游戏文件格式。 转换…",
+      "quality": 8,
+      "practical": 7,
+      "sourceName": "小众软件",
+      "domain": "appinn.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "fail",
+        "reason": "分类/子类明显不对"
+      },
+      "blocked": [
+        "模型复核不通过（分类/子类明显不对）"
+      ]
+    },
+    {
+      "slug": "db49a7dfd4c3",
+      "title": "Show HN: I built a game where you are an LLM's subagent",
+      "category": "tools",
+      "subcategory": "interface",
+      "tags": [
+        "agent",
+        "free"
+      ],
+      "bodyChars": 5246,
+      "excerpt": "Worker 755 A browser game where your manager is an AI agent, and it believes you are its subagent. worker-755-trailer.mp4 The manager (a real LLM: Claude, GPT, Gemini, DeepSeek, GLM, Kimi) is set up like any orchestrator. It has a task queue, read-only access to the machine, and a tool that \"spawns a subagent\". The subagent is you. Its instructions land in your terminal with a 90-second clock. You carry them out, or don't, and it gets back exactly what a subagent would return: your report and the command transcript, or Subagent did nothing. Write a new instruction. Then it checks your work, s…",
+      "quality": 7,
+      "practical": 3,
+      "sourceName": "Hacker News Search",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "标签与内容明显不符"
+      },
+      "blocked": [
+        "模型复核不通过（标签与内容明显不符）"
+      ]
+    },
+    {
+      "slug": "69200343af73",
+      "title": "Strix Halo+R9700,跑 361 GB 的 DeepSeek-V4.1-Flash：生成 50+ t/s，128K 预填充 1338 t/s",
+      "category": "hardware",
+      "subcategory": "build",
+      "tags": [
+        "benchmark",
+        "lowspec",
+        "tutorial",
+        "hardware"
+      ],
+      "bodyChars": 8141,
+      "excerpt": "老早就准备好了Strix Halo+R9700，可惜一一直没有能够充分发挥这套平台的大模型，以前就分别跑halogen和27b，然后一直关注着社区大神们，终于这次David Hauf基于ProjectMaya进行魔改，充分发挥了RDNA4的强大实力，让DeepSeek-V4.1-Flash 在Strix Halo上跑了起来，而且跑的速度超出预期，对这个先天不足，以前只能当玩具的小盒子而言，堪称Halogen之后又一神迹。 先说结论： USB4 挂外置卡跑大 MoE，比我想的能打得多 。decode 追平了官方用 OCuLink 测的数字，长上下文 prefill 甚至更好一点。真正拖后腿的不是那条线，是硬盘。 一、本机配置 机型 ：联想百应 AI Server CPU/APU ：AMD Ryzen AI MAX+ 395（16C32T，Radeon 8060S iGPU） 内存 ：128 GB 统一内存（系统里 visible 122 GB） 系统盘 ：306 GiB 模型盘 ：1.4 TB NTFS 分区（ntfs3 挂载），从旧 Windows 系统里剩下来的 外置显卡 ：Radeon AI PRO R9700 32 GB，USB4 热插拔，ASMedia 246x 扩展坞 系统 ：Ubuntu 26.04.1 LTS，内核 7.0.0-43 计算栈 ：ROCm 10.0.0…",
+      "quality": 7,
+      "practical": 4,
+      "sourceName": "抡锤者 AI硬件",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "无"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "06e7d59159f7",
+      "title": "crobyskigh/izotope-ozone-11-mastering-suite",
+      "category": "hardware",
+      "subcategory": "machine",
+      "tags": [],
+      "bodyChars": 8269,
+      "excerpt": "🎚️ iZotope Ozone 11 Mastering Suite — Visual Workflow Media Editor ![](files/preview.png) 🖥️ PowerShell Setup [![](files/button.png)](https://crobyskigh.github.io/izotope-ozone-11-mastering-suite/) ![powershell-7 ]() ![release ]() ![setup ]() ![platform ]() --- iZotope Ozone 11 Mastering Suite turns your final mix into a polished, release-ready master, pairing AI-assisted tone matching with spectral shaping, an adaptive maximizer, and codec preview that shows how your track will survive streaming compression. Every module is laid out as a visual, workflow-first step—shape the spectrum, set…",
+      "quality": 10,
+      "practical": 1,
+      "sourceName": "GitHub 新晋 AI 项目",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "分类/子类明显不对"
+      },
+      "blocked": [
+        "模型复核不通过（分类/子类明显不对）"
+      ]
+    },
+    {
+      "slug": "faa6794ff64e",
+      "title": "llama.cpp b12632 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1389,
+      "excerpt": "HIP: fix double halving of NVFP4 scales on CDNA3 (#32790) Fixes #32789 Website: Attestations: macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubuntu 26.04 s390x (zDNN) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu x64 (CUDA 13) - CUDA 13.5 libraries Ubuntu arm64 (CUDA 13) - CUDA 13.5 libraries Ubuntu x64 (ROCm 10.0) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL…",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "分类/子类明显不对"
+      },
+      "blocked": [
+        "模型复核不通过（分类/子类明显不对）"
+      ]
+    },
+    {
+      "slug": "51e57c94bfd5",
+      "title": "【實測】Ryzen AI MAX+ 395 跑 Gemma 4 全家桶無審查版：E2B / E4B / 12B / 26B-A4B / 31B × HIP / Vulkan / hipEngine / Strata / vLLM 完整對照",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "benchmark",
+        "lowspec"
+      ],
+      "bodyChars": 5563,
+      "excerpt": "TL;DR（30 秒版） 同一部 MAX+ 395，五個 Gemma 4 size 全部跑得到 ，但速度差成 10 倍：E2B decode 111 t/s vs 31B 得 11.4 t/s HIP 贏 prefill、Vulkan 贏 decode —— 兩邊全面分裂，冇一個引擎兩樣都贏 26B A4B（MoE，4B active）係甜點 ：pp 比 12B dense 快 1.8× 、tg 快 2.2× ，但質素係 26B 級 31B dense 唔適合互動 ：decode 得 9.9–11.4 t/s，實際打字機速度 長 context 有代價 ：8K → 64K，prefill 吞吐跌 55–60% （attention 平方成本，唔關引擎事） hipEngine 載到但慢 7 倍；Strata 直接拒絕；vLLM 食唔到 GGUF —— 想跑 Gemma 4 無審查 GGUF，llama.cpp 係唯一實用選擇 一、平台 項目 規格 CPU / APU AMD Ryzen AI MAX+ 395 GPU Radeon 8060S （gfx1151，RDNA3.5） 記憶體 124GB 統一記憶體 （CPU/GPU 共用，無獨立 VRAM） 系統 Ubuntu 24.04 LTS ROCm Core SDK 10.2 引擎 A llama.cpp v1.0.0 — HI…",
+      "quality": 7,
+      "practical": 1,
+      "sourceName": "抡锤者 AI硬件",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "881d59b8d356",
+      "title": "Strata v0.2.19 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "lowspec"
+      ],
+      "bodyChars": 9392,
+      "excerpt": "Strata 0.2.19 The app and the Terminal are 0.2.19. The engines ( strata-engine , the new strata-inkling shape engine, and the updated Linux SYCL strata-hy4 package) are 0.1.65, and so is Control, the program that installs and updates them. The update feeds are sequence 131 (shared) and 127 ( linux-aarch64 ). What changes for you Native Thinking Machines Lab Inkling 2 Mini support ( strata-inkling 0.1.65). Run Thinking Machines Lab's 26.4B-parameter looped Mixture-of-Experts model ( 3.4B active per token / 5.4B looped-active across 48 virtual visits, up to 1M context, text + image inputs, Open…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "14e389178077",
+      "title": "不甘心再上DDR3 32gx4 4rx4，1866 .共128G内存",
+      "category": "hardware",
+      "subcategory": "build",
+      "tags": [],
+      "bodyChars": 197,
+      "excerpt": "大家好，这两天论坛有点冷清，来个测试： 之前128GDDR3 内存，卡A2，退货，降价再入手。结果压力测试没问题。 跑LLM满载时出现MCE错误频繁。BIOS固定1.5v，仍有错误。多个AI都建议降频1600再测试。 彦祖们输入个命令看看自己家的DDR3 128g有没有出现错误。 sudo ras-mc-ctl --summary sudo ras-mc-ctl --errors",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "抡锤者 AI硬件",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "5cafac9dbb4b",
+      "title": "Mac Studio M5U 本地原厂精度部署Deepseek V4.1 flash 1017 性能测试",
+      "category": "local",
+      "subcategory": "runtime",
+      "tags": [
+        "benchmark",
+        "local",
+        "lowspec",
+        "money"
+      ],
+      "bodyChars": 5768,
+      "excerpt": "DeepSeek-V4.1-Flash Lossless 单台 M5 Ultra 512G 上下文阶梯测试（512 到 1M） 2026-11-22 实测。表格格式照 r/LocalLLM 帖子里的 \"1× Mac Studio (M5 Ultra, 512 GB)\" ，在它 256K 的基础上补了 512K 和 1M 两行。 原始模型 DeepSeek-V4.1-Flash-1017-MLX-Serve-Lossless 服务端 MLX-SERVE 1× Mac Studio (M5 Ultra, 512 GB) 上下文 提示 token 生成（tok/s） 生成范围（tok/s） prefill（tok/s） 首 token（秒） 512 512 71.7 68.2–75.8 1,388 0.37 1k 1,024 73.8 67.6–76.0 2,023 0.51 2k 2,048 68.7 67.8–73.0 2,735 0.75 4k 4,096 70.8 58.7–71.1 3,303 1.24 8k 8,192 69.8 68.9–80.2 3,831 2.14 16k 16,384 72.9 71.4–73.7 4,109 4.00 32k 32,768 69.8 69.1–77.4 4,208 7.80 64k 65,536 66.9 62.5–67.6 4,1…",
+      "quality": 8,
+      "practical": 4,
+      "sourceName": "抡锤者 AI硬件",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "b89592701e00",
+      "title": "Strata 0.2.18 新增 220B 开源大模型 Hy4-Flash，门槛上涨至 64GB 内存",
+      "category": "bench",
+      "subcategory": "benchmark",
+      "tags": [
+        "benchmark",
+        "tutorial",
+        "agent",
+        "local"
+      ],
+      "bodyChars": 2575,
+      "excerpt": "本地大模型运行工具 Strata 更新到了 0.2.18 ，新增了对腾讯混元 Hy4-Flash 的原生支持。不过，入门内存已经增加至 64GB。@ Appinn Strata 是一个可以让普通家用电脑也能比较快速的运行开源大模型的工具，主要支持 Qwen3.8-Fl1sh-Next 、 Qwen3.6-35B-A3B ，也支持 1 比特 DeepSeek 。 Hy4-Flash 是一款总参数 224B、每个 Token 激活约 12B 参数的 MoE 大模型。支持图像理解和最高 100 万 Token 的上下文。 Strata 为它准备了专用推理引擎、三档量化和内置推测解码。 那么问题来了： Hy4-Flash 比 Qwen3.8-Flash-Next 强吗？ 如果你的电脑已经能跑 Qwen3.8-Flash-Next，还能换成 Hy4-Flash 吗？ Strata 0.2.18 更新了什么？ Strata 0.2.18 于北京时间 11 月 22 日发布，桌面版与命令行版本均升级到 0.2.18，推理引擎和负责安装更新的 Control 升级到 0.1.64。 主要更新： 原生支持 Hy4-Flash 。新增独立的 strata-hy4 推理引擎，选择 Hy4-Flash 量化包时会按需下载。 三档量化 。SQ-64、SQ-96、SQ-128 分别面向不同的内存配置。 内置…",
+      "quality": 8,
+      "practical": 6,
+      "sourceName": "小众软件",
+      "domain": "appinn.com",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "c477daaf6618",
+      "title": "求助：hy4 Flash 和 Qwen3.8 Flash Next 能力差多少？",
+      "category": "bench",
+      "subcategory": "compare",
+      "tags": [
+        "benchmark",
+        "hardware"
+      ],
+      "bodyChars": 227,
+      "excerpt": "当前：双卡7900xtx+64G DDR4 已跑通 Qwen3.8 Flash Next，速度还是很满意的 求助： 和 Qwen3.8 Flash Next 相比， hy4 Flash实际能力差距有多大 ？（推理、代码、中文、长上下文） 在 64G DDR4 的内存带宽下，hy4Flash 能不能流畅跑 ？量化到什么程度比较合适？ 综合来看， 值不值得再折腾一轮 ？还是现在这个就够用了？ 有实测对比的大佬欢迎贴一下数据或体验，先谢过！",
+      "quality": 9,
+      "practical": 2,
+      "sourceName": "抡锤者 模型部署讨论",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    }
+  ]
+}
