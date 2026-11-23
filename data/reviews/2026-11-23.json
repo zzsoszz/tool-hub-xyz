@@ -1,8 +1,8 @@
 {
   "day": "2026-11-23",
-  "reviewedAt": "2026-11-22T17:59:45.845Z",
+  "reviewedAt": "2026-11-23T03:04:03.215Z",
   "reviewer": "cloudflare/@cf/meta/llama-3.1-70b-instruct",
-  "note": "cloudflare/@cf/meta/llama-3.1-70b-instruct → @cf/meta/llama-3.1-8b-instruct：复核 12 条，解析到 12 条判定",
+  "note": "cloudflare/@cf/meta/llama-3.1-70b-instruct：复核 12 条，解析到 12 条判定",
   "rules": {
     "minItems": 3,
     "minBodyChars": 120,
@@ -15,18 +15,18 @@
   },
   "passed": true,
   "reasons": [],
-  "total": 18,
+  "total": 36,
   "blocked": [
     "579cc48d0913",
     "8a2ef492e1a5",
+    "9b4a55165bbd",
+    "078c2519e6d7",
+    "de9c6f3eb4fe",
     "d6b99120e8a5",
-    "43ebc8eb20ad",
     "5f9f11e108fd",
-    "db49a7dfd4c3",
-    "06e7d59159f7",
-    "faa6794ff64e"
+    "ec3e7c1475ec"
   ],
-  "survivors": 10,
+  "survivors": 28,
   "items": [
     {
       "slug": "579cc48d0913",
@@ -48,10 +48,10 @@
       ],
       "agent": {
         "verdict": "fail",
-        "reason": "没有数据或步骤。"
+        "reason": "缺少标签"
       },
       "blocked": [
-        "模型复核不通过（没有数据或步骤。）"
+        "模型复核不通过（缺少标签）"
       ]
     },
     {
@@ -73,10 +73,10 @@
       ],
       "agent": {
         "verdict": "fail",
-        "reason": "没有数据或步骤。"
+        "reason": "缺少标签"
       },
       "blocked": [
-        "模型复核不通过（没有数据或步骤。）"
+        "模型复核不通过（缺少标签）"
       ]
     },
     {
@@ -97,7 +97,7 @@
       "warnings": [],
       "agent": {
         "verdict": "pass",
-        "reason": "有实测数据。"
+        "reason": "包含实测数据和具体步骤"
       },
       "blocked": []
     },
@@ -119,7 +119,7 @@
       "warnings": [],
       "agent": {
         "verdict": "pass",
-        "reason": "有复现步骤。"
+        "reason": "包含具体步骤和实测结果"
       },
       "blocked": []
     },
@@ -142,9 +142,85 @@
       "warnings": [],
       "agent": {
         "verdict": "pass",
-        "reason": "有实测数据。"
+        "reason": "包含实测数据和具体步骤"
       },
       "blocked": []
+    },
+    {
+      "slug": "9b4a55165bbd",
+      "title": "Select Styling Specimens",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [],
+      "bodyChars": 954,
+      "excerpt": "Tool: Select Styling Specimens I got frustrated at how HTML boxes default to looking different in different browsers, and are (I think) quite ugly in Chrome: So I had Claude Fable 5.2 build me this page showing all of the ways they can be styled: Build an HTML page that shows all of the ways a select box can be styled, I plan to take screenshots in every desktop and mobile browser After some experimentation I've decided my favorite CSS for select boxes is this: select { appearance : none ; color : # 1f2933 ; padding : 0.5 em 2.25 em 0.5 em 0.75 em ; border : 1 px solid # c4cbd3 ; border-radiu…",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "Simon Willison",
+      "domain": "simonwillison.net",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "内容与分类不符"
+      },
+      "blocked": [
+        "模型复核不通过（内容与分类不符）"
+      ]
+    },
+    {
+      "slug": "078c2519e6d7",
+      "title": "X99 平台 DDR3，4条 1866换成 4条1600。降低内存频率性能会损失多少啊？显卡7900XTX主要用Strata跑大模型跟ComfyUI。",
+      "category": "apps",
+      "subcategory": "inference",
+      "tags": [
+        "generate",
+        "hardware"
+      ],
+      "bodyChars": 137,
+      "excerpt": "X99 平台 DDR3，4条 1866换成 4条1600。降低内存频率性能会损失多少啊？显卡7900XTX主要用Strata跑大模型跟ComfyUI。 因为1866 实在太热了。我又怕吵没上暴力风扇吹内存。 1866是标准电压的。1600是低电压的，发热量会降低不少。",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "抡锤者 AI硬件",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "fail",
+        "reason": "内容与 标签不符，没有提供benchmark数据。"
+      },
+      "blocked": [
+        "模型复核不通过（内容与 标签不符，没有提供benchmark数据。）"
+      ]
+    },
+    {
+      "slug": "de9c6f3eb4fe",
+      "title": "GEG-SAM: Gaze Exploration-Guided Segment Anything Model for Weakly Supervised Polyp Segmentation",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [
+        "tutorial"
+      ],
+      "bodyChars": 1707,
+      "excerpt": "Endoscopist gaze offers an unobtrusively acquired record of lesion-oriented visual exploration during routine clinical inspection, providing relevant supervision for tasks. However, existing methods treat fixations as isolated spatial prompts directly associated with the target, overlooking the fact that natural gaze records a continuous visual search process in which fixations are temporally connected, spatially organized, and coupled with the visual content. Interpreting each fixation independently based only on its local visual content overlooks the temporal evolution and spatial organizat…",
+      "quality": 6,
+      "practical": 2,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "标签与内容明显不符，没有tutorial。"
+      },
+      "blocked": [
+        "模型复核不通过（标签与内容明显不符，没有tutorial。）"
+      ]
     },
     {
       "slug": "d6b99120e8a5",
@@ -165,10 +241,10 @@
       ],
       "agent": {
         "verdict": "fail",
-        "reason": "只有新闻转述，没有数据或步骤。"
+        "reason": "内容为新闻转述，没有数据和步骤。"
       },
       "blocked": [
-        "模型复核不通过（只有新闻转述，没有数据或步骤。）"
+        "模型复核不通过（内容为新闻转述，没有数据和步骤。）"
       ]
     },
     {
@@ -191,12 +267,10 @@
       "hard": [],
       "warnings": [],
       "agent": {
-        "verdict": "fail",
-        "reason": "标签与内容明显不符"
+        "verdict": "pass",
+        "reason": "提供了实测数据和步骤。"
       },
-      "blocked": [
-        "模型复核不通过（标签与内容明显不符）"
-      ]
+      "blocked": []
     },
     {
       "slug": "5f9f11e108fd",
@@ -219,10 +293,36 @@
       "warnings": [],
       "agent": {
         "verdict": "fail",
-        "reason": "分类/子类明显不对"
+        "reason": "内容为新闻转述，没有数据和步骤。"
       },
       "blocked": [
-        "模型复核不通过（分类/子类明显不对）"
+        "模型复核不通过（内容为新闻转述，没有数据和步骤。）"
+      ]
+    },
+    {
+      "slug": "ec3e7c1475ec",
+      "title": "A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth",
+      "category": "tools",
+      "subcategory": "hands-on",
+      "tags": [
+        "tutorial"
+      ],
+      "bodyChars": 183,
+      "excerpt": "Article URL: https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth Comments URL: https://news.ycombinator.com/item?id=50603845 Points: 271 # Comments: 119",
+      "quality": 10,
+      "practical": 2,
+      "sourceName": "Hacker News (AI)",
+      "domain": "gpupartner.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "内容为新闻转述，没有数据和步骤。"
+      },
+      "blocked": [
+        "模型复核不通过（内容为新闻转述，没有数据和步骤。）"
       ]
     },
     {
@@ -244,13 +344,73 @@
       "warnings": [
         "标题未翻译"
       ],
-      "agent": {
-        "verdict": "fail",
-        "reason": "标签与内容明显不符"
-      },
-      "blocked": [
-        "模型复核不通过（标签与内容明显不符）"
-      ]
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "c2142a45736b",
+      "title": "cmHC: Balancing Stream Mixing in Hyper-Connections via Geometric Contraction",
+      "category": "tools",
+      "subcategory": "hands-on",
+      "tags": [
+        "tutorial"
+      ],
+      "bodyChars": 1673,
+      "excerpt": "Manifold-constrained Hyper-Connections (mHC) extends residual connections to multiple streams and stabilizes residual propagation by constraining stream-mixing residual matrices to the Birkhoff polytope, the set of doubly stochastic matrices. In this work, we investigate how to effectively mix residual streams within the Birkhoff polytope. We reveal a mixing trade-off: when under-mixed residual matrices stay close to the vertices of the Birkhoff polytope, hyper-connections will degenerate into a set of nearly independent streams; when over-mixed residual matrices are concentrated around the u…",
+      "quality": 7,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "fba999fe9522",
+      "title": "【实测】PRO 6000 Blackwell + 4090 48G 双卡无 P2P 跑 Strata + HY4-Flash 220B SQ128：524K 上下文、decode 132 tok/s，但视觉是残废的",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "benchmark",
+        "hardware",
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 10207,
+      "excerpt": "结论先说： PRO 6000 Blackwell 96G + 4090 48G 这对无 P2P 的混搭双卡，能把腾讯 HY4-Flash（220B 总参 / 12B 激活）以 SQ-128 精度跑到 524K 上下文，decode 短上下文 132 tok/s、15K 深 72.7 tok/s，比 llama.cpp 快 1.3 到 2.2 倍。 代价是自己编了一份引擎：官方 hy4 在无 P2P 卡上有个跨设备 event 的硬 bug，不修跑不起来。另外先打个预防针，这台机器速度确实安逸，但视觉是残废的，读图复读、agent 带图会陷入循环，第六节有完整现场。 一、机器和目标 手上这张配置： 项 配置 GPU0 RTX PRO 6000 Blackwell 96 GB（sm_120，可用 95.6 GiB） GPU1 RTX 4090 48 GB 魔改（sm_89，可用 46.4 GiB） GPU2 USB4 eGPU 4090 24 GB，实测负收益，后面弃用 系统 Win11，96 GB DDR5-6400，驱动 610.74，CUDA 13.4 模型 HY4-Flash 220B-A12B，SQ-128 主包 113.06 GiB（dense 7.30 + 专家 105.76） Engram Engram-Q8 67.58 GB 放 SSD，按需读不进内存 Vision…",
+      "quality": 12,
+      "practical": 3,
+      "sourceName": "抡锤者 模型部署讨论",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "fc1ec67f52e4",
+      "title": "实战 AI Max 395 智能体部署：本地qwen3.8 flash 1M超大上下文 65t/s 平替在线大模型实现Token自由！",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "lowspec",
+        "benchmark",
+        "agent"
+      ],
+      "bodyChars": 8902,
+      "excerpt": "实战 AI Max 395 智能体部署：1M上下文 65t/s 平替在线大模型实现Token自由！ 实战 AI Max 395 智能体部署：本地qwen3.8 flash 1M上下文 65t/s 平替在线大模型实现Token自由！ 主要能力： 文本模型 ：Qwen3.8 flash next ，支持视觉图片 上下文大小 ：实现 1M 超大上下文。上下文分为2档：512K 和 1M。远超官方的256K！ 解码速度 ：最大：90t/s，平均：65t/s，首字等待：<3s（实现解码速度与上下文大小无关） 其他模型 ：文本嵌入：qwen3-embed ，TTS：kokoro-tts 智能体 ：opencode，也可使用其他智能体 这个话题在我草稿箱里躺了挺久，主要是内容比较散：硬件、系统、推理框架、智能体配置、出图出视频，想到哪写到哪，一直串不成一条线。最近不少朋友问我同一个问题：本地模型跑编码智能体，到底顶不顶用？我这套方案在自己机器上跑了两个多月，今天一次说清楚——机器怎么搭、框架怎么选、坑怎么踩、最后算下来到底省了多少。 文中的数字都是本机实测，日志都还在，想抄作业的朋友可以逐步核对。 1. 先说环境：AI Max 395 和我的双系统方案 1.1 那颗 128G 统一内存 手里已经有这类小主机的可以跳过这节。还没上车的，记住几个关键点就够了： 组成 规格 说明 CPU 16 核…",
+      "quality": 8,
+      "practical": 5,
+      "sourceName": "抡锤者 AI硬件",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
     },
     {
       "slug": "69200343af73",
@@ -271,10 +431,29 @@
       "domain": "lcz.me",
       "hard": [],
       "warnings": [],
-      "agent": {
-        "verdict": "pass",
-        "reason": "无"
-      },
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "d54de375ce78",
+      "title": "Parallels Desktop 27 最新优惠，黑五史低 249元/年，：在 Mac 上运行多个操作系统",
+      "category": "hardware",
+      "subcategory": "build",
+      "tags": [
+        "local",
+        "lowspec",
+        "benchmark",
+        "tutorial"
+      ],
+      "bodyChars": 1370,
+      "excerpt": "Mac 用户熟悉的虚拟机软件 Parallels Desktop 27 迎来黑五优惠，限时五折。 Parallels Desktop 是老牌的 Mac 虚拟机软件，可以让 Mac 直接运行 Windows 11、Linux，甚至再运行一台 macOS。 并且在切换电脑时，就像普通应用一样。无需重启电脑，就能同时使用 macOS 和 Windows，以及 Linux 软件。 比如在 Mac 上运行 Windows 独占的办公软件、专业工具，甚至部分 Windows 游戏。或者在把一台虚拟的 macOS 完整的交给 AI，不用担心系统被搞坏，也不怕资料泄漏给AI，因为这台虚拟机是独立的。 它还支持文件共享、复制粘贴、拖放文件，以及将 Windows 应用直接显示在 Mac 的 Dock 中，使用起来就像普通 Mac 软件。 官网 5 折史低 目前 Parallels 官网正在黑五特价，5折，史低。 购买链接： https://i.appinn.com/pd27 截止 2026年11月30日 直达官网，有返利，感谢支持我们 具体价格为： 标准版：249元/年 专业版：339元/年 专业版可以创建 128 GB 内存的虚拟机，如果你的设备没有这么多的内存，完全无必要。 Parallels Desktop 27 新特性 今年推出的 Parallels Desktop 27 主要升级了以下功…",
+      "quality": 8,
+      "practical": 5,
+      "sourceName": "小众软件",
+      "domain": "appinn.com",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
       "blocked": []
     },
     {
@@ -294,13 +473,52 @@
         "没有命中任何标签",
         "标题未翻译"
       ],
-      "agent": {
-        "verdict": "fail",
-        "reason": "分类/子类明显不对"
-      },
-      "blocked": [
-        "模型复核不通过（分类/子类明显不对）"
-      ]
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "df4f599e620d",
+      "title": "llama.cpp b12644 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1791,
+      "excerpt": "mtmd: speed up shared audio FFT (#32815) mtmd: speed up shared audio FFT Replace recursive radix-2 splitting with iterative stages and batch the existing odd-size DFT across subsequences, preserving the previous operation order. Input buffers now hold only N real values for FFT or 2N interleaved floats for inverse FFT. Add test_audio_fft for forward and inverse transforms. Assisted-by: Claude nits --------- Co-authored-by: Xuan Son Nguyen Website: Attestations: macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux…",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "3c23ce3a96ef",
+      "title": "llama.cpp b12646 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1388,
+      "excerpt": "ggml-backend : generic fallback in ggml_backend_tensor_memset (#32574) Website: Attestations: macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubuntu 26.04 s390x (zDNN) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu x64 (CUDA 13) - CUDA 13.5 libraries Ubuntu arm64 (CUDA 13) - CUDA 13.5 libraries Ubuntu x64 (ROCm 10.0) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL…",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
     },
     {
       "slug": "faa6794ff64e",
@@ -321,13 +539,8 @@
       "warnings": [
         "标题未翻译"
       ],
-      "agent": {
-        "verdict": "fail",
-        "reason": "分类/子类明显不对"
-      },
-      "blocked": [
-        "模型复核不通过（分类/子类明显不对）"
-      ]
+      "agent": null,
+      "blocked": []
     },
     {
       "slug": "51e57c94bfd5",
@@ -360,6 +573,29 @@
       ],
       "bodyChars": 9392,
       "excerpt": "Strata 0.2.19 The app and the Terminal are 0.2.19. The engines ( strata-engine , the new strata-inkling shape engine, and the updated Linux SYCL strata-hy4 package) are 0.1.65, and so is Control, the program that installs and updates them. The update feeds are sequence 131 (shared) and 127 ( linux-aarch64 ). What changes for you Native Thinking Machines Lab Inkling 2 Mini support ( strata-inkling 0.1.65). Run Thinking Machines Lab's 26.4B-parameter looped Mixture-of-Experts model ( 3.4B active per token / 5.4B looped-active across 48 virtual visits, up to 1M context, text + image inputs, Open…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "fe8981e1f80a",
+      "title": "Strata v0.2.20 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "lowspec",
+        "benchmark"
+      ],
+      "bodyChars": 8733,
+      "excerpt": "Strata 0.2.20 The app and the Terminal are 0.2.20. All three engine families ( strata-engine , strata-inkling , and strata-hy4 ) and Control are updated to 0.1.66 across every supported platform and backend. The update feeds are sequence 132 (shared) and 128 ( linux-aarch64 ). What changes for you Unified 4-tier GPU + RAM + CPU + SSD Mixture-of-Experts execution across Qwen3.8-Flash-Next, HY-4 Flash, and Inkling 2 Mini — down to 4 GiB GPUs. All three MoE families now share Strata's adaptive 4-tier planner: dense trunk + elastic/quantized KV on GPU (with automatic --kv-offload auto host KV off…",
       "quality": 8,
       "practical": 2,
       "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
@@ -413,6 +649,69 @@
       "blocked": []
     },
     {
+      "slug": "5114ff45ddeb",
+      "title": "发现频道：10款大家发现的好评软件[2026年第47期]",
+      "category": "local",
+      "subcategory": "weights",
+      "tags": [
+        "local",
+        "generate",
+        "free",
+        "agent"
+      ],
+      "bodyChars": 1775,
+      "excerpt": "最近10日，来自 小众软件论坛 的 发现频道 的热门排行榜，由系统自动生成，直接列出来： 1⃣ 水杉输入法。 英文名：MSIME(Meta Sequoia Input Method Editor) 链接： https://meta.appinn.net/t/96319 适用平台：Windows10、11 一句话描述：一款精心打磨的小众开源 Windows 输入法。 2⃣ Levyra 链接： https://meta.appinn.net/t/96207 适用平台：Android、Windows、Linux 一句话描述：一款免费开源的音乐播放器，可以把本地歌曲和在线音乐放进同一个歌单。 3⃣ FreeType 链接： https://meta.appinn.net/t/96190 适用平台：Windows 10、11(x64) 一句话描述：在本地运行的开源 Windows 中文输入法，支持全拼、双拼、按键纠错、词库迁移和本地自学习。 4⃣ 今天吃什么 链接： https://meta.appinn.net/t/96234 适用平台：在线服务、手机和电脑浏览器均可使用 一句话描述：一个可以搭配三餐、看做法和整理买菜清单的网页。 5⃣ AutumnMark 链接： https://meta.appinn.net/t/96564 适用平台：Windows、macOS、Linux 一句话…",
+      "quality": 8,
+      "practical": 8,
+      "sourceName": "小众软件",
+      "domain": "appinn.com",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "56fdd0d7e271",
+      "title": "Learning Adaptive Defense Strategies: Fine-Tuned LLMs for Network Security Games under Network Mobility",
+      "category": "local",
+      "subcategory": "weights",
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 1701,
+      "excerpt": "Large language models(LLM) show promise for strategic reasoning, yet their ability to compute game-theoretic equilibria under dynamic conditions remains largely unexplored. This work investigates whether fine-tuned LLMs can serve as solver-free surrogates for online equilibrium computation in honeypot allocation, a setting in which network mobility continuously reshapes the underlying attack graph and forces repeated re-solving of a two-player zero-sum game. We construct a dataset of 270 security games on networks of 8--25 nodes with solver-grounded equilibrium labels, and evaluate four class…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "773cb0355725",
+      "title": "Backbone-Specific LoRA Geometry: Orthogonality, Superposition, and Provenance",
+      "category": "local",
+      "subcategory": "quantize",
+      "tags": [],
+      "bodyChars": 1165,
+      "excerpt": "Sharing one low-rank adaptation (LoRA) update across pretrained models simplifies deployment. Composition methods typically combine updates from a common backbone, while cross-model transfer transforms updates for a target backbone. The conditions for sharing updates across backbones while preserving accuracy and distinguishing individual contributions remain unclear. Our idea is to use backbone-specific update directions as signatures of their training backbones. We derive a cross-backbone correlation bound from attention symmetries and equivariant LoRA learning under independent, uniform pr…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
       "slug": "b89592701e00",
       "title": "Strata 0.2.18 新增 220B 开源大模型 Hy4-Flash，门槛上涨至 64GB 内存",
       "category": "bench",
@@ -451,6 +750,87 @@
       "domain": "lcz.me",
       "hard": [],
       "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "040f44c1d9a5",
+      "title": "双R9700-今天闲来无事刚配置好了一个新的模型文件并测试了一下，请大家来评判。",
+      "category": "bench",
+      "subcategory": null,
+      "tags": [
+        "tutorial"
+      ],
+      "bodyChars": 294,
+      "excerpt": "今天闲来无事刚配置好了一个新的模型文件并测试了一下效果，请大家来评判。 都是一次成型，没有添加任何修改（原始数据）。 1、生成一个网页表达中国传统八卦文化（9分58秒） 八卦文化.html 2、生成一个SVG表达钍基熔盐堆运行原理（9分40秒） 3、生成一个SVG表达薛定谔的猫思想实验 （3分57秒） 4、編程實現一個3D玻璃沙漏，最終成品是一個獨立的HTML文件，要求展現玻璃光澤，沙漏的漏沙時間是精準的一分鐘，網頁的右上角，要在沙漏開始漏沙的時候，顯示1分鐘倒計時，鼠標點擊沙漏，則沙漏反轉重置。（用时：2小时27分8秒） hourglass.html",
+      "quality": 13,
+      "practical": 1,
+      "sourceName": "抡锤者 模型部署讨论",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "f33f7fca7ead",
+      "title": "DepthMSA: Combinatorial Training and Budget-Aware Depth Allocation for Multimodal Sentiment Analysis",
+      "category": "bench",
+      "subcategory": "benchmark",
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 1820,
+      "excerpt": "State-of-the-art multimodal sentiment analysis (MSA) models rely on large pretrained encoders, yet typically process every modality to its full depth, regardless of its computational cost or predictive contribution. This raises a fundamental question: how should limited computation be allocated across modalities to preserve predictive performance? We reveal a substantial mismatch between the computational cost of modality encoders and the predictive benefit of processing them more deeply, suggesting that different modalities require different encoding depths. However, enabling heterogeneous d…",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "061b2a897720",
+      "title": "Run One, Get Two: Near-Free Streaming Safety Checks for Local LLMs",
+      "category": "bench",
+      "subcategory": "cost",
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 716,
+      "excerpt": "Local LLM assistants decode for one user at a time, so decoding is bound by memory bandwidth and leaves compute idle. Streaming safety checks today trade accuracy against cost. A dedicated guard model is accurate but nearly doubles the latency per token, while a hidden-state probe is cheap but less accurate. We present ToRA, an adapter that runs a second model as an extra row in the generator's decode step, sharing its weights and KV cache. Dual-row kernels read each weight once for both rows. On Qwen3-0.6B, ToRA matches or beats a dedicated streaming guard, with higher F1 on 12 of 17 benchma…",
+      "quality": 6,
+      "practical": 2,
+      "sourceName": "arXiv 检索（推理引擎与量化）",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "7ddd67baa44a",
+      "title": "Hierarchical Hybrid-Coordinate Flow Matching for Accurate and Physically Plausible Apo-to-Holo Protein Generation",
+      "category": "bench",
+      "subcategory": "benchmark",
+      "tags": [],
+      "bodyChars": 1869,
+      "excerpt": "Predicting holo-like protein conformations from apo structures is essential in structure-based drug design. Most existing apo-to-holo models operate in Cartesian space and achieve strong global accuracy. However, high global accuracy does not ensure physically valid local backbone geometry. Internal-coordinate models offer local control and validity, but regressive generation can amplify angular errors, known as the lever-arm effect. We introduce CrypticFlow, a hierarchical flow-matching model that combines these two complementary representations. An ESM-3-conditioned E(3)-equivariant graph n…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
       "agent": null,
       "blocked": []
     }

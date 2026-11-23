@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T17:59:45.847Z",
+  "updatedAt": "2026-11-23T03:04:03.218Z",
   "slugs": [
     "ec3ffc18cdbb",
     "002e0c186427",
@@ -81,12 +81,12 @@
     "7d05dca6b92c",
     "579cc48d0913",
     "8a2ef492e1a5",
+    "9b4a55165bbd",
+    "078c2519e6d7",
+    "de9c6f3eb4fe",
     "d6b99120e8a5",
-    "43ebc8eb20ad",
     "5f9f11e108fd",
-    "db49a7dfd4c3",
-    "06e7d59159f7",
-    "faa6794ff64e"
+    "ec3e7c1475ec"
   ],
   "admin": [],
   "machine": [
@@ -170,12 +170,12 @@
     "7d05dca6b92c",
     "579cc48d0913",
     "8a2ef492e1a5",
+    "9b4a55165bbd",
+    "078c2519e6d7",
+    "de9c6f3eb4fe",
     "d6b99120e8a5",
-    "43ebc8eb20ad",
     "5f9f11e108fd",
-    "db49a7dfd4c3",
-    "06e7d59159f7",
-    "faa6794ff64e"
+    "ec3e7c1475ec"
   ],
   "machineByDay": {
     "legacy": [
@@ -285,12 +285,12 @@
     "2026-11-23": [
       "579cc48d0913",
       "8a2ef492e1a5",
+      "9b4a55165bbd",
+      "078c2519e6d7",
+      "de9c6f3eb4fe",
       "d6b99120e8a5",
-      "43ebc8eb20ad",
       "5f9f11e108fd",
-      "db49a7dfd4c3",
-      "06e7d59159f7",
-      "faa6794ff64e"
+      "ec3e7c1475ec"
     ]
   }
 }
