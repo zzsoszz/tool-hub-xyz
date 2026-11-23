@@ -1,7 +1,7 @@
 {
   "id": "model-pricing",
   "kind": "openrouter-pricing",
-  "collectedAt": "2026-11-22T17:59:15.566Z",
+  "collectedAt": "2026-11-23T03:03:29.487Z",
   "upstream": {
     "label": "OpenRouter 模型目录 API",
     "url": "https://openrouter.ai/models"
@@ -171,6 +171,16 @@
           "created": 1754414231
         },
         {
+          "name": "OpenAI: gpt-oss-20b",
+          "id": "openai/gpt-oss-20b",
+          "url": "https://openrouter.ai/openai/gpt-oss-20b",
+          "context": 131072,
+          "promptPerMillion": 0.03,
+          "completionPerMillion": 0.13,
+          "free": false,
+          "created": 1754414229
+        },
+        {
           "name": "Inference.net: Schematron V2 Turbo",
           "id": "inference-net/schematron-v2-turbo",
           "url": "https://openrouter.ai/inference-net/schematron-v2-turbo",
@@ -301,6 +311,16 @@
           "created": 1790160358
         },
         {
+          "name": "OpenAI: gpt-oss-120b",
+          "id": "openai/gpt-oss-120b",
+          "url": "https://openrouter.ai/openai/gpt-oss-120b",
+          "context": 131072,
+          "promptPerMillion": 0.049999999999999996,
+          "completionPerMillion": 0.25,
+          "free": false,
+          "created": 1754414231
+        },
+        {
           "name": "Google: Gemma 3 12B",
           "id": "google/gemma-3-12b-it",
           "url": "https://openrouter.ai/google/gemma-3-12b-it",
@@ -389,26 +409,6 @@
           "completionPerMillion": 0.39999999999999997,
           "free": false,
           "created": 1768833913
-        },
-        {
-          "name": "Z.ai: GLM Latest",
-          "id": "~z-ai/glm-latest",
-          "url": "https://openrouter.ai/~z-ai/glm-latest",
-          "context": 1048576,
-          "promptPerMillion": 0.0699,
-          "completionPerMillion": 1.4,
-          "free": false,
-          "created": 1787151053
-        },
-        {
-          "name": "Z.ai: GLM 5.3",
-          "id": "z-ai/glm-5.3",
-          "url": "https://openrouter.ai/z-ai/glm-5.3",
-          "context": 1048576,
-          "promptPerMillion": 0.0699,
-          "completionPerMillion": 1.4,
-          "free": false,
-          "created": 1787086655
         }
       ]
     }
@@ -421,8 +421,8 @@
     {
       "path": "https://openrouter.ai/api/v1/models",
       "url": "https://openrouter.ai/api/v1/models",
-      "sha256": "0491d8cac0760e4eed6a2e3bf0607831925e9e2411c63b90b9105c2058958cd9",
-      "bytes": 925525
+      "sha256": "beefc4fda63a048d2a5ec87de4412d25c02e2880e38f938538baa20c1cb2daca",
+      "bytes": 925825
     }
   ]
 }
