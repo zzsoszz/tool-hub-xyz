@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T03:04:03.218Z",
+  "updatedAt": "2026-11-23T22:12:02.723Z",
   "slugs": [
     "ec3ffc18cdbb",
     "002e0c186427",
@@ -86,7 +86,12 @@
     "de9c6f3eb4fe",
     "d6b99120e8a5",
     "5f9f11e108fd",
-    "ec3e7c1475ec"
+    "ec3e7c1475ec",
+    "1330db2631e0",
+    "5ebb7021b3e7",
+    "b60f06186f54",
+    "17c73f9c93c9",
+    "da39a3ee5e6b"
   ],
   "admin": [],
   "machine": [
@@ -175,7 +180,12 @@
     "de9c6f3eb4fe",
     "d6b99120e8a5",
     "5f9f11e108fd",
-    "ec3e7c1475ec"
+    "ec3e7c1475ec",
+    "1330db2631e0",
+    "5ebb7021b3e7",
+    "b60f06186f54",
+    "17c73f9c93c9",
+    "da39a3ee5e6b"
   ],
   "machineByDay": {
     "legacy": [
@@ -291,6 +301,13 @@
       "d6b99120e8a5",
       "5f9f11e108fd",
       "ec3e7c1475ec"
+    ],
+    "2026-11-24": [
+      "1330db2631e0",
+      "5ebb7021b3e7",
+      "b60f06186f54",
+      "17c73f9c93c9",
+      "da39a3ee5e6b"
     ]
   }
 }

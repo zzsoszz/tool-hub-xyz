@@ -1,0 +1,484 @@
+{
+  "day": "2026-11-24",
+  "reviewedAt": "2026-11-23T22:12:02.722Z",
+  "reviewer": "cloudflare/@cf/meta/llama-3.1-70b-instruct",
+  "note": "cloudflare/@cf/meta/llama-3.1-70b-instruct → @cf/meta/llama-3.1-8b-instruct：复核 12 条，解析到 12 条判定",
+  "rules": {
+    "minItems": 3,
+    "minBodyChars": 120,
+    "minSummaryChars": 40,
+    "maxTags": 4,
+    "agentMaxItems": 12,
+    "agentBatch": 6,
+    "agentChars": 900,
+    "agentExcerptChars": 600
+  },
+  "passed": true,
+  "reasons": [],
+  "total": 19,
+  "blocked": [
+    "1330db2631e0",
+    "5ebb7021b3e7",
+    "b60f06186f54",
+    "17c73f9c93c9",
+    "da39a3ee5e6b"
+  ],
+  "survivors": 14,
+  "items": [
+    {
+      "slug": "1330db2631e0",
+      "title": "微软 To Do 要关闭了，奇妙清单创始人早就做了替代品：Superlist",
+      "category": "apps",
+      "subcategory": "office",
+      "tags": [
+        "agent",
+        "free",
+        "benchmark",
+        "tutorial"
+      ],
+      "bodyChars": 1910,
+      "excerpt": "用户喜欢什么，微软就关掉什么。 这似乎已成为一种魔咒，微软千万不能有好用的工具，不然转头就要关掉。 在 微软宣布要关闭 To Do 之后 ，用户开始反弹，在 微软博客 下发出灵魂拷问： 你们为什么要放弃一款简单却广受欢迎的应用程序呢？ 你们竟然不提供迁移服务？ 你真的讨厌你的用户吗？ 青小蛙也是 To Do 用户，有200多项任务在里面，虽然不一定每项任务都会去完成 但放在那里，就是一种安心啊 结果现在，有些心慌。 你能理解那种我有事情没做完，但我已经记下来的安心；以及记下来的本子突然丢了的心慌么？ 略显无奈。 当然，故事远没有结束。 2015年：微软收购 Wunderlist / 奇妙清单 2015 年，微软花费据报道高达 2 亿美元的价格，收购了著名待办工具 Wunderlist（奇妙清单），并于 2017 年推出 Microsoft To Do，取代 Wunderlist。 但 Wunderlist 创始人 Christian Reber 对微软后来推出的 To Do 并不满意，甚至在 2019 年公开提出，要把 Wunderlist 从微软手中买回来。 微软没有答应。 2020年：新产品 Superlist 于是，2020 年 5 月，就在 Wunderlist 正式关闭的前一天，Christian Reber 宣布成立一家新公司： Superlist 。 经过近 4 年…",
+      "quality": 8,
+      "practical": 4,
+      "sourceName": "小众软件",
+      "domain": "appinn.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "fail",
+        "reason": "内容与标签不符 · 分类：apps/office · 标签：agent, free, benchmark, tutorial"
+      },
+      "blocked": [
+        "模型复核不通过（内容与标签不符 · 分类：apps/office · 标签：agent, free, benchmark, tutorial）"
+      ]
+    },
+    {
+      "slug": "5ebb7021b3e7",
+      "title": "XROGO郑随兵：机器人不能只在视频里，终究要进入工厂“真干活”",
+      "category": "apps",
+      "subcategory": "life",
+      "tags": [
+        "free",
+        "local",
+        "agent",
+        "generate"
+      ],
+      "bodyChars": 3405,
+      "excerpt": "XROGO郑随兵：机器人不能只在视频里，终究要进入工厂“真干活” 量子位的朋友们 2026-11-23 17:10:08 来源： 量子位 企业核心需求不是交付设备，而是能持续上岗的劳动力 机器人越造越多，真正能“上岗“的却不多。据《2026年人形机器人产业发展报告》，今年上半年我国人形机器人出货量已超4万台；而一线调研显示，超六成的具身智能项目仍停留在验证或演示阶段，真正进产线连续、稳定作业的只是少数企业。 “这一现象背后是机器人部署成本高、换产难、长期稳定性不足等难题”。在近日举行的 2026北京ACE科技创新大会上，XROGO CEO郑随兵指出，机器人能否持续在真实场景作业，正成为其关键价值所在。他表示“机器人终究是一种劳动力，不能只停留在视频里，必须走进真实场景把活干好、干久。” 在郑随兵看来，当前行业真正缺的不是更多机器人，而是把活儿稳定干完的作业能力。机器人的价值也并非去替代传统自动化已能做好的事，而是把人的经验、技能真正复刻出来。 行业缺的不只是机器人，而是“买得起、用得好”的劳动力 当前，制造业、电力、物流等行业普遍招工难、留人难。不少岗位环境艰苦：高噪音、高温高湿、油污粉尘，要熬严寒酷暑、上夜班、重复取放，企业常年贴着招工启事，但很难招到人；配电室、变电站需要持证电工全天值守，冷库、矿井、电线维护的工作时刻都暗藏风险；磨床操作、工件修型、火工品刮研这类活，高度依赖…",
+      "quality": 9,
+      "practical": 6,
+      "sourceName": "量子位",
+      "domain": "qbitai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "fail",
+        "reason": "内容与分类不符 · 分类：apps/life · 标签：free, local, agent, generate"
+      },
+      "blocked": [
+        "模型复核不通过（内容与分类不符 · 分类：apps/life · 标签：free, local, agent, generate）"
+      ]
+    },
+    {
+      "slug": "ca7cd22c6e9c",
+      "title": "Ladybird's first alpha release",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [],
+      "bodyChars": 5107,
+      "excerpt": "Ladybird is an astonishingly ambitious project: a new browser, in 2026, with its own implementation of most of the key components - HTML parsing, CSS engine, layout, JavaScript, even WebAssembly. It still uses a few external components - things like HarfBuzz for text shaping, Skia for 2D graphics, ffmpeg for video, and SQLite for the things you do with SQLite. Everything else is part of Ladybird, or code brought in from Ladybird's even more ambitious predecessor project SerenityOS . This morning the Ladybird project released their first alpha , which means you can now install the browser (on…",
+      "quality": 9,
+      "practical": 1,
+      "sourceName": "Simon Willison",
+      "domain": "simonwillison.net",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": ""
+      },
+      "blocked": []
+    },
+    {
+      "slug": "e520e7a5442c",
+      "title": "Show HN: News Blocklist – a DNS blocklist of 14k news and current-affairs sites",
+      "category": "apps",
+      "subcategory": "life",
+      "tags": [
+        "lowspec"
+      ],
+      "bodyChars": 847,
+      "excerpt": "A little while ago I built (vibed) a tiny Mac app to block websites via the hosts file. By default it imported some fairly popular adult filtering lists as well as social media etc. It has been very effective; it would only take a few moments to switch off but it is enough of an interruption to often make me re-evaluate and proceed on. I have a particular distain for current affairs and have found \"the news\" addictive for years, clearly at the detriment to my own mental health and sanity. So, in a similar vein to the other lists I found, I have created a fairly comprehensive list of news site…",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "Show HN (AI)",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": ""
+      },
+      "blocked": []
+    },
+    {
+      "slug": "b60f06186f54",
+      "title": "📡 AI日报 11/24 | Anthropic 交出企业数据控制权、谷歌 AI 模式接入 Drive/Wallet、AI 数据中心搅动气候谈判",
+      "category": "apps",
+      "subcategory": "knowledge",
+      "tags": [
+        "money",
+        "privacy"
+      ],
+      "bodyChars": 918,
+      "excerpt": "AI 日报 · 2026-11-24 今日 3 条：Anthropic 允许企业自持 AI 数据与密钥；谷歌 AI 模式接入 Drive、Wallet 与 Gemini；AI 数据中心用电搅动 UN 气候谈判。 1. Anthropic 开放 EFS：企业可自持数据与加密密钥 Anthropic 推出「企业前沿安全防护系统」（EFS）公测：使用 Mythos / Fable 的企业客户可把提示词与响应存进自有云，自持加密密钥，Anthropic 每 15 分钟扫描一次但读不到内容。 30 天留存要求仍在，只是存储方从 Anthropic 转到客户；官方称与 100 多家客户共建，桥水、Salesforce、Stripe 已参与私测。 同步上线 Claude Ship：PR Steward 与 Claude Approvals 两个代理可处理 CI 失败、合并冲突与审查反馈，并在企业策略允许时批准常规 PR。 来源：网易（转载财联社，2026-11-24 04:31 CST） 2. 谷歌 AI 模式接入 Drive、Wallet 与 Gemini Google 把 Personal Intelligence 扩展到搜索 AI Mode，可读取 Drive 文件与 Wallet 账户信息，生成更贴合个人上下文的回答。 Wallet 只读、不能动钱；连接可选、可随时关闭；Gemini…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "抡锤者 资讯",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "fail",
+        "reason": "内容为新闻转述，没有实践性内容"
+      },
+      "blocked": [
+        "模型复核不通过（内容为新闻转述，没有实践性内容）"
+      ]
+    },
+    {
+      "slug": "8b3ef8e67fb4",
+      "title": "让 Agent 长出眼睛和耳朵，近期对我最重磅、含金量最高的功能性补全，没有之一",
+      "category": "tools",
+      "subcategory": "workflow",
+      "tags": [
+        "benchmark",
+        "generate",
+        "local",
+        "agent"
+      ],
+      "bodyChars": 6135,
+      "excerpt": "让 Agent 长出眼睛和耳朵，近期对我最重磅、含金量最高的功能性补全，没有之一 我让 Agent 长出了眼睛和耳朵。起因是腾讯开源的全模态视频理解模型 WeMM-Video（Apache-2.0，2B / 4B / 9B / 35B-A3B 四档）：喂一个视频文件进去，模型同时看画面、听原声，输出描述或逐字转写。我在M5 Ultra 256GB 机器上把它完整跑通并做了三档横向测试，最终定档 35B-A3B。我要先讲它对我意味着什么，再讲怎么跑通、为什么选 35B。 一、长出眼睛和耳朵：能力的一次分水岭 把最近折腾过的所有东西排一遍，这是对我个人最重磅、含金量最高的功能性补全，没有之一。视频理解在行业里不是新词，但在我地机器上，Agent 一直缺一件趁手、不联网、画面和声音一起吃得下的工具。WeMM-Video 跑通补的就是这一件，我能看的它都能看、我能听的它都能听，全程本地。这不是把某件事做得更快，是\"做不了\"变成\"能做\"，我的工作流里从此多了一个感官通道。 1. 从发现到装上：打动我的是综合能力和好用两样都占了 要说\"看得懂视频\"这个能力并不稀缺：云端有 Gemini 这类原生吃音视频的旗舰；开源阵营里 Qwen2.5-Omni / Qwen3-Omni、MiniCPM-o、VideoLLaMA 系列、video-SALMONN 都在做音视频联合理解，还有专门的长音视频评测…",
+      "quality": 11,
+      "practical": 9,
+      "sourceName": "抡锤者 Agent 工具",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": ""
+      },
+      "blocked": []
+    },
+    {
+      "slug": "1cd3e3cdd0c9",
+      "title": "微软 WinGet 开始支持 MCP：以后安装 Windows 软件，直接告诉 AI 就行了",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "agent",
+        "tutorial",
+        "free"
+      ],
+      "bodyChars": 1944,
+      "excerpt": "在 Windows 上安装软件，一般是下载，然后双击安装包，再一步步点击「下一步」。 其实，你还可以在 Windows 的终端中，直接输入以下命令，来安装 Firefox 浏览器： winget install Mozilla.Firefox 这是微软早就提供的免费软件包管理器： WinGet（Windows Package Manager） ，可以通过一条命令搜索、安装、升级和卸载软件。 它有点像 macOS 上的 Homebrew、Linux 上的 apt，而 Windows 上的同类工具，还有 Chocolatey、Scoop 等。 而现在，微软又为 WinGet 带来了一项新能力： 支持 MCP（模型上下文协议） 。 这意味着，AI 助手也能使用 WinGet 了。 让 AI 帮你安装 Windows 软件 通过 WinGet MCP Server，你可以直接告诉支持 MCP 的 AI 助手： 「帮我安装 Firefox」 「找一款免费的 PDF 阅读器」 「安装 Git 和 Visual Studio Code」 「帮我找一个适合 Windows 的截图工具」 AI 可以调用 WinGet 搜索软件，获取软件包信息，并在用户确认后执行安装。 目前 WinGet MCP Server 主要提供两个工具： find （搜索软件）和 install （安装软件）。 如何启用…",
+      "quality": 8,
+      "practical": 6,
+      "sourceName": "小众软件",
+      "domain": "appinn.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容符合要求，实测数据和复现步骤都有。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "17c73f9c93c9",
+      "title": "实测：1450亿参数塞进笔记本，每秒狂飙80+Token！国产端侧大模型杀疯了",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "benchmark",
+        "lowspec",
+        "local",
+        "privacy"
+      ],
+      "bodyChars": 8124,
+      "excerpt": "实测：1450亿参数塞进笔记本，每秒狂飙80+Token！国产端侧大模型杀疯了 思邈 2026-11-23 19:01:15 来源： 量子位 零Token成本，断网也能自由Vibe Coding 允中 发自 凹非寺 量子位 | 公众号QbitAI 上个月，曾经风靡全球的AI陪伴平台Character.AI，申请了破产保护。 数据显示，其月活跃用户数（MAU）一度高达2200万。破产时，在公司披露的经营困境中，核心因素之一就是 算力成本 。 这就出现了一个悖论： AI产品越成功，有时候反而越会带来巨额亏损。 那有没有可能，让更多AI能力直接在本地运行，而不必事事依赖云端？ 这正是端侧AI近年来持续探索的方向。 但想把大模型真正搬到手机、PC等终端，并没有那么简单。受限于设备的显存、内存带宽、存储和功耗，模型规模越大，越需要解决如何加载、如何调度，以及如何保证实际推理速度的问题。 行业急迫需要端侧模型的进步。以苹果此前公布的3B参数端侧基础模型为例，其主要面向内容生成、摘要、分类和多轮对话等任务。苹果当时也曾表示，这款模型并非为处理世界知识类问题或高级推理任务而设计。 此时，破局者出现了。 无界方舟近日发布了端侧大模型 Edge0-145B ，总参数量达到1450亿，官方将其称为「全球首个千亿参数端侧原生基础模型」。 开源仅上线3天，便冲上了 Hugging Face的Text Ge…",
+      "quality": 11,
+      "practical": 7,
+      "sourceName": "量子位",
+      "domain": "qbitai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "fail",
+        "reason": "内容主要是新闻转述，没有数据和步骤。"
+      },
+      "blocked": [
+        "模型复核不通过（内容主要是新闻转述，没有数据和步骤。）"
+      ]
+    },
+    {
+      "slug": "088a4ed78941",
+      "title": "198tok/s！两张魔改3080再次辉煌！",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "hardware",
+        "local",
+        "benchmark",
+        "generate"
+      ],
+      "bodyChars": 792,
+      "excerpt": "198tok/s！两张魔改3080跑strata分支strata-ampere。 第一次发帖子，有点紧张。可能有些逻辑上的混乱，大家且看个热闹吧。 首先，先澄清一下我的配置： CPU：AMD 3960X 主板：华硕TRX40 内存：4 32G DDR4 3200MHz 共计128G 显卡：双3080 20G魔改版 电源：长城巨龙1250瓦 硬盘：海力士NVME 512G PCIe 4.0 * 该主板有3个PCIe4.0×16的插槽，但没办法，这两张3080魔改版用的是4090的三风扇散热器，太厚太长。两张显卡放在一起贴得太近，容易高温、散热不好。为了拍视频展示我的设备，我临时把上面的机箱盖子拿了下来，手撑着拍了张照片。服务器正常在家里摆放的图片是这样的： 这里说一下我的模型：因为是128G内存，所以我部署的是Q4K_XL这个模型。 废话不多说，我直接把本地AI接入到DeepSeek Harness开源Agent当中，让它写一个鹈鹕汽车的网页，然后截图实测一下我的Decode速度，废话不多说，我们直接上图。 感觉作者的重心一直在他自己的AMD R9700显卡上。对于我们这种3080显卡来说，我个人觉得还有很大的潜力，只是作者没有深挖。 主要做了如下优化： 非 P2P 双卡 TP=2 + EP=2 全链路架构 Ampere（sm_86）Dense 与 MoE 专家 CUDA 微核深度…",
+      "quality": 8,
+      "practical": 5,
+      "sourceName": "抡锤者 AI硬件",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容符合要求，实测数据和复现步骤都有。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "be927db22afa",
+      "title": "MiniMax H3 的 pi-H3 加速包：初步测试记录",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "benchmark",
+        "lowspec",
+        "agent",
+        "generate"
+      ],
+      "bodyChars": 5450,
+      "excerpt": "MiniMax H3 的 pi-H3 加速包：初步测试记录 一句话结论：在一张 12 GB 显卡上，pi-H3 2 步 + DWD 比官方 4 步加速 LoRA 快 1.9 倍 （68 s vs 130 s）， 4 步快 1.55 倍 （84 s vs 130 s）；肉眼觉得最好的是 pi-H3 4 步 ，但样本只有几个种子，只能当参考。 另有一个和速度无关的意外结果，见第五节末尾。 一、起因 MiniMax H3 发布之后，好几种地方都在推它的加速方案。就顺手做了一轮 冒烟测试 —— 不是横评，是想先搞清楚「这东西在我的卡上到底跑多快、画面能不能看、和官方 LoRA 差多少」。 先说清楚性质： 单条提示词、每种配置只出 1 个视频（换了 1 个 seed 复跑）、没有重复采样 。 下面的秒数是实测，画质部分是主观判断 + 一个粗糙的客观指标。 二、pi-H3 是什么 MiniMax H3 是原生「视频 + 音频」一起生成的视频大模型。pi-H3 是在它之上做的 少步数蒸馏 adapter ， 两个卖点： 2 步或 4 步出片 （H3 原始采样要几十步） DWD = Decoding Without a Decoder ：最后一步直接从 latent 预测像素， 整个视频 VAE 解码被跳过 （音频 VAE 还是要的） 形式是 LoRA 权重（放在 models/loras/ ）…",
+      "quality": 8,
+      "practical": 7,
+      "sourceName": "抡锤者 AI 音视频画图",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容符合要求，实测数据和复现步骤都有。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "e2b6a9442b55",
+      "title": "新手小白单卡R9700【MinimaxH3】浪客剑心AI测试结果",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "benchmark",
+        "generate",
+        "tutorial",
+        "agent"
+      ],
+      "bodyChars": 4542,
+      "excerpt": "先声明：不参加比赛，网上都是双卡测试，纯新手，本人技能树就装系统和翻墙，勿喷。这次测试的完整流程都是 AI DeepSeek-V4.1-Flash1017代跑的，有哪里不对直接喷 AI，别冲我。 项目 配置 CPU Intel Xeon E5-2666 v3 @ 2.90GHz（20 核，Haswell 架构，无超线程） 内存 62 GiB（已用 11 GiB，可用 51 GiB） 交换 8 GiB 磁盘 NVMe 476.9 GB（系统盘，已用 165 GB / 69%）+ 931.5 GB + 465.8 GB 两块 SATA 盘 GPU AMD Radeon AI PRO R9700 32GB 系统 Ubuntu 24.04.5 LTS，内核 7.0.0-38-generic 工作流 video_minimax_h3_r2v (2).json 测试结果 5秒 960*544 0.5MP 4步 256秒 5秒 960*544 0.5MP 6步 303秒 5秒 1280*736 0.9MP 6步 502秒 8秒 960*544 0.5MP 4步 349秒 12秒 1280*736 0.9MP 4步 21分 1280*736 20 步采样跑了 87 分 39 秒 参数扫掠做成了脚本（bench/sweep.py），用同一个种子（500958182202889）、同一套提示词和两张…",
+      "quality": 7,
+      "practical": 4,
+      "sourceName": "抡锤者 AI 音视频画图",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容符合要求，实测数据和复现步骤都有。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "da39a3ee5e6b",
+      "title": "新手问号 | 用智能插座为旧款 Apple 设备设置「充电上限」",
+      "category": "hardware",
+      "subcategory": "edge",
+      "tags": [
+        "lowspec",
+        "benchmark",
+        "tutorial",
+        "agent"
+      ],
+      "bodyChars": 3662,
+      "excerpt": "2026年11月23日 7 分钟阅读 新手问号 | 用智能插座为旧款 Apple 设备设置「充电上限」 主作者 化学心情下2 少数派作者 曾经电商人和媒体人，现在的产品人，热爱摇滚乐，只混 IT 圈 化学心情下2 化学心情下2 少数派作者 曾经电商人和媒体人，现在的产品人，热爱摇滚乐，只混 IT 圈 联合作者 化学心情下2 少数派作者 曾经电商人和媒体人，现在的产品人，热爱摇滚乐，只混 IT 圈 化学心情下2 化学心情下2 少数派作者 曾经电商人和媒体人，现在的产品人，热爱摇滚乐，只混 IT 圈 曾经电商人和媒体人，现在的产品人，热爱摇滚乐，只混 IT 圈 7 分钟阅读 微信扫码分享 点击下方按钮可复制链接 近几年越来越多的数码厂商都开始在自家系统中加入「充电限制」功能。比如 Apple 从 iOS 18 开始，就为 iPhone 15 及后续机型带来了更细致的充电上限设置：在「设置 - 电池 - 充电」中，用户可以按 5% 为一档，把充电上限自由限制在 80% 到 100% 之间。对于常年插电使用的朋友来说，把充电上限卡在 80%，理论上的确能有效减缓电池衰减速度、减少循环次数。 但遗憾的是，这项功能目前有相当严苛的硬件门槛。Apple 明确限制只有较新的机型才支持，例如 iPhone 15 及更新机型，搭载 M2 及以上芯片的 iPad Air、搭载 M4 及以上芯片的 iP…",
+      "quality": 8,
+      "practical": 3,
+      "sourceName": "少数派",
+      "domain": "sspai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "fail",
+        "reason": "内容主要是新闻转述，没有数据和步骤。"
+      },
+      "blocked": [
+        "模型复核不通过（内容主要是新闻转述，没有数据和步骤。）"
+      ]
+    },
+    {
+      "slug": "70a4447641e0",
+      "title": "Review: The Asus ProArt P16 offers a glimpse of a future powered by local AI",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "lowspec"
+      ],
+      "bodyChars": 1099,
+      "excerpt": "Buying a new computer in the last few years has meant wading through all manner of AI branding nonsense . Most of the AI pitches for laptops are little more than marketing hype, but the launch of Nvidia RTX Spark could bring a meaningful improvement in AI capabilities to the device you use every day. Asus has adopted Nvidia's new chip in its latest ProArt lineup, offering a staggering amount of memory to run local AI models. While it doesn't have a traditional GPU, the Asus ProArt P16 , with up to 128GB of memory, can also be your primary gaming and productivity machine, but this unified expe…",
+      "quality": 9,
+      "practical": 1,
+      "sourceName": "Ars Technica AI",
+      "domain": "arstechnica.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "6fd4c32fe34a",
+      "title": "How to build and maintain an agentic evaluation",
+      "category": "local",
+      "subcategory": "weights",
+      "tags": [
+        "tutorial",
+        "agent",
+        "free"
+      ],
+      "bodyChars": 50031,
+      "excerpt": "Back to Articles How to build and maintain an agentic evaluation Published November 23, 2026 Update on GitHub Upvote 23 Avijit Ghosh evijit ben burtenshaw burtenshaw Irene Solaiman irenesolaiman Overview AI evaluations help shape which systems people build, adopt, and trust. An evaluation gives a system tasks, checks its answers or actions, and produces a score. Building and maintaining a useful evaluation therefore takes real work: defining tasks that reflect domain expertise, scoring them reliably, and checking that the results support the claims made. When methods, code, and data stay priv…",
+      "quality": 7,
+      "practical": 2,
+      "sourceName": "Hugging Face Blog",
+      "domain": "huggingface.co",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "75e081581115",
+      "title": "蚂蚁医疗健康AI五连发！开源、本地部署、望闻问切全安排上了",
+      "category": "bench",
+      "subcategory": "selection",
+      "tags": [
+        "local",
+        "benchmark",
+        "generate",
+        "tutorial"
+      ],
+      "bodyChars": 8211,
+      "excerpt": "蚂蚁医疗健康AI五连发！开源、本地部署、望闻问切全安排上了 鹭羽 2026-11-23 15:42:01 来源： 量子位 阿福大升级：让模型像医生一样思考 鹭羽 发自 凹非寺 量子位 | 公众号 QbitAI 我勒个豆，卷疯了！ 一口气连发五模型 …… 蚂蚁百灵 这是要把医疗健康AI给穿透了。 一出手，就是一整个模型大家族。 P.S.表格已经给大家整理好了，欢迎自取～ 还都是医疗深度推理、实时多模态交互以及疾病风险预测等硬核方向，精准踩中健康AI落地需求。 而且！前两款专业模型，当天 直！接！开！源！ 不得不说，今年的蚂蚁医疗健康生态大会，亮点多多，完全看不过来啊。 不妨先简单梳理下这几款模型。 开源的两款模型体型差得还挺大： LingSante-3.1-air-VL：比较轻巧，只有124B，擅长处理报告、图片这些图文资料，适合本地部署； LingSante-3.1-flash：足足560B，最长支持100万Token上下文，专门冲着长病历和得来回查资料的复杂任务去的。 还有个普通用户能轻松上手的 LingSante Live ： 打开阿福APP，给AI打个视频电话，它就能直接 「望闻问切」 实时感知。 再算上识别疾病风险的 LingSante Pulse 、专门给医疗AI回答做安全保镖的 LingSante MedGuard …… 阿福的技术老底都要被蚂蚁全摆上桌了。 不止这些…",
+      "quality": 10,
+      "practical": 6,
+      "sourceName": "量子位",
+      "domain": "qbitai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "41bc5b30b638",
+      "title": "Inkling 2 Mini 在 H200 单卡上的部署与性能（vLLM）",
+      "category": "bench",
+      "subcategory": "compare",
+      "tags": [
+        "benchmark",
+        "local",
+        "hardware"
+      ],
+      "bodyChars": 3822,
+      "excerpt": "跟个潮流，刚测了一下 Inkling 2 Mini。 先说明一下：H200 到手有一段时间了，液冷一直没搞定，只能临时拿个风扇吹着，跑不满 600W，勉强到 400W，这事确实挺痛苦。 另外 H200 并不支持 FP4，拿它跑这模型其实不太搭，纯粹手痒了。 我已经很少折腾 LLM 了，主要是我个人用 395+halogen 就挺够用：256k 上下文 prefill 能到接近 1900 tok/s，命中缓存后 decode 也不慢。 看到这新模型据说能力还行，主要是上下文能跑 1M，这点有点意思。 目前散热不行只能跑到400W 2026-11-23 · H200 NVL 141GB（SM90 / PCIe Gen5 x16）· vLLM 0.34.0rc1.dev1174（nightly）· TP=1模型： thinkingmachines/Inkling-2-Mini （26B 总参 / 3.5B 激活，NVFP4 专家 20 层 + MXFP8 专家 4 层 + BF16 其余，18.6 GB） 一、结论先行 指标 数值 说明 单请求 decode（数学，DSpark） 519.3 tok/s 裸跑（无投机）153.6 单请求 decode（代码） 314.5 tok/s 裸 153.6 单请求 decode（中文问答） 184.4 tok/s 裸 153.6 Prefill…",
+      "quality": 8,
+      "practical": 3,
+      "sourceName": "抡锤者 模型部署讨论",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "d5dc4943d7cc",
+      "title": "Topology Hub Optimal Transport: Eliminating Long Context Dilution at Flash Speed",
+      "category": "bench",
+      "subcategory": "compare",
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 1845,
+      "excerpt": "Long-context models use sparse or structured attention to avoid quadratic cost, yet retrieving a small set of relevant facts embedded among hundreds of thousands of distractors degrades as normalization mass disperses with length. Hub-and-spoke optimal transport (OT) replaces the dense $L \\times L$ matrix with a linear-size graph over local windows and $K$ shared hubs balanced by Sinkhorn scaling. Building on block-wise tail refinement and fixed-support transport topology (arXiv:2605.08123, arXiv:2609.07954), we introduce Topology Hub Optimal Transport (THOT): (1) bounded-support capacity gat…",
+      "quality": 6,
+      "practical": 2,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "061b2a897720",
+      "title": "Run One, Get Two: Near-Free Streaming Safety Checks for Local LLMs",
+      "category": "bench",
+      "subcategory": "cost",
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 716,
+      "excerpt": "Local LLM assistants decode for one user at a time, so decoding is bound by memory bandwidth and leaves compute idle. Streaming safety checks today trade accuracy against cost. A dedicated guard model is accurate but nearly doubles the latency per token, while a hidden-state probe is cheap but less accurate. We present ToRA, an adapter that runs a second model as an extra row in the generator's decode step, sharing its weights and KV cache. Dual-row kernels read each weight once for both rows. On Qwen3-0.6B, ToRA matches or beats a dedicated streaming guard, with higher F1 on 12 of 17 benchma…",
+      "quality": 6,
+      "practical": 2,
+      "sourceName": "arXiv 检索（推理引擎与量化）",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "ca38829e7312",
+      "title": "RoboTrack: Point tracking for real-world robotic manipulation",
+      "category": "bench",
+      "subcategory": "benchmark",
+      "tags": [
+        "benchmark",
+        "tutorial"
+      ],
+      "bodyChars": 16373,
+      "excerpt": "Back to Articles RoboTrack: Point tracking for real-world robotic manipulation Enterprise Article Published November 23, 2026 Upvote 1 Kyle Wiggers Ai2Comms allenai 🤖 Models | 📄 Tech Report | 📊 Data | 💻 Code | 🌐 Project Page | 📈 Benchmark Deploying robots in real-world settings requires reliable perception throughout an interaction. To pick something up, a robot needs to follow the positions of its gripper and the object as they move. In a laboratory, a robot handling a pipette must keep track of its tip while aligning it with the opening of a tube. These tasks become harder when nearby…",
+      "quality": 7,
+      "practical": 1,
+      "sourceName": "Hugging Face Blog",
+      "domain": "huggingface.co",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    }
+  ]
+}
