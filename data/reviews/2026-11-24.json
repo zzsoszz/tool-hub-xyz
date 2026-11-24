@@ -1,8 +1,8 @@
 {
   "day": "2026-11-24",
-  "reviewedAt": "2026-11-23T22:12:02.722Z",
+  "reviewedAt": "2026-11-24T06:21:56.382Z",
   "reviewer": "cloudflare/@cf/meta/llama-3.1-70b-instruct",
-  "note": "cloudflare/@cf/meta/llama-3.1-70b-instruct → @cf/meta/llama-3.1-8b-instruct：复核 12 条，解析到 12 条判定",
+  "note": "cloudflare/@cf/meta/llama-3.1-70b-instruct：复核 12 条，解析到 12 条判定",
   "rules": {
     "minItems": 3,
     "minBodyChars": 120,
@@ -15,16 +15,41 @@
   },
   "passed": true,
   "reasons": [],
-  "total": 19,
+  "total": 44,
   "blocked": [
     "1330db2631e0",
     "5ebb7021b3e7",
+    "312ed098d46e",
     "b60f06186f54",
-    "17c73f9c93c9",
-    "da39a3ee5e6b"
+    "7ec5372cc751",
+    "cbaa0451cfd1"
   ],
-  "survivors": 14,
+  "survivors": 38,
   "items": [
+    {
+      "slug": "b4d9dcf9ebb5",
+      "title": "【同权重硬刚】M5 Ultra 512G 实测 oMLX 0.8.3 vs MLX-Serve 26.11.3：单路慢 20%，512K 八路反杀快 1.76 倍！个人交互与生产力底座的分水岭",
+      "category": "apps",
+      "subcategory": "inference",
+      "tags": [
+        "benchmark",
+        "local",
+        "lowspec"
+      ],
+      "bodyChars": 7400,
+      "excerpt": "前几天先后发过 单台 M5 Ultra 对比四台 DGX Spark 全矩阵实测 和 Mac Studio 万兆异构 PD 分离 64 格实测 。期间看到论坛里 David Qi 发的 单台 M5 Ultra 跑 MLX-Serve 26.11.3 实测 ，加上 Reddit 上的单双台 M5 Ultra 实测 ，本帖专门用来回答同一个后续问题： 同一台 Mac Studio M5 Ultra 512GB 跑 DeepSeek V4.1 Flash 1017 ， oMLX 0.8.2 / 0.8.3 与 MLX-Serve 26.11.3 同权重硬刚到底差在哪，生产上又该怎么选？ 测试全部在同一台 M5 Ultra（512 GB 统一内存，2 TB 内置 SSD）与同一份 DeepSeek-V4.1-Flash-1017-oQ4e-ngram-mtp 权重（ 477 GB ，主体 oQ4e + 原版 FP8 Engram 驻盘 + MTP 头）上完成，均使用官方预编译发行包，沿用 3184 帖 同一套 llm-inference-bench 0.7.6 脚手架与 1K–512K × 1/2/4/8 路 完整 36 格矩阵（每组 84 批 / 315 路，温度 0.6 ，关思考，冷前缀 0 缓存命中，固定输出 128 token ），完整跑完 oMLX 0.8.2 (d3) 、 o…",
+      "quality": 12,
+      "practical": 2,
+      "sourceName": "抡锤者 模型部署讨论",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "包含实测数据和复现步骤。"
+      },
+      "blocked": []
+    },
     {
       "slug": "1330db2631e0",
       "title": "微软 To Do 要关闭了，奇妙清单创始人早就做了替代品：Superlist",
@@ -46,10 +71,10 @@
       "warnings": [],
       "agent": {
         "verdict": "fail",
-        "reason": "内容与标签不符 · 分类：apps/office · 标签：agent, free, benchmark, tutorial"
+        "reason": "标签与内容明显不符。"
       },
       "blocked": [
-        "模型复核不通过（内容与标签不符 · 分类：apps/office · 标签：agent, free, benchmark, tutorial）"
+        "模型复核不通过（标签与内容明显不符。）"
       ]
     },
     {
@@ -73,10 +98,37 @@
       "warnings": [],
       "agent": {
         "verdict": "fail",
-        "reason": "内容与分类不符 · 分类：apps/life · 标签：free, local, agent, generate"
+        "reason": "分类/子类明显不对。"
       },
       "blocked": [
-        "模型复核不通过（内容与分类不符 · 分类：apps/life · 标签：free, local, agent, generate）"
+        "模型复核不通过（分类/子类明显不对。）"
+      ]
+    },
+    {
+      "slug": "312ed098d46e",
+      "title": "释放AI与出海强预期，近1500人参与亿邦产业互联网年会暨首届产业智能体大会",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [
+        "agent",
+        "generate",
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 8540,
+      "excerpt": "释放AI与出海强预期，近1500人参与亿邦产业互联网年会暨首届产业智能体大会 量子位的朋友们 2026-11-24 11:21:12 来源： 量子位 2026年11月20日，第八届亿邦产业互联网年会与首届产业智能体大会在北京国贸大酒店首次合体举行。 文丨亿邦智库 2026年11月20日，第八届亿邦产业互联网年会与首届产业智能体大会在北京国贸大酒店首次合体举行。从2019年算起，亿邦产业互联网年会已经走到第八年，年度主题从“谁在重构产业链”到“解锁新周期”，随产业周期与年度命题持续迭代。本次大会强调AI与出海带来的“模态进化”，产业智能体引发业界普遍共鸣，热议产业互联网增长逻辑正在经历着一场什么样的模态切换。仅现场实况图片交互就达22594人次，亿邦视频号直播观看达63788人次。 本次大会开幕演讲中，经济学家李稻葵从宏观层面为产业AI、产业智能体和产业出海，作出了一个时代背景的解释框架：中国AI发展比美国更具可持续性。产业AI和智能体不是孤立的技术竞赛，而要嵌入中国高储蓄率、低成本资金和完整产业体系所决定的产业升级与全球化进程之中；产品、企业、产业链供应链出海是必然方向，“抱团出海、带动全产业链布局”将成为常态。 著名经济学家 李稻葵 亿邦动力董事长、亿邦智库院长郑敏在发布 《模态进化——2026产业互联网发展报告》 时，给出了一个贯穿全场讨论的基调判断：产业互联网从来不是抢蛋糕…",
+      "quality": 9,
+      "practical": 4,
+      "sourceName": "量子位",
+      "domain": "qbitai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "fail",
+        "reason": "只有新闻转述，没有数据或步骤。"
+      },
+      "blocked": [
+        "模型复核不通过（只有新闻转述，没有数据或步骤。）"
       ]
     },
     {
@@ -98,7 +150,7 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": ""
+        "reason": "包含具体的技术实现细节和代码信息。"
       },
       "blocked": []
     },
@@ -122,7 +174,7 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": ""
+        "reason": "提供了具体的工具和解决方案。"
       },
       "blocked": []
     },
@@ -145,10 +197,84 @@
       "warnings": [],
       "agent": {
         "verdict": "fail",
-        "reason": "内容为新闻转述，没有实践性内容"
+        "reason": "新闻转述，没有实测数据或步骤。"
       },
       "blocked": [
-        "模型复核不通过（内容为新闻转述，没有实践性内容）"
+        "模型复核不通过（新闻转述，没有实测数据或步骤。）"
+      ]
+    },
+    {
+      "slug": "7ec5372cc751",
+      "title": "Learning Heterogeneous Reasoning in Large Language Models: From Mode Compatibility to Local Bottlenecks",
+      "category": "apps",
+      "subcategory": "life",
+      "tags": [],
+      "bodyChars": 1661,
+      "excerpt": "Post-training large language models routinely pools reasoning trajectories from diverse teachers or algorithms, yet it remains unclear whether standard supervised fine-tuning (SFT) can learn such heterogeneous strategies without explicit mode conditioning. We study the learnability and local bottlenecks of heterogeneous reasoning through a formal mixture formulation and controlled experiments. We first formalize the representational compatibility of the optimal autoregressive model with latent reasoning mixtures: the target next-token distribution weights modes by their prefix posteriors and…",
+      "quality": 6,
+      "practical": 2,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "分类/子类不对，应为apps/research。"
+      },
+      "blocked": [
+        "模型复核不通过（分类/子类不对，应为apps/research。）"
+      ]
+    },
+    {
+      "slug": "974a6e55158a",
+      "title": "T2ISpec: Benchmarking Speculative Decoding for Text-to-Image Generation",
+      "category": "apps",
+      "subcategory": "inference",
+      "tags": [
+        "benchmark"
+      ],
+      "bodyChars": 1127,
+      "excerpt": "Text-to-image (T2I) generators produce detailed images but remain slow at inference. Speculative decoding can reduce this cost, yet its behavior across the rendering requirements of T2I prompts remains insufficiently understood. We introduce T2ISpec, a benchmark of 1,400 prompts balanced across seven rendering topics and two difficulty levels. It evaluates autoregressive and diffusion/flow accelerators by latency, work performed by the target model, and image quality. Our study reveals three key findings: (1) aggregate results hide large differences between topics, (2) alignment and preferenc…",
+      "quality": 7,
+      "practical": 1,
+      "sourceName": "arXiv 检索（推理引擎与量化）",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "有实测数据和步骤。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "cbaa0451cfd1",
+      "title": "Verifiable On-Policy Distillation",
+      "category": "apps",
+      "subcategory": "life",
+      "tags": [],
+      "bodyChars": 1679,
+      "excerpt": "Reinforcement learning with verifiable rewards (RLVR) has become a powerful approach for improving language-model reasoning, but its supervision is inherently sparse: a sequence-level verifier reward is propagated only through sampled trajectories and provides no direct signal for alternative actions. On-policy distillation (OPD) offers a complementary form of supervision by providing dense teacher feedback over the full next-token distribution, but this signal is not grounded in verified task outcomes. Simply co-optimizing the two objectives does not couple these signals: verifier feedback r…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "分类/子类不对，应为apps/research。"
+      },
+      "blocked": [
+        "模型复核不通过（分类/子类不对，应为apps/research。）"
       ]
     },
     {
@@ -172,7 +298,7 @@
       "warnings": [],
       "agent": {
         "verdict": "pass",
-        "reason": ""
+        "reason": "有实测数据和步骤。"
       },
       "blocked": []
     },
@@ -196,8 +322,117 @@
       "warnings": [],
       "agent": {
         "verdict": "pass",
-        "reason": "内容符合要求，实测数据和复现步骤都有。"
+        "reason": "有实测数据和步骤。"
       },
+      "blocked": []
+    },
+    {
+      "slug": "cc7ea0a89dc7",
+      "title": "全新 Windows 11 系统搜索：速度快、不卡顿、内存占用低，用了都说好",
+      "category": "tools",
+      "subcategory": "interface",
+      "tags": [
+        "benchmark",
+        "tutorial",
+        "agent",
+        "free"
+      ],
+      "bodyChars": 816,
+      "excerpt": "万万没想到，Windows 11 的搜索功能，居然也有变好用的一天！ 微软推出了全新的 Windows 11 系统搜索功能（测试），抛弃了此前使用的 WebView2 网页技术，使用原生 WinUI 3 重写。 最直观的变化就是： 不卡顿、速度快、低内存占用。 有媒体测试，新版搜索的内存占用仅为二十多 MB，青小蛙这里实测为 140MB。 除了界面变化和性能提升，新版搜索还增加了快捷操作功能，可以直接在搜索结果中开启勿扰模式、调整屏幕亮度、静音，甚至锁屏，无需再进入系统设置。 在 B 站观看 如何提前体验？ 目前新版搜索正在逐步推送，可以使用开源工具 ViVeTool 手动激活。 以管理员身份运行终端，执行以下两行命令： vivetool /enable /id:61161304 vivetool /enable /id:58381341 重启电脑，按下 Win + S，就可以尝试全新的搜索功能了。 目前新版搜索主要面向英语用户，且存在任务栏移动后搜索窗口位置不匹配的问题，微软已确认将进行修复。 Windows 11 发布五年了，终于等来了一次值得期待的搜索功能更新。 原文：https://www.appinn.com/windows-11-new-native-search/ 推荐大家今天就打开！ 相关阅读 2011 小众元旦抽奖结果 淘宝桌面版的 AI 功能（MCP），真的什…",
+      "quality": 9,
+      "practical": 6,
+      "sourceName": "小众软件",
+      "domain": "appinn.com",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "c5c846995936",
+      "title": "Sentry: An external self-improving failure management layer for LLM agents",
+      "category": "tools",
+      "subcategory": "hands-on",
+      "tags": [
+        "tutorial",
+        "agent"
+      ],
+      "bodyChars": 5691,
+      "excerpt": "Sentry: An external self-improving failure management layer for LLM agents. Sentry runs alongside your agent loop to detect failures, guide recovery, and learn reusable lessons from verified recoveries. Quick Start | Paper (arXiv) | License What is Sentry? Sentry is an external runtime failure management layer for LLM agents. It helps agents fix invalid actions and recover when they get stuck in loops, drift from the task, or make unsupported assumptions. Unlike typical runtime monitors with fixed advice, Sentry learns and evolves from recoveries that work. By detecting failures, guiding reco…",
+      "quality": 7,
+      "practical": 1,
+      "sourceName": "Hacker News Search",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "d2743b1dbd9d",
+      "title": "Skip the DRAM Tier: MoRI UMBP Runs the Agentic KV Cache on NVMe",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "local",
+        "benchmark",
+        "agent",
+        "free"
+      ],
+      "bodyChars": 39648,
+      "excerpt": "Most of the traffic in agentic serving is multi-turn sessions that resend long prefixes. In the AgentX benchmark replaying real Claude Code sessions, the median turn is 142K input tokens, and over 96% of those tokens are a prefix the server has already seen [3] . A KV cache hit means the prefill node only has to process the small delta. A miss forces a full recomputation of the prefix, which burns GPU time and delays the first token. In our 42 runs of Kimi-K3 on vLLM, raising the KV cache hit rate by 1% of prompt tokens, for example from 95% to 96%, was worth about 10% more throughput (Figure…",
+      "quality": 6,
+      "practical": 2,
+      "sourceName": "Hacker News Search",
+      "domain": "vllm.ai",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "2e6998814187",
+      "title": "Toward a Theoretical Understanding of Transformer Attention: Bayesian Estimation and Predictive Sufficiency",
+      "category": "tools",
+      "subcategory": "hands-on",
+      "tags": [
+        "tutorial"
+      ],
+      "bodyChars": 927,
+      "excerpt": "This paper develops a theoretical account of Transformer attention by organizing existing probabilistic and information-theoretic results. It identifies the assumptions under which attention computes a posterior mean and the additional conditions required for accurate next-token prediction. Posterior-mean optimality under squared-error loss does not by itself establish predictive sufficiency; even a sufficient representation requires a prediction head that uses its information correctly. An excess-log-loss decomposition makes this distinction precise by separating representation information l…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "bd0eb5cc053e",
+      "title": "CGSpec: Consistency-Guided Speculative Decoding with Overlap-Aware Verification Scheduling for Edge-Cloud Inference",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [],
+      "bodyChars": 1196,
+      "excerpt": "Collaborative speculative decoding accelerates large language model inference by enabling edge clients to draft tokens locally and a shared cloud model to verify them. However, draft target disagreement wastes communication and verification resources, while heterogeneous client return times complicate shared verifier scheduling. We propose CGSpec, a consistency guided framework for multi client edge-cloud speculative decoding. CGSpec uses draft target distribution divergence to adapt the speculative budget and introduces a nomination and competition mechanism to construct candidate trees thro…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv 检索（推理引擎与量化）",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": null,
       "blocked": []
     },
     {
@@ -219,13 +454,8 @@
       "domain": "qbitai.com",
       "hard": [],
       "warnings": [],
-      "agent": {
-        "verdict": "fail",
-        "reason": "内容主要是新闻转述，没有数据和步骤。"
-      },
-      "blocked": [
-        "模型复核不通过（内容主要是新闻转述，没有数据和步骤。）"
-      ]
+      "agent": null,
+      "blocked": []
     },
     {
       "slug": "088a4ed78941",
@@ -246,10 +476,7 @@
       "domain": "lcz.me",
       "hard": [],
       "warnings": [],
-      "agent": {
-        "verdict": "pass",
-        "reason": "内容符合要求，实测数据和复现步骤都有。"
-      },
+      "agent": null,
       "blocked": []
     },
     {
@@ -271,10 +498,75 @@
       "domain": "lcz.me",
       "hard": [],
       "warnings": [],
-      "agent": {
-        "verdict": "pass",
-        "reason": "内容符合要求，实测数据和复现步骤都有。"
-      },
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "a73b0714618b",
+      "title": "【实测】PRO 6000 96G + 4090 48G 无 P2P 跑 strata dsv41：281K token 解码第 9 秒 illegal memory access 掉卡，TDR 后 GPU is lost",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "hardware",
+        "benchmark",
+        "lowspec",
+        "tutorial"
+      ],
+      "bodyChars": 6895,
+      "excerpt": "结论先说： 同一台机、同一个引擎，110k token 的 agent 请求连打 30+ 次全过；把两条最大的工具结果各复制 4 份推到约 28 万 token，第一次就掉卡。引擎报 cudaStreamSynchronize(s): an illegal memory access was encountered ，系统日志是 nvlddmkm 153 TDR，之后那张 4090 48G 直接 GPU is lost 。 死在 119 W / 52 °C / PCIe Gen4 x8 / 显存还剩 3.55 GiB。不是过热、不是供电墙、不是显存不够，也没超上下文（281k / 512k = 54%）。精确阈值没二分出来，根因未确认，第七节只给可能性不给结论。 一、平台和配置 项 值 CPU / 主板 Ryzen 9950X3D / X870E（CPU 直连 x16 拆 x8/x8） GPU0 RTX PRO 6000 Blackwell 96 GB，PCIe 5.0 x8 GPU1 RTX 4090 48 GB（魔改显存，sm_89），PCIe 4.0 x8 GPU2 RTX 4090 24 GB USB4 eGPU，已禁用，不参与 内存 96 GB DDR5-4800 双通道 系统 Windows 11 Pro 26H2 / 26300.9974，驱动 610.74 P2P…",
+      "quality": 11,
+      "practical": 4,
+      "sourceName": "抡锤者 模型部署讨论",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "72beab9565ed",
+      "title": "qianyiai/kurocat",
+      "category": "hardware",
+      "subcategory": "machine",
+      "tags": [
+        "free",
+        "lowspec",
+        "agent",
+        "generate"
+      ],
+      "bodyChars": 9942,
+      "excerpt": "🐈‍⬛ KuroCat — Open-Source Desktop Typing Cat Pet · 桌面打字小黑猫伴侣 🇨🇳 简体中文 | 🇺🇸 English | 🇯🇵 日本語 > 🌐 官方网站与网页端在线试玩 / 国内高速下载 ： https://qianyi.one/kurocat/ > 🇺🇸 KuroCat is a lightweight, transparent, always-on-top open-source desktop typing cat companion (Bongo Cat alternative) for Windows, macOS, Linux & Android — built with Tauri v2 + Rust , featuring 6 hand-crafted cats + BigFish whale-girl, native OBS transparent Browser Source , password privacy guard, and a built-in MCP server for AI cat creation. ([Read in English →](./README.en.md)) 轻量级 Windows（Win11/10 & Win7 SP1）/ macOS（10.15+ Appl…",
+      "quality": 10,
+      "practical": 6,
+      "sourceName": "GitHub 新晋 AI 项目",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "c8651cb17a0b",
+      "title": "用 FreeVideo 跑 MiniMax H3 做《浪客剑心》｜4080 SUPER 32GB 实测",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "lowspec",
+        "benchmark",
+        "generate",
+        "free"
+      ],
+      "bodyChars": 412,
+      "excerpt": "Youtube Video 跟风，完全练手作品 GPU NVIDIA GeForce RTX 4080 SUPER 32g,用时 6 分 55 秒 用了FreeVideo这个开源节点 实现如下 INT8 线性计算，使用本机预先准备好的量化权重。 SageAttention 2 在两阶段均实际运行，日志记录 550 次全局注意力、4,400 次窗口注意力，其中 768p 精修阶段分别调用 150 次和 1,200 次。 AdaLN 查表缓存，基础阶段和精修阶段各命中 50 个 DiT 块的调制表。 显存常驻与双缓冲预取，8 个 DiT 块权重常驻 GPU，其余块通过双缓冲预取。进入视频采样前释放编码器占用的显存，精修期间把约 9.03 GiB 的解码器权重预读到系统文件缓存。 两阶段采样，把 8 步基础采样放在 896×512，放大 latent 后在 1344×768 完成 3 步精修。",
+      "quality": 11,
+      "practical": 4,
+      "sourceName": "抡锤者 AI 音视频画图",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
       "blocked": []
     },
     {
@@ -296,10 +588,7 @@
       "domain": "lcz.me",
       "hard": [],
       "warnings": [],
-      "agent": {
-        "verdict": "pass",
-        "reason": "内容符合要求，实测数据和复现步骤都有。"
-      },
+      "agent": null,
       "blocked": []
     },
     {
@@ -321,13 +610,8 @@
       "domain": "sspai.com",
       "hard": [],
       "warnings": [],
-      "agent": {
-        "verdict": "fail",
-        "reason": "内容主要是新闻转述，没有数据和步骤。"
-      },
-      "blocked": [
-        "模型复核不通过（内容主要是新闻转述，没有数据和步骤。）"
-      ]
+      "agent": null,
+      "blocked": []
     },
     {
       "slug": "70a4447641e0",
@@ -343,6 +627,93 @@
       "practical": 1,
       "sourceName": "Ars Technica AI",
       "domain": "arstechnica.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "2e3aab72dc9d",
+      "title": "蚂蚁OceanBase发布湖库一体AI数据平台OceanLake，核心引擎向全球开源",
+      "category": "local",
+      "subcategory": "weights",
+      "tags": [
+        "local",
+        "benchmark",
+        "agent",
+        "free"
+      ],
+      "bodyChars": 2876,
+      "excerpt": "蚂蚁OceanBase发布湖库一体AI数据平台OceanLake，核心引擎向全球开源 量子位的朋友们 2026-11-24 11:30:46 来源： 量子位 中国AI数据平台加速崛起 11月24日，蚂蚁OceanBase AI数据大会在北京召开。OceanBase CEO杨冰在会上表示，当模型越来越先进，Agent基建越来越成熟，挑战终将回归数据。面向这一变化，AI时代的数据基础设施应坚持“湖库一体、多模融合、Agent友好、开源开放”四大原则。围绕这一方向，OceanBase正式发布AI战略产品——湖库一体AI数据平台OceanLake，并宣布向全球开源其核心引擎AI数据库，邀请开发者和产业伙伴共同建设面向AI的数据基础设施。 杨冰认为，当前企业的智能化转型远不及预期。其一，模型能力的商品化已经完成，能力迅速提升、成本持续下降，模型本身不再是瓶颈；其二，“低枝果实”已被摘完，公共数据的价值挖掘殆尽；其三，新的业务飞轮尚未形成，业务与数据的相互促进和协同进化尚未实现。 他进一步把企业数据生产力释放的困境概括为“三座冰山”：第一座在私有数据与公有数据之间——没有私有数据的价值挖掘，就没有生产力的真正释放；第二座在多模态数据与结构化数据之间——多模态数据将带来更多的价值增量；第三座在乱数据与有序数据之间——整理乱数据是释放数据生产力的必要条件。 在杨冰看来，AI时代的数据基础设施应坚…",
+      "quality": 10,
+      "practical": 4,
+      "sourceName": "量子位",
+      "domain": "qbitai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "2ad52a3b5709",
+      "title": "llama.cpp b12668 发布",
+      "category": "local",
+      "subcategory": "quantize",
+      "tags": [
+        "local",
+        "lowspec"
+      ],
+      "bodyChars": 5754,
+      "excerpt": "metal : support BF16/F32 src1 for MUL_MAT and MUL_MAT_ID (#32677) llama, metal : support BF16 src1 for MUL_MAT and MUL_MAT_ID Add GGML_PREC_BF16 handling for src1 on the Metal backend when the tensor API is available: MUL_MAT with an F32 src0 stages the A tile as bfloat, and MUL_MAT_ID stages src1 as bfloat instead of F16. The tensor path keeps src1 in F32 when it reads the operand directly. Add a temporary LLAMA_MOE_AMAX_SKIP env var that disables the graph-level amax rescaling for the MoE down projection and sets the BF16 src1 hint instead. Apply the hint inside build_lora_mm_id so it reach…",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "5319f046bfc3",
+      "title": "高危漏洞 Upload2Shell 公开：上传图片即可入侵服务器｜CVE-2026-125396，8.5 分",
+      "category": "local",
+      "subcategory": "selfhost",
+      "tags": [
+        "generate",
+        "local",
+        "free",
+        "hardware"
+      ],
+      "bodyChars": 1912,
+      "excerpt": "一个普通的图片上传功能，竟然可能成为攻击者控制服务器的入口。 近日，安全研究人员公开了名为 Upload2Shell 的高危漏洞研究，影响范围极广，涉及 WordPress、Roundcube 网页邮箱、MediaWiki、DokuWiki、CUPS 打印服务，以及广泛使用的图像处理工具 Pillow、ImageMagick。就连 Google 的部分文件处理服务，Debian、Ubuntu 等 Linux 发行版也受到影响。 此外，ComfyUI、Stable Diffusion WebUI 等热门 AI 绘图工具也被发现存在潜在的漏洞触发路径。 Upload2Shell 是什么？ 漏洞的根源来自 Ghostscript ，一款拥有数十年历史的开源 PDF 和 PostScript 文件处理工具。 很多软件在生成图片缩略图、预览 PDF、转换文档、处理打印任务时，都会在后台调用 Ghostscript。 研究人员发现，通过特制文件，可以突破 Ghostscript 的安全沙箱，在服务器上执行任意命令。更麻烦的是，即使上传文件的扩展名是 .jpg 或 .png ，在特定的文件处理流程中也可能触发漏洞。 漏洞名称：Upload2Shell 漏洞编号：CVE-2026-125396 漏洞评分：CVSS 4.0 8.5/10（高危） 发现时间：2026 年 7 月 27 日 技术细节公…",
+      "quality": 8,
+      "practical": 5,
+      "sourceName": "小众软件",
+      "domain": "appinn.com",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "b2b9f81ef3e6",
+      "title": "ollama v0.40.18-rc0 发布",
+      "category": "local",
+      "subcategory": "runtime",
+      "tags": [
+        "local"
+      ],
+      "bodyChars": 570,
+      "excerpt": "What's Changed mlx: fuse Inkling residual mixing on Metal by @dhiltgen in https://github.com/ollama/ollama/pull/19808 mlxrunner: share tensor helpers and model setup across architectures by @jaingaurav in https://github.com/ollama/ollama/pull/19805 llama.cpp: version bump b12651 + remove jetpack5 support by @pdevine in https://github.com/ollama/ollama/pull/19865 inkling2: faster Metal decode, prefill and draft rounds by @dhiltgen in https://github.com/ollama/ollama/pull/19843 Full Changelog : https://github.com/ollama/ollama/compare/v0.40.17...v0.40.18-rc0",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
       "hard": [],
       "warnings": [
         "标题未翻译"
@@ -368,6 +739,47 @@
       "domain": "huggingface.co",
       "hard": [],
       "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "1d0c151fefed",
+      "title": "OpenAI and Cisco introduce Shirudo",
+      "category": "local",
+      "subcategory": null,
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 137,
+      "excerpt": "OpenAI and Cisco introduce Shirudo, an open-source runtime for Linux. It helps teams protect running systems while they roll out patches.",
+      "quality": 7,
+      "practical": 1,
+      "sourceName": "OpenAI News",
+      "domain": "openai.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "dbfee1363628",
+      "title": "HEART: Hierarchical Expert Adaptive Refinement Transformer for ECG Representation Learning",
+      "category": "local",
+      "subcategory": null,
+      "tags": [],
+      "bodyChars": 1348,
+      "excerpt": "Learning robust representations from electrocardiograms (ECGs) is challenging because repeated cardiac cycles coexist with subtle and sparse diagnostic cues in local morphology and rhythm-level context. Existing ECG foundation models commonly rely on Transformerbased patch encoders with uniformly shared dense refinement pathways, limiting adaptive processing across heterogeneous ECG tokens. We propose HEART (Hierarchical Expert Adaptive Refinement Transformer), an ECG foundation model that introduces stage-specific conditional expert refinement during self-supervised pre-training. HEART place…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
         "标题未翻译"
       ],
       "agent": null,
@@ -413,6 +825,89 @@
       "domain": "lcz.me",
       "hard": [],
       "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "68bceefc762a",
+      "title": "报名从速｜来MEET2027！听AI前沿实践者交出“判断”",
+      "category": "bench",
+      "subcategory": "benchmark",
+      "tags": [
+        "agent"
+      ],
+      "bodyChars": 2779,
+      "excerpt": "报名从速｜来MEET2027！听AI前沿实践者交出“判断” 量子位的朋友们 2026-11-24 11:33:48 来源： 量子位 12.9 北京，来MEET2027现场 2026年，AI领域最显著的变化发生在交付现场：模型开始接手任务，机器人离开舞台走进产线，智能体被嵌进组织的日常流程。这些事分散在不同行业与场景里，我们却从中看到了同一条线索。 12月9日，量子位主办的 MEET2027智能未来大会 将在北京·金茂万丽酒店举行。大会以 “智行合一·驭见未来” 为主题，在一整天的时间里，邀请AI领域的一线代表共同来回答：当AI从模型能力变成可交付的系统产出，是谁在把它送进真实场景，又是谁在底层为它提供支撑？ 一次关于“能干”的重估 智能体从聊天走向作业，能自主拆解目标、调度工具、跨系统跑完长链条任务；具身智能给模型配上身体，让机器人在充满意外的真实场景里学会感知与操作；世界模型与空间智能把虚实两头接通，机器动手之前先把因果弄明白。也正因如此，当智能开始承担决策和执行， 可靠、可控、可解释 就从技术议题变成了公共议题， 这正是本届大会主题 「智行合一·驭见未来」 的由来。“智行合一”，说的是理解、规划、执行、反馈这些过去分散在多套系统里的环节，如今被压进同一个闭环；“驭见未来”，是因为未来不会自己走过来给人看，它得有人驾驭—— 谁能驾驭它，谁才有资格谈下一个十年。 一场关于“落地”…",
+      "quality": 9,
+      "practical": 1,
+      "sourceName": "量子位",
+      "domain": "qbitai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "4fdec1e1f539",
+      "title": "Temporal Leakage Distorts the TGB Node Affinity Leaderboard: A Point-in-Time Audit",
+      "category": "bench",
+      "subcategory": "benchmark",
+      "tags": [
+        "benchmark",
+        "free"
+      ],
+      "bodyChars": 1618,
+      "excerpt": "Node affinity prediction in the Temporal Graph Benchmark (TGB) asks how a node's future interactions will be distributed over other nodes. On this task, methods that reuse past ground-truth labels often outperform temporal graph neural networks, and the state of the art builds on them. Such comparisons assume a point-in-time correct evaluation, in which a model receives only information available at prediction time. Drawing on as-of joins and bitemporal databases, we formalize this requirement by distinguishing when a label must be predicted, its query time, from when it is fully determined,…",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "7dece8a7c2d7",
+      "title": "Fast 4-bit KV-Cache Decoding on Hopper GPUs: Why Existing Kernels Are Slow and How to Fix Them",
+      "category": "bench",
+      "subcategory": "benchmark",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1918,
+      "excerpt": "A 4-bit KV cache reads about half the bytes of FP8, but Hopper GPUs have no FP4 hardware and little instruction-issue capacity per byte of memory bandwidth, so 4-bit values must be decoded in software. On H200, vLLM's NVFP4 KV path (FlashInfer's decode) reaches 10-20% of memory bandwidth and is up to 1.7x slower than FP8. NVBit instruction counts show two causes: the kernels behind vLLM's 4-bit paths (FlashInfer NVFP4, Triton UltraQuant) execute 2-6x Hopper's issue budget per byte and serialize loading, decoding and matrix multiplies. Our Hopper-native decode kernel overlaps a TMA producer wa…",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "arXiv 检索（推理引擎与量化）",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "26308cec0fc7",
+      "title": "PseuDRAGON: Knowledge-Guided Local LLMs for Financial-Data Pseudonymization in Closed Networks",
+      "category": "bench",
+      "subcategory": "compare",
+      "tags": [],
+      "bodyChars": 1085,
+      "excerpt": "Staff pseudonymizing financial data in closed networks must interpret abbreviated column names, identify personal information, and choose processing methods. Local language models can assist, but may give different labels for the same input. PseuDRAGON keeps confirmed judgments and corrections outside a fixed model and reuses them through exact-name lookup and learned rules. For expert review, the workflow searches institutional policy, national privacy law, then international sources. Across 92 columns from one institution, rules increase reuse under the same approval checks from 75 to 83 la…",
+      "quality": 6,
+      "practical": 2,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
       "agent": null,
       "blocked": []
     },
@@ -473,6 +968,50 @@
       "practical": 1,
       "sourceName": "Hugging Face Blog",
       "domain": "huggingface.co",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "9ca64b63a355",
+      "title": "RepoClean: Evaluating Coding Agents on Repository-Level Obsolete Code Cleanup",
+      "category": "bench",
+      "subcategory": "benchmark",
+      "tags": [
+        "benchmark",
+        "free"
+      ],
+      "bodyChars": 1381,
+      "excerpt": "Large language model (LLM) agents have demonstrated strong repository-level programming capabilities. However, as software evolves, repository code may become redundant or obsolete, increasing maintenance costs and potentially introducing functional issues. Agents must therefore identify and remove unnecessary code safely, yet autonomous repository-level code cleanup remains insufficiently evaluated in isolation. To evaluate this capability, we introduce RepoClean, a benchmark of 200 cleanup tasks from 34 popular open-source Python repositories. RepoClean is constructed by automatically reint…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "651dbccd04a1",
+      "title": "The Evaluation Substrate Matters: Benchmarking Multi-Agent Serving Substrates",
+      "category": "bench",
+      "subcategory": "benchmark",
+      "tags": [
+        "benchmark",
+        "agent"
+      ],
+      "bodyChars": 1605,
+      "excerpt": "Multi-agent systems (MAS) usually coordinate heterogeneous models and tools to solve complex tasks, creating a growing need for reliable evaluation. However, a multi-agent workflow that is fastest in one serving environment can lose its advantage in another, even when its models, prompts, and task remain fixed. This makes a benchmark result conditional on how the workflow is executed. We introduce MASSys, a benchmark for measuring this dependence in multi-agent large language model (LLM) systems. MASSys executes the same candidate-task pairs across serving substrates and load regimes, using f…",
+      "quality": 6,
+      "practical": 2,
+      "sourceName": "arXiv 检索（推理引擎与量化）",
+      "domain": "arxiv.org",
       "hard": [],
       "warnings": [
         "标题未翻译"
