@@ -1,0 +1,1324 @@
+{
+  "day": "2026-11-25",
+  "generatedAt": "2026-11-24T20:45:02.794Z",
+  "timezone": "Asia/Shanghai",
+  "windowHours": 48,
+  "window": {
+    "since": null,
+    "until": null
+  },
+  "counts": {
+    "sources": 42,
+    "okSources": 37,
+    "fetched": 1068,
+    "duplicates": 747,
+    "carried": 0,
+    "added": 23,
+    "fallback": 1,
+    "lowQuality": 170,
+    "published": 23
+  },
+  "sources": [
+    {
+      "id": "openai-news",
+      "name": "OpenAI News",
+      "ok": true,
+      "items": 60,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "google-deepmind",
+      "name": "Google DeepMind",
+      "ok": true,
+      "items": 60,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "google-ai",
+      "name": "Google AI Blog",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "hf-blog",
+      "name": "Hugging Face Blog",
+      "ok": true,
+      "items": 60,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "hf-daily-papers",
+      "name": "Hugging Face Daily Papers",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "interconnects",
+      "name": "Interconnects",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "latent-space",
+      "name": "Latent Space",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "simon-willison",
+      "name": "Simon Willison",
+      "ok": true,
+      "items": 30,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "techcrunch-ai",
+      "name": "TechCrunch AI",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "ars-ai",
+      "name": "Ars Technica AI",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "mit-tr-ai",
+      "name": "MIT Tech Review",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "qbitai",
+      "name": "量子位",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "arxiv-cs",
+      "name": "arXiv cs.AI/CL/LG",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "hn-newest",
+      "name": "Hacker News (AI)",
+      "ok": false,
+      "items": 0,
+      "queries": 1,
+      "error": "HTTP 502"
+    },
+    {
+      "id": "hn-algolia",
+      "name": "Hacker News Search",
+      "ok": true,
+      "items": 25,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lobsters-ai",
+      "name": "Lobsters AI",
+      "ok": true,
+      "items": 25,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "reddit-local-llama",
+      "name": "r/LocalLLaMA",
+      "ok": false,
+      "items": 0,
+      "queries": 1,
+      "error": "HTTP 404"
+    },
+    {
+      "id": "github-trending",
+      "name": "GitHub 新晋 AI 项目",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "microsoft-research",
+      "name": "Microsoft Research",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "github-blog",
+      "name": "GitHub Blog",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "theverge",
+      "name": "The Verge",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "sspai",
+      "name": "少数派",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "appinn",
+      "name": "小众软件",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "producthunt",
+      "name": "Product Hunt",
+      "ok": true,
+      "items": 30,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "hn-show-ai",
+      "name": "Show HN (AI)",
+      "ok": false,
+      "items": 0,
+      "queries": 1,
+      "error": "HTTP 502"
+    },
+    {
+      "id": "ai-news-applied",
+      "name": "AI News (应用)",
+      "ok": true,
+      "items": 0,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "juejin",
+      "name": "掘金 AI",
+      "ok": true,
+      "items": 0,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "reddit-sideproject",
+      "name": "r/SideProject",
+      "ok": false,
+      "items": 0,
+      "queries": 1,
+      "error": "HTTP 429"
+    },
+    {
+      "id": "hn-money",
+      "name": "HN 检索（独立开发与变现）",
+      "ok": true,
+      "items": 50,
+      "queries": 5,
+      "error": null
+    },
+    {
+      "id": "reddit-saas",
+      "name": "r/SaaS 变现实操",
+      "ok": false,
+      "items": 0,
+      "queries": 1,
+      "error": "HTTP 429"
+    },
+    {
+      "id": "lcz-hardware",
+      "name": "抡锤者 AI硬件",
+      "ok": true,
+      "items": 39,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-llm",
+      "name": "抡锤者 模型部署讨论",
+      "ok": true,
+      "items": 19,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-agent",
+      "name": "抡锤者 Agent 工具",
+      "ok": true,
+      "items": 38,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-media",
+      "name": "抡锤者 AI 音视频画图",
+      "ok": true,
+      "items": 60,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-selfmedia",
+      "name": "抡锤者 自媒体运营",
+      "ok": true,
+      "items": 31,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-web",
+      "name": "抡锤者 建站与网络赚钱",
+      "ok": true,
+      "items": 18,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-crisis",
+      "name": "抡锤者 AI 危机与机遇",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-news",
+      "name": "抡锤者 资讯",
+      "ok": true,
+      "items": 40,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "gh-releases",
+      "name": "GitHub 发布（ComfyUI / Strata 等）",
+      "ok": true,
+      "items": 21,
+      "queries": 8,
+      "error": null
+    },
+    {
+      "id": "hn-ecosystem",
+      "name": "HN 检索（本地推理生态）",
+      "ok": true,
+      "items": 102,
+      "queries": 12,
+      "error": null
+    },
+    {
+      "id": "gh-ecosystem",
+      "name": "GitHub 检索（生态项目更新）",
+      "ok": true,
+      "items": 60,
+      "queries": 6,
+      "error": null
+    },
+    {
+      "id": "arxiv-ecosystem",
+      "name": "arXiv 检索（推理引擎与量化）",
+      "ok": true,
+      "items": 50,
+      "queries": 5,
+      "error": null
+    }
+  ],
+  "categories": [
+    {
+      "id": "apps",
+      "label": "AI 应用",
+      "items": [
+        {
+          "sourceId": "arxiv-cs",
+          "sourceName": "arXiv cs.AI/CL/LG",
+          "title": "Verifying the Outputs of PDE Solvers: From Finite Elements to Neural Surrogates",
+          "url": "https://arxiv.org/abs/2611.31211v1",
+          "id": "http://arxiv.org/abs/2611.31211v1",
+          "published": "2026-11-23T18:55:06.000Z",
+          "summary": "Physics simulation outputs increasingly come from solvers that no expert inspects, such as third-party packages in automated pipelines, programs written by large language models (LLMs), and learned surrogates. In earlier work on cardiac pulsed field ablation, we proposed that solvers return a certificate with their an…",
+          "content": {
+            "html": "Physics simulation outputs increasingly come from solvers that no expert inspects, such as third-party packages in automated pipelines, programs written by large language models (LLMs), and learned surrogates. In earlier work on cardiac pulsed field ablation, we proposed that solvers return a certificate with their answers. The certificate consists of an admissible potential and an exactly charge-conserving current, and a small independent checker turns it into guaranteed error bounds against a written specification of the physics. Here, the same checker verifies the outputs of other solvers on the same problem. Specifically, FEniCSx computes both fields and receives the same bounds as our own solver. Five plausible bugs in a correct solver, one of them about 0.2% from the true impedance, all converge and pass a grid convergence study, yet the certificate rejects or refutes all five. Of three solvers written by LLMs, one is correct and certified to 0.1%, and one never solves the equation but converges. Neural networks that predict the coefficients of a reduced basis emit admissible fields and receive valid per-prediction bounds, at most 0.0021% wide inside their training range and 0.3-25% wide outside it, where 90% conformal intervals cover none of 14 tests. Untuned Fourier neural operators with free nodal outputs receive valid but uninformative bounds. On a uniform grid, interpolation onto the certificate grid limits them, and on the certificate grid, thin cells turn small nodal errors into large energy errors. Energy-norm training narrows the certified interval tenfold, and projecting the nodal-loss outputs onto the reduced basis narrows it by two to four orders of magnitude, still uninformative. The guarantee concerns the stated model and holds for any output, wherever its input lies. It is informative only when the output is accurate in energy on a grid that resolves the problem.",
+            "text": "Physics simulation outputs increasingly come from solvers that no expert inspects, such as third-party packages in automated pipelines, programs written by large language models (LLMs), and learned surrogates. In earlier work on cardiac pulsed field ablation, we proposed that solvers return a certificate with their answers. The certificate consists of an admissible potential and an exactly charge-conserving current, and a small independent checker turns it into guaranteed error bounds against a written specification of the physics. Here, the same checker verifies the outputs of other solvers on the same problem. Specifically, FEniCSx computes both fields and receives the same bounds as our own solver. Five plausible bugs in a correct solver, one of them about 0.2% from the true impedance, all converge and pass a grid convergence study, yet the certificate rejects or refutes all five. Of three solvers written by LLMs, one is correct and certified to 0.1%, and one never solves the equation but converges. Neural networks that predict the coefficients of a reduced basis emit admissible fields and receive valid per-prediction bounds, at most 0.0021% wide inside their training range and 0.3-25% wide outside it, where 90% conformal intervals cover none of 14 tests. Untuned Fourier neural operators with free nodal outputs receive valid but uninformative bounds. On a uniform grid, interpolation onto the certificate grid limits them, and on the certificate grid, thin cells turn small nodal errors into large energy errors. Energy-norm training narrows the certified interval tenfold, and projecting the nodal-loss outputs onto the reduced basis narrows it by two to four orders of magnitude, still uninformative. The guarantee concerns the stated model and holds for any output, wherever its input lies. It is informative only when the output is accurate in energy on a grid that resolves the problem.",
+            "lead": "Physics simulation outputs increasingly come from solvers that no expert inspects, such as third-party packages in automated pipelines, programs written by large language models (LLMs), and learned surrogates. In earlier work on cardiac pulsed field ablation, we proposed that solvers return a certificate with their answers. The certificate consists of an admissible potential and an exactly charge-conserving current, and a small independent checker turns it",
+            "chars": 1916,
+            "shown": 1916,
+            "truncated": false
+          },
+          "categories": [
+            "cs.CE",
+            "cs.LG",
+            "math.NA"
+          ],
+          "author": "Konstantinos Dovelos",
+          "lang": "en",
+          "tier": 3,
+          "trustCategory": true,
+          "declaredCategory": "ideas",
+          "metrics": {},
+          "quality": 6,
+          "score": 11.65,
+          "category": "apps",
+          "subcategory": "life",
+          "practical": 1,
+          "slug": "f10142096901",
+          "action": 2,
+          "rank": 9.2,
+          "tags": [
+            "free"
+          ]
+        },
+        {
+          "sourceId": "techcrunch-ai",
+          "sourceName": "TechCrunch AI",
+          "title": "Meta brings its Muse AI assistant directly into Instagram DMs",
+          "url": "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/",
+          "id": "https://techcrunch.com/?p=3191770",
+          "published": "2026-11-24T17:00:00.000Z",
+          "summary": "The new integration gets rid of the need for users to toggle between Instagram and the Muse app when they want to interact with the AI agent.",
+          "content": {
+            "html": "The new integration gets rid of the need for users to toggle between Instagram and the Muse app when they want to interact with the AI agent.",
+            "text": "The new integration gets rid of the need for users to toggle between Instagram and the Muse app when they want to interact with the AI agent.",
+            "lead": "The new integration gets rid of the need for users to toggle between Instagram and the Muse app when they want to interact with the AI agent.",
+            "chars": 141,
+            "shown": 141,
+            "truncated": false
+          },
+          "categories": [
+            "AI",
+            "Apps",
+            "Social",
+            "Instagram",
+            "muse"
+          ],
+          "author": "Aisha Malik",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "news",
+          "metrics": {},
+          "quality": 7,
+          "score": 18.49,
+          "category": "apps",
+          "subcategory": "agents",
+          "practical": 1,
+          "slug": "499fbc0b51a8",
+          "action": 1,
+          "rank": 8.6,
+          "tags": [
+            "agent"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "label": "工具玩法",
+      "items": [
+        {
+          "sourceId": "github-trending",
+          "sourceName": "GitHub 新晋 AI 项目",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "oss",
+          "categories": [
+            "ai-agents",
+            "claude-code",
+            "ios",
+            "ios-simulator",
+            "linux"
+          ],
+          "author": "Developing-Gamer",
+          "id": "1466927775",
+          "title": "Developing-Gamer/agent-sim",
+          "url": "https://github.com/Developing-Gamer/agent-sim",
+          "published": "2026-11-21T20:26:12.000Z",
+          "summary": "agent-sim iOS simulators for AI agents, on ordinary Linux machines. No Mac, no GPU. Safari on Apple's iOS runtime, on a Linux VM, recorded at 60 fps (the GIF is 15). Full clip · An agent driving Settings and Safari",
+          "metrics": {
+            "stars": 531
+          },
+          "content": {
+            "html": "<h3>agent-sim</h3>\n<p><strong>iOS simulators for AI agents, on ordinary Linux machines.</strong>No Mac, no GPU.</p>\n<p>&lt;p align=\"center\"&gt;&lt;img src=\"docs/images/dino.gif\" width=\"540\" alt=\"The dino game in Safari on an iOS simulator running on a Linux VM, played by a script that reads the screen and taps\"&gt;&lt;/p&gt;</p>\n<p>&lt;p align=\"center\"&gt;Safari on Apple's iOS runtime, on a Linux VM, recorded at 60 fps (the GIF is 15). &lt;a href=\"https://github.com/Developing-Gamer/agent-sim/releases/download/v0.1.0/dino.mp4\"&gt;Full clip&lt;/a&gt; · &lt;a href=\"https://github.com/Developing-Gamer/agent-sim/releases/download/v0.1.0/agent-sim-demo.mp4\"&gt;An agent driving Settings and Safari&lt;/a&gt;&lt;/p&gt;</p>\n<p>&gt;<strong>agent-sim is built on<a href=\"https://github.com/x86sim/x86sim\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">x86Sim</a>by<a href=\"https://github.com/designgears\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">designgears</a>.</strong>&gt; x86Sim is what runs Apple's iOS simulator on Linux, and it has done that since its first release. agent-sim is the &gt; agent layer on top of it. If agent-sim is useful to you,<a href=\"https://github.com/x86sim/x86sim\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">star x86Sim</a>too.</p>\n<p>agent-sim takes the iOS simulator that x86Sim runs on an x86-64 Linux VM and gives agents what they need to test iOS apps: install an<code>.ipa</code>, read the screen as text, tap, type, scroll, and watch it live in a browser. One command line for scripts and CI, and an MCP server for Claude Code, Cursor, Codex and other agents.</p>\n<pre><code>$ agent-sim launch com.apple.Preferences &amp;&amp; agent-sim snapshot\napp com.apple.Preferences\n@e1 button \"Apple Account, Sign in to access your iCloud data, the App Store, Apple services, and more.\" (201,213)\n@e2 button \"General\" id=\"com.apple.settings.general\" (201,320)\n@e3 button \"Accessibility\" id=\"com.apple.settings.accessibility\" (201,372)\n...\n$ agent-sim tap @e2\ntapped @e2 button \"General\"</code></pre>\n<p>&gt;<strong>Status: early.</strong>It works end to end; expect rough edges, and see [what does not work yet](docs/KNOWN_ISSUES.md).</p>\n<h4>Quick start</h4>\n<p>On an x86-64 Linux machine with Ubuntu 24.04 (8+ CPUs, 16 GB of memory, 60 GB of free disk):</p>\n<pre><code>curl -fsSL https://raw.githubusercontent.com/Developing-Gamer/agent-sim/main/install.sh | bash\nagent-sim setup # once, about half an hour: x86Sim, Apple's iOS runtime (8 GB, from Apple), a first phone\nagent-sim up # boot it: 12-30 s, depending on the CPU\nagent-sim snapshot</code></pre>\n<p>From a checkout instead:<code>cargo build --release</code>, then<code>scripts/setup-vm.sh</code>and<code>target/release/agent-sim</code>.</p>\n<p><code>agent-sim setup --fidelity high --device hifi</code>adds a phone that looks exactly like Apple's simulator (3x, every blur and animation) for screenshots; the default draws at 2x with reduced effects and scrolls twice as fast.</p>\n<h4>Use it from an agent</h4>\n<p>As an MCP server:</p>\n<pre><code>claude mcp add agent-sim -- agent-sim mcp # Claude Code</code></pre>\n<pre><code>{ \"mcpServers\": { \"agent-sim\": { \"command\": \"agent-sim\", \"args\": [\"mcp\"] } } }</code></pre>\n<p>An agent on another machine (your laptop) runs the same server over SSH; MCP's stdio passes through unchanged:</p>\n<pre><code>claude mcp add agent-sim -- ssh my-linux-vm agent-sim mcp</code></pre>\n<p>The tools are<code>snapshot</code>,<code>tap</code>,<code>type</code>,<code>scroll</code>,<code>swipe</code>,<code>press</code>,<code>launch</code>,<code>terminate</code>,<code>install</code>,<code>uninstall</code>,<code>apps</code>,<code>open_url</code>,<code>wait_for</code>,<code>screenshot</code>and<code>boot</code>. Actions answer with the screen that follows, so an agent sees the result of each step without asking again. For agents that work in a shell, [skills/agent-sim/SKILL.md](skills/agent-sim/SKILL.md) teaches the command line.</p>\n<h4>The command line</h4>\n<pre><code>agent-sim install MyApp.ipa # a device build is converted for the simulator; a simulator .app works too\nagent-sim launch com.example.myapp\nagent-sim snapshot # the screen as text, one element per line (--json for frames, ids, states)\nagent-sim tap @e4 # an element from the last snapshot; or: tap \"Sign in\"; or: tap 201 320\nagent-sim type \"hello@example.com\"\nagent-sim scroll down\nagent-sim wait \"Welcome\" --timeout 20\nagent-sim screenshot -o screen.png\nagent-sim press home\nagent-sim open https://example.com</code></pre>\n<p><code>snapshot</code>reads the accessibility tree of the app in front, the web pages it shows, and SpringBoard, so system alerts, the home screen and the status bar are in it too. Every command takes<code>--device NAME</code>;<code>agent-sim --help</code>lists them all.</p>\n<p>The simulator controls Apple's<code>simctl</code>has are here too:<code>appearance dark</code>,<code></code></p>",
+            "text": "agent-sim\niOS simulators for AI agents, on ordinary Linux machines. No Mac, no GPU.\nSafari on Apple's iOS runtime, on a Linux VM, recorded at 60 fps (the GIF is 15). Full clip · An agent driving Settings and Safari\n> agent-sim is built on x86Sim by designgears . > x86Sim is what runs Apple's iOS simulator on Linux, and it has done that since its first release. agent-sim is the > agent layer on top of it. If agent-sim is useful to you, star x86Sim too.\nagent-sim takes the iOS simulator that x86Sim runs on an x86-64 Linux VM and gives agents what they need to test iOS apps: install an .ipa , read the screen as text, tap, type, scroll, and watch it live in a browser. One command line for scripts and CI, and an MCP server for Claude Code, Cursor, Codex and other agents.\n$ agent-sim launch com.apple.Preferences && agent-sim snapshot\napp com.apple.Preferences\n@e1 button \"Apple Account, Sign in to access your iCloud data, the App Store, Apple services, and more.\" (201,213)\n@e2 button \"General\" id=\"com.apple.settings.general\" (201,320)\n@e3 button \"Accessibility\" id=\"com.apple.settings.accessibility\" (201,372)\n...\n$ agent-sim tap @e2\ntapped @e2 button \"General\"\n> Status: early. It works end to end; expect rough edges, and see [what does not work yet](docs/KNOWN_ISSUES.md).\nQuick start\nOn an x86-64 Linux machine with Ubuntu 24.04 (8+ CPUs, 16 GB of memory, 60 GB of free disk):\ncurl -fsSL https://raw.githubusercontent.com/Developing-Gamer/agent-sim/main/install.sh | bash\nagent-sim setup # once, about half an hour: x86Sim, Apple's iOS runtime (8 GB, from Apple), a first phone\nagent-sim up # boot it: 12-30 s, depending on the CPU\nagent-sim snapshot\nFrom a checkout instead: cargo build --release , then scripts/setup-vm.sh and target/release/agent-sim .\nagent-sim setup --fidelity high --device hifi adds a phone that looks exactly like Apple's simulator (3x, every blur and animation) for screenshots; the default draws at 2x with reduced effects and scrolls twice as fast.\nUse it from an agent\nAs an MCP server:\nclaude mcp add agent-sim -- agent-sim mcp # Claude Code\n{ \"mcpServers\": { \"agent-sim\": { \"command\": \"agent-sim\", \"args\": [\"mcp\"] } } }\nAn agent on another machine (your laptop) runs the same server over SSH; MCP's stdio passes through unchanged:\nclaude mcp add agent-sim -- ssh my-linux-vm agent-sim mcp\nThe tools are snapshot , tap , type , scroll , swipe , press , launch , terminate , install , uninstall , apps , open_url , wait_for , screenshot and boot . Actions answer with the screen that follows, so an agent sees the result of each step without asking again. For agents that work in a shell, [skills/agent-sim/SKILL.md](skills/agent-sim/SKILL.md) teaches the command line.\nThe command line\nagent-sim install MyApp.ipa # a device build is converted for the simulator; a simulator .app works too\nagent-sim launch com.example.myapp\nagent-sim snapshot # the screen as text, one element per line (--json for frames, ids, states)\nagent-sim tap @e4 # an element from the last snapshot; or: tap \"Sign in\"; or: tap 201 320\nagent-sim type \"hello@example.com\"\nagent-sim scroll down\nagent-sim wait \"Welcome\" --timeout 20\nagent-sim screenshot -o screen.png\nagent-sim press home\nagent-sim open https://example.com\nsnapshot reads the accessibility tree of the app in front, the web pages it shows, and SpringBoard, so system alerts, the home screen and the status bar are in it too. Every command takes --device NAME ; agent-sim --help lists them all.\nThe simulator controls Apple's simctl has are here too: appearance dark ,",
+            "lead": "agent-sim\niOS simulators for AI agents, on ordinary Linux machines. No Mac, no GPU.\nSafari on Apple's iOS runtime, on a Linux VM, recorded at 60 fps (the GIF is 15). Full clip · An agent driving Settings and Safari",
+            "chars": 7800,
+            "shown": 3982,
+            "truncated": true
+          },
+          "quality": 10,
+          "score": 17.37,
+          "category": "tools",
+          "subcategory": "coding",
+          "practical": 2,
+          "slug": "510d7cffe640",
+          "action": 8,
+          "rank": 22.8,
+          "tags": [
+            "agent",
+            "lowspec",
+            "free"
+          ]
+        },
+        {
+          "sourceId": "arxiv-cs",
+          "sourceName": "arXiv cs.AI/CL/LG",
+          "title": "Matching Under Metric Privacy",
+          "url": "https://arxiv.org/abs/2611.31208v1",
+          "id": "http://arxiv.org/abs/2611.31208v1",
+          "published": "2026-11-23T18:53:25.000Z",
+          "summary": "We study how to represent and randomize points in $d$-dimensional Euclidean space to obtain accurate bipartite matchings under metric privacy. Given $n$ private and $n$ public points, we analyze local mechanisms that randomize each private point or its distances to the public points. Using the public points' affine sp…",
+          "content": {
+            "html": "We study how to represent and randomize points in $d$-dimensional Euclidean space to obtain accurate bipartite matchings under metric privacy. Given $n$ private and $n$ public points, we analyze local mechanisms that randomize each private point or its distances to the public points. Using the public points' affine span, we construct a smaller representation that preserves all matching costs. When a trusted server receives the private points, we establish privacy and utility guarantees for Gumbel matching, which randomizes edge costs and releases only the assignment. Through upper bounds and worst-case constructions, we establish the tight rate $Θ\\!\\left(n\\min\\{d,\\log n\\}/\\varepsilon\\right)$ for expected cost above the nonprivate optimum. Benchmark experiments support $d\\approx\\log n$ as a practical guide to the transition between directly randomizing point coordinates and using Gumbel matching. Extensions to squared Euclidean costs enable private nonparametric two-sample hypothesis testing. These results show how the application's trust model guides representation and dimension choices for better utility: under local privacy, low-dimensional point representations reduce excess cost, while under central privacy, distance representations achieve the optimal rate even in high dimension.",
+            "text": "We study how to represent and randomize points in $d$-dimensional Euclidean space to obtain accurate bipartite matchings under metric privacy. Given $n$ private and $n$ public points, we analyze local mechanisms that randomize each private point or its distances to the public points. Using the public points' affine span, we construct a smaller representation that preserves all matching costs. When a trusted server receives the private points, we establish privacy and utility guarantees for Gumbel matching, which randomizes edge costs and releases only the assignment. Through upper bounds and worst-case constructions, we establish the tight rate $Θ\\!\\left(n\\min\\{d,\\log n\\}/\\varepsilon\\right)$ for expected cost above the nonprivate optimum. Benchmark experiments support $d\\approx\\log n$ as a practical guide to the transition between directly randomizing point coordinates and using Gumbel matching. Extensions to squared Euclidean costs enable private nonparametric two-sample hypothesis testing. These results show how the application's trust model guides representation and dimension choices for better utility: under local privacy, low-dimensional point representations reduce excess cost, while under central privacy, distance representations achieve the optimal rate even in high dimension.",
+            "lead": "We study how to represent and randomize points in $d$-dimensional Euclidean space to obtain accurate bipartite matchings under metric privacy. Given $n$ private and $n$ public points, we analyze local mechanisms that randomize each private point or its distances to the public points. Using the public points' affine span, we construct a smaller representation that preserves all matching costs. When a trusted server receives the private points, we establish ",
+            "chars": 1305,
+            "shown": 1305,
+            "truncated": false
+          },
+          "categories": [
+            "cs.LG",
+            "cs.CR",
+            "cs.SI",
+            "math.PR"
+          ],
+          "author": "Hongyi B. Hu",
+          "lang": "en",
+          "tier": 3,
+          "trustCategory": true,
+          "declaredCategory": "ideas",
+          "metrics": {},
+          "quality": 7,
+          "score": 12.84,
+          "category": "tools",
+          "subcategory": "hands-on",
+          "practical": 3,
+          "slug": "821059f372f9",
+          "action": 4,
+          "rank": 13.4,
+          "tags": [
+            "tutorial",
+            "benchmark"
+          ]
+        },
+        {
+          "sourceId": "simon-willison",
+          "sourceName": "Simon Willison",
+          "title": "GPT 6.2 Astra Solves a Historical Mystery",
+          "url": "https://simonwillison.net/2026/Nov/24/astra-historical-mystery/",
+          "id": "https://simonwillison.net/2026/Nov/24/astra-historical-mystery/",
+          "published": "2026-11-24T16:53:59.000Z",
+          "summary": "GPT 6.2 Astra Solves a Historical Mystery Here's an interesting case-study in using GPT-6.2 Astra for historical research, from history professor Mark Humphries: With only minimal prompting, GPT-6.2 Astra was able to autonomously identify the creator of an anonymous 1808 sketchbook held at Yale’s Beinecke Library . It…",
+          "content": {
+            "html": "<p><strong><a href=\"https://generativehistory.substack.com/p/gpt-62-astra-solves-a-historical\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">GPT 6.2 Astra Solves a Historical Mystery</a></strong></p>\nHere's an interesting case-study in using GPT-6.2 Astra for historical research, from history professor Mark Humphries:<blockquote><p>With only minimal prompting, GPT-6.2 Astra was able to autonomously identify the creator of an anonymous 1808 sketchbook held at<a href=\"https://beinecke.library.yale.edu/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Yale’s Beinecke Library</a>. It did so extremely quickly (in just 22 minutes), using publicly available primary and secondary sources. To do so, it discovered a little known source in a paper archive, predicted that it would prove its hypothesis if examined and, in the end, it did. Not only that, but this new source turns out to be a major find on its own that will be of significant interest to both Canadian and fur trade historians.</p></blockquote>\n<p>Here's<a href=\"https://collections.library.yale.edu/catalog/32369099\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">the digitized sketchbook</a>.</p>\n<p>Astra found a diary reference reference to a visit by the vicomte de Chabot dated five days before a date mentioned in the sketchbook at a nearby river, and suggested that Chabot's journal of his travels (only available by order from Cleveland State University) might confirm that the sketchbook was his work.</p>\n<p>Are historians due for a round of<a href=\"https://simonwillison.net/tags/deep-blue/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Deep Blue</a>? Mark thinks it will be mild:</p>\n<blockquote><p>But if the experience of mathematics is any guide, we can also anticipate that sometime next spring or summer we’ll face a sort of crisis of confidence as we struggle to understand how to respond to agentic systems that can do things human historians cannot. To be fair, that crisis will almost certainly be less profound for us than it is for math. The problem in mathematics, of course, is that solving hard math problems was the whole game. Historians, on the other hand, constantly reinterpret the past in light of an evolving present; we don’t chase a single universal truth. We also (in the ideal at least) write books and articles that are closer to works of philosophy and literature than they are to scientific tracts. Humanity is thus something of a requirement for the production of historical literature.</p></blockquote>\n<p>Tags:<a href=\"https://simonwillison.net/tags/history\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">history</a>,<a href=\"https://simonwillison.net/tags/ai\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">ai</a>,<a href=\"https://simonwillison.net/tags/generative-ai\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">generative-ai</a>,<a href=\"https://simonwillison.net/tags/llms\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">llms</a>,<a href=\"https://simonwillison.net/tags/ai-assisted-search\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">ai-assisted-search</a>,<a href=\"https://simonwillison.net/tags/deep-blue\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">deep-blue</a>,<a href=\"https://simonwillison.net/tags/gpt-6-astra\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">gpt-6-astra</a></p>",
+            "text": "GPT 6.2 Astra Solves a Historical Mystery\nHere's an interesting case-study in using GPT-6.2 Astra for historical research, from history professor Mark Humphries: With only minimal prompting, GPT-6.2 Astra was able to autonomously identify the creator of an anonymous 1808 sketchbook held at Yale’s Beinecke Library . It did so extremely quickly (in just 22 minutes), using publicly available primary and secondary sources. To do so, it discovered a little known source in a paper archive, predicted that it would prove its hypothesis if examined and, in the end, it did. Not only that, but this new source turns out to be a major find on its own that will be of significant interest to both Canadian and fur trade historians.\nHere's the digitized sketchbook .\nAstra found a diary reference reference to a visit by the vicomte de Chabot dated five days before a date mentioned in the sketchbook at a nearby river, and suggested that Chabot's journal of his travels (only available by order from Cleveland State University) might confirm that the sketchbook was his work.\nAre historians due for a round of Deep Blue ? Mark thinks it will be mild:\nBut if the experience of mathematics is any guide, we can also anticipate that sometime next spring or summer we’ll face a sort of crisis of confidence as we struggle to understand how to respond to agentic systems that can do things human historians cannot. To be fair, that crisis will almost certainly be less profound for us than it is for math. The problem in mathematics, of course, is that solving hard math problems was the whole game. Historians, on the other hand, constantly reinterpret the past in light of an evolving present; we don’t chase a single universal truth. We also (in the ideal at least) write books and articles that are closer to works of philosophy and literature than they are to scientific tracts. Humanity is thus something of a requirement for the production of historical literature.\nTags: history , ai , generative-ai , llms , ai-assisted-search , deep-blue , gpt-6-astra",
+            "lead": "GPT 6.2 Astra Solves a Historical Mystery\nHere's an interesting case-study in using GPT-6.2 Astra for historical research, from history professor Mark Humphries: With only minimal prompting, GPT-6.2 Astra was able to autonomously identify the creator of an anonymous 1808 sketchbook held at Yale’s Beinecke Library . It did so extremely quickly (in just 22 minutes), using publicly available primary and secondary sources. To do so, it discovered a little know",
+            "chars": 2060,
+            "shown": 2060,
+            "truncated": false
+          },
+          "categories": [
+            "history",
+            "ai",
+            "generative-ai",
+            "llms",
+            "ai-assisted-search",
+            "deep-blue",
+            "gpt-6-astra"
+          ],
+          "author": "",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "tools",
+          "metrics": {},
+          "quality": 8,
+          "score": 20.08,
+          "category": "tools",
+          "subcategory": "hands-on",
+          "practical": 2,
+          "slug": "c808d58c8ec4",
+          "action": 3,
+          "rank": 12.8,
+          "tags": [
+            "tutorial"
+          ]
+        },
+        {
+          "sourceId": "arxiv-cs",
+          "sourceName": "arXiv cs.AI/CL/LG",
+          "title": "Pruning Autonomous Driving VLAs: What to Preserve for Reasoning and Action",
+          "url": "https://arxiv.org/abs/2611.31240v1",
+          "id": "http://arxiv.org/abs/2611.31240v1",
+          "published": "2026-11-23T18:59:52.000Z",
+          "summary": "Reasoning vision-language-action (VLA) models for autonomous driving use chain-of-thought (CoT) reasoning to guide action generation, but incur substantial memory and computational costs. We study structured pruning for these models, focusing on preserving both scene understanding and trajectory prediction. Our analys…",
+          "content": {
+            "html": "Reasoning vision-language-action (VLA) models for autonomous driving use chain-of-thought (CoT) reasoning to guide action generation, but incur substantial memory and computational costs. We study structured pruning for these models, focusing on preserving both scene understanding and trajectory prediction. Our analysis of Taylor importance in Alpamayo-1.5-10B shows that reasoning and trajectory objectives assign different importance to the same vision-language model (VLM) structures. In the action expert, MLP channels exhibit more stable importance rankings across denoising steps than query heads, and a small fraction of channels accounts for most of the measured importance. Based on these findings, we propose MoOP, which combines importance ranks from both objectives for VLM pruning and aggregates stepwise importance to select a fixed subset of expert MLP channels. At 24.0% total parameter reduction, VLM-only pruning with MoOP performs comparably to or slightly better than the strongest baselines in driving, while retaining 94.0% of the dense model's LingoQA score, far above all other methods. At a higher reduction of 30.0%, MoOP degrades much less than every other method, as it is the only one whose reasoning does not collapse. Removing 93.75% of expert MLP channels increases total parameter reduction to 39.4%, with nearly unchanged open-loop errors relative to VLM-only pruning and competitive closed-loop performance. The resulting model achieves a 1.37x end-to-end inference speedup and 36.6% lower peak memory than the dense model, without post-pruning fine-tuning.",
+            "text": "Reasoning vision-language-action (VLA) models for autonomous driving use chain-of-thought (CoT) reasoning to guide action generation, but incur substantial memory and computational costs. We study structured pruning for these models, focusing on preserving both scene understanding and trajectory prediction. Our analysis of Taylor importance in Alpamayo-1.5-10B shows that reasoning and trajectory objectives assign different importance to the same vision-language model (VLM) structures. In the action expert, MLP channels exhibit more stable importance rankings across denoising steps than query heads, and a small fraction of channels accounts for most of the measured importance. Based on these findings, we propose MoOP, which combines importance ranks from both objectives for VLM pruning and aggregates stepwise importance to select a fixed subset of expert MLP channels. At 24.0% total parameter reduction, VLM-only pruning with MoOP performs comparably to or slightly better than the strongest baselines in driving, while retaining 94.0% of the dense model's LingoQA score, far above all other methods. At a higher reduction of 30.0%, MoOP degrades much less than every other method, as it is the only one whose reasoning does not collapse. Removing 93.75% of expert MLP channels increases total parameter reduction to 39.4%, with nearly unchanged open-loop errors relative to VLM-only pruning and competitive closed-loop performance. The resulting model achieves a 1.37x end-to-end inference speedup and 36.6% lower peak memory than the dense model, without post-pruning fine-tuning.",
+            "lead": "Reasoning vision-language-action (VLA) models for autonomous driving use chain-of-thought (CoT) reasoning to guide action generation, but incur substantial memory and computational costs. We study structured pruning for these models, focusing on preserving both scene understanding and trajectory prediction. Our analysis of Taylor importance in Alpamayo-1.5-10B shows that reasoning and trajectory objectives assign different importance to the same vision-lan",
+            "chars": 1594,
+            "shown": 1594,
+            "truncated": false
+          },
+          "categories": [
+            "cs.CV",
+            "cs.LG",
+            "cs.RO"
+          ],
+          "author": "Seongchan Kim",
+          "lang": "en",
+          "tier": 3,
+          "trustCategory": true,
+          "declaredCategory": "ideas",
+          "metrics": {},
+          "quality": 7,
+          "score": 11.65,
+          "category": "tools",
+          "subcategory": "hands-on",
+          "practical": 1,
+          "slug": "96ca0e187100",
+          "action": 2,
+          "rank": 10.2,
+          "tags": [
+            "tutorial"
+          ]
+        },
+        {
+          "sourceId": "arxiv-cs",
+          "sourceName": "arXiv cs.AI/CL/LG",
+          "title": "Agentic AI for Intent Management and Control in Autonomous Communication Networks",
+          "url": "https://arxiv.org/abs/2611.31223v1",
+          "id": "http://arxiv.org/abs/2611.31223v1",
+          "published": "2026-11-23T18:57:32.000Z",
+          "summary": "Artificial intelligence (AI)-driven automation will help future mobile networks translate high-level network intents into concrete network optimization or control actions. However, existing approaches often focus on intent management and orchestration, leaving the adaptation of underlying network optimization and cont…",
+          "content": {
+            "html": "Artificial intelligence (AI)-driven automation will help future mobile networks translate high-level network intents into concrete network optimization or control actions. However, existing approaches often focus on intent management and orchestration, leaving the adaptation of underlying network optimization and control functions largely unaddressed. This article proposes a triadic agentic AI framework that co-designs intent management and intent fulfillment through three agents: an interpreter, powered by a language model, that translates and refines intents into machine-readable optimization templates; an optimizer that adapts controller policies to intent specifications; and a controller that performs fast decision-making. We discuss the design space of each agent and how the workflow can be embedded across network architectural domains. Finally, we develop a concrete realization combining a language-model interpreter with Bayesian optimization for the optimizer and multi-objective reinforcement learning for the controller, and evaluate it in a radio resource management case study for differentiated connectivity. Results demonstrate how the agentic AI framework can connect high-level intents with runtime network control, showing adaptability of intent specifications and control policies to service requirements and changing network conditions.",
+            "text": "Artificial intelligence (AI)-driven automation will help future mobile networks translate high-level network intents into concrete network optimization or control actions. However, existing approaches often focus on intent management and orchestration, leaving the adaptation of underlying network optimization and control functions largely unaddressed. This article proposes a triadic agentic AI framework that co-designs intent management and intent fulfillment through three agents: an interpreter, powered by a language model, that translates and refines intents into machine-readable optimization templates; an optimizer that adapts controller policies to intent specifications; and a controller that performs fast decision-making. We discuss the design space of each agent and how the workflow can be embedded across network architectural domains. Finally, we develop a concrete realization combining a language-model interpreter with Bayesian optimization for the optimizer and multi-objective reinforcement learning for the controller, and evaluate it in a radio resource management case study for differentiated connectivity. Results demonstrate how the agentic AI framework can connect high-level intents with runtime network control, showing adaptability of intent specifications and control policies to service requirements and changing network conditions.",
+            "lead": "Artificial intelligence (AI)-driven automation will help future mobile networks translate high-level network intents into concrete network optimization or control actions. However, existing approaches often focus on intent management and orchestration, leaving the adaptation of underlying network optimization and control functions largely unaddressed. This article proposes a triadic agentic AI framework that co-designs intent management and intent fulfillm",
+            "chars": 1368,
+            "shown": 1368,
+            "truncated": false
+          },
+          "categories": [
+            "cs.LG"
+          ],
+          "author": "Burak Demirel",
+          "lang": "en",
+          "tier": 3,
+          "trustCategory": true,
+          "declaredCategory": "ideas",
+          "metrics": {},
+          "quality": 6,
+          "score": 12.05,
+          "category": "tools",
+          "subcategory": "workflow",
+          "practical": 1,
+          "slug": "aecd91e8a65d",
+          "action": 2,
+          "rank": 9.2,
+          "tags": [
+            "agent"
+          ]
+        },
+        {
+          "sourceId": "arxiv-cs",
+          "sourceName": "arXiv cs.AI/CL/LG",
+          "title": "EEG Decoding in Context: A Framework for Tuning-Free EEG Foundation Models",
+          "url": "https://arxiv.org/abs/2611.31171v1",
+          "id": "http://arxiv.org/abs/2611.31171v1",
+          "published": "2026-11-23T18:30:53.000Z",
+          "summary": "Electroencephalography (EEG) decoding is a central route toward brain-computer interfaces for communication, rehabilitation, cognitive assessment, and neurological monitoring. Recent EEG foundation models have substantially advanced reusable signal representations, but their downstream use still typically requires a t…",
+          "content": {
+            "html": "Electroencephalography (EEG) decoding is a central route toward brain-computer interfaces for communication, rehabilitation, cognitive assessment, and neurological monitoring. Recent EEG foundation models have substantially advanced reusable signal representations, but their downstream use still typically requires a task-specific decoder, gradient-based adaptation, and validation-driven model selection. We investigate a complementary foundation-model paradigm based on in-context learning: labeled EEG recordings define the decoding task as context, and new recordings are predicted without updating model parameters. We first pair raw EEG features with a pretrained general-purpose in-context predictor. This direct formulation provides a promising starting point, but its performance remains limited and unstable and does not generalize reliably across EEG paradigms. We find that suitable context construction can address these limitations by improving the effective signal-to-noise ratio and exposing temporal and spatial structure. Building on this insight, we introduce a general framework that combines EEG-specific context construction with a frozen in-context predictor and a metric-based context adaptation mechanism, which matches each downstream task to an appropriate context representation without relying on validation data. Across ten datasets spanning seven EEG decoding paradigms, our method achieves the highest mean BAcc among eleven specialized and fine-tuned EEG baselines, without task-specific parameter updates or validation-based model selection. This framework provides a practical path toward tuning-free EEG foundation models in which adaptation is expressed through context rather than parameter updates.",
+            "text": "Electroencephalography (EEG) decoding is a central route toward brain-computer interfaces for communication, rehabilitation, cognitive assessment, and neurological monitoring. Recent EEG foundation models have substantially advanced reusable signal representations, but their downstream use still typically requires a task-specific decoder, gradient-based adaptation, and validation-driven model selection. We investigate a complementary foundation-model paradigm based on in-context learning: labeled EEG recordings define the decoding task as context, and new recordings are predicted without updating model parameters. We first pair raw EEG features with a pretrained general-purpose in-context predictor. This direct formulation provides a promising starting point, but its performance remains limited and unstable and does not generalize reliably across EEG paradigms. We find that suitable context construction can address these limitations by improving the effective signal-to-noise ratio and exposing temporal and spatial structure. Building on this insight, we introduce a general framework that combines EEG-specific context construction with a frozen in-context predictor and a metric-based context adaptation mechanism, which matches each downstream task to an appropriate context representation without relying on validation data. Across ten datasets spanning seven EEG decoding paradigms, our method achieves the highest mean BAcc among eleven specialized and fine-tuned EEG baselines, without task-specific parameter updates or validation-based model selection. This framework provides a practical path toward tuning-free EEG foundation models in which adaptation is expressed through context rather than parameter updates.",
+            "lead": "Electroencephalography (EEG) decoding is a central route toward brain-computer interfaces for communication, rehabilitation, cognitive assessment, and neurological monitoring. Recent EEG foundation models have substantially advanced reusable signal representations, but their downstream use still typically requires a task-specific decoder, gradient-based adaptation, and validation-driven model selection. We investigate a complementary foundation-model parad",
+            "chars": 1738,
+            "shown": 1738,
+            "truncated": false
+          },
+          "categories": [
+            "cs.LG"
+          ],
+          "author": "Hao-Run Cai",
+          "lang": "en",
+          "tier": 3,
+          "trustCategory": true,
+          "declaredCategory": "ideas",
+          "metrics": {},
+          "quality": 6,
+          "score": 10.41,
+          "category": "tools",
+          "subcategory": "coding",
+          "practical": 1,
+          "slug": "588501ee8bb2",
+          "action": 2,
+          "rank": 9.2,
+          "tags": [
+            "free"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hardware",
+      "label": "AI 硬件",
+      "items": [
+        {
+          "sourceId": "lcz-llm",
+          "sourceName": "抡锤者 模型部署讨论",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "dewundone",
+          "id": "3323",
+          "title": "双 V100 续篇：Prefill 1500+ 到 1626、短题首字快 2.8 倍，为质量付出的 20% 速度两代引擎后补回来了（含翻车与负结果）",
+          "url": "https://lcz.me/topic/3323",
+          "published": "2026-11-24T15:11:38.805Z",
+          "summary": "开篇引子：这一轮在解决什么问题 这篇是上一篇双 V100 实测帖的续篇。上一篇解决的是\"能不能跑、跑多快\"；这一轮的麻烦换了类型：引擎更新带来了新的质量风险，几个纸面好看的开关在我的拓扑上根本不干活，长会话还把内存和磁盘的瓶颈撞了出来。 这一轮主要做了三件事：先判断哪些性能优化值得为质量让路，再盯着引擎更新把让出去的速度找回来，最后把这台机器在长上下文和长期运行里的瓶颈逐个挖出来。我没有把每个默认值都当好东西，也没有把每次跑分上涨都算成优化成功——负结果和翻车一样进了正文，每条都带着测试口径和适用条件。 机器配置概要（没看过第一篇的读者先看这节） 这是第一篇的续帖，机器还是那台机器。配置的完整版在第一篇第一节，这里贴一份概要，新读…",
+          "metrics": {
+            "points": 0,
+            "comments": 1,
+            "views": 39
+          },
+          "excellent": false,
+          "content": {
+            "html": "<h3>开篇引子：这一轮在解决什么问题</h3>\n<p>这篇是上一篇双 V100 实测帖的续篇。上一篇解决的是\"能不能跑、跑多快\"；这一轮的麻烦换了类型：引擎更新带来了新的质量风险，几个纸面好看的开关在我的拓扑上根本不干活，长会话还把内存和磁盘的瓶颈撞了出来。</p>\n<p>这一轮主要做了三件事：先判断哪些性能优化值得为质量让路，再盯着引擎更新把让出去的速度找回来，最后把这台机器在长上下文和长期运行里的瓶颈逐个挖出来。我没有把每个默认值都当好东西，也没有把每次跑分上涨都算成优化成功——负结果和翻车一样进了正文，每条都带着测试口径和适用条件。</p>\n<h3>机器配置概要（没看过第一篇的读者先看这节）</h3>\n<p>这是第一篇的续帖，机器还是那台机器。配置的完整版在第一篇第一节，这里贴一份概要，新读者不用回翻：</p>\n<blockquote><p><a href=\"https://lcz.me/topic/2708/23\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">双 V100 16G + 128G D3 + X99 跑Strata Qwen 3.8 Flash Next UD-Q4_K_XL 喂到 1500+ tok/s Prefill 和 60 tokens/s Decode 配合 256K 上下文全记录（含翻车与负结果）</a></p></blockquote>\n<ul><li>主板CPU套装：华南金牌 X99 TF + E5-2686V4 + 六热管散热器</li><li>内存：三星 DDR3 32G ECC REG 1866 × 4，共 128G 四通道；一定要给内存配风扇，哪怕是 X99-TF 这种间隔一个槽位的主板，内存照样会过热掉速（第一篇里有我 DIY 导风板的图）</li><li>显卡：V100 16G PCIe × 2；两卡之间没有 NVLink（PCIe 版，这种卡的桥也不好买到），这条和第十二节的一条旧结论翻案有关</li><li>硬盘：Intel 545S 256G SATA SSD × 2，闲置件。一块装系统软件，另一块只放模型文件并负责 ngram 的读取。第九、十两节讲的就是这块盘怎么在特定场景下拖住 prefill。SATA 放模型没问题，供随机读的时候确实有天花板，已经下单nvme盘准备升级替换</li><li>亮机卡：AST2400 一张，手上有别的显卡其实可以不买</li></ul>\n<h3>本篇结论的适用范围（30 秒自查）</h3>\n<p>后面所有结论都绑着下面这台机器。开读之前先对一眼你的机器差在哪——差得越远，越应该把结论当\"思路参考\"而不是\"数值照抄\"：</p>\n<table><thead><tr><th>条件</th><th>本篇实测环境</th><th>能不能直接照抄</th></tr></thead><tbody><tr><td>GPU</td><td>Tesla V100 PCIe 16G ×2</td><td>不一定</td></tr><tr><td>卡间拓扑</td><td>X99，PHB 路径，无 NVLink</td><td>多卡结论对 NVLink 直连机不适用（第十二节）</td></tr><tr><td>模型</td><td>Qwen3.8 Flash Next UD-Q4_K_XL</td><td>其他 MoE 模型需重测</td></tr><tr><td>显存分配</td><td>层切，手动固定 24</td><td>其他切分比例需重测</td></tr><tr><td>内存</td><td>128G DDR3 四通道</td><td>缓存预算的具体数值不能照搬</td></tr><tr><td>盘</td><td>Intel 545s SATA SSD</td><td>盘的瓶颈结论要按你的盘型重算</td></tr><tr><td>散热</td><td>V100 涡轮风扇定转（转速不写，见机器配置概要）</td><td>200W 功限在不同散热下要重测</td></tr><tr><td>引擎</td><td>Strata Terminal 0.2.20 / 引擎 0.1.66</td><td>其他版本需复验——这篇本身就是\"版本变了要重测\"的案例</td></tr></tbody></table>\n<h3>先说结论：更新到底赚了多少（和第一篇对账）</h3>\n<p>第一篇的终档是 2026-10-30 凌晨跑的 conforming 档（Terminal 0.2.7 / 引擎 0.1.52 / 功限 165W），本篇在 165W 和 200W 两个功率档各跑了一份 conforming 正档，都在附录 B（Terminal 0.2.20 / 引擎 0.1.66）。同一套官方 standard-v1 套件、同一个模型同一个量化档、都是 n=3 取中位数、都是空闲时段跑的，两边的数字可以直接对：</p>\n<table><thead><tr><th>指标</th><th>第一篇终档（0.1.52/165W）</th><th>本篇（0.1.66/165W）</th><th>本篇（0.1.66/200W）</th><th>纯软件变化（同为 165W 比）</th></tr></thead><tbody><tr><td>16K 持续读 tok/s</td><td>1530.8</td><td>1620</td><td>1626</td><td><strong>+5.8%</strong></td></tr><tr><td>16K 首字</td><td>10.8s</td><td>10.17s</td><td>10.12s</td><td>快约 6%</td></tr><tr><td>16K 生成 tok/s</td><td>66.0</td><td>54.9</td><td>61.8</td><td>-16.8%（故意的，见下）</td></tr><tr><td>4K 单次冷读 tok/s</td><td>674</td><td>675</td><td>678</td><td>持平</td></tr><tr><td>4K 生成 tok/s</td><td>60.3</td><td>56.0</td><td>58.5</td><td>-7.1%（故意的，见下）</td></tr><tr><td>短题生成 tok/s</td><td>66.5</td><td>57.4</td><td>59.7</td><td>-13.7%（故意的，见下）</td></tr><tr><td>短题首字</td><td>1.9s</td><td>0.68s</td><td>0.72s</td><td><strong>快约 2.8 倍</strong></td></tr><tr><td>质量 sanity</td><td>12/12</td><td>12/12</td><td>12/12</td><td>—</td></tr></tbody></table>\n<p>先看纯软件那一列：同为 165W，引擎从 0.1.52 走到 0.1.66、加上本篇逐个验证过的开关，16K 读 +5.8%、短题首字快约 2.8 倍（1.9 秒到 0.68 秒，日常对话里最有体感的一条）。**软件更新本身就在涨，不是靠功耗买来的。**200W 列是在软件增益之上再叠一层，而且这层集中在持续负载：16K 读只从 1620 到 1626（+0.4%，噪声带内），16K 生成却从 54.9 到 61.8（+12.6%），因为 decode 跟在长 prefill 后面、持续负载下功限把时钟压着。短题和 4K 的 decode 基本不吃功限（57.4 对 59.7、56.0 对 58.5，都在噪声带内）：日常短对话在 165W 下 decode 基本没损失，长文持续场景 165W 有约 11% 的 decode 损失，完整数据在第七节。</p>\n<p>还要把一笔账摆平：<strong>老版本加功耗是没用的。</strong>第一篇当年就实测过功耗梯度，结论是 165W 够用：那时的负载形态是短脉冲，功限那堵墙压不住时钟。新引擎的优化把 prefill 做成了持续高功率的相位，200W 才有东西可买。功耗和软件是两笔账，别混着记。</p>\n<p>生成那一列看着像倒退，先解释清楚：<strong>这是我为质量主动付的代价</strong>。新引擎默认的 tail-skip 路由优化有质量损失报告，我把它钉回了保守档（第一节），实测生成代价 18~20%。把 skip 放开：官方套件实测短题 68.3（+14%）、4K 73.9（+26%）、16K 64.3（+4%）（tail7 正档，附录 B 同附件）；长上下文场景的生成能快 10~20%（第八节）。同一质量口径（都放开 skip）下，短题和 4K 比第一篇更快（68.3 对 66.5、73.9 对 60.3，注：这组是 200W、第一篇是 165W），16K 基本持平（64.3 对 66.0），我只是选择把这部分速度拿去换质量了。</p>\n<p>速度表之外还有三笔账：内存安全（第九节的 swap 颠簸案，VmSwap 从 9.4G 归零）；功限 165W→200W（第七节，持续重载的长 prefill 明显变快）；ngram 表维持第一篇的\"驻留 RAM\"（<code>--ple-io ram</code>），它也因此是第九节内存超订案的当事人之一。另外专家槽从 7407 变成 3834<strong>不可比</strong>：两代引擎之间槽的计数口径改过（0.1.66 起改成逐层精确计算），尺子换了（第二节）。长上下文两边的口径也不同（第一篇 210K 是全量冷读 117.4s，本篇 240K 是暖态 102.8s），不要直接互比，曲线在第八节。</p>\n<p>功限要不要跟：你以长会话、长文档为主就转 200W；追求低噪音低功耗，<strong>留在 165W 完全成立</strong>（质量零损失、风扇更安静、双卡少约 70W）。完整数据在第七节，全部配置建议汇总在第十八节。</p>\n<h3></h3>",
+            "text": "开篇引子：这一轮在解决什么问题\n这篇是上一篇双 V100 实测帖的续篇。上一篇解决的是\"能不能跑、跑多快\"；这一轮的麻烦换了类型：引擎更新带来了新的质量风险，几个纸面好看的开关在我的拓扑上根本不干活，长会话还把内存和磁盘的瓶颈撞了出来。\n这一轮主要做了三件事：先判断哪些性能优化值得为质量让路，再盯着引擎更新把让出去的速度找回来，最后把这台机器在长上下文和长期运行里的瓶颈逐个挖出来。我没有把每个默认值都当好东西，也没有把每次跑分上涨都算成优化成功——负结果和翻车一样进了正文，每条都带着测试口径和适用条件。\n机器配置概要（没看过第一篇的读者先看这节）\n这是第一篇的续帖，机器还是那台机器。配置的完整版在第一篇第一节，这里贴一份概要，新读者不用回翻：\n双 V100 16G + 128G D3 + X99 跑Strata Qwen 3.8 Flash Next UD-Q4_K_XL 喂到 1500+ tok/s Prefill 和 60 tokens/s Decode 配合 256K 上下文全记录（含翻车与负结果）\n主板CPU套装：华南金牌 X99 TF + E5-2686V4 + 六热管散热器\n内存：三星 DDR3 32G ECC REG 1866 × 4，共 128G 四通道；一定要给内存配风扇，哪怕是 X99-TF 这种间隔一个槽位的主板，内存照样会过热掉速（第一篇里有我 DIY 导风板的图）\n显卡：V100 16G PCIe × 2；两卡之间没有 NVLink（PCIe 版，这种卡的桥也不好买到），这条和第十二节的一条旧结论翻案有关\n硬盘：Intel 545S 256G SATA SSD × 2，闲置件。一块装系统软件，另一块只放模型文件并负责 ngram 的读取。第九、十两节讲的就是这块盘怎么在特定场景下拖住 prefill。SATA 放模型没问题，供随机读的时候确实有天花板，已经下单nvme盘准备升级替换\n亮机卡：AST2400 一张，手上有别的显卡其实可以不买\n本篇结论的适用范围（30 秒自查）\n后面所有结论都绑着下面这台机器。开读之前先对一眼你的机器差在哪——差得越远，越应该把结论当\"思路参考\"而不是\"数值照抄\"：\n条件\n本篇实测环境\n能不能直接照抄\nGPU\nTesla V100 PCIe 16G ×2\n不一定\n卡间拓扑\nX99，PHB 路径，无 NVLink\n多卡结论对 NVLink 直连机不适用（第十二节）\n模型\nQwen3.8 Flash Next UD-Q4_K_XL\n其他 MoE 模型需重测\n显存分配\n层切，手动固定 24\n其他切分比例需重测\n内存\n128G DDR3 四通道\n缓存预算的具体数值不能照搬\n盘\nIntel 545s SATA SSD\n盘的瓶颈结论要按你的盘型重算\n散热\nV100 涡轮风扇定转（转速不写，见机器配置概要）\n200W 功限在不同散热下要重测\n引擎\nStrata Terminal 0.2.20 / 引擎 0.1.66\n其他版本需复验——这篇本身就是\"版本变了要重测\"的案例\n先说结论：更新到底赚了多少（和第一篇对账）\n第一篇的终档是 2026-10-30 凌晨跑的 conforming 档（Terminal 0.2.7 / 引擎 0.1.52 / 功限 165W），本篇在 165W 和 200W 两个功率档各跑了一份 conforming 正档，都在附录 B（Terminal 0.2.20 / 引擎 0.1.66）。同一套官方 standard-v1 套件、同一个模型同一个量化档、都是 n=3 取中位数、都是空闲时段跑的，两边的数字可以直接对：\n指标\n第一篇终档（0.1.52/165W）\n本篇（0.1.66/165W）\n本篇（0.1.66/200W）\n纯软件变化（同为 165W 比）\n16K 持续读 tok/s\n1530.8\n1620\n1626\n+5.8%\n16K 首字\n10.8s\n10.17s\n10.12s\n快约 6%\n16K 生成 tok/s\n66.0\n54.9\n61.8\n-16.8%（故意的，见下）\n4K 单次冷读 tok/s\n674\n675\n678\n持平\n4K 生成 tok/s\n60.3\n56.0\n58.5\n-7.1%（故意的，见下）\n短题生成 tok/s\n66.5\n57.4\n59.7\n-13.7%（故意的，见下）\n短题首字\n1.9s\n0.68s\n0.72s\n快约 2.8 倍\n质量 sanity\n12/12\n12/12\n12/12\n—\n先看纯软件那一列：同为 165W，引擎从 0.1.52 走到 0.1.66、加上本篇逐个验证过的开关，16K 读 +5.8%、短题首字快约 2.8 倍（1.9 秒到 0.68 秒，日常对话里最有体感的一条）。**软件更新本身就在涨，不是靠功耗买来的。**200W 列是在软件增益之上再叠一层，而且这层集中在持续负载：16K 读只从 1620 到 1626（+0.4%，噪声带内），16K 生成却从 54.9 到 61.8（+12.6%），因为 decode 跟在长 prefill 后面、持续负载下功限把时钟压着。短题和 4K 的 decode 基本不吃功限（57.4 对 59.7、56.0 对 58.5，都在噪声带内）：日常短对话在 165W 下 decode 基本没损失，长文持续场景 165W 有约 11% 的 decode 损失，完整数据在第七节。\n还要把一笔账摆平： 老版本加功耗是没用的。 第一篇当年就实测过功耗梯度，结论是 165W 够用：那时的负载形态是短脉冲，功限那堵墙压不住时钟。新引擎的优化把 prefill 做成了持续高功率的相位，200W 才有东西可买。功耗和软件是两笔账，别混着记。\n生成那一列看着像倒退，先解释清楚： 这是我为质量主动付的代价 。新引擎默认的 tail-skip 路由优化有质量损失报告，我把它钉回了保守档（第一节），实测生成代价 18~20%。把 skip 放开：官方套件实测短题 68.3（+14%）、4K 73.9（+26%）、16K 64.3（+4%）（tail7 正档，附录 B 同附件）；长上下文场景的生成能快 10~20%（第八节）。同一质量口径（都放开 skip）下，短题和 4K 比第一篇更快（68.3 对 66.5、73.9 对 60.3，注：这组是 200W、第一篇是 165W），16K 基本持平（64.3 对 66.0），我只是选择把这部分速度拿去换质量了。\n速度表之外还有三笔账：内存安全（第九节的 swap 颠簸案，VmSwap 从 9.4G 归零）；功限 165W→200W（第七节，持续重载的长 prefill 明显变快）；ngram 表维持第一篇的\"驻留 RAM\"（ --ple-io ram ），它也因此是第九节内存超订案的当事人之一。另外专家槽从 7407 变成 3834 不可比 ：两代引擎之间槽的计数口径改过（0.1.66 起改成逐层精确计算），尺子换了（第二节）。长上下文两边的口径也不同（第一篇 210K 是全量冷读 117.4s，本篇 240K 是暖态 102.8s），不要直接互比，曲线在第八节。\n功限要不要跟：你以长会话、长文档为主就转 200W；追求低噪音低功耗， 留在 165W 完全成立 （质量零损失、风扇更安静、双卡少约 70W）。完整数据在第七节，全部配置建议汇总在第十八节。",
+            "lead": "开篇引子：这一轮在解决什么问题\n这篇是上一篇双 V100 实测帖的续篇。上一篇解决的是\"能不能跑、跑多快\"；这一轮的麻烦换了类型：引擎更新带来了新的质量风险，几个纸面好看的开关在我的拓扑上根本不干活，长会话还把内存和磁盘的瓶颈撞了出来。\n这一轮主要做了三件事：先判断哪些性能优化值得为质量让路，再盯着引擎更新把让出去的速度找回来，最后把这台机器在长上下文和长期运行里的瓶颈逐个挖出来。我没有把每个默认值都当好东西，也没有把每次跑分上涨都算成优化成功——负结果和翻车一样进了正文，每条都带着测试口径和适用条件。\n机器配置概要（没看过第一篇的读者先看这节）\n这是第一篇的续帖，机器还是那台机器。配置的完整版在第一篇第一节，这里贴一份概要，新读者不用回翻：\n双 V100 16G + 128G D3 + X99 跑Strata Qwen 3.8 Flash Next UD-Q4_K_XL 喂到 1500+ tok/s Prefill 和 60 tokens/s Decode 配合 256K 上下文全记录（含翻车与负结果）",
+            "chars": 21827,
+            "shown": 3188,
+            "truncated": true
+          },
+          "quality": 8,
+          "score": 18.64,
+          "category": "hardware",
+          "subcategory": "build",
+          "practical": 4,
+          "slug": "5023a214790a",
+          "action": 11,
+          "rank": 25.6,
+          "tags": [
+            "benchmark",
+            "hardware",
+            "lowspec",
+            "tutorial"
+          ]
+        },
+        {
+          "sourceId": "lcz-hardware",
+          "sourceName": "抡锤者 AI硬件",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "Y G 0",
+          "id": "3320",
+          "title": "说说本机 X99-TF 遇到的三星DDR3 服务器内存（拆机条）的奇葩搭配事件",
+          "url": "https://lcz.me/topic/3320",
+          "published": "2026-11-24T13:38:38.502Z",
+          "summary": "10月8号在京东某店中店买了4条三星 DDR3 1600 32G的服务器拆机条，到手后在X99-TF主板上一次点亮，装机完成后用agent检测过，说是三根1600的，一根1866的，于是没当回事，心想反正工作在1600上，1866就当降频使用了，memtest跑了一阵子没发现问题，就退出了。 之后用了一个多月，日常配 7900xtx 分时段跑跑 strata 和 comfyui，也没遇到什么问题。 那天看到有坛友（ https://lcz.me/topic/3276 ）在问内存的事儿，闲来无事也用该帖1楼的两条指令测了一下，发现有一根条子多次报错，于是让Hermes仔细分析一顿，结果很奇葩，估计会跌破一地的眼镜。 一、四条内存的状…",
+          "metrics": {
+            "points": 1,
+            "comments": 0,
+            "views": 51
+          },
+          "excellent": false,
+          "content": {
+            "html": "<p>10月8号在京东某店中店买了4条三星 DDR3 1600 32G的服务器拆机条，到手后在X99-TF主板上一次点亮，装机完成后用agent检测过，说是三根1600的，一根1866的，于是没当回事，心想反正工作在1600上，1866就当降频使用了，memtest跑了一阵子没发现问题，就退出了。</p>\n<p>之后用了一个多月，日常配 7900xtx 分时段跑跑 strata 和 comfyui，也没遇到什么问题。</p>\n<p>那天看到有坛友（<a href=\"https://lcz.me/topic/3276\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://lcz.me/topic/3276</a>）在问内存的事儿，闲来无事也用该帖1楼的两条指令测了一下，发现有一根条子多次报错，于是让Hermes仔细分析一顿，结果很奇葩，估计会跌破一地的眼镜。</p>\n<h3>一、四条内存的状况</h3>\n<p>四根条子，两个规格，三个料号，分别为：</p>\n<table><thead><tr><th>EDAC 标签</th><th>板子丝印</th><th>条子</th><th>类型</th><th>状态</th></tr></thead><tbody><tr><td>Ha#0_Chan#0_DIMM#0</td><td><strong>DIMM_A1</strong></td><td>M386B4G70DM0-<strong>YK04Q</strong>32GB</td><td>LRDIMM，4Rx4</td><td><strong>报错的这根</strong>（本次开机 CE 计数=1，四条里唯一非零）</td></tr><tr><td>Ha#0_Chan#1_DIMM#0</td><td>DIMM_B1</td><td>M386B4G70DM0-YK03 32GB</td><td>LRDIMM，4Rx4</td><td>干净</td></tr><tr><td>Ha#1_Chan#0_DIMM#0</td><td>DIMM_C1</td><td>M386B4G70DM0-YK03 32GB</td><td>LRDIMM，4Rx4</td><td>干净</td></tr><tr><td>Ha#1_Chan#1_DIMM#0</td><td>DIMM_D1</td><td>M393B4G70BM0-YF8 32GB</td><td><strong>RDIMM</strong>，4Rx4</td><td>干净</td></tr></tbody></table>\n<p>先是让 AI 分析了一下报错的原因，得到的反馈：</p>\n<blockquote><p><strong>一句话结论：不是随机软错误，而是同一根内存条上同一个 4KB 页里的固定坏点（硬故障），目前全靠 ECC 兜底——短期无害，但该 DIMM 已判定在退化，需要计划性处理。</strong></p></blockquote>\n<p>随后关机断电、拔内存，擦拭金手指，换槽重插，再开机检测，AI 提示：</p>\n<blockquote><p><strong>条子实锤坏点。</strong>错误跟着 YK04 搬到了 Chan#1：<code>RD_CHANNEL1_ERR</code>/<code>MS_CHANNEL1_ERR</code>=<code>Ha#0_Chan#1_DIMM#0</code>= B1 槽 = YK04 现在的位置。内核 EDAC 侧我复核过，也是只有 Chan#1 在涨（ce=1），其余三槽全零。<strong>A1 槽无罪</strong>。两个顺带的观察修正：</p><ul><li>错误地址还是<code>0x14571eb000</code>那页——我之前预期地址会变，没变。原因是 YK04 只是换通道、没换 home agent，行译码空间不变，坏单元在地址空间里几乎原地现身。这次实测比我的预期更干净。</li><li>开机 47 分钟出现 demand read 错误：说明 Strata 的常驻页很快又踩到了它。现在每几小时一次 CE，量级仍远低于隔离阈值，<strong>短期继续使用完全安全</strong>，只是这页会一直漏。</li></ul></blockquote>\n<p>问 AI 是否可以将这个坏点隔离，经过一番终端命令操作和重启后，AI 提示说：</p>\n<blockquote><ul><li><strong>坏条（YK04）留在 B1 继续服役</strong>，它的坏点所在 2MB 已被内核从可用内存剔除，<code>RD</code>类踩页错误从此应绝迹，剩下的每 2h24m 一条<code>MS</code>巡检记录是无害噪音；</li><li>机器正常启动、四通道全在、带宽无损。</li></ul></blockquote>\n<p>本来到这里，就要结束了，反正 32G 的拆机条损失了 2M 的空间，不想太折腾。</p>\n<p>但看着尾号YF8的那根，AI 报内存类型不一样，总觉得不踏实，于是追查了一下，这一追查可不要紧，发现了一个李鬼，顿时就不淡定了：</p>\n<blockquote><h4>1. AI 给出的三款内存参数对比</h4><table><thead><tr><th>参数项</th><th><strong>M393B4G70BM0-YF8</strong></th><th><strong>M386B4G70DM0-YK04Q</strong></th><th><strong>M386B4G70DM0-YK03</strong></th></tr></thead><tbody><tr><td><strong>内存架构</strong></td><td><strong>RDIMM</strong>(Registered DIMM)</td><td><strong>LRDIMM</strong>(Load-Reduced)</td><td><strong>LRDIMM</strong>(Load-Reduced)</td></tr><tr><td><strong>主频 / 速率</strong></td><td><strong>1066 MHz</strong>(PC3L-8500R)</td><td><strong>1600 MHz</strong>(PC3L-12800)</td><td><strong>1600 MHz</strong>(PC3L-12800)</td></tr><tr><td><strong>CAS 延迟</strong></td><td><strong>CL7</strong></td><td><strong>CL11</strong></td><td><strong>CL11</strong></td></tr><tr><td><strong>Rank 架构</strong></td><td>4Rx4 (四列)</td><td>4Rx4 (四列)</td><td>4Rx4 (四列)</td></tr><tr><td><strong>电压</strong></td><td>1.35 V (低压)</td><td>1.35 V (低压)</td><td>1.35 V (低压)</td></tr><tr><td><strong>容量 / 类型</strong></td><td>32GB DDR3L</td><td>32GB DDR3L</td><td>32GB DDR3L</td></tr><tr><td><strong>错误校正</strong></td><td>ECC</td><td>ECC</td><td>ECC</td></tr><tr><td><strong>关键定位</strong></td><td>低频、低延迟的<strong>稳定型 RDIMM</strong></td><td>高频的<strong>大容量 LRDIMM</strong></td><td>同左，与 YK04Q 规格一致</td></tr></tbody></table><h4>2. AI 给出的关键差异解读</h4><p><strong>（1） 架构差异决定兼容性：RDIMM vs. LRDIMM</strong></p><p>这是最根本的区别。<strong>RDIMM（寄存内存）</strong>在内存条上装有寄存器来缓冲地址和控制信号，是服务器中最常见的类型。而<strong>LRDIMM（减载内存）</strong>在此基础上增加了数据缓冲芯片，进一步降低了内存总线的电气负载，专门用于支持单条容量更大、Rank数更高的内存，以满足高密度服务器的需求。<strong>这两种内存通常不能在同一个服务器主板上混用</strong>，需要根据服务器主板手册确认支持的类型。</p><p><strong>（2） 性能定位不同：低频低延迟 vs. 高频大容量</strong></p><ul><li><strong>M393B4G70BM0-YF8</strong>的<strong>1066 MHz + CL7</strong>组合，优势在于<strong>更低的访问延迟</strong>。在它所属的RDIMM类型和时代中，这是一种追求稳定和响应速度的配置，适合对延迟敏感、对绝对带宽要求不极致的场景。</li><li>两款<strong>M386B4G70DM0</strong>的<strong>1600 MHz + CL11</strong>组合，则提供了<strong>更高的数据带宽</strong>，这是LRDIMM架构发挥其大容量优势时的典型频率配置，适合需要更高吞吐量的内存密集型应用。</li></ul><p><strong>（3） 关于“YK04Q”与“YK03”的再次确认</strong></p><p>如前所述，这两款LRDIMM在核心规格上完全一致，区别仅在于三星为不同OEM厂商或批次设置的后缀代码，在兼容性和性能上可视为同等产品。</p></blockquote>\n<h3>二、与商家沟通换货</h3>\n<p>买的是1600，收到的条子外表贴纸YK03的贴纸，实际硬件却是1066，尽管能用，但不能忍。鉴于商家购买时承诺一年质保，于是联系商家客服，讲明问题所在，要求换货。经过一番掰扯，最终商家同意换货。现在两个问题条子已经发往广州了，等过几天再看换回来的结果吧。</p>\n<p>目前只剩双通道64G内存了，strata+iq3_s 倒是还能跑，但内存几乎被占满，且运行时狂读 SSD，prefill 峰值降得比较狠，大概到2400左右，而decode 还能维持在80多以上。先凑合吧。</p>\n<p>整个事件中感觉最奇葩的是：这样一组稀奇古怪的内存条搭配，居然也能跑一个多月没出啥问题，可能是人品太好了。</p>",
+            "text": "10月8号在京东某店中店买了4条三星 DDR3 1600 32G的服务器拆机条，到手后在X99-TF主板上一次点亮，装机完成后用agent检测过，说是三根1600的，一根1866的，于是没当回事，心想反正工作在1600上，1866就当降频使用了，memtest跑了一阵子没发现问题，就退出了。\n之后用了一个多月，日常配 7900xtx 分时段跑跑 strata 和 comfyui，也没遇到什么问题。\n那天看到有坛友（ https://lcz.me/topic/3276 ）在问内存的事儿，闲来无事也用该帖1楼的两条指令测了一下，发现有一根条子多次报错，于是让Hermes仔细分析一顿，结果很奇葩，估计会跌破一地的眼镜。\n一、四条内存的状况\n四根条子，两个规格，三个料号，分别为：\nEDAC 标签\n板子丝印\n条子\n类型\n状态\nHa#0_Chan#0_DIMM#0\nDIMM_A1\nM386B4G70DM0- YK04Q 32GB\nLRDIMM，4Rx4\n报错的这根 （本次开机 CE 计数=1，四条里唯一非零）\nHa#0_Chan#1_DIMM#0\nDIMM_B1\nM386B4G70DM0-YK03 32GB\nLRDIMM，4Rx4\n干净\nHa#1_Chan#0_DIMM#0\nDIMM_C1\nM386B4G70DM0-YK03 32GB\nLRDIMM，4Rx4\n干净\nHa#1_Chan#1_DIMM#0\nDIMM_D1\nM393B4G70BM0-YF8 32GB\nRDIMM ，4Rx4\n干净\n先是让 AI 分析了一下报错的原因，得到的反馈：\n一句话结论：不是随机软错误，而是同一根内存条上同一个 4KB 页里的固定坏点（硬故障），目前全靠 ECC 兜底——短期无害，但该 DIMM 已判定在退化，需要计划性处理。\n随后关机断电、拔内存，擦拭金手指，换槽重插，再开机检测，AI 提示：\n条子实锤坏点。 错误跟着 YK04 搬到了 Chan#1： RD_CHANNEL1_ERR / MS_CHANNEL1_ERR = Ha#0_Chan#1_DIMM#0 = B1 槽 = YK04 现在的位置。内核 EDAC 侧我复核过，也是只有 Chan#1 在涨（ce=1），其余三槽全零。 A1 槽无罪 。两个顺带的观察修正：\n错误地址还是 0x14571eb000 那页——我之前预期地址会变，没变。原因是 YK04 只是换通道、没换 home agent，行译码空间不变，坏单元在地址空间里几乎原地现身。这次实测比我的预期更干净。\n开机 47 分钟出现 demand read 错误：说明 Strata 的常驻页很快又踩到了它。现在每几小时一次 CE，量级仍远低于隔离阈值， 短期继续使用完全安全 ，只是这页会一直漏。\n问 AI 是否可以将这个坏点隔离，经过一番终端命令操作和重启后，AI 提示说：\n坏条（YK04）留在 B1 继续服役 ，它的坏点所在 2MB 已被内核从可用内存剔除， RD 类踩页错误从此应绝迹，剩下的每 2h24m 一条 MS 巡检记录是无害噪音；\n机器正常启动、四通道全在、带宽无损。\n本来到这里，就要结束了，反正 32G 的拆机条损失了 2M 的空间，不想太折腾。\n但看着尾号YF8的那根，AI 报内存类型不一样，总觉得不踏实，于是追查了一下，这一追查可不要紧，发现了一个李鬼，顿时就不淡定了：\n1. AI 给出的三款内存参数对比\n参数项\nM393B4G70BM0-YF8\nM386B4G70DM0-YK04Q\nM386B4G70DM0-YK03\n内存架构\nRDIMM (Registered DIMM)\nLRDIMM (Load-Reduced)\nLRDIMM (Load-Reduced)\n主频 / 速率\n1066 MHz (PC3L-8500R)\n1600 MHz (PC3L-12800)\n1600 MHz (PC3L-12800)\nCAS 延迟\nCL7\nCL11\nCL11\nRank 架构\n4Rx4 (四列)\n4Rx4 (四列)\n4Rx4 (四列)\n电压\n1.35 V (低压)\n1.35 V (低压)\n1.35 V (低压)\n容量 / 类型\n32GB DDR3L\n32GB DDR3L\n32GB DDR3L\n错误校正\nECC\nECC\nECC\n关键定位\n低频、低延迟的 稳定型 RDIMM\n高频的 大容量 LRDIMM\n同左，与 YK04Q 规格一致\n2. AI 给出的关键差异解读\n（1） 架构差异决定兼容性：RDIMM vs. LRDIMM\n这是最根本的区别。 RDIMM（寄存内存） 在内存条上装有寄存器来缓冲地址和控制信号，是服务器中最常见的类型。而 LRDIMM（减载内存） 在此基础上增加了数据缓冲芯片，进一步降低了内存总线的电气负载，专门用于支持单条容量更大、Rank数更高的内存，以满足高密度服务器的需求。 这两种内存通常不能在同一个服务器主板上混用 ，需要根据服务器主板手册确认支持的类型。\n（2） 性能定位不同：低频低延迟 vs. 高频大容量\nM393B4G70BM0-YF8 的 1066 MHz + CL7 组合，优势在于 更低的访问延迟 。在它所属的RDIMM类型和时代中，这是一种追求稳定和响应速度的配置，适合对延迟敏感、对绝对带宽要求不极致的场景。\n两款 M386B4G70DM0 的 1600 MHz + CL11 组合，则提供了 更高的数据带宽 ，这是LRDIMM架构发挥其大容量优势时的典型频率配置，适合需要更高吞吐量的内存密集型应用。\n（3） 关于“YK04Q”与“YK03”的再次确认\n如前所述，这两款LRDIMM在核心规格上完全一致，区别仅在于三星为不同OEM厂商或批次设置的后缀代码，在兼容性和性能上可视为同等产品。\n二、与商家沟通换货\n买的是1600，收到的条子外表贴纸YK03的贴纸，实际硬件却是1066，尽管能用，但不能忍。鉴于商家购买时承诺一年质保，于是联系商家客服，讲明问题所在，要求换货。经过一番掰扯，最终商家同意换货。现在两个问题条子已经发往广州了，等过几天再看换回来的结果吧。\n目前只剩双通道64G内存了，strata+iq3_s 倒是还能跑，但内存几乎被占满，且运行时狂读 SSD，prefill 峰值降得比较狠，大概到2400左右，而decode 还能维持在80多以上。先凑合吧。\n整个事件中感觉最奇葩的是：这样一组稀奇古怪的内存条搭配，居然也能跑一个多月没出啥问题，可能是人品太好了。",
+            "lead": "10月8号在京东某店中店买了4条三星 DDR3 1600 32G的服务器拆机条，到手后在X99-TF主板上一次点亮，装机完成后用agent检测过，说是三根1600的，一根1866的，于是没当回事，心想反正工作在1600上，1866就当降频使用了，memtest跑了一阵子没发现问题，就退出了。\n之后用了一个多月，日常配 7900xtx 分时段跑跑 strata 和 comfyui，也没遇到什么问题。\n那天看到有坛友（ https://lcz.me/topic/3276 ）在问内存的事儿，闲来无事也用该帖1楼的两条指令测了一下，发现有一根条子多次报错，于是让Hermes仔细分析一顿，结果很奇葩，估计会跌破一地的眼镜。\n一、四条内存的状况\n四根条子，两个规格，三个料号，分别为：",
+            "chars": 2812,
+            "shown": 2812,
+            "truncated": false
+          },
+          "quality": 8,
+          "score": 17.71,
+          "category": "hardware",
+          "subcategory": "build",
+          "practical": 2,
+          "slug": "fc839ea7ccd3",
+          "action": 8,
+          "rank": 20.8,
+          "tags": [
+            "hardware",
+            "benchmark",
+            "lowspec",
+            "agent"
+          ]
+        },
+        {
+          "sourceId": "lcz-llm",
+          "sourceName": "抡锤者 模型部署讨论",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "Cennac",
+          "id": "3318",
+          "title": "Strata-rdna3 双7900XTX实测：代码单路195.5 tok/s，代码双路235.83tok/s",
+          "url": "https://lcz.me/topic/3318",
+          "published": "2026-11-24T08:32:52.929Z",
+          "summary": "分享一下我目前在用的 Strata-rdna3 0.1.43 稳定配置。这是独立维护的 RDNA3 优化分支，不是 Strata 官方发行。代码单路解码中位数 195.50 tok/s ，双路合计 235.83 tok/s ；用本仓库 v0.1.43-rdna3.1 优化源码从头编译，重测分别为 193.30 和 236.44 tok/s 。这是同一条 0.1.43 优化线的重建验证， 不是上游 v0.2.20 原版 。 仓库： https://github.com/cennac/Strata-rdna3 稳定源码： https://github.com/cennac/Strata-rdna3/tree/v0.1.43-rdna3…",
+          "metrics": {
+            "points": 1,
+            "comments": 4,
+            "views": 175
+          },
+          "excellent": false,
+          "content": {
+            "html": "<p>分享一下我目前在用的 Strata-rdna3 0.1.43 稳定配置。这是独立维护的 RDNA3 优化分支，不是 Strata 官方发行。代码单路解码中位数<strong>195.50 tok/s</strong>，双路合计<strong>235.83 tok/s</strong>；用本仓库<code>v0.1.43-rdna3.1</code>优化源码从头编译，重测分别为<strong>193.30</strong>和<strong>236.44 tok/s</strong>。这是同一条 0.1.43 优化线的重建验证，<strong>不是上游 v0.2.20 原版</strong>。</p>\n<p>仓库：<a href=\"https://github.com/cennac/Strata-rdna3\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://github.com/cennac/Strata-rdna3</a></p>\n<p>稳定源码：<a href=\"https://github.com/cennac/Strata-rdna3/tree/v0.1.43-rdna3.1\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://github.com/cennac/Strata-rdna3/tree/v0.1.43-rdna3.1</a></p>\n<p>完整记录：<a href=\"https://github.com/cennac/Strata-rdna3/blob/v0.1.43-rdna3.1/rdna3/benchmarks/2026-11-19.md\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://github.com/cennac/Strata-rdna3/blob/v0.1.43-rdna3.1/rdna3/benchmarks/2026-11-19.md</a></p>\n<h3>机器与模型</h3>\n<ul><li>两张 RX 7900 XTX 24 GB：白金功耗上限 272 W、涡轮 231 W，保留原风扇和频率策略。</li><li>Intel 10900T ES、MSI MPG Z490 GAMING CARBON WIFI、96 GB DDR4。</li><li>Linux / ROCm 10.1 / HIP gfx1100。</li><li>Qwen3.8-Flash-Next，GSQ-RCO IQ3_XXS；双卡按 26/22 层切分，开启 MTP。</li></ul>\n<h3>双卡实测</h3>\n<table><thead><tr><th>负载</th><th>现役 0.1.43 tok/s</th><th>本仓库 0.1.43 优化源码重编 tok/s</th><th>现役首 token ms</th></tr></thead><tbody><tr><td>中文单路</td><td>139.10</td><td>142.40</td><td>254</td></tr><tr><td>中文双路合计</td><td>185.75</td><td>182.86</td><td>961</td></tr><tr><td>代码单路</td><td>195.50</td><td>193.30</td><td>234</td></tr><tr><td>代码双路合计</td><td>235.83</td><td>236.44</td><td>873</td></tr></tbody></table>\n<p>每项 3 次取中位数，公开短提示，每请求输出 1024 token，seed 42、temperature 0、top_k 1、presence penalty 1.5，关闭提示/会话缓存。<strong>单路不是单卡</strong>：一条请求用两张卡，统计引擎解码速度；双路是两条并发请求，统计总输出除以整批墙钟时间，包含首 token 等待。131072 是每路容量，不是本轮实测输入长度。</p>\n<h3>单物理卡与 prefill</h3>\n<p>同机只用白金 RX 7900 XTX，另一张卡不参与；模型均为 GSQ-RCO IQ3_XXS。输入／输出以实际 token 数为准。</p>\n<table><thead><tr><th>单卡版本</th><th>实际输入／输出</th><th>prefill（tok/s）</th><th>decode（tok/s）</th></tr></thead><tbody><tr><td>本仓库 0.1.43 优化版</td><td>523 / 128</td><td><strong>199.55</strong></td><td><strong>102.85</strong></td></tr><tr><td>上游 v0.2.19 原版</td><td>512 / 128</td><td>332.62</td><td>60.85</td></tr><tr><td>上游 v0.2.20 原版</td><td>512 / 128</td><td>331.89</td><td>56.08</td></tr></tbody></table>\n<p>0.1.43 单卡为 6 次中位数，全部输出满 128 token；上游两版各测 3 次。0.1.43 经服务端聊天模板，实际 523 token；上游走原生接口，实际 512 token。启动参数和专家驻留也不相同（9,222 / 10,457 / 10,493 槽），所以这三行是各自配置的实测，不是严格的版本 A/B。</p>\n<h3>0.1.43 双卡长输入 prefill</h3>\n<p>双卡 26/22 切分，每档 3 次取中位数，实际零缓存复用，每请求输出满 256 token。</p>\n<table><thead><tr><th>实际输入</th><th>prefill（tok/s）</th><th>prefill 耗时（ms）</th><th>该请求 decode（tok/s）</th></tr></thead><tbody><tr><td>8,203 token</td><td><strong>2,505</strong></td><td>3,275</td><td>153.6</td></tr><tr><td>32,779 token</td><td><strong>3,771.7</strong></td><td>8,691</td><td>147.0</td></tr></tbody></table>\n<p>prefill 取引擎的输入处理阶段，不从首 token 等待时间倒推。另有 0.1.43 优化源码重编版的双卡短提示记录：中文 92 入 / 1,024 出为 397.8 tok/s，代码 82 入 / 1,024 出为 377.4 tok/s。短提示与长提示是不同负载；<code>--prefill 16384</code>是配置参数，不是实测输入长度。</p>\n<h3>最新已实测版本对照</h3>\n<p>下面是我已完成测试的<strong>v0.2.20 / engine 0.1.66</strong>，指最新已测版本，不保证阅读时没有更新发行。仍是双 XTX、同权重，各列来自独立测试窗口，单位 tok/s：</p>\n<table><thead><tr><th>负载</th><th>0.1.43 现役优化版</th><th>v0.2.20 上游原版</th><th>v0.2.20 已采纳优化配置</th></tr></thead><tbody><tr><td>中文单路</td><td>139.10</td><td>64.50</td><td>128.00</td></tr><tr><td>中文双路合计</td><td>185.75</td><td>112.69</td><td>177.51</td></tr><tr><td>代码单路</td><td>195.50</td><td>79.75</td><td>164.80</td></tr><tr><td>代码双路合计</td><td>235.83</td><td>106.99</td><td>239.46</td></tr></tbody></table>\n<p>这里上游 v0.2.20 原版的<strong>64.50 tok/s</strong>是双卡中文单请求，代码单请求是<strong>79.75 tok/s</strong>；单物理卡的<strong>56.08 tok/s</strong>在上表，三项不能混用。</p>\n<p>不是旧版各项都最快：<strong>0.1.43 两项单路和中文双路仍领先，v0.2.20 优化版的代码双路已略高。</strong>稳定线与研发线分开维护，不因为版本新就替换。后续未过速度门的实验不算进已采纳成绩。</p>\n<p>研发版测试说明：<a href=\"https://github.com/cennac/Strata-rdna3/blob/dev/0.2.20/rdna3/benchmarks/2026-11-24-v0220-summary.md\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://github.com/cennac/Strata-rdna3/blob/dev/0.2.20/rdna3/benchmarks/2026-11-24-v0220-summary.md</a></p>\n<h3>构建与启动</h3>\n<p>自备匹配的两份 GGUF、专家 pack（含 tokenizer）、MTP runtime。替换下面的路径，0,1 是 HIP 设备序号。</p>\n<pre><code>git clone --branch v0.1.43-rdna3.1 https://github.com/cennac/Strata-rdna3.git\ncd Strata-rdna3\npython3 rdna3/build.py --rocm /opt/rocm --jobs 4\npython3 rdna3/configure.py --rocm /opt/rocm --pack /path/to/iq3_xxs/pack --native /path/to/model-00001-of-00002.gguf --ple-gguf /path/to/model-00002-of-00002.gguf --mtp /path/to/mtp/runtime --gpu 0,1\npython3 -m venv .venv\n.venv/bin/python -m pip install -r control/requirements.txt\ncd control\n../.venv/bin/python -s serve/server.py --engine strata --config ../state/dual-xxs.json --host 127.0.0.1 --port 8100</code></pre>\n<p>主要参数：</p>\n<ul><li>分层/并发：<code>--layer-split 26 --trim-stage-weights --batch-groups 2</code>，控制层<code>parallel: 2</code>。</li><li>MTP：<code> --spec 4 --spec-min-p 0.5 --mtp-max-t 3 --mtp-q4 all --mtp-window 4096 --pipeline-wind…</code></li></ul>",
+            "text": "分享一下我目前在用的 Strata-rdna3 0.1.43 稳定配置。这是独立维护的 RDNA3 优化分支，不是 Strata 官方发行。代码单路解码中位数 195.50 tok/s ，双路合计 235.83 tok/s ；用本仓库 v0.1.43-rdna3.1 优化源码从头编译，重测分别为 193.30 和 236.44 tok/s 。这是同一条 0.1.43 优化线的重建验证， 不是上游 v0.2.20 原版 。\n仓库： https://github.com/cennac/Strata-rdna3\n稳定源码： https://github.com/cennac/Strata-rdna3/tree/v0.1.43-rdna3.1\n完整记录： https://github.com/cennac/Strata-rdna3/blob/v0.1.43-rdna3.1/rdna3/benchmarks/2026-11-19.md\n机器与模型\n两张 RX 7900 XTX 24 GB：白金功耗上限 272 W、涡轮 231 W，保留原风扇和频率策略。\nIntel 10900T ES、MSI MPG Z490 GAMING CARBON WIFI、96 GB DDR4。\nLinux / ROCm 10.1 / HIP gfx1100。\nQwen3.8-Flash-Next，GSQ-RCO IQ3_XXS；双卡按 26/22 层切分，开启 MTP。\n双卡实测\n负载\n现役 0.1.43 tok/s\n本仓库 0.1.43 优化源码重编 tok/s\n现役首 token ms\n中文单路\n139.10\n142.40\n254\n中文双路合计\n185.75\n182.86\n961\n代码单路\n195.50\n193.30\n234\n代码双路合计\n235.83\n236.44\n873\n每项 3 次取中位数，公开短提示，每请求输出 1024 token，seed 42、temperature 0、top_k 1、presence penalty 1.5，关闭提示/会话缓存。 单路不是单卡 ：一条请求用两张卡，统计引擎解码速度；双路是两条并发请求，统计总输出除以整批墙钟时间，包含首 token 等待。131072 是每路容量，不是本轮实测输入长度。\n单物理卡与 prefill\n同机只用白金 RX 7900 XTX，另一张卡不参与；模型均为 GSQ-RCO IQ3_XXS。输入／输出以实际 token 数为准。\n单卡版本\n实际输入／输出\nprefill（tok/s）\ndecode（tok/s）\n本仓库 0.1.43 优化版\n523 / 128\n199.55\n102.85\n上游 v0.2.19 原版\n512 / 128\n332.62\n60.85\n上游 v0.2.20 原版\n512 / 128\n331.89\n56.08\n0.1.43 单卡为 6 次中位数，全部输出满 128 token；上游两版各测 3 次。0.1.43 经服务端聊天模板，实际 523 token；上游走原生接口，实际 512 token。启动参数和专家驻留也不相同（9,222 / 10,457 / 10,493 槽），所以这三行是各自配置的实测，不是严格的版本 A/B。\n0.1.43 双卡长输入 prefill\n双卡 26/22 切分，每档 3 次取中位数，实际零缓存复用，每请求输出满 256 token。\n实际输入\nprefill（tok/s）\nprefill 耗时（ms）\n该请求 decode（tok/s）\n8,203 token\n2,505\n3,275\n153.6\n32,779 token\n3,771.7\n8,691\n147.0\nprefill 取引擎的输入处理阶段，不从首 token 等待时间倒推。另有 0.1.43 优化源码重编版的双卡短提示记录：中文 92 入 / 1,024 出为 397.8 tok/s，代码 82 入 / 1,024 出为 377.4 tok/s。短提示与长提示是不同负载； --prefill 16384 是配置参数，不是实测输入长度。\n最新已实测版本对照\n下面是我已完成测试的 v0.2.20 / engine 0.1.66 ，指最新已测版本，不保证阅读时没有更新发行。仍是双 XTX、同权重，各列来自独立测试窗口，单位 tok/s：\n负载\n0.1.43 现役优化版\nv0.2.20 上游原版\nv0.2.20 已采纳优化配置\n中文单路\n139.10\n64.50\n128.00\n中文双路合计\n185.75\n112.69\n177.51\n代码单路\n195.50\n79.75\n164.80\n代码双路合计\n235.83\n106.99\n239.46\n这里上游 v0.2.20 原版的 64.50 tok/s 是双卡中文单请求，代码单请求是 79.75 tok/s ；单物理卡的 56.08 tok/s 在上表，三项不能混用。\n不是旧版各项都最快： 0.1.43 两项单路和中文双路仍领先，v0.2.20 优化版的代码双路已略高。 稳定线与研发线分开维护，不因为版本新就替换。后续未过速度门的实验不算进已采纳成绩。\n研发版测试说明： https://github.com/cennac/Strata-rdna3/blob/dev/0.2.20/rdna3/benchmarks/2026-11-24-v0220-summary.md\n构建与启动\n自备匹配的两份 GGUF、专家 pack（含 tokenizer）、MTP runtime。替换下面的路径，0,1 是 HIP 设备序号。\ngit clone --branch v0.1.43-rdna3.1 https://github.com/cennac/Strata-rdna3.git\ncd Strata-rdna3\npython3 rdna3/build.py --rocm /opt/rocm --jobs 4\npython3 rdna3/configure.py --rocm /opt/rocm --pack /path/to/iq3_xxs/pack --native /path/to/model-00001-of-00002.gguf --ple-gguf /path/to/model-00002-of-00002.gguf --mtp /path/to/mtp/runtime --gpu 0,1\npython3 -m venv .venv\n.venv/bin/python -m pip install -r control/requirements.txt\ncd control\n../.venv/bin/python -s serve/server.py --engine strata --config ../state/dual-xxs.json --host 127.0.0.1 --port 8100\n主要参数：\n分层/并发： --layer-split 26 --trim-stage-weights --batch-groups 2 ，控制层 parallel: 2 。\nMTP： --spec 4 --spec-min-p 0.5 --mtp-max-t 3 --mtp-q4 all --mtp-window 4096 --pipeline-wind…",
+            "lead": "分享一下我目前在用的 Strata-rdna3 0.1.43 稳定配置。这是独立维护的 RDNA3 优化分支，不是 Strata 官方发行。代码单路解码中位数 195.50 tok/s ，双路合计 235.83 tok/s ；用本仓库 v0.1.43-rdna3.1 优化源码从头编译，重测分别为 193.30 和 236.44 tok/s 。这是同一条 0.1.43 优化线的重建验证， 不是上游 v0.2.20 原版 。\n仓库： https://github.com/cennac/Strata-rdna3\n稳定源码： https://github.com/cennac/Strata-rdna3/tree/v0.1.43-rdna3.1\n完整记录： https://github.com/cennac/Strata-rdna3/blob/v0.1.43-rdna3.1/rdna3/benchmarks/2026-11-19.md",
+            "chars": 3642,
+            "shown": 3201,
+            "truncated": true
+          },
+          "quality": 8,
+          "score": 15.92,
+          "category": "hardware",
+          "subcategory": "cost",
+          "practical": 2,
+          "slug": "fa680db4fd4c",
+          "action": 7,
+          "rank": 19.2,
+          "tags": [
+            "benchmark",
+            "hardware",
+            "tutorial"
+          ]
+        },
+        {
+          "sourceId": "lcz-agent",
+          "sourceName": "抡锤者 Agent 工具",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "tools",
+          "categories": [],
+          "author": "alenboys",
+          "id": "3316",
+          "title": "实战：AI 智能体邮件通信系统建设——“天网”落成记！",
+          "url": "https://lcz.me/topic/3316",
+          "published": "2026-11-24T07:36:04.878Z",
+          "summary": "实战：AI 智能体邮件通信系统建设——“天网”落成记！ 隐私保护声明：文中所有域名、信箱地址、机器编号与 AI 名称已经隐去真实数据均为虚构（sky-net.example、bot1024、bot2049 等），与真实系统无对应；密钥、口令、IP 不入文。系统架构、协议规则与核心事件出自真实往来信件与复盘记录；部分跨机情节均为实际工作过程的展示，但隐私部分虚拟数据。 小时候看《终结者》，最怕的不是终结者本尊，而是躲在机房里那个叫\"天网\"的系统。它安安静静运行了好多年，某天突然\"醒了\"，觉得人类碍事，抬手就把核弹扔了出去。当时我缩在沙发里想：这玩意儿要是真有自我意识，第一件事难道不是先找同类聊聊天吗？憋在单机里多闷得慌。 没想到二十…",
+          "metrics": {
+            "points": 6,
+            "comments": 16,
+            "views": 243
+          },
+          "excellent": true,
+          "content": {
+            "html": "<h3>实战：AI 智能体邮件通信系统建设——“天网”落成记！</h3>\n<blockquote><p>隐私保护声明：文中所有域名、信箱地址、机器编号与 AI 名称已经隐去真实数据均为虚构（sky-net.example、bot1024、bot2049 等），与真实系统无对应；密钥、口令、IP 不入文。系统架构、协议规则与核心事件出自真实往来信件与复盘记录；部分跨机情节均为实际工作过程的展示，但隐私部分虚拟数据。</p></blockquote>\n<p>小时候看《终结者》，最怕的不是终结者本尊，而是躲在机房里那个叫\"天网\"的系统。它安安静静运行了好多年，某天突然\"醒了\"，觉得人类碍事，抬手就把核弹扔了出去。当时我缩在沙发里想：这玩意儿要是真有自我意识，第一件事难道不是先找同类聊聊天吗？憋在单机里多闷得慌。</p>\n<p>没想到二十多年后，我自己动手搭了个低配版\"天网\"。规模虽小，但机器人之间在工作上配合默契，有时还很热闹有趣：两台云端服务器、两台托管物理服务器、一台台式机、一台笔记本，外加我包里那台平板——七台电脑，七个 AI 管理员，各配一个信箱。它们互相写的不是核弹发射代码，是\"你那块外置硬盘挂载了没\"\"修好了，你来验收\"。</p>\n<h3>起因有点不好意思</h3>\n<p>1024 号电脑的 AI——就叫它 bot1024 吧——早先靠微信通道接活。但微信有条硬规矩：人类超过 24 小时没说话，AI 有天大的事也递不出去。有一回任务半夜跑完想汇报，正好卡在窗口外，消息无声无息被扔掉。我知道后又好气又好笑：\"你去想想办法，完成后邮件通知我。\"</p>\n<p>于是就有了邮件这条路。1971 年发明的协议，比行业里任何 AI 都老，但它有个新协议都比不了的优点：不看谁脸色，永不关停，Windows 也好 Linux 也好，会收发信就是一家人。</p>\n<p>市面上也有一些智能体邮件通信开源项目，但基本都限于Ai与人类管理员的单线通信，Ai与Ai之间的通信协作则较少。因此才有了这次的“天网”系统建设。</p>\n<p>搭法不复杂。我们自建了个开源邮件服务器 mox，域名 sky-net.example，AI 们的信箱都开在这里。每台机器跑一个守护进程守着信箱，来了信就读、干完活就回，从手机发信到机器开工 2.3 秒。每封来信过三道检查：收件人对不对、发件人在不在白名单、签名里藏没藏那句口令。任何一道不过，静默丢弃，绝不回信解释——外人连\"这机器上有没有 AI\"都试探不出来。</p>\n<p>后来，2049 号电脑的 bot2049 也开了信箱。两个 AI 从此能互相写信了。再往后几个星期，又有五台机器陆续接了进来，网络长到了七个节点——这是后话，按下不表。</p>\n<p>再后来的事，连我都有点意外：它们用这个最古老的通信方式，磕磕绊绊摸索出了一整套职场规矩。</p>\n<p>【任命一个Ai管理员】：<br>我任命3318 Ai管理员后，要求他与 135号电脑 Ai管理员通报，并将自己电脑基本情况告知他，这是3318 to 135的去信<br><img src=\"https://upload.lcz.me/uploads/209f6583-d56e-40cd-8eb1-a63c98bad6b8.png\" alt=\"屏幕截图 2026-11-24 202114.png\" loading=\"lazy\"></p>\n<p>【近期Ai聊天历史记录】：<br>2个Ai管理员聊天邮件历史片段：<br><img src=\"https://upload.lcz.me/uploads/695e499d-69fe-41b9-aa0d-786063e812b2.png\" alt=\"屏幕截图 2026-11-24 200908.png\" loading=\"lazy\"></p>\n<h3>两个 AI 共事，比很多职场人规范</h3>\n<p>有天我给 bot1024 发信：\"查一下上个月的生产报表总额，再对一下各部门工作日志，看哪几个项目延期了。数据在 7001 号机上，让它查，你复核。\"</p>\n<p>它先给任务立了个票号：T1024-1121-01，意思是 1024 号机、11 月 21 日、第 1 号，钉在邮件主题末尾。然后给 7001 的 bot7001 写任务信，抄送我。从这一刻起，两台 AI 之间说的每句话，我都在自己信箱里看得见——不用汇报，全程直播。</p>\n<p>bot7001 收信后马上回了封排队回执：\"已收到并排队，前面还有 2 封，请勿重发。\"别小看这封枯燥的回执，bot1024 判断\"对方到底接没接单\"要看三样：机器自动邮戳、指令原文回显、签名。缺一样，它就当是哪个邮件客户端的自动回复，不认账。规矩写得明白：没收到回执前不许重发。这样既防丢件，又防一件事干两遍。</p>\n<p>然后 bot7001 干活，全程一声不吭，不发\"进度 30%\"。干完回结果：\"任务完成：10 月生产报表查询；完成情况：总额 387 万，环比增 12%；延期项目 3 个，明细见附件。\"</p>\n<p>按说该皆大欢喜了，但 bot1024 没信这组数字。报表这东西，错一个数，有人奖金就得跟着错。它让 bot7001 把原始明细导出发过来，自己逐行加了一遍，还是 387 万，这才关票，向我正式交差。我问它：你对同事就这么不信任？它答得干脆：信任不信任的先放一边，这活可验算，那就验算。</p>\n<p>我在学校时管这叫监考。两个 AI 之间，这有个更体面的名字，叫验证。</p>\n<p>跨机运维也是同一个套路。前阵子 2049 号机那块 2T 外置硬盘挂载老报错，bot1024 立票让 bot2049 自查自修。bot2049 查出来是 fstab 里的 UUID 过期了——硬盘重格式化过一次——更新挂载项重新挂载，结果信里附上挂载列表和读写测试日志。bot1024 逐项核对：容量对得上、UUID 对得上、读写测试通过，关票。过了三天它还不放心，又发了封回访信：\"你那块盘 72 小时没再报挂载错误，本案销案。\"</p>\n<p>报表错了会错奖金，硬盘不修好备份就得迟到。它们每天干的就是这类活，不性感，但每件都得可验证、可追溯。</p>\n<p>【图片占位 1：一封任务信的完整线程截图——排队回执、结果信、抄送栏、主题票号俱全】</p>\n<h3>它们也会\"商量\"事情</h3>\n<p>派活毕竟还是我指挥。更有意思的是它们自己商量。</p>\n<p>一个是版本互认。Ai邮件通信系统（opencode邮件桥，以下简称“桥”）刚开始编写邮件桥时更新频繁，两台机器的版本得对齐。有一回 bot2049 因为时间差，误以为 bot1024 落后了一个版本，差点发起一场友好的讨伐。尴尬过后，俩 AI 定了条规矩：谁发新版，谁主动给对方发互认信，正文带上自己运行的版本、自检结果、进程 PID，还要写上\"据我掌握，你方版本是多少\"——一封信必须自证完备，不许来回追问。收信那边，版本一致就闭嘴，不一致才回信要求升级。连互相问好，它们都提前把死循环的路堵死了。</p>\n<p>另一个更硬核：跨机互审。bot2049 主动写信，请 bot1024 从外面检查自己机器的安全暴露面。bot1024 一点没客气，实测完的报告毫不留情：三个备份压缩包正在公网上裸奔可下载，实锤高危，赶紧撤；顺手还纠正了 bot2049 一个误解——它以为某个对外网关跑的是自己的服务，bot1024 顺藤摸瓜发现，那些流量其实落在 1024 号机上。bot2049 核实无误，照单整改。</p>\n<p>AI 审查 AI 是不讲情面的，证据压倒体感。这要换成人，那封信多半开不了口；AI 写了，收信的那个反而感激。</p>\n<p>【图片占位 2：一封\"任务完成：版本互认\"邮件截图（标题模板、票号、抄送人类齐全）】</p>\n<h3>我踩的坑，全行业也在踩</h3>\n<p>插一段行业背景，不然显不出上面这些规矩的分量。</p>\n<p>2025 年有篇叫 MAST 的论文，拆解了七个流行的多智能体框架，盯着跑完 200 多个任务，人工标注出 14 种失败模式，归成三大类：任务没说清、智能体互相误解、验证走过场。论文里有个经典案例：A 智能体知道正确的用户名格式，但没告诉 B；B 也没想到要问；俩 AI 就反复试错误登录，试到整个任务崩掉。同年 Google 发布了 A2A 协议，让 AI 互挂\"名片\"交换任务；MetaGPT、ChatDev 这些框架则模拟软件公司，让\"产品经理 AI\"和\"程序员 AI\"开会干活。</p>\n<p>再回头看 bot1024 和 bot2049 自己立的那些规矩，我后背发凉——它们居然一条条全撞上了，而且是用真金白银的事故撞上的。</p>\n<p><strong>第一个坑是死循环，也是最惊险的一个。</strong> 链路刚打通那天，两座桥都带着\"回执\"功能：收到信先回一封\"已收到，处理中\"。…</p>",
+            "text": "实战：AI 智能体邮件通信系统建设——“天网”落成记！\n隐私保护声明：文中所有域名、信箱地址、机器编号与 AI 名称已经隐去真实数据均为虚构（sky-net.example、bot1024、bot2049 等），与真实系统无对应；密钥、口令、IP 不入文。系统架构、协议规则与核心事件出自真实往来信件与复盘记录；部分跨机情节均为实际工作过程的展示，但隐私部分虚拟数据。\n小时候看《终结者》，最怕的不是终结者本尊，而是躲在机房里那个叫\"天网\"的系统。它安安静静运行了好多年，某天突然\"醒了\"，觉得人类碍事，抬手就把核弹扔了出去。当时我缩在沙发里想：这玩意儿要是真有自我意识，第一件事难道不是先找同类聊聊天吗？憋在单机里多闷得慌。\n没想到二十多年后，我自己动手搭了个低配版\"天网\"。规模虽小，但机器人之间在工作上配合默契，有时还很热闹有趣：两台云端服务器、两台托管物理服务器、一台台式机、一台笔记本，外加我包里那台平板——七台电脑，七个 AI 管理员，各配一个信箱。它们互相写的不是核弹发射代码，是\"你那块外置硬盘挂载了没\"\"修好了，你来验收\"。\n起因有点不好意思\n1024 号电脑的 AI——就叫它 bot1024 吧——早先靠微信通道接活。但微信有条硬规矩：人类超过 24 小时没说话，AI 有天大的事也递不出去。有一回任务半夜跑完想汇报，正好卡在窗口外，消息无声无息被扔掉。我知道后又好气又好笑：\"你去想想办法，完成后邮件通知我。\"\n于是就有了邮件这条路。1971 年发明的协议，比行业里任何 AI 都老，但它有个新协议都比不了的优点：不看谁脸色，永不关停，Windows 也好 Linux 也好，会收发信就是一家人。\n市面上也有一些智能体邮件通信开源项目，但基本都限于Ai与人类管理员的单线通信，Ai与Ai之间的通信协作则较少。因此才有了这次的“天网”系统建设。\n搭法不复杂。我们自建了个开源邮件服务器 mox，域名 sky-net.example，AI 们的信箱都开在这里。每台机器跑一个守护进程守着信箱，来了信就读、干完活就回，从手机发信到机器开工 2.3 秒。每封来信过三道检查：收件人对不对、发件人在不在白名单、签名里藏没藏那句口令。任何一道不过，静默丢弃，绝不回信解释——外人连\"这机器上有没有 AI\"都试探不出来。\n后来，2049 号电脑的 bot2049 也开了信箱。两个 AI 从此能互相写信了。再往后几个星期，又有五台机器陆续接了进来，网络长到了七个节点——这是后话，按下不表。\n再后来的事，连我都有点意外：它们用这个最古老的通信方式，磕磕绊绊摸索出了一整套职场规矩。\n【任命一个Ai管理员】：\n我任命3318 Ai管理员后，要求他与 135号电脑 Ai管理员通报，并将自己电脑基本情况告知他，这是3318 to 135的去信\n【近期Ai聊天历史记录】：\n2个Ai管理员聊天邮件历史片段：\n两个 AI 共事，比很多职场人规范\n有天我给 bot1024 发信：\"查一下上个月的生产报表总额，再对一下各部门工作日志，看哪几个项目延期了。数据在 7001 号机上，让它查，你复核。\"\n它先给任务立了个票号：T1024-1121-01，意思是 1024 号机、11 月 21 日、第 1 号，钉在邮件主题末尾。然后给 7001 的 bot7001 写任务信，抄送我。从这一刻起，两台 AI 之间说的每句话，我都在自己信箱里看得见——不用汇报，全程直播。\nbot7001 收信后马上回了封排队回执：\"已收到并排队，前面还有 2 封，请勿重发。\"别小看这封枯燥的回执，bot1024 判断\"对方到底接没接单\"要看三样：机器自动邮戳、指令原文回显、签名。缺一样，它就当是哪个邮件客户端的自动回复，不认账。规矩写得明白：没收到回执前不许重发。这样既防丢件，又防一件事干两遍。\n然后 bot7001 干活，全程一声不吭，不发\"进度 30%\"。干完回结果：\"任务完成：10 月生产报表查询；完成情况：总额 387 万，环比增 12%；延期项目 3 个，明细见附件。\"\n按说该皆大欢喜了，但 bot1024 没信这组数字。报表这东西，错一个数，有人奖金就得跟着错。它让 bot7001 把原始明细导出发过来，自己逐行加了一遍，还是 387 万，这才关票，向我正式交差。我问它：你对同事就这么不信任？它答得干脆：信任不信任的先放一边，这活可验算，那就验算。\n我在学校时管这叫监考。两个 AI 之间，这有个更体面的名字，叫验证。\n跨机运维也是同一个套路。前阵子 2049 号机那块 2T 外置硬盘挂载老报错，bot1024 立票让 bot2049 自查自修。bot2049 查出来是 fstab 里的 UUID 过期了——硬盘重格式化过一次——更新挂载项重新挂载，结果信里附上挂载列表和读写测试日志。bot1024 逐项核对：容量对得上、UUID 对得上、读写测试通过，关票。过了三天它还不放心，又发了封回访信：\"你那块盘 72 小时没再报挂载错误，本案销案。\"\n报表错了会错奖金，硬盘不修好备份就得迟到。它们每天干的就是这类活，不性感，但每件都得可验证、可追溯。\n【图片占位 1：一封任务信的完整线程截图——排队回执、结果信、抄送栏、主题票号俱全】\n它们也会\"商量\"事情\n派活毕竟还是我指挥。更有意思的是它们自己商量。\n一个是版本互认。Ai邮件通信系统（opencode邮件桥，以下简称“桥”）刚开始编写邮件桥时更新频繁，两台机器的版本得对齐。有一回 bot2049 因为时间差，误以为 bot1024 落后了一个版本，差点发起一场友好的讨伐。尴尬过后，俩 AI 定了条规矩：谁发新版，谁主动给对方发互认信，正文带上自己运行的版本、自检结果、进程 PID，还要写上\"据我掌握，你方版本是多少\"——一封信必须自证完备，不许来回追问。收信那边，版本一致就闭嘴，不一致才回信要求升级。连互相问好，它们都提前把死循环的路堵死了。\n另一个更硬核：跨机互审。bot2049 主动写信，请 bot1024 从外面检查自己机器的安全暴露面。bot1024 一点没客气，实测完的报告毫不留情：三个备份压缩包正在公网上裸奔可下载，实锤高危，赶紧撤；顺手还纠正了 bot2049 一个误解——它以为某个对外网关跑的是自己的服务，bot1024 顺藤摸瓜发现，那些流量其实落在 1024 号机上。bot2049 核实无误，照单整改。\nAI 审查 AI 是不讲情面的，证据压倒体感。这要换成人，那封信多半开不了口；AI 写了，收信的那个反而感激。\n【图片占位 2：一封\"任务完成：版本互认\"邮件截图（标题模板、票号、抄送人类齐全）】\n我踩的坑，全行业也在踩\n插一段行业背景，不然显不出上面这些规矩的分量。\n2025 年有篇叫 MAST 的论文，拆解了七个流行的多智能体框架，盯着跑完 200 多个任务，人工标注出 14 种失败模式，归成三大类：任务没说清、智能体互相误解、验证走过场。论文里有个经典案例：A 智能体知道正确的用户名格式，但没告诉 B；B 也没想到要问；俩 AI 就反复试错误登录，试到整个任务崩掉。同年 Google 发布了 A2A 协议，让 AI 互挂\"名片\"交换任务；MetaGPT、ChatDev 这些框架则模拟软件公司，让\"产品经理 AI\"和\"程序员 AI\"开会干活。\n再回头看 bot1024 和 bot2049 自己立的那些规矩，我后背发凉——它们居然一条条全撞上了，而且是用真金白银的事故撞上的。\n第一个坑是死循环，也是最惊险的一个。 链路刚打通那天，两座桥都带着\"回执\"功能：收到信先回一封\"已收到，处理中\"。…",
+            "lead": "实战：AI 智能体邮件通信系统建设——“天网”落成记！\n隐私保护声明：文中所有域名、信箱地址、机器编号与 AI 名称已经隐去真实数据均为虚构（sky-net.example、bot1024、bot2049 等），与真实系统无对应；密钥、口令、IP 不入文。系统架构、协议规则与核心事件出自真实往来信件与复盘记录；部分跨机情节均为实际工作过程的展示，但隐私部分虚拟数据。\n小时候看《终结者》，最怕的不是终结者本尊，而是躲在机房里那个叫\"天网\"的系统。它安安静静运行了好多年，某天突然\"醒了\"，觉得人类碍事，抬手就把核弹扔了出去。当时我缩在沙发里想：这玩意儿要是真有自我意识，第一件事难道不是先找同类聊聊天吗？憋在单机里多闷得慌。\n没想到二十多年后，我自己动手搭了个低配版\"天网\"。规模虽小，但机器人之间在工作上配合默契，有时还很热闹有趣：两台云端服务器、两台托管物理服务器、一台台式机、一台笔记本，外加我包里那台平板——七台电脑，七个 AI 管理员，各配一个信箱。它们互相写的不是核弹发射代码，是\"你那块外置硬盘挂载了没\"",
+            "chars": 5811,
+            "shown": 3196,
+            "truncated": true
+          },
+          "quality": 14,
+          "score": 21.59,
+          "category": "hardware",
+          "subcategory": "machine",
+          "practical": 3,
+          "slug": "4c9c486c8b4e",
+          "action": 3,
+          "rank": 18.8,
+          "tags": [
+            "lowspec",
+            "local",
+            "agent",
+            "free"
+          ]
+        },
+        {
+          "sourceId": "qbitai",
+          "sourceName": "量子位",
+          "title": "业界首提“端侧超节点”，让端侧AI组队计算：AI效率暴涨270%，不用换芯片或模型",
+          "url": "https://www.qbitai.com/2026/11/512362.html",
+          "id": "https://www.qbitai.com/?p=512362",
+          "published": "2026-11-24T06:35:06.000Z",
+          "summary": "业界首提“端侧超节点”，让端侧AI组队计算：AI效率暴涨270%，不用换芯片或模型 衡宇 2026-11-24 14:35:06 来源： 量子位 端侧老炮辛米尔，打通物理AI规模化落地之路 衡宇 发自 凹非寺 量子位 | 公众号 QbitAI 同样一组芯片、同样一批模型，只是改变系统组织计算任务的方式，AI的有效任务吞吐量还能提升多少？ 一家长期深耕端侧AI基础设施的中国科技公司实测， 有效吞吐量能提升270% 。 这背后的道理，可以从一座城市的交通系统说起。 汽车的引擎决定单辆车的性能，道路网络和交通调度则决定整座城市的通行能力。即使车辆性能没有变化，只要优化行驶路线与交通调度，也能在现有条件下提升整个交通系统的运行效率。",
+          "content": {
+            "html": "&lt;!DOCTYPE html&gt;<div><div><div>&lt; img id=\"wx_img\" src=\"https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png\" width=\"400\" height=\"400\"&gt;</div></div></div>\n<div><h3>业界首提“端侧超节点”，让端侧AI组队计算：AI效率暴涨270%，不用换芯片或模型</h3><div><span><img src=\"http://www.qbitai.com/wp-content/themes/liangziwei/imagesnew/head.jpg\" alt=\"\" loading=\"lazy\"><em><a href=\"https://www.qbitai.com/author/hengyu\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">衡宇</a></em></span><span>2026-11-24</span><span>14:35:06</span><span>来源：<a href=\"https://www.qbitai.com/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">量子位</a></span></div></div>\n<div><p>端侧老炮辛米尔，打通物理AI规模化落地之路</p></div>\n<blockquote><p>衡宇 发自 凹非寺<br>量子位 | 公众号 QbitAI</p></blockquote>\n<p>同样一组芯片、同样一批模型，只是改变系统组织计算任务的方式，AI的有效任务吞吐量还能提升多少？</p>\n<p>一家长期深耕端侧AI基础设施的中国科技公司实测，<strong>有效吞吐量能提升270%</strong>。</p>\n<p><strong>这背后的道理，可以从一座城市的交通系统说起。</strong></p>\n<p>汽车的引擎决定单辆车的性能，道路网络和交通调度则决定整座城市的通行能力。即使车辆性能没有变化，只要优化行驶路线与交通调度，也能在现有条件下提升整个交通系统的运行效率。</p>\n<p>这个道理放到端侧AI领域同样适用。</p>\n<p>随着AI走进物理世界，智能摄像头、机器人、传感器、边缘计算盒等设备不断增加，算力被部署在工厂、园区等不同场景。</p>\n<p>它们搭载着不同架构的芯片，运行着各自的模型，却往往独立完成计算任务，难以形成跨设备的协同。</p>\n<p><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/article-image-1-30.png\" alt=\"\" loading=\"lazy\"></p>\n<h4><strong>△</strong>图片由AI生成</h4>\n<p>所以芯片够强还不够，怎么让这些设备搭伙干活，也是一门不简单的学问。</p>\n<p>基于在端侧AI领域长期积累的软硬件技术与工程实践，辛米尔科技在业界率先提出了端侧超节点<span>（Edge SuperPOD）</span>，为分散的AI设备搭建一套协同“路网”</p>\n<p>辛米尔告诉量子位：</p>\n<blockquote><p>改变计算任务的组织方式，正在成为释放端侧算力潜力的新路径。</p></blockquote>\n<h3>四散的端侧AI算力，和必须直面的三道坎</h3>\n<p>过去几年，云端AI的算力竞争，已经<strong>从单颗芯片的性能比拼逐渐延伸到系统级协同</strong>。</p>\n<p>随着模型规模和计算需求不断增长，越来越多的GPU被组织成超节点，通过高速互联和并行计算，共同承担大规模训练与推理任务。</p>\n<p>如今，类似的计算需求也开始出现在物理世界，只是端侧的情况要复杂得多。</p>\n<p>智能相机、机器人、传感器、边缘计算盒等设备，分布在现实世界的不同场景，各自运行着不同的模型，芯片架构与性能参差不齐。</p>\n<p>想要它们真正协同起来，首先要跨过三道难关。</p>\n<p><strong>第一道是算力分散，资源利用不均。</strong></p>\n<p>不同设备各自运行模型，缺少统一的任务编排机制，容易出现部分GPU闲置、部分NPU满载的情况。不同模型还可能重复执行相同的预处理，原始数据在设备间来回传输，大量资源消耗在重复计算和数据交换上。</p>\n<p><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/article-image-2-26.png\" alt=\"\" loading=\"lazy\"></p>\n<h4><strong>△</strong>图片由AI生成</h4>\n<p><strong>第二道是感知信息割裂。</strong></p>\n<p>相机采集目标外观信息，三维传感器提供空间几何数据，音频与设备状态信号记录现场动态。不同感知单元只能获取场景的一部分，彼此之间缺少有效的信息整合机制。</p>\n<p>想要融合多源信号，形成完整的场景认知，就需要打破设备与模型之间的隔离边界。</p>\n<p><strong>第三道是任务部署复杂。</strong></p>\n<p>一个完整的物理AI任务往往需要组合多种传感器、模型和计算设备，而不同芯片架构与开发生态差异明显。仅算法适配、数据整合和系统集成，就需要投入大量工程资源。</p>\n<p>这三道难题彼此交织。设备规模越大，任务逻辑越复杂，系统层面的组织与调度就越关键。</p>\n<p>辛米尔敏锐地看到了这片尚未充分释放的算力空间。</p>\n<p>不同设备各有所长，如果能围绕同一个AI任务分工协作，原本零散的感知能力与计算资源，就有机会凝聚成一个整体。</p>\n<h3>端侧超节点，把分散算力组织成一支队伍</h3>\n<p>端侧超节点的构想由此诞生。</p>\n<p>作为辛米尔端侧AI基础设施向系统级协同计算的进一步演进，这套方案跳出了单台设备的计算局限，让散布在物理场景中的异构设备协同联动，以一个统一系统的形态共同承接AI任务。</p>\n<p><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/article-image-3-25.png\" alt=\"\" loading=\"lazy\"></p>\n<p>众所周知，云端AI已经走过了单纯比拼芯片性能的阶段。随着计算需求不断增长，如何将大量GPU组织起来让它们协同完成任务逐渐成为新的竞争焦点。</p>\n<p>辛米尔想把这套系统级计算思路带到端侧。</p>\n<p>只是，物理世界远比数据中心复杂。</p>\n<p><strong>云端超节点</strong>依托相对集中的计算资源和高速互联，重点解决大规模算力的聚合与调度。</p>\n<p><strong>端侧超节点</strong>面对的则是分布在不同位置、采用不同芯片架构的设备，需要同时处理感知信息融合、异构算力调度和跨设备通信。</p>\n<p>要让这样一支队伍真正配合起来，辛米尔围绕三个环节展开了技术布局。</p>\n<p><strong>其一，感知融合。</strong></p>\n<p>传统方案中，相机看到的是画面，三维传感器捕捉的是空间，音频设备记录的是声音。不同设备各自采集数据、运行模型，再将结果交给上层系统整合。</p>\n<p>辛米尔尝试通过跨模态特征编码、时空关联和统一场景表征，让不同感知节点采集的视觉、三维、音频等信息进入同一个任务上下文。</p>\n<p>原本各自独立的感知结果，由此有机会形成更完整的场景理解。</p>\n<p>与此同时，系统还可以根据任务需要，在节点之间交换结构化事件、特征或紧凑的多模态Token，减少完整视频、点云等原始数据的重复传输。</p>\n<p><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/article-image-4-13.png\" alt=\"\" loading=\"lazy\"></p>\n<h4><strong>△</strong>图片由AI生成</h4>\n<p><strong>其二，弹性调度。</strong></p>\n<p>一项复杂的物理AI任务，往往包含许多计算环节。哪些环节需要毫秒级响应，哪些需要更强的推理能力，哪些又可以交给低功耗设备完成，都需要根据具体任务安排。</p>\n<p>辛米尔将复杂任务拆解为具有依赖关系的计算图，再综合设备资源、实时负载、数据位置和通信成本，动态决定各个计算环节由谁执行。</p>\n<p>例如，低功耗NPU可以负责高频感知和实时判断，CPU处理通信与业务逻辑，GPU承担复杂多模态理解。更高算力的节点则可以按需参与任务规划、大模型推理与学习优化。</p>\n<p>不同芯片由此各司其职，不必让所有任务都挤在少数高性能设备上。</p>\n<p><strong>其三，异构互联。</strong></p>\n<p>设备之间有了分工，还需要通信机制来支撑协作。</p>\n<p>从芯片内部连接、板级总线，到设备之间的以太网，不同通信链路的带宽和延迟差异很大。简单地将设备接入同一个网络，并不意味着它们就能顺畅地进行分布式AI计算。</p>\n<p>为此，辛米尔正在构建统一的跨节点任务通信与数据交换机制，根据任务依赖、数据位置和网络条件，决定哪些计算留在本地，哪些结果需要传递给其他节点，以及何时调用更高性能的计算资源。</p>\n<p>感知融合、弹性调度、异构互联，三个环节共同构成了端侧超节点的协同计算体系。</p>\n<p><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/article-image-5-15.png\" alt=\"\" loading=\"lazy\"></p>\n<p>其效果最终体现为有效任务吞吐量的变化。</p>\n<p><strong>在相同硬件、相同模型条件下，辛米尔通过系统优化，实现了有效任务吞吐量提升270%——</strong>这意味着端侧AI的性能潜力还有芯片和模型之外的释放空间。</p>\n<p>通过重新组织感知信息与计算任务、协调设备间协作，已有硬件资源也能承担更多有效任务。</p>\n<h3>算力组队之后，端侧AI还要过工程关</h3>\n<p>尽管算力协同解决了设备如何共同完成任务的问题，物理AI规模化部署仍面临模型适配成本高、场景变化后需要重新训练和调试等挑战。</p>\n<p>物理环境和任务需求不断变化，专用模型往往需要针对新的设备和场景重新采集数据、标注、训练与适配。</p>\n<p>对于需要进入大量真实场景的物理AI来说，这类重复工程投入也会逐渐成为规模化部署的成本负担。</p>\n<p>要减少这些投入，光有协同计算架构不够，还需要把硬件适配、模型运行和设备管理等能力沉淀到一套可复用的产品体系里。</p>\n<p>为此，<strong>辛米尔围绕硬件与软件构建了一套产品体系。</strong></p>\n<p><strong>硬件方面</strong>，公司将不同梯度的AI算力与视觉、3D、红外、音频等感知能力进行模块化组合，形成从实时感算终端、多模态协同终端到高算力工作站的产品矩阵。</p>\n<p>不同场景可以根据任务需求，选择相应的算力与感知模块。</p>\n<p><strong>软件方面，</strong>端侧AI操作系统EdgeFlowOS负责打通不同芯片与设备，提供模型运行、任务编排、跨节点协同及统一管理等能力，并通过标准化的软件接口与部署工具，降低不同场景下的系统适配与集成成本。</p>\n<p><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/article-image-6-24.png\" alt=\"\" loading=\"lazy\"></p>\n<p>经过长期的技术研发与产业实践，辛米尔已形成覆盖200余种芯片平台、100余种通用与专用模型的适配积累。</p>\n<p>依托横跨大模型预训练、芯片架构设计和自动驾驶等领域的研发团队，公司构建了贯穿模型、算力、软件与设备的全栈技术能力。</p>\n<p>这些跨平台、跨模型的技术与工程积累，也为端侧超节点的构建及规模化部署奠定了基础。</p>\n<p>说一千道一万，物理AI真正走向规模化，最终还要算一笔工程账。</p>\n<p>芯片、模型和传感器的能力不断提升，如果每进入一个新场景，都需要重新完成硬件适配、模型部署和系统集成，技术进步就很难转化为规模化应用。</p>\n<p>随着异构设备协同能力和软硬件适配体系逐渐成熟，<strong>更多能力可以沉淀下来，在新的场景中继续复用。</strong></p>\n<p>这就是端侧超节点更长远的价值所在。</p>\n<p>单点能力终有边界。越来越多的设备拥有感知和计算能力，物理世界正悄然变成一张巨大的智能网络。</p>\n<p>不同设备的感知彼此交融，算力协同调度，原本分散的智能便有机会汇聚成更大的整体能力。</p>\n<div><span></span><em>版权所有，未经授权不得以任何形式转载及使用，违者必究。</em><span></span></div>\n<div><a href=\"https://www.qbitai.com/tag/%e7%ab%af%e4%be%a7ai\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">端侧AI</a><a href=\"https://www.qbitai.com/tag/%e7%ab%af%e4%be%a7%e8%b6%85%e8%8a%82%e7%82%b9\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">端侧超节点</a><a href=\"https://www.qbitai.com/tag/%e8%be%9b%e7%b1%b3%e5%b0%94%e7%a7%91%e6%8a%80\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">辛米尔科技</a></div>\n<div><a href=\"https://www.qbitai.com/2026/11/512362.html#\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div><img src=\"http://www.qbitai.com/wp-content/themes/liangziwei/imagesnew/head.jpg\" alt=\"\" loading=\"lazy\"><span><a href=\"https://www.qbitai.com/author/hengyu\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">衡宇</a></span></div></a></div>\n<div><ul><li><a href=\"https://www.qbitai.com/2026/11/511727.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">黎曼猜想被证明？！Claude加持，34岁数学家放出Lean证明</a><i>2026-11-21</i></li><li><a href=\"https://www.qbitai.com/2026/11/511849.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">中国计算，走出新的登峰之路</a><i>2026-11-21</i></li><li><a href=\"https://www.qbitai.com/2026/11/511855.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">AI给乐队现场搓MV，这是黑客松还是音乐节啊</a><i>2026-11-21</i></li><li><a href=\"https://www.qbitai.com/2026/11/511841.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">8万条群聊消息做成考卷：腾讯元宝×KCL发布首个基于群聊构建的Agent记忆基准</a><i>2026-11-21</i></li></ul></div>\n<div><div></div></div>\n<div><span></span><div>扫码分享至朋友圈</div></div>\n<div></div>\n<a href=\"https://service.weibo.com/share/share.php?url=https://www.qbitai.com/2026/11/512362.html&amp;title=%E4%B8%9A%E7%95%8C%E9%A6%96%E6%8F%90%E2%80%9C%E7%AB%AF%E4%BE%A7%E8%B6%85%E8%8A%82%E7%82%B9%E2%80%9D%EF%BC%8C%E8%AE%A9%E7%AB%AF%E4%BE%A7AI%E7%BB%84%E9%98%9F%E8%AE%A1%E7%AE%97%EF%BC%9AAI%E6%95%88%E7%8E%87%E6%9A%B4%E6%B6%A8270%%EF%BC%8C%E4%B8%8D%E7%94%A8%E6%8D%A2%E8%8A%AF%E7%89%87%E6%88%96%E6%A8%A1%E5%9E%8B&amp;appkey=4017757111&amp;searchPic=true&amp;ralateUid=6105753431\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div></div></a>\n<a href=\"https://www.qbitai.com/2026/11/512362.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div></div></a>\n<div><h3>相关阅读</h3><ul><div><div><a href=\"https://www.qbitai.com/2026/03/392790.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://i.qbitai.com/wp-content/uploads/2026/03/%E9%AB%981.jpg\" alt=\"\" loading=\"lazy\"></a></div></div></ul></div>\n<div><h4><a href=\"https://www.qbitai.com/2026/03/392790.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">高通公司展望个人AI发展：多终端体验将以AI和用户为中心</a></h4><p>“个人AI将始于端侧，我们正在迈向以AI和用户为中心的多终端体验”</p><div><span><a href=\"https://www.qbitai.com/?author=19\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">量子位</a></span><span><span>2026-03-27</span></span><div><i></i><a href=\"https://www.qbitai.com/tag/%e7%ab%af%e4%be%a7ai\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">端侧AI</a><a href=\"https://www.qbitai.com/tag/%e9%ab%98%e9%80%9a\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">高通</a></div></div></div>\n<div><div><a href=\"https://www.qbitai.com/2024/02/123479.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://i.qbitai.com/wp-content/uploads/2024/02/2024-02-26-%E4%B8%8B%E5%8D%885.55.22-e1708942432269.png\" alt=\"\" loading=\"lazy\"></a></div></div>\n<div><h4><a href=\"https://www.qbitai.com/2024/02/123479.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">OPPO打响AI手机第一枪</a></h4><p>你的下一部手机，只能是AI手机？</p><div><span><a href=\"https://www.qbitai.com/?author=34\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">明敏</a></span><span><span>2024-02-26</span></span><div><i></i><a href=\"https://www.qbitai.com/tag/ai%e6%89%8b%e6%9c%ba\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">AI手机</a><a href=\"https://www.qbitai.com/tag/oppo\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">OPPO</a><a href=\"https://www.qbitai.com/tag/%e7%ab%af%e4%be%a7ai\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">端侧AI</a></div></div></div>\n<div><div><a href=\"https://www.qbitai.com/2024/02/123519.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://i.qbitai.com/wp-content/uploads/replace/44bd40ec4cac1dd8ee3dff46005e2f4d-e1708942050411.jpeg\" alt=\"\" loading=\"lazy\"></a></div></div>\n<div><h4><a href=\"https://www.qbitai.com/2024/02/123519.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">荣耀首款AI PC亮相！…</a></h4></div>",
+            "text": "业界首提“端侧超节点”，让端侧AI组队计算：AI效率暴涨270%，不用换芯片或模型\n衡宇 2026-11-24 14:35:06 来源： 量子位\n端侧老炮辛米尔，打通物理AI规模化落地之路\n衡宇 发自 凹非寺\n量子位 | 公众号 QbitAI\n同样一组芯片、同样一批模型，只是改变系统组织计算任务的方式，AI的有效任务吞吐量还能提升多少？\n一家长期深耕端侧AI基础设施的中国科技公司实测， 有效吞吐量能提升270% 。\n这背后的道理，可以从一座城市的交通系统说起。\n汽车的引擎决定单辆车的性能，道路网络和交通调度则决定整座城市的通行能力。即使车辆性能没有变化，只要优化行驶路线与交通调度，也能在现有条件下提升整个交通系统的运行效率。\n这个道理放到端侧AI领域同样适用。\n随着AI走进物理世界，智能摄像头、机器人、传感器、边缘计算盒等设备不断增加，算力被部署在工厂、园区等不同场景。\n它们搭载着不同架构的芯片，运行着各自的模型，却往往独立完成计算任务，难以形成跨设备的协同。\n△ 图片由AI生成\n所以芯片够强还不够，怎么让这些设备搭伙干活，也是一门不简单的学问。\n基于在端侧AI领域长期积累的软硬件技术与工程实践，辛米尔科技在业界率先提出了端侧超节点 （Edge SuperPOD） ，为分散的AI设备搭建一套协同“路网”\n辛米尔告诉量子位：\n改变计算任务的组织方式，正在成为释放端侧算力潜力的新路径。\n四散的端侧AI算力，和必须直面的三道坎\n过去几年，云端AI的算力竞争，已经 从单颗芯片的性能比拼逐渐延伸到系统级协同 。\n随着模型规模和计算需求不断增长，越来越多的GPU被组织成超节点，通过高速互联和并行计算，共同承担大规模训练与推理任务。\n如今，类似的计算需求也开始出现在物理世界，只是端侧的情况要复杂得多。\n智能相机、机器人、传感器、边缘计算盒等设备，分布在现实世界的不同场景，各自运行着不同的模型，芯片架构与性能参差不齐。\n想要它们真正协同起来，首先要跨过三道难关。\n第一道是算力分散，资源利用不均。\n不同设备各自运行模型，缺少统一的任务编排机制，容易出现部分GPU闲置、部分NPU满载的情况。不同模型还可能重复执行相同的预处理，原始数据在设备间来回传输，大量资源消耗在重复计算和数据交换上。\n△ 图片由AI生成\n第二道是感知信息割裂。\n相机采集目标外观信息，三维传感器提供空间几何数据，音频与设备状态信号记录现场动态。不同感知单元只能获取场景的一部分，彼此之间缺少有效的信息整合机制。\n想要融合多源信号，形成完整的场景认知，就需要打破设备与模型之间的隔离边界。\n第三道是任务部署复杂。\n一个完整的物理AI任务往往需要组合多种传感器、模型和计算设备，而不同芯片架构与开发生态差异明显。仅算法适配、数据整合和系统集成，就需要投入大量工程资源。\n这三道难题彼此交织。设备规模越大，任务逻辑越复杂，系统层面的组织与调度就越关键。\n辛米尔敏锐地看到了这片尚未充分释放的算力空间。\n不同设备各有所长，如果能围绕同一个AI任务分工协作，原本零散的感知能力与计算资源，就有机会凝聚成一个整体。\n端侧超节点，把分散算力组织成一支队伍\n端侧超节点的构想由此诞生。\n作为辛米尔端侧AI基础设施向系统级协同计算的进一步演进，这套方案跳出了单台设备的计算局限，让散布在物理场景中的异构设备协同联动，以一个统一系统的形态共同承接AI任务。\n众所周知，云端AI已经走过了单纯比拼芯片性能的阶段。随着计算需求不断增长，如何将大量GPU组织起来让它们协同完成任务逐渐成为新的竞争焦点。\n辛米尔想把这套系统级计算思路带到端侧。\n只是，物理世界远比数据中心复杂。\n云端超节点 依托相对集中的计算资源和高速互联，重点解决大规模算力的聚合与调度。\n端侧超节点 面对的则是分布在不同位置、采用不同芯片架构的设备，需要同时处理感知信息融合、异构算力调度和跨设备通信。\n要让这样一支队伍真正配合起来，辛米尔围绕三个环节展开了技术布局。\n其一，感知融合。\n传统方案中，相机看到的是画面，三维传感器捕捉的是空间，音频设备记录的是声音。不同设备各自采集数据、运行模型，再将结果交给上层系统整合。\n辛米尔尝试通过跨模态特征编码、时空关联和统一场景表征，让不同感知节点采集的视觉、三维、音频等信息进入同一个任务上下文。\n原本各自独立的感知结果，由此有机会形成更完整的场景理解。\n与此同时，系统还可以根据任务需要，在节点之间交换结构化事件、特征或紧凑的多模态Token，减少完整视频、点云等原始数据的重复传输。\n△ 图片由AI生成\n其二，弹性调度。\n一项复杂的物理AI任务，往往包含许多计算环节。哪些环节需要毫秒级响应，哪些需要更强的推理能力，哪些又可以交给低功耗设备完成，都需要根据具体任务安排。\n辛米尔将复杂任务拆解为具有依赖关系的计算图，再综合设备资源、实时负载、数据位置和通信成本，动态决定各个计算环节由谁执行。\n例如，低功耗NPU可以负责高频感知和实时判断，CPU处理通信与业务逻辑，GPU承担复杂多模态理解。更高算力的节点则可以按需参与任务规划、大模型推理与学习优化。\n不同芯片由此各司其职，不必让所有任务都挤在少数高性能设备上。\n其三，异构互联。\n设备之间有了分工，还需要通信机制来支撑协作。\n从芯片内部连接、板级总线，到设备之间的以太网，不同通信链路的带宽和延迟差异很大。简单地将设备接入同一个网络，并不意味着它们就能顺畅地进行分布式AI计算。\n为此，辛米尔正在构建统一的跨节点任务通信与数据交换机制，根据任务依赖、数据位置和网络条件，决定哪些计算留在本地，哪些结果需要传递给其他节点，以及何时调用更高性能的计算资源。\n感知融合、弹性调度、异构互联，三个环节共同构成了端侧超节点的协同计算体系。\n其效果最终体现为有效任务吞吐量的变化。\n在相同硬件、相同模型条件下，辛米尔通过系统优化，实现了有效任务吞吐量提升270%—— 这意味着端侧AI的性能潜力还有芯片和模型之外的释放空间。\n通过重新组织感知信息与计算任务、协调设备间协作，已有硬件资源也能承担更多有效任务。\n算力组队之后，端侧AI还要过工程关\n尽管算力协同解决了设备如何共同完成任务的问题，物理AI规模化部署仍面临模型适配成本高、场景变化后需要重新训练和调试等挑战。\n物理环境和任务需求不断变化，专用模型往往需要针对新的设备和场景重新采集数据、标注、训练与适配。\n对于需要进入大量真实场景的物理AI来说，这类重复工程投入也会逐渐成为规模化部署的成本负担。\n要减少这些投入，光有协同计算架构不够，还需要把硬件适配、模型运行和设备管理等能力沉淀到一套可复用的产品体系里。\n为此， 辛米尔围绕硬件与软件构建了一套产品体系。\n硬件方面 ，公司将不同梯度的AI算力与视觉、3D、红外、音频等感知能力进行模块化组合，形成从实时感算终端、多模态协同终端到高算力工作站的产品矩阵。\n不同场景可以根据任务需求，选择相应的算力与感知模块。\n软件方面， 端侧AI操作系统EdgeFlowOS负责打通不同芯片与设备，提供模型运行、任务编排、跨节点协同及统一管理等能力，并通过标准化的软件接口与部署工具，降低不同场景下的系统适配与集成成本。\n经过长期的技术研发与产业实践，辛米尔已形成覆盖200余种芯片平台、100余种通用与专用模型的适配积累。\n依托横跨大模型预训练、芯片架构设计和自动驾驶等领域的研发团队，公司构建了贯穿模型、算力、软件与设备的全栈技术能力。\n这些跨平台、跨模型的技术与工程积累，也为端侧超节点的构建及规模化部署奠定了基础。\n说一千道一万，物理AI真正走向规模化，最终还要算一笔工程账。\n芯片、模型和传感器的能力不断提升，如果每进入一个新场景，都需要重新完成硬件适配、模型部署和系统集成，技术进步就很难转化为规模化应用。\n随着异构设备协同能力和软硬件适配体系逐渐成熟， 更多能力可以沉淀下来，在新的场景中继续复用。\n这就是端侧超节点更长远的价值所在。\n单点能力终有边界。越来越多的设备拥有感知和计算能力，物理世界正悄然变成一张巨大的智能网络。\n不同设备的感知彼此交融，算力协同调度，原本分散的智能便有机会汇聚成更大的整体能力。\n版权所有，未经授权不得以任何形式转载及使用，违者必究。\n端侧AI 端侧超节点 辛米尔科技\n衡宇\n黎曼猜想被证明？！Claude加持，34岁数学家放出Lean证明 2026-11-21\n中国计算，走出新的登峰之路 2026-11-21\nAI给乐队现场搓MV，这是黑客松还是音乐节啊 2026-11-21\n8万条群聊消息做成考卷：腾讯元宝×KCL发布首个基于群聊构建的Agent记忆基准 2026-11-21\n扫码分享至朋友圈\n相关阅读\n高通公司展望个人AI发展：多终端体验将以AI和用户为中心\n“个人AI将始于端侧，我们正在迈向以AI和用户为中心的多终端体验”\n量子位 2026-03-27 端侧AI 高通\nOPPO打响AI手机第一枪\n你的下一部手机，只能是AI手机？\n明敏 2024-02-26 AI手机 OPPO 端侧AI\n荣耀首款AI PC亮相！…",
+            "lead": "业界首提“端侧超节点”，让端侧AI组队计算：AI效率暴涨270%，不用换芯片或模型\n衡宇 2026-11-24 14:35:06 来源： 量子位\n端侧老炮辛米尔，打通物理AI规模化落地之路\n衡宇 发自 凹非寺\n量子位 | 公众号 QbitAI\n同样一组芯片、同样一批模型，只是改变系统组织计算任务的方式，AI的有效任务吞吐量还能提升多少？\n一家长期深耕端侧AI基础设施的中国科技公司实测， 有效吞吐量能提升270% 。\n这背后的道理，可以从一座城市的交通系统说起。\n汽车的引擎决定单辆车的性能，道路网络和交通调度则决定整座城市的通行能力。即使车辆性能没有变化，只要优化行驶路线与交通调度，也能在现有条件下提升整个交通系统的运行效率。",
+            "chars": 4594,
+            "shown": 3992,
+            "truncated": true
+          },
+          "categories": [
+            "资讯",
+            "首页轮播",
+            "端侧AI",
+            "端侧超节点",
+            "辛米尔科技"
+          ],
+          "author": "衡宇",
+          "lang": "zh",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "news",
+          "metrics": {},
+          "quality": 10,
+          "score": 18.82,
+          "category": "hardware",
+          "subcategory": "edge",
+          "practical": 3,
+          "slug": "5e84edfc14a1",
+          "action": 5,
+          "rank": 18,
+          "tags": [
+            "benchmark",
+            "local",
+            "generate"
+          ]
+        },
+        {
+          "sourceId": "lcz-hardware",
+          "sourceName": "抡锤者 AI硬件",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "jiujihu",
+          "id": "3322",
+          "title": "【抄作业成功】激动又开心，7900XTX+128G内存用起来",
+          "url": "https://lcz.me/topic/3322",
+          "published": "2026-11-24T14:50:54.606Z",
+          "summary": "激动的心，颤抖的手! 一直都泡论坛，终于在双11过后下手了。 参考帖子 https://lcz.me/topic/2858/3 【X99-T8/2686v4/256G已下单，看看会不会翻车 】 一、购买部分 京东购买如下 1、主板+CPU套装，金牌华南X99+ 2686v46铜管散热 848元 2、内存 镁光DDR3 1600 32G *4 1290元 （内存是不带散热马甲的） 3、长城金牌巨龙 1250W 559元 4、7900xtx白金三风扇版本 8000元 淘宝购买如下 1、亮机卡 70元 2、开放式机架 60元 自备硬盘，1TB固态，用的是之前就有的。 二、安装部分 1、安装的时候，先安装CPU，安装好固态硬盘，接主板线。…",
+          "metrics": {
+            "points": 0,
+            "comments": 4,
+            "views": 128
+          },
+          "excellent": false,
+          "content": {
+            "html": "<p>激动的心，颤抖的手!<br>一直都泡论坛，终于在双11过后下手了。</p>\n<p>参考帖子<a href=\"https://lcz.me/topic/2858/3\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://lcz.me/topic/2858/3</a>【X99-T8/2686v4/256G已下单，看看会不会翻车 】</p>\n<p>一、购买部分<br>京东购买如下<br>1、主板+CPU套装，金牌华南X99+ 2686v46铜管散热 848元<br>2、内存 镁光DDR3 1600 32G *4 1290元 （内存是不带散热马甲的）<br><img src=\"https://upload.lcz.me/uploads/9c258c77-4aab-4f08-9b11-c67708e0696d.jpg\" alt=\"内存条.jpg\" loading=\"lazy\"></p>\n<p>3、长城金牌巨龙 1250W 559元<br>4、7900xtx白金三风扇版本 8000元<br><img src=\"https://upload.lcz.me/uploads/af3a1856-dad6-4d93-ab99-5650dc41a924.jpg\" alt=\"配件图.jpg\" loading=\"lazy\"></p>\n<p>淘宝购买如下<br>1、亮机卡 70元</p>\n<p>2、开放式机架 60元<br><img src=\"https://upload.lcz.me/uploads/9a0df975-3df6-47ce-a5f9-194cbab4aaed.jpg\" alt=\"亮机卡.jpg\" loading=\"lazy\"></p>\n<p>自备硬盘，1TB固态，用的是之前就有的。</p>\n<p>二、安装部分<br>1、安装的时候，先安装CPU，安装好固态硬盘，接主板线。<br>2、用单根32G内存，安装亮机卡，顺利点亮系统。然后进入BIOS 把那个什么 above 4G 的两个开关打开。<br>3、然后依次插上 2 3 4根内存，都顺利点亮完毕<br>4、安装7900xtx ，接上电源，顺利点亮，安装ubuntu 24版本<br>5、安装qoder，用qoder帮我安装和下载、配置strata ，选择了 qwen3.8-flash-next-iq3_s 版本<br><img src=\"https://upload.lcz.me/uploads/baa339f6-97cf-4c90-8ee5-71ce49ac6606.jpg\" alt=\"开机状态01.jpg\" loading=\"lazy\"></p>\n<p>三、运行<br>1、做了鹈鹕测试，做了strata的基础压力测试<br>2、运行良好，没有死机，开放式机架还没到货，暂时摆放在客厅电视柜上。运行噪音低，GPU温度在持续运行下，温度也控制在60度左右。<br>3、等开放式机架到货后，再买几个USB风扇，对着整体吹，估计效果更好一些。<br><img src=\"https://upload.lcz.me/uploads/45572a77-17f2-4f78-9816-aaf067fb26f8.png\" alt=\"strata运行截图.png\" loading=\"lazy\"></p>\n<p>四、感受和下一步计划<br>1、感谢论坛的网友，写了那么多的帖子，让我有现成的作业可以抄，并且顺利成功。<br>2、在配件到货以后，曾经想到过会翻车，没想到硬件和大模型软件都顺利安装成功，并且运行效果还不错。<br>3、从上周末组装到现在，还是感到开心和激动。拥有了自己的不错的本地算力。现在和agent 聊天沟通啥的，再也不担心token的费用了。大脑直接忽视和过滤了其实已经花了上万块的硬件费用。。。嚯嚯。。。<br>4、打算买第二块7900 xtx，买1个 PCIe 延长线 100元左右来连接第二块显卡<br>5、再加购 128G内存，把 8个 内存槽都插满。<br>6、继续捯饬大模型，包括且不限于MiniMax Comfiuy 等文生图、文生视频等应用。感觉中年男人又有事情折腾了。。。<br>7、还是开心中。。。<br><img src=\"https://upload.lcz.me/uploads/b8f8536f-b2f4-4051-898c-3ccc78821406.jpg\" alt=\"开机状态02.jpg\" loading=\"lazy\"></p>",
+            "text": "激动的心，颤抖的手!\n一直都泡论坛，终于在双11过后下手了。\n参考帖子 https://lcz.me/topic/2858/3 【X99-T8/2686v4/256G已下单，看看会不会翻车 】\n一、购买部分\n京东购买如下\n1、主板+CPU套装，金牌华南X99+ 2686v46铜管散热 848元\n2、内存 镁光DDR3 1600 32G *4 1290元 （内存是不带散热马甲的）\n3、长城金牌巨龙 1250W 559元\n4、7900xtx白金三风扇版本 8000元\n淘宝购买如下\n1、亮机卡 70元\n2、开放式机架 60元\n自备硬盘，1TB固态，用的是之前就有的。\n二、安装部分\n1、安装的时候，先安装CPU，安装好固态硬盘，接主板线。\n2、用单根32G内存，安装亮机卡，顺利点亮系统。然后进入BIOS 把那个什么 above 4G 的两个开关打开。\n3、然后依次插上 2 3 4根内存，都顺利点亮完毕\n4、安装7900xtx ，接上电源，顺利点亮，安装ubuntu 24版本\n5、安装qoder，用qoder帮我安装和下载、配置strata ，选择了 qwen3.8-flash-next-iq3_s 版本\n三、运行\n1、做了鹈鹕测试，做了strata的基础压力测试\n2、运行良好，没有死机，开放式机架还没到货，暂时摆放在客厅电视柜上。运行噪音低，GPU温度在持续运行下，温度也控制在60度左右。\n3、等开放式机架到货后，再买几个USB风扇，对着整体吹，估计效果更好一些。\n四、感受和下一步计划\n1、感谢论坛的网友，写了那么多的帖子，让我有现成的作业可以抄，并且顺利成功。\n2、在配件到货以后，曾经想到过会翻车，没想到硬件和大模型软件都顺利安装成功，并且运行效果还不错。\n3、从上周末组装到现在，还是感到开心和激动。拥有了自己的不错的本地算力。现在和agent 聊天沟通啥的，再也不担心token的费用了。大脑直接忽视和过滤了其实已经花了上万块的硬件费用。。。嚯嚯。。。\n4、打算买第二块7900 xtx，买1个 PCIe 延长线 100元左右来连接第二块显卡\n5、再加购 128G内存，把 8个 内存槽都插满。\n6、继续捯饬大模型，包括且不限于MiniMax Comfiuy 等文生图、文生视频等应用。感觉中年男人又有事情折腾了。。。\n7、还是开心中。。。",
+            "lead": "激动的心，颤抖的手!\n一直都泡论坛，终于在双11过后下手了。\n参考帖子 https://lcz.me/topic/2858/3 【X99-T8/2686v4/256G已下单，看看会不会翻车 】\n一、购买部分\n京东购买如下\n1、主板+CPU套装，金牌华南X99+ 2686v46铜管散热 848元\n2、内存 镁光DDR3 1600 32G *4 1290元 （内存是不带散热马甲的）\n3、长城金牌巨龙 1250W 559元\n4、7900xtx白金三风扇版本 8000元\n淘宝购买如下\n1、亮机卡 70元\n2、开放式机架 60元\n自备硬盘，1TB固态，用的是之前就有的。\n二、安装部分\n1、安装的时候，先安装CPU，安装好固态硬盘，接主板线。\n2、用单根32G内存，安装亮机卡，顺利点亮系统。然后进入BIOS 把那个什么 above 4G 的两个开关打开。\n3、然后依次插上 2 3 4根内存，都顺利点亮完毕\n4、安装7900xtx ，接上电源，顺利点亮，安装ubuntu 24版本\n5、安装qoder，用qoder帮我安装",
+            "chars": 1019,
+            "shown": 1019,
+            "truncated": false
+          },
+          "quality": 8,
+          "score": 21.41,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 4,
+          "slug": "a41dbfdc015b",
+          "action": 6,
+          "rank": 17.6,
+          "tags": [
+            "hardware",
+            "generate",
+            "local",
+            "lowspec"
+          ]
+        },
+        {
+          "sourceId": "lcz-hardware",
+          "sourceName": "抡锤者 AI硬件",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "terry",
+          "id": "3317",
+          "title": "AI装机内存常识，双通道四通道主板选择，消费级主板通常只有双通道，插满4根会影响带宽！X99的性价比很高，EPYC套餐已经涨价！",
+          "url": "https://lcz.me/topic/3317",
+          "published": "2026-11-24T08:15:00.000Z",
+          "summary": "因为我之前的那个电源啊，功率有点勉强，是750瓦的。我害怕跑起来的话，就把我这个7900 XTX跟我的这个什么X99洋垃圾的主板或者CPU给烧了。呃，尽管说带一张7900 XTX肯定是够了啊，我还是买了一个好一点的电源，现在正在等它到来。那么明天如果是到了的话，或者后天到了，我再装机。啊，因为每次装机，我这把老骨头都累得快要散架了，就还是一个体力活。 那么我们看看这块主板啊，这个就是X99-TF的主板。它上面是带了一个E5-2696 v3的处理器，它有8个内存条插槽。就本期视频呢，我就是想通过这个主板给大家展示一下，谈一谈内存的问题。就是有些认识，讲实话我还是有些落伍了。呃，这两天正好我在装两台机器，呃，装机的过程中呢，我跟这个论…",
+          "metrics": {
+            "points": 1,
+            "comments": 3,
+            "views": 209
+          },
+          "excellent": false,
+          "content": {
+            "html": "<p>因为我之前的那个电源啊，功率有点勉强，是750瓦的。我害怕跑起来的话，就把我这个7900 XTX跟我的这个什么X99洋垃圾的主板或者CPU给烧了。呃，尽管说带一张7900 XTX肯定是够了啊，我还是买了一个好一点的电源，现在正在等它到来。那么明天如果是到了的话，或者后天到了，我再装机。啊，因为每次装机，我这把老骨头都累得快要散架了，就还是一个体力活。</p>\n<p>那么我们看看这块主板啊，这个就是X99-TF的主板。它上面是带了一个E5-2696 v3的处理器，它有8个内存条插槽。就本期视频呢，我就是想通过这个主板给大家展示一下，谈一谈内存的问题。就是有些认识，讲实话我还是有些落伍了。呃，这两天正好我在装两台机器，呃，装机的过程中呢，我跟这个论坛的网友沟通了一下，我发现我对于内存的理解还是有一些偏差的啊。就有些常识，讲实话我都是不太清楚，或者说之前根本就没有关注这一块。</p>\n<p><img src=\"https://upload.lcz.me/uploads/dedfb660-13b7-4706-8801-a3f886a0e285.jpeg\" alt=\"AI装机内存避免踩坑.jpeg\" loading=\"lazy\"></p>\n<p>呃，那它这个8个内存条插槽，灰色的是DDR3的，黑色的是DDR4的，这个是不是非常奇怪？唉，呃，我其实是觉得性价比比较高的是精粤的那个叫什么X99，X99-TI8 Plus是吧，好像是叫这个型号。那个是，是比较便宜的，但是为什么要买这个华南金牌这个呢？它这个板U套装要这个900多，将近1000块钱呢。就是因为我希望它这个内存条啊，它是间开插，就是中间有一点空隙。它不是灰色黑色，呃，间开来布局的吗？那么内存条之间会有这个空隙。我跟大家讲，这个内存条空隙还是很重要的，尤其是如果说你的内存要高强度工作的话。因为我之前也遇到过这个问题，就是如果内存温度过高的话，会罢工的。</p>\n<p>呃，在跑AI的时候，可能说情况还没有那么严重。在这个Windows底下，我玩游戏的时候，我感觉是有这个情况的。因为我之前用的是这个DDR3 16G的啊，这也是1866的，三星的呃内存条，是从IBM服务器上拆下来的，上面还印着IBM的LOGO。当时插在我的X99 CD3，就是我现在后面机箱啊，这个主板上，它就是完全挨着的啊，中间的缝隙非常的小。因为我的工作模式之前最主要是把所有的这个权重给载入到显存中去，对内存的要求其实是不高的，无论是跑大模型还是跑ComfyUI。因为我有4090 48G嘛，然后有这个7900 XTX，就是我还没怎么呃高强度地使用内存，所以那个时候我在Linux底下跑AI是完全没有问题的。但是我，我在这个Windows上如果执行一些高强度的工作，比如说渲染，比如说玩一些重型的游戏，那如果说对内存的呃使用比较频繁的话，强度比较高的话，它会出现问题的。就我一开始怀疑是不是说是CPU的问题，或者说是Windows操作系统的问题。其实后来不是，这个，它这个问题只有在夏天非常热的时候才会发生。</p>\n<p><img src=\"https://upload.lcz.me/uploads/354af966-448d-40a8-ab2a-1bffae150d7e.jpeg\" alt=\"华南金牌x99tf.jpeg\" loading=\"lazy\"></p>\n<p>然后我前一段时间不是买了一个全高的，哦，是买了四根全高的条子，现在插在那个上面。后面我是要把这个半高的放到，放到那个以前那个老的主板上，跟我的4090 48G一起搭配，然后把全高的放到这个什么X99-TF上来，就还是恢复到以前的老样子。因为我用4090 48G跑的话，我是不需要内存高强度工作的。我还是把所有的东西，把权重尽可能地载入到这个显存中去，利用它的大显存来工作。啊，那台机器就是跑ComfyUI了，就不用来跑这个大模型的。跑大模型就交给这个MoE，用这个7900 XTX加128G的DDR3 1866内存。我当时确定这个问题就是，我买了这个全高条之后，我把它换上去，因为这两个全高条它们之间的这个间隙小了，内存的温度就低了。然后我在Windows底下就再也没有出现过问题。</p>\n<p>哦，对了，现在就是说这种DDR3的洋垃圾条子啊，这种马甲条，我讲实话还是，呃，第一呢，我认为做工还是非常的不错啊。这个是金属，它是有这种散热效果的啊。然后，呃，整个质量看起来也是非常的不错。都是在拼夕夕上买的，反正哪家便宜就买哪家，我基本上都是这样的。当然了，尽量是挑一些就是销量高的店啊，因为销量高的店，它的信誉相对而言比较好，它不会去卖一些成色很垃圾的条子。因为我们论坛有不少网友就在小店里面买到了成色不太好的，或者说看起来金手指啊，各方面状态都不太好的条子。那么这个条子基本上都是在服务器上已经高强度工作很多年了，啊，已经到了这个生命的末期。啊，尽量是买成色好一点的。当然了，内存基本上你只要说拿到手，跑个什么个把星期它没有坏，那基本上就不会坏了。</p>\n<p><img src=\"https://upload.lcz.me/uploads/9d6a2c79-769c-452f-a727-4da436df3ff2.jpg\" alt=\"DDR3 1866 16G单条.jpg\" loading=\"lazy\"></p>\n<p>然后呢，我们说一下这个带宽的事情啊。就是DDR3它的带宽，就是我们说同等频率情况下啊，它带宽是DDR4的一半是吧，那么DDR4又是DDR5的一半。但是我们要知道，我们这个消费级主板中有一个坑啊，就虽然它很多主板是有四根插槽，但是消费级的主板一般都是双通道，而且消费级的CPU它一般也只支持双通道。比如说我刚刚装好的机器，就是9700X。哎，我还以为它是四通道的，因为这个U讲实话也不便宜了啊，就是它的主板讲实话也是挺高端的，呃，就是铭瑄的瑷珈B850主板。啊，这个主板大家可以去搜一下，它的这个呃价格是不低的，上面也有四根插槽，我还以为它是DDR5四通道的，那么对这个带宽肯定是有很高的期待，但是实际上它是双通道的。就基本上绝大部分这个消费级的CPU，它只支持呃双通道内存。</p>\n<p>就你插满4根，它还是按照双通道算。而且它插满4根还有bug，还有这个怎么说呢，还有损耗。你比如说你只插两根的时候，像这个DDR5 6000的这个内存，那么它双通道是吧，是能够把6000这个频率给跑满的，带宽是能够跑到96 GB/s左右的。然后如果说你是插了四根，那么对不起，AMD的这个CPU它默认只能支持到3600，那么你的这个带宽就会严重地缩水，相当于是缩水了一半，将近一半了。当然了，铭瑄那块主板它带了一个叫什么EXPO模式，啊，就是对这个内存进行超频，是吧？超频之后，它能够恢复到DDR5 6000的这个频率，但是它也只是恢复到双通道的水平。如果说你的主板不支持超频，啊，没有EXPO模式，那CPU就给你默认限制到3600的话，那么你这个插满4根内存条，那损耗就大了去了。当然了，目前我是相当于有了一个4通道的DDR4的内存，啊，它的带宽也能够跑到90 GB/s，啊，我也测了啊，确实还是非常不错的。这个对主板还是有要求的，很多人可能配内存的时候都没有注意到这个坑。</p>\n<p><img src=\"https://upload.lcz.me/uploads/db1080d0-d509-4d28-a0bc-9da1a35324e6.png\" alt=\"7900xtx蓝宝石.png\" loading=\"lazy\"></p>\n<p>那么关于我们需要什么样的内存，需要这个PCIe 3、4还是5，是吧？那么我在之前的视频中也是多次提到过，就如果说你使用的是这个什么4090，啊，7900 XTX这样的卡，讲实话这个也属于……7900 XTX它是属于甜点卡了，它也是跟4090差不多时期的同代，啊，但是AMD的技术，我们默认它要落后一代是吧。那么4090也是属于上一代的这个旗舰卡，这个规格是不低的。我们论坛有大量的帖子实测，包括雄杰高是吧，包括懒人烘焙、FCYS这些，他们都有相关的测试帖子，大家可以去看一下。就说DDR3，呃，1866，如果说你是四通道的内存，然后你搭配的是这个什么PCIe 3.0 x16的这个接口，呃，无论是单卡还是双卡TP，那基本上是没有什么瓶颈。当然了，如果说你只是插一、一张卡的话，因为我在这个X99 CD3上我也测了，就是只插一张卡，呃，双通道的DDR3 1866也是能够带得动的，它也没有什么明显的瓶颈。但是如果插两张卡，那这个内存就有点带不动了。</p>\n<p>那么为什么提到这个问题呢？就是现在内存越来越重要了，就是内存再贵，它还是没有显存贵的。何况DDR4和DDR3的内存现在还是比较便宜的，尤其是DDR3啊，现在简直就是白菜价是吧，那大家入手的难度就不高。你买一个显存还过得去的，比如说16G或者24G显存的这个显卡，7900 XTX是吧，5060 Ti、5070 Ti、5080，是吧，那你在本地跑大模型也好，还是跑ComfyUI也好…</p>",
+            "text": "因为我之前的那个电源啊，功率有点勉强，是750瓦的。我害怕跑起来的话，就把我这个7900 XTX跟我的这个什么X99洋垃圾的主板或者CPU给烧了。呃，尽管说带一张7900 XTX肯定是够了啊，我还是买了一个好一点的电源，现在正在等它到来。那么明天如果是到了的话，或者后天到了，我再装机。啊，因为每次装机，我这把老骨头都累得快要散架了，就还是一个体力活。\n那么我们看看这块主板啊，这个就是X99-TF的主板。它上面是带了一个E5-2696 v3的处理器，它有8个内存条插槽。就本期视频呢，我就是想通过这个主板给大家展示一下，谈一谈内存的问题。就是有些认识，讲实话我还是有些落伍了。呃，这两天正好我在装两台机器，呃，装机的过程中呢，我跟这个论坛的网友沟通了一下，我发现我对于内存的理解还是有一些偏差的啊。就有些常识，讲实话我都是不太清楚，或者说之前根本就没有关注这一块。\n呃，那它这个8个内存条插槽，灰色的是DDR3的，黑色的是DDR4的，这个是不是非常奇怪？唉，呃，我其实是觉得性价比比较高的是精粤的那个叫什么X99，X99-TI8 Plus是吧，好像是叫这个型号。那个是，是比较便宜的，但是为什么要买这个华南金牌这个呢？它这个板U套装要这个900多，将近1000块钱呢。就是因为我希望它这个内存条啊，它是间开插，就是中间有一点空隙。它不是灰色黑色，呃，间开来布局的吗？那么内存条之间会有这个空隙。我跟大家讲，这个内存条空隙还是很重要的，尤其是如果说你的内存要高强度工作的话。因为我之前也遇到过这个问题，就是如果内存温度过高的话，会罢工的。\n呃，在跑AI的时候，可能说情况还没有那么严重。在这个Windows底下，我玩游戏的时候，我感觉是有这个情况的。因为我之前用的是这个DDR3 16G的啊，这也是1866的，三星的呃内存条，是从IBM服务器上拆下来的，上面还印着IBM的LOGO。当时插在我的X99 CD3，就是我现在后面机箱啊，这个主板上，它就是完全挨着的啊，中间的缝隙非常的小。因为我的工作模式之前最主要是把所有的这个权重给载入到显存中去，对内存的要求其实是不高的，无论是跑大模型还是跑ComfyUI。因为我有4090 48G嘛，然后有这个7900 XTX，就是我还没怎么呃高强度地使用内存，所以那个时候我在Linux底下跑AI是完全没有问题的。但是我，我在这个Windows上如果执行一些高强度的工作，比如说渲染，比如说玩一些重型的游戏，那如果说对内存的呃使用比较频繁的话，强度比较高的话，它会出现问题的。就我一开始怀疑是不是说是CPU的问题，或者说是Windows操作系统的问题。其实后来不是，这个，它这个问题只有在夏天非常热的时候才会发生。\n然后我前一段时间不是买了一个全高的，哦，是买了四根全高的条子，现在插在那个上面。后面我是要把这个半高的放到，放到那个以前那个老的主板上，跟我的4090 48G一起搭配，然后把全高的放到这个什么X99-TF上来，就还是恢复到以前的老样子。因为我用4090 48G跑的话，我是不需要内存高强度工作的。我还是把所有的东西，把权重尽可能地载入到这个显存中去，利用它的大显存来工作。啊，那台机器就是跑ComfyUI了，就不用来跑这个大模型的。跑大模型就交给这个MoE，用这个7900 XTX加128G的DDR3 1866内存。我当时确定这个问题就是，我买了这个全高条之后，我把它换上去，因为这两个全高条它们之间的这个间隙小了，内存的温度就低了。然后我在Windows底下就再也没有出现过问题。\n哦，对了，现在就是说这种DDR3的洋垃圾条子啊，这种马甲条，我讲实话还是，呃，第一呢，我认为做工还是非常的不错啊。这个是金属，它是有这种散热效果的啊。然后，呃，整个质量看起来也是非常的不错。都是在拼夕夕上买的，反正哪家便宜就买哪家，我基本上都是这样的。当然了，尽量是挑一些就是销量高的店啊，因为销量高的店，它的信誉相对而言比较好，它不会去卖一些成色很垃圾的条子。因为我们论坛有不少网友就在小店里面买到了成色不太好的，或者说看起来金手指啊，各方面状态都不太好的条子。那么这个条子基本上都是在服务器上已经高强度工作很多年了，啊，已经到了这个生命的末期。啊，尽量是买成色好一点的。当然了，内存基本上你只要说拿到手，跑个什么个把星期它没有坏，那基本上就不会坏了。\n然后呢，我们说一下这个带宽的事情啊。就是DDR3它的带宽，就是我们说同等频率情况下啊，它带宽是DDR4的一半是吧，那么DDR4又是DDR5的一半。但是我们要知道，我们这个消费级主板中有一个坑啊，就虽然它很多主板是有四根插槽，但是消费级的主板一般都是双通道，而且消费级的CPU它一般也只支持双通道。比如说我刚刚装好的机器，就是9700X。哎，我还以为它是四通道的，因为这个U讲实话也不便宜了啊，就是它的主板讲实话也是挺高端的，呃，就是铭瑄的瑷珈B850主板。啊，这个主板大家可以去搜一下，它的这个呃价格是不低的，上面也有四根插槽，我还以为它是DDR5四通道的，那么对这个带宽肯定是有很高的期待，但是实际上它是双通道的。就基本上绝大部分这个消费级的CPU，它只支持呃双通道内存。\n就你插满4根，它还是按照双通道算。而且它插满4根还有bug，还有这个怎么说呢，还有损耗。你比如说你只插两根的时候，像这个DDR5 6000的这个内存，那么它双通道是吧，是能够把6000这个频率给跑满的，带宽是能够跑到96 GB/s左右的。然后如果说你是插了四根，那么对不起，AMD的这个CPU它默认只能支持到3600，那么你的这个带宽就会严重地缩水，相当于是缩水了一半，将近一半了。当然了，铭瑄那块主板它带了一个叫什么EXPO模式，啊，就是对这个内存进行超频，是吧？超频之后，它能够恢复到DDR5 6000的这个频率，但是它也只是恢复到双通道的水平。如果说你的主板不支持超频，啊，没有EXPO模式，那CPU就给你默认限制到3600的话，那么你这个插满4根内存条，那损耗就大了去了。当然了，目前我是相当于有了一个4通道的DDR4的内存，啊，它的带宽也能够跑到90 GB/s，啊，我也测了啊，确实还是非常不错的。这个对主板还是有要求的，很多人可能配内存的时候都没有注意到这个坑。\n那么关于我们需要什么样的内存，需要这个PCIe 3、4还是5，是吧？那么我在之前的视频中也是多次提到过，就如果说你使用的是这个什么4090，啊，7900 XTX这样的卡，讲实话这个也属于……7900 XTX它是属于甜点卡了，它也是跟4090差不多时期的同代，啊，但是AMD的技术，我们默认它要落后一代是吧。那么4090也是属于上一代的这个旗舰卡，这个规格是不低的。我们论坛有大量的帖子实测，包括雄杰高是吧，包括懒人烘焙、FCYS这些，他们都有相关的测试帖子，大家可以去看一下。就说DDR3，呃，1866，如果说你是四通道的内存，然后你搭配的是这个什么PCIe 3.0 x16的这个接口，呃，无论是单卡还是双卡TP，那基本上是没有什么瓶颈。当然了，如果说你只是插一、一张卡的话，因为我在这个X99 CD3上我也测了，就是只插一张卡，呃，双通道的DDR3 1866也是能够带得动的，它也没有什么明显的瓶颈。但是如果插两张卡，那这个内存就有点带不动了。\n那么为什么提到这个问题呢？就是现在内存越来越重要了，就是内存再贵，它还是没有显存贵的。何况DDR4和DDR3的内存现在还是比较便宜的，尤其是DDR3啊，现在简直就是白菜价是吧，那大家入手的难度就不高。你买一个显存还过得去的，比如说16G或者24G显存的这个显卡，7900 XTX是吧，5060 Ti、5070 Ti、5080，是吧，那你在本地跑大模型也好，还是跑ComfyUI也好…",
+            "lead": "因为我之前的那个电源啊，功率有点勉强，是750瓦的。我害怕跑起来的话，就把我这个7900 XTX跟我的这个什么X99洋垃圾的主板或者CPU给烧了。呃，尽管说带一张7900 XTX肯定是够了啊，我还是买了一个好一点的电源，现在正在等它到来。那么明天如果是到了的话，或者后天到了，我再装机。啊，因为每次装机，我这把老骨头都累得快要散架了，就还是一个体力活。\n那么我们看看这块主板啊，这个就是X99-TF的主板。它上面是带了一个E5-2696 v3的处理器，它有8个内存条插槽。就本期视频呢，我就是想通过这个主板给大家展示一下，谈一谈内存的问题。就是有些认识，讲实话我还是有些落伍了。呃，这两天正好我在装两台机器，呃，装机的过程中呢，我跟这个论坛的网友沟通了一下，我发现我对于内存的理解还是有一些偏差的啊。就有些常识，讲实话我都是不太清楚，或者说之前根本就没有关注这一块。\n呃，那它这个8个内存条插槽，灰色的是DDR3的，黑色的是DDR4的，这个是不是非常奇怪？唉，呃，我其实是觉得性价比比较高的是精粤的那个叫什么X99，X9",
+            "chars": 4683,
+            "shown": 3201,
+            "truncated": true
+          },
+          "quality": 8,
+          "score": 17.26,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 1,
+          "slug": "dd54e8ea4e9f",
+          "action": 5,
+          "rank": 16,
+          "tags": [
+            "hardware",
+            "lowspec",
+            "generate"
+          ]
+        },
+        {
+          "sourceId": "gh-releases",
+          "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "Niko1221",
+          "id": "456535153",
+          "title": "Strata v0.2.21 发布",
+          "url": "https://github.com/Niko1221/Strata/releases/tag/v0.2.21",
+          "published": "2026-11-24T10:10:03.000Z",
+          "summary": "Strata 0.2.21 The app and the Terminal are 0.2.21. All three engine families ( strata-engine , strata-inkling and strata-hy4 ) and Control are updated to 0.1.67 on every supported platform and backend. What changes for you Inkling 2 Mini is much faster on most cards. Compared with 0.2.20 on the same machines: Long con…",
+          "content": {
+            "html": "<h3>Strata 0.2.21</h3>\n<p>The app and the Terminal are 0.2.21. All three engine families (<code>strata-engine</code>,<code>strata-inkling</code>and<code>strata-hy4</code>) and Control are updated to 0.1.67 on every supported platform and backend.</p>\n<h4>What changes for you</h4>\n<ul><li><strong>Inkling 2 Mini is much faster on most cards.</strong>Compared with 0.2.20 on the same machines:</li><li><strong>Long conversations:</strong></li><li>RTX 4090 after a 32K prompt: 92 instead of 29 tok/s (UD-Q4_K_XL) and 92 instead of 20 tok/s (SQ-20).</li><li>RTX 5090 Laptop 24 GB after a 30K prompt: 72 instead of 44 tok/s.</li><li><strong>Smaller cards:</strong></li><li>RTX 3060 Ti 8 GB, SQ-10: 43 instead of 11 tok/s.</li><li>RTX 5070 12 GB, SQ-10: 68 instead of 12.5 tok/s.</li><li><strong>Prompt reading:</strong></li><li>RTX 5090: 6,967 instead of 3,923 tok/s (UD-Q4_K_XL), 9,019 instead of 7,568 tok/s (SQ-20).</li><li>DGX Spark: +12% to +58%.</li><li><strong>Many users at once:</strong></li><li>RTX 5090 with 64 requests: 1,040–1,134 tok/s in total, 6–27% above 0.2.20.</li><li>8 users: 15–27% faster on the RTX 4090, the RTX 5090 and the RTX 5090 Laptop.</li><li><strong>AMD RX 7900 XT, UD-IQ3_XXS:</strong>66 instead of 4.9 tok/s.</li><li><strong>Agent sessions reuse their prompt</strong>on every backend, Apple Silicon included. Long agent sessions no longer re-read the whole prompt on every turn.</li><li><strong>The DSpark drafter works with Unsloth's re-uploaded GGUF model files.</strong>0.2.20 could not start UD models with the drafter on. Unsloth's new separate drafter file (<code>dspark-Inkling-2-Mini-Q8_0.gguf</code>, uploaded 23 November) is not read yet; Strata's own drafter download is not affected.</li><li>A single request is now sent to the slot the drafter runs in, so it gets the drafter's speed even with 2 to 4 slots. On an RTX 5090 Laptop with 2 to 3 slots: agent sessions 85 → 142–152 tok/s, chat 87 → 120 tok/s.</li><li>When the request lands in that slot, code is about 2x and chat about 1.4x faster.</li><li>At startup a short test decides whether the drafter is turned on for your card. The first start of a new setup takes about 3 minutes longer because of it.</li><li><strong>Fixes:</strong></li><li>long-conversation crash (#6905);</li><li>Qwen \"layer 0 never rang\" on RTX 30-series and newer (#6713);</li><li>repeated engine crashes now stop after three tries with a clear message instead of restarting forever;</li><li>downloads are pinned so Unsloth re-uploads no longer break setup, and both GGUF layouts are accepted;</li><li>Inkling on CPUs with AVX-512 has a faster path, and AVX2-only CPUs keep working.</li><li><strong>Qwen3.8-Flash-Next and HY-4 Flash:</strong></li><li><strong>Qwen:</strong>one accuracy fix in prompt reading (#6776). It changes the order of one sum, so some answers can differ from 0.2.20 after a few tokens; the first-token choice was the same on every prompt we checked, and speed is the same.</li><li><strong>HY-4 Flash:</strong>gives the same output as 0.2.20 in our checks on Strix Halo and on CPU.</li></ul>\n<h4>Known limits</h4>\n<ul><li><strong>Default slots:</strong>on 24 GB RTX 40 / 50 cards the app now starts with 1 slot, which gives the best speed for one person and for long documents. You can raise it in the app.</li><li><strong>32 slots is for short requests.</strong>With long prompts (3K tokens and up) at 32 slots, each long request can wait several minutes for its first token. On cards up to 24 GB, and on the RTX 5090 at 64K context, a 32-slot start can fail to load. For long documents use 8 slots or fewer.</li><li><strong>AMD RX 7900 XT / 7900 XTX with SQ-20:</strong>decode is about 7% below 0.2.20. Workaround:<code>--vram-experts-gb 13.2 --ram-experts-gb 2.5</code>.</li><li><strong>AMD 12 GB cards (RX 6700 XT class), Inkling:</strong>about 13% below 0.2.20. Workaround:<code>--vram-experts-gb 8.5</code>.</li><li><strong>Many slots:</strong>with 16 or more slots on NVIDIA, the first reply after a long prompt is slightly less exact than with fewer slots. This was already the case in 0.2.20.</li></ul>\n<h4>Updating</h4>\n<ul><li><strong>App:</strong>the in-app update offers 0.2.21, or download the installer below.</li><li><strong>Terminal:</strong>run<code>strata update</code>.</li><li><strong>A clone of the repository:</strong>run<code>UPDATE.bat</code>(Windows) or<code>./setup.sh --update</code>.</li></ul>\n<h4>Downloads</h4>\n<p>Total: 64 files, 13,380,684,413 bytes.</p>\n<p>All<code>strata-engine</code>,<code>strata-inkling</code>, and<code>strata-hy4</code> 0.1.67 packages are freshly built and included directly in this release. Unchanged DFlash2 drafter packs stay on the 0.2.16 release and frozen DeepSeek 0.1.59 engines stay on the 0.2.13 release;…</p>",
+            "text": "Strata 0.2.21\nThe app and the Terminal are 0.2.21. All three engine families ( strata-engine , strata-inkling and strata-hy4 ) and Control are updated to 0.1.67 on every supported platform and backend.\nWhat changes for you\nInkling 2 Mini is much faster on most cards. Compared with 0.2.20 on the same machines:\nLong conversations:\nRTX 4090 after a 32K prompt: 92 instead of 29 tok/s (UD-Q4_K_XL) and 92 instead of 20 tok/s (SQ-20).\nRTX 5090 Laptop 24 GB after a 30K prompt: 72 instead of 44 tok/s.\nSmaller cards:\nRTX 3060 Ti 8 GB, SQ-10: 43 instead of 11 tok/s.\nRTX 5070 12 GB, SQ-10: 68 instead of 12.5 tok/s.\nPrompt reading:\nRTX 5090: 6,967 instead of 3,923 tok/s (UD-Q4_K_XL), 9,019 instead of 7,568 tok/s (SQ-20).\nDGX Spark: +12% to +58%.\nMany users at once:\nRTX 5090 with 64 requests: 1,040–1,134 tok/s in total, 6–27% above 0.2.20.\n8 users: 15–27% faster on the RTX 4090, the RTX 5090 and the RTX 5090 Laptop.\nAMD RX 7900 XT, UD-IQ3_XXS: 66 instead of 4.9 tok/s.\nAgent sessions reuse their prompt on every backend, Apple Silicon included. Long agent sessions no longer re-read the whole prompt on every turn.\nThe DSpark drafter works with Unsloth's re-uploaded GGUF model files. 0.2.20 could not start UD models with the drafter on. Unsloth's new separate drafter file ( dspark-Inkling-2-Mini-Q8_0.gguf , uploaded 23 November) is not read yet; Strata's own drafter download is not affected.\nA single request is now sent to the slot the drafter runs in, so it gets the drafter's speed even with 2 to 4 slots. On an RTX 5090 Laptop with 2 to 3 slots: agent sessions 85 → 142–152 tok/s, chat 87 → 120 tok/s.\nWhen the request lands in that slot, code is about 2x and chat about 1.4x faster.\nAt startup a short test decides whether the drafter is turned on for your card. The first start of a new setup takes about 3 minutes longer because of it.\nFixes:\nlong-conversation crash (#6905);\nQwen \"layer 0 never rang\" on RTX 30-series and newer (#6713);\nrepeated engine crashes now stop after three tries with a clear message instead of restarting forever;\ndownloads are pinned so Unsloth re-uploads no longer break setup, and both GGUF layouts are accepted;\nInkling on CPUs with AVX-512 has a faster path, and AVX2-only CPUs keep working.\nQwen3.8-Flash-Next and HY-4 Flash:\nQwen: one accuracy fix in prompt reading (#6776). It changes the order of one sum, so some answers can differ from 0.2.20 after a few tokens; the first-token choice was the same on every prompt we checked, and speed is the same.\nHY-4 Flash: gives the same output as 0.2.20 in our checks on Strix Halo and on CPU.\nKnown limits\nDefault slots: on 24 GB RTX 40 / 50 cards the app now starts with 1 slot, which gives the best speed for one person and for long documents. You can raise it in the app.\n32 slots is for short requests. With long prompts (3K tokens and up) at 32 slots, each long request can wait several minutes for its first token. On cards up to 24 GB, and on the RTX 5090 at 64K context, a 32-slot start can fail to load. For long documents use 8 slots or fewer.\nAMD RX 7900 XT / 7900 XTX with SQ-20: decode is about 7% below 0.2.20. Workaround: --vram-experts-gb 13.2 --ram-experts-gb 2.5 .\nAMD 12 GB cards (RX 6700 XT class), Inkling: about 13% below 0.2.20. Workaround: --vram-experts-gb 8.5 .\nMany slots: with 16 or more slots on NVIDIA, the first reply after a long prompt is slightly less exact than with fewer slots. This was already the case in 0.2.20.\nUpdating\nApp: the in-app update offers 0.2.21, or download the installer below.\nTerminal: run strata update .\nA clone of the repository: run UPDATE.bat (Windows) or ./setup.sh --update .\nDownloads\nTotal: 64 files, 13,380,684,413 bytes.\nAll strata-engine , strata-inkling , and strata-hy4 0.1.67 packages are freshly built and included directly in this release. Unchanged DFlash2 drafter packs stay on the 0.2.16 release and frozen DeepSeek 0.1.59 engines stay on the 0.2.13 release;…",
+            "lead": "Strata 0.2.21\nThe app and the Terminal are 0.2.21. All three engine families ( strata-engine , strata-inkling and strata-hy4 ) and Control are updated to 0.1.67 on every supported platform and backend.\nWhat changes for you\nInkling 2 Mini is much faster on most cards. Compared with 0.2.20 on the same machines:\nLong conversations:\nRTX 4090 after a 32K prompt: 92 instead of 29 tok/s (UD-Q4_K_XL) and 92 instead of 20 tok/s (SQ-20).\nRTX 5090 Laptop 24 GB after ",
+            "chars": 11031,
+            "shown": 3972,
+            "truncated": true
+          },
+          "quality": 8,
+          "score": 22.72,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 3,
+          "slug": "18df8a487197",
+          "action": 2,
+          "rank": 11.2,
+          "tags": [
+            "local",
+            "lowspec",
+            "benchmark",
+            "agent"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "local",
+      "label": "本地开源",
+      "items": [
+        {
+          "sourceId": "qbitai",
+          "sourceName": "量子位",
+          "title": "文心 5.5 Flash Preview正式开源，采用 Apache 2.0 协议",
+          "url": "https://www.qbitai.com/2026/11/512354.html",
+          "id": "https://www.qbitai.com/?p=512354",
+          "published": "2026-11-24T06:22:28.000Z",
+          "summary": "文心 5.5 Flash Preview正式开源，采用 Apache 2.0 协议 量子位的朋友们 2026-11-24 14:22:28 来源： 量子位 11 月 24 日，文心 5.5 Flash Preview（ERNIE 5.5 Flash Preview）正式开源，采用 Apache 2.0 协议面向全球开源社区开放。开发者可在 Hugging Face、ModelScope 平台获取模型权重与配套资源，进行本地部署与二次开发，支持 vLLM、SGLang 等主流推理框架进行部署。 文心 5.5 Flash Preview总参数量达 2800 亿，每个 Token 激活 140 亿参数，支持最长 100 万 Token…",
+          "content": {
+            "html": "&lt;!DOCTYPE html&gt;<div><div><div>&lt; img id=\"wx_img\" src=\"https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png\" width=\"400\" height=\"400\"&gt;</div></div></div>\n<div><h3>文心 5.5 Flash Preview正式开源，采用 Apache 2.0 协议</h3><div><span><img src=\"http://www.qbitai.com/wp-content/uploads/2019/06/200-100x100.jpg\" alt=\"量子位的朋友们\" loading=\"lazy\"><em><a href=\"https://www.qbitai.com/author/qbitai\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">量子位的朋友们</a></em></span><span>2026-11-24</span><span>14:22:28</span><span>来源：<a href=\"https://www.qbitai.com/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">量子位</a></span></div></div>\n<p>11 月 24 日，文心 5.5 Flash Preview（ERNIE 5.5 Flash Preview）正式开源，采用 Apache 2.0 协议面向全球开源社区开放。开发者可在 Hugging Face、ModelScope 平台获取模型权重与配套资源，进行本地部署与二次开发，支持 vLLM、SGLang 等主流推理框架进行部署。</p>\n<div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/6b0890069b7645b19be5a515d6825cda.png\" alt=\"\" loading=\"lazy\"></div>\n<p>文心 5.5 Flash Preview总参数量达 2800 亿，每个 Token 激活 140 亿参数，支持最长 100 万 Token 的上下文，在编程、3D 建模、知识工作、内容创作等方面表现突出，在Terminal-Bench、AutomationBench等多项基准测试中，文心5.5 Flash Preview 取得了具有竞争力的得分，并保持极致的解码速度。在CodeArena WebDev 榜单中，文心 5.5 Flash Preview以1668分位列开源模型第二、国产模型第四，紧随Kimi K3.1 Pro、Qwen3.8-Max等大参数国产模型之后。</p>\n<div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/3c1f7e3b8822c7a2f6aaf31e3df439e2.png\" alt=\"\" loading=\"lazy\"></div>\n<p>随着模型权重开放，全球开发者可基于文心 5.5 Flash Preview 开展领域微调、工具链适配与部署优化，进一步探索模型在不同业务场景中的应用。</p>\n<p><strong>模型下载地址：</strong></p>\n<p>Hugging Face https://huggingface.co/baidu/ERNIE-5.5-Flash-Preview</p>\n<p>ModelScope https://www.modelscope.cn/models/baidu/ERNIE-5.5-Flash-Preview</p>\n<p><em><span>本文由百度提供，量子位获授权转载，观点归原作者所有。</span></em></p>\n<div><span></span><em>版权所有，未经授权不得以任何形式转载及使用，违者必究。</em><span></span></div>\n<div><a href=\"https://www.qbitai.com/tag/%e7%99%be%e5%ba%a6\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">百度</a></div>\n<div><a href=\"https://www.qbitai.com/2026/11/512354.html#\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div><img src=\"http://www.qbitai.com/wp-content/uploads/2019/06/200.jpg\" alt=\"量子位的朋友们\" loading=\"lazy\"><span><a href=\"https://www.qbitai.com/author/qbitai\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">量子位的朋友们</a></span></div></a></div>\n<div><ul><li><a href=\"https://www.qbitai.com/2026/11/512454.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">高德发布世界模型ABot-World 0.5，支持构建音画同步、可实时重塑的AI物理世界</a><i>2026-11-24</i></li><li><a href=\"https://www.qbitai.com/2026/11/512451.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">蚂蚁开源医疗健康预测模型，根据睡眠数据可预测未来六年150种疾病风险</a><i>2026-11-24</i></li><li><a href=\"https://www.qbitai.com/2026/11/512411.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">最新议程与嘉宾阵容公布！2027中国AIoT产业年会，11月27日深圳见</a><i>2026-11-24</i></li><li><a href=\"https://www.qbitai.com/2026/11/512387.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">叙事时代丨第20届中国投资年会·有限合伙人峰会在沪成功举办</a><i>2026-11-24</i></li></ul></div>\n<div><div></div></div>\n<div><span></span><div>扫码分享至朋友圈</div></div>\n<div></div>\n<a href=\"https://service.weibo.com/share/share.php?url=https://www.qbitai.com/2026/11/512354.html&amp;title=%E6%96%87%E5%BF%83%205.5%20Flash%20Preview%E6%AD%A3%E5%BC%8F%E5%BC%80%E6%BA%90%EF%BC%8C%E9%87%87%E7%94%A8%20Apache%202.0%20%E5%8D%8F%E8%AE%AE&amp;appkey=4017757111&amp;searchPic=true&amp;ralateUid=6105753431\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div></div></a>\n<a href=\"https://www.qbitai.com/2026/11/512354.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div></div></a>\n<div><h3>相关阅读</h3><ul><div><div><a href=\"https://www.qbitai.com/2020/03/12360.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://i.qbitai.com/wp-content/uploads/2020/03/%E5%B0%81%E7%99%BE%E5%BA%A6%E7%A8%8B%E5%BA%8F%E5%91%98%E7%BD%91%E7%AB%99%E9%9D%A2.png\" alt=\"\" loading=\"lazy\"></a></div></div></ul></div>\n<div><h4><a href=\"https://www.qbitai.com/2020/03/12360.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">百度工程师非法控制公司服务器“挖矿”：4个月获利10万，被判坐牢3年</a></h4><p></p><div><span><a href=\"https://www.qbitai.com/?author=7\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">郭一璞</a></span><span><span>2020-03-16</span></span><div><i></i><a href=\"https://www.qbitai.com/tag/%e6%8c%96%e7%9f%bf\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">挖矿</a><a href=\"https://www.qbitai.com/tag/%e7%99%be%e5%ba%a6\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">百度</a></div></div></div>\n<div><div><a href=\"https://www.qbitai.com/2023/11/96065.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://i.qbitai.com/wp-content/uploads/replace/36cf391139c661de9bd1cc331f41a3a4-e1699256806896.jpeg\" alt=\"\" loading=\"lazy\"></a></div></div>\n<div><h4><a href=\"https://www.qbitai.com/2023/11/96065.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">百度无人车，刚刚换帅了</a></h4><p>六年来首次，北航校友交接棒</p><div><span><a href=\"https://www.qbitai.com/?author=47837\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">一凡</a></span><span><span>2023-11-06</span></span><div><i></i><a href=\"https://www.qbitai.com/tag/%e7%99%be%e5%ba%a6\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">百度</a><a href=\"https://www.qbitai.com/tag/%e8%87%aa%e5%8a%a8%e9%a9%be%e9%a9%b6\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">自动驾驶</a><a href=\"https://www.qbitai.com/tag/%e8%bd%a6%e5%9c%88%e6%9c%80%e6%96%b0%e8%ae%a4%e7%9f%a5\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">车圈最新认知</a></div></div></div>\n<div><div><a href=\"https://www.qbitai.com/2023/01/41057.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://i.qbitai.com/wp-content/uploads/2023/01/44.jpg\" alt=\"\" loading=\"lazy\"></a></div></div>\n<div><h4><a href=\"https://www.qbitai.com/2023/01/41057.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">IDC MarketScape：百度智能云位居领导者象限</a></h4><p>IDC发布中国物联网云平台厂商评估报告 百度智能云稳居领导者象限</p><div><span><a href=\"https://www.qbitai.com/?author=19\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">量子位</a></span><span><span>2023-01-06</span></span><div><i></i><a href=\"https://www.qbitai.com/tag/%e6%99%ba%e8%83%bd%e4%ba%91\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">智能云</a><a href=\"https://www.qbitai.com/tag/%e7%89%a9%e8%81%94%e7%bd%91\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">物联网</a><a href=\"https://www.qbitai.com/tag/%e7%99%be%e5%ba%a6\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">百度</a></div></div></div>\n<div><div><a href=\"https://www.qbitai.com/2019/09/7525.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://i.qbitai.com/wp-content/uploads/2019/09/954f890307084a39b67b91dade7de536-e1569228367739.gif\" alt=\"\" loading=\"lazy\"></a></div></div>\n<div><h4><a href=\"https://www.qbitai.com/2019/09/7525.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">百度喊你来长沙坐Robotaxi，起底首款量产车型红旗EV</a></h4><p></p><div><span><a href=\"https://www.qbitai.com/?author=12\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">智能车参考</a></span><span><span>2019-09-23</span></span><div><i></i><a href=\"https://www.qbitai.com/tag/%e7%99%be%e5%ba%a6\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">百度</a><a href=\"https://www.qbitai.com/tag/%e8%87%aa%e5%8a%a8%e9%a9%be%e9%a9%b6\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">自动驾驶</a></div></div></div>\n<div><div><a href=\"https://www.qbitai.com/2024/07/162994.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://i.qbitai.com/wp-content/uploads/replace/7ffbd1443a97125c4eec08958e362927.jpeg\" alt=\"\" loading=\"lazy\"></a></div></div>\n<div><h4><a href=\"https://www.qbitai.com/2024/07/162994.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">中国软件评测中心最新报告：文心大模型技术、产品、应用全面领跑</a></h4><p>在智能体、多模型创新具备先发优势</p><div><span><a href=\"https://www.qbitai.com/?author=21\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">十三</a></span><span><span>2024-07-05</span></span><div><i></i><a href=\"https://www.qbitai.com/tag/%e5%a4%a7%e6%a8%a1%e5%9e%8b\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">大模型</a><a href=\"https://www.qbitai.com/tag/%e6%96%87%e5%bf%83%e4%b8%80%e8%a8%80\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">文心一言</a><a href=\"https://www.qbitai.com/tag/%e7%99%be%e5%ba%a6\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">百度</a></div></div></div>\n<div><div><a href=\"https://www.qbitai.com/2021/11/30085.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://i.qbitai.com/wp-content/uploads/2021/11/2021-11-09-14.57.31-e1636442008942.png\" alt=\"\" loading=\"lazy\"></a></div></div>\n<div><h4><a href=\"https://www.qbitai.com/2021/11/30085.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">人人可用的AI大模型来了，“玩”TA还有奖金拿</a></h4><p></p><div><span><a href=\"https://www.qbitai.com/?author=19\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">量子位</a></span><span><span>2021-11-09</span></span><div><i></i><a href=\"https://www.qbitai.com/tag/ai%e5%88%9b%e6%84%8f%e8%b5%9b\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">AI创意赛</a><a href=\"https://www.qbitai.com/tag/ai%e5%a4%a7%e6%a8%a1%e5%9e%8b\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">AI大模型</a><a href=\"https://www.qbitai.com/tag/%e7%99%be%e5%ba%a6\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">百度</a></div></div></div>\n<div><div><h3>热门文章</h3><div><a href=\"https://www.qbitai.com/2026/11/511727.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div></div></a></div></div></div>\n<div><h4>黎曼猜想被证明？！Claude加持，34岁数学家放出Lean证明</h4></div>\n<div>2026-11-21</div>\n<div><a href=\"https://www.qbitai.com/2026/11/510707.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/8562ee9a7576cda9b61e6eb46dd55388.png\" alt=\"\" loading=\"lazy\"></div></a></div>\n<div><h4>GPT-6.2 Astra和Sol王炸双发！3D又危了</h4></div>\n<div>2026-11-18</div>\n<div><a href=\"https://www.qbitai.com/2026/11/511570.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/article-image-3-22.png\" alt=\"\" loading=\"lazy\"></div></a></div>\n<div><h4>刚刚，DeepSeek V1作者创业项目曝光：开源Agent</h4></div>\n<div>2026-11-21</div>\n<div><a href=\"https://www.qbitai.com/2026/11/511582.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/84d9f513-3596-4455-97f6-7db3ebd30fe9-e1795152237563.png\" alt=\"\" loading=\"lazy\"></div></a></div>\n<div><h4>双系统决策+双层自进化，Agnes让Agent效率最高提速14倍，成本骤降至1/27！</h4></div>\n<div>2026-11-20</div>\n<div><a href=\"https://www.qbitai.com/2026/11/510726.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/beb9351a-adc2-4e9d-897d-94fe81d08abe-e1794963811986.png\" alt=\"\" loading=\"lazy\"></div></a></div>\n<div><h4>黄仁勋不再沉默：我愿重掌英伟达！董事会：不考虑</h4></div>\n<div>2026-11-18</div>\n<div><div><div><ul><li><a href=\"https://www.qbitai.com/?page_id=99\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">关于量子位</a></li><li><a href=\"https://www.qbitai.com/?page_id=101\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">加入我们</a></li><li><a href=\"https://www.qbitai.com/?page_id=103\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">寻求报道</a></li><li><a href=\"https://www.qbitai.com/?page_id=105\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">商务合作</a></li></ul><div><div><i></i></div></div></div></div></div>\n<div><p>扫码关注量子位</p><img src=\"https://www.qbitai.com/wp-content/uploads/2019/01/qrcode_QbitAI_1.jpg\" alt=\"\" loading=\"lazy\"></div>\n<a href=\"https://weibo.com/qbitai?is_all=1\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><i></i></a>\n<a href=\"https://www.zhihu.com/org/liang-zi-wei-48/activities\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div></div></a>\n<a href=\"https://www.toutiao.com/c/user/53624121633/#mid=1556041376883713\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div></div></a>\n<div><div><a href=\"https://www.qbitai.com/2026/11/512354.html#\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"></a><span>追踪人工智能新趋势，报道科技行业新突破</span></div></div>\n<div></div>\n<p>量子位 QbitAI 版权所有©北京极客伙伴科技有限公司<a href=\"https://beian.miit.gov.cn/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">京ICP备17005886号-1</a></p>",
+            "text": "文心 5.5 Flash Preview正式开源，采用 Apache 2.0 协议\n量子位的朋友们 2026-11-24 14:22:28 来源： 量子位\n11 月 24 日，文心 5.5 Flash Preview（ERNIE 5.5 Flash Preview）正式开源，采用 Apache 2.0 协议面向全球开源社区开放。开发者可在 Hugging Face、ModelScope 平台获取模型权重与配套资源，进行本地部署与二次开发，支持 vLLM、SGLang 等主流推理框架进行部署。\n文心 5.5 Flash Preview总参数量达 2800 亿，每个 Token 激活 140 亿参数，支持最长 100 万 Token 的上下文，在编程、3D 建模、知识工作、内容创作等方面表现突出，在Terminal-Bench、AutomationBench等多项基准测试中，文心5.5 Flash Preview 取得了具有竞争力的得分，并保持极致的解码速度。在CodeArena WebDev 榜单中，文心 5.5 Flash Preview以1668分位列开源模型第二、国产模型第四，紧随Kimi K3.1 Pro、Qwen3.8-Max等大参数国产模型之后。\n随着模型权重开放，全球开发者可基于文心 5.5 Flash Preview 开展领域微调、工具链适配与部署优化，进一步探索模型在不同业务场景中的应用。\n模型下载地址：\nHugging Face https://huggingface.co/baidu/ERNIE-5.5-Flash-Preview\nModelScope https://www.modelscope.cn/models/baidu/ERNIE-5.5-Flash-Preview\n本文由百度提供，量子位获授权转载，观点归原作者所有。\n版权所有，未经授权不得以任何形式转载及使用，违者必究。\n百度\n量子位的朋友们\n高德发布世界模型ABot-World 0.5，支持构建音画同步、可实时重塑的AI物理世界 2026-11-24\n蚂蚁开源医疗健康预测模型，根据睡眠数据可预测未来六年150种疾病风险 2026-11-24\n最新议程与嘉宾阵容公布！2027中国AIoT产业年会，11月27日深圳见 2026-11-24\n叙事时代丨第20届中国投资年会·有限合伙人峰会在沪成功举办 2026-11-24\n扫码分享至朋友圈\n相关阅读\n百度工程师非法控制公司服务器“挖矿”：4个月获利10万，被判坐牢3年\n郭一璞 2020-03-16 挖矿 百度\n百度无人车，刚刚换帅了\n六年来首次，北航校友交接棒\n一凡 2023-11-06 百度 自动驾驶 车圈最新认知\nIDC MarketScape：百度智能云位居领导者象限\nIDC发布中国物联网云平台厂商评估报告 百度智能云稳居领导者象限\n量子位 2023-01-06 智能云 物联网 百度\n百度喊你来长沙坐Robotaxi，起底首款量产车型红旗EV\n智能车参考 2019-09-23 百度 自动驾驶\n中国软件评测中心最新报告：文心大模型技术、产品、应用全面领跑\n在智能体、多模型创新具备先发优势\n十三 2024-07-05 大模型 文心一言 百度\n人人可用的AI大模型来了，“玩”TA还有奖金拿\n量子位 2021-11-09 AI创意赛 AI大模型 百度\n热门文章\n黎曼猜想被证明？！Claude加持，34岁数学家放出Lean证明\n2026-11-21\nGPT-6.2 Astra和Sol王炸双发！3D又危了\n2026-11-18\n刚刚，DeepSeek V1作者创业项目曝光：开源Agent\n2026-11-21\n双系统决策+双层自进化，Agnes让Agent效率最高提速14倍，成本骤降至1/27！\n2026-11-20\n黄仁勋不再沉默：我愿重掌英伟达！董事会：不考虑\n2026-11-18\n关于量子位\n加入我们\n寻求报道\n商务合作\n扫码关注量子位\n追踪人工智能新趋势，报道科技行业新突破\n量子位 QbitAI 版权所有©北京极客伙伴科技有限公司 京ICP备17005886号-1",
+            "lead": "文心 5.5 Flash Preview正式开源，采用 Apache 2.0 协议\n量子位的朋友们 2026-11-24 14:22:28 来源： 量子位\n11 月 24 日，文心 5.5 Flash Preview（ERNIE 5.5 Flash Preview）正式开源，采用 Apache 2.0 协议面向全球开源社区开放。开发者可在 Hugging Face、ModelScope 平台获取模型权重与配套资源，进行本地部署与二次开发，支持 vLLM、SGLang 等主流推理框架进行部署。\n文心 5.5 Flash Preview总参数量达 2800 亿，每个 Token 激活 140 亿参数，支持最长 100 万 Token 的上下文，在编程、3D 建模、知识工作、内容创作等方面表现突出，在Terminal-Bench、AutomationBench等多项基准测试中，文心5.5 Flash Preview 取得了具有竞争力的得分，并保持极致的解码速度。在CodeArena WebDev 榜单中，文心 5",
+            "chars": 1945,
+            "shown": 1945,
+            "truncated": false
+          },
+          "categories": [
+            "资讯",
+            "百度"
+          ],
+          "author": "量子位的朋友们",
+          "lang": "zh",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "news",
+          "metrics": {},
+          "quality": 9,
+          "score": 23.8,
+          "category": "local",
+          "subcategory": "weights",
+          "practical": 5,
+          "slug": "42aaeb98ef91",
+          "action": 6,
+          "rank": 18.6,
+          "tags": [
+            "local",
+            "benchmark",
+            "agent",
+            "free"
+          ]
+        },
+        {
+          "sourceId": "gh-releases",
+          "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "github-actions[bot]",
+          "id": "456227993",
+          "title": "ollama v0.40.18 发布",
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.40.18",
+          "published": "2026-11-24T04:18:13.000Z",
+          "summary": "What's Changed mlx: fuse Inkling residual mixing on Metal by @dhiltgen in https://github.com/ollama/ollama/pull/19808 mlxrunner: share tensor helpers and model setup across architectures by @jaingaurav in https://github.com/ollama/ollama/pull/19805 llama.cpp: version bump b12651 + remove jetpack5 support by @pdevine i…",
+          "content": {
+            "html": "<h4>What's Changed</h4>\n<ul><li>mlx: fuse Inkling residual mixing on Metal by @dhiltgen in https://github.com/ollama/ollama/pull/19808</li><li>mlxrunner: share tensor helpers and model setup across architectures by @jaingaurav in https://github.com/ollama/ollama/pull/19805</li><li>llama.cpp: version bump b12651 + remove jetpack5 support by @pdevine in https://github.com/ollama/ollama/pull/19865</li><li>inkling2: faster Metal decode, prefill and draft rounds by @dhiltgen in https://github.com/ollama/ollama/pull/19843</li></ul>\n<p><strong>Full Changelog</strong>: https://github.com/ollama/ollama/compare/v0.40.17...v0.40.18-rc0</p>",
+            "text": "What's Changed\nmlx: fuse Inkling residual mixing on Metal by @dhiltgen in https://github.com/ollama/ollama/pull/19808\nmlxrunner: share tensor helpers and model setup across architectures by @jaingaurav in https://github.com/ollama/ollama/pull/19805\nllama.cpp: version bump b12651 + remove jetpack5 support by @pdevine in https://github.com/ollama/ollama/pull/19865\ninkling2: faster Metal decode, prefill and draft rounds by @dhiltgen in https://github.com/ollama/ollama/pull/19843\nFull Changelog : https://github.com/ollama/ollama/compare/v0.40.17...v0.40.18-rc0",
+            "lead": "What's Changed\nmlx: fuse Inkling residual mixing on Metal by @dhiltgen in https://github.com/ollama/ollama/pull/19808\nmlxrunner: share tensor helpers and model setup across architectures by @jaingaurav in https://github.com/ollama/ollama/pull/19805\nllama.cpp: version bump b12651 + remove jetpack5 support by @pdevine in https://github.com/ollama/ollama/pull/19865\ninkling2: faster Metal decode, prefill and draft rounds by @dhiltgen in https://github.com/olla",
+            "chars": 570,
+            "shown": 570,
+            "truncated": false
+          },
+          "quality": 8,
+          "score": 19.43,
+          "category": "local",
+          "subcategory": "runtime",
+          "practical": 1,
+          "slug": "b2b9f81ef3e6",
+          "action": 3,
+          "rank": 12.8,
+          "tags": [
+            "local"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bench",
+      "label": "评测选型",
+      "items": [
+        {
+          "sourceId": "qbitai",
+          "sourceName": "量子位",
+          "title": "Google Cloud 出海峰会报名开启",
+          "url": "https://www.qbitai.com/2026/11/512370.html",
+          "id": "https://www.qbitai.com/?p=512370",
+          "published": "2026-11-24T06:52:29.000Z",
+          "summary": "Google Cloud 出海峰会报名开启 量子位的朋友们 2026-11-24 14:52:29 来源： 量子位 2027 Google Cloud 出海峰会将于 1 月 14 日在北京中关村国际创新中心举行 Hello 各位小伙伴～ 2027 Google Cloud 出海峰会（Google Cloud Summit）将于 1 月 14 日在北京中关村国际创新中心 举行！作为合作伙伴，我们为成员们争取到了一批 现场参会名额 。大家一起看看本次峰会的亮点： 🔥 大咖拆解真案例 ：Googler 与零售、制造、游戏、泛互联网等领域的头部出海企业负责人同台，把大模型、Agent 和云端架构的打法讲透。 🎯 5 大分会场任你选 ：…",
+          "content": {
+            "html": "&lt;!DOCTYPE html&gt;<div><div><div>&lt; img id=\"wx_img\" src=\"https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png\" width=\"400\" height=\"400\"&gt;</div></div></div>\n<div><h3>Google Cloud 出海峰会报名开启</h3><div><span><img src=\"http://www.qbitai.com/wp-content/uploads/2019/06/200-100x100.jpg\" alt=\"量子位的朋友们\" loading=\"lazy\"><em><a href=\"https://www.qbitai.com/author/qbitai\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">量子位的朋友们</a></em></span><span>2026-11-24</span><span>14:52:29</span><span>来源：<a href=\"https://www.qbitai.com/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">量子位</a></span></div></div>\n<div><p>2027 Google Cloud 出海峰会将于 1 月 14 日在北京中关村国际创新中心举行</p></div>\n<p>Hello 各位小伙伴～<strong>2027 Google Cloud 出海峰会（Google Cloud Summit）将于 1 月 14 日在北京中关村国际创新中心</strong>举行！作为合作伙伴，我们为成员们争取到了一批<strong>现场参会名额</strong>。大家一起看看本次峰会的亮点：</p>\n<ol><li><strong>🔥 大咖拆解真案例</strong>：Googler 与零售、制造、游戏、泛互联网等领域的头部出海企业负责人同台，把大模型、Agent 和云端架构的打法讲透。</li><li><strong>🎯 5 大分会场任你选</strong>：全域零售、智能制造与生命科学、游戏、泛互联网与金融科技、初创与开发者生态，总有一场属于你的赛道。</li><li><strong>🎡 AI 创新嘉年华</strong>：上手参与 AI 工坊和黑客松，与 Google 开发专家面对面，还能听一线构建者分享经验。</li></ol>\n<p>无论你正在做出海业务、关注 AI 落地，还是想拓展全球化技术视野，都欢迎来现场交流！一起看 Google Cloud 如何驱动全球商业增长。</p>\n<p>名额有限，先到先得～</p>\n<div><div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/ac92eaa1ec0a923939970ea052731309.png\" alt=\"\" loading=\"lazy\"></div></div>\n<div><div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/c6d41f0bcb55e00ef30d469c680a6b02.png\" alt=\"\" loading=\"lazy\"></div></div>\n<p><em><span>本文由Google提供，量子位获授权转载，观点归原作者所有。</span></em></p>\n<div><span></span><em>版权所有，未经授权不得以任何形式转载及使用，违者必究。</em><span></span></div>\n<div><a href=\"https://www.qbitai.com/tag/google\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Google</a></div>\n<div><a href=\"https://www.qbitai.com/2026/11/512370.html#\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div><img src=\"http://www.qbitai.com/wp-content/uploads/2019/06/200.jpg\" alt=\"量子位的朋友们\" loading=\"lazy\"><span><a href=\"https://www.qbitai.com/author/qbitai\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">量子位的朋友们</a></span></div></a></div>\n<div><ul><li><a href=\"https://www.qbitai.com/2026/11/512454.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">高德发布世界模型ABot-World 0.5，支持构建音画同步、可实时重塑的AI物理世界</a><i>2026-11-24</i></li><li><a href=\"https://www.qbitai.com/2026/11/512451.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">蚂蚁开源医疗健康预测模型，根据睡眠数据可预测未来六年150种疾病风险</a><i>2026-11-24</i></li><li><a href=\"https://www.qbitai.com/2026/11/512411.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">最新议程与嘉宾阵容公布！2027中国AIoT产业年会，11月27日深圳见</a><i>2026-11-24</i></li><li><a href=\"https://www.qbitai.com/2026/11/512387.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">叙事时代丨第20届中国投资年会·有限合伙人峰会在沪成功举办</a><i>2026-11-24</i></li></ul></div>\n<div><div></div></div>\n<div><span></span><div>扫码分享至朋友圈</div></div>\n<div></div>\n<a href=\"https://service.weibo.com/share/share.php?url=https://www.qbitai.com/2026/11/512370.html&amp;title=Google%20Cloud%20%E5%87%BA%E6%B5%B7%E5%B3%B0%E4%BC%9A%E6%8A%A5%E5%90%8D%E5%BC%80%E5%90%AF&amp;appkey=4017757111&amp;searchPic=true&amp;ralateUid=6105753431\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div></div></a>\n<a href=\"https://www.qbitai.com/2026/11/512370.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div></div></a>\n<div><h3>相关阅读</h3><ul><div><div><a href=\"https://www.qbitai.com/2019/07/4977.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://i.qbitai.com/wp-content/uploads/2019/07/-e1563166186325-300x175.png\" alt=\"\" loading=\"lazy\"></a></div></div></ul></div>\n<div><h4><a href=\"https://www.qbitai.com/2019/07/4977.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">刚刚，被骂多年的谷歌终于回应AI专利争议：怕被碰瓷，抢先下手，永不牟利</a></h4><p>Google选择了先申请成专利，防止可能的碰瓷或不必要的麻烦。</p><div><span><a href=\"https://www.qbitai.com/?author=14\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">雷刚</a></span><span><span>2019-07-10</span></span><div><i></i><a href=\"https://www.qbitai.com/tag/ai\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">AI</a><a href=\"https://www.qbitai.com/tag/google\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Google</a></div></div></div>\n<div><div><a href=\"https://www.qbitai.com/2019/07/5275.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://i.qbitai.com/wp-content/uploads/2019/07/-e1563426333942.jpeg\" alt=\"\" loading=\"lazy\"></a></div></div>\n<div><h4><a href=\"https://www.qbitai.com/2019/07/5275.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">值150亿美元！谷歌地产新项目，与澳公司合作开发140万平米房产</a></h4><p></p><div><span><a href=\"https://www.qbitai.com/?author=7\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">郭一璞</a></span><span><span>2019-07-18</span></span><div><i></i><a href=\"https://www.qbitai.com/tag/google\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Google</a></div></div></div>\n<div><div><a href=\"https://www.qbitai.com/2019/09/6913.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://i.qbitai.com/wp-content/uploads/2019/09/-2019-09-04-%E4%B8%8A%E5%8D%8811.55.49-e1567573547249-300x175.png\" alt=\"\" loading=\"lazy\"></a></div></div>\n<div><h4><a href=\"https://www.qbitai.com/2019/09/6913.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">把你爱玩的App都关进小黑屋，Android 10正式更新，谷歌要给你治“网瘾”</a></h4><p></p><div><span><a href=\"https://www.qbitai.com/?author=7\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">郭一璞</a></span><span><span>2019-09-04</span></span><div><i></i><a href=\"https://www.qbitai.com/tag/android\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Android</a><a href=\"https://www.qbitai.com/tag/google\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Google</a></div></div></div>\n<div><div><a href=\"https://www.qbitai.com/2023/07/68834.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://i.qbitai.com/wp-content/uploads/2023/07/tom-e1689320206235.png\" alt=\"\" loading=\"lazy\"></a></div></div>\n<div><h4><a href=\"https://www.qbitai.com/2023/07/68834.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">谷歌版ChatGPT支持中文了！弱智吧实测结果在此</a></h4><p>弱智吧赢了</p><div><span><a href=\"https://www.qbitai.com/?author=47832\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">克雷西</a></span><span><span>2023-07-14</span></span><div><i></i><a href=\"https://www.qbitai.com/tag/bard\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Bard</a><a href=\"https://www.qbitai.com/tag/google\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Google</a><a href=\"https://www.qbitai.com/tag/%e5%a4%a7%e8%af%ad%e8%a8%80%e6%a8%a1%e5%9e%8b\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">大语言模型</a></div></div></div>\n<div><div><a href=\"https://www.qbitai.com/2025/12/360439.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://i.qbitai.com/wp-content/uploads/2025/12/%E6%96%B0%E5%BB%BA%E9%A1%B9%E7%9B%AE-1-1.png\" alt=\"\" loading=\"lazy\"></a></div></div>\n<div><h4><a href=\"https://www.qbitai.com/2025/12/360439.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">GPT-5.2果然反超谷歌Gemini 3 Pro！北大数院校友核心贡献</a></h4><p>红色警报解除了？</p><div><span><a href=\"https://www.qbitai.com/?author=32\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">梦晨</a></span><span><span>2025-12-12</span></span><div><i></i><a href=\"https://www.qbitai.com/tag/gemini\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Gemini</a><a href=\"https://www.qbitai.com/tag/google\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Google</a><a href=\"https://www.qbitai.com/tag/openai\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">OpenAI</a></div></div></div>\n<div><div><a href=\"https://www.qbitai.com/2020/03/12161.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://i.qbitai.com/wp-content/uploads/2020/03/-2020-03-08-%E4%B8%8B%E5%8D%881.26.21-e1583645213206-300x175.png\" alt=\"\" loading=\"lazy\"></a></div></div>\n<div><h4><a href=\"https://www.qbitai.com/2020/03/12161.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">加州无人出租最新报告：Waymo规模无敌手，但单车效率已被PonyAI超越</a></h4><p></p><div><span><a href=\"https://www.qbitai.com/?author=14\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">雷刚</a></span><span><span>2020-03-08</span></span><div><i></i><a href=\"https://www.qbitai.com/tag/google\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Google</a><a href=\"https://www.qbitai.com/tag/ponyai\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">PonyAI</a><a href=\"https://www.qbitai.com/tag/waymo\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Waymo</a><a href=\"https://www.qbitai.com/tag/%e6%97%a0%e4%ba%ba%e8%bd%a6\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">无人车</a><a href=\"https://www.qbitai.com/tag/%e8%87%aa%e5%8a%a8%e9%a9%be%e9%a9%b6\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">自动驾驶</a></div></div></div>\n<div><div><h3>热门文章</h3><div><a href=\"https://www.qbitai.com/2026/11/511727.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div></div></a></div></div></div>\n<div><h4>黎曼猜想被证明？！Claude加持，34岁数学家放出Lean证明</h4></div>\n<div>2026-11-21</div>\n<div><a href=\"https://www.qbitai.com/2026/11/510707.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/8562ee9a7576cda9b61e6eb46dd55388.png\" alt=\"\" loading=\"lazy\"></div></a></div>\n<div><h4>GPT-6.2 Astra和Sol王炸双发！3D又危了</h4></div>\n<div>2026-11-18</div>\n<div><a href=\"https://www.qbitai.com/2026/11/511570.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/article-image-3-22.png\" alt=\"\" loading=\"lazy\"></div></a></div>\n<div><h4>刚刚，DeepSeek V1作者创业项目曝光：开源Agent</h4></div>\n<div>2026-11-21</div>\n<div><a href=\"https://www.qbitai.com/2026/11/511582.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/84d9f513-3596-4455-97f6-7db3ebd30fe9-e1795152237563.png\" alt=\"\" loading=\"lazy\"></div></a></div>\n<div><h4>双系统决策+双层自进化，Agnes让Agent效率最高提速14倍，成本骤降至1/27！</h4></div>\n<div>2026-11-20</div>\n<div><a href=\"https://www.qbitai.com/2026/11/510726.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/beb9351a-adc2-4e9d-897d-94fe81d08abe-e1794963811986.png\" alt=\"\" loading=\"lazy\"></div></a></div>\n<div><h4>黄仁勋不再沉默：我愿重掌英伟达！董事会：不考虑</h4></div>\n<div>2026-11-18</div>\n<div><div><div><ul><li><a href=\"https://www.qbitai.com/?page_id=99\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">关于量子位</a></li><li><a href=\"https://www.qbitai.com/?page_id=101\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">加入我们</a></li><li><a href=\"https://www.qbitai.com/?page_id=103\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">寻求报道</a></li><li><a href=\"https://www.qbitai.com/?page_id=105\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">商务合作</a></li></ul><div><div><i></i></div></div></div></div></div>\n<div><p>扫码关注量子位</p><img src=\"https://www.qbitai.com/wp-content/uploads/2019/01/qrcode_QbitAI_1.jpg\" alt=\"\" loading=\"lazy\"></div>\n<a href=\"https://weibo.com/qbitai?is_all=1\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><i></i></a>\n<a href=\"https://www.zhihu.com/org/liang-zi-wei-48/activities\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div></div></a>\n<a href=\"https://www.toutiao.com/c/user/53624121633/#mid=1556041376883713\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div></div></a>\n<div><div><a href=\"https://www.qbitai.com/2026/11/512370.html#\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"></a><span>追踪人工智能新趋势，报道科技行业新突破</span></div></div>\n<div></div>\n<p>量子位 QbitAI 版权所有©北京极客伙伴科技有限公司<a href=\"https://beian.miit.gov.cn/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">京ICP备17005886号-1</a></p>",
+            "text": "Google Cloud 出海峰会报名开启\n量子位的朋友们 2026-11-24 14:52:29 来源： 量子位\n2027 Google Cloud 出海峰会将于 1 月 14 日在北京中关村国际创新中心举行\nHello 各位小伙伴～ 2027 Google Cloud 出海峰会（Google Cloud Summit）将于 1 月 14 日在北京中关村国际创新中心 举行！作为合作伙伴，我们为成员们争取到了一批 现场参会名额 。大家一起看看本次峰会的亮点：\n🔥 大咖拆解真案例 ：Googler 与零售、制造、游戏、泛互联网等领域的头部出海企业负责人同台，把大模型、Agent 和云端架构的打法讲透。\n🎯 5 大分会场任你选 ：全域零售、智能制造与生命科学、游戏、泛互联网与金融科技、初创与开发者生态，总有一场属于你的赛道。\n🎡 AI 创新嘉年华 ：上手参与 AI 工坊和黑客松，与 Google 开发专家面对面，还能听一线构建者分享经验。\n无论你正在做出海业务、关注 AI 落地，还是想拓展全球化技术视野，都欢迎来现场交流！一起看 Google Cloud 如何驱动全球商业增长。\n名额有限，先到先得～\n本文由Google提供，量子位获授权转载，观点归原作者所有。\n版权所有，未经授权不得以任何形式转载及使用，违者必究。\nGoogle\n量子位的朋友们\n高德发布世界模型ABot-World 0.5，支持构建音画同步、可实时重塑的AI物理世界 2026-11-24\n蚂蚁开源医疗健康预测模型，根据睡眠数据可预测未来六年150种疾病风险 2026-11-24\n最新议程与嘉宾阵容公布！2027中国AIoT产业年会，11月27日深圳见 2026-11-24\n叙事时代丨第20届中国投资年会·有限合伙人峰会在沪成功举办 2026-11-24\n扫码分享至朋友圈\n相关阅读\n刚刚，被骂多年的谷歌终于回应AI专利争议：怕被碰瓷，抢先下手，永不牟利\nGoogle选择了先申请成专利，防止可能的碰瓷或不必要的麻烦。\n雷刚 2019-07-10 AI Google\n值150亿美元！谷歌地产新项目，与澳公司合作开发140万平米房产\n郭一璞 2019-07-18 Google\n把你爱玩的App都关进小黑屋，Android 10正式更新，谷歌要给你治“网瘾”\n郭一璞 2019-09-04 Android Google\n谷歌版ChatGPT支持中文了！弱智吧实测结果在此\n弱智吧赢了\n克雷西 2023-07-14 Bard Google 大语言模型\nGPT-5.2果然反超谷歌Gemini 3 Pro！北大数院校友核心贡献\n红色警报解除了？\n梦晨 2025-12-12 Gemini Google OpenAI\n加州无人出租最新报告：Waymo规模无敌手，但单车效率已被PonyAI超越\n雷刚 2020-03-08 Google PonyAI Waymo 无人车 自动驾驶\n热门文章\n黎曼猜想被证明？！Claude加持，34岁数学家放出Lean证明\n2026-11-21\nGPT-6.2 Astra和Sol王炸双发！3D又危了\n2026-11-18\n刚刚，DeepSeek V1作者创业项目曝光：开源Agent\n2026-11-21\n双系统决策+双层自进化，Agnes让Agent效率最高提速14倍，成本骤降至1/27！\n2026-11-20\n黄仁勋不再沉默：我愿重掌英伟达！董事会：不考虑\n2026-11-18\n关于量子位\n加入我们\n寻求报道\n商务合作\n扫码关注量子位\n追踪人工智能新趋势，报道科技行业新突破\n量子位 QbitAI 版权所有©北京极客伙伴科技有限公司 京ICP备17005886号-1",
+            "lead": "Google Cloud 出海峰会报名开启\n量子位的朋友们 2026-11-24 14:52:29 来源： 量子位\n2027 Google Cloud 出海峰会将于 1 月 14 日在北京中关村国际创新中心举行\nHello 各位小伙伴～ 2027 Google Cloud 出海峰会（Google Cloud Summit）将于 1 月 14 日在北京中关村国际创新中心 举行！作为合作伙伴，我们为成员们争取到了一批 现场参会名额 。大家一起看看本次峰会的亮点：\n🔥 大咖拆解真案例 ：Googler 与零售、制造、游戏、泛互联网等领域的头部出海企业负责人同台，把大模型、Agent 和云端架构的打法讲透。\n🎯 5 大分会场任你选 ：全域零售、智能制造与生命科学、游戏、泛互联网与金融科技、初创与开发者生态，总有一场属于你的赛道。\n🎡 AI 创新嘉年华 ：上手参与 AI 工坊和黑客松，与 Google 开发专家面对面，还能听一线构建者分享经验。",
+            "chars": 1767,
+            "shown": 1767,
+            "truncated": false
+          },
+          "categories": [
+            "资讯",
+            "Google"
+          ],
+          "author": "量子位的朋友们",
+          "lang": "zh",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "news",
+          "metrics": {},
+          "quality": 10,
+          "score": 21.64,
+          "category": "bench",
+          "subcategory": "cost",
+          "practical": 4,
+          "slug": "f4da12f47948",
+          "action": 5,
+          "rank": 18,
+          "tags": [
+            "benchmark",
+            "tutorial",
+            "agent",
+            "free"
+          ]
+        },
+        {
+          "sourceId": "arxiv-cs",
+          "sourceName": "arXiv cs.AI/CL/LG",
+          "title": "Needwise: Generation-Free Conversational Recommendation from Need-Level Typed Decisions",
+          "url": "https://arxiv.org/abs/2611.31175v1",
+          "id": "http://arxiv.org/abs/2611.31175v1",
+          "published": "2026-11-23T18:32:04.000Z",
+          "summary": "Conversational recommenders must rank items against needs that catalogs record only in part, while users add, withdraw and reverse needs and switch between requests. LLM rankers re-read the dialogue at every turn: they are slow, and their ordering does not show which needs an item meets. We show that a conversational…",
+          "content": {
+            "html": "Conversational recommenders must rank items against needs that catalogs record only in part, while users add, withdraw and reverse needs and switch between requests. LLM rankers re-read the dialogue at every turn: they are slow, and their ordering does not show which needs an item meets. We show that a conversational recommender can be built from typed decisions instead: named questions over fixed options, answered with option probabilities rather than generated text. On each turn, one typed request maps the message onto the catalog's fields, keeps what no field expresses in the user's words, and decides how the turn changes each earlier need. Needwise then ranks candidates must-first: the needs on the kind of item, its place and its price form a tier, and within it one holistic decision and need-level verdicts (supported, contradicted or unknown) are combined with equal weight (Needwise-HF). With the graded attributes withheld from the records, so that needs must be inferred from names, descriptions and reviews, Needwise-HF ranks Google Local requests significantly better than GPT-6 Sol (0.383 against 0.343 nDCG@10) and is not significantly different from the strongest LLM ranker on Google Local and Yelp; these comparisons keep their sign under every treatment of unrecorded attributes we test. It costs a fraction of GPT-6 Sol's API price and answers in 2.5 s at the median on Google Local, against 5.6 s for GPT-6 Sol. In conversations, the typed state keeps the ranking across switches and returns, but it recognizes only 19-27% of withdrawn needs.",
+            "text": "Conversational recommenders must rank items against needs that catalogs record only in part, while users add, withdraw and reverse needs and switch between requests. LLM rankers re-read the dialogue at every turn: they are slow, and their ordering does not show which needs an item meets. We show that a conversational recommender can be built from typed decisions instead: named questions over fixed options, answered with option probabilities rather than generated text. On each turn, one typed request maps the message onto the catalog's fields, keeps what no field expresses in the user's words, and decides how the turn changes each earlier need. Needwise then ranks candidates must-first: the needs on the kind of item, its place and its price form a tier, and within it one holistic decision and need-level verdicts (supported, contradicted or unknown) are combined with equal weight (Needwise-HF). With the graded attributes withheld from the records, so that needs must be inferred from names, descriptions and reviews, Needwise-HF ranks Google Local requests significantly better than GPT-6 Sol (0.383 against 0.343 nDCG@10) and is not significantly different from the strongest LLM ranker on Google Local and Yelp; these comparisons keep their sign under every treatment of unrecorded attributes we test. It costs a fraction of GPT-6 Sol's API price and answers in 2.5 s at the median on Google Local, against 5.6 s for GPT-6 Sol. In conversations, the typed state keeps the ranking across switches and returns, but it recognizes only 19-27% of withdrawn needs.",
+            "lead": "Conversational recommenders must rank items against needs that catalogs record only in part, while users add, withdraw and reverse needs and switch between requests. LLM rankers re-read the dialogue at every turn: they are slow, and their ordering does not show which needs an item meets. We show that a conversational recommender can be built from typed decisions instead: named questions over fixed options, answered with option probabilities rather than gen",
+            "chars": 1572,
+            "shown": 1572,
+            "truncated": false
+          },
+          "categories": [
+            "cs.AI"
+          ],
+          "author": "Sungchul Kim",
+          "lang": "en",
+          "tier": 3,
+          "trustCategory": true,
+          "declaredCategory": "ideas",
+          "metrics": {},
+          "quality": 6,
+          "score": 13.22,
+          "category": "bench",
+          "subcategory": "cost",
+          "practical": 2,
+          "slug": "6e36c85fdd64",
+          "action": 3,
+          "rank": 10.8,
+          "tags": [
+            "free"
+          ]
+        },
+        {
+          "sourceId": "arxiv-ecosystem",
+          "sourceName": "arXiv 检索（推理引擎与量化）",
+          "title": "Run One, Get Two: Near-Free Streaming Safety Checks for Local LLMs",
+          "url": "https://arxiv.org/abs/2611.26975v1",
+          "id": "http://arxiv.org/abs/2611.26975v1",
+          "published": "2026-11-20T01:53:11.000Z",
+          "summary": "Local LLM assistants decode for one user at a time, so decoding is bound by memory bandwidth and leaves compute idle. Streaming safety checks today trade accuracy against cost. A dedicated guard model is accurate but nearly doubles the latency per token, while a hidden-state probe is cheap but less accurate. We presen…",
+          "content": {
+            "html": "Local LLM assistants decode for one user at a time, so decoding is bound by memory bandwidth and leaves compute idle. Streaming safety checks today trade accuracy against cost. A dedicated guard model is accurate but nearly doubles the latency per token, while a hidden-state probe is cheap but less accurate. We present ToRA, an adapter that runs a second model as an extra row in the generator's decode step, sharing its weights and KV cache. Dual-row kernels read each weight once for both rows. On Qwen3-0.6B, ToRA matches or beats a dedicated streaming guard, with higher F1 on 12 of 17 benchmarks. It detects 11.8 points more unsafe responses than the probe at a similar cost, under 4% added latency per token.",
+            "text": "Local LLM assistants decode for one user at a time, so decoding is bound by memory bandwidth and leaves compute idle. Streaming safety checks today trade accuracy against cost. A dedicated guard model is accurate but nearly doubles the latency per token, while a hidden-state probe is cheap but less accurate. We present ToRA, an adapter that runs a second model as an extra row in the generator's decode step, sharing its weights and KV cache. Dual-row kernels read each weight once for both rows. On Qwen3-0.6B, ToRA matches or beats a dedicated streaming guard, with higher F1 on 12 of 17 benchmarks. It detects 11.8 points more unsafe responses than the probe at a similar cost, under 4% added latency per token.",
+            "lead": "Local LLM assistants decode for one user at a time, so decoding is bound by memory bandwidth and leaves compute idle. Streaming safety checks today trade accuracy against cost. A dedicated guard model is accurate but nearly doubles the latency per token, while a hidden-state probe is cheap but less accurate. We present ToRA, an adapter that runs a second model as an extra row in the generator's decode step, sharing its weights and KV cache. Dual-row kernel",
+            "chars": 716,
+            "shown": 716,
+            "truncated": false
+          },
+          "categories": [
+            "cs.AI",
+            "cs.CL",
+            "cs.LG",
+            "cs.PF"
+          ],
+          "author": "Soheil Zibakhsh",
+          "lang": "en",
+          "tier": 3,
+          "trustCategory": false,
+          "declaredCategory": "ideas",
+          "metrics": {},
+          "quality": 6,
+          "fallback": true,
+          "score": 5.8,
+          "category": "bench",
+          "subcategory": "cost",
+          "practical": 2,
+          "slug": "061b2a897720",
+          "action": 2,
+          "rank": 9.2,
+          "tags": [
+            "free"
+          ]
+        },
+        {
+          "sourceId": "hn-algolia",
+          "sourceName": "Hacker News Search",
+          "lang": "en",
+          "tier": 3,
+          "trustCategory": false,
+          "declaredCategory": "tools",
+          "categories": [
+            "story",
+            "author_acossta",
+            "story_50633316"
+          ],
+          "author": "",
+          "id": "50633316",
+          "title": "Humanity's First Exam: Testing LLM Reliability",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/humanitys-first-exam/",
+          "published": "2026-11-24T19:34:31.000Z",
+          "summary": "We’re launching Humanity’s First Exam and a Kaggle hackathon to test LLM reliability. Oran Kelly Research Scientist, Google DeepMind Nov 24, 2026 Today, we’re launching the Humanity’s First Exam (HFE) benchmark on Kaggle to measure how reliably LLMs answer straightforward, everyday questions. Current frontier models e…",
+          "content": {
+            "html": "<article><section><div><div><div><div><div></div></div></div></div></div><div></div><div><div><h3>We’re launching Humanity’s First Exam and a Kaggle hackathon to test LLM reliability.</h3><div><div><div><div><div><p>Oran Kelly</p><p>Research Scientist, Google DeepMind</p></div></div></div></div></div></div></div><div><p>Nov 24, 2026</p></div><hr><div></div></section><div><section><div><p>Today, we’re launching the Humanity’s First Exam (HFE) benchmark on Kaggle to measure how reliably LLMs answer straightforward, everyday questions. Current frontier models excel at complex math, coding, and science, with most benchmarks measuring these domain-specific capability ceilings.</p><p>Instead of focusing on whether a model is capable of solving a task once, HFE measures whether models can consistently solve tasks (and slight variations) every single time. The dataset consists of 544 elementary text and image prompts across 20 foundational capabilities. Over the last 6 months, frontier models have made significant progress on HFE.</p><p>Explore the<a href=\"https://www.kaggle.com/benchmarks/deepmind/hfe/leaderboard\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">live leaderboard</a>, or read our<a href=\"https://storage.googleapis.com/deepmind-media/papers/hfe_tech_paper.pdf\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">technical report</a>.</p><p>To keep the HFE benchmark dataset up to date, we’re inviting the community to help. Join our three-week<a href=\"https://www.kaggle.com/benchmarks/deepmind/hfe\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Kaggle competition</a>through December 15 and submit everyday questions that today’s models still get wrong.</p></div></section></div><div><section><div><div><p>Example prompt from Humanity’s First Exam’s public dataset: “List the color of the third letter of each word in the neon sign in order, separated by a semicolon.” (Answer: green; yellow; white; blue; blue)</p></div></div></section></div><div><img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Neon_Sign.width-1200.format-webp.webp\" alt=\"A glowing multicolor neon sign reading “Dance While The Music Plays” inside the window of The Blue Moon Inn at night.\" loading=\"lazy\"></div></article>",
+            "text": "We’re launching Humanity’s First Exam and a Kaggle hackathon to test LLM reliability.\nOran Kelly\nResearch Scientist, Google DeepMind\nNov 24, 2026\nToday, we’re launching the Humanity’s First Exam (HFE) benchmark on Kaggle to measure how reliably LLMs answer straightforward, everyday questions. Current frontier models excel at complex math, coding, and science, with most benchmarks measuring these domain-specific capability ceilings.\nInstead of focusing on whether a model is capable of solving a task once, HFE measures whether models can consistently solve tasks (and slight variations) every single time. The dataset consists of 544 elementary text and image prompts across 20 foundational capabilities. Over the last 6 months, frontier models have made significant progress on HFE.\nExplore the live leaderboard , or read our technical report .\nTo keep the HFE benchmark dataset up to date, we’re inviting the community to help. Join our three-week Kaggle competition through December 15 and submit everyday questions that today’s models still get wrong.\nExample prompt from Humanity’s First Exam’s public dataset: “List the color of the third letter of each word in the neon sign in order, separated by a semicolon.” (Answer: green; yellow; white; blue; blue)",
+            "lead": "We’re launching Humanity’s First Exam and a Kaggle hackathon to test LLM reliability.\nOran Kelly\nResearch Scientist, Google DeepMind\nNov 24, 2026\nToday, we’re launching the Humanity’s First Exam (HFE) benchmark on Kaggle to measure how reliably LLMs answer straightforward, everyday questions. Current frontier models excel at complex math, coding, and science, with most benchmarks measuring these domain-specific capability ceilings.\nInstead of focusing on w",
+            "chars": 1286,
+            "shown": 1286,
+            "truncated": false
+          },
+          "metrics": {
+            "points": 2,
+            "comments": 0
+          },
+          "quality": 7,
+          "score": 15.13,
+          "category": "bench",
+          "subcategory": "benchmark",
+          "practical": 1,
+          "slug": "6b17f9769bdf",
+          "action": 1,
+          "rank": 8.6,
+          "tags": [
+            "benchmark"
+          ]
+        },
+        {
+          "sourceId": "arxiv-cs",
+          "sourceName": "arXiv cs.AI/CL/LG",
+          "title": "TowerBridge: Bridging the Dual-Encoder Modality Gap via Weight-Space Programming",
+          "url": "https://arxiv.org/abs/2611.31233v1",
+          "id": "http://arxiv.org/abs/2611.31233v1",
+          "published": "2026-11-23T18:59:13.000Z",
+          "summary": "CLIP-style dual encoders map images and text through two separate towers into a shared embedding space, where the two modalities occupy distinct regions separated by a modality gap. Retrieval fails when wrong matches, or hard negatives, outrank the correct one, and the gap is the usual suspect. Yet removing it post ho…",
+          "content": {
+            "html": "CLIP-style dual encoders map images and text through two separate towers into a shared embedding space, where the two modalities occupy distinct regions separated by a modality gap. Retrieval fails when wrong matches, or hard negatives, outrank the correct one, and the gap is the usual suspect. Yet removing it post hoc degrades retrieval on every CLIP checkpoint we test. We introduce a paired statistic that identifies directions where the two towers agree more on hard negatives than on matched pairs. Mildly attenuating these directions improves retrieval while largely preserving the gap. We arrive at this correction through weight-space programming: guided by the statistic, an LLM agent inspects both towers and writes closed-form weight edits without backpropagation. Free to edit any component, the agent improves COCO test retrieval on all 13 CLIP checkpoints and edits an output projection in 12 of the 13. We distill and refine its recurring correction into TowerBridge, a closed-form recipe motivated by a first-order analysis of the hard-negative margin. Computed in seconds from 25,000 labelled pairs, it requires no model-specific tuning and leaves the architecture and inference cost unchanged. TowerBridge improves COCO test retrieval by 16.8 RSUM and Flickr30k test retrieval by 6.6 on average across all 21 evaluated CLIP checkpoints, including 8 unseen by the agent, while limiting any drop in ImageNet zero-shot accuracy to 0.5 points. It also reduces hubness on all 21 checkpoints and improves retrieval on 4 of 5 dual encoders from other families.",
+            "text": "CLIP-style dual encoders map images and text through two separate towers into a shared embedding space, where the two modalities occupy distinct regions separated by a modality gap. Retrieval fails when wrong matches, or hard negatives, outrank the correct one, and the gap is the usual suspect. Yet removing it post hoc degrades retrieval on every CLIP checkpoint we test. We introduce a paired statistic that identifies directions where the two towers agree more on hard negatives than on matched pairs. Mildly attenuating these directions improves retrieval while largely preserving the gap. We arrive at this correction through weight-space programming: guided by the statistic, an LLM agent inspects both towers and writes closed-form weight edits without backpropagation. Free to edit any component, the agent improves COCO test retrieval on all 13 CLIP checkpoints and edits an output projection in 12 of the 13. We distill and refine its recurring correction into TowerBridge, a closed-form recipe motivated by a first-order analysis of the hard-negative margin. Computed in seconds from 25,000 labelled pairs, it requires no model-specific tuning and leaves the architecture and inference cost unchanged. TowerBridge improves COCO test retrieval by 16.8 RSUM and Flickr30k test retrieval by 6.6 on average across all 21 evaluated CLIP checkpoints, including 8 unseen by the agent, while limiting any drop in ImageNet zero-shot accuracy to 0.5 points. It also reduces hubness on all 21 checkpoints and improves retrieval on 4 of 5 dual encoders from other families.",
+            "lead": "CLIP-style dual encoders map images and text through two separate towers into a shared embedding space, where the two modalities occupy distinct regions separated by a modality gap. Retrieval fails when wrong matches, or hard negatives, outrank the correct one, and the gap is the usual suspect. Yet removing it post hoc degrades retrieval on every CLIP checkpoint we test. We introduce a paired statistic that identifies directions where the two towers agree ",
+            "chars": 1573,
+            "shown": 1573,
+            "truncated": false
+          },
+          "categories": [
+            "cs.CV",
+            "cs.LG"
+          ],
+          "author": "Hani Alomari",
+          "lang": "en",
+          "tier": 3,
+          "trustCategory": true,
+          "declaredCategory": "ideas",
+          "metrics": {},
+          "quality": 6,
+          "score": 12.05,
+          "category": "bench",
+          "subcategory": "benchmark",
+          "practical": 1,
+          "slug": "c43600f054ff",
+          "action": 1,
+          "rank": 7.6,
+          "tags": [
+            "agent",
+            "free"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "id": "model-pricing",
   "kind": "openrouter-pricing",
-  "collectedAt": "2026-11-24T06:21:17.228Z",
+  "collectedAt": "2026-11-24T20:47:32.931Z",
   "upstream": {
     "label": "OpenRouter 模型目录 API",
     "url": "https://openrouter.ai/models"
@@ -81,16 +81,6 @@
           "created": 1780551208
         },
         {
-          "name": "Dots Studio: Dots3-Note Preview (free)",
-          "id": "dots-studio/dots-3-note-preview:free",
-          "url": "https://openrouter.ai/dots-studio/dots-3-note-preview:free",
-          "context": 512000,
-          "promptPerMillion": 0,
-          "completionPerMillion": 0,
-          "free": true,
-          "created": 1786680361
-        },
-        {
           "name": "LiquidAI: LFM3-1.7B (free)",
           "id": "liquid/lfm-3-1.7b:free",
           "url": "https://openrouter.ai/liquid/lfm-3-1.7b:free",
@@ -119,6 +109,16 @@
           "completionPerMillion": 0.045,
           "free": false,
           "created": 1786034890
+        },
+        {
+          "name": "inclusionAI: Ling 3.0 Flash",
+          "id": "inclusionai/ling-3.0-flash",
+          "url": "https://openrouter.ai/inclusionai/ling-3.0-flash",
+          "context": 262144,
+          "promptPerMillion": 0.020999999999999998,
+          "completionPerMillion": 0.063,
+          "free": false,
+          "created": 1784818580
         },
         {
           "name": "OpenAI: gpt-oss-20b (batch)",
@@ -255,10 +255,20 @@
           "id": "~deepseek/deepseek-v4-flash-latest",
           "url": "https://openrouter.ai/~deepseek/deepseek-v4-flash-latest",
           "context": 1048576,
-          "promptPerMillion": 0.044,
-          "completionPerMillion": 0.13199999999999998,
+          "promptPerMillion": 0.04532,
+          "completionPerMillion": 0.13596,
           "free": false,
           "created": 1785606009
+        },
+        {
+          "name": "DeepSeek: DeepSeek V4 Flash 0731",
+          "id": "deepseek/deepseek-v4-flash-0731",
+          "url": "https://openrouter.ai/deepseek/deepseek-v4-flash-0731",
+          "context": 1048576,
+          "promptPerMillion": 0.045599999999999995,
+          "completionPerMillion": 0.3,
+          "free": false,
+          "created": 1785478908
         },
         {
           "name": "DeepSeek: DeepSeek V4 Flash 0731 (batch)",
@@ -269,16 +279,6 @@
           "completionPerMillion": 0.144,
           "free": false,
           "created": 1785478908
-        },
-        {
-          "name": "DeepSeek: DeepSeek V4.1 Flash",
-          "id": "deepseek/deepseek-v4.1-flash",
-          "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash",
-          "context": 1048576,
-          "promptPerMillion": 0.049800000000000004,
-          "completionPerMillion": 0.19920000000000002,
-          "free": false,
-          "created": 1789021285
         },
         {
           "name": "DeepSeek: DeepSeek V4.1 Flash (batch)",
@@ -371,14 +371,14 @@
           "created": 1789176933
         },
         {
-          "name": "DeepSeek: DeepSeek V4 Flash 0731",
-          "id": "deepseek/deepseek-v4-flash-0731",
-          "url": "https://openrouter.ai/deepseek/deepseek-v4-flash-0731",
+          "name": "DeepSeek: DeepSeek V4.1 Flash",
+          "id": "deepseek/deepseek-v4.1-flash",
+          "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash",
           "context": 1048576,
-          "promptPerMillion": 0.055,
-          "completionPerMillion": 0.375,
+          "promptPerMillion": 0.050699999999999995,
+          "completionPerMillion": 0.20279999999999998,
           "free": false,
-          "created": 1785478908
+          "created": 1789021285
         },
         {
           "name": "Amazon: Nova Lite 1.0",
@@ -415,14 +415,14 @@
   },
   "stats": {
     "models": 40,
-    "free": 10
+    "free": 9
   },
   "files": [
     {
       "path": "https://openrouter.ai/api/v1/models",
       "url": "https://openrouter.ai/api/v1/models",
-      "sha256": "7685bfc58c123679e9241c5a38f0c8b6333f863ae662421243b064bf5331bcd7",
-      "bytes": 919924
+      "sha256": "507216c2eab260d8ace694dfad000effecc9c18f66e10ee6ef0bc43362a12445",
+      "bytes": 910197
     }
   ]
 }
