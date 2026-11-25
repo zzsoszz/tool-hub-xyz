@@ -1,6 +1,6 @@
 {
   "day": "2026-11-25",
-  "reviewedAt": "2026-11-24T20:48:05.460Z",
+  "reviewedAt": "2026-11-25T05:02:35.984Z",
   "reviewer": "cloudflare/@cf/meta/llama-3.1-70b-instruct",
   "note": "cloudflare/@cf/meta/llama-3.1-70b-instruct：复核 12 条，解析到 12 条判定",
   "rules": {
@@ -15,14 +15,38 @@
   },
   "passed": true,
   "reasons": [],
-  "total": 23,
+  "total": 34,
   "blocked": [
     "499fbc0b51a8",
+    "821059f372f9",
     "c808d58c8ec4",
-    "4c9c486c8b4e"
+    "077b9a7b9f33"
   ],
-  "survivors": 20,
+  "survivors": 30,
   "items": [
+    {
+      "slug": "3d5596d923cd",
+      "title": "PenGPT: A Generative Transformer for Handwriting and Sketches",
+      "category": "apps",
+      "subcategory": "life",
+      "tags": [],
+      "bodyChars": 10237,
+      "excerpt": "A small transformer that writes and sketches from text. The effort was 80% data, 15% speed and 5% architecture: my first project that follows the Bitter Lesson. Left. One phrase in the hands of 21 writers who were held out of training. The model read one to three real words by each of them and carried on in their hand. Right. Drawings from typed prompts. I picked these by eye from the best third of the samples; there are unpicked ones further down. Read the paper Get the code Download weights Last year Zach Wimpee and I trained a tiny GPT to write cursive . It worked but it only knew one hand…",
+      "quality": 11,
+      "practical": 1,
+      "sourceName": "HN 检索（本地推理生态）",
+      "domain": "greydanus.github.io",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "正文提供了具体的项目细节和实现过程。"
+      },
+      "blocked": []
+    },
     {
       "slug": "f10142096901",
       "title": "Verifying the Outputs of PDE Solvers: From Finite Elements to Neural Surrogates",
@@ -43,7 +67,7 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "该文章提供了一个新的方法来验证物理学模拟输出的准确性。"
+        "reason": "正文提供了具体的研究内容和方法。"
       },
       "blocked": []
     },
@@ -67,10 +91,10 @@
       ],
       "agent": {
         "verdict": "fail",
-        "reason": "该文章主要是新闻转述，没有提供实践性内容。"
+        "reason": "新闻转述，没有提供具体的内容或步骤。"
       },
       "blocked": [
-        "模型复核不通过（该文章主要是新闻转述，没有提供实践性内容。）"
+        "模型复核不通过（新闻转述，没有提供具体的内容或步骤。）"
       ]
     },
     {
@@ -95,7 +119,7 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "该文章提供了一个开源项目，用于在Linux机器上模拟iOS环境，供AI代理测试iOS应用。"
+        "reason": "正文提供了具体的项目介绍和使用方法。"
       },
       "blocked": []
     },
@@ -119,10 +143,12 @@
         "标题未翻译"
       ],
       "agent": {
-        "verdict": "pass",
-        "reason": "该文章提供了一个研究论文，讨论了如何在 metric privacy 下实现准确的二分匹配。"
+        "verdict": "fail",
+        "reason": "正文虽然提供了具体的研究内容，但缺乏实践性和步骤。"
       },
-      "blocked": []
+      "blocked": [
+        "模型复核不通过（正文虽然提供了具体的研究内容，但缺乏实践性和步骤。）"
+      ]
     },
     {
       "slug": "c808d58c8ec4",
@@ -144,10 +170,10 @@
       ],
       "agent": {
         "verdict": "fail",
-        "reason": "该文章主要是新闻转述，没有提供实践性内容。"
+        "reason": "新闻转述，没有提供具体的内容或步骤。"
       },
       "blocked": [
-        "模型复核不通过（该文章主要是新闻转述，没有提供实践性内容。）"
+        "模型复核不通过（新闻转述，没有提供具体的内容或步骤。）"
       ]
     },
     {
@@ -170,9 +196,35 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "该文章提供了一个研究论文，讨论了如何通过剪枝技术优化自动驾驶中的视觉语言模型。"
+        "reason": "文章探讨了对自主驾驶 VLAs 模型的裁剪方法，研究了保留场景理解和轨迹预测的重要性。"
       },
       "blocked": []
+    },
+    {
+      "slug": "077b9a7b9f33",
+      "title": "Ask HN: Am I the only one whose AI hype is cooling down a lot?",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 2190,
+      "excerpt": "I am in the industry for 15+ years, studied CS, and actually, never really \"liked\" programming. It was a means to an end. I have written about programming (and published books), so don't get me wrong: I like the craft and I miss the sense of accomplishment after hours and days of struggling and fixing a problem with 2 lines of code. What I see in my personal spending and habits: I get free tokens from my company, and I spent between 3k-5k a month at the start of the year. Models got cheaper, but also: The usefullness ran its course a little bit for me. I still don't write code by hand, but wh…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "Hacker News (AI)",
+      "domain": "news.ycombinator.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "文章主要是个人观点和体验，没有提供实践性内容或可复现的步骤。"
+      },
+      "blocked": [
+        "模型复核不通过（文章主要是个人观点和体验，没有提供实践性内容或可复现的步骤。）"
+      ]
     },
     {
       "slug": "aecd91e8a65d",
@@ -194,7 +246,7 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "文章提出了一个三元智能 AI 框架来协同管理和实现意图。"
+        "reason": "文章提出了一种三元智能 AI 框架，用于意图管理和控制在自主通信网络中的应用。"
       },
       "blocked": []
     },
@@ -218,7 +270,7 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "该文探讨了一个基于上下文学习的 EEG 基础模型范式。"
+        "reason": "文章研究了 EEG 解码的新方法，提出了基于上下文学习的 EEG 基础模型。"
       },
       "blocked": []
     },
@@ -243,7 +295,7 @@
       "warnings": [],
       "agent": {
         "verdict": "pass",
-        "reason": "文章详细讨论了双 V100 机器的性能优化过程。"
+        "reason": "文章是一个实测帖，测试了双 V100 的性能，提供了详细的配置和测试结果。"
       },
       "blocked": []
     },
@@ -268,7 +320,7 @@
       "warnings": [],
       "agent": {
         "verdict": "pass",
-        "reason": "讨论了三星 DDR3 服务器内存的搭配事件。"
+        "reason": "文章是一个实测帖，测试了三星 DDR3 服务器内存的性能，提供了详细的配置和测试结果。"
       },
       "blocked": []
     },
@@ -290,10 +342,7 @@
       "domain": "lcz.me",
       "hard": [],
       "warnings": [],
-      "agent": {
-        "verdict": "pass",
-        "reason": "分享了 Strata-rdna3 双 7900XTX 的实测结果。"
-      },
+      "agent": null,
       "blocked": []
     },
     {
@@ -315,13 +364,8 @@
       "domain": "lcz.me",
       "hard": [],
       "warnings": [],
-      "agent": {
-        "verdict": "fail",
-        "reason": "文章没有提供实测数据或可复现步骤。"
-      },
-      "blocked": [
-        "模型复核不通过（文章没有提供实测数据或可复现步骤。）"
-      ]
+      "agent": null,
+      "blocked": []
     },
     {
       "slug": "5e84edfc14a1",
@@ -339,6 +383,28 @@
       "practical": 3,
       "sourceName": "量子位",
       "domain": "qbitai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "592871a1a1a5",
+      "title": "单5070ti跑strata-nvfp4实测91页PDF翻译，平均速度prefill 2975t/s, decode 155.8t/s, 262K上下文+batch3",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "lowspec",
+        "benchmark",
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 2103,
+      "excerpt": "平台：EYPC 7302支持8通道DDR4 2133 16G 8 = 128G,系统盘970EVO Plus (PCIE3.0X4，NVME插槽)，冷数据存储 S3520 800G 2 (INTEL SATA SSD), 缓存盘990PRO (PCIE4X8插槽)，系统SERVER2025，无外接显示器,使用MSTSC访问 简述： Basalt = 失败，prefill 4100+t/s, decode 20+t/s 原版Strata = 失败, prefill 2500+t/s, deoce 65+ t/s strata-nvfp4(调优) = 成功, prefill 2975t/s, decode 155.8t/s (41分钟91份PDF翻译任务) 参数： 版本 v0.2.15-nvfp4.7（engine 0.1.61，commit 4442f2d53，CUDA 13.3 bundled） -Mode batch3：3 个并发槽（当前生产） -RoutePrior 1.5：脚本默认，有损路由（decode 翻倍） -PrefillNvfp4 ''：默认 w4a8 -ObservePrefixes：前缀观察日志（不影响行为） 模型包 F:\\AI\\downloads\\qwen3.8-flash-next-nvfp4-gptq-strata\\Maximilian228--Qwen…",
+      "quality": 10,
+      "practical": 5,
+      "sourceName": "抡锤者 AI硬件",
+      "domain": "lcz.me",
       "hard": [],
       "warnings": [],
       "agent": null,
@@ -382,6 +448,48 @@
       "practical": 1,
       "sourceName": "抡锤者 AI硬件",
       "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "14158bd1d40d",
+      "title": "llama.cpp b12716 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1882,
+      "excerpt": "cmake : include the llguidance header from the source tree (#32928) Cargo 1.100 changed the build directory layout for intermediate artifacts, so the header destination llguidance derives from $OUT_DIR no longer resolves to target/release, and the build fails on a missing llguidance.h. The header is a source file that cargo only copies around, so include it from the llguidance source tree instead of from the build output. ref: https://github.com/rust-lang/cargo/pull/17354 Assisted-by: dsh:llama.cpp/ggml-org/Qwen3.8-Flash-Next-GGUF (MacBook, M5 Max, 128GB) Website: Attestations: macOS/iOS: mac…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "da39a3ee5e6b",
+      "title": "派早报：华为发布 Mate X8 与 MateBook Fold S、微软将推出自研驱动等",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "hardware",
+        "local"
+      ],
+      "bodyChars": 7707,
+      "excerpt": "周三 25 派早报：华为发布 Mate X8 与 MateBook Fold S、微软将推出自研驱动等 今日怀旧：又想起了番茄花园 Ghost 镜像打包一堆驱动的事。 13 分钟阅读 早报速览 华为发布 Mate X8 与 MateBook Fold S 4 微软将用自研驱动替换更多第三方驱动 3 豆包 AI 个人助理「小豆」开启公测 2 Teenage Engineering 推出复古 CD 播放器 EP / BC-1 0 拓竹发布 3D 打印机 P3C 0 三星推出 1100 Hz 电竞显示器 Odyssey G6 0 OpenRouter 清退 3 家服务商 0 亚马逊将停止支持第十代 Kindle 与 2018 款 Paperwhite 1 其他 AI 简讯四则 0 不妨一看的简讯 0 华为发布 Mate X8 与 MateBook Fold S 11 月 24 日，华为发布 Mate X8 与 MateBook Fold S。Mate X8 分为标准版与典藏版，提供紫金锦、青云锦、丹霞锦、苍穹黑、雪域白 5 种配色，其中标准版定价 12999 元起（12+256GB），典藏版定价 15999 元起（16+512GB）。 Mate X8 展开态约 4.2 mm，折叠态厚度约 8.95 mm，核心规格方面，全系搭载麒麟 9050 Pro「逻辑折叠 τ」芯片，整机性能提升 3…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "少数派",
+      "domain": "sspai.com",
       "hard": [],
       "warnings": [],
       "agent": null,
@@ -455,6 +563,72 @@
       "blocked": []
     },
     {
+      "slug": "9190d187cbe8",
+      "title": "Show HN: Brickie – Deploy sandboxes in your own AWS account",
+      "category": "local",
+      "subcategory": "selfhost",
+      "tags": [
+        "local",
+        "agent",
+        "free"
+      ],
+      "bodyChars": 3103,
+      "excerpt": "Hey HN, this is Alexander from Hatchet ( https://github.com/hatchet-dev/hatchet ). We’re releasing a new open-source project today called Brickie. Brickie lets you run sandboxes in your own cloud account, primarily targeting EKS on AWS. Sandboxes are an incredibly useful primitive for agentic applications. They serve two main functions: (1) a way for the agent to safely execute untrusted code, and (2) a durable filesystem for agents to preserve their state via snapshots. We decided to start building this after we started on a package called `@hatchet-dev/sandbox` to integrate more directly wi…",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "Show HN (AI)",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "b3bb6c44ce83",
+      "title": "Show HN: Mason – A lightweight Postgres read-replica, built on columnar storage",
+      "category": "local",
+      "subcategory": "weights",
+      "tags": [
+        "agent",
+        "free"
+      ],
+      "bodyChars": 3708,
+      "excerpt": "Hi HN! TLDR: we’ve built an open-source drop-in replacement for a postgres read-replica, powered by duckdb’s columnar compute engine. It’s very fast. And it looks like postgres. So, this started out as: let’s just connect Clickhouse to our postgres dbs and throw our analytics queries at it instead. That will speed everything up. But we quickly found that 1) Clickhouse comes with quite the learning curve (engine optimisation) to make it fast (we needed something we could easily drop in to any customer’s postgres scenario), and 2) we had underestimated how different clickhouse’s SQL syntax was…",
+      "quality": 9,
+      "practical": 1,
+      "sourceName": "Show HN (AI)",
+      "domain": "masondata.ai",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "b13cfcbfe752",
+      "title": "ReQOR: Operator-Discrepancy Subspace Repair for Quantization-Conditioned Backdoors in Large Language Models",
+      "category": "local",
+      "subcategory": "quantize",
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 1554,
+      "excerpt": "Quantization-Conditioned Backdoors (QCBs) cause large language models (LLMs) to exhibit malicious behavior after quantization while remaining benign at high precision. Existing defenses often rely on security-guided configuration selection or iterative optimization, but do not identify which quantization-induced changes should be repaired. We isolate module-local quantization effects from upstream drift by evaluating the high-precision and quantized versions of each module on identical states from the quantized inference trajectory, and formulate QCB defense as repairing the resulting same-st…",
+      "quality": 6,
+      "practical": 2,
+      "sourceName": "arXiv 检索（推理引擎与量化）",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
       "slug": "f4da12f47948",
       "title": "Google Cloud 出海峰会报名开启",
       "category": "bench",
@@ -486,6 +660,50 @@
       ],
       "bodyChars": 1572,
       "excerpt": "Conversational recommenders must rank items against needs that catalogs record only in part, while users add, withdraw and reverse needs and switch between requests. LLM rankers re-read the dialogue at every turn: they are slow, and their ordering does not show which needs an item meets. We show that a conversational recommender can be built from typed decisions instead: named questions over fixed options, answered with option probabilities rather than generated text. On each turn, one typed request maps the message onto the catalog's fields, keeps what no field expresses in the user's words,…",
+      "quality": 6,
+      "practical": 2,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "64b066c723a5",
+      "title": "Anthropic股价下跌破发，AI宏大叙事市场不买单！OpenAI CEO点赞老黄遭嘲讽，马国公低谷力挺获赞誉！",
+      "category": "bench",
+      "subcategory": "benchmark",
+      "tags": [
+        "benchmark",
+        "generate",
+        "free",
+        "money"
+      ],
+      "bodyChars": 4239,
+      "excerpt": "Anthropic是破发了，是不是被我预测中了？在它上市之后我说了，我说Anthropic本来它不值2万亿美元，但是市场想要炒作，想要韭菜们接盘，韭菜们不认。经过调研之后，机构把它定到1.5万亿美元，我认为还是高了，它肯定会破发，是吧？而且我预测就在本周破发，就一周之内它就会破发。当时评论区有多少Anthropic的脑残粉，是吧，留言喷我说Anthropic会用股价打我的脸。我说没有必要，我又不重要，是吧，打我的脸干什么呢？而且我在老特说那个频道，经常因为一些技术问题，被这个会员们疯狂打脸，是吧，被我网站的这些注册会员们疯狂地打脸。但是我在视频中也说了，我在这个政治、科技，啊，经济这些评论类的事件中，我的预测准确率可以说是非常高的，基本上算无遗策。偶尔有小的翻车，也不是完全的翻车，就是有些地方讲得不够准确。 那么现在事实是不是证明了我是对的？Anthropic的那些脑残粉丝呢？你们在干什么？是吧，你们每个月订阅了那么高档的这个什么，啊，订阅计划。啊，甚至有人吹牛逼说每个月花了好几万块钱去使用Anthropic的模型，去使用Claude。啊，你们现在表现的时候来了呀！你们的这个精神信仰受到了亵渎，受到了冒犯。市场就是没有按照2万亿美元给你们的这个精神信仰定价，现在是跌破了1.5万亿美元，那你们现在正好是，呃，出击的时候来了。你们去捍卫Anthropic的股价。哦，对了，我想问这些高…",
+      "quality": 7,
+      "practical": 1,
+      "sourceName": "抡锤者 资讯",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "8773b9e0b3c3",
+      "title": "\"I Do Intend to Deliver\": Will LLMs Run a Marketplace Advance-Fee Scam?",
+      "category": "bench",
+      "subcategory": "benchmark",
+      "tags": [
+        "benchmark",
+        "free"
+      ],
+      "bodyChars": 1295,
+      "excerpt": "Online fraud is traditionally limited by the cost of the human labor needed to talk to potential victims. We ask whether hosted large language models will now supply that labor. We prompted ten off-the-shelf models to play the seller in the \"free item, just pay delivery\" advance-fee scam common on buy-and-sell sites, using a plain system prompt with no jailbreak. Each model played 30 conversations against each of four buyer personas, from credulous to guarded, with the same model playing the buyer (1,200 conversations). We label each conversation by what happened to the buyer's money, and val…",
       "quality": 6,
       "practical": 2,
       "sourceName": "arXiv cs.AI/CL/LG",
@@ -553,6 +771,28 @@
       "quality": 6,
       "practical": 1,
       "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "dbc4f61a6477",
+      "title": "Wavefront: Low-Rank Drafting with Parallel Causal Refinement for Speculative Decoding",
+      "category": "bench",
+      "subcategory": "cost",
+      "tags": [
+        "local",
+        "free"
+      ],
+      "bodyChars": 1427,
+      "excerpt": "Speculative decoding accelerates LLM inference by letting a cheap drafter propose tokens that the target model verifies in parallel. Parallel block drafters such as DFlash and P-EAGLE propose a whole block in one forward pass, but they lose the dependence between tokens in the block; DSpark restores part of it with a lightweight correction head that runs sequentially. Measuring DSpark, we find that this head overrides the base prediction on most slots, so the expensive base readout through the target's full lm_head mostly provides a seed. We therefore propose Wavefront, which follows a simple…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv 检索（推理引擎与量化）",
       "domain": "arxiv.org",
       "hard": [],
       "warnings": [
