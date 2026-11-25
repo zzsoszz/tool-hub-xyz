@@ -1,0 +1,600 @@
+{
+  "day": "2026-11-26",
+  "reviewedAt": "2026-11-25T20:04:39.306Z",
+  "reviewer": "cloudflare/@cf/meta/llama-3.1-70b-instruct",
+  "note": "cloudflare/@cf/meta/llama-3.1-70b-instruct：复核 12 条，解析到 12 条判定",
+  "rules": {
+    "minItems": 3,
+    "minBodyChars": 120,
+    "minSummaryChars": 40,
+    "maxTags": 4,
+    "agentMaxItems": 12,
+    "agentBatch": 6,
+    "agentChars": 900,
+    "agentExcerptChars": 600
+  },
+  "passed": true,
+  "reasons": [],
+  "total": 25,
+  "blocked": [
+    "da39a3ee5e6b",
+    "90a76e3fc53d",
+    "ea7471e6a15e"
+  ],
+  "survivors": 22,
+  "items": [
+    {
+      "slug": "da39a3ee5e6b",
+      "title": "App+1｜Yab：开源、AI 友好的双内核浏览器，给舍不得 Arc 的你",
+      "category": "apps",
+      "subcategory": "knowledge",
+      "tags": [
+        "lowspec",
+        "tutorial",
+        "agent",
+        "free"
+      ],
+      "bodyChars": 5828,
+      "excerpt": "2026年11月25日 11 分钟阅读 App+1｜Yab：开源、AI 友好的双内核浏览器，给舍不得 Arc 的你 主作者 宛潼 少数派作者 每天都要睡十个小时以上的大湾区著名gai溜子 https://wantong.art 宛潼 宛潼 少数派作者 每天都要睡十个小时以上的大湾区著名gai溜子 https://wantong.art 联合作者 宛潼 少数派作者 每天都要睡十个小时以上的大湾区著名gai溜子 https://wantong.art 宛潼 宛潼 少数派作者 每天都要睡十个小时以上的大湾区著名gai溜子 https://wantong.art 每天都要睡十个小时以上的大湾区著名gai溜子 https://wantong.art 11 分钟阅读 微信扫码分享 点击下方按钮可复制链接 我一直很喜欢精致美丽的产品，例如 iPhone Air 和 Mac mini。但喜欢归喜欢，有时候美丽的产品也会让人下不去手。只靠美观的皮囊吃饭，这事在工具属性的产品上是行不通的。 几年前上手 Arc 浏览器时，它也给过我类似的感觉。在 Chrome 和 Safari 已经把浏览器形态打磨得高度成熟的背景下，竟然还有团队愿意把它推倒重来——把顶部标签栏搬到侧边、用 Spaces 隔离不同工作流，再配上 Peek 预览、Split View 分屏以及各种细腻的交互动效，处处都给人一种「别人都这…",
+      "quality": 8,
+      "practical": 5,
+      "sourceName": "少数派",
+      "domain": "sspai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "fail",
+        "reason": "内容主要是新闻转述，没有实测数据或步骤。"
+      },
+      "blocked": [
+        "模型复核不通过（内容主要是新闻转述，没有实测数据或步骤。）"
+      ]
+    },
+    {
+      "slug": "b4cd87f75695",
+      "title": "FXTD-Studios/radiance",
+      "category": "apps",
+      "subcategory": "video",
+      "tags": [
+        "generate"
+      ],
+      "bodyChars": 10186,
+      "excerpt": "HDR, colour and VFX review for ComfyUI Generate in HDR, grade and review like a finishing suite, and deliver masters to Nuke and DaVinci Resolve, without leaving ComfyUI. ![Version ](CHANGELOG.md) ![Status ](CHANGELOG.md) ![Installs ](https://registry.comfy.org/nodes/radiance) ![Comfy Registry ](https://registry.comfy.org/nodes/radiance) ![Platforms ](#what-you-need) ![License ](LICENSE) [Install](#install) · [First HDR image](#your-first-hdr-image) · [Workflows](#example-workflows) · [Viewer](#using-the-viewer) · [Help](#help) A real HDR photograph in the Viewer (OpenEXR sample image, © 2004…",
+      "quality": 11,
+      "practical": 1,
+      "sourceName": "GitHub 检索（生态项目更新）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容包含实测数据和步骤，符合实践性内容要求。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "90a76e3fc53d",
+      "title": "零基础也能做开发，智元灵心平台一年孵化超3万个机器人智能体",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "agent",
+        "tutorial"
+      ],
+      "bodyChars": 2952,
+      "excerpt": "零基础也能做开发，智元灵心平台一年孵化超3万个机器人智能体 量子位的朋友们 2026-11-25 22:32:57 来源： 量子位 智元推出行业首个开放且完整的具身智能生态技术体系AIMA 随着具身智能加速发展，机器人正从动作展示走向真实场景应用，但开发门槛高、场景适配复杂、应用能力难以复用，仍是制约机器人规模化落地的重要问题。为此，智元推出行业首个开放且完整的具身智能生态技术体系AIMA，并发布“元苼”生态发展计划，未来五年投入不低于20亿元支持生态建设。 作为AIMA生态的重要组成部分， 灵心（LinkSoul） 机器人智能体开发应用平台，面向开发者、企业及行业用户，提供智能体创建、知识技能配置、任务编排与应用连接等能力，降低机器人应用开发门槛，让更多人能够根据实际需求创造和拓展机器人能力。 上线一年来，智元灵心平台（LinkSoul）持续完善机器人智能体开发与应用能力，累计吸引2万+用户，孵化3万+机器人智能体，沉淀7万+平台内容。从个人创作到行业场景探索，越来越多用户开始尝试通过智能体，为机器人拓展知识、技能和任务能力。 降低智能体开发门槛，让更多人参与具身智能浪潮（小） 灵心平台致力于为开发者、企业及行业用户，提供智能体创建、知识与技能配置、任务编排、调试和应用连接等能力，帮助用户将业务需求转化为机器人可以理解和执行的任务。 随着平台能力持续焕新，用户可以通过自然语言描…",
+      "quality": 9,
+      "practical": 5,
+      "sourceName": "量子位",
+      "domain": "qbitai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "fail",
+        "reason": "内容主要是新闻转述，没有实测数据或步骤。"
+      },
+      "blocked": [
+        "模型复核不通过（内容主要是新闻转述，没有实测数据或步骤。）"
+      ]
+    },
+    {
+      "slug": "8b3d39974dee",
+      "title": "Hy4-flash 对比 Qwen3.8-Flash-Next：同一台 M5 Ultra、同一个 oMLX 实测",
+      "category": "tools",
+      "subcategory": "prompt",
+      "tags": [
+        "benchmark",
+        "lowspec",
+        "agent"
+      ],
+      "bodyChars": 4379,
+      "excerpt": "版上有人问 Hy4 Flash 和 Qwen3.8 Flash Next 到底差多少。Jundot 前两天放出了 Hy4-flash 的 oQ4h 量化，我在同一台 Mac Studio、同一个 oMLX 上把两个模型各跑了一遍。先说结论： 速度差两倍多 ：生成 48 对 120 tok/s，读提示词 1,400 对 4,400 tok/s。我每周跑的四道核对工序，Hy4 要 577 秒，Flash-Next 279 秒。 文字核对打平，看图转录 Hy4 明显差 ：表格、事实、去重三道工序命中数一样；看图抄数字，Hy4 错 16 处，Flash-Next 错 5 处，而且 Hy4 会改写原文。 Hy4 也有赢的地方 ：同一份长文，千问数出 26.2 万 token 装不下，Hy4 只数出 20.4 万，读完还答对了；鹈鹕 SVG 它一次画成，Flash-Next 开着思考两次都没画出来。 接 Claude Code 干活，Hy4 目前不可用 ：同一个小任务 Flash-Next 18 秒，Hy4 16 分钟。 我的周报工序继续用 Flash-Next。 测试环境 Hy4-flash-oQ4h-mtp Qwen3.8-Flash-Next-oQ4e-mtp 参数 220B（含 64B Engram 表），每 token 激活 12B 180B MoE 文件大小 123GiB 99G…",
+      "quality": 10,
+      "practical": 3,
+      "sourceName": "抡锤者 模型部署讨论",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容包含实测数据和步骤，符合实践性内容要求。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "a25f67933f54",
+      "title": "丢个故事就行！直出15分钟AI短片，家里二舅也能上手",
+      "category": "tools",
+      "subcategory": "workflow",
+      "tags": [
+        "generate",
+        "agent",
+        "tutorial"
+      ],
+      "bodyChars": 4522,
+      "excerpt": "丢个故事就行！直出15分钟AI短片，家里二舅也能上手 Jay 2026-11-25 22:51:06 来源： 量子位 Jay发自 凹非寺 量子位|公众号QbitAI 生成AI视频，终于不用会写提示词了😭。 还有人记得《森林冰火人》吗？我小时候巨喜欢这IP，暑假天天和表哥一块玩，一直期待哪个好人能翻拍个动漫出来。 后来上了初中，基本再没打开过4399。 周末跟朋友重温，我突然想到：有AI了啊，咱自己手搓一个！ 于是打开麦克风就是一顿语音输入，爆改了个《森林电木娃》剧本。 无需设计光影、无需打磨资产，直接复制粘贴后发送， 仅需十分钟 —— 终于让我美美看上大电影了🥹。 视频来源 朋友瞟到我电脑后的第一反应是： 咦，这啥时候出的3A游戏？ 要知道，若按传统的AI视频工作流，想做出这样一条片子，可谓是相当折磨。 你需要逐镜头写几十条复杂的运镜Prompt、反复「抽卡」生成15到30秒的碎片素材、再导入剪辑软件里手动对齐音画、拼接成片…… 一套流程下来，没个一星期根本搞不定。 但这一次，我连分镜表都没碰，就完成了所有工作。 这背后，是秘塔AI的新产品： 「全民开机」，一个全流程AI虚拟剧组。 在这班剧组的帮助下，你可以轻松一键直出15分钟短片。 「开机」官网： https://metaso.cn/kaiji 告别提示词工程 之前过的都是啥苦日子啊。。。 虽然AI视频工具发展很久了，也确…",
+      "quality": 10,
+      "practical": 7,
+      "sourceName": "量子位",
+      "domain": "qbitai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容包含实测数据和步骤，符合实践性内容要求。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "21c6771be6f3",
+      "title": "我以为这是摄影作品，你告诉我这是最新的国产AI？！",
+      "category": "tools",
+      "subcategory": "prompt",
+      "tags": [
+        "generate",
+        "benchmark",
+        "free"
+      ],
+      "bodyChars": 5815,
+      "excerpt": "我以为这是摄影作品，你告诉我这是最新的国产AI？！ 十三 2026-11-26 00:34:09 来源： 量子位 商汤SenseNova U1.6 金磊 发自 凹非寺 量子位 | 公众号 QbitAI 就这么一张图，我真以为是谁随手 用相机拍 的。 像不像你闺蜜在补妆，然后一个猝不及防被“咔嚓”拍了一下的感觉？ 还有下面两张人物照片： 一个是在人们移动过程中，相机对焦人脸的照片；一个是社交媒体常用的大头照六连拍。 就是这些如此自然且很多人在日常生活中追求的高级感人像， 竟然都是AI生成出来的。 不仅是人像，就连现在的 风景照 ，亦是如此： 讲真，要是冷不丁一看，还真会以为是出自哪位摄影大师之手的作品了。 而这些惊艳的图片，正是出自 商汤科技 今天最新 开源 的 SenseNova U1.6 。 在整体体验一番下来之后，一个比较真实的感受，就是SenseNova U1.6生图的 速度是极快的 。 并且在 内容准确性 和 审美 方面，可谓是又上了一层楼。 那么接下来，老规矩，一波深度实测走起~ 又美又准，还好玩 目前，SenseNova U1.6已经在商汤小浣熊、Seko等平台上线，并同步上线ComfyUI。 所以接下来的实测，我们都将通过 小浣熊 进行。 刁钻角度摄影 第一轮实测，我们尝试让SenseNova U1.6从一个 刁钻角度 来生成人物群像。 大致的Prompt是这样的：…",
+      "quality": 9,
+      "practical": 5,
+      "sourceName": "量子位",
+      "domain": "qbitai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容包含实测数据和步骤，符合实践性内容要求。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "1a98b636630d",
+      "title": "How to choose the next safe step in application modernization",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "tutorial",
+        "agent"
+      ],
+      "bodyChars": 13374,
+      "excerpt": "A request to modernize an application often starts with a technology question: Which framework should replace the old one? Before you choose, find out what still works. Then collect evidence that can act as a regression net for that behavior and show where modernization is necessary. I used an evidence-first method on four public applications, from a small Node.js game to a large Java enterprise resource planning (ERP) application. Each needed a different treatment, but the way I collected evidence, chose the next experiment, and decided on possible proof points was repeatable. This post walk…",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "GitHub Blog",
+      "domain": "github.blog",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容提供了实践性指导。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "61a132578c70",
+      "title": "SAG-Mem-1.0 Technical Report",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "tutorial"
+      ],
+      "bodyChars": 1748,
+      "excerpt": "Long-term conversational memory requires retrieving complementary facts scattered across dialogue sessions, including intermediate evidence with limited similarity to the original question. Existing approaches often rely on derived memory representations or persistent relational structures, introducing construction costs and potentially losing source details. We present SAG-Mem, a conversational memory framework that preserves complete dialogue messages in non-overlapping chunks and discovers complementary evidence through query-time lexical expansion. Memory construction requires no model in…",
+      "quality": 6,
+      "practical": 2,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容提供了实践性指导。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "8e48e6aaf6fe",
+      "title": "MetaFORGE: A Meta-Learning Framework for Harness Optimization in Automated Code Generation for Parallel Computing",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "tutorial"
+      ],
+      "bodyChars": 1409,
+      "excerpt": "Large language models (LLMs) can generate parallel programs, but their correctness and performance depend strongly on the instructions that guide generation. We present \\textsc{MetaFORGE}, an execution-grounded meta-learning framework that iteratively optimizes persistent natural-language skill specifications for MPI C code generation. \\textsc{MetaFORGE} combines correctness testing, compiler diagnostics, static-analysis findings, runtime measurements, and rank-level load-imbalance profiles into a scalar reward that drives textual-gradient refinement, while an external memory distills and ret…",
+      "quality": 7,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容提供了实践性指导。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "1827e6257fdd",
+      "title": "LEGOSpec: A Composable and Efficient Framework for Speculative Draft Design and Training",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "tutorial"
+      ],
+      "bodyChars": 1652,
+      "excerpt": "Speculative decoding accelerates large language model (LLM) generation using a lightweight draft. Existing methods evaluate complete recipes under different training configurations, leaving component effects, interactions, and composition benefits unclear. Therefore, we present LEGOSpec, a composable framework for speculative draft design and training. LEGOSpec decomposes draft models into Context, Backbone, Proposal, and Objective components that share a unified training infrastructure. Using LEGOSpec, we systematically vary components and evaluate selected combinations under matched trainin…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv 检索（推理引擎与量化）",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容提供了实践性指导。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "f56d6351aa71",
+      "title": "老黄留下的bug导致史上最具性价比的方案来了只要14w，DeepSeek-V4.1-Flash 四卡 CMP 170HX 满血部署250+token/s",
+      "category": "hardware",
+      "subcategory": "cost",
+      "tags": [
+        "local",
+        "benchmark",
+        "hardware"
+      ],
+      "bodyChars": 28669,
+      "excerpt": "DeepSeek-V4.1-Flash 四卡 CMP 170HX 满血部署复现手册 目标：任何人在 同规格硬件 上，照着本文从零复现一套 DeepSeek-V4.1-Flash （原生 MXFP4/MXFP8 权重）TP4+EP4 推理服务， 1M 上下文、6 并发、四卡 180 W，接口对齐 OpenAI Chat Completions。 本文所有命令均在本机实测通过（2026-11-25）。标注 [实测] 的为现场取证数据， 标 [推断] 的为未直接验证、仅作参考的内容。 0. 一页纸速览（TL;DR） 硬件：4× NVIDIA CMP 170HX 81,920 MiB（解锁）+ Xeon E5-2696 v4 + 251 GiB RAM 系统：Ubuntu 20.04.6 / 内核 5.15.0-139-generic / 驱动 615.71.09 镜像：localhost/vllm-main-sm80:deepseek-v4.1-flash-tep4 (24.8 GB, sha256 fefdcd01…) 模型：DeepSeek-V4.1-Flash-1017 原生 checkpoint 476 GiB 参数：TP4 + EP4 + DCP1 + PP1 / ctx 1048576 / seqs 6 / batched 3072 / KV 2.2 GB / DSpark…",
+      "quality": 13,
+      "practical": 4,
+      "sourceName": "抡锤者 AI硬件",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容提供了实践性指导。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "ea7471e6a15e",
+      "title": "手上有7根DDR4-32G服务器内存和固态盘，想利用起来 搞个ai主机，搞开发，做视频，个人爱好，预算1-2w怎么选显卡？",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "hardware",
+        "lowspec",
+        "generate",
+        "free"
+      ],
+      "bodyChars": 716,
+      "excerpt": "手上有7根DDR4-32G服务器内存和固态盘，想利用起来 搞个ai主机，搞开发，做视频，个人爱好，预算不超2w怎么选显卡？ 看了坛主的油管过来的 看了几天显卡，感觉就是两个选择，要么买7900xtx，24g， 京东自营8000. 要么买4090的爆改48G显卡，京东自营3w4. 咸鱼2.7w。 最近又说国产大显存显卡要上市，现在的显卡价格太顶了。哎。 我想用X99板 组一套 便宜的ai主机。 48g显存有这么重要吗？我看做视频必须要用这么大的显存才能有生产力，其它都不行。 为什么统一内存128的小主机比不上独立显卡24G的AI主机。同样花3万多，买一个显卡，还是直接买一个ai小主机。都说小主机不行。 现在看坛主 买了7900xtx-24G，4090D-48G，5070 Ti 16G 有单卡的，有双卡的。 绕晕了。 按坛主的省钱的法子： 华南金牌 X99-F8 (单路) 661元 【可插8根DDR4内存】 cpu E5-2697 v4 100元 CPU散热 100 电源500 机箱150 固态盘 有2T的，也有机械盘6T的 不需要再买。 这些花费也就1千多，剩下就是显卡了。 单卡 还是双卡？ 还有主板和显卡 怎么搭配性价比最高？ 我也看了淘宝显卡扩容的，我手里的2070 super显卡 8G的 再怎么折腾也就16g，现在16g的显卡都不好意思买。 是两张24g 的还是1张48g的？…",
+      "quality": 7,
+      "practical": 3,
+      "sourceName": "抡锤者 AI硬件",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "fail",
+        "reason": "内容过于主观和讨论，没有提供实践性指导。"
+      },
+      "blocked": [
+        "模型复核不通过（内容过于主观和讨论，没有提供实践性指导。）"
+      ]
+    },
+    {
+      "slug": "59000eab415c",
+      "title": "2026年底最有性价比AI显卡：AMD 7900XTX + Nvidia 5070Ti ！LLM & AI音视频画图都很能打！",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "hardware",
+        "lowspec",
+        "agent",
+        "generate"
+      ],
+      "bodyChars": 4257,
+      "excerpt": "本期视频我们继续讲一讲有性价比的显卡，就是每隔一段时间我们把这个信息更新一下。呃，前一阵子由于ComfyUI技术的变革，有了什么ComfyUI Endo这样的新的插件，呃，能够动态加载权重。尤其是MiniMax H3发布之后，它带来了一系列的新的生产方式，那么显存已经从24G比较舒适的这个门槛砍到了16G。啊，当然了，你往下什么12G，甚至说你再稍微低一点都能玩。但是呢，如果说你要有一个舒适性，那最好就是16G显存。比如说40系列的、50系列的，16G显存的卡，那么跑起来就会比较地舒适。 如果说让我给出性价比最高的，那肯定是5070 Ti 16G。因为5070它只有12G，然后5060 Ti，它的算力就非常地拉胯，啊，带宽也是相对拉胯的。跑这个大模型还能玩一玩，跑ComfyUI的话，我个人认为能玩，但是体验不是很好。包括这个40系列，像4080 S、4080 16G，啊，它们都玩得比较舒适。那你如果是4070 12G，或者说是4060 Ti，那本身规格上，要么是显存不够，要么就是带宽严重地残疾。就像4060 Ti 16G，你玩是能玩的，但是速度确实太拉胯了，啊，比5060 Ti都差很多，更不要说跟这个，呃，80系列或者跟这个70系列比了。 5070 Ti我已经在上个视频中展示过了，现在正装在后面啊，就是我这个大拇指，哎，对，就现在大拇指指的这个方向，啊，后面这台机器上已经在这个运…",
+      "quality": 8,
+      "practical": 5,
+      "sourceName": "抡锤者 AI硬件",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "d2332bc718f0",
+      "title": "llama.cpp b12728 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1888,
+      "excerpt": "ggml: allow reserving scratch memory in graph_optimize (#31898) ggml: allow reserving scratch memory in graph_optimize Add add_scratch to ggml_backend_graph_optimize_params. A backend can reserve compute buffer memory that is allocated before a node first and kept until a node last has been computed, e.g. for data that several nodes share. The scheduler adds the scratch tensor to the graph copy right before first and frees it with an alloc dep at last . ggml: clarify the lifetime of add_scratch memory ggml: build the pending scratch set from the scratch map Website: Attestations: macOS/iOS: m…",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "dfe2026b4731",
+      "title": "Strata v0.2.22 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "benchmark",
+        "agent",
+        "free"
+      ],
+      "bodyChars": 13045,
+      "excerpt": "Strata 0.2.22 The app and the Terminal are 0.2.22. The Qwen engine ( strata-engine ), the Inkling engine for NVIDIA cards ( strata-inkling , CUDA) and Control are 0.1.69. The Hy4 engine ( strata-hy4 ) and the Inkling engines for AMD, Intel and Apple stay 0.1.67, because nothing in them changed. This release also contains the Control fixes that were prepared for 0.2.21.2, which was never published. You no longer need to restart Strata after updating: the \"Agent work is paused\" message that followed an update is fixed (#7099). What changes for you Inkling 2 Mini on two or more NVIDIA cards give…",
+      "quality": 8,
+      "practical": 3,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "2014277b590d",
+      "title": "llama.cpp b12723 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1417,
+      "excerpt": "model : inkling2 graph with fewer ops in mix() and control() (#32948) Assisted-by: Claude Opus 5.5 Website: Attestations: macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU) Ubuntu 26.04 s390x (zDNN) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu x64 (CUDA 13) - CUDA 13.5 libraries Ubuntu arm64 (CUDA 13) - CUDA 13.5 libraries Ubuntu x64 (ROCm 10.0) Ubuntu x64 (OpenVINO) Ubuntu x64 (…",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "077fcabe880d",
+      "title": "双3080解锁P2P,卡间双向传输达到50GB/s，单向26GB/s !!!!",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "hardware",
+        "lowspec",
+        "free"
+      ],
+      "bodyChars": 228,
+      "excerpt": "自研 VMM 选择性 BAR1 映射 + 1-Hop Push-Write + VRAM Flag 屏障 配合版本精确匹配的开源动态 BAR1 P2P 内核驱动（patches/nvidia-open-595.99.02-dynbar1-p2p.patch, 解锁 50.86 GB/s PCIe 4.0 P2P全双工卡对卡直连! 并且因为更换了驱动，魔改卡的待机功耗从原来单卡15瓦左右，降低到了现在的单卡4.9瓦。 我也不废话了，直接上图了。",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "抡锤者 AI硬件",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "c466821d37cc",
+      "title": "开源输入法的大爆发与稳定性（5款输入法对比）",
+      "category": "local",
+      "subcategory": "weights",
+      "tags": [
+        "benchmark",
+        "tutorial",
+        "free"
+      ],
+      "bodyChars": 4114,
+      "excerpt": "本文来自论坛 CCR 同学，原标题《 【无用评测】开源输入法大爆发与稳定性 》 原链接： https://meta.appinn.net/t/topic/96465 背景 近期有不少输入法应用扎堆出现，本着为自己审核的软件负责的态度，我也都下载体验了一番，巅峰时期我的电脑里面同时有6个输入法……近两周我的打字量也突飞猛进，打字打得手疼…… 但说实话，依我愚见，目前我体验过的这些开源输入法的成熟度都不太够，还 远没到 能投入生产环境使用，或通过大量宣发拉新的水平。 按照下载先后顺序列出，以下各输入法的评价均基于 weasel 的万象base方案 （小鹤双拼）对比 目录 小狼毫（v0.17.4.98-f96ed24） https://github.com/rime/weasel 总体评价：9分 功能完整可用 当前 最成熟 的开源输入法，没有之一 有 大量 成熟解决方案 导入导出词库方便 几乎未见崩溃（Firefox曾见崩溃，后在issue区找到解决方案），几乎所有常见问题都有成熟解决方案 缺点，配置太过复杂 青简输入法（v0.3.3） https://github.com/qingjian-team 总体评价 ：7.5分，主体功能已完工，demo级别，细节仍需大量打磨 功能完整可用 使用过程中未发现明显崩溃 未发现明显UI问题 性能正常，未发现显著内存泄露 设置太多、太乱、逻辑相互冲…",
+      "quality": 10,
+      "practical": 3,
+      "sourceName": "小众软件",
+      "domain": "appinn.com",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "a862e3130c5b",
+      "title": "Ladybird（瓢虫）- 不用 Chromium，独立内核的开源浏览器：只开发网页浏览器，别的什么都不做。",
+      "category": "local",
+      "subcategory": "weights",
+      "tags": [
+        "free",
+        "local",
+        "tutorial",
+        "generate"
+      ],
+      "bodyChars": 1740,
+      "excerpt": "我们只开发网页浏览器，别的什么都不做 。 上面这句话是 Ladybird 官网介绍中的一句，听起来很有意思。 现在的浏览器看起来有很多，但真正的浏览器内核，翻来覆去也就那么几个。Chrome、Edge、Opera、Brave、Vivaldi 基于 Chromium ，Safari 使用 WebKit ，Firefox 使用 Gecko 。 而现在，一个全新的浏览器内核来了。 2026 年 11 月 23 日，历经四年独立开发的免费开源浏览器 Ladybird（瓢虫）正式发布 Alpha 测试版 ，支持 macOS 和 Linux，终于可以直接下载安装，不需要自己编译了。 从零开始开发的浏览器 Ladybird 最早诞生于开源操作系统 SerenityOS 项目，2022 年成为独立的跨平台浏览器项目。 它拥有从零开发的网页渲染引擎、JavaScript 引擎以及 WebAssembly 实现，没有使用其他浏览器引擎的代码。 2024 年，Ladybird 创始人 Andreas Kling 与 GitHub 联合创始人 Chris Wanstrath 共同成立了非营利组织 Ladybird Browser Initiative，专门负责开发这款浏览器。 Ladybird 有几个非常理想主义的目标： 完全独立的浏览器内核 免费、开源 尊重用户隐私 不接受默认搜索引擎交易带来的收入…",
+      "quality": 8,
+      "practical": 6,
+      "sourceName": "小众软件",
+      "domain": "appinn.com",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "0cfef310df4e",
+      "title": "Exploratory Midtraining for Robot Policies",
+      "category": "local",
+      "subcategory": "weights",
+      "tags": [],
+      "bodyChars": 1572,
+      "excerpt": "Robot policies predominantly learn from human-collected data emphasizing competent behavior, limiting coverage of the low-level behaviors needed to support autonomous improvement. We study how a form of midtraining can be used to build coverage over diverse low-level behaviors that connect challenging states of the robot and its environment to states from which further progress is possible (\"connected behavioral coverage\"). We also examine how this coverage supports downstream adaptation and online improvement. To this end, we introduce $β$-Data, a dataset collected via adversarial teleoperat…",
+      "quality": 7,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "12d9b057114a",
+      "title": "来看看本地QFN Q4KXL和GPT-6.2 SOL的画图能力吧",
+      "category": "local",
+      "subcategory": null,
+      "tags": [
+        "local"
+      ],
+      "bodyChars": 284,
+      "excerpt": "我不太看画鹈鹕的能力，模型训练时或多或少接触过答案。 为了给我儿子做个做算术的小软件，我给了两张参考图，希望把狗狗和小火车画成会动的奖励，造型和配色尽量接近原稿。动作要生动、可爱。 本地模型改了12轮， 被我数次批评， 基本到他的能力极限了。然后我放弃了，在那个12轮基础上， 用gpt改了3轮， 有明显提升。你可以忽略不一样的物品，我看GPT干得不错，给它上了点新要求。我觉得不存粹是审美问题，本地模型在理解原稿， 并模仿这件事上就是有能力上的差距。比如说小克的耳朵， 路马的头盔。 原图 1 · 狗狗 原图 2 · 小火车 GPT · 第五轮",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "抡锤者 模型部署讨论",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "d8d6777ecf09",
+      "title": "Hill-climbing Inkling 2 Mini inference on one RTX PRO 6000",
+      "category": "local",
+      "subcategory": "weights",
+      "tags": [
+        "local",
+        "free"
+      ],
+      "bodyChars": 13001,
+      "excerpt": "Back to Articles Hill-climbing Inkling 2 Mini inference on one RTX PRO 6000 Published November 25, 2026 Update on GitHub Upvote 2 Niels Rogge nielsr Inkling 2 Mini came out last week and sets a new state of the art for local AI and smaller open-source models. With ~26B total parameters (3B active per token), multimodal inputs, and a 1M-token context window, it leads its weight class on the Artificial Analysis Intelligence Index v5 and across 32 of 48 benchmarks against models like Gemma 4 31B and Qwen3.8-27B, making it a strong open option for coding, tool use, and reasoning on modest hardwar…",
+      "quality": 6,
+      "practical": 3,
+      "sourceName": "Hugging Face Blog",
+      "domain": "huggingface.co",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "5bb184126531",
+      "title": "Shifter Quantization: Compact Representations for Native Integer Computation",
+      "category": "local",
+      "subcategory": "runtime",
+      "tags": [
+        "local"
+      ],
+      "bodyChars": 1226,
+      "excerpt": "Groupwise quantization is used in LLM quantization to improve accuracy at low bit widths, but grouping weights keeps standard integer MMA from spanning the full dot product for efficient GPU inference. We develop a new quantization method, Shifter Quantization (SQ), that reconstructs native-width integer operands by appending and shifting shared bits. To further extend the efficiency, we develop a special variant of SQ, Shifter Integer (SHI), to use INT4 kernels. We show that SQ and SHI formats perform better than standard groupwise quantization in quality, as measured by projection error and…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "d09e3e2cf933",
+      "title": "iWAM: Efficient Action Prediction from World Models without Explicit Future Prediction",
+      "category": "bench",
+      "subcategory": "benchmark",
+      "tags": [
+        "tutorial"
+      ],
+      "bodyChars": 1452,
+      "excerpt": "World-action models (WAMs) build policies on pretrained video-generation models, on the premise that predicting how a scene evolves helps determine how to act. However, generating future scenes is expensive for real-time control. This motivates efficient proxies for future imagination, but how to train such proxies without sacrificing action-prediction quality remains unclear. An effective proxy need not generate a high-resolution frame; it only needs to provide enough information to distinguish between possible futures. This leads to the design principle behind iWAM: rather than denoising an…",
+      "quality": 7,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "579e89e7a47a",
+      "title": "Draft Calibration for Speculative Decoding: Accelerating LLM Serving by Matching Draft and Target Distributions",
+      "category": "bench",
+      "subcategory": "cost",
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 1466,
+      "excerpt": "Speculative decoding accelerates large language model (LLM) inference by employing a lightweight draft model to propose draft tokens and allowing the target model to verify the new tokens in parallel to improve inference-time compute utilization. The speedup relies on the acceptance probability of draft tokens in target verification, which is directly related to the gap $\\|p-q\\|_1$ between the target distribution $p$ and the draft distribution $q$. In this paper, we study draft calibration of speculative decoding to improve the speedup of speculative decoding, where we employ post-hoc methods…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    }
+  ]
+}
