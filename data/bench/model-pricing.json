@@ -1,7 +1,7 @@
 {
   "id": "model-pricing",
   "kind": "openrouter-pricing",
-  "collectedAt": "2026-11-26T04:20:42.580Z",
+  "collectedAt": "2026-11-26T19:46:08.427Z",
   "upstream": {
     "label": "OpenRouter 模型目录 API",
     "url": "https://openrouter.ai/models"
@@ -255,10 +255,20 @@
           "id": "~deepseek/deepseek-v4-flash-latest",
           "url": "https://openrouter.ai/~deepseek/deepseek-v4-flash-latest",
           "context": 1048576,
-          "promptPerMillion": 0.047,
-          "completionPerMillion": 0.3,
+          "promptPerMillion": 0.04532,
+          "completionPerMillion": 0.13596,
           "free": false,
           "created": 1785606009
+        },
+        {
+          "name": "DeepSeek: DeepSeek V4 Flash 0731",
+          "id": "deepseek/deepseek-v4-flash-0731",
+          "url": "https://openrouter.ai/deepseek/deepseek-v4-flash-0731",
+          "context": 1048576,
+          "promptPerMillion": 0.045599999999999995,
+          "completionPerMillion": 0.3,
+          "free": false,
+          "created": 1785478908
         },
         {
           "name": "DeepSeek: DeepSeek V4 Flash 0731 (batch)",
@@ -351,14 +361,14 @@
           "created": 1789176933
         },
         {
-          "name": "DeepSeek: DeepSeek V4 Flash 0731",
-          "id": "deepseek/deepseek-v4-flash-0731",
-          "url": "https://openrouter.ai/deepseek/deepseek-v4-flash-0731",
+          "name": "DeepSeek: DeepSeek V4.1 Flash",
+          "id": "deepseek/deepseek-v4.1-flash",
+          "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash",
           "context": 1048576,
-          "promptPerMillion": 0.06,
-          "completionPerMillion": 0.18,
+          "promptPerMillion": 0.050699999999999995,
+          "completionPerMillion": 0.20279999999999998,
           "free": false,
-          "created": 1785478908
+          "created": 1789021285
         },
         {
           "name": "Amazon: Nova Lite 1.0",
@@ -381,6 +391,16 @@
           "created": 1765731275
         },
         {
+          "name": "inclusionAI: LingSante 3.1 Air VL",
+          "id": "inclusionai/lingsante-3.1-air-vl",
+          "url": "https://openrouter.ai/inclusionai/lingsante-3.1-air-vl",
+          "context": 131072,
+          "promptPerMillion": 0.06,
+          "completionPerMillion": 0.18,
+          "free": false,
+          "created": 1795705284
+        },
+        {
           "name": "IBM: Granite 4.2 8B",
           "id": "ibm-granite/granite-4.2-8b",
           "url": "https://openrouter.ai/ibm-granite/granite-4.2-8b",
@@ -389,26 +409,6 @@
           "completionPerMillion": 0.15,
           "free": false,
           "created": 1788206780
-        },
-        {
-          "name": "Z.ai: GLM 4.7 Flash",
-          "id": "z-ai/glm-4.7-flash",
-          "url": "https://openrouter.ai/z-ai/glm-4.7-flash",
-          "context": 131072,
-          "promptPerMillion": 0.060500000000000005,
-          "completionPerMillion": 0.39999999999999997,
-          "free": false,
-          "created": 1768833913
-        },
-        {
-          "name": "Z.ai: GLM Latest",
-          "id": "~z-ai/glm-latest",
-          "url": "https://openrouter.ai/~z-ai/glm-latest",
-          "context": 1048576,
-          "promptPerMillion": 0.0699,
-          "completionPerMillion": 1.4,
-          "free": false,
-          "created": 1787151053
         }
       ]
     }
@@ -421,8 +421,8 @@
     {
       "path": "https://openrouter.ai/api/v1/models",
       "url": "https://openrouter.ai/api/v1/models",
-      "sha256": "64a0b6b88dc62bb3daea72216e7e108a216a30e8b0e4ceb85c6608281f48e351",
-      "bytes": 921577
+      "sha256": "a36bb139458a44d32db8116c6e1bd72619c29369d03aebd1c832e47a3724666d",
+      "bytes": 926857
     }
   ]
 }
