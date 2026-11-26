@@ -1,8 +1,8 @@
 {
   "day": "2026-11-26",
-  "reviewedAt": "2026-11-25T20:04:39.306Z",
+  "reviewedAt": "2026-11-26T04:21:17.197Z",
   "reviewer": "cloudflare/@cf/meta/llama-3.1-70b-instruct",
-  "note": "cloudflare/@cf/meta/llama-3.1-70b-instruct：复核 12 条，解析到 12 条判定",
+  "note": "cloudflare/@cf/meta/llama-3.1-70b-instruct：复核 12 条，解析到 10 条判定",
   "rules": {
     "minItems": 3,
     "minBodyChars": 120,
@@ -15,14 +15,48 @@
   },
   "passed": true,
   "reasons": [],
-  "total": 25,
+  "total": 38,
   "blocked": [
+    "ca5cbe708651",
     "da39a3ee5e6b",
+    "da39a3ee5e6b",
+    "61566c3f0325",
+    "da39a3ee5e6b",
+    "916772008e16",
     "90a76e3fc53d",
-    "ea7471e6a15e"
+    "a25f67933f54"
   ],
-  "survivors": 22,
+  "survivors": 30,
   "items": [
+    {
+      "slug": "ca5cbe708651",
+      "title": "kamjin3086/chatless",
+      "category": "apps",
+      "subcategory": "knowledge",
+      "tags": [
+        "local",
+        "agent",
+        "generate",
+        "money"
+      ],
+      "bodyChars": 3849,
+      "excerpt": "chatless 基于 Tauri 2.0 与 Next.js 的本地优先 AI 聊天客户端 <img alt=\"Platform\" src=\"https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-purple?style=flat&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTEyIDJBMTAgMTAgMCAwIDAgMiAxMmMwIDQuNDIgMi44NyA4LjE3IDYuODQgOS41LjUuMDguNjYtLjIzLjY2LS41di0xLjY5Yy0yLjc3LjYtMy4zNi0xLjM0LTMuMzYtMS4zNEMxMC4xNSAxNyA5LjUgMTYuNzEgOS41IDE2LjcxYy0uOTEtLjYyLjA3LS42LjA3LS42IDEgLjA3IDEuNTMgMS4wMyAxLjUzIDEuMDMuODcgMS41MiAyLjM0IDEuMDcgMi45MS44My4wOS0uNjUuMzUtMS4wNy42NC0x…",
+      "quality": 10,
+      "practical": 7,
+      "sourceName": "GitHub 检索（生态项目更新）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "标签与内容不符，正文中没有提到“local”、“agent”等标签相关的内容。"
+      },
+      "blocked": [
+        "模型复核不通过（标签与内容不符，正文中没有提到“local”、“agent”等标签相关的内容。）"
+      ]
+    },
     {
       "slug": "da39a3ee5e6b",
       "title": "App+1｜Yab：开源、AI 友好的双内核浏览器，给舍不得 Arc 的你",
@@ -44,10 +78,34 @@
       "warnings": [],
       "agent": {
         "verdict": "fail",
-        "reason": "内容主要是新闻转述，没有实测数据或步骤。"
+        "reason": "正文主要是新闻转述，没有提供实测数据或复现步骤。"
       },
       "blocked": [
-        "模型复核不通过（内容主要是新闻转述，没有实测数据或步骤。）"
+        "模型复核不通过（正文主要是新闻转述，没有提供实测数据或复现步骤。）"
+      ]
+    },
+    {
+      "slug": "da39a3ee5e6b",
+      "title": "我用AI做了一张两千年的中国历史地图",
+      "category": "apps",
+      "subcategory": "knowledge",
+      "tags": [
+        "benchmark"
+      ],
+      "bodyChars": 2946,
+      "excerpt": "Matrix精选 2026年10月27日 6 分钟阅读 我用AI做了一张两千年的中国历史地图 主作者 DeanChen 新手上路 DeanChen DeanChen 新手上路 联合作者 DeanChen 新手上路 DeanChen DeanChen 新手上路 6 分钟阅读 微信扫码分享 点击下方按钮可复制链接 利益相关声明：作者与文中产品有直接的利益相关（开发者、自家产品等） Matrix 首页推荐 Matrix 是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选 Matrix 最优质的文章，展示来自用户的最真实的体验和观点。 文章代表作者个人观点，少数派仅对标题和排版略作修改。 10 月 21 号一大早醒来，我随手刷了一下 GitHub ，发现前几天还只有几十个 star 的 「江山时序」 ，一晚上多了一百多个。接下来几天，这个数字一路涨到了 1400。 江山时序 GitHub Star 曲线 到现在我还觉得有点不真实，所以还是写点东西，记录一下我为什么想做这样一个网站。 历史课本里的插图 我是个理科生，但从小就喜欢历史，也喜欢看地图。上学那会儿，历史、地理经常考全班最高分，一度很想选文科。可惜政治实在太差，一看到论述题就头疼，只好忍痛学了理科，后来顺理成章成了一名程序员。但喜欢人文地理的那颗心一直没变。 上学时我最爱翻的，就是初高中历史课…",
+      "quality": 10,
+      "practical": 1,
+      "sourceName": "少数派",
+      "domain": "sspai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "fail",
+        "reason": "正文主要是新闻转述，没有提供实测数据或复现步骤。"
+      },
+      "blocked": [
+        "模型复核不通过（正文主要是新闻转述，没有提供实测数据或复现步骤。）"
       ]
     },
     {
@@ -70,7 +128,133 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "内容包含实测数据和步骤，符合实践性内容要求。"
+        "reason": "正文提供了详细的软件使用教程和实测数据。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "61566c3f0325",
+      "title": "AI影视高地正在北影海淀一带崛起，「一人制片厂」基建搭好了",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [
+        "agent",
+        "generate",
+        "money"
+      ],
+      "bodyChars": 4057,
+      "excerpt": "AI影视高地正在北影海淀一带崛起，「一人制片厂」基建搭好了 程浅 2026-11-26 10:53:14 来源： 量子位 叠满海淀最强AI Buff。 程浅 发自 凹非寺 量子位 | 公众号QbitAI 2026年，AI影视正在经历一场浩荡爆发。 今年的视频大模型和视频Agent工具迭代神速，开始真正走进影视工业的生产流程，曾经令人出戏的「恐怖谷」效应逐渐消退。 在此基础上，微短剧市场的发展尤为惊人。据国家广电数据，2026年前10个月，全国已上线近55万部微短剧，是2025年全年的近17倍，且 其中超过94%都是AI剧 。据预测，AI微短剧2026年预估市场规模已达到400亿元。 与此同时，AI的触角也伸向了传统大银幕，国内首部获公映许可证的AI院线长片《三星堆：未来往事》于今年10月正式上映，中国金鸡百花电影节也首次增设AI单元。 如此迅猛的增长让AI影视很难再停留在手工作坊式的单打独斗。 这股席卷全行业的AI影视浪潮，正在急切地寻找实体产业底座和生态汇聚点。 如果我们将五道口称为中国大模型的高地，那么这股AI影视浪潮的高地，正在同样是北京海淀的北三环中路崛起。 在这条路与西土城路交汇两平方公里内，央视六公主、北京电影学院海淀校区、中影集团、华夏电影、中央新闻纪录电影制片厂……以及原1201印刷厂老厂房，如今的 中交海淀科创园 ，悉数在目。 正是这样的一座老牌电影街区，最近迎…",
+      "quality": 10,
+      "practical": 2,
+      "sourceName": "量子位",
+      "domain": "qbitai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "fail",
+        "reason": "正文主要是新闻转述，没有提供实测数据或复现步骤。"
+      },
+      "blocked": [
+        "模型复核不通过（正文主要是新闻转述，没有提供实测数据或复现步骤。）"
+      ]
+    },
+    {
+      "slug": "da39a3ee5e6b",
+      "title": "派早报：蔚来举办 2026 创新科技日、Tidal 将拒绝 AI 音乐等",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [
+        "generate",
+        "tutorial",
+        "agent",
+        "free"
+      ],
+      "bodyChars": 3974,
+      "excerpt": "周四 26 派早报：蔚来举办 2026 创新科技日、Tidal 将拒绝 AI 音乐等 08:08 6 分钟阅读 早报速览 蔚来举办 2026 创新科技日 2 Claude 支持一键转换独立软件 0 阿里千问 Go 开放免费代打电话服务 4 Sand.ai 发布视频生成模型 MAGI-2 1 LibreOffice 发布 AI 代码新规 2 Tidal 将全面「封杀」 AI 生成音乐 2 微软宣布停止开发 Windows 11 蓝牙 MTP 功能 1 铁三角推出耳挂式耳机 ATH-EM7xC 1 蔚来举办 2026 创新科技日 11 月 25 日，蔚来公司在广州举办了第三届 NIO IN 创新科技日，发布世界模型 NWM 3.0 和全场景情感智能 NOMI Intelligence 4.0，并介绍 AI 原生组织与智慧能源网络进展；当天也是蔚来成立十二周年。 NWM 3.0 升级模型架构、闭环训练和跨域融合，采用显式空间与隐式空间双闭环强化学习。据蔚来介绍，其综合数据量较 NWM 2.5 提升 7 倍，综合训练效率提升 5 倍，优化了会车、避让、匝道变道等表现，可在高速、城区、小路、停车场、园区和换电场景间切换。该模型将在备案完成后向四大平台推送。 NOMI Intelligence 4.0 重构系统架构，以大模型矩阵和智能体框架感知车内外环境、调用整车工具，并围绕用户目标进行理解…",
+      "quality": 8,
+      "practical": 6,
+      "sourceName": "少数派",
+      "domain": "sspai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "fail",
+        "reason": "正文主要是新闻转述，没有提供实测数据或复现步骤。"
+      },
+      "blocked": [
+        "模型复核不通过（正文主要是新闻转述，没有提供实测数据或复现步骤。）"
+      ]
+    },
+    {
+      "slug": "916772008e16",
+      "title": "Show HN: Carry – Save every AI conversations as Markdown, in a folder you Own",
+      "category": "apps",
+      "subcategory": "knowledge",
+      "tags": [],
+      "bodyChars": 307,
+      "excerpt": "Carry let's you automatically save your chats from Gemini, ChatGPT, Claude and Grok as Markdown in a local folder on you computer. You can easily search across all apps and handoff to other if needed with one click. Comments URL: https://news.ycombinator.com/item?id=50637995 Points: 27 # Comments: 18",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "Hacker News (AI)",
+      "domain": "carry.md",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "内容与标签不符，仅为产品宣传。"
+      },
+      "blocked": [
+        "模型复核不通过（内容与标签不符，仅为产品宣传。）"
+      ]
+    },
+    {
+      "slug": "740b79deb219",
+      "title": "StateWeaver: Multi-Agent Coordination of Story-State Transitions for Long-Horizon Video Generation",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [
+        "tutorial",
+        "agent"
+      ],
+      "bodyChars": 1258,
+      "excerpt": "Modern video foundation models generate high-quality short clips, but preserving long-video consistency and correctly depicting event-driven state changes remain challenging. Existing agentic workflows face these challenges because continual planning and repair accumulate context, while reference updates remain limited. We introduce StateWeaver, which combines Active States and Hierarchical Collaboration to connect review-driven visual reference updates with cross-shot state inheritance. Active States translate state discrepancies identified during review into concrete visual asset requiremen…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容涉及 StateWeaver 的技术细节，属于实践性内容。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "5da5ad921cf8",
+      "title": "DFly2: Turbocharging Long-Context Speculative Decoding by Sharing the Target's Sparsity",
+      "category": "apps",
+      "subcategory": "inference",
+      "tags": [],
+      "bodyChars": 1889,
+      "excerpt": "To avoid the quadratic cost of dense attention over long contexts, models such as DeepSeek-V4 and Hy4 have turned natively sparse, and speculative decoding, which matters most where decoding is slowest, increasingly runs on them. Their drafters, however, still keep a context cache of their own, over the whole prompt or a sliding window. Beyond memory, such a cache costs prefill time, prefix-cache hits and decode concurrency. Drafters that read the target's cache avoid one of their own, but settle only which cache, not which positions, and still read everything or a recent window. Neither rule…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv 检索（推理引擎与量化）",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容涉及 DFly2 的技术细节，属于实践性内容。"
       },
       "blocked": []
     },
@@ -93,10 +277,10 @@
       "warnings": [],
       "agent": {
         "verdict": "fail",
-        "reason": "内容主要是新闻转述，没有实测数据或步骤。"
+        "reason": "内容主要为新闻转述，没有实测数据或步骤。"
       },
       "blocked": [
-        "模型复核不通过（内容主要是新闻转述，没有实测数据或步骤。）"
+        "模型复核不通过（内容主要为新闻转述，没有实测数据或步骤。）"
       ]
     },
     {
@@ -119,7 +303,7 @@
       "warnings": [],
       "agent": {
         "verdict": "pass",
-        "reason": "内容包含实测数据和步骤，符合实践性内容要求。"
+        "reason": "内容涉及 Hy4-flash 和 Qwen3.8-Flash-Next 的性能对比，提供了实测数据和步骤。"
       },
       "blocked": []
     },
@@ -142,10 +326,12 @@
       "hard": [],
       "warnings": [],
       "agent": {
-        "verdict": "pass",
-        "reason": "内容包含实测数据和步骤，符合实践性内容要求。"
+        "verdict": "fail",
+        "reason": "内容主要为产品宣传，没有实测数据或步骤。"
       },
-      "blocked": []
+      "blocked": [
+        "模型复核不通过（内容主要为产品宣传，没有实测数据或步骤。）"
+      ]
     },
     {
       "slug": "21c6771be6f3",
@@ -165,10 +351,29 @@
       "domain": "qbitai.com",
       "hard": [],
       "warnings": [],
-      "agent": {
-        "verdict": "pass",
-        "reason": "内容包含实测数据和步骤，符合实践性内容要求。"
-      },
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "eeff3d106a6e",
+      "title": "Show HN: Ribbon Architect – Endless ways to tie a gift ribbon",
+      "category": "tools",
+      "subcategory": "hands-on",
+      "tags": [
+        "tutorial",
+        "free"
+      ],
+      "bodyChars": 1667,
+      "excerpt": "Ribbon Architect is available as a free iOS app and in the browser. Scan or measure a gift, browse pattern suggestions made for its exact proportions, or construct your own designs. Then step-by-step instructions show you how to lay the ribbon on your gift. Gifts are modeled as convex polyhedra, so many non-cuboid gift shapes, such as prisms, work too and have their own interesting ribbon patterns. A ribbon (without twists) that is pulled tight follows a locally shortest path, a geodesic. This is a path on the surface of the gift that runs straight on faces and folds correctly over edges and…",
+      "quality": 10,
+      "practical": 5,
+      "sourceName": "Show HN (AI)",
+      "domain": "ribbonarchitect.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
       "blocked": []
     },
     {
@@ -190,10 +395,49 @@
       "warnings": [
         "标题未翻译"
       ],
-      "agent": {
-        "verdict": "pass",
-        "reason": "内容提供了实践性指导。"
-      },
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "e998dd99dc6f",
+      "title": "刚刚，黎曼猜想证明代码暴砍了99.5%！只剩7.6万行",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "tutorial",
+        "agent"
+      ],
+      "bodyChars": 4179,
+      "excerpt": "刚刚，黎曼猜想证明代码暴砍了99.5%！只剩7.6万行 Jay 2026-11-26 08:40:37 来源： 量子位 合着全让A➗揽了 Jay 发自 凹非寺 量子位 | 公众号 QbitAI 只剩 7.6万行 了！！ 刚刚，轰动全网的 1740万行 黎曼猜想证明，迎来了一波史诗级大瘦身。 代码量暴砍 99.56% 。 原版证明那175,188个文件，在AWS高配机器上得跑足足21个小时才能编译完； 而现在的新版本，只需要一台 12核、24GB内存 的普通机器，在已有Mathlib缓存的情况下， 1到2个小时 就能从头构建完毕。 有救了有救了！！ 结果我一看仓库作者—— 不过，作者也特别强调，目前这份证明仅通过了机器验证，尚未有数学家完整通读，也没有配套的数学论文。 怎么又是A➗干的？？？ 大家好，过去几天我一直在和Anthropic的几位同事全力冲刺，开发这个证明的精简版本。我们已经成功将其篇幅缩减了大约两个数量级，从约1500万行减少到了约76,000行。 这次出手的人叫 Luke Sernau， Anthropic研究员 ， 本次精简由 他+同事+Claude 共同完成。 瘦身无望 几天前，数学家Levent Alpöge与Anthropic的AI模型Claude合作，发布了一个长达 1740万行的黎曼猜想 （RH） 与广义黎曼猜想 （GRH） 的Lean语言形式化证明 ，…",
+      "quality": 9,
+      "practical": 3,
+      "sourceName": "量子位",
+      "domain": "qbitai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "44329bf8a1c3",
+      "title": "Latent-in-the-Middle: On the Security of Cross-Model Latent Communication in Multi-Agent Systems",
+      "category": "tools",
+      "subcategory": "prompt",
+      "tags": [
+        "benchmark",
+        "agent"
+      ],
+      "bodyChars": 1676,
+      "excerpt": "As large language models increasingly collaborate in heterogeneous multi-agent systems, latent communication has emerged as an efficient alternative to exchanging natural-language messages. By sharing internal representations, agents can avoid repeatedly processing the same context, reducing communication overhead and prefill computation. One such mechanism is cross-model Key-Value (KV) cache transfer, which uses a learned mapper to translate a source model's KV cache into one a target model can use. However, this handoff means the target model consumes context it did not encode itself, thus…",
+      "quality": 6,
+      "practical": 2,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
       "blocked": []
     },
     {
@@ -214,10 +458,7 @@
       "warnings": [
         "标题未翻译"
       ],
-      "agent": {
-        "verdict": "pass",
-        "reason": "内容提供了实践性指导。"
-      },
+      "agent": null,
       "blocked": []
     },
     {
@@ -238,10 +479,28 @@
       "warnings": [
         "标题未翻译"
       ],
-      "agent": {
-        "verdict": "pass",
-        "reason": "内容提供了实践性指导。"
-      },
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "b9933a6e5f40",
+      "title": "Asymmetric Speculative Decoding: Unlocking In-Context Learning in Draft Models",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 1498,
+      "excerpt": "Speculative decoding addresses Large Language Model (LLM) inference latency by first drafting and then verifying in parallel. Yet practical speedups fall far short of theoretical bounds, especially on reasoning tasks. We identify the root cause as task isomorphism: existing methods provide identical prompts to both models, forcing the draft model to solve problems beyond its capacity. This produces high rejection rates that eliminate parallelization gains. We discover that acceptance rates increase monotonically during generation, revealing a latent in-context learning (ICL) effect wherein th…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv 检索（推理引擎与量化）",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
       "blocked": []
     },
     {
@@ -262,10 +521,7 @@
       "warnings": [
         "标题未翻译"
       ],
-      "agent": {
-        "verdict": "pass",
-        "reason": "内容提供了实践性指导。"
-      },
+      "agent": null,
       "blocked": []
     },
     {
@@ -286,10 +542,7 @@
       "domain": "lcz.me",
       "hard": [],
       "warnings": [],
-      "agent": {
-        "verdict": "pass",
-        "reason": "内容提供了实践性指导。"
-      },
+      "agent": null,
       "blocked": []
     },
     {
@@ -311,13 +564,8 @@
       "domain": "lcz.me",
       "hard": [],
       "warnings": [],
-      "agent": {
-        "verdict": "fail",
-        "reason": "内容过于主观和讨论，没有提供实践性指导。"
-      },
-      "blocked": [
-        "模型复核不通过（内容过于主观和讨论，没有提供实践性指导。）"
-      ]
+      "agent": null,
+      "blocked": []
     },
     {
       "slug": "59000eab415c",
@@ -426,6 +674,27 @@
       "domain": "lcz.me",
       "hard": [],
       "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "7b8bd8a71b2f",
+      "title": "MolGPAO: Molecular Generative Pre-trained Autoregressive Octree with Speculative Decoding and Sub-Millisecond Seam Healing for 3D Molecules",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 1781,
+      "excerpt": "Autoregressive generation over adaptive 3D octrees (Uni-3DAR) offers an intrinsic $O(N \\log N)$ sparsity advantage over dense $O(N^2)$ equivariant diffusion and flow models on large drug-like molecules, yet lags in geometric equilibrium, closed-shell valence stability, and property fidelity due to Morton-seam coordinate jumps, leaf-heavy compute with root-count trapping, and target-shortcut collapse in internal critics. We introduce MolGPAO (Molecular Generative Pre-trained Autoregressive Octree), a standalone 3D octree architecture and single-output speculative tree-decoding engine using zer…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv 检索（推理引擎与量化）",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
       "agent": null,
       "blocked": []
     },
@@ -551,6 +820,28 @@
       "warnings": [
         "标题未翻译"
       ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "cfb6ae10b117",
+      "title": "华为计算卡频繁掉线拖累DeepSeek V5训练？梁文锋坚定转型国产算力集群，因为美国算力断供在即，阵痛必须面对！",
+      "category": "bench",
+      "subcategory": "cost",
+      "tags": [
+        "free",
+        "local",
+        "agent",
+        "hardware"
+      ],
+      "bodyChars": 4890,
+      "excerpt": "近期互联网上开始流传一个消息，说是DeepSeek V5大模型使用华为的昇腾集群训练之后，经常是计算卡大规模掉线，然后凌晨DeepSeek的工程师被迫起床，啊，去调这些问题、排查bug，被迫把这个训练的checkpoint倒回到几个小时之前，就非常地痛苦。然后这样的消息出来之后，互联网上啊，那些，呃，讨厌DeepSeek的、那些看衰中国AI的人开始欢呼雀跃。我也不知道这些人脑子到底是怎么回事啊。就说DeepSeek它是一家开源的公司，是吧？它的所有的模型权重，它的这个部署工具，甚至连它官方APP的代码，是吧，它的Agent代码，它全部给开源了。就说它是免费给你用的，它也没有什么，呃，限制，是吧？你甚至都可以商用，没有任何的限制，使用的是非常宽松的协议。啊，你如果说不想自己部署的话，你就购买DeepSeek的官方API，它也是非常地便宜。 然后这个大模型本身干活的能力，是吧？DeepSeek V4.1 Flash 1017版本自上线以来，我相信还是广受好评的，它的调用量是遥遥领先。啊，你不要说OpenAI、Anthropic这样的很贵的模型啊，在调用量上跟这个DeepSeek完全不能相比。也就是说，其他的开源呢，这些模型，是吧，国内的其他模型，有哪个能跟DeepSeek比调用量呢？就正常人都在感恩DeepSeek，或者说，唉，起码它的产品用得好，我们觉得市场上有一个不错的选择，有一…",
+      "quality": 7,
+      "practical": 5,
+      "sourceName": "抡锤者 资讯",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
       "agent": null,
       "blocked": []
     },
