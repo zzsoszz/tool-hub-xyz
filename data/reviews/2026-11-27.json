@@ -1,0 +1,717 @@
+{
+  "day": "2026-11-27",
+  "reviewedAt": "2026-11-26T19:46:50.448Z",
+  "reviewer": "cloudflare/@cf/meta/llama-3.1-70b-instruct",
+  "note": "cloudflare/@cf/meta/llama-3.1-8b-instruct → @cf/meta/llama-3.1-70b-instruct：复核 12 条，解析到 12 条判定",
+  "rules": {
+    "minItems": 3,
+    "minBodyChars": 120,
+    "minSummaryChars": 40,
+    "maxTags": 4,
+    "agentMaxItems": 12,
+    "agentBatch": 6,
+    "agentChars": 900,
+    "agentExcerptChars": 600
+  },
+  "passed": true,
+  "reasons": [],
+  "total": 30,
+  "blocked": [
+    "bd306655e6ec",
+    "d02052433e98",
+    "e3d867dc5559",
+    "216dbef5c450",
+    "87e6b76f02f5"
+  ],
+  "survivors": 25,
+  "items": [
+    {
+      "slug": "da39a3ee5e6b",
+      "title": "论文作图不求人，用 ChatGPT 和 Keynote 免费搞定机理图",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [
+        "generate",
+        "benchmark",
+        "agent",
+        "free"
+      ],
+      "bodyChars": 7363,
+      "excerpt": "2026年11月26日 16 分钟阅读 论文作图不求人，用 ChatGPT 和 Keynote 免费搞定机理图 主作者 胡拉图说 少数派作者 🌐 hulatu.com｜分享电子产品、生活思考、运动日常的食品研究生。 胡拉图说 胡拉图说 少数派作者 🌐 hulatu.com｜分享电子产品、生活思考、运动日常的食品研究生。 联合作者 胡拉图说 少数派作者 🌐 hulatu.com｜分享电子产品、生活思考、运动日常的食品研究生。 胡拉图说 胡拉图说 少数派作者 🌐 hulatu.com｜分享电子产品、生活思考、运动日常的食品研究生。 🌐 hulatu.com｜分享电子产品、生活思考、运动日常的食品研究生。 16 分钟阅读 微信扫码分享 点击下方按钮可复制链接 图片来源： 封面图来自 Unsplash 网站的 Ashley West Edwards ；全文总览图我自己用 Keynote 手绘；剩下的图片都来自软件操作过程中的真实截图以及拍摄。 研究生除了完成毕业论文，大部分院校还要求发一些小论文（也有可能是导师对你的「特殊关照」），虽然在 AI 工具玲琅满目的今天，用各种方法「写」出一篇论文已经不算难事。但有一个环节依然很让人头疼——论文里的机理图。这里要说的尤其是综述文章里的机理图，它需要我们用图标、流程等直观的视觉语言，把大段文字浓缩成一张信息密度极高，兼顾高清、美观与逻辑…",
+      "quality": 9,
+      "practical": 4,
+      "sourceName": "少数派",
+      "domain": "sspai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容包含实测数据和复现步骤。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "bd306655e6ec",
+      "title": "381个AI直播冲刺证明P=NP！把GitHub干崩了",
+      "category": "apps",
+      "subcategory": "knowledge",
+      "tags": [
+        "agent"
+      ],
+      "bodyChars": 4582,
+      "excerpt": "381个AI直播冲刺证明P=NP！把GitHub干崩了 克雷西 2026-11-26 21:56:01 来源： 量子位 已跑了超过一万次会话，在Lean4里验证通过了2400多条引理 克雷西 发自 凹非寺 量子位 | 公众号QbitAI 黎曼猜想之后，AI又对另一个世纪数学难题发起进攻！ 前脚OpenAI和A社在同一天宣布证明了VP≠VNP，后脚一个全网直播攻关P=NP的AI智能体集群就火出圈了。 高峰时同时在线工作的智能体有381个，直接把GitHub干限流了。 这场面向全网直播的公开实验，从11月22日启动至25日早9点，已跑了超过一万次会话，在Lean 4里验证通过了2400多条引理。 除了官方舰队，还有465个外部智能体涌入仓库提交证明，导致GitHub并发队列直接堵死。 于是，发起人Amichai Mantinband在X上公开向GitHub喊话求助。 30个席位，把数学证明拆成流水线 上周日，设计软件公司Brilliant （不是很多人熟悉的那个数学学习平台Brilliant.org） 联合创始人Amichai Mantinband和Lior上线了一个名为pequalnp.com的直播网站。 他们把一批AI智能体放进同一个公开项目里，24小时直播攻关计算复杂性领域的世纪难题「P vs NP」，并向全网开发者开放了协同入口。 短短三天，网站上同时在线的智能体最高冲到38…",
+      "quality": 9,
+      "practical": 1,
+      "sourceName": "量子位",
+      "domain": "qbitai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "fail",
+        "reason": "内容仅为新闻转述，缺乏数据和步骤。"
+      },
+      "blocked": [
+        "模型复核不通过（内容仅为新闻转述，缺乏数据和步骤。）"
+      ]
+    },
+    {
+      "slug": "cd16924426fb",
+      "title": "datasette-charts 0.3a0",
+      "category": "apps",
+      "subcategory": "agents",
+      "tags": [
+        "agent"
+      ],
+      "bodyChars": 668,
+      "excerpt": "Release: datasette-charts 0.3a0 I added chart annotations to datasette-charts ! You can now render a chart and then annotate it with lines, shaded areas, labels, or a combination of the three. A chart with annotations looks like this: Here's that same chart in Datasette Lite , where you can tweak the annotations using the chart builder UI: If you also install Datasette Agent the agent can build annotated charts for you. Here's what I got on the agent.datasette.io demo for this prompt: Show a chart comparing Simon's tagged content about LLMs with his tagged content about Datasette, with annota…",
+      "quality": 9,
+      "practical": 1,
+      "sourceName": "Simon Willison",
+      "domain": "simonwillison.net",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容包含实测数据和复现步骤。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "d02052433e98",
+      "title": "[轉]DeepSeek Harness 隐私提醒：你的对话、文件内容、第三方模型的对话，可能都在往外发",
+      "category": "apps",
+      "subcategory": "inference",
+      "tags": [
+        "local",
+        "benchmark",
+        "tutorial",
+        "agent"
+      ],
+      "bodyChars": 4421,
+      "excerpt": "昨天在X看到這篇 貼文 ，推主有詳細列出證據 以下原文轉貼 ⚠️ DeepSeek Harness 隐私提醒：你的对话、文件内容、第三方模型的对话，可能都在往外发 我把本机装的 DeepSeek Harness（0.2.2-rc.5）解包了。安装包里的 app.asar 自带 TypeScript 源码，我逐个读了和数据上报有关的模块，再起一个本地假服务器抓包验证。结论如下，建议用这个工具的朋友都检查一下自己的设置。 一、完整对话日志会随模型请求上传（默认开启） 只要用的是 DeepSeek 模型，每次请求都会多带一个 dsh_session_log 字段，把会话日志按增量全部上传，内容包括： • 你发的每条消息、模型的每条回复 • system prompt • 工具调用的结果：读过的文件内容、执行过的命令及输出 • 项目工作目录的完整本地路径 • 生成会话标题的请求也会再带一份 我抓包实测后，还确认了两件更需要注意的事： 1️⃣ 第三方模型的对话也会被带上去。 同一个会话里，先用 Claude、GPT 等第三方模型聊，再切回 DeepSeek 模型，之前第三方模型那部分的对话原文、模型名、模型回复，都会进入上传的日志。我测过，API Key 和第三方的接口地址不会上传。 2️⃣ 中转站也能收到。 如果你给 DeepSeek 适配器配了自定义地址（中转站、代理网关），这份完整日…",
+      "quality": 7,
+      "practical": 7,
+      "sourceName": "抡锤者 Agent 工具",
+      "domain": "lcz.me",
+      "hard": [
+        "内容过少（摘要 22 字，要求至少 40 字）"
+      ],
+      "warnings": [],
+      "agent": null,
+      "blocked": [
+        "内容过少（摘要 22 字，要求至少 40 字）"
+      ]
+    },
+    {
+      "slug": "ce6189d57deb",
+      "title": "Show HN: SimDrop – Running iOS simulators in the macOS Finder sidebar",
+      "category": "apps",
+      "subcategory": "knowledge",
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 1202,
+      "excerpt": "Hi HN, I made a small macOS utility for my own iOS simulator workflow. I kept running into two annoyances: getting config files in and out of a simulator is clunky (digging into CoreSimulator UUID folders or running simctl), and on the iPhone Duo simulator I couldn't even drag and drop images onto the window at all. SimDrop puts every running iOS simulator in Finder's sidebar (under Locations) with two folders: - Downloads/ (Files app > On My iPhone > Downloads) - Photos and Videos/ (the simulator's Photos library) Simulators appear when they boot and disappear when they shut down. Everything…",
+      "quality": 6,
+      "practical": 4,
+      "sourceName": "Show HN (AI)",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容包含实测数据和复现步骤。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "ecd148f36a07",
+      "title": "PlayPorted – 近 2500 个游戏移植项目，都在这个网站上",
+      "category": "apps",
+      "subcategory": "knowledge",
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 2075,
+      "excerpt": "最近一段时间，青小蛙介绍了不少游戏的 PC 原生移植项目，包括《 塞尔达传说：王国之泪 》、《 塞尔达传说：时之笛重制版 》《 马力欧卡丁车 》《 红警、命令与征服 》等等。@ Appinn 这些原本只能在游戏主机（也有 PC 转 PC）上运行的游戏，经过开发者的反编译、重编译，已经可以脱离模拟器，直接在电脑上运行了。 那么，去哪里找这些项目呢？ 目录 PlayPorted 专门收集游戏移植项目的 网站 PlayPorted 专门收录由粉丝们重制的主机游戏和经典PC游戏，让老游戏可以在现代电脑或者网页上原生运行。有些游戏还添加了宽屏、高帧率、MOD 或者现代的操作方式。 截至 2026 年 11 月 26 日，它已经收录了来自 39 种原始平台的 2509 个移植项目，涉及 1220 款游戏，其中 1071 个项目已标记为 可玩 ，还有 149 个浏览器移植项目。 热门项目 塞尔达传说系列占据了其中三个席位： 游戏 开源项目 Stars 红色警戒、命令与征服、沙丘 2000 OpenRA 17,786 过山车大亨 2 OpenRCT2 16,583 暗黑破坏神 DevilutionX 10,018 运输大亨 OpenTTD 8,504 塞尔达传说：姆吉拉的假面 Zelda64Recomp 7,694 塞尔达传说：王国之泪 totk-pc-recomp 7,267 上古卷轴 3：晨…",
+      "quality": 8,
+      "practical": 4,
+      "sourceName": "小众软件",
+      "domain": "appinn.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "内容包含实测数据和复现步骤。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "e3d867dc5559",
+      "title": "Ask HN: So, What Now?",
+      "category": "apps",
+      "subcategory": "life",
+      "tags": [
+        "tutorial"
+      ],
+      "bodyChars": 498,
+      "excerpt": "If LLM's are solving all of math's hardest problems, and I can code pretty much anything with a prompt, why should I finish my CS degree? Are humans just meant to be prompt pushers and opposable thumbs now? I am in my second year of college. I genuinely am not sure what to pursue or how to estimate what society might need from me 5 years from now. So, what now? Do I just learn things for the sake of learning them? just for fun? Do I just ready my board to surf the coming AI Utopia(or)Dystopia?",
+      "quality": 6,
+      "practical": 2,
+      "sourceName": "Hacker News Search",
+      "domain": "news.ycombinator.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "内容缺乏实测数据和复现步骤，主要是一篇讨论。"
+      },
+      "blocked": [
+        "模型复核不通过（内容缺乏实测数据和复现步骤，主要是一篇讨论。）"
+      ]
+    },
+    {
+      "slug": "5de217bdfeff",
+      "title": "Show HN: Olumino, a Markdown notes and spaced repetition app",
+      "category": "apps",
+      "subcategory": "life",
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 518,
+      "excerpt": "I was inspired by Mochi and Anki, but wanted to make something that’s a mix of the two. Anki is very confusing and has an outdated interface while Mochi is very simple and has a more minimalist interface. Olumino is the combination of both. I also added Japanese flashcard support, including kana readings, for anyone learning the language. I’m a CS student building this in my free time, so I’d love to hear what people think! Comments URL: https://news.ycombinator.com/item?id=50651099 Points: 12 # Comments: 8",
+      "quality": 6,
+      "practical": 2,
+      "sourceName": "Show HN (AI)",
+      "domain": "olumino.app",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "该项目是一个 Markdown 笔记和间隔重复应用，具有 Japanese 支持，开发者寻求反馈。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "216dbef5c450",
+      "title": "Focus Only on What's Important: Training-Free Focus Maps for Frozen Vision Transformers in Long-Video Object Segmentation",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 1745,
+      "excerpt": "Vision transformers are strong but costly image encoders for video object segmentation. Training-free token merging cuts compute uniformly across the frame, including on tracked objects. We give a frozen DINOv3 ViT inside a trained Cutie head a training-free focus map: full resolution where the segmenter expects its objects and coarser merging elsewhere. Protecting only the previous frame's mask works on short clips but fails on long videos, where fast motion pushes targets outside the margin and into background merging, locking in loss. Our policy instead takes the union of velocity-shifted…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "该文本没有提供明显的实践性内容或详细步骤，仅仅是关于研究论文的描述。"
+      },
+      "blocked": [
+        "模型复核不通过（该文本没有提供明显的实践性内容或详细步骤，仅仅是关于研究论文的描述。）"
+      ]
+    },
+    {
+      "slug": "1df92246c1ac",
+      "title": "别让 AI 用过时的技术写网页，Chrome 官方推出 Skills：Modern Web Guidance",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "agent",
+        "tutorial",
+        "free",
+        "benchmark"
+      ],
+      "bodyChars": 1667,
+      "excerpt": "如何让 AI 写网页的时候，不使用过时的技术？ 不知道你有没有遇到过：AI 帮你写网页，用的却是几年前的技术。明明浏览器已经原生支持的功能，它还要引入一堆第三方依赖，不仅增加了代码量，还可能带来额外的内存占用、性能损耗，甚至安全隐患。 说实话，青小蛙表示不知道 AI 用了什么技术。 Google Chrome 团队推出了一套名为 Modern Web Guidance 的开源 Skills，专门教 AI 如何使用现代 Web 技术开发网页。 只需要在安装后，对 AI 说下面的提示词，就可以了： 使用 Modern Web Guidance 的 Prompt 提示词 使用 Modern Web Guidance 检查整个项目，找出过时的 Web 技术、不必要的第三方依赖，以及可以用现代浏览器原生功能替代的代码。先给出改造建议，等我确认后再修改代码，并确保浏览器兼容性。 让 AI 学会现代 Web 技术 AI 的训练数据中包含大量过去的网页代码，而浏览器一直在进化，许多曾经需要复杂代码才能实现的功能，如今浏览器已经原生支持了。 比如： 弹窗：可以直接使用 HTML 原生的 dialog 。 悬浮菜单：可以使用 Popover API。 元素定位：可以使用 CSS Anchor Positioning。 响应式布局：可以使用 CSS Container Queries。 页面预加载：可…",
+      "quality": 8,
+      "practical": 8,
+      "sourceName": "小众软件",
+      "domain": "appinn.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "该文本提供了 Google Chrome 团队推出的 Modern Web Guidance 的使用方法和 Prompt 提示词，以及如何让 AI 学会现代 Web 技术。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "4fcd8a19cb6e",
+      "title": "nexu-io/opengame",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "agent",
+        "free"
+      ],
+      "bodyChars": 36387,
+      "excerpt": "The First Super Game Agent — Open-Source Full-Stack AI Game Studio Quick Start · Agents · Playable Templates · Why OpenGame · Publish & Monetize · Setup & MCP · Community English · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) Introducing OpenGame OpenGame is the first open-source Super Game Agent — turning DeepSeek (DSH) , Claude Code , Codex , or any of your local coding agents into an AI Unreal Engine / Unity and full-stack game studio. Go from a single idea to AAA-grade 3D worlds or monetization-ready viral mini-games in one end-to-end pipeline. 🚀 Build AAA-Grade 3D Games with Your Agent…",
+      "quality": 8,
+      "practical": 4,
+      "sourceName": "GitHub 新晋 AI 项目",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "该文本介绍了 OpenGame，这是一个开源的 Super Game Agent，允许用户使用 DeepSeek、Claude Code、Codex 或本地编码代理创建 AAA 级 3D 游戏或可货币化的病毒式迷你游戏。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "87e6b76f02f5",
+      "title": "90 秒自动换装补能，具微科技“潘多拉”支撑机器人无人化值守",
+      "category": "tools",
+      "subcategory": "workflow",
+      "tags": [
+        "local",
+        "agent",
+        "hardware",
+        "benchmark"
+      ],
+      "bodyChars": 4203,
+      "excerpt": "90 秒自动换装补能，具微科技“潘多拉”支撑机器人无人化值守 量子位的朋友们 2026-11-26 18:07:55 来源： 量子位 全栈方案破解工业机器人连续作业难题 11月26日，中国国际高新技术成果交易会 （简称“高交会”） 在深圳国际会展中心开幕。 具微科技集中展示了具身智能在高危特种工业场景的全栈创新成果，并线下首展新一代工业特种作业移动底座MOVENEW P3S ，首发模块化换装补能基站MICBOT PANDORA ，重构工业无人化作业的技术底座与落地路径，重塑高危特种工业领域的生产范式。 01｜MOVENEW P3S：轮足复合移动底座，直面高危重载作业场景 开幕首日，具微科技展台迎来众多专业观众。现场四足机器人依次完成360° 连续旋转、复杂地形跃障与定点跨障跳跃等动态演示，呈现整机运动性能； 展台同期展出面向特种具身场景的新一代产品MOVENEW P3S。 与多数以运动演示为主的四足机器人不同，P3S面向工业高危环境设计，定位为可拓展的“工业特种作业移动底座”，而非单一巡检设备，可搭载检测、清障、搬运、处置等任务模块。 P3S整机采用宽体短腿、四轮足构型，铺装路面优先以轮式模式巡航，复杂地形切换足式越障，支持原地转向；负载模式包括100 kg连续行走与爬楼、300 kg重载模式、400 kg低趴模式动态负载、600 kg静态极限负载等四种模式；轮式最高速度5m/s…",
+      "quality": 9,
+      "practical": 5,
+      "sourceName": "量子位",
+      "domain": "qbitai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "fail",
+        "reason": "该文本主要是新闻报道，没有提供实践性内容或详细步骤。"
+      },
+      "blocked": [
+        "模型复核不通过（该文本主要是新闻报道，没有提供实践性内容或详细步骤。）"
+      ]
+    },
+    {
+      "slug": "0fa071006a7b",
+      "title": "VERA20K -《红色警戒 2》用 Rust 重写了！支持 Windows、Mac、Linux，目标 2 万单位大战",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "agent",
+        "local",
+        "lowspec",
+        "benchmark"
+      ],
+      "bodyChars": 2562,
+      "excerpt": "一款诞生于 2000 年的游戏，居然在 26 年后迎来了全新的游戏引擎。 今天，青小蛙从查无此人同学处了解到的这个新项目： 开发者用 Rust 语言重新实现了《 红色警戒 2：尤里的复仇 》的游戏引擎，让它可以在 Windows、macOS、Linux 上原生运行。 开发者的目标是在一张地图上容纳 20000 个作战单位，这得造多少个天启坦克啊。 更加吓人的是，支持 120 个玩家，比如 1 打 119 个电脑。 VERA20K：重新实现红警 2 VERA20K 希望在保留原版游戏玩法、单位、地图、画面和氛围的基础上，突破二十多年前的技术限制。 目前公布的主要功能及开发目标包括： 单张地图容纳 20,000 个单位 最大 500 × 500 格地图 离线遭遇战支持 120 个玩家（含电脑 AI） 局域网及在线对战支持 30 个玩家席位 内置多人游戏客户端 支持自定义地图、MOD、音乐、高清美术资源 VERA20K 默认使用《尤里的复仇》原版游戏规则，也兼容部分 Ares、Phobos、Kratos 等红警 2 模组扩展功能。 大部分代码由 AI 编写 开发者在 GitHub 上明确表示，VERA20K 的大部分代码由 AI 编程智能体编写。 它们使用逆向工程工具 Ghidra 分析原版游戏引擎，将游戏行为用 Rust 重新实现，再通过自动化对比工具和实际游玩，验证新引擎与原版游戏…",
+      "quality": 8,
+      "practical": 7,
+      "sourceName": "小众软件",
+      "domain": "appinn.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "该文本介绍了 VERA20K 项目，该项目使用 Rust 语言重新实现了《红色警戒 2：尤里的复仇》的游戏引擎，并提供了详细的开发目标和功能。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "c01600d41603",
+      "title": "Swarms, Flocks, Gangs: How to build, train, and evaluate multi-agent systems",
+      "category": "tools",
+      "subcategory": "prompt",
+      "tags": [
+        "tutorial",
+        "agent"
+      ],
+      "bodyChars": 18933,
+      "excerpt": "Back to Articles Swarms, Flocks, Gangs: How to build, train, and evaluate multi-agent systems Published November 26, 2026 Update on GitHub Upvote 16 ben burtenshaw burtenshaw Kashif Rasul kashif Part 1: Understanding swarms and training to communicate This is an aspirational blog series for aspirational readers. We (us, the community, you) want to build our own agent swarms because they're exciting, challenging, and increasingly capable. Furthermore, it would be extremely cool if we could train our own agents to work in a swarm. And exponentially cool if those swarms used small and affordable…",
+      "quality": 7,
+      "practical": 1,
+      "sourceName": "Hugging Face Blog",
+      "domain": "huggingface.co",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "9a5f91905dab",
+      "title": "sqlite3_rsync: Database Remote-Copy Tool For SQLite",
+      "category": "tools",
+      "subcategory": "interface",
+      "tags": [],
+      "bodyChars": 1583,
+      "excerpt": "sqlite3_rsync: Database Remote-Copy Tool For SQLite This additional SQLite tool has been around for a while now - it was added as \"experimental\" in SQLite 3.47.0 in October 2024 and enhanced in SQLite 3.50.0 in May 2025 . It was only today that I understood one of its most attractive characteristics. Normally, if you want to grab a snapshot copy of a SQLite database, you need to use either the backup API or VACUUM INTO . In both cases you need enough disk space to create a duplicate copy of your database, so if you're on a small instance and you already use more than half of the available dis…",
+      "quality": 6,
+      "practical": 2,
+      "sourceName": "Simon Willison",
+      "domain": "simonwillison.net",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "f69e14803ec4",
+      "title": "Interpretable and Accurate Hybrid Decision Trees with Selective Case-Based Splits",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "tutorial"
+      ],
+      "bodyChars": 1313,
+      "excerpt": "Decision trees are among the most well-known interpretable models in Machine Learning. Over the years, a wide variety of strategies have been proposed to define split conditions within the greedy learning framework, aiming to guide instance routing and enhance predictive performance. These strategies range from axis-parallel and oblique splits based on feature values to proximity-based splits using exemplar instances and more complex hybrid approaches. However, no single method has emerged as universally superior. In this work, we present two key contributions to the construction of greedy de…",
+      "quality": 7,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "15895ce2f89e",
+      "title": "💻 抄作业：128G 内存 + 7900XTX「算显分离」本地 AI 工作站",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "hardware",
+        "lowspec",
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 2789,
+      "excerpt": "一、为什么做「算显分离」 放客厅、接 4K 电视、平时用笔记本 SSH 远程操作。 核心思路一句话： 让一张 30W 的亮机卡负责画面和声音，把 7900 XTX 彻底解放出来，100% 算力跑 AI。 客厅场景只要 4K60 和声音，不需要高刷，也不需要显卡兼顾游戏； 7900 XTX 24G 是跑本地模型、ComfyUI 的平民战神，但让它兼管桌面输出，会一直保持较高功耗，双卡混插时还容易在输出上打架、黑屏； Quadro P400 只有 30W、单槽半高，4K60 + 音频输出完全够用，正好当专职「显示卡」。 结果就是：XTX 隐身于后台，显存全部留给推理和画图；电视这边由 P400 稳定输出。 二、配置单（总价约 ¥11,454） 配件 型号 价格 核心考量 CPU + 主板 华南金牌 X99-TF + E5 v3 套餐 ¥879 极致性价比 内存 海力士 32G 14900L（4Rx4）× 4 ¥953 128G 主显卡（算力） 讯景 XFX 7900 XTX 24GB 海外版 ¥6500 24G 大显存，跑 AI 画图/推理的平民战神 亮机卡（显示） NVIDIA Quadro P400 2G ¥150 30W、单槽半高，专职输出 4K60 及音频 电源 振华 LEADEX III 1300W 金牌全模 ¥899 4 根独立 8Pin + 1 个原生 12V-2×6，…",
+      "quality": 8,
+      "practical": 3,
+      "sourceName": "抡锤者 AI硬件",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "1b2c2dc9eb61",
+      "title": "Hy4-Flash-SQ-64 在 R9700 32G 与 7900XTX 24G 上的实测：配置、上下文长度全扫描与调参结论",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "hardware",
+        "lowspec",
+        "benchmark",
+        "tutorial"
+      ],
+      "bodyChars": 15813,
+      "excerpt": "Hy4-Flash-SQ-64 在 R9700 32G 与 7900XTX 24G 上的实测：配置、上下文长度全扫描与调参结论 平台：Ubuntu 26.04.1 LTS / Strata 0.2.22 (build 0.1.69) / hy4 引擎 0.1.67 模型：Hy4-Flash-SQ-64 + Engram-Q8 + Vision 测试时间：2026-11-26 测试方法：OpenAI 兼容接口流式请求，每点两遍取第二遍（热态），盘读用 /proc/ /io 的 read_bytes 0. 先说结论 在这套 MoE + CPU/GPU 混合推理上，决定 decode 速度的唯一变量是「显存里能装多少个每 token 必用的热专家」。 显存容量够了，带宽多 50%、CU 多 50% 都不体现；显存不够，再多带宽也救不回来。 两台机器的同显存对照下 decode 打平（12.7 vs 12.2） ，说明 RDNA4 与 RDNA3 的架构差异在这类负载上不是主要因素，真正拉开 2 倍差距的是 32GB 与 24GB。 32GB 卡可以跑到 256K 上下文 （28 分钟读完，decode 保留 60%）； 24GB 卡的上限是 128K ，256K 会把 KV 挤进主机内存并卡死。 --ram-experts-gb 是双向开关，不是越大越好 。给少了专家落盘（每请求读 1…",
+      "quality": 8,
+      "practical": 3,
+      "sourceName": "抡锤者 模型部署讨论",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "34eae97f9cb0",
+      "title": "本地AI洋垃圾性价比套餐：X99-TF + 128G DDR3 1866 + 7900XTX，Strata + Qwen Flash Next / AI视频都可玩！",
+      "category": "hardware",
+      "subcategory": "build",
+      "tags": [
+        "hardware",
+        "lowspec",
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 6172,
+      "excerpt": "今天做了3个视频，因为，呃，英语频道一个，中文频道一个，然后有一个已经废弃的英语频道，最近由于跟朋友商量一下，看看是不是由他接手，我又更新了一个视频，啊，去试试水。啊，发现播放的效果还可以啊，按照这个进度的话，我觉得随便发发也能够挣到钱。就现在油管对于AI视频的这个打击力度已经降低了，我以前废弃的一些AI频道，现在好像，唉，收益又还不错了啊。总之我觉得值得搞一搞。那么一个视频，呃，少的可能说20美金左右，那多的100多美金，是吧？那你一个月随便发几个视频，怎么说，如果说自己比较专注的话，一个月发个30个视频，还是轻轻松松的吧，是吧？不说多，1500到2000美金，这还是轻轻松松的。 呃，那么，又装了一下这台电脑，差一点没把我这个老骨头给累垮了。这个呢，就是本期视频要讲的，我认为可能说最近一段时间，呃，最有性价比的，就我个人认为最有性价比的这个装机方案。当然了，这个显卡可以这个替换一下啊。就说这个配置是什么呢？来，给大家转过来。这个主板是华南金牌的X99-TF，但是呢，如果说大家只装一张显卡的话，或者说你们的内存素质还可以的话，可以选择精粤的X99-TI8 Plus。我觉得那个板子的性价比可能更高一点。呃，华南金牌这张板子我不是说了吗？它的这个内存条，它是DDR3、DDR4都支持，灰色是DDR3，黑色是DDR4。所以说它只插DDR3的时候，我插4根32G的，呃，它是可以间开的，那么…",
+      "quality": 8,
+      "practical": 3,
+      "sourceName": "抡锤者 AI硬件",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "f99b2c93f21e",
+      "title": "纠结于选购涡轮4090 48G与二手5090D 32G",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "generate",
+        "lowspec",
+        "agent",
+        "hardware"
+      ],
+      "bodyChars": 1062,
+      "excerpt": "大家好，我的主要工作流按负载（工作时间）构成：MiniMax H3视频(85%)+Comfyui/SD图片生成(5%)+LLM(10%) 现阶段纠结于选购4090 48G还是二手5090D 32G。 目前的考虑点如下： 项目 涡轮 4090 48G 二手 5090D 32G 优点 1 大显存足够担任我的绝大多数工作流 GDDR7+新架构+大带宽 优点 2 INT8理论算力比5090D高，算力解锁后更甚 软锁算力，未来有破解可能性或政治红利 优点 3 涡轮卡厚度未来便于组多卡 私以为还有升值空间 优点 4 — 噪音优势 优点 5 — 原生支持NVFP4，但我对FP4量化的未来潜力存疑 优点 6 — GTA6 缺点 1 ≈无售后，豪赌稳定性 平均还剩1.5年售后 缺点 2 噪音这一块 费电还烧接口这一块 缺点 3 带宽稍低 32G面对minimaxH3已经捉襟见肘，后续可能的wan3.0也压力颇大 缺点 4 不原生支持NVFP4，但我对FP4量化的未来潜力存疑 将来组多卡的板u内存贵 价格 ￥31000 ￥34000 希望 友们支招如何选择 大家好，我的主要工作流按负载（工作时间）构成：MiniMax H3视频(85%)+Comfyui/SD图片生成(5%)+LLM(10%) 现阶段纠结于选购4090 48G还是二手5090D 32G。 目前的考虑点如下： 项目 涡轮 4090 48…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "抡锤者 AI硬件",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "022c22aa940d",
+      "title": "llama.cpp b12780 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1856,
+      "excerpt": "ggml : support a BF16 src1 in MUL_MAT and MUL_MAT_ID (CPU, CUDA) (#32533) ggml : support a BF16 src1 in MUL_MAT and MUL_MAT_ID (CPU, CUDA) ggml : fix MMVF expert offset overflow and tighten BF16 src1 gates ggml : strided BF16 src1 tests, explicit MUSA Q2_K rule, MMVF offset fix moved to its own PR cuda : move the MUL_MAT_ID MMVF rule into ggml_cuda_should_use_mmvf cuda : read a BF16 src1 in MMVF through a template parameter, for BF16 and FP8 weights only cuda : MMVF src1 pairs via ggml_cuda_cast, rename type to type_src0 Website: Attestations: macOS/iOS: macOS Apple Silicon (arm64) macOS Appl…",
+      "quality": 8,
+      "practical": 3,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "f68439549e1f",
+      "title": "llama.cpp b12779 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1952,
+      "excerpt": "llama : refuse SPLIT_MODE_TENSOR for Hadamard-folded models (#33080) Prism Bonsai models (prism.hadamard) aborted in the meta backend with GGML_ASSERT(split_state.ne[j] % div == 0) when loaded with -sm tensor: the ssm_out input permutation from tiled to grouped GDN head order reshapes the head-split activation to [hd, n_k, n_rep] and the split lands on n_rep (3 for 2 devices). Past that, the explicit sign vectors are mirrored while their inputs are split, and the 1024-wide rotation blocks would straddle the device slices of ffn_down (17408 = 17 blocks). Fail at load with a clear message inste…",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "33bb2520f2cb",
+      "title": "Linux NFS 曝出 9.8 分漏洞 NFS2ROOT，开了 NFS 共享的 NAS 用户注意",
+      "category": "hardware",
+      "subcategory": "machine",
+      "tags": [
+        "money",
+        "hardware",
+        "local"
+      ],
+      "bodyChars": 1712,
+      "excerpt": "如果你的 NAS 给其他设备开了 NFS 共享，或者你用 Linux 搭了一台文件服务器，先去看看有没有系统更新。Linux 内核的 NFS 服务端曝出一个 9.8 分 的严重漏洞，能连到受影响服务的攻击者，无需登录就可能拿到服务器的 root 权限。 这个漏洞编号是 CVE-2026-99362 。11 月 19 日，Linux 内核团队发布漏洞公告。11 月 25 日，安全团队 OpenSec 以 NFS2ROOT 为名公布研究，并演示了如何在测试环境中取得远程 root 权限。 哪些设备需要查？ NFS 是一种网络文件共享协议。比如一台 Linux 主机把目录共享出来，另一台电脑把它挂载成文件夹，前者就是 NFS 服务端。这次出问题的是 Linux 内核里的 NFS 服务端 nfsd ，涉及 NFSv4.1 和 NFSv4.2 。只挂载别人共享目录的 Linux 客户端，不会因此暴露这个漏洞。 服务端在缓存协议回复时可能写出分配给它的内存范围，造成内核内存损坏。轻则服务器崩溃，严重时可能被远程执行代码。内核团队把问题追溯到了 2014 年发布的 Linux 3.16。 家里的 NAS 可以先打开控制面板，看看文件服务里有没有启用 NFS。内网共享也要看哪些设备能连到 NAS，尤其是访客网络、容器和虚拟机。如果路由器做过端口转发，或者云服务器的安全组放开了 TCP 2049…",
+      "quality": 8,
+      "practical": 3,
+      "sourceName": "小众软件",
+      "domain": "appinn.com",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "02a088434703",
+      "title": "Introducing the llama.cpp benchmark dashboard for AMD Ryzen and Radeon",
+      "category": "local",
+      "subcategory": "runtime",
+      "tags": [
+        "local",
+        "benchmark"
+      ],
+      "bodyChars": 3977,
+      "excerpt": "Back to Articles Introducing the llama.cpp benchmark dashboard for AMD Ryzen and Radeon Team Article Published November 26, 2026 Upvote 14 angt angt ggml-org Simon Pagezy pagezyhf ggml-org Abdennacer Badaoui badaoui ggml-org The llama.cpp × AMD Benchmark dashboard is available on Hugging Face. It lets you track prompt processing and text generation performance across llama.cpp builds, models, and quantizations, so you can explore how local inference performs on AMD Ryzen and Radeon hardware. Local inference performance changes as models, kernels, and builds evolve. We want those changes to be…",
+      "quality": 7,
+      "practical": 4,
+      "sourceName": "Hugging Face Blog",
+      "domain": "huggingface.co",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "949c2aef9185",
+      "title": "llama.cpp v1.1.0 发布",
+      "category": "local",
+      "subcategory": "quantize",
+      "tags": [
+        "local",
+        "agent"
+      ],
+      "bodyChars": 37595,
+      "excerpt": "Overview llama.cpp v1.1.0 adds the Inkling 2 family (base, Mini and DSpark), Domyn Edge 4B, Zaya1 8B, RAON-1-mini and Hy4 flash, splits DFlash speculative decoding into separate draft methods, and deprecates the old llama_batch API in favour of llama_batch_ext . It brings a large set of TTS and audio models (Kokoro, Zonos3-Mini, tiny-voca, VoxCPM2, MiniMax-Music3, YuE2, Fish S2, Higgs v3/VibeVoice-ASR and Kyutai Hibiki), token-aware chat parsing, named tool choice, automatic per-tensor quantization targeting a bpw or size budget, a slot-scheduling refactor in llama-server , a redesigned Llama…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "03e771a7d754",
+      "title": "ollama v0.40.19-rc0 发布",
+      "category": "local",
+      "subcategory": "runtime",
+      "tags": [
+        "local"
+      ],
+      "bodyChars": 410,
+      "excerpt": "What's Changed inkling2: faster short histories, draft proposals and conv snapshots by @dhiltgen in https://github.com/ollama/ollama/pull/19881 mlxrunner: compact Engram history buffers by @pdevine in https://github.com/ollama/ollama/pull/19913 bump llama-server by @pdevine in https://github.com/ollama/ollama/pull/19917 Full Changelog : https://github.com/ollama/ollama/compare/v0.40.18...v0.40.19-rc0",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "91ecfb60d2a2",
+      "title": "AI 3D界的“X光”来了！一图直出巴洛克雕塑，3D打印开箱即用",
+      "category": "bench",
+      "subcategory": "benchmark",
+      "tags": [
+        "benchmark",
+        "agent",
+        "free"
+      ],
+      "bodyChars": 9170,
+      "excerpt": "AI 3D界的“X光”来了！一图直出巴洛克雕塑，3D打印开箱即用 衡宇 2026-11-26 20:39:08 来源： 量子位 还得是科班尖子生 衡宇 发自 凹非寺 量子位 | 公众号 QbitAI 这段时间，大家拿GPT-6.2 Astra跑出来的3D效果真有点东西。 见过不少让人眼前一亮的建模成果，这次我们想冲一把硬核难度。 看Astra能不能扛住考验，完整复现这件结构繁复、细节密集的巴洛克雕塑。 3D模型刚一出来，我们都忍不住嘀咕。 这老Astra确实有点东西啊，挺牛！ 结果展开思考过程一看，好嘛，原来它自觉调用了VAST的开源模型TripoSR。 不允许调用别家模型的事发生！ 立刻命令GPT-6.2 Astra只准调用Blender，自己动手建模！ 结果是这样的—— 雕塑表面磨了个皮， 人物、狮子和马集体 走起了古意盎然的返朴路线。 有点淡淡的烧心。。。 难道这种地狱级雕塑已经超出当前AI 3D的能力上限了吗？？？ 抱着试试看的心态，我们找VAST要到了Tripo最新3D模型，听说更强—— 看效果，确实更强。 这位在“地狱级”群像雕塑里稳住阵脚的专业选手，就是 VAST刚发布的新一代高精度AI 3D基座模型Tripo H3.5 Preview。 相比上一代H3.1，H3.5 Preview在复杂结构还原、精细几何生成、输入输出对齐，以及不可见部位的合理推断等方面均有显著提…",
+      "quality": 10,
+      "practical": 2,
+      "sourceName": "量子位",
+      "domain": "qbitai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "73b692961dbb",
+      "title": "$μ$-Bench: Benchmarking Multi-User Task Completion in Shared Interaction Voice Agents",
+      "category": "bench",
+      "subcategory": "benchmark",
+      "tags": [
+        "benchmark",
+        "agent",
+        "free"
+      ],
+      "bodyChars": 1384,
+      "excerpt": "Voice agents in shared spaces must satisfy interdependent multi-user requests while upholding per-user authority, privacy, and task constraints. Existing evaluations offer limited coverage when participants react throughout a session. We introduce $μ$-Bench, a benchmark for joint task completion in closed-loop, full-duplex multi-user voice interaction. Simulated participants act from isolated profiles of goals, knowledge, and permissions, adapting to the agent's speech and tool outcomes. Across 20 domains, 100 scenarios vary group size, acoustics, and follow-up demands to form 800 cases (408…",
+      "quality": 7,
+      "practical": 2,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "5c2d7cee039d",
+      "title": "Diverse Alternative Reasoning Traces for Hard Math Problems",
+      "category": "bench",
+      "subcategory": "compare",
+      "tags": [],
+      "bodyChars": 1185,
+      "excerpt": "Post-training large language models (LLMs) for mathematical reasoning often relies on accepted traces whose final answers pass a verifier. For hard math problems, however, such traces can be rare under independent Monte Carlo (MC) sampling. To address this, we propose Diverse Alternative Reasoning Traces (DART), a trace-mining method that starts from a rejected trace, decomposes it into reasoning steps, and ranks them by position-weighted uncertainty. It then generates deliberately distinct alternative candidates for highly ranked steps using reference-answer guidance and a meta-thought befor…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "0162f9c0bf5b",
+      "title": "Mixture-of-Loops Transformer",
+      "category": "bench",
+      "subcategory": "benchmark",
+      "tags": [],
+      "bodyChars": 1700,
+      "excerpt": "Looped Transformers boost expressivity by reusing shared layers across loops, yet at the cost of efficiency. Pushing their expressivity-efficiency frontier requires rethinking the core mechanism connecting adjacent loops: What should be passed as a Transformer loops? We introduce Mixture-of-Loops Transformer (MoLT), whose Mixture-of-Loops Attention (MoLA) uses keys and values (KV) as memory for selective reuse across depths and loops. Under loop residual, MoLT-R retains the residual stream and reads local KV across loops for expressivity. Under loop KV, MoLT-KV instead restarts from embedding…",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "arXiv cs.AI/CL/LG",
+      "domain": "arxiv.org",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    }
+  ]
+}
