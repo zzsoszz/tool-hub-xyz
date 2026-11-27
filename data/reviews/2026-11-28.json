@@ -1,0 +1,404 @@
+{
+  "day": "2026-11-28",
+  "reviewedAt": "2026-11-27T19:36:47.838Z",
+  "reviewer": "cloudflare/@cf/meta/llama-3.1-70b-instruct",
+  "note": "cloudflare/@cf/meta/llama-3.1-70b-instruct：复核 12 条，解析到 12 条判定",
+  "rules": {
+    "minItems": 3,
+    "minBodyChars": 120,
+    "minSummaryChars": 40,
+    "maxTags": 4,
+    "agentMaxItems": 12,
+    "agentBatch": 6,
+    "agentChars": 900,
+    "agentExcerptChars": 600
+  },
+  "passed": true,
+  "reasons": [],
+  "total": 16,
+  "blocked": [
+    "69f19f1c8e9a",
+    "2a5044bcd53c",
+    "7da83eba7593"
+  ],
+  "survivors": 13,
+  "items": [
+    {
+      "slug": "712bfe417c7b",
+      "title": "解决痛点的探索：让 Agent 不忘事，一套纯本地长期记忆架构",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [
+        "local",
+        "lowspec",
+        "agent",
+        "benchmark"
+      ],
+      "bodyChars": 5891,
+      "excerpt": "让 Agent 不忘事：一套纯本地长期记忆架构 封面图由本地 H3-Image 模型生成，标题文字经本地 Qwen-Image 图生图叠加。生图模版为自开发插件 dsh-prompt-wall 从\"每次开新会话都要重新自我介绍\"，到 3400+ 条原子记忆自动流转——讲清楚我的痛点及为什么部署这套东西、怎么挑的、怎么装的、装完后真实用起来什么体验、以及踩过的坑。 〇、铺垫：M5 Air 32G笔记本上交的学费 这套架构不是凭空选的。在它之前，我用的是M5 Air笔记本手搓过一版记忆系统，跑了两个多月。那段使用经历决定了后面每一个设计取舍。 起点很朴素：AI 每次都失忆，每开新窗口重讲一遍背景。第一版方案最糙——把聊天记录导出成文件，用 grep 搜。能用，直到某天撞见这一幕： 我忘了某个点子想法，去搜，搜不到——但它其实好好地躺在文件里。 文件里写着\"装别人的插件前先自动查它安不安全\"，我搜\"插件安全\"\"审计\"零命中，换成正则才找到。 你\"忘了\"时记得的词，和当初记下它时用的词，天然对不上。 问题不是\"没记\"，是\"记了但搜不到\"——方向从\"更大的存储\"整个掰向\"更好的召回\"。 另一个更隐蔽的坑，后来我给它起名叫**「取新失败」**：记得住、记得对，但记的是旧版本，于是自信地用错——不提示、不报错，比\"想不起来\"危险得多。我为\"上次到哪了\"加过一层手写便签，就是被它坑删的：14 天…",
+      "quality": 11,
+      "practical": 5,
+      "sourceName": "抡锤者 Agent 工具",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "正文提供了解决痛点的探索过程和实践经验。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "69f19f1c8e9a",
+      "title": "人形机器人开发者集合！众擎开放大小脑，10亿产业级生态支持计划也来了",
+      "category": "apps",
+      "subcategory": "life",
+      "tags": [
+        "local",
+        "money"
+      ],
+      "bodyChars": 6499,
+      "excerpt": "人形机器人开发者集合！众擎开放大小脑，10亿产业级生态支持计划也来了 田, 晏林 2026-11-27 22:07:33 来源： 量子位 一支团队在真机上验证的成果，可以成为下一支团队继续开发的起点。 晏林 发自 凹非寺 量子位 | 公众号 QbitAI 搞具身智能，有时候还真不是光有技术就够了。 好不容易搞出一套算法，仿真里跑得飞起，想上真机试试吧，手边压根儿没有机器人。 有的团队倒是在真机上跑通了，想找个真实场景检验一下技术成色，还得四处打听。 还有一些团队已经走到了产品化阶段，万事俱备，就差客户了…… 仔细一琢磨，你缺的东西，没准儿别人手里正好有。只是大家鲜少有机会坐到一张桌子上好好聊。 11月25日，在 2026众擎全球开发者大会 上，众擎机器人打算给伙伴们搭把手。 众擎创始人兼CEO赵同阳认为， 人形机器人要走进千行万业，靠的是生态协同。 众擎想做的，不光是让伙伴之间的资源对接起来，还要让技术成果能够接续。 一支团队在真机上验证的成果，可以成为下一支团队继续开发的起点。 甭管你带来的是一段代码、一台样机，还是一款产品、一个客户，都能在众擎生态里找到眼下最需要的支持。 我们愿意把花了十年摸索出来的经验，手把手教给大家，陪着大家把平台用起来。 会上，赵同阳还表示， 机器人、数据和算力都向伙伴们开放。 为了让生态真正跑起来，众擎重磅宣布将联合河南投资集团、元禾辰坤等产业链基金…",
+      "quality": 9,
+      "practical": 4,
+      "sourceName": "量子位",
+      "domain": "qbitai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "fail",
+        "reason": "文章主要是新闻转述，没有提供实践性内容。"
+      },
+      "blocked": [
+        "模型复核不通过（文章主要是新闻转述，没有提供实践性内容。）"
+      ]
+    },
+    {
+      "slug": "a753b79cc20a",
+      "title": "【雷神剧场】《恭喜官人晋升》后宫篇 EP01",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [
+        "generate"
+      ],
+      "bodyChars": 266,
+      "excerpt": "视频灵感来自@perter 大佬的一次 祝福 看到几个美女好生喜欢，于是突发奇想，将他们收为后宫，养着慢慢看。 创作过程当中也有很多有瑕疵的地方，推翻了2次，做了3遍，才到达稍微能看的程度，大家轻轻拍，看了视频有什么更好的灵感，欢迎留言沟通，也不要忘记一键三连，第一时间得到续集提示。 硬件支持7900XTX，Ubuntu，MiniMaxH3，官流，8步加速，0.7mp。总时长72小时。 再次感谢@perter 大佬对后宫团的支持。 Youtube Video 前情回顾 Youtube Video",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "抡锤者 AI 音视频画图",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "文章提供了创作过程和硬件支持的细节。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "366ceab20ee1",
+      "title": "Curb impacts of AI on programming to maintain EU sovereignty",
+      "category": "tools",
+      "subcategory": "interface",
+      "tags": [
+        "free"
+      ],
+      "bodyChars": 4312,
+      "excerpt": "UP | HOME | CONTENT Wissen Software Politik Anderes Kreatives Rollenspiel (dark mode) 🌓︎ Let’s assume that LLMs actually speed up programming and that the EU cannot catch up to AI coding tools from the US and China. If this is true, what can we do in the EU to close the gap enough that efficiency gains from LLMs stay lower than their compute cost? In short: make secure programming easier for people again. 🇪🇺 Improve programming tooling, nurture template libraries, extend and integrate documentation, support maintainers, foster standardized interfaces, champion responsiveness, de-bloat stac…",
+      "quality": 6,
+      "practical": 3,
+      "sourceName": "Lobsters AI",
+      "domain": "draketo.de",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "文章讨论了如何维护欧盟主权并提供了具体建议。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "ffa4614faf86",
+      "title": "Show HN: I restored Palm's last device, and brought its OS to other platforms",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "lowspec"
+      ],
+      "bodyChars": 392,
+      "excerpt": "webOS Community Edition 3.2.0 is the first OTA Update for Palm/HP's TouchPad, modernizing a 15-year old device. Lunacy is its sibling: the webOS experience, and apps, on Android. Luna DE is a developer tool that brings the webOS app contract to Mac, Windows and Linux as a SDK-compatible Electron app. Comments URL: https://news.ycombinator.com/item?id=50667452 Points: 34 # Comments: 7",
+      "quality": 9,
+      "practical": 2,
+      "sourceName": "Show HN (AI)",
+      "domain": "webosarchive.org",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "文章展示了恢复 Palm 设备和将其操作系统移植到其他平台的过程。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "bb12d8de6ae2",
+      "title": "r14dd/patent",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [],
+      "bodyChars": 7811,
+      "excerpt": "patent patent takes a plain-English dev-tool idea and searches 19 sources — package registries (crates.io, npm, PyPI, Homebrew, Packagist, Hex, and more) plus GitHub and Hacker News. Results are ranked by semantic similarity and summarised as Open , Crowded , or Saturated . > Like a patent search, but for code. It finds prior art, yet, never certifies absence. Why patent? Before you build a dev tool, patent checks whether it already exists. One query fans out across 19 sources at once — package registries plus GitHub and Hacker News — instead of you searching each by hand. Matches are ranked…",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "GitHub 检索（生态项目更新）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "文章介绍了一个开发工具 patent，并提供了其功能和用途的详细说明。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "2a5044bcd53c",
+      "title": "Ask HN: Where is all the amazing AI-generated software?",
+      "category": "tools",
+      "subcategory": null,
+      "tags": [],
+      "bodyChars": 579,
+      "excerpt": "I feel like the most amazing thing about AI so far is AI itself. Is anyone using a brand-new tool that was not available 5 years ago? I see people decompiling/reverse engineering the Adobe suite, which is an amazing feat, but the resulting software itself is barely usable. Since it’s so easy to build anything now, I get a sense we’re seeing a proliferation of one-off, proof-of-concept projects, where great software takes time and effort and often multiple people, AI notwithstanding. Comments URL: https://news.ycombinator.com/item?id=50643767 Points: 23 # Comments: 56",
+      "quality": 7,
+      "practical": 1,
+      "sourceName": "Hacker News (AI)",
+      "domain": "news.ycombinator.com",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "没有实测数据或步骤。"
+      },
+      "blocked": [
+        "模型复核不通过（没有实测数据或步骤。）"
+      ]
+    },
+    {
+      "slug": "7da83eba7593",
+      "title": "(新聞匯總集合) AI科技強化企業競爭力後帶來的人力結構優化調整 (白話 : 裁員)",
+      "category": "tools",
+      "subcategory": null,
+      "tags": [
+        "benchmark"
+      ],
+      "bodyChars": 457,
+      "excerpt": "** 最近才得知已經有IT公司的\"AI部門的工程師\"被裁員了，搞AI的被自己的Agents數位同事淘汰 速度有點快，趕快發帖追蹤一下 Agents代理人的導入可能加速了 這個過程 時間點出乎我的意料 ** ** 不懂應用AI的企業, 就等著被懂得使用AI的企業擊敗，從商業歷史洪流中Say Goodbye ** ** AI時代下的矛盾特色, 利用AI工具的公司越賺錢, 裁員越多 (!?) ** SAP過去12個月股價下跌約6%，期間曾因投資人擔心AI衝擊商業模式而面臨賣壓。目前SAP市值約2,370億歐元，在歐洲仍是名列前茅的上市企業。SAP上月公布第3季營收成長13%至103億歐元，其中雲端服務營收為67億歐元，稅後獲利增長11%至23億歐元。 相關的新聞很多, 就集中在此帖發 2026-11-27 據《彭博》27日報導，知情人士透露，SAP正在準備一項裁減至少1萬個崗位的計畫，影響全球至少9%員工，所有部門均被要求梳理可能存在裁撤空間的領域，產品與工程部門以及銷售部門是重點。",
+      "quality": 7,
+      "practical": 1,
+      "sourceName": "抡锤者 AI 危机与机遇",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "fail",
+        "reason": "只有新闻转述，没有实测数据或步骤。"
+      },
+      "blocked": [
+        "模型复核不通过（只有新闻转述，没有实测数据或步骤。）"
+      ]
+    },
+    {
+      "slug": "dc8bdad7c112",
+      "title": "【DIY实测】X99+E5-2686V4+128G DDR3+RTX3080-20G 挑战256K上下文",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "benchmark",
+        "hardware",
+        "local",
+        "lowspec"
+      ],
+      "bodyChars": 5228,
+      "excerpt": "看到坛主推荐X99+E5+128G DDR3的配置跑大模型，忍不住手痒，自己从海鲜市场买来了各种配件，利用周末2天，自己组装起来。 一、硬件DIY 1、X99的BIOS配置很复杂，看不懂只好拍照喂给Deepseek，按照提示和建议修改多个配置后，居然把CPU给超频了，竟被HWinfo识别成2694V4。 2、内存条4条，总有1条识别不了，不停更换插槽，总算给正确识别了。然后做了U盘MemTest86 测试内存一个晚上结果通过。 3、因为都是二手配件，先安装了win11，对CPU、GPU进行烤机测试比较方便；测试结果比较满意，正感觉不错的时候，复制Qwen3.8大模型文件是发现网速特别慢，原来主板自带网卡是100M，头大，找U盘复制快很点；局域网是2.5G，服务器竟然是百兆，实在忍不了，然后买了2.5G有线网卡。 组装完后的成品如下图，属于手工粗糙的人，请将就看:( 二、OS和软件 安装完成后，就用DS做了安装部署报告，我摘录一些关键点供单价参考。 项目 内容 报告日期 2026-11-15 测试平台 Xeon E5-2686 v4 / 128 GiB DDR3 / RTX 3080 魔改 20G 软件栈 Ubuntu 26.04.1 LTS + Strata 0.2.13.1（引擎 0.1.59） 被测模型 Swift-1.5-Qwen3.8-Flash-Next-Heretic…",
+      "quality": 9,
+      "practical": 4,
+      "sourceName": "抡锤者 AI硬件",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": ""
+      },
+      "blocked": []
+    },
+    {
+      "slug": "11ff2346b384",
+      "title": "RX 7900 XTX 双卡：每次开机后约半小时，ROCm/HIP 首次加载 GPU 必挂",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "hardware",
+        "local",
+        "lowspec",
+        "benchmark"
+      ],
+      "bodyChars": 5943,
+      "excerpt": "昨天设置开机拉起strata时，发现ROCm/HIP 首次加载 GPU 必挂。dsh取名叫\"开机毒窗\" **摘要：双 7900 XTX 树内 amdgpu，每次开机后有 22~32 分钟的\"毒窗\"，窗口内首次大规模 SVM/显存注册必炸（内核态签名齐全）；用户态一切正常、窗口过后一切正常。已用纯 systemd 手段做到全自动熬窗；§七 实测了上游 SVM 守卫补丁所在内核： 显著减轻、未根治 。单台机器、样本不大，如实记录观察、排除过程和不成熟结论，求见过同类问题的朋友指正（问题清单在 §九）。观察时间：2026-11 下旬。 一、本机软硬件环境 硬件 项 值 CPU Intel Xeon E5-2667 v4 @ 3.20GHz（8C16T， nproc =16，单 NUMA 节点） 内存 125 GB GPU ×2 Navi 31 [RX 7900 XTX 24G]，PCI 1002:744C rev c8： 0000:05:00.0 （card1）＝桌面卡 ，GNOME/Wayland，DP×3+HDMI 在位 0000:08:00.0 （card2）＝计算卡 ，不接显示—— 内核 GPUVM 报错集中在它 系统盘/数据盘 Samsung PM981a 2TB NVMe（模型与数据盘）＋ Kingston A400 960G SATA 主板/BIOS BIOS 版本 5.…",
+      "quality": 9,
+      "practical": 2,
+      "sourceName": "抡锤者 AI硬件",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": ""
+      },
+      "blocked": []
+    },
+    {
+      "slug": "987c951a467e",
+      "title": "5090D 32G VS 4090 48G魔改卡怎么选？NVFP4不是关键，本地AI对于显存的要求已经降低，5090D V2性价比也低昂当不错！",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "lowspec",
+        "hardware",
+        "generate",
+        "local"
+      ],
+      "bodyChars": 4698,
+      "excerpt": "装机工作终于是全面结束了啊，现在这个房间摆着3台服务器，我已经把这个桌面给收拾干净了，真的是把我这个老骨头都给累散了。那么现在右手边这个服务器，就是7900XTX加上DDR3 1866的条子，一共是32G x4，也就是128G，加上这个华南金牌的X99 TF主板，搭配了E5-2696 V3处理器。然后右手边这一个是5070Ti 16G，加上4060Ti 16G，加上96G DDR5 6000的条子，加上铭瑄的瑷珈B850板子。然后现在呼呼作响的这个，就是我放在角落的以前的X99 CD3，加上DDR3 1866 64G的条子，加上4090D 48G。啊，这个也是我的老服务器了，也用了很长一段时间。现在它正在跑这个MiniMax H3，我不知道这个噪音后期能不能把它剪掉，啊，应该是可以处理掉的。因为以前它是放在这个位置，离麦克风太近了，那么现在是把它放到了房间的角落，放在地上，呃，应该是可以把这个噪音给剪掉的。 那么这些MiniMax H3，包括Strata，呃，千问27B啊，千问27B还没有测完，但是Strata加MiniMax H3加H3 Image，我在这三个平台上全部都已经测过了。呃，总体上N卡的效率会更高一点，然后这个A卡的效率要稍微低一点。但是呢，怎么讲呢，A卡的效率我认为也还可以接受了啊，并没有之前想象的落差那么大，还是非常不错的啊。就是7900XTX加上这个什么DDR…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "抡锤者 AI硬件",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": ""
+      },
+      "blocked": []
+    },
+    {
+      "slug": "bc8009191b0e",
+      "title": "llama.cpp b12814 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1676,
+      "excerpt": "moe-cache : support experts selected on another backend (#33133) When the experts are selected on another backend than the cache, e.g. the loop passes of inkling2_loop with a layer split, the lookup reads a copy of the ids made by the scheduler, which has no source to read the shape from. Take the experts per token from build_lookup instead. Fixes #33101 Website: Attestations: macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu 24.04 s390x (CPU) Ubuntu 26.04 s390x (CPU…",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": ""
+      },
+      "blocked": []
+    },
+    {
+      "slug": "fdbc9d0b7a07",
+      "title": "英伟达断供东南亚4国，美国掐断海外算力租用，国内AI企业处境各不相同，DeepSeek/美团等企业提前布局国产算力受益！",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "hardware",
+        "benchmark"
+      ],
+      "bodyChars": 4690,
+      "excerpt": "英伟达宣布暂时停止向东南亚4国供应装有英伟达GPU的服务器，可能要观察一阵子。那么最近海外的算力中心已经开始收紧政策了，呃，美国的监管是越来越严。如果说中国企业想要通过租用海外算力中心训练大模型啊，通过这种方式来跟美国企业竞争的话，这条路已经基本上是被掐断了。呃，可以说几家欢喜几家愁吧。那么像国内的一些头部大厂，比如说字节跳动、呃腾讯，还有这个什么阿里巴巴，就他们各自的处境是完全不一样的。字节跳动的一方面是提前向这个华为下了大量的订单，呃，在这个供货的优先级上应该也是比较高的。然后他在这个禁令升级之前，他也是大规模地囤积英伟达的卡。就包括阿里巴巴其实也是，呃，有一段时间不是可以卖H200嘛，然后这个字节跳动和这个阿里巴巴他们执行得就比较快，就买到的比较多。然后腾讯可能说在这个算力采购上面就稍微迟疑了一下，现在可能说这个算力就要面临危机，而且关于采购国产卡，它比起美团，比起这个字节，它又是慢了一步，就没有那么地坚定。美团呢，是由于当时买这个英伟达的卡决策太晚了，他想买卡的时候已经是面临了禁令生效，所以说他不得不押宝华为。反而他是第一个通过华为集群训练出自家大模型的，就是LongCat。这个模型呢，我不能说是它一流，它也只是个R线的模型，但是毕竟它的智商还是在线的，还是能用的，而且它第一个把这个国产的这个，呃，集群从这个训练到推理给完全跑通了啊，这一块搞不好以后会是它的一个优势。 像…",
+      "quality": 7,
+      "practical": 2,
+      "sourceName": "抡锤者 资讯",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "1c317bb1ca64",
+      "title": "Strata v0.2.23 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "lowspec"
+      ],
+      "bodyChars": 10521,
+      "excerpt": "Strata 0.2.23 The app and the Terminal are 0.2.23. Control and the Inkling engines (every backend) are 0.1.70, and so are the Windows and Mac Qwen engines. The Linux and aarch64 Qwen engines (0.1.69) and the Hy4 engine (0.1.67) have no changes, so nothing is downloaded for them. What's new New Inkling 2 Mini files. Five builds to choose from: SQ-20 (19.37 GB), SQ-15 (14.35 GB), SQ-10 (10.47 GB), GSQ-RCO IQ3_S (11.43 GB) and Unsloth UD-Q4_K_XL (17.63 GB). The SQ files are new \"v2\" files; the picture file (Vision v2) is 0.64 GB. If you have the old SQ-20, it shows \"Update available\": installing…",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "4da2d53c1c91",
+      "title": "SnapFind – 只做截图文字识别的开源工具，本地离线 OCR",
+      "category": "local",
+      "subcategory": "weights",
+      "tags": [
+        "local",
+        "tutorial",
+        "free",
+        "money"
+      ],
+      "bodyChars": 553,
+      "excerpt": "SnapFind 是一款功能极简的开源 Windows 工具，只做一件事：从屏幕上提取文字。无需联网，无需部署大模型，按下快捷键、框选屏幕区域，即可完成 OCR 文字识别。@ Appinn 来自 发现频道 ，开发者自荐： https://meta.appinn.net/t/topic/89360 SnapFind – 本地离线截图 OCR 文字提取与极速查询工具 在 B 站观看 SnapFind 内置 RapidOCR (PP-OCRv4），使用非常简单： 默认使用 Ctrl + Alt + S 快捷键进行选区 松手后自动识别文字 自动复制到剪贴板（设置中开启） 内置 RapidOCR (PP-OCRv4）离线模型，支持 Windows 10、11，提供安装版与便携版，使用 MIT 协议开源。 GitHub 搬运 原文：https://www.appinn.com/snapfind/ 相关阅读 发现频道：10款大家发现的好评软件[2026年第32期] © 2021 青小蛙 for 小众软件 | 加入我们 | 投稿 | 订阅指南 3659b075e72a5b7b1b87ea74aa7932ff 点击这里留言、和原作者一起评论 [ 点击前往获取链接 ]",
+      "quality": 8,
+      "practical": 5,
+      "sourceName": "小众软件",
+      "domain": "appinn.com",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "cb6b714e0697",
+      "title": "全国首批首家！商汤大装置获Token工厂智算能力最高评级",
+      "category": "bench",
+      "subcategory": "cost",
+      "tags": [
+        "local",
+        "free",
+        "money",
+        "hardware"
+      ],
+      "bodyChars": 3572,
+      "excerpt": "全国首批首家！商汤大装置获Token工厂智算能力最高评级 量子位的朋友们 2026-11-27 19:18:24 来源： 量子位 商汤大装置Token工厂获得中国信通院Token工厂智算能力评估“全栈服务型·领先级”评级认证 11月27日，在第二十八届中国国际高新技术成果交易会（高交会）·可信Token云服务论坛上，中国信息通信研究院（以下简称“中国信通院”）正式发布Token工厂智算能力评估成果。商汤大装置Token工厂获得中国信通院Token工厂智算能力评估“全栈服务型·领先级”评级认证，成为全国首批首家通过该项能力评估的Token工厂，这也是行业内最高评级。 这不仅标志着商汤大装置Token工厂在Token规模化生产、全栈服务与高效运营等方面的综合实力获得权威认可，更有力推动了Token工厂在标准化评价与规范化发展方面迈出关键一步。 01. Token工厂·智算能力分级评价 Token工厂作为AI工业化时代的核心算力与服务底座，近两年迅猛发展，但行业内尚未形成统一的能力评价标准，严重制约Token工厂产业的规范化发展与价值释放。中国信息通信研究院云计算与数字化研究所在充分调研产业实践基础上，研究构建了首个面向Token工厂主体的权威能力评估认证——“Token工厂·智算能力分级评价体系”。 该评价体系以Token工厂五层技术架构（基础设施层—模型服务层—聚合分发层—计量结算…",
+      "quality": 9,
+      "practical": 4,
+      "sourceName": "量子位",
+      "domain": "qbitai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    }
+  ]
+}
