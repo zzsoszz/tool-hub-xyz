@@ -1,8 +1,8 @@
 {
   "day": "2026-11-27",
-  "reviewedAt": "2026-11-26T19:46:50.448Z",
+  "reviewedAt": "2026-11-27T04:30:22.631Z",
   "reviewer": "cloudflare/@cf/meta/llama-3.1-70b-instruct",
-  "note": "cloudflare/@cf/meta/llama-3.1-8b-instruct → @cf/meta/llama-3.1-70b-instruct：复核 12 条，解析到 12 条判定",
+  "note": "cloudflare/@cf/meta/llama-3.1-70b-instruct：复核 12 条，解析到 12 条判定",
   "rules": {
     "minItems": 3,
     "minBodyChars": 120,
@@ -15,15 +15,14 @@
   },
   "passed": true,
   "reasons": [],
-  "total": 30,
+  "total": 37,
   "blocked": [
-    "bd306655e6ec",
+    "ffce01637cf3",
     "d02052433e98",
     "e3d867dc5559",
-    "216dbef5c450",
     "87e6b76f02f5"
   ],
-  "survivors": 25,
+  "survivors": 33,
   "items": [
     {
       "slug": "da39a3ee5e6b",
@@ -46,9 +45,34 @@
       "warnings": [],
       "agent": {
         "verdict": "pass",
-        "reason": "内容包含实测数据和复现步骤。"
+        "reason": "文章提供了使用 ChatGPT 和 Keynote 免费创建机理图的方法和步骤。"
       },
       "blocked": []
+    },
+    {
+      "slug": "ffce01637cf3",
+      "title": "乾崑共创者计划发布：加入乾崑生态，共创出行未来！",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [
+        "benchmark",
+        "generate"
+      ],
+      "bodyChars": 2550,
+      "excerpt": "乾崑共创者计划发布：加入乾崑生态，共创出行未来！ 量子位的朋友们 2026-11-27 10:19:12 来源： 量子位 11月26日，“乾崑生态 共赴热爱”华为乾崑生态大会在广州南沙体育馆举行。 11月26日，“乾崑生态 共赴热爱”华为乾崑生态大会在广州南沙体育馆举行。会上，华为公司高级副总裁、引望公司CEO靳玉志正式宣布启动“乾崑共创者计划”，面向广大用户开放产品体验反馈与出行场景创想通道，推动用户从智能出行的“体验者”向“共创者”转变。 “今天我们同步上线乾崑共创者计划，诚邀大家分享灵感，探索创新的功能，共创美好的出行体验。”靳玉志在大会现场表示，随着智能网联汽车产业加速迈入L3级自动驾驶阶段，用户真实场景中的使用体验正成为产品迭代的关键输入。 华为公司高级副总裁、引望公司CEO 靳玉志 打通“真实场景—需求反馈—产品创新”链路 “华为乾崑共创者计划”聚焦“生态功能体验分享”与“未来出行灵感畅想”两大参与方向。用户深度体验乾崑智驾、鸿蒙座舱及华为乾崑App相关能力后，并在App内发布图文、视频等原创内容，分享实测感受或提出创新构想。参与用户可获得积分激励，优质内容有机会入选官方精选、登顶每日人气榜单，并参与实物奖励抽取。 这一机制打破了传统产品研发单向输出的模式，让“用户出题、企业答题”成为智能出行生态演进的常态。用户的真实灵感将有机会经过评审后分阶段进入产品与服务优化流程…",
+      "quality": 9,
+      "practical": 2,
+      "sourceName": "量子位",
+      "domain": "qbitai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "fail",
+        "reason": "文章主要介绍了乾崑共创者计划的发布和相关信息，没有提供实践性内容。"
+      },
+      "blocked": [
+        "模型复核不通过（文章主要介绍了乾崑共创者计划的发布和相关信息，没有提供实践性内容。）"
+      ]
     },
     {
       "slug": "bd306655e6ec",
@@ -67,12 +91,10 @@
       "hard": [],
       "warnings": [],
       "agent": {
-        "verdict": "fail",
-        "reason": "内容仅为新闻转述，缺乏数据和步骤。"
+        "verdict": "pass",
+        "reason": "文章介绍了AI智能体集群攻击P=NP问题的进展和GitHub的反应，提供了相关数据和信息。"
       },
-      "blocked": [
-        "模型复核不通过（内容仅为新闻转述，缺乏数据和步骤。）"
-      ]
+      "blocked": []
     },
     {
       "slug": "cd16924426fb",
@@ -94,7 +116,7 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "内容包含实测数据和复现步骤。"
+        "reason": "文章介绍了datasette-charts 0.3a0版本的新功能，提供了相关截图和使用方法。"
       },
       "blocked": []
     },
@@ -144,7 +166,7 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "内容包含实测数据和复现步骤。"
+        "reason": "文章介绍了SimDrop工具的功能和使用方法，提供了相关截图和代码。"
       },
       "blocked": []
     },
@@ -166,7 +188,7 @@
       "warnings": [],
       "agent": {
         "verdict": "pass",
-        "reason": "内容包含实测数据和复现步骤。"
+        "reason": "文章介绍了PlayPorted网站的功能和收录的游戏移植项目，提供了相关信息和链接。"
       },
       "blocked": []
     },
@@ -190,10 +212,10 @@
       ],
       "agent": {
         "verdict": "fail",
-        "reason": "内容缺乏实测数据和复现步骤，主要是一篇讨论。"
+        "reason": "内容与分类不符，没有实践性内容。"
       },
       "blocked": [
-        "模型复核不通过（内容缺乏实测数据和复现步骤，主要是一篇讨论。）"
+        "模型复核不通过（内容与分类不符，没有实践性内容。）"
       ]
     },
     {
@@ -216,7 +238,7 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "该项目是一个 Markdown 笔记和间隔重复应用，具有 Japanese 支持，开发者寻求反馈。"
+        "reason": "介绍了一个 Markdown 笔记和间隔重复应用，并提供了反馈和评论。"
       },
       "blocked": []
     },
@@ -239,12 +261,10 @@
         "标题未翻译"
       ],
       "agent": {
-        "verdict": "fail",
-        "reason": "该文本没有提供明显的实践性内容或详细步骤，仅仅是关于研究论文的描述。"
+        "verdict": "pass",
+        "reason": "提供了一个关于视觉转换器的研究论文，包括训练-free 焦点映射和长视频对象分割。"
       },
-      "blocked": [
-        "模型复核不通过（该文本没有提供明显的实践性内容或详细步骤，仅仅是关于研究论文的描述。）"
-      ]
+      "blocked": []
     },
     {
       "slug": "1df92246c1ac",
@@ -267,7 +287,7 @@
       "warnings": [],
       "agent": {
         "verdict": "pass",
-        "reason": "该文本提供了 Google Chrome 团队推出的 Modern Web Guidance 的使用方法和 Prompt 提示词，以及如何让 AI 学会现代 Web 技术。"
+        "reason": "介绍了 Chrome 官方推出的 Skills：Modern Web Guidance，用于教 AI 如何使用现代 Web 技术开发网页。"
       },
       "blocked": []
     },
@@ -292,7 +312,7 @@
       ],
       "agent": {
         "verdict": "pass",
-        "reason": "该文本介绍了 OpenGame，这是一个开源的 Super Game Agent，允许用户使用 DeepSeek、Claude Code、Codex 或本地编码代理创建 AAA 级 3D 游戏或可货币化的病毒式迷你游戏。"
+        "reason": "介绍了 OpenGame，一个开源的全栈 AI 游戏工作室，允许用户使用 DeepSeek、Claude Code、Codex 等 AI 工具创建 AAA 级 3D 游戏。"
       },
       "blocked": []
     },
@@ -317,10 +337,10 @@
       "warnings": [],
       "agent": {
         "verdict": "fail",
-        "reason": "该文本主要是新闻报道，没有提供实践性内容或详细步骤。"
+        "reason": "内容主要是新闻转述，没有实践性内容。"
       },
       "blocked": [
-        "模型复核不通过（该文本主要是新闻报道，没有提供实践性内容或详细步骤。）"
+        "模型复核不通过（内容主要是新闻转述，没有实践性内容。）"
       ]
     },
     {
@@ -342,10 +362,7 @@
       "domain": "appinn.com",
       "hard": [],
       "warnings": [],
-      "agent": {
-        "verdict": "pass",
-        "reason": "该文本介绍了 VERA20K 项目，该项目使用 Rust 语言重新实现了《红色警戒 2：尤里的复仇》的游戏引擎，并提供了详细的开发目标和功能。"
-      },
+      "agent": null,
       "blocked": []
     },
     {
@@ -408,6 +425,28 @@
       "warnings": [
         "标题未翻译"
       ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "2881ec90d418",
+      "title": "【实测分享】用 Google AI 订阅附带的 Colab 点数跑 MiniMax H3：RTX PRO 6000 一条 8 秒镜头 40 秒，比本地 5080 快约 2.4 倍（附部署踩坑、点数账）",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "lowspec",
+        "benchmark",
+        "generate"
+      ],
+      "bodyChars": 3884,
+      "excerpt": "前两天看到 的视频，才知道 2026 年 9 月起 Google AI 订阅每月附带 Colab 的算力点数 ，能开 Colab 的显卡跑 ComfyUI。我们平时用本地 RTX 5080 16G 跑 H3 做日语第一人称恐怖短片，就把 同一套 H3 配方、同一份任务表 搬上去试了一下，结果整理出来分享。 先说结论 显卡 ：Colab 的 G4＝ RTX PRO 6000 Blackwell 96GB ，机器内存 176GB、硬盘 236GB。我这边 实扣 11.2 点／小时 （视频里写的是 6.7～10.05，实际更高）。 速度 ：8 秒镜头（1024×576、hybrid 底模＋首尾帧 4 步 LoRA、首帧＋深度控制） 云端 40 秒一条 （第一条要读模型，55 秒）；本地 5080 约 98 秒。 快约 2.4 倍 。 画面 ：同一个水平，构图、走位、结尾停住都一样；但 同一个种子在两台机器上细节不一样 （不是同一条片）。 开机 ：Colab 关机后硬盘全清空，所以每次开机都要重装。写成脚本后全自动， 约 210 秒、约 0.6 点 。 账 ：一集 3～4 分钟的片子（约 37～50 个镜头）， 抽一批就关机 的话一集 11～34 点； 要是从开工到上传一直开着机器，一集就要 500 多点 。 我是 Ultra 档（月 ¥14,500），账号里显示约 1400 点，点数…",
+      "quality": 12,
+      "practical": 6,
+      "sourceName": "抡锤者 AI硬件",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
       "agent": null,
       "blocked": []
     },
@@ -500,6 +539,28 @@
       "blocked": []
     },
     {
+      "slug": "cf5788c7b45d",
+      "title": "双11没下手，近期终于下决心，确定了平台，确定了使用3080-20G显卡。请教大神们！",
+      "category": "hardware",
+      "subcategory": "build",
+      "tags": [
+        "hardware",
+        "generate",
+        "local",
+        "lowspec"
+      ],
+      "bodyChars": 640,
+      "excerpt": "双11期间，原计划使用自己的华南金牌现有的平台，X99双路，以及现有的16G DDR4内存。结果买了个长城的矿机2手电源，买回来就踩坑，是坏的（拿去维修了）。以及我插8根DDR4内存折腾小半天，顶天了能插6根，这个问题，在以前我搞游戏工作室就被折腾的恼火，华南金牌针对ECC服务器内存条，各种幺蛾子。最终，我基本放弃了这套平台。 补充下我个人针对AI模型的需求： 1.近期协助团队做一些逆向分析； 2.有兴趣学习短剧制作，写小说，生图，做短视频 我潜伏论坛，逛了一遍又一遍，让AI分析了又分析，最终在闲鱼下手了一张ASUS X99-E WS主板，以及振华1600W的电源，之前硬盘买的1T，小了，后期再上吧。上图： 内存稍折腾了下CPU，然后8根全部轻松识别。这张主板闲鱼淘的个人2手，不到1000块钱。 最近的显卡价格，R7900让我最终放弃有2个原因，JD，淘宝，还再涨已经到8000+这个问题，纠结了半个月，我自己反复掂量利弊，最终还是选择了3080这张魔改卡。最大的弊端，就是过了店铺质保3年后，残值会严重缩水，但是好处是，7900XTX的各种补丁啥的，对我一个小白来说，太复杂了。还有就是，我买了2张3080，价格略高于一张7900XTX；加之N卡的生态，对小白的友好；也就这样吧，先入门。 系统我选择装了ubuntu22系统。 现在，我需要请教论坛各位大神，根据我的需求，针对我选择的卡…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "抡锤者 AI硬件",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
       "slug": "022c22aa940d",
       "title": "llama.cpp b12780 发布",
       "category": "hardware",
@@ -544,6 +605,28 @@
       "blocked": []
     },
     {
+      "slug": "a80b0aaadca2",
+      "title": "📡 AI日报 11/27 | 瑞士AI智能体攻击关键基础设施、英伟达暂停东南亚芯片出货、铠侠英伟达PB级显存",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "lowspec",
+        "agent",
+        "money"
+      ],
+      "bodyChars": 812,
+      "excerpt": "1. 瑞士发生五起 AI 智能体网络攻击，电力、供水、通信系统被入侵 瑞士联邦网络安全局（BACS）通报，过去几天发生 5 起由 AI 智能体发起的网络攻击，其中 4 起得手；受影响对象包括 3 家关键基础设施运营方，分别为电力、供水与通信服务商。BACS 未披露幕后主体，建议企业定期开展网络安全检测。 来源： 凤凰网（转 IT之家） （2026-11-27 00:06 CST） 2. 英伟达暂停向东南亚四国交付 AI 服务器 据 WSJ 报道，英伟达已要求戴尔、超微等制造伙伴暂停向马来西亚、新加坡、泰国、印度尼西亚交付服务器，以评估当地伙伴是否满足美国出口要求。此前中国企业通过上述地区的数据中心远程租用英伟达芯片，美国商务部本月已收紧这一通道。 来源： TechCrunch （2026-11-27 04:03 CST） 3. 铠侠联手英伟达：144 块 SSD 把 GPU 有效显存扩展到 1.1PB 在 GB200 NVL72 机架中，144 块 7.68TB 铠侠 XD8 NVMe SSD（18 个节点、每节点 8 块 E1.S）通过 NVIDIA SCADA 软件栈提供约 1.1PB 原始容量，可支撑约 2 万亿个 512 字节向量，目标是大规模向量数据库与图神经网络等超出 HBM 容量的负载。 来源： TechSpot （2026-11-27 03:01 CST） 4.…",
+      "quality": 7,
+      "practical": 2,
+      "sourceName": "抡锤者 资讯",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
       "slug": "33bb2520f2cb",
       "title": "Linux NFS 曝出 9.8 分漏洞 NFS2ROOT，开了 NFS 共享的 NAS 用户注意",
       "category": "hardware",
@@ -579,6 +662,29 @@
       "practical": 4,
       "sourceName": "Hugging Face Blog",
       "domain": "huggingface.co",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "b3e63c031221",
+      "title": "Tencent/WeKnora",
+      "category": "local",
+      "subcategory": "selfhost",
+      "tags": [
+        "local",
+        "agent",
+        "free"
+      ],
+      "bodyChars": 32926,
+      "excerpt": "English · 简体中文 · 日本語 · 한국어 Overview · Quick Start · What's New · Features · Clients · Docs · Development Overview WeKnora is an open-source, LLM-powered knowledge framework for enterprise document understanding, semantic retrieval and reasoning. It brings a team's documents together so they can be searched, reasoned over and kept up to date. https://github.com/user-attachments/assets/de0e490a-e738-405e-bb3a-64b63edd7278 v0.9.0 · 2:45 · 1080p60 · English narration and subtitles Use RAG to look things up, the agent for multi-step tasks, and the wiki to organize knowledge. All three work on the…",
+      "quality": 10,
+      "practical": 1,
+      "sourceName": "GitHub 检索（生态项目更新）",
+      "domain": "github.com",
       "hard": [],
       "warnings": [
         "标题未翻译"
@@ -630,6 +736,28 @@
       "blocked": []
     },
     {
+      "slug": "e3d833337f91",
+      "title": "第三批嘉宾来袭！速戳报名MEET2027，驭见AI新共识！",
+      "category": "bench",
+      "subcategory": "benchmark",
+      "tags": [
+        "agent",
+        "benchmark",
+        "generate",
+        "free"
+      ],
+      "bodyChars": 3185,
+      "excerpt": "第三批嘉宾来袭！速戳报名MEET2027，驭见AI新共识！ 量子位的朋友们 2026-11-27 10:56:03 来源： 量子位 倒计时两周，报名从速！ 📢倒计时两周！量子位MEET2027智能未来大会又迎来了第三批重磅嘉宾！ 截止目前，已有20+位行业大咖确认出席MEET2027智能未来大会。 台上讲判断，台下能讨论。去年现场什么阵仗，去过的朋友都懂！今年你还不来MEET大会现场面基吗？ 第三批嘉宾 已来袭，一起来看还有哪些嘉宾出席—— 张艺 网易有道智能应用事业部负责人 张艺主要负责有道AI产品的开发与运营。他聚焦学习与办公场景，以产品创新推动AI体验升级。先后落地有道词典、有道翻译等国民级产品，总用户量超10亿。同时，孵化网易叭哥说、Hi Echo、有道小P等新一代Agent产品，持续探索以Agent为核心的产品新形态。 杨海波 光轮智能联合创始人兼总裁 毕业于中国人民大学，担任北京市海淀区政协委员，中国电子学会世界模型专家委员会委员。长期深耕物理AI数据与评测技术设施领域，构建公司整体商业化及全球业务交付体系，推动仿真合成数据、规模化仿真评测、人类视频数据三条核心业务线，相关业务规模位居全球交付首位。 张毅泷 Agnes AI联合创始人兼COO 硕士毕业于法国综合理工学院，本科毕业于北京科技大学。 作为Agnes AI核心高管团队核心成员，全面执掌公司整体运营体系、品…",
+      "quality": 9,
+      "practical": 2,
+      "sourceName": "量子位",
+      "domain": "qbitai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
       "slug": "91ecfb60d2a2",
       "title": "AI 3D界的“X光”来了！一图直出巴洛克雕塑，3D打印开箱即用",
       "category": "bench",
@@ -647,6 +775,25 @@
       "domain": "qbitai.com",
       "hard": [],
       "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "66231554311b",
+      "title": "陶哲轩下场验证黎曼猜想！“AI批量吐证明就像发电厂排核废料”",
+      "category": "bench",
+      "subcategory": "cost",
+      "tags": [],
+      "bodyChars": 4190,
+      "excerpt": "陶哲轩下场验证黎曼猜想！“AI批量吐证明就像发电厂排核废料” 听雨 2026-11-27 10:03:10 来源： 量子位 担心课题被AI抢先，该怎么办？ 听雨 发自 凹非寺 量子位 | 公众号QbitAI 就在黎曼猜想证明公布前几天， 陶哲轩 在哈佛一场活动上发布了对AI数学的最新表态—— AI公司为了测模型，批量生成难以消化的数学证明，就像发电厂产生了「核废料」！ 但别误会，他不是完全反对AI用在数学研究上，只是他认为AI公司与人类数学家合作，完全可以产出更容易理解的结果。 其实吧，陶哲轩自己也在跟进解读AI的黎曼猜想证明。 按他在博客上的初步判断，这份黎曼猜想证明似乎用上了朗兰兹纲领和算术几何里的不少现代工具。 他的博客已经刊出了公开协作项目的招募帖，希望大家一起梳理黎曼猜想的证明。 所以说，能用最前沿的AI解决千古一遇的数学难题，哪个数学家会放过这种机会呢？？ 连陶哲轩也不例外。 在哈佛活动上，主持人提到，有些博士生担心自己正在研究的题，AI公司可能已经在内部解出来了，只是还没公开。 陶哲轩说，等机器把一批难以消化的证明吐出来，公司就得在几个麻烦的选项里挑： 一直存着、向公众公开，或者花钱请人处理。 他更希望公司在开跑前就和数学家商量，一起挑选值得交给AI解决的数学题。 在这场哈佛活动上，陶哲轩还有以下观点—— 1、担心课题被AI抢先，学生该怎么办？ 他有个学生干脆拉上同…",
+      "quality": 9,
+      "practical": 1,
+      "sourceName": "量子位",
+      "domain": "qbitai.com",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签"
+      ],
       "agent": null,
       "blocked": []
     },
