@@ -1,7 +1,7 @@
 {
   "id": "model-pricing",
   "kind": "openrouter-pricing",
-  "collectedAt": "2026-11-27T04:29:49.489Z",
+  "collectedAt": "2026-11-27T19:36:14.529Z",
   "upstream": {
     "label": "OpenRouter 模型目录 API",
     "url": "https://openrouter.ai/models"
@@ -10,16 +10,6 @@
   "tables": {
     "pricing": {
       "rows": [
-        {
-          "name": "inclusionAI: Ling 3.2 Flash (free)",
-          "id": "inclusionai/ling-3.2-flash:free",
-          "url": "https://openrouter.ai/inclusionai/ling-3.2-flash:free",
-          "context": 1048576,
-          "promptPerMillion": 0,
-          "completionPerMillion": 0,
-          "free": true,
-          "created": 1794591958
-        },
         {
           "name": "Particle AI: Particle-1 (free)",
           "id": "particle-ai/particle-1:free",
@@ -245,8 +235,8 @@
           "id": "~deepseek/deepseek-v4-flash-latest",
           "url": "https://openrouter.ai/~deepseek/deepseek-v4-flash-latest",
           "context": 1048576,
-          "promptPerMillion": 0.047,
-          "completionPerMillion": 0.3,
+          "promptPerMillion": 0.04532,
+          "completionPerMillion": 0.13596,
           "free": false,
           "created": 1785606009
         },
@@ -255,7 +245,7 @@
           "id": "deepseek/deepseek-v4-flash-0731",
           "url": "https://openrouter.ai/deepseek/deepseek-v4-flash-0731",
           "context": 1048576,
-          "promptPerMillion": 0.047,
+          "promptPerMillion": 0.045599999999999995,
           "completionPerMillion": 0.3,
           "free": false,
           "created": 1785478908
@@ -361,6 +351,26 @@
           "created": 1789176933
         },
         {
+          "name": "DeepSeek: DeepSeek V4.1 Flash",
+          "id": "deepseek/deepseek-v4.1-flash",
+          "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash",
+          "context": 1048576,
+          "promptPerMillion": 0.051,
+          "completionPerMillion": 0.5670000000000001,
+          "free": false,
+          "created": 1789021285
+        },
+        {
+          "name": "Thinking Machines: Inkling 2 Mini",
+          "id": "thinkingmachines/inkling-2-mini",
+          "url": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
+          "context": 1048576,
+          "promptPerMillion": 0.06,
+          "completionPerMillion": 0.24,
+          "free": false,
+          "created": 1795227585
+        },
+        {
           "name": "Amazon: Nova Lite 1.0",
           "id": "amazon/nova-lite-v1",
           "url": "https://openrouter.ai/amazon/nova-lite-v1",
@@ -399,30 +409,20 @@
           "completionPerMillion": 0.15,
           "free": false,
           "created": 1788206780
-        },
-        {
-          "name": "Z.ai: GLM 4.7 Flash",
-          "id": "z-ai/glm-4.7-flash",
-          "url": "https://openrouter.ai/z-ai/glm-4.7-flash",
-          "context": 131072,
-          "promptPerMillion": 0.060500000000000005,
-          "completionPerMillion": 0.39999999999999997,
-          "free": false,
-          "created": 1768833913
         }
       ]
     }
   },
   "stats": {
     "models": 40,
-    "free": 9
+    "free": 8
   },
   "files": [
     {
       "path": "https://openrouter.ai/api/v1/models",
       "url": "https://openrouter.ai/api/v1/models",
-      "sha256": "def06fdfbd9e10a9a66a066fefb81ad623e32327375218971d98331b1bdd0f62",
-      "bytes": 926801
+      "sha256": "1f8f9c08aa7678dd0f10d787db14691f85f22e8ac586de81d812fc5bc4b29fd5",
+      "bytes": 926811
     }
   ]
 }

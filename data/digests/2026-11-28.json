@@ -1,0 +1,1030 @@
+{
+  "day": "2026-11-28",
+  "generatedAt": "2026-11-27T19:34:06.112Z",
+  "timezone": "Asia/Shanghai",
+  "windowHours": 48,
+  "window": {
+    "since": null,
+    "until": null
+  },
+  "counts": {
+    "sources": 42,
+    "okSources": 39,
+    "fetched": 1101,
+    "duplicates": 813,
+    "carried": 0,
+    "added": 16,
+    "fallback": 1,
+    "lowQuality": 155,
+    "published": 16
+  },
+  "sources": [
+    {
+      "id": "openai-news",
+      "name": "OpenAI News",
+      "ok": true,
+      "items": 60,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "google-deepmind",
+      "name": "Google DeepMind",
+      "ok": true,
+      "items": 60,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "google-ai",
+      "name": "Google AI Blog",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "hf-blog",
+      "name": "Hugging Face Blog",
+      "ok": true,
+      "items": 60,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "hf-daily-papers",
+      "name": "Hugging Face Daily Papers",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "interconnects",
+      "name": "Interconnects",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "latent-space",
+      "name": "Latent Space",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "simon-willison",
+      "name": "Simon Willison",
+      "ok": true,
+      "items": 30,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "techcrunch-ai",
+      "name": "TechCrunch AI",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "ars-ai",
+      "name": "Ars Technica AI",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "mit-tr-ai",
+      "name": "MIT Tech Review",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "qbitai",
+      "name": "量子位",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "arxiv-cs",
+      "name": "arXiv cs.AI/CL/LG",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "hn-newest",
+      "name": "Hacker News (AI)",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "hn-algolia",
+      "name": "Hacker News Search",
+      "ok": true,
+      "items": 25,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lobsters-ai",
+      "name": "Lobsters AI",
+      "ok": true,
+      "items": 25,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "reddit-local-llama",
+      "name": "r/LocalLLaMA",
+      "ok": false,
+      "items": 0,
+      "queries": 1,
+      "error": "HTTP 404"
+    },
+    {
+      "id": "github-trending",
+      "name": "GitHub 新晋 AI 项目",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "microsoft-research",
+      "name": "Microsoft Research",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "github-blog",
+      "name": "GitHub Blog",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "theverge",
+      "name": "The Verge",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "sspai",
+      "name": "少数派",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "appinn",
+      "name": "小众软件",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "producthunt",
+      "name": "Product Hunt",
+      "ok": true,
+      "items": 30,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "hn-show-ai",
+      "name": "Show HN (AI)",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "ai-news-applied",
+      "name": "AI News (应用)",
+      "ok": true,
+      "items": 0,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "juejin",
+      "name": "掘金 AI",
+      "ok": true,
+      "items": 0,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "reddit-sideproject",
+      "name": "r/SideProject",
+      "ok": false,
+      "items": 0,
+      "queries": 1,
+      "error": "HTTP 429"
+    },
+    {
+      "id": "hn-money",
+      "name": "HN 检索（独立开发与变现）",
+      "ok": true,
+      "items": 50,
+      "queries": 5,
+      "error": null
+    },
+    {
+      "id": "reddit-saas",
+      "name": "r/SaaS 变现实操",
+      "ok": false,
+      "items": 0,
+      "queries": 1,
+      "error": "HTTP 429"
+    },
+    {
+      "id": "lcz-hardware",
+      "name": "抡锤者 AI硬件",
+      "ok": true,
+      "items": 19,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-llm",
+      "name": "抡锤者 模型部署讨论",
+      "ok": true,
+      "items": 39,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-agent",
+      "name": "抡锤者 Agent 工具",
+      "ok": true,
+      "items": 38,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-media",
+      "name": "抡锤者 AI 音视频画图",
+      "ok": true,
+      "items": 40,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-selfmedia",
+      "name": "抡锤者 自媒体运营",
+      "ok": true,
+      "items": 31,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-web",
+      "name": "抡锤者 建站与网络赚钱",
+      "ok": true,
+      "items": 18,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-crisis",
+      "name": "抡锤者 AI 危机与机遇",
+      "ok": true,
+      "items": 25,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-news",
+      "name": "抡锤者 资讯",
+      "ok": true,
+      "items": 40,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "gh-releases",
+      "name": "GitHub 发布（ComfyUI / Strata 等）",
+      "ok": true,
+      "items": 21,
+      "queries": 8,
+      "error": null
+    },
+    {
+      "id": "hn-ecosystem",
+      "name": "HN 检索（本地推理生态）",
+      "ok": true,
+      "items": 110,
+      "queries": 12,
+      "error": null
+    },
+    {
+      "id": "gh-ecosystem",
+      "name": "GitHub 检索（生态项目更新）",
+      "ok": true,
+      "items": 60,
+      "queries": 6,
+      "error": null
+    },
+    {
+      "id": "arxiv-ecosystem",
+      "name": "arXiv 检索（推理引擎与量化）",
+      "ok": true,
+      "items": 50,
+      "queries": 5,
+      "error": null
+    }
+  ],
+  "categories": [
+    {
+      "id": "apps",
+      "label": "AI 应用",
+      "items": [
+        {
+          "sourceId": "lcz-agent",
+          "sourceName": "抡锤者 Agent 工具",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "tools",
+          "categories": [],
+          "author": "cc tgo",
+          "id": "3361",
+          "title": "解决痛点的探索：让 Agent 不忘事，一套纯本地长期记忆架构",
+          "url": "https://lcz.me/topic/3361",
+          "published": "2026-11-27T08:37:11.082Z",
+          "summary": "让 Agent 不忘事：一套纯本地长期记忆架构 封面图由本地 H3-Image 模型生成，标题文字经本地 Qwen-Image 图生图叠加。生图模版为自开发插件 dsh-prompt-wall 从\"每次开新会话都要重新自我介绍\"，到 3400+ 条原子记忆自动流转——讲清楚我的痛点及为什么部署这套东西、怎么挑的、怎么装的、装完后真实用起来什么体验、以及踩过的坑。 〇、铺垫：M5 Air 32G笔记本上交的学费 这套架构不是凭空选的。在它之前，我用的是M5 Air笔记本手搓过一版记忆系统，跑了两个多月。那段使用经历决定了后面每一个设计取舍。 起点很朴素：AI 每次都失忆，每开新窗口重讲一遍背景。第一版方案最糙——把聊天记录导出成文件…",
+          "metrics": {
+            "points": 2,
+            "comments": 4,
+            "views": 224
+          },
+          "excellent": true,
+          "content": {
+            "html": "<h3>让 Agent 不忘事：一套纯本地长期记忆架构</h3>\n<p><img src=\"https://upload.lcz.me/uploads/ddf3a66d-9f3b-4e87-8548-3e645f30fcd2.png\" alt=\"theme-edit-v1.png\" loading=\"lazy\"></p>\n<p><em>封面图由本地 H3-Image 模型生成，标题文字经本地 Qwen-Image 图生图叠加。生图模版为自开发插件 dsh-prompt-wall</em></p>\n<blockquote><p>从\"每次开新会话都要重新自我介绍\"，到 3400+ 条原子记忆自动流转——讲清楚我的痛点及为什么部署这套东西、怎么挑的、怎么装的、装完后真实用起来什么体验、以及踩过的坑。</p></blockquote>\n<h3>〇、铺垫：M5 Air 32G笔记本上交的学费</h3>\n<p>这套架构不是凭空选的。在它之前，我用的是M5 Air笔记本手搓过一版记忆系统，跑了两个多月。那段使用经历决定了后面每一个设计取舍。</p>\n<p>起点很朴素：AI 每次都失忆，每开新窗口重讲一遍背景。第一版方案最糙——把聊天记录导出成文件，用 grep 搜。能用，直到某天撞见这一幕：</p>\n<blockquote><p>我忘了某个点子想法，去搜，搜不到——但它其实好好地躺在文件里。</p></blockquote>\n<p>文件里写着\"装别人的插件前先自动查它安不安全\"，我搜\"插件安全\"\"审计\"零命中，换成正则才找到。<strong>你\"忘了\"时记得的词，和当初记下它时用的词，天然对不上。</strong>问题不是\"没记\"，是\"记了但搜不到\"——方向从\"更大的存储\"整个掰向\"更好的召回\"。</p>\n<p>另一个更隐蔽的坑，后来我给它起名叫**「取新失败」**：记得住、记得对，但记的是旧版本，于是自信地用错——不提示、不报错，比\"想不起来\"危险得多。我为\"上次到哪了\"加过一层手写便签，就是被它坑删的：14 天 117 次提交的维护成本，收益约 2 秒/次，而检查时发现指引指向的内容便签里根本没有，新窗口会自信地按过期状态开工。砍它的判据就一句：<strong>不做会不会更差？不会，就不该存在。</strong></p>\n<p>一组受控 A/B（同一工作区快照，一组留记忆层、一组剥掉）留下两个结构性事实：有记忆层复述之前约定 3/3 全对，无记忆层 0–1/3——接续是类别级收益；但\"把结论写进记忆\"那一步烧掉 89 万–265 万 token，是无记忆组的 20–50 倍——<strong>\"写\"是全场最贵的一环</strong>。</p>\n<p>而最终逼我推倒重来的，是算力欠账：方案里最重的一档——语义检索（不同词也能召回）——要 embedding 模型常驻，32GB 机器上下文过 2K 就撞内存墙、解码个位数 tok/s，<strong>只能当测量台，当不了主力</strong>。没有语义检索的召回，说到底只是体面一点的 grep。</p>\n<p>所以到了新机器（M5 Ultra 256GB 统一内存）上，我选择<strong>全新重建、不做迁移</strong>：旧系统搭在 grep 和不稳定的注册 API 上（那条 API 后来被官方一刀砍掉，\"启动时现场拼工具\"的方案当场死亡），迁移价值撑不起漂移风险，不如拿成熟架构一次做对。后面就是正式的选方案、装机与使用体验。</p>\n<h3>一、把个人经历放大：这是所有长期 Agent 的共性问题</h3>\n<p>笔记本上的学费可以放大成三条通用痛点：<strong>跨会话失忆</strong>（昨天的决策、定下的口径全部归零，Agent 把上周已否决的方案再兴高采烈地提一遍）；<strong>上下文压缩丢细节</strong>（压缩器会把\"这个方案已被否决\"压成\"这个方案已讨论\"，下一轮它又端上桌）；<strong>经验不可携带</strong>（同一个坑，A 会话踩过，B 会话照踩不误）。</p>\n<p>一句话：<strong>会话内压缩管的是\"这一次别爆\"，没人管\"下一次还记不记得\"</strong>。需要一个跨会话的记忆层——对话结束不是结束，而是沉淀。</p>\n<h3>二、挑选比较：市面方案过一遍</h3>\n<p>当时把能用的路子都摆出来比过：</p>\n<table><thead><tr><th>方案</th><th>形态</th><th>卡在哪</th></tr></thead><tbody><tr><td>裸 RAG（自己拿向量库糊一个）</td><td>把对话切块 embedding 入库，检索时塞回去</td><td>只有\"存\"没有\"炼\"。原始对话直接入库，检索回来的是聊天记录碎片，不是结论。做 demo 够，做长期记忆不够</td></tr><tr><td>mem0 类记忆服务</td><td>抽取+检索的黑盒中间件</td><td>依赖云端 LLM 做抽取是默认姿势；纯本地要自己改链路。分层抽象（事实→场景→画像）也不是它的重点</td></tr><tr><td>claude-mem 类会话记忆插件</td><td>挂在单一客户端上的会话摘要</td><td>绑定特定客户端，换宿主就没了；不过它的\"自更新带来源证明+回滚\"机制给我们后来的供应链纪律提供了参考</td></tr><tr><td>宿主自带记忆（各家 Agent 的 memory 文件）</td><td>一个 markdown 让 Agent 自己写</td><td>全靠 Agent 自觉，写入无结构、检索靠 grep，规模一上来就失控</td></tr><tr><td><strong>TencentDB Agent Memory（TDAI）</strong></td><td>开源（MIT），MemoryCore + MemoryProxy 两件套，四层分层记忆</td><td>见下文，最终选了它</td></tr></tbody></table>\n<p>选 TDAI 的决定性理由有四条：</p>\n<ol><li><strong>分层抽象是现成的</strong>。L0 原始对话 → L1 原子记忆（单条事实/偏好）→ L2 场景记忆（按场景成文的 SOP 长文）→ L3 核心画像（每轮全文注入的\"宪法\"）。这正好是我们脑子里想要的那套\"逐级蒸馏\"，不用自己发明。</li><li><strong>透明代理接入，零改码</strong>。MemoryProxy 挡在 Agent 和模型之间，协议不变，Agent 把 baseURL 指过来就完事——注入和回写都在代理层做，宿主不用装插件。</li><li><strong>能纯本地跑</strong>。我们的红线是记忆数据不出机器：全部组件只绑 127.0.0.1，抽取用的 LLM 也指到本地推理服务，SQLite + 本地向量库，无云端依赖。</li><li><strong>对 DeepSeek Harness 有官方接入文档</strong>，我用的正好是它。</li></ol>\n<p>代价也要说：它是 TypeScript/Node 栈、带原生模块（jieba 分词、sqlite FTS5），部署面比\"一个 markdown\"复杂一个数量级。后面会看到，复杂度都花在哪了。</p>\n<h3>三、定方案：架构长什么样</h3>\n<p><img src=\"https://upload.lcz.me/uploads/66c4b5d3-c049-4fc8-a29e-dbc514f04b0d.png\" alt=\"chart-arch.png\" loading=\"lazy\"></p>\n<p>装完之后整套东西长这样（全部 loopback，无公网暴露）：</p>\n<pre><code>Agent 宿主（GUI/CLI）\n│ baseURL 指向 ↓（协议不变，零改码）\nMemoryProxy :8096 ← 鉴权 → 会话识别 → 记忆注入 → 转发 → 回写\n│\n门面 Router :8100 ← 按模型名路由到存活的推理平台\n├── 推理平台 A :11234 （对话模型，兼抽取）\n├── 推理平台 B :8000 （备用平台，谁活着谁接）\n└── Embedding 专用实例 :11235（0.6B 小模型常驻，0.6GB）\n│\nMemoryCore :8420 ← 记忆中枢：L0/L1/L2/L3 存储、FTS5+jieba 关键词、\n│ 向量检索、后台异步抽取器\n└── SQLite + 本地向量库（数据全在工作区目录）</code></pre>\n<p>四个关键设计，每个都是想清楚才定的：</p>\n<p><strong>1. 注入策略：分层分预算，不是全塞。</strong></p>\n<ul><li>L3 核心画像（约 3K token）：每轮全文注入，当\"宪法\"用——操作纪律、定案结论、红线，永远在场。</li><li>L2 场景索引：每轮只注入目录（一行一个场景+摘要），正文按需拉取。</li><li>L1/L0：<strong>完全不注入</strong>，只作为工具检索库——Agent 主动查才给。</li></ul>\n<p>为什么 L1 不默认注入？这是踩出来的（见第五节）：每轮变化的注入内容会打碎 KV 前缀缓存，长会话的推理成本直接翻倍。把\"稳定宪法常驻 + 易变事实按需查\"分开，缓存命中和记忆覆盖才能兼得。</p>\n<p><strong>2. 抽取与对话解耦。</strong>记忆提炼（对话原文 → L1 条目 → L2 场景 → L3 画像）由后台异步抽取器完成，用独立的小模型，不占前台对话的推理资源，也不要求前台模型有多强的总结能力。前台模型只管聊，后台文书只管记。</p>\n<p><strong>3. 记忆与压缩双轨互补。</strong>记忆层管\"下一次冷启动\"，会话内压缩管\"这一次别爆\"。两套机制各管一段，谁也不替代谁。</p>\n<p><strong>4. 记忆按 provider 生效，不按 model。</strong> 接入后我们很快发现这个性质：只要走带记忆的那张配置卡，底下换任何模型都自动共享同一个记…</p>",
+            "text": "让 Agent 不忘事：一套纯本地长期记忆架构\n封面图由本地 H3-Image 模型生成，标题文字经本地 Qwen-Image 图生图叠加。生图模版为自开发插件 dsh-prompt-wall\n从\"每次开新会话都要重新自我介绍\"，到 3400+ 条原子记忆自动流转——讲清楚我的痛点及为什么部署这套东西、怎么挑的、怎么装的、装完后真实用起来什么体验、以及踩过的坑。\n〇、铺垫：M5 Air 32G笔记本上交的学费\n这套架构不是凭空选的。在它之前，我用的是M5 Air笔记本手搓过一版记忆系统，跑了两个多月。那段使用经历决定了后面每一个设计取舍。\n起点很朴素：AI 每次都失忆，每开新窗口重讲一遍背景。第一版方案最糙——把聊天记录导出成文件，用 grep 搜。能用，直到某天撞见这一幕：\n我忘了某个点子想法，去搜，搜不到——但它其实好好地躺在文件里。\n文件里写着\"装别人的插件前先自动查它安不安全\"，我搜\"插件安全\"\"审计\"零命中，换成正则才找到。 你\"忘了\"时记得的词，和当初记下它时用的词，天然对不上。 问题不是\"没记\"，是\"记了但搜不到\"——方向从\"更大的存储\"整个掰向\"更好的召回\"。\n另一个更隐蔽的坑，后来我给它起名叫**「取新失败」**：记得住、记得对，但记的是旧版本，于是自信地用错——不提示、不报错，比\"想不起来\"危险得多。我为\"上次到哪了\"加过一层手写便签，就是被它坑删的：14 天 117 次提交的维护成本，收益约 2 秒/次，而检查时发现指引指向的内容便签里根本没有，新窗口会自信地按过期状态开工。砍它的判据就一句： 不做会不会更差？不会，就不该存在。\n一组受控 A/B（同一工作区快照，一组留记忆层、一组剥掉）留下两个结构性事实：有记忆层复述之前约定 3/3 全对，无记忆层 0–1/3——接续是类别级收益；但\"把结论写进记忆\"那一步烧掉 89 万–265 万 token，是无记忆组的 20–50 倍—— \"写\"是全场最贵的一环 。\n而最终逼我推倒重来的，是算力欠账：方案里最重的一档——语义检索（不同词也能召回）——要 embedding 模型常驻，32GB 机器上下文过 2K 就撞内存墙、解码个位数 tok/s， 只能当测量台，当不了主力 。没有语义检索的召回，说到底只是体面一点的 grep。\n所以到了新机器（M5 Ultra 256GB 统一内存）上，我选择 全新重建、不做迁移 ：旧系统搭在 grep 和不稳定的注册 API 上（那条 API 后来被官方一刀砍掉，\"启动时现场拼工具\"的方案当场死亡），迁移价值撑不起漂移风险，不如拿成熟架构一次做对。后面就是正式的选方案、装机与使用体验。\n一、把个人经历放大：这是所有长期 Agent 的共性问题\n笔记本上的学费可以放大成三条通用痛点： 跨会话失忆 （昨天的决策、定下的口径全部归零，Agent 把上周已否决的方案再兴高采烈地提一遍）； 上下文压缩丢细节 （压缩器会把\"这个方案已被否决\"压成\"这个方案已讨论\"，下一轮它又端上桌）； 经验不可携带 （同一个坑，A 会话踩过，B 会话照踩不误）。\n一句话： 会话内压缩管的是\"这一次别爆\"，没人管\"下一次还记不记得\" 。需要一个跨会话的记忆层——对话结束不是结束，而是沉淀。\n二、挑选比较：市面方案过一遍\n当时把能用的路子都摆出来比过：\n方案\n形态\n卡在哪\n裸 RAG（自己拿向量库糊一个）\n把对话切块 embedding 入库，检索时塞回去\n只有\"存\"没有\"炼\"。原始对话直接入库，检索回来的是聊天记录碎片，不是结论。做 demo 够，做长期记忆不够\nmem0 类记忆服务\n抽取+检索的黑盒中间件\n依赖云端 LLM 做抽取是默认姿势；纯本地要自己改链路。分层抽象（事实→场景→画像）也不是它的重点\nclaude-mem 类会话记忆插件\n挂在单一客户端上的会话摘要\n绑定特定客户端，换宿主就没了；不过它的\"自更新带来源证明+回滚\"机制给我们后来的供应链纪律提供了参考\n宿主自带记忆（各家 Agent 的 memory 文件）\n一个 markdown 让 Agent 自己写\n全靠 Agent 自觉，写入无结构、检索靠 grep，规模一上来就失控\nTencentDB Agent Memory（TDAI）\n开源（MIT），MemoryCore + MemoryProxy 两件套，四层分层记忆\n见下文，最终选了它\n选 TDAI 的决定性理由有四条：\n分层抽象是现成的 。L0 原始对话 → L1 原子记忆（单条事实/偏好）→ L2 场景记忆（按场景成文的 SOP 长文）→ L3 核心画像（每轮全文注入的\"宪法\"）。这正好是我们脑子里想要的那套\"逐级蒸馏\"，不用自己发明。\n透明代理接入，零改码 。MemoryProxy 挡在 Agent 和模型之间，协议不变，Agent 把 baseURL 指过来就完事——注入和回写都在代理层做，宿主不用装插件。\n能纯本地跑 。我们的红线是记忆数据不出机器：全部组件只绑 127.0.0.1，抽取用的 LLM 也指到本地推理服务，SQLite + 本地向量库，无云端依赖。\n对 DeepSeek Harness 有官方接入文档 ，我用的正好是它。\n代价也要说：它是 TypeScript/Node 栈、带原生模块（jieba 分词、sqlite FTS5），部署面比\"一个 markdown\"复杂一个数量级。后面会看到，复杂度都花在哪了。\n三、定方案：架构长什么样\n装完之后整套东西长这样（全部 loopback，无公网暴露）：\nAgent 宿主（GUI/CLI）\n│ baseURL 指向 ↓（协议不变，零改码）\nMemoryProxy :8096 ← 鉴权 → 会话识别 → 记忆注入 → 转发 → 回写\n│\n门面 Router :8100 ← 按模型名路由到存活的推理平台\n├── 推理平台 A :11234 （对话模型，兼抽取）\n├── 推理平台 B :8000 （备用平台，谁活着谁接）\n└── Embedding 专用实例 :11235（0.6B 小模型常驻，0.6GB）\n│\nMemoryCore :8420 ← 记忆中枢：L0/L1/L2/L3 存储、FTS5+jieba 关键词、\n│ 向量检索、后台异步抽取器\n└── SQLite + 本地向量库（数据全在工作区目录）\n四个关键设计，每个都是想清楚才定的：\n1. 注入策略：分层分预算，不是全塞。\nL3 核心画像（约 3K token）：每轮全文注入，当\"宪法\"用——操作纪律、定案结论、红线，永远在场。\nL2 场景索引：每轮只注入目录（一行一个场景+摘要），正文按需拉取。\nL1/L0： 完全不注入 ，只作为工具检索库——Agent 主动查才给。\n为什么 L1 不默认注入？这是踩出来的（见第五节）：每轮变化的注入内容会打碎 KV 前缀缓存，长会话的推理成本直接翻倍。把\"稳定宪法常驻 + 易变事实按需查\"分开，缓存命中和记忆覆盖才能兼得。\n2. 抽取与对话解耦。 记忆提炼（对话原文 → L1 条目 → L2 场景 → L3 画像）由后台异步抽取器完成，用独立的小模型，不占前台对话的推理资源，也不要求前台模型有多强的总结能力。前台模型只管聊，后台文书只管记。\n3. 记忆与压缩双轨互补。 记忆层管\"下一次冷启动\"，会话内压缩管\"这一次别爆\"。两套机制各管一段，谁也不替代谁。\n4. 记忆按 provider 生效，不按 model。 接入后我们很快发现这个性质：只要走带记忆的那张配置卡，底下换任何模型都自动共享同一个记…",
+            "lead": "让 Agent 不忘事：一套纯本地长期记忆架构\n封面图由本地 H3-Image 模型生成，标题文字经本地 Qwen-Image 图生图叠加。生图模版为自开发插件 dsh-prompt-wall\n从\"每次开新会话都要重新自我介绍\"，到 3400+ 条原子记忆自动流转——讲清楚我的痛点及为什么部署这套东西、怎么挑的、怎么装的、装完后真实用起来什么体验、以及踩过的坑。\n〇、铺垫：M5 Air 32G笔记本上交的学费\n这套架构不是凭空选的。在它之前，我用的是M5 Air笔记本手搓过一版记忆系统，跑了两个多月。那段使用经历决定了后面每一个设计取舍。\n起点很朴素：AI 每次都失忆，每开新窗口重讲一遍背景。第一版方案最糙——把聊天记录导出成文件，用 grep 搜。能用，直到某天撞见这一幕：\n我忘了某个点子想法，去搜，搜不到——但它其实好好地躺在文件里。\n文件里写着\"装别人的插件前先自动查它安不安全\"，我搜\"插件安全\"\"审计\"零命中，换成正则才找到。 你\"忘了\"时记得的词，和当初记下它时用的词，天然对不上。 问题不是\"没记",
+            "chars": 5891,
+            "shown": 3201,
+            "truncated": true
+          },
+          "quality": 11,
+          "score": 21.62,
+          "category": "apps",
+          "subcategory": "creation",
+          "practical": 5,
+          "slug": "712bfe417c7b",
+          "action": 8,
+          "rank": 23.8,
+          "tags": [
+            "local",
+            "lowspec",
+            "agent",
+            "benchmark"
+          ]
+        },
+        {
+          "sourceId": "qbitai",
+          "sourceName": "量子位",
+          "title": "人形机器人开发者集合！众擎开放大小脑，10亿产业级生态支持计划也来了",
+          "url": "https://www.qbitai.com/2026/11/513352.html",
+          "id": "https://www.qbitai.com/?p=513352",
+          "published": "2026-11-27T14:07:33.000Z",
+          "summary": "人形机器人开发者集合！众擎开放大小脑，10亿产业级生态支持计划也来了 田, 晏林 2026-11-27 22:07:33 来源： 量子位 一支团队在真机上验证的成果，可以成为下一支团队继续开发的起点。 晏林 发自 凹非寺 量子位 | 公众号 QbitAI 搞具身智能，有时候还真不是光有技术就够了。 好不容易搞出一套算法，仿真里跑得飞起，想上真机试试吧，手边压根儿没有机器人。 有的团队倒是在真机上跑通了，想找个真实场景检验一下技术成色，还得四处打听。 还有一些团队已经走到了产品化阶段，万事俱备，就差客户了…… 仔细一琢磨，你缺的东西，没准儿别人手里正好有。只是大家鲜少有机会坐到一张桌子上好好聊。",
+          "content": {
+            "html": "&lt;!DOCTYPE html&gt;<div><div><div>&lt; img id=\"wx_img\" src=\"https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png\" width=\"400\" height=\"400\"&gt;</div></div></div>\n<div><h3>人形机器人开发者集合！众擎开放大小脑，10亿产业级生态支持计划也来了</h3><div><span><img src=\"http://www.qbitai.com/wp-content/themes/liangziwei/imagesnew/head.jpg\" alt=\"\" loading=\"lazy\"><em><a href=\"https://www.qbitai.com/author/tianyanlin\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">田, 晏林</a></em></span><span>2026-11-27</span><span>22:07:33</span><span>来源：<a href=\"https://www.qbitai.com/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">量子位</a></span></div></div>\n<div><p>一支团队在真机上验证的成果，可以成为下一支团队继续开发的起点。</p></div>\n<blockquote><p>晏林 发自 凹非寺</p><p>量子位 | 公众号 QbitAI</p></blockquote>\n<p>搞具身智能，有时候还真不是光有技术就够了。</p>\n<p>好不容易搞出一套算法，仿真里跑得飞起，想上真机试试吧，手边压根儿没有机器人。</p>\n<p>有的团队倒是在真机上跑通了，想找个真实场景检验一下技术成色，还得四处打听。</p>\n<p>还有一些团队已经走到了产品化阶段，万事俱备，就差客户了……</p>\n<p>仔细一琢磨，你缺的东西，没准儿别人手里正好有。只是大家鲜少有机会坐到一张桌子上好好聊。</p>\n<p>11月25日，在<strong>2026众擎全球开发者大会</strong>上，众擎机器人打算给伙伴们搭把手。</p>\n<p>众擎创始人兼CEO赵同阳认为，<strong>人形机器人要走进千行万业，靠的是生态协同。</strong></p>\n<div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/2f0d531879d5f01a752bafe659336835.jpeg\" alt=\"\" loading=\"lazy\"><p></p></div>\n<p>众擎想做的，不光是让伙伴之间的资源对接起来，还要让技术成果能够接续。</p>\n<p><strong>一支团队在真机上验证的成果，可以成为下一支团队继续开发的起点。</strong></p>\n<p>甭管你带来的是一段代码、一台样机，还是一款产品、一个客户，都能在众擎生态里找到眼下最需要的支持。</p>\n<blockquote><p>我们愿意把花了十年摸索出来的经验，手把手教给大家，陪着大家把平台用起来。</p></blockquote>\n<p>会上，赵同阳还表示，<strong>机器人、数据和算力都向伙伴们开放。</strong></p>\n<p>为了让生态真正跑起来，众擎重磅宣布将联合河南投资集团、元禾辰坤等产业链基金，为优秀生态伙伴提供产业级支持。</p>\n<p>手笔还真不小，<strong>10个小目标！</strong></p>\n<h3>10亿元产业支持，让CoRun转起来</h3>\n<p>做了十年机器人，赵同阳对人形机器人产业的下一阶段给出判断：</p>\n<blockquote><p>2027年，将是人形机器人从整机量产走向商业化应用的关键一年。</p></blockquote>\n<p>量产考验的是能不能把每一台机器人造好，商业化考验的则是能不能把每一个客户服务好。</p>\n<p>这事儿还真不是一家机器人厂商能包圆的。</p>\n<div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/e9e333234c15670b502914038d85e066.png\" alt=\"\" loading=\"lazy\"><p></p></div>\n<p>光是工厂里的活儿，就有搬运、装配、上下料、巡检等各种类型。再往外看，智慧交通、商业服务、家庭生活，每个领域都有自己的技术门槛和行业Know-how。</p>\n<p>技术再强的机器人厂商，又能吃透多少个行业？</p>\n<p>赵同阳想得很清楚：<strong>千行百业，不必行行都做</strong>。</p>\n<p>仓库里的哪些活儿适合交给机器人，做物流的人更清楚；马路上的哪些工作可以交给机器人，做交管的人更有发言权。</p>\n<p>众擎只需把通用机器人平台搭好，让伙伴把各自的行业积累变成具身智能时代的新生意。</p>\n<p>当前，各大具身智能厂商都在探索不同的生态打法。</p>\n<p>国内有的从强化学习训练、真机部署工具切入，有的通过开放平台支持不同本体与应用适配，也有围绕端侧算力和开发工具做生态的。</p>\n<p>海外的Figure AI，则侧重于自研整机、模型与客户实际生产场景的结合。</p>\n<p>众擎这次还盯上一个环节：让技术成果在不同团队之间的接续和传递。</p>\n<p>他们提出了一套<strong>跨团队协作与接续开发机制「CoRun」</strong>，还给衡量开放价值这件事定义了一个新单位，<strong>共创单元「CoRunit」</strong>。</p>\n<p>比如，一支团队在众擎全尺寸人形机器人T800上跑通了一套舞蹈动作，另一支团队独立复现后，又通过算法优化让机器人转身时更稳。</p>\n<p><strong>新增贡献经过真机验证，就形成了一个CoRunit。</strong></p>\n<p>等第三支、第四支团队加入进来，可以根据已有版本和测试结果，选择从哪一步开始开发。</p>\n<div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/388f440e6c009644f9f51ae2112dbce2.png\" alt=\"\" loading=\"lazy\"><p></p></div>\n<p>别小看这个变化。</p>\n<p>搞机器人，很多功夫恰恰花在了代码之外。</p>\n<p>哪些参数需要调整，哪些动作容易出错，什么样的测试条件下才能稳定复现，都是开发者一点点摸索出来的。</p>\n<p><strong>CoRun强调的「价值传递」，就是让这些来之不易的技术成果和工程经验，成为后来者创新的起点。</strong></p>\n<p>想让这样的共创持续发生，还得让更多团队有条件参与进来。</p>\n<p>毕竟，搞具身智能的门槛可不低。</p>\n<p>对于不少开发者而言，能不能拿到一台可以反复调试的机器人，就是一个技术想法能不能继续往下走的分水岭。</p>\n<p>为了让「CoRun」转起来，众擎计划未来五年，通过<strong>「引擎计划」和产业基金</strong>，为全球开发者及生态伙伴提供10亿元产业级支持。</p>\n<div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/33eb4bff7e34cd9a08b8fee9ead7c7bc.png\" alt=\"\" loading=\"lazy\"><p></p></div>\n<p>具体覆盖<strong>开发者支持、科研合作、人才培养和商业生态合作</strong>四个方向。</p>\n<p>据众擎生态负责人赵飞宇介绍，除了提供开发教程、工具包和训练示例，众擎还将通过技术沙龙、真机开发体验城市行、黑客松等活动，给开发者创造交流和上机的机会。</p>\n<p>科研团队可以按课题需求申请设备借测，经专项评估还可获得设备捐赠，也能与众擎联合开展课题研究、共建实验室。</p>\n<p>人才培养方面，从一门课程、一项实验、一道赛题入手，众擎将与院校共建真机实训课程，开展师资培训、机器人竞赛和能力认证。</p>\n<p>技术跑通了，想拿到市场上闯一闯，众擎也能搭把手。</p>\n<p>前期做PoC（概念验证），可按项目评估提供样机支持；到了商业化阶段，可以共享商机、共同打磨方案，还能探索设备金融租赁、<strong>择优对接众擎直投及产业链基金</strong>。</p>\n<div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/d82e335c994b2c28e44e56ab3590cd5b.jpeg\" alt=\"\" loading=\"lazy\"><p></p></div>\n<p><strong>10亿元产业级支持的背后，赵同阳还在算一笔更长远的账。</strong></p>\n<p>他希望借助产投一体的方式，把简单的商业合作变成长期的共同成长，让整个生态产生网络效应。</p>\n<p>伙伴越多，机器人能解锁的应用就越多；场景越丰富，积累的数据就越充分；技术能力越来越强，又能吸引更多伙伴加入。</p>\n<p>这个循环一旦转起来，推动人形机器人能力边界不断扩大的，就不只是众擎自己的研发团队了。</p>\n<h3>众擎拿什么支撑整个生态？</h3>\n<p>开发者能在机器人身上玩出多少新花样，取决于众擎交到他们手里的技术底座有多强。</p>\n<p>而想让这些创新成果被更多团队复用，光是机器人能力强还不够，本体的一致性也得有保障。</p>\n<p>总不能一套算法在这台机器人上跑得好好的，换台同型号的机器，又得重新调一遍吧？</p>\n<p>按照赵同阳分享的工程经验，<strong>研发阶段大约有2%至5%的问题，要到大规模生产制造时才能被发现</strong>。</p>\n<p>做十台、一百台时可能都没问题，做到一千台时，就可能有那么一两台机器人不太「听话」。</p>\n<div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/3564950efd1b7ed203316aab578e9813.png\" alt=\"\" loading=\"lazy\"><p></p></div>\n<p>甚至同一台机器人，关节用久了也会出现磨损，这就需要软件具备足够的容错能力。</p>\n<p>众擎成立刚满三年，其中两年半的时间，都在打磨产品的每一个细节。</p>\n<p>硬件上，自研核心关节覆盖力控行星、力控谐波、力控直线三种类型，兼顾爆发力、精度和使用寿命，目前已具备万台级量产交付能力。</p>\n<p>AI方面，众擎<strong>拥有超6000卡GPU级别的云端算力储备</strong>。</p>\n<p>众擎在本体、算法上积累的技术能力，也在逐步转化为生态伙伴可以直接使用的开发资源。</p>\n<p>此前，众擎已公开机器人结构描述文件（URDF）、强化学习训练工具和原生SDK，<strong>这次，众擎连自研大小脑的核心技术也要开放了！</strong></p>\n<p>先看大脑最新进展。</p>\n<p>众擎机器人CTO李力耘详细介绍了<strong>仿人脑架构EngineAI Awaken</strong>。</p>\n<div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/12c52e23e0596865a08287b8053ceeb4.png\" alt=\"\" loading=\"lazy\"><p></p></div>\n<p>该团队还构建了<strong>5万小时规模</strong>的人类全身移动操作数据集<strong>Awaken-Human</strong>，让人类动作数据直接参与机器人动作模型训练。</p>\n<p>当预训练中的人类全身数据从5000小时增加到5万小时，具身基础模型Awaken-HI在相应真机测试中的任务成功率，<strong>从56.7%提升到了90%</strong>。</p>\n<p>团队还观察到了组合泛化能力的涌现。</p>\n<p>众擎通过<strong>Awaken-Agent</strong>进行任务规划与调度，通过<strong>Awaken-RSI</strong>将执行过程中积累的经验转化为后续任务可复用的能力。</p>\n<p>小脑这边，众擎<strong>首发了行为基座模型EngineAI-BFM</strong>。</p>\n<div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/32fe759786fcca8a98f32d87d3cccf21.jpeg\" alt=\"\" loading=\"lazy\"><p></p></div>\n<p>据众擎机器人创始核心成员、运控负责人唐安南介绍，众擎做运控，围绕的是五个关键词：<strong>敏捷、安全、泛化、自主、开放</strong>。</p>\n<p>EngineAI-BFM正是支撑这些能力的技术底座。</p>\n<p>它从近5000小时、覆盖五类行为的人类动作数据中学习，<strong>可适配T800、轻量级人形机器人PM01等不同本体</strong>，支撑超过35公斤的稳定搬运。</p>\n<p>众擎团队还推出了城市复杂地形导航避障系统，面对自动扶梯、人流、强光干扰等复杂场景，已累计稳定运行超过200小时。</p>\n<p><strong>敲重点！</strong></p>\n<p>以上核心技术资产，众擎都准备拿出来和开发者共享。</p>\n<p>大脑方面，包括全身移动操作基础模型、评测基准、仿真环境及部分训练数据。</p>\n<p>小脑方面，包括高质量人类动作数据集、BFM模型权重与使用接口，以及感知、运控和避障能力API。</p>\n<p>基于众擎此前开放的机器人平台，开发者们已经玩出了不少新花样。</p>\n<p>苏黎世联邦理工学院博士研究生张翀，就用PM01教会了人形机器人像猴子一样荡云梯。</p>\n<p>双手换成被动式挂钩，头部装上激光雷达，通过强化学习和师生蒸馏，让机器人学会起跳抓杠、连续摆荡、跳下落地，全程无需外部动捕和预先建图。</p>\n<div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/0b6c7e784220eb219ca0d18bb5260eeb.jpeg\" alt=\"\" loading=\"lazy\"><p></p></div>\n<p><strong>15次真机测试，14次完整跑通，成功率达93%</strong>，连受力后会晃动的框架也没难住它。</p>\n<p>一家整机厂商未必会专门立项研究怎么让机器人荡云梯，但开放一个足够成熟的平台，就会有感兴趣的开发者把这件事做出来。</p>\n<p><strong>科研团队可以借此探索技术的边界，产业伙伴也能寻找更多商业机会。</strong></p>\n<h3>人形机器人这门生意，众擎打算怎么和伙伴一起做？</h3>\n<p>在众擎设想的生态里，一家企业不必具备从本体研发到应用开发、商业交付的所有能力，也能做成一门机器人生意。</p>\n<p>毕竟，造好一台机器人，和把机器人用好，是两件事。</p>\n<p><strong>众擎负责提升机器人的通用能力，至于这些能力还能玩出什么花样、做成什么生意，众擎把想象空间留给了生态伙伴。</strong></p>\n<p>赵同阳衡量生态价值的标准也很朴素：<strong>生态的价值，最终要看伙伴做成了什么</strong>。</p>\n<p>眼下，众擎的伙伴们已经给出了不同的答案。</p>\n<p><strong>众擎URKL全球人形机器人自由格斗联赛</strong>，给全球算法团队搭了一个同台竞技的擂台。</p>\n<p></p>",
+            "text": "人形机器人开发者集合！众擎开放大小脑，10亿产业级生态支持计划也来了\n田, 晏林 2026-11-27 22:07:33 来源： 量子位\n一支团队在真机上验证的成果，可以成为下一支团队继续开发的起点。\n晏林 发自 凹非寺\n量子位 | 公众号 QbitAI\n搞具身智能，有时候还真不是光有技术就够了。\n好不容易搞出一套算法，仿真里跑得飞起，想上真机试试吧，手边压根儿没有机器人。\n有的团队倒是在真机上跑通了，想找个真实场景检验一下技术成色，还得四处打听。\n还有一些团队已经走到了产品化阶段，万事俱备，就差客户了……\n仔细一琢磨，你缺的东西，没准儿别人手里正好有。只是大家鲜少有机会坐到一张桌子上好好聊。\n11月25日，在 2026众擎全球开发者大会 上，众擎机器人打算给伙伴们搭把手。\n众擎创始人兼CEO赵同阳认为， 人形机器人要走进千行万业，靠的是生态协同。\n众擎想做的，不光是让伙伴之间的资源对接起来，还要让技术成果能够接续。\n一支团队在真机上验证的成果，可以成为下一支团队继续开发的起点。\n甭管你带来的是一段代码、一台样机，还是一款产品、一个客户，都能在众擎生态里找到眼下最需要的支持。\n我们愿意把花了十年摸索出来的经验，手把手教给大家，陪着大家把平台用起来。\n会上，赵同阳还表示， 机器人、数据和算力都向伙伴们开放。\n为了让生态真正跑起来，众擎重磅宣布将联合河南投资集团、元禾辰坤等产业链基金，为优秀生态伙伴提供产业级支持。\n手笔还真不小， 10个小目标！\n10亿元产业支持，让CoRun转起来\n做了十年机器人，赵同阳对人形机器人产业的下一阶段给出判断：\n2027年，将是人形机器人从整机量产走向商业化应用的关键一年。\n量产考验的是能不能把每一台机器人造好，商业化考验的则是能不能把每一个客户服务好。\n这事儿还真不是一家机器人厂商能包圆的。\n光是工厂里的活儿，就有搬运、装配、上下料、巡检等各种类型。再往外看，智慧交通、商业服务、家庭生活，每个领域都有自己的技术门槛和行业Know-how。\n技术再强的机器人厂商，又能吃透多少个行业？\n赵同阳想得很清楚： 千行百业，不必行行都做 。\n仓库里的哪些活儿适合交给机器人，做物流的人更清楚；马路上的哪些工作可以交给机器人，做交管的人更有发言权。\n众擎只需把通用机器人平台搭好，让伙伴把各自的行业积累变成具身智能时代的新生意。\n当前，各大具身智能厂商都在探索不同的生态打法。\n国内有的从强化学习训练、真机部署工具切入，有的通过开放平台支持不同本体与应用适配，也有围绕端侧算力和开发工具做生态的。\n海外的Figure AI，则侧重于自研整机、模型与客户实际生产场景的结合。\n众擎这次还盯上一个环节：让技术成果在不同团队之间的接续和传递。\n他们提出了一套 跨团队协作与接续开发机制「CoRun」 ，还给衡量开放价值这件事定义了一个新单位， 共创单元「CoRunit」 。\n比如，一支团队在众擎全尺寸人形机器人T800上跑通了一套舞蹈动作，另一支团队独立复现后，又通过算法优化让机器人转身时更稳。\n新增贡献经过真机验证，就形成了一个CoRunit。\n等第三支、第四支团队加入进来，可以根据已有版本和测试结果，选择从哪一步开始开发。\n别小看这个变化。\n搞机器人，很多功夫恰恰花在了代码之外。\n哪些参数需要调整，哪些动作容易出错，什么样的测试条件下才能稳定复现，都是开发者一点点摸索出来的。\nCoRun强调的「价值传递」，就是让这些来之不易的技术成果和工程经验，成为后来者创新的起点。\n想让这样的共创持续发生，还得让更多团队有条件参与进来。\n毕竟，搞具身智能的门槛可不低。\n对于不少开发者而言，能不能拿到一台可以反复调试的机器人，就是一个技术想法能不能继续往下走的分水岭。\n为了让「CoRun」转起来，众擎计划未来五年，通过 「引擎计划」和产业基金 ，为全球开发者及生态伙伴提供10亿元产业级支持。\n具体覆盖 开发者支持、科研合作、人才培养和商业生态合作 四个方向。\n据众擎生态负责人赵飞宇介绍，除了提供开发教程、工具包和训练示例，众擎还将通过技术沙龙、真机开发体验城市行、黑客松等活动，给开发者创造交流和上机的机会。\n科研团队可以按课题需求申请设备借测，经专项评估还可获得设备捐赠，也能与众擎联合开展课题研究、共建实验室。\n人才培养方面，从一门课程、一项实验、一道赛题入手，众擎将与院校共建真机实训课程，开展师资培训、机器人竞赛和能力认证。\n技术跑通了，想拿到市场上闯一闯，众擎也能搭把手。\n前期做PoC（概念验证），可按项目评估提供样机支持；到了商业化阶段，可以共享商机、共同打磨方案，还能探索设备金融租赁、 择优对接众擎直投及产业链基金 。\n10亿元产业级支持的背后，赵同阳还在算一笔更长远的账。\n他希望借助产投一体的方式，把简单的商业合作变成长期的共同成长，让整个生态产生网络效应。\n伙伴越多，机器人能解锁的应用就越多；场景越丰富，积累的数据就越充分；技术能力越来越强，又能吸引更多伙伴加入。\n这个循环一旦转起来，推动人形机器人能力边界不断扩大的，就不只是众擎自己的研发团队了。\n众擎拿什么支撑整个生态？\n开发者能在机器人身上玩出多少新花样，取决于众擎交到他们手里的技术底座有多强。\n而想让这些创新成果被更多团队复用，光是机器人能力强还不够，本体的一致性也得有保障。\n总不能一套算法在这台机器人上跑得好好的，换台同型号的机器，又得重新调一遍吧？\n按照赵同阳分享的工程经验， 研发阶段大约有2%至5%的问题，要到大规模生产制造时才能被发现 。\n做十台、一百台时可能都没问题，做到一千台时，就可能有那么一两台机器人不太「听话」。\n甚至同一台机器人，关节用久了也会出现磨损，这就需要软件具备足够的容错能力。\n众擎成立刚满三年，其中两年半的时间，都在打磨产品的每一个细节。\n硬件上，自研核心关节覆盖力控行星、力控谐波、力控直线三种类型，兼顾爆发力、精度和使用寿命，目前已具备万台级量产交付能力。\nAI方面，众擎 拥有超6000卡GPU级别的云端算力储备 。\n众擎在本体、算法上积累的技术能力，也在逐步转化为生态伙伴可以直接使用的开发资源。\n此前，众擎已公开机器人结构描述文件（URDF）、强化学习训练工具和原生SDK， 这次，众擎连自研大小脑的核心技术也要开放了！\n先看大脑最新进展。\n众擎机器人CTO李力耘详细介绍了 仿人脑架构EngineAI Awaken 。\n该团队还构建了 5万小时规模 的人类全身移动操作数据集 Awaken-Human ，让人类动作数据直接参与机器人动作模型训练。\n当预训练中的人类全身数据从5000小时增加到5万小时，具身基础模型Awaken-HI在相应真机测试中的任务成功率， 从56.7%提升到了90% 。\n团队还观察到了组合泛化能力的涌现。\n众擎通过 Awaken-Agent 进行任务规划与调度，通过 Awaken-RSI 将执行过程中积累的经验转化为后续任务可复用的能力。\n小脑这边，众擎 首发了行为基座模型EngineAI-BFM 。\n据众擎机器人创始核心成员、运控负责人唐安南介绍，众擎做运控，围绕的是五个关键词： 敏捷、安全、泛化、自主、开放 。\nEngineAI-BFM正是支撑这些能力的技术底座。\n它从近5000小时、覆盖五类行为的人类动作数据中学习， 可适配T800、轻量级人形机器人PM01等不同本体 ，支撑超过35公斤的稳定搬运。\n众擎团队还推出了城市复杂地形导航避障系统，面对自动扶梯、人流、强光干扰等复杂场景，已累计稳定运行超过200小时。\n敲重点！\n以上核心技术资产，众擎都准备拿出来和开发者共享。\n大脑方面，包括全身移动操作基础模型、评测基准、仿真环境及部分训练数据。\n小脑方面，包括高质量人类动作数据集、BFM模型权重与使用接口，以及感知、运控和避障能力API。\n基于众擎此前开放的机器人平台，开发者们已经玩出了不少新花样。\n苏黎世联邦理工学院博士研究生张翀，就用PM01教会了人形机器人像猴子一样荡云梯。\n双手换成被动式挂钩，头部装上激光雷达，通过强化学习和师生蒸馏，让机器人学会起跳抓杠、连续摆荡、跳下落地，全程无需外部动捕和预先建图。\n15次真机测试，14次完整跑通，成功率达93% ，连受力后会晃动的框架也没难住它。\n一家整机厂商未必会专门立项研究怎么让机器人荡云梯，但开放一个足够成熟的平台，就会有感兴趣的开发者把这件事做出来。\n科研团队可以借此探索技术的边界，产业伙伴也能寻找更多商业机会。\n人形机器人这门生意，众擎打算怎么和伙伴一起做？\n在众擎设想的生态里，一家企业不必具备从本体研发到应用开发、商业交付的所有能力，也能做成一门机器人生意。\n毕竟，造好一台机器人，和把机器人用好，是两件事。\n众擎负责提升机器人的通用能力，至于这些能力还能玩出什么花样、做成什么生意，众擎把想象空间留给了生态伙伴。\n赵同阳衡量生态价值的标准也很朴素： 生态的价值，最终要看伙伴做成了什么 。\n眼下，众擎的伙伴们已经给出了不同的答案。\n众擎URKL全球人形机器人自由格斗联赛 ，给全球算法团队搭了一个同台竞技的擂台。",
+            "lead": "人形机器人开发者集合！众擎开放大小脑，10亿产业级生态支持计划也来了\n田, 晏林 2026-11-27 22:07:33 来源： 量子位\n一支团队在真机上验证的成果，可以成为下一支团队继续开发的起点。\n晏林 发自 凹非寺\n量子位 | 公众号 QbitAI\n搞具身智能，有时候还真不是光有技术就够了。\n好不容易搞出一套算法，仿真里跑得飞起，想上真机试试吧，手边压根儿没有机器人。\n有的团队倒是在真机上跑通了，想找个真实场景检验一下技术成色，还得四处打听。\n还有一些团队已经走到了产品化阶段，万事俱备，就差客户了……\n仔细一琢磨，你缺的东西，没准儿别人手里正好有。只是大家鲜少有机会坐到一张桌子上好好聊。",
+            "chars": 6499,
+            "shown": 3998,
+            "truncated": true
+          },
+          "categories": [
+            "资讯",
+            "众擎机器人",
+            "具身生态",
+            "算法"
+          ],
+          "author": "田, 晏林",
+          "lang": "zh",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "news",
+          "metrics": {},
+          "quality": 9,
+          "score": 20.75,
+          "category": "apps",
+          "subcategory": "life",
+          "practical": 4,
+          "slug": "69f19f1c8e9a",
+          "action": 4,
+          "rank": 15.4,
+          "tags": [
+            "local",
+            "money"
+          ]
+        },
+        {
+          "sourceId": "lcz-media",
+          "sourceName": "抡锤者 AI 音视频画图",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "apps",
+          "categories": [],
+          "author": "koala",
+          "id": "3363",
+          "title": "【雷神剧场】《恭喜官人晋升》后宫篇 EP01",
+          "url": "https://lcz.me/topic/3363",
+          "published": "2026-11-27T11:44:54.129Z",
+          "summary": "视频灵感来自@perter 大佬的一次 祝福 看到几个美女好生喜欢，于是突发奇想，将他们收为后宫，养着慢慢看。 创作过程当中也有很多有瑕疵的地方，推翻了2次，做了3遍，才到达稍微能看的程度，大家轻轻拍，看了视频有什么更好的灵感，欢迎留言沟通，也不要忘记一键三连，第一时间得到续集提示。 硬件支持7900XTX，Ubuntu，MiniMaxH3，官流，8步加速，0.7mp。总时长72小时。 再次感谢@perter 大佬对后宫团的支持。 Youtube Video 前情回顾 Youtube Video",
+          "metrics": {
+            "points": 3,
+            "comments": 0,
+            "views": 56
+          },
+          "excellent": false,
+          "content": {
+            "html": "<p>视频灵感来自@perter 大佬的一次<a href=\"https://lcz.me/topic/3248/3\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">祝福</a>看到几个美女好生喜欢，于是突发奇想，将他们收为后宫，养着慢慢看。</p>\n<p>创作过程当中也有很多有瑕疵的地方，推翻了2次，做了3遍，才到达稍微能看的程度，大家轻轻拍，看了视频有什么更好的灵感，欢迎留言沟通，也不要忘记一键三连，第一时间得到续集提示。</p>\n<p>硬件支持7900XTX，Ubuntu，MiniMaxH3，官流，8步加速，0.7mp。总时长72小时。</p>\n<p>再次感谢@perter 大佬对后宫团的支持。</p>\n<p><a href=\"https://youtu.be/f5AFK9W_hMY\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><i></i>Youtube Video</a></p>\n<div><div></div></div>\n<p></p>\n<p><img src=\"https://upload.lcz.me/uploads/0fa6d956-cb5f-4c55-8efd-32b7d63ca640.png\" alt=\"四位夫人_EP01_V3_1795779551758.png\" loading=\"lazy\"><br><img src=\"https://upload.lcz.me/uploads/6be3fb21-8f0e-4de3-a413-9dd221640f1a.png\" alt=\"四位夫人_EP01_V3_1795779566891.png\" loading=\"lazy\"><br><img src=\"https://upload.lcz.me/uploads/4dffb70d-a88d-4e3d-abd0-e0bdf1b7aeac.png\" alt=\"四位夫人_EP01_V3_1795779593531.png\" loading=\"lazy\"><br><img src=\"https://upload.lcz.me/uploads/23588631-6d37-43a7-8376-46c3d470724c.png\" alt=\"四位夫人_EP01_V3_1795779623629.png\" loading=\"lazy\"></p>\n<p>前情回顾<br><a href=\"https://www.youtube.com/watch?v=ZxFa-hjbnag\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><i></i>Youtube Video</a></p>\n<div><div></div></div>\n<p></p>",
+            "text": "视频灵感来自@perter 大佬的一次 祝福 看到几个美女好生喜欢，于是突发奇想，将他们收为后宫，养着慢慢看。\n创作过程当中也有很多有瑕疵的地方，推翻了2次，做了3遍，才到达稍微能看的程度，大家轻轻拍，看了视频有什么更好的灵感，欢迎留言沟通，也不要忘记一键三连，第一时间得到续集提示。\n硬件支持7900XTX，Ubuntu，MiniMaxH3，官流，8步加速，0.7mp。总时长72小时。\n再次感谢@perter 大佬对后宫团的支持。\nYoutube Video\n前情回顾\nYoutube Video",
+            "lead": "视频灵感来自@perter 大佬的一次 祝福 看到几个美女好生喜欢，于是突发奇想，将他们收为后宫，养着慢慢看。\n创作过程当中也有很多有瑕疵的地方，推翻了2次，做了3遍，才到达稍微能看的程度，大家轻轻拍，看了视频有什么更好的灵感，欢迎留言沟通，也不要忘记一键三连，第一时间得到续集提示。\n硬件支持7900XTX，Ubuntu，MiniMaxH3，官流，8步加速，0.7mp。总时长72小时。\n再次感谢@perter 大佬对后宫团的支持。\nYoutube Video\n前情回顾\nYoutube Video",
+            "chars": 266,
+            "shown": 266,
+            "truncated": false
+          },
+          "quality": 8,
+          "score": 15.75,
+          "category": "apps",
+          "subcategory": "creation",
+          "practical": 1,
+          "slug": "a753b79cc20a",
+          "action": 1,
+          "rank": 9.6,
+          "tags": [
+            "generate"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "label": "工具玩法",
+      "items": [
+        {
+          "sourceId": "lobsters-ai",
+          "sourceName": "Lobsters AI",
+          "title": "Curb impacts of AI on programming to maintain EU sovereignty",
+          "url": "https://www.draketo.de/software/curb-ai-impact",
+          "id": "https://lobste.rs/s/lmxpfo",
+          "published": "2026-11-27T07:00:03.000Z",
+          "summary": "UP | HOME | CONTENT Wissen Software Politik Anderes Kreatives Rollenspiel (dark mode) 🌓︎ Let’s assume that LLMs actually speed up programming and that the EU cannot catch up to AI coding tools from the US and China. If this is true, what can we do in the EU to close the gap enough that efficiency gains from LLMs stay…",
+          "content": {
+            "html": "&lt;!DOCTYPE html&gt;<div><a href=\"https://www.draketo.de/software.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">UP</a>|<a href=\"https://www.draketo.de/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">HOME</a>|<a href=\"https://www.draketo.de/software/curb-ai-impact#content\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CONTENT</a></div>\n<div><div><div><div><a href=\"https://www.draketo.de/wissen.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Wissen</a><a href=\"https://www.draketo.de/software.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Software</a><a href=\"https://www.draketo.de/politik.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Politik</a><a href=\"https://www.draketo.de/index.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"></a><a href=\"https://www.draketo.de/anderes.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Anderes</a><a href=\"https://www.draketo.de/kreatives.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Kreatives</a><a href=\"https://www.draketo.de/rollenspiel.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Rollenspiel</a></div></div></div></div>\n<div><a href=\"https://www.draketo.de/software/curb-ai-impact\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">(dark mode)<span>🌓︎</span></a></div>\n<p>Let’s<b>assume</b>that LLMs<b>actually speed up programming</b>and that the\nEU cannot catch up to AI coding tools from the US and China. If this\nis true, what can we do in the EU to<b>close the gap</b>enough that\nefficiency gains from LLMs stay lower than their compute cost?<br><i>In short: make secure programming easier for people\nagain.</i>🇪🇺</p>\n<div><p>Improve programming tooling, nurture template libraries, extend and\nintegrate documentation, support maintainers, foster standardized\ninterfaces, champion responsiveness, de-bloat stacks.</p></div>\n<div><a href=\"https://www.draketo.de/software/curb-ai-impact.pdf\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://www.draketo.de/assets/pdf-thumbnail.png\" alt=\"\" loading=\"lazy\"></a><br><a href=\"https://www.draketo.de/software/curb-ai-impact.pdf\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">PDF</a>(drucken)</div>\n<div><h3>Practical steps for sovereignty</h3><div><p>Practical steps at moderate cost:<sup><a href=\"https://www.draketo.de/software/curb-ai-impact#fn.1\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">1</a></sup></p><ul><li>Enhance copyleft<b>compiler error messages</b>(in<a href=\"https://gcc.gnu.org/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">gcc</a>?)</li><li>Improve<b>responsiveness</b>, e.g. reduce keyboard to screen latency. –<i>mlinksva</i></li><li>Support Free Software<b>maintainers</b>and foster infrastructure\nmaintenance in the EU. If you know a project by heart, you can fix\nit much more easily.</li><li>Package and improve searchable<b>documentation</b>(via<a href=\"https://www.gnu.org/software/texinfo/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">texinfo</a>?)<sup><a href=\"https://www.draketo.de/software/curb-ai-impact#fn.2\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">2</a></sup><sup>,</sup><sup><a href=\"https://www.draketo.de/software/curb-ai-impact#fn.3\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">3</a></sup>and spread<b>discoverability of documentation</b>akin\nto IntelliJ for Java and<a href=\"https://www.gnu.org/s/emacs\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Emacs</a>for elisp, but for most languages,\nframeworks, and libraries (via<i>texinfo-lookup</i>?).</li><li>Provide<b>templates</b>for common tasks like infrastructure setup (with<a href=\"https://www.proxmox.com/en/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">proxmox</a>?), adding an API endpoint, writing a report, etc. as\nexecutable documentation.</li><li><b>Simplify</b>stacks and frameworks, spread common development\npractices, and strengthen<b>security ergonomics</b>(with<a href=\"https://www.draketo.de/software/bsi-grundschutz.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">BSI\nGrundschutz</a>?).</li><li>Work towards more<b>standardized interfaces</b>between software\ncomponents. Maintain reliable<b>interface generation</b>from\nspecifications for different languages. Build interface contracts as\nthe common denominator between different services, extendable for\nspecifics. –<i>Elias Probst</i><sup><a href=\"https://www.draketo.de/software/curb-ai-impact#fn.4\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">4</a></sup></li><li>Create more<b>linters</b>(reuse<i>SonarQube Rules</i>?).</li></ul></div></div>\n<div><h3>Why we need these steps</h3><div><p>These steps make software development more resilient against changes\ndue to LLMs.</p><blockquote><p>„What if the<a href=\"https://www.youtube.com/watch?v=mtNbPExBe_Y&amp;t=1122\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">worries by The Morpheus hold true</a>and<i>the EU cannot\nbecome competitive in LLM development</i>, because USA and China\nmonopolized LLM development skill and infrastructure advantages? Which\nsteps can—cheaply—limit the impact of LLMs so our software\ndevelopment stays competitive?“</p></blockquote><p>I asked this question<a href=\"https://rollenspiel.social/@ArneBab/116827324007470571\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">in Mastodon</a>. To contribute, please answer the\nquestion there.</p><p>AI may still fail as a bursting bubble and take down large parts of\nthe US economy with it (and more), but if it does not, the EU should\nbe prepared to curb its impact—best by already having taken steps\nlike the ones shown here.</p><p>And if the AI bubble does not burst, these steps will still help\nsoftware development in the EU. Money put into them<b>never goes to\nwaste</b>(it also helps the ones who use LLMs for coding, just not as\nmuch), so I think that the EU should support these steps with at least\n1% of the overall funding AI companies receive.<sup><a href=\"https://www.draketo.de/software/curb-ai-impact#fn.5\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">5</a></sup></p></div></div>\n<div><h3>How to do it?</h3><div><ul><li>Increase funding of the<a href=\"https://nlnet.nl/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">nlnet foundation</a>via EU Horizon 2020 and followups.</li><li>Increase funding of the<a href=\"https://www.sovereign.tech/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Sovereign Tech Agency</a>.</li><li>Adhere to and require<a href=\"https://publiccode.eu/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Public Money Public Code</a>.</li><li>Fund the<a href=\"https://fsfe.org/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Free Software Foundation Europe</a>.<sup><a href=\"https://www.draketo.de/software/curb-ai-impact#fn.6\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">6</a></sup></li></ul><p>Also support<a href=\"https://www.draketo.de/software/language-empiric.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">empirical programming language research</a>. To improve our\nunderstanding how programming works best for humans.</p></div></div>\n<div><h3>Footnotes:</h3><div><div><sup><a href=\"https://www.draketo.de/software/curb-ai-impact#fnr.1\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">1</a></sup><div><p>compared to the 1 trillion VC funding for US-based AI companies\nand who knows how much for Chinese ones.</p></div></div></div></div>\n<div><sup><a href=\"https://www.draketo.de/software/curb-ai-impact#fnr.2\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">2</a></sup><div><p>Improve search in documentation and add more examples; collect\nand integrate working examples in primary documentation. Piecing\ntogether info is where most people give up. –<i>thanks to\nlibewa</i>.</p></div></div>\n<div><sup><a href=\"https://www.draketo.de/software/curb-ai-impact#fnr.3\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">3</a></sup><div><p>Package more documentation as texinfo. Write automatic\nconvertersions to texinfo for different documentation tools.\nImprove man-page integration. Since I started using local info\nlookup via texinfo for writing Guile Scheme, I wish that were\navailable for every tool.</p></div></div>\n<div><sup><a href=\"https://www.draketo.de/software/curb-ai-impact#fnr.4\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">4</a></sup><div><p><a href=\"https://openapis.org/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">OpenAPI</a>in the web-world is something in the right direction,\nbut I feel like this is also sorely needed on many other levels.\n–<i>thanks to Elias Probst</i>.</p></div></div>\n<div><sup><a href=\"https://www.draketo.de/software/curb-ai-impact#fnr.5\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">5</a></sup><div><p></p></div></div>",
+            "text": "UP | HOME | CONTENT\nWissen Software Politik Anderes Kreatives Rollenspiel\n(dark mode) 🌓︎\nLet’s assume that LLMs actually speed up programming and that the\nEU cannot catch up to AI coding tools from the US and China. If this\nis true, what can we do in the EU to close the gap enough that\nefficiency gains from LLMs stay lower than their compute cost?\nIn short: make secure programming easier for people\nagain. 🇪🇺\nImprove programming tooling, nurture template libraries, extend and\nintegrate documentation, support maintainers, foster standardized\ninterfaces, champion responsiveness, de-bloat stacks.\nPDF (drucken)\nPractical steps for sovereignty\nPractical steps at moderate cost: 1\nEnhance copyleft compiler error messages (in gcc ?)\nImprove responsiveness , e.g. reduce keyboard to screen latency. – mlinksva\nSupport Free Software maintainers and foster infrastructure\nmaintenance in the EU. If you know a project by heart, you can fix\nit much more easily.\nPackage and improve searchable documentation (via texinfo ?) 2 , 3 and spread discoverability of documentation akin\nto IntelliJ for Java and Emacs for elisp, but for most languages,\nframeworks, and libraries (via texinfo-lookup ?).\nProvide templates for common tasks like infrastructure setup (with proxmox ?), adding an API endpoint, writing a report, etc. as\nexecutable documentation.\nSimplify stacks and frameworks, spread common development\npractices, and strengthen security ergonomics (with BSI\nGrundschutz ?).\nWork towards more standardized interfaces between software\ncomponents. Maintain reliable interface generation from\nspecifications for different languages. Build interface contracts as\nthe common denominator between different services, extendable for\nspecifics. – Elias Probst 4\nCreate more linters (reuse SonarQube Rules ?).\nWhy we need these steps\nThese steps make software development more resilient against changes\ndue to LLMs.\n„What if the worries by The Morpheus hold true and the EU cannot\nbecome competitive in LLM development , because USA and China\nmonopolized LLM development skill and infrastructure advantages? Which\nsteps can—cheaply—limit the impact of LLMs so our software\ndevelopment stays competitive?“\nI asked this question in Mastodon . To contribute, please answer the\nquestion there.\nAI may still fail as a bursting bubble and take down large parts of\nthe US economy with it (and more), but if it does not, the EU should\nbe prepared to curb its impact—best by already having taken steps\nlike the ones shown here.\nAnd if the AI bubble does not burst, these steps will still help\nsoftware development in the EU. Money put into them never goes to\nwaste (it also helps the ones who use LLMs for coding, just not as\nmuch), so I think that the EU should support these steps with at least\n1% of the overall funding AI companies receive. 5\nHow to do it?\nIncrease funding of the nlnet foundation via EU Horizon 2020 and followups.\nIncrease funding of the Sovereign Tech Agency .\nAdhere to and require Public Money Public Code .\nFund the Free Software Foundation Europe . 6\nAlso support empirical programming language research . To improve our\nunderstanding how programming works best for humans.\nFootnotes:\n1 compared to the 1 trillion VC funding for US-based AI companies\nand who knows how much for Chinese ones.\n2 Improve search in documentation and add more examples; collect\nand integrate working examples in primary documentation. Piecing\ntogether info is where most people give up. – thanks to\nlibewa .\n3 Package more documentation as texinfo. Write automatic\nconvertersions to texinfo for different documentation tools.\nImprove man-page integration. Since I started using local info\nlookup via texinfo for writing Guile Scheme, I wish that were\navailable for every tool.\n4 OpenAPI in the web-world is something in the right direction,\nbut I feel like this is also sorely needed on many other levels.\n– thanks to Elias Probst .\n5",
+            "lead": "UP | HOME | CONTENT\nWissen Software Politik Anderes Kreatives Rollenspiel\n(dark mode) 🌓︎\nLet’s assume that LLMs actually speed up programming and that the\nEU cannot catch up to AI coding tools from the US and China. If this\nis true, what can we do in the EU to close the gap enough that\nefficiency gains from LLMs stay lower than their compute cost?\nIn short: make secure programming easier for people\nagain. 🇪🇺",
+            "chars": 4312,
+            "shown": 3987,
+            "truncated": true
+          },
+          "categories": [
+            "ai"
+          ],
+          "author": "draketo.de via aggsol",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "tools",
+          "metrics": {},
+          "quality": 6,
+          "score": 14.75,
+          "category": "tools",
+          "subcategory": "interface",
+          "practical": 3,
+          "slug": "366ceab20ee1",
+          "action": 5,
+          "rank": 14,
+          "tags": [
+            "free"
+          ]
+        },
+        {
+          "sourceId": "hn-show-ai",
+          "sourceName": "Show HN (AI)",
+          "title": "Show HN: I restored Palm's last device, and brought its OS to other platforms",
+          "url": "https://www.webosarchive.org/pivot/2026/11/27/the-story-so-far/",
+          "id": "https://news.ycombinator.com/item?id=50667452",
+          "published": "2026-11-27T14:37:02.000Z",
+          "summary": "webOS Community Edition 3.2.0 is the first OTA Update for Palm/HP's TouchPad, modernizing a 15-year old device. Lunacy is its sibling: the webOS experience, and apps, on Android. Luna DE is a developer tool that brings the webOS app contract to Mac, Windows and Linux as a SDK-compatible Electron app. Comments URL: htt…",
+          "content": {
+            "html": "<p>webOS Community Edition 3.2.0 is the first OTA Update for Palm/HP's TouchPad, modernizing a 15-year old device. Lunacy is its sibling: the webOS experience, and apps, on Android. Luna DE is a developer tool that brings the webOS app contract to Mac, Windows and Linux as a SDK-compatible Electron app.</p>\n<hr><p>Comments URL:<a href=\"https://news.ycombinator.com/item?id=50667452\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://news.ycombinator.com/item?id=50667452</a></p>\n<p>Points: 34</p>\n<p># Comments: 7</p>",
+            "text": "webOS Community Edition 3.2.0 is the first OTA Update for Palm/HP's TouchPad, modernizing a 15-year old device. Lunacy is its sibling: the webOS experience, and apps, on Android. Luna DE is a developer tool that brings the webOS app contract to Mac, Windows and Linux as a SDK-compatible Electron app.\nComments URL: https://news.ycombinator.com/item?id=50667452\nPoints: 34\n# Comments: 7",
+            "lead": "webOS Community Edition 3.2.0 is the first OTA Update for Palm/HP's TouchPad, modernizing a 15-year old device. Lunacy is its sibling: the webOS experience, and apps, on Android. Luna DE is a developer tool that brings the webOS app contract to Mac, Windows and Linux as a SDK-compatible Electron app.\nComments URL: https://news.ycombinator.com/item?id=50667452",
+            "chars": 392,
+            "shown": 392,
+            "truncated": false
+          },
+          "categories": [],
+          "author": "codepoet80",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "tools",
+          "metrics": {
+            "points": 34,
+            "comments": 7
+          },
+          "quality": 9,
+          "score": 19.06,
+          "category": "tools",
+          "subcategory": "coding",
+          "practical": 2,
+          "slug": "ffa4614faf86",
+          "action": 3,
+          "rank": 13.8,
+          "tags": [
+            "lowspec"
+          ]
+        },
+        {
+          "sourceId": "gh-ecosystem",
+          "sourceName": "GitHub 检索（生态项目更新）",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "oss",
+          "categories": [
+            "ai",
+            "cli",
+            "command-line-tool",
+            "developer-tools",
+            "embeddings"
+          ],
+          "author": "r14dd",
+          "id": "1254275643",
+          "title": "r14dd/patent",
+          "url": "https://github.com/r14dd/patent",
+          "published": "2026-11-27T19:34:44.000Z",
+          "summary": "A prior-art search for your code ideas — has this dev tool already been shipped? (★ 569 · Rust · ai / cli / command-line-tool / developer-tools)",
+          "metrics": {
+            "stars": 569
+          },
+          "content": {
+            "html": "<p>&lt;p align=\"center\"&gt; &lt;img src=\"https://raw.githubusercontent.com/r14dd/patent/main/.github/logo-light.svg\" width=\"600\" alt=\"patent\"&gt; &lt;/p&gt;</p>\n<h3>patent</h3>\n<p>&lt;p align=\"center\"&gt; &lt;a href=\"https://github.com/r14dd/patent/actions/workflows/ci.yml\"&gt;&lt;img src=\"https://github.com/r14dd/patent/actions/workflows/ci.yml/badge.svg\" alt=\"CI\"&gt;&lt;/a&gt; &lt;a href=\"https://crates.io/crates/patent\"&gt;&lt;img src=\"https://img.shields.io/crates/v/patent.svg?logo=rust\" alt=\"crates.io\"&gt;&lt;/a&gt; &lt;a href=\"https://docs.rs/patent\"&gt;&lt;img src=\"https://docs.rs/patent/badge.svg\" alt=\"docs.rs\"&gt;&lt;/a&gt; &lt;a href=\"#license\"&gt;&lt;img src=\"https://img.shields.io/badge/license-MIT%20OR%20Apache--2.0-blue.svg\" alt=\"license\"&gt;&lt;/a&gt; &lt;a href=\"https://www.rust-lang.org\"&gt;&lt;img src=\"https://img.shields.io/badge/MSRV-1.92%2B-lightgray.svg?logo=rust\" alt=\"MSRV\"&gt;&lt;/a&gt; &lt;a href=\"https://ratatui.rs/\"&gt;&lt;img src=\"https://ratatui.rs/built-with-ratatui/badge.svg\" alt=\"Built With Ratatui\"&gt;&lt;/a&gt; &lt;/p&gt;</p>\n<p><code>patent</code>takes a plain-English dev-tool idea and searches 19 sources — package registries (crates.io, npm, PyPI, Homebrew, Packagist, Hex, and more) plus GitHub and Hacker News. Results are ranked by semantic similarity and summarised as<strong>Open</strong>,<strong>Crowded</strong>, or<strong>Saturated</strong>.</p>\n<p>&lt;p align=\"center\"&gt; &lt;img src=\"https://vhs.charm.sh/vhs-2nc9g3XRuTkvUhFxuk3EJh.gif\" alt=\"patent demo\" width=\"720\"&gt; &lt;/p&gt;</p>\n<p>&gt; Like a patent search, but for code. It finds prior art, yet, never certifies absence.</p>\n<h4>Why patent?</h4>\n<p>Before you build a dev tool,<code>patent</code>checks whether it already exists. One query fans out across 19 sources at once — package registries plus GitHub and Hacker News — instead of you searching each by hand. Matches are ranked locally by *semantic* similarity (not keyword match), so close-but-differently-worded prior art still surfaces, and the verdict is scoped to what was actually found — an honest \"keep looking\" rather than a hallucinated \"this is novel.\"</p>\n<h4>How it works</h4>\n<ol><li><strong>Source selection</strong>—<code>patent</code>picks the registries relevant to your idea; GitHub and Hacker News are always searched.</li><li><strong>Semantic ranking</strong>— every match is embedded locally with<a href=\"https://github.com/Anush008/fastembed-rs\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><code>fastembed</code></a>and ranked by cosine similarity to your idea.</li><li><strong>Maintenance signal</strong>— where a source publishes one, a match shows when it was last updated, and anything untouched for 2+ years is flagged<code>⚑</code>. Stale matches are flagged, never demoted: an abandoned tool is still proof the idea has been built. A match with no date is one no source published a date for — not a stale one. (If two sources return the same URL, the surviving row borrows whichever date was found.)</li><li><strong>Verdict</strong>— an LLM summarises the landscape into one of three levels, *floored* against the similarity data so it can never under-rate a populated space:</li></ol>\n<ul><li>🟢<strong>Open</strong>— nothing close found in the sources checked.</li><li>🟡<strong>Crowded</strong>— a few adjacent tools exist.</li><li>🔴<strong>Saturated</strong>— the space is densely populated.</li></ul>\n<h4>What a clean result means</h4>\n<p><code>patent</code>can prove something<strong>exists</strong>; it can never prove something<strong>doesn't</strong>— it only searched some sources. Every verdict is scoped to \"found in the sources checked,\" the list of sources checked is always shown, and any selected source that failed is surfaced as \"not reached.\" A clean<strong>Open</strong>result means *keep looking before you commit*, not a green light.</p>\n<h4>Install</h4>\n<p><strong>macOS / Linux</strong>— one command, no Rust needed:</p>\n<pre><code>curl --proto '=https' --tlsv1.2 -LsSf https://github.com/r14dd/patent/releases/latest/download/patent-installer.sh | sh</code></pre>\n<p><strong>Homebrew:</strong></p>\n<pre><code>brew install r14dd/patent/patent</code></pre>\n<p><strong>Windows</strong>— grab<code>patent-x86_64-pc-windows-msvc.zip</code>from the<a href=\"https://github.com/r14dd/patent/releases\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">releases page</a>and unzip it.</p>\n<p><strong>From source</strong>(requires Rust):</p>\n<pre><code>cargo install patent</code></pre>\n<p>&lt;details&gt; &lt;summary&gt;Build notes (Linux / glibc)&lt;/summary&gt;</p>\n<p><strong>Linux build deps</strong>— needed before<code>cargo install</code>:</p>\n<ul><li>Fedora / RHEL:<code>sudo dnf install openssl-devel gcc-c++</code></li><li>Ubuntu / Debian:<code>sudo apt install libssl-dev g++</code></li></ul>\n<p><strong>glibc 2.38+</strong>— both the prebuilt binaries and a from-source<code>cargo install</code> require glibc 2.38 or newer (Ubuntu 22.10+, Debian 13+, Fedora 38+). The bundled ONNX Runtime that powers local semantic search depends on it.…</p>",
+            "text": "patent\npatent takes a plain-English dev-tool idea and searches 19 sources — package registries (crates.io, npm, PyPI, Homebrew, Packagist, Hex, and more) plus GitHub and Hacker News. Results are ranked by semantic similarity and summarised as Open , Crowded , or Saturated .\n> Like a patent search, but for code. It finds prior art, yet, never certifies absence.\nWhy patent?\nBefore you build a dev tool, patent checks whether it already exists. One query fans out across 19 sources at once — package registries plus GitHub and Hacker News — instead of you searching each by hand. Matches are ranked locally by *semantic* similarity (not keyword match), so close-but-differently-worded prior art still surfaces, and the verdict is scoped to what was actually found — an honest \"keep looking\" rather than a hallucinated \"this is novel.\"\nHow it works\nSource selection — patent picks the registries relevant to your idea; GitHub and Hacker News are always searched.\nSemantic ranking — every match is embedded locally with fastembed and ranked by cosine similarity to your idea.\nMaintenance signal — where a source publishes one, a match shows when it was last updated, and anything untouched for 2+ years is flagged ⚑ . Stale matches are flagged, never demoted: an abandoned tool is still proof the idea has been built. A match with no date is one no source published a date for — not a stale one. (If two sources return the same URL, the surviving row borrows whichever date was found.)\nVerdict — an LLM summarises the landscape into one of three levels, *floored* against the similarity data so it can never under-rate a populated space:\n🟢 Open — nothing close found in the sources checked.\n🟡 Crowded — a few adjacent tools exist.\n🔴 Saturated — the space is densely populated.\nWhat a clean result means\npatent can prove something exists ; it can never prove something doesn't — it only searched some sources. Every verdict is scoped to \"found in the sources checked,\" the list of sources checked is always shown, and any selected source that failed is surfaced as \"not reached.\" A clean Open result means *keep looking before you commit*, not a green light.\nInstall\nmacOS / Linux — one command, no Rust needed:\ncurl --proto '=https' --tlsv1.2 -LsSf https://github.com/r14dd/patent/releases/latest/download/patent-installer.sh | sh\nHomebrew:\nbrew install r14dd/patent/patent\nWindows — grab patent-x86_64-pc-windows-msvc.zip from the releases page and unzip it.\nFrom source (requires Rust):\ncargo install patent\nBuild notes (Linux / glibc)\nLinux build deps — needed before cargo install :\nFedora / RHEL: sudo dnf install openssl-devel gcc-c++\nUbuntu / Debian: sudo apt install libssl-dev g++\nglibc 2.38+ — both the prebuilt binaries and a from-source cargo install require glibc 2.38 or newer (Ubuntu 22.10+, Debian 13+, Fedora 38+). The bundled ONNX Runtime that powers local semantic search depends on it.…",
+            "lead": "patent",
+            "chars": 7811,
+            "shown": 3995,
+            "truncated": true
+          },
+          "quality": 8,
+          "score": 19.4,
+          "category": "tools",
+          "subcategory": "coding",
+          "practical": 1,
+          "slug": "bb12d8de6ae2",
+          "action": 2,
+          "rank": 11.2,
+          "tags": []
+        },
+        {
+          "sourceId": "hn-newest",
+          "sourceName": "Hacker News (AI)",
+          "title": "Ask HN: Where is all the amazing AI-generated software?",
+          "url": "https://news.ycombinator.com/item?id=50643767",
+          "id": "https://news.ycombinator.com/item?id=50643767",
+          "published": "2026-11-25T16:02:31.000Z",
+          "summary": "I feel like the most amazing thing about AI so far is AI itself. Is anyone using a brand-new tool that was not available 5 years ago? I see people decompiling/reverse engineering the Adobe suite, which is an amazing feat, but the resulting software itself is barely usable. Since it’s so easy to build anything now, I g…",
+          "content": {
+            "html": "<p>I feel like the most amazing thing about AI so far is AI itself.<p>Is anyone using a brand-new tool that was not available 5 years ago?<p>I see people decompiling/reverse engineering the Adobe suite, which is an amazing feat, but the resulting software itself is barely usable.<p>Since it’s so easy to build anything now, I get a sense we’re seeing a proliferation of one-off, proof-of-concept projects, where great software takes time and effort and often multiple people, AI notwithstanding.</p></p></p></p>\n<hr><p>Comments URL:<a href=\"https://news.ycombinator.com/item?id=50643767\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://news.ycombinator.com/item?id=50643767</a></p>\n<p>Points: 23</p>\n<p># Comments: 56</p>",
+            "text": "I feel like the most amazing thing about AI so far is AI itself. Is anyone using a brand-new tool that was not available 5 years ago? I see people decompiling/reverse engineering the Adobe suite, which is an amazing feat, but the resulting software itself is barely usable. Since it’s so easy to build anything now, I get a sense we’re seeing a proliferation of one-off, proof-of-concept projects, where great software takes time and effort and often multiple people, AI notwithstanding.\nComments URL: https://news.ycombinator.com/item?id=50643767\nPoints: 23\n# Comments: 56",
+            "lead": "I feel like the most amazing thing about AI so far is AI itself. Is anyone using a brand-new tool that was not available 5 years ago? I see people decompiling/reverse engineering the Adobe suite, which is an amazing feat, but the resulting software itself is barely usable. Since it’s so easy to build anything now, I get a sense we’re seeing a proliferation of one-off, proof-of-concept projects, where great software takes time and effort and often multiple ",
+            "chars": 579,
+            "shown": 579,
+            "truncated": false
+          },
+          "categories": [],
+          "author": "8bitbeep",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "tools",
+          "metrics": {
+            "points": 23,
+            "comments": 56
+          },
+          "quality": 7,
+          "fallback": true,
+          "score": 14.82,
+          "category": "tools",
+          "subcategory": null,
+          "practical": 1,
+          "slug": "2a5044bcd53c",
+          "action": 2,
+          "rank": 10.2,
+          "tags": []
+        },
+        {
+          "sourceId": "lcz-crisis",
+          "sourceName": "抡锤者 AI 危机与机遇",
+          "lang": "zh",
+          "tier": 3,
+          "trustCategory": true,
+          "declaredCategory": "ideas",
+          "categories": [],
+          "author": "kos or",
+          "id": "3362",
+          "title": "(新聞匯總集合) AI科技強化企業競爭力後帶來的人力結構優化調整 (白話 : 裁員)",
+          "url": "https://lcz.me/topic/3362",
+          "published": "2026-11-27T09:34:55.903Z",
+          "summary": "** 最近才得知已經有IT公司的\"AI部門的工程師\"被裁員了，搞AI的被自己的Agents數位同事淘汰 速度有點快，趕快發帖追蹤一下 Agents代理人的導入可能加速了 這個過程 時間點出乎我的意料 **",
+          "metrics": {
+            "points": 1,
+            "comments": 7,
+            "views": 47
+          },
+          "excellent": false,
+          "content": {
+            "html": "<pre><code>** 最近才得知已經有IT公司的\"AI部門的工程師\"被裁員了，搞AI的被自己的Agents數位同事淘汰 速度有點快，趕快發帖追蹤一下\nAgents代理人的導入可能加速了 這個過程 時間點出乎我的意料 **</code></pre>\n<pre><code>** 不懂應用AI的企業, 就等著被懂得使用AI的企業擊敗，從商業歷史洪流中Say Goodbye **</code></pre>\n<pre><code>** AI時代下的矛盾特色, 利用AI工具的公司越賺錢, 裁員越多 (!?) **</code></pre>\n<blockquote><p><strong>SAP過去12個月股價下跌約6%，期間曾因投資人擔心AI衝擊商業模式而面臨賣壓。目前SAP市值約2,370億歐元，在歐洲仍是名列前茅的上市企業。SAP上月公布第3季營收成長13%至103億歐元，其中雲端服務營收為67億歐元，稅後獲利增長11%至23億歐元。</strong></p></blockquote>\n<p>相關的新聞很多, 就集中在此帖發</p>\n<p>2026-11-27</p>\n<blockquote><p>據《彭博》27日報導，知情人士透露，SAP正在準備一項裁減至少1萬個崗位的計畫，影響全球至少9%員工，所有部門均被要求梳理可能存在裁撤空間的領域，產品與工程部門以及銷售部門是重點。</p></blockquote>\n<p><img src=\"https://upload.lcz.me/uploads/c00d5882-d266-4889-9009-12967ebef69f.jpeg\" alt=\"image.jpeg\" loading=\"lazy\"></p>\n<p><img src=\"https://upload.lcz.me/uploads/ebfdb8da-d513-4826-b8ca-20f057afe4fc.jpeg\" alt=\"image.jpeg\" loading=\"lazy\"></p>",
+            "text": "** 最近才得知已經有IT公司的\"AI部門的工程師\"被裁員了，搞AI的被自己的Agents數位同事淘汰 速度有點快，趕快發帖追蹤一下\nAgents代理人的導入可能加速了 這個過程 時間點出乎我的意料 **\n** 不懂應用AI的企業, 就等著被懂得使用AI的企業擊敗，從商業歷史洪流中Say Goodbye **\n** AI時代下的矛盾特色, 利用AI工具的公司越賺錢, 裁員越多 (!?) **\nSAP過去12個月股價下跌約6%，期間曾因投資人擔心AI衝擊商業模式而面臨賣壓。目前SAP市值約2,370億歐元，在歐洲仍是名列前茅的上市企業。SAP上月公布第3季營收成長13%至103億歐元，其中雲端服務營收為67億歐元，稅後獲利增長11%至23億歐元。\n相關的新聞很多, 就集中在此帖發\n2026-11-27\n據《彭博》27日報導，知情人士透露，SAP正在準備一項裁減至少1萬個崗位的計畫，影響全球至少9%員工，所有部門均被要求梳理可能存在裁撤空間的領域，產品與工程部門以及銷售部門是重點。",
+            "lead": "** 最近才得知已經有IT公司的\"AI部門的工程師\"被裁員了，搞AI的被自己的Agents數位同事淘汰 速度有點快，趕快發帖追蹤一下\nAgents代理人的導入可能加速了 這個過程 時間點出乎我的意料 **",
+            "chars": 457,
+            "shown": 457,
+            "truncated": false
+          },
+          "quality": 7,
+          "score": 14.63,
+          "category": "tools",
+          "subcategory": null,
+          "practical": 1,
+          "slug": "7da83eba7593",
+          "action": 1,
+          "rank": 8.6,
+          "tags": [
+            "benchmark"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hardware",
+      "label": "AI 硬件",
+      "items": [
+        {
+          "sourceId": "lcz-hardware",
+          "sourceName": "抡锤者 AI硬件",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "PhilipShi2026",
+          "id": "3365",
+          "title": "【DIY实测】X99+E5-2686V4+128G DDR3+RTX3080-20G 挑战256K上下文",
+          "url": "https://lcz.me/topic/3365",
+          "published": "2026-11-27T14:26:06.563Z",
+          "summary": "看到坛主推荐X99+E5+128G DDR3的配置跑大模型，忍不住手痒，自己从海鲜市场买来了各种配件，利用周末2天，自己组装起来。 一、硬件DIY 1、X99的BIOS配置很复杂，看不懂只好拍照喂给Deepseek，按照提示和建议修改多个配置后，居然把CPU给超频了，竟被HWinfo识别成2694V4。 2、内存条4条，总有1条识别不了，不停更换插槽，总算给正确识别了。然后做了U盘MemTest86 测试内存一个晚上结果通过。 3、因为都是二手配件，先安装了win11，对CPU、GPU进行烤机测试比较方便；测试结果比较满意，正感觉不错的时候，复制Qwen3.8大模型文件是发现网速特别慢，原来主板自带网卡是100M，头大，找U盘复制…",
+          "metrics": {
+            "points": 1,
+            "comments": 1,
+            "views": 51
+          },
+          "excellent": false,
+          "content": {
+            "html": "<p>看到坛主推荐X99+E5+128G DDR3的配置跑大模型，忍不住手痒，自己从海鲜市场买来了各种配件，利用周末2天，自己组装起来。<br><img src=\"https://upload.lcz.me/uploads/6db4c319-5cda-45ce-9ff5-e8c432d69828.jpg\" alt=\"Screenshot_20261127_213553.jpg\" loading=\"lazy\"><br><img src=\"https://upload.lcz.me/uploads/f4d4035c-2610-405d-8529-5759bbbf80cc.jpg\" alt=\"Screenshot_20261127_213441.jpg\" loading=\"lazy\"></p>\n<h3>一、硬件DIY</h3>\n<ul><li>1、X99的BIOS配置很复杂，看不懂只好拍照喂给Deepseek，按照提示和建议修改多个配置后，居然把CPU给超频了，竟被HWinfo识别成2694V4。</li><li>2、内存条4条，总有1条识别不了，不停更换插槽，总算给正确识别了。然后做了U盘MemTest86 测试内存一个晚上结果通过。</li><li>3、因为都是二手配件，先安装了win11，对CPU、GPU进行烤机测试比较方便；测试结果比较满意，正感觉不错的时候，复制Qwen3.8大模型文件是发现网速特别慢，原来主板自带网卡是100M，头大，找U盘复制快很点；局域网是2.5G，服务器竟然是百兆，实在忍不了，然后买了2.5G有线网卡。</li></ul>\n<p>组装完后的成品如下图，属于手工粗糙的人，请将就看:(</p>\n<p><img src=\"https://upload.lcz.me/uploads/d5684111-cef1-4347-be52-e07013bf4f2d.png\" alt=\"Image3.png\" loading=\"lazy\"></p>\n<h3>二、OS和软件</h3>\n<p>安装完成后，就用DS做了安装部署报告，我摘录一些关键点供单价参考。</p>\n<table><thead><tr><th>项目</th><th>内容</th></tr></thead><tbody><tr><td>报告日期</td><td>2026-11-15</td></tr><tr><td>测试平台</td><td>Xeon E5-2686 v4 / 128 GiB DDR3 / RTX 3080 魔改 20G</td></tr><tr><td>软件栈</td><td>Ubuntu 26.04.1 LTS + Strata 0.2.13.1（引擎 0.1.59）</td></tr><tr><td>被测模型</td><td>Swift-1.5-Qwen3.8-Flash-Next-Heretic-V2<strong>IQ3_S-85G</strong>（80.5 GiB）</td></tr><tr><td>核心结论</td><td><strong>256K 上下文（模型上限）可跑，热态 decode 67.7~101 tok/s，前缀复喂首字 3.1 秒</strong></td></tr></tbody></table>\n<hr><h3>0. 结论摘要</h3>\n<ol><li><strong>上下文不是 32K，是 256K。</strong>逐档实测 32K / 64K / 128K / 160K / 256K 全部通过，从 32K 到 256K 专家缓存只从 13,268 MiB 降到 12,864 MiB（−3%），decode 从 79 降到 70.9（−10%）。原因是 launcher 在 128K 以上自动启用<code>--kv-resident 32768 --kv-grow</code>，KV 主体放在 pinned RAM 而非显存。</li><li><strong>前缀缓存是最强的能力。</strong>同一份 254,862 token 的上下文，首次首字 115.6 秒，第二次<strong>3.1 秒</strong>（复用 99.998%），37 倍加速。</li><li><strong>MTP 投机解码值得开</strong>，同一 prompt 下 decode 提升 23%~54%。草稿层用 package 自带的 0.83 GB 文件，省掉 5.2 GB 下载。</li><li><strong>专家分布预热消除冷启动损失</strong>：启动后第一个请求从 60.4 tok/s 提到<strong>110.5 tok/s</strong>（+83%），比\"等几分钟预热\"还高。</li><li><strong>参考本社区里的三条经验在本机被实测否定</strong>：<code>--pcie-frac</code>调优（我们<code>pcie_share</code>仅 0.003，没有搬运）、<code>--expert-cache-per-layer</code>（槽位充足时无差别）、\"内存带宽是短板\"（命中率 0.96，未体现）。</li><li><strong>服务已做成 systemd 常驻并开机自启</strong>，就绪约 60 秒。</li></ol>\n<hr><h3>1. 硬件信息</h3>\n<h3>1.1 处理器</h3>\n<table><thead><tr><th>项</th><th>值</th></tr></thead><tbody><tr><td>型号</td><td>Intel Xeon E5-2686 v4 @ 2.30 GHz</td></tr><tr><td>核心 / 线程</td><td>18 核 / 36 线程（单路）</td></tr><tr><td>最大睿频</td><td>3.00 GHz（实测当前缩放 65%）</td></tr><tr><td>L3 缓存</td><td>45 MiB</td></tr><tr><td>NUMA</td><td>1 个节点</td></tr><tr><td>指令集</td><td>AVX2（Broadwell-EP，<strong>无 AVX-512</strong>）</td></tr></tbody></table>\n<h3>1.2 内存</h3>\n<table><thead><tr><th>项</th><th>值</th></tr></thead><tbody><tr><td>容量</td><td>4 × 32 GB =<strong>128 GiB</strong></td></tr><tr><td>类型 / 频率</td><td>DDR3-1866（插槽 A1 / B1 / C1 / D1，四通道）</td></tr><tr><td>理论带宽</td><td><strong>≈59.7 GB/s</strong></td></tr><tr><td>ECC</td><td><strong>不可用</strong>（DMI 报<code>Error Correction Type: None</code>）</td></tr><tr><td>实测可用</td><td>121 GiB</td></tr></tbody></table>\n<blockquote><p>虽然是 ECC 内存，但没能启用ECC功能。</p></blockquote>\n<h3>1.3 显卡</h3>\n<table><thead><tr><th>项</th><th>值</th></tr></thead><tbody><tr><td>型号</td><td>NVIDIA GeForce RTX 3080（GA102<strong>魔改 20 GB</strong>）</td></tr><tr><td>显存</td><td><strong>20,480 MiB</strong></td></tr><tr><td>计算能力</td><td><strong>8.6</strong>（sm_86, Ampere）</td></tr><tr><td>驱动</td><td><strong>580.178.04</strong>（CUDA 13.0 运行时）</td></tr><tr><td>VBIOS</td><td>94.02.27.00.14</td></tr><tr><td>总线</td><td><strong>PCIe 3.0 ×16</strong>（卡本身支持 4.0，受主板限制）</td></tr><tr><td>SM 最大频率</td><td>2100 MHz</td></tr><tr><td>功耗上限</td><td>320 W</td></tr><tr><td>半精度加速补丁</td><td>未安装（<code>gpu_unlock</code>未部署）</td></tr></tbody></table>\n<h3>2. 软件环境</h3>\n<table><thead><tr><th>项</th><th>值</th></tr></thead><tbody><tr><td>操作系统</td><td><strong>Ubuntu 26.04.1 LTS</strong>（codename<code>resolute</code>）</td></tr><tr><td>内核</td><td>7.0.0-43-generic</td></tr><tr><td>glibc</td><td><strong>2.43</strong>（最低要求 2.41，24.04 的 2.39 不满足）</td></tr><tr><td>桌面</td><td>无（headless，全部通过 SSH 操作）</td></tr><tr><td>显卡驱动</td><td>NVIDIA 580.178.04（LTSB 580 分支）</td></tr><tr><td>Python</td><td>3.12.15（Strata 自带可移植运行时）</td></tr><tr><td>双系统</td><td>Windows 11 + Ubuntu，GRUB 菜单可选</td></tr></tbody></table>\n<h3>4. 大模型信息</h3>\n<table><thead><tr><th>项</th><th>值</th></tr></thead><tbody><tr><td>名称</td><td>Swift-1.5-Qwen3.8-Flash-Next-Heretic-V2</td></tr><tr><td>量化</td><td><strong>IQ3_S</strong>（3.5 bit i-quant，含 PLE n-gram 表）</td></tr><tr><td>体积</td><td>8 个 GGUF 分片，共<strong>84,591,218,016 B（78.8 GiB）</strong>，目录 85 GB</td></tr><tr><td>参数规模</td><td>125B 级 MoE（n_expert 512，专家总 50,305,433,600 B）</td></tr><tr><td>训练上下文</td><td>262,144 token</td></tr><tr><td>词表</td><td>248,320</td></tr><tr><td>模型 ID</td><td><code>swift-1.5-iq3_s</code></td></tr><tr><td>血缘</td><td>Swift 1.5 微调（社区版），非官方原版</td></tr></tbody></table>\n<h3>6. 测试过程与方法</h3>\n<h3>6.1 口径</h3>\n<ul><li>prompt 由同一句中文材料重复拼接构造（约 13 token/句），保证各档可比。</li><li>每组测量前先跑 3 轮预热（约 4.6K token）再取数；\"冷\"指启动后第一个请求。</li><li>指标取自服务端<code>/metrics</code>：<code>timings.prompt_per_second</code>（prefill）、<code>timings.predicted_per_second</code>（decode）、<code>prompt_ms</code>（TTFT）、<code>requests[0].hit_rate</code>（专家命中率）。</li><li>全部测试<code>--kv int8 --parallel 1 --vision off</code>。</li><li>每换一组参数都重启服务（模型加载约 60~100 秒）。</li></ul>\n<h3>6.2 测试矩阵</h3>\n<table><thead><tr><th>组</th><th>变量</th><th>目的</th></tr></thead><tbody><tr><td>A</td><td><code>--max-context</code>32K→256K</td><td>找上下文上限与代价</td></tr><tr><td>B</td><td>prompt 长度 1.7K→255K</td><td>prefill 随长度的伸缩</td></tr><tr><td>C</td><td><code>--mtp</code>开 / 关</td><td>投机解码收益</td></tr><tr><td>D</td><td>同 prompt 连发两次</td><td>前缀缓存收益</td></tr><tr><td>E</td><td><code>--expert-profile-save</code></td><td>消除冷启动损失</td></tr><tr><td>F</td><td><code>--lookup-chain</code>0/1/2</td><td>草稿接受率与速度</td></tr><tr><td>G</td><td><code>--pcie-frac</code>/<code>--expert-cache-per-layer</code>/<code></code></td></tr></tbody></table>",
+            "text": "看到坛主推荐X99+E5+128G DDR3的配置跑大模型，忍不住手痒，自己从海鲜市场买来了各种配件，利用周末2天，自己组装起来。\n一、硬件DIY\n1、X99的BIOS配置很复杂，看不懂只好拍照喂给Deepseek，按照提示和建议修改多个配置后，居然把CPU给超频了，竟被HWinfo识别成2694V4。\n2、内存条4条，总有1条识别不了，不停更换插槽，总算给正确识别了。然后做了U盘MemTest86 测试内存一个晚上结果通过。\n3、因为都是二手配件，先安装了win11，对CPU、GPU进行烤机测试比较方便；测试结果比较满意，正感觉不错的时候，复制Qwen3.8大模型文件是发现网速特别慢，原来主板自带网卡是100M，头大，找U盘复制快很点；局域网是2.5G，服务器竟然是百兆，实在忍不了，然后买了2.5G有线网卡。\n组装完后的成品如下图，属于手工粗糙的人，请将就看:(\n二、OS和软件\n安装完成后，就用DS做了安装部署报告，我摘录一些关键点供单价参考。\n项目\n内容\n报告日期\n2026-11-15\n测试平台\nXeon E5-2686 v4 / 128 GiB DDR3 / RTX 3080 魔改 20G\n软件栈\nUbuntu 26.04.1 LTS + Strata 0.2.13.1（引擎 0.1.59）\n被测模型\nSwift-1.5-Qwen3.8-Flash-Next-Heretic-V2 IQ3_S-85G （80.5 GiB）\n核心结论\n256K 上下文（模型上限）可跑，热态 decode 67.7~101 tok/s，前缀复喂首字 3.1 秒\n0. 结论摘要\n上下文不是 32K，是 256K。 逐档实测 32K / 64K / 128K / 160K / 256K 全部通过，从 32K 到 256K 专家缓存只从 13,268 MiB 降到 12,864 MiB（−3%），decode 从 79 降到 70.9（−10%）。原因是 launcher 在 128K 以上自动启用 --kv-resident 32768 --kv-grow ，KV 主体放在 pinned RAM 而非显存。\n前缀缓存是最强的能力。 同一份 254,862 token 的上下文，首次首字 115.6 秒，第二次 3.1 秒 （复用 99.998%），37 倍加速。\nMTP 投机解码值得开 ，同一 prompt 下 decode 提升 23%~54%。草稿层用 package 自带的 0.83 GB 文件，省掉 5.2 GB 下载。\n专家分布预热消除冷启动损失 ：启动后第一个请求从 60.4 tok/s 提到 110.5 tok/s （+83%），比\"等几分钟预热\"还高。\n参考本社区里的三条经验在本机被实测否定 ： --pcie-frac 调优（我们 pcie_share 仅 0.003，没有搬运）、 --expert-cache-per-layer （槽位充足时无差别）、\"内存带宽是短板\"（命中率 0.96，未体现）。\n服务已做成 systemd 常驻并开机自启 ，就绪约 60 秒。\n1. 硬件信息\n1.1 处理器\n项\n值\n型号\nIntel Xeon E5-2686 v4 @ 2.30 GHz\n核心 / 线程\n18 核 / 36 线程（单路）\n最大睿频\n3.00 GHz（实测当前缩放 65%）\nL3 缓存\n45 MiB\nNUMA\n1 个节点\n指令集\nAVX2（Broadwell-EP， 无 AVX-512 ）\n1.2 内存\n项\n值\n容量\n4 × 32 GB = 128 GiB\n类型 / 频率\nDDR3-1866（插槽 A1 / B1 / C1 / D1，四通道）\n理论带宽\n≈59.7 GB/s\nECC\n不可用 （DMI 报 Error Correction Type: None ）\n实测可用\n121 GiB\n虽然是 ECC 内存，但没能启用ECC功能。\n1.3 显卡\n项\n值\n型号\nNVIDIA GeForce RTX 3080（GA102 魔改 20 GB ）\n显存\n20,480 MiB\n计算能力\n8.6 （sm_86, Ampere）\n驱动\n580.178.04 （CUDA 13.0 运行时）\nVBIOS\n94.02.27.00.14\n总线\nPCIe 3.0 ×16 （卡本身支持 4.0，受主板限制）\nSM 最大频率\n2100 MHz\n功耗上限\n320 W\n半精度加速补丁\n未安装（ gpu_unlock 未部署）\n2. 软件环境\n项\n值\n操作系统\nUbuntu 26.04.1 LTS （codename resolute ）\n内核\n7.0.0-43-generic\nglibc\n2.43 （最低要求 2.41，24.04 的 2.39 不满足）\n桌面\n无（headless，全部通过 SSH 操作）\n显卡驱动\nNVIDIA 580.178.04（LTSB 580 分支）\nPython\n3.12.15（Strata 自带可移植运行时）\n双系统\nWindows 11 + Ubuntu，GRUB 菜单可选\n4. 大模型信息\n项\n值\n名称\nSwift-1.5-Qwen3.8-Flash-Next-Heretic-V2\n量化\nIQ3_S （3.5 bit i-quant，含 PLE n-gram 表）\n体积\n8 个 GGUF 分片，共 84,591,218,016 B（78.8 GiB） ，目录 85 GB\n参数规模\n125B 级 MoE（n_expert 512，专家总 50,305,433,600 B）\n训练上下文\n262,144 token\n词表\n248,320\n模型 ID\nswift-1.5-iq3_s\n血缘\nSwift 1.5 微调（社区版），非官方原版\n6. 测试过程与方法\n6.1 口径\nprompt 由同一句中文材料重复拼接构造（约 13 token/句），保证各档可比。\n每组测量前先跑 3 轮预热（约 4.6K token）再取数；\"冷\"指启动后第一个请求。\n指标取自服务端 /metrics ： timings.prompt_per_second （prefill）、 timings.predicted_per_second （decode）、 prompt_ms （TTFT）、 requests[0].hit_rate （专家命中率）。\n全部测试 --kv int8 --parallel 1 --vision off 。\n每换一组参数都重启服务（模型加载约 60~100 秒）。\n6.2 测试矩阵\n组\n变量\n目的\nA\n--max-context 32K→256K\n找上下文上限与代价\nB\nprompt 长度 1.7K→255K\nprefill 随长度的伸缩\nC\n--mtp 开 / 关\n投机解码收益\nD\n同 prompt 连发两次\n前缀缓存收益\nE\n--expert-profile-save\n消除冷启动损失\nF\n--lookup-chain 0/1/2\n草稿接受率与速度\nG\n--pcie-frac / --expert-cache-per-layer /",
+            "lead": "看到坛主推荐X99+E5+128G DDR3的配置跑大模型，忍不住手痒，自己从海鲜市场买来了各种配件，利用周末2天，自己组装起来。\n一、硬件DIY\n1、X99的BIOS配置很复杂，看不懂只好拍照喂给Deepseek，按照提示和建议修改多个配置后，居然把CPU给超频了，竟被HWinfo识别成2694V4。\n2、内存条4条，总有1条识别不了，不停更换插槽，总算给正确识别了。然后做了U盘MemTest86 测试内存一个晚上结果通过。\n3、因为都是二手配件，先安装了win11，对CPU、GPU进行烤机测试比较方便；测试结果比较满意，正感觉不错的时候，复制Qwen3.8大模型文件是发现网速特别慢，原来主板自带网卡是100M，头大，找U盘复制快很点；局域网是2.5G，服务器竟然是百兆，实在忍不了，然后买了2.5G有线网卡。\n组装完后的成品如下图，属于手工粗糙的人，请将就看:(\n二、OS和软件\n安装完成后，就用DS做了安装部署报告，我摘录一些关键点供单价参考。",
+            "chars": 5228,
+            "shown": 3197,
+            "truncated": true
+          },
+          "quality": 9,
+          "score": 20.8,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 4,
+          "slug": "dc8bdad7c112",
+          "action": 8,
+          "rank": 21.8,
+          "tags": [
+            "benchmark",
+            "hardware",
+            "local",
+            "lowspec"
+          ]
+        },
+        {
+          "sourceId": "lcz-hardware",
+          "sourceName": "抡锤者 AI硬件",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "韦春花",
+          "id": "3366",
+          "title": "RX 7900 XTX 双卡：每次开机后约半小时，ROCm/HIP 首次加载 GPU 必挂",
+          "url": "https://lcz.me/topic/3366",
+          "published": "2026-11-27T17:34:46.120Z",
+          "summary": "昨天设置开机拉起strata时，发现ROCm/HIP 首次加载 GPU 必挂。dsh取名叫\"开机毒窗\" **摘要：双 7900 XTX 树内 amdgpu，每次开机后有 22~32 分钟的\"毒窗\"，窗口内首次大规模 SVM/显存注册必炸（内核态签名齐全）；用户态一切正常、窗口过后一切正常。已用纯 systemd 手段做到全自动熬窗；§七 实测了上游 SVM 守卫补丁所在内核： 显著减轻、未根治 。单台机器、样本不大，如实记录观察、排除过程和不成熟结论，求见过同类问题的朋友指正（问题清单在 §九）。观察时间：2026-11 下旬。 一、本机软硬件环境",
+          "metrics": {
+            "points": 0,
+            "comments": 0,
+            "views": 21
+          },
+          "excellent": false,
+          "content": {
+            "html": "<p>昨天设置开机拉起strata时，发现ROCm/HIP 首次加载 GPU 必挂。dsh取名叫\"开机毒窗\"<img src=\"https://lcz.me/assets/plugins/nodebb-plugin-emoji/emoji/android/1f602.png?v=2bf455356c3\" alt=\"😂\" loading=\"lazy\"><img src=\"https://lcz.me/assets/plugins/nodebb-plugin-emoji/emoji/android/1f602.png?v=2bf455356c3\" alt=\"😂\" loading=\"lazy\"><br>**摘要：双 7900 XTX 树内 amdgpu，每次开机后有 22~32 分钟的\"毒窗\"，窗口内首次大规模 SVM/显存注册必炸（内核态签名齐全）；用户态一切正常、窗口过后一切正常。已用纯 systemd 手段做到全自动熬窗；§七 实测了上游 SVM 守卫补丁所在内核：<strong>显著减轻、未根治</strong>。单台机器、样本不大，如实记录观察、排除过程和不成熟结论，求见过同类问题的朋友指正（问题清单在 §九）。观察时间：2026-11 下旬。<br>一、本机软硬件环境</p>\n<h3>硬件</h3>\n<table><thead><tr><th>项</th><th>值</th></tr></thead><tbody><tr><td>CPU</td><td>Intel Xeon E5-2667 v4 @ 3.20GHz（8C16T，<code>nproc</code>=16，单 NUMA 节点）</td></tr><tr><td>内存</td><td>125 GB</td></tr><tr><td>GPU ×2</td><td>Navi 31 [RX 7900 XTX 24G]，PCI<code>1002:744C</code>rev c8：&lt;br&gt;<strong><code>0000:05:00.0</code>（card1）＝桌面卡</strong>，GNOME/Wayland，DP×3+HDMI 在位&lt;br&gt;<strong><code>0000:08:00.0</code>（card2）＝计算卡</strong>，不接显示——<strong>内核 GPUVM 报错集中在它</strong></td></tr><tr><td>系统盘/数据盘</td><td>Samsung PM981a 2TB NVMe（模型与数据盘）＋ Kingston A400 960G SATA</td></tr><tr><td>主板/BIOS</td><td>BIOS 版本 5.11（主板型号需 root 才读得到，未取；按 CPU 世代属 C612 级平台）</td></tr></tbody></table>\n<h3>软件</h3>\n<table><thead><tr><th>项</th><th>值</th></tr></thead><tbody><tr><td>系统</td><td>Ubuntu 24.04.4 LTS（noble），桌面 GNOME + Wayland，另有 headless tty2 会话</td></tr><tr><td>内核</td><td>日常 7.0.0-42 → 7.0.0-44 generic HWE（两版均复现），<code>elevator=deadline</code>；§七 实验后转正 mainline 7.1.13（仍复现、概率降低）</td></tr><tr><td>驱动</td><td><strong>树内 amdgpu（无 DKMS、无 amdgpu-install 的 KMD）</strong>；<code>linux-firmware 20240318.git3b128b60-0ubuntu2.27</code>（Ubuntu 仓库上限）</td></tr><tr><td>用户态</td><td>ROCm 7.2.1 → 7.2.4（rocm-core 7.2.4.70204，hip-runtime-amd 7.2.53211.70204），两版均复现</td></tr><tr><td>内核参数</td><td><code>amdgpu.exp_hw_support=1 amdgpu.vm_update_mode=3 pcie_aspm=off elevator=deadline</code></td></tr><tr><td>推理栈</td><td>自维护 llama.cpp 系 HIP 推理引擎（fork），TP2 双卡分层（layer_split 24），约 88GB 权重经 mmap/SVM(HMM) 混合进显存+系统内存，加载 ~70–100s，桌面与计算分卡</td></tr></tbody></table>\n<h3>二、现象（观察，不含解释）</h3>\n<p><strong>开机后有一段\"毒窗\"（实测 22~32 分钟、每场漂移），窗口内任何进程第一次把大规模 GPU 内存注册/首发热身推给两张卡，几乎必炸；窗口过后同样的操作一遍过，且当天怎么重启都稳定。</strong></p>\n<p>窗口内的失败形态（三选一，随机）：</p>\n<ol><li><strong>加载期卡死</strong>：模型加载推进到一半完全静止 20 分钟以上，最终被外层超时杀死。内核日志（journalctl -k 原文节选，毒窗内每个案发时刻成组出现）：</li></ol>\n<pre><code>kernel: workqueue: svm_range_deferred_list_work [amdgpu] hogged CPU for &gt;10000us 7 times, consider switching to WQ_UNBOUND\nkernel: INFO: task kworker/1:2:309 blocked for more than 122 seconds.\nkernel: Tainted: G S U W 7.0.0-44-generic #44~24.04.1-Ubuntu\nkernel: task:kworker/1:2 state:D ...\nkernel: Workqueue: events svm_range_evict_svm_bo_worker [amdgpu]\nkernel: INFO: task kworker/1:2:309 is blocked on an rw-semaphore, but the owner is not found.\nkernel: INFO: task kworker/1:2:309 blocked for more than 245 seconds. ← 同组持续升级</code></pre>\n<p>另见<code>PERMISSION_FAULTS: 0x3</code>（GPUVM retry faults，0000:08:00.0）与<code>svm_range_set_attr [amdgpu]</code>栈的 hung task。<strong>内核工作线程在 amdgpu 的 SVM 信号量上 D 状态卡死超过 6 分钟、且内核自己声明\"找不到持有者\"</strong>——这在窗口外从未出现。<br>2.<strong>加载\"成功\"，首发热身炸</strong>：引擎自检在随机层超时（layer 3/4/17/36/41 都见过），自杀退出（SIGABRT / SIGTERM）；<br>3.<strong>就绪后第一发推理请求炸</strong>：症状同上，engine 报验证超时并自杀。</p>\n<p>窗口外的对照：同一引擎、同一命令、同一配置，<strong>开机 +24~32 分钟后进场 → 70 秒加载 → 就绪 → 首发命中 → 当天后续任意次重启全部秒过</strong>（包括手工重启、systemd 自动重启、崩溃后重启，与\"手工还是自动\"无关，只与\"距开机多久\"有关）。</p>\n<h3>三、完整数据（一次开机一场；7.0.0-44 内核时期的样本）</h3>\n<table><thead><tr><th>距开机</th><th>动作</th><th>结果</th></tr></thead><tbody><tr><td>+2.5min</td><td>第 1 代加载</td><td>卡死，内核 hung task on<code>svm_range_set_attr</code></td></tr><tr><td>+4min</td><td>首发请求</td><td><img src=\"https://lcz.me/assets/plugins/nodebb-plugin-emoji/emoji/android/274c.png?v=2bf455356c3\" alt=\"❌\" loading=\"lazy\">自杀（信号 6）</td></tr><tr><td>+22min</td><td>另一场首发</td><td><img src=\"https://lcz.me/assets/plugins/nodebb-plugin-emoji/emoji/android/274c.png?v=2bf455356c3\" alt=\"❌\" loading=\"lazy\">自杀</td></tr><tr><td>+26.7min</td><td>首发（专门压到 25 分钟地板后进场）</td><td><img src=\"https://lcz.me/assets/plugins/nodebb-plugin-emoji/emoji/android/274c.png?v=2bf455356c3\" alt=\"❌\" loading=\"lazy\">自杀（验证层 17 超时）</td></tr><tr><td><strong>+27.2 / +28 / +24 / +32min</strong></td><td>各场边界后的补枪</td><td><img src=\"https://lcz.me/assets/plugins/nodebb-plugin-emoji/emoji/android/2705.png?v=2bf455356c3\" alt=\"✅\" loading=\"lazy\">全部一发命中，55.9 / 49.7 / 53.8 tok/s</td></tr></tbody></table>\n<p>边界不是硬线：在 +22~32 分钟之间每场随机漂移。</p>\n<h3>四、排除过的嫌疑（都给出依据）</h3>\n<table><thead><tr><th>嫌疑</th><th>排除依据</th></tr></thead><tbody><tr><td>OOM / 内存不足</td><td>案发时 117G 空闲，<code>journalctl</code>无任何<code>oom-kill</code>记录（引擎报错文案里的\"RAM 不足\"提示是误导）</td></tr><tr><td>用户态版本</td><td>ROCm 7.2.1 → 7.2.4 升级前后症状同配方（7.2.4 场次曾在边界后一发命中）</td></tr><tr><td>内核版本</td><td>7.0.0-42 与 7.0.0-44 均复现（-44 场内核照样吐<code>PERMISSION_FAULTS</code>）</td></tr><tr><td>手动 vs 自动拉起</td><td>窗口内手动也一样炸；窗口外自动也稳定。唯一变量是距开机时间</td></tr><tr><td>开机风暴抢盘/CPU</td><td>前置闸门确认磁盘 0MB/s、load1&lt;1、systemd 启动任务清零后进场，照样炸</td></tr><tr><td>配置/参数变更</td><td>同期改过若干无关参数（超时、重试、缓存），窗口行为无变化；改回原样照旧</td></tr><tr><td>电源/温度</td><td>窗口过后同负载连续跑数小时稳定；故障集中在\"开机后的第一次\"</td></tr></tbody></table>\n<h3>五、判断（承认不完全，但指向明确）</h3>\n<ul><li>案发现场在<strong>内核态</strong>：栈顶<code> svm_range_set_attr [amd…</code></li></ul>",
+            "text": "昨天设置开机拉起strata时，发现ROCm/HIP 首次加载 GPU 必挂。dsh取名叫\"开机毒窗\"\n**摘要：双 7900 XTX 树内 amdgpu，每次开机后有 22~32 分钟的\"毒窗\"，窗口内首次大规模 SVM/显存注册必炸（内核态签名齐全）；用户态一切正常、窗口过后一切正常。已用纯 systemd 手段做到全自动熬窗；§七 实测了上游 SVM 守卫补丁所在内核： 显著减轻、未根治 。单台机器、样本不大，如实记录观察、排除过程和不成熟结论，求见过同类问题的朋友指正（问题清单在 §九）。观察时间：2026-11 下旬。\n一、本机软硬件环境\n硬件\n项\n值\nCPU\nIntel Xeon E5-2667 v4 @ 3.20GHz（8C16T， nproc =16，单 NUMA 节点）\n内存\n125 GB\nGPU ×2\nNavi 31 [RX 7900 XTX 24G]，PCI 1002:744C rev c8：\n0000:05:00.0 （card1）＝桌面卡 ，GNOME/Wayland，DP×3+HDMI 在位\n0000:08:00.0 （card2）＝计算卡 ，不接显示—— 内核 GPUVM 报错集中在它\n系统盘/数据盘\nSamsung PM981a 2TB NVMe（模型与数据盘）＋ Kingston A400 960G SATA\n主板/BIOS\nBIOS 版本 5.11（主板型号需 root 才读得到，未取；按 CPU 世代属 C612 级平台）\n软件\n项\n值\n系统\nUbuntu 24.04.4 LTS（noble），桌面 GNOME + Wayland，另有 headless tty2 会话\n内核\n日常 7.0.0-42 → 7.0.0-44 generic HWE（两版均复现）， elevator=deadline ；§七 实验后转正 mainline 7.1.13（仍复现、概率降低）\n驱动\n树内 amdgpu（无 DKMS、无 amdgpu-install 的 KMD） ； linux-firmware 20240318.git3b128b60-0ubuntu2.27 （Ubuntu 仓库上限）\n用户态\nROCm 7.2.1 → 7.2.4（rocm-core 7.2.4.70204，hip-runtime-amd 7.2.53211.70204），两版均复现\n内核参数\namdgpu.exp_hw_support=1 amdgpu.vm_update_mode=3 pcie_aspm=off elevator=deadline\n推理栈\n自维护 llama.cpp 系 HIP 推理引擎（fork），TP2 双卡分层（layer_split 24），约 88GB 权重经 mmap/SVM(HMM) 混合进显存+系统内存，加载 ~70–100s，桌面与计算分卡\n二、现象（观察，不含解释）\n开机后有一段\"毒窗\"（实测 22~32 分钟、每场漂移），窗口内任何进程第一次把大规模 GPU 内存注册/首发热身推给两张卡，几乎必炸；窗口过后同样的操作一遍过，且当天怎么重启都稳定。\n窗口内的失败形态（三选一，随机）：\n加载期卡死 ：模型加载推进到一半完全静止 20 分钟以上，最终被外层超时杀死。内核日志（journalctl -k 原文节选，毒窗内每个案发时刻成组出现）：\nkernel: workqueue: svm_range_deferred_list_work [amdgpu] hogged CPU for >10000us 7 times, consider switching to WQ_UNBOUND\nkernel: INFO: task kworker/1:2:309 blocked for more than 122 seconds.\nkernel: Tainted: G S U W 7.0.0-44-generic #44~24.04.1-Ubuntu\nkernel: task:kworker/1:2 state:D ...\nkernel: Workqueue: events svm_range_evict_svm_bo_worker [amdgpu]\nkernel: INFO: task kworker/1:2:309 is blocked on an rw-semaphore, but the owner is not found.\nkernel: INFO: task kworker/1:2:309 blocked for more than 245 seconds. ← 同组持续升级\n另见 PERMISSION_FAULTS: 0x3 （GPUVM retry faults，0000:08:00.0）与 svm_range_set_attr [amdgpu] 栈的 hung task。 内核工作线程在 amdgpu 的 SVM 信号量上 D 状态卡死超过 6 分钟、且内核自己声明\"找不到持有者\" ——这在窗口外从未出现。\n2. 加载\"成功\"，首发热身炸 ：引擎自检在随机层超时（layer 3/4/17/36/41 都见过），自杀退出（SIGABRT / SIGTERM）；\n3. 就绪后第一发推理请求炸 ：症状同上，engine 报验证超时并自杀。\n窗口外的对照：同一引擎、同一命令、同一配置， 开机 +24~32 分钟后进场 → 70 秒加载 → 就绪 → 首发命中 → 当天后续任意次重启全部秒过 （包括手工重启、systemd 自动重启、崩溃后重启，与\"手工还是自动\"无关，只与\"距开机多久\"有关）。\n三、完整数据（一次开机一场；7.0.0-44 内核时期的样本）\n距开机\n动作\n结果\n+2.5min\n第 1 代加载\n卡死，内核 hung task on svm_range_set_attr\n+4min\n首发请求\n自杀（信号 6）\n+22min\n另一场首发\n自杀\n+26.7min\n首发（专门压到 25 分钟地板后进场）\n自杀（验证层 17 超时）\n+27.2 / +28 / +24 / +32min\n各场边界后的补枪\n全部一发命中，55.9 / 49.7 / 53.8 tok/s\n边界不是硬线：在 +22~32 分钟之间每场随机漂移。\n四、排除过的嫌疑（都给出依据）\n嫌疑\n排除依据\nOOM / 内存不足\n案发时 117G 空闲， journalctl 无任何 oom-kill 记录（引擎报错文案里的\"RAM 不足\"提示是误导）\n用户态版本\nROCm 7.2.1 → 7.2.4 升级前后症状同配方（7.2.4 场次曾在边界后一发命中）\n内核版本\n7.0.0-42 与 7.0.0-44 均复现（-44 场内核照样吐 PERMISSION_FAULTS ）\n手动 vs 自动拉起\n窗口内手动也一样炸；窗口外自动也稳定。唯一变量是距开机时间\n开机风暴抢盘/CPU\n前置闸门确认磁盘 0MB/s、load1<1、systemd 启动任务清零后进场，照样炸\n配置/参数变更\n同期改过若干无关参数（超时、重试、缓存），窗口行为无变化；改回原样照旧\n电源/温度\n窗口过后同负载连续跑数小时稳定；故障集中在\"开机后的第一次\"\n五、判断（承认不完全，但指向明确）\n案发现场在 内核态 ：栈顶 svm_range_set_attr [amd…",
+            "lead": "昨天设置开机拉起strata时，发现ROCm/HIP 首次加载 GPU 必挂。dsh取名叫\"开机毒窗\"\n**摘要：双 7900 XTX 树内 amdgpu，每次开机后有 22~32 分钟的\"毒窗\"，窗口内首次大规模 SVM/显存注册必炸（内核态签名齐全）；用户态一切正常、窗口过后一切正常。已用纯 systemd 手段做到全自动熬窗；§七 实测了上游 SVM 守卫补丁所在内核： 显著减轻、未根治 。单台机器、样本不大，如实记录观察、排除过程和不成熟结论，求见过同类问题的朋友指正（问题清单在 §九）。观察时间：2026-11 下旬。\n一、本机软硬件环境",
+            "chars": 5943,
+            "shown": 3201,
+            "truncated": true
+          },
+          "quality": 9,
+          "score": 16.83,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 2,
+          "slug": "11ff2346b384",
+          "action": 8,
+          "rank": 21.8,
+          "tags": [
+            "hardware",
+            "local",
+            "lowspec",
+            "benchmark"
+          ]
+        },
+        {
+          "sourceId": "lcz-hardware",
+          "sourceName": "抡锤者 AI硬件",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "terry",
+          "id": "3360",
+          "title": "5090D 32G VS 4090 48G魔改卡怎么选？NVFP4不是关键，本地AI对于显存的要求已经降低，5090D V2性价比也低昂当不错！",
+          "url": "https://lcz.me/topic/3360",
+          "published": "2026-11-27T11:00:00.000Z",
+          "summary": "装机工作终于是全面结束了啊，现在这个房间摆着3台服务器，我已经把这个桌面给收拾干净了，真的是把我这个老骨头都给累散了。那么现在右手边这个服务器，就是7900XTX加上DDR3 1866的条子，一共是32G x4，也就是128G，加上这个华南金牌的X99 TF主板，搭配了E5-2696 V3处理器。然后右手边这一个是5070Ti 16G，加上4060Ti 16G，加上96G DDR5 6000的条子，加上铭瑄的瑷珈B850板子。然后现在呼呼作响的这个，就是我放在角落的以前的X99 CD3，加上DDR3 1866 64G的条子，加上4090D 48G。啊，这个也是我的老服务器了，也用了很长一段时间。现在它正在跑这个MiniMax H3…",
+          "metrics": {
+            "points": 1,
+            "comments": 6,
+            "views": 162
+          },
+          "excellent": false,
+          "content": {
+            "html": "<p>装机工作终于是全面结束了啊，现在这个房间摆着3台服务器，我已经把这个桌面给收拾干净了，真的是把我这个老骨头都给累散了。那么现在右手边这个服务器，就是7900XTX加上DDR3 1866的条子，一共是32G x4，也就是128G，加上这个华南金牌的X99 TF主板，搭配了E5-2696 V3处理器。然后右手边这一个是5070Ti 16G，加上4060Ti 16G，加上96G DDR5 6000的条子，加上铭瑄的瑷珈B850板子。然后现在呼呼作响的这个，就是我放在角落的以前的X99 CD3，加上DDR3 1866 64G的条子，加上4090D 48G。啊，这个也是我的老服务器了，也用了很长一段时间。现在它正在跑这个MiniMax H3，我不知道这个噪音后期能不能把它剪掉，啊，应该是可以处理掉的。因为以前它是放在这个位置，离麦克风太近了，那么现在是把它放到了房间的角落，放在地上，呃，应该是可以把这个噪音给剪掉的。</p>\n<p>那么这些MiniMax H3，包括Strata，呃，千问27B啊，千问27B还没有测完，但是Strata加MiniMax H3加H3 Image，我在这三个平台上全部都已经测过了。呃，总体上N卡的效率会更高一点，然后这个A卡的效率要稍微低一点。但是呢，怎么讲呢，A卡的效率我认为也还可以接受了啊，并没有之前想象的落差那么大，还是非常不错的啊。就是7900XTX加上这个什么DDR3、加上X99的这这个洋垃圾套装，因为它本身的成本确实是非常低，呃，我还是比较推荐的，大家可以看看我上一期视频。提到我这个4090D 48G啊，就有朋友留言问，现在是买这个4090 48G啊，或者4090D 48G，差距是比较小了啊，还是买这个5090D 32G？</p>\n<p><img src=\"https://upload.lcz.me/uploads/ee279159-b644-45a5-bbda-63f4bdd402f1.jpeg\" alt=\"5090D VS 4090 48G.jpeg\" loading=\"lazy\"></p>\n<p>我们知道5090除了标准版，它有这个5090D是吧，32G，有这个5090D V2，它是24G的。5090D相比于标准版的5090，它是算力阉割，但是它的这个带宽是没有阉割的，显存也没有阉割。它的算力是比4090要稍微差一点的，可能跟4090D差不多，但它的显存肯定，呃，32G，呃，怎么说呢，它比这个4090或者4090D 48G魔改卡要差一些是吧？不过现在在大多数场景中都已经完全够用了。那么5090D V2阉割得就更厉害了，它的算力还不如4090D，而且它的这个带宽也从这个1.79 TB/s阉割到了1.34 TB/s。呃，其实也是完全够用了啊，这个不影响。你们就把它当做一个，怎么说呢，24G版本的RTX Pro 5000，是吧？Pro 5000不是48G吗？那么在大多数场景下它其实也是够用了，无论跑Strata还是跑这个ComfyUI，呃，5090D V2其实也是完全够用的。</p>\n<p>那么在什么场景下，32G和24G的显存可能不够用呢？比如说你现在要跑这个SGLang、千问3.8 27B是吧，你要把4比特的权重完全放进显存中去，然后多开会话，享受那种极致的体验，那在这种情况下就只有4090 48G能够比较爽快地玩。那你32G的这个5090或者5090D，或者说你这个什么5090D V2，你都不能玩。但是我们需要知道，现在有一个技术叫做HiCache。如果说你的平台比较好，就像我后面这个A加这一套是吧，它是96G的DDR5 6000，而且是有这个EXPO模式，它是能把这个频率给跑满的，那么带宽能够达到90多GB/s。那么在这种情况下，你有这个什么HiCache，有这个DDR5的条子，你哪怕是这个5090D V2，你不要说5090了，它用这个SGLang呢，其实也是可以玩一玩的，这个是没有什么问题的，就是27B模型。</p>\n<p>然后我们再说这个ComfyUI，比如说MiniMax H3，或者说是LTX 2.6，你要把这个量化之后的这个权重，比如说4比特的这个量化权重，你要把它完全加载到显存中去，就全过程在显存中生产，那么4090 48G它的大显存，或者说你要上这个高分辨率的时候，它还是有优势的。但是呢，现在也有新的技术来解决这个问题。我在视频中不是多次提到吗，有个插件叫做ComfyUI-MDO，是吧？我的这个agent老是把这个字幕给搞错啊，我这一次手工检查一下啊，把这个字幕给打得正确一点，让大家方便去搜索这个插件。那么这个插件可以把这个什么MiniMax H3它视频生成的这个显存要求门槛从这个24G干到16G。就5070Ti 16G，它现在跑MiniMax H3，呃，已经是跑出来的效果是完全够用了啊，效果是非常不错的，而且它的速度也是相当不错的，生产力是够的。</p>\n<p><img src=\"https://upload.lcz.me/uploads/c2b6b83c-4743-4423-9b2f-11bc2972e7b6.avif\" alt=\"4090 48G .avif\" loading=\"lazy\"></p>\n<p>是N卡在这一块的生态红利还是比A卡要强一点。A卡我个人感觉它虽然也是支持ComfyUI-MDO，但是它的这个支持度不好，有很多bug。就论坛有不少网友，像这个雄杰高、FCYS，他们都发了一些帖子，包括懒人烘焙是吧，他们都在讲这些bug怎么修复，大家可以去看一看。就是AMD的卡尽量还是，你要玩ComfyUI，尽量还是上这个24G的显存。然后我们再说一下这个供电接口的问题啊，就我们知道5090它烧接口，这几乎是没有办法避免的。很多人说限功耗，把功耗限制在475瓦。我们需要知道5090它比4090厉害的地方，除了这个NVFP4啊，一般来说其实只有在少数情况下跑特定的模型，它才有，呃，价值，而且是跑文本模型它有价值。在ComfyUI中或者在其他的应用场景中，它的价值并不那么大。然后它相比于4090的所谓算力提升，就是靠功耗堆出来的。它的制程、它本身的底层并没有比4090强大多少，这个是5090比较吊诡的地方。</p>\n<p>其实之前我在论坛中讲过很多次，包括我们论坛有很多帖子，就在这个实际的任务测试中也是有明确的数据。就5090比这个4090强就强在它的功耗上限更强一点，那么它烧接口。由于这个16pin的接口，它的承压上限可能就在600瓦左右，那5090的这个TDP大概是575瓦。有人说把它限制到475瓦，包括5090D了这个情况可以大大地降低你这个接口的这个发热量，但是你不能保证它不烧。当然了，我们知道5090D相比于5090还是阉割了一刀，它可能说运行时候它的这个功耗墙、它的这个极值温度可能会比标准版要低一点。那么如果说你再配合限制功耗，像评论区的网友说把它限制到470瓦，那应该是问题不大。反倒我觉得5090D V2这种24G的显卡，我个人觉得非常有性价比，因为你买回来无非就是跑本地大模型嘛，24G完全够了。不是4G，是Strata。如果说你搭配一个好一点的平台，你哪怕是千问27B，也够了是吧？你如果是用它搭配Strata驱动千问3.8 Flash Next的，或者说以后即将发布的千问4.0 Flash，如果还是维持在125B A6B这个级别的话，那5090D V2一样是非常香的。</p>\n<p>你们不要说它算力阉割的，比4090还差一点。就是在4090、5090这个级别，它的瓶颈不是这个算力，一般而言就是你这个什么显存带宽，然后PCIe，甚至说你平台的这个内存效率，这些都会有影响。其实算力在这种级别一般都是够用了。然后关于NVFP4，其实有些推理引擎，包括英伟达官方的，包括像Ninfra这样比较知名的推理引擎是吧，呃，甚至说我们比较常用的一些通用推理引擎，像SGLang、vLLM等等，它们实际上对于N卡的优化都会更好一点。呃，NVFP4这样的新技术，现在可能说只是在某些特定的场景下它有一些生态优势。那么随着这个时间的推移，是吧，你这个卡可能说放在手里要用个两三年，甚至更长的时间，那么以后NVFP4的这个生态红利会得到进一步的发掘，它以后的这个成长性要稍微高一点。</p>\n<p><img src=\"https://upload.lcz.me/uploads/de5c4cf9-77f0-48c9-93ea-c1dcee68b61b.jpeg\" alt=\"5090D.jpeg\" loading=\"lazy\"></p>\n<p>而且我们不能忽视的是，5090D 32G它是官方版本，它不是魔改卡。它本身把它装上去之后，三个大风扇是吧，能把它镇住，风冷版本又稳定，然后它的噪音又不大…</p>",
+            "text": "装机工作终于是全面结束了啊，现在这个房间摆着3台服务器，我已经把这个桌面给收拾干净了，真的是把我这个老骨头都给累散了。那么现在右手边这个服务器，就是7900XTX加上DDR3 1866的条子，一共是32G x4，也就是128G，加上这个华南金牌的X99 TF主板，搭配了E5-2696 V3处理器。然后右手边这一个是5070Ti 16G，加上4060Ti 16G，加上96G DDR5 6000的条子，加上铭瑄的瑷珈B850板子。然后现在呼呼作响的这个，就是我放在角落的以前的X99 CD3，加上DDR3 1866 64G的条子，加上4090D 48G。啊，这个也是我的老服务器了，也用了很长一段时间。现在它正在跑这个MiniMax H3，我不知道这个噪音后期能不能把它剪掉，啊，应该是可以处理掉的。因为以前它是放在这个位置，离麦克风太近了，那么现在是把它放到了房间的角落，放在地上，呃，应该是可以把这个噪音给剪掉的。\n那么这些MiniMax H3，包括Strata，呃，千问27B啊，千问27B还没有测完，但是Strata加MiniMax H3加H3 Image，我在这三个平台上全部都已经测过了。呃，总体上N卡的效率会更高一点，然后这个A卡的效率要稍微低一点。但是呢，怎么讲呢，A卡的效率我认为也还可以接受了啊，并没有之前想象的落差那么大，还是非常不错的啊。就是7900XTX加上这个什么DDR3、加上X99的这这个洋垃圾套装，因为它本身的成本确实是非常低，呃，我还是比较推荐的，大家可以看看我上一期视频。提到我这个4090D 48G啊，就有朋友留言问，现在是买这个4090 48G啊，或者4090D 48G，差距是比较小了啊，还是买这个5090D 32G？\n我们知道5090除了标准版，它有这个5090D是吧，32G，有这个5090D V2，它是24G的。5090D相比于标准版的5090，它是算力阉割，但是它的这个带宽是没有阉割的，显存也没有阉割。它的算力是比4090要稍微差一点的，可能跟4090D差不多，但它的显存肯定，呃，32G，呃，怎么说呢，它比这个4090或者4090D 48G魔改卡要差一些是吧？不过现在在大多数场景中都已经完全够用了。那么5090D V2阉割得就更厉害了，它的算力还不如4090D，而且它的这个带宽也从这个1.79 TB/s阉割到了1.34 TB/s。呃，其实也是完全够用了啊，这个不影响。你们就把它当做一个，怎么说呢，24G版本的RTX Pro 5000，是吧？Pro 5000不是48G吗？那么在大多数场景下它其实也是够用了，无论跑Strata还是跑这个ComfyUI，呃，5090D V2其实也是完全够用的。\n那么在什么场景下，32G和24G的显存可能不够用呢？比如说你现在要跑这个SGLang、千问3.8 27B是吧，你要把4比特的权重完全放进显存中去，然后多开会话，享受那种极致的体验，那在这种情况下就只有4090 48G能够比较爽快地玩。那你32G的这个5090或者5090D，或者说你这个什么5090D V2，你都不能玩。但是我们需要知道，现在有一个技术叫做HiCache。如果说你的平台比较好，就像我后面这个A加这一套是吧，它是96G的DDR5 6000，而且是有这个EXPO模式，它是能把这个频率给跑满的，那么带宽能够达到90多GB/s。那么在这种情况下，你有这个什么HiCache，有这个DDR5的条子，你哪怕是这个5090D V2，你不要说5090了，它用这个SGLang呢，其实也是可以玩一玩的，这个是没有什么问题的，就是27B模型。\n然后我们再说这个ComfyUI，比如说MiniMax H3，或者说是LTX 2.6，你要把这个量化之后的这个权重，比如说4比特的这个量化权重，你要把它完全加载到显存中去，就全过程在显存中生产，那么4090 48G它的大显存，或者说你要上这个高分辨率的时候，它还是有优势的。但是呢，现在也有新的技术来解决这个问题。我在视频中不是多次提到吗，有个插件叫做ComfyUI-MDO，是吧？我的这个agent老是把这个字幕给搞错啊，我这一次手工检查一下啊，把这个字幕给打得正确一点，让大家方便去搜索这个插件。那么这个插件可以把这个什么MiniMax H3它视频生成的这个显存要求门槛从这个24G干到16G。就5070Ti 16G，它现在跑MiniMax H3，呃，已经是跑出来的效果是完全够用了啊，效果是非常不错的，而且它的速度也是相当不错的，生产力是够的。\n是N卡在这一块的生态红利还是比A卡要强一点。A卡我个人感觉它虽然也是支持ComfyUI-MDO，但是它的这个支持度不好，有很多bug。就论坛有不少网友，像这个雄杰高、FCYS，他们都发了一些帖子，包括懒人烘焙是吧，他们都在讲这些bug怎么修复，大家可以去看一看。就是AMD的卡尽量还是，你要玩ComfyUI，尽量还是上这个24G的显存。然后我们再说一下这个供电接口的问题啊，就我们知道5090它烧接口，这几乎是没有办法避免的。很多人说限功耗，把功耗限制在475瓦。我们需要知道5090它比4090厉害的地方，除了这个NVFP4啊，一般来说其实只有在少数情况下跑特定的模型，它才有，呃，价值，而且是跑文本模型它有价值。在ComfyUI中或者在其他的应用场景中，它的价值并不那么大。然后它相比于4090的所谓算力提升，就是靠功耗堆出来的。它的制程、它本身的底层并没有比4090强大多少，这个是5090比较吊诡的地方。\n其实之前我在论坛中讲过很多次，包括我们论坛有很多帖子，就在这个实际的任务测试中也是有明确的数据。就5090比这个4090强就强在它的功耗上限更强一点，那么它烧接口。由于这个16pin的接口，它的承压上限可能就在600瓦左右，那5090的这个TDP大概是575瓦。有人说把它限制到475瓦，包括5090D了这个情况可以大大地降低你这个接口的这个发热量，但是你不能保证它不烧。当然了，我们知道5090D相比于5090还是阉割了一刀，它可能说运行时候它的这个功耗墙、它的这个极值温度可能会比标准版要低一点。那么如果说你再配合限制功耗，像评论区的网友说把它限制到470瓦，那应该是问题不大。反倒我觉得5090D V2这种24G的显卡，我个人觉得非常有性价比，因为你买回来无非就是跑本地大模型嘛，24G完全够了。不是4G，是Strata。如果说你搭配一个好一点的平台，你哪怕是千问27B，也够了是吧？你如果是用它搭配Strata驱动千问3.8 Flash Next的，或者说以后即将发布的千问4.0 Flash，如果还是维持在125B A6B这个级别的话，那5090D V2一样是非常香的。\n你们不要说它算力阉割的，比4090还差一点。就是在4090、5090这个级别，它的瓶颈不是这个算力，一般而言就是你这个什么显存带宽，然后PCIe，甚至说你平台的这个内存效率，这些都会有影响。其实算力在这种级别一般都是够用了。然后关于NVFP4，其实有些推理引擎，包括英伟达官方的，包括像Ninfra这样比较知名的推理引擎是吧，呃，甚至说我们比较常用的一些通用推理引擎，像SGLang、vLLM等等，它们实际上对于N卡的优化都会更好一点。呃，NVFP4这样的新技术，现在可能说只是在某些特定的场景下它有一些生态优势。那么随着这个时间的推移，是吧，你这个卡可能说放在手里要用个两三年，甚至更长的时间，那么以后NVFP4的这个生态红利会得到进一步的发掘，它以后的这个成长性要稍微高一点。\n而且我们不能忽视的是，5090D 32G它是官方版本，它不是魔改卡。它本身把它装上去之后，三个大风扇是吧，能把它镇住，风冷版本又稳定，然后它的噪音又不大…",
+            "lead": "装机工作终于是全面结束了啊，现在这个房间摆着3台服务器，我已经把这个桌面给收拾干净了，真的是把我这个老骨头都给累散了。那么现在右手边这个服务器，就是7900XTX加上DDR3 1866的条子，一共是32G x4，也就是128G，加上这个华南金牌的X99 TF主板，搭配了E5-2696 V3处理器。然后右手边这一个是5070Ti 16G，加上4060Ti 16G，加上96G DDR5 6000的条子，加上铭瑄的瑷珈B850板子。然后现在呼呼作响的这个，就是我放在角落的以前的X99 CD3，加上DDR3 1866 64G的条子，加上4090D 48G。啊，这个也是我的老服务器了，也用了很长一段时间。现在它正在跑这个MiniMax H3，我不知道这个噪音后期能不能把它剪掉，啊，应该是可以处理掉的。因为以前它是放在这个位置，离麦克风太近了，那么现在是把它放到了房间的角落，放在地上，呃，应该是可以把这个噪音给剪掉的。\n那么这些MiniMax H3，包括Strata，呃，千问27B啊，千问27B还没有测完，但是Stra",
+            "chars": 4698,
+            "shown": 3201,
+            "truncated": true
+          },
+          "quality": 8,
+          "score": 19,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 2,
+          "slug": "987c951a467e",
+          "action": 6,
+          "rank": 17.6,
+          "tags": [
+            "lowspec",
+            "hardware",
+            "generate",
+            "local"
+          ]
+        },
+        {
+          "sourceId": "gh-releases",
+          "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "github-actions[bot]",
+          "id": "460635735",
+          "title": "llama.cpp b12814 发布",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12814",
+          "published": "2026-11-27T13:27:51.000Z",
+          "summary": "moe-cache : support experts selected on another backend (#33133) When the experts are selected on another backend than the cache, e.g. the loop passes of inkling2_loop with a layer split, the lookup reads a copy of the ids made by the scheduler, which has no source to read the shape from. Take the experts per token fr…",
+          "content": {
+            "html": "<p>&lt;details open&gt;</p>\n<p>moe-cache : support experts selected on another backend (#33133)</p>\n<p>When the experts are selected on another backend than the cache, e.g. the loop passes of inkling2_loop with a layer split, the lookup reads a copy of the ids made by the scheduler, which has no source to read the shape from. Take the experts per token from build_lookup instead.</p>\n<p>Fixes #33101</p>\n<p>&lt;/details&gt;</p>\n<p><strong>Website:</strong></p>\n<ul><li>&lt;https://llama.app&gt;</li></ul>\n<p><strong>Attestations:</strong></p>\n<ul><li>&lt;https://github.com/ggml-org/llama.cpp/attestations/73121587&gt;</li></ul>\n<p><strong>macOS/iOS:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12814/llama-b12814-bin-macos-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">macOS Apple Silicon (arm64)</a></li><li>macOS Apple Silicon (arm64, KleidiAI enabled)<a href=\"https://github.com/ggml-org/llama.cpp/pull/23780\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">DISABLED</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12814/llama-b12814-bin-macos-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">macOS Intel (x64)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12814/llama-b12814-xcframework.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">iOS XCFramework</a></li></ul>\n<p><strong>Linux:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12814/llama-b12814-bin-ubuntu-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12814/llama-b12814-bin-ubuntu-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu arm64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12814/llama-b12814-bin-ubuntu-s390x.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu 24.04 s390x (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12814/llama-b12814-bin-ubuntu-26.04-s390x.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu 26.04 s390x (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12814/llama-b12814-bin-ubuntu-zdnn-s390x.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu 26.04 s390x (zDNN)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12814/llama-b12814-bin-ubuntu-vulkan-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12814/llama-b12814-bin-ubuntu-vulkan-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu arm64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12814/llama-b12814-bin-ubuntu-cuda-12.8-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (CUDA 12)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12814/cudart-llama-b12814-bin-ubuntu-cuda-12.8-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 12.8 libraries</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12814/llama-b12814-bin-ubuntu-cuda-13.5-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12814/cudart-llama-b12814-bin-ubuntu-cuda-13.5-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 libraries</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12814/llama-b12814-bin-ubuntu-cuda-13.5-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu arm64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12814/cudart-llama-b12814-bin-ubuntu-cuda-13.5-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 libraries</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12814/llama-b12814-bin-ubuntu-rocm-10.0-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (ROCm 10.0)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12814/llama-b12814-bin-ubuntu-openvino-2026.4.1-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (OpenVINO)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12814/llama-b12814-bin-ubuntu-sycl-fp32-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (SYCL FP32)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12814/llama-b12814-bin-ubuntu-sycl-fp16-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (SYCL FP16)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12814/llama-b12814-bin-linux-arm64-snapdragon.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Linux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/linux.md\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">setup guide</a></li></ul>\n<p><strong>Android:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12814/llama-b12814-bin-android-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Android arm64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12814/llama-b12814-bin-android-arm64-snapdragon.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Android arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/README.md\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">setup guide</a></li></ul>\n<p><strong>Windows:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12814/llama-b12814-bin-win-cpu-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12814/llama-b12814-bin-win-cpu-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12814/llama-b12814-bin-win-opencl-adreno-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (OpenCL Adreno)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12814/llama-b12814-bin-win-cuda-12.4-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (CUDA 12)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12814/cudart-llama-bin-win-cuda-12.4-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 12.4 DLLs</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12814/llama-b12814-bin-win-cuda-13.5-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12814/cudart-llama-bin-win-cuda-13.5-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 DLLs</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12814/llama-b12814-bin-win-cuda-13.5-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12814/cudart-llama-bin-win-cuda-13.5-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 DLLs</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12814/llama-b12814-bin-win-vulkan-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12814/llama-b12814-bin-win-vulkan-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12814/llama-b12814-bin-win-openvino-2026.4.1-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (OpenVINO)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12814/llama-b12814-bin-win-sycl-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (SYCL)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12814/llama-b12814-bin-win-rocm-10.0-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (ROCm 10.0)</a></li></ul>\n<p><strong>openEuler:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/pull/23705\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">DISABLED</a></li><li>openEuler x86 (310p)</li><li>openEuler x86 (910b, ACL Graph)</li><li>openEuler aarch64 (310p)</li><li>openEuler aarch64 (910b, ACL Graph)</li></ul>\n<p><strong>UI:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12814/llama-b12814-ui.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">UI</a></li></ul>",
+            "text": "moe-cache : support experts selected on another backend (#33133)\nWhen the experts are selected on another backend than the cache, e.g. the loop passes of inkling2_loop with a layer split, the lookup reads a copy of the ids made by the scheduler, which has no source to read the shape from. Take the experts per token from build_lookup instead.\nFixes #33101\nWebsite:\nAttestations:\nmacOS/iOS:\nmacOS Apple Silicon (arm64)\nmacOS Apple Silicon (arm64, KleidiAI enabled) DISABLED\nmacOS Intel (x64)\niOS XCFramework\nLinux:\nUbuntu x64 (CPU)\nUbuntu arm64 (CPU)\nUbuntu 24.04 s390x (CPU)\nUbuntu 26.04 s390x (CPU)\nUbuntu 26.04 s390x (zDNN)\nUbuntu x64 (Vulkan)\nUbuntu arm64 (Vulkan)\nUbuntu x64 (CUDA 12) - CUDA 12.8 libraries\nUbuntu x64 (CUDA 13) - CUDA 13.5 libraries\nUbuntu arm64 (CUDA 13) - CUDA 13.5 libraries\nUbuntu x64 (ROCm 10.0)\nUbuntu x64 (OpenVINO)\nUbuntu x64 (SYCL FP32)\nUbuntu x64 (SYCL FP16)\nLinux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide\nAndroid:\nAndroid arm64 (CPU)\nAndroid arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide\nWindows:\nWindows x64 (CPU)\nWindows arm64 (CPU)\nWindows arm64 (OpenCL Adreno)\nWindows x64 (CUDA 12) - CUDA 12.4 DLLs\nWindows x64 (CUDA 13) - CUDA 13.5 DLLs\nWindows arm64 (CUDA 13) - CUDA 13.5 DLLs\nWindows x64 (Vulkan)\nWindows arm64 (Vulkan)\nWindows x64 (OpenVINO)\nWindows x64 (SYCL)\nWindows x64 (ROCm 10.0)\nopenEuler:\nDISABLED\nopenEuler x86 (310p)\nopenEuler x86 (910b, ACL Graph)\nopenEuler aarch64 (310p)\nopenEuler aarch64 (910b, ACL Graph)\nUI:\nUI",
+            "lead": "moe-cache : support experts selected on another backend (#33133)\nWhen the experts are selected on another backend than the cache, e.g. the loop passes of inkling2_loop with a layer split, the lookup reads a copy of the ids made by the scheduler, which has no source to read the shape from. Take the experts per token from build_lookup instead.\nFixes #33101\nWebsite:",
+            "chars": 1676,
+            "shown": 1676,
+            "truncated": false
+          },
+          "quality": 8,
+          "score": 20.29,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 1,
+          "slug": "bc8009191b0e",
+          "action": 4,
+          "rank": 14.4,
+          "tags": [
+            "local",
+            "tutorial"
+          ]
+        },
+        {
+          "sourceId": "lcz-news",
+          "sourceName": "抡锤者 资讯",
+          "lang": "zh",
+          "tier": 3,
+          "trustCategory": true,
+          "declaredCategory": "news",
+          "categories": [],
+          "author": "terry",
+          "id": "3359",
+          "title": "英伟达断供东南亚4国，美国掐断海外算力租用，国内AI企业处境各不相同，DeepSeek/美团等企业提前布局国产算力受益！",
+          "url": "https://lcz.me/topic/3359",
+          "published": "2026-11-27T05:00:00.000Z",
+          "summary": "英伟达宣布暂时停止向东南亚4国供应装有英伟达GPU的服务器，可能要观察一阵子。那么最近海外的算力中心已经开始收紧政策了，呃，美国的监管是越来越严。如果说中国企业想要通过租用海外算力中心训练大模型啊，通过这种方式来跟美国企业竞争的话，这条路已经基本上是被掐断了。呃，可以说几家欢喜几家愁吧。那么像国内的一些头部大厂，比如说字节跳动、呃腾讯，还有这个什么阿里巴巴，就他们各自的处境是完全不一样的。字节跳动的一方面是提前向这个华为下了大量的订单，呃，在这个供货的优先级上应该也是比较高的。然后他在这个禁令升级之前，他也是大规模地囤积英伟达的卡。就包括阿里巴巴其实也是，呃，有一段时间不是可以卖H200嘛，然后这个字节跳动和这个阿里巴巴他们执行得…",
+          "metrics": {
+            "points": 0,
+            "comments": 1,
+            "views": 107
+          },
+          "excellent": false,
+          "content": {
+            "html": "<p>英伟达宣布暂时停止向东南亚4国供应装有英伟达GPU的服务器，可能要观察一阵子。那么最近海外的算力中心已经开始收紧政策了，呃，美国的监管是越来越严。如果说中国企业想要通过租用海外算力中心训练大模型啊，通过这种方式来跟美国企业竞争的话，这条路已经基本上是被掐断了。呃，可以说几家欢喜几家愁吧。那么像国内的一些头部大厂，比如说字节跳动、呃腾讯，还有这个什么阿里巴巴，就他们各自的处境是完全不一样的。字节跳动的一方面是提前向这个华为下了大量的订单，呃，在这个供货的优先级上应该也是比较高的。然后他在这个禁令升级之前，他也是大规模地囤积英伟达的卡。就包括阿里巴巴其实也是，呃，有一段时间不是可以卖H200嘛，然后这个字节跳动和这个阿里巴巴他们执行得就比较快，就买到的比较多。然后腾讯可能说在这个算力采购上面就稍微迟疑了一下，现在可能说这个算力就要面临危机，而且关于采购国产卡，它比起美团，比起这个字节，它又是慢了一步，就没有那么地坚定。美团呢，是由于当时买这个英伟达的卡决策太晚了，他想买卡的时候已经是面临了禁令生效，所以说他不得不押宝华为。反而他是第一个通过华为集群训练出自家大模型的，就是LongCat。这个模型呢，我不能说是它一流，它也只是个R线的模型，但是毕竟它的智商还是在线的，还是能用的，而且它第一个把这个国产的这个，呃，集群从这个训练到推理给完全跑通了啊，这一块搞不好以后会是它的一个优势。</p>\n<p><img src=\"https://upload.lcz.me/uploads/7a64e35b-acfd-461a-9633-103ba49127f6.jpeg\" alt=\"英伟达断供东南亚.jpeg\" loading=\"lazy\"></p>\n<p>像国产的新兴的AI几小龙，你像这个什么Kimi啊、MiniMax啊，包括GLM啊，他们过往都是在海外租用算力中心，通过这个方式啊，可能有一段时间就能够发表一个不错的前沿模型，然后刷一波流量，割一波韭菜。但是现在他们面临的就是海外渠道被连根拔起，这个要如何转型，其实是一个很大的问题。呃，MiniMax呢，由于它有这个什么H3这样的多模态模型，包括H3-Image，它现在就是走这种，呃，文本加上这个多模态，就一体化推进，把这个整体生态，那么它的困难可能说还没有想象的那么严重。呃，GLM呢，是前一段时间已经把部分模型转移到华为的集群上来训练了，它也是做了这一块的准备。Kimi是所有企业中，我感觉它是最危险的，因为它的模型第一尺寸非常的大，第二它走的是对标Claude、对标OpenAI，走的这种大规模的MoE模型，就是几万亿级别的。如果说以后这个海外算力中心租用成为过去了，那我觉得对于Kimi来讲的话可能是灭顶之灾。虽然呢，它也可以向国内的算力企业，比如说像阿里巴巴是吧，像百度，呃，像这个字节是吧去采购，但是你如果是采购推理服务的话，我个人觉得这个量可能说应该是够用的。但是如果说你想训练的话，你想一想这几家企业谁没有自己的模型要训练啊？尤其是你看看阿里巴巴是吧、字节跳动，那都是有一套生态体系都排队训练是吧，可能说自己未必能够忙得过来。呃，稍微有点算力富余的可能就是华为云了，因为他自家肯定是产芯片嘛，但是华为用的是自家的芯片。你这个时候如果说才转型，从这个什么英伟达转向华为的话，那你整个技术栈你要调整的时间可能就要长得多。</p>\n<p><img src=\"https://upload.lcz.me/uploads/4f4ec890-020e-40b2-a3a9-3b1edb83207f.jpg\" alt=\"华为AI数据中心.jpg\" loading=\"lazy\"></p>\n<p>所以我不是说了嘛，我说梁子一直是一个很有眼光的人，是吧？他是在英伟达禁令生效之前，他就囤积了大量的英伟达显卡，然后把DeepSeek一炮打响，在这个DeepSeek V3还有DeepSeek R1两个模型上面一炮打响。然后在这个美国人收网之前，你看前几个月，DeepSeek又付出了巨大的代价，呃，通过这个阵痛，通过几个月的延迟发布，把自己的推理服务全部转到了华为为主的这个国产集群上来。而且他还把自家的AI技术栈的底层从这个CUDA架构迁移到了国产的TileLang架构。DeepSeek因此在这个发布窗口上可以说经常是被竞争对手领先一个月甚至两个月，但是这样的付出是值得的。如今DeepSeek它的V5大模型全部使用华为的这个国产集群来训练，而且梁子前一阵子抱怨华为给他供货不足，说只有16,000张，华为也非常的大方，直接给了他翻十倍，给他配了16万张。</p>\n<p>并且我们想一想，华为的这个昇腾960DT本来说是2027年四季度发布的，一下子提前三个季度。哎，最近华为还有什么自研的HBM，包括说国产的光刻机、EUV光刻机啊，已经传出非常好的消息。当然了，呃，要想EUV光刻机投产，那还不知道是几年之后的事情了，就远水解不了近渴。但是这个什么逻辑折叠呀，呃，3D混合键合这样的技术、堆叠技术，都已经是在实实在在地投入生产，在迭代良率了。也就是说华为以后的产能会越来越充足。它的这个技术栈，这个昇腾CANN，虽然跟CUDA比起来是差了不少，成熟度上，包括效率上、稳定性上可能都有待调整是吧，可能说训练的时候会发生一些宕机现象。但是由于这个DeepSeek它是构建在这个TileLang架构上，就说它在硬件之间迁移的成本是比较低的，而且它这个调优的代价也是比较低的，它的这个成本是可控的。我们有理由相信这个华为跟DeepSeek通过几个月的努力是吧，能够在明年让我们看到全新的DeepSeek V5。我估计从现在开始算，半年之内如果能出的话，就算是非常不错了。</p>\n<p><img src=\"https://upload.lcz.me/uploads/a9587aea-50f5-4f3d-8828-402f5f0461d2.jpg\" alt=\"华为测试deepseek.jpg\" loading=\"lazy\"></p>\n<p>这个互联网上有人开玩笑啊，说这一次美国人升级禁令，本来是想打击抗日军队，没想到抗日军队这个没有打到，把这个伪军给误伤了。他们说的伪军是什么呢？就是什么小米呀、Kimi呀，这些在DeepSeek兴起之后也疯狂涌入大模型领域，然后从头到尾没有任何的核心技术，底层技术栈完全是构建在外国的这个科技基础之上，随时有可能被掐断。尤其是雷布斯领导的小米，就被指责为皇协军，就这家公司没有任何的核心技术，就是一个组装厂，它的芯片也是……就大家都非常的奇怪，在美国人制裁如此严厉的情况下，是吧，台积电连16纳米都开始要限制的情况下，雷布斯的小米玄戒是怎么拿到台积电产能的？很多人就是怀疑，合理怀疑了，就是说雷布斯的企业是不是这个有国外势力在扶持。当然了，这些其实都是网络上的一些谣言啊，我们必须说，雷布斯是为国产生态做出过重要贡献的，因为雷布斯领导的这个金山，它的这个办公系列，讲实话是我们国产操作系统生态啊，我们国产这个软件生态的一个重要基石，这块你不服是不行的。啊，至于说企业他去采购这个国外技术，我们也要秉持一种宽容的态度。</p>\n<p>我说实话，就算是雷布斯愿意大规模地去采购华为的算力，华为能够交得出货吗？是吧，毕竟小米搞AI大模型的时候，它已经是比较晚了。他从这个DeepSeek挖走了罗福莉，那个时候DeepSeek V3已经是一炮而红了，美国的这个英伟达禁令啊，美国的这个什么AI算力禁令已经是生效了。是吧，你说他不走这个皇协军路线，他要怎么生存？是吧，他那个时候去向华为采购，我估计等交货的时候连黄花菜都凉了。作为企业呢，我认为不讲政治是对的啊，就说，呃，你做出对于自己股东最有利的决定啊，做出对于这个股民最有利的决定就行了。你只需要对盈利负责，你不需要去考虑什么呃家国情怀，不需要去考虑什么宏大目标是吧？但是如果说像梁子这样，就是在兼顾了公司商业利益的情况下，又能够为这个国产技术的突破做出正面的贡献，那么这样的行为我们肯定是要额外点赞的，是要这个大力支持一下的。</p>\n<p><img src=\"https://upload.lcz.me/uploads/5a694598-9524-4b22-bca6-32e21639283a.jpg\" alt=\"小米雷军.jpg\" loading=\"lazy\"></p>\n<p>最近还有一个比较有意思的事情啊，就是Anthropic取消了马国公的算力租用合同啊，取消了一部分。这个就非常的奇怪，就是现在的这个AI算力到底是过剩的还是不够的？其实怎么讲呢，从这个市场的这个表现来看，好像是算力遇到了严重的瓶颈，但是事实上啊，就是这个市场正在发生快速的变化。第一是由于新技术的出现，由于AI本身能够改进这个训练和推理的效率，那么对于硬件的要求可能会逐步走低。这个不要说云端了，就是我们在本地是吧，你现在在本地部署125B A6B的模型，就切换3.…</p>",
+            "text": "英伟达宣布暂时停止向东南亚4国供应装有英伟达GPU的服务器，可能要观察一阵子。那么最近海外的算力中心已经开始收紧政策了，呃，美国的监管是越来越严。如果说中国企业想要通过租用海外算力中心训练大模型啊，通过这种方式来跟美国企业竞争的话，这条路已经基本上是被掐断了。呃，可以说几家欢喜几家愁吧。那么像国内的一些头部大厂，比如说字节跳动、呃腾讯，还有这个什么阿里巴巴，就他们各自的处境是完全不一样的。字节跳动的一方面是提前向这个华为下了大量的订单，呃，在这个供货的优先级上应该也是比较高的。然后他在这个禁令升级之前，他也是大规模地囤积英伟达的卡。就包括阿里巴巴其实也是，呃，有一段时间不是可以卖H200嘛，然后这个字节跳动和这个阿里巴巴他们执行得就比较快，就买到的比较多。然后腾讯可能说在这个算力采购上面就稍微迟疑了一下，现在可能说这个算力就要面临危机，而且关于采购国产卡，它比起美团，比起这个字节，它又是慢了一步，就没有那么地坚定。美团呢，是由于当时买这个英伟达的卡决策太晚了，他想买卡的时候已经是面临了禁令生效，所以说他不得不押宝华为。反而他是第一个通过华为集群训练出自家大模型的，就是LongCat。这个模型呢，我不能说是它一流，它也只是个R线的模型，但是毕竟它的智商还是在线的，还是能用的，而且它第一个把这个国产的这个，呃，集群从这个训练到推理给完全跑通了啊，这一块搞不好以后会是它的一个优势。\n像国产的新兴的AI几小龙，你像这个什么Kimi啊、MiniMax啊，包括GLM啊，他们过往都是在海外租用算力中心，通过这个方式啊，可能有一段时间就能够发表一个不错的前沿模型，然后刷一波流量，割一波韭菜。但是现在他们面临的就是海外渠道被连根拔起，这个要如何转型，其实是一个很大的问题。呃，MiniMax呢，由于它有这个什么H3这样的多模态模型，包括H3-Image，它现在就是走这种，呃，文本加上这个多模态，就一体化推进，把这个整体生态，那么它的困难可能说还没有想象的那么严重。呃，GLM呢，是前一段时间已经把部分模型转移到华为的集群上来训练了，它也是做了这一块的准备。Kimi是所有企业中，我感觉它是最危险的，因为它的模型第一尺寸非常的大，第二它走的是对标Claude、对标OpenAI，走的这种大规模的MoE模型，就是几万亿级别的。如果说以后这个海外算力中心租用成为过去了，那我觉得对于Kimi来讲的话可能是灭顶之灾。虽然呢，它也可以向国内的算力企业，比如说像阿里巴巴是吧，像百度，呃，像这个字节是吧去采购，但是你如果是采购推理服务的话，我个人觉得这个量可能说应该是够用的。但是如果说你想训练的话，你想一想这几家企业谁没有自己的模型要训练啊？尤其是你看看阿里巴巴是吧、字节跳动，那都是有一套生态体系都排队训练是吧，可能说自己未必能够忙得过来。呃，稍微有点算力富余的可能就是华为云了，因为他自家肯定是产芯片嘛，但是华为用的是自家的芯片。你这个时候如果说才转型，从这个什么英伟达转向华为的话，那你整个技术栈你要调整的时间可能就要长得多。\n所以我不是说了嘛，我说梁子一直是一个很有眼光的人，是吧？他是在英伟达禁令生效之前，他就囤积了大量的英伟达显卡，然后把DeepSeek一炮打响，在这个DeepSeek V3还有DeepSeek R1两个模型上面一炮打响。然后在这个美国人收网之前，你看前几个月，DeepSeek又付出了巨大的代价，呃，通过这个阵痛，通过几个月的延迟发布，把自己的推理服务全部转到了华为为主的这个国产集群上来。而且他还把自家的AI技术栈的底层从这个CUDA架构迁移到了国产的TileLang架构。DeepSeek因此在这个发布窗口上可以说经常是被竞争对手领先一个月甚至两个月，但是这样的付出是值得的。如今DeepSeek它的V5大模型全部使用华为的这个国产集群来训练，而且梁子前一阵子抱怨华为给他供货不足，说只有16,000张，华为也非常的大方，直接给了他翻十倍，给他配了16万张。\n并且我们想一想，华为的这个昇腾960DT本来说是2027年四季度发布的，一下子提前三个季度。哎，最近华为还有什么自研的HBM，包括说国产的光刻机、EUV光刻机啊，已经传出非常好的消息。当然了，呃，要想EUV光刻机投产，那还不知道是几年之后的事情了，就远水解不了近渴。但是这个什么逻辑折叠呀，呃，3D混合键合这样的技术、堆叠技术，都已经是在实实在在地投入生产，在迭代良率了。也就是说华为以后的产能会越来越充足。它的这个技术栈，这个昇腾CANN，虽然跟CUDA比起来是差了不少，成熟度上，包括效率上、稳定性上可能都有待调整是吧，可能说训练的时候会发生一些宕机现象。但是由于这个DeepSeek它是构建在这个TileLang架构上，就说它在硬件之间迁移的成本是比较低的，而且它这个调优的代价也是比较低的，它的这个成本是可控的。我们有理由相信这个华为跟DeepSeek通过几个月的努力是吧，能够在明年让我们看到全新的DeepSeek V5。我估计从现在开始算，半年之内如果能出的话，就算是非常不错了。\n这个互联网上有人开玩笑啊，说这一次美国人升级禁令，本来是想打击抗日军队，没想到抗日军队这个没有打到，把这个伪军给误伤了。他们说的伪军是什么呢？就是什么小米呀、Kimi呀，这些在DeepSeek兴起之后也疯狂涌入大模型领域，然后从头到尾没有任何的核心技术，底层技术栈完全是构建在外国的这个科技基础之上，随时有可能被掐断。尤其是雷布斯领导的小米，就被指责为皇协军，就这家公司没有任何的核心技术，就是一个组装厂，它的芯片也是……就大家都非常的奇怪，在美国人制裁如此严厉的情况下，是吧，台积电连16纳米都开始要限制的情况下，雷布斯的小米玄戒是怎么拿到台积电产能的？很多人就是怀疑，合理怀疑了，就是说雷布斯的企业是不是这个有国外势力在扶持。当然了，这些其实都是网络上的一些谣言啊，我们必须说，雷布斯是为国产生态做出过重要贡献的，因为雷布斯领导的这个金山，它的这个办公系列，讲实话是我们国产操作系统生态啊，我们国产这个软件生态的一个重要基石，这块你不服是不行的。啊，至于说企业他去采购这个国外技术，我们也要秉持一种宽容的态度。\n我说实话，就算是雷布斯愿意大规模地去采购华为的算力，华为能够交得出货吗？是吧，毕竟小米搞AI大模型的时候，它已经是比较晚了。他从这个DeepSeek挖走了罗福莉，那个时候DeepSeek V3已经是一炮而红了，美国的这个英伟达禁令啊，美国的这个什么AI算力禁令已经是生效了。是吧，你说他不走这个皇协军路线，他要怎么生存？是吧，他那个时候去向华为采购，我估计等交货的时候连黄花菜都凉了。作为企业呢，我认为不讲政治是对的啊，就说，呃，你做出对于自己股东最有利的决定啊，做出对于这个股民最有利的决定就行了。你只需要对盈利负责，你不需要去考虑什么呃家国情怀，不需要去考虑什么宏大目标是吧？但是如果说像梁子这样，就是在兼顾了公司商业利益的情况下，又能够为这个国产技术的突破做出正面的贡献，那么这样的行为我们肯定是要额外点赞的，是要这个大力支持一下的。\n最近还有一个比较有意思的事情啊，就是Anthropic取消了马国公的算力租用合同啊，取消了一部分。这个就非常的奇怪，就是现在的这个AI算力到底是过剩的还是不够的？其实怎么讲呢，从这个市场的这个表现来看，好像是算力遇到了严重的瓶颈，但是事实上啊，就是这个市场正在发生快速的变化。第一是由于新技术的出现，由于AI本身能够改进这个训练和推理的效率，那么对于硬件的要求可能会逐步走低。这个不要说云端了，就是我们在本地是吧，你现在在本地部署125B A6B的模型，就切换3.…",
+            "lead": "英伟达宣布暂时停止向东南亚4国供应装有英伟达GPU的服务器，可能要观察一阵子。那么最近海外的算力中心已经开始收紧政策了，呃，美国的监管是越来越严。如果说中国企业想要通过租用海外算力中心训练大模型啊，通过这种方式来跟美国企业竞争的话，这条路已经基本上是被掐断了。呃，可以说几家欢喜几家愁吧。那么像国内的一些头部大厂，比如说字节跳动、呃腾讯，还有这个什么阿里巴巴，就他们各自的处境是完全不一样的。字节跳动的一方面是提前向这个华为下了大量的订单，呃，在这个供货的优先级上应该也是比较高的。然后他在这个禁令升级之前，他也是大规模地囤积英伟达的卡。就包括阿里巴巴其实也是，呃，有一段时间不是可以卖H200嘛，然后这个字节跳动和这个阿里巴巴他们执行得就比较快，就买到的比较多。然后腾讯可能说在这个算力采购上面就稍微迟疑了一下，现在可能说这个算力就要面临危机，而且关于采购国产卡，它比起美团，比起这个字节，它又是慢了一步，就没有那么地坚定。美团呢，是由于当时买这个英伟达的卡决策太晚了，他想买卡的时候已经是面临了禁令生效，所以说他不得",
+            "chars": 4690,
+            "shown": 3166,
+            "truncated": true
+          },
+          "quality": 7,
+          "score": 15.09,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 2,
+          "slug": "fdbc9d0b7a07",
+          "action": 3,
+          "rank": 11.8,
+          "tags": [
+            "hardware",
+            "benchmark"
+          ]
+        },
+        {
+          "sourceId": "gh-releases",
+          "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "Niko1221",
+          "id": "460941291",
+          "title": "Strata v0.2.23 发布",
+          "url": "https://github.com/Niko1221/Strata/releases/tag/v0.2.23",
+          "published": "2026-11-27T18:43:32.000Z",
+          "summary": "Strata 0.2.23 The app and the Terminal are 0.2.23. Control and the Inkling engines (every backend) are 0.1.70, and so are the Windows and Mac Qwen engines. The Linux and aarch64 Qwen engines (0.1.69) and the Hy4 engine (0.1.67) have no changes, so nothing is downloaded for them. What's new New Inkling 2 Mini files. Fi…",
+          "content": {
+            "html": "<h3>Strata 0.2.23</h3>\n<p>The app and the Terminal are 0.2.23. Control and the Inkling engines (every backend) are 0.1.70, and so are the Windows and Mac Qwen engines. The Linux and aarch64 Qwen engines (0.1.69) and the Hy4 engine (0.1.67) have no changes, so nothing is downloaded for them.</p>\n<h4>What's new</h4>\n<ul><li><strong>New Inkling 2 Mini files.</strong>Five builds to choose from:<strong>SQ-20</strong>(19.37 GB),<strong>SQ-15</strong>(14.35 GB),<strong>SQ-10</strong>(10.47 GB),<strong>GSQ-RCO IQ3_S</strong>(11.43 GB) and<strong>Unsloth UD-Q4_K_XL</strong>(17.63 GB). The SQ files are new \"v2\" files; the picture file (Vision v2) is 0.64 GB. If you have the old SQ-20, it shows \"Update available\": installing it downloads the new file and keeps the old one on disk until you remove it. Update the engine together with the model: the 0.2.22 engine refuses the new files with a clear error.</li><li><strong>DFlash 2 drafter.</strong>It replaces DSpark and needs one extra 0.55 GB file, downloaded and checked with the model. A drafter guesses the next words and the model checks them, so accepted words cost less time. It is on by default on Radeon RDNA 2 / 3 / 4, the R9700 and Strix Halo, on the Apple M5 Max with the SQ-20 v2 file, and on NVIDIA by card size: from 24 GiB for up to 32 requests at once, below 24 GiB for a single request and from 16 at once. It is not loaded when it would push part of the model off the card, and cards that keep part of the model in RAM run without it (the Tesla P100 is the exception). Opt-in on Intel Arc (<code>--draft on</code>: +25% to +32% on an Arc Pro B70).<code>--draft off</code>always turns it off.</li><li><strong>Fast mode on by default</strong>on the RTX 5090, RTX 5060 Ti 16 GB, RTX 5070 12 GB, RTX PRO cards, DGX Spark and Radeon R9700. It can change the exact words of an answer slightly.<code>STRATA_INK_SM120=0</code>turns it off;<code>STRATA_INK_SM120_EXACT=1</code>keeps the old words and is still faster on the 5090.</li><li><strong>GSQ-RCO IQ3_S</strong>runs with its own GPU kernels and fits a single 12 GB card.</li><li><strong>Your own model files.</strong>Add a fine-tune, a merge or another maker's quantization from the app's local-files screens or with<code>strata launch --model-path</code>(<code>--custom-label</code>names it):<code>.gguf</code>for Qwen3.8-Flash-Next and Qwen3.6-35B-A3B,<code>.strata</code>for HY-4 Flash, both for Inkling-2-Mini. Strata uses the files where they are, shows them with a Custom badge, and never renames or deletes them; removing one only removes Strata's settings for it.</li><li><strong>Windows crash on start with GGUF models fixed (#7131, #7155, #7206).</strong>The five Windows Qwen engines are rebuilt as 0.1.70.<strong>#7245:</strong>an engine crash is now reported as an engine fault, not as a lack of RAM.</li><li><strong>Strix Halo</strong>reads prompts faster by default: 4K tokens 887 to 1,528 tok/s, 32K 675 to 1,270.</li><li><strong>Olares One:</strong>the Olares image<code>ghcr.io/niko1221/strata:0.2.23-cuda13</code>and two store apps (Inkling-2-Mini SQ-20 v2 and IQ3_S) are already out; the other Docker images follow.</li></ul>\n<h4>Speed</h4>\n<p>Decode in tok/s, one request, SQ-20 v2 unless noted. \"Before\" is the old path or no drafter; \"now\" is the 0.2.23 default. † = measured on a test build before the final merges.</p>\n<p>| Card | Before | Now | |---|---|---| | RTX 5090 (final build) | chat 207.6, counting 415.2 | chat 360.5, counting 502.4 | | RTX 5090, 64 requests at once (512 new tokens each) | 672.0 | 845.0 | | RTX 5060 Ti 16 GB (final build) | code 80.4, counting 104.5 | code 260.7, counting 284.2 | | RTX 5070 12 GB (release package) | – | 96.9 to 119.5 across prompt kinds | | RTX 5060 8 GB (release package, part of the model in RAM) | – | 32.5 to 41.2 | | RTX PRO 6000 †, reading a 4K prompt | 12,165 | 25,397 | | DGX Spark † | prose 55, code 78 | prose 79, code 115 | | DGX Spark †, 32 requests at once | 186 | 305 | | Radeon R9700 | 72.6 to 72.9 | counting 150.2, code 140.3, JSON 136.7 | | Radeon RX 7900 XT †, SQ-15 | counting 77.5 | counting 153.8 | | Apple M5 Max †, Metal | 56.9 | JSON 135.1, code 131.3 | | Tesla V100 32 GB † | JSON 92.9 | JSON 135.6 | | Tesla P100 16 GB †, part of the model in RAM | counting 24.6 | counting 45.1 |</p>\n<p>Quality check on the RTX 5090 (final build, default): tool calls 24/26, coding 11/11, maths 148/150, facts hidden in 16K to…</p>",
+            "text": "Strata 0.2.23\nThe app and the Terminal are 0.2.23. Control and the Inkling engines (every backend) are 0.1.70, and so are the Windows and Mac Qwen engines. The Linux and aarch64 Qwen engines (0.1.69) and the Hy4 engine (0.1.67) have no changes, so nothing is downloaded for them.\nWhat's new\nNew Inkling 2 Mini files. Five builds to choose from: SQ-20 (19.37 GB), SQ-15 (14.35 GB), SQ-10 (10.47 GB), GSQ-RCO IQ3_S (11.43 GB) and Unsloth UD-Q4_K_XL (17.63 GB). The SQ files are new \"v2\" files; the picture file (Vision v2) is 0.64 GB. If you have the old SQ-20, it shows \"Update available\": installing it downloads the new file and keeps the old one on disk until you remove it. Update the engine together with the model: the 0.2.22 engine refuses the new files with a clear error.\nDFlash 2 drafter. It replaces DSpark and needs one extra 0.55 GB file, downloaded and checked with the model. A drafter guesses the next words and the model checks them, so accepted words cost less time. It is on by default on Radeon RDNA 2 / 3 / 4, the R9700 and Strix Halo, on the Apple M5 Max with the SQ-20 v2 file, and on NVIDIA by card size: from 24 GiB for up to 32 requests at once, below 24 GiB for a single request and from 16 at once. It is not loaded when it would push part of the model off the card, and cards that keep part of the model in RAM run without it (the Tesla P100 is the exception). Opt-in on Intel Arc ( --draft on : +25% to +32% on an Arc Pro B70). --draft off always turns it off.\nFast mode on by default on the RTX 5090, RTX 5060 Ti 16 GB, RTX 5070 12 GB, RTX PRO cards, DGX Spark and Radeon R9700. It can change the exact words of an answer slightly. STRATA_INK_SM120=0 turns it off; STRATA_INK_SM120_EXACT=1 keeps the old words and is still faster on the 5090.\nGSQ-RCO IQ3_S runs with its own GPU kernels and fits a single 12 GB card.\nYour own model files. Add a fine-tune, a merge or another maker's quantization from the app's local-files screens or with strata launch --model-path ( --custom-label names it): .gguf for Qwen3.8-Flash-Next and Qwen3.6-35B-A3B, .strata for HY-4 Flash, both for Inkling-2-Mini. Strata uses the files where they are, shows them with a Custom badge, and never renames or deletes them; removing one only removes Strata's settings for it.\nWindows crash on start with GGUF models fixed (#7131, #7155, #7206). The five Windows Qwen engines are rebuilt as 0.1.70. #7245: an engine crash is now reported as an engine fault, not as a lack of RAM.\nStrix Halo reads prompts faster by default: 4K tokens 887 to 1,528 tok/s, 32K 675 to 1,270.\nOlares One: the Olares image ghcr.io/niko1221/strata:0.2.23-cuda13 and two store apps (Inkling-2-Mini SQ-20 v2 and IQ3_S) are already out; the other Docker images follow.\nSpeed\nDecode in tok/s, one request, SQ-20 v2 unless noted. \"Before\" is the old path or no drafter; \"now\" is the 0.2.23 default. † = measured on a test build before the final merges.\n| Card | Before | Now | |---|---|---| | RTX 5090 (final build) | chat 207.6, counting 415.2 | chat 360.5, counting 502.4 | | RTX 5090, 64 requests at once (512 new tokens each) | 672.0 | 845.0 | | RTX 5060 Ti 16 GB (final build) | code 80.4, counting 104.5 | code 260.7, counting 284.2 | | RTX 5070 12 GB (release package) | – | 96.9 to 119.5 across prompt kinds | | RTX 5060 8 GB (release package, part of the model in RAM) | – | 32.5 to 41.2 | | RTX PRO 6000 †, reading a 4K prompt | 12,165 | 25,397 | | DGX Spark † | prose 55, code 78 | prose 79, code 115 | | DGX Spark †, 32 requests at once | 186 | 305 | | Radeon R9700 | 72.6 to 72.9 | counting 150.2, code 140.3, JSON 136.7 | | Radeon RX 7900 XT †, SQ-15 | counting 77.5 | counting 153.8 | | Apple M5 Max †, Metal | 56.9 | JSON 135.1, code 131.3 | | Tesla V100 32 GB † | JSON 92.9 | JSON 135.6 | | Tesla P100 16 GB †, part of the model in RAM | counting 24.6 | counting 45.1 |\nQuality check on the RTX 5090 (final build, default): tool calls 24/26, coding 11/11, maths 148/150, facts hidden in 16K to…",
+            "lead": "Strata 0.2.23\nThe app and the Terminal are 0.2.23. Control and the Inkling engines (every backend) are 0.1.70, and so are the Windows and Mac Qwen engines. The Linux and aarch64 Qwen engines (0.1.69) and the Hy4 engine (0.1.67) have no changes, so nothing is downloaded for them.\nWhat's new\nNew Inkling 2 Mini files. Five builds to choose from: SQ-20 (19.37 GB), SQ-15 (14.35 GB), SQ-10 (10.47 GB), GSQ-RCO IQ3_S (11.43 GB) and Unsloth UD-Q4_K_XL (17.63 GB). T",
+            "chars": 10521,
+            "shown": 4001,
+            "truncated": true
+          },
+          "quality": 8,
+          "score": 20.73,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 1,
+          "slug": "1c317bb1ca64",
+          "action": 2,
+          "rank": 11.2,
+          "tags": [
+            "lowspec"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "local",
+      "label": "本地开源",
+      "items": [
+        {
+          "sourceId": "appinn",
+          "sourceName": "小众软件",
+          "title": "SnapFind – 只做截图文字识别的开源工具，本地离线 OCR",
+          "url": "https://www.appinn.com/snapfind/",
+          "id": "https://www.appinn.com/snapfind/",
+          "published": "2026-11-27T08:04:13.000Z",
+          "summary": "SnapFind 是一款功能极简的开源 Windows 工具，只做一件事：从屏幕上提取文字。无需联网，无需部署大模型，按下快捷键、框选屏幕区域，即可完成 OCR 文字识别。@ Appinn 来自 发现频道 ，开发者自荐： https://meta.appinn.net/t/topic/89360 SnapFind – 本地离线截图 OCR 文字提取与极速查询工具 在 B 站观看 SnapFind 内置 RapidOCR (PP-OCRv4），使用非常简单： 默认使用 Ctrl + Alt + S 快捷键进行选区 松手后自动识别文字 自动复制到剪贴板（设置中开启） 内置 RapidOCR (PP-OCRv4）离线模型，支持 Wind…",
+          "content": {
+            "html": "<p><strong>SnapFind</strong>是一款功能极简的开源 Windows 工具，只做一件事：从屏幕上提取文字。无需联网，无需部署大模型，按下快捷键、框选屏幕区域，即可完成 OCR 文字识别。@<a href=\"https://www.appinn.com/snapfind/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Appinn</a></p>\n<figure><img src=\"https://www.appinn.com/wp-content/uploads/2026/11/SnapFindE688AAE59BBEE69687E5AD97E8AF86E588ABE5AEA3E4BCA0E59BBE.jpg\" alt=\"SnapFind – 只做截图文字识别的开源工具，本地离线 OCR 2\" loading=\"lazy\"></figure>\n<p>来自<a href=\"https://meta.appinn.net/c/faxian/10\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><strong>发现频道</strong></a>，开发者自荐：<a href=\"https://meta.appinn.net/t/topic/89360\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://meta.appinn.net/t/topic/89360</a></p>\n<h3>SnapFind – 本地离线截图 OCR 文字提取与极速查询工具</h3>\n<div><div></div></div>\n<p><a href=\"https://www.bilibili.com/video/BV19U1WzdEQP/?p=1\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">在 B 站观看<img src=\"https://s.w.org/images/core/emoji/17.0.2/72x72/2197.png\" alt=\"↗\" loading=\"lazy\"></a></p>\n<p>SnapFind 内置 RapidOCR (PP-OCRv4），使用非常简单：</p>\n<ol><li>默认使用<code>Ctrl + Alt + S</code>快捷键进行选区</li><li>松手后自动识别文字</li><li>自动复制到剪贴板（设置中开启）</li></ol>\n<p>内置 RapidOCR (PP-OCRv4）离线模型，支持 Windows 10、11，提供安装版与便携版，使用 MIT 协议开源。</p>\n<ul><li><a href=\"https://github.com/Loecedas/SnapFind\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">GitHub</a></li><li><a href=\"https://d.appinn.com/snapfind/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">搬运</a></li></ul>\n<hr><p>原文：https://www.appinn.com/snapfind/</p>\n<hr><h3>相关阅读</h3>\n<ul><li><a href=\"https://www.appinn.com/faxian-top10-2632/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">发现频道：10款大家发现的好评软件[2026年第32期]</a></li></ul>\n<hr><a href=\"http://www.appinn.com/copyright/?utm_source=feeds&amp;utm_medium=copyright&amp;utm_campaign=feeds\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">©</a>\n2021 青小蛙 for<a href=\"http://www.appinn.com/?utm_source=feeds&amp;utm_medium=appinn&amp;utm_campaign=feeds\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">小众软件</a>\n|<a href=\"http://www.appinn.com/join-us/?utm_source=feeds&amp;utm_medium=joinus&amp;utm_campaign=feeds\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">加入我们</a>\n|<a href=\"https://meta.appinn.net/c/faxian/?utm_source=feeds&amp;utm_medium=contribute&amp;utm_campaign=feeds\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">投稿</a>\n|<a href=\"http://www.appinn.com/feeds-subscribe/?utm_source=feeds&amp;utm_medium=feedsubscribe&amp;utm_campaign=feeds\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">订阅指南</a>\n<br>3659b075e72a5b7b1b87ea74aa7932ff<br><a href=\"https://www.appinn.com/snapfind/#comments\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">点击这里留言、和原作者一起评论</a>\n<p><a href=\"https://www.appinn.com/snapfind/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[ 点击前往获取链接 ]</a></p>\n<hr>",
+            "text": "SnapFind 是一款功能极简的开源 Windows 工具，只做一件事：从屏幕上提取文字。无需联网，无需部署大模型，按下快捷键、框选屏幕区域，即可完成 OCR 文字识别。@ Appinn\n来自 发现频道 ，开发者自荐： https://meta.appinn.net/t/topic/89360\nSnapFind – 本地离线截图 OCR 文字提取与极速查询工具\n在 B 站观看\nSnapFind 内置 RapidOCR (PP-OCRv4），使用非常简单：\n默认使用 Ctrl + Alt + S 快捷键进行选区\n松手后自动识别文字\n自动复制到剪贴板（设置中开启）\n内置 RapidOCR (PP-OCRv4）离线模型，支持 Windows 10、11，提供安装版与便携版，使用 MIT 协议开源。\nGitHub\n搬运\n原文：https://www.appinn.com/snapfind/\n相关阅读\n发现频道：10款大家发现的好评软件[2026年第32期]\n©\n2021 青小蛙 for 小众软件\n| 加入我们\n| 投稿\n| 订阅指南\n3659b075e72a5b7b1b87ea74aa7932ff\n点击这里留言、和原作者一起评论\n[ 点击前往获取链接 ]",
+            "lead": "SnapFind 是一款功能极简的开源 Windows 工具，只做一件事：从屏幕上提取文字。无需联网，无需部署大模型，按下快捷键、框选屏幕区域，即可完成 OCR 文字识别。@ Appinn\n来自 发现频道 ，开发者自荐： https://meta.appinn.net/t/topic/89360\nSnapFind – 本地离线截图 OCR 文字提取与极速查询工具\n在 B 站观看\nSnapFind 内置 RapidOCR (PP-OCRv4），使用非常简单：\n默认使用 Ctrl + Alt + S 快捷键进行选区\n松手后自动识别文字\n自动复制到剪贴板（设置中开启）\n内置 RapidOCR (PP-OCRv4）离线模型，支持 Windows 10、11，提供安装版与便携版，使用 MIT 协议开源。\nGitHub\n搬运\n原文：https://www.appinn.com/snapfind/\n相关阅读\n发现频道：10款大家发现的好评软件[2026年第32期]",
+            "chars": 553,
+            "shown": 553,
+            "truncated": false
+          },
+          "categories": [
+            "Windows",
+            "OCR",
+            "文字识别"
+          ],
+          "author": "青小蛙",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "tools",
+          "metrics": {},
+          "quality": 8,
+          "score": 18.24,
+          "category": "local",
+          "subcategory": "weights",
+          "practical": 5,
+          "slug": "4da2d53c1c91",
+          "action": 5,
+          "rank": 16,
+          "tags": [
+            "local",
+            "tutorial",
+            "free",
+            "money"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bench",
+      "label": "评测选型",
+      "items": [
+        {
+          "sourceId": "qbitai",
+          "sourceName": "量子位",
+          "title": "全国首批首家！商汤大装置获Token工厂智算能力最高评级",
+          "url": "https://www.qbitai.com/2026/11/513346.html",
+          "id": "https://www.qbitai.com/?p=513346",
+          "published": "2026-11-27T11:18:24.000Z",
+          "summary": "全国首批首家！商汤大装置获Token工厂智算能力最高评级 量子位的朋友们 2026-11-27 19:18:24 来源： 量子位 商汤大装置Token工厂获得中国信通院Token工厂智算能力评估“全栈服务型·领先级”评级认证 11月27日，在第二十八届中国国际高新技术成果交易会（高交会）·可信Token云服务论坛上，中国信息通信研究院（以下简称“中国信通院”）正式发布Token工厂智算能力评估成果。商汤大装置Token工厂获得中国信通院Token工厂智算能力评估“全栈服务型·领先级”评级认证，成为全国首批首家通过该项能力评估的Token工厂，这也是行业内最高评级。 这不仅标志着商汤大装置Token工厂在Token规模化生产、全栈服…",
+          "content": {
+            "html": "&lt;!DOCTYPE html&gt;<div><div><div>&lt; img id=\"wx_img\" src=\"https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png\" width=\"400\" height=\"400\"&gt;</div></div></div>\n<div><h3>全国首批首家！商汤大装置获Token工厂智算能力最高评级</h3><div><span><img src=\"http://www.qbitai.com/wp-content/uploads/2019/06/200-100x100.jpg\" alt=\"量子位的朋友们\" loading=\"lazy\"><em><a href=\"https://www.qbitai.com/author/qbitai\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">量子位的朋友们</a></em></span><span>2026-11-27</span><span>19:18:24</span><span>来源：<a href=\"https://www.qbitai.com/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">量子位</a></span></div></div>\n<div><p>商汤大装置Token工厂获得中国信通院Token工厂智算能力评估“全栈服务型·领先级”评级认证</p></div>\n<p>11月27日，在第二十八届中国国际高新技术成果交易会（高交会）·可信Token云服务论坛上，中国信息通信研究院（以下简称“中国信通院”）正式发布Token工厂智算能力评估成果。商汤大装置Token工厂获得中国信通院Token工厂智算能力评估“全栈服务型·领先级”评级认证，成为全国首批首家通过该项能力评估的Token工厂，这也是行业内最高评级。</p>\n<p>这不仅标志着商汤大装置Token工厂在Token规模化生产、全栈服务与高效运营等方面的综合实力获得权威认可，更有力推动了Token工厂在标准化评价与规范化发展方面迈出关键一步。</p>\n<div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/7a3647daf091af10e2e79f51347774c6.jpeg\" alt=\"\" loading=\"lazy\"></div>\n<div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/5edb215850e15e3fefcbb9caaff958a8.jpeg\" alt=\"\" loading=\"lazy\"></div>\n<h3><strong>01. Token工厂·智算能力分级评价</strong></h3>\n<p>Token工厂作为AI工业化时代的核心算力与服务底座，近两年迅猛发展，但行业内尚未形成统一的能力评价标准，严重制约Token工厂产业的规范化发展与价值释放。中国信息通信研究院云计算与数字化研究所在充分调研产业实践基础上，研究构建了首个面向Token工厂主体的权威能力评估认证——“Token工厂·智算能力分级评价体系”。</p>\n<p>该评价体系以Token工厂五层技术架构（基础设施层—模型服务层—聚合分发层—计量结算层—场景部署层）为评价主线，以“能力可量化、质量可验证、服务可承诺”为核心原则，按照建设主体属性、核心能力边界、商业模式差异分类评估，根据不同形态对应产业链不同环节，激活不同的评价维度，避免“一把尺子量所有主体”。</p>\n<p>在具体测评上，评价围绕Token生产能力、生产能效水平、交付服务能力、智能运营能力、安全合规能力五大维度及14项测评指标，对Token工厂进行综合测评。</p>\n<p>商汤大装置Token工厂在各项测评指标中，均表现优异，顺利通过“全栈服务型-领先级”认证，是目前Token工厂实际获得的最高等级认证。</p>\n<div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/845a8d484ae5a76c3a62367e2e4a866c.png\" alt=\"\" loading=\"lazy\"></div>\n<h3><strong>02 .面向Agentic时代，打造全栈Token生产与服务体系</strong></h3>\n<p>随着大模型技术快速迭代与产业应用持续深化，AI产业正从单一模型技术竞争，迈向多模型协同、规模化Token服务的新阶段，对Token工厂的生产效率、服务交付及综合运营能力提出了更高要求。</p>\n<p>面向这一产业趋势，商汤大装置前瞻打造Token工厂，以AI原生云平台SenseCore为核心，贯通能源、算力、平台、模型与应用，构建面向Agentic时代的高质量Token全栈生产与服务体系，实现Token稳定、高效、低成本的规模化供给。</p>\n<p><strong>全栈端到端生产与服务。</strong>具备从底层能源管理、算力资源管理、模型推理优化，到Token生产、服务交付及智能运营的全栈端到端服务能力。</p>\n<p><strong>国产算力适配与异构协同。</strong>商汤大装置Token工厂已适配20余款国产AI芯片，支持多元算力资源的规模化接入、统一纳管与全生命周期管理。在此基础上，依托算子优化、多卡并行调优及PD分离异构混合推理等技术创新，将多元算力转化为面向真实业务的有效Token供给，持续提升Token产能、降低单位成本，推动国产算力从“落地可用”迈向“规模化商用”。</p>\n<p><strong>高质量Token生产。</strong>跑通异构混合推理技术，并在商汤上海临港AIDC搭建异构混推集群，打通了200G、400G、800G全速率网络，直接带动商汤大装置Token工厂服务能力的爆发。目前，已实现主流国产芯片MFU提升85%~152%；同成本下，异构混推方案Token产出达到国产同构推理方案的2.5倍。截至2026年10月，平台日均Token服务量已达6万亿，预计第四季度日均服务量将达到10万亿Token。</p>\n<p><strong>全链路智能运营。</strong>商汤大装置Token工厂实现算力与Token资源的统一调度、精细运营、全程观测及精准计量。<strong>在资源调度方面</strong>，基于Kubernetes实现训推潮汐互补：推理服务缩容时，排队中的闲时训练任务会被自动拉起；推理服务扩容时，这些任务的资源会被即时回收，算力全天候高效复用。同时，平台兼容多元异构芯片，支持主流大模型快速适配、接入与统一调度。<strong>在商业化运营方面</strong>，支持API分时段差异化定价与售卖，可根据算力资源使用情况，为合作客户模型配置闲时优惠价格及客户可调用时段，实现闲置算力资源的灵活利用。<strong>在服务观测方面</strong>，搭建全链路可观测体系，覆盖模型总体趋势、Token用量、推理性能、请求诊断、计算资源、网络连接和Pod健康，配合告警可实现故障的快速发现与定位。</p>\n<p><strong>算电协同提升生产能效。</strong>依托算电协同，通过算力移峰调度闲时利用、算电协同储能调度、能耗动态优化等一系列措施，实现单位电力成本Token产出提升80%，平均电费单价低于同地区IDC 10%、算力负荷预测准确率达到96%，全年预估可实现碳减排24000吨/每万P。</p>\n<p><strong>高可用、低时延交付服务能力。</strong>平台采用高可用架构并具备容灾切换能力，月度服务可用率稳定在99.95%以上。同时，平台支持多档请求优先级管理，可在算力资源紧张时优先保障关键业务，并通过实时监控看板实现调度过程可视化。</p>\n<p><strong>安全合规能力。</strong>平台适配20+国产AI芯片，推理框架基于SGLang、vLLM等深度自研优化。数据安全方面，具备传输与存储加密能力，并配备输入、输出双向内容审核机制，满足政企客户对数据安全与内容合规的要求。</p>\n<p>未来，商汤大装置将持续深化Token工厂技术创新与全栈服务能力建设，推动Token生产与服务向标准化、规模化、高效化发展，加速释放国产算力的产业价值。</p>\n<p><em><span>本文由商汤提供，量子位获授权转载，观点归原作者所有。</span></em></p>\n<div><span></span><em>版权所有，未经授权不得以任何形式转载及使用，违者必究。</em><span></span></div>\n<div><a href=\"https://www.qbitai.com/tag/%e5%95%86%e6%b1%a4\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">商汤</a></div>\n<div><a href=\"https://www.qbitai.com/2026/11/513346.html#\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div><img src=\"http://www.qbitai.com/wp-content/uploads/2019/06/200.jpg\" alt=\"量子位的朋友们\" loading=\"lazy\"><span><a href=\"https://www.qbitai.com/author/qbitai\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">量子位的朋友们</a></span></div></a></div>\n<div><ul><li><a href=\"https://www.qbitai.com/2026/11/513194.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">钛动科技 × 腾讯云达成战略合作，用AI打开企业全球增长新空间</a><i>2026-11-27</i></li><li><a href=\"https://www.qbitai.com/2026/11/513211.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">蚂蚁灵波发布LingBot-Map 2.0，模型自己修正“空间记忆”，把地图画更准</a><i>2026-11-27</i></li><li><a href=\"https://www.qbitai.com/2026/11/513091.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">第三批嘉宾来袭！速戳报名MEET2027，驭见AI新共识！</a><i>2026-11-27</i></li><li><a href=\"https://www.qbitai.com/2026/11/513087.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">乾崑共创者计划发布：加入乾崑生态，共创出行未来！</a><i>2026-11-27</i></li></ul></div>\n<div><div></div></div>\n<div><span></span><div>扫码分享至朋友圈</div></div>\n<div></div>\n<a href=\"https://service.weibo.com/share/share.php?url=https://www.qbitai.com/2026/11/513346.html&amp;title=%E5%85%A8%E5%9B%BD%E9%A6%96%E6%89%B9%E9%A6%96%E5%AE%B6%EF%BC%81%E5%95%86%E6%B1%A4%E5%A4%A7%E8%A3%85%E7%BD%AE%E8%8E%B7Token%E5%B7%A5%E5%8E%82%E6%99%BA%E7%AE%97%E8%83%BD%E5%8A%9B%E6%9C%80%E9%AB%98%E8%AF%84%E7%BA%A7&amp;appkey=4017757111&amp;searchPic=true&amp;ralateUid=6105753431\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div></div></a>\n<a href=\"https://www.qbitai.com/2026/11/513346.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div></div></a>\n<div><h3>相关阅读</h3><ul><div><div><a href=\"https://www.qbitai.com/2021/11/30335.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://i.qbitai.com/wp-content/uploads/2021/11/2021-11-20-%E4%B8%8B%E5%8D%881.32.31-e1637386374217-300x175.png\" alt=\"\" loading=\"lazy\"></a></div></div></ul></div>\n<div><h4><a href=\"https://www.qbitai.com/2021/11/30335.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">商汤被曝已获准在香港上市，计划筹资逾10亿美元</a></h4><p>共计完成12轮融资，总融资金额达52亿美元</p><div><span><a href=\"https://www.qbitai.com/?author=16\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">鱼羊</a></span><span><span>2021-11-20</span></span><div><i></i><a href=\"https://www.qbitai.com/tag/ipo\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">IPO</a><a href=\"https://www.qbitai.com/tag/%e5%95%86%e6%b1%a4\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">商汤</a></div></div></div>\n<div><div><a href=\"https://www.qbitai.com/2022/08/36769.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://i.qbitai.com/wp-content/uploads/2022/08/%E5%A4%B4%E5%9B%BE2%E5%8E%9F%E7%89%88-768x449.png\" alt=\"\" loading=\"lazy\"></a></div></div>\n<div><h4><a href=\"https://www.qbitai.com/2022/08/36769.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">郭晶晶家的象棋私教，好家伙是个机器人</a></h4><p>1999元，你觉得值吗？</p><div><span><a href=\"https://www.qbitai.com/?author=19\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">量子位</a></span><span><span>2022-08-09</span></span><div><i></i><a href=\"https://www.qbitai.com/tag/%e5%95%86%e6%b1%a4\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">商汤</a><a href=\"https://www.qbitai.com/tag/%e6%9c%ba%e5%99%a8%e4%ba%ba\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">机器人</a><a href=\"https://www.qbitai.com/tag/%e9%83%ad%e6%99%b6%e6%99%b6\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">郭晶晶</a></div></div></div>\n<div><div><a href=\"https://www.qbitai.com/2021/05/24238.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://i.qbitai.com/wp-content/uploads/2021/05/448a5be3b0591e15612c04.jpeg\" alt=\"\" loading=\"lazy\"></a></div></div>\n<div><h4><a href=\"https://www.qbitai.com/2021/05/24238.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">上帝不掷骰子？商汤科技AI大装置想试试</a></h4><p></p><div><span><a href=\"https://www.qbitai.com/?author=14\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">雷刚</a></span><span><span>2021-05-25</span></span><div><i></i><a href=\"https://www.qbitai.com/tag/ai\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">AI</a><a href=\"https://www.qbitai.com/tag/aidc\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">AIDC</a><a href=\"https://www.qbitai.com/tag/ai%e5%a4%a7%e8%a3%85%e7%bd%ae\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">AI大装置</a><a href=\"https://www.qbitai.com/tag/%e5%95%86%e6%b1%a4\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">商汤</a><a href=\"https://www.qbitai.com/tag/%e5%af%b9%e6%92%9e%e6%9c%ba\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">对撞机</a><a href=\"https://www.qbitai.com/tag/%e5%be%90%e7%ab%8b\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">徐立</a><a href=\"https://www.qbitai.com/tag/%e6%b1%a4%e6%99%93%e9%b8%a5\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">汤晓鸥</a></div></div></div>\n<div><div><a href=\"https://www.qbitai.com/2019/07/5492.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://i.qbitai.com/wp-content/uploads/2019/07/WX20190724-120257@2x-e1563941010485-300x175.png\" alt=\"\" loading=\"lazy\"></a></div></div>\n<div><h4><a href=\"https://www.qbitai.com/2019/07/5492.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">商汤推动AI技术出海：在阿联酋设立AI研发中心</a></h4><p></p><div><span><a href=\"https://www.qbitai.com/?author=8\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">乾明</a></span><span><span>2019-07-24</span></span><div><i></i><a href=\"https://www.qbitai.com/tag/%e5%95%86%e6%b1%a4\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">商汤</a></div></div></div>\n<div><div><a href=\"https://www.qbitai.com/2025/07/315243.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://i.qbitai.com/wp-content/uploads/replace/fda4f344e4e0f00f5f212f0092876eb9.jpeg\" alt=\"\" loading=\"lazy\"></a></div></div>\n<div><h4><a href=\"https://www.qbitai.com/2025/07/315243.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">商汤「日日新6.5」全新升级，让AI完成从“工具”到“人”的跃迁</a></h4><p>核心产品商汤小浣熊也完成智能体升级</p><div><span><a href=\"https://www.qbitai.com/?author=19\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">量子位</a></span><span><span>2025-07-29</span></span><div><i></i><a href=\"https://www.qbitai.com/tag/2025-waic\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">2025 WAIC</a><a href=\"https://www.qbitai.com/tag/%e5%95%86%e6%b1%a4\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">商汤</a></div></div></div>\n<div><div><a href=\"https://www.qbitai.com/2023/12/104699.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><img src=\"https://i.qbitai.com/wp-content/uploads/replace/01af652180f9bfcc53776fa03a927f22.png\" alt=\"\" loading=\"lazy\"></a></div></div>\n<div><h4><a href=\"https://www.qbitai.com/2023/12/104699.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">代码小浣熊Raccoon公测，商汤大语言模型加持，编程效率提升超50%</a></h4><p>它支持Python、Java、JavaScript、C++、Go、SQL等30+主流编程语言和VS Code、IntelliJ IDEA等主流IDE。实际应用中，可帮助开发者提升编程效率超50%。</p><div><span><a href=\"https://www.qbitai.com/?author=19\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">量子位</a></span><span><span>2023-12-07</span></span><div><i></i><a href=\"https://www.qbitai.com/tag/%e5%95%86%e6%b1%a4\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">商汤</a><a href=\"https://www.qbitai.com/tag/%e5%a4%a7%e6%a8%a1%e5%9e%8b\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">大模型</a></div></div></div>\n<div><div><h3>热门文章</h3><div><a href=\"https://www.qbitai.com/2026/11/511727.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div></div></a></div></div></div>\n<div><h4>黎曼猜想被证明？！Claude加持，34岁数学家放出Lean证明</h4></div>\n<div>2026-11-21</div>\n<div><a href=\"https://www.qbitai.com/2026/11/511570.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/article-image-3-22.png\" alt=\"\" loading=\"lazy\"></div></a></div>\n<div><h4>刚刚，DeepSeek V1作者创业项目曝光：开源Agent</h4></div>\n<div>2026-11-21</div>\n<div><a href=\"https://www.qbitai.com/2026/11/512195.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/f20f2548563133a042909be60f94ea89.webp\" alt=\"\" loading=\"lazy\"></div></a></div>\n<div><h4>实测：1450亿参数塞进笔记本，每秒狂飙80+Token！国产端侧大模型杀疯了</h4></div>\n<div>2026-11-23</div>\n<div><a href=\"https://www.qbitai.com/2026/11/512423.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/d3824c6a12fe6ecf5535bee9bbe9ff3b.webp\" alt=\"\" loading=\"lazy\"></div></a></div>\n<div><h4>智谱刚刚发了GLM-5.4，全新架构的那种！网友直呼：超过预期</h4></div>\n<div>2026-11-24</div>\n<div><a href=\"https://www.qbitai.com/2026/11/511610.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/56b374d526909f3f4de6f9832cd268f6.png\" alt=\"\" loading=\"lazy\"></div></a></div>\n<div><h4>昇腾算力训出了双榜SOTA的具身世界模型，华为云这次想把整套底座开放出来</h4></div>\n<div>2026-11-20</div>\n<div><div><div><ul><li><a href=\"https://www.qbitai.com/?page_id=99\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">关于量子位</a></li><li><a href=\"https://www.qbitai.com/?page_id=101\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">加入我们</a></li><li><a href=\"https://www.qbitai.com/?page_id=103\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">寻求报道</a></li><li><a href=\"https://www.qbitai.com/?page_id=105\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">商务合作</a></li></ul><div><div><i></i></div></div></div></div></div>\n<div><p>扫码关注量子位</p><img src=\"https://www.qbitai.com/wp-content/uploads/2019/01/qrcode_QbitAI_1.jpg\" alt=\"\" loading=\"lazy\"></div>\n<a href=\"https://weibo.com/qbitai?is_all=1\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><i></i></a>\n<a href=\"https://www.zhihu.com/org/liang-zi-wei-48/activities\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div></div></a>\n<a href=\"https://www.toutiao.com/c/user/53624121633/#mid=1556041376883713\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><div></div></a>\n<div><div><a href=\"https://www.qbitai.com/2026/11/513346.html#\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"></a><span>追踪人工智能新趋势，报道科技行业新突破</span></div></div>\n<div></div>\n<p>量子位 QbitAI 版权所有©北京极客伙伴科技有限公司<a href=\"https://beian.miit.gov.cn/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">京ICP备17005886号-1</a></p>",
+            "text": "全国首批首家！商汤大装置获Token工厂智算能力最高评级\n量子位的朋友们 2026-11-27 19:18:24 来源： 量子位\n商汤大装置Token工厂获得中国信通院Token工厂智算能力评估“全栈服务型·领先级”评级认证\n11月27日，在第二十八届中国国际高新技术成果交易会（高交会）·可信Token云服务论坛上，中国信息通信研究院（以下简称“中国信通院”）正式发布Token工厂智算能力评估成果。商汤大装置Token工厂获得中国信通院Token工厂智算能力评估“全栈服务型·领先级”评级认证，成为全国首批首家通过该项能力评估的Token工厂，这也是行业内最高评级。\n这不仅标志着商汤大装置Token工厂在Token规模化生产、全栈服务与高效运营等方面的综合实力获得权威认可，更有力推动了Token工厂在标准化评价与规范化发展方面迈出关键一步。\n01. Token工厂·智算能力分级评价\nToken工厂作为AI工业化时代的核心算力与服务底座，近两年迅猛发展，但行业内尚未形成统一的能力评价标准，严重制约Token工厂产业的规范化发展与价值释放。中国信息通信研究院云计算与数字化研究所在充分调研产业实践基础上，研究构建了首个面向Token工厂主体的权威能力评估认证——“Token工厂·智算能力分级评价体系”。\n该评价体系以Token工厂五层技术架构（基础设施层—模型服务层—聚合分发层—计量结算层—场景部署层）为评价主线，以“能力可量化、质量可验证、服务可承诺”为核心原则，按照建设主体属性、核心能力边界、商业模式差异分类评估，根据不同形态对应产业链不同环节，激活不同的评价维度，避免“一把尺子量所有主体”。\n在具体测评上，评价围绕Token生产能力、生产能效水平、交付服务能力、智能运营能力、安全合规能力五大维度及14项测评指标，对Token工厂进行综合测评。\n商汤大装置Token工厂在各项测评指标中，均表现优异，顺利通过“全栈服务型-领先级”认证，是目前Token工厂实际获得的最高等级认证。\n02 .面向Agentic时代，打造全栈Token生产与服务体系\n随着大模型技术快速迭代与产业应用持续深化，AI产业正从单一模型技术竞争，迈向多模型协同、规模化Token服务的新阶段，对Token工厂的生产效率、服务交付及综合运营能力提出了更高要求。\n面向这一产业趋势，商汤大装置前瞻打造Token工厂，以AI原生云平台SenseCore为核心，贯通能源、算力、平台、模型与应用，构建面向Agentic时代的高质量Token全栈生产与服务体系，实现Token稳定、高效、低成本的规模化供给。\n全栈端到端生产与服务。 具备从底层能源管理、算力资源管理、模型推理优化，到Token生产、服务交付及智能运营的全栈端到端服务能力。\n国产算力适配与异构协同。 商汤大装置Token工厂已适配20余款国产AI芯片，支持多元算力资源的规模化接入、统一纳管与全生命周期管理。在此基础上，依托算子优化、多卡并行调优及PD分离异构混合推理等技术创新，将多元算力转化为面向真实业务的有效Token供给，持续提升Token产能、降低单位成本，推动国产算力从“落地可用”迈向“规模化商用”。\n高质量Token生产。 跑通异构混合推理技术，并在商汤上海临港AIDC搭建异构混推集群，打通了200G、400G、800G全速率网络，直接带动商汤大装置Token工厂服务能力的爆发。目前，已实现主流国产芯片MFU提升85%~152%；同成本下，异构混推方案Token产出达到国产同构推理方案的2.5倍。截至2026年10月，平台日均Token服务量已达6万亿，预计第四季度日均服务量将达到10万亿Token。\n全链路智能运营。 商汤大装置Token工厂实现算力与Token资源的统一调度、精细运营、全程观测及精准计量。 在资源调度方面 ，基于Kubernetes实现训推潮汐互补：推理服务缩容时，排队中的闲时训练任务会被自动拉起；推理服务扩容时，这些任务的资源会被即时回收，算力全天候高效复用。同时，平台兼容多元异构芯片，支持主流大模型快速适配、接入与统一调度。 在商业化运营方面 ，支持API分时段差异化定价与售卖，可根据算力资源使用情况，为合作客户模型配置闲时优惠价格及客户可调用时段，实现闲置算力资源的灵活利用。 在服务观测方面 ，搭建全链路可观测体系，覆盖模型总体趋势、Token用量、推理性能、请求诊断、计算资源、网络连接和Pod健康，配合告警可实现故障的快速发现与定位。\n算电协同提升生产能效。 依托算电协同，通过算力移峰调度闲时利用、算电协同储能调度、能耗动态优化等一系列措施，实现单位电力成本Token产出提升80%，平均电费单价低于同地区IDC 10%、算力负荷预测准确率达到96%，全年预估可实现碳减排24000吨/每万P。\n高可用、低时延交付服务能力。 平台采用高可用架构并具备容灾切换能力，月度服务可用率稳定在99.95%以上。同时，平台支持多档请求优先级管理，可在算力资源紧张时优先保障关键业务，并通过实时监控看板实现调度过程可视化。\n安全合规能力。 平台适配20+国产AI芯片，推理框架基于SGLang、vLLM等深度自研优化。数据安全方面，具备传输与存储加密能力，并配备输入、输出双向内容审核机制，满足政企客户对数据安全与内容合规的要求。\n未来，商汤大装置将持续深化Token工厂技术创新与全栈服务能力建设，推动Token生产与服务向标准化、规模化、高效化发展，加速释放国产算力的产业价值。\n本文由商汤提供，量子位获授权转载，观点归原作者所有。\n版权所有，未经授权不得以任何形式转载及使用，违者必究。\n商汤\n量子位的朋友们\n钛动科技 × 腾讯云达成战略合作，用AI打开企业全球增长新空间 2026-11-27\n蚂蚁灵波发布LingBot-Map 2.0，模型自己修正“空间记忆”，把地图画更准 2026-11-27\n第三批嘉宾来袭！速戳报名MEET2027，驭见AI新共识！ 2026-11-27\n乾崑共创者计划发布：加入乾崑生态，共创出行未来！ 2026-11-27\n扫码分享至朋友圈\n相关阅读\n商汤被曝已获准在香港上市，计划筹资逾10亿美元\n共计完成12轮融资，总融资金额达52亿美元\n鱼羊 2021-11-20 IPO 商汤\n郭晶晶家的象棋私教，好家伙是个机器人\n1999元，你觉得值吗？\n量子位 2022-08-09 商汤 机器人 郭晶晶\n上帝不掷骰子？商汤科技AI大装置想试试\n雷刚 2021-05-25 AI AIDC AI大装置 商汤 对撞机 徐立 汤晓鸥\n商汤推动AI技术出海：在阿联酋设立AI研发中心\n乾明 2019-07-24 商汤\n商汤「日日新6.5」全新升级，让AI完成从“工具”到“人”的跃迁\n核心产品商汤小浣熊也完成智能体升级\n量子位 2025-07-29 2025 WAIC 商汤\n代码小浣熊Raccoon公测，商汤大语言模型加持，编程效率提升超50%\n它支持Python、Java、JavaScript、C++、Go、SQL等30+主流编程语言和VS Code、IntelliJ IDEA等主流IDE。实际应用中，可帮助开发者提升编程效率超50%。\n量子位 2023-12-07 商汤 大模型\n热门文章\n黎曼猜想被证明？！Claude加持，34岁数学家放出Lean证明\n2026-11-21\n刚刚，DeepSeek V1作者创业项目曝光：开源Agent\n2026-11-21\n实测：1450亿参数塞进笔记本，每秒狂飙80+Token！国产端侧大模型杀疯了\n2026-11-23\n智谱刚刚发了GLM-5.4，全新架构的那种！网友直呼：超过预期\n2026-11-24\n昇腾算力训出了双榜SOTA的具身世界模型，华为云这次想把整套底座开放出来\n2026-11-20\n关于量子位\n加入我们\n寻求报道\n商务合作\n扫码关注量子位\n追踪人工智能新趋势，报道科技行业新突破\n量子位 QbitAI 版权所有©北京极客伙伴科技有限公司 京ICP备17005886号-1",
+            "lead": "全国首批首家！商汤大装置获Token工厂智算能力最高评级\n量子位的朋友们 2026-11-27 19:18:24 来源： 量子位\n商汤大装置Token工厂获得中国信通院Token工厂智算能力评估“全栈服务型·领先级”评级认证\n11月27日，在第二十八届中国国际高新技术成果交易会（高交会）·可信Token云服务论坛上，中国信息通信研究院（以下简称“中国信通院”）正式发布Token工厂智算能力评估成果。商汤大装置Token工厂获得中国信通院Token工厂智算能力评估“全栈服务型·领先级”评级认证，成为全国首批首家通过该项能力评估的Token工厂，这也是行业内最高评级。\n这不仅标志着商汤大装置Token工厂在Token规模化生产、全栈服务与高效运营等方面的综合实力获得权威认可，更有力推动了Token工厂在标准化评价与规范化发展方面迈出关键一步。",
+            "chars": 3572,
+            "shown": 3572,
+            "truncated": false
+          },
+          "categories": [
+            "资讯",
+            "商汤"
+          ],
+          "author": "量子位的朋友们",
+          "lang": "zh",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "news",
+          "metrics": {},
+          "quality": 9,
+          "score": 22.11,
+          "category": "bench",
+          "subcategory": "cost",
+          "practical": 4,
+          "slug": "cb6b714e0697",
+          "action": 7,
+          "rank": 20.2,
+          "tags": [
+            "local",
+            "free",
+            "money",
+            "hardware"
+          ]
+        }
+      ]
+    }
+  ]
+}
