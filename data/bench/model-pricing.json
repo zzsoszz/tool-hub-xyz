@@ -1,7 +1,7 @@
 {
   "id": "model-pricing",
   "kind": "openrouter-pricing",
-  "collectedAt": "2026-11-26T19:46:08.427Z",
+  "collectedAt": "2026-11-27T04:29:49.489Z",
   "upstream": {
     "label": "OpenRouter 模型目录 API",
     "url": "https://openrouter.ai/models"
@@ -241,22 +241,12 @@
           "created": 1734158152
         },
         {
-          "name": "Google: Gemma 3 4B",
-          "id": "google/gemma-3-4b-it",
-          "url": "https://openrouter.ai/google/gemma-3-4b-it",
-          "context": 131072,
-          "promptPerMillion": 0.04,
-          "completionPerMillion": 0.049999999999999996,
-          "free": false,
-          "created": 1741905510
-        },
-        {
           "name": "DeepSeek: DeepSeek V4 Flash Latest",
           "id": "~deepseek/deepseek-v4-flash-latest",
           "url": "https://openrouter.ai/~deepseek/deepseek-v4-flash-latest",
           "context": 1048576,
-          "promptPerMillion": 0.04532,
-          "completionPerMillion": 0.13596,
+          "promptPerMillion": 0.047,
+          "completionPerMillion": 0.3,
           "free": false,
           "created": 1785606009
         },
@@ -265,7 +255,7 @@
           "id": "deepseek/deepseek-v4-flash-0731",
           "url": "https://openrouter.ai/deepseek/deepseek-v4-flash-0731",
           "context": 1048576,
-          "promptPerMillion": 0.045599999999999995,
+          "promptPerMillion": 0.047,
           "completionPerMillion": 0.3,
           "free": false,
           "created": 1785478908
@@ -309,6 +299,16 @@
           "completionPerMillion": 0.25,
           "free": false,
           "created": 1754414231
+        },
+        {
+          "name": "Google: Gemma 3 4B",
+          "id": "google/gemma-3-4b-it",
+          "url": "https://openrouter.ai/google/gemma-3-4b-it",
+          "context": 131072,
+          "promptPerMillion": 0.049999999999999996,
+          "completionPerMillion": 0.09999999999999999,
+          "free": false,
+          "created": 1741905510
         },
         {
           "name": "Google: Gemma 3 12B",
@@ -361,16 +361,6 @@
           "created": 1789176933
         },
         {
-          "name": "DeepSeek: DeepSeek V4.1 Flash",
-          "id": "deepseek/deepseek-v4.1-flash",
-          "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash",
-          "context": 1048576,
-          "promptPerMillion": 0.050699999999999995,
-          "completionPerMillion": 0.20279999999999998,
-          "free": false,
-          "created": 1789021285
-        },
-        {
           "name": "Amazon: Nova Lite 1.0",
           "id": "amazon/nova-lite-v1",
           "url": "https://openrouter.ai/amazon/nova-lite-v1",
@@ -409,6 +399,16 @@
           "completionPerMillion": 0.15,
           "free": false,
           "created": 1788206780
+        },
+        {
+          "name": "Z.ai: GLM 4.7 Flash",
+          "id": "z-ai/glm-4.7-flash",
+          "url": "https://openrouter.ai/z-ai/glm-4.7-flash",
+          "context": 131072,
+          "promptPerMillion": 0.060500000000000005,
+          "completionPerMillion": 0.39999999999999997,
+          "free": false,
+          "created": 1768833913
         }
       ]
     }
@@ -421,8 +421,8 @@
     {
       "path": "https://openrouter.ai/api/v1/models",
       "url": "https://openrouter.ai/api/v1/models",
-      "sha256": "a36bb139458a44d32db8116c6e1bd72619c29369d03aebd1c832e47a3724666d",
-      "bytes": 926857
+      "sha256": "def06fdfbd9e10a9a66a066fefb81ad623e32327375218971d98331b1bdd0f62",
+      "bytes": 926801
     }
   ]
 }
