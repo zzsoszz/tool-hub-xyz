@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-28T04:12:06.562Z",
+  "updatedAt": "2026-11-28T18:23:31.509Z",
   "slugs": [
     "ec3ffc18cdbb",
     "002e0c186427",
@@ -110,7 +110,9 @@
     "14df079ce9fd",
     "bb12d8de6ae2",
     "2a5044bcd53c",
-    "7da83eba7593"
+    "7da83eba7593",
+    "8b6b82f76dc9",
+    "53010ce4a559"
   ],
   "admin": [],
   "machine": [
@@ -223,7 +225,9 @@
     "14df079ce9fd",
     "bb12d8de6ae2",
     "2a5044bcd53c",
-    "7da83eba7593"
+    "7da83eba7593",
+    "8b6b82f76dc9",
+    "53010ce4a559"
   ],
   "machineByDay": {
     "legacy": [
@@ -373,6 +377,10 @@
       "bb12d8de6ae2",
       "2a5044bcd53c",
       "7da83eba7593"
+    ],
+    "2026-11-29": [
+      "8b6b82f76dc9",
+      "53010ce4a559"
     ]
   }
 }

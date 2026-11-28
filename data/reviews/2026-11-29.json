@@ -1,0 +1,413 @@
+{
+  "day": "2026-11-29",
+  "reviewedAt": "2026-11-28T18:23:31.506Z",
+  "reviewer": "cloudflare/@cf/meta/llama-3.1-70b-instruct",
+  "note": "cloudflare/@cf/meta/llama-3.1-70b-instruct：复核 12 条，解析到 12 条判定",
+  "rules": {
+    "minItems": 3,
+    "minBodyChars": 120,
+    "minSummaryChars": 40,
+    "maxTags": 4,
+    "agentMaxItems": 12,
+    "agentBatch": 6,
+    "agentChars": 900,
+    "agentExcerptChars": 600
+  },
+  "passed": true,
+  "reasons": [],
+  "total": 16,
+  "blocked": [
+    "8b6b82f76dc9",
+    "53010ce4a559"
+  ],
+  "survivors": 14,
+  "items": [
+    {
+      "slug": "6f3abc3714f7",
+      "title": "A卡惨遭N卡羞辱，7900XTX在Minimax H3视频生成任务中落后于4060Ti，更被4090D 48G和5070Ti吊打，AMD的生态还需完善！",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [
+        "agent",
+        "generate",
+        "benchmark",
+        "tutorial"
+      ],
+      "bodyChars": 3504,
+      "excerpt": "三台服务器都装好之后呢，我是让这个 GPT-6 Luna 接入这个 Codex，因为它便宜嘛，干这种脏活累活，让它去配置我的三台服务器。我都装了 Ubuntu 24.04，操作系统都是一样的，服务器上面的 ComfyUI 环境可能有所差异，导致我测试的时候有点差异，后来我又给它统一了。这个测试就是 MiniMax H3，H3 Image 我也测了，都能跑，这个图片没有什么压力。我的几张卡，4060 Ti、5070 Ti、7900 XTX，包括这个 4090D，跑起来都是非常轻松的，就不给大家介绍了，因为跑图片确实门槛太低了。 那么就是跑这个 MiniMax H3 视频，5 秒视频。这个是 5070 Ti 生成的视频，我们看一下。这是 7900 XTX 生成的视频，我们来看一看。从这个质量上来说的话，A 卡跟 N 卡是没有任何差距的，A 卡也可以做到非常细腻，效果也是相当不错的。当然了，后面我也测了这个 15 秒的视频，我们一会儿再讲。从画质上来讲的话，A 卡跟 N 卡可以先把结论放在这里，它没有什么差距，最主要的是速度差距。 我是总结了一张表，这里面有几次是配置失败的，最主要是权重搞错了，包括这个 4090D，权重选错了，生成的效果就不好，大家只看这个成功的。我把这个 SVG 图像放到视频下方的帖子中去，有关注的你可以自己去详细看一下它失败是因为什么。反正最后调整到统一的权重、统…",
+      "quality": 8,
+      "practical": 2,
+      "sourceName": "抡锤者 AI硬件",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "包含实测数据和对比结果。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "8b6b82f76dc9",
+      "title": "Code-driven AI illustrations are more useful than images from dedicated image models",
+      "category": "apps",
+      "subcategory": "creation",
+      "tags": [],
+      "bodyChars": 5232,
+      "excerpt": "An interesting trend in frontier LLMs released in the second half of 2026 is that they tend to be much better at visual reasoning and creative \"design\" than their predecessors. If you ask these text-output models to create a 2D image (or a 3D model, as discussed here previously ), you're very likely to get a useful result, and you may even get one that's aesthetically impressive. Most importantly, because these images are defined using code you (or the model) can make further edits to them without any of the weirdness that comes from iterating with a text-input, image-output model. Poster des…",
+      "quality": 9,
+      "practical": 1,
+      "sourceName": "Simon Willison",
+      "domain": "simonwillison.net",
+      "hard": [],
+      "warnings": [
+        "没有命中任何标签",
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "没有提供具体的实测数据或步骤，主要是对趋势的讨论。"
+      },
+      "blocked": [
+        "模型复核不通过（没有提供具体的实测数据或步骤，主要是对趋势的讨论。）"
+      ]
+    },
+    {
+      "slug": "d8fa33e14f06",
+      "title": "谷歌Tibo亲授Gemini 4 Neon内部打开方式！第一步：删光旧规则",
+      "category": "tools",
+      "subcategory": "coding",
+      "tags": [
+        "benchmark",
+        "tutorial",
+        "agent"
+      ],
+      "bodyChars": 5504,
+      "excerpt": "谷歌Tibo亲授Gemini 4 Neon内部打开方式！第一步：删光旧规则 henry 2026-11-28 22:29:15 来源： 量子位 这两天转投Gemini的有福了！ henry发自 凹非寺 量子位 | 公众号QbitAI 这两天转投Gemini的有福了！ 就在刚刚，谷歌版Tibo **Philipp Schmid**发推，分享了这几天大受好评的Gemini 4 Neon的**内部打开方式**，直接来了一波现场教学！ 他表示，所有使用Neon的用户，都应该好好检查一下自己的旧配置，清理过时、重复的规则。 现在，他自己的GEMINI.md，一屏就能看完～ Philipp认为，过时的规则不仅会和现有的指令打架，让模型左右脑互搏，消耗额外的token。 更离谱的是，这样下来，模型大概率还是按照错误的旧规则来走，进而影响输出结果。 更进一步，在文章中，Philipp又针对长上下文压缩降智，工具规则的写法与调用，给出了几条可以直接抄作业的建议： 比如，为了减少长对话压缩带来的“降智”，他指出可以在每个阶段结束时，让模型记下目标、关键决定和文件路径，再开启一个新会话接着干。 而在工具调用中，则可以删掉示例，让模型直接按照接口规则操作，减少机械照搬示例带来的错误。 …… 目前，Philipp是Google DeepMind的Staff Engineer，负责开发者体验与关系，类似于谷…",
+      "quality": 9,
+      "practical": 3,
+      "sourceName": "量子位",
+      "domain": "qbitai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "提供了具体的实践步骤和建议。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "a18271c052c7",
+      "title": "ComfyUI DynamicVRAM 实战：MiniMax-H3 在 R9700 32G × 7900 XTX 24G 双卡上跑通 1080p 级长片",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "lowspec",
+        "benchmark",
+        "tutorial",
+        "generate"
+      ],
+      "bodyChars": 7628,
+      "excerpt": "ComfyUI DynamicVRAM 实战：MiniMax-H3 在 R9700 32G × 7900 XTX 24G 双卡上跑通 1080p 级长片 发帖版 v1.3 · 2026-11-28 · 数据全部来自本机实测（非厂商标称、非推算），关键数字均留有日志/校验值可查 v1.2 更新：A3–A6 全档补测收口（8 步全通），并据 A3 实测修正「天花板」结论为「像素×帧联合峰」（v1.1 曾记为卡帧数）。 v1.3 更新：新增 §6.4 三种生成模式（T2VA/FL2VA/Ref2VA）对照——换模式不改显存墙，参考图 token 无可测开销。 主角：两张 AMD 显卡的家用工作站，跑 MiniMax-H3（FL2VA）图生视频 + 音频，目标是把「两卡到底能出多大的片、多快、差在哪」摸成一张可对表的基线。 关于「1080p」的口径：本文说的 1080p 级指 1152×2048 竖屏 = 2.36 MP ，像素量高于标准横屏 1080p（1920×1080 = 2.07 MP）；与横屏 1920×1072 属不同赛道，本文只报本次实测的竖屏规格，数字不混用。 〇、先给结论（不想看全文的看这段） 实现了 1080p 级长片出片——这是本轮最重要的一条 。开启 DynamicVRAM 后， 1152×2048 竖屏、362 帧、15 秒不切镜 的长片在 R9700 32G…",
+      "quality": 13,
+      "practical": 4,
+      "sourceName": "抡锤者 AI 音视频画图",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "包含实测数据和详细的配置信息。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "d219df5d5575",
+      "title": "【实测】X99 垃圾佬平台：R9700 32G + 64G DDR3 跑 Qwen3.8-Flash-Next IQ3_S（78G 双文件），全天 coding agent 负载下的 strata 真实数据",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "lowspec",
+        "benchmark",
+        "hardware",
+        "tutorial"
+      ],
+      "bodyChars": 2530,
+      "excerpt": "前言 论坛里 R9700 + strata 的帖子很多，但大多是 128G/256G 内存的机器。我这台是彻头彻尾的垃圾佬平台——华南金牌 X99 + 至强 E5-2666 v3 + 64G DDR3 ECC，显存 R9700 32G。跑了大半天真实负载（不是我手动 ping-pong 问答，是 DSH coding agent 全天挂着干活，prompt 4~7 万 token 级别），把 strata 引擎日志里的真实统计整理出来，给同样只有 64G 内存、又想上 Flash Next 大 MoE 的朋友一个参考。 硬件与模型 项目 配置 主板/CPU 华南金牌 X99（DDR3 版）/ E5-2666 v3，专配便宜 DDR3 板 内存 64G DDR3 ECC REG，双通道 显卡 AMD R9700 32G SSD INNOGRIT IG5216 NVMe（无缓存盘） 模型 Qwen3.8-Flash-Next GSQ RCO IQ3_S，两段共 78G（主 52G + PLE 27G） 视觉 mmproj BF16（866M，独立 strata-vision-hip 进程） strata 关键参数 代码块 --serve --expert-cache auto --prefill auto --kv int8 --kv-resident 32768 --spec 4…",
+      "quality": 13,
+      "practical": 4,
+      "sourceName": "抡锤者 模型部署讨论",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "提供了实测数据和硬件配置信息。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "099852c89abe",
+      "title": "3080 Ti 12GB：Linux + 新版引擎 + 四轮 A/B 调参 + 会话缓存，Qwen3.8-Flash-Next-IQ3_S 跑到 192–195 tok/s prefill 2,500",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "benchmark",
+        "hardware",
+        "lowspec",
+        "tutorial"
+      ],
+      "bodyChars": 9257,
+      "excerpt": "3080 Ti 单卡 12GB 跑 Strata / Qwen3.8 Flash-Next：IQ3_S 与 111GB UD-Q4_K_XL 双档实测，Linux 服务器四轮 A/B 调参全记录 先看张图（服务自带的监控面板） ( 图片地址) 这台是 Linux 服务器 ，面板上几个关键数字： 面板上的数字 说明 Decode 153.6 / Prefill 2,394 一条正在生成的长回复的实时速度（IQ3_S 档，12,685 tokens 进行中） VRAM 11.9 / 12 GB · GPU load 99% · 297W / 350W · 76℃ 显存吃满，显卡满载，温度和功耗都温和 Experts cached 2,523 — 4.8 GB 显存里缓存的专家槽位（对比 @cc tgo 帖的 2,451 槽 / 3.3 GB：槽位数相近，但他那台是 IQ2_XS，专家单个更小） PCIe Gen3 ×16 · to GPU 1,643 MB/s 和那位楼主一样，这条 PCIe 就是 MoE 的真实通道；生成高峰期实测搬运 9.8~12.5 GB/s，基本跑满 Disk read 0.1 MB/s 模型进内存后不读硬盘（UD-Q4_K_XL 档我们也专门测过： 32K prompt 盘读 0.0 GB ） System RAM 99.2 / 121 GB 121 GB…",
+      "quality": 9,
+      "practical": 7,
+      "sourceName": "抡锤者 AI硬件",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "包含实测数据和调参过程。"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "614e91283af5",
+      "title": "怎么把Inkling 2 Mini 跑的飞快？ 从 8G 到 32G：各档显卡的提速",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "lowspec",
+        "benchmark",
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 7521,
+      "excerpt": "先说结论 同一个模型，有人跑 9 tok/s，有人跑 628 tok/s。差距 主要不在显卡 ，而在三件事：开箱默认配置、热门专家有没有留在显存里、以及统计口径。 选对引擎、改几行参数， 不花钱就能快 2～3.5 倍 。 最近一位国外 up 主把 Inkling 2 Mini 在 8G 到 32G 的各档显卡上跑了个遍，还收集了 120 多条真实用户的实测反馈。我把里面的关键数据整理成了这份速查，图都是他视频里的原始画面。 一、先看这个差距有多大 评论区收到的样本是这样的： 置顶评论里的实测：Intel Arc B70 跑 8 tok/s @8k 上下文，RTX 5070 Ti 只有 10-15 tok/s @131k 。启动周普通显卡落在 9-60 tok/s。 而论坛上刷屏的帖子是另一种画风： 单张 5090「613 tok/s decode + 14,100 tok/s prefill」，546 赞；双 3090「约 200 tok/s」501 赞。右边三个标签才是关键： DRAFTED （开了草稿）、 AUTHOR'S NUMBER （作者自测）、 STRUCTURED OUTPUT （结构化输出）。 所以问题不是「我的卡是不是废了」，而是：别人 600+，我只有 12，差在哪。 二、为什么开箱就慢 结构决定的 ：24 层里有 12 层每个 token 要跑 3 遍，一个…",
+      "quality": 10,
+      "practical": 4,
+      "sourceName": "抡锤者 模型部署讨论",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "包含实测数据和详细配置信息"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "c285d7c78f45",
+      "title": "【实测】便携机3080Laptop-16g大模型测试报告—Ternary-Bonsai-2.5-27B",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "lowspec",
+        "benchmark",
+        "local",
+        "hardware"
+      ],
+      "bodyChars": 8004,
+      "excerpt": "20261127-便携机3080m-16g大模型测试报告—Ternary-Bonsai-2.5-27B 测试对象： D:\\!AI\\!Tools\\ninfer 引擎（2026-11-25.3 / CUDA 13.4 / sm_86）+ D:\\!AI\\!Model\\models4Ninfer 下 4 份 .ninfer 权重 硬件：ThinkPad P1 Gen4/ RTX 3080 Laptop 16 GiB / sm_86 / 驱动 596.47 / 80 W 墙 / 64 GB 双通道 DDR4-3200 结论口径：本文所有数字分类标注 —— **【实测】 本机本次运行结果、 【官方基线】 上游 config/README 数字、 【推算】**由实测斜率外推（不入主表）。 1. 结论先行 统一口径 ：每档 --max-context = --kv-capacity = 档位 、 --kv-dtype rk4v4 、 --no-thinking （温度 0）、 --prefill-cublas --prefill-chunk 4096 、深填至 档位 − 8192 token 、生成 128 token 、 --max-concurrency 1 。 入菜单门槛（与 Ninfer启动本地大模型.bat 一致） ：解码速度（深填满载口径） ≥ 30 token/s 。 1.1 达标…",
+      "quality": 9,
+      "practical": 4,
+      "sourceName": "抡锤者 模型部署讨论",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "提供了详细的测试报告和配置信息"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "db7f327b43b0",
+      "title": "RDNA3 福利區 - Inkling-2-Mini + 7900XTX => Prefill 3000 tok/s & AR 101 tok/s @4K & DSpark 265 tok/s",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "lowspec",
+        "benchmark",
+        "tutorial"
+      ],
+      "bodyChars": 6273,
+      "excerpt": "先說明：這是自己一台機器上的實測，每項只跑一次或少數幾次，沒有大規模品質評測。引擎是我們自己改的 fork，數字是迭代過程中最後一輪的結果，不是同一時間窗口的嚴格對照。greedy 輸出每一步都有做 bit-exact token 流比對。所有數字請當量級參考。 TL;DR 把 Thinking Machines 的 Inkling-2-Mini （26B 總 / 3.4B 活躍、48 次 loop visit、128 experts top-8 的 MoE）在 RX 7900 XTX 24GB（gfx1100 / RDNA3，Windows 原生 HIP） 跑起來。原引擎是 Strata 為 NVIDIA 3090 寫的 ik2（PR#6506），我們移植 + 優化到 RDNA3，全開源： https://github.com/liedwardtw/Strata （commit afed622e ）。 Prefill 峰值 3021 tok/s（16K） 、 AR 直接解碼 101 tok/s @ 4K ，結構化 prompt 上 DSpark 原生投機解碼 243–265 tok/s（accept 7.7/8） 。 640K（655360）上下文 + 8GB conversation cache 全塞進 24GB VRAM/RAM ，128 專家常駐 0 miss；640K…",
+      "quality": 7,
+      "practical": 4,
+      "sourceName": "抡锤者 AI硬件",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "包含实测数据和详细配置信息"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "33bfa129c58c",
+      "title": "llama.cpp b12832 发布",
+      "category": "hardware",
+      "subcategory": "gpu",
+      "tags": [
+        "local",
+        "tutorial"
+      ],
+      "bodyChars": 1827,
+      "excerpt": "ggml : add CONCAT backward pass (#32151) Each input's gradient is a view of the output gradient at its offset along dim, made contiguous. Mark a and b as params so grad mode checks the op, with grad_nmax raised to 40000 to keep the default shapes. The output is weighted by random values in [1, 2], since with a plain sum every gradient is 1 and a wrong offset would still pass. Transposed-b cases are not grad checked, they only cover the forward. Signed-off-by: gianni-cor Website: Attestations: macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS I…",
+      "quality": 8,
+      "practical": 1,
+      "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "pass",
+        "reason": "包含代码更新信息和功能说明"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "5dfa738b6c92",
+      "title": "英伟达L40 单卡装过 7 个本地模型，从 275 到 25 t/s， 差在哪",
+      "category": "local",
+      "subcategory": "quantize",
+      "tags": [
+        "local",
+        "lowspec",
+        "benchmark",
+        "tutorial"
+      ],
+      "bodyChars": 6730,
+      "excerpt": "硬件：NVIDIA L40 单卡（46 GB，Ada sm_89，驱动 535.161.08），8 核 / 64 GiB 容器 系统：Ubuntu 22.04LTS（内核 5.15.0，GCC 11.4，CUDA 12.1） 收录范围：全部在这张卡上实际部署并测过的模型，轮流独占，一次一个跑 写在前面 这张卡我先后装过七个模型。引擎不同、量化不同、架构也不同，所以谈不上同一基准下的横评，就是把各自跑出来的数据摆在一起，看差异落在哪。非严谨测评，就是记录自己的折腾过程。目前综合使用下来，做主力的本地模型就是Qwen3.8 Flash-Next IQ2_XS了，用着挺好的。 按引擎路线分四组： 路线 模型 引擎 专用引擎 Flash-Next IQ2_XS / IQ3_XXS Strata 0.1.58 通用 LLM 引擎 Qwen3.6-35B-A3B-AWQ / Qwen3.8-27B-FP8 vLLM 轻量通用引擎 gpt-oss-20b / Inkling 2 Mini llama.cpp 超显存 MoE 引擎 Qwen3.8（MoE4All） MoE4All 1.3.0 先说结论： 单流速度差了 11 倍，但其中一半差距是 MTP（投机解码）开没开造成的，不是模型本身的锅。 一、部署配置一览 模型 引擎 量化 总参 / 激活 上下文 显存 视觉 MTP Flash-Next…",
+      "quality": 12,
+      "practical": 5,
+      "sourceName": "抡锤者 模型部署讨论",
+      "domain": "lcz.me",
+      "hard": [],
+      "warnings": [],
+      "agent": {
+        "verdict": "pass",
+        "reason": "提供了详细的测试报告和配置信息"
+      },
+      "blocked": []
+    },
+    {
+      "slug": "53010ce4a559",
+      "title": "iffiX/neutrino",
+      "category": "local",
+      "subcategory": "weights",
+      "tags": [
+        "local",
+        "agent",
+        "free",
+        "lowspec"
+      ],
+      "bodyChars": 7211,
+      "excerpt": "微子·中枢 neutrinohub.net 一键部署 AI 应用，走到哪用到哪 写代码的 AI 工具、AI 助手、聊天机器人、本地大模型，点一下装到自己电脑上，一个 AI 网关管好密钥和模型，手机和笔记本随时打开。 编辑器、远程桌面、终端和文件也都有。Windows、macOS、Linux 都能安装，开源免费，MIT 许可证。 简体中文 · [English](README.en.md) ![许可证 MIT ](LICENSE) ![版本 ](https://github.com/iffiX/neutrino/releases) ![国内版 ](https://cnb.cool/iffi-X/neutrino/-/releases) ![系统 ](https://neutrinohub.net/reference/platforms) ![LINUX DO ](https://linux.do/t/topic/3221736) ![V2EX ](https://www.v2ex.com/t/1255790) ![CI ](https://github.com/iffiX/neutrino/actions/workflows/ci.yml) ![Release build ](https://github.com/iffiX/neutrino/actions/workflows/r…",
+      "quality": 9,
+      "practical": 11,
+      "sourceName": "GitHub 检索（生态项目更新）",
+      "domain": "github.com",
+      "hard": [],
+      "warnings": [
+        "标题未翻译"
+      ],
+      "agent": {
+        "verdict": "fail",
+        "reason": "内容与分类不符，主要介绍的是一个 AI 应用部署平台，而不是硬件或 GPU 相关内容"
+      },
+      "blocked": [
+        "模型复核不通过（内容与分类不符，主要介绍的是一个 AI 应用部署平台，而不是硬件或 GPU 相关内容）"
+      ]
+    },
+    {
+      "slug": "849e0755e607",
+      "title": "200亿美元…史上最贵AI自媒体",
+      "category": "local",
+      "subcategory": "weights",
+      "tags": [
+        "tutorial",
+        "free",
+        "money"
+      ],
+      "bodyChars": 6031,
+      "excerpt": "200亿美元…史上最贵AI自媒体 henry 2026-11-28 22:38:56 来源： 量子位 这可能是有史以来，ROI（投资回报率）最高的个人博客。 Jay 发自 凹非寺 量子位 | 公众号 QbitAI 200亿美元 。 这可能是有史以来，ROI（投资回报率）最高的个人博客。 作者叫 Chris Olah ，没有本科学位，没有博士头衔，甚至连大一都没读完就搞自媒体去了。。。 但如今，他是硅谷AI第一股—— Anthropic的联创 。 18岁从多伦多大学退学，此后，他拿着硅谷创投教父彼得·蒂尔（Peter Thiel）给的 10万美元「辍学奖金」 ，开始在个人网站colah.github.io上手搓机器学习科普文章。 这些图文并茂的博客，火遍了全球各大顶级AI实验室。 甚至连前谷歌二进制能力者 Jeff Dean 都曾亲自下场捞人，点名要招他当实习生。 如今，随着Anthropic敲钟纳斯达克，Olah 身价一度超过200亿。 而这位联合创始人的草莽故事，也开始在X病毒式传。 原帖作者感慨万千地总结道： 零学位，仅仅是一个优秀的博客，就帮他搞定了这一切。 至于他的前Mentor—— Jeff Dean ——更是亲自下场转发这条热帖，在线认领这位昔日门徒： 祝贺我以前的实习生@ch402！ （我愿称姐夫为世上唯一能正面压制A➗之人😭） 从用爱发电的AI自媒体人，到身价百…",
+      "quality": 10,
+      "practical": 2,
+      "sourceName": "量子位",
+      "domain": "qbitai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "f0de91cd1ed9",
+      "title": "10 款热门开源项目｜旧手机当控制面板，Mac 刘海变文件架",
+      "category": "local",
+      "subcategory": "selfhost",
+      "tags": [
+        "local",
+        "generate",
+        "lowspec",
+        "free"
+      ],
+      "bodyChars": 1955,
+      "excerpt": "闲置的安卓手机可以放在显示器旁边，拿来调音量、切 OBS 场景。MacBook 的刘海也能派上用场，临时要发的截图，往屏幕顶部一拖就能先存着。这期一共 10 款，还有在本地记会议纪要、给容器配域名、从长视频里挑片段的工具。 BatteryHubX｜在 Windows 任务栏看无线外设电量 无线鼠标时不时断一下，你想先看看是不是快没电了。 BatteryHubX 能把电量百分比放在 Windows 任务栏上，抬眼就能看。部分无线键盘、耳机和手柄也支持。它原名 BatteryHub，微软商店里的新版叫 BatteryHubX，商店说明源代码随安装包提供。 微软商店 Yogurt｜在电脑本地生成会议纪要 开完一小时的线上会，只想找出最后定了什么、谁来跟进。 Yogurt 可以在电脑上录下麦克风和系统音频，本地转写并生成纪要，再导出成 Markdown。会议里也无需邀请录音机器人。支持 macOS、Windows 和 Linux。 项目官网 ILoveNotch｜把 MacBook 刘海变成文件暂存架 截了几张图要发给同事，偏偏还得切回网页再截一张。 可以先把截图拖到 MacBook 的刘海上，攒齐了再一起拖进聊天窗口。暂存的文件还能直接预览或隔空投送。适用于 macOS 14.6 及以上的 Apple Silicon Mac。 项目官网 ILoveNotch 的文件暂存架。 Kiri｜…",
+      "quality": 8,
+      "practical": 7,
+      "sourceName": "小众软件",
+      "domain": "appinn.com",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "ed7bacb5718d",
+      "title": "刚刚，8192张昇腾训出285B大模型！权重开源，32页训练手册全公开",
+      "category": "bench",
+      "subcategory": "benchmark",
+      "tags": [
+        "benchmark",
+        "local",
+        "agent",
+        "lowspec"
+      ],
+      "bodyChars": 5998,
+      "excerpt": "刚刚，8192张昇腾训出285B大模型！权重开源，32页训练手册全公开 henry 2026-11-28 22:12:50 来源： 量子位 国产芯片训千亿大模型，终于有人把施工图纸摊开了 henry发自 凹非寺 量子位 | 公众号QbitAI 8192张昇腾卡、2850亿参数、百万上下文、整整32页技术报告。 在国产软硬件体系里训练千亿级大模型，真的很少有人把底牌亮得这么彻底。 继今年9月开源端侧模型 Xing4.0-29B-A4B 后， 中国电信 最近又放出一款千亿级主力开源模型—— Xing4.1-Preview 。 据悉，这款新模型不仅从头到尾靠 8192张昇腾910C 和 昇思MindSpore 训完，直接把 国芯训国模 的规模推到了千亿级。 背后的技术报告，还进一步把架构选型、八千卡集群训练方案以及Agent后训练的方法开源了出来。 可以说，以往聊到国产算力训模型，外界看到的往往只有一句“成功跑通”，或者几个零星的跑分。 这一次，想在国产算力上搭集群的后来者，也终于拿到了一份可以照着施工的图纸。 主打代码与长程Agent，跑进主流第一梯队 咱先看模型本身。 Xing4.1-Preview这次主打代码编程和长程复杂Agent任务，采用 MoE（混合专家）架构 ，总参数达 2850亿 ，单token激活 170亿 参数，支持 百万token上下文。 这组模型配置的背后，是团…",
+      "quality": 9,
+      "practical": 6,
+      "sourceName": "量子位",
+      "domain": "qbitai.com",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    },
+    {
+      "slug": "d48c95deb257",
+      "title": "Python 异常到底多贵？我把 try、raise、traceback 的账单逐项拆开测了一遍",
+      "category": "bench",
+      "subcategory": "cost",
+      "tags": [
+        "benchmark"
+      ],
+      "bodyChars": 140,
+      "excerpt": "把 Python 异常的账单拆成五段实测：try 在 3.11 上确实零成本（字节码里退化成一个 NOP）；raise 只要 22 纳秒，但 format_exc 是它 96 倍、深栈下 2700 倍；最贵的不是 CPU 而是内存——20 个被存下的异常锁住 20MB 局部变量。",
+      "quality": 6,
+      "practical": 1,
+      "sourceName": "掘金 AI",
+      "domain": "juejin.cn",
+      "hard": [],
+      "warnings": [],
+      "agent": null,
+      "blocked": []
+    }
+  ]
+}
