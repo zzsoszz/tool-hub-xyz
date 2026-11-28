@@ -1,0 +1,1059 @@
+{
+  "day": "2026-11-29",
+  "generatedAt": "2026-11-28T18:21:11.233Z",
+  "timezone": "Asia/Shanghai",
+  "windowHours": 48,
+  "window": {
+    "since": null,
+    "until": null
+  },
+  "counts": {
+    "sources": 42,
+    "okSources": 38,
+    "fetched": 1100,
+    "duplicates": 801,
+    "carried": 0,
+    "added": 16,
+    "fallback": 0,
+    "lowQuality": 150,
+    "published": 16
+  },
+  "sources": [
+    {
+      "id": "openai-news",
+      "name": "OpenAI News",
+      "ok": true,
+      "items": 60,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "google-deepmind",
+      "name": "Google DeepMind",
+      "ok": true,
+      "items": 60,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "google-ai",
+      "name": "Google AI Blog",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "hf-blog",
+      "name": "Hugging Face Blog",
+      "ok": true,
+      "items": 60,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "hf-daily-papers",
+      "name": "Hugging Face Daily Papers",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "interconnects",
+      "name": "Interconnects",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "latent-space",
+      "name": "Latent Space",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "simon-willison",
+      "name": "Simon Willison",
+      "ok": true,
+      "items": 30,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "techcrunch-ai",
+      "name": "TechCrunch AI",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "ars-ai",
+      "name": "Ars Technica AI",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "mit-tr-ai",
+      "name": "MIT Tech Review",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "qbitai",
+      "name": "量子位",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "arxiv-cs",
+      "name": "arXiv cs.AI/CL/LG",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "hn-newest",
+      "name": "Hacker News (AI)",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "hn-algolia",
+      "name": "Hacker News Search",
+      "ok": true,
+      "items": 25,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lobsters-ai",
+      "name": "Lobsters AI",
+      "ok": true,
+      "items": 25,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "reddit-local-llama",
+      "name": "r/LocalLLaMA",
+      "ok": false,
+      "items": 0,
+      "queries": 1,
+      "error": "HTTP 404"
+    },
+    {
+      "id": "github-trending",
+      "name": "GitHub 新晋 AI 项目",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "microsoft-research",
+      "name": "Microsoft Research",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "github-blog",
+      "name": "GitHub Blog",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "theverge",
+      "name": "The Verge",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "sspai",
+      "name": "少数派",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "appinn",
+      "name": "小众软件",
+      "ok": true,
+      "items": 10,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "producthunt",
+      "name": "Product Hunt",
+      "ok": true,
+      "items": 30,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "hn-show-ai",
+      "name": "Show HN (AI)",
+      "ok": false,
+      "items": 0,
+      "queries": 1,
+      "error": "HTTP 502"
+    },
+    {
+      "id": "ai-news-applied",
+      "name": "AI News (应用)",
+      "ok": true,
+      "items": 0,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "juejin",
+      "name": "掘金 AI",
+      "ok": true,
+      "items": 20,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "reddit-sideproject",
+      "name": "r/SideProject",
+      "ok": false,
+      "items": 0,
+      "queries": 1,
+      "error": "HTTP 429"
+    },
+    {
+      "id": "hn-money",
+      "name": "HN 检索（独立开发与变现）",
+      "ok": true,
+      "items": 50,
+      "queries": 5,
+      "error": null
+    },
+    {
+      "id": "reddit-saas",
+      "name": "r/SaaS 变现实操",
+      "ok": false,
+      "items": 0,
+      "queries": 1,
+      "error": "HTTP 429"
+    },
+    {
+      "id": "lcz-hardware",
+      "name": "抡锤者 AI硬件",
+      "ok": true,
+      "items": 19,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-llm",
+      "name": "抡锤者 模型部署讨论",
+      "ok": true,
+      "items": 39,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-agent",
+      "name": "抡锤者 Agent 工具",
+      "ok": true,
+      "items": 38,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-media",
+      "name": "抡锤者 AI 音视频画图",
+      "ok": true,
+      "items": 40,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-selfmedia",
+      "name": "抡锤者 自媒体运营",
+      "ok": true,
+      "items": 31,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-web",
+      "name": "抡锤者 建站与网络赚钱",
+      "ok": true,
+      "items": 18,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-crisis",
+      "name": "抡锤者 AI 危机与机遇",
+      "ok": true,
+      "items": 25,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "lcz-news",
+      "name": "抡锤者 资讯",
+      "ok": true,
+      "items": 40,
+      "queries": 1,
+      "error": null
+    },
+    {
+      "id": "gh-releases",
+      "name": "GitHub 发布（ComfyUI / Strata 等）",
+      "ok": true,
+      "items": 21,
+      "queries": 8,
+      "error": null
+    },
+    {
+      "id": "hn-ecosystem",
+      "name": "HN 检索（本地推理生态）",
+      "ok": true,
+      "items": 110,
+      "queries": 12,
+      "error": null
+    },
+    {
+      "id": "gh-ecosystem",
+      "name": "GitHub 检索（生态项目更新）",
+      "ok": true,
+      "items": 59,
+      "queries": 6,
+      "error": null
+    },
+    {
+      "id": "arxiv-ecosystem",
+      "name": "arXiv 检索（推理引擎与量化）",
+      "ok": true,
+      "items": 50,
+      "queries": 5,
+      "error": null
+    }
+  ],
+  "categories": [
+    {
+      "id": "apps",
+      "label": "AI 应用",
+      "items": [
+        {
+          "sourceId": "lcz-hardware",
+          "sourceName": "抡锤者 AI硬件",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "terry",
+          "id": "3373",
+          "title": "A卡惨遭N卡羞辱，7900XTX在Minimax H3视频生成任务中落后于4060Ti，更被4090D 48G和5070Ti吊打，AMD的生态还需完善！",
+          "url": "https://lcz.me/topic/3373",
+          "published": "2026-11-28T07:00:00.000Z",
+          "summary": "三台服务器都装好之后呢，我是让这个 GPT-6 Luna 接入这个 Codex，因为它便宜嘛，干这种脏活累活，让它去配置我的三台服务器。我都装了 Ubuntu 24.04，操作系统都是一样的，服务器上面的 ComfyUI 环境可能有所差异，导致我测试的时候有点差异，后来我又给它统一了。这个测试就是 MiniMax H3，H3 Image 我也测了，都能跑，这个图片没有什么压力。我的几张卡，4060 Ti、5070 Ti、7900 XTX，包括这个 4090D，跑起来都是非常轻松的，就不给大家介绍了，因为跑图片确实门槛太低了。 那么就是跑这个 MiniMax H3 视频，5 秒视频。这个是 5070 Ti 生成的视频，我们看一下。这…",
+          "metrics": {
+            "points": 0,
+            "comments": 12,
+            "views": 331
+          },
+          "excellent": false,
+          "content": {
+            "html": "<p>三台服务器都装好之后呢，我是让这个 GPT-6 Luna 接入这个 Codex，因为它便宜嘛，干这种脏活累活，让它去配置我的三台服务器。我都装了 Ubuntu 24.04，操作系统都是一样的，服务器上面的 ComfyUI 环境可能有所差异，导致我测试的时候有点差异，后来我又给它统一了。这个测试就是 MiniMax H3，H3 Image 我也测了，都能跑，这个图片没有什么压力。我的几张卡，4060 Ti、5070 Ti、7900 XTX，包括这个 4090D，跑起来都是非常轻松的，就不给大家介绍了，因为跑图片确实门槛太低了。</p>\n<p>那么就是跑这个 MiniMax H3 视频，5 秒视频。这个是 5070 Ti 生成的视频，我们看一下。这是 7900 XTX 生成的视频，我们来看一看。从这个质量上来说的话，A 卡跟 N 卡是没有任何差距的，A 卡也可以做到非常细腻，效果也是相当不错的。当然了，后面我也测了这个 15 秒的视频，我们一会儿再讲。从画质上来讲的话，A 卡跟 N 卡可以先把结论放在这里，它没有什么差距，最主要的是速度差距。</p>\n<p><img src=\"https://upload.lcz.me/uploads/3628f9ad-ff41-42e2-babd-d207bc44074b.jpeg\" alt=\"7900xtx被400ti羞辱.jpeg\" loading=\"lazy\"></p>\n<p>我是总结了一张表，这里面有几次是配置失败的，最主要是权重搞错了，包括这个 4090D，权重选错了，生成的效果就不好，大家只看这个成功的。我把这个 SVG 图像放到视频下方的帖子中去，有关注的你可以自己去详细看一下它失败是因为什么。反正最后调整到统一的权重、统一的工作流，它们都是能跑的。从生成时间上来讲，7900 XTX 就算是经过优化，也需要 6 分 55 秒，比 4060 Ti 的 5 分 02 秒还慢。然后最快的是 4090D，1 分 48 秒。5070 Ti 也是非常不错，它是 2 分 06 秒，跟 4090D 的差距微乎其微。这个有可能跟平台有关系，因为 4090D 配的是 DDR3 1866 的条子，它是双通道的，而且是 PCIe 3.0 x16 接口，CPU 是 E5-2666 V3。它可能比起 5070 Ti，我这个 9700X 加上 96G DDR5 6000、开启 EXPO 模式，能够跑满 6000 的频率，还是确实有差距。而且呢，我们要知道这是 5 秒的视频，在 15 秒的视频中，4090D 48G 的优势就大得多了。</p>\n<p><img src=\"https://upload.lcz.me/uploads/f3145a58-71c4-4230-8c6d-f981a37bf228.svg\" alt=\"minimax-h3-video-comparison.svg\" loading=\"lazy\"></p>\n<p>然后我们再说一下动态权重的加载。这个 7900 XTX 也是支持 Comfy-aimdo 这个插件的，它的权重也可以动态加载，也可以生成更高分辨率、更长时长的高清 AR 视频。AMD 在这块的兼容性是没有什么问题的，但是效率确实非常拉胯、非常垃圾。而且在没有使用 Comfy-aimdo 的情况下，如果你没有配置好权重、工作流，没有进行加速优化，那么它的生产力也是相当拉胯的。这个可能需要你参考论坛的帖子进行优化。论坛优化这个 7900 XTX，就去看雄杰高的帖子就行了，FCYS 的帖子，包括懒人烘焙都可以去看一看。优化之后，它的加速效果非常明显。你看，没优化的时候 27 分钟，优化之后 6 分 55 秒，这个提速效果我相信就不用多说了。</p>\n<p><img src=\"https://upload.lcz.me/uploads/491a7b99-e030-414b-ad0f-70a1026118b3.jpeg\" alt=\"H3狐狸视频\" loading=\"lazy\"></p>\n<p>但是依然没有挡住它干不过 4060 Ti，这让我真的是非常吃惊。4060 Ti 以前是废物，你知道吗？它根本就跑不了 AI 视频，因为这个权重 4 比特量化之后就装不下。现在由于有了 Comfy-aimdo 这个插件，它可以动态加载权重，而且它是 PCIe x8 接口的，它居然能够跑出这么好的效果。如果是 5060 Ti，应该效果会更好，它跟 5070 Ti 的差距可能会更小一点。那你还别说，这张卡现在的性价比还真是挺不错的。你想一想，与其去买什么 3080 魔改卡、20G 的魔改卡，你还不如上这个 4060 Ti 呢。它现在二手的价格好像也就是 4000 多块钱，5060 Ti 二手好像也就是 5000 多块钱，但是可能要搭配比较好的平台了，起码是 DDR5 平台，要不然发挥不了它的优势。</p>\n<p>下面呢，我就吸取了教训，统一了权重，统一了工作流，跑一个 15 秒的视频，而且全部用 4 步采样，没有用 8 步采样。我也不知道大家这个视频都是采取什么样的采样方式。反正这个 4 步采样，7900 XTX、4090、4060 Ti、5070 Ti 都可以正常运行，跑这个 15 秒的视频，一会儿给大家看看视频效果，就是一个特种兵在靶场用手枪打靶的这么一个视频。7900 XTX 花了 46 分钟，我不知道为什么，可能是跟它与 Comfy-aimdo 不兼容、兼容性比较差有关系，也可能是它这个加速 LoRA 有问题。反正它非常慢，比 4060 Ti 还慢，4060 Ti 只花了半个小时。这个 4060 Ti 居然比 7900 XTX 快了 50%。然后 5070 Ti 是 14 分 23 秒，比 4060 Ti 快了一倍。这个 4090D 是 10 分 44 秒，它比 5070 Ti 大概快了 50%。</p>\n<p><img src=\"https://upload.lcz.me/uploads/634eb475-7b11-4c87-954e-0728c74967c1.svg\" alt=\"minimax-h3-range-training-15s-comparison.svg\" loading=\"lazy\"></p>\n<p>温度都很正常。如果统计温度的话，7900 XTX 的温度是最低的，它是 61 度，但是它的热点温度是 97 度。英伟达的驱动没有统计这个热点温度，但是之前我用软件看过，它的热点温度也是在 95 度左右，这个是正常的。然后再说噪音，这个 4060 Ti、5070 Ti、7900 XTX 都是风扇版本的，几乎没有任何噪音，反正我听不到。这个 4090D 是要把我房间屋顶都给掀翻了。还好我现在录音，第一是由于大疆的麦克风降噪效果比较好，第二是用剪映的 AI 降噪、人声分离，把噪音彻底隔绝了。要不然我在这个 4090D 工作的时候，根本就没有办法录视频。就看这个 4060 Ti 跟这个 XTX 的，这是 4060 Ti 的，这个是 7900 XTX 的，效果基本上没有什么差异，分辨率都是 1344×768。</p>\n<p>然后最后我们对照一下它们的规格，包括我搭配的这些平台，我给出几个结论。第一就是关于带宽，4060 Ti 的带宽是非常残疾的，288 GB/s，但是由于它的算力也比较残疾，所以没有拖累它。PCIe 3.0 x8，我感觉都够用了。它现在是接在比较好的主板上，给它跑满了 PCIe 4.0 x8 这个接口。但是如果把它插到 PCIe 3.0 的板子上，我觉得按照它的算力，也不会是瓶颈。然后 5070 Ti，我认为性价比最高了，跑 15 秒的视频，它的效率能够达到 4090D 48G 的 2/3，我认为已经非常好了。视频分辨率越高，4090 的优势越大，因为它的显存 48G 非常大，它不需要动态加载。虽然我也给它配了 Comfy-aimdo，但是这个 INTe8 的权重好像可以完全加载到显存中，所以分辨率越高，它的优势就越大。</p>\n<p><img src=\"https://upload.lcz.me/uploads/52561418-5564-4684-b354-62d609f5a80e.jpeg\" alt=\"minimax H3 射击视频\" loading=\"lazy\"></p>\n<p>关于 AMD 7900 XTX，我觉得怎么讲呢，空有这么高的带宽，已经跟 4090D 的带宽差不多了，它的计算单元各方面素质其实都不差，包括它的算力，你看它比 5070 Ti 的算力还要更强，是比较接近 4090D 的。但是它跑出来的效果就是这么拉胯，这肯定是跟生态有关系。而且各种优化的方法，在这个 15 秒的视频中，AI 可能没有严格执行。这个我会把我的工作流 JSON 放到论坛帖子中去，然后大家可以自己来测试一下。尤其是 AMD 大神们、大佬们，你们去把这个优化一下，看看能不能把这个时间最起码干得过 4060 Ti 吧，卧槽，你干不过 4060 Ti，这有点说不过去啊。</p>\n<p>那么本期就是先把这个 MiniMax H3 测试一下，以后我的工作重心是放在 ComfyUI 领域了，要用它来做 AI 视频，做一个新的频道。然后大模型我初步已经测过了，就是 7900 XTX 还是比较牛逼的，这一点跑 Strata 这些模型就能看得出来。…</p>",
+            "text": "三台服务器都装好之后呢，我是让这个 GPT-6 Luna 接入这个 Codex，因为它便宜嘛，干这种脏活累活，让它去配置我的三台服务器。我都装了 Ubuntu 24.04，操作系统都是一样的，服务器上面的 ComfyUI 环境可能有所差异，导致我测试的时候有点差异，后来我又给它统一了。这个测试就是 MiniMax H3，H3 Image 我也测了，都能跑，这个图片没有什么压力。我的几张卡，4060 Ti、5070 Ti、7900 XTX，包括这个 4090D，跑起来都是非常轻松的，就不给大家介绍了，因为跑图片确实门槛太低了。\n那么就是跑这个 MiniMax H3 视频，5 秒视频。这个是 5070 Ti 生成的视频，我们看一下。这是 7900 XTX 生成的视频，我们来看一看。从这个质量上来说的话，A 卡跟 N 卡是没有任何差距的，A 卡也可以做到非常细腻，效果也是相当不错的。当然了，后面我也测了这个 15 秒的视频，我们一会儿再讲。从画质上来讲的话，A 卡跟 N 卡可以先把结论放在这里，它没有什么差距，最主要的是速度差距。\n我是总结了一张表，这里面有几次是配置失败的，最主要是权重搞错了，包括这个 4090D，权重选错了，生成的效果就不好，大家只看这个成功的。我把这个 SVG 图像放到视频下方的帖子中去，有关注的你可以自己去详细看一下它失败是因为什么。反正最后调整到统一的权重、统一的工作流，它们都是能跑的。从生成时间上来讲，7900 XTX 就算是经过优化，也需要 6 分 55 秒，比 4060 Ti 的 5 分 02 秒还慢。然后最快的是 4090D，1 分 48 秒。5070 Ti 也是非常不错，它是 2 分 06 秒，跟 4090D 的差距微乎其微。这个有可能跟平台有关系，因为 4090D 配的是 DDR3 1866 的条子，它是双通道的，而且是 PCIe 3.0 x16 接口，CPU 是 E5-2666 V3。它可能比起 5070 Ti，我这个 9700X 加上 96G DDR5 6000、开启 EXPO 模式，能够跑满 6000 的频率，还是确实有差距。而且呢，我们要知道这是 5 秒的视频，在 15 秒的视频中，4090D 48G 的优势就大得多了。\n然后我们再说一下动态权重的加载。这个 7900 XTX 也是支持 Comfy-aimdo 这个插件的，它的权重也可以动态加载，也可以生成更高分辨率、更长时长的高清 AR 视频。AMD 在这块的兼容性是没有什么问题的，但是效率确实非常拉胯、非常垃圾。而且在没有使用 Comfy-aimdo 的情况下，如果你没有配置好权重、工作流，没有进行加速优化，那么它的生产力也是相当拉胯的。这个可能需要你参考论坛的帖子进行优化。论坛优化这个 7900 XTX，就去看雄杰高的帖子就行了，FCYS 的帖子，包括懒人烘焙都可以去看一看。优化之后，它的加速效果非常明显。你看，没优化的时候 27 分钟，优化之后 6 分 55 秒，这个提速效果我相信就不用多说了。\n但是依然没有挡住它干不过 4060 Ti，这让我真的是非常吃惊。4060 Ti 以前是废物，你知道吗？它根本就跑不了 AI 视频，因为这个权重 4 比特量化之后就装不下。现在由于有了 Comfy-aimdo 这个插件，它可以动态加载权重，而且它是 PCIe x8 接口的，它居然能够跑出这么好的效果。如果是 5060 Ti，应该效果会更好，它跟 5070 Ti 的差距可能会更小一点。那你还别说，这张卡现在的性价比还真是挺不错的。你想一想，与其去买什么 3080 魔改卡、20G 的魔改卡，你还不如上这个 4060 Ti 呢。它现在二手的价格好像也就是 4000 多块钱，5060 Ti 二手好像也就是 5000 多块钱，但是可能要搭配比较好的平台了，起码是 DDR5 平台，要不然发挥不了它的优势。\n下面呢，我就吸取了教训，统一了权重，统一了工作流，跑一个 15 秒的视频，而且全部用 4 步采样，没有用 8 步采样。我也不知道大家这个视频都是采取什么样的采样方式。反正这个 4 步采样，7900 XTX、4090、4060 Ti、5070 Ti 都可以正常运行，跑这个 15 秒的视频，一会儿给大家看看视频效果，就是一个特种兵在靶场用手枪打靶的这么一个视频。7900 XTX 花了 46 分钟，我不知道为什么，可能是跟它与 Comfy-aimdo 不兼容、兼容性比较差有关系，也可能是它这个加速 LoRA 有问题。反正它非常慢，比 4060 Ti 还慢，4060 Ti 只花了半个小时。这个 4060 Ti 居然比 7900 XTX 快了 50%。然后 5070 Ti 是 14 分 23 秒，比 4060 Ti 快了一倍。这个 4090D 是 10 分 44 秒，它比 5070 Ti 大概快了 50%。\n温度都很正常。如果统计温度的话，7900 XTX 的温度是最低的，它是 61 度，但是它的热点温度是 97 度。英伟达的驱动没有统计这个热点温度，但是之前我用软件看过，它的热点温度也是在 95 度左右，这个是正常的。然后再说噪音，这个 4060 Ti、5070 Ti、7900 XTX 都是风扇版本的，几乎没有任何噪音，反正我听不到。这个 4090D 是要把我房间屋顶都给掀翻了。还好我现在录音，第一是由于大疆的麦克风降噪效果比较好，第二是用剪映的 AI 降噪、人声分离，把噪音彻底隔绝了。要不然我在这个 4090D 工作的时候，根本就没有办法录视频。就看这个 4060 Ti 跟这个 XTX 的，这是 4060 Ti 的，这个是 7900 XTX 的，效果基本上没有什么差异，分辨率都是 1344×768。\n然后最后我们对照一下它们的规格，包括我搭配的这些平台，我给出几个结论。第一就是关于带宽，4060 Ti 的带宽是非常残疾的，288 GB/s，但是由于它的算力也比较残疾，所以没有拖累它。PCIe 3.0 x8，我感觉都够用了。它现在是接在比较好的主板上，给它跑满了 PCIe 4.0 x8 这个接口。但是如果把它插到 PCIe 3.0 的板子上，我觉得按照它的算力，也不会是瓶颈。然后 5070 Ti，我认为性价比最高了，跑 15 秒的视频，它的效率能够达到 4090D 48G 的 2/3，我认为已经非常好了。视频分辨率越高，4090 的优势越大，因为它的显存 48G 非常大，它不需要动态加载。虽然我也给它配了 Comfy-aimdo，但是这个 INTe8 的权重好像可以完全加载到显存中，所以分辨率越高，它的优势就越大。\n关于 AMD 7900 XTX，我觉得怎么讲呢，空有这么高的带宽，已经跟 4090D 的带宽差不多了，它的计算单元各方面素质其实都不差，包括它的算力，你看它比 5070 Ti 的算力还要更强，是比较接近 4090D 的。但是它跑出来的效果就是这么拉胯，这肯定是跟生态有关系。而且各种优化的方法，在这个 15 秒的视频中，AI 可能没有严格执行。这个我会把我的工作流 JSON 放到论坛帖子中去，然后大家可以自己来测试一下。尤其是 AMD 大神们、大佬们，你们去把这个优化一下，看看能不能把这个时间最起码干得过 4060 Ti 吧，卧槽，你干不过 4060 Ti，这有点说不过去啊。\n那么本期就是先把这个 MiniMax H3 测试一下，以后我的工作重心是放在 ComfyUI 领域了，要用它来做 AI 视频，做一个新的频道。然后大模型我初步已经测过了，就是 7900 XTX 还是比较牛逼的，这一点跑 Strata 这些模型就能看得出来。…",
+            "lead": "三台服务器都装好之后呢，我是让这个 GPT-6 Luna 接入这个 Codex，因为它便宜嘛，干这种脏活累活，让它去配置我的三台服务器。我都装了 Ubuntu 24.04，操作系统都是一样的，服务器上面的 ComfyUI 环境可能有所差异，导致我测试的时候有点差异，后来我又给它统一了。这个测试就是 MiniMax H3，H3 Image 我也测了，都能跑，这个图片没有什么压力。我的几张卡，4060 Ti、5070 Ti、7900 XTX，包括这个 4090D，跑起来都是非常轻松的，就不给大家介绍了，因为跑图片确实门槛太低了。\n那么就是跑这个 MiniMax H3 视频，5 秒视频。这个是 5070 Ti 生成的视频，我们看一下。这是 7900 XTX 生成的视频，我们来看一看。从这个质量上来说的话，A 卡跟 N 卡是没有任何差距的，A 卡也可以做到非常细腻，效果也是相当不错的。当然了，后面我也测了这个 15 秒的视频，我们一会儿再讲。从画质上来讲的话，A 卡跟 N 卡可以先把结论放在这里，它没有什么差距，最",
+            "chars": 3504,
+            "shown": 3178,
+            "truncated": true
+          },
+          "quality": 8,
+          "score": 19.8,
+          "category": "apps",
+          "subcategory": "creation",
+          "practical": 2,
+          "slug": "6f3abc3714f7",
+          "action": 7,
+          "rank": 19.2,
+          "tags": [
+            "agent",
+            "generate",
+            "benchmark",
+            "tutorial"
+          ]
+        },
+        {
+          "sourceId": "simon-willison",
+          "sourceName": "Simon Willison",
+          "title": "Code-driven AI illustrations are more useful than images from dedicated image models",
+          "url": "https://simonwillison.net/2026/Nov/28/code-driven-ai-illustrations/",
+          "id": "https://simonwillison.net/2026/Nov/28/code-driven-ai-illustrations/",
+          "published": "2026-11-28T17:45:40.000Z",
+          "summary": "An interesting trend in frontier LLMs released in the second half of 2026 is that they tend to be much better at visual reasoning and creative \"design\" than their predecessors. If you ask these text-output models to create a 2D image (or a 3D model, as discussed here previously ), you're very likely to get a useful re…",
+          "content": {
+            "html": "<p>An interesting trend in frontier LLMs released in the second half of 2026 is that they tend to be much better at visual reasoning and creative \"design\" than their predecessors. If you ask these text-output models to create a 2D image (or a 3D model, as<a href=\"https://simonwillison.net/2026/Nov/24/llm-inflection-points/#3d-modeling-and-game-development-in-september-october\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">discussed here previously</a>), you're very likely to get a useful result, and you may even get one that's aesthetically impressive. Most importantly, because these images are<em>defined using code</em>you (or the model) can make further edits to them without any of the weirdness that comes from iterating with a text-input, image-output model.</p>\n<h4>Poster design with Gemini 4 Neon</h4>\n<p>Gemini 4 Neon is getting some buzz for its 2D design skills, so I decided to try it out in AI Studio starting with the prompt:</p>\n<blockquote><p><code>Create an SVG poster promoting the Kakapo recovery project, research details first, make the poster look really cool and give it a 1970s graphic design</code></p></blockquote>\n<p>It took some iteration, partly because AI Studio doesn't render SVGs, so the models there can't spot visual mistakes without assistance.</p>\n<blockquote><p><code>Make the kakapo a bit more realistic, especially the face (image search for references)</code></p></blockquote>\n<p>Then:</p>\n<blockquote><p>[IMAGE]<code>The text here doesn't fit the pill, fix it</code></p></blockquote>\n<p>And:</p>\n<blockquote><p>[IMAGE 2], [IMAGE 3]<code>Also these</code></p></blockquote>\n<p><a href=\"https://tools.simonwillison.net/markdown-svg-renderer?url=https%3A%2F%2Fgist.github.com%2Fsimonw%2F0ee45eec7763782019cd20f571e4a7be\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Here's the full transcript</a>, exported from AI Studio as Markdown because I couldn't find a way to share a session that didn't require a Google login to view.</p>\n<p>The end result is pretty solid:</p>\n<p><img src=\"https://static.simonwillison.net/static/2026/kakapo-poster-neon.webp\" alt=\"Retro-style illustrated conservation poster in cream, dark teal, orange and yellow. Header text: &quot;★ AOTEAROA NEW ZEALAND • TAONGA CONSERVATION ★&quot;, large title &quot;\" loading=\"lazy\"></p>\n<p>AI Studio ran Google searches to find those numbers - I've checked and they are all correct. I like that it included red rimu tree fruit on the branch, since those are<a href=\"https://www.theguardian.com/world/2026/jan/13/nz-kakapo-mating-season\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">essential for the breeding season</a>.</p>\n<p>Whether or not you like the poster, the key thing about it is that<em>everything is editable</em>. You can directly edit the text in the SVG, or you can open it in Inkscape or Adobe Illustrator or<a href=\"https://boxy-svg.com/app\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Boxy SVG</a>and edit it visually.</p>\n<h4>It's not just SVG</h4>\n<p>I have a<a href=\"https://simonwillison.net/tags/pelican-riding-a-bicycle/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">well documented fondness</a>for SVG generation, but it's not the only game in town.</p>\n<p>A model hooked up to a coding agent environment can execute code to generate images. This opens up a whole realm of possibilities - generated image files, HTML and CSS, 2D HTML Canvas elements, Blender scripts, WebGPU shaders, PDF... any image mechanism that can be represented by a file on disk or the output of a script can be targeted by a model with a coding agent.</p>\n<p>One of the reasons<a href=\"https://simonwillison.net/2026/Oct/28/vibe-game-development/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">vibe game development has exploded</a>recently is that models like Claude Opus 5.5 and GPT-6 Astra and Gemini 4 Neon are capable of creating good-enough quality game assets - 3D models, textures, sprites, etc - entirely through writing code.</p>\n<p>Building them with code means that tweaking, reusing, and remixing them is a case of the model writing even more code.</p>\n<h4>In comparison to image models</h4>\n<p>Most AI image generation tools use models that directly output bitmap graphics. Stable Diffusion, DALL-E, and Midjourney were early leaders in that space. The past ~15 months have seen the emergence of LLM-driven variants of this like Google's Nano Banana and OpenAI's ChatGPT Images.…</p>",
+            "text": "An interesting trend in frontier LLMs released in the second half of 2026 is that they tend to be much better at visual reasoning and creative \"design\" than their predecessors. If you ask these text-output models to create a 2D image (or a 3D model, as discussed here previously ), you're very likely to get a useful result, and you may even get one that's aesthetically impressive. Most importantly, because these images are defined using code you (or the model) can make further edits to them without any of the weirdness that comes from iterating with a text-input, image-output model.\nPoster design with Gemini 4 Neon\nGemini 4 Neon is getting some buzz for its 2D design skills, so I decided to try it out in AI Studio starting with the prompt:\nCreate an SVG poster promoting the Kakapo recovery project, research details first, make the poster look really cool and give it a 1970s graphic design\nIt took some iteration, partly because AI Studio doesn't render SVGs, so the models there can't spot visual mistakes without assistance.\nMake the kakapo a bit more realistic, especially the face (image search for references)\nThen:\n[IMAGE] The text here doesn't fit the pill, fix it\nAnd:\n[IMAGE 2], [IMAGE 3] Also these\nHere's the full transcript , exported from AI Studio as Markdown because I couldn't find a way to share a session that didn't require a Google login to view.\nThe end result is pretty solid:\nAI Studio ran Google searches to find those numbers - I've checked and they are all correct. I like that it included red rimu tree fruit on the branch, since those are essential for the breeding season .\nWhether or not you like the poster, the key thing about it is that everything is editable . You can directly edit the text in the SVG, or you can open it in Inkscape or Adobe Illustrator or Boxy SVG and edit it visually.\nIt's not just SVG\nI have a well documented fondness for SVG generation, but it's not the only game in town.\nA model hooked up to a coding agent environment can execute code to generate images. This opens up a whole realm of possibilities - generated image files, HTML and CSS, 2D HTML Canvas elements, Blender scripts, WebGPU shaders, PDF... any image mechanism that can be represented by a file on disk or the output of a script can be targeted by a model with a coding agent.\nOne of the reasons vibe game development has exploded recently is that models like Claude Opus 5.5 and GPT-6 Astra and Gemini 4 Neon are capable of creating good-enough quality game assets - 3D models, textures, sprites, etc - entirely through writing code.\nBuilding them with code means that tweaking, reusing, and remixing them is a case of the model writing even more code.\nIn comparison to image models\nMost AI image generation tools use models that directly output bitmap graphics. Stable Diffusion, DALL-E, and Midjourney were early leaders in that space. The past ~15 months have seen the emergence of LLM-driven variants of this like Google's Nano Banana and OpenAI's ChatGPT Images.…",
+            "lead": "An interesting trend in frontier LLMs released in the second half of 2026 is that they tend to be much better at visual reasoning and creative \"design\" than their predecessors. If you ask these text-output models to create a 2D image (or a 3D model, as discussed here previously ), you're very likely to get a useful result, and you may even get one that's aesthetically impressive. Most importantly, because these images are defined using code you (or the mod",
+            "chars": 5232,
+            "shown": 3030,
+            "truncated": true
+          },
+          "categories": [
+            "design",
+            "svg",
+            "ai",
+            "openai",
+            "generative-ai",
+            "llms",
+            "anthropic",
+            "claude",
+            "gemini",
+            "text-to-image",
+            "coding-agents"
+          ],
+          "author": "",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "tools",
+          "metrics": {},
+          "quality": 9,
+          "score": 19.15,
+          "category": "apps",
+          "subcategory": "creation",
+          "practical": 1,
+          "slug": "8b6b82f76dc9",
+          "action": 2,
+          "rank": 12.2,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "label": "工具玩法",
+      "items": [
+        {
+          "sourceId": "qbitai",
+          "sourceName": "量子位",
+          "title": "谷歌Tibo亲授Gemini 4 Neon内部打开方式！第一步：删光旧规则",
+          "url": "https://www.qbitai.com/2026/11/513555.html",
+          "id": "https://www.qbitai.com/?p=513555",
+          "published": "2026-11-28T14:29:15.000Z",
+          "summary": "谷歌Tibo亲授Gemini 4 Neon内部打开方式！第一步：删光旧规则 henry 2026-11-28 22:29:15 来源： 量子位 这两天转投Gemini的有福了！ henry发自 凹非寺 量子位 | 公众号QbitAI 这两天转投Gemini的有福了！ 就在刚刚，谷歌版Tibo **Philipp Schmid**发推，分享了这几天大受好评的Gemini 4 Neon的**内部打开方式**，直接来了一波现场教学！ 他表示，所有使用Neon的用户，都应该好好检查一下自己的旧配置，清理过时、重复的规则。 现在，他自己的GEMINI.md，一屏就能看完～ Philipp认为，过时的规则不仅会和现有的指令打架，让模型左右脑互…",
+          "content": {
+            "html": "&lt;!DOCTYPE html&gt;<div><div><div>&lt; img id=\"wx_img\" src=\"https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png\" width=\"400\" height=\"400\"&gt;</div></div></div>\n<div><h3>谷歌Tibo亲授Gemini 4 Neon内部打开方式！第一步：删光旧规则</h3><div><span><img src=\"http://www.qbitai.com/wp-content/themes/liangziwei/imagesnew/head.jpg\" alt=\"\" loading=\"lazy\"><em><a href=\"https://www.qbitai.com/author/henry\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">henry</a></em></span><span>2026-11-28</span><span>22:29:15</span><span>来源：<a href=\"https://www.qbitai.com/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">量子位</a></span></div></div>\n<div><p>这两天转投Gemini的有福了！</p></div>\n<div><div>henry发自 凹非寺<br>量子位 | 公众号QbitAI</div></div>\n<div></div>\n<div>这两天转投Gemini的有福了！</div>\n<div></div>\n<div>就在刚刚，谷歌版Tibo **Philipp Schmid**发推，分享了这几天大受好评的Gemini 4 Neon的**内部打开方式**，直接来了一波现场教学！</div>\n<div></div>\n<div>他表示，所有使用Neon的用户，都应该好好检查一下自己的旧配置，清理过时、重复的规则。</div>\n<div></div>\n<div>现在，他自己的GEMINI.md，一屏就能看完～</div>\n<div></div>\n<div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/7acb31ea70007a6d0ff8b9e763e53ec6.png\" alt=\"\" loading=\"lazy\"></div>\n<div></div>\n<div>Philipp认为，过时的规则不仅会和现有的指令打架，让模型左右脑互搏，消耗额外的token。</div>\n<div></div>\n<div>更离谱的是，这样下来，模型大概率还是按照错误的旧规则来走，进而影响输出结果。</div>\n<div></div>\n<div>更进一步，在文章中，Philipp又针对长上下文压缩降智，工具规则的写法与调用，给出了几条可以直接抄作业的建议：</div>\n<div></div>\n<div>比如，为了减少长对话压缩带来的“降智”，他指出可以在每个阶段结束时，让模型记下目标、关键决定和文件路径，再开启一个新会话接着干。</div>\n<div></div>\n<div>而在工具调用中，则可以删掉示例，让模型直接按照接口规则操作，减少机械照搬示例带来的错误。</div>\n<div></div>\n<div>……</div>\n<div></div>\n<div>目前，Philipp是Google DeepMind的Staff Engineer，负责开发者体验与关系，类似于谷歌的Tibo，帮助开发者使用Gemini、Gemma等模型。</div>\n<div></div>\n<div>2025年加入谷歌前，他曾担任Hugging Face技术负责人。</div>\n<div></div>\n<div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/dffead764efe798639d5ed3e94a1d72f.png\" alt=\"\" loading=\"lazy\"></div>\n<div></div>\n<div>以下为经整理的原文。用Gemini 4 Neon的同学，可以直接把这份教程交给模型了！</div>\n<div></div>\n<h3>使用Gemini 4 Neon后，我改变的5个习惯</h3>\n<div></div>\n<div>用编程Agent时，用户敲进去的提示词只占上下文一小块。剩下的是系统指令、工具定义、Skills，还有之前的对话记录。</div>\n<div></div>\n<div>这些规则很多会在后续请求里一直生效，哪怕早就不适合当前任务了。</div>\n<div></div>\n<div>这几周我每天用Gemini 4 Neon写代码、跑评测，发现当初为了补老模型的短板加的规则，现在反而会干扰新模型的判断。</div>\n<div></div>\n<div>有些情况模型本来能处理，加上这些限制，反而容易出错。</div>\n<div></div>\n<div>换了新模型，我也重新检查了自己的配置，做了下面5项调整。</div>\n<div></div>\n<h3>一、先把互相打架的规则删掉</h3>\n<div></div>\n<div>以前遇到一个问题，我就加一条规则。</div>\n<div></div>\n<div>模型爱写无用注释，我就限制它写注释；怕它动不该动的代码，我再补一条限定改动范围。</div>\n<div></div>\n<div>时间一长，用户级指令、项目级指令和当前任务就开始打架。</div>\n<div></div>\n<div>比如全局规则禁止加注释，但我这次的要求是给一个公共函数补文档，等于同时给模型两条相反的指令。</div>\n<div></div>\n<div>测试里，Gemini 4 Neon会多花思考Token判断该听哪条，但最后有时还是照旧规则办，当前任务没做完。</div>\n<div></div>\n<div>于是我把那些过严的代码风格限制删了，改成让模型参照现有代码的风格、命名习惯和注释密度，按项目实际情况自己定。</div>\n<div></div>\n<div>调整后，模型花在规则冲突上的Token少了，任务准确率也上来了。</div>\n<div></div>\n<div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/a917c267d80afd624848ae2a1165bfba.png\" alt=\"\" loading=\"lazy\"></div>\n<div></div>\n<div>现在我的用户级GEMINI.md一屏就能看完。</div>\n<div></div>\n<div>里面只留对所有会话都成立的要求：哪些操作要先确认、怎么核实信息、长任务怎么汇报进度，以及回复的语言和格式偏好。</div>\n<div></div>\n<div>以下是其中一段：</div>\n<div></div>\n<div><span>暂时无法在飞书文档外展示此内容</span></div>\n<div></div>\n<div>跟具体任务有关的流程，放进Skills，需要时再读。</div>\n<div></div>\n<div>我还发现，一长串禁止事项并没让老模型在查Bug时只看代码不动手，反而添了指令冲突，多烧思考Token。</div>\n<div></div>\n<div>换到Gemini 4 Neon，规则精简了，它照样能把改动控制在要求的范围内。</div>\n<div></div>\n<h3>二、工具规则，在清晰的接口里说一次就够了</h3>\n<div></div>\n<div>用前几代模型时，工具规则我常要写两遍：工具定义里一遍，系统指令里再重复一遍。有时还得补少样本示例，演示参数怎么填。</div>\n<div></div>\n<div>比如下面这份旧配置，就在两个地方重复规定了代码修改和计划更新怎么做：</div>\n<div></div>\n<div><span>暂时无法在飞书文档外展示此内容</span></div>\n<div></div>\n<div>换到Gemini 4 Neon，我删了系统指令里重复的工具规则，也去掉了少样本示例。</div>\n<div></div>\n<div>示例对常见任务有用，但也容易框住模型处理特殊情况的思路。任务变了，模型还在沿用示例里的字段和参数结构，多塞字段，或者用了不合适的格式，调用就失败。</div>\n<div></div>\n<div>现在工具规则集中写在接口里，只说一次。用Gemini API搭Agent，可以直接在工具的JSON Schema里定义参数类型、允许的取值和必填字段。</div>\n<div></div>\n<div>比如下面这个任务清单工具，要求每个步骤都带标题和状态，状态只能从4个值里选，也不许额外加字段。工具描述里还写明，同一时间只能有一个步骤在进行中：</div>\n<div></div>\n<div><span>暂时无法在飞书文档外展示此内容</span></div>\n<div></div>\n<div>如果你日常使用编程Agent，也可以按同样的思路设计仓库里的辅助脚本和命令行工具：把参数定义清楚，限定可选值，出错时给出明确的提示。相比大段的使用示例，这些设计更能帮助模型正确调用工具。</div>\n<div></div>\n<div>我也砍了给模型的工具数量，限制工具返回的内容。功能重叠的搜索工具，没必要都留着。</div>\n<div></div>\n<div>命令跑起来产生的大堆日志，先存成文件，需要时再读相关部分，不用把全部输出塞进上下文。</div>\n<div></div>\n<div>我的体验是，只要接口定义清楚，会话再长，Gemini 4 Neon也能守住只在工具接口里写一次的规则。</div>\n<div></div>\n<div>删掉系统指令里的重复说明，上下文里的冗余少了，工具调用也没受影响。</div>\n<div></div>\n<h3>三、只在需要时加载技能</h3>\n<div></div>\n<div>我删除了大部分项目级AGENTS.md和GEMINI.md。</div>\n<div></div>\n<div>这些文件里，不少内容只是在重复介绍目录结构，而模型自己查看仓库就能获得这些信息。还有一些文件不断补充新内容，却很少清理，逐渐积累了大量过时的说明。</div>\n<div></div>\n<div>现在，我只在项目指令里保留简短的项目介绍，以及模型仅靠阅读代码无法得知的特殊约定。</div>\n<div></div>\n<div>比如，项目需要用一个非标准命令运行测试，或者所有共享类型都必须放在某个指定文件里。这些信息需要提前说明。</div>\n<div></div>\n<div>至于长文编辑、UI规范、API审查、CLI使用指南等具体流程，我把它们分别放进独立的Skills，在索引里留一行介绍，方便模型根据任务查找。</div>\n<div></div>\n<div></div>\n<div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/70440ea9feaa384803dafe658153b992.png\" alt=\"\" loading=\"lazy\"></div>\n<div></div>\n<div>此外，写Skill本身也要讲究轻量化。写清团队约定和必须检查的事项就行，不必为每种可能的情况都规定处理步骤。</div>\n<div></div>\n<div>内容多，就拆成几个互相链接的文件，Agent做到哪一步，再读哪一部分。</div>\n<div></div>\n<div>对更新频繁的CLI工具、SDK和内部API，这招尤其管用。</div>\n<div></div>\n<div>模型用之前先读最新版指南，用错参数、调用废弃接口的情况就少了。</div>\n<div></div>\n<div>读Skill本身也烧Token，但测试里后续反复试错的次数少了，总Token反而更低。</div>\n<div></div>\n<div>Gemini 4 Neon在查找、加载Skills和延迟加载工具上也更靠谱，一般能找到当前任务需要的说明。所以会话一开始，不用把所有文件和工具定义都塞进上下文。</div>\n<div></div>\n<h3>四、用图片和视频提供指引、验证结果</h3>\n<div></div>\n<div>如果是常规的后端代码改动，写几句简短的文字需求就完全够用了。但只要牵涉到 UI 布局、架构图或者动效，纯文字描述留下的误解空间就太大了。</div>\n<div></div>\n<div>现在用Gemini 4 Neon，我越来越频繁地把图片和视频同时当作“参考样板”和“验收手段”。</div>\n<div></div>\n<div>与其费劲写两段CSS规则去描述页面排版或图表样式，不如直接甩一张参考截图、一段十几秒的录屏，要的质感、间距全在里面。</div>\n<div></div>\n<div>任务做完，我还会让Agent把页面、图表或视频帧真渲染出来，打开生成的PNG或视频片段看一遍，再汇报完成。</div>\n<div></div>\n<div>文字有没有被截断、标签有没有异常换行、元素有没有对齐，看一眼画面就发现了，光看文字日志看不出来。</div>\n<div></div>\n<h3>五、交接上下文，而不是一味压缩</h3>\n<div></div>\n<div>上下文窗口有100万Token，编程会话拖太久，信息照样越来越杂，响应也变慢，最后还是得压缩（Compaction）。</div>\n<div></div>\n<div>但压缩会丢信息。Agent在任务中途生成摘要，不只会打断提示词缓存（Prompt Cache），还可能省掉代码的具体细节。接下来几轮对话，模型又得重读那些看过的文件。</div>\n<div></div>\n<div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/e97f7719c938f8ec3186ece8799e3fd7.png\" alt=\"\" loading=\"lazy\"></div>\n<div></div>\n<div>所以我现在更愿意主动把活分阶段，不让一个会话一直拖着。</div>\n<div></div>\n<div>任务进下一阶段，我会让Agent写一份简短交接文件（handoff file），记下当前目标、已经拍板的决定，以及相关文件的准确路径。带着这份文件开新会话，接着干。</div>\n<div></div>\n<div>中途想同时推进另一件事，就从当前节点分叉（fork）一个新会话，两件事各走各的，不用在同一个会话里排队。</div>\n<div></div>\n<div>比如跑完评测、看完失败日志，先让Agent生成交接文件，再开新会话写分析报告。同时从原来的评测会话分叉出去，用已经读到的结果数据生成图表，再检查图表对不对。</div>\n<div></div>\n<div>自己开发Agent的话，自动压缩可以留作兜底，但别让它太早触发。</div>\n<div></div>\n<div>我的经验是50万Token左右触发比较合适。上下文留得长一些，能少掉过早重置缓存、重复读文件的麻烦。</div>\n<div></div>\n<div>生成摘要时，要留下正在处理的文件路径和已经拍板的决定，让模型拿得到继续干活的关键信息。</div>\n<div></div>\n<h3>把这套设置组合起来</h3>\n<div></div>\n<div>如果你准备调整Gemini 4 Neon的工作流，就逐项过一遍上下文里的内容，把不需要的删掉。</div>\n<div></div>\n<div>用户级规则：全局GEMINI.md保持简短，只留通用的安全要求和回复偏好。代码风格上少用严格禁令，多给判断依据，比如参照项目现有写法。</div>\n<div></div>\n<div>工具和脚本接口：自己搭Agent，把工具规则写进JSON Schema，明确参数类…</div>",
+            "text": "谷歌Tibo亲授Gemini 4 Neon内部打开方式！第一步：删光旧规则\nhenry 2026-11-28 22:29:15 来源： 量子位\n这两天转投Gemini的有福了！\nhenry发自 凹非寺\n量子位 | 公众号QbitAI\n这两天转投Gemini的有福了！\n就在刚刚，谷歌版Tibo **Philipp Schmid**发推，分享了这几天大受好评的Gemini 4 Neon的**内部打开方式**，直接来了一波现场教学！\n他表示，所有使用Neon的用户，都应该好好检查一下自己的旧配置，清理过时、重复的规则。\n现在，他自己的GEMINI.md，一屏就能看完～\nPhilipp认为，过时的规则不仅会和现有的指令打架，让模型左右脑互搏，消耗额外的token。\n更离谱的是，这样下来，模型大概率还是按照错误的旧规则来走，进而影响输出结果。\n更进一步，在文章中，Philipp又针对长上下文压缩降智，工具规则的写法与调用，给出了几条可以直接抄作业的建议：\n比如，为了减少长对话压缩带来的“降智”，他指出可以在每个阶段结束时，让模型记下目标、关键决定和文件路径，再开启一个新会话接着干。\n而在工具调用中，则可以删掉示例，让模型直接按照接口规则操作，减少机械照搬示例带来的错误。\n……\n目前，Philipp是Google DeepMind的Staff Engineer，负责开发者体验与关系，类似于谷歌的Tibo，帮助开发者使用Gemini、Gemma等模型。\n2025年加入谷歌前，他曾担任Hugging Face技术负责人。\n以下为经整理的原文。用Gemini 4 Neon的同学，可以直接把这份教程交给模型了！\n使用Gemini 4 Neon后，我改变的5个习惯\n用编程Agent时，用户敲进去的提示词只占上下文一小块。剩下的是系统指令、工具定义、Skills，还有之前的对话记录。\n这些规则很多会在后续请求里一直生效，哪怕早就不适合当前任务了。\n这几周我每天用Gemini 4 Neon写代码、跑评测，发现当初为了补老模型的短板加的规则，现在反而会干扰新模型的判断。\n有些情况模型本来能处理，加上这些限制，反而容易出错。\n换了新模型，我也重新检查了自己的配置，做了下面5项调整。\n一、先把互相打架的规则删掉\n以前遇到一个问题，我就加一条规则。\n模型爱写无用注释，我就限制它写注释；怕它动不该动的代码，我再补一条限定改动范围。\n时间一长，用户级指令、项目级指令和当前任务就开始打架。\n比如全局规则禁止加注释，但我这次的要求是给一个公共函数补文档，等于同时给模型两条相反的指令。\n测试里，Gemini 4 Neon会多花思考Token判断该听哪条，但最后有时还是照旧规则办，当前任务没做完。\n于是我把那些过严的代码风格限制删了，改成让模型参照现有代码的风格、命名习惯和注释密度，按项目实际情况自己定。\n调整后，模型花在规则冲突上的Token少了，任务准确率也上来了。\n现在我的用户级GEMINI.md一屏就能看完。\n里面只留对所有会话都成立的要求：哪些操作要先确认、怎么核实信息、长任务怎么汇报进度，以及回复的语言和格式偏好。\n以下是其中一段：\n暂时无法在飞书文档外展示此内容\n跟具体任务有关的流程，放进Skills，需要时再读。\n我还发现，一长串禁止事项并没让老模型在查Bug时只看代码不动手，反而添了指令冲突，多烧思考Token。\n换到Gemini 4 Neon，规则精简了，它照样能把改动控制在要求的范围内。\n二、工具规则，在清晰的接口里说一次就够了\n用前几代模型时，工具规则我常要写两遍：工具定义里一遍，系统指令里再重复一遍。有时还得补少样本示例，演示参数怎么填。\n比如下面这份旧配置，就在两个地方重复规定了代码修改和计划更新怎么做：\n暂时无法在飞书文档外展示此内容\n换到Gemini 4 Neon，我删了系统指令里重复的工具规则，也去掉了少样本示例。\n示例对常见任务有用，但也容易框住模型处理特殊情况的思路。任务变了，模型还在沿用示例里的字段和参数结构，多塞字段，或者用了不合适的格式，调用就失败。\n现在工具规则集中写在接口里，只说一次。用Gemini API搭Agent，可以直接在工具的JSON Schema里定义参数类型、允许的取值和必填字段。\n比如下面这个任务清单工具，要求每个步骤都带标题和状态，状态只能从4个值里选，也不许额外加字段。工具描述里还写明，同一时间只能有一个步骤在进行中：\n暂时无法在飞书文档外展示此内容\n如果你日常使用编程Agent，也可以按同样的思路设计仓库里的辅助脚本和命令行工具：把参数定义清楚，限定可选值，出错时给出明确的提示。相比大段的使用示例，这些设计更能帮助模型正确调用工具。\n我也砍了给模型的工具数量，限制工具返回的内容。功能重叠的搜索工具，没必要都留着。\n命令跑起来产生的大堆日志，先存成文件，需要时再读相关部分，不用把全部输出塞进上下文。\n我的体验是，只要接口定义清楚，会话再长，Gemini 4 Neon也能守住只在工具接口里写一次的规则。\n删掉系统指令里的重复说明，上下文里的冗余少了，工具调用也没受影响。\n三、只在需要时加载技能\n我删除了大部分项目级AGENTS.md和GEMINI.md。\n这些文件里，不少内容只是在重复介绍目录结构，而模型自己查看仓库就能获得这些信息。还有一些文件不断补充新内容，却很少清理，逐渐积累了大量过时的说明。\n现在，我只在项目指令里保留简短的项目介绍，以及模型仅靠阅读代码无法得知的特殊约定。\n比如，项目需要用一个非标准命令运行测试，或者所有共享类型都必须放在某个指定文件里。这些信息需要提前说明。\n至于长文编辑、UI规范、API审查、CLI使用指南等具体流程，我把它们分别放进独立的Skills，在索引里留一行介绍，方便模型根据任务查找。\n此外，写Skill本身也要讲究轻量化。写清团队约定和必须检查的事项就行，不必为每种可能的情况都规定处理步骤。\n内容多，就拆成几个互相链接的文件，Agent做到哪一步，再读哪一部分。\n对更新频繁的CLI工具、SDK和内部API，这招尤其管用。\n模型用之前先读最新版指南，用错参数、调用废弃接口的情况就少了。\n读Skill本身也烧Token，但测试里后续反复试错的次数少了，总Token反而更低。\nGemini 4 Neon在查找、加载Skills和延迟加载工具上也更靠谱，一般能找到当前任务需要的说明。所以会话一开始，不用把所有文件和工具定义都塞进上下文。\n四、用图片和视频提供指引、验证结果\n如果是常规的后端代码改动，写几句简短的文字需求就完全够用了。但只要牵涉到 UI 布局、架构图或者动效，纯文字描述留下的误解空间就太大了。\n现在用Gemini 4 Neon，我越来越频繁地把图片和视频同时当作“参考样板”和“验收手段”。\n与其费劲写两段CSS规则去描述页面排版或图表样式，不如直接甩一张参考截图、一段十几秒的录屏，要的质感、间距全在里面。\n任务做完，我还会让Agent把页面、图表或视频帧真渲染出来，打开生成的PNG或视频片段看一遍，再汇报完成。\n文字有没有被截断、标签有没有异常换行、元素有没有对齐，看一眼画面就发现了，光看文字日志看不出来。\n五、交接上下文，而不是一味压缩\n上下文窗口有100万Token，编程会话拖太久，信息照样越来越杂，响应也变慢，最后还是得压缩（Compaction）。\n但压缩会丢信息。Agent在任务中途生成摘要，不只会打断提示词缓存（Prompt Cache），还可能省掉代码的具体细节。接下来几轮对话，模型又得重读那些看过的文件。\n所以我现在更愿意主动把活分阶段，不让一个会话一直拖着。\n任务进下一阶段，我会让Agent写一份简短交接文件（handoff file），记下当前目标、已经拍板的决定，以及相关文件的准确路径。带着这份文件开新会话，接着干。\n中途想同时推进另一件事，就从当前节点分叉（fork）一个新会话，两件事各走各的，不用在同一个会话里排队。\n比如跑完评测、看完失败日志，先让Agent生成交接文件，再开新会话写分析报告。同时从原来的评测会话分叉出去，用已经读到的结果数据生成图表，再检查图表对不对。\n自己开发Agent的话，自动压缩可以留作兜底，但别让它太早触发。\n我的经验是50万Token左右触发比较合适。上下文留得长一些，能少掉过早重置缓存、重复读文件的麻烦。\n生成摘要时，要留下正在处理的文件路径和已经拍板的决定，让模型拿得到继续干活的关键信息。\n把这套设置组合起来\n如果你准备调整Gemini 4 Neon的工作流，就逐项过一遍上下文里的内容，把不需要的删掉。\n用户级规则：全局GEMINI.md保持简短，只留通用的安全要求和回复偏好。代码风格上少用严格禁令，多给判断依据，比如参照项目现有写法。\n工具和脚本接口：自己搭Agent，把工具规则写进JSON Schema，明确参数类…",
+            "lead": "谷歌Tibo亲授Gemini 4 Neon内部打开方式！第一步：删光旧规则\nhenry 2026-11-28 22:29:15 来源： 量子位\n这两天转投Gemini的有福了！\nhenry发自 凹非寺\n量子位 | 公众号QbitAI\n这两天转投Gemini的有福了！\n就在刚刚，谷歌版Tibo **Philipp Schmid**发推，分享了这几天大受好评的Gemini 4 Neon的**内部打开方式**，直接来了一波现场教学！\n他表示，所有使用Neon的用户，都应该好好检查一下自己的旧配置，清理过时、重复的规则。\n现在，他自己的GEMINI.md，一屏就能看完～\nPhilipp认为，过时的规则不仅会和现有的指令打架，让模型左右脑互搏，消耗额外的token。",
+            "chars": 5504,
+            "shown": 4001,
+            "truncated": true
+          },
+          "categories": [
+            "资讯",
+            "Gemini"
+          ],
+          "author": "henry",
+          "lang": "zh",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "news",
+          "metrics": {},
+          "quality": 9,
+          "score": 21.28,
+          "category": "tools",
+          "subcategory": "coding",
+          "practical": 3,
+          "slug": "d8fa33e14f06",
+          "action": 5,
+          "rank": 17,
+          "tags": [
+            "benchmark",
+            "tutorial",
+            "agent"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hardware",
+      "label": "AI 硬件",
+      "items": [
+        {
+          "sourceId": "lcz-media",
+          "sourceName": "抡锤者 AI 音视频画图",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "apps",
+          "categories": [],
+          "author": "伊明",
+          "id": "3375",
+          "title": "ComfyUI DynamicVRAM 实战：MiniMax-H3 在 R9700 32G × 7900 XTX 24G 双卡上跑通 1080p 级长片",
+          "url": "https://lcz.me/topic/3375",
+          "published": "2026-11-28T08:54:15.954Z",
+          "summary": "ComfyUI DynamicVRAM 实战：MiniMax-H3 在 R9700 32G × 7900 XTX 24G 双卡上跑通 1080p 级长片 发帖版 v1.3 · 2026-11-28 · 数据全部来自本机实测（非厂商标称、非推算），关键数字均留有日志/校验值可查 v1.2 更新：A3–A6 全档补测收口（8 步全通），并据 A3 实测修正「天花板」结论为「像素×帧联合峰」（v1.1 曾记为卡帧数）。 v1.3 更新：新增 §6.4 三种生成模式（T2VA/FL2VA/Ref2VA）对照——换模式不改显存墙，参考图 token 无可测开销。 主角：两张 AMD 显卡的家用工作站，跑 MiniMax-H3（FL2VA）图…",
+          "metrics": {
+            "points": 1,
+            "comments": 4,
+            "views": 146
+          },
+          "excellent": true,
+          "content": {
+            "html": "<h3>ComfyUI DynamicVRAM 实战：MiniMax-H3 在 R9700 32G × 7900 XTX 24G 双卡上跑通 1080p 级长片</h3>\n<blockquote><p>发帖版 v1.3 · 2026-11-28 · 数据全部来自本机实测（非厂商标称、非推算），关键数字均留有日志/校验值可查<br>v1.2 更新：A3–A6 全档补测收口（8 步全通），并据 A3 实测修正「天花板」结论为「像素×帧联合峰」（v1.1 曾记为卡帧数）。<br>v1.3 更新：新增 §6.4 三种生成模式（T2VA/FL2VA/Ref2VA）对照——换模式不改显存墙，参考图 token 无可测开销。<br>主角：两张 AMD 显卡的家用工作站，跑 MiniMax-H3（FL2VA）图生视频 + 音频，目标是把「两卡到底能出多大的片、多快、差在哪」摸成一张可对表的基线。<br>关于「1080p」的口径：本文说的 1080p 级指<strong>1152×2048 竖屏 = 2.36 MP</strong>，像素量高于标准横屏 1080p（1920×1080 = 2.07 MP）；与横屏 1920×1072 属不同赛道，本文只报本次实测的竖屏规格，数字不混用。</p></blockquote>\n<hr><h3>〇、先给结论（不想看全文的看这段）</h3>\n<ol><li><img src=\"https://lcz.me/assets/plugins/nodebb-plugin-emoji/emoji/android/1f534.png?v=2bf455356c3\" alt=\"🔴\" loading=\"lazy\"><strong>实现了 1080p 级长片出片——这是本轮最重要的一条</strong>。开启 DynamicVRAM 后，<strong>1152×2048 竖屏、362 帧、15 秒不切镜</strong>的长片在 R9700 32G 上稳定出片（4 步 1433.1s / 8 步 2546.7s），这块曾是 OOM 死法位；7900 XTX 24G 在同规格降到 276 帧也能出片。1152×2048 是 2.36 MP 竖屏，像素量比标准横屏 1080p（1920×1080 = 2.07 MP）还多 14%——两张消费级 AMD 卡跑通这个量级的音画同生长片，是这次摸底最硬的结论。</li><li><strong>新设置让两卡产能差从 2:1 缩到约 1.6:1</strong>。开启 DynamicVRAM 后，R9700 32G 与 7900 XTX 24G 的单条稳态耗时从「2 倍差」收敛到「1.6 倍差」；两卡内存峰值都压到 7G 上下，24G 卡也能用——省内存收益在两张卡上都成立。</li><li><strong>天花板卡在「像素×帧」的联合峰，不是单一维度</strong>。7900 XTX 24G 在 1152×2048（2.36MP）下 362 帧 OOM、降到 276 帧出片；但把像素减半到 768×1344（1.03MP）后，同样 362 帧也出片了。两个方向都能破墙——显存墙是分辨率与帧数的联合激活峰，不是单纯帧数。</li><li><strong>步数不抬显存峰，只抬耗时</strong>。同一档 4 步 / 8 步的显存峰只差几十 MB（噪声级），但耗时涨 1.6–1.8 倍。画质白拿，代价只有时间。</li><li><strong>8 步是交付画质，4 步只能看结构</strong>。长片（&gt;10s）用 4 步严重欠采样——实测出现抬手拖影糊块、动作链断裂；8 步动作完整、手部清晰。节点出厂默认是 4 步，但我们全程没挂 turbo LoRA，是原装权重手动加到 8 步，一步都省不得。</li><li><strong>首帧图比例必须和出片画幅一致</strong>，否则人物被纵向拉长——这个坑踩得实在：2:3 的图塞进 9:16 画幅，人拉长 18.5%。</li><li><strong>换生成模式不改显存墙</strong>。同一套 1152×2048 规格分别用 FL2VA（首尾帧）和 Ref2VA（参考图）跑，两卡的 OOM 边界、耗时、显存峰逐项对得上（8 步顶格 2546.7s vs 2555.9s，只差 0.36%）——上面这条「像素×帧」曲线是这套栈的物理上限，跟用哪种条件模式无关，参考素材不额外吃显存。</li></ol>\n<hr><h3>一、两台主机的硬件配置</h3>\n<table><thead><tr><th>项</th><th>Radeon AI PRO R9700（32G）</th><th>RX 7900 XTX（24G）</th></tr></thead><tbody><tr><td>CPU</td><td>Intel Core i3-14100F（4C8T，max 4.7GHz）</td><td>Intel Core i5-12490F（12 代，6C12T，max 4.6GHz）</td></tr><tr><td>主板</td><td>Maxsun MS-Terminator B760M D4</td><td>UNIKA UN-B760M ARGB PRO 2.5G</td></tr><tr><td>内存</td><td>61.6 GiB + Swap 32 GiB</td><td>61.4 GiB + Swap 8 GiB</td></tr><tr><td>GPU</td><td>AMD Radeon AI PRO R9700（Navi 48 / gfx1201）</td><td>AMD Radeon RX 7900 XTX（Navi 31 / gfx1100）</td></tr><tr><td>显存</td><td>31.9 GiB（aimdo 报 32624 MB）</td><td>24.0 GiB（aimdo 报 24560 MB）</td></tr><tr><td>OS 内核</td><td>Ubuntu 26.04.1 LTS / 7.0.0-44-generic</td><td>同左</td></tr></tbody></table>\n<blockquote><p>两台主机都是 DDR4 平台。有意思的是：CPU 更弱的 R9700 那台（i3）配了更强的卡，反而在顶格档更快——说明这活儿是 GPU 采样主导，CPU 只在内存换入阶段露脸。</p></blockquote>\n<h3>二、软件栈版本（两台主机逐字一致）</h3>\n<table><thead><tr><th>组件</th><th>版本</th></tr></thead><tbody><tr><td>Python</td><td>3.13.15（Clang 22.1.3 编译）</td></tr><tr><td>PyTorch</td><td>2.11.0+rocm7.1</td></tr><tr><td>ROCm</td><td>7.1.0（hipcc 7.1.1 / rocm-smi 7.1.1）</td></tr><tr><td>ComfyUI</td><td>0.46.2</td></tr><tr><td>comfy-kitchen</td><td>0.2.41</td></tr><tr><td>注意力引擎</td><td>comfy-aimdo（日志：<code>comfy-aimdo inited</code>）+ CK attention</td></tr></tbody></table>\n<blockquote><p>两卡版本完全对齐是这次摸底的前提——否则「两卡差多少」里会掺进软件栈差异，测了白测。日志三行铁证：<code>pytorch version: 2.11.0+rocm7.1</code>/<code>ROCm version: (7, 1)</code>/<code>ComfyUI version: 0.46.2</code>。</p></blockquote>\n<h3>三、ComfyUI 设置</h3>\n<p><strong>隔离部署</strong>：每机两套 ComfyUI 树，生产树常驻不动，测试用独立树<code>ComfyUI_lc</code>+ 独立 venv + 独立端口（8189 / 8191）。测试全程不碰生产实例——这是能长时间压测的前提。</p>\n<p><strong>启动 flag（两卡一致）</strong>：</p>\n<pre><code>python main.py \\\n--disable-pinned-memory \\\n--listen 0.0.0.0 --port 8189 \\\n--use-ck-attention \\\n--enable-dynamic-vram \\\n--vram-headroom 0 \\\n--disable-smart-memory</code></pre>\n<p>关键是后三个：<code>--enable-dynamic-vram</code>打开动态显存，<code>--vram-headroom 0</code>不留自留显存，<code>--disable-smart-memory</code>关掉智能内存管理。日志确认启用层生效：<code>DynamicVRAM support detected and enabled</code>。</p>\n<blockquote><p><img src=\"https://lcz.me/assets/plugins/nodebb-plugin-emoji/emoji/android/26a0.png?v=2bf455356c3\" alt=\"⚠\" loading=\"lazy\">️ 两个实测踩坑，写在这里给同好避坑：</p><ul><li><code>--vram-headroom</code>别设成 1。设 1 等于自留 1GiB 完全不用，长帧直接 OOM；设 0 才能把卡用满。</li><li><code>expandable_segments</code>在 ROCm/HIP 上无效。7900 XTX 启动日志明确警告<code>expandable_segments not supported on this platform</code>。所以长帧 OOM 后看到的「大块 reserved-but-unallocated 碎片」在 ROCm 上靠这个开关回收不了，得靠别的手段。</li></ul></blockquote>\n<p><strong>采样链</strong>（脚本里固定，不随测试改）：</p>\n<ul><li>节点链：<code> UNETLoader → ModelAt…</code></li></ul>",
+            "text": "ComfyUI DynamicVRAM 实战：MiniMax-H3 在 R9700 32G × 7900 XTX 24G 双卡上跑通 1080p 级长片\n发帖版 v1.3 · 2026-11-28 · 数据全部来自本机实测（非厂商标称、非推算），关键数字均留有日志/校验值可查\nv1.2 更新：A3–A6 全档补测收口（8 步全通），并据 A3 实测修正「天花板」结论为「像素×帧联合峰」（v1.1 曾记为卡帧数）。\nv1.3 更新：新增 §6.4 三种生成模式（T2VA/FL2VA/Ref2VA）对照——换模式不改显存墙，参考图 token 无可测开销。\n主角：两张 AMD 显卡的家用工作站，跑 MiniMax-H3（FL2VA）图生视频 + 音频，目标是把「两卡到底能出多大的片、多快、差在哪」摸成一张可对表的基线。\n关于「1080p」的口径：本文说的 1080p 级指 1152×2048 竖屏 = 2.36 MP ，像素量高于标准横屏 1080p（1920×1080 = 2.07 MP）；与横屏 1920×1072 属不同赛道，本文只报本次实测的竖屏规格，数字不混用。\n〇、先给结论（不想看全文的看这段）\n实现了 1080p 级长片出片——这是本轮最重要的一条 。开启 DynamicVRAM 后， 1152×2048 竖屏、362 帧、15 秒不切镜 的长片在 R9700 32G 上稳定出片（4 步 1433.1s / 8 步 2546.7s），这块曾是 OOM 死法位；7900 XTX 24G 在同规格降到 276 帧也能出片。1152×2048 是 2.36 MP 竖屏，像素量比标准横屏 1080p（1920×1080 = 2.07 MP）还多 14%——两张消费级 AMD 卡跑通这个量级的音画同生长片，是这次摸底最硬的结论。\n新设置让两卡产能差从 2:1 缩到约 1.6:1 。开启 DynamicVRAM 后，R9700 32G 与 7900 XTX 24G 的单条稳态耗时从「2 倍差」收敛到「1.6 倍差」；两卡内存峰值都压到 7G 上下，24G 卡也能用——省内存收益在两张卡上都成立。\n天花板卡在「像素×帧」的联合峰，不是单一维度 。7900 XTX 24G 在 1152×2048（2.36MP）下 362 帧 OOM、降到 276 帧出片；但把像素减半到 768×1344（1.03MP）后，同样 362 帧也出片了。两个方向都能破墙——显存墙是分辨率与帧数的联合激活峰，不是单纯帧数。\n步数不抬显存峰，只抬耗时 。同一档 4 步 / 8 步的显存峰只差几十 MB（噪声级），但耗时涨 1.6–1.8 倍。画质白拿，代价只有时间。\n8 步是交付画质，4 步只能看结构 。长片（>10s）用 4 步严重欠采样——实测出现抬手拖影糊块、动作链断裂；8 步动作完整、手部清晰。节点出厂默认是 4 步，但我们全程没挂 turbo LoRA，是原装权重手动加到 8 步，一步都省不得。\n首帧图比例必须和出片画幅一致 ，否则人物被纵向拉长——这个坑踩得实在：2:3 的图塞进 9:16 画幅，人拉长 18.5%。\n换生成模式不改显存墙 。同一套 1152×2048 规格分别用 FL2VA（首尾帧）和 Ref2VA（参考图）跑，两卡的 OOM 边界、耗时、显存峰逐项对得上（8 步顶格 2546.7s vs 2555.9s，只差 0.36%）——上面这条「像素×帧」曲线是这套栈的物理上限，跟用哪种条件模式无关，参考素材不额外吃显存。\n一、两台主机的硬件配置\n项\nRadeon AI PRO R9700（32G）\nRX 7900 XTX（24G）\nCPU\nIntel Core i3-14100F（4C8T，max 4.7GHz）\nIntel Core i5-12490F（12 代，6C12T，max 4.6GHz）\n主板\nMaxsun MS-Terminator B760M D4\nUNIKA UN-B760M ARGB PRO 2.5G\n内存\n61.6 GiB + Swap 32 GiB\n61.4 GiB + Swap 8 GiB\nGPU\nAMD Radeon AI PRO R9700（Navi 48 / gfx1201）\nAMD Radeon RX 7900 XTX（Navi 31 / gfx1100）\n显存\n31.9 GiB（aimdo 报 32624 MB）\n24.0 GiB（aimdo 报 24560 MB）\nOS 内核\nUbuntu 26.04.1 LTS / 7.0.0-44-generic\n同左\n两台主机都是 DDR4 平台。有意思的是：CPU 更弱的 R9700 那台（i3）配了更强的卡，反而在顶格档更快——说明这活儿是 GPU 采样主导，CPU 只在内存换入阶段露脸。\n二、软件栈版本（两台主机逐字一致）\n组件\n版本\nPython\n3.13.15（Clang 22.1.3 编译）\nPyTorch\n2.11.0+rocm7.1\nROCm\n7.1.0（hipcc 7.1.1 / rocm-smi 7.1.1）\nComfyUI\n0.46.2\ncomfy-kitchen\n0.2.41\n注意力引擎\ncomfy-aimdo（日志： comfy-aimdo inited ）+ CK attention\n两卡版本完全对齐是这次摸底的前提——否则「两卡差多少」里会掺进软件栈差异，测了白测。日志三行铁证： pytorch version: 2.11.0+rocm7.1 / ROCm version: (7, 1) / ComfyUI version: 0.46.2 。\n三、ComfyUI 设置\n隔离部署 ：每机两套 ComfyUI 树，生产树常驻不动，测试用独立树 ComfyUI_lc + 独立 venv + 独立端口（8189 / 8191）。测试全程不碰生产实例——这是能长时间压测的前提。\n启动 flag（两卡一致） ：\npython main.py \\\n--disable-pinned-memory \\\n--listen 0.0.0.0 --port 8189 \\\n--use-ck-attention \\\n--enable-dynamic-vram \\\n--vram-headroom 0 \\\n--disable-smart-memory\n关键是后三个： --enable-dynamic-vram 打开动态显存， --vram-headroom 0 不留自留显存， --disable-smart-memory 关掉智能内存管理。日志确认启用层生效： DynamicVRAM support detected and enabled 。\n️ 两个实测踩坑，写在这里给同好避坑：\n--vram-headroom 别设成 1。设 1 等于自留 1GiB 完全不用，长帧直接 OOM；设 0 才能把卡用满。\nexpandable_segments 在 ROCm/HIP 上无效。7900 XTX 启动日志明确警告 expandable_segments not supported on this platform 。所以长帧 OOM 后看到的「大块 reserved-but-unallocated 碎片」在 ROCm 上靠这个开关回收不了，得靠别的手段。\n采样链 （脚本里固定，不随测试改）：\n节点链： UNETLoader → ModelAt…",
+            "lead": "ComfyUI DynamicVRAM 实战：MiniMax-H3 在 R9700 32G × 7900 XTX 24G 双卡上跑通 1080p 级长片\n发帖版 v1.3 · 2026-11-28 · 数据全部来自本机实测（非厂商标称、非推算），关键数字均留有日志/校验值可查\nv1.2 更新：A3–A6 全档补测收口（8 步全通），并据 A3 实测修正「天花板」结论为「像素×帧联合峰」（v1.1 曾记为卡帧数）。\nv1.3 更新：新增 §6.4 三种生成模式（T2VA/FL2VA/Ref2VA）对照——换模式不改显存墙，参考图 token 无可测开销。\n主角：两张 AMD 显卡的家用工作站，跑 MiniMax-H3（FL2VA）图生视频 + 音频，目标是把「两卡到底能出多大的片、多快、差在哪」摸成一张可对表的基线。\n关于「1080p」的口径：本文说的 1080p 级指 1152×2048 竖屏 = 2.36 MP ，像素量高于标准横屏 1080p（1920×1080 = 2.07 MP）；与横屏 1920×",
+            "chars": 7628,
+            "shown": 3201,
+            "truncated": true
+          },
+          "quality": 13,
+          "score": 20.95,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 4,
+          "slug": "a18271c052c7",
+          "action": 8,
+          "rank": 25.8,
+          "tags": [
+            "lowspec",
+            "benchmark",
+            "tutorial",
+            "generate"
+          ]
+        },
+        {
+          "sourceId": "lcz-llm",
+          "sourceName": "抡锤者 模型部署讨论",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "zzz zz",
+          "id": "3381",
+          "title": "【实测】X99 垃圾佬平台：R9700 32G + 64G DDR3 跑 Qwen3.8-Flash-Next IQ3_S（78G 双文件），全天 coding agent 负载下的 strata 真实数据",
+          "url": "https://lcz.me/topic/3381",
+          "published": "2026-11-28T16:00:56.668Z",
+          "summary": "前言 论坛里 R9700 + strata 的帖子很多，但大多是 128G/256G 内存的机器。我这台是彻头彻尾的垃圾佬平台——华南金牌 X99 + 至强 E5-2666 v3 + 64G DDR3 ECC，显存 R9700 32G。跑了大半天真实负载（不是我手动 ping-pong 问答，是 DSH coding agent 全天挂着干活，prompt 4~7 万 token 级别），把 strata 引擎日志里的真实统计整理出来，给同样只有 64G 内存、又想上 Flash Next 大 MoE 的朋友一个参考。 硬件与模型 项目 配置 主板/CPU 华南金牌 X99（DDR3 版）/ E5-2666 v3，专配便宜 DDR…",
+          "metrics": {
+            "points": 0,
+            "comments": 2,
+            "views": 37
+          },
+          "excellent": true,
+          "content": {
+            "html": "<p>前言</p>\n<p>论坛里 R9700 + strata 的帖子很多，但大多是 128G/256G 内存的机器。我这台是彻头彻尾的垃圾佬平台——华南金牌 X99 + 至强 E5-2666 v3 + 64G DDR3 ECC，显存 R9700 32G。跑了大半天真实负载（不是我手动 ping-pong 问答，是 DSH coding agent 全天挂着干活，prompt 4~7 万 token 级别），把 strata 引擎日志里的真实统计整理出来，给同样只有 64G 内存、又想上 Flash Next 大 MoE 的朋友一个参考。<br>硬件与模型<br>项目 配置<br>主板/CPU 华南金牌 X99（DDR3 版）/ E5-2666 v3，专配便宜 DDR3 板<br>内存 64G DDR3 ECC REG，双通道<br>显卡 AMD R9700 32G<br>SSD INNOGRIT IG5216 NVMe（无缓存盘）<br>模型 Qwen3.8-Flash-Next GSQ RCO IQ3_S，两段共 78G（主 52G + PLE 27G）<br>视觉 mmproj BF16（866M，独立 strata-vision-hip 进程）<br>strata 关键参数<br>代码块</p>\n<p>--serve --expert-cache auto --prefill auto<br>--kv int8 --kv-resident 32768<br>--spec 4 --spec-min-p 0.5 --mtp<br>--max-context 131072 --vision --vram-reserve-mib 3072</p>\n<p>显存占用稳定在 27.5~29.6G / 32G（约 92%），符合 llamaswap 设计：热专家进显存，全部专家常驻内存按需换入。<br>实测数据（真实 agent 负载，非刷分）<br><img src=\"https://upload.lcz.me/uploads/500c2166-dffd-45fe-8e29-f11edaf39ac1.jpeg\" alt=\"图片.jpeg\" loading=\"lazy\"></p>\n<p>解码速度实测散点</p>\n<p>解码速度：稳态单路 50~65 tok/s（65 次请求均值 58.2；只有引擎冷启动/自重启后的头几次掉到 33~47）：<br>代码块</p>\n<p>prompt 66652 = 65875 reused + 777 read，1933 generated，57.2 tok/s，drafts 839/1419<br>prompt 71866 = 68936 reused + 2930 read，1448 generated，61.7 tok/s，drafts 876/1166<br>prompt 68941 = 68584 reused + 357 read， 863 generated，53.7 tok/s，drafts 512/714</p>\n<p>Prefill：有 prompt cache 时几乎全复用（64908/65880 reused 这种量级，复用率 99%+）；冷读 30255 token 实测 2537 tok/s。</p>\n<p>投机解码（spec 4 + MTP）：草稿接受率大约 60~70%，对速度贡献明显。</p>\n<p>专家缓存命中率：88.8%~94.1%（稳态；冷启动头几次 7279% 属预热），平均 91% 左右——没命中的 24% 走 PCIe 读 SSD 上的专家。这是 64G 内存的代价：78G 权重物理上装不满缓存。<br><img src=\"https://upload.lcz.me/uploads/8b909beb-cea8-43d4-b009-f7108675c23b.jpeg\" alt=\"图片.jpeg\" loading=\"lazy\"></p>\n<p>decode 专家缓存命中率</p>\n<p>KV streaming（int8 KV）：显存命中 99.4%~99.6%，从内存补的量每小时 GB 级——KV int8 + kv-resident 32768 这个组合在 32G 显存上很稳，131k 上下文没爆过显存。<br>64G 内存的极限表现（踩坑实录）</p>\n<p>模型权重 79G &gt; 物理内存 64G，所以整机是在\"贴地飞行\"。下面这张是我自己写的 gpu-guard 脚本（每 30s 采一次显存/GTT/内存）采出来的当天曲线：22:39 上模型后显存直接拉到 27.5G 平台，可用内存从 55G 一路掉到 24G——图上绿色线贴地的时间段就是全天干活的时段：</p>\n<p>显存占用 vs 可用内存全天曲线<br><img src=\"https://upload.lcz.me/uploads/83439b9e-bcbe-4b2b-8a9d-ac401d049be0.jpeg\" alt=\"图片.jpeg\" loading=\"lazy\"></p>\n<pre><code>全天可用内存只剩 3~4G，swap 常亮 2G+；\nstrata 的 conversation cache 会被逐出到 SSD 层（实测 spilled 46359 tokens to the SSD tier ... on SSD 2, 1841 MiB）——我这块是无缓存 NVMe，回读时会明显卡；\n最狠的一次：内存颠簸把引擎健康检查卡到超时，native ERR verify: timed out at layer 2，看门狗把引擎 1 秒内自动重启，请求重新 prefill——没有崩、没有死机，自愈了，但那次请求明显慢。</code></pre>\n<p>顺带：我配了个 gpu-guard 脚本按 10s 采样显存/GTT/内存写黑匣子 CSV，之前死机是 GPU 路径，这次确认内存见底才是主要风险源。<br>结论</p>\n<pre><code>64G 内存 + R9700 32G 跑 IQ3_S 是\"能用且好用\"的下限：单路 50~65 tok/s，全天 agent 负载稳定，自愈能力强。\n64G 的瓶颈不在速度在余量：专家缓存命中率被压在 91% 左右，对话缓存会被挤到 SSD。加 64G（共 128G，DDR3 ECC 服务器拆机条更便宜，两三百块）预计命中率 99%+、速度上限再抬一截、SSD 回读和自重启基本绝迹——四通道 DDR3-1866 理论带宽也有 ~60GB/s，和 DDR4-1866 持平，喂这个模型是够的。唯一要提醒：X99 的 DDR3 板要先确认插槽是否支持单条 32G（部分板标称上限 64G），买前查手册。\n对比论坛里 4080S 32G×2 + 256G DDR5 跑 Q8 也就 30~50 t/s：X99 老平台 + IQ3_S 在速度上完全不输，量化档位选对（IQ3_S）比堆量化精度划算。</code></pre>\n<p>质量方面这次没跑量化评测（PPL/榜单都没测），只是全天当 coding agent 底座用，体感稳定。有同款 64G 内存想试 Flash Next 的，参数照上面抄就行；有问题欢迎留言。</p>",
+            "text": "前言\n论坛里 R9700 + strata 的帖子很多，但大多是 128G/256G 内存的机器。我这台是彻头彻尾的垃圾佬平台——华南金牌 X99 + 至强 E5-2666 v3 + 64G DDR3 ECC，显存 R9700 32G。跑了大半天真实负载（不是我手动 ping-pong 问答，是 DSH coding agent 全天挂着干活，prompt 4~7 万 token 级别），把 strata 引擎日志里的真实统计整理出来，给同样只有 64G 内存、又想上 Flash Next 大 MoE 的朋友一个参考。\n硬件与模型\n项目 配置\n主板/CPU 华南金牌 X99（DDR3 版）/ E5-2666 v3，专配便宜 DDR3 板\n内存 64G DDR3 ECC REG，双通道\n显卡 AMD R9700 32G\nSSD INNOGRIT IG5216 NVMe（无缓存盘）\n模型 Qwen3.8-Flash-Next GSQ RCO IQ3_S，两段共 78G（主 52G + PLE 27G）\n视觉 mmproj BF16（866M，独立 strata-vision-hip 进程）\nstrata 关键参数\n代码块\n--serve --expert-cache auto --prefill auto\n--kv int8 --kv-resident 32768\n--spec 4 --spec-min-p 0.5 --mtp\n--max-context 131072 --vision --vram-reserve-mib 3072\n显存占用稳定在 27.5~29.6G / 32G（约 92%），符合 llamaswap 设计：热专家进显存，全部专家常驻内存按需换入。\n实测数据（真实 agent 负载，非刷分）\n解码速度实测散点\n解码速度：稳态单路 50~65 tok/s（65 次请求均值 58.2；只有引擎冷启动/自重启后的头几次掉到 33~47）：\n代码块\nprompt 66652 = 65875 reused + 777 read，1933 generated，57.2 tok/s，drafts 839/1419\nprompt 71866 = 68936 reused + 2930 read，1448 generated，61.7 tok/s，drafts 876/1166\nprompt 68941 = 68584 reused + 357 read， 863 generated，53.7 tok/s，drafts 512/714\nPrefill：有 prompt cache 时几乎全复用（64908/65880 reused 这种量级，复用率 99%+）；冷读 30255 token 实测 2537 tok/s。\n投机解码（spec 4 + MTP）：草稿接受率大约 60~70%，对速度贡献明显。\n专家缓存命中率：88.8%~94.1%（稳态；冷启动头几次 7279% 属预热），平均 91% 左右——没命中的 24% 走 PCIe 读 SSD 上的专家。这是 64G 内存的代价：78G 权重物理上装不满缓存。\ndecode 专家缓存命中率\nKV streaming（int8 KV）：显存命中 99.4%~99.6%，从内存补的量每小时 GB 级——KV int8 + kv-resident 32768 这个组合在 32G 显存上很稳，131k 上下文没爆过显存。\n64G 内存的极限表现（踩坑实录）\n模型权重 79G > 物理内存 64G，所以整机是在\"贴地飞行\"。下面这张是我自己写的 gpu-guard 脚本（每 30s 采一次显存/GTT/内存）采出来的当天曲线：22:39 上模型后显存直接拉到 27.5G 平台，可用内存从 55G 一路掉到 24G——图上绿色线贴地的时间段就是全天干活的时段：\n显存占用 vs 可用内存全天曲线\n全天可用内存只剩 3~4G，swap 常亮 2G+；\nstrata 的 conversation cache 会被逐出到 SSD 层（实测 spilled 46359 tokens to the SSD tier ... on SSD 2, 1841 MiB）——我这块是无缓存 NVMe，回读时会明显卡；\n最狠的一次：内存颠簸把引擎健康检查卡到超时，native ERR verify: timed out at layer 2，看门狗把引擎 1 秒内自动重启，请求重新 prefill——没有崩、没有死机，自愈了，但那次请求明显慢。\n顺带：我配了个 gpu-guard 脚本按 10s 采样显存/GTT/内存写黑匣子 CSV，之前死机是 GPU 路径，这次确认内存见底才是主要风险源。\n结论\n64G 内存 + R9700 32G 跑 IQ3_S 是\"能用且好用\"的下限：单路 50~65 tok/s，全天 agent 负载稳定，自愈能力强。\n64G 的瓶颈不在速度在余量：专家缓存命中率被压在 91% 左右，对话缓存会被挤到 SSD。加 64G（共 128G，DDR3 ECC 服务器拆机条更便宜，两三百块）预计命中率 99%+、速度上限再抬一截、SSD 回读和自重启基本绝迹——四通道 DDR3-1866 理论带宽也有 ~60GB/s，和 DDR4-1866 持平，喂这个模型是够的。唯一要提醒：X99 的 DDR3 板要先确认插槽是否支持单条 32G（部分板标称上限 64G），买前查手册。\n对比论坛里 4080S 32G×2 + 256G DDR5 跑 Q8 也就 30~50 t/s：X99 老平台 + IQ3_S 在速度上完全不输，量化档位选对（IQ3_S）比堆量化精度划算。\n质量方面这次没跑量化评测（PPL/榜单都没测），只是全天当 coding agent 底座用，体感稳定。有同款 64G 内存想试 Flash Next 的，参数照上面抄就行；有问题欢迎留言。",
+            "lead": "前言\n论坛里 R9700 + strata 的帖子很多，但大多是 128G/256G 内存的机器。我这台是彻头彻尾的垃圾佬平台——华南金牌 X99 + 至强 E5-2666 v3 + 64G DDR3 ECC，显存 R9700 32G。跑了大半天真实负载（不是我手动 ping-pong 问答，是 DSH coding agent 全天挂着干活，prompt 4~7 万 token 级别），把 strata 引擎日志里的真实统计整理出来，给同样只有 64G 内存、又想上 Flash Next 大 MoE 的朋友一个参考。\n硬件与模型\n项目 配置\n主板/CPU 华南金牌 X99（DDR3 版）/ E5-2666 v3，专配便宜 DDR3 板\n内存 64G DDR3 ECC REG，双通道\n显卡 AMD R9700 32G\nSSD INNOGRIT IG5216 NVMe（无缓存盘）\n模型 Qwen3.8-Flash-Next GSQ RCO IQ3_S，两段共 78G（主 52G + PLE 27G）\n视觉 m",
+            "chars": 2530,
+            "shown": 2530,
+            "truncated": false
+          },
+          "quality": 13,
+          "score": 20.64,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 4,
+          "slug": "d219df5d5575",
+          "action": 8,
+          "rank": 25.8,
+          "tags": [
+            "lowspec",
+            "benchmark",
+            "hardware",
+            "tutorial"
+          ]
+        },
+        {
+          "sourceId": "lcz-hardware",
+          "sourceName": "抡锤者 AI硬件",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "悠诗诗",
+          "id": "3377",
+          "title": "3080 Ti 12GB：Linux + 新版引擎 + 四轮 A/B 调参 + 会话缓存，Qwen3.8-Flash-Next-IQ3_S 跑到 192–195 tok/s prefill 2,500",
+          "url": "https://lcz.me/topic/3377",
+          "published": "2026-11-28T11:47:52.014Z",
+          "summary": "3080 Ti 单卡 12GB 跑 Strata / Qwen3.8 Flash-Next：IQ3_S 与 111GB UD-Q4_K_XL 双档实测，Linux 服务器四轮 A/B 调参全记录 先看张图（服务自带的监控面板） ( 图片地址) 这台是 Linux 服务器 ，面板上几个关键数字：",
+          "metrics": {
+            "points": 0,
+            "comments": 1,
+            "views": 78
+          },
+          "excellent": false,
+          "content": {
+            "html": "<h3>3080 Ti 单卡 12GB 跑 Strata / Qwen3.8 Flash-Next：IQ3_S 与 111GB UD-Q4_K_XL 双档实测，Linux 服务器四轮 A/B 调参全记录</h3>\n<h3>先看张图（服务自带的监控面板）</h3>\n<p>(<br><img src=\"https://upload.lcz.me/uploads/f3d55041-37fb-4642-8d61-02d9cb3c950f.png\" alt=\"9ab42e30dcd0b001501d0abbcd841e44.png\" loading=\"lazy\"><br>图片地址)<br>这台是<strong>Linux 服务器</strong>，面板上几个关键数字：</p>\n<table><thead><tr><th>面板上的数字</th><th>说明</th></tr></thead><tbody><tr><td><strong>Decode 153.6 / Prefill 2,394</strong></td><td>一条正在生成的长回复的实时速度（IQ3_S 档，12,685 tokens 进行中）</td></tr><tr><td><strong>VRAM 11.9 / 12 GB · GPU load 99% · 297W / 350W · 76℃</strong></td><td>显存吃满，显卡满载，温度和功耗都温和</td></tr><tr><td><strong>Experts cached 2,523 — 4.8 GB</strong></td><td>显存里缓存的专家槽位（对比 @cc tgo 帖的 2,451 槽 / 3.3 GB：槽位数相近，但他那台是 IQ2_XS，专家单个更小）</td></tr><tr><td><strong>PCIe Gen3 ×16 · to GPU 1,643 MB/s</strong></td><td>和那位楼主一样，这条 PCIe 就是 MoE 的真实通道；生成高峰期实测搬运 9.8~12.5 GB/s，基本跑满</td></tr><tr><td><strong>Disk read 0.1 MB/s</strong></td><td>模型进内存后不读硬盘（UD-Q4_K_XL 档我们也专门测过：<strong>32K prompt 盘读 0.0 GB</strong>）</td></tr><tr><td><strong>System RAM 99.2 / 121 GB</strong></td><td>121 GB 内存是这套玩法的真正底气：全部专家 + KV 后备都在内存里</td></tr><tr><td><strong>Context fill 6%（15K / 256K）</strong></td><td>上下文给了<strong>262,144</strong>，面板这一时刻才用了 6%</td></tr></tbody></table>\n<p><strong>Recent requests 那张表比速度数字更能说明问题</strong>（都是当天真实 agent 负载）：</p>\n<table><thead><tr><th>时间</th><th>PROMPT</th><th>REUSED</th><th>OUTPUT</th><th>PREFILL T/S</th><th>DECODE T/S</th><th>HIT RATE</th><th>耗时</th></tr></thead><tbody><tr><td>19:06:20</td><td>17,442</td><td><strong>17,382</strong></td><td>120</td><td>88</td><td>101.5</td><td>76.9%</td><td><strong>1.9s</strong></td></tr><tr><td>19:04:40</td><td>2,531</td><td>0</td><td>13,449</td><td>141</td><td><strong>162.9</strong></td><td>94.5%</td><td>100.1s</td></tr><tr><td>19:04:22</td><td>16,404</td><td>0</td><td>779</td><td><strong>1,555</strong></td><td>111.0</td><td>88.3%</td><td>17.7s</td></tr><tr><td>19:01:54</td><td>2,542</td><td>2,537</td><td>9,007</td><td><strong>1</strong></td><td>142.1</td><td>93.4%</td><td>67.8s</td></tr><tr><td>18:58:08</td><td><strong>126,171</strong></td><td><strong>126,135</strong></td><td>265</td><td>145</td><td>122.9</td><td>88.4%</td><td><strong>11.1s</strong></td></tr></tbody></table>\n<ul><li><code>PREFILL T/S = 1</code>那一行：几乎整个 prompt 都是缓存回放，读 1.6 万 token 只花几毫秒。</li><li><strong>126,171 个 token 的 prompt，复用 126,135，整条请求 11.1 秒</strong>——这就是 conversation cache（会话缓存）的意义：停放的会话不用重新读一遍，直接「热启动」。</li><li>@cc tgo 帖子面板上<code>REUSED 全是 0、HIT RATE 只有 58~60%</code>，他自己说这是「后面可以优化的地方」——我们这套恰好在这点上做了功课（见第七节）。</li></ul>\n<hr><h3>一、电脑硬件与系统软件</h3>\n<table><thead><tr><th>项目</th><th>配置</th></tr></thead><tbody><tr><td>操作系统</td><td><strong>Ubuntu Linux</strong>（服务器常开，systemd 服务）</td></tr><tr><td>CPU</td><td>Intel Xeon<strong>E5-2696 v3</strong>，18 核 36 线程，Haswell-EP</td></tr><tr><td>系统内存</td><td><strong>121 GB DDR3-1866 四通道</strong>（≈74.6 GB/s）</td></tr><tr><td>显卡</td><td><strong>RTX 3080 Ti 12GB</strong>，PCIe<strong>Gen3 ×16</strong>（实测 H2D ≈12.5 GB/s）</td></tr><tr><td>硬盘</td><td>NVMe，顺序读 ≈2.5 GB/s（模型加载后基本不参与）</td></tr><tr><td>推理引擎</td><td>Strata fork（Speedy，serve 层 0.5.4 /<strong>engine 0.1.53</strong>），编译开<code>STRATA_NATIVE_EXPERTS=ON</code>、<code>STRATA_MMQ_KQUANTS=ON</code></td></tr><tr><td>模型档 A</td><td>Qwen3.8 Flash-Next<strong>IQ3_S</strong>（54.8 GB，双分片 + BF16 mmproj 走 CPU 做 vision）</td></tr><tr><td>模型档 B</td><td>Qwen3.8 Flash-Next<strong>UD-Q4_K_XL</strong>（4 分片共<strong>111.33 GB</strong>，SHA-256 全部校验）</td></tr><tr><td>上下文</td><td><strong>262,144 tokens</strong>，KV<code>int8</code></td></tr></tbody></table>\n<h3>二、模型与量化选择</h3>\n<table><thead><tr><th>量化</th><th>体积</th><th>我们的态度</th></tr></thead><tbody><tr><td>IQ2_XS</td><td>39.2 GB</td><td>64GB 内存机的选择（楼主在用，合理）</td></tr><tr><td><strong>IQ3_S</strong></td><td>54.8 GB</td><td><strong>主力日常档</strong>：速度快、质量稳</td></tr><tr><td><strong>UD-Q4_K_XL</strong></td><td>111.33 GB</td><td><strong>质量优先档</strong>：dense 侧全 Q8_0、专家 down 是 Q5_1</td></tr><tr><td>Q4_K_M（原版）</td><td>~110 GB</td><td>试过后删了：down 层 Q5_0 组合在引擎里 unsupported，且总体不如 UD</td></tr></tbody></table>\n<p><strong>UD-Q4_K_XL 的量化分布（拆 GGUF tensor 实测）</strong>：路由专家 gate/up 是 Q4_K（第 2 层是 Q5_K），<strong>down 投影 43 层是 Q5_1、5 层是 Q8_0</strong>；attention/SSM/hyper-connections/shared expert/PLE key/token embedding/output head<strong>全部 Q8_0</strong>；PLE n-gram 大表是<strong>IQ4_NL（26.82 GiB）</strong>。专家合计<strong>71.7 GiB</strong>。</p>\n<p><strong>关于「纸面 ppl 接近、实际差很多」</strong>：论坛流传 IQ3_S 与 Q4_K_XL「纸面只差一点、实践差很多」的说法。我们拿两种量化在同样样本上对比过输出分布：纸面 ppl 只差<strong>0.7%</strong>（4.068 vs 4.097），但同 top-token 一致率是<strong>93.09% vs 87.69%</strong>、平均 KL<strong>0.056 vs 0.144</strong>（差 2.6 倍）、KL p99<strong>0.829 vs 1.975</strong>（差 2.4 倍）。<strong>分布差距远大于 ppl 暗示的差距——ppl 接近 ≠ 输出接近，选量化不要只看这一个数。</strong></p>\n<h3>三、它凭什么能在 12GB 显存上跑 111GB 的模型</h3>\n<p>和楼主帖一样是三层分工（厨房比喻就不重复了），但我们在「储藏间」这一层多做了两件事：</p>\n<ol><li><strong>全部专家 page-locked 常驻内存</strong>：<code>--resident-budget-gib 72</code>把 UD 的 71.1 GiB 专家<strong>全部锁页</strong>在 DDR3 里，CPU 直接原地算，<strong>生成全程盘读 0.0 GB</strong>。这是硬前提——我们老板的条件是「专家要放到 SSD 的话就没必要试了」，实测确实不落地。</li><li><strong>lend region（借出区）全命中</strong>：引擎会留一批「借给 GPU 的槽位」，budget 72 时<strong>1031 / 1031 个 lendable 槽位的专家也都在内存里</strong>，需要从盘读的冷文件集只剩<strong>0.3 GiB</strong>（页缓存轻松装下）。budget 给到 64 时 lend 区是 0/1046 命中、冷文件集 7.2 GiB——也能跑但差一档，所以我们最终定 72。</li><li>显存里则放「每个词都躲不开的活」+<strong>learned expert profile</strong>（边跑边学哪些专家热，QUIT 时自动写回<code>--expert-profile-save</code>，下次启动直接带上学到的路由）。</li></ol>\n<p>投机解码同样开着：<code></code></p>",
+            "text": "3080 Ti 单卡 12GB 跑 Strata / Qwen3.8 Flash-Next：IQ3_S 与 111GB UD-Q4_K_XL 双档实测，Linux 服务器四轮 A/B 调参全记录\n先看张图（服务自带的监控面板）\n(\n图片地址)\n这台是 Linux 服务器 ，面板上几个关键数字：\n面板上的数字\n说明\nDecode 153.6 / Prefill 2,394\n一条正在生成的长回复的实时速度（IQ3_S 档，12,685 tokens 进行中）\nVRAM 11.9 / 12 GB · GPU load 99% · 297W / 350W · 76℃\n显存吃满，显卡满载，温度和功耗都温和\nExperts cached 2,523 — 4.8 GB\n显存里缓存的专家槽位（对比 @cc tgo 帖的 2,451 槽 / 3.3 GB：槽位数相近，但他那台是 IQ2_XS，专家单个更小）\nPCIe Gen3 ×16 · to GPU 1,643 MB/s\n和那位楼主一样，这条 PCIe 就是 MoE 的真实通道；生成高峰期实测搬运 9.8~12.5 GB/s，基本跑满\nDisk read 0.1 MB/s\n模型进内存后不读硬盘（UD-Q4_K_XL 档我们也专门测过： 32K prompt 盘读 0.0 GB ）\nSystem RAM 99.2 / 121 GB\n121 GB 内存是这套玩法的真正底气：全部专家 + KV 后备都在内存里\nContext fill 6%（15K / 256K）\n上下文给了 262,144 ，面板这一时刻才用了 6%\nRecent requests 那张表比速度数字更能说明问题 （都是当天真实 agent 负载）：\n时间\nPROMPT\nREUSED\nOUTPUT\nPREFILL T/S\nDECODE T/S\nHIT RATE\n耗时\n19:06:20\n17,442\n17,382\n120\n88\n101.5\n76.9%\n1.9s\n19:04:40\n2,531\n0\n13,449\n141\n162.9\n94.5%\n100.1s\n19:04:22\n16,404\n0\n779\n1,555\n111.0\n88.3%\n17.7s\n19:01:54\n2,542\n2,537\n9,007\n1\n142.1\n93.4%\n67.8s\n18:58:08\n126,171\n126,135\n265\n145\n122.9\n88.4%\n11.1s\nPREFILL T/S = 1 那一行：几乎整个 prompt 都是缓存回放，读 1.6 万 token 只花几毫秒。\n126,171 个 token 的 prompt，复用 126,135，整条请求 11.1 秒 ——这就是 conversation cache（会话缓存）的意义：停放的会话不用重新读一遍，直接「热启动」。\n@cc tgo 帖子面板上 REUSED 全是 0、HIT RATE 只有 58~60% ，他自己说这是「后面可以优化的地方」——我们这套恰好在这点上做了功课（见第七节）。\n一、电脑硬件与系统软件\n项目\n配置\n操作系统\nUbuntu Linux （服务器常开，systemd 服务）\nCPU\nIntel Xeon E5-2696 v3 ，18 核 36 线程，Haswell-EP\n系统内存\n121 GB DDR3-1866 四通道 （≈74.6 GB/s）\n显卡\nRTX 3080 Ti 12GB ，PCIe Gen3 ×16 （实测 H2D ≈12.5 GB/s）\n硬盘\nNVMe，顺序读 ≈2.5 GB/s（模型加载后基本不参与）\n推理引擎\nStrata fork（Speedy，serve 层 0.5.4 / engine 0.1.53 ），编译开 STRATA_NATIVE_EXPERTS=ON 、 STRATA_MMQ_KQUANTS=ON\n模型档 A\nQwen3.8 Flash-Next IQ3_S （54.8 GB，双分片 + BF16 mmproj 走 CPU 做 vision）\n模型档 B\nQwen3.8 Flash-Next UD-Q4_K_XL （4 分片共 111.33 GB ，SHA-256 全部校验）\n上下文\n262,144 tokens ，KV int8\n二、模型与量化选择\n量化\n体积\n我们的态度\nIQ2_XS\n39.2 GB\n64GB 内存机的选择（楼主在用，合理）\nIQ3_S\n54.8 GB\n主力日常档 ：速度快、质量稳\nUD-Q4_K_XL\n111.33 GB\n质量优先档 ：dense 侧全 Q8_0、专家 down 是 Q5_1\nQ4_K_M（原版）\n~110 GB\n试过后删了：down 层 Q5_0 组合在引擎里 unsupported，且总体不如 UD\nUD-Q4_K_XL 的量化分布（拆 GGUF tensor 实测） ：路由专家 gate/up 是 Q4_K（第 2 层是 Q5_K）， down 投影 43 层是 Q5_1、5 层是 Q8_0 ；attention/SSM/hyper-connections/shared expert/PLE key/token embedding/output head 全部 Q8_0 ；PLE n-gram 大表是 IQ4_NL（26.82 GiB） 。专家合计 71.7 GiB 。\n关于「纸面 ppl 接近、实际差很多」 ：论坛流传 IQ3_S 与 Q4_K_XL「纸面只差一点、实践差很多」的说法。我们拿两种量化在同样样本上对比过输出分布：纸面 ppl 只差 0.7% （4.068 vs 4.097），但同 top-token 一致率是 93.09% vs 87.69% 、平均 KL 0.056 vs 0.144 （差 2.6 倍）、KL p99 0.829 vs 1.975 （差 2.4 倍）。 分布差距远大于 ppl 暗示的差距——ppl 接近 ≠ 输出接近，选量化不要只看这一个数。\n三、它凭什么能在 12GB 显存上跑 111GB 的模型\n和楼主帖一样是三层分工（厨房比喻就不重复了），但我们在「储藏间」这一层多做了两件事：\n全部专家 page-locked 常驻内存 ： --resident-budget-gib 72 把 UD 的 71.1 GiB 专家 全部锁页 在 DDR3 里，CPU 直接原地算， 生成全程盘读 0.0 GB 。这是硬前提——我们老板的条件是「专家要放到 SSD 的话就没必要试了」，实测确实不落地。\nlend region（借出区）全命中 ：引擎会留一批「借给 GPU 的槽位」，budget 72 时 1031 / 1031 个 lendable 槽位的专家也都在内存里 ，需要从盘读的冷文件集只剩 0.3 GiB （页缓存轻松装下）。budget 给到 64 时 lend 区是 0/1046 命中、冷文件集 7.2 GiB——也能跑但差一档，所以我们最终定 72。\n显存里则放「每个词都躲不开的活」+ learned expert profile （边跑边学哪些专家热，QUIT 时自动写回 --expert-profile-save ，下次启动直接带上学到的路由）。\n投机解码同样开着：",
+            "lead": "3080 Ti 单卡 12GB 跑 Strata / Qwen3.8 Flash-Next：IQ3_S 与 111GB UD-Q4_K_XL 双档实测，Linux 服务器四轮 A/B 调参全记录\n先看张图（服务自带的监控面板）\n(\n图片地址)\n这台是 Linux 服务器 ，面板上几个关键数字：",
+            "chars": 9257,
+            "shown": 3187,
+            "truncated": true
+          },
+          "quality": 9,
+          "score": 20.36,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 7,
+          "slug": "099852c89abe",
+          "action": 8,
+          "rank": 21.8,
+          "tags": [
+            "benchmark",
+            "hardware",
+            "lowspec",
+            "tutorial"
+          ]
+        },
+        {
+          "sourceId": "lcz-llm",
+          "sourceName": "抡锤者 模型部署讨论",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "王二蛋",
+          "id": "3374",
+          "title": "怎么把Inkling 2 Mini 跑的飞快？ 从 8G 到 32G：各档显卡的提速",
+          "url": "https://lcz.me/topic/3374",
+          "published": "2026-11-28T07:25:48.266Z",
+          "summary": "先说结论 同一个模型，有人跑 9 tok/s，有人跑 628 tok/s。差距 主要不在显卡 ，而在三件事：开箱默认配置、热门专家有没有留在显存里、以及统计口径。 选对引擎、改几行参数， 不花钱就能快 2～3.5 倍 。 最近一位国外 up 主把 Inkling 2 Mini 在 8G 到 32G 的各档显卡上跑了个遍，还收集了 120 多条真实用户的实测反馈。我把里面的关键数据整理成了这份速查，图都是他视频里的原始画面。 一、先看这个差距有多大 评论区收到的样本是这样的： 置顶评论里的实测：Intel Arc B70 跑 8 tok/s @8k 上下文，RTX 5070 Ti 只有 10-15 tok/s @131k 。启动周普…",
+          "metrics": {
+            "points": 3,
+            "comments": 7,
+            "views": 236
+          },
+          "excellent": false,
+          "content": {
+            "html": "<h3>先说结论</h3>\n<p>同一个模型，有人跑 9 tok/s，有人跑 628 tok/s。差距<strong>主要不在显卡</strong>，而在三件事：开箱默认配置、热门专家有没有留在显存里、以及统计口径。</p>\n<p>选对引擎、改几行参数，<strong>不花钱就能快 2～3.5 倍</strong>。</p>\n<p>最近一位国外 up 主把 Inkling 2 Mini 在 8G 到 32G 的各档显卡上跑了个遍，还收集了 120 多条真实用户的实测反馈。我把里面的关键数据整理成了这份速查，图都是他视频里的原始画面。</p>\n<hr><h3>一、先看这个差距有多大</h3>\n<p>评论区收到的样本是这样的：</p>\n<p><img src=\"https://upload.lcz.me/uploads/f3239bea-aaa6-4847-bef1-db2029131baf.jpg\" alt=\"图01\" loading=\"lazy\"></p>\n<blockquote><p>置顶评论里的实测：Intel Arc B70 跑<strong>8 tok/s @8k</strong>上下文，RTX 5070 Ti 只有<strong>10-15 tok/s @131k</strong>。启动周普通显卡落在 9-60 tok/s。</p></blockquote>\n<p>而论坛上刷屏的帖子是另一种画风：</p>\n<p><img src=\"https://upload.lcz.me/uploads/adba7a48-7b16-4e28-ab32-7aec625a7cee.jpg\" alt=\"图02\" loading=\"lazy\"></p>\n<blockquote><p>单张 5090「613 tok/s decode + 14,100 tok/s prefill」，546 赞；双 3090「约 200 tok/s」501 赞。右边三个标签才是关键：<strong>DRAFTED</strong>（开了草稿）、<strong>AUTHOR'S NUMBER</strong>（作者自测）、<strong>STRUCTURED OUTPUT</strong>（结构化输出）。</p></blockquote>\n<p>所以问题不是「我的卡是不是废了」，而是：别人 600+，我只有 12，差在哪。</p>\n<hr><h3>二、为什么开箱就慢</h3>\n<p><strong>结构决定的</strong>：24 层里有 12 层每个 token 要跑 3 遍，一个字过 48 次层计算，其中<strong>8 次是全注意力</strong>，对话一长就断崖式掉速。</p>\n<p><strong>装不下</strong>：原版是原生 4bit，约<strong>20GB</strong>。8G / 12G / 16G 的卡放不下，只能溢到系统内存。而且原生 4bit 只有 NVIDIA 50 系（Blackwell）能在硬件层直接跑，其他卡都得先解包。</p>\n<p><strong>它是 MoE</strong>：264 亿参数，每个 token 只激活约<strong>34 亿</strong>。所以速度不看算力，看<strong>哪些专家留在 GPU 上</strong>。</p>\n<blockquote><p>打个比方：GPU 是工具腰带，系统内存是停在街对面的货车。默认的分层切分是按字母顺序摆工具，结果你每十秒要用的锤子躺在车里，整个下午都在来回走。换成把「最忙的专家」钉在卡上的引擎，同一张 3060、同一个文件，9 → 31 tok/s。</p></blockquote>\n<p><strong>首日引擎 bug 也占很大责任</strong>：主线 llama.cpp 在 loop scale 修复之前，困惑度<strong>130.43</strong>（正常 7.6531），基本等于胡言乱语；另一个 issue 显示每个循环专家被缓存了 3 份，某个 fork 修好后 8bit 从 15.6 直接到 25.8。到 11-24，主线的 Inkling 全量 flash attention 还没合进去。</p>\n<p><strong>两个词必须分清</strong>：<strong>prefill</strong>是「读你的提示」，<strong>decode</strong>是「写答案」。那个 14,100 是 prefill（2k 提示、所有专家都在卡上），你等答案时盯的是 decode。</p>\n<p><img src=\"https://upload.lcz.me/uploads/691ee5e5-6389-40b1-8056-7354539e7316.jpg\" alt=\"图03\" loading=\"lazy\"></p>\n<blockquote><p>同一个 6,800 token 的长回答，同一台机器、同一份文件：<strong>9 tok/s 要 755 秒（12.5 分钟）</strong>，换引擎到 31 tok/s 是<strong>219 秒</strong>，HyperInkling 开草稿 268 tok/s 只要<strong>25.4 秒</strong>。</p></blockquote>\n<p>还有一个不改 tok/s 但很有用的杠杆：<strong>把 reasoning effort 从默认 0.9 调低</strong>。思考 token 少了，答案结束得更早。不过官方也警告它可能陷入循环，无论如何都要设<code>max output tokens</code>。</p>\n<hr><h3>三、装任何实验性 fork 之前，先做四个 0 元动作</h3>\n<p><img src=\"https://upload.lcz.me/uploads/a52e1d55-9a62-4a41-8f92-dfdd18b724f4.jpg\" alt=\"图04\" loading=\"lazy\"></p>\n<blockquote><p>1 update / 2 re-download / 3 one slot / 4 vision off。右边是第 4 项的示意：把<strong>MMPROJ</strong>（视觉投影器）放到 CPU 而不是 GPU。</p></blockquote>\n<ol><li><strong>更新引擎</strong>。不能早于 loop scale 修复；AMD 用户还要有 Vulkan 修复。</li><li><strong>检查模型文件的下载时间</strong>。11-23 Unsloth 重新打包过以对齐主线布局（Unsloth 约 130 万次下载 vs 官方约 50 万），发布周末下的文件在新构建上可能根本加载不了，重新下。</li><li><strong>强制单并行槽</strong>（<code>-np 1</code>）。多槽会吃掉你急需的显存。</li><li><strong>不用图像就关掉 vision projector</strong>，或丢到 CPU。有人仅仅把图像编码器放进 GPU，<strong>34 → 13 tok/s</strong>。</li></ol>\n<hr><h3>四、按显存分档</h3>\n<p><img src=\"https://upload.lcz.me/uploads/50ed5619-69e6-4933-9c8c-62d0a9a5d07b.jpg\" alt=\"图05\" loading=\"lazy\"></p>\n<blockquote><p>整期的叙事结构就是一架梯子：8 → 12 → 16 → 24 → 32 GB，最后单独讲 AMD 和 Mac。</p></blockquote>\n<p>先看总表，每张图都标了口径：<strong>PLAIN</strong>纯 decode、<strong>DRAFTED</strong>开草稿、<strong>LOSSY</strong>开有损加速、<strong>AUTHOR'S NUMBER</strong>作者自测、<strong>独立用户</strong>第三方复现。</p>\n<table><thead><tr><th>显存</th><th>机型与条件</th><th>手段</th><th>前 → 后</th></tr></thead><tbody><tr><td>8G</td><td>RTX 4060 笔记本 + 48G 内存</td><td>PolyStrata（120k 上下文）</td><td>7-15 → 28-40</td></tr><tr><td>12G</td><td>RTX 3060 + 30G 内存</td><td>RustingStrata</td><td>9 → 31（3.5 倍）</td></tr><tr><td>16G</td><td>RTX 5060 Ti</td><td>只改命令行参数</td><td>12 → 44</td></tr><tr><td>24G</td><td>RTX 3090</td><td>HyperInkling + 草稿</td><td>60 → 268</td></tr><tr><td>32G</td><td>RTX 5090</td><td>Basalt（关草稿）</td><td>94 → 264</td></tr></tbody></table>\n<h3>8GB：能跑，但吃系统内存</h3>\n<p><img src=\"https://upload.lcz.me/uploads/e0add8f7-2a8b-463d-86a1-051f710b318f.jpg\" alt=\"图06\" loading=\"lazy\"></p>\n<blockquote><p>RTX 4060 笔记本 8G + 48G 内存：原版 7-15（独立用户）→ PolyStrata 跑 120k 上下文 28-40（独立用户）／64G 内存机型约 40 → 开有损开关 37.8→53.6（官方文档，作者数字）。</p></blockquote>\n<p>注意内存：一位 8G/32G 内存的 5060 用户，上下文推到 4000 token 就上不去。部分 8G 用户在小量化下会循环输出，作者建议温度保持 1.0。</p>\n<h3>12GB：换引擎收益最大的一档</h3>\n<p><img src=\"https://upload.lcz.me/uploads/afcfb536-6a87-4d05-9e2d-c4212d93d174.jpg\" alt=\"图07\" loading=\"lazy\"></p>\n<blockquote><p>RTX 3060，12G + 30G 内存，IQ4_NL 文件 17.6GB：原版 9（作者数字，同机同文件）→<strong>3.5 倍</strong>→ RustingStrata 31 → 开有损 57.9（PolyStrata 社区，上限 67.5）。</p></blockquote>\n<p>同档还有个 4070 Ti 用户 30 → 62，但同时换了 fork<strong>并降到 2-3bit 自定义量化</strong>，top token 一致率从 95.7% 掉到 90.9%，那不是纯引擎收益。</p>\n<p>想留在原版 llama.cpp 也有办法：把循环的中层钉在 GPU，外层专家丢到内存。资料对「第 6-13 层」还是「第 6-17 层」说法不一，当起点用，自己看输出。</p>\n<h3>16GB：最干净的一次 0 元提速</h3>\n<p><img src=\"https://upload.lcz.me/uploads/2384f9d4-9436-4575-879f-bb9a2ccc38fa.jpg\" alt=\"图08\" loading=\"lazy\"></p>\n<blockquote><p>上：RTX 5060 Ti 16G，原版默认 12（独立用户）→ 只改命令行参数 44（独立用户，128k 上下文）。下：RTX 5070 Ti 16G，stock ik_llama.cpp 77 → 换 ik fork 同一文件 163（作者数字）。</p></blockquote>\n<p>整期最值得抄的一屏：</p>\n<p><img src=\"https://upload.lcz.me/uploads/bd2403fa-ab84-4526-b371-50cb4950ff58.jpg\" alt=\"图10\" loading=\"lazy\"></p>\n<blockquote><p><code>-c 131072 -np 1 -fa on --cache-ram 0 -ub 32 -b 512 -ctk q4_0 -ctv q4_0 -fitt 64</code>。底下四项是关键：-np 1 单槽、-fa on 全量注意力、-ub 32 小 micro-batch、q4_0 四比特 KV 才装得下 128K。</p></blockquote>\n<p>原作者没有逐项测哪一项贡献最大，所以<strong>整行照抄，别挑挑拣拣</strong>。</p>\n<p>同档还有：5070 Ti 换 3.46bit trellis 量化（10…</p>",
+            "text": "先说结论\n同一个模型，有人跑 9 tok/s，有人跑 628 tok/s。差距 主要不在显卡 ，而在三件事：开箱默认配置、热门专家有没有留在显存里、以及统计口径。\n选对引擎、改几行参数， 不花钱就能快 2～3.5 倍 。\n最近一位国外 up 主把 Inkling 2 Mini 在 8G 到 32G 的各档显卡上跑了个遍，还收集了 120 多条真实用户的实测反馈。我把里面的关键数据整理成了这份速查，图都是他视频里的原始画面。\n一、先看这个差距有多大\n评论区收到的样本是这样的：\n置顶评论里的实测：Intel Arc B70 跑 8 tok/s @8k 上下文，RTX 5070 Ti 只有 10-15 tok/s @131k 。启动周普通显卡落在 9-60 tok/s。\n而论坛上刷屏的帖子是另一种画风：\n单张 5090「613 tok/s decode + 14,100 tok/s prefill」，546 赞；双 3090「约 200 tok/s」501 赞。右边三个标签才是关键： DRAFTED （开了草稿）、 AUTHOR'S NUMBER （作者自测）、 STRUCTURED OUTPUT （结构化输出）。\n所以问题不是「我的卡是不是废了」，而是：别人 600+，我只有 12，差在哪。\n二、为什么开箱就慢\n结构决定的 ：24 层里有 12 层每个 token 要跑 3 遍，一个字过 48 次层计算，其中 8 次是全注意力 ，对话一长就断崖式掉速。\n装不下 ：原版是原生 4bit，约 20GB 。8G / 12G / 16G 的卡放不下，只能溢到系统内存。而且原生 4bit 只有 NVIDIA 50 系（Blackwell）能在硬件层直接跑，其他卡都得先解包。\n它是 MoE ：264 亿参数，每个 token 只激活约 34 亿 。所以速度不看算力，看 哪些专家留在 GPU 上 。\n打个比方：GPU 是工具腰带，系统内存是停在街对面的货车。默认的分层切分是按字母顺序摆工具，结果你每十秒要用的锤子躺在车里，整个下午都在来回走。换成把「最忙的专家」钉在卡上的引擎，同一张 3060、同一个文件，9 → 31 tok/s。\n首日引擎 bug 也占很大责任 ：主线 llama.cpp 在 loop scale 修复之前，困惑度 130.43 （正常 7.6531），基本等于胡言乱语；另一个 issue 显示每个循环专家被缓存了 3 份，某个 fork 修好后 8bit 从 15.6 直接到 25.8。到 11-24，主线的 Inkling 全量 flash attention 还没合进去。\n两个词必须分清 ： prefill 是「读你的提示」， decode 是「写答案」。那个 14,100 是 prefill（2k 提示、所有专家都在卡上），你等答案时盯的是 decode。\n同一个 6,800 token 的长回答，同一台机器、同一份文件： 9 tok/s 要 755 秒（12.5 分钟） ，换引擎到 31 tok/s 是 219 秒 ，HyperInkling 开草稿 268 tok/s 只要 25.4 秒 。\n还有一个不改 tok/s 但很有用的杠杆： 把 reasoning effort 从默认 0.9 调低 。思考 token 少了，答案结束得更早。不过官方也警告它可能陷入循环，无论如何都要设 max output tokens 。\n三、装任何实验性 fork 之前，先做四个 0 元动作\n1 update / 2 re-download / 3 one slot / 4 vision off。右边是第 4 项的示意：把 MMPROJ （视觉投影器）放到 CPU 而不是 GPU。\n更新引擎 。不能早于 loop scale 修复；AMD 用户还要有 Vulkan 修复。\n检查模型文件的下载时间 。11-23 Unsloth 重新打包过以对齐主线布局（Unsloth 约 130 万次下载 vs 官方约 50 万），发布周末下的文件在新构建上可能根本加载不了，重新下。\n强制单并行槽 （ -np 1 ）。多槽会吃掉你急需的显存。\n不用图像就关掉 vision projector ，或丢到 CPU。有人仅仅把图像编码器放进 GPU， 34 → 13 tok/s 。\n四、按显存分档\n整期的叙事结构就是一架梯子：8 → 12 → 16 → 24 → 32 GB，最后单独讲 AMD 和 Mac。\n先看总表，每张图都标了口径： PLAIN 纯 decode、 DRAFTED 开草稿、 LOSSY 开有损加速、 AUTHOR'S NUMBER 作者自测、 独立用户 第三方复现。\n显存\n机型与条件\n手段\n前 → 后\n8G\nRTX 4060 笔记本 + 48G 内存\nPolyStrata（120k 上下文）\n7-15 → 28-40\n12G\nRTX 3060 + 30G 内存\nRustingStrata\n9 → 31（3.5 倍）\n16G\nRTX 5060 Ti\n只改命令行参数\n12 → 44\n24G\nRTX 3090\nHyperInkling + 草稿\n60 → 268\n32G\nRTX 5090\nBasalt（关草稿）\n94 → 264\n8GB：能跑，但吃系统内存\nRTX 4060 笔记本 8G + 48G 内存：原版 7-15（独立用户）→ PolyStrata 跑 120k 上下文 28-40（独立用户）／64G 内存机型约 40 → 开有损开关 37.8→53.6（官方文档，作者数字）。\n注意内存：一位 8G/32G 内存的 5060 用户，上下文推到 4000 token 就上不去。部分 8G 用户在小量化下会循环输出，作者建议温度保持 1.0。\n12GB：换引擎收益最大的一档\nRTX 3060，12G + 30G 内存，IQ4_NL 文件 17.6GB：原版 9（作者数字，同机同文件）→ 3.5 倍 → RustingStrata 31 → 开有损 57.9（PolyStrata 社区，上限 67.5）。\n同档还有个 4070 Ti 用户 30 → 62，但同时换了 fork 并降到 2-3bit 自定义量化 ，top token 一致率从 95.7% 掉到 90.9%，那不是纯引擎收益。\n想留在原版 llama.cpp 也有办法：把循环的中层钉在 GPU，外层专家丢到内存。资料对「第 6-13 层」还是「第 6-17 层」说法不一，当起点用，自己看输出。\n16GB：最干净的一次 0 元提速\n上：RTX 5060 Ti 16G，原版默认 12（独立用户）→ 只改命令行参数 44（独立用户，128k 上下文）。下：RTX 5070 Ti 16G，stock ik_llama.cpp 77 → 换 ik fork 同一文件 163（作者数字）。\n整期最值得抄的一屏：\n-c 131072 -np 1 -fa on --cache-ram 0 -ub 32 -b 512 -ctk q4_0 -ctv q4_0 -fitt 64 。底下四项是关键：-np 1 单槽、-fa on 全量注意力、-ub 32 小 micro-batch、q4_0 四比特 KV 才装得下 128K。\n原作者没有逐项测哪一项贡献最大，所以 整行照抄，别挑挑拣拣 。\n同档还有：5070 Ti 换 3.46bit trellis 量化（10…",
+            "lead": "先说结论\n同一个模型，有人跑 9 tok/s，有人跑 628 tok/s。差距 主要不在显卡 ，而在三件事：开箱默认配置、热门专家有没有留在显存里、以及统计口径。\n选对引擎、改几行参数， 不花钱就能快 2～3.5 倍 。\n最近一位国外 up 主把 Inkling 2 Mini 在 8G 到 32G 的各档显卡上跑了个遍，还收集了 120 多条真实用户的实测反馈。我把里面的关键数据整理成了这份速查，图都是他视频里的原始画面。\n一、先看这个差距有多大\n评论区收到的样本是这样的：\n置顶评论里的实测：Intel Arc B70 跑 8 tok/s @8k 上下文，RTX 5070 Ti 只有 10-15 tok/s @131k 。启动周普通显卡落在 9-60 tok/s。\n而论坛上刷屏的帖子是另一种画风：\n单张 5090「613 tok/s decode + 14,100 tok/s prefill」，546 赞；双 3090「约 200 tok/s」501 赞。右边三个标签才是关键： DRAFTED （开了草稿）",
+            "chars": 7521,
+            "shown": 3201,
+            "truncated": true
+          },
+          "quality": 10,
+          "score": 21.61,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 4,
+          "slug": "614e91283af5",
+          "action": 5,
+          "rank": 18,
+          "tags": [
+            "lowspec",
+            "benchmark",
+            "local",
+            "tutorial"
+          ]
+        },
+        {
+          "sourceId": "lcz-llm",
+          "sourceName": "抡锤者 模型部署讨论",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "PhilipShi2026",
+          "id": "3379",
+          "title": "【实测】便携机3080Laptop-16g大模型测试报告—Ternary-Bonsai-2.5-27B",
+          "url": "https://lcz.me/topic/3379",
+          "published": "2026-11-28T13:02:40.843Z",
+          "summary": "20261127-便携机3080m-16g大模型测试报告—Ternary-Bonsai-2.5-27B 测试对象： D:\\!AI\\!Tools\\ninfer 引擎（2026-11-25.3 / CUDA 13.4 / sm_86）+ D:\\!AI\\!Model\\models4Ninfer 下 4 份 .ninfer 权重 硬件：ThinkPad P1 Gen4/ RTX 3080 Laptop 16 GiB / sm_86 / 驱动 596.47 / 80 W 墙 / 64 GB 双通道 DDR4-3200 结论口径：本文所有数字分类标注 —— **【实测】 本机本次运行结果、 【官方基线】 上游 config/README 数字…",
+          "metrics": {
+            "points": 0,
+            "comments": 3,
+            "views": 71
+          },
+          "excellent": false,
+          "content": {
+            "html": "<h3>20261127-便携机3080m-16g大模型测试报告—Ternary-Bonsai-2.5-27B</h3>\n<blockquote><p>测试对象：<code>D:\\!AI\\!Tools\\ninfer</code>引擎（2026-11-25.3 / CUDA 13.4 / sm_86）+<code>D:\\!AI\\!Model\\models4Ninfer</code>下 4 份<code>.ninfer</code>权重</p></blockquote>\n<blockquote><p>硬件：ThinkPad P1 Gen4/ RTX 3080 Laptop 16 GiB / sm_86 / 驱动 596.47 / 80 W 墙 /<strong>64 GB 双通道 DDR4-3200</strong></p></blockquote>\n<blockquote><p>结论口径：本文所有数字分类标注 —— **【实测】<strong>本机本次运行结果、</strong>【官方基线】<strong>上游 config/README 数字、</strong>【推算】**由实测斜率外推（不入主表）。</p></blockquote>\n<hr><h3>1. 结论先行</h3>\n<p><strong>统一口径</strong>：每档<code>--max-context = --kv-capacity = 档位</code>、<code>--kv-dtype rk4v4</code>、<code>--no-thinking</code>（温度 0）、<code>--prefill-cublas --prefill-chunk 4096</code>、深填至<strong>档位 − 8192 token</strong>、生成<strong>128 token</strong>、<code>--max-concurrency 1</code>。</p>\n<p><strong>入菜单门槛（与 Ninfer启动本地大模型.bat 一致）</strong>：解码速度（深填满载口径）<strong>≥ 30 token/s</strong>。</p>\n<h3>1.1 达标配方（decode ≥ 30 t/s，可入启动器菜单）</h3>\n<table><thead><tr><th>模型</th><th>档位</th><th>decode(t/s)</th><th>prefill(t/s)</th><th>TTFT</th><th>host KV</th><th>设备余量</th></tr></thead><tbody><tr><td>Ternary-Bonsai-2.5-27B PTQ1_0</td><td>96K</td><td><strong>54.1</strong></td><td>443.9</td><td>3m16s</td><td>0（纯显存）</td><td>5.93 GiB</td></tr><tr><td>Ternary-Bonsai-2.5-27B PTQ1_0</td><td>128K</td><td><strong>48.9</strong></td><td>393.0</td><td>5m02s</td><td>0（纯显存）</td><td>5.35 GiB</td></tr><tr><td>Ternary-Bonsai-2.5-27B PTQ1_0</td><td>160K</td><td><strong>45.3</strong></td><td>359.7</td><td>6m58s</td><td>0（纯显存）</td><td>4.77 GiB</td></tr><tr><td>Ternary-Bonsai-2.5-27B PTQ1_0</td><td>192K</td><td><strong>43.2</strong></td><td>331.0</td><td>9m09s</td><td>0（纯显存）</td><td>4.19 GiB</td></tr><tr><td>Ternary-Bonsai-2.5-27B PTQ1_0</td><td>256K</td><td><strong>36.4</strong></td><td>286.2</td><td>14m16s</td><td>0（纯显存）</td><td>3.03 GiB</td></tr><tr><td>Ternary-Bonsai-2.5-27B PQ2_0</td><td>96K</td><td><strong>71.7</strong></td><td>574.6</td><td>2m32s</td><td>0（纯显存）</td><td>5.10 GiB</td></tr><tr><td>Ternary-Bonsai-2.5-27B PQ2_0</td><td>128K</td><td><strong>61.3</strong></td><td>505.8</td><td>3m55s</td><td>0（纯显存）</td><td>4.52 GiB</td></tr><tr><td>Ternary-Bonsai-2.5-27B PQ2_0</td><td>160K</td><td><strong>55.6</strong></td><td>451.3</td><td>5m33s</td><td>0（纯显存）</td><td>3.94 GiB</td></tr><tr><td>Ternary-Bonsai-2.5-27B PQ2_0</td><td>192K</td><td><strong>50.7</strong></td><td>408.9</td><td>7m25s</td><td>0（纯显存）</td><td>3.36 GiB</td></tr><tr><td>Ternary-Bonsai-2.5-27B PQ2_0</td><td>256K</td><td><strong>42.8</strong></td><td>342.4</td><td>11m56s</td><td>0（纯显存）</td><td>2.20 GiB</td></tr><tr><td>Qwen3.8-27B-Coder390 Q2LynnStyle-Q4MTP</td><td>96K</td><td><strong>39.8</strong></td><td>394.8</td><td>3m40s</td><td>0（纯显存）</td><td>0.38 GiB</td></tr><tr><td>Qwen3.8-27B-Coder390 Q2LynnStyle-Q4MTP</td><td>128K</td><td><strong>38.0</strong></td><td>360.6</td><td>5m29s</td><td>0（纯显存）</td><td>0.00 GiB</td></tr><tr><td>Qwen3.8-27B-Coder390 Q2LynnStyle-Q4MTP</td><td>160K</td><td><strong>32.0</strong></td><td>323.3</td><td>7m45s</td><td>0（纯显存）</td><td>0.00 GiB</td></tr><tr><td>Qwen3.8-27B-Coder390 Q3LynnStyle-16G-MTP</td><td>96K</td><td><strong>39.5</strong></td><td>401.5</td><td>3m37s</td><td>0（纯显存）</td><td>0.38 GiB</td></tr><tr><td>Qwen3.8-27B-Coder390 Q3LynnStyle-16G-MTP</td><td>128K</td><td><strong>36.7</strong></td><td>363.4</td><td>5m26s</td><td>0（纯显存）</td><td>0.00 GiB</td></tr><tr><td>Qwen3.8-27B-Coder390 Q3LynnStyle-16G-MTP</td><td>160K</td><td><strong>32.7</strong></td><td>330.7</td><td>7m34s</td><td>0（纯显存）</td><td>0.00 GiB</td></tr></tbody></table>\n<h3>1.2 96K 档解码速览（满载深填口径）</h3>\n<table><thead><tr><th>模型</th><th>档位</th><th>decode(t/s)</th><th>prefill(t/s)</th><th>TTFT</th></tr></thead><tbody><tr><td>Ternary-Bonsai-2.5-27B PTQ1_0</td><td>96K</td><td>54.1</td><td>443.9</td><td>3m16s</td></tr><tr><td>Ternary-Bonsai-2.5-27B PQ2_0</td><td>96K</td><td>71.7</td><td>574.6</td><td>2m32s</td></tr><tr><td>Qwen3.8-27B-Coder390 Q2LynnStyle-Q4MTP</td><td>96K</td><td>39.8</td><td>394.8</td><td>3m40s</td></tr><tr><td>Qwen3.8-27B-Coder390 Q3LynnStyle-16G-MTP</td><td>96K</td><td>39.5</td><td>401.5</td><td>3m37s</td></tr></tbody></table>\n<hr><h3>2. 测试环境与口径</h3>\n<h3>2.1 机器与系统【实测】</h3>\n<table><thead><tr><th>项</th><th>值</th></tr></thead><tbody><tr><td>机型</td><td>LENOVO ThinkPad P1 Gen 4i（20Y4S3XD00）</td></tr><tr><td>CPU</td><td>i7-11850H 8C16T @2.50 GHz</td></tr><tr><td>内存</td><td><strong>64 GB（2×32 GB DDR4-3200 双通道，物理 63.7 GiB）</strong>；注：上一轮 261009 为 32 GB 单通道，本轮已升级</td></tr><tr><td>系统</td><td>Windows 11 x64，WDDM 驱动模型</td></tr><tr><td>GPU</td><td>NVIDIA GeForce RTX 3080 Laptop GPU，16384 MiB，sm_86（8.6）</td></tr><tr><td>驱动</td><td>596.47（CUDA 13.2 / 编译 13.4）</td></tr><tr><td>磁盘可用</td><td><img src=\"https://lcz.me/assets/plugins/nodebb-plugin-emoji/emoji/android/1f627.png?v=2bf455356c3\" alt=\"😧\" loading=\"lazy\">约 59.9 GB</td></tr></tbody></table>\n<h3>2.2 测量口径定义（全项目统一）</h3>\n<table><thead><tr><th>项</th><th>定义</th></tr></thead><tbody><tr><td>档位</td><td><code>--max-context</code>：98304 / 131072 / 163840 / 196608 / 262144（96K/128K/160K/192K/256K）</td></tr><tr><td>填充</td><td><strong>档位 − 8192 token</strong>，中英混合句池重复填充，尾部固定指令（列 1–200 数字）；实际填充 token 由引擎<code>usage.prompt_tokens</code>自报</td></tr><tr><td>生成预算</td><td><code>max_tokens=128</code>，温度 0（greedy）</td></tr><tr><td>decode tok/s</td><td>引擎自报<code>timings.predicted_per_second</code>（生成 token ÷ decode 墙钟，不扣首 token，无 prompt 缓存）</td></tr><tr><td>prefill tok/s</td><td>引擎自报<code>timings.prompt_per_second</code></td></tr><tr><td>TTFT</td><td>请求日志<code>request_done.timings_seconds.ttft</code>（prefill 完成到首 token）</td></tr><tr><td>host KV</td><td>请求日志<code>context_cache.occupancy.host_kv_bytes</code>（KV 卸载到内存的字节数，0 表示纯显存）</td></tr><tr><td>设备余量</td><td>请求日志<code> server_start.memory.…</code></td></tr></tbody></table>",
+            "text": "20261127-便携机3080m-16g大模型测试报告—Ternary-Bonsai-2.5-27B\n测试对象： D:\\!AI\\!Tools\\ninfer 引擎（2026-11-25.3 / CUDA 13.4 / sm_86）+ D:\\!AI\\!Model\\models4Ninfer 下 4 份 .ninfer 权重\n硬件：ThinkPad P1 Gen4/ RTX 3080 Laptop 16 GiB / sm_86 / 驱动 596.47 / 80 W 墙 / 64 GB 双通道 DDR4-3200\n结论口径：本文所有数字分类标注 —— **【实测】 本机本次运行结果、 【官方基线】 上游 config/README 数字、 【推算】**由实测斜率外推（不入主表）。\n1. 结论先行\n统一口径 ：每档 --max-context = --kv-capacity = 档位 、 --kv-dtype rk4v4 、 --no-thinking （温度 0）、 --prefill-cublas --prefill-chunk 4096 、深填至 档位 − 8192 token 、生成 128 token 、 --max-concurrency 1 。\n入菜单门槛（与 Ninfer启动本地大模型.bat 一致） ：解码速度（深填满载口径） ≥ 30 token/s 。\n1.1 达标配方（decode ≥ 30 t/s，可入启动器菜单）\n模型\n档位\ndecode(t/s)\nprefill(t/s)\nTTFT\nhost KV\n设备余量\nTernary-Bonsai-2.5-27B PTQ1_0\n96K\n54.1\n443.9\n3m16s\n0（纯显存）\n5.93 GiB\nTernary-Bonsai-2.5-27B PTQ1_0\n128K\n48.9\n393.0\n5m02s\n0（纯显存）\n5.35 GiB\nTernary-Bonsai-2.5-27B PTQ1_0\n160K\n45.3\n359.7\n6m58s\n0（纯显存）\n4.77 GiB\nTernary-Bonsai-2.5-27B PTQ1_0\n192K\n43.2\n331.0\n9m09s\n0（纯显存）\n4.19 GiB\nTernary-Bonsai-2.5-27B PTQ1_0\n256K\n36.4\n286.2\n14m16s\n0（纯显存）\n3.03 GiB\nTernary-Bonsai-2.5-27B PQ2_0\n96K\n71.7\n574.6\n2m32s\n0（纯显存）\n5.10 GiB\nTernary-Bonsai-2.5-27B PQ2_0\n128K\n61.3\n505.8\n3m55s\n0（纯显存）\n4.52 GiB\nTernary-Bonsai-2.5-27B PQ2_0\n160K\n55.6\n451.3\n5m33s\n0（纯显存）\n3.94 GiB\nTernary-Bonsai-2.5-27B PQ2_0\n192K\n50.7\n408.9\n7m25s\n0（纯显存）\n3.36 GiB\nTernary-Bonsai-2.5-27B PQ2_0\n256K\n42.8\n342.4\n11m56s\n0（纯显存）\n2.20 GiB\nQwen3.8-27B-Coder390 Q2LynnStyle-Q4MTP\n96K\n39.8\n394.8\n3m40s\n0（纯显存）\n0.38 GiB\nQwen3.8-27B-Coder390 Q2LynnStyle-Q4MTP\n128K\n38.0\n360.6\n5m29s\n0（纯显存）\n0.00 GiB\nQwen3.8-27B-Coder390 Q2LynnStyle-Q4MTP\n160K\n32.0\n323.3\n7m45s\n0（纯显存）\n0.00 GiB\nQwen3.8-27B-Coder390 Q3LynnStyle-16G-MTP\n96K\n39.5\n401.5\n3m37s\n0（纯显存）\n0.38 GiB\nQwen3.8-27B-Coder390 Q3LynnStyle-16G-MTP\n128K\n36.7\n363.4\n5m26s\n0（纯显存）\n0.00 GiB\nQwen3.8-27B-Coder390 Q3LynnStyle-16G-MTP\n160K\n32.7\n330.7\n7m34s\n0（纯显存）\n0.00 GiB\n1.2 96K 档解码速览（满载深填口径）\n模型\n档位\ndecode(t/s)\nprefill(t/s)\nTTFT\nTernary-Bonsai-2.5-27B PTQ1_0\n96K\n54.1\n443.9\n3m16s\nTernary-Bonsai-2.5-27B PQ2_0\n96K\n71.7\n574.6\n2m32s\nQwen3.8-27B-Coder390 Q2LynnStyle-Q4MTP\n96K\n39.8\n394.8\n3m40s\nQwen3.8-27B-Coder390 Q3LynnStyle-16G-MTP\n96K\n39.5\n401.5\n3m37s\n2. 测试环境与口径\n2.1 机器与系统【实测】\n项\n值\n机型\nLENOVO ThinkPad P1 Gen 4i（20Y4S3XD00）\nCPU\ni7-11850H 8C16T @2.50 GHz\n内存\n64 GB（2×32 GB DDR4-3200 双通道，物理 63.7 GiB） ；注：上一轮 261009 为 32 GB 单通道，本轮已升级\n系统\nWindows 11 x64，WDDM 驱动模型\nGPU\nNVIDIA GeForce RTX 3080 Laptop GPU，16384 MiB，sm_86（8.6）\n驱动\n596.47（CUDA 13.2 / 编译 13.4）\n磁盘可用\n约 59.9 GB\n2.2 测量口径定义（全项目统一）\n项\n定义\n档位\n--max-context ：98304 / 131072 / 163840 / 196608 / 262144（96K/128K/160K/192K/256K）\n填充\n档位 − 8192 token ，中英混合句池重复填充，尾部固定指令（列 1–200 数字）；实际填充 token 由引擎 usage.prompt_tokens 自报\n生成预算\nmax_tokens=128 ，温度 0（greedy）\ndecode tok/s\n引擎自报 timings.predicted_per_second （生成 token ÷ decode 墙钟，不扣首 token，无 prompt 缓存）\nprefill tok/s\n引擎自报 timings.prompt_per_second\nTTFT\n请求日志 request_done.timings_seconds.ttft （prefill 完成到首 token）\nhost KV\n请求日志 context_cache.occupancy.host_kv_bytes （KV 卸载到内存的字节数，0 表示纯显存）\n设备余量\n请求日志 server_start.memory.…",
+            "lead": "20261127-便携机3080m-16g大模型测试报告—Ternary-Bonsai-2.5-27B\n测试对象： D:\\!AI\\!Tools\\ninfer 引擎（2026-11-25.3 / CUDA 13.4 / sm_86）+ D:\\!AI\\!Model\\models4Ninfer 下 4 份 .ninfer 权重\n硬件：ThinkPad P1 Gen4/ RTX 3080 Laptop 16 GiB / sm_86 / 驱动 596.47 / 80 W 墙 / 64 GB 双通道 DDR4-3200\n结论口径：本文所有数字分类标注 —— **【实测】 本机本次运行结果、 【官方基线】 上游 config/README 数字、 【推算】**由实测斜率外推（不入主表）。\n1. 结论先行\n统一口径 ：每档 --max-context = --kv-capacity = 档位 、 --kv-dtype rk4v4 、 --no-thinking （温度 0）、 --prefill-cublas --pref",
+            "chars": 8004,
+            "shown": 3187,
+            "truncated": true
+          },
+          "quality": 9,
+          "score": 20.76,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 4,
+          "slug": "c285d7c78f45",
+          "action": 5,
+          "rank": 17,
+          "tags": [
+            "lowspec",
+            "benchmark",
+            "local",
+            "hardware"
+          ]
+        },
+        {
+          "sourceId": "lcz-hardware",
+          "sourceName": "抡锤者 AI硬件",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "edward",
+          "id": "3378",
+          "title": "RDNA3 福利區 - Inkling-2-Mini + 7900XTX => Prefill 3000 tok/s & AR 101 tok/s @4K & DSpark 265 tok/s",
+          "url": "https://lcz.me/topic/3378",
+          "published": "2026-11-28T11:50:25.547Z",
+          "summary": "先說明：這是自己一台機器上的實測，每項只跑一次或少數幾次，沒有大規模品質評測。引擎是我們自己改的 fork，數字是迭代過程中最後一輪的結果，不是同一時間窗口的嚴格對照。greedy 輸出每一步都有做 bit-exact token 流比對。所有數字請當量級參考。 TL;DR 把 Thinking Machines 的 Inkling-2-Mini （26B 總 / 3.4B 活躍、48 次 loop visit、128 experts top-8 的 MoE）在 RX 7900 XTX 24GB（gfx1100 / RDNA3，Windows 原生 HIP） 跑起來。原引擎是 Strata 為 NVIDIA 3090 寫的 ik2…",
+          "metrics": {
+            "points": 1,
+            "comments": 0,
+            "views": 93
+          },
+          "excellent": false,
+          "content": {
+            "html": "<blockquote><p>先說明：這是自己一台機器上的實測，每項只跑一次或少數幾次，沒有大規模品質評測。引擎是我們自己改的 fork，數字是迭代過程中最後一輪的結果，不是同一時間窗口的嚴格對照。greedy 輸出每一步都有做 bit-exact token 流比對。所有數字請當量級參考。</p></blockquote>\n<h3>TL;DR</h3>\n<ul><li>把 Thinking Machines 的<strong>Inkling-2-Mini</strong>（26B 總 / 3.4B 活躍、48 次 loop visit、128 experts top-8 的 MoE）在<strong>RX 7900 XTX 24GB（gfx1100 / RDNA3，Windows 原生 HIP）</strong>跑起來。原引擎是 Strata 為 NVIDIA 3090 寫的 ik2（PR#6506），我們移植 + 優化到 RDNA3，全開源：<code>https://github.com/liedwardtw/Strata</code>（commit<code>afed622e</code>）。</li><li><strong>Prefill 峰值 3021 tok/s（16K）</strong>、<strong>AR 直接解碼 101 tok/s @ 4K</strong>，結構化 prompt 上<strong>DSpark 原生投機解碼 243–265 tok/s（accept 7.7/8）</strong>。</li><li><strong>640K（655360）上下文 + 8GB conversation cache 全塞進 24GB VRAM/RAM</strong>，128 專家常駐 0 miss；640K 滿載 KV 時 AR 降到 23 tok/s（8 次 full-attention visit 是 O(ctx)，誠實數據）。</li><li>全部 greedy bit-exact；所有提速都 env-gated + A/B token 流比對才留。</li><li>誠實結論：960GB/s 用不滿（HBM 只 13–38%）；雙路併發卡在 WDDM graph replay 只到 147.9；Lucebox Fast 模型「思考減半」在我們這邊未重現。</li><li>完整技術文件（7 篇）在 repo 的<code>docs/XTX-7900XTX-*.md</code>，README 有連結。</li></ul>\n<h3>1. 硬體與軟體</h3>\n<table><thead><tr><th>項目</th><th>內容</th></tr></thead><tbody><tr><td>GPU</td><td>AMD RX 7900 XTX 24GB（gfx1100 / RDNA3），HBM 峰值 ~960 GB/s</td></tr><tr><td>驅動</td><td>Adrenalin 32.0.32029.2010</td></tr><tr><td>系統 / RAM</td><td>Windows 11 原生 HIP（無 WSL / 雙系統），32GB DDR</td></tr><tr><td>SDK</td><td>ROCm Windows HIP SDK（clang ~24），VS 2022 Build Tools（manifest 要 mt.exe）</td></tr><tr><td>模型</td><td><code>Inkling-2-Mini-UD-Q4_K_XL.gguf</code>16.42 GiB（NVFP4 專家 L0–19 + Q8_0 L20–23）</td></tr><tr><td>引擎</td><td>Strata ik2 fork（以 Niko1221/Strata PR#6506 為底），commit<code>afed622e</code></td></tr><tr><td>草稿器</td><td>模型原生<code>mtp.safetensors</code>635MB（DSpark 用）</td></tr></tbody></table>\n<h3>2. 配置與一鍵操作</h3>\n<p>native serve（完整 OpenAI/Anthropic API + web chat + monitor + 工具呼叫），背景執行可關視窗：</p>\n<pre><code>start.bat :: 啟動原生 Strata serve port 8099，印一行 OK 後轉背景\nstop.bat :: 停止 serve + 引擎，保留 gpu_guard</code></pre>\n<p><code>ik2-native-640k.json</code>重點：<code>--ctx 655360 --max-context 655360 --prefill 4096 --gpus 1 --cache-gb 60 --conversation-cache-mib 8192</code>、<code>reasoning_effort: \"none\"</code>（AR 直出，關掉 thinking pass）、<code>reasoning_budget_tokens: 256</code>（只有 client 明確要求 thinking 才生效）。</p>\n<p>關鍵 env：</p>\n<table><thead><tr><th>變數</th><th>值</th><th>作用</th></tr></thead><tbody><tr><td><code>IK2_KV</code></td><td><code>int4</code></td><td>KV 用 int4（RDNA3 無 FP8 WMMA，int4 比 fp8 省一半頻寬）</td></tr><tr><td><code>IK2_INT4_LAYERS</code></td><td><code>24</code></td><td>24 層專家全部轉 int4</td></tr><tr><td><code>IK2_INT4_DIR</code>/<code>IK2_INT4_DENSE_DIR</code></td><td>轉換出的 sidecar 目錄</td><td>路徑錯會靜默退回 Q8 → 3.88 tok/s 災難</td></tr><tr><td><code>IK2_ATTN_GQA</code>/<code>IK2_ATTN_DPP</code></td><td><code>1</code></td><td>GQA 共用 K/V 讀取 + DPP warp reduce</td></tr><tr><td><code>IK2_FLASH_WMMA</code>/<code>IK2_FLASH_NW</code>/<code>IK2_FLASH_BN</code></td><td><code>1 / 8 / 32</code></td><td>RDNA3 版 WMMA flash attention</td></tr><tr><td><code>IK2_REPORT_BATCH</code></td><td>不設 (=0)</td><td>單流報<code>batch_slots=0</code>，不然兩個請求同時送進單流引擎會死結</td></tr></tbody></table>\n<p>端點：web<code>http://127.0.0.1:8099/</code>、monitor<code>/api-monitor</code>或<code>/#monitor</code>、API<code>/v1/chat/completions</code>（model<code>inkling-2-mini</code>）。完整再現見<a href=\"https://github.com/liedwardtw/Strata/blob/main/docs/XTX-7900XTX-SETUP.md\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">SETUP</a>。</p>\n<h3>3. VRAM：640K + 8GB cache 怎麼塞進 24GB</h3>\n<table><thead><tr><th>項目</th><th>大小</th><th>做法</th></tr></thead><tbody><tr><td>INT4 專家 24 層常駐</td><td>~12.2 GiB</td><td>NVFP4/Q8_0 離線轉 rotated int4（Hadamard H256 + per-128 scale），0 miss</td></tr><tr><td>稠密投影</td><td>~1.1 GiB</td><td>Q8 planar host-map，decode 走 int4 sidecar 不讀 host</td></tr><tr><td>KV 640K int4</td><td>~5.4 GiB</td><td>每 token/visit 1056B（K+V code + per-head fp16 scale），比 fp8 省一半</td></tr><tr><td>ExpertCache + work buffer</td><td>~2 GiB</td><td>chunk 4096，&gt;10240 會 thrash 把專家擠出 VRAM</td></tr><tr><td>conversation cache</td><td>8 GiB host RAM</td><td>64 snapshots（41.2MiB each），只把滑動窗口/卷積歷史放 host</td></tr></tbody></table>\n<p>Monitor 實測：256 experts cached、Prompt reused 49%、Parked conversations 2/64、247/259 tokens reused。256K 下 KV 格式對比：fp8 42.2 / int8 46.5 /<strong>int4 47.6 tok/s</strong>，int4 又快又省一半 VRAM。細節見<a href=\"https://github.com/liedwardtw/Strata/blob/main/docs/XTX-7900XTX-VRAM.md\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">VRAM</a>。</p>\n<h3>4. 測試方法</h3>\n<ul><li>速度字段從引擎 DONE 的純 decode wall 取；另用<code>completion_tokens ÷ (總時間 − prefill)</code>交叉核對（長輸出時引擎字段可能不可信）。</li><li>全深度：9 個固定 prompt 長度（1K→640K），每檔 gen48，<code>ctx=n+4096</code>，chunk 隨長度調整，確認<code>resident=1 / 0 miss / graph captured</code>才計。</li><li>品質：greedy token 流逐 token 比對（不看摘要），19 題 + 4 題多步推理算 first-dive…</li></ul>",
+            "text": "先說明：這是自己一台機器上的實測，每項只跑一次或少數幾次，沒有大規模品質評測。引擎是我們自己改的 fork，數字是迭代過程中最後一輪的結果，不是同一時間窗口的嚴格對照。greedy 輸出每一步都有做 bit-exact token 流比對。所有數字請當量級參考。\nTL;DR\n把 Thinking Machines 的 Inkling-2-Mini （26B 總 / 3.4B 活躍、48 次 loop visit、128 experts top-8 的 MoE）在 RX 7900 XTX 24GB（gfx1100 / RDNA3，Windows 原生 HIP） 跑起來。原引擎是 Strata 為 NVIDIA 3090 寫的 ik2（PR#6506），我們移植 + 優化到 RDNA3，全開源： https://github.com/liedwardtw/Strata （commit afed622e ）。\nPrefill 峰值 3021 tok/s（16K） 、 AR 直接解碼 101 tok/s @ 4K ，結構化 prompt 上 DSpark 原生投機解碼 243–265 tok/s（accept 7.7/8） 。\n640K（655360）上下文 + 8GB conversation cache 全塞進 24GB VRAM/RAM ，128 專家常駐 0 miss；640K 滿載 KV 時 AR 降到 23 tok/s（8 次 full-attention visit 是 O(ctx)，誠實數據）。\n全部 greedy bit-exact；所有提速都 env-gated + A/B token 流比對才留。\n誠實結論：960GB/s 用不滿（HBM 只 13–38%）；雙路併發卡在 WDDM graph replay 只到 147.9；Lucebox Fast 模型「思考減半」在我們這邊未重現。\n完整技術文件（7 篇）在 repo 的 docs/XTX-7900XTX-*.md ，README 有連結。\n1. 硬體與軟體\n項目\n內容\nGPU\nAMD RX 7900 XTX 24GB（gfx1100 / RDNA3），HBM 峰值 ~960 GB/s\n驅動\nAdrenalin 32.0.32029.2010\n系統 / RAM\nWindows 11 原生 HIP（無 WSL / 雙系統），32GB DDR\nSDK\nROCm Windows HIP SDK（clang ~24），VS 2022 Build Tools（manifest 要 mt.exe）\n模型\nInkling-2-Mini-UD-Q4_K_XL.gguf 16.42 GiB（NVFP4 專家 L0–19 + Q8_0 L20–23）\n引擎\nStrata ik2 fork（以 Niko1221/Strata PR#6506 為底），commit afed622e\n草稿器\n模型原生 mtp.safetensors 635MB（DSpark 用）\n2. 配置與一鍵操作\nnative serve（完整 OpenAI/Anthropic API + web chat + monitor + 工具呼叫），背景執行可關視窗：\nstart.bat :: 啟動原生 Strata serve port 8099，印一行 OK 後轉背景\nstop.bat :: 停止 serve + 引擎，保留 gpu_guard\nik2-native-640k.json 重點： --ctx 655360 --max-context 655360 --prefill 4096 --gpus 1 --cache-gb 60 --conversation-cache-mib 8192 、 reasoning_effort: \"none\" （AR 直出，關掉 thinking pass）、 reasoning_budget_tokens: 256 （只有 client 明確要求 thinking 才生效）。\n關鍵 env：\n變數\n值\n作用\nIK2_KV\nint4\nKV 用 int4（RDNA3 無 FP8 WMMA，int4 比 fp8 省一半頻寬）\nIK2_INT4_LAYERS\n24\n24 層專家全部轉 int4\nIK2_INT4_DIR / IK2_INT4_DENSE_DIR\n轉換出的 sidecar 目錄\n路徑錯會靜默退回 Q8 → 3.88 tok/s 災難\nIK2_ATTN_GQA / IK2_ATTN_DPP\n1\nGQA 共用 K/V 讀取 + DPP warp reduce\nIK2_FLASH_WMMA / IK2_FLASH_NW / IK2_FLASH_BN\n1 / 8 / 32\nRDNA3 版 WMMA flash attention\nIK2_REPORT_BATCH\n不設 (=0)\n單流報 batch_slots=0 ，不然兩個請求同時送進單流引擎會死結\n端點：web http://127.0.0.1:8099/ 、monitor /api-monitor 或 /#monitor 、API /v1/chat/completions （model inkling-2-mini ）。完整再現見 SETUP 。\n3. VRAM：640K + 8GB cache 怎麼塞進 24GB\n項目\n大小\n做法\nINT4 專家 24 層常駐\n~12.2 GiB\nNVFP4/Q8_0 離線轉 rotated int4（Hadamard H256 + per-128 scale），0 miss\n稠密投影\n~1.1 GiB\nQ8 planar host-map，decode 走 int4 sidecar 不讀 host\nKV 640K int4\n~5.4 GiB\n每 token/visit 1056B（K+V code + per-head fp16 scale），比 fp8 省一半\nExpertCache + work buffer\n~2 GiB\nchunk 4096，>10240 會 thrash 把專家擠出 VRAM\nconversation cache\n8 GiB host RAM\n64 snapshots（41.2MiB each），只把滑動窗口/卷積歷史放 host\nMonitor 實測：256 experts cached、Prompt reused 49%、Parked conversations 2/64、247/259 tokens reused。256K 下 KV 格式對比：fp8 42.2 / int8 46.5 / int4 47.6 tok/s ，int4 又快又省一半 VRAM。細節見 VRAM 。\n4. 測試方法\n速度字段從引擎 DONE 的純 decode wall 取；另用 completion_tokens ÷ (總時間 − prefill) 交叉核對（長輸出時引擎字段可能不可信）。\n全深度：9 個固定 prompt 長度（1K→640K），每檔 gen48， ctx=n+4096 ，chunk 隨長度調整，確認 resident=1 / 0 miss / graph captured 才計。\n品質：greedy token 流逐 token 比對（不看摘要），19 題 + 4 題多步推理算 first-dive…",
+            "lead": "先說明：這是自己一台機器上的實測，每項只跑一次或少數幾次，沒有大規模品質評測。引擎是我們自己改的 fork，數字是迭代過程中最後一輪的結果，不是同一時間窗口的嚴格對照。greedy 輸出每一步都有做 bit-exact token 流比對。所有數字請當量級參考。\nTL;DR\n把 Thinking Machines 的 Inkling-2-Mini （26B 總 / 3.4B 活躍、48 次 loop visit、128 experts top-8 的 MoE）在 RX 7900 XTX 24GB（gfx1100 / RDNA3，Windows 原生 HIP） 跑起來。原引擎是 Strata 為 NVIDIA 3090 寫的 ik2（PR#6506），我們移植 + 優化到 RDNA3，全開源： https://github.com/liedwardtw/Strata （commit afed622e ）。\nPrefill 峰值 3021 tok/s（16K） 、 AR 直接解碼 101 tok/s @ 4K ",
+            "chars": 6273,
+            "shown": 3201,
+            "truncated": true
+          },
+          "quality": 7,
+          "score": 20.16,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 4,
+          "slug": "db7f327b43b0",
+          "action": 6,
+          "rank": 16.6,
+          "tags": [
+            "local",
+            "lowspec",
+            "benchmark",
+            "tutorial"
+          ]
+        },
+        {
+          "sourceId": "gh-releases",
+          "sourceName": "GitHub 发布（ComfyUI / Strata 等）",
+          "lang": "en",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "github-actions[bot]",
+          "id": "461592463",
+          "title": "llama.cpp b12832 发布",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12832",
+          "published": "2026-11-28T13:50:25.000Z",
+          "summary": "ggml : add CONCAT backward pass (#32151) Each input's gradient is a view of the output gradient at its offset along dim, made contiguous. Mark a and b as params so grad mode checks the op, with grad_nmax raised to 40000 to keep the default shapes. The output is weighted by random values in [1, 2], since with a plain s…",
+          "content": {
+            "html": "<p>&lt;details open&gt;</p>\n<p>ggml : add CONCAT backward pass (#32151)</p>\n<p>Each input's gradient is a view of the output gradient at its offset along dim, made contiguous.</p>\n<p>Mark a and b as params so grad mode checks the op, with grad_nmax raised to 40000 to keep the default shapes. The output is weighted by random values in [1, 2], since with a plain sum every gradient is 1 and a wrong offset would still pass. Transposed-b cases are not grad checked, they only cover the forward.</p>\n<p>Signed-off-by: gianni-cor &lt;gianfranco.cordella@tether.io&gt;</p>\n<p>&lt;/details&gt;</p>\n<p><strong>Website:</strong></p>\n<ul><li>&lt;https://llama.app&gt;</li></ul>\n<p><strong>Attestations:</strong></p>\n<ul><li>&lt;https://github.com/ggml-org/llama.cpp/attestations/73455763&gt;</li></ul>\n<p><strong>macOS/iOS:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12832/llama-b12832-bin-macos-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">macOS Apple Silicon (arm64)</a></li><li>macOS Apple Silicon (arm64, KleidiAI enabled)<a href=\"https://github.com/ggml-org/llama.cpp/pull/23780\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">DISABLED</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12832/llama-b12832-bin-macos-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">macOS Intel (x64)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12832/llama-b12832-xcframework.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">iOS XCFramework</a></li></ul>\n<p><strong>Linux:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12832/llama-b12832-bin-ubuntu-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12832/llama-b12832-bin-ubuntu-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu arm64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12832/llama-b12832-bin-ubuntu-s390x.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu 24.04 s390x (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12832/llama-b12832-bin-ubuntu-26.04-s390x.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu 26.04 s390x (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12832/llama-b12832-bin-ubuntu-zdnn-s390x.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu 26.04 s390x (zDNN)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12832/llama-b12832-bin-ubuntu-vulkan-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12832/llama-b12832-bin-ubuntu-vulkan-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu arm64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12832/llama-b12832-bin-ubuntu-cuda-12.8-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (CUDA 12)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12832/cudart-llama-b12832-bin-ubuntu-cuda-12.8-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 12.8 libraries</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12832/llama-b12832-bin-ubuntu-cuda-13.5-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12832/cudart-llama-b12832-bin-ubuntu-cuda-13.5-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 libraries</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12832/llama-b12832-bin-ubuntu-cuda-13.5-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu arm64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12832/cudart-llama-b12832-bin-ubuntu-cuda-13.5-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 libraries</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12832/llama-b12832-bin-ubuntu-rocm-10.0-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (ROCm 10.0)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12832/llama-b12832-bin-ubuntu-openvino-2026.4.1-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (OpenVINO)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12832/llama-b12832-bin-ubuntu-sycl-fp32-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (SYCL FP32)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12832/llama-b12832-bin-ubuntu-sycl-fp16-x64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ubuntu x64 (SYCL FP16)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12832/llama-b12832-bin-linux-arm64-snapdragon.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Linux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/linux.md\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">setup guide</a></li></ul>\n<p><strong>Android:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12832/llama-b12832-bin-android-arm64.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Android arm64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12832/llama-b12832-bin-android-arm64-snapdragon.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Android arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/README.md\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">setup guide</a></li></ul>\n<p><strong>Windows:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12832/llama-b12832-bin-win-cpu-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12832/llama-b12832-bin-win-cpu-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (CPU)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12832/llama-b12832-bin-win-opencl-adreno-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (OpenCL Adreno)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12832/llama-b12832-bin-win-cuda-12.4-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (CUDA 12)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12832/cudart-llama-bin-win-cuda-12.4-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 12.4 DLLs</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12832/llama-b12832-bin-win-cuda-13.5-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12832/cudart-llama-bin-win-cuda-13.5-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 DLLs</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12832/llama-b12832-bin-win-cuda-13.5-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (CUDA 13)</a>-<a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12832/cudart-llama-bin-win-cuda-13.5-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CUDA 13.5 DLLs</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12832/llama-b12832-bin-win-vulkan-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12832/llama-b12832-bin-win-vulkan-arm64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows arm64 (Vulkan)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12832/llama-b12832-bin-win-openvino-2026.4.1-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (OpenVINO)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12832/llama-b12832-bin-win-sycl-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (SYCL)</a></li><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12832/llama-b12832-bin-win-rocm-10.0-x64.zip\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Windows x64 (ROCm 10.0)</a></li></ul>\n<p><strong>openEuler:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/pull/23705\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">DISABLED</a></li><li>openEuler x86 (310p)</li><li>openEuler x86 (910b, ACL Graph)</li><li>openEuler aarch64 (310p)</li><li>openEuler aarch64 (910b, ACL Graph)</li></ul>\n<p><strong>UI:</strong></p>\n<ul><li><a href=\"https://github.com/ggml-org/llama.cpp/releases/download/b12832/llama-b12832-ui.tar.gz\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">UI</a></li></ul>",
+            "text": "ggml : add CONCAT backward pass (#32151)\nEach input's gradient is a view of the output gradient at its offset along dim, made contiguous.\nMark a and b as params so grad mode checks the op, with grad_nmax raised to 40000 to keep the default shapes. The output is weighted by random values in [1, 2], since with a plain sum every gradient is 1 and a wrong offset would still pass. Transposed-b cases are not grad checked, they only cover the forward.\nSigned-off-by: gianni-cor\nWebsite:\nAttestations:\nmacOS/iOS:\nmacOS Apple Silicon (arm64)\nmacOS Apple Silicon (arm64, KleidiAI enabled) DISABLED\nmacOS Intel (x64)\niOS XCFramework\nLinux:\nUbuntu x64 (CPU)\nUbuntu arm64 (CPU)\nUbuntu 24.04 s390x (CPU)\nUbuntu 26.04 s390x (CPU)\nUbuntu 26.04 s390x (zDNN)\nUbuntu x64 (Vulkan)\nUbuntu arm64 (Vulkan)\nUbuntu x64 (CUDA 12) - CUDA 12.8 libraries\nUbuntu x64 (CUDA 13) - CUDA 13.5 libraries\nUbuntu arm64 (CUDA 13) - CUDA 13.5 libraries\nUbuntu x64 (ROCm 10.0)\nUbuntu x64 (OpenVINO)\nUbuntu x64 (SYCL FP32)\nUbuntu x64 (SYCL FP16)\nLinux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide\nAndroid:\nAndroid arm64 (CPU)\nAndroid arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide\nWindows:\nWindows x64 (CPU)\nWindows arm64 (CPU)\nWindows arm64 (OpenCL Adreno)\nWindows x64 (CUDA 12) - CUDA 12.4 DLLs\nWindows x64 (CUDA 13) - CUDA 13.5 DLLs\nWindows arm64 (CUDA 13) - CUDA 13.5 DLLs\nWindows x64 (Vulkan)\nWindows arm64 (Vulkan)\nWindows x64 (OpenVINO)\nWindows x64 (SYCL)\nWindows x64 (ROCm 10.0)\nopenEuler:\nDISABLED\nopenEuler x86 (310p)\nopenEuler x86 (910b, ACL Graph)\nopenEuler aarch64 (310p)\nopenEuler aarch64 (910b, ACL Graph)\nUI:\nUI",
+            "lead": "ggml : add CONCAT backward pass (#32151)\nEach input's gradient is a view of the output gradient at its offset along dim, made contiguous.\nMark a and b as params so grad mode checks the op, with grad_nmax raised to 40000 to keep the default shapes. The output is weighted by random values in [1, 2], since with a plain sum every gradient is 1 and a wrong offset would still pass. Transposed-b cases are not grad checked, they only cover the forward.",
+            "chars": 1827,
+            "shown": 1827,
+            "truncated": false
+          },
+          "quality": 8,
+          "score": 20.42,
+          "category": "hardware",
+          "subcategory": "gpu",
+          "practical": 1,
+          "slug": "33bfa129c58c",
+          "action": 3,
+          "rank": 12.8,
+          "tags": [
+            "local",
+            "tutorial"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "local",
+      "label": "本地开源",
+      "items": [
+        {
+          "sourceId": "lcz-llm",
+          "sourceName": "抡锤者 模型部署讨论",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": true,
+          "declaredCategory": "local",
+          "categories": [],
+          "author": "王二蛋",
+          "id": "3376",
+          "title": "英伟达L40 单卡装过 7 个本地模型，从 275 到 25 t/s， 差在哪",
+          "url": "https://lcz.me/topic/3376",
+          "published": "2026-11-28T10:12:12.999Z",
+          "summary": "硬件：NVIDIA L40 单卡（46 GB，Ada sm_89，驱动 535.161.08），8 核 / 64 GiB 容器 系统：Ubuntu 22.04LTS（内核 5.15.0，GCC 11.4，CUDA 12.1） 收录范围：全部在这张卡上实际部署并测过的模型，轮流独占，一次一个跑 写在前面 这张卡我先后装过七个模型。引擎不同、量化不同、架构也不同，所以谈不上同一基准下的横评，就是把各自跑出来的数据摆在一起，看差异落在哪。非严谨测评，就是记录自己的折腾过程。目前综合使用下来，做主力的本地模型就是Qwen3.8 Flash-Next IQ2_XS了，用着挺好的。",
+          "metrics": {
+            "points": 0,
+            "comments": 3,
+            "views": 62
+          },
+          "excellent": true,
+          "content": {
+            "html": "<blockquote><p>硬件：NVIDIA L40 单卡（46 GB，Ada sm_89，驱动 535.161.08），8 核 / 64 GiB 容器<br>系统：Ubuntu 22.04LTS（内核 5.15.0，GCC 11.4，CUDA 12.1）<br>收录范围：全部在这张卡上实际部署并测过的模型，轮流独占，一次一个跑</p></blockquote>\n<h3>写在前面</h3>\n<p>这张卡我先后装过七个模型。引擎不同、量化不同、架构也不同，所以谈不上同一基准下的横评，就是把各自跑出来的数据摆在一起，看差异落在哪。非严谨测评，就是记录自己的折腾过程。目前综合使用下来，做主力的本地模型就是Qwen3.8 Flash-Next IQ2_XS了，用着挺好的。</p>\n<p>按引擎路线分四组：</p>\n<table><thead><tr><th>路线</th><th>模型</th><th>引擎</th></tr></thead><tbody><tr><td>专用引擎</td><td>Flash-Next IQ2_XS / IQ3_XXS</td><td>Strata 0.1.58</td></tr><tr><td>通用 LLM 引擎</td><td>Qwen3.6-35B-A3B-AWQ / Qwen3.8-27B-FP8</td><td>vLLM</td></tr><tr><td>轻量通用引擎</td><td>gpt-oss-20b / Inkling 2 Mini</td><td>llama.cpp</td></tr><tr><td>超显存 MoE 引擎</td><td>Qwen3.8（MoE4All）</td><td>MoE4All 1.3.0</td></tr></tbody></table>\n<p>先说结论：<strong>单流速度差了 11 倍，但其中一半差距是 MTP（投机解码）开没开造成的，不是模型本身的锅。</strong></p>\n<hr><h3>一、部署配置一览</h3>\n<table><thead><tr><th>模型</th><th>引擎</th><th>量化</th><th>总参 / 激活</th><th>上下文</th><th>显存</th><th>视觉</th><th>MTP</th></tr></thead><tbody><tr><td>Flash-Next IQ2_XS</td><td>Strata 0.1.58</td><td>IQ2_XS（2.5 bpw）</td><td>176B / 6B</td><td>256K</td><td>38.6 GB</td><td>无</td><td><strong>开</strong>（spec=8 / max=6，接受率 66.0%）</td></tr><tr><td>Flash-Next IQ3_XXS</td><td>Strata 0.1.58</td><td>IQ3_XXS（约 3 bpw）</td><td>176B / 6B</td><td>192K</td><td>40.3 GB</td><td>无</td><td><strong>开</strong>（spec=8 / max=6，接受率 73.8%）</td></tr><tr><td>Qwen3.6-35B-A3B-AWQ</td><td>vLLM</td><td>AWQ</td><td>35B / 3B</td><td>128K</td><td>29.7 GB</td><td>无</td><td>未记录</td></tr><tr><td>Qwen3.8-27B-FP8</td><td>vLLM</td><td>FP8</td><td>27B / 27B（dense）</td><td>128K</td><td>44.1 GB</td><td>无</td><td><strong>关</strong>（默认禁用，见第三节）</td></tr><tr><td>gpt-oss-20b</td><td>llama.cpp</td><td>MXFP4（原生）</td><td>21B / 3.6B</td><td>128K</td><td>12.3 GB</td><td>—</td><td>未记录</td></tr><tr><td>Inkling 2 Mini</td><td>llama.cpp</td><td>IQ4_NL + q4_0 KV</td><td>26.4B / 3.4B</td><td>128K</td><td>26.1 GB</td><td>可挂，默认关</td><td><strong>无法开</strong>（Ada 上 DSpark 必崩）</td></tr><tr><td>Qwen3.8（MoE4All）</td><td>MoE4All 1.3.0</td><td>4.27 bpw</td><td>176B / 6B</td><td>32K 稳 / 128K 可起</td><td>43.2 GB</td><td>有</td><td>未启用（需额外 drafter gguf）</td></tr></tbody></table>\n<p><strong>架构差异</strong>其实比参数差异重要：dense 的 27B 每 token 要动全部 27B 参数；而 MoE 的 Flash-Next 虽然总参 176B，每 token 只激活 6B。<strong>激活量比总参数更能解释速度。</strong></p>\n<p><img src=\"https://upload.lcz.me/uploads/e8f5ff89-6d25-4862-b5c4-ed151ca40a75.jpeg\" alt=\"\" loading=\"lazy\"></p>\n<hr><h3>二、单流 decode 速度</h3>\n<table><thead><tr><th>模型</th><th>decode</th><th>MTP</th><th>口径</th></tr></thead><tbody><tr><td>Flash-Next IQ2_XS</td><td>275.8 t/s</td><td>开</td><td>1K，3 跑中位</td></tr><tr><td>Flash-Next IQ3_XXS</td><td>204.8 t/s</td><td>开</td><td>1K，3 跑中位</td></tr><tr><td>gpt-oss-20b</td><td>173.6 t/s</td><td>未记录</td><td>短 prompt，256 tok</td></tr><tr><td>Qwen3.6-35B-A3B-AWQ</td><td>约 120 t/s</td><td>未记录</td><td>vLLM 单点</td></tr><tr><td>Inkling 2 Mini</td><td>73.9 t/s</td><td>无法开</td><td>1K，2 跑中位</td></tr><tr><td>Qwen3.8（MoE4All）</td><td>25.6 t/s</td><td>未启用</td><td>短 prompt，纯 decode</td></tr><tr><td>Qwen3.8-27B-FP8</td><td>25.4 t/s</td><td><strong>关</strong></td><td>单点</td></tr></tbody></table>\n<p>口径不完全一致（输出长度、跑数、prompt 长度都有差异），绝对数值只作数量级参考。</p>\n<p><img src=\"https://upload.lcz.me/uploads/b19d2450-f9d4-410b-8261-dbece2d9d02a.jpeg\" alt=\"\" loading=\"lazy\"></p>\n<p>更要命的是<strong>MTP 状态不一致，速度不能直接横比</strong>，下一节单独说。</p>\n<hr><h3>三、MTP 投机解码：开 / 关 / 开不了</h3>\n<p>这张表里的 decode 数字，有的带投机解码，有的是纯 decode，必须先分开看：</p>\n<table><thead><tr><th>模型</th><th>状态</th><th>说明</th></tr></thead><tbody><tr><td>Flash-Next IQ2_XS / IQ3_XXS</td><td><strong>开</strong></td><td>dflash2，spec=8 / mtp_max=6，接受率 66.0% / 73.8%。275.8 / 204.8 t/s 都是加速后的数字</td></tr><tr><td>Qwen3.8-27B-FP8</td><td><strong>关</strong>（默认）</td><td>历史记录：开启可从 17.3 → 50.6 t/s（2.93×），但曾有一次约 13K agent turn 输出退化</td></tr><tr><td>Inkling 2 Mini</td><td><strong>无法开</strong></td><td>DSpark 走 FlashInfer 的 CuTe-DSL kernel，要求 SM90+；L40 是 sm_89，调用即<code>cudaErrorUnknown</code>。<strong>这是硬件门槛，不是配置问题</strong></td></tr><tr><td>MoE4All</td><td>未启用</td><td>需要额外 drafter gguf；25.6 t/s 是纯 decode 无投机基线</td></tr><tr><td>gpt-oss-20b / 35B-A3B-AWQ</td><td>未记录</td><td>原始数据没标，不推测</td></tr></tbody></table>\n<p><strong>这对结论影响很大：</strong></p>\n<ul><li>27B 的 25.4 t/s 是<strong>关掉 MTP</strong>的数字。带 MTP 时它测到过 50.6 t/s。所以它跟 MoE4All 并列垫底，有一部分是自己放弃 2.93 倍加速造成的，不全怪 dense 架构。</li><li>反过来，Flash-Next 的 275.8 t/s 是<strong>开着 MTP</strong>的。两边都关掉投机，差距会明显缩小。</li><li>所以这张表比的是「各模型实际部署配置下的表现」，不是「同等条件的纯 decode 能力」。</li></ul>\n<h3>补测：27B 开 MTP 的实测</h3>\n<p>为了验证历史上那条退化记录，这次实际切到 27B，用<code>--speculative-config '{\"method\":\"mtp\",\"num_speculative_tokens\":1}'</code>启动，进程参数确认 MTP 生效（Resolved architecture: Qwen3_5MTP）。</p>\n<table><thead><tr><th>场景</th><th>样本</th><th>decode</th><th>TTFT</th><th>结果</th></tr></thead><tbody><tr><td>短请求（算术/代码/推理）</td><td>6 跑</td><td><strong>40.9–43.9 t/s</strong>（中位约 42）</td><td>0.29–0.31 s</td><td>全部<code>finish=stop</code>，正文非空、无重复、无畸形标签</td></tr><tr><td>13K 上下文总结</td><td>3 跑</td><td>24.8–25.8 t/s</td><td>11.96–12.31 s</td><td>三次都给出有意义的中文总结，无退化</td></tr></tbody></table>\n<p><strong>修正三条：</strong></p>\n<ol><li><strong>提速确认</strong>：短请求从关 MTP 的 25.4 提到约 42 t/s（约 1.65×）。历史那个 50.6 是不同输出长度/负载下的数字，不能和这次直接比。</li><li><strong>退化没复现</strong>：这次 9 个请求（6 短 + 3 长）全部正常，<code>content</code>非空、无逐字重复、无畸形标签。历史那次可能是特定上下文下的偶发问题。</li><li><strong>长上下文没收益</strong>：13K 档开 MTP 只有 24.8–25.8，和关 MTP 的 25.4 基本持平——投机解码在长上下文下不划算，和「draft 层增加 prefill 开销」的观察一致。</li></ol>\n<p>所以原来「开了必退化」的说法太绝对。更准确的是：<strong></strong></p>",
+            "text": "硬件：NVIDIA L40 单卡（46 GB，Ada sm_89，驱动 535.161.08），8 核 / 64 GiB 容器\n系统：Ubuntu 22.04LTS（内核 5.15.0，GCC 11.4，CUDA 12.1）\n收录范围：全部在这张卡上实际部署并测过的模型，轮流独占，一次一个跑\n写在前面\n这张卡我先后装过七个模型。引擎不同、量化不同、架构也不同，所以谈不上同一基准下的横评，就是把各自跑出来的数据摆在一起，看差异落在哪。非严谨测评，就是记录自己的折腾过程。目前综合使用下来，做主力的本地模型就是Qwen3.8 Flash-Next IQ2_XS了，用着挺好的。\n按引擎路线分四组：\n路线\n模型\n引擎\n专用引擎\nFlash-Next IQ2_XS / IQ3_XXS\nStrata 0.1.58\n通用 LLM 引擎\nQwen3.6-35B-A3B-AWQ / Qwen3.8-27B-FP8\nvLLM\n轻量通用引擎\ngpt-oss-20b / Inkling 2 Mini\nllama.cpp\n超显存 MoE 引擎\nQwen3.8（MoE4All）\nMoE4All 1.3.0\n先说结论： 单流速度差了 11 倍，但其中一半差距是 MTP（投机解码）开没开造成的，不是模型本身的锅。\n一、部署配置一览\n模型\n引擎\n量化\n总参 / 激活\n上下文\n显存\n视觉\nMTP\nFlash-Next IQ2_XS\nStrata 0.1.58\nIQ2_XS（2.5 bpw）\n176B / 6B\n256K\n38.6 GB\n无\n开 （spec=8 / max=6，接受率 66.0%）\nFlash-Next IQ3_XXS\nStrata 0.1.58\nIQ3_XXS（约 3 bpw）\n176B / 6B\n192K\n40.3 GB\n无\n开 （spec=8 / max=6，接受率 73.8%）\nQwen3.6-35B-A3B-AWQ\nvLLM\nAWQ\n35B / 3B\n128K\n29.7 GB\n无\n未记录\nQwen3.8-27B-FP8\nvLLM\nFP8\n27B / 27B（dense）\n128K\n44.1 GB\n无\n关 （默认禁用，见第三节）\ngpt-oss-20b\nllama.cpp\nMXFP4（原生）\n21B / 3.6B\n128K\n12.3 GB\n—\n未记录\nInkling 2 Mini\nllama.cpp\nIQ4_NL + q4_0 KV\n26.4B / 3.4B\n128K\n26.1 GB\n可挂，默认关\n无法开 （Ada 上 DSpark 必崩）\nQwen3.8（MoE4All）\nMoE4All 1.3.0\n4.27 bpw\n176B / 6B\n32K 稳 / 128K 可起\n43.2 GB\n有\n未启用（需额外 drafter gguf）\n架构差异 其实比参数差异重要：dense 的 27B 每 token 要动全部 27B 参数；而 MoE 的 Flash-Next 虽然总参 176B，每 token 只激活 6B。 激活量比总参数更能解释速度。\n二、单流 decode 速度\n模型\ndecode\nMTP\n口径\nFlash-Next IQ2_XS\n275.8 t/s\n开\n1K，3 跑中位\nFlash-Next IQ3_XXS\n204.8 t/s\n开\n1K，3 跑中位\ngpt-oss-20b\n173.6 t/s\n未记录\n短 prompt，256 tok\nQwen3.6-35B-A3B-AWQ\n约 120 t/s\n未记录\nvLLM 单点\nInkling 2 Mini\n73.9 t/s\n无法开\n1K，2 跑中位\nQwen3.8（MoE4All）\n25.6 t/s\n未启用\n短 prompt，纯 decode\nQwen3.8-27B-FP8\n25.4 t/s\n关\n单点\n口径不完全一致（输出长度、跑数、prompt 长度都有差异），绝对数值只作数量级参考。\n更要命的是 MTP 状态不一致，速度不能直接横比 ，下一节单独说。\n三、MTP 投机解码：开 / 关 / 开不了\n这张表里的 decode 数字，有的带投机解码，有的是纯 decode，必须先分开看：\n模型\n状态\n说明\nFlash-Next IQ2_XS / IQ3_XXS\n开\ndflash2，spec=8 / mtp_max=6，接受率 66.0% / 73.8%。275.8 / 204.8 t/s 都是加速后的数字\nQwen3.8-27B-FP8\n关 （默认）\n历史记录：开启可从 17.3 → 50.6 t/s（2.93×），但曾有一次约 13K agent turn 输出退化\nInkling 2 Mini\n无法开\nDSpark 走 FlashInfer 的 CuTe-DSL kernel，要求 SM90+；L40 是 sm_89，调用即 cudaErrorUnknown 。 这是硬件门槛，不是配置问题\nMoE4All\n未启用\n需要额外 drafter gguf；25.6 t/s 是纯 decode 无投机基线\ngpt-oss-20b / 35B-A3B-AWQ\n未记录\n原始数据没标，不推测\n这对结论影响很大：\n27B 的 25.4 t/s 是 关掉 MTP 的数字。带 MTP 时它测到过 50.6 t/s。所以它跟 MoE4All 并列垫底，有一部分是自己放弃 2.93 倍加速造成的，不全怪 dense 架构。\n反过来，Flash-Next 的 275.8 t/s 是 开着 MTP 的。两边都关掉投机，差距会明显缩小。\n所以这张表比的是「各模型实际部署配置下的表现」，不是「同等条件的纯 decode 能力」。\n补测：27B 开 MTP 的实测\n为了验证历史上那条退化记录，这次实际切到 27B，用 --speculative-config '{\"method\":\"mtp\",\"num_speculative_tokens\":1}' 启动，进程参数确认 MTP 生效（Resolved architecture: Qwen3_5MTP）。\n场景\n样本\ndecode\nTTFT\n结果\n短请求（算术/代码/推理）\n6 跑\n40.9–43.9 t/s （中位约 42）\n0.29–0.31 s\n全部 finish=stop ，正文非空、无重复、无畸形标签\n13K 上下文总结\n3 跑\n24.8–25.8 t/s\n11.96–12.31 s\n三次都给出有意义的中文总结，无退化\n修正三条：\n提速确认 ：短请求从关 MTP 的 25.4 提到约 42 t/s（约 1.65×）。历史那个 50.6 是不同输出长度/负载下的数字，不能和这次直接比。\n退化没复现 ：这次 9 个请求（6 短 + 3 长）全部正常， content 非空、无逐字重复、无畸形标签。历史那次可能是特定上下文下的偶发问题。\n长上下文没收益 ：13K 档开 MTP 只有 24.8–25.8，和关 MTP 的 25.4 基本持平——投机解码在长上下文下不划算，和「draft 层增加 prefill 开销」的观察一致。\n所以原来「开了必退化」的说法太绝对。更准确的是：",
+            "lead": "硬件：NVIDIA L40 单卡（46 GB，Ada sm_89，驱动 535.161.08），8 核 / 64 GiB 容器\n系统：Ubuntu 22.04LTS（内核 5.15.0，GCC 11.4，CUDA 12.1）\n收录范围：全部在这张卡上实际部署并测过的模型，轮流独占，一次一个跑\n写在前面\n这张卡我先后装过七个模型。引擎不同、量化不同、架构也不同，所以谈不上同一基准下的横评，就是把各自跑出来的数据摆在一起，看差异落在哪。非严谨测评，就是记录自己的折腾过程。目前综合使用下来，做主力的本地模型就是Qwen3.8 Flash-Next IQ2_XS了，用着挺好的。",
+            "chars": 6730,
+            "shown": 3192,
+            "truncated": true
+          },
+          "quality": 12,
+          "score": 21.13,
+          "category": "local",
+          "subcategory": "quantize",
+          "practical": 5,
+          "slug": "5dfa738b6c92",
+          "action": 9,
+          "rank": 26.4,
+          "tags": [
+            "local",
+            "lowspec",
+            "benchmark",
+            "tutorial"
+          ]
+        },
+        {
+          "sourceId": "gh-ecosystem",
+          "sourceName": "GitHub 检索（生态项目更新）",
+          "lang": "en",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "oss",
+          "categories": [
+            "ai-coding",
+            "ai-gateway",
+            "ai-tools",
+            "astrbot",
+            "claude-code"
+          ],
+          "author": "iffiX",
+          "id": "1351080076",
+          "title": "iffiX/neutrino",
+          "url": "https://github.com/iffiX/neutrino",
+          "published": "2026-11-28T18:20:05.000Z",
+          "summary": "微子·中枢 neutrinohub.net 一键部署 AI 应用，走到哪用到哪 写代码的 AI 工具、AI 助手、聊天机器人、本地大模型，点一下装到自己电脑上，一个 AI 网关管好密钥和模型，手机和笔记本随时打开。 编辑器、远程桌面、终端和文件也都有。Windows、macOS、Linux 都能安装，开源免费，MIT 许可证。 简体中文 · [English](README.en.md) ![许可证 MIT ](LICENSE) ![版本 ](https://github.com/iffiX/neutrino/releases) ![国内版 ](https://cnb.cool/iffi-X/neutrino/-/releases…",
+          "metrics": {
+            "stars": 153
+          },
+          "content": {
+            "html": "<p>&lt;div align=\"center\"&gt;</p>\n<p>&lt;img src=\"images/icons/neutrino_hub/wolf_open.svg\" width=\"128\" alt=\"微子中枢\" /&gt;</p>\n<h3>微子·中枢</h3>\n<p><a href=\"https://neutrinohub.net/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">neutrinohub.net</a></p>\n<p><strong>一键部署 AI 应用，走到哪用到哪</strong></p>\n<p>写代码的 AI 工具、AI 助手、聊天机器人、本地大模型，点一下装到自己电脑上，一个 AI 网关管好密钥和模型，手机和笔记本随时打开。</p>\n<p>编辑器、远程桌面、终端和文件也都有。Windows、macOS、Linux 都能安装，开源免费，MIT 许可证。</p>\n<p><strong>简体中文</strong>· [English](README.en.md)</p>\n<p><a href=\"https://img.shields.io/badge/%E8%AE%B8%E5%8F%AF%E8%AF%81-MIT-0a0e14?labelColor=0a0e14&amp;color=22d3ee\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">![许可证 MIT</a>](LICENSE)<a href=\"https://img.shields.io/github/v/release/iffiX/neutrino?label=%E7%89%88%E6%9C%AC&amp;labelColor=0a0e14&amp;color=22d3ee\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">![版本</a>](https://github.com/iffiX/neutrino/releases)<a href=\"https://img.shields.io/badge/%E5%9B%BD%E5%86%85%E7%89%88-CNB-0a0e14?labelColor=0a0e14&amp;color=22d3ee\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">![国内版</a>](https://cnb.cool/iffi-X/neutrino/-/releases)<a href=\"https://img.shields.io/badge/%E7%B3%BB%E7%BB%9F-Linux%20%C2%B7%20macOS%20%C2%B7%20Windows%20%C2%B7%20Android%20%C2%B7%20iOS-0a0e14?labelColor=0a0e14&amp;color=a78bfa\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">![系统</a>](https://neutrinohub.net/reference/platforms)<a href=\"https://img.shields.io/badge/LINUX%20DO-%E8%AE%A8%E8%AE%BA-0a0e14?labelColor=0a0e14&amp;color=ffb003&amp;logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgdmlld0JveD0iMCAwIDEyMCAxMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI%2BPGNsaXBQYXRoIGlkPSJhIj48Y2lyY2xlIGN4PSI2MCIgY3k9IjYwIiByPSI0NyIvPjwvY2xpcFBhdGg%2BPGNpcmNsZSBmaWxsPSIjZjBmMGYwIiBjeD0iNjAiIGN5PSI2MCIgcj0iNTAiLz48cmVjdCBmaWxsPSIjMWMxYzFlIiBjbGlwLXBhdGg9InVybCgjYSkiIHg9IjEwIiB5PSIxMCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSIzMCIvPjxyZWN0IGZpbGw9IiNmMGYwZjAiIGNsaXAtcGF0aD0idXJsKCNhKSIgeD0iMTAiIHk9IjQwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjQwIi8%2BPHJlY3QgZmlsbD0iI2ZmYjAwMyIgY2xpcC1wYXRoPSJ1cmwoI2EpIiB4PSIxMCIgeT0iODAiIHdpZHRoPSIxMDAiIGhlaWdodD0iMzAiLz48L3N2Zz4%3D\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">![LINUX DO</a>](https://linux.do/t/topic/3221736) &lt;!-- scan: allow --&gt;<a href=\"https://img.shields.io/badge/V2EX-%E8%AE%A8%E8%AE%BA-0a0e14?labelColor=0a0e14&amp;color=e5e7eb&amp;logo=v2ex&amp;logoColor=white\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">![V2EX</a>](https://www.v2ex.com/t/1255790)</p>\n<p><a href=\"https://img.shields.io/github/actions/workflow/status/iffiX/neutrino/ci.yml?branch=main&amp;label=CI&amp;labelColor=0a0e14\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">![CI</a>](https://github.com/iffiX/neutrino/actions/workflows/ci.yml)<a href=\"https://img.shields.io/github/actions/workflow/status/iffiX/neutrino/release.yml?label=release%20build&amp;labelColor=0a0e14\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">![Release build</a>](https://github.com/iffiX/neutrino/actions/workflows/release.yml)<a href=\"https://img.shields.io/codecov/c/github/iffiX/neutrino/main?label=coverage&amp;labelColor=0a0e14&amp;logo=codecov&amp;logoColor=white\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">![Coverage</a>](https://app.codecov.io/gh/iffiX/neutrino)<a href=\"https://img.shields.io/codacy/grade/ea9cdd7af936477a81201e0f0b25246c?label=code%20quality&amp;labelColor=0a0e14\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">![Code quality</a>](https://app.codacy.com/gh/iffiX/neutrino/dashboard?utm_source=gh&amp;utm_medium=referral&amp;utm_content=&amp;utm_campaign=Badge_grade)<a href=\"https://img.shields.io/endpoint?url=https://neutrinohub.net/badges/tests.json&amp;labelColor=0a0e14\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">![Tests</a>](https://github.com/iffiX/neutrino/actions/workflows/ci.yml)<a href=\"https://img.shields.io/github/languages/code-size/iffiX/neutrino?label=code&amp;labelColor=0a0e14&amp;color=a78bfa\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">![Code size</a>](https://github.com/iffiX/neutrino)</p>\n<p><strong><a href=\"https://neutrinohub.net/demo/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">在线演示</a></strong>·<strong><a href=\"https://neutrinohub.net/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">安装及文档</a></strong>·<a href=\"https://github.com/iffiX/neutrino/releases/latest\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">下载</a></p>\n<p>&lt;img src=\"images/web/readme_hero_zh.webp\" width=\"100%\" alt=\"电脑上的面板总览，手机上的应用列表\" /&gt;</p>\n<p>&lt;/div&gt;</p>\n<h4>微子·中枢是什么</h4>\n<p>微子·中枢是一个跨主流操作系统部署 AI 时代应用的面板，加一套安全的外部访问路由，给程序员和学生用。</p>\n<ul><li><strong>面板</strong>：安装在你已有的 Windows、macOS 或 Linux 电脑上。应用点一下就能安装，全都在一个面板里管理。</li><li><strong>外部访问路由</strong>：手机扫一次码，在外面也能打开这些应用。有 6 种连接方式，设备和中枢之间全程加密。</li></ul>\n<p><strong>部署在自己电脑上就行，不需要域名，也不需要额外的服务器。</strong></p>\n<p>想在手机上接着跑 Claude Code，在宿舍打开实验室的 VS Code，再拉同学一起改论文，每样软件都不用再配环境、开端口。</p>\n<p>&lt;img src=\"images/web/one_scan.webp\" width=\"100%\" alt=\"小狼把六样服务聚到手中的光球里\" /&gt;</p>\n<h4>一键部署</h4>\n<p>AI 工具更新快、配置多，有些默认源安装还慢。微子中枢点一下就帮你装好，模型和密钥统一从 AI 网关来；大家需要的新工具，微子中枢很快就跟上。Windows、macOS、Linux 同样的办法部署，多个下载源自动选最快的。</p>\n<p>&lt;img src=\"images/web/readme_deploy_zh.webp\" width=\"100%\" alt=\"小狼坐在方块上用电脑，身后是面板的应用页\" /&gt;</p>\n<p>| 用途 | 应用 | | --- | --- | | AI agent |<a href=\"https://neutrinohub.net/deploy/claude_code\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Claude Code</a>、<a href=\"https://neutrinohub.net/deploy/codex\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Codex</a>、<a href=\"https://neutrinohub.net/deploy/opencode\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">OpenCode</a>| | AI harness |<a href=\"https://neutrinohub.net/deploy/cloudcli\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">CloudCLI</a>、<a href=\"https://neutrinohub.net/deploy/codeg\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Codeg</a>| | AI 助手 |<a href=\"https://neutrinohub.net/deploy/hermes_webui\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Hermes WebUI</a>| | AI 聊天机器人 |<a href=\"https://neutrinohub.net/deploy/astrbot\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">AstrBot</a>| | AI 本地模型 |<a href=\"https://neutrinohub.net/deploy/ollama\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ollama</a>| | AI 生图和视频 |<a href=\"https://neutrinohub.net/deploy/comfyui\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">ComfyUI</a>| | AI 编辑器 |<a href=\"https://neutrinohub.net/deploy/vscode\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">VS Code</a>、<a href=\"https://neutrinohub.net/deploy/code_server\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">code-server</a>| | AI 写论文 |<a href=\"https://neutrinohub.net/deploy/ayakaleaf\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Ayakaleaf</a>| | AI 笔记 |<a href=\"https://neutrinohub.net/deploy/siyuan\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">思源笔记</a>| | 放代码 |<a href=\"https://neutrinohub.net/deploy/gitea\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Gitea</a>| | 系统访问 |<a href=\"https://neutrinohub.net/deploy/remote_desktop\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">远程桌面</a>、<a href=\"https://neutrinohub.net/deploy/file_share\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">文件共享</a>、<a href=\"https://neutrinohub.net/deploy/terminal\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">终端</a>、<a href=\"https://neutrinohub.net/deploy/ssh\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">SSH</a>| | 跑容器 |<a href=\"https://neutrinohub.net/deploy/containers\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">容器</a>|</p>\n<p>列表里没有的也能用：自己声明服务或者用容器跑，端口会自动变成应用。</p>\n<h4>到处使用</h4>\n<p>手机扫一次码，地铁、高铁、飞机 Wi-Fi、国外都能用电脑上的软件。6 种连接方式，智能路由自动使用最快的一条\\*。</p>\n<p>&lt;img src=\"images/web/readme_ways_zh.webp\" width=\"100%\" alt=\"电脑和手机之间有六种连接方式，走最快的一条\" /&gt;</p>\n<p>客户端有 Windows、macOS、Linux、Android 和 iOS 版，应用、桌面、终端、文件和 SSH 都配好了。</p>\n<p>\\* NetBird 和 EasyTier 要手动选择，其余的自动。iOS 不包含这两种，你要用美区账号安装它们的 App。</p>\n<h4>任意分享</h4>\n<p>任何网页应用，点“分享”得到一个链接。同学用浏览器打开就能用，什么都不用安装。到期失效，也能随时收回。</p>\n<p>&lt;img src=\"images/web/readme_share_zh.webp\" width=\"100%\" alt=\"左边是分享弹窗，中间两只小狼坐在桌边，右边是同学浏览器里打开的 Ayakaleaf\" /&gt;</p>\n<p><strong>分享地址 share.neutrinohub.net 只提供一个不到 40 KB 的静态客户端，不会另外连到微子的服务器。访客的浏览器和中枢之间全程加密，第三方线路看不到内容。你也可以自己部署这个页面的镜像。</strong></p>\n<h4>高级功能</h4>\n<ul><li><strong><a href=\"https://neutrinohub.net/hub/ai_gateway\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">AI 网关</a></strong>：AI 提供方在中枢上配一次，每台电脑上的 Claude Code、Codex 都能用。</li><li><strong><a href=\"https://neutrinohub.net/hub/agents#%E5%94%A4%E9%86%92\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">远程唤醒</a></strong>：在面板上一键唤醒局域网里关机的电脑。</li><li><strong><a href=\"https://neutrinohub.net/hub/agents\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">多机管理</a></strong>：家里、实验室的多台电脑都加进来，CPU、内存、显卡、温度一眼看清。</li><li><strong><a href=\"https://neutrinohub.net/hub/clients#%E6%9D%83%E9%99%90%E7%A7%8D%E7%B1%BB\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">客户端权限</a></strong>：每个客户端能用哪些应用、终端、文件、远程桌面，分别开关，可以细到每个应用。</li><li><strong><a href=\"https://neutrinohub.net/hub/what_it_holds#%E4%BF%9D%E5%AD%98%E7%9A%84%E6%95%B0%E6%8D%AE\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">凭据保险库</a></strong>：文件共享、远程桌面的密码和 SSH 密钥由中枢生成和保管。</li><li><strong><a href=\"https://neutrinohub.net/access/terminal#%E8%BF%90%E8%A1%8C%E4%B8%80%E6%9D%A1%E5%91%BD%E4%BB%A4\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">远程执行</a></strong>：<code>nclient terminal exec</code>在别的电脑上跑命令，脚本和 AI agent 都能用。</li></ul>\n<h4>为什么选它</h4>\n<ul><li><strong>全能</strong>：应用、桌面、终端、文件、SSH。点一下就能安装，客户端里都配好了。</li><li><strong>安全</strong>：设备和中枢之间全程加密，第三方线路看不到内容。所有应用都受微子服务端口严格保护。只有你许可的人才能访问。</li><li><strong>自主</strong>：不用买服务器、域名和专用设备。微子不提供公开服务器，分享也只连你的中枢。</li><li><strong>免费</strong>：管理多台电脑，局域网唤醒，全球连接，不限用户数，不限流量。全部免费。</li></ul>\n<p>| | 微子·中枢 | 1Panel | Cosmos | Olares | | --- | --- | --- | --- | --- | | 系统支持 | ✅ 三系统 | ❌ 仅 Linux | ❌ 仅 Linux | ❌ 仅它的系统 | | 一键安装应用 | ✅ 有 | ✅ 有 | ✅ 有 | ✅ 有 | | 远程桌面 | ✅ 配好了 | ❌ 没有 | ❌ 自己安装 | ❌ 自己安装 | | 文件盘挂载 | ✅ 配好了 | ❌ 只有网页 | ❌ 付费版 | ❌ 局域网 | | 应用分享 | ✅ 一个链接 | ❌ 没有 | ❌ 要域名 | ❌ 只有文件 | | 传输加密 | ✅ 有 | ❌ 自己配 | ❌ 要域名 | ✅ 有 | | 扫描有指纹 | ✅ 没有 | ❌ 有 | ❌ 有 | ❌ 有 | | 连接方式 | ✅ 6 种 | ❌ 自己开端口 | ❌ 自己开端口 | ❌ 3 种 | | 全球连接 | ✅ 免费 | ❌ 自己开端口 | ❌ 自己开端口 | ❌ $19.8/月 | | 付费档 | ✅ 没有 | ❌ 有 | ❌ 有 | ❌ 有 |</p>\n<p>价格和限制来自 2026-10-30 各家页面。第三方服务以它们的带宽和账号规定为准。<a href=\"https://neutrinohub.net/compare\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">完整对比</a></p>\n<h4>安装</h4>\n<p>电脑安装中枢，手机安装 App，扫一次码就能用。</p>\n<ol><li>在要远程访问的电脑上安装中枢，安装后搜索<strong>Neutrino Hub</strong>并打开，跟着浏览器里的向导走。</li></ol>\n<p><a href=\"https://img.shields.io/badge/Windows%20%C2%B7%20macOS%20%C2%B7%20Linux-%E4%B8%8B%E8%BD%BD-22d3ee?style=for-the-badge&amp;labelColor=0a0e14&amp;color=22d3ee\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">![下载：Windows、macOS、Linux</a>](https://github.com/iffiX/neutrino/releases/latest)</p>\n<p>&lt;img src=\"images/web/search_hub_zh.svg\" width=\"100%\" alt=\"搜索 Neutrino Hub 并打开\" /&gt;</p>\n<ol><li>在手机或另一台电脑上安装客户端。iPhone 要<a href=\"https://neutrinohub.net/access/ios\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">自己签名</a>。</li></ol>\n<p><a href=\"https://img.shields.io/badge/Windows%20%C2%B7%20macOS%20%C2%B7%20Linux%20%C2%B7%20Android%20%C2%B7%20iPhone-%E4%B8%8B%E8%BD%BD-22d3ee?style=for-the-badge&amp;labelColor=0a0e14&amp;color=22d3ee\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">![下载：Windows、macOS、Linux、Android、iPhone</a> ](https://github.com/iffiX/neutrino/releases/la…</p>",
+            "text": "微子·中枢\nneutrinohub.net\n一键部署 AI 应用，走到哪用到哪\n写代码的 AI 工具、AI 助手、聊天机器人、本地大模型，点一下装到自己电脑上，一个 AI 网关管好密钥和模型，手机和笔记本随时打开。\n编辑器、远程桌面、终端和文件也都有。Windows、macOS、Linux 都能安装，开源免费，MIT 许可证。\n简体中文 · [English](README.en.md)\n![许可证 MIT ](LICENSE) ![版本 ](https://github.com/iffiX/neutrino/releases) ![国内版 ](https://cnb.cool/iffi-X/neutrino/-/releases) ![系统 ](https://neutrinohub.net/reference/platforms) ![LINUX DO ](https://linux.do/t/topic/3221736) ![V2EX ](https://www.v2ex.com/t/1255790)\n![CI ](https://github.com/iffiX/neutrino/actions/workflows/ci.yml) ![Release build ](https://github.com/iffiX/neutrino/actions/workflows/release.yml) ![Coverage ](https://app.codecov.io/gh/iffiX/neutrino) ![Code quality ](https://app.codacy.com/gh/iffiX/neutrino/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade) ![Tests ](https://github.com/iffiX/neutrino/actions/workflows/ci.yml) ![Code size ](https://github.com/iffiX/neutrino)\n在线演示 · 安装及文档 · 下载\n微子·中枢是什么\n微子·中枢是一个跨主流操作系统部署 AI 时代应用的面板，加一套安全的外部访问路由，给程序员和学生用。\n面板 ：安装在你已有的 Windows、macOS 或 Linux 电脑上。应用点一下就能安装，全都在一个面板里管理。\n外部访问路由 ：手机扫一次码，在外面也能打开这些应用。有 6 种连接方式，设备和中枢之间全程加密。\n部署在自己电脑上就行，不需要域名，也不需要额外的服务器。\n想在手机上接着跑 Claude Code，在宿舍打开实验室的 VS Code，再拉同学一起改论文，每样软件都不用再配环境、开端口。\n一键部署\nAI 工具更新快、配置多，有些默认源安装还慢。微子中枢点一下就帮你装好，模型和密钥统一从 AI 网关来；大家需要的新工具，微子中枢很快就跟上。Windows、macOS、Linux 同样的办法部署，多个下载源自动选最快的。\n| 用途 | 应用 | | --- | --- | | AI agent | Claude Code 、 Codex 、 OpenCode | | AI harness | CloudCLI 、 Codeg | | AI 助手 | Hermes WebUI | | AI 聊天机器人 | AstrBot | | AI 本地模型 | Ollama | | AI 生图和视频 | ComfyUI | | AI 编辑器 | VS Code 、 code-server | | AI 写论文 | Ayakaleaf | | AI 笔记 | 思源笔记 | | 放代码 | Gitea | | 系统访问 | 远程桌面 、 文件共享 、 终端 、 SSH | | 跑容器 | 容器 |\n列表里没有的也能用：自己声明服务或者用容器跑，端口会自动变成应用。\n到处使用\n手机扫一次码，地铁、高铁、飞机 Wi-Fi、国外都能用电脑上的软件。6 种连接方式，智能路由自动使用最快的一条\\*。\n客户端有 Windows、macOS、Linux、Android 和 iOS 版，应用、桌面、终端、文件和 SSH 都配好了。\n\\* NetBird 和 EasyTier 要手动选择，其余的自动。iOS 不包含这两种，你要用美区账号安装它们的 App。\n任意分享\n任何网页应用，点“分享”得到一个链接。同学用浏览器打开就能用，什么都不用安装。到期失效，也能随时收回。\n分享地址 share.neutrinohub.net 只提供一个不到 40 KB 的静态客户端，不会另外连到微子的服务器。访客的浏览器和中枢之间全程加密，第三方线路看不到内容。你也可以自己部署这个页面的镜像。\n高级功能\nAI 网关 ：AI 提供方在中枢上配一次，每台电脑上的 Claude Code、Codex 都能用。\n远程唤醒 ：在面板上一键唤醒局域网里关机的电脑。\n多机管理 ：家里、实验室的多台电脑都加进来，CPU、内存、显卡、温度一眼看清。\n客户端权限 ：每个客户端能用哪些应用、终端、文件、远程桌面，分别开关，可以细到每个应用。\n凭据保险库 ：文件共享、远程桌面的密码和 SSH 密钥由中枢生成和保管。\n远程执行 ： nclient terminal exec 在别的电脑上跑命令，脚本和 AI agent 都能用。\n为什么选它\n全能 ：应用、桌面、终端、文件、SSH。点一下就能安装，客户端里都配好了。\n安全 ：设备和中枢之间全程加密，第三方线路看不到内容。所有应用都受微子服务端口严格保护。只有你许可的人才能访问。\n自主 ：不用买服务器、域名和专用设备。微子不提供公开服务器，分享也只连你的中枢。\n免费 ：管理多台电脑，局域网唤醒，全球连接，不限用户数，不限流量。全部免费。\n| | 微子·中枢 | 1Panel | Cosmos | Olares | | --- | --- | --- | --- | --- | | 系统支持 | ✅ 三系统 | ❌ 仅 Linux | ❌ 仅 Linux | ❌ 仅它的系统 | | 一键安装应用 | ✅ 有 | ✅ 有 | ✅ 有 | ✅ 有 | | 远程桌面 | ✅ 配好了 | ❌ 没有 | ❌ 自己安装 | ❌ 自己安装 | | 文件盘挂载 | ✅ 配好了 | ❌ 只有网页 | ❌ 付费版 | ❌ 局域网 | | 应用分享 | ✅ 一个链接 | ❌ 没有 | ❌ 要域名 | ❌ 只有文件 | | 传输加密 | ✅ 有 | ❌ 自己配 | ❌ 要域名 | ✅ 有 | | 扫描有指纹 | ✅ 没有 | ❌ 有 | ❌ 有 | ❌ 有 | | 连接方式 | ✅ 6 种 | ❌ 自己开端口 | ❌ 自己开端口 | ❌ 3 种 | | 全球连接 | ✅ 免费 | ❌ 自己开端口 | ❌ 自己开端口 | ❌ $19.8/月 | | 付费档 | ✅ 没有 | ❌ 有 | ❌ 有 | ❌ 有 |\n价格和限制来自 2026-10-30 各家页面。第三方服务以它们的带宽和账号规定为准。 完整对比\n安装\n电脑安装中枢，手机安装 App，扫一次码就能用。\n在要远程访问的电脑上安装中枢，安装后搜索 Neutrino Hub 并打开，跟着浏览器里的向导走。\n![下载：Windows、macOS、Linux ](https://github.com/iffiX/neutrino/releases/latest)\n在手机或另一台电脑上安装客户端。iPhone 要 自己签名 。\n![下载：Windows、macOS、Linux、Android、iPhone ](https://github.com/iffiX/neutrino/releases/la…",
+            "lead": "微子·中枢\nneutrinohub.net\n一键部署 AI 应用，走到哪用到哪\n写代码的 AI 工具、AI 助手、聊天机器人、本地大模型，点一下装到自己电脑上，一个 AI 网关管好密钥和模型，手机和笔记本随时打开。\n编辑器、远程桌面、终端和文件也都有。Windows、macOS、Linux 都能安装，开源免费，MIT 许可证。\n简体中文 · [English](README.en.md)\n![许可证 MIT ](LICENSE) ![版本 ](https://github.com/iffiX/neutrino/releases) ![国内版 ](https://cnb.cool/iffi-X/neutrino/-/releases) ![系统 ](https://neutrinohub.net/reference/platforms) ![LINUX DO ](https://linux.do/t/topic/3221736) ![V2EX ](https://www.v2ex.com/t/1255790)",
+            "chars": 7211,
+            "shown": 4001,
+            "truncated": true
+          },
+          "quality": 9,
+          "score": 26,
+          "category": "local",
+          "subcategory": "weights",
+          "practical": 11,
+          "slug": "53010ce4a559",
+          "action": 10,
+          "rank": 25,
+          "tags": [
+            "local",
+            "agent",
+            "free",
+            "lowspec"
+          ]
+        },
+        {
+          "sourceId": "qbitai",
+          "sourceName": "量子位",
+          "title": "200亿美元…史上最贵AI自媒体",
+          "url": "https://www.qbitai.com/2026/11/513577.html",
+          "id": "https://www.qbitai.com/?p=513577",
+          "published": "2026-11-28T14:38:56.000Z",
+          "summary": "200亿美元…史上最贵AI自媒体 henry 2026-11-28 22:38:56 来源： 量子位 这可能是有史以来，ROI（投资回报率）最高的个人博客。 Jay 发自 凹非寺 量子位 | 公众号 QbitAI 200亿美元 。 这可能是有史以来，ROI（投资回报率）最高的个人博客。 作者叫 Chris Olah ，没有本科学位，没有博士头衔，甚至连大一都没读完就搞自媒体去了。。。 但如今，他是硅谷AI第一股—— Anthropic的联创 。 18岁从多伦多大学退学，此后，他拿着硅谷创投教父彼得·蒂尔（Peter Thiel）给的 10万美元「辍学奖金」 ，开始在个人网站colah.github.io上手搓机器学习科普文章。",
+          "content": {
+            "html": "&lt;!DOCTYPE html&gt;<div><div><div>&lt; img id=\"wx_img\" src=\"https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png\" width=\"400\" height=\"400\"&gt;</div></div></div>\n<div><h3>200亿美元…史上最贵AI自媒体</h3><div><span><img src=\"http://www.qbitai.com/wp-content/themes/liangziwei/imagesnew/head.jpg\" alt=\"\" loading=\"lazy\"><em><a href=\"https://www.qbitai.com/author/henry\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">henry</a></em></span><span>2026-11-28</span><span>22:38:56</span><span>来源：<a href=\"https://www.qbitai.com/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">量子位</a></span></div></div>\n<div><p>这可能是有史以来，ROI（投资回报率）最高的个人博客。</p></div>\n<blockquote><p>Jay 发自 凹非寺</p><p>量子位 | 公众号 QbitAI</p></blockquote>\n<p><strong>200亿美元</strong>。</p>\n<p>这可能是有史以来，ROI（投资回报率）最高的个人博客。</p>\n<p>作者叫<strong>Chris Olah</strong>，没有本科学位，没有博士头衔，甚至连大一都没读完就搞自媒体去了。。。</p>\n<p>但如今，他是硅谷AI第一股——<strong>Anthropic的联创</strong>。</p>\n<div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/563d37cdfc6c61e0a89a4db3598fe816.webp\" alt=\"\" loading=\"lazy\"></div>\n<p>18岁从多伦多大学退学，此后，他拿着硅谷创投教父彼得·蒂尔（Peter Thiel）给的<strong>10万美元「辍学奖金」</strong>，开始在个人网站colah.github.io上手搓机器学习科普文章。</p>\n<p>这些图文并茂的博客，火遍了全球各大顶级AI实验室。</p>\n<p>甚至连前谷歌二进制能力者<strong>Jeff Dean</strong>都曾亲自下场捞人，点名要招他当实习生。</p>\n<p>如今，随着Anthropic敲钟纳斯达克，Olah 身价一度超过200亿。</p>\n<p>而这位联合创始人的草莽故事，也开始在X病毒式传。</p>\n<p>原帖作者感慨万千地总结道：</p>\n<blockquote><p>零学位，仅仅是一个优秀的博客，就帮他搞定了这一切。</p></blockquote>\n<div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/2d89f73255008cd164fd28f551d5da88.webp\" alt=\"\" loading=\"lazy\"></div>\n<p>至于他的前Mentor——<strong>Jeff Dean</strong>——更是亲自下场转发这条热帖，在线认领这位昔日门徒：</p>\n<blockquote><p>祝贺我以前的实习生@ch402！</p></blockquote>\n<p>（我愿称姐夫为世上唯一能正面压制A➗之人😭）</p>\n<div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/7cdafe2309167eb02349b84e392db24d.webp\" alt=\"\" loading=\"lazy\"></div>\n<p>从用爱发电的AI自媒体人，到身价百亿的Anthropic联创——</p>\n<p>Chris Olah到底经历了什么？</p>\n<h3>让Jeff Dean破例捞人的「三无」少年</h3>\n<p>Chris Olah在加拿大多伦多长大，是个不折不扣的极客少年。</p>\n<p>早在青少年时期，他就混迹于当地著名的黑客空间<strong>hacklab.to</strong>，整天捣鼓编程、电子硬件和各种自发项目。</p>\n<p>和许多天才少年一样发，进了多伦多大学数学系后，他只读了一年就选择离开。</p>\n<p>至于原因嘛。。。</p>\n<p>这哥们帮朋友打官司去了。。。</p>\n<p>进入多伦多大学读大一时，黑客社区里的一位熟人突然惹上了大麻烦——因为摆弄业余化学设备，被冠上了莫须有的「恐怖主义」指控。</p>\n<p>为了支持朋友应对庭审，Olah做出了一个大胆的决定：<strong>休学一年</strong>。</p>\n<p>？？？</p>\n<p>不是哥们，<strong>你不该找个车库创业吗？？</strong></p>\n<p>多年后Olah在播客里回忆起这段往事，依然觉得当时的举动虽然仗义，但也确实「并没有起到多少帮助」。。。</p>\n<p>不过，这次休学却彻底改变了他的人生轨迹，让他偏离了按部就班的传统学术轨道。</p>\n<p>2012年，还在休学状态的Olah被硅谷风投教父彼得·蒂尔（Peter Thiel）看中，拿到了<strong>10万美元的蒂尔奖学金（Thiel Fellowship）</strong>。</p>\n<p>这个项目专门给20岁以下的年轻人发放<strong>10万美元</strong>，条件只有一个：<strong>不去上大学</strong>，直接去做研究或创业。</p>\n<p>对于没有学位的Olah来说，这简直是雪中送炭。不仅解决了生存问题，也终于能让他跳脱大学体系自由探索。</p>\n<div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/f93687554477a43bfdef34d746566866.webp\" alt=\"\" loading=\"lazy\"></div>\n<p>不过嘛，拿到钱的最初阶段，他其实在研究3D打印和开源CAD软件，和AI没半毛钱关系。</p>\n<p>真正的转折发生在一次研讨会上。</p>\n<p>当时，物理学家兼科普作家Michael Nielsen正在写一本关于神经网络的教材，并为此举办了一系列研讨会。</p>\n<div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/f761e797aa52fdaa6a97c03e8283849a.jpeg\" alt=\"\" loading=\"lazy\"></div>\n<p>Olah旁听后，瞬间被深度学习的魅力击中瘫软（bushi）。</p>\n<p>Nielsen也顺理成章地成为了他的非正式导师与合作者。</p>\n<h3>一篇百万阅读的博客</h3>\n<p>不过嘛，蒂尔奖学金、大一辍学……这些都不是Olah最显眼的标签。</p>\n<p>他有另一个光环——天选自媒体人。</p>\n<p>在深度学习刚刚爆发的年代，大量前沿论文写得晦涩难懂，充斥着复杂的数学符号与未经整理的直觉。</p>\n<p>Olah发现了一个独特的生态位：<strong>把机器学习和绘画结合起来</strong>。</p>\n<p>他开始在博客上用极其直观的可视化图表，一层层剥开神经网络的黑盒。</p>\n<div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/4532a7664591795670183f4e618bb76c.webp\" alt=\"\" loading=\"lazy\"></div>\n<p>2014年4月，他发表了《神经网络、流形与拓扑》，用拓扑学中的同胚概念，把深度分类器如何扭曲输入空间讲得明明白白。</p>\n<p>同年10月，他又用一篇《可视化MNIST》，向大众生动普及了t-SNE等降维技术。</p>\n<p>总之就是S级懂哥，在圈子里颇具人气。</p>\n<p>一个本科都没毕业的人，为啥大家都愿意看他的科普文？</p>\n<p>早在2013年，图灵奖得主<strong>Yoshua Bengio公开找博士生时</strong>，Olah也写了封邮件。</p>\n<p>Bengio看完后，想尽办法让他在没有本科学位的情况下，直接破格去MILA攻读研究生。</p>\n<p>但最终，他还是决定不去读这个博士，而是拎着自己的研究到处去各个实验室串门、做分享。</p>\n<p>所以还是很有东西的。</p>\n<p>正是其中一次在谷歌的演讲，让他被台下的<strong>Jeff Dean</strong>一眼相中。</p>\n<p>在开头那条热帖的评论区里，Jeff Dean亲自揭秘了当年把Olah招进Google Brain时，自己和实习生招聘团队那段让人哭笑不得的对话：</p>\n<blockquote><p>我：「我想要Chris做我的实习生。」</p><p>实习生团队：「太好了。他目前是哪所学校的学生？」</p><p>我：「呃，那个，他不是学生。他拿了一笔专门用来退学的奖学金。」</p><p>实习生团队：「呃，好吧。那他目前有在山景城合法工作的身份吧？」</p><p>我：「呃，唔，暂时也没有。我猜我们得想办法给他搞定一个非学生签证？」</p></blockquote>\n<div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/43bfb0739d8da1b334f01a38a6412951.png\" alt=\"\" loading=\"lazy\"></div>\n<p>一个既没有在读学籍、也没有美国工作签证的加拿大退学少年，就这样在Jeff Dean的强力背书下，撬开了Google Brain的大门。</p>\n<p>原本只是实习的经历，一延就是两年，随后他顺理成章地转正，在Google Brain待了整整四年。</p>\n<p>与此同时，Olah在自媒体上的天选buff，也在持续发力。</p>\n<h3>全网最值钱的博客，到底写了什么？</h3>\n<p>网友把colah.github.io称为「价值178亿美元的博客」，真不是在吹牛。</p>\n<p>如果你在过去十年里学过深度学习，你大概率直接或间接地读过他写的文章，或者看过他画的图。</p>\n<p>2014年到2015年间，Olah在个人博客上高产似母猪，接连抛出了多篇神级科普：</p>\n<p>他用拓扑学和流形变换的动画，直观展示了神经网络究竟是如何把扭曲的数据空间一步步「拉平」并完成分类的；他又用可交互的方式，带无数人看懂了MNIST手写数字集在高维空间里的降维投影。</p>\n<p>而真正让他一战封神的，是他在加入谷歌后，于2015年8月27日发布的那篇封神之作——</p>\n<p><strong>《Understanding LSTM Networks》（理解LSTM网络）</strong>。</p>\n<div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/7f597c0ace5b9e9773cea441427959ca.png\" alt=\"\" loading=\"lazy\"></div>\n<p>在Transformer统治世界之前，LSTM是自然语言处理领域的绝对核心，但它的内部门控机制极其绕脑，劝退了无数初学者。</p>\n<p>Olah没有堆砌任何枯燥的数学推导，仅仅画了几张图，就把电路式流程图，把遗忘门、输入门、输出门拆解得明明白白。</p>\n<div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/0e5da51a8cc169cca9caa88124004226.png\" alt=\"\" loading=\"lazy\"></div>\n<p>随之火爆全网。</p>\n<p>它不仅成了全球各大高校深度学习课程的必读教材，在Google Scholar（谷歌学术）上更是直接收获了<strong>超过3600次学术引用</strong>——</p>\n<p>要知道，这只是一篇没有发表在任何期刊或顶会上的个人博客。</p>\n<p>此外，在谷歌大脑期间，Olah也有不少重磅工作。</p>\n<p>2015年6月，他作为第二作者与同事发布了著名的<strong>DeepDream</strong>，通过反向放大卷积神经网络特定层级的特征，生成了满屏狗头和眼睛的迷幻图像，成为AI史上最早出圈的病毒式演示之一。</p>\n<p>但Olah不满足于仅仅看个热闹。</p>\n<p>他越来越痴迷于一个终极问题：<strong>神经网络内部到底是怎么思考的？</strong></p>\n<p>也是在这段时间，命运的齿轮开始转动，Olah与Dario产生了交集。</p>\n<p>2016 年 6 月，Dario Amodei（第一作者）与 Chris Olah（第二作者）等人联合发表了 AI 安全领域的里程碑论文《Concrete Problems in AI Safety》，首次将抽象的 AI 失控风险拆解为可工程化测试的研究方向。</p>\n<p>一个月后，Dario加入OpenAI领导AI安全，Olah则选择了留在谷歌，试图用「自媒体」的方法论推动安全研究。</p>\n<p>2017年，Olah与谷歌同事Shan Carter发明了一个词——</p>\n<p><strong>「研究债务」（Research Debt）</strong>：</p>\n<p>糟糕的符号、跳跃的推导、缺失的中间解释，让后来者不得不花费十倍的精力去重新理解前人的工作。</p>\n<p>为了给整个AI界「还债」，Olah在2017年3月联合创立了开源科学期刊<strong>Distill</strong>，拉来Google、OpenAI、DeepMind共同支持，同时自掏腰包捐了<strong>2.5万美元</strong>，参与设立了总额12.5万美元的「机器学习清晰度奖」。</p>\n<div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/bf86a9b2b84a59e8b285886ee8913f4f.png\" alt=\"\" loading=\"lazy\"></div>\n<p>Distill彻底抛弃了传统的静态PDF论文格式，要求文章必须像网页一样支持鼠标悬停交互、动态可视化。</p>\n<p>（HTML这一块，太AI原生了嗷）</p>\n<p>直到2021年因为编辑团队精力透支而无限期休刊前，Distill留下的约30篇长文，几乎篇篇都是整个AI社区的艺术品。</p>\n<div><img src=\"https://mp.toutiao.com/mp/agw/article_material/open_image/get?code=ZDM3N2E0MTMyN2M1ZTdlMjUwYjhiMjRjZTliZTc0ZDQsMTc5NTg3NjYyODEzNw==\" alt=\"\" loading=\"lazy\"></div>\n<h3>给大模型造「显微镜」</h3>\n<p>很多人把Olah的成功完全归功于「博客写得好、懂内容分发」，我觉得，其实都不本质。</p>\n<p>写博客和做可视化，只是他的武器；</p>\n<p>他的第一性原理，一直是如今AI安全领域最核心的学科——<strong>可解释性（Mechanistic Interpretability）</strong>。</p>\n<p>给神经网络造一台<strong>「显微镜」</strong>，通过逆向工程，把这团黑盒里的参数拆解成人类能看懂的具体算法和电路。</p>\n<p>2018年，Olah离开谷歌跳槽到<strong>OpenAI</strong>，组建并领导了<strong>Clarity</strong>研究团队。</p>\n<p></p>",
+            "text": "200亿美元…史上最贵AI自媒体\nhenry 2026-11-28 22:38:56 来源： 量子位\n这可能是有史以来，ROI（投资回报率）最高的个人博客。\nJay 发自 凹非寺\n量子位 | 公众号 QbitAI\n200亿美元 。\n这可能是有史以来，ROI（投资回报率）最高的个人博客。\n作者叫 Chris Olah ，没有本科学位，没有博士头衔，甚至连大一都没读完就搞自媒体去了。。。\n但如今，他是硅谷AI第一股—— Anthropic的联创 。\n18岁从多伦多大学退学，此后，他拿着硅谷创投教父彼得·蒂尔（Peter Thiel）给的 10万美元「辍学奖金」 ，开始在个人网站colah.github.io上手搓机器学习科普文章。\n这些图文并茂的博客，火遍了全球各大顶级AI实验室。\n甚至连前谷歌二进制能力者 Jeff Dean 都曾亲自下场捞人，点名要招他当实习生。\n如今，随着Anthropic敲钟纳斯达克，Olah 身价一度超过200亿。\n而这位联合创始人的草莽故事，也开始在X病毒式传。\n原帖作者感慨万千地总结道：\n零学位，仅仅是一个优秀的博客，就帮他搞定了这一切。\n至于他的前Mentor—— Jeff Dean ——更是亲自下场转发这条热帖，在线认领这位昔日门徒：\n祝贺我以前的实习生@ch402！\n（我愿称姐夫为世上唯一能正面压制A➗之人😭）\n从用爱发电的AI自媒体人，到身价百亿的Anthropic联创——\nChris Olah到底经历了什么？\n让Jeff Dean破例捞人的「三无」少年\nChris Olah在加拿大多伦多长大，是个不折不扣的极客少年。\n早在青少年时期，他就混迹于当地著名的黑客空间 hacklab.to ，整天捣鼓编程、电子硬件和各种自发项目。\n和许多天才少年一样发，进了多伦多大学数学系后，他只读了一年就选择离开。\n至于原因嘛。。。\n这哥们帮朋友打官司去了。。。\n进入多伦多大学读大一时，黑客社区里的一位熟人突然惹上了大麻烦——因为摆弄业余化学设备，被冠上了莫须有的「恐怖主义」指控。\n为了支持朋友应对庭审，Olah做出了一个大胆的决定： 休学一年 。\n？？？\n不是哥们， 你不该找个车库创业吗？？\n多年后Olah在播客里回忆起这段往事，依然觉得当时的举动虽然仗义，但也确实「并没有起到多少帮助」。。。\n不过，这次休学却彻底改变了他的人生轨迹，让他偏离了按部就班的传统学术轨道。\n2012年，还在休学状态的Olah被硅谷风投教父彼得·蒂尔（Peter Thiel）看中，拿到了 10万美元的蒂尔奖学金（Thiel Fellowship） 。\n这个项目专门给20岁以下的年轻人发放 10万美元 ，条件只有一个： 不去上大学 ，直接去做研究或创业。\n对于没有学位的Olah来说，这简直是雪中送炭。不仅解决了生存问题，也终于能让他跳脱大学体系自由探索。\n不过嘛，拿到钱的最初阶段，他其实在研究3D打印和开源CAD软件，和AI没半毛钱关系。\n真正的转折发生在一次研讨会上。\n当时，物理学家兼科普作家Michael Nielsen正在写一本关于神经网络的教材，并为此举办了一系列研讨会。\nOlah旁听后，瞬间被深度学习的魅力击中瘫软（bushi）。\nNielsen也顺理成章地成为了他的非正式导师与合作者。\n一篇百万阅读的博客\n不过嘛，蒂尔奖学金、大一辍学……这些都不是Olah最显眼的标签。\n他有另一个光环——天选自媒体人。\n在深度学习刚刚爆发的年代，大量前沿论文写得晦涩难懂，充斥着复杂的数学符号与未经整理的直觉。\nOlah发现了一个独特的生态位： 把机器学习和绘画结合起来 。\n他开始在博客上用极其直观的可视化图表，一层层剥开神经网络的黑盒。\n2014年4月，他发表了《神经网络、流形与拓扑》，用拓扑学中的同胚概念，把深度分类器如何扭曲输入空间讲得明明白白。\n同年10月，他又用一篇《可视化MNIST》，向大众生动普及了t-SNE等降维技术。\n总之就是S级懂哥，在圈子里颇具人气。\n一个本科都没毕业的人，为啥大家都愿意看他的科普文？\n早在2013年，图灵奖得主 Yoshua Bengio公开找博士生时 ，Olah也写了封邮件。\nBengio看完后，想尽办法让他在没有本科学位的情况下，直接破格去MILA攻读研究生。\n但最终，他还是决定不去读这个博士，而是拎着自己的研究到处去各个实验室串门、做分享。\n所以还是很有东西的。\n正是其中一次在谷歌的演讲，让他被台下的 Jeff Dean 一眼相中。\n在开头那条热帖的评论区里，Jeff Dean亲自揭秘了当年把Olah招进Google Brain时，自己和实习生招聘团队那段让人哭笑不得的对话：\n我：「我想要Chris做我的实习生。」\n实习生团队：「太好了。他目前是哪所学校的学生？」\n我：「呃，那个，他不是学生。他拿了一笔专门用来退学的奖学金。」\n实习生团队：「呃，好吧。那他目前有在山景城合法工作的身份吧？」\n我：「呃，唔，暂时也没有。我猜我们得想办法给他搞定一个非学生签证？」\n一个既没有在读学籍、也没有美国工作签证的加拿大退学少年，就这样在Jeff Dean的强力背书下，撬开了Google Brain的大门。\n原本只是实习的经历，一延就是两年，随后他顺理成章地转正，在Google Brain待了整整四年。\n与此同时，Olah在自媒体上的天选buff，也在持续发力。\n全网最值钱的博客，到底写了什么？\n网友把colah.github.io称为「价值178亿美元的博客」，真不是在吹牛。\n如果你在过去十年里学过深度学习，你大概率直接或间接地读过他写的文章，或者看过他画的图。\n2014年到2015年间，Olah在个人博客上高产似母猪，接连抛出了多篇神级科普：\n他用拓扑学和流形变换的动画，直观展示了神经网络究竟是如何把扭曲的数据空间一步步「拉平」并完成分类的；他又用可交互的方式，带无数人看懂了MNIST手写数字集在高维空间里的降维投影。\n而真正让他一战封神的，是他在加入谷歌后，于2015年8月27日发布的那篇封神之作——\n《Understanding LSTM Networks》（理解LSTM网络） 。\n在Transformer统治世界之前，LSTM是自然语言处理领域的绝对核心，但它的内部门控机制极其绕脑，劝退了无数初学者。\nOlah没有堆砌任何枯燥的数学推导，仅仅画了几张图，就把电路式流程图，把遗忘门、输入门、输出门拆解得明明白白。\n随之火爆全网。\n它不仅成了全球各大高校深度学习课程的必读教材，在Google Scholar（谷歌学术）上更是直接收获了 超过3600次学术引用 ——\n要知道，这只是一篇没有发表在任何期刊或顶会上的个人博客。\n此外，在谷歌大脑期间，Olah也有不少重磅工作。\n2015年6月，他作为第二作者与同事发布了著名的 DeepDream ，通过反向放大卷积神经网络特定层级的特征，生成了满屏狗头和眼睛的迷幻图像，成为AI史上最早出圈的病毒式演示之一。\n但Olah不满足于仅仅看个热闹。\n他越来越痴迷于一个终极问题： 神经网络内部到底是怎么思考的？\n也是在这段时间，命运的齿轮开始转动，Olah与Dario产生了交集。\n2016 年 6 月，Dario Amodei（第一作者）与 Chris Olah（第二作者）等人联合发表了 AI 安全领域的里程碑论文《Concrete Problems in AI Safety》，首次将抽象的 AI 失控风险拆解为可工程化测试的研究方向。\n一个月后，Dario加入OpenAI领导AI安全，Olah则选择了留在谷歌，试图用「自媒体」的方法论推动安全研究。\n2017年，Olah与谷歌同事Shan Carter发明了一个词——\n「研究债务」（Research Debt） ：\n糟糕的符号、跳跃的推导、缺失的中间解释，让后来者不得不花费十倍的精力去重新理解前人的工作。\n为了给整个AI界「还债」，Olah在2017年3月联合创立了开源科学期刊 Distill ，拉来Google、OpenAI、DeepMind共同支持，同时自掏腰包捐了 2.5万美元 ，参与设立了总额12.5万美元的「机器学习清晰度奖」。\nDistill彻底抛弃了传统的静态PDF论文格式，要求文章必须像网页一样支持鼠标悬停交互、动态可视化。\n（HTML这一块，太AI原生了嗷）\n直到2021年因为编辑团队精力透支而无限期休刊前，Distill留下的约30篇长文，几乎篇篇都是整个AI社区的艺术品。\n给大模型造「显微镜」\n很多人把Olah的成功完全归功于「博客写得好、懂内容分发」，我觉得，其实都不本质。\n写博客和做可视化，只是他的武器；\n他的第一性原理，一直是如今AI安全领域最核心的学科—— 可解释性（Mechanistic Interpretability） 。\n给神经网络造一台 「显微镜」 ，通过逆向工程，把这团黑盒里的参数拆解成人类能看懂的具体算法和电路。\n2018年，Olah离开谷歌跳槽到 OpenAI ，组建并领导了 Clarity 研究团队。",
+            "lead": "200亿美元…史上最贵AI自媒体\nhenry 2026-11-28 22:38:56 来源： 量子位\n这可能是有史以来，ROI（投资回报率）最高的个人博客。\nJay 发自 凹非寺\n量子位 | 公众号 QbitAI\n200亿美元 。\n这可能是有史以来，ROI（投资回报率）最高的个人博客。\n作者叫 Chris Olah ，没有本科学位，没有博士头衔，甚至连大一都没读完就搞自媒体去了。。。\n但如今，他是硅谷AI第一股—— Anthropic的联创 。\n18岁从多伦多大学退学，此后，他拿着硅谷创投教父彼得·蒂尔（Peter Thiel）给的 10万美元「辍学奖金」 ，开始在个人网站colah.github.io上手搓机器学习科普文章。",
+            "chars": 6031,
+            "shown": 3995,
+            "truncated": true
+          },
+          "categories": [
+            "资讯",
+            "AI",
+            "Anthropic"
+          ],
+          "author": "henry",
+          "lang": "zh",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "news",
+          "metrics": {},
+          "quality": 10,
+          "score": 20.09,
+          "category": "local",
+          "subcategory": "weights",
+          "practical": 2,
+          "slug": "849e0755e607",
+          "action": 4,
+          "rank": 16.4,
+          "tags": [
+            "tutorial",
+            "free",
+            "money"
+          ]
+        },
+        {
+          "sourceId": "appinn",
+          "sourceName": "小众软件",
+          "title": "10 款热门开源项目｜旧手机当控制面板，Mac 刘海变文件架",
+          "url": "https://www.appinn.com/open-source-roundup-20261128/",
+          "id": "https://www.appinn.com/open-source-roundup-20261128/",
+          "published": "2026-11-28T07:28:18.000Z",
+          "summary": "闲置的安卓手机可以放在显示器旁边，拿来调音量、切 OBS 场景。MacBook 的刘海也能派上用场，临时要发的截图，往屏幕顶部一拖就能先存着。这期一共 10 款，还有在本地记会议纪要、给容器配域名、从长视频里挑片段的工具。 BatteryHubX｜在 Windows 任务栏看无线外设电量 无线鼠标时不时断一下，你想先看看是不是快没电了。 BatteryHubX 能把电量百分比放在 Windows 任务栏上，抬眼就能看。部分无线键盘、耳机和手柄也支持。它原名 BatteryHub，微软商店里的新版叫 BatteryHubX，商店说明源代码随安装包提供。 微软商店 Yogurt｜在电脑本地生成会议纪要 开完一小时的线上会，只想找出最后…",
+          "content": {
+            "html": "<figure><img src=\"https://eucf.appinn.net/wp-content/uploads/2026/11/open-source-roundup-20261128.jpg\" alt=\"桌上的笔记本、无线鼠标和当作控制面板使用的旧手机\" loading=\"lazy\"></figure>\n<p>闲置的安卓手机可以放在显示器旁边，拿来调音量、切 OBS 场景。MacBook 的刘海也能派上用场，临时要发的截图，往屏幕顶部一拖就能先存着。这期一共 10 款，还有在本地记会议纪要、给容器配域名、从长视频里挑片段的工具。</p>\n<h3>BatteryHubX｜在 Windows 任务栏看无线外设电量</h3>\n<p>无线鼠标时不时断一下，你想先看看是不是快没电了。</p>\n<p>BatteryHubX 能把电量百分比放在 Windows 任务栏上，抬眼就能看。部分无线键盘、耳机和手柄也支持。它原名 BatteryHub，微软商店里的新版叫 BatteryHubX，商店说明源代码随安装包提供。<br><a href=\"https://apps.microsoft.com/detail/9nn255bkgtpg\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">微软商店</a></p>\n<h3>Yogurt｜在电脑本地生成会议纪要</h3>\n<p>开完一小时的线上会，只想找出最后定了什么、谁来跟进。</p>\n<p>Yogurt 可以在电脑上录下麦克风和系统音频，本地转写并生成纪要，再导出成 Markdown。会议里也无需邀请录音机器人。支持 macOS、Windows 和 Linux。<br><a href=\"https://yogurt.so/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">项目官网</a></p>\n<h3>ILoveNotch｜把 MacBook 刘海变成文件暂存架</h3>\n<p>截了几张图要发给同事，偏偏还得切回网页再截一张。</p>\n<p>可以先把截图拖到 MacBook 的刘海上，攒齐了再一起拖进聊天窗口。暂存的文件还能直接预览或隔空投送。适用于 macOS 14.6 及以上的 Apple Silicon Mac。<br><a href=\"https://niyamvora.github.io/ILoveNotch/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">项目官网</a></p>\n<figure><img src=\"https://eucf.appinn.net/wp-content/uploads/2026/11/ilovenotch-file-shelf.avif\" alt=\"MacBook 屏幕刘海下方展开的文件暂存架\" loading=\"lazy\"><figcaption>ILoveNotch 的文件暂存架。</figcaption></figure>\n<h3>Kiri｜给 Docker 容器配上好记的本地域名</h3>\n<p>电脑上跑了几个 Docker 服务，每次打开都得查哪个端口对应哪个服务。</p>\n<p>Kiri 能给容器配上<code>服务名.kiri.local</code>这样的本地域名，原来的<code>docker</code>和<code>docker compose</code>命令也能继续用。<br><a href=\"https://runkiri.com/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">项目官网</a></p>\n<h3>OpenMotion｜用参考视频起稿，再到时间线上改动效</h3>\n<p>给自己的视频做个片头，手上已经有一段喜欢的参考，想照着它的节奏试一版。</p>\n<p>OpenMotion 可以根据参考视频生成可编辑的动效，你可以换上自己的文案和素材，在 Studio 的时间线上调时长和转场，再导出 MP4。<br><a href=\"https://open-design.ai/motion/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">项目官网</a></p>\n<h3>Ghost-Downloader-3｜用一个工具下普通文件、BT 和视频</h3>\n<p>今天要下一个网页里的大文件，明天要从 B 站保存一段视频，下次收到的又是磁力链接。</p>\n<p>Ghost-Downloader-3 能把这些下载放进同一个工具里，也支持 M3U8 和 YouTube 视频及字幕下载。<br><a href=\"https://gd.xychr.com/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">项目官网</a></p>\n<h3>AutoClip｜从长视频里挑片段，裁成竖屏短视频</h3>\n<p>一段访谈录了一个小时，想剪几段发短视频，光是把整段拖着看一遍就得花时间。</p>\n<p>可以先让 AutoClip 找出候选片段、裁成竖屏并加上字幕，你再从里面挑值得发的几段。<br><a href=\"https://zhouxiaoka.github.io/autoclip_intro/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">项目官网</a></p>\n<figure><img src=\"https://eucf.appinn.net/wp-content/uploads/2026/11/autoclip-vertical-result.avif\" alt=\"AutoClip 界面中的竖屏视频切片与字幕预览\" loading=\"lazy\"><figcaption>AutoClip 处理直播回放后生成的竖屏片段。</figcaption></figure>\n<h3>PhoneBox｜让闲置安卓手机当桌面控制面板</h3>\n<p>抽屉里有部闲置安卓手机，可以把它立在显示器旁边，做成一个随手就能点的音量控制器。</p>\n<p>PhoneBox 通过 USB 或局域网连电脑，按钮位置可以自己排，也可以加 OBS 场景切换和系统状态。手机无需 Root。<br><a href=\"https://ersinkoc.github.io/phonebox/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">项目官网</a></p>\n<figure><img src=\"https://eucf.appinn.net/wp-content/uploads/2026/11/phonebox-control-panel.avif\" alt=\"PhoneBox 在手机上显示媒体控制和电脑状态\" loading=\"lazy\"><figcaption>PhoneBox 的媒体控制和电脑状态面板。</figcaption></figure>\n<h3>Mika｜让安卓助手在后台操作应用</h3>\n<p>半天没看微信群，回来已经刷了几百条消息。</p>\n<p>Mika 可以在独立的虚拟屏幕里浏览群聊并给你一份摘要，你可以继续在手机前台做别的事。操作应用需要 Android 12 或更新版本，项目方推荐 Android 14 及以上。<br><a href=\"https://mikaphone.com/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">项目官网</a></p>\n<h3>AFFiNE｜在同一个工作区里写文档、画白板</h3>\n<p>比如要和朋友定一个周末行程，可以先写好日期和预算，再把几个备选地点放到白板上，拖来拖去排顺序。</p>\n<p>AFFiNE 把文档和白板放在同一个工作区，支持离线使用，也可以用 Docker 自托管。<br><a href=\"https://affine.pro/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">项目官网</a></p>\n<hr><h3>相关阅读</h3>\n<ul><li><a href=\"https://www.appinn.com/open-source-mac-os-apps/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">34 个大类，超过 400 个「macOS 绝赞开源应用」列表</a></li><li><a href=\"https://www.appinn.com/syntax-highlight-for-macos/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Syntax Highlight – 为 macOS 经典功能快速查看添加代码高亮，超过 150 种新文件类型</a></li><li><a href=\"https://www.appinn.com/dreammail-pro/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">畅邮（Dreammail Pro）原「梦幻快车」邮件客户端，功能一览 [Windows]</a></li><li><a href=\"https://www.appinn.com/open-minis/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Open Minis：可能是 iOS 端最强 AI Agent</a></li><li><a href=\"https://www.appinn.com/open-minis-open-source/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Open Minis 宣布开源：比 Siri 更像 AI 助手，让手机帮你完成任务。支持 iOS、Android</a></li></ul>\n<hr><a href=\"http://www.appinn.com/copyright/?utm_source=feeds&amp;utm_medium=copyright&amp;utm_campaign=feeds\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">©</a>\n2021 青小蛙 for<a href=\"http://www.appinn.com/?utm_source=feeds&amp;utm_medium=appinn&amp;utm_campaign=feeds\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">小众软件</a>\n|<a href=\"http://www.appinn.com/join-us/?utm_source=feeds&amp;utm_medium=joinus&amp;utm_campaign=feeds\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">加入我们</a>\n|<a href=\"https://meta.appinn.net/c/faxian/?utm_source=feeds&amp;utm_medium=contribute&amp;utm_campaign=feeds\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">投稿</a>\n|<a href=\"http://www.appinn.com/feeds-subscribe/?utm_source=feeds&amp;utm_medium=feedsubscribe&amp;utm_campaign=feeds\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">订阅指南</a>\n<br>3659b075e72a5b7b1b87ea74aa7932ff<br><a href=\"https://www.appinn.com/open-source-roundup-20261128/#comments\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">点击这里留言、和原作者一起评论</a>\n<p><a href=\"https://www.appinn.com/open-source-roundup-20261128/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">[ 点击前往获取链接 ]</a></p>\n<hr>",
+            "text": "闲置的安卓手机可以放在显示器旁边，拿来调音量、切 OBS 场景。MacBook 的刘海也能派上用场，临时要发的截图，往屏幕顶部一拖就能先存着。这期一共 10 款，还有在本地记会议纪要、给容器配域名、从长视频里挑片段的工具。\nBatteryHubX｜在 Windows 任务栏看无线外设电量\n无线鼠标时不时断一下，你想先看看是不是快没电了。\nBatteryHubX 能把电量百分比放在 Windows 任务栏上，抬眼就能看。部分无线键盘、耳机和手柄也支持。它原名 BatteryHub，微软商店里的新版叫 BatteryHubX，商店说明源代码随安装包提供。\n微软商店\nYogurt｜在电脑本地生成会议纪要\n开完一小时的线上会，只想找出最后定了什么、谁来跟进。\nYogurt 可以在电脑上录下麦克风和系统音频，本地转写并生成纪要，再导出成 Markdown。会议里也无需邀请录音机器人。支持 macOS、Windows 和 Linux。\n项目官网\nILoveNotch｜把 MacBook 刘海变成文件暂存架\n截了几张图要发给同事，偏偏还得切回网页再截一张。\n可以先把截图拖到 MacBook 的刘海上，攒齐了再一起拖进聊天窗口。暂存的文件还能直接预览或隔空投送。适用于 macOS 14.6 及以上的 Apple Silicon Mac。\n项目官网\nILoveNotch 的文件暂存架。\nKiri｜给 Docker 容器配上好记的本地域名\n电脑上跑了几个 Docker 服务，每次打开都得查哪个端口对应哪个服务。\nKiri 能给容器配上 服务名.kiri.local 这样的本地域名，原来的 docker 和 docker compose 命令也能继续用。\n项目官网\nOpenMotion｜用参考视频起稿，再到时间线上改动效\n给自己的视频做个片头，手上已经有一段喜欢的参考，想照着它的节奏试一版。\nOpenMotion 可以根据参考视频生成可编辑的动效，你可以换上自己的文案和素材，在 Studio 的时间线上调时长和转场，再导出 MP4。\n项目官网\nGhost-Downloader-3｜用一个工具下普通文件、BT 和视频\n今天要下一个网页里的大文件，明天要从 B 站保存一段视频，下次收到的又是磁力链接。\nGhost-Downloader-3 能把这些下载放进同一个工具里，也支持 M3U8 和 YouTube 视频及字幕下载。\n项目官网\nAutoClip｜从长视频里挑片段，裁成竖屏短视频\n一段访谈录了一个小时，想剪几段发短视频，光是把整段拖着看一遍就得花时间。\n可以先让 AutoClip 找出候选片段、裁成竖屏并加上字幕，你再从里面挑值得发的几段。\n项目官网\nAutoClip 处理直播回放后生成的竖屏片段。\nPhoneBox｜让闲置安卓手机当桌面控制面板\n抽屉里有部闲置安卓手机，可以把它立在显示器旁边，做成一个随手就能点的音量控制器。\nPhoneBox 通过 USB 或局域网连电脑，按钮位置可以自己排，也可以加 OBS 场景切换和系统状态。手机无需 Root。\n项目官网\nPhoneBox 的媒体控制和电脑状态面板。\nMika｜让安卓助手在后台操作应用\n半天没看微信群，回来已经刷了几百条消息。\nMika 可以在独立的虚拟屏幕里浏览群聊并给你一份摘要，你可以继续在手机前台做别的事。操作应用需要 Android 12 或更新版本，项目方推荐 Android 14 及以上。\n项目官网\nAFFiNE｜在同一个工作区里写文档、画白板\n比如要和朋友定一个周末行程，可以先写好日期和预算，再把几个备选地点放到白板上，拖来拖去排顺序。\nAFFiNE 把文档和白板放在同一个工作区，支持离线使用，也可以用 Docker 自托管。\n项目官网\n相关阅读\n34 个大类，超过 400 个「macOS 绝赞开源应用」列表\nSyntax Highlight – 为 macOS 经典功能快速查看添加代码高亮，超过 150 种新文件类型\n畅邮（Dreammail Pro）原「梦幻快车」邮件客户端，功能一览 [Windows]\nOpen Minis：可能是 iOS 端最强 AI Agent\nOpen Minis 宣布开源：比 Siri 更像 AI 助手，让手机帮你完成任务。支持 iOS、Android\n©\n2021 青小蛙 for 小众软件\n| 加入我们\n| 投稿\n| 订阅指南\n3659b075e72a5b7b1b87ea74aa7932ff\n点击这里留言、和原作者一起评论\n[ 点击前往获取链接 ]",
+            "lead": "闲置的安卓手机可以放在显示器旁边，拿来调音量、切 OBS 场景。MacBook 的刘海也能派上用场，临时要发的截图，往屏幕顶部一拖就能先存着。这期一共 10 款，还有在本地记会议纪要、给容器配域名、从长视频里挑片段的工具。\nBatteryHubX｜在 Windows 任务栏看无线外设电量\n无线鼠标时不时断一下，你想先看看是不是快没电了。\nBatteryHubX 能把电量百分比放在 Windows 任务栏上，抬眼就能看。部分无线键盘、耳机和手柄也支持。它原名 BatteryHub，微软商店里的新版叫 BatteryHubX，商店说明源代码随安装包提供。\n微软商店\nYogurt｜在电脑本地生成会议纪要\n开完一小时的线上会，只想找出最后定了什么、谁来跟进。\nYogurt 可以在电脑上录下麦克风和系统音频，本地转写并生成纪要，再导出成 Markdown。会议里也无需邀请录音机器人。支持 macOS、Windows 和 Linux。\n项目官网",
+            "chars": 1955,
+            "shown": 1955,
+            "truncated": false
+          },
+          "categories": [
+            "每日发现"
+          ],
+          "author": "青小蛙",
+          "lang": "zh",
+          "tier": 2,
+          "trustCategory": false,
+          "declaredCategory": "tools",
+          "metrics": {},
+          "quality": 8,
+          "score": 18.29,
+          "category": "local",
+          "subcategory": "selfhost",
+          "practical": 7,
+          "slug": "f0de91cd1ed9",
+          "action": 5,
+          "rank": 16,
+          "tags": [
+            "local",
+            "generate",
+            "lowspec",
+            "free"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bench",
+      "label": "评测选型",
+      "items": [
+        {
+          "sourceId": "qbitai",
+          "sourceName": "量子位",
+          "title": "刚刚，8192张昇腾训出285B大模型！权重开源，32页训练手册全公开",
+          "url": "https://www.qbitai.com/2026/11/513535.html",
+          "id": "https://www.qbitai.com/?p=513535",
+          "published": "2026-11-28T14:12:50.000Z",
+          "summary": "刚刚，8192张昇腾训出285B大模型！权重开源，32页训练手册全公开 henry 2026-11-28 22:12:50 来源： 量子位 国产芯片训千亿大模型，终于有人把施工图纸摊开了 henry发自 凹非寺 量子位 | 公众号QbitAI 8192张昇腾卡、2850亿参数、百万上下文、整整32页技术报告。 在国产软硬件体系里训练千亿级大模型，真的很少有人把底牌亮得这么彻底。 继今年9月开源端侧模型 Xing4.0-29B-A4B 后， 中国电信 最近又放出一款千亿级主力开源模型—— Xing4.1-Preview 。 据悉，这款新模型不仅从头到尾靠 8192张昇腾910C 和 昇思MindSpore 训完，直接把 国芯训国模…",
+          "content": {
+            "html": "&lt;!DOCTYPE html&gt;<div><div><div>&lt; img id=\"wx_img\" src=\"https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png\" width=\"400\" height=\"400\"&gt;</div></div></div>\n<div><h3>刚刚，8192张昇腾训出285B大模型！权重开源，32页训练手册全公开</h3><div><span><img src=\"http://www.qbitai.com/wp-content/themes/liangziwei/imagesnew/head.jpg\" alt=\"\" loading=\"lazy\"><em><a href=\"https://www.qbitai.com/author/henry\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">henry</a></em></span><span>2026-11-28</span><span>22:12:50</span><span>来源：<a href=\"https://www.qbitai.com/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">量子位</a></span></div></div>\n<div><p>国产芯片训千亿大模型，终于有人把施工图纸摊开了</p></div>\n<p>henry发自 凹非寺<br>量子位 | 公众号QbitAI</p>\n<p>8192张昇腾卡、2850亿参数、百万上下文、整整32页技术报告。</p>\n<p>在国产软硬件体系里训练千亿级大模型，真的很少有人把底牌亮得这么彻底。</p>\n<p>继今年9月开源端侧模型<strong>Xing4.0-29B-A4B</strong>后，<strong>中国电信</strong>最近又放出一款千亿级主力开源模型——</p>\n<p><strong>Xing4.1-Preview</strong>。</p>\n<div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/43dcd2e3d7d3710ef6bda7fec3b7a38f.webp\" alt=\"\" loading=\"lazy\"></div>\n<p>据悉，这款新模型不仅从头到尾靠<strong>8192张昇腾910C</strong>和<strong>昇思MindSpore</strong>训完，直接把<strong>国芯训国模</strong>的规模推到了千亿级。</p>\n<p>背后的技术报告，还进一步把架构选型、八千卡集群训练方案以及Agent后训练的方法开源了出来。</p>\n<p>可以说，以往聊到国产算力训模型，外界看到的往往只有一句“成功跑通”，或者几个零星的跑分。</p>\n<p>这一次，想在国产算力上搭集群的后来者，也终于拿到了一份可以照着施工的图纸。</p>\n<p>主打代码与长程Agent，跑进主流第一梯队</p>\n<p>咱先看模型本身。</p>\n<p>Xing4.1-Preview这次主打代码编程和长程复杂Agent任务，采用<strong>MoE（混合专家）架构</strong>，总参数达<strong>2850亿</strong>，单token激活<strong>170亿</strong>参数，支持<strong>百万token上下文。</strong></p>\n<div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/db2014281a5e05c29ca9a20db9b6445d.webp\" alt=\"\" loading=\"lazy\"></div>\n<p>这组模型配置的背后，是团队对复杂任务能力和推理效率的取舍。</p>\n<p>团队在技术报告中解释，任务越复杂、执行链条越长，就越需要足够大的参数规模来支撑规划和纠错，也越需要超长上下文来容纳完整的任务历史。</p>\n<p>但另一方面，Agent往往需要连续、多次调用模型。随着上下文不断增长，每一步生成的延迟都会在串行执行中累积，拖慢整个任务。</p>\n<p>于是，为了让模型既具备处理复杂任务的能力，也让每次调用足够快，团队给模型规模划定了两条硬约束：<strong>总参数低于3000亿，单token激活参数低于200亿。</strong></p>\n<p>最终，Xing4.1-Preview采用了<strong>2850亿总参数、170亿激活参数</strong>的配置，通过MoE架构，在保留较大参数规模的同时，控制每次推理的计算开销。</p>\n<p>在第三方评测中，这套设计也在SuperCLUE 2026年11月发布的两个核心场景总榜上，挤进了前三。</p>\n<p>其中，智能体场景拿到<strong>96.2分</strong>，与Hy3并列第三，距离榜首只差0.4分。</p>\n<div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/9307a3f59c175955ff271bebd4ca3300.webp\" alt=\"\" loading=\"lazy\"></div>\n<p>代码场景则拿到73.3分，同样排在第三，甩开第四名DeepSeek-V4-Flash-0731整整10分。</p>\n<div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/85ea076dab0b4f6796539e04a97be5c8.webp\" alt=\"\" loading=\"lazy\"></div>\n<p>在榜单之外，Xing4.1-Preview也已开展真实业务验证。据中国电信披露，Xing4.1-Preview已在内部TeleAgent场景开展大规模试用。</p>\n<p>而对于广大的外部开发者，目前，电信官方已经开放了模型权重并提供API调用。</p>\n<p>除了原生MindSpore格式，团队还提供了转换好的PyTorch格式权重，支持通过Transformers、SGLang、vLLM等工具部署。</p>\n<p>感兴趣的朋友可以试起来了。</p>\n<p>（https://www.teleai.com.cn/）</p>\n<p>从模型结构到训练系统，怎样用好8192张昇腾</p>\n<p>说完模型，咱们接下来就看看Xing4.1-Preview究竟是怎么训出来的。</p>\n<p>技术报告里，团队先点出了昇腾910C的特点：<strong>矩阵计算能力较强，但向量计算与显存带宽相对受限。</strong></p>\n<p>换句话说，虽然910C矩阵算得快，可一旦向量运算和显存读写跟不上，就会拖慢进度。</p>\n<p>与此同时，随着模型规模扩大、上下文拉长，显存占用和数据搬运的压力也会增加，放到八千卡集群里，卡间通信和多卡配合的难题就会跟着凸显出来。</p>\n<p>针对上述瓶颈，团队给出的总体解法是：</p>\n<p>围绕昇腾910C的硬件特点，协同设计模型架构和训练系统，既让模型充分发挥芯片的计算优势，也让八千张卡高效地协同训练。</p>\n<p>模型架构：让矩阵算得更多，让长上下文开销更小</p>\n<p>首先，在模型架构方面，Xing4.1-Preview最直观的一处改动，是把网络做“宽”、做“浅”。</p>\n<p>在参数预算相当的前提下，团队曾比过两套方案：一套60层、专家偏窄；另一套45层、专家更宽。</p>\n<p>研究发现，当专家加宽后，矩阵乘法的块更大，正好可以喂饱昇腾擅长的矩阵算力；而砍掉的15层，则能显著降低归一化、路由、调度这些偏向量和串行的开销。</p>\n<p>测试表明，光这一项调整，大规模训练吞吐就提高了约<strong>10%</strong></p>\n<p>此外，面对百万上下文的压力，模型把几套机制串成了一条流水线：</p>\n<p>MoE按需激活控制计算量，MLA压缩历史KV显存，DSA稀疏筛出真正要看的历史位置，再靠IndexShare每4层刷新一次索引、中间3层直接复用。</p>\n<p>按论文在256K上下文下的仿真结果，这套组合比纯MLA基线，预填充（Prefill）吞吐最高拉升了足足<strong>4.68倍</strong>。</p>\n<div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/b8b9c6416bf95dd68f725abf02eb03dc.webp\" alt=\"\" loading=\"lazy\"></div>\n<p>最后，团队还面向昇腾定制了cmHC融合算子，来稳住多路残差训练。</p>\n<p>推理侧则配了DSpark块级投机解码，把串行生成尽量转成矩阵计算，实测把解码吞吐拉高了2.67–3.77倍。</p>\n<p>训练系统：让8192张卡少等、少重复、少浪费显存</p>\n<p>模型结构决定了计算怎么组织，MindSpore HyperParallel训练系统要解决的，则是怎么把这些活分到8192张卡上。</p>\n<p>面对像Xing4.1-Preview这样的千亿参数模型，单张卡的显存根本装不下。</p>\n<p>以往常见的办法是流水线并行，把模型按层切开，分给几组卡接力算。但问题也很明显，只要前面那组没算完，后面的卡就只能干等。</p>\n<p>于是，团队改用<strong>HSDP混合分片</strong>直接替掉了流水线。</p>\n<p>这套方案的核心，是顺着集群里的网速差异切成两层：</p>\n<p>同一个超节点内部，卡和卡之间互联速度极快，就把模型参数拆散存到各张卡上，算到哪层再就近临时凑齐。</p>\n<p>不同超节点之间网速相对慢，就各自留一份完整副本，只在算完后统一同步一次更新，尽量减少跨节点搬运。</p>\n<p>再配合“一边算当前层、一边提前传下一层数据”的重叠调度，显存扛住了，流水线的干等也省了下来。</p>\n<p>论文实测，去掉流水线并行后，训练吞吐提升了<strong>16.1%。</strong></p>\n<div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/b38abfdddb4663a42b9f474965ca9525.webp\" alt=\"\" loading=\"lazy\"></div>\n<p>除了分片方案，系统层还在计算、显存和主机调度上做了几处细化。</p>\n<p>更新参数用的<strong>Muon优化器</strong>，改为每组指定一张卡集中算完再分发，省去了多卡重复计算。</p>\n<p>面对256K长序列，通过精细的选择性重计算压住显存，同时让稀疏索引模块逐层提前回传，缩短等待时间。</p>\n<p>针对八千卡集群容易出现的主机调度干扰，团队还做了CPU绑核与核隔离，在8192卡规模下额外带来<strong>5%–10%</strong>的吞吐提升。</p>\n<p>算上前面的混合分片，整套训练系统改造带来约<strong>15%–30%</strong>的端到端吞吐提升，长序列场景下更明显。</p>\n<p>在昨晚联合新华网、量子位开启的星辰大模型训练实况直播中，星辰团队给出了更直观的参照：</p>\n<p>业内此前曾流传“早期910B开箱效率仅为H200十五分之一”的说法，而电信基于前期积累，在910C上开箱就做到了英伟达同等算力的60%；从最初复用FSDP踩坑转向HSDP，再到调度与算子层协同调优，最终把训练效率拉升至93%。</p>\n<p>稳定性上，对比早年Llama用16000多张H卡训练时约90%的集群可用率，星辰团队在国产大规模集群上把整体可用率做到了96%以上，故障恢复也从3小时压缩到分钟级。</p>\n<p>后训练：TeleGym——让模型学会“把活干完”</p>\n<p>在后训练阶段，团队做了一套叫<strong>TeleGym</strong>的执行底座，把沙盒环境、工作区、结果验收，以及自研TeleAgent和Claude Code、OpenCode等外部Agent框架都接到同一套接口上。</p>\n<div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/6f0edb28803611af30d953e0a4f806c8.webp\" alt=\"\" loading=\"lazy\"></div>\n<p>借助这套底座，模型可以在真实环境里直接动手操作，“做了什么、结果对不对”的完整轨迹也会直接送进策略优化。</p>\n<p>针对长程Agent训练里任务长短不一、设备容易空转的问题，TeleGym把任务采样和参数更新拆到不同设备池里异步推进，并加入了<strong>Partial Rollout（部分轨迹续跑）</strong>机制。</p>\n<p>每当遇到策略权重更新，还没跑完的长任务不用推倒重来，而是先暂停生成，留住工作区、会话和当前进度，换上新权重继续执行，同时记下每段轨迹对应的策略版本。</p>\n<div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/4a1e5ec0fb4b8465090ee4d4dc4f25f1.webp\" alt=\"\" loading=\"lazy\"></div>\n<p>让模型迭代，多一份掌握在自己手里的确定性</p>\n<p>最后，把Xing4.1-Preview放进更大的行业背景里看，国产算力与国产模型的配合，也已经走过了“能不能用”的阶段，正在进入“怎么用好”的阶段。</p>\n<p>当下，国产算力眼下的问题，已经不是卡够不够用，而是能不能在上面从头训出有竞争力的大模型。</p>\n<p>IDC发布的2026年上半年中国数据中心AI芯片统计显示，国内AI加速器总出货量达到200.8万颗。</p>\n<p>其中，非GPU加速器（NPU、ASIC等）出货101.6万颗，同比增长近80%，首次在半年度周期内超过GPU。</p>\n<div><img src=\"https://i.qbitai.com/wp-content/uploads/2026/11/198b6b69ffb4af43a6b8890c9aa6cd58.webp\" alt=\"\" loading=\"lazy\"></div>\n<p>应用上，今年9月，华为披露基于昇腾与CANN原生训练的模型已超过40个。</p>\n<p>与此同时，也开始有主力开源模型，在十万卡级别的国产芯片上承载大规模线上推理。</p>\n<p>可以说，随着国产硬件逐步就位之后，能否撑起大规模模型训练与真实应用落地，就成了检验这套算力底座成色的关键。</p>\n<p>而中国电信，恰好是最早一批沉下心来把这条链路跑透的玩家。</p>\n<p>早期的TeleChat2系列覆盖了3B、7B、35B、115B等不同规模；随后的TeleChat3-MoE进一步探索了千亿到万亿级架构与集群工程；</p>\n<p></p>",
+            "text": "刚刚，8192张昇腾训出285B大模型！权重开源，32页训练手册全公开\nhenry 2026-11-28 22:12:50 来源： 量子位\n国产芯片训千亿大模型，终于有人把施工图纸摊开了\nhenry发自 凹非寺\n量子位 | 公众号QbitAI\n8192张昇腾卡、2850亿参数、百万上下文、整整32页技术报告。\n在国产软硬件体系里训练千亿级大模型，真的很少有人把底牌亮得这么彻底。\n继今年9月开源端侧模型 Xing4.0-29B-A4B 后， 中国电信 最近又放出一款千亿级主力开源模型——\nXing4.1-Preview 。\n据悉，这款新模型不仅从头到尾靠 8192张昇腾910C 和 昇思MindSpore 训完，直接把 国芯训国模 的规模推到了千亿级。\n背后的技术报告，还进一步把架构选型、八千卡集群训练方案以及Agent后训练的方法开源了出来。\n可以说，以往聊到国产算力训模型，外界看到的往往只有一句“成功跑通”，或者几个零星的跑分。\n这一次，想在国产算力上搭集群的后来者，也终于拿到了一份可以照着施工的图纸。\n主打代码与长程Agent，跑进主流第一梯队\n咱先看模型本身。\nXing4.1-Preview这次主打代码编程和长程复杂Agent任务，采用 MoE（混合专家）架构 ，总参数达 2850亿 ，单token激活 170亿 参数，支持 百万token上下文。\n这组模型配置的背后，是团队对复杂任务能力和推理效率的取舍。\n团队在技术报告中解释，任务越复杂、执行链条越长，就越需要足够大的参数规模来支撑规划和纠错，也越需要超长上下文来容纳完整的任务历史。\n但另一方面，Agent往往需要连续、多次调用模型。随着上下文不断增长，每一步生成的延迟都会在串行执行中累积，拖慢整个任务。\n于是，为了让模型既具备处理复杂任务的能力，也让每次调用足够快，团队给模型规模划定了两条硬约束： 总参数低于3000亿，单token激活参数低于200亿。\n最终，Xing4.1-Preview采用了 2850亿总参数、170亿激活参数 的配置，通过MoE架构，在保留较大参数规模的同时，控制每次推理的计算开销。\n在第三方评测中，这套设计也在SuperCLUE 2026年11月发布的两个核心场景总榜上，挤进了前三。\n其中，智能体场景拿到 96.2分 ，与Hy3并列第三，距离榜首只差0.4分。\n代码场景则拿到73.3分，同样排在第三，甩开第四名DeepSeek-V4-Flash-0731整整10分。\n在榜单之外，Xing4.1-Preview也已开展真实业务验证。据中国电信披露，Xing4.1-Preview已在内部TeleAgent场景开展大规模试用。\n而对于广大的外部开发者，目前，电信官方已经开放了模型权重并提供API调用。\n除了原生MindSpore格式，团队还提供了转换好的PyTorch格式权重，支持通过Transformers、SGLang、vLLM等工具部署。\n感兴趣的朋友可以试起来了。\n（https://www.teleai.com.cn/）\n从模型结构到训练系统，怎样用好8192张昇腾\n说完模型，咱们接下来就看看Xing4.1-Preview究竟是怎么训出来的。\n技术报告里，团队先点出了昇腾910C的特点： 矩阵计算能力较强，但向量计算与显存带宽相对受限。\n换句话说，虽然910C矩阵算得快，可一旦向量运算和显存读写跟不上，就会拖慢进度。\n与此同时，随着模型规模扩大、上下文拉长，显存占用和数据搬运的压力也会增加，放到八千卡集群里，卡间通信和多卡配合的难题就会跟着凸显出来。\n针对上述瓶颈，团队给出的总体解法是：\n围绕昇腾910C的硬件特点，协同设计模型架构和训练系统，既让模型充分发挥芯片的计算优势，也让八千张卡高效地协同训练。\n模型架构：让矩阵算得更多，让长上下文开销更小\n首先，在模型架构方面，Xing4.1-Preview最直观的一处改动，是把网络做“宽”、做“浅”。\n在参数预算相当的前提下，团队曾比过两套方案：一套60层、专家偏窄；另一套45层、专家更宽。\n研究发现，当专家加宽后，矩阵乘法的块更大，正好可以喂饱昇腾擅长的矩阵算力；而砍掉的15层，则能显著降低归一化、路由、调度这些偏向量和串行的开销。\n测试表明，光这一项调整，大规模训练吞吐就提高了约 10%\n此外，面对百万上下文的压力，模型把几套机制串成了一条流水线：\nMoE按需激活控制计算量，MLA压缩历史KV显存，DSA稀疏筛出真正要看的历史位置，再靠IndexShare每4层刷新一次索引、中间3层直接复用。\n按论文在256K上下文下的仿真结果，这套组合比纯MLA基线，预填充（Prefill）吞吐最高拉升了足足 4.68倍 。\n最后，团队还面向昇腾定制了cmHC融合算子，来稳住多路残差训练。\n推理侧则配了DSpark块级投机解码，把串行生成尽量转成矩阵计算，实测把解码吞吐拉高了2.67–3.77倍。\n训练系统：让8192张卡少等、少重复、少浪费显存\n模型结构决定了计算怎么组织，MindSpore HyperParallel训练系统要解决的，则是怎么把这些活分到8192张卡上。\n面对像Xing4.1-Preview这样的千亿参数模型，单张卡的显存根本装不下。\n以往常见的办法是流水线并行，把模型按层切开，分给几组卡接力算。但问题也很明显，只要前面那组没算完，后面的卡就只能干等。\n于是，团队改用 HSDP混合分片 直接替掉了流水线。\n这套方案的核心，是顺着集群里的网速差异切成两层：\n同一个超节点内部，卡和卡之间互联速度极快，就把模型参数拆散存到各张卡上，算到哪层再就近临时凑齐。\n不同超节点之间网速相对慢，就各自留一份完整副本，只在算完后统一同步一次更新，尽量减少跨节点搬运。\n再配合“一边算当前层、一边提前传下一层数据”的重叠调度，显存扛住了，流水线的干等也省了下来。\n论文实测，去掉流水线并行后，训练吞吐提升了 16.1%。\n除了分片方案，系统层还在计算、显存和主机调度上做了几处细化。\n更新参数用的 Muon优化器 ，改为每组指定一张卡集中算完再分发，省去了多卡重复计算。\n面对256K长序列，通过精细的选择性重计算压住显存，同时让稀疏索引模块逐层提前回传，缩短等待时间。\n针对八千卡集群容易出现的主机调度干扰，团队还做了CPU绑核与核隔离，在8192卡规模下额外带来 5%–10% 的吞吐提升。\n算上前面的混合分片，整套训练系统改造带来约 15%–30% 的端到端吞吐提升，长序列场景下更明显。\n在昨晚联合新华网、量子位开启的星辰大模型训练实况直播中，星辰团队给出了更直观的参照：\n业内此前曾流传“早期910B开箱效率仅为H200十五分之一”的说法，而电信基于前期积累，在910C上开箱就做到了英伟达同等算力的60%；从最初复用FSDP踩坑转向HSDP，再到调度与算子层协同调优，最终把训练效率拉升至93%。\n稳定性上，对比早年Llama用16000多张H卡训练时约90%的集群可用率，星辰团队在国产大规模集群上把整体可用率做到了96%以上，故障恢复也从3小时压缩到分钟级。\n后训练：TeleGym——让模型学会“把活干完”\n在后训练阶段，团队做了一套叫 TeleGym 的执行底座，把沙盒环境、工作区、结果验收，以及自研TeleAgent和Claude Code、OpenCode等外部Agent框架都接到同一套接口上。\n借助这套底座，模型可以在真实环境里直接动手操作，“做了什么、结果对不对”的完整轨迹也会直接送进策略优化。\n针对长程Agent训练里任务长短不一、设备容易空转的问题，TeleGym把任务采样和参数更新拆到不同设备池里异步推进，并加入了 Partial Rollout（部分轨迹续跑） 机制。\n每当遇到策略权重更新，还没跑完的长任务不用推倒重来，而是先暂停生成，留住工作区、会话和当前进度，换上新权重继续执行，同时记下每段轨迹对应的策略版本。\n让模型迭代，多一份掌握在自己手里的确定性\n最后，把Xing4.1-Preview放进更大的行业背景里看，国产算力与国产模型的配合，也已经走过了“能不能用”的阶段，正在进入“怎么用好”的阶段。\n当下，国产算力眼下的问题，已经不是卡够不够用，而是能不能在上面从头训出有竞争力的大模型。\nIDC发布的2026年上半年中国数据中心AI芯片统计显示，国内AI加速器总出货量达到200.8万颗。\n其中，非GPU加速器（NPU、ASIC等）出货101.6万颗，同比增长近80%，首次在半年度周期内超过GPU。\n应用上，今年9月，华为披露基于昇腾与CANN原生训练的模型已超过40个。\n与此同时，也开始有主力开源模型，在十万卡级别的国产芯片上承载大规模线上推理。\n可以说，随着国产硬件逐步就位之后，能否撑起大规模模型训练与真实应用落地，就成了检验这套算力底座成色的关键。\n而中国电信，恰好是最早一批沉下心来把这条链路跑透的玩家。\n早期的TeleChat2系列覆盖了3B、7B、35B、115B等不同规模；随后的TeleChat3-MoE进一步探索了千亿到万亿级架构与集群工程；",
+            "lead": "刚刚，8192张昇腾训出285B大模型！权重开源，32页训练手册全公开\nhenry 2026-11-28 22:12:50 来源： 量子位\n国产芯片训千亿大模型，终于有人把施工图纸摊开了\nhenry发自 凹非寺\n量子位 | 公众号QbitAI\n8192张昇腾卡、2850亿参数、百万上下文、整整32页技术报告。\n在国产软硬件体系里训练千亿级大模型，真的很少有人把底牌亮得这么彻底。\n继今年9月开源端侧模型 Xing4.0-29B-A4B 后， 中国电信 最近又放出一款千亿级主力开源模型——\nXing4.1-Preview 。\n据悉，这款新模型不仅从头到尾靠 8192张昇腾910C 和 昇思MindSpore 训完，直接把 国芯训国模 的规模推到了千亿级。",
+            "chars": 5998,
+            "shown": 3989,
+            "truncated": true
+          },
+          "categories": [
+            "资讯",
+            "中国电信",
+            "华为"
+          ],
+          "author": "henry",
+          "lang": "zh",
+          "tier": 1,
+          "trustCategory": true,
+          "declaredCategory": "news",
+          "metrics": {},
+          "quality": 9,
+          "score": 24.66,
+          "category": "bench",
+          "subcategory": "benchmark",
+          "practical": 6,
+          "slug": "ed7bacb5718d",
+          "action": 8,
+          "rank": 21.8,
+          "tags": [
+            "benchmark",
+            "local",
+            "agent",
+            "lowspec"
+          ]
+        },
+        {
+          "sourceId": "juejin",
+          "sourceName": "掘金 AI",
+          "title": "Python 异常到底多贵？我把 try、raise、traceback 的账单逐项拆开测了一遍",
+          "url": "https://juejin.cn/post/7712880724432486441",
+          "id": "https://juejin.cn/post/7712880724432486441",
+          "published": "2026-11-28T08:04:32.000Z",
+          "summary": "把 Python 异常的账单拆成五段实测：try 在 3.11 上确实零成本（字节码里退化成一个 NOP）；raise 只要 22 纳秒，但 format_exc 是它 96 倍、深栈下 2700 倍；最贵的不是 CPU 而是内存——20 个被存下的异常锁住 20MB 局部变量。",
+          "content": {
+            "html": "把 Python 异常的账单拆成五段实测：try 在 3.11 上确实零成本（字节码里退化成一个 NOP）；raise 只要 22 纳秒，但 format_exc 是它 96 倍、深栈下 2700 倍；最贵的不是 CPU 而是内存——20 个被存下的异常锁住 20MB 局部变量。",
+            "text": "把 Python 异常的账单拆成五段实测：try 在 3.11 上确实零成本（字节码里退化成一个 NOP）；raise 只要 22 纳秒，但 format_exc 是它 96 倍、深栈下 2700 倍；最贵的不是 CPU 而是内存——20 个被存下的异常锁住 20MB 局部变量。",
+            "lead": "把 Python 异常的账单拆成五段实测：try 在 3.11 上确实零成本（字节码里退化成一个 NOP）；raise 只要 22 纳秒，但 format_exc 是它 96 倍、深栈下 2700 倍；最贵的不是 CPU 而是内存——20 个被存下的异常锁住 20MB 局部变量。",
+            "chars": 140,
+            "shown": 140,
+            "truncated": false
+          },
+          "categories": [],
+          "author": "Wellijohn",
+          "lang": "zh",
+          "tier": 3,
+          "trustCategory": false,
+          "declaredCategory": "tools",
+          "metrics": {},
+          "quality": 6,
+          "score": 10.54,
+          "category": "bench",
+          "subcategory": "cost",
+          "practical": 1,
+          "slug": "d48c95deb257",
+          "action": 1,
+          "rank": 7.6,
+          "tags": [
+            "benchmark"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "id": "model-pricing",
   "kind": "openrouter-pricing",
-  "collectedAt": "2026-11-28T04:11:35.797Z",
+  "collectedAt": "2026-11-28T18:22:59.761Z",
   "upstream": {
     "label": "OpenRouter 模型目录 API",
     "url": "https://openrouter.ai/models"
@@ -89,6 +89,16 @@
           "completionPerMillion": 0,
           "free": true,
           "created": 1792622765
+        },
+        {
+          "name": "Z.ai: GLM 5.2",
+          "id": "z-ai/glm-5.2",
+          "url": "https://openrouter.ai/z-ai/glm-5.2",
+          "context": 1048576,
+          "promptPerMillion": 0.007,
+          "completionPerMillion": 6.8,
+          "free": false,
+          "created": 1781631930
         },
         {
           "name": "Upstage: Solar Mini 4.5 (Preview)",
@@ -256,7 +266,7 @@
           "url": "https://openrouter.ai/deepseek/deepseek-v4-flash-0731",
           "context": 1048576,
           "promptPerMillion": 0.045599999999999995,
-          "completionPerMillion": 0.3,
+          "completionPerMillion": 0.27,
           "free": false,
           "created": 1785478908
         },
@@ -399,16 +409,6 @@
           "completionPerMillion": 0.24,
           "free": false,
           "created": 1765731275
-        },
-        {
-          "name": "inclusionAI: LingSante 3.1 Air VL",
-          "id": "inclusionai/lingsante-3.1-air-vl",
-          "url": "https://openrouter.ai/inclusionai/lingsante-3.1-air-vl",
-          "context": 131072,
-          "promptPerMillion": 0.06,
-          "completionPerMillion": 0.18,
-          "free": false,
-          "created": 1795705284
         }
       ]
     }
@@ -421,8 +421,8 @@
     {
       "path": "https://openrouter.ai/api/v1/models",
       "url": "https://openrouter.ai/api/v1/models",
-      "sha256": "6186eacffdaa2ef7757b5d54f942b6d112a55bcd5891c07baeeaaa2ec3f13044",
-      "bytes": 924699
+      "sha256": "eb6501c631c0577227b7e188f5f96566a1162c6bfc4fe6171763e18f210145bb",
+      "bytes": 925010
     }
   ]
 }
